@@ -1,10 +1,10 @@
 import os
+import sys
 
 import tornado.ioloop
 import tornado.web
 
 handlers = [
-#    (r'/', tornado.web.StaticFileHandler, {'path': 'static', 'default_filename': 'index.html'}),
     (r'/(.*)', tornado.web.StaticFileHandler, {'path': 'static', 'default_filename': 'index.html'}),
 ]
 
@@ -14,7 +14,14 @@ settings = {
 
 application = tornado.web.Application(handlers, **settings)
 
-if __name__ == "__main__":
-    port = 80
+def main():
+    try:
+        port = int(sys.argv[1])
+    except:
+        port = 8000
+
     application.listen(port)
     tornado.ioloop.IOLoop.instance().start()
+
+if __name__ == "__main__":
+    main()
