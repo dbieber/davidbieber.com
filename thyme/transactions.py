@@ -75,9 +75,9 @@ class Transaction(object):
         if self.transaction_type == Transaction.WITHDRAWAL:
             return "WITHDRAWAL: %8.2f %-6s => %-6s %-35s" % (self.deltas[1][1], self.deltas[0][0], self.deltas[1][0], self.description)
         elif self.transaction_type == Transaction.BALANCE_REPORT:
-            return "BALANCE  : %8.2f %-16s %-35s" % (self.balances[0][1], self.balances[0][0], self.description)
+            return "BALANCE   : %8.2f %-16s %-35s" % (self.balances[0][1], self.balances[0][0], self.description)
         elif self.transaction_type == Transaction.EXPENSE:
-            return "EXPENSE  : %8.2f %-16s %-35s" % (self.deltas[0][1], self.deltas[0][0], self.description)
+            return "EXPENSE   : %8.2f %-16s %-35s" % (self.deltas[0][1], self.deltas[0][0], self.description)
         return "%s" % (self.transaction_type)
 
     def __repr__(self):
@@ -185,7 +185,8 @@ class Transaction(object):
 
 
 class TransactionAccumulator(object):
-    def __init__(self):
+    def __init__(self, drop_change=False):
+        self.drop_change = drop_change
         self.deltas = defaultdict(lambda: 0)
         self.balances = defaultdict(lambda: 0)
 
@@ -200,12 +201,23 @@ class TransactionAccumulator(object):
             resource, amount = balance
             self.balances[resource] = amount
 
-    def get_balance(self, resource=None):
-        if resource is None:
-            return sum(self.balances[resource] for resource in self.balances)
-        return self.balances[resource]
+        if self.drop_change:
+            if self.balances['cash'] != int(self.balances['cash']):
+                print 'Dropping %.2f' % (self.balances['cash'] - int(self.balances['cash']))
+                self.balances['cash'] = int(self.balances['cash'])
 
-    def get_delta(self, resource=None):
-        if resource is None:
+    def get_balance(self, resources=None):
+        if resources is None:
+            return sum(self.balances[resource] for resource in self.balances)
+        elif type(resources) is set or type(resources) is list:
+            return sum(self.balances[resource] for resource in resources)
+        else:
+            return self.balances[resources]
+
+    def get_delta(self, resources=None):
+        if resources is None:
             return sum(self.deltas[resource] for resource in self.deltas)
-        return self.deltas[resource]
+        elif type(resources) is set or type(resources) is list:
+            return sum(self.deltas[resource] for resource in resources)
+        else:
+            return self.deltas[resources]
