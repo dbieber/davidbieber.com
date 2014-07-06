@@ -13,15 +13,15 @@ from thyme import thyme
 
 
 handlers = (
+    auth.handlers +
     sendlater.handlers +
     thyme.handlers +
-    auth.handlers +
     [
         (r'/(.*)', tornado.web.StaticFileHandler, {'path': 'static', 'default_filename': 'index.html'}),
     ]
 )
 
-settings = dict(
+tornado_settings = dict(
     xsrf_cookies=True,
     cookie_secret=settings.secure.cookie_secret,
     login_url='/auth/google',
@@ -31,12 +31,13 @@ settings = dict(
     )
 )
 
-application = tornado.web.Application(handlers, **settings)
+application = tornado.web.Application(handlers, **tornado_settings)
 
 def main():
     try:
         port = int(sys.argv[1])
     except:
+        # TODO(Bieber): Use local settings
         port = 8000
 
     application.listen(port)

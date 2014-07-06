@@ -45,7 +45,6 @@ class ThymeHandler(BaseHandler):
         self.write("</pre>")
 
 
-
 handlers = [
     (r'/thyme/', ThymeHandler),
 ]
