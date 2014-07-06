@@ -97,6 +97,9 @@ class Transaction(object):
             net_delta += amount
         return net_delta
 
+    def get_datetime(self):
+        return timestamp_as_datetime(self.timestamp)
+
     @staticmethod
     def create_from_row(row):
         timestamp, transaction_str = row
@@ -190,7 +193,16 @@ class TransactionAccumulator(object):
         self.deltas = defaultdict(lambda: 0)
         self.balances = defaultdict(lambda: 0)
 
+        self.first_datetime = None
+        self.last_datetime = None
+
     def handle_transaction(self, transaction):
+        transaction_datetime = transaction.get_datetime()
+        if self.first_datetime is None or transaction_datetime < self.first_datetime:
+            self.first_datetime = transaction_datetime
+        if self.last_datetime is None or transaction_datetime > self.last_datetime:
+            self.last_datetime = transaction_datetime
+
         for delta in transaction.deltas:
             resource, amount = delta
             self.deltas[resource] += amount
