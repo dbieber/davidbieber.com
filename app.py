@@ -4,7 +4,9 @@ import sys
 import tornado.ioloop
 import tornado.web
 
-handlers = [
+import sendlater
+
+handlers = sendlater.handlers + [
     (r'/(.*)', tornado.web.StaticFileHandler, {'path': 'static', 'default_filename': 'index.html'}),
 ]
 
