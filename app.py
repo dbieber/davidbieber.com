@@ -5,14 +5,11 @@ import tornado.ioloop
 import tornado.web
 import tornado.auth
 
+from settings import settings
+
+from auth import auth
 from sendlater import sendlater
 from thyme import thyme
-import auth
-
-try:
-    import secure_settings as settings
-except:
-    import secure_settings_template as settings
 
 
 handlers = (
@@ -26,8 +23,12 @@ handlers = (
 
 settings = dict(
     xsrf_cookies=True,
-    cookie_secret=settings.cookie_secret,
-    login_url='/auth/login',
+    cookie_secret=settings.secure.cookie_secret,
+    login_url='/auth/google',
+    google_oauth=dict(
+        key=settings.secure.google_oauth_key,
+        secret=settings.secure.google_oauth_secret,
+    )
 )
 
 application = tornado.web.Application(handlers, **settings)

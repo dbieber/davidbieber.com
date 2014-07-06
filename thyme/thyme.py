@@ -1,4 +1,4 @@
-from common import BaseHandler
+from auth.auth import BaseHandler
 
 import tornado.web
 import tornado.auth
@@ -15,7 +15,8 @@ class ThymeHandler(BaseHandler):
     @tornado.web.authenticated
     def get(self):
         # TODO(Bieber): Move this into a decorator @require_admin
-        email = self.get_current_user()
+        user = self.get_current_user()
+        email = user['email']
         if (email != "david810@gmail.com" and email != "dbieber@princeton.edu"):
             self.redirect('/')
             return

@@ -4,10 +4,7 @@ from utils import timestamp_as_datetime
 import csv
 import dropbox
 
-try:
-    import secure_settings as settings
-except:
-    import secure_settings_template as settings
+from settings import settings
 
 
 class TransactionLoader(object):
@@ -15,7 +12,7 @@ class TransactionLoader(object):
     def __init__(self, use_dropbox=True):
 
         if use_dropbox:
-            self.dropbox_client = dropbox.client.DropboxClient(settings.access_token)
+            self.dropbox_client = dropbox.client.DropboxClient(settings.secure.access_token)
 
             # TODO(Bieber): Cache the file
             transactions_file, metadata = self.dropbox_client.get_file_and_metadata('/Transactions.csv')
@@ -31,8 +28,8 @@ class TransactionLoader(object):
     @staticmethod
     def get_dropbox_access_token():
         flow = dropbox.client.DropboxOAuth2FlowNoRedirect(
-            settings.app_key,
-            settings.app_secret
+            settings.secure.app_key,
+            settings.secure.app_secret
         )
 
         authorize_url = flow.start()
