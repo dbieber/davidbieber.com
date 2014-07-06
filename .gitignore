@@ -1,3 +1,8 @@
 *~
 *.pyc
 nohup.out
+dump.rdb
+secure_settings.py
+.DS_store
+
+Transactions.csv
