@@ -60,7 +60,6 @@ class GoogleOAuth2LoginHandler(BaseHandler, tornado.auth.GoogleOAuth2Mixin):
                 code=self.get_argument('code')
             )
             access_token = user['access_token']
-            print("access", access_token)
             self.set_secure_cookie(settings.USER_COOKIE, access_token)
 
             self.redirect(self.get_argument("next", "/"))
