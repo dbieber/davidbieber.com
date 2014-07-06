@@ -61,7 +61,7 @@ for row in r:
         deltas[resource_from] -= amt
         deltas[resource_to] += amt
         print '%s: %.2f' % (resource_from, balances[resource_from]), "(withdraw %.2f)" % (amt)
-        print '%s: %.2f' % (resource_to, balances[resource_to]), "(%.2f from withdrawl)" % (amt)
+        print '%s: %.2f' % (resource_to, balances[resource_to]), "(%.2f from withdrawal)" % (amt)
     if tokens[0] in resources and isAmount(tokens[1]):
         amt = amount(tokens[1])
         if not hasSign(tokens[1]):

@@ -1,6 +1,8 @@
+from collections import defaultdict
+from utils import timestamp_as_datetime
+
 import csv
 import dropbox
-from utils import timestamp_as_datetime
 
 try:
     import secure_settings as settings
@@ -50,7 +52,7 @@ class Transaction(object):
 
     # TODO(Bieber): Use enum
     # Transaction types:
-    WITHDRAWL = "WITHDRAWL"
+    WITHDRAWAL = "WITHDRAWAL"
     DEPOSIT = "DEPOSIT"
     BALANCE_REPORT = "BALANCE REPORT"
     EXPENSE = "EXPENSE"
@@ -70,10 +72,30 @@ class Transaction(object):
         self.category = category
 
     def __str__(self):
+        if self.transaction_type == Transaction.WITHDRAWAL:
+            return "WITHDRAWAL: %8.2f %-6s => %-6s %-35s" % (self.deltas[1][1], self.deltas[0][0], self.deltas[1][0], self.description)
+        elif self.transaction_type == Transaction.BALANCE_REPORT:
+            return "BALANCE  : %8.2f %-16s %-35s" % (self.balances[0][1], self.balances[0][0], self.description)
+        elif self.transaction_type == Transaction.EXPENSE:
+            return "EXPENSE  : %8.2f %-16s %-35s" % (self.deltas[0][1], self.deltas[0][0], self.description)
         return "%s" % (self.transaction_type)
 
     def __repr__(self):
         return str(self)
+
+    def get_resources(self):
+        resources = set()
+        for resource, _ in self.deltas:
+            resources.add(resource)
+        for resource, _ in self.balances:
+            resources.add(resource)
+        return resources
+
+    def get_net_delta(self):
+        net_delta = 0
+        for _, amount in self.deltas:
+            net_delta += amount
+        return net_delta
 
     @staticmethod
     def create_from_row(row):
@@ -88,8 +110,8 @@ class Transaction(object):
 
         tokens = transaction_str.lower().strip().split(' ')
 
-        if Transaction.is_withdrawl(tokens):
-            _type = Transaction.WITHDRAWL
+        if Transaction.is_withdrawal(tokens):
+            _type = Transaction.WITHDRAWAL
             amount_str = tokens[1]
             resource_from = tokens[3]
             resource_to = tokens[5]
@@ -129,7 +151,7 @@ class Transaction(object):
         )
 
     @staticmethod
-    def is_withdrawl(tokens):
+    def is_withdrawal(tokens):
         return tokens[0] == 'withdraw'
 
     @staticmethod
@@ -161,3 +183,29 @@ class Transaction(object):
     def has_sign(s):
         return s[0] == '+' or s[0] == '-'
 
+
+class TransactionAccumulator(object):
+    def __init__(self):
+        self.deltas = defaultdict(lambda: 0)
+        self.balances = defaultdict(lambda: 0)
+
+    def handle_transaction(self, transaction):
+        for delta in transaction.deltas:
+            resource, amount = delta
+            self.deltas[resource] += amount
+            if resource in self.balances:
+                self.balances[resource] += amount
+
+        for balance in transaction.balances:
+            resource, amount = balance
+            self.balances[resource] = amount
+
+    def get_balance(self, resource=None):
+        if resource is None:
+            return sum(self.balances[resource] for resource in self.balances)
+        return self.balances[resource]
+
+    def get_delta(self, resource=None):
+        if resource is None:
+            return sum(self.deltas[resource] for resource in self.deltas)
+        return self.deltas[resource]
