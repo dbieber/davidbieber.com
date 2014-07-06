@@ -3,15 +3,32 @@ import sys
 
 import tornado.ioloop
 import tornado.web
+import tornado.auth
 
 from sendlater import sendlater
+from thyme import thyme
+import auth
 
-handlers = sendlater.handlers + [
-    (r'/(.*)', tornado.web.StaticFileHandler, {'path': 'static', 'default_filename': 'index.html'}),
-]
+try:
+    import secure_settings as settings
+except:
+    import secure_settings_template as settings
 
-settings = {
-}
+
+handlers = (
+    sendlater.handlers +
+    thyme.handlers +
+    auth.handlers +
+    [
+        (r'/(.*)', tornado.web.StaticFileHandler, {'path': 'static', 'default_filename': 'index.html'}),
+    ]
+)
+
+settings = dict(
+    xsrf_cookies=True,
+    cookie_secret=settings.cookie_secret,
+    login_url='/auth/login',
+)
 
 application = tornado.web.Application(handlers, **settings)
 

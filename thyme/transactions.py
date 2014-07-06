@@ -215,7 +215,6 @@ class TransactionAccumulator(object):
 
         if self.drop_change:
             if self.balances['cash'] != int(self.balances['cash']):
-                print 'Dropping %.2f' % (self.balances['cash'] - int(self.balances['cash']))
                 self.balances['cash'] = int(self.balances['cash'])
 
     def get_balance(self, resources=None):
