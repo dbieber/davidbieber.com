@@ -1,10 +1,10 @@
 from collections import defaultdict
-from utils import timestamp_as_datetime
 
 import csv
 import dropbox
 
 from settings import settings
+from thyme.utils import timestamp_as_datetime
 
 
 class TransactionLoader(object):
@@ -17,13 +17,17 @@ class TransactionLoader(object):
             # TODO(Bieber): Cache the file
             transactions_file, metadata = self.dropbox_client.get_file_and_metadata('/Transactions.csv')
         else:
-            transactions_file = open('Transactions.csv')
+            transactions_file = open('Transactions.csv' ,'r')
 
-        reader = csv.reader(transactions_file, delimiter=',', quotechar='"')
         self.transactions = []
-        for row in reader:
-            transaction = Transaction.create_from_row(row)
-            self.transactions.append(transaction)
+        for row in transactions_file:
+            # TODO(Bieber): This is really unpythonic
+            row = row.decode('utf-8')
+            reader = csv.reader([row], delimiter=',', quotechar='"')
+            row = next(reader)
+            if row and len(row) > 1:
+                transaction = Transaction.create_from_row(row)
+                self.transactions.append(transaction)
 
     @staticmethod
     def get_dropbox_access_token():
@@ -33,14 +37,14 @@ class TransactionLoader(object):
         )
 
         authorize_url = flow.start()
-        print '1. Go to: ' + authorize_url
-        print '2. Click "Allow" (you might have to log in first)'
-        print '3. Copy the authorization code.'
+        print('1. Go to: ' + authorize_url)
+        print('2. Click "Allow" (you might have to log in first)')
+        print('3. Copy the authorization code.')
         code = raw_input("Enter the authorization code here: ").strip()
 
         # TODO(Bieber): Persist the access_token
         access_token, user_id = flow.finish(code)
-        print "access_token", access_token
+        print("access_token %s" % access_token)
 
         return access_token
 

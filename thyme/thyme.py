@@ -6,8 +6,8 @@ import tornado.auth
 from datetime import datetime
 from datetime import timedelta
 
-from transactions import TransactionLoader
-from transactions import TransactionAccumulator
+from thyme.transactions import TransactionLoader
+from thyme.transactions import TransactionAccumulator
 
 
 class ThymeHandler(BaseHandler):

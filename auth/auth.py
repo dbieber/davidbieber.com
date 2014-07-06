@@ -1,4 +1,4 @@
-import urllib2
+from urllib.request import urlopen
 import json
 
 import tornado.auth
@@ -17,22 +17,23 @@ class BaseHandler(tornado.web.RequestHandler):
         Returns the current user object if the user is logged in.
         Returns None if the user is not logged in.
         """
-        access_token = self.get_secure_cookie(settings.USER_COOKIE)
+        access_token = self.get_secure_cookie(settings.USER_COOKIE).decode("utf-8")
         if not access_token:
             return None
 
         # Fetch email. TODO(Bieber): Cache it, stick it in a database, don't do this every time.
-        url_pattern = ('https://www.googleapis.com/plus/v1/people/%(user_id)s' +
-                       '?access_token=%(access_token)s' +
+        url_pattern = ('https://www.googleapis.com/plus/v1/people/{user_id}' \
+                       '?access_token={access_token!s}' \
                        '&fields=emails')
-        url = url_pattern % {
-            'user_id': 'me',
-            'access_token': access_token,
-            'key': settings.secure.google_oauth_key,
-        }
+        url = url_pattern.format(
+            user_id='me',
+            access_token=str(access_token),
+            key=settings.secure.google_oauth_key,
+        )
 
-        response = urllib2.urlopen(url)
-        data = json.loads(response.read())
+        response = urlopen(url)
+        out = response.read().decode("utf-8")
+        data = json.loads(out)
 
         try:
             email_struct = data['emails'][0]
@@ -58,6 +59,7 @@ class GoogleOAuth2LoginHandler(BaseHandler, tornado.auth.GoogleOAuth2Mixin):
                 code=self.get_argument('code')
             )
             access_token = user['access_token']
+            print("access", access_token)
             self.set_secure_cookie(settings.USER_COOKIE, access_token)
 
             self.redirect(self.get_argument("next", "/"))
