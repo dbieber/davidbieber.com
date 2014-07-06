@@ -17,9 +17,10 @@ class BaseHandler(tornado.web.RequestHandler):
         Returns the current user object if the user is logged in.
         Returns None if the user is not logged in.
         """
-        access_token = self.get_secure_cookie(settings.USER_COOKIE).decode("utf-8")
+        access_token = self.get_secure_cookie(settings.USER_COOKIE)
         if not access_token:
             return None
+        access_token = access_token.decode("utf-8")
 
         # Fetch email. TODO(Bieber): Cache it, stick it in a database, don't do this every time.
         url_pattern = ('https://www.googleapis.com/plus/v1/people/{user_id}' \
