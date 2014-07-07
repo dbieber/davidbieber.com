@@ -63,7 +63,7 @@ class GoogleOAuth2LoginHandler(BaseHandler, tornado.auth.GoogleOAuth2Mixin):
             access_token = user['access_token']
             self.set_secure_cookie(settings.USER_COOKIE, access_token)
 
-            self.redirect(self.get_argument("next", "/"))
+            self.redirect(self.get_argument("state", "/"))
             return
         else:
             yield self.authorize_redirect(
@@ -71,8 +71,11 @@ class GoogleOAuth2LoginHandler(BaseHandler, tornado.auth.GoogleOAuth2Mixin):
                 client_id=settings.secure.google_oauth_key,
                 scope=['email'],
                 response_type='code',
-                # TODO(Bieber): user login_hint,
-                extra_params={'approval_prompt': 'auto'},
+                extra_params=dict(
+                    approval_prompt='auto',
+                    # TODO(Bieber): user login_hint,
+                    state=self.get_argument("next", "/"),
+                )
             )
 
 

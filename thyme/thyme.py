@@ -46,5 +46,6 @@ class ThymeHandler(BaseHandler):
 
 
 handlers = [
+    (r'/thyme/by_day', ThymeHandler),
     (r'/thyme/', ThymeHandler),
 ]
