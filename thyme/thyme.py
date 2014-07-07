@@ -44,8 +44,21 @@ class ThymeHandler(BaseHandler):
         self.write("In pocket: %.2f<br/>" % accumulator.get_balance('cash'))
         self.write("</pre>")
 
+class ThymeByDayHandler(BaseHandler):
+
+    @tornado.web.authenticated
+    def get(self):
+        # TODO(Bieber): Move this into a decorator @require_admin
+        user = self.get_current_user()
+        email = user['email']
+        if (email != "david810@gmail.com" and email != "dbieber@princeton.edu"):
+            self.redirect('/')
+            return
+
+        # TODO(Bieber): Implement ThymeByDayHandler
+        self.write("<pre>NotImplementedYet</pre>")
 
 handlers = [
-    (r'/thyme/by_day', ThymeHandler),
-    (r'/thyme/', ThymeHandler),
+    (r'/thyme/by_day/?', ThymeByDayHandler),
+    (r'/thyme/?', ThymeHandler),
 ]
