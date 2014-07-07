@@ -22,7 +22,7 @@ class ThymeHandler(BaseHandler):
             return
 
         loader = TransactionLoader(use_dropbox=True)
-        accumulator = TransactionAccumulator(drop_change=False)
+        accumulator = TransactionAccumulator(drop_change=True)
 
         threshold_datetime = datetime.now() - timedelta(days=999)
 

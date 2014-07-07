@@ -32,14 +32,15 @@ class BaseHandler(tornado.web.RequestHandler):
             key=settings.secure.google_oauth_key,
         )
 
-        response = urlopen(url)
-        out = response.read().decode("utf-8")
-        data = json.loads(out)
-
         try:
+            response = urlopen(url)
+            out = response.read().decode("utf-8")
+            data = json.loads(out)
+
             email_struct = data['emails'][0]
             email = email_struct['value']
         except:
+            self.clear_cookie(settings.USER_COOKIE)
             email = None
 
         user = dict(
