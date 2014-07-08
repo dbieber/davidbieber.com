@@ -7,16 +7,17 @@ import tornado.auth
 
 from settings import settings
 
-from auth import auth
-from sendlater import sendlater
-from thyme import thyme
+from auth.handlers import handlers as auth_handlers
+from sendlater.sendlater import handlers as sendlater_handlers
+from thyme.thyme import handlers as thyme_handlers
 
 
 handlers = (
-    auth.handlers +
-    sendlater.handlers +
-    thyme.handlers +
+    auth_handlers +
+    sendlater_handlers +
+    thyme_handlers +
     [
+        (r'/static/(.*)', tornado.web.StaticFileHandler, {'path': 'static', 'default_filename': 'index.html'}),
         (r'/(.*)', tornado.web.StaticFileHandler, {'path': 'static', 'default_filename': 'index.html'}),
     ]
 )

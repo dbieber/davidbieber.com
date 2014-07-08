@@ -14,3 +14,6 @@ google_oauth_secret = '<google_oauth_secret>'
 # Google OAuth2 (davidbieber.com)
 # google_oauth_key = '<google_oauth_key>'
 # google_oauth_secret = '<google_oauth_secret>'
+
+# Jinja2 Templates
+templates_path = '<templates_path>'
