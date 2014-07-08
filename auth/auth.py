@@ -46,7 +46,7 @@ class BaseHandler(tornado.web.RequestHandler):
             email = email_struct['value']
         except:
             self.clear_cookie(settings.USER_COOKIE)
-            email = None
+            return None
 
         user = dict(
             access_token=access_token,
@@ -84,6 +84,12 @@ class GoogleOAuth2LoginHandler(BaseHandler, tornado.auth.GoogleOAuth2Mixin):
             )
 
 
+class AuthLoginHandler(BaseHandler):
+    # TODO(Bieber): Implement login screen
+    def get(self):
+        pass
+
+
 class AuthLogoutHandler(BaseHandler):
     def get(self):
         self.clear_cookie(settings.USER_COOKIE)
@@ -91,6 +97,7 @@ class AuthLogoutHandler(BaseHandler):
 
 
 handlers = [
+    (r"/auth/login", GoogleOAuth2LoginHandler),
     (r"/auth/google", GoogleOAuth2LoginHandler),
     (r"/auth/logout", AuthLogoutHandler),
 ]
