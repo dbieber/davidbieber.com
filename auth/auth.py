@@ -1,9 +1,14 @@
-from urllib.request import urlopen
-import json
+from __future__ import absolute_import
 
+import json
 import tornado.auth
 import tornado.gen
 import tornado.web
+
+try:
+    from urllib.request import urlopen
+except:
+    from urllib2 import urlopen
 
 from settings import settings
 

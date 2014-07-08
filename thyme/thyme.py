@@ -1,4 +1,4 @@
-from auth.auth import BaseHandler
+from __future__ import absolute_import
 
 import tornado.web
 import tornado.auth
@@ -6,6 +6,7 @@ import tornado.auth
 from datetime import datetime
 from datetime import timedelta
 
+from auth.auth import BaseHandler
 from thyme.transactions import TransactionLoader
 from thyme.transactions import TransactionAccumulator
 
