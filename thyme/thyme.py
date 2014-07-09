@@ -124,7 +124,9 @@ class ThymeByResourceDataHandler(BaseHandler):
         data = defaultdict(lambda: 0)
         for transaction in loader.transactions:
             resource = transaction.get_resource()
-            data[resource] += -transaction.get_net_delta()
+            delta = -transaction.get_net_delta()
+            if delta >= 0:
+                data[resource] += -transaction.get_net_delta()
 
         self.writeln('name,value')
         for resource in data:
