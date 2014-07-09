@@ -91,7 +91,6 @@ class ThymeByDayDataHandler(BaseHandler):
 
 
 handlers = [
-    (r'/thyme/by_day/barchart\.js', TemplateHandler, {'template_filename': 'thyme/barchart.js'}),
     (r'/thyme/by_day/data\.csv', ThymeByDayDataHandler),
     (r'/thyme/by_day/?', ThymeByDayHandler),
     (r'/thyme/?', ThymeHandler),
