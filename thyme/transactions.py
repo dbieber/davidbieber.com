@@ -56,6 +56,7 @@ class Transaction(object):
     # TODO(Bieber): Use enum
     # Transaction types:
     WITHDRAWAL = "WITHDRAWAL"
+    TRANSFER = "TRANSFER"
     DEPOSIT = "DEPOSIT"
     BALANCE_REPORT = "BALANCE REPORT"
     EXPENSE = "EXPENSE"
@@ -77,6 +78,8 @@ class Transaction(object):
     def __str__(self):
         if self.transaction_type == Transaction.WITHDRAWAL:
             return "%-18s WITHDRAWAL: %8.2f %-6s => %-6s %-35s" % (self.timestamp, self.deltas[1][1], self.deltas[0][0], self.deltas[1][0], self.description)
+        elif self.transaction_type == Transaction.TRANSFER:
+            return "%-18s TRANSFER  : %8.2f %-6s => %-6s %-35s" % (self.timestamp, self.deltas[1][1], self.deltas[0][0], self.deltas[1][0], self.description)
         elif self.transaction_type == Transaction.BALANCE_REPORT:
             return "%-18s BALANCE   : %8.2f %-16s %-35s" % (self.timestamp, self.balances[0][1], self.balances[0][0], self.description)
         elif self.transaction_type == Transaction.EXPENSE:
@@ -127,6 +130,17 @@ class Transaction(object):
                 (resource_from, -amount),
                 (resource_to,   +amount),
             ]
+        elif Transaction.is_transfer(tokens):
+            _type = Transaction.TRANSFER
+            amount_str = tokens[1]
+            resource_from = tokens[3]
+            resource_to = tokens[5]
+            amount = Transaction.amount_from_str(amount_str)
+
+            _deltas = [
+                (resource_from, -amount),
+                (resource_to,   +amount),
+            ]
         elif Transaction.is_deposit(tokens):
             _type = Transaction.DEPOSIT
             raise NotImplementedError
@@ -159,6 +173,10 @@ class Transaction(object):
     @staticmethod
     def is_withdrawal(tokens):
         return tokens[0] == 'withdraw'
+
+    @staticmethod
+    def is_transfer(tokens):
+        return tokens[0] == 'transfer'
 
     @staticmethod
     def is_deposit(tokens):
