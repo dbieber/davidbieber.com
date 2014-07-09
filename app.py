@@ -18,7 +18,7 @@ handlers = (
     thyme_handlers +
     [
         (r'/static/(.*)', tornado.web.StaticFileHandler, {'path': 'static', 'default_filename': 'index.html'}),
-        (r'/(.*)', tornado.web.StaticFileHandler, {'path': 'static', 'default_filename': 'index.html'}),
+        (r'/(.*)', tornado.web.StaticFileHandler, {'path': 'default', 'default_filename': 'index.html'}),
     ]
 )
 
