@@ -81,7 +81,7 @@ class Transaction(object):
             return "%-18s BALANCE   : %8.2f %-16s %-35s" % (self.timestamp, self.balances[0][1], self.balances[0][0], self.description)
         elif self.transaction_type == Transaction.EXPENSE:
             return "%-18s EXPENSE   : %8.2f %-16s %-35s" % (self.timestamp, self.deltas[0][1], self.deltas[0][0], self.description)
-        return "%-18s %s" % (self.timestamp, self.transaction_type)
+        return "%-18s %s" % (self.timestamp, self.description)
 
     def __repr__(self):
         return str(self)
@@ -170,7 +170,7 @@ class Transaction(object):
 
     @staticmethod
     def is_expense(tokens):
-        return len(tokens) >= 2
+        return len(tokens) >= 2 and Transaction.is_amount(tokens[1])
 
     @staticmethod
     def amount_from_str(s):
