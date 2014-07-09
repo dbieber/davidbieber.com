@@ -59,7 +59,7 @@ class ThymeByDayHandler(BaseHandler):
             self.redirect('/')
             return
 
-        self.render('thyme/byday.html', {
+        self.render('thyme/barchart.html', {
             'data_source': '/thyme/by_day/data.csv'
         })
 
@@ -90,7 +90,50 @@ class ThymeByDayDataHandler(BaseHandler):
             self.writeln('{0},{1}'.format(day, data[day]))
 
 
+class ThymeByResourceHandler(BaseHandler):
+
+    @tornado.web.authenticated
+    def get(self):
+        # TODO(Bieber): Move this into a decorator @require_admin
+        user = self.get_current_user()
+        email = user['email']
+        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
+            self.redirect('/')
+            return
+
+        self.render('thyme/barchart.html', {
+            'data_source': '/thyme/by_resource/data.csv'
+        })
+
+
+class ThymeByResourceDataHandler(BaseHandler):
+
+    @tornado.web.authenticated
+    def get(self):
+        # TODO(Bieber): Move this into a decorator @require_admin
+        user = self.get_current_user()
+        email = user['email']
+        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
+            self.redirect('/')
+            return
+
+
+        loader = TransactionLoader(use_dropbox=True)
+        now = datetime.now()
+
+        data = defaultdict(lambda: 0)
+        for transaction in loader.transactions:
+            resource = transaction.get_resource()
+            data[resource] += -transaction.get_net_delta()
+
+        self.writeln('name,value')
+        for resource in data:
+            self.writeln('{0},{1}'.format(resource, data[resource]))
+
+
 handlers = [
+    (r'/thyme/by_resource/data\.csv', ThymeByResourceDataHandler),
+    (r'/thyme/by_resource/?', ThymeByResourceHandler),
     (r'/thyme/by_day/data\.csv', ThymeByDayDataHandler),
     (r'/thyme/by_day/?', ThymeByDayHandler),
     (r'/thyme/?', ThymeHandler),

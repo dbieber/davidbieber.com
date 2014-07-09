@@ -89,6 +89,12 @@ class Transaction(object):
     def __repr__(self):
         return str(self)
 
+    def get_resource(self):
+        for resource, _ in self.deltas:
+            return resource
+        for resource, _ in self.balances:
+            return resource
+
     def get_resources(self):
         resources = set()
         for resource, _ in self.deltas:
