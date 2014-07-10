@@ -25,10 +25,10 @@ var BarChart = {
       // Parse numbers, and sort by value.
       data.forEach(function(d) { d.value = +d.value; });
       // data.sort(function(a, b) { return b.value - a.value; });
-      data.sort(function(a, b) {
-        if (b.name > a.name) return 1;
-        return -1;
-      });
+      // data.sort(function(a, b) {
+      //   if (b.name > a.name) return 1;
+      //   return -1;
+      // });
 
       // Set the scale domain.
       x.domain([0, d3.max(data, function(d) { return d.value; })]);

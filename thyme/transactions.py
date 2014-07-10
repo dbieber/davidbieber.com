@@ -77,13 +77,13 @@ class Transaction(object):
 
     def __str__(self):
         if self.transaction_type == Transaction.WITHDRAWAL:
-            return "%-18s WITHDRAWAL: %8.2f %-6s => %-6s %-35s" % (self.timestamp, self.deltas[1][1], self.deltas[0][0], self.deltas[1][0], self.description)
+            return "%-18s WITHDRAWAL: %9.2f %-6s => %-6s %-35s" % (self.timestamp, self.deltas[1][1], self.deltas[0][0], self.deltas[1][0], self.description)
         elif self.transaction_type == Transaction.TRANSFER:
-            return "%-18s TRANSFER  : %8.2f %-6s => %-6s %-35s" % (self.timestamp, self.deltas[1][1], self.deltas[0][0], self.deltas[1][0], self.description)
+            return "%-18s TRANSFER  : %9.2f %-6s => %-6s %-35s" % (self.timestamp, self.deltas[1][1], self.deltas[0][0], self.deltas[1][0], self.description)
         elif self.transaction_type == Transaction.BALANCE_REPORT:
-            return "%-18s BALANCE   : %8.2f %-16s %-35s" % (self.timestamp, self.balances[0][1], self.balances[0][0], self.description)
+            return "%-18s BALANCE   : %9.2f %-16s %-35s" % (self.timestamp, self.balances[0][1], self.balances[0][0], self.description)
         elif self.transaction_type == Transaction.EXPENSE:
-            return "%-18s EXPENSE   : %8.2f %-16s %-35s" % (self.timestamp, self.deltas[0][1], self.deltas[0][0], self.description)
+            return "%-18s EXPENSE   : %+9.2f %-16s %-35s" % (self.timestamp, self.deltas[0][1], self.deltas[0][0], self.description)
         return "%-18s %s" % (self.timestamp, self.description)
 
     def __repr__(self):

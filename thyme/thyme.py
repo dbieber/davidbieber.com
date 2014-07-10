@@ -132,8 +132,143 @@ class ThymeByResourceDataHandler(BaseHandler):
         for resource in data:
             self.writeln('{0},{1}'.format(resource, data[resource]))
 
+class ThymeByDayOfWeekHandler(BaseHandler):
+
+    @tornado.web.authenticated
+    def get(self):
+        # TODO(Bieber): Move this into a decorator @require_admin
+        user = self.get_current_user()
+        email = user['email']
+        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
+            self.redirect('/')
+            return
+
+        self.render('thyme/barchart.html', {
+            'data_source': '/thyme/by_day_of_week/data.csv'
+        })
+
+
+class ThymeByDayOfWeekDataHandler(BaseHandler):
+
+    @tornado.web.authenticated
+    def get(self):
+        # TODO(Bieber): Move this into a decorator @require_admin
+        user = self.get_current_user()
+        email = user['email']
+        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
+            self.redirect('/')
+            return
+
+
+        loader = TransactionLoader(use_dropbox=True)
+        now = datetime.now()
+
+        data = defaultdict(lambda: 0)
+        for transaction in loader.transactions:
+            transaction_datetime = transaction.get_datetime()
+            day = transaction_datetime.weekday()
+            data[day] += -transaction.get_net_delta()
+
+
+        days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+        self.writeln('name,value')
+        for day in data:
+            self.writeln('{0},{1}'.format(days[day], data[day]))
+
+
+class ThymeByTimeHandler(BaseHandler):
+
+    @tornado.web.authenticated
+    def get(self):
+        # TODO(Bieber): Move this into a decorator @require_admin
+        user = self.get_current_user()
+        email = user['email']
+        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
+            self.redirect('/')
+            return
+
+        self.render('thyme/barchart.html', {
+            'data_source': '/thyme/by_time/data.csv'
+        })
+
+
+class ThymeByTimeDataHandler(BaseHandler):
+
+    @tornado.web.authenticated
+    def get(self):
+        # TODO(Bieber): Move this into a decorator @require_admin
+        user = self.get_current_user()
+        email = user['email']
+        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
+            self.redirect('/')
+            return
+
+
+        loader = TransactionLoader(use_dropbox=True)
+        now = datetime.now()
+
+        data = defaultdict(lambda: 0)
+        for transaction in loader.transactions:
+            transaction_datetime = transaction.get_datetime()
+            hour = transaction_datetime.hour
+            data[hour] += -transaction.get_net_delta()
+
+
+        self.writeln('name,value')
+        for hour in data:
+            self.writeln('{0:02d},{1}'.format(hour, data[hour]))
+
+
+class ThymeLineChartByDateHandler(BaseHandler):
+
+    @tornado.web.authenticated
+    def get(self):
+        # TODO(Bieber): Move this into a decorator @require_admin
+        user = self.get_current_user()
+        email = user['email']
+        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
+            self.redirect('/')
+            return
+
+        self.render('thyme/lineplot.html', {
+            'data_source': '/thyme/line_chart/data.csv'
+        })
+
+
+class ThymeLineChartByDateDataHandler(BaseHandler):
+
+    @tornado.web.authenticated
+    def get(self):
+        # TODO(Bieber): Move this into a decorator @require_admin
+        user = self.get_current_user()
+        email = user['email']
+        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
+            self.redirect('/')
+            return
+
+
+        loader = TransactionLoader(use_dropbox=True)
+        now = datetime.now()
+
+        self.writeln('date,balance')
+        accumulator = TransactionAccumulator(drop_change=True)
+        for transaction in loader.transactions:
+            accumulator.handle_transaction(transaction)
+
+            if datetime.now() - transaction.get_datetime() <= timedelta(days=14):
+                self.writeln('{0},{1}'.format(
+                    transaction.get_datetime(),
+                    accumulator.get_delta(),
+                ))
+
 
 handlers = [
+    (r'/thyme/line_chart/data\.csv', ThymeLineChartByDateDataHandler),
+    (r'/thyme/line_chart/?', ThymeLineChartByDateHandler),
+    (r'/thyme/by_day_of_week/data\.csv', ThymeByDayOfWeekDataHandler),
+    (r'/thyme/by_day_of_week/?', ThymeByDayOfWeekHandler),
+    (r'/thyme/by_time/data\.csv', ThymeByTimeDataHandler),
+    (r'/thyme/by_time/?', ThymeByTimeHandler),
     (r'/thyme/by_resource/data\.csv', ThymeByResourceDataHandler),
     (r'/thyme/by_resource/?', ThymeByResourceHandler),
     (r'/thyme/by_day/data\.csv', ThymeByDayDataHandler),
