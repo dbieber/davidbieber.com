@@ -253,6 +253,12 @@ class ThymeLineChartByDateDataHandler(BaseHandler):
         self.writeln('date,balance')
         accumulator = TransactionAccumulator(drop_change=True)
         for transaction in loader.transactions:
+            if datetime.now() - transaction.get_datetime() <= timedelta(days=14):
+                self.writeln('{0},{1}'.format(
+                    transaction.get_datetime(),
+                    accumulator.get_delta(),
+                ))
+
             accumulator.handle_transaction(transaction)
 
             if datetime.now() - transaction.get_datetime() <= timedelta(days=14):
