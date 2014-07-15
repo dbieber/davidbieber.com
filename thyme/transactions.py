@@ -222,6 +222,7 @@ class TransactionAccumulator(object):
 
         self.first_datetime = None
         self.last_datetime = None
+        self.dropped_change = 0
 
     def handle_transaction(self, transaction):
         transaction_datetime = transaction.get_datetime()
@@ -242,6 +243,8 @@ class TransactionAccumulator(object):
 
         if self.drop_change:
             if self.balances['cash'] != int(self.balances['cash']):
+                # TODO(Bieber): Account for used or lost change
+                self.dropped_change += self.balances['cash'] - int(self.balances['cash'])
                 self.balances['cash'] = int(self.balances['cash'])
 
     def get_balance(self, resources=None):

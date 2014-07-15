@@ -4,6 +4,7 @@ import tornado.web
 import tornado.auth
 
 from collections import defaultdict
+from datetime import date
 from datetime import datetime
 from datetime import timedelta
 
@@ -13,7 +14,35 @@ from thyme.transactions import TransactionLoader
 from thyme.transactions import TransactionAccumulator
 
 
-class ThymeHandler(BaseHandler):
+class ThymeSimpleViewHandler(BaseHandler):
+
+    @tornado.web.authenticated
+    def get(self):
+        # TODO(Bieber): Move this into a decorator @require_admin
+        user = self.get_current_user()
+        email = user['email']
+        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
+            self.redirect('/')
+            return
+
+        loader = TransactionLoader(use_dropbox=True)
+        accumulator = TransactionAccumulator(drop_change=True)
+
+        start_of_day = datetime.fromordinal(date.today().toordinal())
+        spent_today = 0
+        for transaction in loader.transactions:
+            accumulator.handle_transaction(transaction)
+            if transaction.get_datetime() >= start_of_day:
+                spent_today += transaction.get_net_delta()
+
+        self.writeln('<pre>')
+        self.writeln('${:3.2f} spent today. <br/>'.format(spent_today))
+        self.writeln('${:3.2f} in your pocked. <br/>'.format(accumulator.get_balance('cash')))
+        self.writeln('${:3.2f} on desk <br/>'.format(accumulator.dropped_change))
+        self.writeln('</pre>')
+
+
+class ThymeLogViewHandler(BaseHandler):
 
     @tornado.web.authenticated
     def get(self):
@@ -269,6 +298,7 @@ class ThymeLineChartByDateDataHandler(BaseHandler):
 
 
 handlers = [
+    (r'/thyme/simple/?', ThymeSimpleViewHandler),
     (r'/thyme/line_chart/data\.csv', ThymeLineChartByDateDataHandler),
     (r'/thyme/line_chart/?', ThymeLineChartByDateHandler),
     (r'/thyme/by_day_of_week/data\.csv', ThymeByDayOfWeekDataHandler),
