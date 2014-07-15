@@ -37,7 +37,7 @@ class ThymeSimpleViewHandler(BaseHandler):
 
         self.writeln('<pre>')
         self.writeln('${:3.2f} spent today. <br/>'.format(spent_today))
-        self.writeln('${:3.2f} in your pocked. <br/>'.format(accumulator.get_balance('cash')))
+        self.writeln('${:3.2f} in your pocket. <br/>'.format(accumulator.get_balance('cash')))
         self.writeln('${:3.2f} on desk <br/>'.format(accumulator.dropped_change))
         self.writeln('</pre>')
 
