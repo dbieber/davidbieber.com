@@ -282,18 +282,20 @@ class ThymeLineChartByDateDataHandler(BaseHandler):
         self.writeln('date,balance')
         accumulator = TransactionAccumulator(drop_change=True)
         for transaction in loader.transactions:
-            if datetime.now() - transaction.get_datetime() <= timedelta(days=14):
+            include_transaction = datetime.now() - transaction.get_datetime() <= timedelta(days=30)
+            include_transaction &= len(accumulator.get_resources()) >= 5
+            if include_transaction:
                 self.writeln('{0},{1}'.format(
                     transaction.get_datetime(),
-                    accumulator.get_delta(),
+                    accumulator.get_balance(),
                 ))
 
             accumulator.handle_transaction(transaction)
 
-            if datetime.now() - transaction.get_datetime() <= timedelta(days=14):
+            if include_transaction:
                 self.writeln('{0},{1}'.format(
                     transaction.get_datetime(),
-                    accumulator.get_delta(),
+                    accumulator.get_balance(),
                 ))
 
 
@@ -309,5 +311,6 @@ handlers = [
     (r'/thyme/by_resource/?', ThymeByResourceHandler),
     (r'/thyme/by_day/data\.csv', ThymeByDayDataHandler),
     (r'/thyme/by_day/?', ThymeByDayHandler),
-    (r'/thyme/?', ThymeHandler),
+    (r'/thyme/log_view/?', ThymeLogViewHandler),
+    (r'/thyme/?', ThymeLogViewHandler),
 ]

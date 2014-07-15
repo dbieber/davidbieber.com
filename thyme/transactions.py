@@ -262,3 +262,9 @@ class TransactionAccumulator(object):
             return sum(self.deltas[resource] for resource in resources)
         else:
             return self.deltas[resources]
+
+    def get_resources(self):
+        resources = set()
+        resources.update(r for r in self.deltas)
+        resources.update(r for r in self.balances)
+        return resources

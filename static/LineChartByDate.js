@@ -38,8 +38,9 @@ var LineChartByDate = {
         d.balance = +d.balance;
       });
 
+      var data_with_zero = data.concat({balance: 0});
       x.domain(d3.extent(data, function(d) { return d.date; }));
-      y.domain(d3.extent(data, function(d) { return d.balance; }));
+      y.domain(d3.extent(data_with_zero, function(d) { return d.balance; }));
 
       svg.append("g")
           .attr("class", "x axis")
