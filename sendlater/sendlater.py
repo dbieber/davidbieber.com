@@ -2,13 +2,19 @@ from datetime import datetime
 import redis
 import tornado.web
 
+from common.common import BaseHandler
+
+
 MESSAGE_QUEUE = "sendlater:messages"
 
-class SendLaterHandler(tornado.web.RequestHandler):
-    def get(self, path="/"):
-        self.write("URL: " + path)
+class SendLaterHandler(BaseHandler):
+    def get(self):
+        self.render("sendlater/index.html")
 
-class SendLaterMessageHandler(tornado.web.RequestHandler):
+    def post(self):
+        self.render("sendlater/index.html")
+
+class SendLaterMessageHandler(BaseHandler):
     def initialize(self, redis_host="localhost", redis_port=6379):
         self.redis = redis.StrictRedis(host=redis_host, port=redis_port, db=0)
 
@@ -35,5 +41,5 @@ class SendLaterMessageHandler(tornado.web.RequestHandler):
 
 handlers = [
     (r'/sendlater/message/?', SendLaterMessageHandler),
-    (r'/sendlater/(.*)', SendLaterHandler),
+    (r'/sendlater/?', SendLaterHandler),
 ]

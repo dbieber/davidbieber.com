@@ -168,6 +168,15 @@ class Transaction(object):
             _description = ' '.join(tokens[2:])
             _deltas = [(resource, amount)]
 
+            # The change goes into the change resource instead of the cash resource
+            if resource == 'cash' and amount != int(amount) and amount < 0:
+                change = (int(-amount) + 1) - (-amount)
+                _deltas.extend([
+                    ('cash', -change),
+                    ('change', +change),
+                ])
+                _description = "{} (and ({}) in change)".format(_description, change)
+
         return Transaction(
             transaction_type=_type,
             timestamp=_timestamp,
@@ -215,14 +224,12 @@ class Transaction(object):
 
 
 class TransactionAccumulator(object):
-    def __init__(self, drop_change=False):
-        self.drop_change = drop_change
+    def __init__(self):
         self.deltas = defaultdict(lambda: 0)
         self.balances = defaultdict(lambda: 0)
 
         self.first_datetime = None
         self.last_datetime = None
-        self.dropped_change = 0
 
     def handle_transaction(self, transaction):
         transaction_datetime = transaction.get_datetime()
@@ -240,12 +247,6 @@ class TransactionAccumulator(object):
         for balance in transaction.balances:
             resource, amount = balance
             self.balances[resource] = amount
-
-        if self.drop_change:
-            if self.balances['cash'] != int(self.balances['cash']):
-                # TODO(Bieber): Account for used or lost change
-                self.dropped_change += self.balances['cash'] - int(self.balances['cash'])
-                self.balances['cash'] = int(self.balances['cash'])
 
     def get_balance(self, resources=None):
         if resources is None:

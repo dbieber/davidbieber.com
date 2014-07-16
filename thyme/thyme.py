@@ -26,7 +26,7 @@ class ThymeSimpleViewHandler(BaseHandler):
             return
 
         loader = TransactionLoader(use_dropbox=True)
-        accumulator = TransactionAccumulator(drop_change=True)
+        accumulator = TransactionAccumulator()
 
         start_of_day = datetime.fromordinal(date.today().toordinal())
         spent_today = 0
@@ -38,7 +38,32 @@ class ThymeSimpleViewHandler(BaseHandler):
         self.writeln('<pre>')
         self.writeln('${:3.2f} spent today. <br/>'.format(spent_today))
         self.writeln('${:3.2f} in your pocket. <br/>'.format(accumulator.get_balance('cash')))
-        self.writeln('${:3.2f} on desk <br/>'.format(accumulator.dropped_change))
+        self.writeln('${:3.2f} on your desk. <br/>'.format(accumulator.get_balance('change')))
+        self.writeln('</pre>')
+
+
+class ThymeBalanceByResourceViewHandler(BaseHandler):
+
+    @tornado.web.authenticated
+    def get(self):
+        # TODO(Bieber): Move this into a decorator @require_admin
+        user = self.get_current_user()
+        email = user['email']
+        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
+            self.redirect('/')
+            return
+
+        loader = TransactionLoader(use_dropbox=True)
+        accumulator = TransactionAccumulator()
+
+        for transaction in loader.transactions:
+            accumulator.handle_transaction(transaction)
+
+        self.writeln('<pre>')
+        for resource in accumulator.get_resources():
+            amount = accumulator.get_balance(resource)
+            self.writeln('  ${:>10.2f} in {}.'.format(amount, resource))
+        self.writeln('= ${:10.2f} total.'.format(accumulator.get_balance(), resource))
         self.writeln('</pre>')
 
 
@@ -54,7 +79,7 @@ class ThymeLogViewHandler(BaseHandler):
             return
 
         loader = TransactionLoader(use_dropbox=True)
-        accumulator = TransactionAccumulator(drop_change=True)
+        accumulator = TransactionAccumulator()
 
         threshold_datetime = datetime.now() - timedelta(days=999)
 
@@ -106,17 +131,21 @@ class ThymeByDayDataHandler(BaseHandler):
 
 
         loader = TransactionLoader(use_dropbox=True)
-        now = datetime.now()
+        accumulator = TransactionAccumulator()
 
         data = defaultdict(lambda: 0)
         for transaction in loader.transactions:
+            accumulator.handle_transaction(transaction)
             transaction_datetime = transaction.get_datetime()
             day = transaction_datetime.date().isoformat()
             data[day] += -transaction.get_net_delta()
 
         self.writeln('name,value')
-        for day in data:
+        date = accumulator.last_datetime.date()
+        while date >= accumulator.first_datetime.date():
+            day = date.isoformat()
             self.writeln('{0},{1}'.format(day, data[day]))
+            date -= timedelta(days=1)
 
 
 class ThymeByResourceHandler(BaseHandler):
@@ -154,7 +183,7 @@ class ThymeByResourceDataHandler(BaseHandler):
         for transaction in loader.transactions:
             resource = transaction.get_resource()
             delta = -transaction.get_net_delta()
-            if delta >= 0:
+            if delta >= 0 and resource is not None:
                 data[resource] += -transaction.get_net_delta()
 
         self.writeln('name,value')
@@ -232,7 +261,6 @@ class ThymeByTimeDataHandler(BaseHandler):
             self.redirect('/')
             return
 
-
         loader = TransactionLoader(use_dropbox=True)
         now = datetime.now()
 
@@ -244,7 +272,7 @@ class ThymeByTimeDataHandler(BaseHandler):
 
 
         self.writeln('name,value')
-        for hour in data:
+        for hour in xrange(24):
             self.writeln('{0:02d},{1}'.format(hour, data[hour]))
 
 
@@ -280,7 +308,7 @@ class ThymeLineChartByDateDataHandler(BaseHandler):
         now = datetime.now()
 
         self.writeln('date,balance')
-        accumulator = TransactionAccumulator(drop_change=True)
+        accumulator = TransactionAccumulator()
         for transaction in loader.transactions:
             include_transaction = datetime.now() - transaction.get_datetime() <= timedelta(days=30)
             include_transaction &= len(accumulator.get_resources()) >= 5
@@ -299,8 +327,17 @@ class ThymeLineChartByDateDataHandler(BaseHandler):
                 ))
 
 
+class TestHandler(BaseHandler):
+    """docstring for TestHandler"""
+    def get(self):
+        self.render("react_test.html")
+
+
 handlers = [
+    (r'/thyme/test_endpoint/?', TestHandler),
     (r'/thyme/simple/?', ThymeSimpleViewHandler),
+    (r'/thyme/balance_by_resource/?', ThymeBalanceByResourceViewHandler),
+
     (r'/thyme/line_chart/data\.csv', ThymeLineChartByDateDataHandler),
     (r'/thyme/line_chart/?', ThymeLineChartByDateHandler),
     (r'/thyme/by_day_of_week/data\.csv', ThymeByDayOfWeekDataHandler),
