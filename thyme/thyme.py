@@ -84,8 +84,11 @@ class ThymeLogViewHandler(BaseHandler):
         threshold_datetime = datetime.now() - timedelta(days=999)
 
         self.write('<pre>')
+        total_expenses = 0.0
         for transaction in loader.transactions:
             if transaction.get_datetime() >= threshold_datetime:
+                if transaction.counts_as_expense():
+                    total_expenses += -transaction.get_net_delta()
                 accumulator.handle_transaction(transaction)
                 delta = transaction.get_net_delta()
                 balance = accumulator.get_delta()
@@ -97,7 +100,8 @@ class ThymeLogViewHandler(BaseHandler):
         elapsed_days = (elapsed_time.total_seconds() / timedelta(days=1).total_seconds())
 
         self.write('Days: %.2f<br/>' % elapsed_days)
-        self.write('Rate: %.2f per day<br/>' % (accumulator.get_delta() / elapsed_days))
+        self.write('NetRate: %.2f per day<br/>' % (accumulator.get_delta() / elapsed_days))
+        self.write('OutRate: %.2f per day<br/>' % (total_expenses / elapsed_days))
         self.write('In pocket: %.2f<br/>' % accumulator.get_balance('cash'))
         self.write('</pre>')
 
@@ -136,9 +140,11 @@ class ThymeByDayDataHandler(BaseHandler):
         data = defaultdict(lambda: 0)
         for transaction in loader.transactions:
             accumulator.handle_transaction(transaction)
-            transaction_datetime = transaction.get_datetime()
-            day = transaction_datetime.date().isoformat()
-            data[day] += -transaction.get_net_delta()
+
+            if transaction.counts_as_expense():
+                transaction_datetime = transaction.get_datetime()
+                day = transaction_datetime.date().isoformat()
+                data[day] += -transaction.get_net_delta()
 
         self.writeln('name,value')
         date = accumulator.last_datetime.date()
@@ -183,7 +189,7 @@ class ThymeByResourceDataHandler(BaseHandler):
         for transaction in loader.transactions:
             resource = transaction.get_resource()
             delta = -transaction.get_net_delta()
-            if delta >= 0 and resource is not None:
+            if delta >= 0 and resource is not None and transaction.counts_as_expense():
                 data[resource] += -transaction.get_net_delta()
 
         self.writeln('name,value')
@@ -223,9 +229,10 @@ class ThymeByDayOfWeekDataHandler(BaseHandler):
 
         data = defaultdict(lambda: 0)
         for transaction in loader.transactions:
-            transaction_datetime = transaction.get_datetime()
-            day = transaction_datetime.weekday()
-            data[day] += -transaction.get_net_delta()
+            if transaction.counts_as_expense():
+                transaction_datetime = transaction.get_datetime()
+                day = transaction_datetime.weekday()
+                data[day] += -transaction.get_net_delta()
 
 
         days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
@@ -266,10 +273,10 @@ class ThymeByTimeDataHandler(BaseHandler):
 
         data = defaultdict(lambda: 0)
         for transaction in loader.transactions:
-            transaction_datetime = transaction.get_datetime()
-            hour = transaction_datetime.hour
-            data[hour] += -transaction.get_net_delta()
-
+            if transaction.counts_as_expense():
+                transaction_datetime = transaction.get_datetime()
+                hour = transaction_datetime.hour
+                data[hour] += -transaction.get_net_delta()
 
         self.writeln('name,value')
         for hour in xrange(24):
