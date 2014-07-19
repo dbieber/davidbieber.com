@@ -279,7 +279,7 @@ class ThymeByTimeDataHandler(BaseHandler):
                 data[hour] += -transaction.get_net_delta()
 
         self.writeln('name,value')
-        for hour in xrange(24):
+        for hour in range(24):
             self.writeln('{0:02d},{1}'.format(hour, data[hour]))
 
 
