@@ -222,6 +222,13 @@ class Transaction(object):
     def has_sign(s):
         return s[0] == '+' or s[0] == '-'
 
+    def counts_as_expense(self):
+        if self.transaction_type != Transaction.EXPENSE:
+            return False
+        if "splitting" in self.description:
+            return True
+        return self.get_net_delta() < 0
+
 
 class TransactionAccumulator(object):
     def __init__(self):

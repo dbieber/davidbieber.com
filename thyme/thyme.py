@@ -32,7 +32,7 @@ class ThymeSimpleViewHandler(BaseHandler):
         spent_today = 0
         for transaction in loader.transactions:
             accumulator.handle_transaction(transaction)
-            if transaction.get_datetime() >= start_of_day:
+            if transaction.get_datetime() >= start_of_day and transaction.counts_as_expense():
                 spent_today += transaction.get_net_delta()
 
         self.writeln('<pre>')
