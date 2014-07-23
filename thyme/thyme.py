@@ -73,7 +73,7 @@ class ThymeErrorsViewHandler(BaseHandler):
                             resource,
                             balance,
                             previous_balance,
-                            balance - previous_balance
+                            round(balance - previous_balance, 4)
                         ))
             accumulator.handle_transaction(transaction)
 
