@@ -10,6 +10,7 @@ from datetime import timedelta
 
 from common.common import BaseHandler
 from common.common import TemplateHandler
+from thyme.transactions import Transaction
 from thyme.transactions import TransactionLoader
 from thyme.transactions import TransactionAccumulator
 
@@ -39,6 +40,67 @@ class ThymeSimpleViewHandler(BaseHandler):
         self.writeln('${:3.2f} spent today. <br/>'.format(spent_today))
         self.writeln('${:3.2f} in your pocket. <br/>'.format(accumulator.get_balance('cash')))
         self.writeln('${:3.2f} on your desk. <br/>'.format(accumulator.get_balance('change')))
+        self.writeln('</pre>')
+
+class ThymeErrorsViewHandler(BaseHandler):
+
+    @tornado.web.authenticated
+    def get(self):
+        # TODO(Bieber): Move this into a decorator @require_admin
+        user = self.get_current_user()
+        email = user['email']
+        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
+            self.redirect('/')
+            return
+
+        loader = TransactionLoader(use_dropbox=True)
+        accumulator = TransactionAccumulator()
+
+        self.writeln('<pre>Errors')
+
+        for transaction in loader.transactions:
+            if transaction.transaction_type == Transaction.BALANCE_REPORT:
+                for resource, balance in transaction.get_balances():
+                    previous_balance = accumulator.get_balance(resource)
+                    if previous_balance is None:
+                        continue
+
+                    previous_balance = round(previous_balance, 4)
+                    balance = round(balance, 4)
+                    if previous_balance != balance:
+                        self.writeln("{:18s}: {} BALANCE {} (previously {}; difference is {})".format(
+                            transaction.timestamp,
+                            resource,
+                            balance,
+                            previous_balance,
+                            balance - previous_balance
+                        ))
+            accumulator.handle_transaction(transaction)
+
+        self.writeln('</pre>')
+
+
+class ThymeUnhandledTransactionsViewHandler(BaseHandler):
+
+    @tornado.web.authenticated
+    def get(self):
+        # TODO(Bieber): Move this into a decorator @require_admin
+        user = self.get_current_user()
+        email = user['email']
+        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
+            self.redirect('/')
+            return
+
+        loader = TransactionLoader(use_dropbox=True)
+        accumulator = TransactionAccumulator()
+
+        self.writeln('<pre>Unhandled Transactions')
+
+        for transaction in loader.transactions:
+            accumulator.handle_transaction(transaction)
+            if transaction.transaction_type == None:
+                self.writeln(str(transaction))
+
         self.writeln('</pre>')
 
 
@@ -334,6 +396,60 @@ class ThymeLineChartByDateDataHandler(BaseHandler):
                 ))
 
 
+class ThymeExpensesLineChartByDateHandler(BaseHandler):
+
+    @tornado.web.authenticated
+    def get(self):
+        # TODO(Bieber): Move this into a decorator @require_admin
+        user = self.get_current_user()
+        email = user['email']
+        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
+            self.redirect('/')
+            return
+
+        self.render('thyme/lineplot.html', {
+            'data_source': '/thyme/expenses_line_chart/data.csv'
+        })
+
+
+class ThymeExpensesLineChartByDateDataHandler(BaseHandler):
+
+    @tornado.web.authenticated
+    def get(self):
+        # TODO(Bieber): Move this into a decorator @require_admin
+        user = self.get_current_user()
+        email = user['email']
+        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
+            self.redirect('/')
+            return
+
+
+        loader = TransactionLoader(use_dropbox=True)
+        now = datetime.now()
+
+        self.writeln('date,balance')
+        accumulator = TransactionAccumulator()
+        total_expenses = 0
+        for transaction in loader.transactions:
+            include_transaction = datetime.now() - transaction.get_datetime() <= timedelta(days=60)
+            include_transaction &= len(accumulator.get_resources()) >= 5
+            include_transaction &= transaction.counts_as_expense()
+            if include_transaction:
+                self.writeln('{0},{1}'.format(
+                    transaction.get_datetime(),
+                    total_expenses,
+                ))
+                total_expenses += transaction.get_net_delta()
+
+            accumulator.handle_transaction(transaction)
+
+            if include_transaction:
+                self.writeln('{0},{1}'.format(
+                    transaction.get_datetime(),
+                    total_expenses,
+                ))
+
+
 class TestHandler(BaseHandler):
     """docstring for TestHandler"""
     def get(self):
@@ -342,11 +458,15 @@ class TestHandler(BaseHandler):
 
 handlers = [
     (r'/thyme/test_endpoint/?', TestHandler),
-    (r'/thyme/simple/?', ThymeSimpleViewHandler),
-    (r'/thyme/balance_by_resource/?', ThymeBalanceByResourceViewHandler),
 
+    (r'/thyme/simple/?', ThymeSimpleViewHandler),
+    (r'/thyme/errors/?', ThymeErrorsViewHandler),
+    (r'/thyme/unhandled_transactions/?', ThymeUnhandledTransactionsViewHandler),
+    (r'/thyme/balance_by_resource/?', ThymeBalanceByResourceViewHandler),
     (r'/thyme/line_chart/data\.csv', ThymeLineChartByDateDataHandler),
     (r'/thyme/line_chart/?', ThymeLineChartByDateHandler),
+    (r'/thyme/expenses_line_chart/data\.csv', ThymeExpensesLineChartByDateDataHandler),
+    (r'/thyme/expenses_line_chart/?', ThymeExpensesLineChartByDateHandler),
     (r'/thyme/by_day_of_week/data\.csv', ThymeByDayOfWeekDataHandler),
     (r'/thyme/by_day_of_week/?', ThymeByDayOfWeekHandler),
     (r'/thyme/by_time/data\.csv', ThymeByTimeDataHandler),

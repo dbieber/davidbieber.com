@@ -112,6 +112,12 @@ class Transaction(object):
     def get_datetime(self):
         return timestamp_as_datetime(self.timestamp)
 
+    def get_balances(self):
+        return self.balances
+
+    def get_deltas(self):
+        return self.deltas
+
     @staticmethod
     def create_from_row(row):
         timestamp, transaction_str = row
@@ -163,14 +169,15 @@ class Transaction(object):
 
             amount = Transaction.amount_from_str(amount_str)
             if not Transaction.has_sign(tokens[1]):
-                amount *= -1
+                amount = -amount
 
             _description = ' '.join(tokens[2:])
             _deltas = [(resource, amount)]
 
             # The change goes into the change resource instead of the cash resource
             if resource == 'cash' and amount != int(amount) and amount < 0:
-                change = (int(-amount) + 1) - (-amount)
+                amount_spent = -amount
+                change = int(amount_spent + 1) - amount_spent
                 _deltas.extend([
                     ('cash', -change),
                     ('change', +change),
@@ -261,6 +268,9 @@ class TransactionAccumulator(object):
         elif type(resources) is set or type(resources) is list:
             return sum(self.balances[resource] for resource in resources)
         else:
+            # TODO(Bieber): Handle unseen resource more gracefully and mimic for delta
+            if resources not in self.balances:
+                return
             return self.balances[resources]
 
     def get_delta(self, resources=None):
