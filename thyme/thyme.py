@@ -53,7 +53,7 @@ class ThymeErrorsViewHandler(BaseHandler):
                     previous_balance = round(previous_balance, 4)
                     balance = round(balance, 4)
                     if previous_balance != balance:
-                        self.writeln("{:18s}: {} BALANCE {} (previously {}; difference is {})".format(
+                        self.writeln("{:18s}: {} BALANCE {} (previously {}; difference is {:+.2f})".format(
                             transaction.timestamp,
                             resource,
                             balance,
