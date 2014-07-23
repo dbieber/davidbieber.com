@@ -1,15 +1,14 @@
 from __future__ import absolute_import
 
 import tornado.web
-import tornado.auth
 
 from collections import defaultdict
 from datetime import date
 from datetime import datetime
 from datetime import timedelta
 
+from auth.decorators import require_admin
 from common.common import BaseHandler
-from common.common import TemplateHandler
 from thyme.transactions import Transaction
 from thyme.transactions import TransactionLoader
 from thyme.transactions import TransactionAccumulator
@@ -17,15 +16,8 @@ from thyme.transactions import TransactionAccumulator
 
 class ThymeSimpleViewHandler(BaseHandler):
 
-    @tornado.web.authenticated
+    @require_admin
     def get(self):
-        # TODO(Bieber): Move this into a decorator @require_admin
-        user = self.get_current_user()
-        email = user['email']
-        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
-            self.redirect('/')
-            return
-
         loader = TransactionLoader(use_dropbox=True)
         accumulator = TransactionAccumulator()
 
@@ -44,15 +36,8 @@ class ThymeSimpleViewHandler(BaseHandler):
 
 class ThymeErrorsViewHandler(BaseHandler):
 
-    @tornado.web.authenticated
+    @require_admin
     def get(self):
-        # TODO(Bieber): Move this into a decorator @require_admin
-        user = self.get_current_user()
-        email = user['email']
-        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
-            self.redirect('/')
-            return
-
         loader = TransactionLoader(use_dropbox=True)
         accumulator = TransactionAccumulator()
 
@@ -82,15 +67,8 @@ class ThymeErrorsViewHandler(BaseHandler):
 
 class ThymeUnhandledTransactionsViewHandler(BaseHandler):
 
-    @tornado.web.authenticated
+    @require_admin
     def get(self):
-        # TODO(Bieber): Move this into a decorator @require_admin
-        user = self.get_current_user()
-        email = user['email']
-        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
-            self.redirect('/')
-            return
-
         loader = TransactionLoader(use_dropbox=True)
         accumulator = TransactionAccumulator()
 
@@ -106,15 +84,8 @@ class ThymeUnhandledTransactionsViewHandler(BaseHandler):
 
 class ThymeBalanceByResourceViewHandler(BaseHandler):
 
-    @tornado.web.authenticated
+    @require_admin
     def get(self):
-        # TODO(Bieber): Move this into a decorator @require_admin
-        user = self.get_current_user()
-        email = user['email']
-        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
-            self.redirect('/')
-            return
-
         loader = TransactionLoader(use_dropbox=True)
         accumulator = TransactionAccumulator()
 
@@ -131,15 +102,8 @@ class ThymeBalanceByResourceViewHandler(BaseHandler):
 
 class ThymeLogViewHandler(BaseHandler):
 
-    @tornado.web.authenticated
+    @require_admin
     def get(self):
-        # TODO(Bieber): Move this into a decorator @require_admin
-        user = self.get_current_user()
-        email = user['email']
-        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
-            self.redirect('/')
-            return
-
         loader = TransactionLoader(use_dropbox=True)
         accumulator = TransactionAccumulator()
 
@@ -170,15 +134,8 @@ class ThymeLogViewHandler(BaseHandler):
 
 class ThymeByDayHandler(BaseHandler):
 
-    @tornado.web.authenticated
+    @require_admin
     def get(self):
-        # TODO(Bieber): Move this into a decorator @require_admin
-        user = self.get_current_user()
-        email = user['email']
-        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
-            self.redirect('/')
-            return
-
         self.render('thyme/barchart.html', {
             'data_source': '/thyme/by_day/data.csv'
         })
@@ -186,16 +143,8 @@ class ThymeByDayHandler(BaseHandler):
 
 class ThymeByDayDataHandler(BaseHandler):
 
-    @tornado.web.authenticated
+    @require_admin
     def get(self):
-        # TODO(Bieber): Move this into a decorator @require_admin
-        user = self.get_current_user()
-        email = user['email']
-        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
-            self.redirect('/')
-            return
-
-
         loader = TransactionLoader(use_dropbox=True)
         accumulator = TransactionAccumulator()
 
@@ -218,15 +167,8 @@ class ThymeByDayDataHandler(BaseHandler):
 
 class ThymeByResourceHandler(BaseHandler):
 
-    @tornado.web.authenticated
+    @require_admin
     def get(self):
-        # TODO(Bieber): Move this into a decorator @require_admin
-        user = self.get_current_user()
-        email = user['email']
-        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
-            self.redirect('/')
-            return
-
         self.render('thyme/barchart.html', {
             'data_source': '/thyme/by_resource/data.csv'
         })
@@ -234,16 +176,8 @@ class ThymeByResourceHandler(BaseHandler):
 
 class ThymeByResourceDataHandler(BaseHandler):
 
-    @tornado.web.authenticated
+    @require_admin
     def get(self):
-        # TODO(Bieber): Move this into a decorator @require_admin
-        user = self.get_current_user()
-        email = user['email']
-        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
-            self.redirect('/')
-            return
-
-
         loader = TransactionLoader(use_dropbox=True)
         now = datetime.now()
 
@@ -260,15 +194,8 @@ class ThymeByResourceDataHandler(BaseHandler):
 
 class ThymeByDayOfWeekHandler(BaseHandler):
 
-    @tornado.web.authenticated
+    @require_admin
     def get(self):
-        # TODO(Bieber): Move this into a decorator @require_admin
-        user = self.get_current_user()
-        email = user['email']
-        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
-            self.redirect('/')
-            return
-
         self.render('thyme/barchart.html', {
             'data_source': '/thyme/by_day_of_week/data.csv'
         })
@@ -276,16 +203,8 @@ class ThymeByDayOfWeekHandler(BaseHandler):
 
 class ThymeByDayOfWeekDataHandler(BaseHandler):
 
-    @tornado.web.authenticated
+    @require_admin
     def get(self):
-        # TODO(Bieber): Move this into a decorator @require_admin
-        user = self.get_current_user()
-        email = user['email']
-        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
-            self.redirect('/')
-            return
-
-
         loader = TransactionLoader(use_dropbox=True)
         now = datetime.now()
 
@@ -305,15 +224,8 @@ class ThymeByDayOfWeekDataHandler(BaseHandler):
 
 class ThymeByTimeHandler(BaseHandler):
 
-    @tornado.web.authenticated
+    @require_admin
     def get(self):
-        # TODO(Bieber): Move this into a decorator @require_admin
-        user = self.get_current_user()
-        email = user['email']
-        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
-            self.redirect('/')
-            return
-
         self.render('thyme/barchart.html', {
             'data_source': '/thyme/by_time/data.csv'
         })
@@ -321,15 +233,8 @@ class ThymeByTimeHandler(BaseHandler):
 
 class ThymeByTimeDataHandler(BaseHandler):
 
-    @tornado.web.authenticated
+    @require_admin
     def get(self):
-        # TODO(Bieber): Move this into a decorator @require_admin
-        user = self.get_current_user()
-        email = user['email']
-        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
-            self.redirect('/')
-            return
-
         loader = TransactionLoader(use_dropbox=True)
         now = datetime.now()
 
@@ -347,15 +252,8 @@ class ThymeByTimeDataHandler(BaseHandler):
 
 class ThymeLineChartByDateHandler(BaseHandler):
 
-    @tornado.web.authenticated
+    @require_admin
     def get(self):
-        # TODO(Bieber): Move this into a decorator @require_admin
-        user = self.get_current_user()
-        email = user['email']
-        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
-            self.redirect('/')
-            return
-
         self.render('thyme/lineplot.html', {
             'data_source': '/thyme/line_chart/data.csv'
         })
@@ -363,16 +261,8 @@ class ThymeLineChartByDateHandler(BaseHandler):
 
 class ThymeLineChartByDateDataHandler(BaseHandler):
 
-    @tornado.web.authenticated
+    @require_admin
     def get(self):
-        # TODO(Bieber): Move this into a decorator @require_admin
-        user = self.get_current_user()
-        email = user['email']
-        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
-            self.redirect('/')
-            return
-
-
         loader = TransactionLoader(use_dropbox=True)
         now = datetime.now()
 
@@ -398,15 +288,8 @@ class ThymeLineChartByDateDataHandler(BaseHandler):
 
 class ThymeExpensesLineChartByDateHandler(BaseHandler):
 
-    @tornado.web.authenticated
+    @require_admin
     def get(self):
-        # TODO(Bieber): Move this into a decorator @require_admin
-        user = self.get_current_user()
-        email = user['email']
-        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
-            self.redirect('/')
-            return
-
         self.render('thyme/lineplot.html', {
             'data_source': '/thyme/expenses_line_chart/data.csv'
         })
@@ -414,16 +297,8 @@ class ThymeExpensesLineChartByDateHandler(BaseHandler):
 
 class ThymeExpensesLineChartByDateDataHandler(BaseHandler):
 
-    @tornado.web.authenticated
+    @require_admin
     def get(self):
-        # TODO(Bieber): Move this into a decorator @require_admin
-        user = self.get_current_user()
-        email = user['email']
-        if (email != 'david810@gmail.com' and email != 'dbieber@princeton.edu'):
-            self.redirect('/')
-            return
-
-
         loader = TransactionLoader(use_dropbox=True)
         now = datetime.now()
 
@@ -451,7 +326,8 @@ class ThymeExpensesLineChartByDateDataHandler(BaseHandler):
 
 
 class TestHandler(BaseHandler):
-    """docstring for TestHandler"""
+
+    @tornado.web.authenticated
     def get(self):
         self.render("react_test.html")
 
