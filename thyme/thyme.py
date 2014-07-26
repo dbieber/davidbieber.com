@@ -9,9 +9,11 @@ from datetime import timedelta
 
 from auth.decorators import require_admin
 from common.common import BaseHandler
+from common.common import dumps
 from thyme.transactions import Transaction
 from thyme.transactions import TransactionLoader
 from thyme.transactions import TransactionAccumulator
+
 
 
 class ThymeSimpleViewHandler(BaseHandler):
@@ -329,11 +331,57 @@ class TestHandler(BaseHandler):
 
     @tornado.web.authenticated
     def get(self):
-        self.render("react_test.html")
+        self.render("react_test.html", {
+            "data": [1, 2, 3]
+        })
 
+
+class ThymeWeeklyComparisonHandler(BaseHandler):
+
+    @require_admin
+    def get(self):
+        loader = TransactionLoader(use_dropbox=True)
+        start_of_day = datetime.fromordinal(date.today().toordinal())
+        start_of_week = start_of_day - timedelta(days=start_of_day.weekday())
+        start_of_last_week = start_of_week - timedelta(days=7)
+
+        last_week_data = []
+        last_week_expenses = 0
+        this_week_data = []
+        this_week_expenses = 0
+
+        # Start of week expenses are zero
+        last_week_data.append((0, 0))
+        this_week_data.append((0, 0))
+
+        # Now calculate weeks' expenses
+        for transaction in loader.transactions:
+            transaction_datetime = transaction.get_datetime()
+            if transaction_datetime >= start_of_last_week and transaction_datetime < start_of_week:
+                if transaction.counts_as_expense():
+                    last_week_data.append((transaction_datetime - start_of_last_week, last_week_expenses))
+                    last_week_expenses += transaction.get_net_delta()
+                    last_week_data.append((transaction_datetime - start_of_last_week, last_week_expenses))
+            elif transaction_datetime >= start_of_week:
+                if transaction.counts_as_expense():
+                    this_week_data.append((transaction_datetime - start_of_week, this_week_expenses))
+                    this_week_expenses += transaction.get_net_delta()
+                    this_week_data.append((transaction_datetime - start_of_week, this_week_expenses))
+
+        # Last week is over, and this week is up to now.
+        last_week_data.append((start_of_week - start_of_last_week, last_week_expenses))
+        this_week_data.append((datetime.now() - start_of_week, this_week_expenses))
+
+        data = [last_week_data, this_week_data]
+
+        self.render("thyme/weekly_comparison.html", {
+            "data": dumps(data)
+        })
 
 handlers = [
     (r'/thyme/test_endpoint/?', TestHandler),
+
+    (r'/thyme/weekly_comparison/?', ThymeWeeklyComparisonHandler),
 
     (r'/thyme/simple/?', ThymeSimpleViewHandler),
     (r'/thyme/errors/?', ThymeErrorsViewHandler),
