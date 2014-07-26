@@ -32,18 +32,19 @@ var LineChartByDate = {
       .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    var last_week_data = my_data[0];
-    var this_week_data = my_data[1];
+    var this_week_data = my_data[0];
+    var last_week_data = my_data[1];
+    var two_week_data = my_data[2];
+    var three_week_data = my_data[3];
 
-    last_week_data.forEach(function(d) {
-        d.date = d[0] / 60 / 60 / 24; //parseDate(d.date);
-        d.balance = +d[1];//+d.balance;
-    });
-    this_week_data.forEach(function(d) {
-        d.date = d[0] / 60 / 60 / 24; //parseDate(d.date);
-        d.balance = +d[1];//+d.balance;
-    });
-    var merged_data = last_week_data.concat(this_week_data);
+    var merged_data = [];
+    for (week_id in my_data) {
+        my_data[week_id].forEach(function(d) {
+            d.date = d[0] / 60 / 60 / 24; //parseDate(d.date);
+            d.balance = +d[1];//+d.balance;
+        });
+        merged_data = merged_data.concat(my_data[week_id]);
+    }
 
     x.domain(d3.extent(merged_data, function(d) { return d.date; }));
     y.domain(d3.extent(merged_data, function(d) { return d.balance; }));
@@ -61,19 +62,18 @@ var LineChartByDate = {
         .attr("y", 6)
         .attr("dy", ".71em")
         .style("text-anchor", "end")
-        .text("Balance ($)");
+        .text("Expenses ($)");
 
-    svg.append("path")
-        .datum(last_week_data)
-        .attr("class", "greenline")
-        .attr("d", line);
+    var colors = ["red", "orange", "gold", "green", "blue", "indigo"]
+    for (week_id in my_data) {
+        if (!(week_id in colors)) break;
 
-    svg.append("path")
-        .datum(this_week_data)
-        .attr("class", "line")
-        .attr("d", line);
-
-    console.log("Done");
+        svg.append("path")
+            .datum(my_data[week_id])
+            .attr("class", "line")
+            .style("stroke", colors[week_id])
+            .attr("d", line);
+    }
   }
 }
 

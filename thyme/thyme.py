@@ -341,41 +341,42 @@ class ThymeWeeklyComparisonHandler(BaseHandler):
     @require_admin
     def get(self):
         loader = TransactionLoader(use_dropbox=True)
+        now = datetime.now()
         start_of_day = datetime.fromordinal(date.today().toordinal())
-        start_of_week = start_of_day - timedelta(days=start_of_day.weekday())
-        start_of_last_week = start_of_week - timedelta(days=7)
 
-        last_week_data = []
-        last_week_expenses = 0
-        this_week_data = []
-        this_week_expenses = 0
+        interval = timedelta(days=7)
+        start_of_interval = start_of_day - timedelta(days=start_of_day.weekday())
 
-        # Start of week expenses are zero
-        last_week_data.append((0, 0))
-        this_week_data.append((0, 0))
+        end_of_interval = start_of_interval + interval
+        start_of_last_interval = start_of_interval - interval
 
-        # Now calculate weeks' expenses
+        interval_data = defaultdict(lambda: [(0,0)])
+        interval_expenses = defaultdict(lambda: 0)
+
+        # Now calculate intervals' expenses
         for transaction in loader.transactions:
             transaction_datetime = transaction.get_datetime()
-            if transaction_datetime >= start_of_last_week and transaction_datetime < start_of_week:
-                if transaction.counts_as_expense():
-                    last_week_data.append((transaction_datetime - start_of_last_week, last_week_expenses))
-                    last_week_expenses += transaction.get_net_delta()
-                    last_week_data.append((transaction_datetime - start_of_last_week, last_week_expenses))
-            elif transaction_datetime >= start_of_week:
-                if transaction.counts_as_expense():
-                    this_week_data.append((transaction_datetime - start_of_week, this_week_expenses))
-                    this_week_expenses += transaction.get_net_delta()
-                    this_week_data.append((transaction_datetime - start_of_week, this_week_expenses))
+            until_end_of_interval = end_of_interval - transaction_datetime
+            intervals_ago = int(until_end_of_interval.total_seconds() / interval.total_seconds())
 
-        # Last week is over, and this week is up to now.
-        last_week_data.append((start_of_week - start_of_last_week, last_week_expenses))
-        this_week_data.append((datetime.now() - start_of_week, this_week_expenses))
+            start_of_old_interval = start_of_interval - interval*intervals_ago
+            time_in_interval = transaction_datetime - start_of_old_interval
 
-        data = [last_week_data, this_week_data]
+            if transaction.counts_as_expense():
+                interval_data[intervals_ago].append((time_in_interval, interval_expenses[intervals_ago]))
+                interval_expenses[intervals_ago] += transaction.get_net_delta()
+                interval_data[intervals_ago].append((time_in_interval, interval_expenses[intervals_ago]))
 
+        # Previous intervals are over, and this interval is up to now.
+        for intervals_ago in interval_data:
+            if intervals_ago == 0:
+                interval_data[intervals_ago].append((now - start_of_interval, interval_expenses[intervals_ago]))
+            else:
+                interval_data[intervals_ago].append((interval, interval_expenses[intervals_ago]))
+
+        # TODO(Bieber): Don't go back in time forever
         self.render("thyme/weekly_comparison.html", {
-            "data": dumps(data)
+            "data": dumps(interval_data)
         })
 
 handlers = [
