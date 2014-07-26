@@ -36,7 +36,7 @@ def json_handler(obj):
     elif hasattr(obj, 'total_seconds'):
         return obj.total_seconds()
     else:
-        raise TypeError, 'Object of type %s with value of %s is not JSON serializable' % (type(obj), repr(obj))
+        raise TypeError('Object of type %s with value of %s is not JSON serializable' % (type(obj), repr(obj)))
 
 def dumps(obj):
     return json.dumps(obj, default=json_handler)
