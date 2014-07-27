@@ -10,10 +10,10 @@ from datetime import timedelta
 from auth.decorators import require_admin
 from common.common import BaseHandler
 from common.common import dumps
+from thyme.alerts import CustomAlerts
 from thyme.transactions import Transaction
 from thyme.transactions import TransactionLoader
 from thyme.transactions import TransactionAccumulator
-
 
 
 class ThymeSimpleViewHandler(BaseHandler):
@@ -66,6 +66,26 @@ class ThymeErrorsViewHandler(BaseHandler):
 
         self.writeln('</pre>')
 
+class ThymeAlertsViewHandler(BaseHandler):
+
+    @require_admin
+    def get(self):
+        loader = TransactionLoader(use_dropbox=True)
+        accumulator = TransactionAccumulator()
+
+        for transaction in loader.transactions:
+            accumulator.handle_transaction(transaction)
+
+        alert_suite = CustomAlerts(loader, accumulator)
+        alerts = alert_suite.check_for_alerts()
+
+        self.writeln('<pre>')
+        if alerts:
+            for alert in alerts:
+                self.writeln(alert)
+        else:
+            self.writeln("No alerts! Hurrah!")
+        self.writeln('</pre>')
 
 class ThymeUnhandledTransactionsViewHandler(BaseHandler):
 
@@ -379,6 +399,20 @@ class ThymeWeeklyComparisonHandler(BaseHandler):
             "data": dumps(interval_data)
         })
 
+class ThymeIndexViewHandler(BaseHandler):
+
+    @require_admin
+    def get(self):
+        self.writeln('<pre>')
+        for regex_str, handler in handlers:
+            if "." in regex_str:  # don't link to data
+                continue
+            url = regex_str.replace('?', '')
+            self.writeln('<a href="{}">{}</a>'.format(
+                url, url
+            ))
+        self.writeln('</pre>')
+
 handlers = [
     (r'/thyme/test_endpoint/?', TestHandler),
 
@@ -386,6 +420,7 @@ handlers = [
 
     (r'/thyme/simple/?', ThymeSimpleViewHandler),
     (r'/thyme/errors/?', ThymeErrorsViewHandler),
+    (r'/thyme/alerts/?', ThymeAlertsViewHandler),
     (r'/thyme/unhandled_transactions/?', ThymeUnhandledTransactionsViewHandler),
     (r'/thyme/balance_by_resource/?', ThymeBalanceByResourceViewHandler),
     (r'/thyme/line_chart/data\.csv', ThymeLineChartByDateDataHandler),
@@ -401,5 +436,5 @@ handlers = [
     (r'/thyme/by_day/data\.csv', ThymeByDayDataHandler),
     (r'/thyme/by_day/?', ThymeByDayHandler),
     (r'/thyme/log_view/?', ThymeLogViewHandler),
-    (r'/thyme/?', ThymeLogViewHandler),
+    (r'/thyme/?', ThymeIndexViewHandler),
 ]
