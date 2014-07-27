@@ -96,10 +96,15 @@ class ThymeUnhandledTransactionsViewHandler(BaseHandler):
 
         self.writeln('<pre>Unhandled Transactions')
 
+        no_unhandled_transactions = True
         for transaction in loader.transactions:
             accumulator.handle_transaction(transaction)
             if transaction.transaction_type == None:
+                no_unhandled_transactions = False
                 self.writeln(str(transaction))
+
+        if no_unhandled_transactions:
+            self.writeln('None')
 
         self.writeln('</pre>')
 

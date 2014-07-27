@@ -61,6 +61,10 @@ class Transaction(object):
     BALANCE_REPORT = "BALANCE REPORT"
     EXPENSE = "EXPENSE"
 
+    # TODO(Bieber): These should clearly be somehow distinct from the above
+    SUBWAY_SWIPE = "SUBWAY SWIPE"
+    LAUNDRY_CARD = "LAUNDRY CARD"
+
     def __init__(self,
                  transaction_type,
                  timestamp,
@@ -162,6 +166,11 @@ class Transaction(object):
             amount_str = tokens[2]
             amount = Transaction.amount_from_str(amount_str)
             _balances = [(resource, amount)]
+        elif Transaction.is_subway_swipe(tokens):
+            _type = Transaction.SUBWAY_SWIPE
+            # TODO(Bieber): Metrocard may be resource or may be time based
+        elif Transaction.is_laundry_card_swipe(tokens):
+            _type = Transaction.LAUNDRY_CARD
         elif Transaction.is_expense(tokens):
             _type = Transaction.EXPENSE
             resource = tokens[0]
@@ -211,6 +220,15 @@ class Transaction(object):
     @staticmethod
     def is_expense(tokens):
         return len(tokens) >= 2 and Transaction.is_amount(tokens[1])
+
+    @staticmethod
+    def is_subway_swipe(tokens):
+        # TODO(Bieber): Ephemeral resources. Metrocards aren't forever.
+        return tokens[0] == 'subway' and tokens[1] == 'swipe'
+
+    @staticmethod
+    def is_laundry_card_swipe(tokens):
+        return tokens[0] == 'laundry' and tokens[1] == 'card'
 
     @staticmethod
     def amount_from_str(s):
