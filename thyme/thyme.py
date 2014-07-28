@@ -464,7 +464,7 @@ class ThymeDerivativesViewHandler(BaseHandler):
             if transaction.counts_as_expense():
                 deltas.append((transaction_datetime, net_delta))
                 deltas.append((transaction_datetime + interval, -net_delta))
-        deltas = sorted(deltas, lambda d1, d2: int((d1[0] - d2[0]).total_seconds()))
+        deltas = sorted(deltas, key=lambda d1, d2: int((d1[0] - d2[0]).total_seconds()))
 
         data = []
         derivative = 0
