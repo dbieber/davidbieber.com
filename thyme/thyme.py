@@ -15,12 +15,38 @@ from thyme.transactions import Transaction
 from thyme.transactions import TransactionLoader
 from thyme.transactions import TransactionAccumulator
 
+OFFLINE = False
+
+class SimpleHandler(BaseHandler):
+
+    @require_admin
+    def get(self):
+
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
+        accumulator = TransactionAccumulator()
+
+        start_of_day = datetime.fromordinal(date.today().toordinal())
+        spent_today = 0
+        for transaction in loader.transactions:
+            accumulator.handle_transaction(transaction)
+            if transaction.get_datetime() >= start_of_day and transaction.counts_as_expense():
+                spent_today += transaction.get_net_delta()
+
+
+        self.render('thyme/dashboard.html', {
+            'arrangement': 'thyme/simple.jsx',
+            'data': {
+                'spent_today': spent_today,
+                'cash': accumulator.get_balance('cash') or 0,
+                'change': accumulator.get_balance('change') or 0,
+            }
+        })
 
 class ThymeSimpleViewHandler(BaseHandler):
 
     @require_admin
     def get(self):
-        loader = TransactionLoader(use_dropbox=True)
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
         accumulator = TransactionAccumulator()
 
         start_of_day = datetime.fromordinal(date.today().toordinal())
@@ -32,15 +58,15 @@ class ThymeSimpleViewHandler(BaseHandler):
 
         self.writeln('<pre>')
         self.writeln('${:3.2f} spent today. <br/>'.format(spent_today))
-        self.writeln('${:3.2f} in your pocket. <br/>'.format(accumulator.get_balance('cash')))
-        self.writeln('${:3.2f} on your desk. <br/>'.format(accumulator.get_balance('change')))
+        self.writeln('${:3.2f} in your pocket. <br/>'.format(accumulator.get_balance('cash') or 0))
+        self.writeln('${:3.2f} on your desk. <br/>'.format(accumulator.get_balance('change') or 0))
         self.writeln('</pre>')
 
 class ThymeErrorsViewHandler(BaseHandler):
 
     @require_admin
     def get(self):
-        loader = TransactionLoader(use_dropbox=True)
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
         accumulator = TransactionAccumulator()
 
         self.writeln('<pre>Errors')
@@ -70,7 +96,7 @@ class ThymeAlertsViewHandler(BaseHandler):
 
     @require_admin
     def get(self):
-        loader = TransactionLoader(use_dropbox=True)
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
         accumulator = TransactionAccumulator()
 
         for transaction in loader.transactions:
@@ -91,7 +117,7 @@ class ThymeUnhandledTransactionsViewHandler(BaseHandler):
 
     @require_admin
     def get(self):
-        loader = TransactionLoader(use_dropbox=True)
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
         accumulator = TransactionAccumulator()
 
         self.writeln('<pre>Unhandled Transactions')
@@ -113,7 +139,7 @@ class ThymeBalanceByResourceViewHandler(BaseHandler):
 
     @require_admin
     def get(self):
-        loader = TransactionLoader(use_dropbox=True)
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
         accumulator = TransactionAccumulator()
 
         for transaction in loader.transactions:
@@ -122,7 +148,8 @@ class ThymeBalanceByResourceViewHandler(BaseHandler):
         self.writeln('<pre>')
         for resource in accumulator.get_resources():
             amount = accumulator.get_balance(resource)
-            self.writeln('  ${:>10.2f} in {}.'.format(amount, resource))
+            if amount:
+                self.writeln('  ${:>10.2f} in {}.'.format(amount, resource))
         self.writeln('= ${:10.2f} total.'.format(accumulator.get_balance(), resource))
         self.writeln('</pre>')
 
@@ -131,7 +158,7 @@ class ThymeLogViewHandler(BaseHandler):
 
     @require_admin
     def get(self):
-        loader = TransactionLoader(use_dropbox=True)
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
         accumulator = TransactionAccumulator()
 
         threshold_datetime = datetime.now() - timedelta(days=999)
@@ -172,7 +199,7 @@ class ThymeByDayDataHandler(BaseHandler):
 
     @require_admin
     def get(self):
-        loader = TransactionLoader(use_dropbox=True)
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
         accumulator = TransactionAccumulator()
 
         data = defaultdict(lambda: 0)
@@ -205,7 +232,7 @@ class ThymeByResourceDataHandler(BaseHandler):
 
     @require_admin
     def get(self):
-        loader = TransactionLoader(use_dropbox=True)
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
         now = datetime.now()
 
         data = defaultdict(lambda: 0)
@@ -232,7 +259,7 @@ class ThymeByDayOfWeekDataHandler(BaseHandler):
 
     @require_admin
     def get(self):
-        loader = TransactionLoader(use_dropbox=True)
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
         now = datetime.now()
 
         data = defaultdict(lambda: 0)
@@ -262,7 +289,7 @@ class ThymeByTimeDataHandler(BaseHandler):
 
     @require_admin
     def get(self):
-        loader = TransactionLoader(use_dropbox=True)
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
         now = datetime.now()
 
         data = defaultdict(lambda: 0)
@@ -290,7 +317,7 @@ class ThymeLineChartByDateDataHandler(BaseHandler):
 
     @require_admin
     def get(self):
-        loader = TransactionLoader(use_dropbox=True)
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
         now = datetime.now()
 
         self.writeln('date,balance')
@@ -326,7 +353,7 @@ class ThymeExpensesLineChartByDateDataHandler(BaseHandler):
 
     @require_admin
     def get(self):
-        loader = TransactionLoader(use_dropbox=True)
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
         now = datetime.now()
 
         self.writeln('date,balance')
@@ -365,7 +392,7 @@ class ThymeWeeklyComparisonHandler(BaseHandler):
 
     @require_admin
     def get(self):
-        loader = TransactionLoader(use_dropbox=True)
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
         now = datetime.now()
         start_of_day = datetime.fromordinal(date.today().toordinal())
 
@@ -418,14 +445,61 @@ class ThymeIndexViewHandler(BaseHandler):
             ))
         self.writeln('</pre>')
 
+class ThymeDerivativesViewHandler(BaseHandler):
+
+    @require_admin
+    def get(self):
+        SECONDS_IN_A_DAY = 60 * 60 * 24
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
+        now = datetime.now()
+        interval = timedelta(days=14)  # derivative[m] = (value[m] - value[m - interval]) / interval
+        start_datetime = now - timedelta(days=60)
+
+        deltas = []
+        for transaction in loader.transactions:
+            # TODO(Bieber): Right now the data source is providing sorted transactions
+            # but we may need a stronger guarantee of chronological order
+            net_delta = transaction.get_net_delta()
+            transaction_datetime = transaction.get_datetime()
+            if transaction.counts_as_expense():
+                deltas.append((transaction_datetime, net_delta))
+                deltas.append((transaction_datetime + interval, -net_delta))
+        deltas = sorted(deltas, lambda d1, d2: int((d1[0] - d2[0]).total_seconds()))
+
+        data = []
+        derivative = 0
+        for delta_datetime, delta in deltas:
+            include_in_data = delta_datetime < now and delta_datetime >= start_datetime
+            if include_in_data:
+                data.append((delta_datetime - start_datetime, derivative))
+            if delta_datetime < now:
+                derivative += delta / (interval.total_seconds() / SECONDS_IN_A_DAY)
+            if include_in_data:
+                data.append((delta_datetime - start_datetime, derivative))
+        data.append((now - start_datetime, derivative))
+
+        self.render("thyme/weekly_comparison.html", {
+            "data": dumps([data])
+        })
+
+
+class ThymeRecentTransactionsViewHandler(BaseHandler):
+
+    @require_admin
+    def get(self):
+        # TODO(Bieber): Implement ThymeRecentTransactionsViewHandler
+        self.writeln("Not implemented yet")
+
 handlers = [
     (r'/thyme/test_endpoint/?', TestHandler),
 
     (r'/thyme/weekly_comparison/?', ThymeWeeklyComparisonHandler),
 
+    (r'/thyme/simple2/?', SimpleHandler),
     (r'/thyme/simple/?', ThymeSimpleViewHandler),
     (r'/thyme/errors/?', ThymeErrorsViewHandler),
     (r'/thyme/alerts/?', ThymeAlertsViewHandler),
+    (r'/thyme/derivatives/?', ThymeDerivativesViewHandler),
     (r'/thyme/unhandled_transactions/?', ThymeUnhandledTransactionsViewHandler),
     (r'/thyme/balance_by_resource/?', ThymeBalanceByResourceViewHandler),
     (r'/thyme/line_chart/data\.csv', ThymeLineChartByDateDataHandler),

@@ -10,10 +10,14 @@ cookie_secret = '<cookie_secret>'
 # Google OAuth2 (localhost)
 google_oauth_key = '<google_oauth_key>'
 google_oauth_secret = '<google_oauth_secret>'
+SITE_URL = '<SITE_URL>'
+debug = True
 
 # Google OAuth2 (davidbieber.com)
 # google_oauth_key = '<google_oauth_key>'
 # google_oauth_secret = '<google_oauth_secret>'
+# SITE_URL = '<SITE_URL>'
+# debug = False
 
 # Jinja2 Templates
 templates_path = '<templates_path>'

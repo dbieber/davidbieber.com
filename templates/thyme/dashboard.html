@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Custom Dashboard</title>
+    <script type="text/javascript" src="/static/third_party/underscore-1.5.2.js"></script>
+    <script type="text/javascript" src="/static/third_party/d3.v3.min.js"></script>
+    <script type="text/javascript" src="/static/third_party/JSXTransformer-0.8.0.js"></script>
+    <script type="text/javascript" src="/static/third_party/react.min-0.8.0.js"></script>
+    <script type="text/javascript" src="/static/third_party/numeral.min-1.5.3.js"></script>
+    <script type="text/jsx" src="/static/react_d3.jsx"></script>
+    <link rel="stylesheet" type="text/css" href="/static/linechart.css"></style>
+    <script type="text/javascript">
+      var data = {{ data }};
+    </script>
+    <script type="text/jsx" src="/static/{{ arrangement }}"></script>
+  </head>
+  <body>
+    <div id="main"></div>
+  </body>
+</html>
