@@ -64,9 +64,16 @@ var LineChartByDate = {
         .style("text-anchor", "end")
         .text("Expenses ($)");
 
-    var colors = ["red", "orange", "gold", "green", "blue", "indigo"]
+    // var colors = ["#4682B4", "#609CCE", "#79B5E7", "#93CFFF", "#ACE8FF", "#C5FFFF", "#DFFFFF", "#F9FFFF"];
+    var colors = ["red", "orange", "gold", "green", "blue", "indigo"];
+    var week_ids = [];
     for (week_id in my_data) {
-        if (!(week_id in colors)) break;
+        week_ids.push(week_id);
+    }
+    for (var i = 0; i < week_ids.length; i++) {
+        var week_id = week_ids[week_ids.length - i - 1];
+        console.log(week_id);
+        if (!(week_id in colors)) continue;
 
         svg.append("path")
             .datum(my_data[week_id])

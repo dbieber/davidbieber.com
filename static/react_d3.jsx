@@ -1,7 +1,6 @@
 /** @jsx React.DOM */
 
 // React D3 Components
-
 var Chart = React.createClass({
   propTypes: {
     width: React.PropTypes.number.isRequired,
@@ -30,7 +29,7 @@ var Bar = React.createClass({
       height: 0,
       x: 0,
       y: 0
-    }
+    };
   },
 
   render: function() {
@@ -48,7 +47,7 @@ var Line = React.createClass({
     return {
       color: 'blue',
       width: 2
-    }
+    };
   },
 
   render: function() {
@@ -73,7 +72,7 @@ var BarChart = React.createClass({
   getDefaultProps: function() {
     return {
       color: 'blue'
-    }
+    };
   },
 
   render: function() {
@@ -117,10 +116,16 @@ var LineChart = React.createClass({
 });
 
 var CategoryBarChart = React.createClass({
+  render: function() {
+    return this.transferPropsTo(<BarChart></BarChart>);
+  }
+});
+
+var BarChart = React.createClass({
   getDefaultProps: function() {
     return {
       color: 'blue'
-    }
+    };
   },
 
   render: function() {

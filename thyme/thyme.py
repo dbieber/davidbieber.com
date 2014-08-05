@@ -420,10 +420,9 @@ class ThymeWeeklyComparisonHandler(BaseHandler):
                 interval_data[intervals_ago].append((time_in_interval, interval_expenses[intervals_ago]))
 
         # Previous intervals are over, and this interval is up to now.
+        interval_data[0].append((now - start_of_interval, interval_expenses[0]))
         for intervals_ago in interval_data:
-            if intervals_ago == 0:
-                interval_data[intervals_ago].append((now - start_of_interval, interval_expenses[intervals_ago]))
-            else:
+            if intervals_ago != 0:
                 interval_data[intervals_ago].append((interval, interval_expenses[intervals_ago]))
 
         # TODO(Bieber): Don't go back in time forever
@@ -452,6 +451,7 @@ class ThymeDerivativesViewHandler(BaseHandler):
         SECONDS_IN_A_DAY = 60 * 60 * 24
         loader = TransactionLoader(use_dropbox=not OFFLINE)
         now = datetime.now()
+        # TODO(Bieber): Use linear kernal
         interval = timedelta(days=14)  # derivative[m] = (value[m] - value[m - interval]) / interval
         start_datetime = now - timedelta(days=60)
 

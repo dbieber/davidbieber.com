@@ -24,3 +24,11 @@ body {
   stroke: green;
   stroke-width: 1.5px;
 }
+
+.NumberTextDisplay {
+  font-size: 20px;
+}
+
+.NumberTextDisplay .number {
+  font-color: green;
+}

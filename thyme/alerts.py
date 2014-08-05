@@ -54,6 +54,9 @@ class CustomAlerts(AlertSuite):
         if self.get_balance('change') > 5:
             self.alert('You have more than $5.00 in change.')
 
+        if self.get_balance('credit') < 5000:
+            self.alert('You have less than $5000.00 in credit.')
+
     def no_recent_balance_report_alerts(self):
         # Balance report alert: If you haven't entered your balance for a resource
         # recently, this alert is triggered.
@@ -79,3 +82,9 @@ class CustomAlerts(AlertSuite):
             self.alert("You haven't entered a {} balance report in over {} days".format(
                 resource.upper(), reports_needed[resource].days
             ))
+
+    def no_activity_alerts(self):
+        # TODO(Bieber): Create alert for if no transactions have been posted in X days
+        # TODO(Bieber): Create alert for if the alerts page hasn't been viewed in X days
+        # TODO(Bieber): Create alert for if a TODO has sat unchanged for X days
+        pass
