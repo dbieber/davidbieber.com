@@ -21,3 +21,8 @@ debug = True
 
 # Jinja2 Templates
 templates_path = '<templates_path>'
+
+# Alerts
+ALERTS_RECIPIENT = '<ALERTS_RECIPIENT>'
+GMAIL_USER = '<GMAIL_USER>'
+GMAIL_PASSWD = '<GMAIL_PASSWD>'
