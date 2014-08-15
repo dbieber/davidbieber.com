@@ -21,12 +21,13 @@ def main():
     alert_suite = CustomAlerts(loader, accumulator)
     alerts = alert_suite.check_for_alerts()
 
-    message = '  '.join(alert[0] for alert in alerts)
-    mailer.mail(
-        to=settings.secure.ALERTS_RECIPIENT,
-        subject='Thyme Alerts',
-        text=message,
-    )
+    if alerts:
+        message = '  '.join(alert[0] for alert in alerts)
+        mailer.mail(
+            to=settings.secure.ALERTS_RECIPIENT,
+            subject='Thyme Alerts',
+            text=message,
+        )
 
 if __name__ == '__main__':
     main()
