@@ -85,7 +85,6 @@ class Message(object):
                 message = str(part.get_payload())
                 message = message.replace('=C2=A0', ' ')  # non-breaking space
                 message = message.replace('=E2=80=99', "'")  # Apostrophe
-                print 'plain: """{}"""'.format(message)
 
             elif content_type == 'text/html':
                 body = BeautifulSoup.BeautifulSoup(part.get_payload())
@@ -95,7 +94,6 @@ class Message(object):
                 synth_msg = textwrap.wrap(synthesize_elements(p, font, div))
                 message = h.unescape(' '.join(synth_msg))
                 message = message.replace('=  ', ' ')  # non-breaking space
-                print 'html: """{}"""'.format(message)
 
         # TODO(Bieber): Shorten URLs to just domain name
         return message
