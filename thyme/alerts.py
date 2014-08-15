@@ -38,7 +38,7 @@ class CustomAlerts(AlertSuite):
         # Challah Alert: If you haven't purchased challah for Friday night,
         # this alert is triggered
         today = date.today()
-        if today.weekday() in [4, 5]:  # Friday or Saturday:
+        if today.weekday() in [3, 4]:  # Thursday or Friday:
             purchased_challah = False
             for transaction in self.get_recent_trasactions(timedelta(days=3)):
                 if 'challah' in transaction.description.lower():
