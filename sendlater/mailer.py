@@ -25,6 +25,14 @@ class Mailer(object):
         self.gmail_user = user
         self.gmail_passwd = passwd or getpass.getpass('Password for %s: ' % self.gmail_user)
 
+    def unix_mail(self, user, to, subject, text):
+        with open('tmp-mail', 'w') as tmp:
+            tmp.write(text)
+
+        cmd = 'sudo su -- {} -c "cat tmp-mail | mail -s \\"{}\\" {}"'.format(user, subject, to)
+        print cmd
+        os.system(cmd)
+
     def mail(self, to, subject, text, attach=None):
         msg = MIMEMultipart()
         msg['From'] = self.gmail_user
