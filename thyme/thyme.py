@@ -191,6 +191,7 @@ class ThymeByDayHandler(BaseHandler):
     @require_admin
     def get(self):
         self.render('thyme/barchart.html', {
+            'height': 15 * (datetime.now() - datetime(2014, 6, 14)).days,
             'data_source': '/thyme/by_day/data.csv'
         })
 

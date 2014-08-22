@@ -1,10 +1,11 @@
 var _data_source = data_source;
+var _height = height || 430;
 
 var BarChart = {
   main: function() {
     var m = [30, 30, 10, 100];
     var w = 960 - m[1] - m[3];
-    var h = 430 - m[0] - m[2];
+    var h = _height - m[0] - m[2];
 
     var format = d3.format(",.2f");
 
