@@ -29,7 +29,7 @@ class Mailer(object):
         with open('tmp-mail', 'w') as tmp:
             tmp.write(text)
 
-        cmd = 'sudo su -- {} -c "cat tmp-mail | mail -s \\"{}\\" {}"'.format(user, subject, to)
+        cmd = 'su -- {} -c "cat tmp-mail | mail -s \\"{}\\" {}"'.format(user, subject, to)
         print cmd
         os.system(cmd)
 
