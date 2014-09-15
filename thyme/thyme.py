@@ -154,6 +154,44 @@ class ThymeBalanceByResourceViewHandler(BaseHandler):
         self.writeln('</pre>')
 
 
+class ThymeBalanceReportsViewHandler(BaseHandler):
+
+    @require_admin
+    def get(self):
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
+        accumulator = TransactionAccumulator()
+
+        self.writeln('<pre>Balance Reports')
+
+        for transaction in loader.transactions:
+            if transaction.transaction_type == Transaction.BALANCE_REPORT:
+                for resource, balance in transaction.get_balances():
+                    previous_balance = accumulator.get_balance(resource)
+                    if previous_balance is None:
+                        continue
+
+                    previous_balance = round(previous_balance, 4)
+                    balance = round(balance, 4)
+                    if previous_balance != balance:
+                        self.writeln("{:18s}: {} BALANCE {} (previously {}; difference is {:+.2f})".format(
+                            transaction.timestamp,
+                            resource,
+                            balance,
+                            previous_balance,
+                            round(balance - previous_balance, 4)
+                        ))
+                    else:
+                        self.writeln("{:18s}: {} BALANCE {}".format(
+                            transaction.timestamp,
+                            resource,
+                            balance,
+                        ))
+
+            accumulator.handle_transaction(transaction)
+
+        self.writeln('</pre>')
+
+
 class ThymeLogViewHandler(BaseHandler):
 
     @require_admin
@@ -252,7 +290,7 @@ class ThymeByDayOfWeekHandler(BaseHandler):
     @require_admin
     def get(self):
         self.render('thyme/barchart.html', {
-            'data_source': '/thyme/by_day_of_week/data.csv'
+            'data_source': '/thyme/by_day_of_week/data.csv',
         })
 
 
@@ -502,6 +540,7 @@ handlers = [
     (r'/thyme/alerts/?', ThymeAlertsViewHandler),
     (r'/thyme/derivatives/?', ThymeDerivativesViewHandler),
     (r'/thyme/unhandled_transactions/?', ThymeUnhandledTransactionsViewHandler),
+    (r'/thyme/balance_reports/?', ThymeBalanceReportsViewHandler),
     (r'/thyme/balance_by_resource/?', ThymeBalanceByResourceViewHandler),
     (r'/thyme/line_chart/data\.csv', ThymeLineChartByDateDataHandler),
     (r'/thyme/line_chart/?', ThymeLineChartByDateHandler),

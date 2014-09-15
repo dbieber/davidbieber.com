@@ -135,7 +135,9 @@ class Transaction(object):
 
         tokens = transaction_str.lower().strip().split(' ')
 
+        # TODO(Bieber): Replace with alerts-style pattern matcher
         if Transaction.is_withdrawal(tokens):
+            # withdraw {amount}
             _type = Transaction.WITHDRAWAL
             amount_str = tokens[1]
             resource_from = tokens[3]
@@ -171,7 +173,7 @@ class Transaction(object):
             # TODO(Bieber): Metrocard may be resource or may be time based
         elif Transaction.is_laundry_card_swipe(tokens):
             _type = Transaction.LAUNDRY_CARD
-        elif Transaction.is_expense(tokens):
+        elif Transaction.is_basic_expense(tokens):
             _type = Transaction.EXPENSE
             resource = tokens[0]
             amount_str = tokens[1]
@@ -192,6 +194,12 @@ class Transaction(object):
                     ('change', +change),
                 ])
                 _description = "{} (and ({}) in change)".format(_description, change)
+        elif Transaction.is_mixed_expense(tokens):
+            _type = Transaction.EXPENSE
+
+            token_idx = 0
+            while Transaction.is_amount(tokens[token_idx + 1]):
+                token_idx += 2
 
         return Transaction(
             transaction_type=_type,
@@ -218,8 +226,20 @@ class Transaction(object):
         return tokens[1] == 'balance'
 
     @staticmethod
-    def is_expense(tokens):
+    def is_basic_expense(tokens):
         return len(tokens) >= 2 and Transaction.is_amount(tokens[1])
+
+    @staticmethod
+    def is_mixed_expense(tokens):
+        return (len(tokens) >= 4 and
+                Transaction.is_classical_resource(tokens[0]) and
+                Transaction.is_amount(tokens[1]) and
+                Transaction.is_classical_resource(tokens[2]) and
+                Transaction.is_amount(tokens[3]))
+
+    @staticmethod
+    def is_classical_resource(resource):
+        return resource.lower() in ['cash', 'change', 'credit']
 
     @staticmethod
     def is_subway_swipe(tokens):
