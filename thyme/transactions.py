@@ -11,25 +11,36 @@ from thyme.utils import timestamp_as_datetime
 
 class TransactionLoader(object):
 
-    def __init__(self, use_dropbox=True):
-
-        if use_dropbox:
-            self.dropbox_client = dropbox.client.DropboxClient(settings.secure.access_token)
-
-            # TODO(Bieber): Cache the file
-            transactions_file, metadata = self.dropbox_client.get_file_and_metadata('/Transactions.csv')
-        else:
-            transactions_file = open('Transactions.csv' ,'r')
+    def __init__(self, use_dropbox=True, filenames=None):
 
         self.transactions = []
-        for row in transactions_file:
-            # TODO(Bieber): This is really unpythonic
-            row = row.decode('utf-8')
-            reader = csv.reader([row], delimiter=',', quotechar='"')
-            row = next(reader)
-            if row and len(row) > 1:
-                transaction = Transaction.create_from_row(row)
-                self.transactions.append(transaction)
+
+        possible_filenames = filenames or [
+            '/Transactions 2014.csv',
+            '/Transactions 2015.csv',
+            '/Transactions.csv',
+        ]
+
+        for filename in possible_filenames:
+            try:
+                if use_dropbox:
+                    self.dropbox_client = dropbox.client.DropboxClient(settings.secure.access_token)
+
+                    # TODO(Bieber): Cache the file
+                    transactions_file, metadata = self.dropbox_client.get_file_and_metadata(filename)
+                else:
+                    transactions_file = open(filename ,'r')
+
+                for row in transactions_file:
+                    # TODO(Bieber): This is really unpythonic
+                    row = row.decode('utf-8')
+                    reader = csv.reader([row], delimiter=',', quotechar='"')
+                    row = next(reader)
+                    if row and len(row) > 1:
+                        transaction = Transaction.create_from_row(row)
+                        self.transactions.append(transaction)
+            except:
+                pass
 
     @staticmethod
     def get_dropbox_access_token():
@@ -195,6 +206,8 @@ class Transaction(object):
                 ])
                 _description = "{} (and ({}) in change)".format(_description, change)
         elif Transaction.is_mixed_expense(tokens):
+            # TODO(Bieber): Check for mixed expense before basic expense
+            # TODO(Bieber): handle mixed expense
             _type = Transaction.EXPENSE
 
             token_idx = 0
