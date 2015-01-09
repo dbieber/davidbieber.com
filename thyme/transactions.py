@@ -146,7 +146,7 @@ class Transaction(object):
 
         tokens = transaction_str.lower().strip().split(' ')
 
-        # TODO(Bieber): Replace with alerts-style pattern matcher
+        # TODO(Bieber): Replace with commands-style pattern matcher
         if Transaction.is_withdrawal(tokens):
             # withdraw {amount}
             _type = Transaction.WITHDRAWAL
