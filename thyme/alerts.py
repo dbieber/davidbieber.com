@@ -1,5 +1,6 @@
 from __future__ import absolute_import
 
+from collections import defaultdict
 from datetime import date
 from datetime import datetime
 from datetime import timedelta
@@ -69,18 +70,22 @@ class CustomAlerts(AlertSuite):
             'change': timedelta(days=14),
         }
 
+
         now = datetime.now()
         largest_delta = max(reports_needed[resource] for resource in reports_needed)
+        last_report_timedeltas = defaultdict(lambda: largest_delta)
         for transaction in self.get_recent_trasactions(largest_delta):
             if transaction.transaction_type == Transaction.BALANCE_REPORT:
                 resource = transaction.get_resource()
                 transaction_datetime = transaction.get_datetime()
-                if resource in reports_needed and now - transaction_datetime < reports_needed[resource]:
+                report_timedelta = now - transaction_datetime
+                last_report_timedeltas[resource] = min(last_report_timedeltas[resource], report_timedelta)
+                if resource in reports_needed and report_timedelta < reports_needed[resource]:
                     del reports_needed[resource]
 
         for resource in reports_needed:
             self.alert("You haven't entered a {} balance report in over {} days".format(
-                resource.upper(), reports_needed[resource].days
+                resource.upper(), last_report_timedeltas[resource].days
             ))
 
     def no_activity_alerts(self):
