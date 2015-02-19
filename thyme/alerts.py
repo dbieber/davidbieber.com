@@ -4,6 +4,7 @@ from collections import defaultdict
 from datetime import date
 from datetime import datetime
 from datetime import timedelta
+from math import ceil
 
 from thyme.transactions import Transaction
 
@@ -58,6 +59,9 @@ class CustomAlerts(AlertSuite):
         if self.get_balance('credit') < 5000:
             self.alert('You have less than $5000.00 in credit.')
 
+        if self.get_balance('credit') < 1000:
+            self.alert('You have less than $1000.00 in credit (${}).'.format(self.get_balance('credit')))
+
     def no_recent_balance_report_alerts(self):
         # Balance report alert: If you haven't entered your balance for a resource
         # recently, this alert is triggered.
@@ -67,9 +71,11 @@ class CustomAlerts(AlertSuite):
             'savings': timedelta(days=14),
             'venmo': timedelta(days=7),
             'paypal': timedelta(days=30),
-            'change': timedelta(days=14),
+            'change': timedelta(days=30),
+            'discovercd-729': timedelta(days=90),
+            'accounta': timedelta(days=90),
+            'accountb': timedelta(days=90),
         }
-
 
         now = datetime.now()
         largest_delta = max(reports_needed[resource] for resource in reports_needed)
@@ -84,7 +90,7 @@ class CustomAlerts(AlertSuite):
                     del reports_needed[resource]
 
         for resource in reports_needed:
-            self.alert("You haven't entered a {} balance report in over {} days".format(
+            self.alert("You haven't entered a {} balance report in over {} days.".format(
                 resource.upper(), last_report_timedeltas[resource].days
             ))
 
@@ -93,3 +99,28 @@ class CustomAlerts(AlertSuite):
         # TODO(Bieber): Create alert for if the alerts page hasn't been viewed in X days
         # TODO(Bieber): Create alert for if a TODO has sat unchanged for X days
         pass
+
+class BookAlerts(AlertSuite):
+
+    def insufficient_reading_alerts(self):
+        today = date.today()
+        start_of_year = date(today.year, 1, 1)
+        time_passed = today - start_of_year
+        days_passed = time_passed.days + 1  # include today
+        dates_read = filter(lambda d: d >= start_of_year, self.accumulator.dates_read)
+        ratio_read = float(len(dates_read)) / days_passed
+        desired_ratio = 200.0 / 365
+        if ratio_read * 365 < 200:
+            self.alert("At this rate you'll read only {} days this year.".format(ratio_read * 365))
+
+        consecutive_days_to_read = ceil((200.0/365 * days_passed - len(dates_read)) / (1 - desired_ratio))
+        if consecutive_days_to_read > 0:
+            self.alert("Try to read {} consecutive days to get up to speed.".format(consecutive_days_to_read))
+        else:
+            pass
+            # self.alert("You could forget to read {} consecutive days and be O.K.".format(-consecutive_days_to_read))
+
+        seven_days_ago = today - timedelta(days=7)
+        dates_read = filter(lambda d: d > seven_days_ago, self.accumulator.dates_read)
+        ratio_read = float(len(dates_read)) / 7.0
+        self.alert("You read {} days in the last week.".format(len(dates_read)))
