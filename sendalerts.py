@@ -23,8 +23,6 @@ def main():
     alert_suite = CustomAlerts(loader, accumulator)
     alerts = alert_suite.check_for_alerts()
 
-    print alerts
-
     if alerts:
         message = '  '.join(alert[0] for alert in alerts)
         mailer.unix_mail(
@@ -41,8 +39,6 @@ def main():
         accumulator.handle_log(log)
     alert_suite = BookAlerts(loader, accumulator)
     alerts = alert_suite.check_for_alerts()
-
-    print alerts
 
     if alerts:
         message = '  '.join(alert[0] for alert in alerts)
