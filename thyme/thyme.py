@@ -77,7 +77,7 @@ class ThymeStatsViewHandler(BaseHandler):
         loader = TransactionLoader(use_dropbox=not OFFLINE)
 
         nums = [1, 2, 5, 10, 25, 50, 100, 200, 400, 800, 1600, 3200, 6400]
-        accumulators = map(lambda n: get_accum(loader.transactions, n), nums)
+        accumulators = [get_accum(loader.transactions, n) for n in nums]
 
         self.writeln('<pre>')
         for i, n in enumerate(nums):
