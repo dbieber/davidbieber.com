@@ -62,6 +62,32 @@ class ThymeSimpleViewHandler(BaseHandler):
         self.writeln('${:3.2f} on your desk. <br/>'.format(accumulator.get_balance('change') or 0))
         self.writeln('</pre>')
 
+def get_accum(ts, n):
+    accumulator = TransactionAccumulator()
+    for t in ts:
+        d = t.get_net_delta()
+        if abs(d) <= n and d < 0:
+            accumulator.handle_transaction(t)
+    return accumulator
+
+class ThymeStatsViewHandler(BaseHandler):
+
+    @require_admin
+    def get(self):
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
+
+        nums = [1, 2, 5, 10, 25, 50, 100, 200, 400, 800, 1600, 3200, 6400]
+        accumulators = map(lambda n: get_accum(loader.transactions, n), nums)
+
+        self.writeln('<pre>')
+        for i, n in enumerate(nums):
+            accumulator = accumulators[i]
+            non_major_per_day = -accumulator.get_delta() / (datetime.now() - accumulator.first_datetime).days
+            non_major_per_day_count = float(accumulator.count) / (datetime.now() - accumulator.first_datetime).days
+            self.write(' {:3.2f} non-major {} non-recurring expenses per day. <br/>'.format(non_major_per_day_count, n))
+            self.write('${:3.2f} non-major {} non-recurring expenses per day. <br/>'.format(non_major_per_day, n))
+        self.writeln('</pre>')
+
 class ThymeErrorsViewHandler(BaseHandler):
 
     @require_admin
@@ -535,6 +561,7 @@ handlers = [
     (r'/thyme/weekly_comparison/?', ThymeWeeklyComparisonHandler),
 
     (r'/thyme/simple2/?', SimpleHandler),
+    (r'/thyme/stats/?', ThymeStatsViewHandler),
     (r'/thyme/simple/?', ThymeSimpleViewHandler),
     (r'/thyme/errors/?', ThymeErrorsViewHandler),
     (r'/thyme/alerts/?', ThymeAlertsViewHandler),

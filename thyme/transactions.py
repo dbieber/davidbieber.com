@@ -295,8 +295,10 @@ class TransactionAccumulator(object):
 
         self.first_datetime = None
         self.last_datetime = None
+        self.count = 0
 
     def handle_transaction(self, transaction):
+        self.count += 1
         transaction_datetime = transaction.get_datetime()
         if self.first_datetime is None or transaction_datetime < self.first_datetime:
             self.first_datetime = transaction_datetime
