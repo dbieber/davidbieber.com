@@ -123,4 +123,13 @@ class BookAlerts(AlertSuite):
         seven_days_ago = today - timedelta(days=7)
         dates_read = filter(lambda d: d > seven_days_ago, self.accumulator.dates_read)
         ratio_read = float(len(dates_read)) / 7.0
-        self.alert("You read {} days in the last week.".format(len(dates_read)))
+        # self.alert("You read {} days in the last week.".format(len(dates_read)))
+
+        days_not_read = 0
+        date_not_read = today
+        while date_not_read not in self.accumulator.dates_read:
+            days_not_read += 1
+            date_not_read -= timedelta(days=1)
+
+        if days_not_read > 0:
+            self.alert("You haven't read in {} days.".format(days_not_read))
