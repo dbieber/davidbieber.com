@@ -140,6 +140,10 @@ class ThymeAlertsViewHandler(BaseHandler):
         else:
             self.writeln("No Thyme alerts! Hurrah!")
 
+
+        accumulator = BookLogAccumulator()
+        for log in loader.logs:
+            accumulator.handle_log(log)
         alert_suite = BookAlerts(loader, accumulator)
         alerts = alert_suite.check_for_alerts()
 
