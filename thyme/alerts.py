@@ -29,7 +29,7 @@ class AlertSuite():
     def get_recent_trasactions(self, delta):
         # TODO(Bieber): This could be more efficient
         threhold_datetime = datetime.now() - delta
-        return filter(lambda t: t.get_datetime() >= threhold_datetime, self.loader.transactions)
+        return list(filter(lambda t: t.get_datetime() >= threhold_datetime, self.loader.transactions))
 
     def get_balance(self, resource):
         return self.accumulator.get_balance(resource)
@@ -107,7 +107,7 @@ class BookAlerts(AlertSuite):
         start_of_year = date(today.year, 1, 1)
         time_passed = today - start_of_year
         days_passed = time_passed.days + 1  # include today
-        dates_read = filter(lambda d: d >= start_of_year, self.accumulator.dates_read)
+        dates_read = list(filter(lambda d: d >= start_of_year, self.accumulator.dates_read))
         ratio_read = float(len(dates_read)) / days_passed
         desired_ratio = 200.0 / 365
         if ratio_read * 365 < 200:
@@ -121,7 +121,7 @@ class BookAlerts(AlertSuite):
             # self.alert("You could forget to read {} consecutive days and be O.K.".format(-consecutive_days_to_read))
 
         seven_days_ago = today - timedelta(days=7)
-        dates_read = filter(lambda d: d > seven_days_ago, self.accumulator.dates_read)
+        dates_read = list(filter(lambda d: d > seven_days_ago, self.accumulator.dates_read))
         ratio_read = float(len(dates_read)) / 7.0
         # self.alert("You read {} days in the last week.".format(len(dates_read)))
 
@@ -135,5 +135,5 @@ class BookAlerts(AlertSuite):
             self.alert("You haven't read today.".format(days_not_read))
         elif days_not_read == 2:
             self.alert("You haven't read in over a day.".format(days_not_read))
-        else:
+        elif days_not_read > 2:
             self.alert("You haven't read in over {} days.".format(days_not_read - 1))
