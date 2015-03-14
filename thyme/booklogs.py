@@ -40,7 +40,7 @@ class BookLogLoader(object):
                         log = BookLog.create_from_row(row)
                         self.logs.append(log)
             except e:
-                print e
+                print(e)
 
     @staticmethod
     def get_dropbox_access_token():
