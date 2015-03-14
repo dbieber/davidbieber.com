@@ -11,6 +11,7 @@ from auth.decorators import require_admin
 from common.common import BaseHandler
 from common.common import dumps
 from thyme.alerts import CustomAlerts
+from thyme.alerts import BookAlerts
 from thyme.transactions import Transaction
 from thyme.transactions import TransactionLoader
 from thyme.transactions import TransactionAccumulator
@@ -128,15 +129,26 @@ class ThymeAlertsViewHandler(BaseHandler):
         for transaction in loader.transactions:
             accumulator.handle_transaction(transaction)
 
+        self.writeln('<pre>')
+
         alert_suite = CustomAlerts(loader, accumulator)
         alerts = alert_suite.check_for_alerts()
 
-        self.writeln('<pre>')
         if alerts:
             for alert in alerts:
                 self.writeln(alert)
         else:
-            self.writeln("No alerts! Hurrah!")
+            self.writeln("No Thyme alerts! Hurrah!")
+
+        alert_suite = BookAlerts(loader, accumulator)
+        alerts = alert_suite.check_for_alerts()
+
+        if alerts:
+            for alert in alerts:
+                self.writeln(alert)
+        else:
+            self.writeln("No Bach alerts! Hurrah!")
+
         self.writeln('</pre>')
 
 class ThymeUnhandledTransactionsViewHandler(BaseHandler):
