@@ -12,9 +12,11 @@ from common.common import BaseHandler
 from common.common import dumps
 from thyme.alerts import CustomAlerts
 from thyme.alerts import BookAlerts
+from thyme.booklogs import BookLogAccumulator
+from thyme.booklogs import BookLogLoader
 from thyme.transactions import Transaction
-from thyme.transactions import TransactionLoader
 from thyme.transactions import TransactionAccumulator
+from thyme.transactions import TransactionLoader
 
 OFFLINE = False
 
@@ -140,7 +142,7 @@ class ThymeAlertsViewHandler(BaseHandler):
         else:
             self.writeln("No Thyme alerts! Hurrah!")
 
-
+        loader = BookLogLoader(use_dropbox=True)
         accumulator = BookLogAccumulator()
         for log in loader.logs:
             accumulator.handle_log(log)
