@@ -131,5 +131,9 @@ class BookAlerts(AlertSuite):
             days_not_read += 1
             date_not_read -= timedelta(days=1)
 
-        if days_not_read > 0:
-            self.alert("You haven't read in {} days.".format(days_not_read))
+        if days_not_read == 1:
+            self.alert("You haven't read today.".format(days_not_read))
+        elif days_not_read == 2:
+            self.alert("You haven't read in over a day.".format(days_not_read))
+        else:
+            self.alert("You haven't read in over {} days.".format(days_not_read - 1))
