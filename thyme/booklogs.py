@@ -39,8 +39,8 @@ class BookLogLoader(object):
                     if row and len(row) > 1:
                         log = BookLog.create_from_row(row)
                         self.logs.append(log)
-            except e:
-                print(e)
+            except:
+                pass
 
     @staticmethod
     def get_dropbox_access_token():
