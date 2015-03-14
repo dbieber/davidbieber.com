@@ -39,7 +39,7 @@ class BookLogLoader(object):
                     if row and len(row) > 1:
                         log = BookLog.create_from_row(row)
                         self.logs.append(log)
-            except Exception, e:
+            except e:
                 print e
 
     @staticmethod
@@ -104,7 +104,7 @@ class BookLog(object):
 
     @staticmethod
     def as_page_range(s):
-        patterns = ['{} - {}', '{}']
+        patterns = ['{} - {}', '{}', 'ch{}']
         for pattern in patterns:
             regex_str = pattern.replace('{}', '(\d+)')
             regex_str = regex_str.replace(' ', '\s*')
