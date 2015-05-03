@@ -113,6 +113,12 @@ class BookAlerts(AlertSuite):
         if ratio_read * 365 < 200:
             self.alert("At this rate you'll read only {} days this year.".format(ratio_read * 365))
 
+        if today.day == 4:  # the fourth of every month
+            self.alert("You've read {} days so far out of {} total days this year.".format(
+                len(dates_read),
+                days_passed,
+            ))
+
         consecutive_days_to_read = ceil((200.0/365 * days_passed - len(dates_read)) / (1 - desired_ratio))
         if consecutive_days_to_read > 0:
             self.alert("Try to read {} consecutive days to get up to speed.".format(consecutive_days_to_read))
