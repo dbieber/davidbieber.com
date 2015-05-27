@@ -202,9 +202,15 @@ class BookProgressViewHandler(BaseHandler):
                 rows.append(row)
             return '\n'.join(rows)
 
+        def timestamp(record):
+            return datetime.strptime(record.last_updated, '%m/%d/%y, %I:%M %p')
+
+        def by_date(a, b):
+            return int(1000*(timestamp(b[1]) - timestamp(a[1])).total_seconds())
+
         items = [['', 'ID', 'title', 'author', 'progress', 'notes']]
         widths = [17, 30, 30, 30, 30, 70]
-        for book_id, book_record in accumulator.book_records.items():
+        for book_id, book_record in sorted(accumulator.book_records.items(), by_date):
             item = [
                 book_record.last_updated or '',
                 book_id,
