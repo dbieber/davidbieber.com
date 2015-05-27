@@ -147,9 +147,21 @@ class BookLog(object):
 
         # Temporary code until pattern matching engine is in place:
         page_range_index = None
+        page_range_end_index = None
         for i, token in enumerate(tokens):
+            if token[0] == '(':
+                for j, end_token in enumerate(tokens[i:]):
+                    if end_token[-1] == ')':
+                        break
+                page_range_index = i
+                page_range_end_index = i + j
+                _progress = ' '.join(tokens[i:i+j+1])
+                break
+
             if BookLog.is_page_range(token):
                 page_range_index = i
+                page_range_end_index = i
+                _progress = token
                 break
 
         if 'by' in tokens:
@@ -159,8 +171,8 @@ class BookLog(object):
         elif page_range_index:
             _title = ' '.join(tokens[:page_range_index])
 
-        if page_range_index:
-            possible_note = ' '.join(tokens[page_range_index+1:])
+        if page_range_end_index is not None:
+            possible_note = ' '.join(tokens[page_range_end_index+1:])
             if len(possible_note):
                 _note = possible_note
 
@@ -179,27 +191,27 @@ class BookRecord(object):
         self.author = None
         self.title = None
         self.progress = []  # sorted list of page ranges read
-        self.notes = []  # list of strings
+        self.notes = []  # list of (timestamp, string) tuples
+        self.last_updated = None
 
     @staticmethod
     def create_from_log(log):
         record = BookRecord()
-        record.author = log.author
-        record.title = log.title
-        record.progress = []
-        record.notes = []
+        record.process_log(log)
         return record
 
     def process_log(self, log):
         self.author = self.author or log.author
         self.title = self.title or log.title
+        self.last_updated = log.timestamp
         self.add_progress(log.progress)
         if log.note:
-            self.notes.append(log.note)
+            self.notes.append((log.timestamp, log.note))
 
     def add_progress(self, progress):
         # TODO(Bieber): Add interesting intersection and binary search logic.
-        self.progress.append(progress)
+        if progress is not None:
+            self.progress.append(progress)
 
 class BookLogAccumulator(object):
     def __init__(self):

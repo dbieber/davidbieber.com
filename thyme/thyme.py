@@ -1,11 +1,14 @@
 from __future__ import absolute_import
 
+import locale
 import tornado.web
 
 from collections import defaultdict
 from datetime import date
 from datetime import datetime
 from datetime import timedelta
+from terminaltables import AsciiTable
+from textwrap import wrap
 
 from auth.decorators import require_admin
 from common.common import BaseHandler
@@ -65,11 +68,26 @@ class ThymeSimpleViewHandler(BaseHandler):
         self.writeln('${:3.2f} on your desk. <br/>'.format(accumulator.get_balance('change') or 0))
         self.writeln('</pre>')
 
-def get_accum(ts, n):
+def get_fn_accum(ts, fn):
+    accumulator = TransactionAccumulator()
+    for t in ts:
+        if fn(t):
+            accumulator.handle_transaction(t)
+    return accumulator
+
+def get_expense_accum(ts, n):
     accumulator = TransactionAccumulator()
     for t in ts:
         d = t.get_net_delta()
         if abs(d) <= n and d < 0:
+            accumulator.handle_transaction(t)
+    return accumulator
+
+def get_income_accum(ts, n):
+    accumulator = TransactionAccumulator()
+    for t in ts:
+        d = t.get_net_delta()
+        if abs(d) <= n and d > 0:
             accumulator.handle_transaction(t)
     return accumulator
 
@@ -79,17 +97,55 @@ class ThymeStatsViewHandler(BaseHandler):
     def get(self):
         loader = TransactionLoader(use_dropbox=not OFFLINE)
 
-        nums = [1, 2, 5, 10, 25, 50, 100, 200, 400, 800, 1600, 3200, 6400]
-        accumulators = [get_accum(loader.transactions, n) for n in nums]
+        expense_accumulator = get_expense_accum(loader.transactions, 9999999)
+        income_accumulator = get_income_accum(loader.transactions, 9999999)
 
-        self.writeln('<pre>')
-        for i, n in enumerate(nums):
-            accumulator = accumulators[i]
-            non_major_per_day = -accumulator.get_delta() / (datetime.now() - accumulator.first_datetime).days
-            non_major_per_day_count = float(accumulator.count) / (datetime.now() - accumulator.first_datetime).days
-            self.write(' {:3.2f} non-major {} non-recurring expenses per day. <br/>'.format(non_major_per_day_count, n))
-            self.write('${:3.2f} non-major {} non-recurring expenses per day. <br/>'.format(non_major_per_day, n))
-        self.writeln('</pre>')
+        for threshold in [10, 100, 1000]:
+
+            minor_expense_accumulator = get_fn_accum(
+                loader.transactions,
+                lambda t: -t.get_net_delta() < threshold and t.get_net_delta() < 0,
+            )
+            major_expense_accumulator = get_fn_accum(
+                loader.transactions,
+                lambda t: -t.get_net_delta() >= threshold and t.get_net_delta() < 0,
+            )
+
+            minor_income_accumulator = get_fn_accum(
+                loader.transactions,
+                lambda t: t.get_net_delta() < threshold and t.get_net_delta() > 0,
+            )
+            major_income_accumulator = get_fn_accum(
+                loader.transactions,
+                lambda t: t.get_net_delta() >= threshold and t.get_net_delta() > 0,
+            )
+
+            self.writeln('''<pre>
+                # expenses: {num_expenses:5d} (${total_cost:8.2f})
+                #  incomes: {num_incomes:5d} (${total_income:8.2f})
+
+          # minor expenses: {num_minor_expenses:5d} (${total_minor_expenses:8.2f})
+          # major expenses: {num_major_expenses:5d} (${total_major_expenses:8.2f})
+
+           # minor incomes: {num_minor_incomes:5d} (${total_minor_incomes:8.2f})
+           # major incomes: {num_major_incomes:5d} (${total_major_incomes:8.2f})
+
+                 Threshold: {threshold:5d}
+            </pre>'''.format(
+                num_expenses=expense_accumulator.count,
+                total_cost=-expense_accumulator.get_delta(),
+                num_incomes=income_accumulator.count,
+                total_income=income_accumulator.get_delta(),
+                num_minor_expenses=minor_expense_accumulator.count,
+                total_minor_expenses=minor_expense_accumulator.get_delta(),
+                num_major_expenses=major_expense_accumulator.count,
+                total_major_expenses=major_expense_accumulator.get_delta(),
+                num_minor_incomes=minor_income_accumulator.count,
+                total_minor_incomes=minor_income_accumulator.get_delta(),
+                num_major_incomes=major_income_accumulator.count,
+                total_major_incomes=major_income_accumulator.get_delta(),
+                threshold=threshold,
+            ))
 
 class ThymeErrorsViewHandler(BaseHandler):
 
@@ -97,6 +153,9 @@ class ThymeErrorsViewHandler(BaseHandler):
     def get(self):
         loader = TransactionLoader(use_dropbox=not OFFLINE)
         accumulator = TransactionAccumulator()
+
+        total_error = 0
+        total_diff = 0
 
         self.writeln('<pre>Errors')
 
@@ -115,11 +174,56 @@ class ThymeErrorsViewHandler(BaseHandler):
                             resource,
                             balance,
                             previous_balance,
-                            round(balance - previous_balance, 4)
+                            round(balance - previous_balance, 4),
                         ))
+
+                        total_error += abs(round(balance - previous_balance, 4))
+                        total_diff += round(balance - previous_balance, 4)
             accumulator.handle_transaction(transaction)
 
+        self.writeln('Total error: {}'.format(total_error))
+        self.writeln(' Total diff: {}'.format(total_diff))
+
         self.writeln('</pre>')
+
+class BookProgressViewHandler(BaseHandler):
+
+    @require_admin
+    def get(self):
+        loader = BookLogLoader(use_dropbox=True)
+        accumulator = BookLogAccumulator()
+        for log in loader.logs:
+            accumulator.handle_log(log)
+
+        def sanitize(value, width):
+            rows = []
+            for row in value.split('\n'):
+                row = '\n'.join(wrap(row, width))
+                rows.append(row)
+            return '\n'.join(rows)
+
+        items = [['', 'ID', 'title', 'author', 'progress', 'notes']]
+        widths = [17, 30, 30, 30, 30, 70]
+        for book_id, book_record in accumulator.book_records.iteritems():
+            item = [
+                book_record.last_updated or '',
+                book_id,
+                book_record.title or '',
+                book_record.author or '',
+                str(book_record.progress),
+                '\n'.join("{:>17s}: {}".format(note[0], note[1]) for note in book_record.notes),
+            ]
+            item = [sanitize(value, width) for value, width in zip(item, widths)]
+            items.append(item)
+        table = AsciiTable(items)
+        table.inner_row_border = True
+
+        self.writeln('<pre>')
+        self.writeln(
+            table.table
+        )
+        self.writeln('</pre>')
+
 
 class ThymeAlertsViewHandler(BaseHandler):
 
@@ -265,6 +369,50 @@ class ThymeLogViewHandler(BaseHandler):
         self.write('NetRate: %.2f per day<br/>' % (accumulator.get_delta() / elapsed_days))
         self.write('OutRate: %.2f per day<br/>' % (total_expenses / elapsed_days))
         self.write('In pocket: %.2f<br/>' % accumulator.get_balance('cash'))
+        self.write('</pre>')
+
+
+
+class ThymeLogViewHandlerByAmount(BaseHandler):
+
+    @require_admin
+    def get(self):
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
+        accumulator = TransactionAccumulator()
+
+        threshold_datetime = datetime.now() - timedelta(days=999)
+
+        self.write('<pre>')
+        total_expenses = 0.0
+        for transaction in sorted(loader.transactions, lambda s, t: 1 if t.get_net_delta() < s.get_net_delta() else -1):
+            if transaction.get_datetime() >= threshold_datetime:
+                if transaction.counts_as_expense():
+                    total_expenses += -transaction.get_net_delta()
+                accumulator.handle_transaction(transaction)
+                delta = transaction.get_net_delta()
+                balance = accumulator.get_delta()
+                self.write('%-40s %.2f (%.2f) <br/>' % (transaction, balance, delta))
+        self.write('</pre>')
+
+class ThymeLogViewHandlerByDesc(BaseHandler):
+
+    @require_admin
+    def get(self):
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
+        accumulator = TransactionAccumulator()
+
+        threshold_datetime = datetime.now() - timedelta(days=999)
+
+        self.write('<pre>')
+        total_expenses = 0.0
+        for transaction in sorted(loader.transactions, lambda s, t: 1 if t.description < s.description else -1):
+            if transaction.get_datetime() >= threshold_datetime:
+                if transaction.counts_as_expense():
+                    total_expenses += -transaction.get_net_delta()
+                accumulator.handle_transaction(transaction)
+                delta = transaction.get_net_delta()
+                balance = accumulator.get_delta()
+                self.write('%-40s %.2f (%.2f) <br/>' % (transaction, balance, delta))
         self.write('</pre>')
 
 
@@ -583,6 +731,7 @@ handlers = [
     (r'/thyme/simple/?', ThymeSimpleViewHandler),
     (r'/thyme/errors/?', ThymeErrorsViewHandler),
     (r'/thyme/alerts/?', ThymeAlertsViewHandler),
+    (r'/thyme/book_progress/?', BookProgressViewHandler),
     (r'/thyme/derivatives/?', ThymeDerivativesViewHandler),
     (r'/thyme/unhandled_transactions/?', ThymeUnhandledTransactionsViewHandler),
     (r'/thyme/balance_reports/?', ThymeBalanceReportsViewHandler),
@@ -600,5 +749,7 @@ handlers = [
     (r'/thyme/by_day/data\.csv', ThymeByDayDataHandler),
     (r'/thyme/by_day/?', ThymeByDayHandler),
     (r'/thyme/log_view/?', ThymeLogViewHandler),
+    (r'/thyme/log_view_amount/?', ThymeLogViewHandlerByAmount),
+    (r'/thyme/log_view_description/?', ThymeLogViewHandlerByDesc),
     (r'/thyme/?', ThymeIndexViewHandler),
 ]
