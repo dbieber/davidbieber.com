@@ -210,7 +210,7 @@ class BookProgressViewHandler(BaseHandler):
 
         items = [['', 'ID', 'title', 'author', 'progress', 'notes']]
         widths = [17, 30, 30, 30, 30, 70]
-        for book_id, book_record in sorted(accumulator.book_records.items(), by_date):
+        for book_id, book_record in sorted(accumulator.book_records.items(), key=by_date):
             item = [
                 book_record.last_updated or '',
                 book_id,
