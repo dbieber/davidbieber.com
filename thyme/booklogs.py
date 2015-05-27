@@ -32,13 +32,16 @@ class BookLogLoader(object):
                     logs_file = open(filename ,'r')
 
                 for row in logs_file:
-                    # TODO(Bieber): This is really unpythonic
-                    row = row.decode('utf-8')
-                    reader = csv.reader([row], delimiter=',', quotechar='"')
-                    row = next(reader)
-                    if row and len(row) > 1:
-                        log = BookLog.create_from_row(row)
-                        self.logs.append(log)
+                    try:
+                        # TODO(Bieber): This is really unpythonic
+                        row = row.decode('utf-8')
+                        reader = csv.reader([row], delimiter=',', quotechar='"')
+                        row = next(reader)
+                        if row and len(row) > 1:
+                            log = BookLog.create_from_row(row)
+                            self.logs.append(log)
+                    except:
+                        continue
             except:
                 pass
 
