@@ -461,10 +461,10 @@ def main():
 
     for description, expected_categories in descriptions:
         my_categories = get_categories(description)
-        print "    ('{description}', [{categories}]),".format(
+        print("    ('{description}', [{categories}]),".format(
             description=description,
             categories=', '.join(category.upper() for category in my_categories),
-        )
+        ))
 
         if expected_categories is not None:
             assert set(expected_categories) == set(my_categories), '{} != {}'.format(expected_categories, my_categories)
