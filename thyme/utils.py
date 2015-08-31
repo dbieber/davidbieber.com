@@ -11,3 +11,9 @@ def timestamp_as_datetime(timestamp):
     elif "AM" in timestamp and dt.hour == 12:
         dt -= timedelta(hours=12)
     return dt
+
+def category_as_link(category):
+    return '<a href="/thyme/expenses_by_category/{category_lower}">{category}</a>'.format(
+        category_lower=category.lower().strip(),
+        category=category,
+    )

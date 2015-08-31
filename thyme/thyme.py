@@ -13,13 +13,16 @@ from textwrap import wrap
 from auth.decorators import require_admin
 from common.common import BaseHandler
 from common.common import dumps
-from thyme.alerts import CustomAlerts
 from thyme.alerts import BookAlerts
+from thyme.alerts import CustomAlerts
 from thyme.booklogs import BookLogAccumulator
 from thyme.booklogs import BookLogLoader
+from thyme.categorizer import get_categories
+from thyme.categorizer import subcategories
 from thyme.transactions import Transaction
 from thyme.transactions import TransactionAccumulator
 from thyme.transactions import TransactionLoader
+from thyme.utils import category_as_link
 
 OFFLINE = False
 
@@ -214,7 +217,7 @@ class BookProgressViewHandler(BaseHandler):
                 book_id,
                 book_record.title or '',
                 book_record.author or '',
-                str(book_record.progress),
+                ', '.join(book_record.progress),
                 '\n'.join("{:>17s}: {}".format(note[0], note[1]) for note in book_record.notes),
             ]
             item = [sanitize(value, width) for value, width in zip(item, widths)]
@@ -375,6 +378,181 @@ class ThymeLogViewHandler(BaseHandler):
         self.write('In pocket: %.2f<br/>' % accumulator.get_balance('cash'))
         self.write('</pre>')
 
+class ThymeLogCategoryViewHandler(BaseHandler):
+
+    @require_admin
+    def get(self):
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
+        accumulator = TransactionAccumulator()
+
+        threshold_datetime = datetime.now() - timedelta(days=999)
+
+        self.write('<pre>')
+        for transaction in loader.transactions:
+            if transaction.get_datetime() >= threshold_datetime:
+                accumulator.handle_transaction(transaction)
+                delta = transaction.get_net_delta()
+                categories = get_categories(transaction.description)
+                self.write('%-100s (%10.2f)   %s<br/>' % (transaction, delta, ' '.join(cat.upper() for cat in categories)))
+
+        self.write('</pre>')
+
+class ThymeCategoryViewHandler(BaseHandler):
+
+    @require_admin
+    def get(self):
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
+        accumulator = TransactionAccumulator()
+
+        threshold_datetime = datetime.now() - timedelta(days=999)
+
+        category_totals = defaultdict(lambda: 0)
+
+        all_subcategories = set()
+        for supercategory, subcategory_list in subcategories.iteritems():
+            all_subcategories.update(subcategory_list)
+
+        for transaction in loader.transactions:
+            if transaction.get_datetime() >= threshold_datetime:
+                accumulator.handle_transaction(transaction)
+                delta = transaction.get_net_delta()
+                categories = get_categories(transaction.description)
+
+                if not categories:
+                    categories = ['uncategorized']
+
+                primary_categories = set(categories) - all_subcategories
+                for category in categories:
+                    category_totals[category] += delta / len(primary_categories)
+
+
+        total_categorized_expenses = sum(
+            category_totals[c]
+            for c in category_totals
+            if category_totals[c] < 0 and c not in all_subcategories
+        )
+
+        total_income = category_totals['income']
+
+        self.write('<pre>')
+        for category in sorted(set(category_totals.keys()) - all_subcategories, key=lambda c: category_totals[c]):
+            self.writeln('{category_link} {amount:-15.2f}   {percent:7.2f}   {percent2:7.2f}'.format(
+                category_link=category_as_link('{category:15s}'.format(category=category.upper())),
+                amount=category_totals[category],
+                percent=100 * category_totals[category] / total_categorized_expenses,
+                percent2=abs(100 * category_totals[category] / total_income),
+            ))
+        self.writeln()
+
+        for category in sorted(all_subcategories, key=lambda c: category_totals[c]):
+            self.writeln('{category_link} {amount:-15.2f}   {percent:7.2f}   {percent2:7.2f}'.format(
+                category_link=category_as_link('{category:15s}'.format(category=category.upper())),
+                amount=category_totals[category],
+                percent=100 * category_totals[category] / total_categorized_expenses,
+                percent2=abs(100 * category_totals[category] / total_income),
+            ))
+
+        self.write('</pre>')
+
+class ThymeWeekCategoryViewHandler(BaseHandler):
+
+    @require_admin
+    def get(self, week):
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
+        accumulator = TransactionAccumulator()
+
+        week = int(week)
+
+        threshold_datetime = datetime.now() - timedelta(days=week)
+
+        category_totals = defaultdict(lambda: 0)
+
+        all_subcategories = set()
+        for supercategory, subcategory_list in subcategories.iteritems():
+            all_subcategories.update(subcategory_list)
+
+        for transaction in loader.transactions:
+            if transaction.get_datetime() >= threshold_datetime:
+                accumulator.handle_transaction(transaction)
+                delta = transaction.get_net_delta()
+                categories = get_categories(transaction.description)
+
+                if not categories:
+                    categories = ['uncategorized']
+
+                primary_categories = set(categories) - all_subcategories
+                for category in categories:
+                    category_totals[category] += delta / len(primary_categories)
+
+
+        total_categorized_expenses = sum(
+            category_totals[c]
+            for c in category_totals
+            if category_totals[c] < 0 and c not in all_subcategories
+        )
+
+        total_income = category_totals['income'] or 99999999
+
+        self.write('<pre>')
+        for category in sorted(set(category_totals.keys()) - all_subcategories, key=lambda c: category_totals[c]):
+            self.writeln('{category:15s} {amount:-15.2f}   {percent:7.2f}   {percent2:7.2f}'.format(
+                category=category.upper(),
+                amount=category_totals[category],
+                percent=100 * category_totals[category] / total_categorized_expenses,
+                percent2=abs(100 * category_totals[category] / total_income),
+            ))
+        self.writeln()
+
+        for category in sorted(all_subcategories, key=lambda c: category_totals[c]):
+            self.writeln('{category:15s} {amount:-15.2f}   {percent:7.2f}   {percent2:7.2f}'.format(
+                category=category.upper(),
+                amount=category_totals[category],
+                percent=100 * category_totals[category] / total_categorized_expenses,
+                percent2=abs(100 * category_totals[category] / total_income),
+            ))
+
+        self.write('</pre>')
+
+class ThymeExpensesByCategoryViewHandler(BaseHandler):
+
+    @require_admin
+    def get(self, category):
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
+        accumulator = TransactionAccumulator()
+
+        self.write('<pre>')
+
+        for transaction in loader.transactions:
+            accumulator.handle_transaction(transaction)
+
+            categories = get_categories(transaction.description)
+            if category in categories or (category == 'uncategorized' and not categories):
+                self.writeln(transaction)
+
+        self.write('</pre>')
+
+class ThymeUncategorizedViewHandler(BaseHandler):
+
+    @require_admin
+    def get(self):
+        loader = TransactionLoader(use_dropbox=not OFFLINE)
+        accumulator = TransactionAccumulator()
+
+        threshold_datetime = datetime.now() - timedelta(days=999)
+
+        self.write('<pre>')
+        for transaction in loader.transactions:
+            if transaction.get_datetime() >= threshold_datetime:
+                accumulator.handle_transaction(transaction)
+                delta = transaction.get_net_delta()
+                categories = get_categories(transaction.description)
+
+                if transaction.transaction_type in [Transaction.BALANCE_REPORT, Transaction.WITHDRAWAL, Transaction.TRANSFER]:
+                    continue
+
+                if not categories:
+                    self.write('%-100s (%10.2f)<br/>' % (transaction, delta))
+        self.write('</pre>')
 
 
 class ThymeLogViewHandlerByAmount(BaseHandler):
@@ -418,7 +596,6 @@ class ThymeLogViewHandlerByDesc(BaseHandler):
                 balance = accumulator.get_delta()
                 self.write('%-40s %.2f (%.2f) <br/>' % (transaction, balance, delta))
         self.write('</pre>')
-
 
 class ThymeByDayHandler(BaseHandler):
 
@@ -753,6 +930,11 @@ handlers = [
     (r'/thyme/by_day/data\.csv', ThymeByDayDataHandler),
     (r'/thyme/by_day/?', ThymeByDayHandler),
     (r'/thyme/log_view/?', ThymeLogViewHandler),
+    (r'/thyme/log_categories/?', ThymeLogCategoryViewHandler),
+    (r'/thyme/categories/?', ThymeCategoryViewHandler),
+    (r'/thyme/categories/(.*)?', ThymeWeekCategoryViewHandler),
+    (r'/thyme/expenses_by_category/(.*)?', ThymeExpensesByCategoryViewHandler),
+    (r'/thyme/uncategorized/?', ThymeUncategorizedViewHandler),
     (r'/thyme/log_view_amount/?', ThymeLogViewHandlerByAmount),
     (r'/thyme/log_view_description/?', ThymeLogViewHandlerByDesc),
     (r'/thyme/?', ThymeIndexViewHandler),
