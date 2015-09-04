@@ -402,7 +402,7 @@ def get_categories(description):
     description = description.lower()
     my_categories = set()
     not_my_categories = set()
-    for category, words_list in indicator_words.iteritems():
+    for category, words_list in indicator_words.items():
         if '(not {})'.format(category) in description:
             not_my_categories.add(category)
         if '({})'.format(category) in description:
@@ -415,7 +415,7 @@ def get_categories(description):
             if all(matches(word, description) for word in words):
                 my_categories.add(category)
 
-    for category, words_list in exclusion_words.iteritems():
+    for category, words_list in exclusion_words.items():
         for words in words_list:
             if type(words) is str:
                 words = [words]
@@ -423,7 +423,7 @@ def get_categories(description):
             if all(matches(word, description) for word in words):
                 not_my_categories.add(category)
 
-    for category, subcategories_list in subcategories.iteritems():
+    for category, subcategories_list in subcategories.items():
         for subcategory in subcategories_list:
             if subcategory in my_categories:
                 my_categories.add(category)

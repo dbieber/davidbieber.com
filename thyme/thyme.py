@@ -409,7 +409,7 @@ class ThymeCategoryViewHandler(BaseHandler):
         category_totals = defaultdict(lambda: 0)
 
         all_subcategories = set()
-        for supercategory, subcategory_list in subcategories.iteritems():
+        for supercategory, subcategory_list in subcategories.items():
             all_subcategories.update(subcategory_list)
 
         for transaction in loader.transactions:
@@ -468,7 +468,7 @@ class ThymeWeekCategoryViewHandler(BaseHandler):
         category_totals = defaultdict(lambda: 0)
 
         all_subcategories = set()
-        for supercategory, subcategory_list in subcategories.iteritems():
+        for supercategory, subcategory_list in subcategories.items():
             all_subcategories.update(subcategory_list)
 
         for transaction in loader.transactions:
