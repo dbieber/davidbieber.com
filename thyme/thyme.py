@@ -907,8 +907,30 @@ class ThymeRecentTransactionsViewHandler(BaseHandler):
 class ThymePaypalWebhook(BaseHandler):
 
     def post(self):
+
         body = self.request.body
         filename = 'paypal-webhook-{}.post'.format(
+            str(datetime.now()).replace(' ', '-').replace(':', '-').replace('.', '-')
+        )
+        with open(filename, 'w') as f:
+            f.write(str(body))
+
+    def check_xsrf_cookie(self):
+        return True
+
+class ThymePaypalWebhookSandbox(BaseHandler):
+
+    @staticmethod
+    def _get_expected_sig(transmission_id, timestamp, webhook_id, event_body):
+        """Get the input string to generate the HMAC signature"""
+        import binascii
+        expected_sig = transmission_id + "|" + timestamp + "|" + webhook_id + "|" + str(binascii.crc32(event_body.encode('utf-8')) & 0xffffffff)
+        return expected_sig
+
+    def post(self):
+
+        body = self.request.body
+        filename = 'paypal-webhook-sandbox-{}.post'.format(
             str(datetime.now()).replace(' ', '-').replace(':', '-').replace('.', '-')
         )
         with open(filename, 'w') as f:
@@ -955,4 +977,5 @@ handlers = [
     (r'/thyme/?', ThymeIndexViewHandler),
 
     (r'/thyme/paypal-webhook/?', ThymePaypalWebhook),
+    (r'/thyme/paypal-webhook-sandbox/?', ThymePaypalWebhookSandbox),
 ]
