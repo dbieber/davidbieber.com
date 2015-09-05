@@ -12,6 +12,7 @@ from settings import settings
 from auth.handlers import handlers as auth_handlers
 from sendlater.sendlater import handlers as sendlater_handlers
 from thyme.thyme import handlers as thyme_handlers
+from thyme.redirection import redirection_application
 
 
 def main():
@@ -20,6 +21,8 @@ def main():
                         help='Require ssl')
     parser.add_argument('--no-ssl', dest='ssl', action='store_false',
                         help='Do not require ssl')
+    parser.add_argument('--redirect', default=False, action='store_true',
+                        help='Redirect http to https')
     parser.add_argument('--certfile', type=str, default=settings.secure.certfile,
                         help='Path to SSL certfile')
     parser.add_argument('--keyfile', type=str, default=settings.secure.keyfile,
@@ -31,6 +34,7 @@ def main():
     certfile = args.certfile
     keyfile = args.keyfile
     port = args.port
+    redirect = args.redirect
 
     handlers = (
         auth_handlers +
@@ -67,6 +71,8 @@ def main():
         })
         assert port == 443
         server.listen(port)
+        if redirect:
+            redirection_application.listen(80)
     else:
         application.listen(port)
 
