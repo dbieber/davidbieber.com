@@ -7,6 +7,10 @@ access_token = '<access_token>'
 # Authentication
 cookie_secret = '<cookie_secret>'
 
+# SSL
+certfile = '<certfile>'
+keyfile = '<keyfile>'
+
 # Google OAuth2 (localhost)
 google_oauth_key = '<google_oauth_key>'
 google_oauth_secret = '<google_oauth_secret>'

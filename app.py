@@ -20,8 +20,10 @@ def main():
                         help='Require ssl')
     parser.add_argument('--no-ssl', dest='ssl', action='store_false',
                         help='Do not require ssl')
-    parser.add_argument('--certfile', type=str, default=None, help='Path to SSL certfile')
-    parser.add_argument('--keyfile', type=str, default=None, help='Path to SSL keyfile')
+    parser.add_argument('--certfile', type=str, default=settings.secure.certfile,
+                        help='Path to SSL certfile')
+    parser.add_argument('--keyfile', type=str, default=settings.secure.keyfile,
+                        help='Path to SSL keyfile')
     parser.add_argument('--port', type=int, default=8000, help='Port for davidbieber.com')
 
     args = parser.parse_args()
