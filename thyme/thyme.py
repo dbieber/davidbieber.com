@@ -914,6 +914,9 @@ class ThymePaypalWebhook(BaseHandler):
         with open(filename, 'w') as f:
             f.write(body)
 
+    def check_xsrf_cookie(self):
+        return True
+
 handlers = [
     (r'/thyme/test_endpoint/?', TestHandler),
 
