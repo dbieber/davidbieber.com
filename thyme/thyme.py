@@ -906,7 +906,6 @@ class ThymeRecentTransactionsViewHandler(BaseHandler):
 
 class ThymePaypalWebhook(BaseHandler):
 
-    @require_admin
     def post(self):
         body = self.request.body
         filename = 'paypal-webhook-{}.post'.format(
