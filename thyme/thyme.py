@@ -912,7 +912,7 @@ class ThymePaypalWebhook(BaseHandler):
             str(datetime.now()).replace(' ', '-').replace(':', '-').replace('.', '-')
         )
         with open(filename, 'w') as f:
-            f.write(body)
+            f.write(str(body))
 
     def check_xsrf_cookie(self):
         return True
