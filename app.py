@@ -62,8 +62,8 @@ def main():
         assert certfile is not None
         assert keyfile is not None
         server = tornado.httpserver.HTTPServer(application, ssl_options={
-            "certfile": certfile,
-            "keyfile": keyfile,
+            'certfile': certfile,
+            'keyfile': keyfile,
         })
         assert port == 443
         server.listen(port)
