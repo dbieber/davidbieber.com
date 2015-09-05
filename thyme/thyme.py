@@ -848,7 +848,9 @@ class ThymeIndexViewHandler(BaseHandler):
     def get(self):
         self.writeln('<pre>')
         for regex_str, handler in handlers:
-            if "." in regex_str:  # don't link to data
+            if '.' in regex_str:  # don't link to data
+                continue
+            if 'webhook' in regex_str:  # don't link to webhooks
                 continue
             url = regex_str.replace('?', '')
             self.writeln('<a href="{}">{}</a>'.format(
@@ -902,6 +904,17 @@ class ThymeRecentTransactionsViewHandler(BaseHandler):
         # TODO(Bieber): Implement ThymeRecentTransactionsViewHandler
         self.writeln("Not implemented yet")
 
+class ThymePaypalWebhook(BaseHandler):
+
+    @require_admin
+    def post(self):
+        body = self.request.body
+        filename = 'paypal-webhook-{}.post'.format(
+            str(datetime.now()).replace(' ', '-').replace(':', '-').replace('.', '-')
+        )
+        with open(filename, 'w') as f:
+            f.write(body)
+
 handlers = [
     (r'/thyme/test_endpoint/?', TestHandler),
 
@@ -938,4 +951,6 @@ handlers = [
     (r'/thyme/log_view_amount/?', ThymeLogViewHandlerByAmount),
     (r'/thyme/log_view_description/?', ThymeLogViewHandlerByDesc),
     (r'/thyme/?', ThymeIndexViewHandler),
+
+    (r'/thyme/paypal-webhook/?', ThymePaypalWebhook),
 ]
