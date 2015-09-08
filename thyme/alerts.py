@@ -90,9 +90,12 @@ class CustomAlerts(AlertSuite):
                     del reports_needed[resource]
 
         for resource in reports_needed:
-            self.alert("You haven't entered a {} balance report in over {} days.".format(
-                resource.upper(), last_report_timedeltas[resource].days
-            ))
+            self.alert(
+                "You haven't entered a {resource} balance report in over {days} days.".format(
+                    resource=resource.upper(),
+                    days=last_report_timedeltas[resource].days,
+                )
+            )
 
     def no_activity_alerts(self):
         # TODO(Bieber): Create alert for if no transactions have been posted in X days
