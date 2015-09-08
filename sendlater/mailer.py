@@ -30,7 +30,7 @@ class Mailer(object):
             tmp.write(text)
 
         cmd = 'su -- {} -c "cat tmp-mail | mail -s \\"{}\\" {}"'.format(user, subject, to)
-        print cmd
+        print(cmd)
         os.system(cmd)
 
     def mail(self, to, subject, text, attach=None):
