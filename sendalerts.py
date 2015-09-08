@@ -26,7 +26,7 @@ def main():
     if alerts:
         message = '  '.join(alert[0] for alert in alerts)
         mailer.unix_mail(
-            user='alerts',
+            user='ec2-user',
             to=settings.secure.ALERTS_RECIPIENT,
             subject='Thyme',
             text=message,
@@ -43,7 +43,7 @@ def main():
     if alerts:
         message = '  '.join(alert[0] for alert in alerts)
         mailer.unix_mail(
-            user='alerts',
+            user='ec2-user',
             to=settings.secure.ALERTS_RECIPIENT,
             subject='Bach',
             text=message,
