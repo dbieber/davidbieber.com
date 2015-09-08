@@ -2,7 +2,10 @@ import getpass
 import imaplib
 import smtplib
 
-from email import Encoders
+try:
+    from email import Encoders
+except:
+    from email import encoders as Encoders
 from email import message_from_string
 from email.MIMEBase import MIMEBase
 from email.MIMEMultipart import MIMEMultipart
@@ -17,7 +20,7 @@ import os
 
 class Mailer(object):
 
-    def __init__(self, user="you@should.login", passwd="wrong password"):
+    def __init__(self, user='you@should.login', passwd='wrong password'):
         self.gmail_user = user
         self.gmail_passwd = passwd
 
@@ -29,7 +32,11 @@ class Mailer(object):
         with open('tmp-mail', 'w') as tmp:
             tmp.write(text)
 
-        cmd = 'su -- {} -c "cat tmp-mail | mail -s \\"{}\\" {}"'.format(user, subject, to)
+        cmd = 'su -- {user} -c "cat tmp-mail | mail -s \\"{subject}\\" {to}"'.format(
+            user=user,
+            subject=subject,
+            to=to,
+        )
         print(cmd)
         os.system(cmd)
 
