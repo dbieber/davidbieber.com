@@ -29,18 +29,23 @@ class TransactionLoader(object):
                     # TODO(Bieber): Cache the file
                     transactions_file, metadata = self.dropbox_client.get_file_and_metadata(filename)
                 else:
-                    transactions_file = open(filename ,'r')
+                    transactions_file = open(filename, 'r')
+            except:
+                # Try another filename
+                continue
 
-                for row in transactions_file:
+            for row in transactions_file:
+                try:
                     # TODO(Bieber): This is really unpythonic
-                    row = row.decode('utf-8')
+                    row = row.decode('utf-8').replace('\n', ' ').replace('\r', ' ')
                     reader = csv.reader([row], delimiter=',', quotechar='"')
                     row = next(reader)
                     if row and len(row) > 1:
                         transaction = Transaction.create_from_row(row)
                         self.transactions.append(transaction)
-            except:
-                pass
+                except:
+                    continue
+
 
     @staticmethod
     def get_dropbox_access_token():
