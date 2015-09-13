@@ -28,8 +28,8 @@ class AlertSuite():
 
     def get_recent_trasactions(self, delta):
         # TODO(Bieber): This could be more efficient
-        threhold_datetime = datetime.now() - delta
-        return list(filter(lambda t: t.get_datetime() >= threhold_datetime, self.loader.transactions))
+        threshold_datetime = datetime.now() - delta
+        return list(filter(lambda t: t.get_datetime() >= threshold_datetime, self.loader.transactions))
 
     def get_balance(self, resource):
         return self.accumulator.get_balance(resource)
