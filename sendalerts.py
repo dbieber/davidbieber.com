@@ -33,7 +33,7 @@ def main():
         )
 
     # Book Alerts
-    loader = BookLogLoader(use_dropbox=True)
+    loader = BookLogLoader(use_dropbox=not OFFLINE)
     accumulator = BookLogAccumulator()
     for log in loader.logs:
         accumulator.handle_log(log)
