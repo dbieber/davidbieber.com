@@ -18,6 +18,7 @@ class TransactionLoader(object):
         possible_filenames = filenames or [
             '/Transactions 2014.csv',
             '/Transactions 2015.csv',
+            '/Transactions 2016.csv',
             '/Transactions.csv',
         ]
 
