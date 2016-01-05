@@ -18,6 +18,7 @@ class BookLogLoader(object):
 
         possible_filenames = filenames or [
             '/Reading 2015.csv',
+            '/Reading 2016.csv',
             '/Reading.csv',
         ]
 
