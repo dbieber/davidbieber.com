@@ -48,7 +48,7 @@ def main():
 
     tornado_settings = dict(
         debug=settings.secure.debug,
-        xsrf_cookies=True,
+        xsrf_cookies=False,
         cookie_secret=settings.secure.cookie_secret,
         login_url='/auth/google',
         google_oauth=dict(

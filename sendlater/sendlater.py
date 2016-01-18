@@ -25,10 +25,21 @@ class SendLaterMessageHandler(BaseHandler):
             self.write('<br/>\n')
 
     def post(self):
+
         message = self.get_argument("message")
         recipient = self.get_argument("recipient")
         sender = self.get_argument("sender")
-        when = self.get_argument("when")
+
+        # Two methods of setting "when". Try them both.
+        try:
+            when = self.get_argument("when")
+        except:
+            when_1 = self.get_argument("when_1")  # hour
+            when_2 = self.get_argument("when_2")  # minute
+            when_3 = self.get_argument("when_3")  # second
+            when_4 = self.get_argument("when_4")  # AM/PM
+            when = "{}:{} {}".format(when_1, when_2, when_4)
+
         modified = datetime.now()
 
         self.redis.rpush(MESSAGE_QUEUE, {

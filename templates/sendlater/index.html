@@ -870,42 +870,42 @@
     </style>
   </head>
   <body>
-    <form method="post">
+    <form method="post" action="/sendlater/message/">
       <ul>
         <li id="li_1">
-          <label class="description" for="element_1">To </label>
+          <label class="description" for="recipient">To </label>
           <div>
-            <input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value="">
+            <input id="recipient" name="recipient" class="element text medium" type="text" maxlength="255" value="">
           </div>
         </li>
         <li id="li_2">
-          <label class="description" for="element_2">From </label>
+          <label class="description" for="sender">From </label>
           <div>
-            <input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" value="">
+            <input id="sender" name="sender" class="element text medium" type="text" maxlength="255" value="">
           </div>
         </li>
         <li id="li_3">
-          <label class="description" for="element_3">Message </label>
+          <label class="description" for="message">Message </label>
           <div>
-            <textarea id="element_3" name="element_3" class="element textarea medium"></textarea>
+            <textarea id="message" name="message" class="element textarea medium"></textarea>
           </div>
         </li>
         <li id="li_4">
-          <label class="description" for="element_4">Time </label>
+          <label class="description" for="when">Time </label>
           <span>
-            <input id="element_4_1" name="element_4_1" class="element text " size="2" type="text" maxlength="2" value=""> :
+            <input id="when_1" name="when_1" class="element text " size="2" type="text" maxlength="2" value=""> :
             <label>HH</label>
           </span>
           <span>
-            <input id="element_4_2" name="element_4_2" class="element text " size="2" type="text" maxlength="2" value=""> :
+            <input id="when_2" name="when_2" class="element text " size="2" type="text" maxlength="2" value=""> :
             <label>MM</label>
           </span>
           <span>
-            <input id="element_4_3" name="element_4_3" class="element text " size="2" type="text" maxlength="2" value="">
+            <input id="when_3" name="when_3" class="element text " size="2" type="text" maxlength="2" value="">
             <label>SS</label>
           </span>
           <span>
-            <select class="element select" style="width:4em" id="element_4_4" name="element_4_4">
+            <select class="element select" style="width:4em" id="when_4" name="when_4">
               <option value="AM">AM</option>
               <option value="PM">PM</option>
             </select>
@@ -913,24 +913,24 @@
           </span>
         </li>
         <li id="li_5">
-          <label class="description" for="element_5">Date </label>
+          <label class="description" for="date">Date </label>
           <span>
-            <input id="element_5_1" name="element_5_1" class="element text" size="2" maxlength="2" value="" type="text"> /
-            <label for="element_5_1">MM</label>
+            <input id="date_1" name="date_1" class="element text" size="2" maxlength="2" value="" type="text"> /
+            <label for="date_1">MM</label>
           </span>
           <span>
-            <input id="element_5_2" name="element_5_2" class="element text" size="2" maxlength="2" value="" type="text"> /
-            <label for="element_5_2">DD</label>
+            <input id="date_2" name="date_2" class="element text" size="2" maxlength="2" value="" type="text"> /
+            <label for="date_2">DD</label>
           </span>
           <span>
-            <input id="element_5_3" name="element_5_3" class="element text" size="4" maxlength="4" value="" type="text">
-            <label for="element_5_3">YYYY</label>
+            <input id="date_3" name="date_3" class="element text" size="4" maxlength="4" value="" type="text">
+            <label for="date_3">YYYY</label>
           </span>
 
           <script type="text/javascript">
           Calendar.setup({
-            inputField   : "element_5_3",
-            baseField    : "element_5",
+            inputField   : "date_3",
+            baseField    : "date",
             displayArea  : "calendar_5",
             button     : "cal_img_5",
             ifFormat   : "%B %e, %Y",
@@ -942,7 +942,6 @@
 
         <li class="buttons">
           <input type="hidden" name="form_id" value="873139">
-          <!-- {{ xsrf_form_html() }} -->
 
 
           <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit">
