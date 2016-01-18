@@ -47,6 +47,10 @@ def send_message(recipient, sender, when, message):
         text=message,
     )
 
+    with open('/opt/sendlater/logs', 'a') as f:
+        f.write('MAILED    {} {} {} {}\n'.format(recipient, sender, when, message))
+
+
 def main():
     context = daemon.DaemonContext(
         working_directory='/opt/sendlater',
@@ -86,6 +90,9 @@ def main():
                 trigger=trigger,
                 args=[recipient, sender, when, message],
             )
+
+            with open('/opt/sendlater/logs', 'a') as f:
+                f.write('SCHEDULED {} {} {} {}\n'.format(recipient, sender, when, message))
 
         r = redis.Redis()
 
