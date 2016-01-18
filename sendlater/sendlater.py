@@ -56,6 +56,8 @@ class SendLaterMessageHandler(BaseHandler):
             'modified': modified.isoformat(),
         }))
 
+        self.render("sendlater/index.html")
+
 handlers = [
     (r'/sendlater/message/?', SendLaterMessageHandler),
     (r'/sendlater/?', SendLaterHandler),

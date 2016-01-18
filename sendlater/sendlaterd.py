@@ -25,18 +25,25 @@ mailer = Mailer()
 mailer.login(settings.secure.GMAIL_USER, settings.secure.GMAIL_PASSWD)
 
 def send_message(recipient, sender, when, message):
-    print('sending', recipient)
-
     # Temporary email address mapping
     if recipient.lower() in ['biebs', 'david', 'bieber', 'david bieber']:
         recipient = 'david810+sendlater@gmail.com'
     elif recipient.lower() == 'olshansky':
         recipient = 'olshanskydaniel+sendlater@gmail.com'
 
+    # Determine the message subject
+    tokens = message[:60].split(' ')
+    try:
+        if message[60] == ' ':
+            tokens = tokens[:-1]
+    except:
+        pass
+    subject = ' '.join(tokens)
+
     mailer.unix_mail(
         user='alerts',
         to=recipient,
-        subject=' '.join(message[:60].split(' ')[:-1]),
+        subject=subject,
         text=message,
     )
 
