@@ -1,4 +1,5 @@
 from datetime import datetime
+import json
 import redis
 import tornado.web
 
@@ -35,20 +36,25 @@ class SendLaterMessageHandler(BaseHandler):
             when = self.get_argument("when")
         except:
             when_1 = self.get_argument("when_1")  # hour
-            when_2 = self.get_argument("when_2")  # minute
-            when_3 = self.get_argument("when_3")  # second
+            when_2 = self.get_argument("when_2") or '00'  # minute
+            when_3 = self.get_argument("when_3") or '00'  # second
             when_4 = self.get_argument("when_4")  # AM/PM
+
+            date_1 = self.get_argument("date_1")  # month
+            date_2 = self.get_argument("date_2")  # day
+            date_3 = self.get_argument("date_3")  # year
+
             when = "{}:{} {}".format(when_1, when_2, when_4)
 
         modified = datetime.now()
 
-        self.redis.rpush(MESSAGE_QUEUE, {
+        self.redis.rpush(MESSAGE_QUEUE, json.dumps({
             'message': message,
             'sender': sender,
             'recipient': recipient,
             'when': when,
-            'modified': modified
-        })
+            'modified': modified.isoformat(),
+        }))
 
 handlers = [
     (r'/sendlater/message/?', SendLaterMessageHandler),
