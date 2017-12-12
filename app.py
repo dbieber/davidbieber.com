@@ -41,6 +41,7 @@ def main():
         sendlater_handlers +
         thyme_handlers +
         [
+            # Since static and default are relative paths, app.py must be run from this directory.
             (r'/static/(.*)', tornado.web.StaticFileHandler, {'path': 'static', 'default_filename': 'index.html'}),
             (r'/(.*)', tornado.web.StaticFileHandler, {'path': 'default', 'default_filename': 'index.html'}),
         ]
