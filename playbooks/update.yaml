@@ -1,0 +1,17 @@
+---
+- hosts: all
+  tasks:
+  - name: setup davidbieber.com
+    git: repo=https://github.com/dbieber/davidbieber.com dest=~/davidbieber.com
+  - name: install dependencies
+    pip:
+      requirements: ~/davidbieber.com/requirements.txt
+      virtualenv: ~/davidbieber.com/virtualenv
+  - name: start server app.py
+    shell: cd /home/dbieber/davidbieber.com && nohup /home/dbieber/davidbieber.com/virtualenv/bin/python /home/dbieber/davidbieber.com/app.py --port 443 --redirect &
+    become: true
+
+  - name: download certbot
+    get_url: >
+      url=https://dl.eff.org/certbot-auto
+      dest=~/certbot-auto
