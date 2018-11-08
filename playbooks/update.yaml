@@ -8,7 +8,7 @@
       requirements: ~/davidbieber.com/requirements.txt
       virtualenv: ~/davidbieber.com/virtualenv
   - name: start server app.py
-    shell: nohup /home/dbieber/davidbieber.com/virtualenv/bin/python /home/dbieber/davidbieber.com/app.py --port 443 --redirect &
+    shell: nohup ./virtualenv/bin/python app.py --port 443 --redirect &
     become: true
     args:
       chdir: /home/dbieber/davidbieber.com
