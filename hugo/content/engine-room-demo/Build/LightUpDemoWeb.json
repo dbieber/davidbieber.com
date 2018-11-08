@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "LightUpDemoWeb.data.unityweb",
+"asmCodeUrl": "LightUpDemoWeb.asm.code.unityweb",
+"asmMemoryUrl": "LightUpDemoWeb.asm.memory.unityweb",
+"asmFrameworkUrl": "LightUpDemoWeb.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
