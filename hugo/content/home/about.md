@@ -1,7 +1,7 @@
 +++
 # About/Biography widget.
 widget = "about"
-active = true
+active = false
 date = 2018-10-26T00:00:00
 
 # Order that this section will appear in.
