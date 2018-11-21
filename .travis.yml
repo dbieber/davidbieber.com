@@ -4,8 +4,26 @@ go:
   - master
 
 install:
-    - go get github.com/gohugoio/hugo
+  - go get github.com/gohugoio/hugo
 
 script:
-    - cd hugo
-    - hugo
+  - cd hugo
+  - hugo
+
+after_success:
+  - git config --replace-all remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
+  - git fetch --all --prune
+
+  - git remote add github https://${GH_TOKEN}@github.com/dbieber/davidbieber.com.git
+  - git checkout prebuilt
+  - git rebase prebuilt master
+  - git add public -f
+  - git config user.email "david810@gmail.com"
+  - git config user.name "David Bieber"
+  - git commit -m '[skip travis] Automatic commit by Travis CI'
+  - git log --decorate
+  - git push github prebuilt
+
+env:
+  global:
+    secure: TE4QJTx/fg0zqTro+DI8pVjL80A/DjGO4I+/kj/SVZu2ROpGuVJ5TTV9VPAfF2V/Ye2cgyVnv1p4yYKNRfOGx1KfI6MIFa6qMJR7f2vIW2X8mRwmTIs2MhA+FA+54vXdPaHitPIG6w11X2yT6kTJI6kTjtuh4Pn5MmyUQwwNLCa7PCgEpFL/B5AsEPYTmLvCuxQPueqasI2WtdX/7Jm2LSGrFiTQY26gtqgbsHvRiv+AwwQea5PGfN1uPbS+6fzUh09kM58h5vzmcYweehnjsJQhBvZrK1hBIkRVGOhRVE6ALUnDQh+/QbnBJU/uKkSUoBeI624tDhzge5wukUqwXqQInrdBdEv2EH0LGJRb+UhHV0qv2ehZm0N4YRdSDB0W/nDhfAUZ5F/2+i2hpfowGK2zjA6l2gSi+jdRsRCX9yMRS1qoGNQJ8JwFfqCeqnG4Tqm8gO6WjqYtdHk1wLqssAZW66+jYct1HFDuflP3uEPXOR/QMN/IDJZVOD57E32DHKvOg0SKvHa8NWaNuai50v/qcT9vvonaoOBhI56QpaXT+5LteREHA31cIHPt0fWERx6ccBMExj4fNJwnWCeVayEvP+BaZU+VoEGZ/+s/7k4mF+ak87VHc8lPJ3LAk6oUsXTwYIcgqRmLexvvHodjBlXdAjRPtjHh8QV18Dsx0qo=
