@@ -114,7 +114,7 @@ The function call SpreadsheetDB.getColumnIndexesFromSheet(sheet) gives us back a
 
 The call to `getDraftMessageBySubject` gets a draft from our Gmail drafts that we’ll use later to send the emails to our friends.
 
-We use the `SpreadsheetDB.forEachRow` function to perform an action for each row in the spreadsheet except the headers. We pass a function with no name (an “anonymous function”) to SpreadsheetDB, and SpreadsheetDB will call that function once per non-header row of our spreadsheet.
+We use the `SpreadsheetDB.forEachRow` function to perform an action for each row in the spreadsheet except the headers. We pass a function with no name (an "anonymous function") to SpreadsheetDB, and SpreadsheetDB will call that function once per non-header row of our spreadsheet.
 
 ```javascript
     var name = row[indexes["Name"]];
@@ -286,7 +286,7 @@ function getDraftMessageBySubject(subject) {
 }
 ```
 
-Now the only step remaining is to make this performMailMerge function run every day. To do this, click the “Triggers” button in the toolbar (the clock icon). Create a new time-based trigger, and set it up so that it runs Daily (you get to choose when each day it will run). Configure it to run the performMailMerge each day at a time of your choice.
+Now the only step remaining is to make this performMailMerge function run every day. To do this, click the "Triggers" button in the toolbar (the clock icon). Create a new time-based trigger, and set it up so that it runs Daily (you get to choose when each day it will run). Configure it to run the performMailMerge each day at a time of your choice.
 
 <img src="https://66.media.tumblr.com/587d3371fc52f0ae50434a52337dbdfc/tumblr_pgyxa5usTC1rfccnto1_1280.png" alt="Apps Script menu bar: Set a trigger" style="width:700px;">
 
