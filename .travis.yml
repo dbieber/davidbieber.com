@@ -11,10 +11,10 @@ script:
   - hugo
 
 after_success:
-  - pwd
   - cd ../..
-  - pwd
   - git clone --branch deploy https://${GH_TOKEN}@github.com/dbieber/davidbieber.com.git davidbieber.com-deploy
+  - rsync -av davidbieber.com/default/ davidbieber.com-deploy/default/
+  - rsync -av davidbieber.com/static/ davidbieber.com-deploy/static/
   - rsync -av davidbieber.com/hugo/public/ davidbieber.com-deploy/hugo/public/
 
   - cd davidbieber.com-deploy
