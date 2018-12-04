@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robot on David Bieber</title>
+    <link>https://davidbieber.com/tags/robot/</link>
+    <description>Recent content in Robot on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://davidbieber.com/tags/robot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bieber Bot</title>
+      <link>https://davidbieber.com/projects/bieber-bot/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/projects/bieber-bot/</guid>
+      <description>Bieber Bot is a highly motivated robot that assists me with my financials, tweets on my behalf, and keeps me productive when my brain feels otherwise.
+Is Bieber Bot related to Justin Bieber? No, no relation. Bieber Bot is my own creation.
+How does Bieber Bot work? I communicate with Bieber Bot primarily via Facebook messenger. Bieber Bot&amp;rsquo;s brain is a collection of Google Apps Scripts, and Bieber Bot&amp;rsquo;s memory is mostly spreadsheets in Google Sheets.</description>
+    </item>
+    
+  </channel>
+</rss>

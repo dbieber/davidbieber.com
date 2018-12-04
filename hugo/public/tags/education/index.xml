@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Education on David Bieber</title>
+    <link>https://davidbieber.com/tags/education/</link>
+    <description>Recent content in Education on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Tue, 01 Nov 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://davidbieber.com/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tech Day</title>
+      <link>https://davidbieber.com/projects/tech-day/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/projects/tech-day/</guid>
+      <description>Tech Day is an educational program run by Googlers for high school students interested in technology and computer science.
+The Tech Day website is available at techday.withgoogle.com. Information about upcoming Tech Day events will be posted there as it becomes available.</description>
+    </item>
+    
+    <item>
+      <title>Teach Everyone</title>
+      <link>https://davidbieber.com/projects/teach-everyone/</link>
+      <pubDate>Fri, 06 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/projects/teach-everyone/</guid>
+      <description>The Teach Everyone website is available at teacheveryone.org.
+Note: The Save Video functionality is not currently exposed on the website.</description>
+    </item>
+    
+    <item>
+      <title>Princeton ACM</title>
+      <link>https://davidbieber.com/projects/princeton-acm/</link>
+      <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/projects/princeton-acm/</guid>
+      <description>Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at princetonacm.com.</description>
+    </item>
+    
+    <item>
+      <title>MathCounts Coach Q&#43;A</title>
+      <link>https://davidbieber.com/post/2013-08-16-mathcounts-coach-q-and-a/</link>
+      <pubDate>Fri, 16 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2013-08-16-mathcounts-coach-q-and-a/</guid>
+      <description>Last week I did a Q+A for the Life at KA blog. The last time I did an education-centric online Q+A was more than three years earlier. Let&amp;rsquo;s take a look.
+Originally posted at mathcounts.org in March 2010.
+How long have you been a MATHCOUNTS coach?
+This is my second year coaching the Van Antwerp MATHCOUNTS team.
+What is your favorite part about being a MATHCOUNTS coach?
+It&amp;rsquo;s great to see my students having a good time with math.</description>
+    </item>
+    
+    <item>
+      <title>Life at KA: A Khanversation with David Bieber</title>
+      <link>https://davidbieber.com/post/2013-08-14-khanversation/</link>
+      <pubDate>Wed, 14 Aug 2013 01:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2013-08-14-khanversation/</guid>
+      <description>Originally posted at life.khanacademy.org
+We&amp;rsquo;ll dive straight into the questions for our latest Khan Academy Khanversation, this time featuring rising Princeton senior David Bieber.
+David, let&amp;rsquo;s begin with the question everyone is dying to hear you answer. Are you related to Justin Bieber?
+It&amp;rsquo;s funny you should ask that. People tell me all the time &amp;ldquo;sorry about your last name&amp;rdquo; or &amp;ldquo;I hope you&amp;rsquo;re not related to that singer&amp;rdquo; or &amp;ldquo;can you get me free tickets to the Bieber concert?</description>
+    </item>
+    
+    <item>
+      <title>Teach at Scale</title>
+      <link>https://davidbieber.com/post/2013-08-07-teach-at-scale/</link>
+      <pubDate>Wed, 07 Aug 2013 01:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2013-08-07-teach-at-scale/</guid>
+      <description>The best way to learn is to teach. It&amp;rsquo;s also, most of the time, the most fun way to learn. And as an added bonus, the person you&amp;rsquo;re teaching learns too.
+I strongly believe that you, as someone who has found themselves reading strange blogs on the internet, have a lot to offer the world in the way of teaching. So I want you to teach at scale. Yes, I&amp;rsquo;m looking at you Mom and Dad, former Facebook and Twitter interns, my fellow interns here at Khan Academy.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google Apps Script on David Bieber</title>
+    <link>https://davidbieber.com/tags/google-apps-script/</link>
+    <description>Recent content in Google Apps Script on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 21 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://davidbieber.com/tags/google-apps-script/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Writing a Mail Merge in Google Apps Script</title>
+      <link>https://davidbieber.com/post/2018-10-21-apps-script-mail-merge/</link>
+      <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2018-10-21-apps-script-mail-merge/</guid>
+      <description>Google Apps Script is endlessly useful; in this post you will learn how to write a mail merge with Google Apps Script. It&amp;rsquo;s less than 30 lines of code! You can use this technique to send personalized emails individually to many recipients. In the second part of this post, you will learn how to schedule these emails to send in the future.
+Part 1: Writing a Mail Merge A mail merge is a program that sends an email to many recipients, automatically filling in the contents of the email according to a template.</description>
+    </item>
+    
+  </channel>
+</rss>

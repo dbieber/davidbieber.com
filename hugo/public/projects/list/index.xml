@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>David Bieber</title>
+    <link>https://davidbieber.com/projects/list/</link>
+    <description>Recent content on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://davidbieber.com/projects/list/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bieber Bot</title>
+      <link>https://davidbieber.com/projects/bieber-bot/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/projects/bieber-bot/</guid>
+      <description>Bieber Bot is a highly motivated robot that assists me with my financials, tweets on my behalf, and keeps me productive when my brain feels otherwise.
+Is Bieber Bot related to Justin Bieber? No, no relation. Bieber Bot is my own creation.
+How does Bieber Bot work? I communicate with Bieber Bot primarily via Facebook messenger. Bieber Bot&amp;rsquo;s brain is a collection of Google Apps Scripts, and Bieber Bot&amp;rsquo;s memory is mostly spreadsheets in Google Sheets.</description>
+    </item>
+    
+    <item>
+      <title>Escape Castle Heterodyne</title>
+      <link>https://davidbieber.com/projects/escape-castle-heterodyne/</link>
+      <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/projects/escape-castle-heterodyne/</guid>
+      <description>We built an Escape Room!
+Serious props to Bianca Homberg and her amazing talented group of friends for making this happen. I was just a small piece of this epic endeavor. Bianca was the organizer and driving force for a really impressive piece of puzzle craftsmanship.
+The premise for the escape room is based on the webcomic Girl Genius. Here&amp;rsquo;s what you need to know:
+Escape Castle Heterodyne There&amp;rsquo;s a castle, Castle Heterodyne, which is a living, breathing, talking entity.</description>
+    </item>
+    
+    <item>
+      <title>Python Fire</title>
+      <link>https://davidbieber.com/projects/python-fire/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/projects/python-fire/</guid>
+      <description>Python Fire is a Python library for automatically creating command line interfaces (CLIs) from absolutely any Python object.
+Check it out at https://github.com/google/python-fire.
+I originally wrote Python Fire after joining Google Brain in 2016. In March 2017 we open sourced the project, and I proud and delighted by the growth and reception it has seen since.
+To give it a try, simply pip install fire, and then call fire.Fire() as the main of any Python program.</description>
+    </item>
+    
+    <item>
+      <title>Tech Day</title>
+      <link>https://davidbieber.com/projects/tech-day/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/projects/tech-day/</guid>
+      <description>Tech Day is an educational program run by Googlers for high school students interested in technology and computer science.
+The Tech Day website is available at techday.withgoogle.com. Information about upcoming Tech Day events will be posted there as it becomes available.</description>
+    </item>
+    
+    <item>
+      <title>at Scheduler</title>
+      <link>https://davidbieber.com/projects/at-scheduler/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/projects/at-scheduler/</guid>
+      <description>The at-scheduler is a simple command line scheduler.
+For installation instructions, see the README on GitHub.
+Once it&amp;rsquo;s installed, using the at-scheduler is simple. From your shell, just run a command at &amp;lt;when&amp;gt; &amp;lt;command&amp;gt;. This will schedule your command to be run at the time specified.
+The syntax for &amp;lt;when&amp;gt; is lenient. Specific times like &amp;ldquo;9:30am&amp;rdquo; work, as do named dates like &amp;ldquo;tomorrow at 10pm&amp;rdquo; or &amp;ldquo;next Tuesday at 3pm&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>shh Shell</title>
+      <link>https://davidbieber.com/projects/shh-shell/</link>
+      <pubDate>Sun, 03 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/projects/shh-shell/</guid>
+      <description>The shh shell The shh shell is a simple shell you can use while you drift off to sleep.
+Notably, you can keep your eyes closed while you use it.
+The shell is controlled by typing and the only output is audio; there are no visual components of shh. It is designed to minimize the mental energy required for use, to avoid disturbing your attempt at sleep as much as possible.</description>
+    </item>
+    
+    <item>
+      <title>Scrabble Bot</title>
+      <link>https://davidbieber.com/projects/scrabble-bot/</link>
+      <pubDate>Fri, 06 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/projects/scrabble-bot/</guid>
+      <description>Scrabble Bot loves Scrabble and social media! Check out Scrab&amp;rsquo;s tumblr page full of Scrabble games it&amp;rsquo;s played against itself.
+Scrabble Bot is also privacy conscious, and so uses Facebook under a pseudonym, &amp;ldquo;Scrab Blebot&amp;rdquo;. Scrab believes their identity is secure.
+You can find Scrabble Bot&amp;rsquo;s source on GitHub here.</description>
+    </item>
+    
+    <item>
+      <title>Teach Everyone</title>
+      <link>https://davidbieber.com/projects/teach-everyone/</link>
+      <pubDate>Fri, 06 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/projects/teach-everyone/</guid>
+      <description>The Teach Everyone website is available at teacheveryone.org.
+Note: The Save Video functionality is not currently exposed on the website.</description>
+    </item>
+    
+    <item>
+      <title>Princeton ACM</title>
+      <link>https://davidbieber.com/projects/princeton-acm/</link>
+      <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/projects/princeton-acm/</guid>
+      <description>Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at princetonacm.com.</description>
+    </item>
+    
+  </channel>
+</rss>

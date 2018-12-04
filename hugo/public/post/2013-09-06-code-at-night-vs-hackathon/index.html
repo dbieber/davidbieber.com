@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.0.0">
+  <meta name="generator" content="Hugo 0.53-DEV" />
+  <meta name="author" content="David Bieber">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="A Code@Night is not a hackathon. Hackathon : Code@Night :: Track race : Evening stroll">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/post/2013-09-06-code-at-night-vs-hackathon/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-34570499-2', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+  <link rel="alternate" href="https://davidbieber.com/index.xml" type="application/rss+xml" title="David Bieber">
+  <link rel="feed" href="https://davidbieber.com/index.xml" type="application/rss+xml" title="David Bieber">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://davidbieber.com/post/2013-09-06-code-at-night-vs-hackathon/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@Bieber">
+  <meta property="twitter:creator" content="@Bieber">
+  
+  <meta property="og:site_name" content="David Bieber">
+  <meta property="og:url" content="https://davidbieber.com/post/2013-09-06-code-at-night-vs-hackathon/">
+  <meta property="og:title" content="Why a Code@Night is not a Hackathon | David Bieber">
+  <meta property="og:description" content="A Code@Night is not a hackathon. Hackathon : Code@Night :: Track race : Evening stroll">
+  
+  
+    
+  <meta property="og:image" content="https://davidbieber.com/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2013-09-06T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2013-09-06T00:00:00&#43;00:00">
+  
+
+  
+
+  <style>
+ 
+[id^=_] {
+  display: none;
+}
+</style>
+
+<script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+function swap(e1, e2) {
+    e1.fadeOut(400).promise().done(function() {
+        e2.fadeIn(400);
+    });
+}
+function register_swap(e1, e2) {
+    $(e1).click(function(e) {
+        var srcEl = e.srcElement? e.srcElement : e.target;
+        if (srcEl.tagName.toUpperCase() == "A") return;
+        swap($(e1), $(e2));
+    });
+}
+function register_pair(e1, e2) {
+    register_swap(e1, e2);
+    register_swap(e2, e1);
+}
+function addBorder(e1, style) {
+    $(e1).css("border-left", style + " 1px lightgray");
+    $(e1).css("padding-left", "5px");
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var paragraphs = $('.article-container *');
+  for (var cv = 0; cv < paragraphs.length; cv++) {
+      var keyId = paragraphs[cv].id;
+      if (keyId.charAt(0) == "_") {
+          register_pair('#'+keyId, '#'+keyId.substr(1));
+          addBorder('#'+keyId, "dashed");
+          addBorder('#'+keyId.substr(1), "solid");
+      }
+  }
+}, false);
+</script>
+
+<script type="text/javascript">
+
+document.addEventListener('DOMContentLoaded', function() {
+  $(".blokus").click(function(e) {
+      $(".blokus").each(function(index, el) {
+          if (el.innerHTML == "Life") $(el).text("Blokus");
+          else if (el.innerHTML == "life") $(el).text(" Blokus");
+          else if (el.innerHTML == "Blokus") $(el).text("Life");
+          else if (el.innerHTML == " Blokus") $(el).text("life");
+      });
+  });
+}, false);
+</script>
+
+  <title>Why a Code@Night is not a Hackathon | David Bieber</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">David Bieber</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/posts">
+            
+            <span>Writing</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="article-header d-xl-none">
+  <img src="/post/2013-09-06-code-at-night-vs-hackathon/featured_hu9d0d61adbe03bfa474c85f7484c96f3b_2038466_1600x400_fill_q90_box_smart1.jpg" class="article-banner" itemprop="image" alt="">
+  <span class="article-header-caption">Blair Arch, Princeton University</span>
+</div>
+
+
+<div class="container-fluid split-header d-none d-xl-block">
+  <div class="row">
+    <div class="col-6">
+      <div class="split-header-content">
+        <h1 itemprop="name">Why a Code@Night is not a Hackathon</h1>
+
+        
+
+        
+
+<div class="article-metadata">
+
+  
+  
+  
+  <div>
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">David Bieber</span>
+    </span>
+    
+  </div>
+  
+
+  <span class="article-date">
+    
+    <meta content="2013-09-06 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2013-09-06 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      September 2013
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="David Bieber">
+  </span>
+
+  
+
+  
+  
+
+  
+
+  
+
+</div>
+
+
+        
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Why%20a%20Code%40Night%20is%20not%20a%20Hackathon&amp;url=https%3a%2f%2fdavidbieber.com%2fpost%2f2013-09-06-code-at-night-vs-hackathon%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdavidbieber.com%2fpost%2f2013-09-06-code-at-night-vs-hackathon%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fdavidbieber.com%2fpost%2f2013-09-06-code-at-night-vs-hackathon%2f&amp;title=Why%20a%20Code%40Night%20is%20not%20a%20Hackathon"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+
+    <li>
+      <a class="email"
+         href="mailto:?subject=Why%20a%20Code%40Night%20is%20not%20a%20Hackathon&amp;body=https%3a%2f%2fdavidbieber.com%2fpost%2f2013-09-06-code-at-night-vs-hackathon%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="split-header-image">
+        <img src="/post/2013-09-06-code-at-night-vs-hackathon/featured_hu9d0d61adbe03bfa474c85f7484c96f3b_2038466_680x500_fill_q90_box_smart1.jpg" itemprop="image" alt="">
+        <span class="article-header-caption">Blair Arch, Princeton University</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="article-container d-xl-none">
+  <h1 itemprop="name">Why a Code@Night is not a Hackathon</h1>
+
+  
+
+  
+
+<div class="article-metadata">
+
+  
+  
+  
+  <div>
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">David Bieber</span>
+    </span>
+    
+  </div>
+  
+
+  <span class="article-date">
+    
+    <meta content="2013-09-06 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2013-09-06 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      September 2013
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="David Bieber">
+  </span>
+
+  
+
+  
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Why%20a%20Code%40Night%20is%20not%20a%20Hackathon&amp;url=https%3a%2f%2fdavidbieber.com%2fpost%2f2013-09-06-code-at-night-vs-hackathon%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdavidbieber.com%2fpost%2f2013-09-06-code-at-night-vs-hackathon%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fdavidbieber.com%2fpost%2f2013-09-06-code-at-night-vs-hackathon%2f&amp;title=Why%20a%20Code%40Night%20is%20not%20a%20Hackathon"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+
+    <li>
+      <a class="email"
+         href="mailto:?subject=Why%20a%20Code%40Night%20is%20not%20a%20Hackathon&amp;body=https%3a%2f%2fdavidbieber.com%2fpost%2f2013-09-06-code-at-night-vs-hackathon%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <p>I&rsquo;ve written in the past about <a href="http://blog.davidbieber.com/post/31367374857/code-at-night" target="_blank">what a Code@Night is</a>. And they&rsquo;re wonderful. One of my favorite topics, really. People come to these things and they just code all night. Great experience. Tons of fun. Fruit. PacMan. Yadda, yadda, yadda.</p>
+
+<p>I tell people this all the time, and a pretty common response is &ldquo;so, it&rsquo;s like a hackathon?&rdquo;</p>
+
+<p>So I think for a bit. There&rsquo;s coding. There&rsquo;s minimal sleeping. There are tech talks. There are pizzas, snacks, and refreshments. Fruit is hard to come by at a hackathon, but it can be there too. So I concede, &ldquo;yeah, it&rsquo;s a bit like a hackathon.&rdquo;</p>
+
+<p>But I know we&rsquo;re wrong. Code@Night doesn&rsquo;t <em>feel</em> like a hackathon at all.</p>
+
+<p>Here, I made you an analogy. It&rsquo;s not a good one, but you can read it anyway. &ldquo;A hackathon is to a Code@Night as a track race is to a stroll through a park.&rdquo;</p>
+
+<p>Or for you symbolically minded folks&hellip;</p>
+
+<p><center>Hackathon : Code@Night :: Track race : Evening stroll</center></p>
+
+<p>How can they feel so different when the only core difference is that we&rsquo;ve removed the competitive aspect?</p>
+
+<p>Well, in some ways Code@Night is a lot like a hackathon, but in others it&rsquo;s not at all. It&rsquo;s a hackathon minus the competition, plus the assortment of non-hackathon things that happen at Code@Nights. e.g. Pacman, the occasional contest, the tight-knit community, lots of fruit, a tech talk smack in the middle. Also, Code@Night runs for 12 hours in the worst case (if people stay for breakfast, we&rsquo;ll feed them), but more realistically only goes from 9 pm to 3-4 am. A hackathon usually lasts 24 hours or more.</p>
+
+<p>It sounds like these are small differences from a hackathon, but it&rsquo;s really a completely different atmosphere. There&rsquo;s no start and end time for your project. You can work on the same thing Code@Night to Code@Night if you want. And people don&rsquo;t cluster into teams the way they do at hackathons. You also end up getting large group discussions going, which you rarely get at hackathons because people are rushed to work on their 24 hour product. No one&rsquo;s worrying about prizes or judges. You don&rsquo;t have to demo anything to feel accomplished (but we love demos! they&rsquo;re sure encouraged!) You can build what you want to build, not the thing you think will win over an audience.</p>
+
+<p>Code@Night isn&rsquo;t about starting. It isn&rsquo;t about finishing. It&rsquo;s about doing. It&rsquo;s about learning. It&rsquo;s about being a part of a community. By removing the artificial competitive aspects and time constraints that hackathons impose on coding, we&rsquo;re left with a really rewarding experience. People step back from their coding in ways they don&rsquo;t at hackathons. They teach about Python, about Hadoop. They <a href="https://www.facebook.com/photo.php?fbid=10151919494461654&amp;set=a.407128786653.201033.728066653" target="_blank">sit in boxes</a> (<a href="https://www.facebook.com/media/set/?set=a.10200583989428067.206255.1409114395&amp;type=1&amp;l=844baf75c2" target="_blank">or put boxes on their heads</a>). They share their projects. They debate bacterial growth characteristics on the surface of <a href="http://www.butterfinger.com/" target="_blank">crisp orange-colored, peanut butter-flavored flakiness coated in compound chocolate</a>. They talk about technology. And sometimes <a href="http://princetonacm.com/2013/poem/" target="_blank">they write poetry</a>.</p>
+
+<p>So, the next time someone asks if a Code@Night is like a hackathon, I&rsquo;ll be ready with my &ldquo;kinda, but not really, actually no&rdquo; answer. And I&rsquo;ll be ready to say how they&rsquo;re different, and how I actually prefer the Code@Night. But hey, I&rsquo;m biased, I organize the things.</p>
+
+<p><a href="http://whenisthenextcodeatnight.com/" target="_blank">Next Code@Night?</a> It&rsquo;s <a href="https://www.facebook.com/events/176020992583310/" target="_blank">Sept 13, 9 pm. Sherrerd, Third Floor</a>. Open to all Princetonites. Hope to see you there!</p>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/princeton-acm/">Princeton ACM</a>
+  
+</div>
+
+
+
+    
+
+
+
+  
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  <img class="portrait mr-3" src="/img/portrait.jpg" itemprop="image" alt="Avatar">
+  
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/">David Bieber</a></h5>
+    <h6 class="card-subtitle">Software Engineer</h6>
+    
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="/#contact" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/Bieber" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/dbieber" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+
+  <p class="powered-by">
+    &copy; 2018 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "Search Results",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    <script src="/js/search.js"></script>
+    
+
+    
+    
+
+  </body>
+</html>
+

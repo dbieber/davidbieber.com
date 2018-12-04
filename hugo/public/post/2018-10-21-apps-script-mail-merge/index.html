@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.0.0">
+  <meta name="generator" content="Hugo 0.53-DEV" />
+  <meta name="author" content="David Bieber">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="Use Google Apps Script to write a mail merge and schedule emails to send in the future.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/post/2018-10-21-apps-script-mail-merge/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-34570499-2', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+  <link rel="alternate" href="https://davidbieber.com/index.xml" type="application/rss+xml" title="David Bieber">
+  <link rel="feed" href="https://davidbieber.com/index.xml" type="application/rss+xml" title="David Bieber">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://davidbieber.com/post/2018-10-21-apps-script-mail-merge/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@Bieber">
+  <meta property="twitter:creator" content="@Bieber">
+  
+  <meta property="og:site_name" content="David Bieber">
+  <meta property="og:url" content="https://davidbieber.com/post/2018-10-21-apps-script-mail-merge/">
+  <meta property="og:title" content="Writing a Mail Merge in Google Apps Script | David Bieber">
+  <meta property="og:description" content="Use Google Apps Script to write a mail merge and schedule emails to send in the future.">
+  
+  
+    
+  <meta property="og:image" content="https://davidbieber.com/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-10-21T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2018-10-21T00:00:00&#43;00:00">
+  
+
+  
+
+  <style>
+ 
+[id^=_] {
+  display: none;
+}
+</style>
+
+<script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+function swap(e1, e2) {
+    e1.fadeOut(400).promise().done(function() {
+        e2.fadeIn(400);
+    });
+}
+function register_swap(e1, e2) {
+    $(e1).click(function(e) {
+        var srcEl = e.srcElement? e.srcElement : e.target;
+        if (srcEl.tagName.toUpperCase() == "A") return;
+        swap($(e1), $(e2));
+    });
+}
+function register_pair(e1, e2) {
+    register_swap(e1, e2);
+    register_swap(e2, e1);
+}
+function addBorder(e1, style) {
+    $(e1).css("border-left", style + " 1px lightgray");
+    $(e1).css("padding-left", "5px");
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var paragraphs = $('.article-container *');
+  for (var cv = 0; cv < paragraphs.length; cv++) {
+      var keyId = paragraphs[cv].id;
+      if (keyId.charAt(0) == "_") {
+          register_pair('#'+keyId, '#'+keyId.substr(1));
+          addBorder('#'+keyId, "dashed");
+          addBorder('#'+keyId.substr(1), "solid");
+      }
+  }
+}, false);
+</script>
+
+<script type="text/javascript">
+
+document.addEventListener('DOMContentLoaded', function() {
+  $(".blokus").click(function(e) {
+      $(".blokus").each(function(index, el) {
+          if (el.innerHTML == "Life") $(el).text("Blokus");
+          else if (el.innerHTML == "life") $(el).text(" Blokus");
+          else if (el.innerHTML == "Blokus") $(el).text("Life");
+          else if (el.innerHTML == " Blokus") $(el).text("life");
+      });
+  });
+}, false);
+</script>
+
+  <title>Writing a Mail Merge in Google Apps Script | David Bieber</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">David Bieber</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/posts">
+            
+            <span>Writing</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="article-header d-xl-none">
+  <img src="/post/2018-10-21-apps-script-mail-merge/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_1614959_1600x400_fill_q90_box_smart1.jpg" class="article-banner" itemprop="image" alt="">
+  <span class="article-header-caption">Image credit: <a href="https://www.pexels.com/photo/selective-focus-photo-of-hanging-papers-on-clothes-line-1467217/" target="_blank"><strong>Edoardo Tommasini</strong></a></span>
+</div>
+
+
+<div class="container-fluid split-header d-none d-xl-block">
+  <div class="row">
+    <div class="col-6">
+      <div class="split-header-content">
+        <h1 itemprop="name">Writing a Mail Merge in Google Apps Script</h1>
+
+        
+
+        
+
+<div class="article-metadata">
+
+  
+  
+  
+  <div>
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">David Bieber</span>
+    </span>
+    
+  </div>
+  
+
+  <span class="article-date">
+    
+    <meta content="2018-10-21 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2018-10-21 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      October 2018
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="David Bieber">
+  </span>
+
+  
+
+  
+  
+
+  
+
+  
+
+</div>
+
+
+        
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Writing%20a%20Mail%20Merge%20in%20Google%20Apps%20Script&amp;url=https%3a%2f%2fdavidbieber.com%2fpost%2f2018-10-21-apps-script-mail-merge%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdavidbieber.com%2fpost%2f2018-10-21-apps-script-mail-merge%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fdavidbieber.com%2fpost%2f2018-10-21-apps-script-mail-merge%2f&amp;title=Writing%20a%20Mail%20Merge%20in%20Google%20Apps%20Script"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+
+    <li>
+      <a class="email"
+         href="mailto:?subject=Writing%20a%20Mail%20Merge%20in%20Google%20Apps%20Script&amp;body=https%3a%2f%2fdavidbieber.com%2fpost%2f2018-10-21-apps-script-mail-merge%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="split-header-image">
+        <img src="/post/2018-10-21-apps-script-mail-merge/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_1614959_680x500_fill_q90_box_smart1.jpg" itemprop="image" alt="">
+        <span class="article-header-caption">Image credit: <a href="https://www.pexels.com/photo/selective-focus-photo-of-hanging-papers-on-clothes-line-1467217/" target="_blank"><strong>Edoardo Tommasini</strong></a></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="article-container d-xl-none">
+  <h1 itemprop="name">Writing a Mail Merge in Google Apps Script</h1>
+
+  
+
+  
+
+<div class="article-metadata">
+
+  
+  
+  
+  <div>
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">David Bieber</span>
+    </span>
+    
+  </div>
+  
+
+  <span class="article-date">
+    
+    <meta content="2018-10-21 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2018-10-21 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      October 2018
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="David Bieber">
+  </span>
+
+  
+
+  
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Writing%20a%20Mail%20Merge%20in%20Google%20Apps%20Script&amp;url=https%3a%2f%2fdavidbieber.com%2fpost%2f2018-10-21-apps-script-mail-merge%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdavidbieber.com%2fpost%2f2018-10-21-apps-script-mail-merge%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fdavidbieber.com%2fpost%2f2018-10-21-apps-script-mail-merge%2f&amp;title=Writing%20a%20Mail%20Merge%20in%20Google%20Apps%20Script"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+
+    <li>
+      <a class="email"
+         href="mailto:?subject=Writing%20a%20Mail%20Merge%20in%20Google%20Apps%20Script&amp;body=https%3a%2f%2fdavidbieber.com%2fpost%2f2018-10-21-apps-script-mail-merge%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>Google Apps Script is endlessly useful; in this post you will learn how to write a mail merge with Google Apps Script. It&rsquo;s less than 30 lines of code! You can use this technique to send personalized emails individually to many recipients. In the second part of this post, you will learn how to schedule these emails to send in the future.</p>
+
+<h2 id="part-1-writing-a-mail-merge">Part 1: Writing a Mail Merge</h2>
+
+<p>A <em>mail merge</em> is a program that sends an email to many recipients, automatically filling in the contents of the email according to a template. It&rsquo;s like a form letter. Each recipient receives a personalized copy of the email.</p>
+
+<p>In this section we use Google Apps Script to create a mail merge that sends personalized &ldquo;Happy Birthday&rdquo; messages to a group of our friends. This will involve writing a template email, creating a spreadsheet, and writing a small amount of JavaScript code. With practice, you can perform tasks like this in well under an hour.</p>
+
+<p>First, we draft the email in Gmail. We&rsquo;ll use angle brackets for the parts of the message we want to replace with data from our spreadsheet.</p>
+
+<pre><code>Subject:
+  Happiest Birthday!
+
+Body:
+  Dear &lt;name&gt;,
+
+  Happy birthday! I think you, &lt;name&gt;, personally are awesome.
+  You may be getting older, but you're still the coolest person I know.
+  What are you now, &lt;age&gt;? Wow.
+
+  Party on!
+  David
+</code></pre>
+
+<p>Next, we create a Google Spreadsheet (<a href="https://sheets.google.com" target="_blank">sheets.google.com</a>) with three columns like this:</p>
+
+<pre><code>Name  Email  Age  
+...   ...    ...
+</code></pre>
+
+<p>(To add yourself to my spreadsheet and actually receive a happy birthday email on your alleged birthday, just <a href="https://goo.gl/forms/qEy8f5CQ8itVVFoe2" target="_blank">fill out this form</a>.)</p>
+
+<p>Inside your spreadsheet, choose <em>Tools &gt; Script Editor</em>. This creates a new Apps Script associated with your spreadsheet.</p>
+
+<p>Now it&rsquo;s time to write some JavaScript. We&rsquo;re going to write a function to perform the mail merge.
+We&rsquo;ll call it <code>performMailMerge</code> and it won&rsquo;t have any parameters, e.g.:</p>
+
+<pre><code class="language-javascript">function performMailMerge() {}
+</code></pre>
+
+<p>It will use the built in SpreadsheetApp library to access the spreadsheet, the SpreadsheetDB library to perform basic data lookup operations on the spreadsheet, and the built in GmailApp library to look up drafts and send emails.</p>
+
+<p>SpreadsheetDB is a small library (a collection of useful functions) that allows us to quickly process rows in a spreadsheet, referencing columns by their header names. Choose one of the two options below for using SpreadsheetDB.</p>
+
+<ol>
+<li><p>To use the library SpreadsheetDB, choose Resources &gt; Libraries &gt; Add a library and enter <code>193p7IxBukPVkoxwMH8UDcdkYJiNCDWSylMA_htgliEPxjjqixhzKt_2g</code>. This is the ID of the SpreadsheetDB library. Select the latest version from the version dropdown menu. It should say &ldquo;SpreadsheetDB&rdquo; if you&rsquo;ve done it right. This will allow you to use functions from the SpreadsheetDB library in your project.</p></li>
+
+<li><p>To use SpreadsheetDB from source, create a new file in your project and name it <code>spreadsheet.gs</code> (the name is not important). Copy and paste in the source of SpreadsheetDB from the <a href="https://gist.github.com/dbieber/471a3103adb727d6985892338de00aea" target="_blank">Gist here</a>. If you choose to copy and paste the source into your project, then you must omit the prefix &ldquo;SpreadsheetDB.&rdquo; from your calls to the SpreadsheetDB functions in the following code. E.g. <code>SpreadsheetDB.getColumnIndexesFromSheet</code> would become just <code>getColumnIndexesFromSheet</code>.</p></li>
+</ol>
+
+<p>Now that you&rsquo;re set up with SpreadsheetDB, I&rsquo;ll start by showing you the full program, then I&rsquo;ll explain what each line does.</p>
+
+<pre><code class="language-javascript">function performMailMerge() {
+  var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = spreadsheet.getSheetByName(&quot;Sheet 1&quot;);
+  var indexes = SpreadsheetDB.getColumnIndexesFromSheet(sheet);
+  var subject = &quot;Happiest Birthday!&quot;;
+  var draftMessage = getDraftMessageBySubject(subject);
+  var templateBody = draftMessage.getPlainBody();
+  SpreadsheetDB.forEachRow(sheet, function(row) {
+    var name = row[indexes[&quot;Name&quot;]];
+    var email = row[indexes[&quot;Email&quot;]];
+    var age = row[indexes[&quot;Age&quot;]];
+    
+    var body = templateBody.replace(/&lt;name&gt;/g, name).replace(/&lt;age&gt;/g, age);
+    GmailApp.sendEmail(email, subject, body);
+  });
+}
+
+function getDraftMessageBySubject(subject) {
+  var draftMessages = GmailApp.getDraftMessages();
+  for (var i = 0; i &lt; draftMessages.length; i++) {
+    var draftMessage = draftMessages[i];
+    if (draftMessage.getSubject() == subject) {
+      return draftMessage;
+    }
+  }
+}
+</code></pre>
+
+<p>The documentation for the built in libraries is very good. You can find the documentation for <a href="https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet-app" target="_blank">SpreadsheetApp</a> here and for <a href="https://developers.google.com/apps-script/reference/gmail/gmail-app" target="_blank">GmailApp</a> here.</p>
+
+<p>Let’s look at the pieces of this function individually:</p>
+
+<pre><code class="language-javascript">var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+var sheet = spreadsheet.getSheetByName(&quot;Sheet 1&quot;);
+</code></pre>
+
+<p>This gives us a <a href="https://developers.google.com/apps-script/reference/spreadsheet/sheet" target="_blank">Sheet</a> object that we can use to access and edit the main sheet of our spreadsheet.</p>
+
+<p>The function call SpreadsheetDB.getColumnIndexesFromSheet(sheet) gives us back a mapping from column name to index. This is useful for accessing elements of a row by name later on. In our case, the result of getColumnIndexesFromSheet is the following mapping: <code>{Name: 0, Email: 1, Age: 2}</code>. This means that Name is column index 0, Email is column index 1, and Age is column index 2. We’re counting columns starting with zero. Perfect!</p>
+
+<p>The call to <code>getDraftMessageBySubject</code> gets a draft from our Gmail drafts that we’ll use later to send the emails to our friends.</p>
+
+<p>We use the <code>SpreadsheetDB.forEachRow</code> function to perform an action for each row in the spreadsheet except the headers. We pass a function with no name (an &ldquo;anonymous function&rdquo;) to SpreadsheetDB, and SpreadsheetDB will call that function once per non-header row of our spreadsheet.</p>
+
+<pre><code class="language-javascript">    var name = row[indexes[&quot;Name&quot;]];
+    var email = row[indexes[&quot;Email&quot;]];
+    var age = row[indexes[&quot;Age&quot;]];
+</code></pre>
+
+<p>The input to our anonymous function, row, is an array with the contents of the row currently being processed. From earlier, indexes[&ldquo;Name&rdquo;] is 0, indexes[&ldquo;Email&rdquo;] is 1, and indexes[&ldquo;Age&rdquo;] is 2. We can use this to get the name, email, and age of one of our friends from the spreadsheet.</p>
+
+<pre><code class="language-javascript">var body = templateBody.replace(/&lt;name&gt;/g, name).replace(/&lt;age&gt;/g, age);
+</code></pre>
+
+<p>This is where the textual replacement actually happens. <code>&lt;name&gt;</code> is replaced with your friend&rsquo;s name. <code>&lt;age&gt;</code> is replaced with your friend&rsquo;s age. The &lsquo;g&rsquo; indicates that a &ldquo;global&rdquo; replacement should be performed, so every time the string <code>&lt;name&gt;</code> appears it will be replaced by the name of your friend from the spreadsheet. Without the &lsquo;g&rsquo;, only the first occurence of <code>&lt;name&gt;</code> would be replaced.</p>
+
+<pre><code class="language-javascript">GmailApp.sendMail(email, subject, body);
+</code></pre>
+
+<p>Last, this line sends the email!</p>
+
+<p>Since this is JavaScript, you can comment out lines by putting <code>//</code> at the start of the line. Everything occuring after <code>//</code> on the line will have no affect.</p>
+
+<p>I recommend commenting out the GmailApp.sendMail line before running this for the first time to so that you don&rsquo;t accidently email people incorrectly.</p>
+
+<p>Add the line <code>Logger.log(&quot;To: &quot; + email); Logger.log(&quot;Subj: &quot; + subject); Logger.log(&quot;Body: &quot; + body);</code> in place of the GmailApp.sendMail line until you&rsquo;re convinced that the correct emails are going to be sent to the correct people. Only once you are sure it&rsquo;s working as intended, uncomment the GmailApp.sendMail line so it actually sends the emails.</p>
+
+<p>To run the performMailMerge function, choose performMailMerge from the dropdown and click the run (right-arrow) button.
+To see your logs (the inputs to the Logger.log function calls), choose &ldquo;View &gt; Logs&rdquo; or press ctrl-Enter or cmd-Enter.</p>
+
+<p><img src="https://66.media.tumblr.com/da2acd06f66fb2c9b6f6e68f046029de/tumblr_pgyx7hQlOL1rfccnto1_1280.png" alt="Apps Script menu bar: Run button" style="width:700px;"></p>
+
+<p>That&rsquo;s it. When you run performMailMerge, the emails will be sent with the values from the spreadsheet substituted for the &ldquo;<name>&rdquo; and &ldquo;<age>&rdquo; placeholders in the draft. Once you&rsquo;ve got the hang of this, let&rsquo;s add a few finishing touches before moving on to scheduling emails to be sent in the future.</p>
+
+<h3 id="finishing-touches">Finishing Touches</h3>
+
+<p><em>Finishing touch 1:</em> Adding a &ldquo;Status&rdquo; column to avoid emailing people twice.</p>
+
+<pre><code>Name  Email  Age  Status
+...   ...    ...  ...
+</code></pre>
+
+<p>Let&rsquo;s add some finishing touches. Add to your spreadsheet a new column &ldquo;Status&rdquo;. When an email sends successfully, we&rsquo;ll set the status of the row to &ldquo;Done&rdquo;. If the status of a row is already &ldquo;Done&rdquo;, we&rsquo;ll skip that row. The updated code is shown here:</p>
+
+<pre><code class="language-javascript">function performMailMerge() {
+  var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = spreadsheet.getSheetByName(&quot;Sheet 1&quot;);
+  var indexes = SpreadsheetDB.getColumnIndexesFromSheet(sheet);
+  var subject = &quot;Happiest Birthday!&quot;;
+  var draftMessage = getDraftMessageBySubject(subject);
+  var templateBody = draftMessage.getPlainBody();
+  SpreadsheetDB.forEachRow(sheet, function(row) {
+    var name = row[indexes[&quot;Name&quot;]];
+    var email = row[indexes[&quot;Email&quot;]];
+    var age = row[indexes[&quot;Age&quot;]];
+    var status = row[indexes[&quot;Status&quot;]];
+    
+    if (status == &quot;Done&quot;) {
+      return;
+    }
+    
+    var body = templateBody.replace(/&lt;name&gt;/g, name).replace(/&lt;age&gt;/g, age);
+    GmailApp.sendEmail(email, subject, body);
+    
+    row[indexes[&quot;Status&quot;]] = &quot;Done&quot;;
+    return row;
+  });
+}
+</code></pre>
+
+<p>In order to make this change, we just check the value of <code>row[indexes[&quot;Status&quot;]]</code>, and use a return statement to skip the row if the status is &ldquo;Done&rdquo;.
+In order to update the row, we modify the <code>row</code> array and return it and SpreadsheetDB takes care of updating the underlying spreadsheet.</p>
+
+<p>With this change in place, we can now add new recipients to our spreadsheet even after having run the performMailMerge function, and if we run performMailMerge again we won&rsquo;t email anyone who has already received an email.</p>
+
+<p><em>Finishing touch 2:</em> Adding a menu item that triggers our function.</p>
+
+<p>When we created our Apps Script, it was automatically associated with our spreadsheet. If we add a function named <code>onOpen()</code> to our Apps Script, it will automatically get run when the associated spreadsheet is opened. We can add a menu item to our spreadsheet by writing an onOpen function like this one:</p>
+
+<pre><code class="language-javascript">function onOpen() {
+  SpreadsheetApp.getUi()
+  .createMenu('Mail Merge')
+  .addItem('Send Emails', 'performMailMerge')
+  .addToUi();
+}
+</code></pre>
+
+<p>Go ahead and refresh your spreadsheet. You should now see a menu called &ldquo;Mail Merge&rdquo; with a menu item &ldquo;Send Emails&rdquo;. Selecting &ldquo;Send Emails&rdquo; will cause your performMailMerge function to be run.</p>
+
+<p><img src="https://66.media.tumblr.com/bba93c6c694c1ed6196e86baa1307648/tumblr_pgyxyq8CVX1rfccnto1_1280.png" alt="Mail merge custom menu bar" style="width:700px;"></p>
+
+<h2 id="part-2-scheduling-emails-for-the-future">Part 2: Scheduling Emails for the Future</h2>
+
+<p>In Part 1 we wrote a mail merge function that emails our friends &ldquo;personalized&rdquo; Happy Birthday messages when we run performMailMerge. But why would we want to say happy birthday to all our friends at once? That&rsquo;s silly, it makes much more sense to send them a happy birthday message <em>on their birthday</em>. In this section, we&rsquo;ll modify our mail merge to send emails only on the birthday of the recipient.</p>
+
+<p>To start, let&rsquo;s add a new &ldquo;Birthday&rdquo; column to our spreadsheet.</p>
+
+<pre><code>Name  Email  Age   Birthday  Status
+...   ...    ...   ...       ...
+</code></pre>
+
+<p>We&rsquo;re going to use the moment.js library for working with dates. Create a new file (<em>File &gt; New &gt; Script File</em>) in your Apps Script project. Call it moment.gs, or anything else, and paste in the contents of the moment.js library. You can copy and paste moment.js from <a href="https://momentjs.com/downloads/moment.js" target="_blank">here</a>. Note: Be sure to use the non-minified version of moment.js; if you try using the minified version you will likely have trouble pasting the library into your Apps Script project.</p>
+
+<p>Now that we have moment.js, we can get the date of our friends birthday like this:
+<code>moment(row[indexes[&quot;Birthday&quot;]])</code></p>
+
+<p>We can then write the function isTodaysDate like this. This will check that the month and day of the given date are today&rsquo;s month and day, irrespective of what year the given date has.</p>
+
+<pre><code class="language-javascript">function isTodaysDate(date) {
+  var now = moment();
+  return now.isSame(date.year(now.year()), &quot;day&quot;);
+}
+</code></pre>
+
+<p>Putting it all together, we have this updated version of performMailMerge that will only send the email if the current date matches the birthday of the recipient.</p>
+
+<pre><code class="language-javascript">function isTodaysDate(date) {
+  var now = moment();
+  return now.isSame(date.year(now.year()), &quot;day&quot;);
+}
+
+function performMailMerge() {
+  var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = spreadsheet.getSheetByName(&quot;Sheet 1&quot;);
+  var indexes = SpreadsheetDB.getColumnIndexesFromSheet(sheet);
+  var subject = &quot;Happiest Birthday!&quot;;
+  var draftMessage = getDraftMessageBySubject(subject);
+  var templateBody = draftMessage.getPlainBody();
+  SpreadsheetDB.forEachRow(sheet, function(row) {
+    var name = row[indexes[&quot;Name&quot;]];
+    var email = row[indexes[&quot;Email&quot;]];
+    var age = row[indexes[&quot;Age&quot;]];
+    var status = row[indexes[&quot;Status&quot;]];
+    var birthday = moment(row[indexes[&quot;Birthday&quot;]]);
+    
+    if (status == &quot;Done&quot;) {
+      return;
+    }
+    if (!isTodaysDate(birthday)) {
+      return;
+    }
+    
+    var body = templateBody.replace(/&lt;name&gt;/g, name).replace(/&lt;age&gt;/g, age);
+    GmailApp.sendEmail(email, subject, body);
+    
+    row[indexes[&quot;Status&quot;]] = &quot;Done&quot;;
+    return row;
+  });
+}
+
+function getDraftMessageBySubject(subject) {
+  var draftMessages = GmailApp.getDraftMessages();
+  for (var i = 0; i &lt; draftMessages.length; i++) {
+    var draftMessage = draftMessages[i];
+    if (draftMessage.getSubject() == subject) {
+      return draftMessage;
+    }
+  }
+}
+</code></pre>
+
+<p>Now the only step remaining is to make this performMailMerge function run every day. To do this, click the &ldquo;Triggers&rdquo; button in the toolbar (the clock icon). Create a new time-based trigger, and set it up so that it runs Daily (you get to choose when each day it will run). Configure it to run the performMailMerge each day at a time of your choice.</p>
+
+<p><img src="https://66.media.tumblr.com/587d3371fc52f0ae50434a52337dbdfc/tumblr_pgyxa5usTC1rfccnto1_1280.png" alt="Apps Script menu bar: Set a trigger" style="width:700px;"></p>
+
+<p><em>Viola!</em></p>
+
+<p>You now have a mail merge that&rsquo;s running daily automatically, sending your friends Happy Birthday messages on their birthdays. Aren&rsquo;t you a good friend?</p>
+
+<p>While sending birthday emails automatically is somewhat impersonal, the techniques used here are broadly applicable. With Apps Script, you can send yourself reminders, monitor your Calendar events, track your finances, and more. It&rsquo;s a super useful and super friendly set of APIs, and this automated birthday emailer just scratches the surface of what Apps Script makes possible.</p>
+
+<h2 id="wrap-up">Wrap up</h2>
+
+<p>You&rsquo;ve now learned how to program a mail merge function that uses a spreadsheet as input. You can use a template to send multiple recipients personalized emails. You can schedule these emails to send in the future.</p>
+
+<p>You now have a great power, and with it comes great responsibility. Don&rsquo;t use this for spam. Be kind and courteous to your fellow citizens of the internet. If you find this useful, do let me know what you use it for (I&rsquo;m <a href="https://twitter.com/Bieber" target="_blank">@Bieber</a> on Twitter). I&rsquo;m using Google Apps Script for a variety of things these days and I am always interested to hear how others are using the same tools.</p>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/google-apps-script/">Google Apps Script</a>
+  
+  <a class="badge badge-light" href="/tags/automation/">Automation</a>
+  
+</div>
+
+
+
+    
+
+
+
+  
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  <img class="portrait mr-3" src="/img/portrait.jpg" itemprop="image" alt="Avatar">
+  
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/">David Bieber</a></h5>
+    <h6 class="card-subtitle">Software Engineer</h6>
+    
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="/#contact" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/Bieber" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/dbieber" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+    <div class="article-widget">
+      <div class="hr-light"></div>
+      <h3>Related</h3>
+      <ul>
+        
+        <li><a href="/post/2014-11-08-firefox-in-the-cloud/">Running Firefox in the Cloud</a></li>
+        
+        <li><a href="/post/2013-03-13-automate-your-life-sending-emails/">Automate Your Life: Sending Emails</a></li>
+        
+      </ul>
+    </div>
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+
+  <p class="powered-by">
+    &copy; 2018 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "Search Results",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    <script src="/js/search.js"></script>
+    
+
+    
+    
+
+  </body>
+</html>
+

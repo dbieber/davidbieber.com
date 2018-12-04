@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on David Bieber</title>
+    <link>https://davidbieber.com/posts/</link>
+    <description>Recent content in Posts on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://davidbieber.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Writing a Mail Merge in Google Apps Script</title>
+      <link>https://davidbieber.com/post/2018-10-21-apps-script-mail-merge/</link>
+      <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2018-10-21-apps-script-mail-merge/</guid>
+      <description>Google Apps Script is endlessly useful; in this post you will learn how to write a mail merge with Google Apps Script. It&amp;rsquo;s less than 30 lines of code! You can use this technique to send personalized emails individually to many recipients. In the second part of this post, you will learn how to schedule these emails to send in the future.
+Part 1: Writing a Mail Merge A mail merge is a program that sends an email to many recipients, automatically filling in the contents of the email according to a template.</description>
+    </item>
+    
+    <item>
+      <title>Introducing Python Fire</title>
+      <link>https://davidbieber.com/post/2017-03-06-introducing-python-fire/</link>
+      <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2017-03-06-introducing-python-fire/</guid>
+      <description>Originally posted on the Google Open Source Blog
+Today we are pleased to announce the open-sourcing of Python Fire. Python Fire generates command line interfaces (CLIs) from any Python code. Simply call the Fire function in any Python program to automatically turn that program into a CLI. The library is available from pypi via pip install fire, and the source is available on GitHub.
+Python Fire will automatically turn your code into a CLI without you needing to do any additional work.</description>
+    </item>
+    
+    <item>
+      <title>Ĉu Vi Estas Mia Patrino?</title>
+      <link>https://davidbieber.com/post/2015-07-01-estas-mia-patrino/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2015-07-01-estas-mia-patrino/</guid>
+      <description>This is my translation of P.D. Eastman&amp;rsquo;s children&amp;rsquo;s book &amp;ldquo;Are You My Mother?&amp;rdquo; into Esperanto. Enjoy. -David
+Ĉu Vi Estas Mia Patrino? By P.D. Eastman
+Patrina birdo sidis sur ŝiaj ovo. La ovo saltis.
+&amp;ldquo;Mi devas ion por mia beba birdo manĝi!&amp;rdquo; ŝi diris.
+Tiel for ŝi iris.
+Ene la nesto, la ovo saltis.
+Ĝi saltis kaj saltis kaj saltis.
+Gis&amp;hellip;
+&amp;hellip;el venis beban birdon!
+&amp;ldquo;Kie estas mia patrino?&amp;rdquo; li diris.</description>
+    </item>
+    
+    <item>
+      <title>Running Firefox in the Cloud</title>
+      <link>https://davidbieber.com/post/2014-11-08-firefox-in-the-cloud/</link>
+      <pubDate>Sat, 08 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2014-11-08-firefox-in-the-cloud/</guid>
+      <description>I found running Firefox in the cloud difficult, but with enough digging around I was able to get it working. Now I&amp;rsquo;m able to drive a headless version of Firefox with Selenium using Python. This lets me do things like have my Scrabble Bot play Words with Friends autonomously on Facebook.
+What am I going to show you how to do?
+I&amp;rsquo;m going to explain how you can install Firefox and Selenium on a virtual machine in the cloud.</description>
+    </item>
+    
+    <item>
+      <title>Why a Code@Night is not a Hackathon</title>
+      <link>https://davidbieber.com/post/2013-09-06-code-at-night-vs-hackathon/</link>
+      <pubDate>Fri, 06 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2013-09-06-code-at-night-vs-hackathon/</guid>
+      <description>I&amp;rsquo;ve written in the past about what a Code@Night is. And they&amp;rsquo;re wonderful. One of my favorite topics, really. People come to these things and they just code all night. Great experience. Tons of fun. Fruit. PacMan. Yadda, yadda, yadda.
+I tell people this all the time, and a pretty common response is &amp;ldquo;so, it&amp;rsquo;s like a hackathon?&amp;rdquo;
+So I think for a bit. There&amp;rsquo;s coding. There&amp;rsquo;s minimal sleeping. There are tech talks.</description>
+    </item>
+    
+    <item>
+      <title>MathCounts Coach Q&#43;A</title>
+      <link>https://davidbieber.com/post/2013-08-16-mathcounts-coach-q-and-a/</link>
+      <pubDate>Fri, 16 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2013-08-16-mathcounts-coach-q-and-a/</guid>
+      <description>Last week I did a Q+A for the Life at KA blog. The last time I did an education-centric online Q+A was more than three years earlier. Let&amp;rsquo;s take a look.
+Originally posted at mathcounts.org in March 2010.
+How long have you been a MATHCOUNTS coach?
+This is my second year coaching the Van Antwerp MATHCOUNTS team.
+What is your favorite part about being a MATHCOUNTS coach?
+It&amp;rsquo;s great to see my students having a good time with math.</description>
+    </item>
+    
+    <item>
+      <title>Life at KA: A Khanversation with David Bieber</title>
+      <link>https://davidbieber.com/post/2013-08-14-khanversation/</link>
+      <pubDate>Wed, 14 Aug 2013 01:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2013-08-14-khanversation/</guid>
+      <description>Originally posted at life.khanacademy.org
+We&amp;rsquo;ll dive straight into the questions for our latest Khan Academy Khanversation, this time featuring rising Princeton senior David Bieber.
+David, let&amp;rsquo;s begin with the question everyone is dying to hear you answer. Are you related to Justin Bieber?
+It&amp;rsquo;s funny you should ask that. People tell me all the time &amp;ldquo;sorry about your last name&amp;rdquo; or &amp;ldquo;I hope you&amp;rsquo;re not related to that singer&amp;rdquo; or &amp;ldquo;can you get me free tickets to the Bieber concert?</description>
+    </item>
+    
+    <item>
+      <title>ssh Passwordlessly</title>
+      <link>https://davidbieber.com/post/2013-08-14-ssh-passwordlessly/</link>
+      <pubDate>Wed, 14 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2013-08-14-ssh-passwordlessly/</guid>
+      <description>You&amp;rsquo;re used to ssh-ing into machine B from machine A by typing:
+ssh username@B.com
+password
+Now you wish to ssh from machine A into machine B without having to enter your password. Just follow these steps.
+ Create a public/private RSA key pair by issuing the unix command ssh-keygen. Do not enter a passphrase.
+ Put the private key on machine A (the machine you wish to ssh from). Usually the best place to put it is in ~/.</description>
+    </item>
+    
+    <item>
+      <title>Teach at Scale</title>
+      <link>https://davidbieber.com/post/2013-08-07-teach-at-scale/</link>
+      <pubDate>Wed, 07 Aug 2013 01:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2013-08-07-teach-at-scale/</guid>
+      <description>The best way to learn is to teach. It&amp;rsquo;s also, most of the time, the most fun way to learn. And as an added bonus, the person you&amp;rsquo;re teaching learns too.
+I strongly believe that you, as someone who has found themselves reading strange blogs on the internet, have a lot to offer the world in the way of teaching. So I want you to teach at scale. Yes, I&amp;rsquo;m looking at you Mom and Dad, former Facebook and Twitter interns, my fellow interns here at Khan Academy.</description>
+    </item>
+    
+    <item>
+      <title>Automate Your Life: Sending Emails</title>
+      <link>https://davidbieber.com/post/2013-03-13-automate-your-life-sending-emails/</link>
+      <pubDate>Wed, 13 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2013-03-13-automate-your-life-sending-emails/</guid>
+      <description>In a hurry? Scroll down and skip to the code. That&amp;rsquo;s the good part anyway.
+One of the beauties of programming is the elimination of redundant aspects of life that you find yourself doing over and over again. When you find yourself calling home every weekend, logging hours at your job daily, or getting your hair cut every month, it&amp;rsquo;s time to learn to program. Write a short script to do these repetitive behaviors for you.</description>
+    </item>
+    
+    <item>
+      <title>Lorenz Attractors and Chess</title>
+      <link>https://davidbieber.com/post/2013-03-13-lorenz-attractor-pawns/</link>
+      <pubDate>Wed, 13 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2013-03-13-lorenz-attractor-pawns/</guid>
+      <description>Every pawn is an inverted Lorenz attractor. Not every Lorenz attractor is an inverted pawn.</description>
+    </item>
+    
+    <item>
+      <title>Blokus Life Lessons</title>
+      <link>https://davidbieber.com/post/2013-01-31-blokus-life-lessons/</link>
+      <pubDate>Thu, 31 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2013-01-31-blokus-life-lessons/</guid>
+      <description>In this post, clicking the bold word Life will replace it with the bold word Blokus.
+Life is simple. It gets more complex over time, but nothing insurmountable. In the beginning, your path is pretty much laid out. You have some control over what directions you go, and these are important decisions. They&amp;rsquo;ll shape your future. They&amp;rsquo;ll change what opportunities you have down the road. But as important as they are, there are relatively few wrong decisions.</description>
+    </item>
+    
+    <item>
+      <title>Get your new Django based web app live with AppFog in minutes</title>
+      <link>https://davidbieber.com/post/2012-12-25-django-appfog/</link>
+      <pubDate>Tue, 25 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2012-12-25-django-appfog/</guid>
+      <description>You&amp;rsquo;ll have your Django web app up and running live on the internet with AppFog in a matter of minutes.
+Here&amp;rsquo;s what you have to do.
+ Start a project on AppFog. Clone the django-appfog-helloworld repository. Push to AppFog.  The repository is available at https://github.com/dbieber/django-appfog-helloworld.
+Here&amp;rsquo;s what comes with this repo.
+It&amp;rsquo;s a Django project that works out of the box (just download it and python manage.py runserver. If you have Django installed, it&amp;rsquo;ll work!</description>
+    </item>
+    
+    <item>
+      <title>CRM&#39;s: Not Just for Sales Folk</title>
+      <link>https://davidbieber.com/post/2012-11-29-crms-not-just-for-sales-folk/</link>
+      <pubDate>Thu, 29 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2012-11-29-crms-not-just-for-sales-folk/</guid>
+      <description>In this blog post I recommend Streak, a customer relationship management (CRM) tool that lives inside Gmail.
+Discuss on Hacker News.
+What do you use email for? I’m curious, so feel free to let me know before reading further (Google form).
+Personally, there are a just a handful of use cases that make up the vast majority of my email usage. Let’s list them.
+Organizing talks and events for ACM and Splash!</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on Education</title>
+      <link>https://davidbieber.com/post/2012-10-30-thoughts-on-education/</link>
+      <pubDate>Tue, 30 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2012-10-30-thoughts-on-education/</guid>
+      <description>That concludes day one of the TigerTrek. I flew out of Princeton yesterday with a group of 20 to spend the week visiting technology companies, startups and venture capitalists in Silicon Valley. We&amp;rsquo;re going company to company hearing founder&amp;rsquo;s stories, discussing entrepreneurship, and as we do this I am forced to introspect. What do I want to do with my life? How can I make a difference?
+My passion is education.</description>
+    </item>
+    
+    <item>
+      <title>Do you take online courses?</title>
+      <link>https://davidbieber.com/post/2012-09-19-do-you-take-online-courses/</link>
+      <pubDate>Wed, 19 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2012-09-19-do-you-take-online-courses/</guid>
+      <description>If you&amp;rsquo;ve taken any online classes, read on! Online education is growing rapidly, and I want to make the online education experience the best it can be. To that end, I would really appreciate your insight regarding online courses such as those offered at Coursera, Udacity, edX, Khan Academy, and MIT&amp;rsquo;s OpenCourseWare.
+Please help me by filling out this short 4 question form regarding your online education experiences:
+The questions asked are: &amp;ldquo;Which platforms have you used?</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s a Code@Night?</title>
+      <link>https://davidbieber.com/post/2012-09-18-whats-a-code-at-night/</link>
+      <pubDate>Tue, 18 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2012-09-18-whats-a-code-at-night/</guid>
+      <description>Check out this video showing what Code@Nights are all about!
+Since you’re reading my blog, you should know a little bit about myself. I’m a big fan of Scrabble. I love math, puzzles, and playing tennis. I spend a lot of my would-be-free time on Coursera. And I’m vice chair of Princeton’s ACM Group.
+ACM stands for Association for Computing Machinery, but that’s not important. I think that name is silly.</description>
+    </item>
+    
+    <item>
+      <title>Collapsible Blog Posts</title>
+      <link>https://davidbieber.com/post/2012-09-04-collapsible-blog-posts/</link>
+      <pubDate>Tue, 04 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2012-09-04-collapsible-blog-posts/</guid>
+      <description>This is my Hello World blog post of sorts. It&#39;s my introduction to the world of blogging, the blog post likely only read by my family and a few techie friends. It&#39;s the post in which I make an unrealistic commitment to blog frequently, which I later fail to live up to. And it&#39;s the post in which I introduce a new form of blogging, Collapsible Blogging. Here&#39;s the tl;dr.</description>
+    </item>
+    
+  </channel>
+</rss>

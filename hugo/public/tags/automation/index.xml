@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automation on David Bieber</title>
+    <link>https://davidbieber.com/tags/automation/</link>
+    <description>Recent content in Automation on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 21 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://davidbieber.com/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Writing a Mail Merge in Google Apps Script</title>
+      <link>https://davidbieber.com/post/2018-10-21-apps-script-mail-merge/</link>
+      <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2018-10-21-apps-script-mail-merge/</guid>
+      <description>Google Apps Script is endlessly useful; in this post you will learn how to write a mail merge with Google Apps Script. It&amp;rsquo;s less than 30 lines of code! You can use this technique to send personalized emails individually to many recipients. In the second part of this post, you will learn how to schedule these emails to send in the future.
+Part 1: Writing a Mail Merge A mail merge is a program that sends an email to many recipients, automatically filling in the contents of the email according to a template.</description>
+    </item>
+    
+    <item>
+      <title>Running Firefox in the Cloud</title>
+      <link>https://davidbieber.com/post/2014-11-08-firefox-in-the-cloud/</link>
+      <pubDate>Sat, 08 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2014-11-08-firefox-in-the-cloud/</guid>
+      <description>I found running Firefox in the cloud difficult, but with enough digging around I was able to get it working. Now I&amp;rsquo;m able to drive a headless version of Firefox with Selenium using Python. This lets me do things like have my Scrabble Bot play Words with Friends autonomously on Facebook.
+What am I going to show you how to do?
+I&amp;rsquo;m going to explain how you can install Firefox and Selenium on a virtual machine in the cloud.</description>
+    </item>
+    
+    <item>
+      <title>Automate Your Life: Sending Emails</title>
+      <link>https://davidbieber.com/post/2013-03-13-automate-your-life-sending-emails/</link>
+      <pubDate>Wed, 13 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2013-03-13-automate-your-life-sending-emails/</guid>
+      <description>In a hurry? Scroll down and skip to the code. That&amp;rsquo;s the good part anyway.
+One of the beauties of programming is the elimination of redundant aspects of life that you find yourself doing over and over again. When you find yourself calling home every weekend, logging hours at your job daily, or getting your hair cut every month, it&amp;rsquo;s time to learn to program. Write a short script to do these repetitive behaviors for you.</description>
+    </item>
+    
+  </channel>
+</rss>

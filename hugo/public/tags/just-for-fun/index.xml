@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Just for Fun on David Bieber</title>
+    <link>https://davidbieber.com/tags/just-for-fun/</link>
+    <description>Recent content in Just for Fun on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://davidbieber.com/tags/just-for-fun/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bieber Bot</title>
+      <link>https://davidbieber.com/projects/bieber-bot/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/projects/bieber-bot/</guid>
+      <description>Bieber Bot is a highly motivated robot that assists me with my financials, tweets on my behalf, and keeps me productive when my brain feels otherwise.
+Is Bieber Bot related to Justin Bieber? No, no relation. Bieber Bot is my own creation.
+How does Bieber Bot work? I communicate with Bieber Bot primarily via Facebook messenger. Bieber Bot&amp;rsquo;s brain is a collection of Google Apps Scripts, and Bieber Bot&amp;rsquo;s memory is mostly spreadsheets in Google Sheets.</description>
+    </item>
+    
+    <item>
+      <title>Escape Castle Heterodyne</title>
+      <link>https://davidbieber.com/projects/escape-castle-heterodyne/</link>
+      <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/projects/escape-castle-heterodyne/</guid>
+      <description>We built an Escape Room!
+Serious props to Bianca Homberg and her amazing talented group of friends for making this happen. I was just a small piece of this epic endeavor. Bianca was the organizer and driving force for a really impressive piece of puzzle craftsmanship.
+The premise for the escape room is based on the webcomic Girl Genius. Here&amp;rsquo;s what you need to know:
+Escape Castle Heterodyne There&amp;rsquo;s a castle, Castle Heterodyne, which is a living, breathing, talking entity.</description>
+    </item>
+    
+    <item>
+      <title>Scrabble Bot</title>
+      <link>https://davidbieber.com/projects/scrabble-bot/</link>
+      <pubDate>Fri, 06 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/projects/scrabble-bot/</guid>
+      <description>Scrabble Bot loves Scrabble and social media! Check out Scrab&amp;rsquo;s tumblr page full of Scrabble games it&amp;rsquo;s played against itself.
+Scrabble Bot is also privacy conscious, and so uses Facebook under a pseudonym, &amp;ldquo;Scrab Blebot&amp;rdquo;. Scrab believes their identity is secure.
+You can find Scrabble Bot&amp;rsquo;s source on GitHub here.</description>
+    </item>
+    
+  </channel>
+</rss>

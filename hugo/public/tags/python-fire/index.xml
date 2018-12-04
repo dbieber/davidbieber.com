@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python Fire on David Bieber</title>
+    <link>https://davidbieber.com/tags/python-fire/</link>
+    <description>Recent content in Python Fire on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 06 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://davidbieber.com/tags/python-fire/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introducing Python Fire</title>
+      <link>https://davidbieber.com/post/2017-03-06-introducing-python-fire/</link>
+      <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2017-03-06-introducing-python-fire/</guid>
+      <description>Originally posted on the Google Open Source Blog
+Today we are pleased to announce the open-sourcing of Python Fire. Python Fire generates command line interfaces (CLIs) from any Python code. Simply call the Fire function in any Python program to automatically turn that program into a CLI. The library is available from pypi via pip install fire, and the source is available on GitHub.
+Python Fire will automatically turn your code into a CLI without you needing to do any additional work.</description>
+    </item>
+    
+  </channel>
+</rss>
