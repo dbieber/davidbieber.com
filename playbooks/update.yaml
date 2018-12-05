@@ -12,23 +12,23 @@
     become: true
 
   - name: setup davidbieber.com
-    git: repo=https://github.com/dbieber/davidbieber.com dest=~/davidbieber.com version=deploy
+    git: repo=https://github.com/dbieber/davidbieber.com dest=~/davidbieber.com version=deploy force=true
 
   - name: install python dependencies
     pip:
-      requirements: ~/davidbieber.com/requirements.txt
-      virtualenv: ~/davidbieber.com/virtualenv
+      requirements: /home/dbieber/davidbieber.com/requirements.txt
+      virtualenv: /home/dbieber/davidbieber.com/virtualenv
 
   - name: get files ready to serve
     shell: cp -r hugo/public/* default/
     args:
-      chdir: ~/davidbieber.com
+      chdir: /home/dbieber/davidbieber.com
 
   - name: start server app.py
     shell: nohup ./virtualenv/bin/python app.py --port 443 --redirect &
     become: true
     args:
-      chdir: ~/davidbieber.com
+      chdir: /home/dbieber/davidbieber.com
 
   - name: download certbot
     get_url: >
