@@ -12,8 +12,7 @@
     become: true
 
   - name: setup davidbieber.com
-    git: repo=https://github.com/dbieber/davidbieber.com dest=~/davidbieber.com
-    branch: deploy
+    git: repo=https://github.com/dbieber/davidbieber.com dest=~/davidbieber.com version=deploy
 
   - name: install python dependencies
     pip:
