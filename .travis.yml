@@ -13,15 +13,13 @@ script:
 after_success:
   - cd ../..
   - git clone --branch deploy https://${GH_TOKEN}@github.com/dbieber/davidbieber.com.git davidbieber.com-deploy
-  - rsync -av davidbieber.com/default/ davidbieber.com-deploy/default/ --delete
-  - rsync -av davidbieber.com/static/ davidbieber.com-deploy/static/ --delete
-  - rsync -av davidbieber.com/hugo/public/ davidbieber.com-deploy/hugo/public/ --delete
+  - rsync -av davidbieber.com/ davidbieber.com-deploy/ --delete --exclude=.gitignore --exclude=.git
 
   - cd davidbieber.com-deploy
   - git config user.email "david810@gmail.com"
   - git config user.name "David Bieber"
 
-  - git add default static hugo/public
+  - git add .
   - git commit -m '[skip travis] Automatic commit by Travis CI'
   - git push origin deploy
 

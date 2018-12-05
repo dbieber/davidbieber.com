@@ -1,17 +1,35 @@
 ---
 - hosts: all
+  roles:
+   - role: ansiblebit.virtualenv
+     tags: [ virtualenv ]
+
   tasks:
+  - name: install git
+    apt:
+      name: git
+      state: present
+    become: true
+
   - name: setup davidbieber.com
     git: repo=https://github.com/dbieber/davidbieber.com dest=~/davidbieber.com
-  - name: install dependencies
+    branch: deploy
+
+  - name: install python dependencies
     pip:
       requirements: ~/davidbieber.com/requirements.txt
       virtualenv: ~/davidbieber.com/virtualenv
+
+  - name: get files ready to serve
+    shell: cp -r hugo/public/* default/
+    args:
+      chdir: ~/davidbieber.com
+
   - name: start server app.py
     shell: nohup ./virtualenv/bin/python app.py --port 443 --redirect &
     become: true
     args:
-      chdir: /home/dbieber/davidbieber.com
+      chdir: ~/davidbieber.com
 
   - name: download certbot
     get_url: >
