@@ -5,6 +5,7 @@ dump.rdb
 secure_settings.py
 .DS_store
 __pycache__
+virtualenv
 
 Transactions.csv
 
