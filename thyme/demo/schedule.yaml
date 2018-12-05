@@ -1,0 +1,23 @@
+---
+- name: Breakfast
+  frequency: daily
+  probability: .1
+  time: morning
+  transactions:
+    - Cash $3 cereal and milk
+    - txn: Cash $1 pizza
+      probability: 0.01
+
+- name: Lunch
+  frequency: daily
+  probability: .8
+  time: noonish
+  transactions:
+    - Credit $10 turkey sandwich
+
+- name: Dinner
+  frequency: daily
+  probability: .8
+  time: evening
+  transactions:
+    - Credit $15 chinese food

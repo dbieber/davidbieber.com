@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bar Chart</title>
+    <script type="text/javascript" src="/static/third_party/d3.v3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/example1.css"></style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var data_source = "{{ data_source }}";
+      var height = {{ height | default(460) }};
+    </script>
+    <script type="text/javascript" src="/static/barchart.js"></script>
+  </body>
+</html>

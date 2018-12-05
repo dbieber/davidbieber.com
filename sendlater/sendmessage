@@ -1,0 +1,4 @@
+tell application "Messages"
+  send "Where am I going and how do I get there?" to buddy "12034604723" of service "E:dbieber@princeton.edu"
+end tell
+
