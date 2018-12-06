@@ -11,7 +11,7 @@ tags = ["Esperanto"]
 summary = "This is my translation of P.D. Eastman's children's book 'Are You My Mother?' into Esperanto."
 
 [image]
-  caption = "Image credit: [**Unsplash**](https://unsplash.com/photos/CpkOjOcXdUY)"
+  caption = ""
   focal_point = ""
 +++
 
