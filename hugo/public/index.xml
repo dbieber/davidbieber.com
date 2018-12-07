@@ -337,9 +337,7 @@ $ python gcdfire.py 34 90
 
 &lt;h3 id=&#34;installing-the-shh-shell&#34;&gt;Installing the Shh Shell&lt;/h3&gt;
 
-&lt;p&gt;Head on over to &lt;a href=&#34;https://github.com/dbieber/shh-shell&#34; target=&#34;_blank&#34;&gt;https://github.com/dbieber/shh-shell&lt;/a&gt; to use the shh shell.&lt;/p&gt;
-
-&lt;p&gt;If you get around to writing proper installation instructions for this before I do, send me a pull request. (&lt;a href=&#34;https://github.com/dbieber/shh-shell&#34; target=&#34;_blank&#34;&gt;shh-shell repo&lt;/a&gt;, &lt;a href=&#34;https://github.com/dbieber/davidbieber.com&#34; target=&#34;_blank&#34;&gt;davidbieber.com repo&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Head on over to &lt;a href=&#34;https://github.com/dbieber/shh-shell&#34; target=&#34;_blank&#34;&gt;https://github.com/dbieber/shh-shell&lt;/a&gt; for instructions on how to set up the shh shell.&lt;/p&gt;
 
 &lt;h1 id=&#34;a-bit-of-backstory&#34;&gt;A bit of backstory&lt;/h1&gt;
 
