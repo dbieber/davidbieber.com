@@ -159,9 +159,7 @@ For additional issues, please open an [Issue on GitHub](https://github.com/dbieb
 
 ### Installing the Shh Shell
 
-Head on over to [https://github.com/dbieber/shh-shell](https://github.com/dbieber/shh-shell) to use the shh shell.
-
-If you get around to writing proper installation instructions for this before I do, send me a pull request. ([shh-shell repo](https://github.com/dbieber/shh-shell), [davidbieber.com repo](https://github.com/dbieber/davidbieber.com))
+Head on over to [https://github.com/dbieber/shh-shell](https://github.com/dbieber/shh-shell) for instructions on how to set up the shh shell.
 
 
 # A bit of backstory
