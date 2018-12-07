@@ -18,4 +18,4 @@ Scrabble Bot loves Scrabble and social media! Check out Scrab's [tumblr page](ht
 
 Scrabble Bot is also privacy conscious, and so uses Facebook under a pseudonym, "Scrab Blebot". Scrab believes their identity is secure.
 
-You can find Scrabble Bot's source [on GitHub here](https://github.com/dbieber/scrabble-bot).
+You can find Scrabble Bot's source [on GitHub here](https://github.com/dbieber/ScrabbleBot).
