@@ -1,14 +1,17 @@
-language: go
+language: minimal
 
-go:
-  - "1.11.7"
+env:
+- HUGO_VERSION=0.54.0
 
-install:
-  - go get github.com/gohugoio/hugo
+before_install:
+- cd ..
+- mkdir -p bin
+- curl -L https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz -o bin/hugo.tar.gz
+- tar xzvvf bin/hugo.tar.gz -C ./bin
 
 script:
-  - cd hugo
-  - hugo
+  - cd davidbieber.com/hugo
+  - ../../bin/hugo  # Generate the static site.
 
 after_success:
   - cd ../..
