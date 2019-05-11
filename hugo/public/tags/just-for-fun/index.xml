@@ -18,9 +18,7 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/projects/bieber-bot/</guid>
-      <description>Bieber Bot is a highly motivated robot that assists me with my financials, tweets on my behalf, and keeps me productive when my brain feels otherwise.
-Is Bieber Bot related to Justin Bieber? No, no relation. Bieber Bot is my own creation.
-How does Bieber Bot work? I communicate with Bieber Bot primarily via Facebook messenger. Bieber Bot&amp;rsquo;s brain is a collection of Google Apps Scripts, and Bieber Bot&amp;rsquo;s memory is mostly spreadsheets in Google Sheets.</description>
+      <description>My faithful robot companion.</description>
     </item>
     
     <item>
@@ -29,10 +27,7 @@ How does Bieber Bot work? I communicate with Bieber Bot primarily via Facebook m
       <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/projects/escape-castle-heterodyne/</guid>
-      <description>We built an Escape Room!
-Serious props to Bianca Homberg and her amazing talented group of friends for making this happen. I was just a small piece of this epic endeavor. Bianca was the organizer and driving force for a really impressive piece of puzzle craftsmanship.
-The premise for the escape room is based on the webcomic Girl Genius. Here&amp;rsquo;s what you need to know:
-Escape Castle Heterodyne There&amp;rsquo;s a castle, Castle Heterodyne, which is a living, breathing, talking entity.</description>
+      <description>We built an escape room!</description>
     </item>
     
     <item>
@@ -41,9 +36,7 @@ Escape Castle Heterodyne There&amp;rsquo;s a castle, Castle Heterodyne, which is
       <pubDate>Fri, 06 Jun 2014 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/projects/scrabble-bot/</guid>
-      <description>Scrabble Bot loves Scrabble and social media! Check out Scrab&amp;rsquo;s tumblr page full of Scrabble games it&amp;rsquo;s played against itself.
-Scrabble Bot is also privacy conscious, and so uses Facebook under a pseudonym, &amp;ldquo;Scrab Blebot&amp;rdquo;. Scrab believes their identity is secure.
-You can find Scrabble Bot&amp;rsquo;s source on GitHub here.</description>
+      <description>A Scrabble playing, tumblr posting, robot with friends.</description>
     </item>
     
   </channel>

@@ -13,13 +13,21 @@
     
     
     <item>
+      <title>The Weisfeiler-Lehman Isomorphism Test</title>
+      <link>https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/</guid>
+      <description>Explains the Weisfeiler-Lehman Graph Isomorphism Test</description>
+    </item>
+    
+    <item>
       <title>Writing a Mail Merge in Google Apps Script</title>
       <link>https://davidbieber.com/post/2018-10-21-apps-script-mail-merge/</link>
       <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/post/2018-10-21-apps-script-mail-merge/</guid>
-      <description>Google Apps Script is endlessly useful; in this post you will learn how to write a mail merge with Google Apps Script. It&amp;rsquo;s less than 30 lines of code! You can use this technique to send personalized emails individually to many recipients. In the second part of this post, you will learn how to schedule these emails to send in the future.
-Part 1: Writing a Mail Merge A mail merge is a program that sends an email to many recipients, automatically filling in the contents of the email according to a template.</description>
+      <description>Use Google Apps Script to write a mail merge and schedule emails to send in the future.</description>
     </item>
     
     <item>
@@ -28,9 +36,7 @@ Part 1: Writing a Mail Merge A mail merge is a program that sends an email to ma
       <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/post/2017-03-06-introducing-python-fire/</guid>
-      <description>Originally posted on the Google Open Source Blog
-Today we are pleased to announce the open-sourcing of Python Fire. Python Fire generates command line interfaces (CLIs) from any Python code. Simply call the Fire function in any Python program to automatically turn that program into a CLI. The library is available from pypi via pip install fire, and the source is available on GitHub.
-Python Fire will automatically turn your code into a CLI without you needing to do any additional work.</description>
+      <description>Python Fire automatically generates command line interfaces from any Python objects.</description>
     </item>
     
     <item>
@@ -39,16 +45,7 @@ Python Fire will automatically turn your code into a CLI without you needing to 
       <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/post/2015-07-01-estas-mia-patrino/</guid>
-      <description>This is my translation of P.D. Eastman&amp;rsquo;s children&amp;rsquo;s book &amp;ldquo;Are You My Mother?&amp;rdquo; into Esperanto. Enjoy. -David
-Ĉu Vi Estas Mia Patrino? By P.D. Eastman
-Patrina birdo sidis sur ŝiaj ovo. La ovo saltis.
-&amp;ldquo;Mi devas ion por mia beba birdo manĝi!&amp;rdquo; ŝi diris.
-Tiel for ŝi iris.
-Ene la nesto, la ovo saltis.
-Ĝi saltis kaj saltis kaj saltis.
-Gis&amp;hellip;
-&amp;hellip;el venis beban birdon!
-&amp;ldquo;Kie estas mia patrino?&amp;rdquo; li diris.</description>
+      <description>This is my translation of P.D. Eastman&amp;rsquo;s children&amp;rsquo;s book &amp;lsquo;Are You My Mother?&amp;rsquo; into Esperanto.</description>
     </item>
     
     <item>
@@ -57,9 +54,7 @@ Gis&amp;hellip;
       <pubDate>Sat, 08 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/post/2014-11-08-firefox-in-the-cloud/</guid>
-      <description>I found running Firefox in the cloud difficult, but with enough digging around I was able to get it working. Now I&amp;rsquo;m able to drive a headless version of Firefox with Selenium using Python. This lets me do things like have my Scrabble Bot play Words with Friends autonomously on Facebook.
-What am I going to show you how to do?
-I&amp;rsquo;m going to explain how you can install Firefox and Selenium on a virtual machine in the cloud.</description>
+      <description>Run a headless version of Firefox in the cloud and drive it with Selenium.</description>
     </item>
     
     <item>
@@ -68,9 +63,7 @@ I&amp;rsquo;m going to explain how you can install Firefox and Selenium on a vir
       <pubDate>Fri, 06 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/post/2013-09-06-code-at-night-vs-hackathon/</guid>
-      <description>I&amp;rsquo;ve written in the past about what a Code@Night is. And they&amp;rsquo;re wonderful. One of my favorite topics, really. People come to these things and they just code all night. Great experience. Tons of fun. Fruit. PacMan. Yadda, yadda, yadda.
-I tell people this all the time, and a pretty common response is &amp;ldquo;so, it&amp;rsquo;s like a hackathon?&amp;rdquo;
-So I think for a bit. There&amp;rsquo;s coding. There&amp;rsquo;s minimal sleeping. There are tech talks.</description>
+      <description>A Code@Night is not a hackathon. Hackathon : Code@Night :: Track race : Evening stroll</description>
     </item>
     
     <item>
@@ -93,10 +86,7 @@ It&amp;rsquo;s great to see my students having a good time with math.</descripti
       <pubDate>Wed, 14 Aug 2013 01:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/post/2013-08-14-khanversation/</guid>
-      <description>Originally posted at life.khanacademy.org
-We&amp;rsquo;ll dive straight into the questions for our latest Khan Academy Khanversation, this time featuring rising Princeton senior David Bieber.
-David, let&amp;rsquo;s begin with the question everyone is dying to hear you answer. Are you related to Justin Bieber?
-It&amp;rsquo;s funny you should ask that. People tell me all the time &amp;ldquo;sorry about your last name&amp;rdquo; or &amp;ldquo;I hope you&amp;rsquo;re not related to that singer&amp;rdquo; or &amp;ldquo;can you get me free tickets to the Bieber concert?</description>
+      <description>In which David Bieber interviews himself.</description>
     </item>
     
     <item>
@@ -129,8 +119,7 @@ I strongly believe that you, as someone who has found themselves reading strange
       <pubDate>Wed, 13 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/post/2013-03-13-automate-your-life-sending-emails/</guid>
-      <description>In a hurry? Scroll down and skip to the code. That&amp;rsquo;s the good part anyway.
-One of the beauties of programming is the elimination of redundant aspects of life that you find yourself doing over and over again. When you find yourself calling home every weekend, logging hours at your job daily, or getting your hair cut every month, it&amp;rsquo;s time to learn to program. Write a short script to do these repetitive behaviors for you.</description>
+      <description>Use Python to send emails programmatically.</description>
     </item>
     
     <item>
@@ -216,7 +205,7 @@ ACM stands for Association for Computing Machinery, but that’s not important. 
       <pubDate>Tue, 04 Sep 2012 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/post/2012-09-04-collapsible-blog-posts/</guid>
-      <description>This is my Hello World blog post of sorts. It&#39;s my introduction to the world of blogging, the blog post likely only read by my family and a few techie friends. It&#39;s the post in which I make an unrealistic commitment to blog frequently, which I later fail to live up to. And it&#39;s the post in which I introduce a new form of blogging, Collapsible Blogging. Here&#39;s the tl;dr.</description>
+      <description>This is my Hello World blog post of sorts.</description>
     </item>
     
   </channel>

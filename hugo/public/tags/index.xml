@@ -22,38 +22,11 @@
     </item>
     
     <item>
-      <title>Education</title>
-      <link>https://davidbieber.com/tags/education/</link>
-      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidbieber.com/tags/education/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Esperanto</title>
-      <link>https://davidbieber.com/tags/esperanto/</link>
-      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidbieber.com/tags/esperanto/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Google Apps Script</title>
       <link>https://davidbieber.com/tags/google-apps-script/</link>
       <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/tags/google-apps-script/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hardware</title>
-      <link>https://davidbieber.com/tags/hardware/</link>
-      <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidbieber.com/tags/hardware/</guid>
       <description></description>
     </item>
     
@@ -67,20 +40,38 @@
     </item>
     
     <item>
-      <title>Princeton ACM</title>
-      <link>https://davidbieber.com/tags/princeton-acm/</link>
-      <pubDate>Fri, 06 Sep 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidbieber.com/tags/princeton-acm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Productivity</title>
       <link>https://davidbieber.com/tags/productivity/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robot</title>
+      <link>https://davidbieber.com/tags/robot/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/robot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>https://davidbieber.com/tags/software/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>https://davidbieber.com/tags/hardware/</link>
+      <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/hardware/</guid>
       <description></description>
     </item>
     
@@ -103,20 +94,29 @@
     </item>
     
     <item>
-      <title>Robot</title>
-      <link>https://davidbieber.com/tags/robot/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <title>Education</title>
+      <link>https://davidbieber.com/tags/education/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://davidbieber.com/tags/robot/</guid>
+      <guid>https://davidbieber.com/tags/education/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Software</title>
-      <link>https://davidbieber.com/tags/software/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <title>Esperanto</title>
+      <link>https://davidbieber.com/tags/esperanto/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://davidbieber.com/tags/software/</guid>
+      <guid>https://davidbieber.com/tags/esperanto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Princeton ACM</title>
+      <link>https://davidbieber.com/tags/princeton-acm/</link>
+      <pubDate>Fri, 06 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/princeton-acm/</guid>
       <description></description>
     </item>
     

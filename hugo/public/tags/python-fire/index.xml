@@ -18,9 +18,7 @@
       <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/post/2017-03-06-introducing-python-fire/</guid>
-      <description>Originally posted on the Google Open Source Blog
-Today we are pleased to announce the open-sourcing of Python Fire. Python Fire generates command line interfaces (CLIs) from any Python code. Simply call the Fire function in any Python program to automatically turn that program into a CLI. The library is available from pypi via pip install fire, and the source is available on GitHub.
-Python Fire will automatically turn your code into a CLI without you needing to do any additional work.</description>
+      <description>Python Fire automatically generates command line interfaces from any Python objects.</description>
     </item>
     
   </channel>

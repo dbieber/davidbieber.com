@@ -18,8 +18,7 @@
       <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/post/2018-10-21-apps-script-mail-merge/</guid>
-      <description>Google Apps Script is endlessly useful; in this post you will learn how to write a mail merge with Google Apps Script. It&amp;rsquo;s less than 30 lines of code! You can use this technique to send personalized emails individually to many recipients. In the second part of this post, you will learn how to schedule these emails to send in the future.
-Part 1: Writing a Mail Merge A mail merge is a program that sends an email to many recipients, automatically filling in the contents of the email according to a template.</description>
+      <description>Use Google Apps Script to write a mail merge and schedule emails to send in the future.</description>
     </item>
     
     <item>
@@ -28,9 +27,7 @@ Part 1: Writing a Mail Merge A mail merge is a program that sends an email to ma
       <pubDate>Sat, 08 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/post/2014-11-08-firefox-in-the-cloud/</guid>
-      <description>I found running Firefox in the cloud difficult, but with enough digging around I was able to get it working. Now I&amp;rsquo;m able to drive a headless version of Firefox with Selenium using Python. This lets me do things like have my Scrabble Bot play Words with Friends autonomously on Facebook.
-What am I going to show you how to do?
-I&amp;rsquo;m going to explain how you can install Firefox and Selenium on a virtual machine in the cloud.</description>
+      <description>Run a headless version of Firefox in the cloud and drive it with Selenium.</description>
     </item>
     
     <item>
@@ -39,8 +36,7 @@ I&amp;rsquo;m going to explain how you can install Firefox and Selenium on a vir
       <pubDate>Wed, 13 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/post/2013-03-13-automate-your-life-sending-emails/</guid>
-      <description>In a hurry? Scroll down and skip to the code. That&amp;rsquo;s the good part anyway.
-One of the beauties of programming is the elimination of redundant aspects of life that you find yourself doing over and over again. When you find yourself calling home every weekend, logging hours at your job daily, or getting your hair cut every month, it&amp;rsquo;s time to learn to program. Write a short script to do these repetitive behaviors for you.</description>
+      <description>Use Python to send emails programmatically.</description>
     </item>
     
   </channel>
