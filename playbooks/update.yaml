@@ -12,15 +12,18 @@
     become: true
 
   - name: setup davidbieber.com
-    git: repo=https://github.com/dbieber/davidbieber.com dest=~/davidbieber.com version=deploy force=true
+    git: repo=https://github.com/dbieber/davidbieber.com dest=/home/dbieber/davidbieber.com version=deploy force=true
+    become: true
 
   - name: install python dependencies
     pip:
       requirements: /home/dbieber/davidbieber.com/requirements.txt
       virtualenv: /home/dbieber/davidbieber.com/virtualenv
+    become: true
 
   - name: get files ready to serve
     shell: cp -r hugo/public/* default/
+    become: true
     args:
       chdir: /home/dbieber/davidbieber.com
 
@@ -33,4 +36,4 @@
   - name: download certbot
     get_url: >
       url=https://dl.eff.org/certbot-auto
-      dest=~/certbot-auto
+      dest=/home/dbieber/certbot-auto
