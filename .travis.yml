@@ -8,7 +8,7 @@ install:
 
 script:
   - cd hugo
-  - hugo
+  - hugo  # Generate the static site.
 
 after_success:
   - cd ../..
