@@ -186,7 +186,10 @@ I cannot in good conscience recommend use of shh shell when sleeping with your s
 
 ## What have you typed into your shh shell?
 
-When I first started typing at night back in 2014, I wasn't used to typing without visual feedback. So in the morning when I went to look at what I had typed, I was surprised to find a large paragraph of complete gibberish! My hands had been offset by a key or so on the keyboard as I was typing. Only the final line of the text was readable: "I hope the FBI doesn't find out about this."
+When I first started typing at night back in 2014, I wasn't used to typing without visual feedback. So in the morning when I went to look at what I had typed, I was surprised to find a large paragraph of complete gibberish!
+My hands had been offset by a key or so on the keyboard as I was typing.
+To me, it looked like a cryptographic code.
+Only the final line of the text was readable: "I hope the FBI doesn't find out about this."
 
 What made this particularly cool for me was that I had no recollection of what I had typed the night before. What was I concerned about the FBI finding out!?
 
