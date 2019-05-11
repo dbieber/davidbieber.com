@@ -152,7 +152,7 @@ This is important for [drug discovery](https://en.wikipedia.org/wiki/Drug_discov
 
 A circuit is commonly represented as a graph as well.
 The components in the circuit form the nodes of the graph, and the connections between components form the edges.
-The graph isomorphism problem is useful here for determining whether two circuits that are layed out different are in fact identical.
+The graph isomorphism problem is useful here for determining whether two circuits that are laid out different are in fact identical.
 
 ### References
 
