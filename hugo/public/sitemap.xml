@@ -79,7 +79,6 @@
     
       <loc>https://davidbieber.com/</loc>
       <lastmod>2019-05-10T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -112,7 +111,6 @@
     
       <loc>https://davidbieber.com/tags/automation/</loc>
       <lastmod>2018-10-21T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -121,7 +119,6 @@
     
       <loc>https://davidbieber.com/tags/google-apps-script/</loc>
       <lastmod>2018-10-21T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -130,7 +127,6 @@
     
       <loc>https://davidbieber.com/tags/</loc>
       <lastmod>2018-10-21T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -155,7 +151,6 @@
     
       <loc>https://davidbieber.com/tags/just-for-fun/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -164,7 +159,6 @@
     
       <loc>https://davidbieber.com/tags/productivity/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -173,7 +167,6 @@
     
       <loc>https://davidbieber.com/tags/robot/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -182,7 +175,6 @@
     
       <loc>https://davidbieber.com/tags/software/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -191,7 +183,6 @@
     
       <loc>https://davidbieber.com/tags/hardware/</loc>
       <lastmod>2017-10-28T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -200,7 +191,6 @@
     
       <loc>https://davidbieber.com/tags/puzzle/</loc>
       <lastmod>2017-10-28T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -217,7 +207,6 @@
     
       <loc>https://davidbieber.com/tags/python-fire/</loc>
       <lastmod>2017-03-06T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -226,7 +215,6 @@
     
       <loc>https://davidbieber.com/tags/education/</loc>
       <lastmod>2016-11-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -235,7 +223,6 @@
     
       <loc>https://davidbieber.com/tags/esperanto/</loc>
       <lastmod>2015-07-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -260,7 +247,6 @@
     
       <loc>https://davidbieber.com/tags/princeton-acm/</loc>
       <lastmod>2013-09-06T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -388,7 +374,6 @@
     <url>
     
       <loc>https://davidbieber.com/categories/</loc>
-      <priority>0</priority>
     </url>
     
   
@@ -396,7 +381,6 @@
     <url>
     
       <loc>https://davidbieber.com/publication_types/</loc>
-      <priority>0</priority>
     </url>
     
   
