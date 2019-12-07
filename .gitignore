@@ -10,3 +10,5 @@ virtualenv
 Transactions.csv
 
 *.retry
+
+drafts/
