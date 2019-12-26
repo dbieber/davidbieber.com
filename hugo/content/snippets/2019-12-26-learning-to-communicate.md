@@ -1,14 +1,8 @@
 +++
-active = false
-
 title = "Learning to Communicate"
 date = 2019-12-26T00:00:00
 
 summary = "2020 Goal: Learn to communicate publicly"
-
-[image]
-  caption = ""
-  focal_point = ""
 +++
 
 My goal for 2020 is to learn to communicate better with the world. I work in a research group at Google, and our main job function is performing research in program synthesis. But research is only as valuable as how well it is communicated. So in 2020 I'd like to get better at communicating publicly.
