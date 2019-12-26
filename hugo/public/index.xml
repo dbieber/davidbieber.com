@@ -6,7 +6,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 25 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Dec 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -422,6 +422,58 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       
       <guid>https://davidbieber.com/projects-index/projects/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Learning to Communicate</title>
+      <link>https://davidbieber.com/snippets/2019-12-26-learning-to-communicate/</link>
+      <pubDate>Thu, 26 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2019-12-26-learning-to-communicate/</guid>
+      <description>&lt;p&gt;My goal for 2020 is to learn to communicate better with the world. I work in a research group at Google, and our main job function is performing research in program synthesis. But research is only as valuable as how well it is communicated. So in 2020 I&amp;rsquo;d like to get better at communicating publicly.&lt;/p&gt;
+
+&lt;p&gt;There are a few options for doing this. The first is writing blog posts. This may be too large an undertaking to do frequently. I&amp;rsquo;d really like something that&amp;rsquo;s lower barrier to do, and with a lower quality bar, so that I can do this more often. The natural alternative with these properties is academic Twitter. However, I want to avoid the addictive nature of Twitter. I also want to write more than 280 characters at a time, and I don&amp;rsquo;t want to put every little thing I write in front of people&amp;rsquo;s faces with equal importance. Twitter seems a good place for announcing a new paper or a Python Fire update, but not for sharing a musing like this one.&lt;/p&gt;
+
+&lt;p&gt;So instead I think I&amp;rsquo;m going to start by silently posting my writings to my website, but in a separate section from the main blog. This way when there&amp;rsquo;s something with a little more polish that I think is explicitly worth reading, I can put it in the main blog section and tweet about it, etc.&lt;/p&gt;
+
+&lt;p&gt;If you want to receive updates for every small writing I put up here, you can use this &lt;a href=&#34;https://davidbieber.com/snippets/index.xml&#34; target=&#34;_blank&#34;&gt;RSS feed&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you want to receive updates only for major posts, such as new publications or major life updates, you can use this &lt;a href=&#34;https://davidbieber.com/posts/index.xml&#34; target=&#34;_blank&#34;&gt;RSS feed&lt;/a&gt; or you can subscribe here:&lt;/p&gt;
+
+&lt;!-- Begin Mailchimp Signup Form --&gt;
+
+&lt;p&gt;&lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/classic-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+  #mc_embed_signup{
+    background:#fff;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+  }
+&lt;/style&gt;
+&lt;div id=&#34;mc_embed_signup&#34;&gt;
+&lt;form action=&#34;https://gmail.us3.list-manage.com/subscribe/post?u=a55774562ae9fa9a1d879fa75&amp;amp;id=132f89def3&#34; method=&#34;post&#34; id=&#34;mc-embedded-subscribe-form&#34; name=&#34;mc-embedded-subscribe-form&#34; class=&#34;validate&#34; target=&#34;_blank&#34; novalidate&gt;
+    &lt;div id=&#34;mc_embed_signup_scroll&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;mc-field-group&#34;&gt;
+  &lt;label for=&#34;mce-EMAIL&#34;&gt;Email Address&lt;/label&gt;
+  &lt;input type=&#34;email&#34; value=&#34;&#34; name=&#34;EMAIL&#34; class=&#34;required email&#34; id=&#34;mce-EMAIL&#34;&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;mce-responses&#34; class=&#34;clear&#34;&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-error-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-success-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;    &lt;!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--&gt;
+    &lt;div style=&#34;position: absolute; left: -5000px;&#34; aria-hidden=&#34;true&#34;&gt;&lt;input type=&#34;text&#34; name=&#34;b_a55774562ae9fa9a1d879fa75_132f89def3&#34; tabindex=&#34;-1&#34; value=&#34;&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;
+      &lt;input type=&#34;submit&#34; value=&#34;Subscribe&#34; name=&#34;subscribe&#34; id=&#34;mc-embedded-subscribe&#34; class=&#34;button&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=&amp;lsquo;EMAIL&amp;rsquo;;ftypes[0]=&amp;lsquo;email&amp;rsquo;;fnames[1]=&amp;lsquo;FNAME&amp;rsquo;;ftypes[1]=&amp;lsquo;text&amp;rsquo;;fnames[2]=&amp;lsquo;LNAME&amp;rsquo;;ftypes[2]=&amp;lsquo;text&amp;rsquo;;fnames[3]=&amp;lsquo;ADDRESS&amp;rsquo;;ftypes[3]=&amp;lsquo;address&amp;rsquo;;fnames[4]=&amp;lsquo;PHONE&amp;rsquo;;ftypes[4]=&amp;lsquo;phone&amp;rsquo;;fnames[5]=&amp;lsquo;BIRTHDAY&amp;rsquo;;ftypes[5]=&amp;lsquo;birthday&amp;rsquo;;}(jQuery));var $mcj = jQuery.noConflict(true);&lt;/script&gt;
+&lt;!--End mc_embed_signup--&gt;&lt;/p&gt;
+
+&lt;p&gt;Happy early new year!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -920,88 +972,6 @@ Hello Google!
 &lt;p&gt;Every Fire CLI comes with an interactive mode. Run the CLI with the &lt;code&gt;--interactive&lt;/code&gt; flag to launch an &lt;a href=&#34;https://ipython.org/&#34; target=&#34;_blank&#34;&gt;IPython&lt;/a&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop&#34; target=&#34;_blank&#34;&gt;REPL&lt;/a&gt; with the result of your command, as well as other useful variables already defined and ready to use. Be sure to check out &lt;a href=&#34;https://github.com/google/python-fire#python-fire-&#34; target=&#34;_blank&#34;&gt;Python Fire’s documentation&lt;/a&gt; for more on this and the other useful features Fire provides.&lt;/p&gt;
 
 &lt;p&gt;Between Python Fire’s simplicity, generality, and power, we hope you find it a useful library for your own projects.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Ĉu Vi Estas Mia Patrino?</title>
-      <link>https://davidbieber.com/post/2015-07-01-estas-mia-patrino/</link>
-      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidbieber.com/post/2015-07-01-estas-mia-patrino/</guid>
-      <description>
-
-&lt;p&gt;&lt;em&gt;This is my translation of P.D. Eastman&amp;rsquo;s children&amp;rsquo;s book &amp;ldquo;Are You My Mother?&amp;rdquo; into Esperanto. Enjoy. -David&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;ĉu-vi-estas-mia-patrino&#34;&gt;Ĉu Vi Estas Mia Patrino?&lt;/h2&gt;
-
-&lt;p&gt;By P.D. Eastman&lt;/p&gt;
-
-&lt;p&gt;Patrina birdo sidis sur ŝiaj ovo. La ovo saltis.&lt;br /&gt;
-&amp;ldquo;Mi devas ion por mia beba birdo manĝi!&amp;rdquo; ŝi diris.&lt;br /&gt;
-Tiel for ŝi iris.&lt;/p&gt;
-
-&lt;p&gt;Ene la nesto, la ovo saltis.&lt;br /&gt;
-Ĝi saltis kaj saltis kaj saltis.&lt;br /&gt;
-Gis&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&amp;hellip;el venis beban birdon!&lt;br /&gt;
-&amp;ldquo;Kie estas mia patrino?&amp;rdquo; li diris.&lt;br /&gt;
-Li ne vidis ŝin ie ajn.&lt;br /&gt;
-&amp;ldquo;Mi iros serĉi ŝin,&amp;rdquo; li diris.&lt;/p&gt;
-
-&lt;p&gt;El la nesto li iris.&lt;br /&gt;
-Malsupren, malsupren, malsupren!&lt;br /&gt;
-Plopi! (1)&lt;br /&gt;
-La beba birdo ne povis flugi.&lt;br /&gt;
-Sed li povis marŝi.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Nun mi iros kaj trovi mian patrinon,&amp;rdquo; li diris.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Ĉu vi estas mia patrino?&amp;rdquo; la beba birdo demandis katidon.&lt;br /&gt;
-La katido nur rigardis kaj rigardis.&lt;br /&gt;
-Ĝi ne diris nenion.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Ĉu vi estas mia patrino?&amp;rdquo; la beba birdo demandis kokinon.&lt;br /&gt;
-&amp;ldquo;Ne,&amp;rdquo; diris la kokino.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Ĉu vi estas mia patrino?&amp;rdquo; la beba birdo demandis hundon.&lt;br /&gt;
-&amp;ldquo;Mi ne estas via patrino. Mi estas hundo,&amp;rdquo; diris la hundo.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Ĉu vi estas mia patrino?&amp;rdquo; la beba birdo demandis bovinon.&lt;br /&gt;
-&amp;ldquo;Kiel mi povus esti via patrino?&amp;rdquo; diris la bovino. &amp;ldquo;Mi estas bovino.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;La beba birdo haltis por pensi.&lt;br /&gt;
-La katido kaj la kokino ne estis lia patrino.&lt;br /&gt;
-La hundo kaj la bovino ne estis lia patrino.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Mi havas patrinon,&amp;rdquo; diris la beba birdo.&lt;br /&gt;
-&amp;ldquo;Mi scias ke mi trovos ŝin. Mi. Trovos. Ŝin.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Ĝuste tiam la beba birdo vidis grandan aferon.&lt;br /&gt;
-&amp;ldquo;Vi estas mia patrino!&amp;rdquo; li diris.&lt;/p&gt;
-
-&lt;p&gt;La granda afero diris &amp;ldquo;SNUFANTE!&amp;rdquo; (2)&lt;br /&gt;
-&amp;ldquo;Ho ne!&amp;rdquo; diris la beba birdo. Vi estas terura snufanto!&lt;/p&gt;
-
-&lt;p&gt;La Snufanto levis la beban birdon supren, supren, supren.&lt;/p&gt;
-
-&lt;p&gt;Poste io okazis.&lt;br /&gt;
-La Snufanto metis la beban birdon reen en la arbo.&lt;br /&gt;
-La beba birdo estis hejmo.&lt;/p&gt;
-
-&lt;p&gt;Ĝuste tiam la patrina birdo revenis.&lt;br /&gt;
-&amp;ldquo;Mi scias kiu vi estas,&amp;rdquo; diris la beba birdo.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Vi ne estas katido aŭ kokino aŭ hundo.&lt;br /&gt;
-Vi ne estas bovino aŭ Snufanto!&lt;br /&gt;
-Vi estas birdo, kaj vi estas mia patrino!&amp;rdquo;&lt;/p&gt;
-
-&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
-
-&lt;p&gt;1: If a bird falls out of a tree in English, it hits the ground and goes &amp;ldquo;plop!&amp;rdquo; But if a birdo falls out of a tree in Esperanto, what sound does it make?&lt;/p&gt;
-
-&lt;p&gt;2: The word for snort in Esperanto is snufante. It&amp;rsquo;s not exactly onomatopoeic, but imagining an enormous John Deere tractor going &amp;ldquo;SNUFANTE&amp;rdquo; before helping out a baby birdo is actually strangely heartwarming.&lt;/p&gt;
 </description>
     </item>
     
