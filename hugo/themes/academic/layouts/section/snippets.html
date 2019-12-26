@@ -1,0 +1,34 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+{{ partial "page_header.html" . }}
+
+<div class="universal-wrapper">
+
+  {{ with .Content }}
+  <div class="article-style" itemprop="articleBody">{{ . }}</div>
+  {{ end }}
+
+  {{ $paginator := .Paginate .Data.Pages }}
+  {{ range $paginator.Pages }}
+    {{ $params := dict "post" . }}
+    {{ if eq $.Params.list_format 0 }}
+      {{ partial "post_li_simple" $params }}
+    {{ else if eq $.Params.list_format 1 }}
+      {{ partial "post_li_detailed" $params }}
+    {{ else if eq $.Params.list_format 2 }}
+      {{ partial "post_li_stream" $params }}
+    {{ else if eq $.Params.list_format 3 }}
+      {{ partial "post_li_custom" $params }}
+    {{ else if eq $.Params.list_format 4 }}
+      {{ partial "post_li_snippets" $params }}
+    {{ else }}
+      {{ partial "post_li_stream" $params }}
+    {{ end }}
+  {{ end }}
+
+  {{ partial "pagination" . }}
+
+</div>
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}
