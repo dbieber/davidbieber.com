@@ -4,7 +4,7 @@ active = false
 title = "Learning to Communicate"
 date = 2019-12-26T00:00:00
 
-summary = "2020 Goal: Learn to communicate publically"
+summary = "2020 Goal: Learn to communicate publicly"
 
 [image]
   caption = ""
