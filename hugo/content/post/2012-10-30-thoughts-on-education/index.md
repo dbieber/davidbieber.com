@@ -15,7 +15,7 @@ summary = ""
   focal_point = "Center"
 +++
 
-That concludes day one of the [TigerTrek](http://tigertreks.tumblr.com/). I flew out of Princeton yesterday with a group of 20 to spend the week visiting technology companies, startups and venture capitalists in Silicon Valley. We're going company to company hearing founder's stories, discussing entrepreneurship, and as we do this I am forced to introspect. What do I want to do with my life? How can I make a difference?
+That concludes day one of the [TigerTrek](https://svtigertrek.com/). I flew out of Princeton yesterday with a group of 20 to spend the week visiting technology companies, startups and venture capitalists in Silicon Valley. We're going company to company hearing founder's stories, discussing entrepreneurship, and as we do this I am forced to introspect. What do I want to do with my life? How can I make a difference?
 
 My passion is education. I was fortunate enough to have some amazing mentors growing up, and to learn in a lot of diverse ways most people never have a chance to experience. I tried out gifted programs, nerd camps, one-on-one classes, online self paced learning, the works. I got involved in math circles, I took summer classes, I really was blessed to have every educational opportunity one could hope for. This, and the diversity of amazing teachers I've had has gotten me thinking about how people learn best, and how I learn best. Complementing this interest well, I've found I really love teaching- particularly math and computer science to younger students. It's always a joy helping someone to tackle the Bessie the Cow problem or [the game of Nim](http://en.wikipedia.org/wiki/Nim) for the very first time.
 
