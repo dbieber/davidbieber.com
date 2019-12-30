@@ -760,7 +760,7 @@ And if I don&amp;rsquo;t have any activity planned for a particular day, BieberB
 )
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;This searches both the main sheet (scheduled) and the archive sheet for the most recent occurence of each activity (C2). For this to work, the rows in the archive and main sheet need to be in reverse chronological order.&lt;/p&gt;
+&lt;p&gt;This searches both the main sheet (scheduled) and the archive sheet for the most recent occurrence of each activity (C2). For this to work, the rows in the archive and main sheet need to be in reverse chronological order.&lt;/p&gt;
 
 &lt;p&gt;Finally, to get the roll-up by category, I use the following Google Sheets formula:&lt;/p&gt;
 
