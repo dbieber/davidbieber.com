@@ -6,7 +6,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 29 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Dec 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -422,6 +422,269 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       
       <guid>https://davidbieber.com/projects-index/projects/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Planning to Analyze my Browsing History</title>
+      <link>https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/</link>
+      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;ve learned recently that programmatically accessing your browsing history is rather straightforward. Really exciting! This is rich data, from which I think I&amp;rsquo;ll be able to learn a lot and hopefully combat unwanted distractions.&lt;/p&gt;
+
+&lt;p&gt;First let me describe what information is available, and how you can access it. Then, let&amp;rsquo;s discuss what you can do with this data. As I&amp;rsquo;ve written about previously &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;[1]&lt;/a&gt; &lt;a href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/&#34; target=&#34;_blank&#34;&gt;[2]&lt;/a&gt;, I already have a chat bot system in place, which will be able to take advantage of this data to e.g. help me stay focused.&lt;/p&gt;
+
+&lt;h4 id=&#34;accessing-your-browser-history&#34;&gt;Accessing Your Browser History&lt;/h4&gt;
+
+&lt;p&gt;Thank you to GitHub user &lt;a href=&#34;https://github.com/dropmeaword&#34; target=&#34;_blank&#34;&gt;dropmeaword&lt;/a&gt; for compiling &lt;a href=&#34;https://gist.github.com/dropmeaword/9372cbeb29e8390521c2&#34; target=&#34;_blank&#34;&gt;this gist&lt;/a&gt; explaining how to access your browser history via sqlite3. The gist covers Safari, Chrome, and Firefox. In this post, I&amp;rsquo;ll just focus on Chrome on OSX, since that&amp;rsquo;s my primary mode of browsing.&lt;/p&gt;
+
+&lt;p&gt;My Chrome browsing history is located at &lt;code&gt;~/Library/Application Support/Google/Chrome/Default/History&lt;/code&gt;. Since I use multiple profiles in Chrome, each profile gets its own browsing history, e.g. located at &lt;code&gt;~/Library/Application Support/Google/Chrome/Profile 1/History&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Each browsing history is stored as a sqlite3 database. Before analyzing the data, I recommend making a copy of it (&lt;code&gt;cp ~/Library/Application\ Support/Google/Chrome/Default/History my-history&lt;/code&gt;); this way your history database (a) wont be locked by Chrome while you&amp;rsquo;re trying to access it, and (b) wont change while you&amp;rsquo;re looking at it, which could cause confusion and inconsistencies in your results.&lt;/p&gt;
+
+&lt;p&gt;This means you can browse it interactively using the sqlite3 REPL by running &lt;code&gt;sqlite3 PATH_TO_DATABASE&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;There are also libraries available for accessing sqlite3 databases in just about every language. For Python, there&amp;rsquo;s the &lt;a href=&#34;https://docs.python.org/3/library/sqlite3.html&#34; target=&#34;_blank&#34;&gt;sqlite3&lt;/a&gt; library. Go has &lt;a href=&#34;https://godoc.org/github.com/mattn/go-sqlite3&#34; target=&#34;_blank&#34;&gt;go-sqlite3&lt;/a&gt;. JavaScript has &lt;a href=&#34;https://www.sqlitetutorial.net/sqlite-nodejs/&#34; target=&#34;_blank&#34;&gt;this sqlite3 module&lt;/a&gt;. However you most like scripting, you&amp;rsquo;ll have a familiar way of accessing the data.&lt;/p&gt;
+
+&lt;h4 id=&#34;the-available-data&#34;&gt;The Available Data&lt;/h4&gt;
+
+&lt;p&gt;Running sqlite3 macro &lt;code&gt;.tables&lt;/code&gt;, we see the following tables are available.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;downloads&lt;/td&gt;
+&lt;td&gt;meta&lt;/td&gt;
+&lt;td&gt;urls&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;downloads_slices&lt;/td&gt;
+&lt;td&gt;segment_usage&lt;/td&gt;
+&lt;td&gt;visit_source&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;downloads_url_chains&lt;/td&gt;
+&lt;td&gt;segments&lt;/td&gt;
+&lt;td&gt;visits&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;keyword_search_terms&lt;/td&gt;
+&lt;td&gt;typed_url_sync_metadata&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;We&amp;rsquo;ll be most interested in the &lt;code&gt;urls&lt;/code&gt; and &lt;code&gt;visits&lt;/code&gt; tables.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;urls&lt;/code&gt; table has these columns (found with &lt;code&gt;.schema urls&lt;/code&gt;):&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;id&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the URL in the database.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;url&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The URL of the website.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;title&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The title of website.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;visit_count&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The number of times you&amp;rsquo;ve visited the URL.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;typed_count&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The number of times you&amp;rsquo;ve visited the URL by typing in the address (as opposed to by following a link.)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;last_visit_time&lt;/td&gt;
+&lt;td&gt;Integer (milliseconds since the epoch)&lt;/td&gt;
+&lt;td&gt;The time of the most recent to the URL.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;hidden&lt;/td&gt;
+&lt;td&gt;Boolean&lt;/td&gt;
+&lt;td&gt;I&amp;rsquo;m not sure what this is about.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;And the &lt;code&gt;visits&lt;/code&gt; table has these columns (obtained via &lt;code&gt;.schema visits&lt;/code&gt;):&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;id&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the visit in the database.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;url&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the url in the &lt;code&gt;urls&lt;/code&gt; table.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;visit_time&lt;/td&gt;
+&lt;td&gt;Integer (milliseconds since the epoch)&lt;/td&gt;
+&lt;td&gt;The time of the visit.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;from_visit&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the visit that lead you to this one.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;transition&lt;/td&gt;
+&lt;td&gt;Bit vector&lt;/td&gt;
+&lt;td&gt;Represents the &lt;a href=&#34;https://developer.chrome.com/extensions/history#transition_types&#34; target=&#34;_blank&#34;&gt;transition type&lt;/a&gt; (how you got to the URL)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;segment_id&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the segment in the database. I&amp;rsquo;m not quite sure what a segment is, but there is a &lt;code&gt;segments&lt;/code&gt; table you can look at.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;visit_duration&lt;/td&gt;
+&lt;td&gt;Integer (microsecodns)&lt;/td&gt;
+&lt;td&gt;The amount of time spent at the website, or 0 if not available.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;incremented_omnibox_typed_score&lt;/td&gt;
+&lt;td&gt;Boolean&lt;/td&gt;
+&lt;td&gt;I do not know what this is about.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;As you can see, we can access every visit to every website that we&amp;rsquo;ve made since the last time we cleared our browsing history. We can see what website we visited (&lt;code&gt;visits.url&lt;/code&gt;), when we visited it (&lt;code&gt;visits.visit_time&lt;/code&gt;), how many times we&amp;rsquo;ve visited it (&lt;code&gt;urls.visit_count&lt;/code&gt;), and how long each visit was (&lt;code&gt;visits.visit_duration&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;We can even use &lt;code&gt;visits.from_visit&lt;/code&gt; to figure out what website linked us to each url, if that interests us.&lt;/p&gt;
+
+&lt;h4 id=&#34;what-can-we-deduce&#34;&gt;What Can We Deduce?&lt;/h4&gt;
+
+&lt;p&gt;We can (1) perform a historical analysis on the data, as well as (2) do real-time monitoring of the data.&lt;/p&gt;
+
+&lt;p&gt;Here I brainstorm some of the historical trends we will be able to uncover:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Most frequently visited websites&lt;/li&gt;
+&lt;li&gt;Websites where we spend the majority of our time&lt;/li&gt;
+&lt;li&gt;Websites that frequently lead to known-distractor websites (e.g. Reddit, Hacker News, Twitter, YouTube)&lt;/li&gt;
+&lt;li&gt;We can do an analysis by time of day (or day of week), to figure out what sites occupy my time late at night vs during daylight hours.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These are somewhat interesting, but what I&amp;rsquo;m particularly excited for is the ongoing analysis that &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; can provide by accessing the data.&lt;/p&gt;
+
+&lt;p&gt;Here is a brainstorm of the more real-time actionable insights we might extract from this data.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bieber Bot could ping me if it looks like I&amp;rsquo;m spending too much time on a distraction website.&lt;/li&gt;
+&lt;li&gt;He could try to detect if I went to a website with a particular purpose, but ended up getting distracted and not completing the purpose I set out to do.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For example, if I&amp;rsquo;m on a productive website and then switch to a distraction website for more than a few minutes, particularly during work hours, Bieber Bot might message asking if I got distracted. Think you could do that for me Bieber Bot?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I could signal that I want to view a website later by opening it and immediately closing it again.&lt;/li&gt;
+&lt;li&gt;Perhaps we could detect if I&amp;rsquo;m researching a particular topic, and then Bieber Bot could try to help me with my research.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;related-idea&#34;&gt;Related Idea&lt;/h4&gt;
+
+&lt;p&gt;In order to reduce distractions, I&amp;rsquo;d like to be able to switch my browsing mode from &amp;ldquo;clicking opens links&amp;rdquo; to &amp;ldquo;clicking saves a link for later&amp;rdquo;. When in this new mode, whenever I click a link it wouldn&amp;rsquo;t open that link; instead, it would save the link to a list of deferred links.
+Then I would be able to view my &amp;ldquo;saved for later&amp;rdquo; links when I have time that I&amp;rsquo;ve explicitly set aside, rather than during the time that I would rather be doing something more productive.&lt;/p&gt;
+
+&lt;h4 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h4&gt;
+
+&lt;p&gt;So far I&amp;rsquo;ve done a little bit of manual exploration of my browsing history data. I&amp;rsquo;ve set up a little Python script to be able to access the data programmatically.&lt;/p&gt;
+
+&lt;p&gt;Next, I&amp;rsquo;ll do more manual analysis, and then I&amp;rsquo;ll see if I&amp;rsquo;m able to give Bieber Bot the real-time access to the data that I described above. I&amp;rsquo;m particularly excited to see if I can get the &amp;ldquo;looks like you&amp;rsquo;ve gotten distracted&amp;rdquo; messages set up with Bieber Bot. As a bonus, since Bieber Bot can message other people too, this system could help me leverage social accountability to stay on task.&lt;/p&gt;
+
+&lt;p&gt;Want to see where this project leads? You can subscribe for infrequent email updates.&lt;/p&gt;
+
+
+&lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/classic-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+  #mc_embed_signup{
+    background:#fff;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+  }
+&lt;/style&gt;
+&lt;div id=&#34;mc_embed_signup&#34;&gt;
+&lt;form action=&#34;https://gmail.us3.list-manage.com/subscribe/post?u=a55774562ae9fa9a1d879fa75&amp;amp;id=132f89def3&#34; method=&#34;post&#34; id=&#34;mc-embedded-subscribe-form&#34; name=&#34;mc-embedded-subscribe-form&#34; class=&#34;validate&#34; target=&#34;_blank&#34; novalidate&gt;
+    &lt;div id=&#34;mc_embed_signup_scroll&#34;&gt;
+  
+&lt;div class=&#34;mc-field-group&#34;&gt;
+  &lt;label for=&#34;mce-EMAIL&#34;&gt;Email Address&lt;/label&gt;
+  &lt;input type=&#34;email&#34; value=&#34;&#34; name=&#34;EMAIL&#34; class=&#34;required email&#34; id=&#34;mce-EMAIL&#34;&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;mce-responses&#34; class=&#34;clear&#34;&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-error-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-success-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;    
+    &lt;div style=&#34;position: absolute; left: -5000px;&#34; aria-hidden=&#34;true&#34;&gt;&lt;input type=&#34;text&#34; name=&#34;b_a55774562ae9fa9a1d879fa75_132f89def3&#34; tabindex=&#34;-1&#34; value=&#34;&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;
+      &lt;input type=&#34;submit&#34; value=&#34;Subscribe&#34; name=&#34;subscribe&#34; id=&#34;mc-embedded-subscribe&#34; class=&#34;button&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=&#39;EMAIL&#39;;ftypes[0]=&#39;email&#39;;fnames[1]=&#39;FNAME&#39;;ftypes[1]=&#39;text&#39;;fnames[2]=&#39;LNAME&#39;;ftypes[2]=&#39;text&#39;;fnames[3]=&#39;ADDRESS&#39;;ftypes[3]=&#39;address&#39;;fnames[4]=&#39;PHONE&#39;;ftypes[4]=&#39;phone&#39;;fnames[5]=&#39;BIRTHDAY&#39;;ftypes[5]=&#39;birthday&#39;;}(jQuery));var $mcj = jQuery.noConflict(true);&lt;/script&gt;
+
+</description>
     </item>
     
     <item>
@@ -871,167 +1134,6 @@ And if I don&amp;rsquo;t have any activity planned for a particular day, BieberB
       
       <guid>https://davidbieber.com/snippets/2019-12-25-introducting-snippets/</guid>
       <description>&lt;p&gt;Today I&amp;rsquo;m introducing the &amp;ldquo;snippets&amp;rdquo; section of my website. The goal is to give myself a place to post content online that&amp;rsquo;s extremely easy to post to, but isn&amp;rsquo;t featured prominently anywhere on the site. This way I can post things without them needing polish or production value, but still link to them and share them as I see fit.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Weisfeiler-Lehman Isomorphism Test</title>
-      <link>https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/</link>
-      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/</guid>
-      <description>
-
-&lt;h3 id=&#34;graph-isomorphism&#34;&gt;Graph Isomorphism&lt;/h3&gt;
-
-&lt;p&gt;Two graphs are considered isomorphic if there is a mapping between the nodes of the graphs that preserves node adjacencies.
-That is, a pair of nodes may be connected by an edge in the first graph if and only if the corresponding pair of nodes in the second graph is also connected by an edge in the same way.
-An example of two isomorphic graphs is shown here.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism.png&#34; alt=&#34;Example of isomorphic graphs&#34; title=&#34;Two isomorphic graphs are shown.&#34; /&gt;
-&lt;em&gt;Figure: Graph 1 and Graph 2 are isomorphic.
-The correspondance between nodes is illustrated by the node colors and numbers.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;In general, determining whether two graphs are isomorphic when the correspondance is not provided is a challenging problem; precisely how hard this problem is remains an open question in computer science.
-It isn&amp;rsquo;t known whether there is a polynomial time algorithm for determining whether graphs are isomorphic, and it also isn&amp;rsquo;t known whether the problem is $\text{NP-complete}$.
-The graph isomorphism problem may even be an example of an &lt;a href=&#34;https://en.wikipedia.org/wiki/NP-intermediate&#34; target=&#34;_blank&#34;&gt;$\text{NP-intermediate}$&lt;/a&gt; problem, but this would only be possible if $\text{P} \ne \text{NP}$.&lt;/p&gt;
-
-&lt;h3 id=&#34;the-weisfeiler-lehman-isomorphism-test&#34;&gt;The Weisfeiler-Lehman Isomorphism Test&lt;/h3&gt;
-
-&lt;p&gt;Here is the algorithm for the Weisfeiler-Lehman Isomorphism Test.
-It produces for each graph a canonical form.
-If the canonical forms of two graphs are not equivalent, then the graphs are definitively not isomorphic.
-However, it is possible for two non-isomorphic graphs to share a canonical form, so this test alone cannot provide conclusive evidence that two graphs are isomorphic.&lt;/p&gt;
-
-&lt;p&gt;The Algorithm:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;For iteration $i$ of the algorithm we will be assigning to each node a tuple $L_{i,n}$ containing the node&amp;rsquo;s old compressed label and a multiset of the node&amp;rsquo;s neighbors&amp;rsquo; compressed labels.
-A multiset is a set (a collection of elements where order is not important) where elements may appear multiple times.&lt;/li&gt;
-&lt;li&gt;At each iteration we will additionally be assigning to each node $n$ a new &amp;ldquo;compressed&amp;rdquo; label $C_{i,n}$ for that node&amp;rsquo;s set of labels.
-Any two nodes with the same $L_{i,n}$ will get the same compressed label.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-&lt;li&gt;To begin, we initialize $C_{0,n} = 1$ for all nodes $n$.&lt;/li&gt;
-&lt;li&gt;At iteration $i$ of the algorithm (beginning with $i=1$), for each node $n$, we set $L_{i,n}$ to be a tuple containing the node&amp;rsquo;s old label $C_{i-1,n}$ and the multiset of compressed node labels $C_{i-1,m}$ from all nodes $m$ neighboring $n$ from the previous iteration $(i-1)$.&lt;/li&gt;
-&lt;li&gt;We then complete iteration $i$ by setting $C_{i,n}$ to be a new &amp;ldquo;compressed&amp;rdquo; label, such as a hash of $L_{i,n}$.
-Any two nodes with the same labels $L_{i,n}$ must get the same compressed label $C_{i,n}$.&lt;/li&gt;
-&lt;li&gt;Partition the nodes in the graph by their compressed label.
-Repeat 2 + 3 for up to $N$ (the number of nodes) iterations, or until there is no change in the partition of nodes by compressed label from one iteration to the next.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;When using this method to determine graph isomorphism, it may be applied in parallel to the two graphs.
-The algorithm may be terminated early after iteration $i$ if the sizes of partitions of nodes partitioned by compressed labels diverges between the two graphs; if this is the case, the graphs are not isomorphic.&lt;/p&gt;
-
-&lt;h3 id=&#34;example-of-the-weisfeiler-lehman-isomorphism-test&#34;&gt;Example of the Weisfeiler-Lehman Isomorphism Test&lt;/h3&gt;
-
-&lt;p&gt;We demonstrate here the Weisfeiler-Lehman isomorphism test using the example graphs from above.
-The graphs are shown again here for completeness.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-000.png&#34; alt=&#34;Two isomorphic graphs are shown.&#34; title=&#34;Two isomorphic graphs are shown.&#34; /&gt;
-&lt;em&gt;Figure: Graph 1 and Graph 2 are isomorphic.
-We will apply the Weisfeiler-Lehman isomorphism test to these graphs as a means of illustrating the test.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;To initialize the algorithm (Step 1), we set $C_{0,n} = 1$ for all nodes $n$.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-001.png&#34; alt=&#34;Initialization: $C\_{0,n} = 1$ for all nodes $n$&#34; title=&#34;We initialize $C\_{0,n} = 1$ for all nodes.&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;For iteration 1, Step 2, we compute $L_{1,n}$.
-The first part of a node&amp;rsquo;s $L$ is the node&amp;rsquo;s old compressed label; the second part of a node&amp;rsquo;s $L$ is the multiset of the neighboring nodes&amp;rsquo; compressed labels.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-002.png&#34; alt=&#34;Iteration 1, Step 2: $L\_{1,n}$&#34; title=&#34;Iteration 1, Step 2: $L\_{1,n}$&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;For iteration 1, Step 3, we introduce &amp;ldquo;compressed&amp;rdquo; labels $C_{1,n}$ for the nodes:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-003.png&#34; alt=&#34;Iteration 1, Step 3: $C\_{1,n}$&#34; title=&#34;Iteration 1, Step 3: $C\_{1,n}$&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We now begin iteration 2.
-In iteration 2, Step 2, we compute $L_{2,n}$:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-004.png&#34; alt=&#34;Iteration 2, Step 2: $L\_{2,n}$&#34; title=&#34;Iteration 2, Step 2: $L\_{2,n}$&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In iteration 2, Step 3, we compute $C_{2,n}$:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-005.png&#34; alt=&#34;Iteration 2, Step 3: $C\_{2,n}$&#34; title=&#34;Iteration 2, Step 3: $C\_{2,n}$&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In iteration 3, Step 2, we compute $L_{3,n}$:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-006.png&#34; alt=&#34;Iteration 3, Step 2: $L\_{3,n}$&#34; title=&#34;Iteration 3, Step 2: $L\_{3,n}$&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In iteration 3, Step 3, we compute $C_{3,n}$:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-007.png&#34; alt=&#34;Iteration 3, Step 3: $C\_{3,n}$&#34; title=&#34;Iteration 3, Step 3: $C\_{3,n}$&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Since the partition of nodes by compressed label has not changed from $C_{2,n}$ to $C_{3,n}$, we may terminate the algorithm here.&lt;/p&gt;
-
-&lt;p&gt;Concretely, the partition of nodes by compressed label may be represented as the number of nodes with each compressed label.
-That is: &lt;strong&gt;&amp;ldquo;2 7s, 1 8, and 2 9s&amp;rdquo;&lt;/strong&gt;.
-This is the canonical form of our graph.
-Since both Graph 1 and Graph 2 have this same canonical form, we cannot rule out the possibility that they are isomorphic (they &lt;em&gt;are&lt;/em&gt; in fact isomorphic, but the algorithm doesn&amp;rsquo;t allow us to conclude this definitively.)&lt;/p&gt;
-
-&lt;h3 id=&#34;implementation-considerations&#34;&gt;Implementation Considerations&lt;/h3&gt;
-
-&lt;p&gt;One detail omitted is that the algorithm requires canonical forms of the multisets for comparison.
-Placing the elements of the multiset in sorted order provides one way of doing this.&lt;/p&gt;
-
-&lt;p&gt;Additionally, for the representation of the graph that the algorithm emits to be deterministic, we need to establish a convention for creating compressed labels.
-One possible convention is to use increasing integers starting from 1, and to assign compressed labels to nodes in lexicographical order of their non-compressed labels.
-Another possible convention is to use the hash of the multiset to create the compressed label.&lt;/p&gt;
-
-&lt;p&gt;When comparing the partition of the nodes by compressed label from one iteration to the next to see whether to proceed to another iteration, it is sufficient to compare which nodes are in each partition.
-If the partitions change, we proceed to the next iteration.
-If no partition changes, the algorithm can terminate early.
-When comparing the partitions of the nodes across graphs to see if graphs are isomorphic, we use the canonical form as described above in the algorithm.&lt;/p&gt;
-
-&lt;h3 id=&#34;finding-the-correspondance-between-isomorphic-graphs&#34;&gt;Finding the Correspondance Between Isomorphic Graphs&lt;/h3&gt;
-
-&lt;p&gt;The core idea of the Weisfeiler-Lehman isomorphism test is to find for each node in each graph a signature based on the neighborhood around the node.
-These signatures can then be used to find the correspondance between nodes in the two graphs, which can be used to check for isomorphism.&lt;/p&gt;
-
-&lt;p&gt;In the algorithm descibed above, the &amp;ldquo;compressed labels&amp;rdquo; serve as the signatures.
-Since multiple nodes may have the same compressed label, there are multiple possible correspondances suggested by a Weisfeiler-Lehman labeling.
-The Weisfeiler-Lehman isomorphism test itself does not provide a way of narrowing down the possible correspondances further.&lt;/p&gt;
-
-&lt;h3 id=&#34;the-disappearance-of-boris-weisfeiler&#34;&gt;The Disappearance of Boris Weisfeiler&lt;/h3&gt;
-
-&lt;p&gt;Boris Weisfeiler &amp;ndash; one of the two mathematicians responsible for the Weisfeiler-Lehman isomorphism test &amp;ndash; was a professor at Penn State University until he disappeared mysteriously in Chile in 1985.
-His disappearance in the 80s is unsettling, and I would encourage you to visit &lt;a href=&#34;http://www.boris.weisfeiler.com/&#34; target=&#34;_blank&#34;&gt;boris.weisfeiler.com&lt;/a&gt; to learn more about the search for Weisfeiler and the ongoing (2018) judicial proceedings surrounding his disappearance.&lt;/p&gt;
-
-&lt;p&gt;Steven List produced an award winning short film called &lt;em&gt;The Colony&lt;/em&gt; based on the disappearance of Boris Weisfeiler, available &lt;a href=&#34;https://vimeo.com/60220290&#34; target=&#34;_blank&#34;&gt;on Vimeo here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;After a brief internet search, I have been unable to find any information about Weisfeiler&amp;rsquo;s colleague and coauthor A. Lehman, not even a first name.&lt;/p&gt;
-
-&lt;h3 id=&#34;np-intermediate-problems&#34;&gt;NP-Intermediate Problems&lt;/h3&gt;
-
-&lt;p&gt;As mentioned in the introduction, it is not known whether the graph isomorphism problem is in $\text{P}$ or $\text{NP-complete}$.
-In fact, it is not even known whether graph isomorphism falls in either of these categories, or whether this problem is $\text{NP-intermediate}$.
-The problem of factoring integers is another problem like this, where it is unknown whether the problem is in $\text{P}$, $\text{NP-complete}$, or is $\text{NP-intermediate}$.
-Bear in mind that $\text{NP-intermediate}$ problems can only exist if $\text{P} \ne \text{NP}$.
-So if anyone were to show conclusively that factoring or graph isomorphism were $\text{NP-intermediate}$ they would also have shown $\text{P} \ne \text{NP}$ and won the &lt;a href=&#34;https://www.claymath.org/millennium-problems/p-vs-np-problem&#34; target=&#34;_blank&#34;&gt;Clay Institute P vs NP Millenium Problem&lt;/a&gt;&amp;rsquo;s million dollar prize.&lt;/p&gt;
-
-&lt;h3 id=&#34;applications-of-graph-isomorphisms&#34;&gt;Applications of Graph Isomorphisms&lt;/h3&gt;
-
-&lt;p&gt;Now that you&amp;rsquo;re familiar with the Weisfeiler-Lehman test for graph isomorphisms, what is the graph isomorphism problem good for?&lt;/p&gt;
-
-&lt;p&gt;There are applications of the graph isomorphism problem in, for example, computational chemistry and in circuit design.&lt;/p&gt;
-
-&lt;p&gt;In chemistry, it is common to represent a molecule as a graph, with the atoms in the molecule being the nodes of the graph and the bonds between molecules being the edges.
-Here, the graph isomorphism problem can be used to determine if two chemical structures are in fact the same structure.
-This is important for &lt;a href=&#34;https://en.wikipedia.org/wiki/Drug_discovery&#34; target=&#34;_blank&#34;&gt;drug discovery&lt;/a&gt;, where scientists are working to create molecular structures that will be useful in order to fight diseases.&lt;/p&gt;
-
-&lt;p&gt;A circuit is commonly represented as a graph as well.
-The components in the circuit form the nodes of the graph, and the connections between components form the edges.
-The graph isomorphism problem is useful here for determining whether two circuits that are laid out different are in fact identical.&lt;/p&gt;
-
-&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
-
-&lt;p&gt;Weisfeiler and Lehman first proposed this method in their paper &lt;em&gt;A reduction of a graph to a canonical form and an algebra arising during this reduction&lt;/em&gt; in 1968.
-An English translation of this paper, originally published in Russian, is &lt;a href=&#34;https://www.iti.zcu.cz/wl2018/pdf/wl_paper_translation.pdf&#34; target=&#34;_blank&#34;&gt;available here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;More recently the method is also described succinctly in &lt;a href=&#34;http://www.jmlr.org/papers/volume12/shervashidze11a/shervashidze11a.pdf&#34; target=&#34;_blank&#34;&gt;Weisfeiler-Lehman Graph Kernels (Shervashidze 2011)&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Now go forth and detect graph isomorphisms!&lt;/p&gt;
 </description>
     </item>
     
