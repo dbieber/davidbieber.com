@@ -6,7 +6,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Thu, 26 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Dec 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -425,6 +425,366 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
     </item>
     
     <item>
+      <title>Keeping Track of My Life in a Spreadsheet</title>
+      <link>https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/</link>
+      <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/</guid>
+      <description>
+
+&lt;p&gt;As many of my friends know, I keep track of much of my life in spreadsheets. There are several pieces to this system, but fortunately it&amp;rsquo;s the kind of system that you can adopt (and discard) incrementally. So, rather than explaining the whole thing in one go, I will explain one core piece in this post.&lt;/p&gt;
+
+&lt;p&gt;In this post, I will detail how I use a spreadsheet as a &lt;em&gt;daily activity log&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;My spreadsheet lets me keep a record of all the things I&amp;rsquo;ve done.
+It then also rolls up this data in interesting ways that help me with reflecting on and planning my life. Finally, it interacts with a bot system I&amp;rsquo;ve written for myself to help me keep my life on track.&lt;/p&gt;
+
+&lt;p&gt;I will answer all of the following questions in this post:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What&amp;rsquo;s the organizational system?&lt;/li&gt;
+&lt;li&gt;What are the main benefits of this system?&lt;/li&gt;
+&lt;li&gt;Why is this system easy to adopt?&lt;/li&gt;
+&lt;li&gt;Why is this system easy to keep doing for months on end, without forgetting?&lt;/li&gt;
+&lt;li&gt;How does this system help me with planning my life?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;the-system&#34;&gt;The System&lt;/h3&gt;
+
+&lt;p&gt;I have a single spreadsheet with columns &lt;em&gt;Evening&lt;/em&gt;, &lt;em&gt;Morning&lt;/em&gt;, &lt;em&gt;Keywords&lt;/em&gt;, &lt;em&gt;Weekday&lt;/em&gt;, &lt;em&gt;Date&lt;/em&gt;, &lt;em&gt;People&lt;/em&gt;, &lt;em&gt;Notes&lt;/em&gt;. In this sheet, I have a single row &lt;em&gt;per day&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The essense of the system is to jot down 1. what I do, and optionally 2. who I engage with each day.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t update the spreadsheet every day, usually just once a week or so I&amp;rsquo;ll fill in the activity from all of the missing days.&lt;/p&gt;
+
+&lt;p&gt;This system serves several purposes, the main one being a journal of sorts so I can see a historical log of my activities. As you&amp;rsquo;ll see in the Planning and Notifications section, it also helps me remember to do all the activities I enjoy doing.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ll start by providing a brief description of each column in the spreadsheet. Then we&amp;rsquo;ll get to discuss how I use the spreadsheet, and you&amp;rsquo;ll see why they&amp;rsquo;re each important to me. We&amp;rsquo;ll then also dive into all the benefits I get from this spreadsheet and the infrastructure I&amp;rsquo;ve built up around it.&lt;/p&gt;
+
+&lt;h4 id=&#34;column-descriptions&#34;&gt;Column Descriptions&lt;/h4&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;Evening&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;A single cell in which to put the main activity I did in the evening (e.g. after work) on that day.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;Morning&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;Optional, Text, infrequently used&lt;/td&gt;
+&lt;td&gt;The main activity I did in the morning (e.g. before work) on that day.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;Keywords&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;Optional, comma separated&lt;/td&gt;
+&lt;td&gt;Keywords describing the activities of that day.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;Weekday&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;Filled automatically&lt;/td&gt;
+&lt;td&gt;The day of the week, e.g. Thursday&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;Date&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;Filled automatically&lt;/td&gt;
+&lt;td&gt;The date&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;People&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;Names, comma separated&lt;/td&gt;
+&lt;td&gt;A list of the people I engaged with on that day&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;Notes&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;Optional, Text&lt;/td&gt;
+&lt;td&gt;A bit like a diary, this is a place to jot down additional notes about the day.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Really all of the columns are optional, but the ones that are particularly optional are marked as such.&lt;/p&gt;
+
+&lt;h3 id=&#34;usage&#34;&gt;Usage&lt;/h3&gt;
+
+&lt;p&gt;Now I&amp;rsquo;ll describe the data entry process, and then all the ways I take advantage of this data.&lt;/p&gt;
+
+&lt;h4 id=&#34;data-entry&#34;&gt;Data Entry&lt;/h4&gt;
+
+&lt;p&gt;About once a week on average I&amp;rsquo;ll go to the spreadsheet, and fill in all the activities I did since the last time I updated the sheet.&lt;/p&gt;
+
+&lt;p&gt;For each day, I try to capture just the main one to two outside-of-work activities that I engaged in. It&amp;rsquo;s totally fine if I don&amp;rsquo;t capture every little thing, and it&amp;rsquo;s also fine if there are some days that I didn&amp;rsquo;t do anything of note.&lt;/p&gt;
+
+&lt;p&gt;I said above that I do this about once a week, but there&amp;rsquo;s no strong rhythm to it; sometimes I do it every day for multiple consecutive days, and sometimes I&amp;rsquo;ll go multiple weeks between updating the sheet.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been using this system reliably since mid-2018, and it&amp;rsquo;s served me well. The notifications that we&amp;rsquo;ll get to shortly, combined with the simplicity of the method (just one cell to fill in per day), have allowed me to keep using this system without being disrupted by travel or high-workload parts of life.&lt;/p&gt;
+
+&lt;h4 id=&#34;planning&#34;&gt;Planning&lt;/h4&gt;
+
+&lt;p&gt;I have a second sheet that is updated automatically using data from the sheet I&amp;rsquo;ve been describing so far. This sheet has one row &lt;em&gt;per activity&lt;/em&gt; that I enjoy engaging in.&lt;/p&gt;
+
+&lt;p&gt;The most important columns in this sheet are:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Category&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The category of the activity (e.g. Athletic).&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Activity&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;An activity that I enjoy engaging in. (e.g. Skiing)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Last Date&lt;/td&gt;
+&lt;td&gt;Filled automatically&lt;/td&gt;
+&lt;td&gt;The most recent date on which I engaged in the activity.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The &lt;code&gt;Last Date&lt;/code&gt; column is filled automatically using the data from th emain sheet. The Google Sheets formula that fills in this column is a query a bit like this one:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;=IFERROR(QUERY(scheduled,
+   &amp;quot;select E
+    where A contains &#39;&amp;quot; &amp;amp; C2 &amp;amp; &amp;quot;&#39;
+      OR B contains &#39;&amp;quot; &amp;amp; C2 &amp;amp; &amp;quot;&#39;
+      OR C contains &#39;&amp;quot; &amp;amp; C2 &amp;amp; &amp;quot;&#39;
+    order by E desc
+    limit 1
+    label E &#39;&#39;&amp;quot;
+))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;C2&lt;/code&gt; refers to the &lt;code&gt;Activity&lt;/code&gt; from the current sheet&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;A&lt;/code&gt; is the &lt;code&gt;Evening&lt;/code&gt; column from the Data Entry sheet&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;B&lt;/code&gt; is the &lt;code&gt;Morning&lt;/code&gt; column from the Data Entry sheet&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C&lt;/code&gt; is the &lt;code&gt;Keywords&lt;/code&gt; column from the Data Entry sheet&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;E&lt;/code&gt; is the &lt;code&gt;Date&lt;/code&gt; from the Data Entry sheet&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This lets me quickly see, for each activity that I enjoy, how recently I&amp;rsquo;ve done that activity. For example, I see that I haven&amp;rsquo;t gone camping since 2019-07-05, I haven&amp;rsquo;t played tennis since 2018-07-31, and I haven&amp;rsquo;t gone swimming since 2019-10-07. Really overdue for some tennis!&lt;/p&gt;
+
+&lt;p&gt;My spreadsheet also rolls up this data further, by category. I can quickly see how recently I&amp;rsquo;ve done any activity in a given category.&lt;/p&gt;
+
+&lt;p&gt;The categories I use are:
+&amp;ldquo;Athletic&amp;rdquo;, &amp;ldquo;Civic Something Or Other&amp;rdquo;, &amp;ldquo;Day Trips&amp;rdquo;, &amp;ldquo;Educational&amp;rdquo;, &amp;ldquo;Entertainment&amp;rdquo;, &amp;ldquo;Family&amp;rdquo;, &amp;ldquo;Financial&amp;rdquo;, &amp;ldquo;Food&amp;rdquo;, &amp;ldquo;Music + Arts&amp;rdquo;, &amp;ldquo;Outdoorsy&amp;rdquo;, &amp;ldquo;Personal Projects&amp;rdquo;, &amp;ldquo;Puzzles&amp;rdquo;, &amp;ldquo;Social&amp;rdquo;, &amp;ldquo;Social Games&amp;rdquo;, and &amp;ldquo;Well being&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Here you can see how recently I&amp;rsquo;ve done something in each of the categories.&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;activities-by-category.png&#34; alt=&#34;A two-column spreadsheet showing how recently I&amp;#39;ve done an activity in each of the 15 activity categories.&#34; width=&#34;200px&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;As you can see, I&amp;rsquo;m doing a pretty good job of doing most of the categories of activities. When I go to make plans next, I&amp;rsquo;ll most likely schedule activities from the bottom categories. For example, I may do a financial review, schedule a board game night, and plan to attend a City Council meeting.&lt;/p&gt;
+
+&lt;h4 id=&#34;notifications&#34;&gt;Notifications&lt;/h4&gt;
+
+&lt;p&gt;I&amp;rsquo;ve also given &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;Bieber Bot&lt;/a&gt; (my digital personal assistant and robot friend) access to this data, and he helps me make better use of it.&lt;/p&gt;
+
+&lt;p&gt;If it&amp;rsquo;s been too long since I&amp;rsquo;ve scheduled an activity in any particular category, Bieber Bot will message me on FB Messenger reminding me to schedule something in that category.&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;bieberbot-financial.png&#34; alt=&#34;A message from Bieber Bot reminding me that it&amp;#39;s been a while since I scheduled a Financial activity.&#34; width=&#34;350px&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Similarly BieberBot will remind me each day of any upcoming activities planned for that day.
+And if I don&amp;rsquo;t have any activity planned for a particular day, BieberBot may take the liberty of suggesting an activity.&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;bieberbot-hudson.png&#34; alt=&#34;A message from Bieber Bot suggesting I take a walk along the Hudson River.&#34; width=&#34;350px&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Finally BieberBot will also remind me if I haven&amp;rsquo;t been entering activities into the spreadsheet in a while, so I don&amp;rsquo;t fall too far behind on the logging system.&lt;/p&gt;
+
+&lt;p&gt;Setting up these notifcations is a bit outside the scope of this post, but if it interests you how BieberBot works, you can subscribe for future posts here:&lt;/p&gt;
+
+
+&lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/classic-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+  #mc_embed_signup{
+    background:#fff;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+  }
+&lt;/style&gt;
+&lt;div id=&#34;mc_embed_signup&#34;&gt;
+&lt;form action=&#34;https://gmail.us3.list-manage.com/subscribe/post?u=a55774562ae9fa9a1d879fa75&amp;amp;id=132f89def3&#34; method=&#34;post&#34; id=&#34;mc-embedded-subscribe-form&#34; name=&#34;mc-embedded-subscribe-form&#34; class=&#34;validate&#34; target=&#34;_blank&#34; novalidate&gt;
+    &lt;div id=&#34;mc_embed_signup_scroll&#34;&gt;
+  
+&lt;div class=&#34;mc-field-group&#34;&gt;
+  &lt;label for=&#34;mce-EMAIL&#34;&gt;Email Address&lt;/label&gt;
+  &lt;input type=&#34;email&#34; value=&#34;&#34; name=&#34;EMAIL&#34; class=&#34;required email&#34; id=&#34;mce-EMAIL&#34;&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;mce-responses&#34; class=&#34;clear&#34;&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-error-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-success-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;    
+    &lt;div style=&#34;position: absolute; left: -5000px;&#34; aria-hidden=&#34;true&#34;&gt;&lt;input type=&#34;text&#34; name=&#34;b_a55774562ae9fa9a1d879fa75_132f89def3&#34; tabindex=&#34;-1&#34; value=&#34;&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;
+      &lt;input type=&#34;submit&#34; value=&#34;Subscribe&#34; name=&#34;subscribe&#34; id=&#34;mc-embedded-subscribe&#34; class=&#34;button&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=&#39;EMAIL&#39;;ftypes[0]=&#39;email&#39;;fnames[1]=&#39;FNAME&#39;;ftypes[1]=&#39;text&#39;;fnames[2]=&#39;LNAME&#39;;ftypes[2]=&#39;text&#39;;fnames[3]=&#39;ADDRESS&#39;;ftypes[3]=&#39;address&#39;;fnames[4]=&#39;PHONE&#39;;ftypes[4]=&#39;phone&#39;;fnames[5]=&#39;BIRTHDAY&#39;;ftypes[5]=&#39;birthday&#39;;}(jQuery));var $mcj = jQuery.noConflict(true);&lt;/script&gt;
+
+
+&lt;p&gt;You can also learn a bit more about BieberBot &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;here&lt;/a&gt;, but there&amp;rsquo;s so much more to be written.&lt;/p&gt;
+
+&lt;h4 id=&#34;archiving-old-events&#34;&gt;Archiving Old Events&lt;/h4&gt;
+
+&lt;p&gt;To keep things clean, my spreadsheet also uses Google Apps Script to archive old events. You can see the code I use for the auto-archiving &lt;a href=&#34;https://gist.github.com/dbieber/42153e6a27382ba6193f108c13b84cf9&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h4&gt;
+
+&lt;p&gt;If this system sounds appealing to you, it&amp;rsquo;s very simple to get started.&lt;/p&gt;
+
+&lt;p&gt;Simply create a new Google sheet with the columns you&amp;rsquo;d like to track:. I use the following:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;em&gt;Evening&lt;/em&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;Morning&lt;/em&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;Keywords&lt;/em&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;Weekday&lt;/em&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;Date&lt;/em&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;People&lt;/em&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;Notes&lt;/em&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;But for a newcomer you might be satisfied with something simpler:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;em&gt;Activity&lt;/em&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;Weekday&lt;/em&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;Date&lt;/em&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;You can use the formula &lt;code&gt;=TEXT(WEEKDAY(E3), &amp;quot;dddd&amp;quot;)&lt;/code&gt; to autopopulate the &lt;code&gt;Weekday&lt;/code&gt; column.&lt;/p&gt;
+
+&lt;p&gt;I also create a second sheet called &lt;code&gt;Archive&lt;/code&gt; with the same columns as the main sheet, and use the &lt;a href=&#34;https://gist.github.com/dbieber/42153e6a27382ba6193f108c13b84cf9&#34; target=&#34;_blank&#34;&gt;auto-archiving feature&lt;/a&gt; mentioned earlier to prevent the main sheet from getting cluttered.&lt;/p&gt;
+
+&lt;p&gt;Next create the analysis sheet with the columns:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;em&gt;Category&lt;/em&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;Activity&lt;/em&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;Last Date&lt;/em&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The first two columns you can fill in however you like, and you can add new categories and activities at any time. No need to fill this in too much until you start to see how you&amp;rsquo;re using the main sheet.&lt;/p&gt;
+
+&lt;p&gt;To autofill the &lt;code&gt;Last Date&lt;/code&gt; column, the full formula I use is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;=MAX(
+  IFERROR(QUERY(scheduled, 
+    &amp;quot;select E
+    where A contains &#39;&amp;quot; &amp;amp; C2 &amp;amp; &amp;quot;&#39; OR B contains &#39;&amp;quot; &amp;amp; C2 &amp;amp; &amp;quot;&#39; or C contains &#39;&amp;quot; &amp;amp; C2 &amp;amp; &amp;quot;&#39;
+    order by E desc
+    limit 1
+    label E &#39;&#39;&amp;quot;
+  )),
+  IFERROR(QUERY(archive, 
+    &amp;quot;select E
+    where A contains &#39;&amp;quot; &amp;amp; C2 &amp;amp; &amp;quot;&#39; OR B contains &#39;&amp;quot; &amp;amp; C2 &amp;amp; &amp;quot;&#39; or C contains &#39;&amp;quot; &amp;amp; C2 &amp;amp; &amp;quot;&#39;
+    order by E desc
+    limit 1
+    label E &#39;&#39;&amp;quot;
+  ))
+)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This searches both the main sheet (scheduled) and the archive sheet for the most occurence of each activity. For this to work, the rows in the archive and main sheet need to be in reverse chronological order.&lt;/p&gt;
+
+&lt;p&gt;Finally, to get the roll-up by category, I use the following Google Sheets formula:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;=QUERY(A:E,
+       &amp;quot;select B, max(D), count(B) where B&amp;lt;&amp;gt;&#39;&#39; group by B order by max(D) desc
+        label max(D) &#39;Last date&#39;,
+              count(B) &#39;Count&#39;
+       &amp;quot;, -1)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Though I would like to, I won&amp;rsquo;t go into how to set up the notifications in this post. For now, that&amp;rsquo;s just between me and &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;BieberBot&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;As a quick recap of my system:
+(1) I manually enter the activity(s) I do each day; (2) the spreadsheet automatically figures out how recently I did each category of activity; (3) bonus: BieberBot uses this data to help me keep my life on track.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been using this system for about 18 months now, and I&amp;rsquo;ve been quite happy with the insight it provides and how helpful it is for planning.&lt;/p&gt;
+
+&lt;p&gt;Still, there are many pieces of my system left undiscussed: tracking financial transactions, taking notes on academic papers, staying in touch with friends and colleagues, dealing with social media, and more! I&amp;rsquo;d love to tell you about the rest, so stay tuned. And don&amp;rsquo;t hesitate to &lt;a href=&#34;mailto:david810+blog@gmail.com&#34; target=&#34;_blank&#34;&gt;reach out&lt;/a&gt; if you&amp;rsquo;d like to discuss anything you read. I hope you find this useful, and do let me know if you start using a spreadsheet to track your own life or have a system of your own.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Learning to Communicate</title>
       <link>https://davidbieber.com/snippets/2019-12-26-learning-to-communicate/</link>
       <pubDate>Thu, 26 Dec 2019 00:00:00 +0000</pubDate>
@@ -440,9 +800,8 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
 
 &lt;p&gt;If you want to receive updates only for major posts, such as new publications or major life updates, you can use this &lt;a href=&#34;https://davidbieber.com/posts/index.xml&#34; target=&#34;_blank&#34;&gt;RSS feed&lt;/a&gt; or you can subscribe here:&lt;/p&gt;
 
-&lt;!-- Begin Mailchimp Signup Form --&gt;
 
-&lt;p&gt;&lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/classic-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
+&lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/classic-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
 &lt;style type=&#34;text/css&#34;&gt;
   #mc_embed_signup{
     background:#fff;
@@ -452,16 +811,16 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
 &lt;/style&gt;
 &lt;div id=&#34;mc_embed_signup&#34;&gt;
 &lt;form action=&#34;https://gmail.us3.list-manage.com/subscribe/post?u=a55774562ae9fa9a1d879fa75&amp;amp;id=132f89def3&#34; method=&#34;post&#34; id=&#34;mc-embedded-subscribe-form&#34; name=&#34;mc-embedded-subscribe-form&#34; class=&#34;validate&#34; target=&#34;_blank&#34; novalidate&gt;
-    &lt;div id=&#34;mc_embed_signup_scroll&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;mc-field-group&#34;&gt;
+    &lt;div id=&#34;mc_embed_signup_scroll&#34;&gt;
+  
+&lt;div class=&#34;mc-field-group&#34;&gt;
   &lt;label for=&#34;mce-EMAIL&#34;&gt;Email Address&lt;/label&gt;
   &lt;input type=&#34;email&#34; value=&#34;&#34; name=&#34;EMAIL&#34; class=&#34;required email&#34; id=&#34;mce-EMAIL&#34;&gt;
 &lt;/div&gt;
   &lt;div id=&#34;mce-responses&#34; class=&#34;clear&#34;&gt;
     &lt;div class=&#34;response&#34; id=&#34;mce-error-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
     &lt;div class=&#34;response&#34; id=&#34;mce-success-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
-  &lt;/div&gt;    &lt;!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--&gt;
+  &lt;/div&gt;    
     &lt;div style=&#34;position: absolute; left: -5000px;&#34; aria-hidden=&#34;true&#34;&gt;&lt;input type=&#34;text&#34; name=&#34;b_a55774562ae9fa9a1d879fa75_132f89def3&#34; tabindex=&#34;-1&#34; value=&#34;&#34;&gt;&lt;/div&gt;
     &lt;div class=&#34;clear&#34;&gt;
       &lt;input type=&#34;submit&#34; value=&#34;Subscribe&#34; name=&#34;subscribe&#34; id=&#34;mc-embedded-subscribe&#34; class=&#34;button&#34;&gt;&lt;/div&gt;
@@ -469,8 +828,8 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
 &lt;/form&gt;
 &lt;/div&gt;
 &lt;script type=&#39;text/javascript&#39; src=&#39;//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js&#39;&gt;&lt;/script&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=&amp;lsquo;EMAIL&amp;rsquo;;ftypes[0]=&amp;lsquo;email&amp;rsquo;;fnames[1]=&amp;lsquo;FNAME&amp;rsquo;;ftypes[1]=&amp;lsquo;text&amp;rsquo;;fnames[2]=&amp;lsquo;LNAME&amp;rsquo;;ftypes[2]=&amp;lsquo;text&amp;rsquo;;fnames[3]=&amp;lsquo;ADDRESS&amp;rsquo;;ftypes[3]=&amp;lsquo;address&amp;rsquo;;fnames[4]=&amp;lsquo;PHONE&amp;rsquo;;ftypes[4]=&amp;lsquo;phone&amp;rsquo;;fnames[5]=&amp;lsquo;BIRTHDAY&amp;rsquo;;ftypes[5]=&amp;lsquo;birthday&amp;rsquo;;}(jQuery));var $mcj = jQuery.noConflict(true);&lt;/script&gt;
-&lt;!--End mc_embed_signup--&gt;&lt;/p&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=&#39;EMAIL&#39;;ftypes[0]=&#39;email&#39;;fnames[1]=&#39;FNAME&#39;;ftypes[1]=&#39;text&#39;;fnames[2]=&#39;LNAME&#39;;ftypes[2]=&#39;text&#39;;fnames[3]=&#39;ADDRESS&#39;;ftypes[3]=&#39;address&#39;;fnames[4]=&#39;PHONE&#39;;ftypes[4]=&#39;phone&#39;;fnames[5]=&#39;BIRTHDAY&#39;;ftypes[5]=&#39;birthday&#39;;}(jQuery));var $mcj = jQuery.noConflict(true);&lt;/script&gt;
+
 
 &lt;p&gt;Happy early new year!&lt;/p&gt;
 </description>
@@ -923,55 +1282,6 @@ function getDraftMessageBySubject(subject) {
 &lt;p&gt;You&amp;rsquo;ve now learned how to program a mail merge function that uses a spreadsheet as input. You can use a template to send multiple recipients personalized emails. You can schedule these emails to send in the future.&lt;/p&gt;
 
 &lt;p&gt;You now have a great power, and with it comes great responsibility. Don&amp;rsquo;t use this for spam. Be kind and courteous to your fellow citizens of the internet. If you find this useful, do let me know what you use it for (I&amp;rsquo;m &lt;a href=&#34;https://twitter.com/Bieber&#34; target=&#34;_blank&#34;&gt;@Bieber&lt;/a&gt; on Twitter). I&amp;rsquo;m using Google Apps Script for a variety of things these days and I am always interested to hear how others are using the same tools.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Introducing Python Fire</title>
-      <link>https://davidbieber.com/post/2017-03-06-introducing-python-fire/</link>
-      <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidbieber.com/post/2017-03-06-introducing-python-fire/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Originally posted on the Google Open Source Blog&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Today we are pleased to announce the open-sourcing of &lt;a href=&#34;https://github.com/google/python-fire&#34; target=&#34;_blank&#34;&gt;Python Fire&lt;/a&gt;. Python Fire generates command line interfaces (CLIs) from any Python code. Simply call the Fire function in any Python program to automatically turn that program into a CLI. The library is available from &lt;a href=&#34;https://pypi.org/project/fire/&#34; target=&#34;_blank&#34;&gt;pypi&lt;/a&gt; via &lt;code&gt;pip install fire&lt;/code&gt;, and the source is &lt;a href=&#34;https://github.com/google/python-fire&#34; target=&#34;_blank&#34;&gt;available on GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Python Fire will automatically turn your code into a CLI without you needing to do any additional work. You don’t have to define arguments, set up help information, or write a main function that defines how your code is run. Instead, you simply call the &lt;code&gt;Fire&lt;/code&gt; function from your main module, and Python Fire takes care of the rest. It uses inspection to turn whatever Python object you give it – whether it’s a class, an object, a dictionary, a function, or even a whole module – into a command line interface, complete with tab completion and documentation, and the CLI will stay up-to-date even as the code changes.&lt;/p&gt;
-
-&lt;p&gt;To illustrate this, let’s look at a simple example.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
-import fire
-
-class Example(object):
-  def hello(self, name=&#39;world&#39;):
-    &amp;quot;&amp;quot;&amp;quot;Says hello to the specified name.&amp;quot;&amp;quot;&amp;quot;
-    return &#39;Hello {name}!&#39;.format(name=name)
-
-def main():
-  fire.Fire(Example)
-
-if __name__ == &#39;__main__&#39;:
-  main()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;When the Fire function is run, our command will be executed. Just by calling Fire, we can now use the Example class as if it were a command line utility.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ ./example.py hello
-Hello world!
-$ ./example.py hello David
-Hello David!
-$ ./example.py hello --name=Google
-Hello Google!
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Of course, you can continue to use this module like an ordinary Python library, enabling you to use the exact same code both from Bash and Python. If you’re writing a Python library, then you no longer need to update your main method or client when experimenting with it; instead you can simply run the piece of your library that you’re experimenting with from the command line. Even as the library changes, the command line tool stays up to date.&lt;/p&gt;
-
-&lt;p&gt;At Google, engineers use Python Fire to generate command line tools from Python libraries. We have an image manipulation tool built by using Fire with the &lt;a href=&#34;https://en.wikipedia.org/wiki/Python_Imaging_Library&#34; target=&#34;_blank&#34;&gt;Python Imaging Library&lt;/a&gt;, PIL. In &lt;a href=&#34;https://ai.google/research/teams/brain&#34; target=&#34;_blank&#34;&gt;Google Brain&lt;/a&gt;, we use an experiment management tool built with Fire, allowing us to manage experiments equally well from Python or from Bash.&lt;/p&gt;
-
-&lt;p&gt;Every Fire CLI comes with an interactive mode. Run the CLI with the &lt;code&gt;--interactive&lt;/code&gt; flag to launch an &lt;a href=&#34;https://ipython.org/&#34; target=&#34;_blank&#34;&gt;IPython&lt;/a&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop&#34; target=&#34;_blank&#34;&gt;REPL&lt;/a&gt; with the result of your command, as well as other useful variables already defined and ready to use. Be sure to check out &lt;a href=&#34;https://github.com/google/python-fire#python-fire-&#34; target=&#34;_blank&#34;&gt;Python Fire’s documentation&lt;/a&gt; for more on this and the other useful features Fire provides.&lt;/p&gt;
-
-&lt;p&gt;Between Python Fire’s simplicity, generality, and power, we hope you find it a useful library for your own projects.&lt;/p&gt;
 </description>
     </item>
     
