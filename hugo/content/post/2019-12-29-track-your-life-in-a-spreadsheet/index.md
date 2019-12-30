@@ -114,7 +114,7 @@ Here you can see how recently I've done something in each of the categories.
 
 {{<figure
   alt="A two-column spreadsheet showing how recently I've done an activity in each of the 15 activity categories."
-  src="activities-by-category.png"
+  src="i-activities-by-category.png"
   width="200px"
 >}}
 
@@ -128,7 +128,7 @@ If it's been too long since I've scheduled an activity in any particular categor
 
 {{<figure
   alt="A message from Bieber Bot reminding me that it's been a while since I scheduled a Financial activity."
-  src="bieberbot-financial.png"
+  src="i-bieberbot-financial.png"
   width="350px"
 >}}
 
@@ -137,7 +137,7 @@ And if I don't have any activity planned for a particular day, BieberBot may tak
 
 {{<figure
   alt="A message from Bieber Bot suggesting I take a walk along the Hudson River."
-  src="bieberbot-hudson.png"
+  src="i-bieberbot-hudson.png"
   width="350px"
 >}}
 
