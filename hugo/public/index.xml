@@ -569,7 +569,7 @@ It then also rolls up this data in interesting ways that help me with reflecting
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;The &lt;code&gt;Last Date&lt;/code&gt; column is filled automatically using the data from th emain sheet. The Google Sheets formula that fills in this column is a query a bit like this one:&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;Last Date&lt;/code&gt; column is filled automatically using the data from the main sheet. The Google Sheets formula that fills in this column is a query a bit like this one:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;=IFERROR(QUERY(scheduled,
    &amp;quot;select E
