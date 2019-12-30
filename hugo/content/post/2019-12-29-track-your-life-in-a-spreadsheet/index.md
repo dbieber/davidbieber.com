@@ -35,7 +35,7 @@ The essense of the system is to jot down 1. what I do, and optionally 2. who I e
 
 I don't update the spreadsheet every day, usually just once a week or so I'll fill in the activity from all of the missing days.
 
-This system serves several purposes, the main one being a journal of sorts so I can see a historical log of my activities. As you'll see in the Planning and Notifications section, it also helps me remember to do all the activities I enjoy doing.
+This system serves several purposes, the main one being a journal of sorts so I can see a historical log of my activities. As you'll see in the Planning and Notifications sections, it also helps me remember to regularly do all the activities I enjoy doing.
 
 I'll start by providing a brief description of each column in the spreadsheet. Then we'll get to discuss how I use the spreadsheet, and you'll see why they're each important to me. We'll then also dive into all the benefits I get from this spreadsheet and the infrastructure I've built up around it.
 
