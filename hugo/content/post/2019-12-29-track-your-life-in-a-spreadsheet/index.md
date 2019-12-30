@@ -31,7 +31,7 @@ I will answer all of the following questions in this post:
 
 I have a single spreadsheet with columns *Evening*, *Morning*, *Keywords*, *Weekday*, *Date*, *People*, *Notes*. In this sheet, I have a single row _per day_.
 
-The essense of the system is to jot down 1. what I do, and optionally 2. who I engage with each day.
+The essense of the system is to jot down (1) what I do, and optionally (2) who I engage with each day.
 
 I don't update the spreadsheet every day, usually just once a week or so I'll fill in the activity from all of the missing days.
 
