@@ -1,5 +1,5 @@
 +++
-title = "Planning to Analyze my Browsing History"
+title = "Planning to Analyze My Browsing History"
 date = 2019-12-30T00:00:00
 
 summary = "I'm planning to analyze my browser history. This is my plan."
