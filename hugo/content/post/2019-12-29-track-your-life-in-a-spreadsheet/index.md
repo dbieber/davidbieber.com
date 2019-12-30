@@ -203,7 +203,7 @@ To autofill the `Last Date` column, the full formula I use is:
 )
 ```
 
-This searches both the main sheet (scheduled) and the archive sheet for the most occurence of each activity (C2). For this to work, the rows in the archive and main sheet need to be in reverse chronological order.
+This searches both the main sheet (scheduled) and the archive sheet for the most recent occurence of each activity (C2). For this to work, the rows in the archive and main sheet need to be in reverse chronological order.
 
 Finally, to get the roll-up by category, I use the following Google Sheets formula:
 
