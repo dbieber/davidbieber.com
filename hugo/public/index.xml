@@ -738,7 +738,7 @@ And if I don&amp;rsquo;t have any activity planned for a particular day, BieberB
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;The first two columns you can fill in however you like, and you can add new categories and activities at any time. No need to fill this in too much until you start to see how you&amp;rsquo;re using the main sheet.&lt;/p&gt;
+&lt;p&gt;The first two columns you can fill in with whatever categories and activities you like, and you can add new categories and activities at any time. No need to fill this in too much until you start to see how you&amp;rsquo;re using the main sheet.&lt;/p&gt;
 
 &lt;p&gt;To autofill the &lt;code&gt;Last Date&lt;/code&gt; column, the full formula I use is:&lt;/p&gt;
 
@@ -760,7 +760,7 @@ And if I don&amp;rsquo;t have any activity planned for a particular day, BieberB
 )
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;This searches both the main sheet (scheduled) and the archive sheet for the most occurence of each activity. For this to work, the rows in the archive and main sheet need to be in reverse chronological order.&lt;/p&gt;
+&lt;p&gt;This searches both the main sheet (scheduled) and the archive sheet for the most occurence of each activity (C2). For this to work, the rows in the archive and main sheet need to be in reverse chronological order.&lt;/p&gt;
 
 &lt;p&gt;Finally, to get the roll-up by category, I use the following Google Sheets formula:&lt;/p&gt;
 

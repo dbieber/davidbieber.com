@@ -1,8 +1,14 @@
 +++
 title = "Keeping Track of My Life in a Spreadsheet"
 date = 2019-12-29T00:00:00
+type = "post"
+draft = false
 
 summary = "I use a daily activity log to track my habits and plan future activities."
+
+[image]
+  caption = ""
+  focal_point = ""
 +++
 
 As many of my friends know, I keep track of much of my life in spreadsheets. There are several pieces to this system, but fortunately it's the kind of system that you can adopt (and discard) incrementally. So, rather than explaining the whole thing in one go, I will explain one core piece in this post.
@@ -174,7 +180,7 @@ Next create the analysis sheet with the columns:
 | *Category* | *Activity* | *Last Date* |
 |------------|------------|--------------|
 
-The first two columns you can fill in however you like, and you can add new categories and activities at any time. No need to fill this in too much until you start to see how you're using the main sheet.
+The first two columns you can fill in with whatever categories and activities you like, and you can add new categories and activities at any time. No need to fill this in too much until you start to see how you're using the main sheet.
 
 To autofill the `Last Date` column, the full formula I use is:
 
@@ -197,7 +203,7 @@ To autofill the `Last Date` column, the full formula I use is:
 )
 ```
 
-This searches both the main sheet (scheduled) and the archive sheet for the most occurence of each activity. For this to work, the rows in the archive and main sheet need to be in reverse chronological order.
+This searches both the main sheet (scheduled) and the archive sheet for the most occurence of each activity (C2). For this to work, the rows in the archive and main sheet need to be in reverse chronological order.
 
 Finally, to get the roll-up by category, I use the following Google Sheets formula:
 
