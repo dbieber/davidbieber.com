@@ -83,7 +83,7 @@ The most important columns in this sheet are:
 | Activity   | Text  | An activity that I enjoy engaging in. (e.g. Skiing)
 | Last Date  | Filled automatically | The most recent date on which I engaged in the activity.
 
-The `Last Date` column is filled automatically using the data from th emain sheet. The Google Sheets formula that fills in this column is a query a bit like this one:
+The `Last Date` column is filled automatically using the data from the main sheet. The Google Sheets formula that fills in this column is a query a bit like this one:
 
 ```javascript
 =IFERROR(QUERY(scheduled,
