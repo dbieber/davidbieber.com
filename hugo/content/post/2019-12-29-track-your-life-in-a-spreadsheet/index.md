@@ -160,18 +160,18 @@ To keep things clean, my spreadsheet also uses Google Apps Script to archive old
 
 If this system sounds appealing to you, it's very simple to get started.
 
-Simply create a new Google sheet with the columns you'd like to track:. I use the following:
+Simply create a new Google sheet with the columns you'd like to track. I use the following:
 
 
 | *Evening*  | *Morning*  | *Keywords* | *Weekday* | *Date* | *People* | *Notes* |
 |------------|------------|------------|-----------|---------|---------|---------|
 
-But for a newcomer you might be satisfied with something simpler:
+But for just getting started you might be satisfied with something simpler, say just these three columns:
 
 | *Activity* | *Weekday* | *Date* |
 |------------|-----------|--------|
 
-You can use the formula `=TEXT(WEEKDAY(E3), "dddd")` to autopopulate the `Weekday` column.
+You can use the formula `=TEXT(WEEKDAY(E3), "dddd")` to autopopulate the `Weekday` column, where E3 represents the date (tip: you can use cmd-; to enter today's date into a cell).
 
 I also create a second sheet called `Archive` with the same columns as the main sheet, and use the [auto-archiving feature](https://gist.github.com/dbieber/42153e6a27382ba6193f108c13b84cf9) mentioned earlier to prevent the main sheet from getting cluttered.
 

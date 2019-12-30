@@ -685,7 +685,7 @@ And if I don&amp;rsquo;t have any activity planned for a particular day, BieberB
 
 &lt;p&gt;If this system sounds appealing to you, it&amp;rsquo;s very simple to get started.&lt;/p&gt;
 
-&lt;p&gt;Simply create a new Google sheet with the columns you&amp;rsquo;d like to track:. I use the following:&lt;/p&gt;
+&lt;p&gt;Simply create a new Google sheet with the columns you&amp;rsquo;d like to track. I use the following:&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -704,7 +704,7 @@ And if I don&amp;rsquo;t have any activity planned for a particular day, BieberB
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;But for a newcomer you might be satisfied with something simpler:&lt;/p&gt;
+&lt;p&gt;But for just getting started you might be satisfied with something simpler, say just these three columns:&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -719,7 +719,7 @@ And if I don&amp;rsquo;t have any activity planned for a particular day, BieberB
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;You can use the formula &lt;code&gt;=TEXT(WEEKDAY(E3), &amp;quot;dddd&amp;quot;)&lt;/code&gt; to autopopulate the &lt;code&gt;Weekday&lt;/code&gt; column.&lt;/p&gt;
+&lt;p&gt;You can use the formula &lt;code&gt;=TEXT(WEEKDAY(E3), &amp;quot;dddd&amp;quot;)&lt;/code&gt; to autopopulate the &lt;code&gt;Weekday&lt;/code&gt; column, where E3 represents the date (tip: you can use cmd-; to enter today&amp;rsquo;s date into a cell).&lt;/p&gt;
 
 &lt;p&gt;I also create a second sheet called &lt;code&gt;Archive&lt;/code&gt; with the same columns as the main sheet, and use the &lt;a href=&#34;https://gist.github.com/dbieber/42153e6a27382ba6193f108c13b84cf9&#34; target=&#34;_blank&#34;&gt;auto-archiving feature&lt;/a&gt; mentioned earlier to prevent the main sheet from getting cluttered.&lt;/p&gt;
 
