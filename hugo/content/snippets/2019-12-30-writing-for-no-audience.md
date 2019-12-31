@@ -5,7 +5,7 @@ date = 2019-12-30T01:00:00
 summary = "Writing for no one is so much easier than writing for someone."
 +++
 
-I started this ["snippets"](/snippets) section of my website just a few days ago with the intention of being able to write, without needing to put polish on a piece before publishing it.
+I started this ["snippets"](/snippets) section of my website just a few days ago with the intention of being able to write without needing to put polish on a piece before publishing it.
 
 My thinking was that I would be able to put small notes there, and half-baked ideas, and not have to worry about diluting the quality of the content of my [main website](/posts). I could put high quality posts on the main site, and a whole range of both good and bad posts in the snippets section. This way, assuming I do a good job, readers could come to expect that any post on the main website would be high quality. Curious people looking for additional content could come here to the snippets section if they wanted to, but more often posts here would either (1) almost never get read, or (2) be linked to directly, e.g. if they were relevent in some other context.
 
