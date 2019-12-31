@@ -61,7 +61,7 @@ And the `visits` table has these columns (obtained via `.schema visits`):
 |incremented_omnibox_typed_score  | Boolean    | I do not know what this is about. |
 
 
-As you can see, we can access every visit to every website that we've made since the last time we cleared our browsing history. We can see what website we visited (`visits.url`), when we visited it (`visits.visit_time`), how many times we've visited it (`urls.visit_count`), and how long each visit was (`visits.visit_duration`).
+As you can see, we can access every visit to every website that we've made since the last time we cleared our browsing history. We can see what website we visited (`visits.url`), when we visited it (`visits.visit_time`), how many times we've visited it (`urls.visit_count`), and how long each visit was for (`visits.visit_duration`).
 
 We can even use `visits.from_visit` to figure out what website linked us to each url, if that interests us.
 
