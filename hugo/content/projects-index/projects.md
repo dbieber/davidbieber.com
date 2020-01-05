@@ -10,6 +10,7 @@ weight = 50
 
 [content]
   page_type = "projects"
+  show_more = false
 
   filter_default = 0
 

@@ -8,6 +8,7 @@
 {{ $query := where site.RegularPages "Type" $items_type }}
 {{ $archive_page := site.GetPage "Section" $items_type }}
 
+{{ $show_more := $st.Params.content.show_more }}
 {{ $items_count := $st.Params.content.count }}
 {{ if eq $items_count 0 }}
   {{ $items_count = 65535 }}
@@ -37,12 +38,14 @@
 
     {{ with $st.Title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
     {{ with $st.Params.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+    {{ if $show_more }}
     <div class="view-all">
-      <a href="{{ $archive_page.RelPermalink }}">
+      <a href="{{ $st.Params.content.show_more_url }}">
         {{ i18n $i18n | default "More" }}
         <i class="fas fa-angle-double-right"></i>
       </a>
     </div>
+    {{ end }}
 
   </div>
   <div class="col-12 col-lg-8">

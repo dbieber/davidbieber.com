@@ -11,6 +11,8 @@ weight = 50
 
 [content]
   page_type = "projects"
+  show_more = true
+  show_more_url = "/projects"
   count = 6
 
 [design]
