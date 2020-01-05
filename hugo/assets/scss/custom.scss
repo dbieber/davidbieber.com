@@ -1,7 +1,9 @@
+/* Lists page for snippets. */
 .snippet-item a {
   color: black;
 }
 
+/* Split headers */
 .split-header {
   margin-bottom: 2rem;
 }
@@ -37,4 +39,9 @@
   position: relative; /* Required for caption positioning */
   clear: both;
   max-width: 580px;
+}
+
+/* Collapsible Blog Posts */
+[id^=_] { 
+  display: none;  
 }
