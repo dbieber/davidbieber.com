@@ -12,7 +12,7 @@
 {{ if eq $items_count 0 }}
   {{ $items_count = 65535 }}
 {{ else }}
-  {{ $items_count = $items_count | default 5 }}
+  {{ $items_count = $items_count | default 65535 }}
 {{ end }}
 
 {{/* Localisation */}}
