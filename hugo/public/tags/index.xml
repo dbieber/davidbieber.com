@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on David Bieber</title>
+    <title>Tags | David Bieber</title>
     <link>https://davidbieber.com/tags/</link>
-    <description>Recent content in Tags on David Bieber</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 21 Oct 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://davidbieber.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://davidbieber.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Sun, 21 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://davidbieber.com/img/portrait.jpg</url>
+      <title>Tags</title>
+      <link>https://davidbieber.com/tags/</link>
+    </image>
     
     <item>
       <title>Automation</title>
       <link>https://davidbieber.com/tags/automation/</link>
       <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/tags/automation/</guid>
       <description></description>
     </item>
@@ -25,7 +24,6 @@
       <title>Google Apps Script</title>
       <link>https://davidbieber.com/tags/google-apps-script/</link>
       <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/tags/google-apps-script/</guid>
       <description></description>
     </item>
@@ -34,7 +32,6 @@
       <title>Just for Fun</title>
       <link>https://davidbieber.com/tags/just-for-fun/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/tags/just-for-fun/</guid>
       <description></description>
     </item>
@@ -43,7 +40,6 @@
       <title>Productivity</title>
       <link>https://davidbieber.com/tags/productivity/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/tags/productivity/</guid>
       <description></description>
     </item>
@@ -52,7 +48,6 @@
       <title>Robot</title>
       <link>https://davidbieber.com/tags/robot/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/tags/robot/</guid>
       <description></description>
     </item>
@@ -61,7 +56,6 @@
       <title>Software</title>
       <link>https://davidbieber.com/tags/software/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/tags/software/</guid>
       <description></description>
     </item>
@@ -70,7 +64,6 @@
       <title>Hardware</title>
       <link>https://davidbieber.com/tags/hardware/</link>
       <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/tags/hardware/</guid>
       <description></description>
     </item>
@@ -79,7 +72,6 @@
       <title>Puzzle</title>
       <link>https://davidbieber.com/tags/puzzle/</link>
       <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/tags/puzzle/</guid>
       <description></description>
     </item>
@@ -88,7 +80,6 @@
       <title>Python Fire</title>
       <link>https://davidbieber.com/tags/python-fire/</link>
       <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/tags/python-fire/</guid>
       <description></description>
     </item>
@@ -97,7 +88,6 @@
       <title>Education</title>
       <link>https://davidbieber.com/tags/education/</link>
       <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/tags/education/</guid>
       <description></description>
     </item>
@@ -106,7 +96,6 @@
       <title>Esperanto</title>
       <link>https://davidbieber.com/tags/esperanto/</link>
       <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/tags/esperanto/</guid>
       <description></description>
     </item>
@@ -115,7 +104,6 @@
       <title>Princeton ACM</title>
       <link>https://davidbieber.com/tags/princeton-acm/</link>
       <pubDate>Fri, 06 Sep 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/tags/princeton-acm/</guid>
       <description></description>
     </item>

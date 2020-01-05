@@ -1,60 +1,356 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Snippets on David Bieber</title>
+    <title>Snippets | David Bieber</title>
     <link>https://davidbieber.com/snippets/</link>
-    <description>Recent content in Snippets on David Bieber</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://davidbieber.com/snippets/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://davidbieber.com/snippets/index.xml" rel="self" type="application/rss+xml" />
+    <description>Snippets</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://davidbieber.com/img/portrait.jpg</url>
+      <title>Snippets</title>
+      <link>https://davidbieber.com/snippets/</link>
+    </image>
     
     <item>
       <title>Writing for No Audience</title>
       <link>https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/</link>
       <pubDate>Mon, 30 Dec 2019 01:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/</guid>
-      <description>Writing for no one is so much easier than writing for someone.</description>
+      <description>&lt;p&gt;I started this &lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;&amp;ldquo;snippets&amp;rdquo;&lt;/a&gt; section of my website just a few days ago with the intention of being able to write without needing to put polish on a piece before publishing it.&lt;/p&gt;
+&lt;p&gt;My thinking was that I would be able to put small notes there, and half-baked ideas, and not have to worry about diluting the quality of the content of my &lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;main website&lt;/a&gt;. I could put high quality posts on the main site, and a whole range of both good and bad posts in the snippets section. This way, assuming I do a good job, readers could come to expect that any post on the main website would be high quality. Curious people looking for additional content could come here to the snippets section if they wanted to, but more often posts here would either (1) almost never get read, or (2) be linked to directly, e.g. if they were relevent in some other context.&lt;/p&gt;
+&lt;p&gt;I&#39;ve been surprised and delighted by the effect that having this &amp;ldquo;No Audience&amp;rdquo; section of the website has had on my writing. Writing for no one is so much easier than writing for someone.&lt;/p&gt;
+&lt;p&gt;On a few occasions (and it&#39;s only been a few days since I started this section), I&#39;ve started writing snippets intending for them to be brief thoughts meant for no one but myself. Then, after starting, it has felt natural to expand the post into something more substantial than I originally intended, e.g. answering questions that a hypothetical reader might have.&lt;/p&gt;
+&lt;p&gt;On one &lt;a href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet&#34;&gt;occasion&lt;/a&gt; I even decided to bump the post up in importance after getting started, placing it in the main section of the website rather than relegating it to the mostly hidden snippets section.&lt;/p&gt;
+&lt;p&gt;To anyone out there who does end up reading this, and there may very well be none of you: if you&#39;re having trouble getting started with writing, write for no audience.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;the-different-degrees-of-no-audience&#34;&gt;The Different Degrees of &amp;ldquo;No Audience&amp;rdquo;&lt;/h4&gt;
+&lt;p&gt;I actually write for No Audience in two different contexts.&lt;/p&gt;
+&lt;p&gt;(1) The &lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;snippets&lt;/a&gt; section of my website\&lt;br&gt;
+(2) Using &lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;shh-shell&lt;/a&gt; at night&lt;/p&gt;
+&lt;p&gt;The snippets section of my website is public, but with no built-in broadcasting. People can read it if they choose to, but I&#39;m not putting it in people&#39;s faces (by default; I will if it&#39;s appropriate in context). Contrast this with the writing I do with the &lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;shh-shell&lt;/a&gt;. This is more personal writing that I do half-asleep as I drift off at night, and so I don&#39;t make it public; I expect almost no one will ever read it. This writing, I suppose is for No Audience to an even more extreme degree. I recommend both practices: public writing for no audience, and private writing for no audience.&lt;/p&gt;
+&lt;h4 id=&#34;social-media-doesnt-cut-it&#34;&gt;Social Media Doesn&#39;t Cut It&lt;/h4&gt;
+&lt;p&gt;Now that I&#39;ve discovered this practice and am quite fond of it, I think it could be a promising addition to social media.&lt;/p&gt;
+&lt;p&gt;No social media platform, to my knowledge, has given people a place to write public posts with an option to publish but not share them. The absense of such a feature makes sense; social media platforms need you to share for them to succeed, so how would giving you a space to publish-but-not-share help them? The answer lies in the psychology of the many social-media lurkers. There is a significant market segment of people who perhaps consume, but do not post, on social media. An option to publish-but-not-broadcast might help to convert some of that segment into sharers.&lt;/p&gt;
+&lt;p&gt;As a social media consumer, but infrequent producer, I can tell you I am hesitant even to Like something on Twitter, because I know Twitter often treats Likes like Retweets, and will put the content I hearted in front of my followers with my name attached, and that&#39;s not something I want.&lt;/p&gt;
+&lt;p&gt;If a feature for publishing-without-sharing were added to Facebook or Twitter, perhaps others would have an experience like mine over the last few days. Having the option to publish-but-not-share has significantly reduced the barrier to start writing for me. Then, once I&#39;ve started writing, I&#39;ve often changed my mind and decided I want to share what I&#39;ve written after all.&lt;/p&gt;
+&lt;p&gt;If other social-media lurkers are like me, a feature enabling this behavior could help &amp;ldquo;break the ice&amp;rdquo; so to speak, and could make social media platforms more relevant to them.&lt;/p&gt;
+&lt;h4 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h4&gt;
+&lt;p&gt;I&#39;m going to continue building this snippets section for myself, with the default behavior being no-broadcasting as I add snippets. For snippets I&#39;m fond of, I may choose to broadcast (e.g. by posting about the post on social media). Contrast this with the &lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;main posts section&lt;/a&gt; of my website; for new posts there, I will generally always broadcast the post, at least a little bit.&lt;/p&gt;
+&lt;p&gt;If you&#39;d like to receive such broadcasts, e.g. when I write a post that I&#39;m particularly keen on sharing, please consider subscribing:&lt;/p&gt;
+
+&lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/classic-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+  #mc_embed_signup{
+    background:#fff;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+  }
+&lt;/style&gt;
+&lt;div id=&#34;mc_embed_signup&#34;&gt;
+&lt;form action=&#34;https://gmail.us3.list-manage.com/subscribe/post?u=a55774562ae9fa9a1d879fa75&amp;amp;id=132f89def3&#34; method=&#34;post&#34; id=&#34;mc-embedded-subscribe-form&#34; name=&#34;mc-embedded-subscribe-form&#34; class=&#34;validate&#34; target=&#34;_blank&#34; novalidate&gt;
+    &lt;div id=&#34;mc_embed_signup_scroll&#34;&gt;
+  
+&lt;div class=&#34;mc-field-group&#34;&gt;
+  &lt;label for=&#34;mce-EMAIL&#34;&gt;Email Address&lt;/label&gt;
+  &lt;input type=&#34;email&#34; value=&#34;&#34; name=&#34;EMAIL&#34; class=&#34;required email&#34; id=&#34;mce-EMAIL&#34;&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;mce-responses&#34; class=&#34;clear&#34;&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-error-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-success-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;    
+    &lt;div style=&#34;position: absolute; left: -5000px;&#34; aria-hidden=&#34;true&#34;&gt;&lt;input type=&#34;text&#34; name=&#34;b_a55774562ae9fa9a1d879fa75_132f89def3&#34; tabindex=&#34;-1&#34; value=&#34;&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;
+      &lt;input type=&#34;submit&#34; value=&#34;Subscribe&#34; name=&#34;subscribe&#34; id=&#34;mc-embedded-subscribe&#34; class=&#34;button&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=&#39;EMAIL&#39;;ftypes[0]=&#39;email&#39;;fnames[1]=&#39;FNAME&#39;;ftypes[1]=&#39;text&#39;;fnames[2]=&#39;LNAME&#39;;ftypes[2]=&#39;text&#39;;fnames[3]=&#39;ADDRESS&#39;;ftypes[3]=&#39;address&#39;;fnames[4]=&#39;PHONE&#39;;ftypes[4]=&#39;phone&#39;;fnames[5]=&#39;BIRTHDAY&#39;;ftypes[5]=&#39;birthday&#39;;}(jQuery));var $mcj = jQuery.noConflict(true);&lt;/script&gt;
+
+&lt;p&gt;Ironically, you are also welcome to follow the snippets section with &lt;a href=&#34;https://davidbieber.com/snippets/index.xml&#34;&gt;RSS&lt;/a&gt;. Don&#39;t tell me if you do though, since I would like to continue to feel like I&#39;m writing for No Audience. You can follow the posts section with &lt;a href=&#34;https://davidbieber.com/posts/index.xml&#34;&gt;RSS&lt;/a&gt; as well.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Planning to Analyze My Browsing History</title>
       <link>https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/</guid>
-      <description>I&amp;rsquo;m planning to analyze my browser history. This is my plan.</description>
+      <description>&lt;p&gt;I&#39;ve learned recently that programmatically accessing your browsing history is rather straightforward. Really exciting! This is rich data, from which I think I&#39;ll be able to learn a lot and hopefully combat unwanted distractions.&lt;/p&gt;
+&lt;p&gt;First let me describe what information is available, and how you can access it. Then, let&#39;s discuss what you can do with this data. As I&#39;ve written about previously &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;[1]&lt;/a&gt; &lt;a href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/&#34;&gt;[2]&lt;/a&gt;, I already have a chat bot system in place, which will be able to take advantage of this data to e.g. help me stay focused.&lt;/p&gt;
+&lt;h4 id=&#34;accessing-your-browser-history&#34;&gt;Accessing Your Browser History&lt;/h4&gt;
+&lt;p&gt;Thank you to GitHub user &lt;a href=&#34;https://github.com/dropmeaword&#34;&gt;dropmeaword&lt;/a&gt; for compiling &lt;a href=&#34;https://gist.github.com/dropmeaword/9372cbeb29e8390521c2&#34;&gt;this gist&lt;/a&gt; explaining how to access your browser history via sqlite3. The gist covers Safari, Chrome, and Firefox. In this post, I&#39;ll just focus on Chrome on OSX, since that&#39;s my primary mode of browsing.&lt;/p&gt;
+&lt;p&gt;My Chrome browsing history is located at &lt;code&gt;~/Library/Application Support/Google/Chrome/Default/History&lt;/code&gt;. Since I use multiple profiles in Chrome, each profile gets its own browsing history, e.g. located at &lt;code&gt;~/Library/Application Support/Google/Chrome/Profile 1/History&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Each browsing history is stored as a sqlite3 database. Before analyzing the data, I recommend making a copy of it (&lt;code&gt;cp ~/Library/Application\ Support/Google/Chrome/Default/History my-history&lt;/code&gt;); this way your history database (a) wont be locked by Chrome while you&#39;re trying to access it, and (b) wont change while you&#39;re looking at it, which could cause confusion and inconsistencies in your results.&lt;/p&gt;
+&lt;p&gt;This means you can browse it interactively using the sqlite3 REPL by running &lt;code&gt;sqlite3 PATH_TO_DATABASE&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;There are also libraries available for accessing sqlite3 databases in just about every language. For Python, there&#39;s the &lt;a href=&#34;https://docs.python.org/3/library/sqlite3.html&#34;&gt;sqlite3&lt;/a&gt; library. Go has &lt;a href=&#34;https://godoc.org/github.com/mattn/go-sqlite3&#34;&gt;go-sqlite3&lt;/a&gt;. JavaScript has &lt;a href=&#34;https://www.sqlitetutorial.net/sqlite-nodejs/&#34;&gt;this sqlite3 module&lt;/a&gt;. However you most like scripting, you&#39;ll have a familiar way of accessing the data.&lt;/p&gt;
+&lt;h4 id=&#34;the-available-data&#34;&gt;The Available Data&lt;/h4&gt;
+&lt;p&gt;Running sqlite3 macro &lt;code&gt;.tables&lt;/code&gt;, we see the following tables are available.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;downloads&lt;/td&gt;
+&lt;td&gt;meta&lt;/td&gt;
+&lt;td&gt;urls&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;downloads_slices&lt;/td&gt;
+&lt;td&gt;segment_usage&lt;/td&gt;
+&lt;td&gt;visit_source&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;downloads_url_chains&lt;/td&gt;
+&lt;td&gt;segments&lt;/td&gt;
+&lt;td&gt;visits&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;keyword_search_terms&lt;/td&gt;
+&lt;td&gt;typed_url_sync_metadata&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;We&#39;ll be most interested in the &lt;code&gt;urls&lt;/code&gt; and &lt;code&gt;visits&lt;/code&gt; tables.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;urls&lt;/code&gt; table has these columns (found with &lt;code&gt;.schema urls&lt;/code&gt;):&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;id&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the URL in the database.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;url&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The URL of the website.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;title&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The title of website.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;visit_count&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The number of times you&#39;ve visited the URL.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;typed_count&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The number of times you&#39;ve visited the URL by typing in the address (as opposed to by following a link.)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;last_visit_time&lt;/td&gt;
+&lt;td&gt;Integer (milliseconds since the epoch)&lt;/td&gt;
+&lt;td&gt;The time of the most recent to the URL.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;hidden&lt;/td&gt;
+&lt;td&gt;Boolean&lt;/td&gt;
+&lt;td&gt;I&#39;m not sure what this is about.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;And the &lt;code&gt;visits&lt;/code&gt; table has these columns (obtained via &lt;code&gt;.schema visits&lt;/code&gt;):&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;id&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the visit in the database.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;url&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the url in the &lt;code&gt;urls&lt;/code&gt; table.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;visit_time&lt;/td&gt;
+&lt;td&gt;Integer (milliseconds since the epoch)&lt;/td&gt;
+&lt;td&gt;The time of the visit.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;from_visit&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the visit that lead you to this one.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;transition&lt;/td&gt;
+&lt;td&gt;Bit vector&lt;/td&gt;
+&lt;td&gt;Represents the &lt;a href=&#34;https://developer.chrome.com/extensions/history#transition_types&#34;&gt;transition type&lt;/a&gt; (how you got to the URL)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;segment_id&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the segment in the database. I&#39;m not quite sure what a segment is, but there is a &lt;code&gt;segments&lt;/code&gt; table you can look at.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;visit_duration&lt;/td&gt;
+&lt;td&gt;Integer (microsecodns)&lt;/td&gt;
+&lt;td&gt;The amount of time spent at the website, or 0 if not available.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;incremented_omnibox_typed_score&lt;/td&gt;
+&lt;td&gt;Boolean&lt;/td&gt;
+&lt;td&gt;I do not know what this is about.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;As you can see, we can access every visit to every website that we&#39;ve made since the last time we cleared our browsing history. We can see what website we visited (&lt;code&gt;visits.url&lt;/code&gt;), when we visited it (&lt;code&gt;visits.visit_time&lt;/code&gt;), how many times we&#39;ve visited it (&lt;code&gt;urls.visit_count&lt;/code&gt;), and how long each visit was for (&lt;code&gt;visits.visit_duration&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;We can even use &lt;code&gt;visits.from_visit&lt;/code&gt; to figure out what website linked us to each url, if that interests us.&lt;/p&gt;
+&lt;h4 id=&#34;what-can-we-deduce&#34;&gt;What Can We Deduce?&lt;/h4&gt;
+&lt;p&gt;We can (1) perform a historical analysis on the data, as well as (2) do real-time monitoring of the data.&lt;/p&gt;
+&lt;p&gt;Here I brainstorm some of the historical trends we will be able to uncover:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Most frequently visited websites&lt;/li&gt;
+&lt;li&gt;Websites where we spend the majority of our time&lt;/li&gt;
+&lt;li&gt;Websites that frequently lead to known-distractor websites (e.g. Reddit, Hacker News, Twitter, YouTube)&lt;/li&gt;
+&lt;li&gt;We can do an analysis by time of day (or day of week), to figure out what sites occupy my time late at night vs during daylight hours.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are somewhat interesting, but what I&#39;m particularly excited for is the ongoing analysis that &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; can provide by accessing the data.&lt;/p&gt;
+&lt;p&gt;Here is a brainstorm of the more real-time actionable insights we might extract from this data.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bieber Bot could ping me if it looks like I&#39;m spending too much time on a distraction website.&lt;/li&gt;
+&lt;li&gt;He could try to detect if I went to a website with a particular purpose, but ended up getting distracted and not completing the purpose I set out to do.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For example, if I&#39;m on a productive website and then switch to a distraction website for more than a few minutes, particularly during work hours, Bieber Bot might message asking if I got distracted. Think you could do that for me Bieber Bot?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I could signal that I want to view a website later by opening it and immediately closing it again.&lt;/li&gt;
+&lt;li&gt;Perhaps we could detect if I&#39;m researching a particular topic, and then Bieber Bot could try to help me with my research.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;related-idea&#34;&gt;Related Idea&lt;/h4&gt;
+&lt;p&gt;In order to reduce distractions, I&#39;d like to be able to switch my browsing mode from &amp;ldquo;clicking opens links&amp;rdquo; to &amp;ldquo;clicking saves a link for later&amp;rdquo;. When in this new mode, whenever I click a link it wouldn&#39;t open that link; instead, it would save the link to a list of deferred links.
+Then I would be able to view my &amp;ldquo;saved for later&amp;rdquo; links when I have time that I&#39;ve explicitly set aside, rather than during the time that I would rather be doing something more productive.&lt;/p&gt;
+&lt;h4 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h4&gt;
+&lt;p&gt;So far I&#39;ve done a little bit of manual exploration of my browsing history data. I&#39;ve set up a little Python script to be able to access the data programmatically.&lt;/p&gt;
+&lt;p&gt;Next, I&#39;ll do more manual analysis, and then I&#39;ll see if I&#39;m able to give Bieber Bot the real-time access to the data that I described above. I&#39;m particularly excited to see if I can get the &amp;ldquo;looks like you&#39;ve gotten distracted&amp;rdquo; messages set up with Bieber Bot. As a bonus, since Bieber Bot can message other people too, this system could help me leverage social accountability to stay on task.&lt;/p&gt;
+&lt;p&gt;Want to see where this project leads? You can subscribe for infrequent email updates.&lt;/p&gt;
+
+&lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/classic-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+  #mc_embed_signup{
+    background:#fff;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+  }
+&lt;/style&gt;
+&lt;div id=&#34;mc_embed_signup&#34;&gt;
+&lt;form action=&#34;https://gmail.us3.list-manage.com/subscribe/post?u=a55774562ae9fa9a1d879fa75&amp;amp;id=132f89def3&#34; method=&#34;post&#34; id=&#34;mc-embedded-subscribe-form&#34; name=&#34;mc-embedded-subscribe-form&#34; class=&#34;validate&#34; target=&#34;_blank&#34; novalidate&gt;
+    &lt;div id=&#34;mc_embed_signup_scroll&#34;&gt;
+  
+&lt;div class=&#34;mc-field-group&#34;&gt;
+  &lt;label for=&#34;mce-EMAIL&#34;&gt;Email Address&lt;/label&gt;
+  &lt;input type=&#34;email&#34; value=&#34;&#34; name=&#34;EMAIL&#34; class=&#34;required email&#34; id=&#34;mce-EMAIL&#34;&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;mce-responses&#34; class=&#34;clear&#34;&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-error-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-success-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;    
+    &lt;div style=&#34;position: absolute; left: -5000px;&#34; aria-hidden=&#34;true&#34;&gt;&lt;input type=&#34;text&#34; name=&#34;b_a55774562ae9fa9a1d879fa75_132f89def3&#34; tabindex=&#34;-1&#34; value=&#34;&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;
+      &lt;input type=&#34;submit&#34; value=&#34;Subscribe&#34; name=&#34;subscribe&#34; id=&#34;mc-embedded-subscribe&#34; class=&#34;button&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=&#39;EMAIL&#39;;ftypes[0]=&#39;email&#39;;fnames[1]=&#39;FNAME&#39;;ftypes[1]=&#39;text&#39;;fnames[2]=&#39;LNAME&#39;;ftypes[2]=&#39;text&#39;;fnames[3]=&#39;ADDRESS&#39;;ftypes[3]=&#39;address&#39;;fnames[4]=&#39;PHONE&#39;;ftypes[4]=&#39;phone&#39;;fnames[5]=&#39;BIRTHDAY&#39;;ftypes[5]=&#39;birthday&#39;;}(jQuery));var $mcj = jQuery.noConflict(true);&lt;/script&gt;
+
+</description>
     </item>
     
     <item>
       <title>Today I Learned the Word Feedingstuffs</title>
       <link>https://davidbieber.com/snippets/2019-12-29-feedingstuffs/</link>
       <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/snippets/2019-12-29-feedingstuffs/</guid>
-      <description>I also learned a fair amount about salmon.</description>
+      <description>&lt;p&gt;Today I learned the word &lt;a href=&#34;https://en.wiktionary.org/wiki/feedingstuff#English&#34;&gt;&amp;ldquo;feedingstuffs&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;feedingstuff (countable and uncountable, plural feedingstuffs)
+
+  Any foodstuff used to feed livestock.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It&#39;s not in every dictionary, and it&#39;s not a valid Scrabble word.&lt;/p&gt;
+&lt;p&gt;How did this word come up? I had heard previously that salmon is not naturally as pink as it is in supermarkets. I was wondering how this could be. Surely salmon aren&#39;t being colored during the packaging process, right? That&#39;s right, salmon are still that same color when they&#39;re first cut open.&lt;/p&gt;
+&lt;p&gt;The coloring, &lt;a href=&#34;https://ec.europa.eu/food/sites/food/files/safety/docs/animal-feed_additives_rules_scan-old_report_out81.pdf&#34;&gt;I learned&lt;/a&gt;, is added to the salmon&#39;s &lt;strong&gt;feedingstuffs&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;Yes, that&#39;s an official European Commission report from 2002 recommending that the amount of allowable &lt;a href=&#34;https://en.wikipedia.org/wiki/Canthaxanthin&#34;&gt;Canthaxanthin&lt;/a&gt; (&lt;font color=&#34;salmon&#34;&gt;salmon&lt;/font&gt; coloring) in salmon feed be reevaluated, and possibly lowered.&lt;/p&gt;
+&lt;p&gt;At the time, the maximum amount of Canthaxanthin allowable in salmon and trout feedingstuffs in the EU was 80 mg / kg of feedingstuff.&lt;/p&gt;
+&lt;p&gt;Fast-forward to today, and only &lt;a href=&#34;https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32008R0775&amp;amp;qid=1577681296736&amp;amp;from=EN&#34;&gt;10 mg / kg of Canthaxanthin is permitted&lt;/a&gt;. More interesting than this though, is that in the 2008 journal reporting this new, lower limit, they instead use the word &lt;strong&gt;foodstuffs&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Feedingstuffs, it would seem, are no more.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Learning to Communicate</title>
       <link>https://davidbieber.com/snippets/2019-12-26-learning-to-communicate/</link>
       <pubDate>Thu, 26 Dec 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/snippets/2019-12-26-learning-to-communicate/</guid>
-      <description>2020 Goal: Learn to communicate publicly</description>
+      <description>&lt;p&gt;My goal for 2020 is to learn to communicate better with the world. I work in a research group at Google, and our main job function is performing research in program synthesis. But research is only as valuable as how well it is communicated. So in 2020 I&#39;d like to get better at communicating publicly.&lt;/p&gt;
+&lt;p&gt;There are a few options for doing this. The first is writing blog posts. This may be too large an undertaking to do frequently. I&#39;d really like something that&#39;s lower barrier to do, and with a lower quality bar, so that I can do this more often. The natural alternative with these properties is academic Twitter. However, I want to avoid the addictive nature of Twitter. I also want to write more than 280 characters at a time, and I don&#39;t want to put every little thing I write in front of people&#39;s faces with equal importance. Twitter seems a good place for announcing a new paper or a Python Fire update, but not for sharing a musing like this one.&lt;/p&gt;
+&lt;p&gt;So instead I think I&#39;m going to start by silently posting my writings to my website, but in a &lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;separate section&lt;/a&gt; from the main blog. This way when there&#39;s something with a little more polish that I think is explicitly worth reading, I can put it in the &lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;main blog section&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/Bieber&#34;&gt;tweet&lt;/a&gt; about it, etc.&lt;/p&gt;
+&lt;p&gt;If you want to receive updates for every small writing I put up here, you can use this &lt;a href=&#34;https://davidbieber.com/snippets/index.xml&#34;&gt;RSS feed&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to receive updates only for major posts, such as new publications or major life updates, you can use this &lt;a href=&#34;https://davidbieber.com/posts/index.xml&#34;&gt;RSS feed&lt;/a&gt; or you can subscribe here:&lt;/p&gt;
+
+&lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/classic-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+  #mc_embed_signup{
+    background:#fff;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+  }
+&lt;/style&gt;
+&lt;div id=&#34;mc_embed_signup&#34;&gt;
+&lt;form action=&#34;https://gmail.us3.list-manage.com/subscribe/post?u=a55774562ae9fa9a1d879fa75&amp;amp;id=132f89def3&#34; method=&#34;post&#34; id=&#34;mc-embedded-subscribe-form&#34; name=&#34;mc-embedded-subscribe-form&#34; class=&#34;validate&#34; target=&#34;_blank&#34; novalidate&gt;
+    &lt;div id=&#34;mc_embed_signup_scroll&#34;&gt;
+  
+&lt;div class=&#34;mc-field-group&#34;&gt;
+  &lt;label for=&#34;mce-EMAIL&#34;&gt;Email Address&lt;/label&gt;
+  &lt;input type=&#34;email&#34; value=&#34;&#34; name=&#34;EMAIL&#34; class=&#34;required email&#34; id=&#34;mce-EMAIL&#34;&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;mce-responses&#34; class=&#34;clear&#34;&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-error-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-success-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;    
+    &lt;div style=&#34;position: absolute; left: -5000px;&#34; aria-hidden=&#34;true&#34;&gt;&lt;input type=&#34;text&#34; name=&#34;b_a55774562ae9fa9a1d879fa75_132f89def3&#34; tabindex=&#34;-1&#34; value=&#34;&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;
+      &lt;input type=&#34;submit&#34; value=&#34;Subscribe&#34; name=&#34;subscribe&#34; id=&#34;mc-embedded-subscribe&#34; class=&#34;button&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=&#39;EMAIL&#39;;ftypes[0]=&#39;email&#39;;fnames[1]=&#39;FNAME&#39;;ftypes[1]=&#39;text&#39;;fnames[2]=&#39;LNAME&#39;;ftypes[2]=&#39;text&#39;;fnames[3]=&#39;ADDRESS&#39;;ftypes[3]=&#39;address&#39;;fnames[4]=&#39;PHONE&#39;;ftypes[4]=&#39;phone&#39;;fnames[5]=&#39;BIRTHDAY&#39;;ftypes[5]=&#39;birthday&#39;;}(jQuery));var $mcj = jQuery.noConflict(true);&lt;/script&gt;
+
+&lt;p&gt;Happy early new year!&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Snippets for davidbieber.com</title>
       <link>https://davidbieber.com/snippets/2019-12-25-introducting-snippets/</link>
       <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/snippets/2019-12-25-introducting-snippets/</guid>
-      <description>An easy way to add new content to the website that isn&amp;rsquo;t featured prominently anywhere on the site.</description>
+      <description>&lt;p&gt;Today I&#39;m introducing the &amp;ldquo;snippets&amp;rdquo; section of my website. The goal is to give myself a place to post content online that&#39;s extremely easy to post to, but isn&#39;t featured prominently anywhere on the site. This way I can post things without them needing polish or production value, but still link to them and share them as I see fit.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

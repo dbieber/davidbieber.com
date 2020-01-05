@@ -1,24 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Princeton ACM on David Bieber</title>
+    <title>Princeton ACM | David Bieber</title>
     <link>https://davidbieber.com/tags/princeton-acm/</link>
-    <description>Recent content in Princeton ACM on David Bieber</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Fri, 06 Sep 2013 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://davidbieber.com/tags/princeton-acm/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://davidbieber.com/tags/princeton-acm/index.xml" rel="self" type="application/rss+xml" />
+    <description>Princeton ACM</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Fri, 06 Sep 2013 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://davidbieber.com/img/portrait.jpg</url>
+      <title>Princeton ACM</title>
+      <link>https://davidbieber.com/tags/princeton-acm/</link>
+    </image>
     
     <item>
       <title>Why a Code@Night is not a Hackathon</title>
       <link>https://davidbieber.com/post/2013-09-06-code-at-night-vs-hackathon/</link>
       <pubDate>Fri, 06 Sep 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/post/2013-09-06-code-at-night-vs-hackathon/</guid>
-      <description>A Code@Night is not a hackathon. Hackathon : Code@Night :: Track race : Evening stroll</description>
+      <description>&lt;p&gt;I&#39;ve written in the past about &lt;a href=&#34;http://blog.davidbieber.com/post/31367374857/code-at-night&#34;&gt;what a Code@Night is&lt;/a&gt;. And they&#39;re wonderful. One of my favorite topics, really. People come to these things and they just code all night. Great experience. Tons of fun. Fruit. PacMan. Yadda, yadda, yadda.&lt;/p&gt;
+&lt;p&gt;I tell people this all the time, and a pretty common response is &amp;ldquo;so, it&#39;s like a hackathon?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;So I think for a bit. There&#39;s coding. There&#39;s minimal sleeping. There are tech talks. There are pizzas, snacks, and refreshments. Fruit is hard to come by at a hackathon, but it can be there too. So I concede, &amp;ldquo;yeah, it&#39;s a bit like a hackathon.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;But I know we&#39;re wrong. Code@Night doesn&#39;t &lt;em&gt;feel&lt;/em&gt; like a hackathon at all.&lt;/p&gt;
+&lt;p&gt;Here, I made you an analogy. It&#39;s not a good one, but you can read it anyway. &amp;ldquo;A hackathon is to a Code@Night as a track race is to a stroll through a park.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Or for you symbolically minded folks&amp;hellip;&lt;/p&gt;
+&lt;center&gt;Hackathon : Code@Night :: Track race : Evening stroll&lt;/center&gt;
+&lt;p&gt;How can they feel so different when the only core difference is that we&#39;ve removed the competitive aspect?&lt;/p&gt;
+&lt;p&gt;Well, in some ways Code@Night is a lot like a hackathon, but in others it&#39;s not at all. It&#39;s a hackathon minus the competition, plus the assortment of non-hackathon things that happen at Code@Nights. e.g. Pacman, the occasional contest, the tight-knit community, lots of fruit, a tech talk smack in the middle. Also, Code@Night runs for 12 hours in the worst case (if people stay for breakfast, we&#39;ll feed them), but more realistically only goes from 9 pm to 3-4 am. A hackathon usually lasts 24 hours or more.&lt;/p&gt;
+&lt;p&gt;It sounds like these are small differences from a hackathon, but it&#39;s really a completely different atmosphere. There&#39;s no start and end time for your project. You can work on the same thing Code@Night to Code@Night if you want. And people don&#39;t cluster into teams the way they do at hackathons. You also end up getting large group discussions going, which you rarely get at hackathons because people are rushed to work on their 24 hour product. No one&#39;s worrying about prizes or judges. You don&#39;t have to demo anything to feel accomplished (but we love demos! they&#39;re sure encouraged!) You can build what you want to build, not the thing you think will win over an audience.&lt;/p&gt;
+&lt;p&gt;Code@Night isn&#39;t about starting. It isn&#39;t about finishing. It&#39;s about doing. It&#39;s about learning. It&#39;s about being a part of a community. By removing the artificial competitive aspects and time constraints that hackathons impose on coding, we&#39;re left with a really rewarding experience. People step back from their coding in ways they don&#39;t at hackathons. They teach about Python, about Hadoop. They &lt;a href=&#34;https://www.facebook.com/photo.php?fbid=10151919494461654&amp;amp;set=a.407128786653.201033.728066653&#34;&gt;sit in boxes&lt;/a&gt; (&lt;a href=&#34;https://www.facebook.com/media/set/?set=a.10200583989428067.206255.1409114395&amp;amp;type=1&amp;amp;l=844baf75c2&#34;&gt;or put boxes on their heads&lt;/a&gt;). They share their projects. They debate bacterial growth characteristics on the surface of &lt;a href=&#34;http://www.butterfinger.com/&#34;&gt;crisp orange-colored, peanut butter-flavored flakiness coated in compound chocolate&lt;/a&gt;. They talk about technology. And sometimes &lt;a href=&#34;http://princetonacm.com/2013/poem/&#34;&gt;they write poetry&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So, the next time someone asks if a Code@Night is like a hackathon, I&#39;ll be ready with my &amp;ldquo;kinda, but not really, actually no&amp;rdquo; answer. And I&#39;ll be ready to say how they&#39;re different, and how I actually prefer the Code@Night. But hey, I&#39;m biased, I organize the things.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://whenisthenextcodeatnight.com/&#34;&gt;Next Code@Night?&lt;/a&gt; It&#39;s &lt;a href=&#34;https://www.facebook.com/events/176020992583310/&#34;&gt;Sept 13, 9 pm. Sherrerd, Third Floor&lt;/a&gt;. Open to all Princetonites. Hope to see you there!&lt;/p&gt;
+</description>
     </item>
     
   </channel>

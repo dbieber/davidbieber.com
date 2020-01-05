@@ -5,7 +5,7 @@ subtitle = ""
 date = 2013-03-13T00:00:00
 lastmod = 2013-03-13T00:00:00
 draft = false
-authors = ["David Bieber"]
+authors = ["admin"]
 
 tags = ["Automation"]
 summary = "Use Python to send emails programmatically."

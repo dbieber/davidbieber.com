@@ -2,6 +2,7 @@
 # Experience widget.
 widget = "experience"
 active = false
+headless = true
 
 title = "Experience"
 subtitle = ""

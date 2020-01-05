@@ -1,75 +1,132 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Education on David Bieber</title>
+    <title>Education | David Bieber</title>
     <link>https://davidbieber.com/tags/education/</link>
-    <description>Recent content in Education on David Bieber</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Tue, 01 Nov 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://davidbieber.com/tags/education/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://davidbieber.com/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    <description>Education</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Tue, 01 Nov 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://davidbieber.com/img/portrait.jpg</url>
+      <title>Education</title>
+      <link>https://davidbieber.com/tags/education/</link>
+    </image>
     
     <item>
       <title>Tech Day</title>
       <link>https://davidbieber.com/projects/tech-day/</link>
       <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/projects/tech-day/</guid>
-      <description>Tech Day at Google is an educational day of STEM classes offered at Google for high school students around the bay area.</description>
+      <description>&lt;p&gt;Tech Day is an educational program run by Googlers for high school students interested in technology and computer science.&lt;/p&gt;
+&lt;p&gt;The Tech Day website is available at &lt;a href=&#34;https://techday.withgoogle.com/&#34;&gt;techday.withgoogle.com&lt;/a&gt;. Information about upcoming Tech Day events will be posted there as it becomes available.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Teach Everyone</title>
       <link>https://davidbieber.com/projects/teach-everyone/</link>
       <pubDate>Fri, 06 Jun 2014 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/projects/teach-everyone/</guid>
-      <description>Create Khan Academy style educational videos for free online.</description>
+      <description>&lt;p&gt;The Teach Everyone website is available at &lt;a href=&#34;http://teacheveryone.org&#34;&gt;teacheveryone.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note: The &lt;strong&gt;Save Video&lt;/strong&gt; functionality is not currently exposed on the website.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Princeton ACM</title>
       <link>https://davidbieber.com/projects/princeton-acm/</link>
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
-      <description>The Princeton University student chapter of ACM.</description>
+      <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>MathCounts Coach Q&#43;A</title>
       <link>https://davidbieber.com/post/2013-08-16-mathcounts-coach-q-and-a/</link>
       <pubDate>Fri, 16 Aug 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/post/2013-08-16-mathcounts-coach-q-and-a/</guid>
-      <description>Last week I did a Q+A for the Life at KA blog. The last time I did an education-centric online Q+A was more than three years earlier. Let&amp;rsquo;s take a look.
-Originally posted at mathcounts.org in March 2010.
-How long have you been a MATHCOUNTS coach?
-This is my second year coaching the Van Antwerp MATHCOUNTS team.
-What is your favorite part about being a MATHCOUNTS coach?
-It&amp;rsquo;s great to see my students having a good time with math.</description>
+      <description>&lt;p&gt;Last week I did a Q+A for the &lt;a href=&#34;http://life.khanacademy.org/post/58251244282/im-a-belieber-a-khanversation-with-sw-dev-intern&#34;&gt;Life at KA&lt;/a&gt; blog. The last time I did an education-centric online Q+A was more than three years earlier. Let&#39;s take a look.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Originally posted at &lt;a href=&#34;https://www.mathcounts.org/&#34;&gt;mathcounts.org&lt;/a&gt; in March 2010.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;**How long have you been a MATHCOUNTS coach?**&lt;br&gt;
+This is my second year coaching the Van Antwerp MATHCOUNTS team.&lt;/p&gt;
+&lt;p&gt;**What is your favorite part about being a MATHCOUNTS coach?**&lt;br&gt;
+It&#39;s great to see my students having a good time with math. I love seeing their expressions when an idea becomes clear to them (an Aha! moment, as Martin Gardner would have it) or when they solve a challenging problem. I also like seeing their reactions to the problems I write. They seem to enjoy when I put their names into our practice problems. On some occasions, I&#39;ll have one idea in mind when I write a problem, but I&#39;ll make a typo that makes the question quite absurd. That&#39;s always fun to laugh about.&lt;/p&gt;
+&lt;p&gt;**How do you prepare your students for MATHCOUNTS competitions?**&lt;br&gt;
+Leading up to the Chapter Competition we met once a week after school. These meetings lasted 90 minutes, with a snack break (often called &amp;ldquo;Scoff Time!&amp;rdquo; in excited voices by the students) in the middle. After the team qualified for the State Competition we added a second shorter (45 minute) practice day to the week. On some days we practice with old MATHCOUNTS rounds. Other times we&#39;ve played mathematical games such as variations of &lt;a href=&#34;http://www.math.usu.edu/~schneit/CTIS/GreedyPig/&#34;&gt;Greedy Pig&lt;/a&gt; and mathified versions of Jeopardy, Tic-Tac-Toe and Hangman. We&#39;ve also experimented with a variety of practice formats including relays, topic-specific stations, and something akin to &lt;a href=&#34;https://www.hmmt.co/archive/problems/&#34;&gt;HMMT&#39;s Guts Round&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Before the Chapter Competition we also hosted a MATHCOUNTS scrimmage at &lt;a href=&#34;http://www.union.edu/&#34;&gt;Union College&lt;/a&gt; for six local MATHCOUNTS teams, so that the students got a chance to practice in a competition setting before the official contest date. At the scrimmage we also ran an unofficial Countdown Round for all the students interested in participating, which I had a lot of fun emceeing, and I think the students enjoyed as well.&lt;/p&gt;
+&lt;p&gt;**What interesting techniques have you used in the classroom or after school with your students to get them excited about math?**&lt;br&gt;
+When our final practice before the Chapter Competition was cancelled due to snow, I put together a set of problems for the team to solve before the competition. Each member of the team received one question by email. What was interesting about these problems was that each one depended on the answer to another. This encouraged the team members to work together in the days before the competition to find a set of solutions that satisfied all of the problems simultaneously.&lt;/p&gt;
+&lt;p&gt;Another technique is to encourage the students to share their methods of solving MATHCOUNTS problems with the rest of the team. By sharing their ideas, they frequently spot errors in their own work. Teaching is also a great way to become better versed in the material (that&#39;s one of the reasons I do this!), so its a great learning tool for everyone in the room. Often it is easier for someone on the team to explain a difficult concept to another student than for a coach to do this because the students have a better perspective on what parts of the idea are challenging or confusing. It helps a bit that I&#39;m only a few years older than my team!&lt;/p&gt;
+&lt;p&gt;**Why do you think math is so important for middle school students?**&lt;br&gt;
+To start, it can be fun. The problem solving skills that stem from practicing math are useful in all areas of life. Activities like MATHCOUNTS also help you to think faster and be more creative. And to fully appreciate the world around you or the daily news, it&#39;s really important to be comfortable around numbers.&lt;/p&gt;
+&lt;p&gt;Speaking as a high school student, I can also tell you that having a solid foundation in mathematics can be a big stress reducer in school, so it&#39;s great to get interested in math early!&lt;/p&gt;
+&lt;p&gt;**Do you have any advice for Mathletes® hoping to advance in the Competition series?**&lt;br&gt;
+Practice, ask questions, and develop a good sleep habit.&lt;/p&gt;
+&lt;p&gt;Attending MATHCOUNTS practices is a great place to start, but there are so many ways to go beyond that in becoming a better problem solver. If you&#39;re clever with a search engine, you&#39;ll find there are tons of resources available including &lt;a href=&#34;https://www.mathcounts.org/programs/competition-series/past-competitions&#34;&gt;problems on the MATHCOUNTS website&lt;/a&gt;, these &lt;a href=&#34;http://mathcounts.saab.org/mc.cgi&#34;&gt;MATHCOUNTS drills&lt;/a&gt;, &lt;a href=&#34;http://www.unidata.ucar.edu/staff/russ/mathcounts/diaz.html&#34;&gt;Mr. Diaz&#39;s MATHCOUNTS Bible&lt;/a&gt;, and &lt;a href=&#34;http://mathweb.scranton.edu/monks/courses/ProblemSolving/MathCountsPlaybook.pdf&#34;&gt;Coach Monks’s MATHCOUNTS Playbook&lt;/a&gt;. Get together with members of your team to practice outside of school. Use problems you find online or, better yet, write your own, and don&#39;t forget to ask your parents to provide you with a snack.&lt;/p&gt;
+&lt;p&gt;If ever there are problems you don&#39;t understand (and this should happen very often), ask about them. At practice it can be difficult to get to all of them because there is so much to do in so little time, but don&#39;t limit your questions to your practices. Talk to or email your coach or teachers or siblings or parents or friends or friends&amp;rsquo; parents. Anyone might have the knowledge or insight to answer/explore your questions.&lt;/p&gt;
+&lt;p&gt;**What advice would you give to new coaches just starting a MATHCOUNTS program?**&lt;br&gt;
+Have fun with it, and your students will have fun too (at least in principle, anyhow). Chances are your students will know things and ask things you don&#39;t know or can&#39;t answer, and that&#39;s good. Being a coach is an opportunity to learn as well as to teach.&lt;/p&gt;
+&lt;p&gt;The most important advice I can leave you with (keep in mind I have more experience as a student than as a coach) to get your MATHCOUNTS team off the ground, though, is to provide snacks. I recommend grapes, as they&#39;re healthy, tasty, easy to distribute, and avoid the majority of allergy problems.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Life at KA: A Khanversation with David Bieber</title>
       <link>https://davidbieber.com/post/2013-08-14-khanversation/</link>
       <pubDate>Wed, 14 Aug 2013 01:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/post/2013-08-14-khanversation/</guid>
-      <description>In which David Bieber interviews himself.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://life.khanacademy.org/post/58251244282/im-a-belieber-a-khanversation-with-sw-dev-intern&#34;&gt;&lt;em&gt;Originally posted at life.khanacademy.org&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We&#39;ll dive straight into the questions for our latest Khan Academy Khanversation, this time featuring rising Princeton senior David Bieber.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;David, let&#39;s begin with the question everyone is dying to hear you answer. Are you related to Justin Bieber?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It&#39;s funny you should ask that. People tell me all the time &amp;ldquo;sorry about your last name&amp;rdquo; or &amp;ldquo;I hope you&#39;re not related to &lt;em&gt;that singer&lt;/em&gt;&amp;rdquo; or &amp;ldquo;can you get me free tickets to the Bieber concert?&amp;rdquo; And because of that, I&#39;ve started feeling a real connection to the guy. I root for his success. I feel down when people trash his music. I think we could become genuinely good friends if we weren&#39;t both vying for the top spot on Google for the search term &amp;ldquo;Bieber.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;And no, I don&#39;t listen to his music (much).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;david-bieber-no-beber.png&#34; alt=&#34;No Bieber!&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;So, Bieber, how did you come to work at Khan Academy?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Sounds like life story time.&lt;/p&gt;
+&lt;p&gt;I had some pretty incredible teachers growing up. Lots of them. And not just the grown-up kind &amp;ndash; the peer kind too. Throughout middle and high school I was involved in this fantastic math community, the &lt;a href=&#34;http://albanyareamathcircle.blogspot.com&#34;&gt;Albany Area Math Circle&lt;/a&gt;. We practiced loads of competition math, and most of what I learned, I learned from other students. Some a few years older than me, some a few years younger.&lt;/p&gt;
+&lt;p&gt;Here I got involved in coaching MathCounts, and I quickly realized that I love teaching. I ran a math camp for middle school students one summer and I had a blast doing it. Whatever I was going to do with my life, it was going to involve teaching in some capacity.&lt;/p&gt;
+&lt;p&gt;Fast forward a couple years, and I&#39;m sitting in a dining hall in some castle in Princeton. I&#39;m talking with some friends about startup ideas &amp;ndash; I have a lot of friends interested in entrepreneurship &amp;ndash; and I have a brilliant idea for a company. (I love getting lost in the excitement of a good idea.) &amp;ldquo;We&#39;ll take classes, and we&#39;ll put them online. Just Princeton classes to start &amp;ndash; it&#39;ll be like MIT&#39;s OpenCourseWare &amp;ndash; but we&#39;ll make it scalable. And any student with their professor&#39;s permission will be able to really easily get their classes&amp;rsquo; lectures online.&amp;rdquo; Sounds a bit like Coursera. Or YouTube. From there on out, I gave a lot of thought to teaching at scale.&lt;/p&gt;
+&lt;p&gt;Which brings us to Khan Academy. I&#39;m interested in programming and technology and education, and I&#39;m all for making the world a better place. What better way than the KA way to leverage my interests to facilitate teaching at scale?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Wait&amp;hellip; You said you were sitting in a castle?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yeah, half the buildings on campus are castles. But that&#39;s not the best thing about Princeton. The best thing about Princeton is Code@Night (though I&#39;m biased &amp;ndash; I organize them). Every two to three weeks there&#39;s a Code@Night where people gather in this beautiful non-castle building called Sherrerd to code at night. Usually a student or professor or an engineer from a sponsor company will give a tech talk or a demo. People will code all night, they&#39;ll play PacMan and eat pizza. Sometimes they&#39;ll write poetry. It&#39;s really an incredible experience. There are even whiteboards all along the walls making it an ideal environment for puzzles.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Do you have a puzzle you could share with us?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Sure. Here&#39;s one that was going around the KA office recently.&lt;/p&gt;
+&lt;p&gt;There are one hundred prisoners in a prison, and the warden is a bit too much of a puzzle enthusiast. She finds an empty jail cell, and into it puts one hundred boxes. Under each box she puts the name of one of the prisoners, so every prisoner&#39;s name appears under precisely one box.&lt;/p&gt;
+&lt;p&gt;Then she tells the prisoners this:&lt;/p&gt;
+&lt;p&gt;Each one of you will be led individually into the jail cell with one hundred boxes. Under one of these boxes is your name. You will each be allowed to look under 50 boxes, but if even one of you doesn&#39;t find your own name, all one hundred of you will be locked away forever. That said, if all of you find your own name then you will be freed immediately.&lt;/p&gt;
+&lt;p&gt;The prisoners are terrified, but also excited. They love puzzles too. Help them form a strategy to maximize the chance that they&#39;ll be granted their freedom.&lt;/p&gt;
+&lt;p&gt;Some caveats: Once the prisoners start going into the cell with the boxes, no communication between the prisoners is allowed. And the prisoners cannot make any modifications to the room with the boxes either &amp;ndash; no leaving boxes turned over, no writing on the walls, and no taking boxes out of the room or moving them, even the one with your name under it.&lt;/p&gt;
+&lt;p&gt;Good luck.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sounds tough. What&#39;s the answer?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pshhh, don&#39;t give up yet. It&#39;s a really good puzzle. Who&#39;s asking these questions, anyway?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;That&#39;d be me. David Bieber.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;So what you&#39;re telling me is that I&#39;m involved in a virtual interview&amp;hellip; with myself?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Yeah.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;And to think I thought the Turing test was hard&amp;hellip; why are you writing all this anyway?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Well, it&#39;s good to take a break from coding every now and again. Plus, I really like having people read the things I write &amp;ndash; I found this out after starting my blog a year ago (&lt;a href=&#34;http://blog.davidbieber.com&#34;&gt;take a look!&lt;/a&gt;) &amp;ndash; it makes the writing process a lot more fun. It also gives you all a better feel for life at Khan Academy, and that transparency is really valuable. We’re real people who make KA run! Seeing all the awesome stuff on this blog is part of why I came to work here. But most of all, the writing really is fun! Especially the Bieber bit &amp;ndash; I had a good time writing that. And no, we’re not related.&lt;/strong&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Teach at Scale</title>
       <link>https://davidbieber.com/post/2013-08-07-teach-at-scale/</link>
       <pubDate>Wed, 07 Aug 2013 01:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/post/2013-08-07-teach-at-scale/</guid>
-      <description>The best way to learn is to teach. It&amp;rsquo;s also, most of the time, the most fun way to learn. And as an added bonus, the person you&amp;rsquo;re teaching learns too.
-I strongly believe that you, as someone who has found themselves reading strange blogs on the internet, have a lot to offer the world in the way of teaching. So I want you to teach at scale. Yes, I&amp;rsquo;m looking at you Mom and Dad, former Facebook and Twitter interns, my fellow interns here at Khan Academy.</description>
+      <description>&lt;p&gt;The best way to learn is to teach. It&#39;s also, most of the time, the most fun way to learn. And as an added bonus, the person you&#39;re teaching learns too.&lt;/p&gt;
+&lt;p&gt;I strongly believe that you, as someone who has found themselves reading strange blogs on the internet, have a lot to offer the world in the way of teaching. So I want you to teach at scale. Yes, I&#39;m looking at you Mom and Dad, former Facebook and Twitter interns, my fellow interns here at Khan Academy. I&#39;m looking at you, my Princeton and Nisky friends, and my former MathCounts students. Yes, even you, HackerNews readers and Google searchers and friends of friends. I want you to give teaching at scale a try.&lt;/p&gt;
+&lt;p&gt;It&#39;s hard. Don&#39;t mislead yourself into thinking this is an easy task that I&#39;ve laid out for you. It takes courage and confidence. When you teach at scale, you make yourself vulnerable. You have to be ready for people to catch your mistakes and challenge your teachings. People will out-think you, and you should be ready to embrace that.&lt;/p&gt;
+&lt;p&gt;What, then, should you teach? I offer two suggestions. 1) Teach what you want to learn, and 2) teach what you know best. Sometimes the best teachers are not those with 10 years of teaching experience in a subject, but rather the people who remember what it&#39;s like not to know. Teach something while the Aha! moment that helped you understand it is still fresh in your mind. The second suggestion, teach what you know best, sounds obvious, but the reason behind it has some subtlety. Don&#39;t teach what you know best because you&#39;ll probably avoid mistakes on that topic &amp;ndash; do it because it&#39;s something you can speak passionately about. If your teachings get a student genuinely excited about a topic, that is worth so much more than having them quickly master it.&lt;/p&gt;
+&lt;p&gt;So how should you get started? The simplest way is to blog. You can set up a blog and be started writing in minutes by signing up at &lt;a href=&#34;http://www.tumblr.com&#34;&gt;tumblr.com&lt;/a&gt;. Once you&#39;ve written something educational, share it with your friends and with online communities. Related to technology? Post it on HackerNews.&lt;/p&gt;
+&lt;p&gt;DIY method two of teaching at scale is to make YouTube videos. I gave this a try making videos teaching Item Response Theory and Bloom Filters. Here&#39;s my setup.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;featured.jpg&#34; alt=&#34;Personal ping-pong recording studio at the Khan Academy office&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It&#39;s a piece of cardboard with a hole cut out of it for a camera to look through, mounted above some paper. I used my iPhone as the camera.&lt;/p&gt;
+&lt;p&gt;Here are the resulting Bloom Filter videos, mistakes and stuttering and blurriness and all. I&#39;m pretty embarrassed by them, and I&#39;m hoping future videos I produce will come out better.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLTFg4cPjhl-2nrkIR1z_MSTcxNeyPk4PO&#34;&gt;https://www.youtube.com/playlist?list=PLTFg4cPjhl-2nrkIR1z_MSTcxNeyPk4PO&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&#39;m going to continue to make videos as I learn awesome things over the years, and I hope you do the same.&lt;/p&gt;
+&lt;p&gt;How you teach at scale is up to you. Blog. Make videos. Post code. Start a math circle.&lt;/p&gt;
+&lt;p&gt;Be creative. The most effective teachers-at-scale are not always those who leverage technology to reach a wide audience. They are those who teach passionately, and in doing so infect others with a love for learning and teaching.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

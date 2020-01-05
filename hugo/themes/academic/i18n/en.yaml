@@ -7,7 +7,7 @@
   translation: Table of Contents
 
 - id: on_this_page
-  translation: On this page
+  translation: Contents
 
 - id: back_to_top
   translation: Back to top
@@ -28,6 +28,9 @@
 
 - id: figure
   translation: "Figure %d:"
+
+- id: edit_page
+  translation: Edit this page
 
 # Buttons
 
@@ -75,31 +78,32 @@
 - id: education
   translation: Education
 
+- id: user_profile_latest
+  translation: Latest
+
+# Accomplishments widget
+
+- id: see_certificate
+  translation: See certificate
+
 # Experience widget
 
 - id: present
   translation: Present
 
-# Publications widget
+# Pages widget
 
-- id: more_publications
-  translation: More Publications
-
-# Posts widget
-
-- id: continue_reading
-  translation: CONTINUE READING
+- id: more_pages
+  translation: See all
 
 - id: more_posts
-  translation: More Posts
-
-- id: more_writing
-  translation: More Writing
-
-# Talks widget
+  translation: See all posts
 
 - id: more_talks
-  translation: More Talks
+  translation: See all talks
+
+- id: more_publications
+  translation: See all publications
 
 # Contact widget
 
@@ -114,6 +118,9 @@
 
 - id: contact_send
   translation: Send
+
+- id: book_appointment
+  translation: Book an appointment
 
 # Publication/Talk details
 
@@ -132,32 +139,45 @@
 - id: last_updated
   translation: Last updated on
 
-- id: links
-  translation: Links
-
 - id: event
   translation: Event
 
 - id: location
   translation: Location
 
-# Filtering
+- id: pub_uncat
+  translation: Uncategorized
 
-- id: filter_by_type
-  translation: Filter by type
+- id: pub_conf
+  translation: Conference paper
 
-- id: filter_all
-  translation: All
+- id: pub_journal
+  translation: Journal article
+
+- id: pub_preprint
+  translation: Preprint
+
+- id: pub_report
+  translation: Report
+
+- id: pub_book
+  translation: Book
+
+- id: pub_book_section
+  translation: Book section
+
+- id: pub_thesis
+  translation: Thesis
+
+- id: pub_patent
+  translation: Patent
 
 # Project details
 
 - id: open_project_site
   translation: Go to Project Site
-  
-- id: more_projects
-  translation: More Projects
 
-# Default node titles
+# Default titles for archive pages
 
 - id: posts
   translation: Posts
@@ -173,11 +193,14 @@
 
 # Search
 
+- id: search
+  translation: Search
+
 - id: search_placeholder
   translation: Search...
 
 - id: search_results
-  translation: Search Results
+  translation: results found
 
 - id: search_no_results
   translation: No results found

@@ -5,7 +5,7 @@ subtitle = ""
 date = 2015-07-01T00:00:00
 lastmod = 2015-07-01T00:00:00
 draft = false
-authors = ["David Bieber"]
+authors = ["admin"]
 
 tags = ["Esperanto"]
 summary = "This is my translation of P.D. Eastman's children's book 'Are You My Mother?' into Esperanto."

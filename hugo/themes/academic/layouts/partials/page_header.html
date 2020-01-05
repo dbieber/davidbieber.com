@@ -15,60 +15,60 @@
 {{end}}
 
 {{/* Header image */}}
-{{ if and .Params.header.image (not $featured) }}
+{{ if and .Params.header.image (not (and $featured (not .Params.image.preview_only))) }}
 <div class="article-header">
   {{ $img_src := urls.Parse .Params.header.image }}
   {{ if $img_src.Scheme }}
-  <img src="{{ .Params.header.image }}" class="article-banner" itemprop="image" alt="">
+  <img src="{{ .Params.header.image }}" class="article-banner" alt="">
   {{ else }}
-  <img src="{{ (printf "/img/%s" .Params.header.image) | relURL }}" class="article-banner" itemprop="image" alt="">
+  <img src="{{ (printf "/img/%s" .Params.header.image) | relURL }}" class="article-banner" alt="">
   {{ end }}
 
   {{ with .Params.header.caption }}<span class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
 </div>
 {{end}}
 
-{{/* Featured image */}}
-{{ with $featured }}
-{{ $image := .Fill (printf "1600x400 q90 %s" $anchor) }}
-<div class="article-header d-xl-none">
-  <img src="{{ $image.RelPermalink }}" class="article-banner" itemprop="image" alt="">
-  {{ with $.Params.image.caption }}<span class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
-</div>
+{{/* Featured image layout */}}
+{{ if and $featured (not .Params.image.preview_only) }}
 
-{{ $image := .Fill (printf "680x500 q90 %s" $anchor) }}
-<div class="container-fluid split-header d-none d-xl-block">
-  <div class="row">
-    <div class="col-6">
-      <div class="split-header-content">
-        <h1 itemprop="name">{{ $title }}</h1>
+{{/* Fit image within max size. */}}
+{{ $image := $featured }}
 
-        {{ with $page.Params.subtitle }}
-        <p class="page-subtitle">{{ . | markdownify | emojify }}</p>
-        {{end}}
+{{/* Determine image placement. */}}
+{{ $placement := .Params.image.placement | default 1 }}{{/* Default to full column width. */}}
+{{ $image_container := "" }}
+{{ if eq $placement 2}}
+  {{ $image_container = "container" }}
+  {{ if gt $featured.Width 1200 }}
+    {{ $image = $featured.Resize "1200x" }}
+  {{ end }}
+{{else if eq $placement 3}}
+  {{ $image_container = "container-fluid" }}
+  {{ $image := $featured.Fit "2560x2560" }}
+{{else}}
+  {{ $image_container = "article-container" }}
+  {{ if gt $featured.Width 720 }}
+    {{ $image = $featured.Resize "720x" }}
+  {{ end }}
+{{end}}
 
-        {{ partial "page_metadata" (dict "content" $page "is_list" 1) }}
-
-        {{ partial "share.html" $page }}
-      </div>
-    </div>
-    <div class="col-6">
-      <div class="split-header-image">
-        <img src="{{ $image.RelPermalink }}" itemprop="image" alt="">
-        {{ with $.Params.image.caption }}<span class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="article-container d-xl-none">
-  <h1 itemprop="name">{{ $title }}</h1>
+<div class="article-container pt-3">
+  <h1>{{ $title }}</h1>
 
   {{ with $page.Params.subtitle }}
   <p class="page-subtitle">{{ . | markdownify | emojify }}</p>
   {{end}}
 
-  {{ partial "page_metadata" (dict "content" $page "is_list" 0) }}
+  {{ partial "page_metadata" (dict "page" $page "is_list" 0 "share" true) }}
+  {{ partial "page_links_div.html" $page }}
+</div>
+
+{{/* Featured image */}}
+<div class="article-header {{$image_container}} featured-image-wrapper mt-4 mb-4" style="max-width: {{$image.Width}}px; max-height: {{$image.Height}}px;">
+  <div style="position: relative">
+    <img src="{{ $image.RelPermalink }}" alt="" class="featured-image">
+    {{ with $.Params.image.caption }}<span class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
+  </div>
 </div>
 {{else}}
   {{/* Case when page has no image */}}
@@ -79,14 +79,15 @@
     {{ $ctnr = "universal-wrapper" }}
   {{end}}
 <div class="{{$ctnr}} pt-3">
-  <h1 itemprop="name">{{ $title }}</h1>
+  <h1>{{ $title }}</h1>
 
   {{ with $page.Params.subtitle }}
   <p class="page-subtitle">{{ . | markdownify | emojify }}</p>
   {{end}}
 
   {{ if not .IsNode }}
-    {{ partial "page_metadata" (dict "content" $page "is_list" 0) }}
+    {{ partial "page_metadata" (dict "page" $page "is_list" 0 "share" true) }}
+    {{ partial "page_links_div.html" $page }}
   {{end}}
 </div>
 {{end}}

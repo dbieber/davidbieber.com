@@ -5,7 +5,7 @@ subtitle = ""
 date = 2014-11-08T00:00:00
 lastmod = 2014-11-08T00:00:00
 draft = false
-authors = ["David Bieber"]
+authors = ["admin"]
 
 tags = ["Automation"]
 summary = "Run a headless version of Firefox in the cloud and drive it with Selenium."

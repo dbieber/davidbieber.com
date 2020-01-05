@@ -6,7 +6,7 @@ type = "post"
 date = 2018-10-21T00:00:00
 lastmod = 2018-10-21T00:00:00
 draft = false
-authors = ["David Bieber"]
+authors = ["admin"]
 
 tags = ["Google Apps Script", "Automation"]
 summary = "Use Google Apps Script to write a mail merge and schedule emails to send in the future."

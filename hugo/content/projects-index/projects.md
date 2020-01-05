@@ -1,5 +1,5 @@
 +++
-widget = "projects"
+widget = "portfolio"
 active = true
 date = 2018-10-26T00:00:00
 
@@ -8,34 +8,33 @@ subtitle = ""
 
 weight = 50
 
-folder = "projects"
-count = 1000
+[content]
+  page_type = "projects"
 
-# View. 0 = list, 1 = cards.
-view = 1
+  filter_default = 0
 
-# Filter toolbar.
-filter_default = 0
+  [[content.filter_button]]
+    name = "All"
+    tag = "*"
 
-# To show all items, set `tag` to "*".
-[[filter]]
-  name = "All"
-  tag = "*"
+  [[content.filter_button]]
+    name = "Software"
+    tag = "Software"
 
-[[filter]]
-  name = "Software"
-  tag = "Software"
+  [[content.filter_button]]
+    name = "Productivity"
+    tag = "Productivity"
 
-[[filter]]
-  name = "Productivity"
-  tag = "Productivity"
+  [[content.filter_button]]
+    name = "Education"
+    tag = "Education"
 
-[[filter]]
-  name = "Education"
-  tag = "Education"
+  [[content.filter_button]]
+    name = "Just for Fun"
+    tag = "Just for Fun"
 
-[[filter]]
-  name = "Just for Fun"
-  tag = "Just for Fun"
+[design]
+  columns = "2"
+  view = 3
 
 +++

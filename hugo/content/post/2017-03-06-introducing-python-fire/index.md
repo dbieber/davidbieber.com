@@ -6,7 +6,7 @@ date = 2017-03-06T00:00:00
 lastmod = 2017-03-06T00:00:00
 draft = false
 
-authors = ["David Bieber"]
+authors = ["admin"]
 
 tags = ["Python Fire"]
 summary = "Python Fire automatically generates command line interfaces from any Python objects."

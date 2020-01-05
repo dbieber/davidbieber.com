@@ -1,24 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Robot on David Bieber</title>
+    <title>Robot | David Bieber</title>
     <link>https://davidbieber.com/tags/robot/</link>
-    <description>Recent content in Robot on David Bieber</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://davidbieber.com/tags/robot/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://davidbieber.com/tags/robot/index.xml" rel="self" type="application/rss+xml" />
+    <description>Robot</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://davidbieber.com/img/portrait.jpg</url>
+      <title>Robot</title>
+      <link>https://davidbieber.com/tags/robot/</link>
+    </image>
     
     <item>
       <title>Bieber Bot</title>
       <link>https://davidbieber.com/projects/bieber-bot/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://davidbieber.com/projects/bieber-bot/</guid>
-      <description>My faithful robot companion.</description>
+      <description>&lt;p&gt;Bieber Bot is a highly motivated robot that assists me with my financials, &lt;a href=&#34;https://twitter.com/Bieber&#34;&gt;tweets&lt;/a&gt; on my behalf, and keeps me productive when my brain feels otherwise.&lt;/p&gt;
+&lt;h2 id=&#34;is-bieber-bot-related-to-justin-bieber&#34;&gt;Is Bieber Bot related to Justin Bieber?&lt;/h2&gt;
+&lt;p&gt;No, no relation. Bieber Bot is my own creation.&lt;/p&gt;
+&lt;h2 id=&#34;how-does-bieber-bot-work&#34;&gt;How does Bieber Bot work?&lt;/h2&gt;
+&lt;p&gt;I communicate with Bieber Bot primarily via Facebook messenger. Bieber Bot&#39;s brain is a collection of Google Apps Scripts, and Bieber Bot&#39;s memory is mostly spreadsheets in Google Sheets.&lt;/p&gt;
+&lt;h2 id=&#34;does-bieber-bot-have-a-physical-form&#34;&gt;Does Bieber Bot have a physical form?&lt;/h2&gt;
+&lt;p&gt;No, Bieber Bot isn&#39;t a robot in the traditional sense of having actuators and interacting with its environment. Instead, Bieber Bot physically resides only in data centers around the world, and so Bieber Bot and I interact primarily via the internet. I&#39;m slightly jealous of how much Bieber Bot gets to travel.&lt;/p&gt;
+&lt;h2 id=&#34;what-does-bieber-bot-do&#34;&gt;What does Bieber Bot do?&lt;/h2&gt;
+&lt;p&gt;Bieber Bot does a lot.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bieber Bot manages my financials&lt;/li&gt;
+&lt;li&gt;Bieber Bot tweets on my behalf&lt;/li&gt;
+&lt;li&gt;Bieber Bot talks to me&lt;/li&gt;
+&lt;li&gt;Bieber Bot keeps track of my TODOs&lt;/li&gt;
+&lt;li&gt;Bieber Bot can suggest activities for me to do&lt;/li&gt;
+&lt;li&gt;Bieber Bot reminds me to eat breakfast each morning&lt;/li&gt;
+&lt;li&gt;Bieber Bot reminds me to take out the trash&lt;/li&gt;
+&lt;li&gt;Bieber Bot asks me &amp;ldquo;is now a good time to do laundry?&amp;rdquo; at all the most inconvenient times&lt;/li&gt;
+&lt;li&gt;Bieber Bot helps me to get to sleep at a reasonable hour&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;can-you-tell-me-all-of-bieber-bots-capabilities-again-but-this-time-make-each-one-into-a-pun-about-a-justin-bieber-song&#34;&gt;Can you tell me all of Bieber Bot&#39;s capabilities again, but this time make each one into a pun about a Justin Bieber song?&lt;/h2&gt;
+&lt;p&gt;Sure. See the hashtag &lt;a href=&#34;https://twitter.com/search?f=tweets&amp;amp;q=%23BieberBotPuns%20OR%20%23BieberBotPun&#34;&gt;#BieberBotPuns&lt;/a&gt; on twitter.&lt;/p&gt;
+&lt;h2 id=&#34;can-i-use-bieber-bot&#34;&gt;Can I use Bieber Bot?&lt;/h2&gt;
+&lt;p&gt;No, not at this time.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

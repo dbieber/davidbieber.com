@@ -1,0 +1,40 @@
+.snippet-item a {
+  color: black;
+}
+
+.split-header {
+  margin-bottom: 2rem;
+}
+
+.split-header .share-box {
+  float: left;
+}
+
+.page-subtitle {
+  font-size: 1.15rem;
+  color: rgba(0,0,0,.54);
+  margin-bottom: 1rem;
+}
+
+.dark .page-subtitle {
+  color: rgba(255,255,255,0.54);
+}
+
+.split-header .page-subtitle {
+  margin-bottom: 1.5rem;
+}
+
+.split-header-content {
+  max-width: 612px;
+  width: 100%;
+  padding: 60px 60px 32px 0;
+  margin-left: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.split-header-image {
+  position: relative; /* Required for caption positioning */
+  clear: both;
+  max-width: 580px;
+}

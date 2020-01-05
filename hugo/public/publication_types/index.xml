@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publication_types on David Bieber</title>
+    <title>Publication_types | David Bieber</title>
     <link>https://davidbieber.com/publication_types/</link>
-    <description>Recent content in Publication_types on David Bieber</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    
-	<atom:link href="https://davidbieber.com/publication_types/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://davidbieber.com/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publication_types</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright>
+    <image>
+      <url>https://davidbieber.com/img/portrait.jpg</url>
+      <title>Publication_types</title>
+      <link>https://davidbieber.com/publication_types/</link>
+    </image>
     
   </channel>
 </rss>
