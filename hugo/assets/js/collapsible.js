@@ -5,7 +5,7 @@ function swap(e1, e2) {
     });
 }
 function register_swap(e1, e2) {
-    $(e1).click(function(e) {
+    $(e1).on("click", function(e) {
         var srcEl = e.srcElement? e.srcElement : e.target;
         if (srcEl.tagName.toUpperCase() == "A") return;
         swap($(e1), $(e2));
@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', function() {
   for (var cv = 0; cv < paragraphs.length; cv++) {
       var keyId = paragraphs[cv].id;
       if (keyId.charAt(0) == "_") {
-          register_pair('#'+keyId, '#'+keyId.substr(1));
-          addBorder('#'+keyId, "dashed");
-          addBorder('#'+keyId.substr(1), "solid");
+          register_pair('#' + keyId, '#' + keyId.substr(1));
+          addBorder('#' + keyId, "dashed");
+          addBorder('#' + keyId.substr(1), "solid");
       }
   }
 }, false);
