@@ -5,7 +5,7 @@ subtitle = ""
 date = 2013-09-06T00:00:00
 lastmod = 2013-09-06T00:00:00
 draft = false
-authors = ["David Bieber"]
+authors = ["admin"]
 
 tags = ["Princeton ACM"]
 summary = "A Code@Night is not a hackathon. Hackathon : Code@Night :: Track race : Evening stroll"

@@ -5,7 +5,7 @@ type = "post"
 
 date = 2019-08-20T00:00:00
 draft = true
-authors = ["David Bieber"]
+authors = ["admin"]
 math = false
 
 tags = []

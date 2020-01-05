@@ -1,9 +1,9 @@
 language: minimal
 
 install:
-  - curl -LO https://github.com/gohugoio/hugo/releases/download/v0.55.4/hugo_0.55.4_Linux-64bit.deb
-  - sudo dpkg -i hugo_0.55.4_Linux-64bit.deb
-  - rm hugo_0.55.4_Linux-64bit.deb
+  - curl -LO https://github.com/gohugoio/hugo/releases/download/v0.62.1/hugo_0.62.1_Linux-64bit.deb
+  - sudo dpkg -i hugo_0.62.1_Linux-64bit.deb
+  - rm hugo_0.62.1_Linux-64bit.deb
 
 script:
   - cd hugo

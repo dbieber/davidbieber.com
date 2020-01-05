@@ -5,7 +5,7 @@ subtitle = ""
 date = 2013-01-31T00:00:00
 lastmod = 2013-01-31T00:00:00
 draft = false
-authors = ["David Bieber"]
+authors = ["admin"]
 
 tags = []
 summary = ""

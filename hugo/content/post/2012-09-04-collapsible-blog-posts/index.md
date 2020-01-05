@@ -6,7 +6,7 @@ collapsible = 1
 date = 2012-09-04T00:00:00
 lastmod = 2012-09-04T00:00:00
 draft = false
-authors = ["David Bieber"]
+authors = ["admin"]
 
 tags = []
 summary = "This is my Hello World blog post of sorts."

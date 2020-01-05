@@ -4,7 +4,7 @@ subtitle = ""
 
 date = 2019-12-25T00:00:00
 draft = false
-authors = ["David Bieber"]
+authors = ["admin"]
 math = false
 
 tags = []

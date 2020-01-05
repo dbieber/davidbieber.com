@@ -1,0 +1,125 @@
+name = "David Bieber"
+role = "Software Engineer"
+
+organizations = [ { name = "Google Brain", url = "" } ]
+
+gravatar = false  # Get your avatar from Gravatar.com? (true/false)
+avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+
+# Details for the Contact Widget
+email = "dbieber@google.com"
+# address = "1600 Amphitheater Parkway, Mountain View, CA"
+# office_hours = "Monday 10:00 to 13:00 or email for appointment"
+# phone = ""
+# skype = "david_bieber"
+telegram = ""
+keybase = ""  # Your keybase.io username.
+
+theme = "minimal"
+
+# Enable users to switch between day and night mode?
+day_night = false
+
+# Font style.
+font = "minimal"
+font_size = "L"
+
+# Custom javascript
+plugins_js = ["collapsible", "blokus"]
+
+# Description for social sharing and search engines. If undefined, author role is used in place.
+description = "davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot."
+
+# Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
+sharing_image = ""
+
+# Twitter username (without @). Used when a vistor shares your site on Twitter.
+twitter = "Bieber"
+
+# Diplay a logo in navigation bar rather than title (optional).
+#   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
+logo = ""
+
+# Date and time format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
+date_format = "January 2006"
+time_format = "3:04 PM"
+
+# Show estimated reading time for posts?
+reading_time = false
+
+# Display comment count? Requires commenting to be enabled.
+comment_count = false
+
+# Display next/previous section pager?
+section_pager = false
+
+# Enable global LaTeX math rendering?
+#   If false, you can enable it locally on a per page basis.
+math = false
+
+edit_page = {repo_url = "https://github.com/dbieber/davidbieber.com", repo_branch = "master", editable = {docs = false, page = false, post = false}}
+
+highlight = true
+highlight_languages = ["python", "javascript"]
+# highlight_style = "github"
+
+main_menu = {align = "r", show_logo = true}
+
+sharing = false
+
+privacy_pack = false
+
+[talks]
+  time = true
+
+[publications]
+  date_format = "January, 2006"
+
+[projects]
+  # List publications and talks related to the project?
+  list_children = true
+
+  # 1: List, 2: Compact, 3: Card, 4: Citation
+  post_view = 2
+  publication_view = 4
+  talk_view = 2
+
+contact_links = [
+  {icon = "envelope", icon_pack = "fas", name = "Contact", link = "#contact"},
+  {icon = "twitter", icon_pack = "fab", name = "Twitter", link = "https://twitter.com/Bieber"},
+  {icon = "github", icon_pack = "fab", name = "GitHub", link = "https://github.com/dbieber"},
+]
+
+[search]
+  # Search provider:
+  #   0: No search engine
+  #   1: Built-in (Fuse)
+  #   2: Algolia (https://www.algolia.com)
+  engine = 1
+
+  # Configuration of Algolia search engine.
+  # Paste the values from your Algolia dashboard.
+  [search.algolia]
+    app_id = ""
+    api_key = ""
+    index_name = ""
+    show_logo = false
+
+[comments]
+  # 0: Disabled, 1: Disqus, 2: Commento
+  engine = 0
+  commentable = {page = true, post = true, docs = true}
+
+  [comments.disqus]
+    shortname = ""
+    show_count = true
+
+[map]
+  # 0: No map, 1: Google Maps, 2: OpenStreetMap (Mapnik), 3: OpenStreetMap (Mapbox)
+  engine = "0"
+  api_key = ""
+  zoom = 15
+
+[marketing]
+  google_analytics = "UA-34570499-2"
+  google_tag_manager = ""
