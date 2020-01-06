@@ -25,4 +25,4 @@ If you're like me and fall into these unhealthy attention-consuming rabbit holes
 10. Evaluate HALT (hungry? angry? lonely? tired?)
 11. Evaluate [pyd-swyt; cf-bh-din](/snippets/2020-01-02-pyd-swyt-cf-bh-din)
 
-I'm [toying with](/snippets/2019-12-30-analyzing-my-browser-history) the idea of getting Bieber Bot to notice when I'm exhibiting addictive behavior. If I can get that working, I'd love for Bieber Bot to notice when I'm addicted to YouTube, Hacker News, or Twitter and suggest one of the abbove activities for me to perform instead.
+I'm [toying with](/snippets/2019-12-30-analyzing-my-browser-history) the idea of getting Bieber Bot to notice when I'm exhibiting addictive behavior. If I can get that working, I'd love for Bieber Bot to notice when I'm addicted to YouTube, Hacker News, or Twitter and suggest one of the above activities for me to perform instead.
