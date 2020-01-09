@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Thu, 02 Jan 2020 02:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Wed, 08 Jan 2020 02:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,20 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What does &#34;Ordinary&#34; mean in Ordinary Least Squares?</title>
+      <link>https://davidbieber.com/snippets/2020-01-08-ordinary-least-squares/</link>
+      <pubDate>Wed, 08 Jan 2020 02:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-01-08-ordinary-least-squares/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Ordinary Least Squares&amp;rdquo; regression, or OLS for short, is a method for finding a best-fit line, given a set of data points. When people refer to linear regression without additional context or qualifiers, they&#39;re probably referring to ordinary least squares regression.&lt;/p&gt;
+&lt;p&gt;So, what does &amp;ldquo;ordinary&amp;rdquo; mean in this context? Is it a mathematical term with a precise technical meaning?&lt;/p&gt;
+&lt;p&gt;Well, no. In this case &amp;ldquo;ordinary&amp;rdquo; means exactly what you might expect: standard, vanilla, lacking any bells and whistles. Since least squares regression is so common, there are lots of variants. Weighted Least Squares (in which each data point is given its own weight) is a such a variant. So, in OLS, the O for ordinary simply means we&#39;re not referring to one of these variants.&lt;/p&gt;
+&lt;p&gt;What about &amp;ldquo;ordinary differential equations&amp;rdquo; (ODEs)? What does ordinary refer to there?&lt;/p&gt;
+&lt;p&gt;In that context, ordinary refers to ordinary derivatives, as opposed to partial derivatives. So again, it&#39;s not a mathematical term like a reference to ordinal numbers.&lt;/p&gt;
+&lt;p&gt;In both cases, ordinary seems to take on its ordinary English definition &amp;ndash; its OED, if I may.&lt;/p&gt;
 </description>
     </item>
     
