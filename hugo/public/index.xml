@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Wed, 08 Jan 2020 02:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Thu, 09 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,48 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning by Teaching in Online Education</title>
+      <link>https://davidbieber.com/snippets/2020-01-09-learning-by-teaching/</link>
+      <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-01-09-learning-by-teaching/</guid>
+      <description>&lt;p&gt;Long ago (2013) I sent a summer interning at Khan Academy.
+Also long ago (2014) &lt;a href=&#34;https://twitter.com/harvest_zhang&#34;&gt;Harvest&lt;/a&gt; and I built a tool for creating educational videos online, in the browser (&lt;a href=&#34;https://davidbieber.com/projects/teach-everyone&#34;&gt;Teach Everyone&lt;/a&gt;; warning, bit rot ahead).&lt;/p&gt;
+&lt;p&gt;Today, I want to see these two methodologies combined.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I want it to become common practice that after you spend significant time learning something online, you make a quick-and-dirty video explaining what you just learned.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;the-vision&#34;&gt;The Vision&lt;/h3&gt;
+&lt;p&gt;Imagine you&#39;ve just completed a series of organic chemistry lessons on Khan Academy. The KA website pops up a modal recommending that you &amp;ldquo;Make a video teaching what you learned to help solidify your understanding of Organic Chemistry!&amp;quot;.&lt;/p&gt;
+&lt;p&gt;You click through to a browser based video creation tool &amp;ndash; a cross between Google Slides, Illustrator / Teach Everyone, and OBS / a video editor.
+In minutes, you&#39;re able to assemble a video teaching the material you&#39;ve spent the last hours or days wrapping your head around.&lt;/p&gt;
+&lt;p&gt;You combine text, images, drawing, video, and audio to create your video. And when you&#39;re done, you have the option to save it privately, share it on social media, or to make it visible to others studying the same subject.&lt;/p&gt;
+&lt;h3 id=&#34;benefits&#34;&gt;Benefits&lt;/h3&gt;
+&lt;p&gt;There are two main benefits from this approach.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You get to learn by teaching.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Teaching is a super effective way to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reinforce the material so that you remember it longer&lt;/li&gt;
+&lt;li&gt;Help you notice gaps in your understanding and fill them in&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So by preparing this little video after spending all that time learning, you&#39;ll be left with a better and longer lasting understanding of the material.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Others can learn from &lt;em&gt;you&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Often times the best teachers are those who remember what it&#39;s like not to understand. Since you&#39;ve just gone through the process of learning the material, you know exactly which parts were difficult to grasp and what it took for you to grasp them. So your video may end up helping others more than the KA video in some cases!&lt;/p&gt;
+&lt;h3 id=&#34;video-creation-tool&#34;&gt;Video Creation Tool&lt;/h3&gt;
+&lt;p&gt;This post isn&#39;t a design doc, but I will briefly sketch out what I imagine for the video creation tool.&lt;/p&gt;
+&lt;p&gt;The main interface is a video preview above a timeline, similar to what you would see in Davinci Resolve or any professional video editing tool. You additionally have the option to create clips.&lt;/p&gt;
+&lt;p&gt;You can create clips from text, images, KA-style drawings, audio, or video. Importantly, you can record audio and video clips, or create a KA-style drawing, directly in your browser.&lt;/p&gt;
+&lt;p&gt;Once you&#39;ve created some clips, you can position them both in time (on the timeline), and in space (on the video preview).&lt;/p&gt;
+&lt;p&gt;I intend to write more about the details of this vision for video creation tool, but the most important thing about it is that it prioritizes being quick to use over being fully featured and professional, and that it can be used directly in the browser. This way it can be used by online learners as part of their online learning experience.&lt;/p&gt;
+&lt;h3 id=&#34;additional-notes&#34;&gt;Additional Notes&lt;/h3&gt;
+&lt;p&gt;My main premise is that students, young and old, should have a light-weight way to create educational videos immediately after learning something online.&lt;/p&gt;
+&lt;p&gt;I&#39;ve framed this discussion around a hypothetical tool for students to use on Khan Academy, but it applies equally well to educational videos on YouTube and elsewhere. &lt;a href=&#34;https://davidbieber.com/projects/teach-everyone&#34;&gt;Teach Everyone&lt;/a&gt; was an early prototype showing that you can create Khan Academy style animated drawings (i.e. virtual writing on a blackboard) with accompanying audio directly in the browser. Since then, Teach Everyone has suffered some bit rot and unfortunately isn&#39;t operational today. However, I&#39;m hopeful that some new project will step up, and provide an even better in-browser experience for video creation. And then beyond that, I&#39;m hopeful that this tool becomes common place for students to use as part of their everyday online learning routine.&lt;/p&gt;
+&lt;p&gt;If you want to discuss these ideas, don&#39;t hesitate to get in touch: &lt;a href=&#34;mailto:david810+learning-by-teaching@gmail.com&#34;&gt;david810+learning-by-teaching@gmail.com&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
