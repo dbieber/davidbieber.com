@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Thu, 09 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Tue, 14 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,25 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Say One Thing Well</title>
+      <link>https://davidbieber.com/snippets/2020-01-14-say-one-thing-well/</link>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-01-14-say-one-thing-well/</guid>
+      <description>&lt;p&gt;Blog posts written by amateurs are often interesting and entertaining; they can offer perspectives not seen elsewhere. However, they often fall into the trap of trying to do too much. The best blog posts do one thing, and do it well. If you&#39;re writing a blog post, you should choose a single, narrow point that you want to make, and make it well.&lt;/p&gt;
+&lt;p&gt;While this may seem like obviously good advice, in practice the temptation to broaden the scope of a blog post can be very real. So it is important to actively practice discretion in limiting the scope of any post.&lt;/p&gt;
+&lt;p&gt;How does scope creep come about? Authors may have a temptation to write about tangentially related topics. Sometimes this will be in order to provide justification or context. Other times the author simply has multiple lessons on the same topic they wish to share.&lt;/p&gt;
+&lt;p&gt;Any one of these scenarios will lead the author to increase the scope of their writing. Even in the face of these situations, however, it is important to keep a narrow scope.&lt;/p&gt;
+&lt;p&gt;In this post, for example, the core message is that &amp;ldquo;when writing a blog post, you should have a narrowly scoped thesis.&amp;rdquo; It is tempting for me to then also write about how to choose that thesis. After all, this seems a natural discussion to have while explaining the importance of a narrow scope. However, this would be a dangerous move, because a good discussion about how to choose a thesis well requires giving advice like &amp;ldquo;ask yourself: what are you interested in and knowledgeable about?&amp;quot;, and &amp;ldquo;think about what your audience is likely to care about&amp;rdquo;, etc. These suggestions don&#39;t help make the core point, that your scope should be exceedingly narrow.&lt;/p&gt;
+&lt;p&gt;In writing this post, it is tempting to write about how &amp;ldquo;trying to do too much can lead to doing multiple things poorly&amp;rdquo; applies in other, non-writing, contexts too. This has the potential to be an insightful discussion. However, this would only serve to detract from the main point: in &lt;em&gt;writing blog posts specifically&lt;/em&gt;, you should choose a single main point and make it well. Trying to broaden this to other contexts would weaken the argument, because the wider the context is, the more exceptions there are. If I had said &amp;ldquo;in all of life, do one thing and do it well&amp;rdquo;, people would correctly protest: that&#39;s no way to live a life, you should aim to be well-rounded. So, I strengthen my argument by narrowing its scope: in writing a blog post, pick a single thesis and defend it convincingly.&lt;/p&gt;
+&lt;p&gt;Why is it important to have just one main point? To start, having a single well defined main point improves the clarity of your writing. It is easier to be persuasive when you have a well-defined objective you are trying to impress upon your readers. Stray too far from this main point and it distracts the reader and weakens your piece.&lt;/p&gt;
+&lt;p&gt;In the age of online writing and sharing, the importance of a single clear thesis is increased. Having a well-scoped piece increases its sharability. There is no risk that the recipient of the shared article will mistake the reason for its sharing. Having a well-scoped piece also makes it easier to reference that piece in the future. One can simply link to the article if they want to leverage its argument, rather than needing to specify &amp;ldquo;in the third section of David&#39;s piece on online writing&amp;hellip;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Additionally readers have limited time and attention. So, don&#39;t bury the lead. Don&#39;t make readers have to dig deep to uncover a point that can be stated succinctly. Show your readers your respect for their time and attention by making your point immediately clear. Then they can make an informed choice about whether they&#39;d like to learn more. It&#39;s their time. Don&#39;t trick them with ambiguous or click-bait headlines. Let them invest it well by telling them upfront what it is you want to convince them of.&lt;/p&gt;
+&lt;p&gt;Of course there are exceptions to the rule. For educational pieces, teaching a curriculum of topics, it may be appropriate to have multiple lessons. And if you&#39;re writing for literary value, then the core takeaway may not be the central reason for your writing. In the general case though, critical for the vast majority of blogs being written today, it is wise to stick to a single thesis. State it clearly and defend it well.&lt;/p&gt;
+&lt;p&gt;If you&#39;ve learned just one thing from this article, it&#39;s that the best articles should leave you with just one thing to learn.&lt;/p&gt;
 </description>
     </item>
     
