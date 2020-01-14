@@ -7,10 +7,6 @@ actual_date = 2019-10-08T00:00:00
 authors = ["admin"]
 
 summary = "When writing a blog post, have a single clear message and convey it convincingly."
-
-[image]
-  caption = ""
-  focal_point = ""
 +++
 
 
