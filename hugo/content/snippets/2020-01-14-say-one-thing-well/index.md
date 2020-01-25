@@ -1,6 +1,5 @@
 +++
 title = "Say One Thing Well"
-subtitle = ""
 
 date = 2020-01-14T00:00:00
 actual_date = 2019-10-08T00:00:00
