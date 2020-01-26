@@ -1,6 +1,6 @@
 +++
 title = "How much time has humanity spent on different areas of science?"
-date = 2020-01-22T00:00:00
+date = 2020-01-24T00:00:00
 
 summary = ""
 +++
