@@ -9,6 +9,7 @@ authors = ["admin"]
 
 tags = []
 summary = ""
+plugins_js = ["blokus"]
 
 [image]
   caption = "Image credit: [**Aldaron**](https://commons.wikimedia.org/wiki/File:BlockusFinalBoardCloseUp.jpg)"
