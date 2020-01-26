@@ -616,7 +616,7 @@
 
   <div class="article-container">
 
-    <div class="article-style">
+    <div class="article-style" id="article-content">
       <p>I found running Firefox in the cloud difficult, but with enough digging around I was able to get it working. Now I'm able to drive a headless version of Firefox with Selenium using Python. This lets me do things like have my <a href="https://github.com/dbieber/ScrabbleBot">Scrabble Bot</a> play Words with Friends autonomously on Facebook.</p>
 <p><strong>What am I going to show you how to do?</strong></p>
 <p>I'm going to explain how you can install Firefox and Selenium on a virtual machine in the cloud. I'm going to show this using a Debian instance on <a href="https://cloud.google.com/compute/">Google Compute Engine</a>, but you could also do this using a virtual machine from Amazon EC2.</p>
@@ -839,16 +839,39 @@ Edit the file <code>/etc/apt/sources.list</code> and add the line <code>deb http
       
     
     
-      
-    
-      
     
     
-    
-    <script src="/js/academic.min.1223eb848e0eb72787084005ade9bc24.js"></script>
 
-    <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+
+
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZSDKaAmz-UUyaL1IZMi4QO_q4Jouko2c",
+    authDomain: "ask-me-anywhere.firebaseapp.com",
+    databaseURL: "https://ask-me-anywhere.firebaseio.com",
+    projectId: "ask-me-anywhere",
+    storageBucket: "ask-me-anywhere.appspot.com",
+    messagingSenderId: "123038093749",
+    appId: "1:123038093749:web:e8ce89651fcf1371d109fc",
+    measurementId: "G-JLDGL73R1B"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    
 
 
 

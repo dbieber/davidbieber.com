@@ -1,3 +1,44 @@
+/* Ask me anywhere */
+.spacer {
+  color: darkgray;
+
+  display: flex;
+  height: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  width: 55%;
+  position: relative;
+  top: -26px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-variant: small-caps;
+}
+.spacer-center {
+  margin: auto;
+}
+.spacer-left {
+  margin: auto;
+  background-color: darkgray;
+  display: flex;
+  width: 40px;
+  height: 1px;
+  margin-top: 18px;
+  margin-right: 10px;
+}
+.spacer-right {
+  margin: auto;
+  background-color: darkgray;
+  display: flex;
+  width: 40px;
+  height: 1px;
+  margin-top: 18px;
+  margin-left: 10px;
+}
+
 /* Lists page for snippets. */
 .snippet-item a {
   color: black;

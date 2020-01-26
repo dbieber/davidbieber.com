@@ -515,7 +515,7 @@
 
   <div class="article-container">
 
-    <div class="article-style">
+    <div class="article-style" id="article-content">
       <h3 id="background-writing-is-hard">Background: Writing is Hard</h3>
 <p>Sometimes I find writing feels easy &ndash; e.g. when <a href="/snippets/2019-12-30-writing-for-no-audience/">writing for no audience</a>, when writing something you've already thought extensively about, when telling a story in a logical order that you're deeply familiar with. Other times, I find writing very difficult.</p>
 <p>When I'm writing a paper, I am writing explicitly for an audience, the story is not always clear immediately, and the material is something I'm becoming familiar with over time, not something about which I'm already deeply familiar.
@@ -714,16 +714,39 @@ However, the disadvantage of this is that it makes the keystroke logging feature
       
     
     
-      
-    
-      
     
     
-    
-    <script src="/js/academic.min.1223eb848e0eb72787084005ade9bc24.js"></script>
 
-    <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+
+
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZSDKaAmz-UUyaL1IZMi4QO_q4Jouko2c",
+    authDomain: "ask-me-anywhere.firebaseapp.com",
+    databaseURL: "https://ask-me-anywhere.firebaseio.com",
+    projectId: "ask-me-anywhere",
+    storageBucket: "ask-me-anywhere.appspot.com",
+    messagingSenderId: "123038093749",
+    appId: "1:123038093749:web:e8ce89651fcf1371d109fc",
+    measurementId: "G-JLDGL73R1B"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    
 
 
 

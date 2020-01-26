@@ -616,7 +616,7 @@
 
   <div class="article-container">
 
-    <div class="article-style">
+    <div class="article-style" id="article-content">
       <p id="cbp_hello">This is my Hello World blog post of sorts. It's my introduction to the world of blogging, the blog post likely only read by my family and a few techie friends. It's the post in which I make an unrealistic commitment to blog frequently, which I later fail to live up to. And it's the post in which I introduce a new form of blogging, <u>Collapsible Blogging</u>. Here's the tl;dr.</p>
 <p id="_cbp_hello">Hello World!</p>
 <p id="cbp_tldr"><b>Click any part of this post to see it in condensed form.</b><br>
@@ -816,16 +816,47 @@ If you're interested in using Collapsible Blogging yourself, it's remarkable eas
       
     
     
-      
-    
-      
     
     
-    
-    <script src="/js/academic.min.1223eb848e0eb72787084005ade9bc24.js"></script>
 
-    <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+
+
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZSDKaAmz-UUyaL1IZMi4QO_q4Jouko2c",
+    authDomain: "ask-me-anywhere.firebaseapp.com",
+    databaseURL: "https://ask-me-anywhere.firebaseio.com",
+    projectId: "ask-me-anywhere",
+    storageBucket: "ask-me-anywhere.appspot.com",
+    messagingSenderId: "123038093749",
+    appId: "1:123038093749:web:e8ce89651fcf1371d109fc",
+    measurementId: "G-JLDGL73R1B"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    
+  
+  
+    
+  
+  
+  
+  <script src="/js/page-collapsibleblogposts.9990fa35cc0e1af26f1417f2183f9c09.js"></script>
+
 
 
 

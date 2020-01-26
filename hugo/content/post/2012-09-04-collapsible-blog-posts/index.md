@@ -10,6 +10,7 @@ authors = ["admin"]
 
 tags = []
 summary = "This is my Hello World blog post of sorts."
+plugins_js = ["collapsible"]
 
 [image]
   caption = "Image credt: [**Zero Gravity**](https://commons.wikimedia.org/wiki/File:Accordion_in_SVG_format_(vector).svg)"

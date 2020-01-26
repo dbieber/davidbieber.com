@@ -515,7 +515,7 @@
 
   <div class="article-container">
 
-    <div class="article-style">
+    <div class="article-style" id="article-content">
       <p>I've learned recently that programmatically accessing your browsing history is rather straightforward. Really exciting! This is rich data, from which I think I'll be able to learn a lot and hopefully combat unwanted distractions.</p>
 <p>First let me describe what information is available, and how you can access it. Then, let's discuss what you can do with this data. As I've written about previously <a href="/projects/bieber-bot/">[1]</a> <a href="https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/">[2]</a>, I already have a chat bot system in place, which will be able to take advantage of this data to e.g. help me stay focused.</p>
 <h4 id="accessing-your-browser-history">Accessing Your Browser History</h4>
@@ -873,16 +873,39 @@ Then I would be able to view my &ldquo;saved for later&rdquo; links when I have 
       
     
     
-      
-    
-      
     
     
-    
-    <script src="/js/academic.min.1223eb848e0eb72787084005ade9bc24.js"></script>
 
-    <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+
+
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZSDKaAmz-UUyaL1IZMi4QO_q4Jouko2c",
+    authDomain: "ask-me-anywhere.firebaseapp.com",
+    databaseURL: "https://ask-me-anywhere.firebaseio.com",
+    projectId: "ask-me-anywhere",
+    storageBucket: "ask-me-anywhere.appspot.com",
+    messagingSenderId: "123038093749",
+    appId: "1:123038093749:web:e8ce89651fcf1371d109fc",
+    measurementId: "G-JLDGL73R1B"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    
 
 
 

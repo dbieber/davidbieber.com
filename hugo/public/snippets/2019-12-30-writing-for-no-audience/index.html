@@ -515,7 +515,7 @@
 
   <div class="article-container">
 
-    <div class="article-style">
+    <div class="article-style" id="article-content">
       <p>I started this <a href="/snippets">&ldquo;snippets&rdquo;</a> section of my website just a few days ago with the intention of being able to write without needing to put polish on a piece before publishing it.</p>
 <p>My thinking was that I would be able to put small notes there, and half-baked ideas, and not have to worry about diluting the quality of the content of my <a href="/posts">main website</a>. I could put high quality posts on the main site, and a whole range of both good and bad posts in the snippets section. This way, assuming I do a good job, readers could come to expect that any post on the main website would be high quality. Curious people looking for additional content could come here to the snippets section if they wanted to, but more often posts here would either (1) almost never get read, or (2) be linked to directly, e.g. if they were relevent in some other context.</p>
 <p>I've been surprised and delighted by the effect that having this &ldquo;No Audience&rdquo; section of the website has had on my writing. Writing for no one is so much easier than writing for someone.</p>
@@ -725,16 +725,39 @@
       
     
     
-      
-    
-      
     
     
-    
-    <script src="/js/academic.min.1223eb848e0eb72787084005ade9bc24.js"></script>
 
-    <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+
+
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZSDKaAmz-UUyaL1IZMi4QO_q4Jouko2c",
+    authDomain: "ask-me-anywhere.firebaseapp.com",
+    databaseURL: "https://ask-me-anywhere.firebaseio.com",
+    projectId: "ask-me-anywhere",
+    storageBucket: "ask-me-anywhere.appspot.com",
+    messagingSenderId: "123038093749",
+    appId: "1:123038093749:web:e8ce89651fcf1371d109fc",
+    measurementId: "G-JLDGL73R1B"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    
 
 
 

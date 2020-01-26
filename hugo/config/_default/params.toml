@@ -25,7 +25,7 @@ font = "minimal"
 font_size = "L"
 
 # Custom javascript
-plugins_js = ["collapsible", "blokus"]
+plugins_js = []
 
 # Description for social sharing and search engines. If undefined, author role is used in place.
 description = "davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot."

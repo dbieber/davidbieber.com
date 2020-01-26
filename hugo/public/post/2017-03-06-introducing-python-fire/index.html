@@ -620,7 +620,7 @@
 
   <div class="article-container">
 
-    <div class="article-style">
+    <div class="article-style" id="article-content">
       <p><em>Originally posted on the Google Open Source Blog</em></p>
 <p>Today we are pleased to announce the open-sourcing of <a href="https://github.com/google/python-fire">Python Fire</a>. Python Fire generates command line interfaces (CLIs) from any Python code. Simply call the Fire function in any Python program to automatically turn that program into a CLI. The library is available from <a href="https://pypi.org/project/fire/">pypi</a> via <code>pip install fire</code>, and the source is <a href="https://github.com/google/python-fire">available on GitHub</a>.</p>
 <p>Python Fire will automatically turn your code into a CLI without you needing to do any additional work. You don’t have to define arguments, set up help information, or write a main function that defines how your code is run. Instead, you simply call the <code>Fire</code> function from your main module, and Python Fire takes care of the rest. It uses inspection to turn whatever Python object you give it – whether it’s a class, an object, a dictionary, a function, or even a whole module – into a command line interface, complete with tab completion and documentation, and the CLI will stay up-to-date even as the code changes.</p>
@@ -818,16 +818,39 @@ Hello Google!
       
     
     
-      
-    
-      
     
     
-    
-    <script src="/js/academic.min.1223eb848e0eb72787084005ade9bc24.js"></script>
 
-    <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+
+
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZSDKaAmz-UUyaL1IZMi4QO_q4Jouko2c",
+    authDomain: "ask-me-anywhere.firebaseapp.com",
+    databaseURL: "https://ask-me-anywhere.firebaseio.com",
+    projectId: "ask-me-anywhere",
+    storageBucket: "ask-me-anywhere.appspot.com",
+    messagingSenderId: "123038093749",
+    appId: "1:123038093749:web:e8ce89651fcf1371d109fc",
+    measurementId: "G-JLDGL73R1B"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    
 
 
 

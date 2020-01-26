@@ -618,7 +618,7 @@ My passion is education."><meta property="og:image" content="https://davidbieber
 
   <div class="article-container">
 
-    <div class="article-style">
+    <div class="article-style" id="article-content">
       <p>That concludes day one of the <a href="https://svtigertrek.com/">TigerTrek</a>. I flew out of Princeton yesterday with a group of 20 to spend the week visiting technology companies, startups and venture capitalists in Silicon Valley. We're going company to company hearing founder's stories, discussing entrepreneurship, and as we do this I am forced to introspect. What do I want to do with my life? How can I make a difference?</p>
 <p>My passion is education. I was fortunate enough to have some amazing mentors growing up, and to learn in a lot of diverse ways most people never have a chance to experience. I tried out gifted programs, nerd camps, one-on-one classes, online self paced learning, the works. I got involved in math circles, I took summer classes, I really was blessed to have every educational opportunity one could hope for. This, and the diversity of amazing teachers I've had has gotten me thinking about how people learn best, and how I learn best. Complementing this interest well, I've found I really love teaching- particularly math and computer science to younger students. It's always a joy helping someone to tackle the Bessie the Cow problem or <a href="http://en.wikipedia.org/wiki/Nim">the game of Nim</a> for the very first time.</p>
 <p>Today a lot of young companies bring together my interests of education, computer science and technology. Websites like <a href="https://www.coursera.org/">Coursera</a>, <a href="https://www.edx.org/">edX</a>, and <a href="http://www.udacity.com/">Udacity</a> virtualize the university experience, and Khan Academy joins them in making quality education accessible everywhere. Startups like <a href="https://www.crunchbase.com/organization/lore">Lore</a> and <a href="https://piazza.com/">Piazza</a> foster discussions around classes, allowing the learning experience to extend more seamlessly beyond the walls of the classroom.</p>
@@ -794,16 +794,39 @@ One of Khan Academy's ambitions is to, when someone comes to the site to learn a
       
     
     
-      
-    
-      
     
     
-    
-    <script src="/js/academic.min.1223eb848e0eb72787084005ade9bc24.js"></script>
 
-    <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+
+
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZSDKaAmz-UUyaL1IZMi4QO_q4Jouko2c",
+    authDomain: "ask-me-anywhere.firebaseapp.com",
+    databaseURL: "https://ask-me-anywhere.firebaseio.com",
+    projectId: "ask-me-anywhere",
+    storageBucket: "ask-me-anywhere.appspot.com",
+    messagingSenderId: "123038093749",
+    appId: "1:123038093749:web:e8ce89651fcf1371d109fc",
+    measurementId: "G-JLDGL73R1B"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    
 
 
 

@@ -1,0 +1,9 @@
+{{ if .Params.plugins_js }}
+  {{ $js_bundle := slice }}
+  {{ range .Params.plugins_js }}
+    {{ $js_bundle = $js_bundle | append (resources.Get (printf "js/%s.js" .)) }}
+  {{ end }}
+  {{ $title := (replace (.Params.title | lower) " " "") }}
+  {{ $js_bundle = $js_bundle | resources.Concat (printf "js/page-%s.js" $title) | fingerprint "md5" }}
+  <script src="{{ $js_bundle.RelPermalink }}"></script>
+{{ end }}
