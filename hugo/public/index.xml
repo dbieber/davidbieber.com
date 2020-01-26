@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Wed, 22 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Sat, 25 Jan 2020 10:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,22 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ask Me Anywhere</title>
+      <link>https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere/</link>
+      <pubDate>Sat, 25 Jan 2020 10:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere/</guid>
+      <description>&lt;p&gt;With this post, I&#39;m demoing for the first time a new work-in-progress feature for my blog called &amp;ldquo;Ask Me Anywhere&amp;rdquo;.
+The feature lets you leave a comment or ask a question at &lt;em&gt;any&lt;/em&gt; point while reading my writing.
+The goal is to encourage readers to respond to my writing, because I&#39;m interested in having a conversation and hearing what you have to say.&lt;/p&gt;
+&lt;p&gt;You can try it right now. Either &lt;strong&gt;double click&lt;/strong&gt; (double-tap on mobile) on any paragraph, or click between two paragraphs, to open a comment box. Enter your thoughts, click submit, and &lt;em&gt;voila!&lt;/em&gt;, comment submitted.&lt;/p&gt;
+&lt;p&gt;You&#39;re welcome to enter your email address, name, Twitter handle, Facebook ID, or any other form of contact info if you&#39;d like me to respond. And if you do, there is high likelihood that I will respond. If you don&#39;t, you&#39;re anonymous, and you certainly won&#39;t receive a private response.&lt;/p&gt;
+&lt;p&gt;Comments and questions that you submit are not posted publicly anywhere. This isn&#39;t a comments section for public discussion. If you want to discuss my posts publicly, submit them on Hacker News or Reddit, or head to Twitter to engage. While this website isn&#39;t the place for public discussions, I am curious know about such a discussion if it&#39;s happening. So, feel free to let me know about such a discussion here if you&#39;re starting one.&lt;/p&gt;
+&lt;p&gt;What happens when you leave a comment? My digital personal assistant &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; will notify me of the new comment at the next convenient time. If there are many comments coming in, Bieber Bot is smart about batching the notifications together, and so the notification may be delayed, but I&#39;ll soon read your message.&lt;/p&gt;
+&lt;p&gt;The name of the project &amp;ndash; &amp;ldquo;Ask Me Anywhere&amp;rdquo; &amp;ndash; reflects my intention to enable readers to ask questions as they&#39;re reading. However, I welcome all types of reactions: questions, comments, feedback, corrections, new ideas, etc. I look forward to hearing what you have to say.&lt;/p&gt;
 </description>
     </item>
     
