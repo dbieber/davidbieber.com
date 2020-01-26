@@ -303,9 +303,9 @@ The goal is to encourage readers to respond to my writing, because I&#39;m inter
     
     <item>
       <title>How much time has humanity spent on different areas of science?</title>
-      <link>https://davidbieber.com/snippets/2020-01-22-time-spent-on-science/</link>
-      <pubDate>Wed, 22 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://davidbieber.com/snippets/2020-01-22-time-spent-on-science/</guid>
+      <link>https://davidbieber.com/snippets/2020-01-24-time-spent-on-science/</link>
+      <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-01-24-time-spent-on-science/</guid>
       <description>&lt;p&gt;How much time has humanity, collectively, spent researching physics?&lt;/p&gt;
 &lt;p&gt;What about chemistry? Neuroscience? Algorithms? (etc&amp;hellip;)&lt;/p&gt;
 &lt;p&gt;How has this rate of study changed over time?
@@ -313,9 +313,9 @@ How much of it is duplicate work (e.g. two nations or organizations independentl
 &lt;p&gt;What fraction of this is done by professors, post docs, PhD students, etc?&lt;/p&gt;
 &lt;p&gt;Particularly in the last 100 years, what have these numbers been?&lt;/p&gt;
 &lt;p&gt;I&#39;m interested in visualizing some of these metrics, because I think they would be useful for putting the work that I see happening around me in machine learning and in neuroscience into perspective. I also think this data would tell a fascinating story.&lt;/p&gt;
-&lt;p&gt;For example, one plot that I think would be compelling would be person-hours-per-year spent thinking about Physics plotted as a function of time over the last 100 years, with important physics milestones shown on the same plot (e.g. as a &lt;a href=&#34;https://medium.com/berkeleyischool/how-to-create-a-visualization-showing-events-on-time-series-data-in-excel-96abbc1475e0&#34;&gt;time series plot with events&lt;/a&gt;.)&lt;/p&gt;
-&lt;p&gt;One worry with such a visualization is that the population is growing exponentially, and so the interesting story of how humanity&#39;s attention has shifted between fields over time may be lost to a visualization that simply shows population growth. It may be necessary to normalize by population to tell such a story.&lt;/p&gt;
-&lt;p&gt;It may seem infeasible to precisely collect this data, as there is no public registry of who is thinking about what. However, I think the data is remarkably readily available.&lt;/p&gt;
+&lt;p&gt;For example, one plot that I think would be compelling would be person-hours-per-year spent thinking about physics plotted as a function of time over the last 100 years, with important physics milestones shown on the same plot (e.g. as a &lt;a href=&#34;https://medium.com/berkeleyischool/how-to-create-a-visualization-showing-events-on-time-series-data-in-excel-96abbc1475e0&#34;&gt;time series plot with events&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;One worry with such a visualization is that the population is growing rapidly, and so the interesting story of how humanity&#39;s attention has shifted between fields over time may be lost to a visualization that simply shows population growth. It may be necessary to normalize by population to tell such a story.&lt;/p&gt;
+&lt;p&gt;It may seem infeasible to precisely collect this data, as there is no public registry of who is thinking about what. However, I think the data is perhaps more readily available than appears at first blush.&lt;/p&gt;
 &lt;p&gt;Where would the data come from?&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Search trends&lt;/li&gt;
@@ -328,6 +328,7 @@ How much of it is duplicate work (e.g. two nations or organizations independentl
 &lt;p&gt;Scientific fields make their mark on the world by publishing their research. Counting publications can provide an estimate of one piece of humanity&#39;s effort studying science.&lt;/p&gt;
 &lt;p&gt;Finally, for contemporary data, and maybe even a little historical data, one could uses surveys / polling techniques to estimate where scientific mindshare is going today.&lt;/p&gt;
 &lt;p&gt;Among this data I&#39;d be curious to see when historically there have been large swings in mindshare toward a particular topic. Right now, anecdotally, machine learning research is engaging a quickly increasing number of people, including drawing people away from other fields. I&#39;d love to see this anecdotal evidence backed up (or refuted) by data. And I expect there are plenty of similar historical precidents that I would be quite interested in learning more about as well.&lt;/p&gt;
+&lt;p&gt;I don&#39;t forsee collecting this data or performing these visualizations myself in the near future. This post is just an opportunity to think aloud, not a plan for my own action. But if you have data like this, or know of someone who has done a related analysis, I&#39;d be quite interested to hear about it. Don&#39;t hesitate to get in touch.&lt;/p&gt;
 </description>
     </item>
     
