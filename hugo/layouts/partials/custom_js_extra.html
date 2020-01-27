@@ -9,6 +9,5 @@
   {{ $title := (replace $title ":" "") }}
   {{ $title := (replace $title "\"" "") }}
   {{ $js_bundle = $js_bundle | resources.Concat (printf "js/page-%s.js" $title) | fingerprint "md5" }}
-  <p>{{ $title }}</p>
   <script src="{{ $js_bundle.RelPermalink }}"></script>
 {{ end }}
