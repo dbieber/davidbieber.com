@@ -2,7 +2,7 @@
 title = "What's Next for Ask Me Anywhere?"
 date = 2020-01-26T10:00:00
 
-summary = "Next stepps for Ask Me Anywhere"
+summary = "Next steps for Ask Me Anywhere"
 plugins_js = ["collapsible", "ask-me-anywhere"]
 +++
 
