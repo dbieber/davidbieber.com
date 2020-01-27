@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Sat, 25 Jan 2020 10:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Sun, 26 Jan 2020 10:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,41 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s Next for Ask Me Anywhere?</title>
+      <link>https://davidbieber.com/snippets/2020-01-26-next-steps-for-ama/</link>
+      <pubDate>Sun, 26 Jan 2020 10:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-01-26-next-steps-for-ama/</guid>
+      <description>&lt;p&gt;Yesterday I put up an early version of &lt;a href=&#34;https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere/&#34;&gt;Ask Me Anywhere&lt;/a&gt;. You&#39;ll notice it&#39;s in the snippets section of the website, rather than part of the main blog. This gives me the freedom to post it even though I know it&#39;s not as polished as it could be.&lt;/p&gt;
+&lt;p&gt;Now that this first pass is published, it&#39;s time to start thinking about where to go next with Ask Me Anywhere.&lt;/p&gt;
+&lt;h2 id=&#34;short-term-stylistic-improvements&#34;&gt;Short Term: Stylistic Improvements&lt;/h2&gt;
+&lt;p&gt;On mobile, the &amp;ldquo;Click to React&amp;rdquo; text shows up and is improperly styled. I didn&#39;t intend for it to show up at all. On certain mobile devices and browsers, it seems there are even larger issues than this, such as double tapping sometimes not working at all. Let me know if it doesn&#39;t work with your browser so I can fix it.&lt;/p&gt;
+&lt;p&gt;The &amp;ldquo;Click to React&amp;rdquo; text also sometimes causes the flow of the text to change, which interrupts the reading experience somewhat. I would like to fix this so that the text flow is never changed by the presence of this message.&lt;/p&gt;
+&lt;p&gt;I also would like to tweak the styling to minimize the friction someone feels in deciding to leave a message. I think adding a question-mark icon, which when moused-over gives an explanation of why this feature is there in the first place could be useful. This could strike a good balance between being non-intrusive and letting people know that their thoughts are warmly welcomed.&lt;/p&gt;
+&lt;h2 id=&#34;longer-term-socratic-tutorials&#34;&gt;Longer Term: &amp;ldquo;Socratic Tutorials&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;&amp;ldquo;Ask Me Anywhere&amp;rdquo; is really an MVP that came out of a larger idea: &amp;ldquo;Socratic Tutorials&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;My idea is that a &lt;em&gt;Socratic Tutorial&lt;/em&gt; is a blog post structured in a very particular way. It begins with a brief introduction to a topic, followed by a series of questions you might want to ask about that topic. Click a question to reveal an answer to that question, followed by additional questions you might have about the topic. In this way, you can explore the contents of the post in the order that best suits your interests. I also hope that by having to click questions to view the answers, it will help motivate what you&#39;re reading, since you&#39;ll be actively wondering about the question when you read the response.&lt;/p&gt;
+&lt;p&gt;If a reader of a &lt;em&gt;Socratic Tutorial&lt;/em&gt; doesn&#39;t understand something, or has a question that isn&#39;t already addressed, they can choose to ask that question. The author can then add it to the list of questions available during reading if they choose to do so. In that way, &amp;ldquo;Ask Me Anywhere&amp;rdquo; is almost a subset of the features planned for Socratic Tutorials.&lt;/p&gt;
+&lt;p id=&#34;cbp_example&#34;&gt;
+My very first blog post ever was about &lt;a href=&#34;https://davidbieber.com/post/2012-09-04-collapsible-blog-posts/&#34;&gt;Collapsible Blog Posts&lt;/a&gt;. The premise was that you could click on a paragraph, and it would be replaced with a summary of that paragraph. This paragraph is an example; click on it, and it will be replaced with a summary.
+&lt;/p&gt;
+&lt;p id=&#34;_cbp_example&#34;&gt;
+This was a
+&lt;a href=&#34;https://davidbieber.com/post/2012-09-04-collapsible-blog-posts/&#34;&gt;Collapsible Blog Post&lt;/a&gt; paragraph. Click to un-collapse.
+&lt;/p&gt;
+&lt;p&gt;I learned early on from this experiment that the reverse process actually is more useful. Present the user with a short summary, and let them click if they want to read additional details.&lt;/p&gt;
+&lt;p id=&#34;cbp_reverse&#34;&gt;
+Here&#39;s an example of a short paragraph that you can click to reveal additional details.
+&lt;/p&gt;
+&lt;p id=&#34;_cbp_reverse&#34;&gt;
+The reason it makes more sense to show the summary first is that it empowers the user to choose how to spend their time. If they are interested in understanding more about a topic, they can choose to expand the paragraph and read the details. If instead they read the extended paragraph first, there isn&#39;t much value to them also reading the summarized version. And if they just want the summarized version, having them see the full version first isn&#39;t too useful either.
+&lt;/p&gt;
+&lt;p&gt;In some ways the idea for &amp;ldquo;Socratic Tutorials&amp;rdquo; is a spiritual descendent of Collapsible Blog Posts. They both share a goal: give the user control over the information they&#39;re consuming, as their reading. Socratic Tutorials and Ask Me Anywhere take an additional step though, giving the user the ability to communicate directly with the author while they&#39;re reading.&lt;/p&gt;
+&lt;p&gt;You&#39;ll likely have noticed that this post uses &amp;ldquo;Ask Me Anywhere&amp;rdquo;. That means you can double click any paragraph, or click between two paragraphs, in order to send a note directly to the author.
+I hope you do this, as I&#39;d love to hear any thoughts you may have.&lt;/p&gt;
 </description>
     </item>
     
