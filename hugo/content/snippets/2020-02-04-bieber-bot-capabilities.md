@@ -5,7 +5,7 @@ date = 2020-02-04T00:00:00
 plugins_js = ["ask-me-anywhere"]
 +++
 
-BieberBot has an ever-growing list of capabilities. I've tried to capture that complete list here. Feel free to use [Ask Me Anywhere](/snippets/ask-me-anywhere) to inquire about any of these features and leave some contact info if you'd like me to get in touch.
+[BieberBot](/projects/bieber-bot) has an ever-growing list of capabilities. I've tried to capture that complete list here. Feel free to use [Ask Me Anywhere](/snippets/2020-01-25-ask-me-anywhere) to inquire about any of these features and leave some contact info if you'd like me to get in touch.
 
 ## Timer-triggered capabilities:
 - Greetings, encouragement, and love!
