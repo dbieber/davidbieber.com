@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Sun, 26 Jan 2020 10:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Tue, 04 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,59 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Mostly-Complete List of BieberBot&#39;s Capabilities</title>
+      <link>https://davidbieber.com/snippets/2020-02-04-bieber-bot-capabilities/</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-02-04-bieber-bot-capabilities/</guid>
+      <description>&lt;p&gt;BieberBot has an ever-growing list of capabilities. I&#39;ve tried to capture that complete list here. Feel free to use &lt;a href=&#34;https://davidbieber.com/snippets/ask-me-anywhere&#34;&gt;Ask Me Anywhere&lt;/a&gt; to inquire about any of these features and leave some contact info if you&#39;d like me to get in touch.&lt;/p&gt;
+&lt;h2 id=&#34;timer-triggered-capabilities&#34;&gt;Timer-triggered capabilities:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Greetings, encouragement, and love!&lt;/li&gt;
+&lt;li&gt;Piano and violin reminders&lt;/li&gt;
+&lt;li&gt;Screen time monitoring&lt;/li&gt;
+&lt;li&gt;Reminders to reconnect with old friends&lt;/li&gt;
+&lt;li&gt;Reminders to exercise&lt;/li&gt;
+&lt;li&gt;Is now a good time to do laundry?&lt;/li&gt;
+&lt;li&gt;GoodReads updates&lt;/li&gt;
+&lt;li&gt;FocusMate session planning&lt;/li&gt;
+&lt;li&gt;TODOs of various kinds (&lt;em&gt;TODO&lt;/em&gt;, &lt;em&gt;tonight&lt;/em&gt;, &lt;em&gt;tomorrow&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;Reminders of the importance of eating soon after waking up&lt;/li&gt;
+&lt;li&gt;Facebook event tracking&lt;/li&gt;
+&lt;li&gt;Assert Baton reminders&lt;/li&gt;
+&lt;li&gt;Exercise Baton reminders&lt;/li&gt;
+&lt;li&gt;Transaction logging&lt;/li&gt;
+&lt;li&gt;Yearly payroll tracking&lt;/li&gt;
+&lt;li&gt;After work activity planning and reminders&lt;/li&gt;
+&lt;li&gt;After work activity suggestions when nothing is already planned&lt;/li&gt;
+&lt;li&gt;Sleep reminders&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;chat-triggered-capabilities&#34;&gt;Chat-triggered capabilities:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Sending messages between David and Adriana&lt;/li&gt;
+&lt;li&gt;Violin, Piano, and Exercise tracking&lt;/li&gt;
+&lt;li&gt;Food suggestions&lt;/li&gt;
+&lt;li&gt;Suggests people or activities&lt;/li&gt;
+&lt;li&gt;Assert Baton and Exercise Baton passing&lt;/li&gt;
+&lt;li&gt;Baton status checking&lt;/li&gt;
+&lt;li&gt;Budget status checking (Why is this not on a timer too?)&lt;/li&gt;
+&lt;li&gt;Get BieberBot&#39;s version number&lt;/li&gt;
+&lt;li&gt;Play Jeopardy (individually or against Adriana)&lt;/li&gt;
+&lt;li&gt;Play Jeopardy in Croatian (individually or against Adriana)&lt;/li&gt;
+&lt;li&gt;Add financial transaction details&lt;/li&gt;
+&lt;li&gt;Add TODOs&lt;/li&gt;
+&lt;li&gt;Send or schedule Tweets&lt;/li&gt;
+&lt;li&gt;Log activities&lt;/li&gt;
+&lt;li&gt;ACK! Any ol&amp;rsquo; text back to you (Great conversationalist!)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;other-capabilities&#34;&gt;Other capabilities:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Logs financial transactions (triggered by credit-card swipes)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I think that&#39;s all! May have missed some, and there are more planned, but this is a mostly-comprehensive list as of Feb 4, 2020.&lt;/p&gt;
 </description>
     </item>
     
