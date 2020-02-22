@@ -13,6 +13,54 @@
     </image>
     
     <item>
+      <title>Jump-Cut Programming: Take 1</title>
+      <link>https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/</link>
+      <pubDate>Fri, 21 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/</guid>
+      <description>&lt;p&gt;I&#39;ve been toying around with recording myself programming. Here&#39;s a clip.&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/OxsuHWVtMSM&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;In this clip I use &lt;a href=&#34;https://davidbieber.com/projects/python-fire&#34;&gt;Python Fire&lt;/a&gt; to create a simple two-function calculator. Nothing special about that.&lt;/p&gt;
+&lt;p&gt;What is special is that the programming has automatically been sped up by &lt;a href=&#34;https://github.com/carykh/jumpcutter&#34;&gt;carykh/jumpcutter&lt;/a&gt;, and that I&#39;ve used &lt;a href=&#34;https://zulko.github.io/moviepy/&#34;&gt;moviepy&lt;/a&gt; to set the programming to the music &lt;a href=&#34;http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100414&#34;&gt;&amp;ldquo;Dangerous&amp;rdquo;&lt;/a&gt;, a clip I got from &lt;a href=&#34;https://www.youtube.com/audiolibrary/music&#34;&gt;YouTube&#39;s free Audio Library&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;lessons-learned-from-take-1&#34;&gt;Lessons Learned from &amp;ldquo;Take 1&amp;rdquo;&lt;/h2&gt;
+&lt;h3 id=&#34;what-worked-well&#34;&gt;What worked well?&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;External Monitor&lt;/strong&gt;: I purchased an external monitor. This made a huge difference. Now I can manage video-editing tools, a terminal, a browser, etc on one screen, while keeping the contents of the video (the editor and public terminal) on the other screen and recording it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/carykh/jumpcutter&#34;&gt;carykh/jumpcutter&lt;/a&gt;&lt;/strong&gt;: This tool can automatically speed up the silent parts of a video, resulting in shorter less-boring videos.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Mac Screen Capture&lt;/strong&gt;: cmd-shift-5 lets you capture video on Mac. You can choose what directory the captured video is saved to. Before I discovered this, I used QuickTime, but this is easier to use.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Using &lt;a href=&#34;https://pythonhosted.org/watchdog/&#34;&gt;watchdog&lt;/a&gt;&lt;/strong&gt; This is a Python module that can monitor your filesystem and trigger an action when files are created or modified. I use it to a) automatically rename video files as they&#39;re created, and b) to automatically apply jumpcutting to new captured videos. The filename format I use is &lt;code&gt;YYYY-MM-DD-screen-recording-###.mov&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Python Fire&lt;/strong&gt;: The first twenty clips I recorded (not released) were all of me building the tooling I now use as I record videos. Most of this tooling lives in Python Fire CLIs. These CLIs let me do things like composite audio, perform auto-jumpcutting, and rename videos.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;things-to-improve&#34;&gt;Things to improve:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Zoom in!&lt;/strong&gt; The code is blurry and small and the video as is needs to be watched at 1080p to look OK, which is silly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Audio Quality&lt;/strong&gt; I have a lapel mic I&#39;m using for new recordings and it helps.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Storytelling&lt;/strong&gt; Is a Python Fire CLI for adding and subtracting the most compelling story? I think there&#39;s room for improvement.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Manual Editing&lt;/strong&gt; I did no manual editing for the clip above. I think for quality videos, however, learning to do some manual editing is going to be essential. We&#39;ll see how far my inclination to automate everything takes me first though.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;I&#39;m really enjoying this process of recording videos. And more than making the videos, I&#39;m enjoying building the software to help me make the videos. Next step for me is getting more familiar with moviepy. And Davinci Resolve. But one thing at a time.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>A Mostly-Complete List of BieberBot&#39;s Capabilities</title>
       <link>https://davidbieber.com/snippets/2020-02-04-bieber-bot-capabilities/</link>
       <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
