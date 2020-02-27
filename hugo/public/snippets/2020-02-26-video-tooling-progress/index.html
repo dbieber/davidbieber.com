@@ -28,10 +28,11 @@
   
     
   
-  <meta name="description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot.">
+  <meta name="description" content="Over the last week and a half I&#39;ve been making screen recordings of myself programming. Mostly what I&#39;ve been programming is tooling to help myself make better screen recordings. Here&#39;s an overview of what I&#39;ve put together so far.
+Auto Auto-Jumpcutter This springboards directly from carykh&#39;s jumpcutter project, which uses ffmpeg and AudioTSM to speed up the silent sections of a video. Auto Auto-Jumpcutter has two &ldquo;auto&quot;s in its name because jumpcutter already does automatic jumpcutting of videos, and Auto Auto-Jumpcutter uses watchdog to automatically apply jumpcutter the moment a screen recording is captured.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/404.html">
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/">
 
   
 
@@ -249,7 +250,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
 
-  <link rel="canonical" href="https://davidbieber.com/404.html">
+  <link rel="canonical" href="https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/">
 
   
   
@@ -266,29 +267,35 @@
   <meta property="twitter:creator" content="@Bieber">
   
   <meta property="og:site_name" content="David Bieber">
-  <meta property="og:url" content="https://davidbieber.com/404.html">
-  <meta property="og:title" content="404 Page not found | David Bieber">
-  <meta property="og:description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/">
+  <meta property="og:title" content="Video Tooling Progress | David Bieber">
+  <meta property="og:description" content="Over the last week and a half I&#39;ve been making screen recordings of myself programming. Mostly what I&#39;ve been programming is tooling to help myself make better screen recordings. Here&#39;s an overview of what I&#39;ve put together so far.
+Auto Auto-Jumpcutter This springboards directly from carykh&#39;s jumpcutter project, which uses ffmpeg and AudioTSM to speed up the silent sections of a video. Auto Auto-Jumpcutter has two &ldquo;auto&quot;s in its name because jumpcutter already does automatic jumpcutting of videos, and Auto Auto-Jumpcutter uses watchdog to automatically apply jumpcutter the moment a screen recording is captured."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
     
+      <meta property="article:published_time" content="2020-02-26T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-02-26T00:00:00&#43;00:00">
   
 
   
 
 
 
-
   
 
 
   
 
 
+  
 
 
 
-  <title>404 Page not found | David Bieber</title>
+
+
+  <title>Video Tooling Progress | David Bieber</title>
 
 </head>
 
@@ -446,51 +453,144 @@
 </nav>
 
 
-  <div class="universal-wrapper pt-3">
-
-  <h1>Page not found</h1>
-
-  
-  
-  <form class="d-flex align-items-center mb-3">
-    <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
-  </form>
-  
+  <article class="article">
 
   
 
-  <p>Perhaps you were looking for one of these?</p>
+
+
+
+
+
+
+
+
+
+
+
+  
 
   
   
   
-  <h2>Latest</h2>
-  <ul>
+<div class="article-container pt-3">
+  <h1 itemprop="name">Video Tooling Progress</h1>
+
+  
+
+  
     
-      <li><a href="/projects/bieber-bot/">Bieber Bot</a></li>
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
     
-      <li><a href="/projects/escape-castle-heterodyne/">Escape Castle Heterodyne</a></li>
     
-      <li><a href="/projects/python-fire/">Python Fire</a></li>
+      
     
-      <li><a href="/projects/tech-day/">Tech Day</a></li>
     
-      <li><a href="/projects/at-scheduler/">at Scheduler</a></li>
-    
-      <li><a href="/projects/shh-shell/">shh Shell</a></li>
-    
-      <li><a href="/projects/scrabble-bot/">Scrabble Bot</a></li>
-    
-      <li><a href="/projects/teach-everyone/">Teach Everyone</a></li>
-    
-      <li><a href="/projects/princeton-acm/">Princeton ACM</a></li>
-    
-      <li><a href="/snippets/2020-02-26-video-tooling-progress/">Video Tooling Progress</a></li>
-    
-  </ul>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
   
 
 </div>
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" id="article-content">
+      <p>Over the last week and a half I've been making screen recordings of myself programming. Mostly what I've been programming is tooling to help myself make better screen recordings. Here's an overview of what I've put together so far.</p>
+<h2 id="auto-auto-jumpcutter">Auto Auto-Jumpcutter</h2>
+<p>This springboards directly from carykh's <a href="https://github.com/carykh/jumpcutter">jumpcutter</a> project, which uses <a href="https://www.ffmpeg.org/">ffmpeg</a> and AudioTSM to speed up the silent sections of a video. Auto Auto-Jumpcutter has two &ldquo;auto&quot;s in its name because jumpcutter already does automatic jumpcutting of videos, and Auto Auto-Jumpcutter uses <a href="https://pythonhosted.org/watchdog/">watchdog</a> to automatically apply jumpcutter the moment a screen recording is captured.</p>
+<p>The result is that my typing appears superhuman in speed, but slows down while I'm speaking, without me needing to do any manual editing to the video to achieve this effect.</p>
+<h2 id="auto-commit">Auto-Commit</h2>
+<p>I also made for myself a git auto-committer. Every time I save a file during a screen recording session, the change is immediately and automatically committed. The commit message is selected automatically from the diff. The result is that I have a timestamped log of all changes made during the recording. This is super useful for editing the recordings (both automatically and manually) because I can pinpoint exactly where in the recording any change took place. It also works hand-in-hand with the next piece of tooling.</p>
+<h2 id="keyboard-shortcuts">Keyboard Shortcuts</h2>
+<p>Just using Auto Auto-Jumpcutter goes a long way toward having automatically edited videos, but it doesn't completely eliminate the need for manual editing.
+For example, it provides no way to do multiple takes and stitch together the good parts of each. For this I've set up a keyboard shortcut system for myself using the Python <a href="https://pypi.org/project/keyboard/">keyboard</a> module. This way I can indicate via keyboard shortcuts to remove a selection of footage during the recording session, and have it automatically be removed during the automatic editing phase. This last step &ndash; using the keyboard shortcuts to guide automatic editing &ndash; is an active work in progress.</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://davidbieber.com/">David Bieber</a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</article>
 
       
 

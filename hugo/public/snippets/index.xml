@@ -13,6 +13,23 @@
     </image>
     
     <item>
+      <title>Video Tooling Progress</title>
+      <link>https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/</link>
+      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/</guid>
+      <description>&lt;p&gt;Over the last week and a half I&#39;ve been making screen recordings of myself programming. Mostly what I&#39;ve been programming is tooling to help myself make better screen recordings. Here&#39;s an overview of what I&#39;ve put together so far.&lt;/p&gt;
+&lt;h2 id=&#34;auto-auto-jumpcutter&#34;&gt;Auto Auto-Jumpcutter&lt;/h2&gt;
+&lt;p&gt;This springboards directly from carykh&#39;s &lt;a href=&#34;https://github.com/carykh/jumpcutter&#34;&gt;jumpcutter&lt;/a&gt; project, which uses &lt;a href=&#34;https://www.ffmpeg.org/&#34;&gt;ffmpeg&lt;/a&gt; and AudioTSM to speed up the silent sections of a video. Auto Auto-Jumpcutter has two &amp;ldquo;auto&amp;quot;s in its name because jumpcutter already does automatic jumpcutting of videos, and Auto Auto-Jumpcutter uses &lt;a href=&#34;https://pythonhosted.org/watchdog/&#34;&gt;watchdog&lt;/a&gt; to automatically apply jumpcutter the moment a screen recording is captured.&lt;/p&gt;
+&lt;p&gt;The result is that my typing appears superhuman in speed, but slows down while I&#39;m speaking, without me needing to do any manual editing to the video to achieve this effect.&lt;/p&gt;
+&lt;h2 id=&#34;auto-commit&#34;&gt;Auto-Commit&lt;/h2&gt;
+&lt;p&gt;I also made for myself a git auto-committer. Every time I save a file during a screen recording session, the change is immediately and automatically committed. The commit message is selected automatically from the diff. The result is that I have a timestamped log of all changes made during the recording. This is super useful for editing the recordings (both automatically and manually) because I can pinpoint exactly where in the recording any change took place. It also works hand-in-hand with the next piece of tooling.&lt;/p&gt;
+&lt;h2 id=&#34;keyboard-shortcuts&#34;&gt;Keyboard Shortcuts&lt;/h2&gt;
+&lt;p&gt;Just using Auto Auto-Jumpcutter goes a long way toward having automatically edited videos, but it doesn&#39;t completely eliminate the need for manual editing.
+For example, it provides no way to do multiple takes and stitch together the good parts of each. For this I&#39;ve set up a keyboard shortcut system for myself using the Python &lt;a href=&#34;https://pypi.org/project/keyboard/&#34;&gt;keyboard&lt;/a&gt; module. This way I can indicate via keyboard shortcuts to remove a selection of footage during the recording session, and have it automatically be removed during the automatic editing phase. This last step &amp;ndash; using the keyboard shortcuts to guide automatic editing &amp;ndash; is an active work in progress.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Jump-Cut Programming: Take 1</title>
       <link>https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/</link>
       <pubDate>Fri, 21 Feb 2020 00:00:00 +0000</pubDate>
