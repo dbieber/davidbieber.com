@@ -78,6 +78,58 @@ For example, it provides no way to do multiple takes and stitch together the goo
     </item>
     
     <item>
+      <title>The Future-Predicting Gameshow Host</title>
+      <link>https://davidbieber.com/snippets/2020-02-08-future-gameshow-host/</link>
+      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-02-08-future-gameshow-host/</guid>
+      <description>&lt;p&gt;A gameshow host reveals 2 boxes, box A and box B. In box A is either $1 million or 0, in box B there is $1000.&lt;/p&gt;
+&lt;p&gt;You&#39;re told, choose either just box A or both A and B.&lt;/p&gt;
+&lt;p&gt;You keep the contents of the boxes you choose.
+Also, the host knows what box you will choose, and has placed $1 million in A if you will choose only A, and $0 in A if you will choose both A and B.&lt;/p&gt;
+&lt;p&gt;Some contestants, faced with this choice, would choose both A and B. They reason that since the money has already been placed, choosing A and B is guaranteed to yield $1000 more than choosing just A.
+Others would choose only A, since per the host&#39;s plans this option leads to a significantly better payout.&lt;/p&gt;
+&lt;p&gt;Clearly choosing only A is $1000 worse than choosing both A and B, yet choosing A only is allegedly better given the host&#39;s foresight. These statements appear contradictory, and this situation is known as &lt;a href=&#34;https://en.wikipedia.org/wiki/Newcomb%27s_paradox&#34;&gt;Newcomb&#39;s Paradox&lt;/a&gt;.
+How can we reconcile these two true but contradictory statements?&lt;/p&gt;
+&lt;p&gt;We do so by clarifying:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Right now&lt;/em&gt; choosing only A is $1000 worse than choosing both A and B.&lt;/li&gt;
+&lt;li&gt;However, having a brain&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;em&gt;at the time the money is placed&lt;/em&gt; that will lead you to choose only A at the time of choosing gives the $1 million outcome.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Is this something you have control over? Can you &lt;em&gt;decide&lt;/em&gt; at the time the money is placed to have a brain that will lead you to later choose only box A?&lt;/p&gt;
+&lt;p&gt;Yes.&lt;/p&gt;
+&lt;p&gt;It may seem like &lt;em&gt;no&lt;/em&gt;, for a few reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You didn&#39;t even know there was a choice to make.&lt;/li&gt;
+&lt;li&gt;You surely don&#39;t get to make choices about how your brain works, right?&lt;/li&gt;
+&lt;li&gt;Since the host is able know your choice ahead of time, that must mean it&#39;s predetermined, right?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;However, none of these reasons are entirely valid.&lt;/p&gt;
+&lt;p&gt;First, it&#39;s true that at the time the money is placed, you didn&#39;t necessarily know you had a choice to make. You hadn&#39;t yet been informed that you would later be on this gameshow. However, it&#39;s possible you considered the situation as a hypothetical anyway (maybe while reading a blog post, for instance). It isn&#39;t necessary that you considered precisely the situation that you would later find yourself in, only that you&#39;ve given conscious deliberate thought to the way you make choices. By thinking this through, you can decide now whether you have a brain that would later choose box A or one that would later choose both A and B, should the gameshow situation ever arise.&lt;/p&gt;
+&lt;p&gt;Next, you absolutely do get to make choices about how your brain works. You can choose when to sleep, when to study, what substances to ingest, and most importantly, what to focus your attention on. All of these levers are yours to pull, and they all affect how your brain will operate in the future.&lt;/p&gt;
+&lt;p&gt;At the time you choose the boxes, it&#39;s still your decision as to which box(es) to choose. (In the sense that it&#39;s your brain that produces the decision.)
+But you must have been predictable, at least to the host, for them to have predicted what choice you would later make.
+(Nothing wrong with being predictable!)&lt;/p&gt;
+&lt;p&gt;How is it that you were predictable? Does this require determinism?
+One extreme way you may have been predictable is if the host knows exactly how events will play out, right down to the thoughts you will have and the choices you will make.&lt;/p&gt;
+&lt;p&gt;It doesn&#39;t have to be &lt;em&gt;quite&lt;/em&gt; so extreme though. The host only claimed to have roughly one bit of information about you and the future: what binary choice you would make when confronted with the box dilemma. That doesn&#39;t require omniscience. The host may have no idea what the weather is going to be the next day, as long as they&#39;re able to predict whether or not you&#39;re taking box B.&lt;/p&gt;
+&lt;p&gt;So maybe they know a little about how your mind works, or they&#39;ve read something you&#39;ve posted online that lets them conclude how you will handle the box situation.&lt;/p&gt;
+&lt;p&gt;You must consider that whatever they know, they knew it at the time that they chose how to fill the boxes. (They likely also knew it at the time they chose to host the gameshow in the first place.)&lt;/p&gt;
+&lt;p&gt;What I think is most likely is that this host does know precisely how you think about this choice. They do this by understanding to a very high degree of precision how your brain is going to cope with the decision of which boxes to choose. Think of the host as a very skilled poker player, that can read you like a book. Instead of just knowing whether you&#39;re bluffing or not, they know what you&#39;re going to think &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/6640273&#34;&gt;before you even think it&lt;/a&gt;. It&#39;s like weather forecasting, but instead of understanding the atmosphere, they&#39;re understanding you.&lt;/p&gt;
+&lt;p&gt;And like with weather forecasting, their model is imperfect. It&#39;s good enough to know what box you&#39;ll choose, with certainty, but only because that only requires forecasting a small window (a week, let&#39;s say) into the future. Like the atmospheric conditions that determine the weather, your brain is a chaotic system. Any imperfection in the model, however small, will eventually blow up and lead to large errors in the model in the future. So our host can&#39;t model your every thought a year into the future, let alone e.g. the whole population&#39;s behaviors.&lt;/p&gt;
+&lt;p&gt;So what boxes should you choose?&lt;/p&gt;
+&lt;p&gt;You should choose to open just box A. By reaching this conclusion (and more importantly, by adopting the strategy for reasoning that leads to this conclusion), you guarantee yourself $1 million the next time you encounter a wealthy generous time travelling gameshow host interested in philosophy and mathematics.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;I say &amp;ldquo;brain&amp;rdquo;, but I really mean the whole of your situation and life circumstances. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
       <title>A Mostly-Complete List of BieberBot&#39;s Capabilities</title>
       <link>https://davidbieber.com/snippets/2020-02-04-bieber-bot-capabilities/</link>
       <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
