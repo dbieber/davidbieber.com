@@ -13,6 +13,45 @@
     </image>
     
     <item>
+      <title>Fastbook: Listen to Audiobooks Faster</title>
+      <link>https://davidbieber.com/snippets/2020-03-02-fastbook/</link>
+      <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-03-02-fastbook/</guid>
+      <description>&lt;p&gt;Aaron Mayer &lt;a href=&#34;https://medium.com/100audiobooks/the-100-audiobook-challenge-terms-and-conditions-455c7e9409aa&#34;&gt;aims to listen to 100 audiobooks in a single month&lt;/a&gt;. He intends to listen to these audiobooks at 2x - 3x speed. Intense!&lt;/p&gt;
+&lt;p&gt;For the last few weeks, I&#39;ve been working on &lt;a href=&#34;https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/&#34;&gt;automatic video&lt;/a&gt; &lt;a href=&#34;https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/&#34;&gt;editing tools&lt;/a&gt;. And one of the core features I&#39;ve been working with is automatic speed adjustments to videos to eliminate silent airtime and make the videos more engaging. This seems like a perfect fit for Aaron&#39;s challenge.&lt;/p&gt;
+&lt;p&gt;I&#39;ve adapted this tooling into a new tool I&#39;m calling &lt;a href=&#34;https://gist.github.com/dbieber/98f909640773b5b0a0fe5696da369a1b&#34;&gt;Fastbook&lt;/a&gt;. It accepts audiobooks in the form of &lt;code&gt;.wav&lt;/code&gt; files, and can apply speed adjustments to the silence and the spoken word independently, even removing silence entirely if desired.&lt;/p&gt;
+&lt;p&gt;If Aaron can already comfortably (with great focus) listen to a book at 2.5x speed, he can listen to a 10 hour book in 4 hours. If 20% of that book is actually silence, then the 10 hour book becomes an 8 hour book with silence removed, and the total listen time drops to just 3h12. I think 20% may actually be a conservative estimate for silent time, though it will vary from narrator to narrator.&lt;/p&gt;
+&lt;p&gt;Estimating 45 minutes saved per book, this tool can save over 3 days total time across 100 books. Or, alternatively, Aaron could drop the playback speed down from 2.5x to 2x without increasing his total listening time at all.&lt;/p&gt;
+&lt;p&gt;This tool wont be appropriate for all audiobook listeners. For many, the silences matter, and removing them would degrade the quality of the book. For many, listening at 2.5x would also degrade the quality of the book. So use this tool with caution.&lt;/p&gt;
+&lt;p&gt;For those of you who are intersted, however, here&#39;s how to use Fastbook.&lt;/p&gt;
+&lt;h2 id=&#34;installing-fastbook&#34;&gt;Installing Fastbook&lt;/h2&gt;
+&lt;p&gt;I&#39;ve made Fastbook available for free on GitHub. You can &lt;a href=&#34;https://gist.github.com/dbieber/98f909640773b5b0a0fe5696da369a1b&#34;&gt;access it here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To use it, save it to your computer as &lt;code&gt;fastbook.py&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Next, make sure you have all the dependencies installed. See the dependencies section for what is required.&lt;/p&gt;
+&lt;h2 id=&#34;pre-work-converting-your-book-to-wav&#34;&gt;Pre-work: Converting Your Book to &lt;code&gt;.wav&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;You need your audiobook in wav format to use Fastbook.&lt;/p&gt;
+&lt;p&gt;To convert an audiobook to wav, use &lt;a href=&#34;https://www.ffmpeg.org/&#34;&gt;ffmpeg&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Install ffmpeg. Then, run &lt;code&gt;ffmpeg -i book.aax book.wav&lt;/code&gt; to convert an Audible audiobook to a wav file. There may be an additional step if your aax file is DRM protected.&lt;/p&gt;
+&lt;h2 id=&#34;using-fastbook&#34;&gt;Using Fastbook&lt;/h2&gt;
+&lt;p&gt;Now you can use Fastbook like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;python fastbook.py \
+--audio_path=/path/to/book.wav \
+--output_path=/path/to/book-fast.wav \
+--loud_speed=1 \
+--quiet_speed=5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;ndash;audio_path should point to an existing wav file that you downloaded or generated in the pre-work section. &amp;ndash;output_path is the path to the file that Fastbook will generate. Finally, &amp;ndash;loud_speed is how much to speed up the normal spoke text of the book by, and &amp;ndash;quiet_speed is how much to speed up the silence in the book by. You can remove silence by setting &amp;ndash;quiet_speed=99999 or any other similiarly large number.&lt;/p&gt;
+&lt;h3 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h3&gt;
+&lt;p&gt;Here are the dependencies you need to use Fastbook.&lt;/p&gt;
+&lt;p&gt;First, you need &lt;strong&gt;Python 3&lt;/strong&gt;. You can follow &lt;a href=&#34;https://realpython.com/installing-python/&#34;&gt;these instructions&lt;/a&gt; to set up Python 3 if you don&#39;t already have it installed.&lt;/p&gt;
+&lt;p&gt;Then, you need these Python depenencies: &lt;em&gt;fire&lt;/em&gt;, &lt;em&gt;scipy&lt;/em&gt;, &lt;em&gt;tqdm&lt;/em&gt;, &lt;em&gt;numpy&lt;/em&gt;, and &lt;em&gt;audiotsm&lt;/em&gt;. Install these with &lt;code&gt;pip install fire scipy tqdm numpy audiotsm&lt;/code&gt; or use your favorite Python package manager.&lt;/p&gt;
+&lt;p&gt;Finally, to do the pre-work, you will likely need ffmpeg. Installation instructions are available &lt;a href=&#34;https://www.ffmpeg.org/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;read-quick&#34;&gt;Read quick!&lt;/h2&gt;
+&lt;p&gt;I recommend for Aaron to use the default speed settings of &lt;code&gt;--loud_speed=1 --quiet_speed=5&lt;/code&gt;. This wont eliminate the silence entirely, but will reduce the audio time considerably. Then, for the remaining speed-up, I suggest using whatever media player you were already using, such as VLC which supports arbitrary speed adjustments in real time. Hpy rdng!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Video Tooling Progress</title>
       <link>https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/</link>
       <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
