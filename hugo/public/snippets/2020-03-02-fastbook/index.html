@@ -519,7 +519,7 @@ For the last few weeks, I&#39;ve been working on automatic video editing tools. 
 
     <div class="article-style" id="article-content">
       <p>Aaron Mayer <a href="https://medium.com/100audiobooks/the-100-audiobook-challenge-terms-and-conditions-455c7e9409aa">aims to listen to 100 audiobooks in a single month</a>. He intends to listen to these audiobooks at 2x - 3x speed. Intense!</p>
-<p>For the last few weeks, I've been working on <a href="https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/">automatic video</a> <a href="https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/">editing tools</a>. And one of the core features I've been working with is automatic speed adjustments to videos to eliminate silent airtime and make the videos more engaging. This seems like a perfect fit for Aaron's challenge.</p>
+<p>For the last few weeks, I've been working on <a href="https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/">automatic video</a> <a href="https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/">editing tools</a>. And one of the core features I've been working with is <a href="https://github.com/carykh/jumpcutter/">automatic speed adjustments to videos</a> to eliminate silent airtime and make the videos more engaging. This seems like a perfect fit for Aaron's challenge.</p>
 <p>I've adapted this tooling into a new tool I'm calling <a href="https://gist.github.com/dbieber/98f909640773b5b0a0fe5696da369a1b">Fastbook</a>. It accepts audiobooks in the form of <code>.wav</code> files, and can apply speed adjustments to the silence and the spoken word independently, even removing silence entirely if desired.</p>
 <p>If Aaron can already comfortably (with great focus) listen to a book at 2.5x speed, he can listen to a 10 hour book in 4 hours. If 20% of that book is actually silence, then the 10 hour book becomes an 8 hour book with silence removed, and the total listen time drops to just 3h12. I think 20% may actually be a conservative estimate for silent time, though it will vary from narrator to narrator.</p>
 <p>Estimating 45 minutes saved per book, this tool can save over 3 days total time across 100 books. Or, alternatively, Aaron could drop the playback speed down from 2.5x to 2x without increasing his total listening time at all, but potentially helping out his comprehension substantially.</p>
@@ -549,6 +549,19 @@ For the last few weeks, I&#39;ve been working on automatic video editing tools. 
 <p>Finally, to do the pre-work, you will likely need ffmpeg. Installation instructions are available <a href="https://www.ffmpeg.org/">here</a>.</p>
 <h2 id="read-quick">Read quick!</h2>
 <p>I recommend for Aaron to use the default speed settings of <code>--loud_speed=1 --quiet_speed=5</code>. This wont eliminate the silence entirely, but will reduce the audio time considerably. Then, for the remaining speed-up, I suggest using whatever media player you were already using, such as VLC which supports arbitrary speed adjustments in real time. Hpy rdng!</p>
+<h2 id="demo">Demo</h2>
+<p>This blog post, narrated slowly:</p>
+<p><audio
+controls
+src="/audio/fastbook.m4a">
+Your browser does not support the <code>audio</code> element.
+</audio></p>
+<p>This blog post again, now with just the silence accelerated:</p>
+<p><audio
+controls
+src="/audio/fastbook-fast.m4a">
+Your browser does not support the <code>audio</code> element.
+</audio></p>
 
     </div>
 
