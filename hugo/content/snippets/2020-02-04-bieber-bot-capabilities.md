@@ -21,6 +21,7 @@ plugins_js = ["ask-me-anywhere"]
 - Facebook event tracking
 - Assert Baton reminders
 - Exercise Baton reminders
+- Tweeting scheduled Tweets
 - Transaction logging
 - Yearly payroll tracking
 - After work activity planning and reminders
