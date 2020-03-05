@@ -10,7 +10,7 @@ summary = "This is my life motto."
 It's pronounced just like it's spelled ("pied, swite, cuff, buh-din"). It's my life motto.
 And I think these are good principles to live by. Here they are:
 
-1. Persue your dreams.
+1. Pursue your dreams.
 1. Say what you think.
 1. Cultivate friendships.
 1. Be happy.
@@ -24,7 +24,7 @@ Work toward long term goals you think are worthwhile. It's easy to fall into the
 
 ### Say What You Think
 
-It can be easier to go along with thae status quo that to voice dissent.
+It can be easier to go along with the status quo that to voice dissent.
 It can be easier to assume others are correct than to voice confusion.
 Usually though, it is better to express your dissent / confusion / support.
 The "swyt" in pyd-swyt serves as a constant reminder to speak your mind, especially when it would be more comfortable not to do so.
