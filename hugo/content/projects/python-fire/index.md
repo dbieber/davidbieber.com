@@ -52,4 +52,4 @@ $ python gcdfire.py 34 90
 
 Just by calling Fire, we've turned our gcd function into a command line utility.
 
-Fire works on functions, classes, objects, lists, etc. Any Python object at all will be turned into a sensible CLI just by calling fire.Fire on it. Learn more from the [documentation here](http://google.github.io/python-fire).
+Fire works on functions, classes, objects, lists, etc. Any Python object at all will be turned into a sensible CLI just by calling `fire.Fire` on it. Learn more from the [documentation here](http://google.github.io/python-fire).

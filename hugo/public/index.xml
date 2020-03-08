@@ -103,7 +103,7 @@ $ python gcdfire.py 34 90
 2
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Just by calling Fire, we&#39;ve turned our gcd function into a command line utility.&lt;/p&gt;
-&lt;p&gt;Fire works on functions, classes, objects, lists, etc. Any Python object at all will be turned into a sensible CLI just by calling fire.Fire on it. Learn more from the &lt;a href=&#34;http://google.github.io/python-fire&#34;&gt;documentation here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Fire works on functions, classes, objects, lists, etc. Any Python object at all will be turned into a sensible CLI just by calling &lt;code&gt;fire.Fire&lt;/code&gt; on it. Learn more from the &lt;a href=&#34;http://google.github.io/python-fire&#34;&gt;documentation here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
