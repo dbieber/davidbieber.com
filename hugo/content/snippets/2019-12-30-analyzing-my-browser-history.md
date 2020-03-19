@@ -57,7 +57,7 @@ And the `visits` table has these columns (obtained via `.schema visits`):
 |from_visit                       | Integer Id | The `id` of the visit that lead you to this one. |
 |transition                       | Bit vector | Represents the [transition type](https://developer.chrome.com/extensions/history#transition_types) (how you got to the URL) |
 |segment_id                       | Integer Id | The `id` of the segment in the database. I'm not quite sure what a segment is, but there is a `segments` table you can look at. |
-|visit_duration                   | Integer (microsecodns) | The amount of time spent at the website, or 0 if not available. |
+|visit_duration                   | Integer (microseconds) | The amount of time spent at the website, or 0 if not available. |
 |incremented_omnibox_typed_score  | Boolean    | I do not know what this is about. |
 
 
