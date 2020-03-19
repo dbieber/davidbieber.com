@@ -13,6 +13,41 @@
     </image>
     
     <item>
+      <title>A Bit of Browser History Analysis</title>
+      <link>https://davidbieber.com/snippets/2020-03-19-browsing-history/</link>
+      <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-03-19-browsing-history/</guid>
+      <description>&lt;p&gt;In a &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history&#34;&gt;previous snippet&lt;/a&gt; I started looking into how to analyze my browser history. Revisiting that idea briefly tonight, I began looking into whether I might be able to infer topics of interest from my browsing history.&lt;/p&gt;
+&lt;p&gt;Using my previous post as reference, I first made a copy of my browsing history:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cp ~/Library/Application\ Support/Google/Chrome/Default/History my-history
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then, using sqlite3 (&lt;code&gt;sqlite3 ~/my-history&lt;/code&gt;) I began poking around.&lt;/p&gt;
+&lt;p&gt;This query allowed me to pull up all my YouTube video views:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select visits.id, urls.title, urls.url
+from visits
+join urls on urls.id == visits.url
+where urls.url like &amp;quot;%www.youtube.com/w%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And this query gave me my Google Search history:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select visits.id, urls.title
+from visits
+join urls on urls.id == visits.url
+where urls.url like &amp;quot;%www.google.com/search%&amp;quot; 
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This one gave me my Wikipedia browsing history:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;select distinct(urls.title)
+from visits
+join urls on urls.id == visits.url
+where urls.url like &amp;quot;%wikipedia.org/wiki/%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I think it will be useful to bring in the contents of the URLs too, not just the title and url string, for determining topics of interest. Even without that, my Google Search history, YouTube history, and Wikipedia history are already an interesting start.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Fastbook: Listen to Audiobooks Faster</title>
       <link>https://davidbieber.com/snippets/2020-03-02-fastbook/</link>
       <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
@@ -702,7 +737,7 @@ For some reason, I do it anyway though, and so I think of this habit like an add
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;visit_duration&lt;/td&gt;
-&lt;td&gt;Integer (microsecodns)&lt;/td&gt;
+&lt;td&gt;Integer (microseconds)&lt;/td&gt;
 &lt;td&gt;The amount of time spent at the website, or 0 if not available.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
