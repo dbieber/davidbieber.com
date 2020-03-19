@@ -17,7 +17,7 @@
       <link>https://davidbieber.com/snippets/2020-03-19-browsing-history/</link>
       <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-03-19-browsing-history/</guid>
-      <description>&lt;p&gt;In a &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history&#34;&gt;previous snippet&lt;/a&gt; I started looking into how to analyze my browser history. Revisiting that idea briefly tonight, I began looking into whether I might be able to infer topics of interest from my browsing history.&lt;/p&gt;
+      <description>&lt;p&gt;In a &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history&#34;&gt;previous snippet&lt;/a&gt; I started looking into how to analyze my browser history. Revisiting that idea tonight, I began looking into whether I might be able to infer topics of interest from my browsing history.&lt;/p&gt;
 &lt;p&gt;Using my previous post as reference, I first made a copy of my browsing history:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cp ~/Library/Application\ Support/Google/Chrome/Default/History my-history
 &lt;/code&gt;&lt;/pre&gt;
