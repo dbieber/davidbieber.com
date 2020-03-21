@@ -13,6 +13,47 @@
     </image>
     
     <item>
+      <title>Understanding OAuth2</title>
+      <link>https://davidbieber.com/snippets/2020-03-20-understanding-oauth2/</link>
+      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-03-20-understanding-oauth2/</guid>
+      <description>&lt;p&gt;OAuth2 is confusing. I&#39;ve set it up several times before, and each time I encounter it it&#39;s a bit of a mental mess to wrap my mind around it again.&lt;/p&gt;
+&lt;p&gt;So, this time, as I set up OAuth2 to let Bieber Bot interact with more Slack workspaces, I will write up my renewed understanding of OAuth2 in the hope that next time I have to set up OAuth2, it&#39;s a little easier.&lt;/p&gt;
+&lt;p&gt;How does the OAuth2 flow go? Like this:&lt;/p&gt;
+&lt;p&gt;The user wants to add Bieber Bot to a Slack channel. So, they&#39;re on my website (davidbieber.com) and they click the &lt;em&gt;Add to Slack&lt;/em&gt; button. This takes them to Slack, with GET parameters that indicate they want to add Bieber Bot to some Slack workspace. The workspace id can be part of the URL of the Add to Slack button, but even if it&#39;s not, Slack will do the right thing and just ask the user to choose one of their workspaces. If the user isn&#39;t already logged in to Slack, they&#39;ll be prompted to do so at this point.&lt;/p&gt;
+&lt;p&gt;After the user clicks the &lt;em&gt;Add to Slack&lt;/em&gt; button they are taken to Slack, where they are shown the list of OAuth2 scopes that Bieber Bot is requesting. If they approve giving Bieber Bot the permissions listed in the scopes, they are taken to a &lt;em&gt;redirect url&lt;/em&gt; that I, the developer of Bieber Bot, have specified. I have both pre-informed Slack of the redirect URLs I might use, and I have included a specific redirect URL in the link on the &lt;em&gt;Add to Slack&lt;/em&gt; button. When the user is redirected to this redirect url, two GET parameters are included. The first is a &lt;code&gt;code&lt;/code&gt;, which my server can use to get an Access Token / Bearer Token. The second is a &lt;code&gt;state&lt;/code&gt; which is something that I, the developer, can include on the original link from the &lt;em&gt;Add to Slack&lt;/em&gt; button in order to make sure the request I&#39;m getting at the redirect URL is genuine.&lt;/p&gt;
+&lt;p&gt;When the redirect URL is accessed with a &lt;code&gt;code&lt;/code&gt; GET parameter, it then turns around and uses that &lt;code&gt;code&lt;/code&gt; to request an Access Token from Slack. Once it has that Access Token, it tucks it away. It can use that access token in order to perform any of the permissions granted by the user during the access flow.&lt;/p&gt;
+&lt;p&gt;Usually using the Access Token takes the form of issuing post requests to Slack with the Access Token as a parameter.&lt;/p&gt;
+&lt;p&gt;The user can revoke access to Bieber Bot at any time. Once they do so, the Access Token becomes invalid. If Bieber Bot tries to use the Access Token at that point, it will get an error. The user will have to give Bieber Bot permissions again, and it will get a new access token, in order for it to continue providing its services and companionship.&lt;/p&gt;
+&lt;h2 id=&#34;summary-of-the-the-important-bits&#34;&gt;Summary of the the Important Bits&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;User navigates from website to service (e.g. via &lt;em&gt;Add to Slack&lt;/em&gt; button).&lt;/li&gt;
+&lt;li&gt;Service shows user permissions dialog.&lt;/li&gt;
+&lt;li&gt;Upon accepting permissions, service redirects user back to website&#39;s redirect URL with &lt;code&gt;code&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Website uses &lt;code&gt;code&lt;/code&gt; to get Access Token&lt;/li&gt;
+&lt;li&gt;Website uses Access Token to do the stuff allowed by the permissions granted by the user&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;summary-of-the-less-important-bits&#34;&gt;Summary of the Less Important Bits&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;em&gt;Add to Slack&lt;/em&gt; button should include GET parameters for: a) &lt;code&gt;state&lt;/code&gt; so the redirect url knows the request is genuine, b) &lt;code&gt;redirect_url&lt;/code&gt; so Slack knows where to send the user after they accept the permissons, c) &lt;code&gt;scope&lt;/code&gt; indicating the permissions being requested, d) &lt;code&gt;client_id&lt;/code&gt; indicating the app (e.g. Bieber Bot) that you&#39;re adding to Slack.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The permissions that the App can request are set up by the App ahead of time. So I think the &lt;code&gt;scope&lt;/code&gt; parameter is there if you only need to request a subset of that permissions for a particular user.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The full list of possible redirect URLs should be set up ahead of time. Then when you generate the &lt;em&gt;Add to Slack&lt;/em&gt; button, you just choose a particular redirect URL that Slack should redirect the user to after they accept the permissions. Why would you want more than one redirect URL? Well, one might be for staging, one for production, and one for local development.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The redirect URL receives both the &lt;code&gt;code&lt;/code&gt; and &lt;code&gt;state&lt;/code&gt; GET parameters. The website creating the &lt;em&gt;Add to Slack&lt;/em&gt; button decides on the state. It can then check that the state is there in the redirect URL. This prevents users from going directly to Slack without going through the website, because if they try to do that, they won&#39;t have the state and will fail the check at the redirect URL. This is useful if you want to restrict installs for your App to specific customers, e.g. those who&#39;ve solved a puzzle, or paid.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;what-is-this&#34;&gt;What is this?&lt;/h2&gt;
+&lt;p&gt;This certainly isn&#39;t meant to be an OAuth2 guide at all. By writing this out, I think I&#39;ve helped myself understand the OAuth2 flow better though. That&#39;s really what snippets are all about.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>A Bit of Browser History Analysis</title>
       <link>https://davidbieber.com/snippets/2020-03-19-browsing-history/</link>
       <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
