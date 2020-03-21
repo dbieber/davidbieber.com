@@ -39,4 +39,4 @@ The user can revoke access to Bieber Bot at any time. Once they do so, the Acces
 
 ## What is this?
 
-This certainly isn't meant to be an OAuth2 guide at all. By writing this out, I think I've helped myself understand the OAuth2 flow better though. That's really what snippets are all about.
+This certainly isn't meant to be an OAuth guide at all. By writing this out, I think I've helped myself understand the OAuth2 flow better though. That's really what snippets are all about.
