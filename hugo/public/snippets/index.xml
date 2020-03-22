@@ -49,7 +49,7 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;what-is-this&#34;&gt;What is this?&lt;/h2&gt;
-&lt;p&gt;This certainly isn&#39;t meant to be an OAuth guide at all. By writing this out, I think I&#39;ve helped myself understand the OAuth2 flow better though. That&#39;s really what snippets are all about.&lt;/p&gt;
+&lt;p&gt;This certainly isn&#39;t meant to be an OAuth2 guide at all. By writing this out, I think I&#39;ve helped myself understand the OAuth2 flow better though. That&#39;s really what snippets are all about.&lt;/p&gt;
 </description>
     </item>
     
@@ -258,11 +258,11 @@ One extreme way you may have been predictable is if the host knows exactly how e
     </item>
     
     <item>
-      <title>A Mostly-Complete List of BieberBot&#39;s Capabilities</title>
+      <title>A Mostly-Complete List of Bieber Bot&#39;s Capabilities</title>
       <link>https://davidbieber.com/snippets/2020-02-04-bieber-bot-capabilities/</link>
       <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-02-04-bieber-bot-capabilities/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;BieberBot&lt;/a&gt; has an ever-growing list of capabilities. I&#39;ve tried to capture that complete list here. Feel free to use &lt;a href=&#34;https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere&#34;&gt;Ask Me Anywhere&lt;/a&gt; to inquire about any of these features and leave some contact info if you&#39;d like me to get in touch.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; has an ever-growing list of capabilities. I&#39;ve tried to capture that complete list here. Feel free to use &lt;a href=&#34;https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere&#34;&gt;Ask Me Anywhere&lt;/a&gt; to inquire about any of these features and leave some contact info if you&#39;d like me to get in touch.&lt;/p&gt;
 &lt;h2 id=&#34;timer-triggered-capabilities&#34;&gt;Timer-triggered capabilities:&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Greetings, encouragement, and love!&lt;/li&gt;
