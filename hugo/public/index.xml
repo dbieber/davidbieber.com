@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Thu, 09 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Sat, 11 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,29 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tips for Effective OBS</title>
+      <link>https://davidbieber.com/snippets/2020-04-11-tips-for-obs/</link>
+      <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-11-tips-for-obs/</guid>
+      <description>&lt;p&gt;As a newcomer to OBS, I&#39;ve been regularly discovering new features that make my OBS experience better. Here are a handful of things I&#39;ve found useful, that perhaps weren&#39;t immediately obvious to me, from my early experiences with OBS.&lt;/p&gt;
+&lt;h2 id=&#34;using-media-sources&#34;&gt;Using Media Sources&lt;/h2&gt;
+&lt;p&gt;&amp;ldquo;Media Source&amp;rdquo; video sources are essential when showing prerecorded video, or using a replay buffer. However, it wasn&#39;t obvious to me how to get media sources to play their audio.&lt;/p&gt;
+&lt;p&gt;When using a Media Source, here&#39;s out to turn on the audio. In the Audio Mixer panel choose &lt;code&gt;Gear Settings &amp;gt; Advanced Audio Properties&lt;/code&gt; then set &lt;code&gt;Audio Monitoring&lt;/code&gt; to &amp;ldquo;Monitor and Output&amp;rdquo;.&lt;/p&gt;
+&lt;h2 id=&#34;namespaces-for-scenes--turning-off-the-camera&#34;&gt;Namespaces for Scenes + Turning Off the Camera&lt;/h2&gt;
+&lt;p&gt;You can create multiple Profiles and Scene Collections in OBS. I only have one Profile, which I&#39;ve named &amp;ldquo;Default&amp;rdquo; (rather than the default of &amp;ldquo;Untitled&amp;rdquo;). I made a few Scene Collections. Making new Scene Collections gives you a space to play around with new ideas for scenes and keyboard shortcuts, without disrupting the main setup(s) that you&#39;ve put together. I like to fiddle around with new ideas in a Scene Collection I&#39;ve named &amp;ldquo;Playground&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;If you have any sources in a Scene Collection that use your webcam, then your webcam will stay on even when it isn&#39;t being used. If you switch to a Scene Collection with no sources using your webcam, then your webcam will turn off. I use a Scene Collection that leaves my webcam off by default, and only switch to a Scene Collection with a webcam source when I actually intend to record something that needs the webcam.&lt;/p&gt;
+&lt;h2 id=&#34;replay-buffer&#34;&gt;Replay Buffer&lt;/h2&gt;
+&lt;p&gt;I leave the replay buffer on in between recording scenes. By setting the replay buffer to a reasonable size like 60 seconds, I can leave it rolling without consuming too much memory (and the CPU consumption has been reasonable too, e.g. 10%). This way, if anything noteworthy happens in this period between recordings, I can still capture it.&lt;/p&gt;
+&lt;h2 id=&#34;virtual-cameras&#34;&gt;Virtual Cameras&lt;/h2&gt;
+&lt;p&gt;If you&#39;re willing to get your hands dirty, the instructions at &lt;a href=&#34;https://github.com/johnboiles/obs-mac-virtualcam&#34;&gt;johnboiles/obs-mac-virtualcam&lt;/a&gt; will let you use OBS as a virtual camera on Mac.&lt;/p&gt;
+&lt;h2 id=&#34;transform-editing-and-scene-json-files&#34;&gt;Transform Editing and Scene &lt;code&gt;.json&lt;/code&gt; files&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;cmd-e&lt;/code&gt; opens the Scene Item Transform for a Scene Item. Using that, you can get pixel perfect positioning of any video source. You can also see and edit the json files that describe your scenes. On Mac, these scene json files can be found at &lt;code&gt;~/Library/Application Support/obs-studio/basic/scenes&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;keyboard-shortcuts&#34;&gt;Keyboard Shortcuts&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;cmd-,&lt;/code&gt; opens your settings. There&#39;s a panel for setting keyboard shortcuts. This is a core OBS feature, and it&#39;s extremely valuable. I really appreciate how easy OBS has made it to set up these keyboard shortcuts for switching between scenes, starting and stopping recordings, pausing and playing media, etc. I only wish I could have extra modifier keys so I could set up more shortcuts that don&#39;t collide with the shortcuts of my IDE!&lt;/p&gt;
 </description>
     </item>
     
