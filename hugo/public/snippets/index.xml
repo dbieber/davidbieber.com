@@ -13,6 +13,233 @@
     </image>
     
     <item>
+      <title>More Browser History Queries</title>
+      <link>https://davidbieber.com/snippets/2020-04-11-browser-history-queries/</link>
+      <pubDate>Sat, 11 Apr 2020 01:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-11-browser-history-queries/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history&#34;&gt;Previously&lt;/a&gt; I listed out a few queries for poking at my browser history. Here are some more!&lt;/p&gt;
+&lt;p&gt;As before, I begin by making a copy of my browsing history and opening sqlite3:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history
+sqlite3 ~/my-history
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once that&#39;s done, we can start running the queries.&lt;/p&gt;
+&lt;h2 id=&#34;youtube-videos-watched&#34;&gt;YouTube Videos Watched&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; - YouTube&amp;quot;, &amp;quot;&amp;quot;), urls.url
+from urls
+where urls.url like &amp;quot;%www.youtube.com/watch%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;youtube-search-queries&#34;&gt;YouTube Search Queries&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; - YouTube&amp;quot;, &amp;quot;&amp;quot;)
+from urls
+where urls.url like &amp;quot;%www.youtube.com/results?search_query%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;google-search-queries&#34;&gt;Google Search Queries&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; - Google Search&amp;quot;, &amp;quot;&amp;quot;)
+from urls
+where urls.url like &amp;quot;%www.google.com/search%&amp;quot; 
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;google-maps-usage&#34;&gt;Google Maps Usage&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; - Google Maps&amp;quot;, &amp;quot;&amp;quot;)
+from urls
+where urls.url like &amp;quot;%www.google.com/maps%&amp;quot; 
+and urls.title != &amp;quot;Google Maps&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;wikipedia-browsing-history&#34;&gt;Wikipedia Browsing History&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; - Wikipedia&amp;quot;, &amp;quot;&amp;quot;)
+from urls
+where urls.url like &amp;quot;%wikipedia.org/wiki/%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;github-users-and-orgs&#34;&gt;GitHub Users and Orgs&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT
+SUBSTR(
+  urls.url,
+  LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,
+  INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1
+) as user
+from urls
+where urls.url like &amp;quot;https://github.com/%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The rest of the GitHub queries ended up being quite messy, so I&#39;ve placed them at the end of the document.&lt;/p&gt;
+&lt;h2 id=&#34;arxiv-papers-visited&#34;&gt;Arxiv Papers Visited&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT urls.title, REPLACE(REPLACE(urls.url, &amp;quot;.pdf&amp;quot;, &amp;quot;&amp;quot;), &amp;quot;/pdf/&amp;quot;, &amp;quot;/abs/&amp;quot;)
+from urls
+where urls.url like &amp;quot;https://arxiv.org/abs%&amp;quot;
+or urls.url like &amp;quot;https://arxiv.org/pdf%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;hackernews-comments-read&#34;&gt;HackerNews Comments Read&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; | Hacker News&amp;quot;, &amp;quot;&amp;quot;), urls.url
+from urls
+where urls.url like &amp;quot;https://news.ycombinator.com/item%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;hackernews-posts-read&#34;&gt;HackerNews Posts Read&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT urls.title, urls.url
+from visits
+join visits as previous_visits on visits.from_visit == previous_visits.id
+join urls on urls.id == visits.url
+join urls as previous_urls on previous_urls.id == previous_visits.url
+where previous_urls.url like &amp;quot;https://news.ycombinator.com%&amp;quot;
+and urls.url not like &amp;quot;https://news.ycombinator.com%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;reddit-usage&#34;&gt;Reddit Usage&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT urls.title
+from urls
+where urls.url like &amp;quot;https://www.reddit.com/%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;reddit-links-followed&#34;&gt;Reddit Links Followed&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT urls.title, urls.url
+from visits
+join visits as previous_visits on visits.from_visit == previous_visits.id
+join urls on urls.id == visits.url
+join urls as previous_urls on previous_urls.id == previous_visits.url
+where previous_urls.url like &amp;quot;%reddit.com%&amp;quot;
+and urls.url not like &amp;quot;%reddit.com%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;reddit-subreddits-visited&#34;&gt;Reddit Subreddits Visited&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT
+SUBSTR(
+  SUBSTR(urls.url, LENGTH(&amp;quot;https://www.reddit.com/r/&amp;quot;) + 1),
+  0,
+  INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://www.reddit.com/r/&amp;quot;) + 1), &amp;quot;/&amp;quot;)
+) as subreddit
+from urls
+where urls.url like &amp;quot;https://www.reddit.com/r/%&amp;quot;
+order by subreddit asc
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;twitter-search-queries&#34;&gt;Twitter Search Queries&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; - Twitter Search / Twitter&amp;quot;, &amp;quot;&amp;quot;)
+from urls
+where urls.url like &amp;quot;https://twitter.com/search%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;twitter-links-followed&#34;&gt;Twitter Links Followed&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT urls.title, urls.url
+from visits
+join visits as previous_visits on visits.from_visit == previous_visits.id
+join urls on urls.id == visits.url
+join urls as previous_urls on previous_urls.id == previous_visits.url
+where previous_urls.url like &amp;quot;%://t.co%&amp;quot;
+and urls.url not like &amp;quot;%twitter.com%&amp;quot;
+and urls.url not like &amp;quot;%://t.co%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;other-domains-visited&#34;&gt;Other Domains Visited&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(
+SUBSTR(
+  urls.url,
+  INSTR(urls.url, &amp;quot;//&amp;quot;) + 2, -- strips https://
+  INSTR(SUBSTR(urls.url, INSTR(urls.url, &amp;quot;//&amp;quot;) + 2), &amp;quot;/&amp;quot;) - 1
+), &amp;quot;www.&amp;quot;, &amp;quot;&amp;quot;) as domain
+from visits
+join visits as previous_visits on visits.from_visit == previous_visits.id
+join urls on urls.id == visits.url
+join urls as previous_urls on previous_urls.id == previous_visits.url
+where not (
+     domain like &amp;quot;%goog%&amp;quot;
+  or domain like &amp;quot;%t.co%&amp;quot;
+  or domain like &amp;quot;twitter.co&amp;quot;
+  or domain like &amp;quot;%wikipedia%&amp;quot;
+  or domain like &amp;quot;%youtube%&amp;quot;
+  or domain like &amp;quot;%arxiv%&amp;quot;
+  or domain like &amp;quot;%reddit%&amp;quot;
+  or domain like &amp;quot;%ycombinator%&amp;quot;
+)
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;using-a-different-profile&#34;&gt;Using a Different Profile&lt;/h2&gt;
+&lt;p&gt;If you want to query your search history for a profile other than the default one, you can do so. E.g.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cp ~/Library/Application\ Support/Google/Chrome/Profile\ 1/History ~/my-history
+sqlite3 ~/my-history
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;messy-queries-github-repos-visited&#34;&gt;Messy Queries: GitHub Repos Visited&lt;/h2&gt;
+&lt;p&gt;This query ended up being quite messy because I wasn&#39;t able to save intermediate results as a variable. So, in order to build the query, I copied and pasted intermediate queries to reuse them. The result, with intermediate queries shown in comments, follows.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT
+
+-- Selects the user:
+-- SUBSTR(
+--   urls.url,
+--   LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,
+--   INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1
+-- ) as user,
+
+-- Selects everything after the user:
+-- SUBSTR(
+--   urls.url,
+--   LENGTH(&amp;quot;https://github.com/&amp;quot;)
+--   + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+--   + 2
+-- ) as rest,
+
+-- Selects the repo:
+-- SUBSTR(SUBSTR(
+--   urls.url,
+--   LENGTH(&amp;quot;https://github.com/&amp;quot;)
+--   + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+--   + 2
+-- ), 0,
+-- INSTR(SUBSTR(
+--   urls.url,
+--   LENGTH(&amp;quot;https://github.com/&amp;quot;)
+--   + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+--   + 2
+-- ), &amp;quot;/&amp;quot;)) as repo
+
+SUBSTR(
+  urls.url,
+  LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,
+  LENGTH(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,
+    INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1
+  )) -- LENGTH(user)
+  + 1 -- + 1
+  + LENGTH(SUBSTR(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+    + 2
+  ), 0,
+  INSTR(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+    + 2
+  ), &amp;quot;/&amp;quot;)))
+  ) -- + LENGTH(repo)
+from urls
+where urls.url like &amp;quot;https://github.com/%&amp;quot;
+and LENGTH(SUBSTR(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+    + 2
+  ), 0,
+  INSTR(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+    + 2
+  ), &amp;quot;/&amp;quot;))) &amp;gt; 0  -- LENGTH(repo) &amp;gt; 0
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For most of the queries on this page, you should be able to easily modify them to suit your needs.
+I wouldn&#39;t try modifying this query, though. It would be much better to build a new query from scratch using using the same technique this one was built with, than to try to modify this one to perform another task, because it would be so easy to modify something in one place but subtly miss modifying it in another location in the query that needs to also be modified.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Tips for Effective OBS</title>
       <link>https://davidbieber.com/snippets/2020-04-11-tips-for-obs/</link>
       <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
@@ -113,7 +340,7 @@ I&#39;m in a remote meeting and we&#39;re having a discussion. By default I&#39;
       <guid>https://davidbieber.com/snippets/2020-03-19-browsing-history/</guid>
       <description>&lt;p&gt;In a &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history&#34;&gt;previous snippet&lt;/a&gt; I started looking into how to analyze my browser history. Revisiting that idea tonight, I began looking into whether I might be able to infer topics of interest from my browsing history.&lt;/p&gt;
 &lt;p&gt;Using my previous post as reference, I first made a copy of my browsing history:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cp ~/Library/Application\ Support/Google/Chrome/Default/History my-history
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Then, using sqlite3 (&lt;code&gt;sqlite3 ~/my-history&lt;/code&gt;) I began poking around.&lt;/p&gt;
 &lt;p&gt;This query allowed me to pull up all my YouTube video views:&lt;/p&gt;
@@ -131,7 +358,7 @@ where urls.url like &amp;quot;%www.google.com/search%&amp;quot;
 limit 50;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This one gave me my Wikipedia browsing history:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;select distinct(urls.title)
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select distinct urls.title 
 from visits
 join urls on urls.id == visits.url
 where urls.url like &amp;quot;%wikipedia.org/wiki/%&amp;quot;

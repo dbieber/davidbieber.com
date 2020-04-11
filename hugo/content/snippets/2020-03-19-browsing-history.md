@@ -8,7 +8,7 @@ In a [previous snippet](/snippets/2019-12-30-analyzing-my-browser-history) I sta
 Using my previous post as reference, I first made a copy of my browsing history:
 
 ```bash
-cp ~/Library/Application\ Support/Google/Chrome/Default/History my-history
+cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history
 ```
 
 Then, using sqlite3 (`sqlite3 ~/my-history`) I began poking around.
@@ -35,8 +35,8 @@ limit 50;
 
 This one gave me my Wikipedia browsing history:
 
-```
-select distinct(urls.title)
+```sql
+select distinct urls.title 
 from visits
 join urls on urls.id == visits.url
 where urls.url like "%wikipedia.org/wiki/%"
