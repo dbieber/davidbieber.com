@@ -281,3 +281,5 @@ limit 50;
 
 For most of the queries on this page, you should be able to easily modify them to suit your needs. 
 I wouldn't try modifying this query, though. It would be much better to build a new query from scratch using using the same technique this one was built with, than to try to modify this one to perform another task, because it would be so easy to modify something in one place but subtly miss modifying it in another location in the query that needs to also be modified.
+
+Update (April 12, 2020): I've now learned that you can introduce intermediate "variables" in your SQL queries, so I've simplified this query [here](/snippets/2020-04-12-simplifying-sql-with-with).
