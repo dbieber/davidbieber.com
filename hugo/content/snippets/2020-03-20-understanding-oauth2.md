@@ -3,13 +3,15 @@ title = "Understanding OAuth2"
 date = 2020-03-20T00:00:00
 +++
 
-OAuth2 is confusing. I've set it up several times before, and each time I encounter it it's a bit of a mental mess to wrap my mind around it again.
+[OAuth2](https://oauth.net/2/) is confusing. I've set it up several times before, and each time I encounter it it's a bit of a mental mess to wrap my mind around it again.
 
-So, this time, as I set up OAuth2 to let Bieber Bot interact with more Slack workspaces, I will write up my renewed understanding of OAuth2 in the hope that next time I have to set up OAuth2, it's a little easier.
+So, this time, as I set up OAuth2 to let [Bieber Bot](/projects/bieber-bot) interact with more Slack workspaces, I will write up my renewed understanding of OAuth2 in the hope that next time I have to set up OAuth2, it's a little easier.
+
+## Overview of the OAuth2 Flow
 
 How does the OAuth2 flow go? Like this:
 
-The user wants to add Bieber Bot to a Slack channel. So, they're on my website (davidbieber.com) and they click the _Add to Slack_ button. This takes them to Slack, with GET parameters that indicate they want to add Bieber Bot to some Slack workspace. The workspace id can be part of the URL of the Add to Slack button, but even if it's not, Slack will do the right thing and just ask the user to choose one of their workspaces. If the user isn't already logged in to Slack, they'll be prompted to do so at this point.
+The user wants to add Bieber Bot to a Slack channel. So, they're on my website ([davidbieber.com](https://davidbieber.com/)) and they click the _Add to Slack_ button. This takes them to Slack, with GET parameters that indicate they want to add Bieber Bot to some Slack workspace. The workspace id can be part of the URL of the Add to Slack button, but even if it's not, Slack will do the right thing and just ask the user to choose one of their workspaces. If the user isn't already logged in to Slack, they'll be prompted to do so at this point.
 
 After the user clicks the _Add to Slack_ button they are taken to Slack, where they are shown the list of OAuth2 scopes that Bieber Bot is requesting. If they approve giving Bieber Bot the permissions listed in the scopes, they are taken to a _redirect url_ that I, the developer of Bieber Bot, have specified. I have both pre-informed Slack of the redirect URLs I might use, and I have included a specific redirect URL in the link on the _Add to Slack_ button. When the user is redirected to this redirect url, two GET parameters are included. The first is a `code`, which my server can use to get an Access Token / Bearer Token. The second is a `state` which is something that I, the developer, can include on the original link from the _Add to Slack_ button in order to make sure the request I'm getting at the redirect URL is genuine.
 
