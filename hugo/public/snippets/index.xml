@@ -404,7 +404,7 @@ join urls as previous_urls on previous_urls.id == previous_visits.url
 where not (
      domain like &amp;quot;%goog%&amp;quot;
   or domain like &amp;quot;%t.co%&amp;quot;
-  or domain like &amp;quot;twitter.co&amp;quot;
+  or domain like &amp;quot;%twitter.co%&amp;quot;
   or domain like &amp;quot;%wikipedia%&amp;quot;
   or domain like &amp;quot;%youtube%&amp;quot;
   or domain like &amp;quot;%arxiv%&amp;quot;

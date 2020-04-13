@@ -653,7 +653,7 @@ join urls as previous_urls on previous_urls.id == previous_visits.url
 where not (
      domain like &quot;%goog%&quot;
   or domain like &quot;%t.co%&quot;
-  or domain like &quot;twitter.co&quot;
+  or domain like &quot;%twitter.co%&quot;
   or domain like &quot;%wikipedia%&quot;
   or domain like &quot;%youtube%&quot;
   or domain like &quot;%arxiv%&quot;
