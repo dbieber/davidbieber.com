@@ -13,6 +13,262 @@
     </image>
     
     <item>
+      <title>Simplifying SQL Queries with &#34;WITH&#34;</title>
+      <link>https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/</link>
+      <pubDate>Sun, 12 Apr 2020 01:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/</guid>
+      <description>&lt;p&gt;In the &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;&amp;ldquo;More Browser History Queries&amp;rdquo; snippet&lt;/a&gt; one of the SQL queries I wrote was particularly nasty.&lt;/p&gt;
+&lt;p&gt;Since I didn&#39;t know how to introduce intermediate variables, I had to replicate subqueries multiple times throughout the query. The result was a mess of a query. Using &lt;code&gt;WITH&lt;/code&gt; clauses, the query becomes considerably more readable and maintainable.&lt;/p&gt;
+&lt;h2 id=&#34;cleaned-up-query&#34;&gt;Cleaned up Query&lt;/h2&gt;
+&lt;p&gt;Here&#39;s the cleaned up query. It selects all the GitHub repos you&#39;ve visited from your browser history. To run it, first copy your browser history and open it in sqlite:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history
+sqlite3 ~/my-history
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then, you can run this cleaned up query to see all the GitHub repos that you&#39;ve visited.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;WITH
+data1 as (select LENGTH(&amp;quot;https://github.com/&amp;quot;) as len, * from urls),
+data2 as (select SUBSTR(
+  url,
+  len + 1,
+  INSTR(SUBSTR(url, len + 1), &amp;quot;/&amp;quot;) - 1
+) as user, * from data1),
+data3 as (select SUBSTR(url, len + LENGTH(user) + 2) as rest, * from data2),
+data4 as (select SUBSTR(rest, 0, INSTR(rest, &amp;quot;/&amp;quot;)) as repo, * from data3)
+
+select DISTINCT
+SUBSTR(url, len + 1, LENGTH(user) + 1 + LENGTH(repo)) as user_repo
+from data4
+where url like &amp;quot;https://github.com/%&amp;quot;
+and LENGTH(repo) &amp;gt; 0
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;the-original-query&#34;&gt;The Original Query&lt;/h2&gt;
+&lt;p&gt;Here is the original query, with all its messy replicated subqueries, to emphasize just how much using &lt;code&gt;WITH&lt;/code&gt; allowed me to clean this up.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT
+
+-- Selects the user:
+-- SUBSTR(
+--   urls.url,
+--   LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,
+--   INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1
+-- ) as user,
+
+-- Selects everything after the user:
+-- SUBSTR(
+--   urls.url,
+--   LENGTH(&amp;quot;https://github.com/&amp;quot;)
+--   + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+--   + 2
+-- ) as rest,
+
+-- Selects the repo:
+-- SUBSTR(SUBSTR(
+--   urls.url,
+--   LENGTH(&amp;quot;https://github.com/&amp;quot;)
+--   + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+--   + 2
+-- ), 0,
+-- INSTR(SUBSTR(
+--   urls.url,
+--   LENGTH(&amp;quot;https://github.com/&amp;quot;)
+--   + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+--   + 2
+-- ), &amp;quot;/&amp;quot;)) as repo
+
+SUBSTR(
+  urls.url,
+  LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,
+  LENGTH(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,
+    INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1
+  )) -- LENGTH(user)
+  + 1 -- + 1
+  + LENGTH(SUBSTR(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+    + 2
+  ), 0,
+  INSTR(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+    + 2
+  ), &amp;quot;/&amp;quot;)))
+  ) -- + LENGTH(repo)
+from urls
+where urls.url like &amp;quot;https://github.com/%&amp;quot;
+and LENGTH(SUBSTR(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+    + 2
+  ), 0,
+  INSTR(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+    + 2
+  ), &amp;quot;/&amp;quot;))) &amp;gt; 0  -- LENGTH(repo) &amp;gt; 0
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The two queries should produce the same results.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Facebook Messenger SQL Queries</title>
+      <link>https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/</link>
+      <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/</guid>
+      <description>&lt;p&gt;Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries&#34;&gt;previous snippet&lt;/a&gt; for analyzing my browsing history, I&#39;ll use this snippet to sketch out some useful queries for analyzing my message history.&lt;/p&gt;
+&lt;h2 id=&#34;table-schemas&#34;&gt;Table Schemas&lt;/h2&gt;
+&lt;p&gt;I have two tables of messages. &lt;code&gt;messenger_archive&lt;/code&gt; contains all messages from when I first joined Facebook in August 2008 through February 2020. &lt;code&gt;messenger&lt;/code&gt; contains messages from February 2020 through now, and is updated in real time.&lt;/p&gt;
+&lt;p&gt;Using the commands &lt;code&gt;\d messenger&lt;/code&gt; and &lt;code&gt;\d messenger_archive&lt;/code&gt;, I inspect the table schemas.&lt;/p&gt;
+&lt;h3 id=&#34;schema-messenger&#34;&gt;Schema: messenger&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;The message content&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;uid&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;A unique message id&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;author&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;The &lt;em&gt;fbid&lt;/em&gt; of the message author&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;timestamp&lt;/td&gt;
+&lt;td&gt;number&lt;/td&gt;
+&lt;td&gt;The timestamp in milliseconds&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;forwarded&lt;/td&gt;
+&lt;td&gt;boolean&lt;/td&gt;
+&lt;td&gt;Whether the message is a forwarded message&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;thread_id&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;A unique thread id&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;thread_type&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;GROUP or USER, indicating the thread type&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;schema-messenger-archive&#34;&gt;Schema: messenger_archive&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;sender_name&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;The message author&#39;s name&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;timestamp_ms&lt;/td&gt;
+&lt;td&gt;number&lt;/td&gt;
+&lt;td&gt;The timestamp in milliseconds&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;The message content&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;type&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;One of: Payment, Call, Share, Generic, Unsubscribe, or Subscribe&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;title&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;The thread title, often the name of the other participant&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;is_still_participant&lt;/td&gt;
+&lt;td&gt;boolean&lt;/td&gt;
+&lt;td&gt;Whether I was still in the conversation at the time of the archive (Feb 2020)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;thread_type&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;One of: RegularGroup, Regular&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;thread_path&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;A unique identifier for the thread&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;schema-caveats&#34;&gt;Schema Caveats&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;messenger_archive.thread_path&lt;/code&gt; is not the same as the &lt;code&gt;messenger.thread_id&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;messenger.author&lt;/code&gt; is an integer id, whereas the &lt;code&gt;messenger_archive.sender_name&lt;/code&gt; is a string name.&lt;/li&gt;
+&lt;li&gt;There may be a few overlapping messages between the two tables (?), and there may be a few messages not captured in either table.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;message-queries&#34;&gt;Message Queries&lt;/h2&gt;
+&lt;p&gt;Let&#39;s start sketching some useful queries.&lt;/p&gt;
+&lt;h3 id=&#34;finding-links&#34;&gt;Finding Links&lt;/h3&gt;
+&lt;p&gt;Listing domains from the archive:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select distinct
+substring(content from &#39;.*://([^/]*)&#39;) as domain
+from messenger_archive
+limit 1000;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Counting unique domains:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select count(*) from (select distinct
+substring(content from &#39;.*://([^/]*)&#39;) as domain
+from messenger_archive) domains;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Listing links from the archive:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select distinct
+substring(content from &#39;([a-z]*://[^/\s]*[a-zA-Z/]*)&#39;) as domain
+from messenger_archive
+limit 1000;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Counting unique links:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select count(*) from (select distinct
+substring(content from &#39;([a-z]*://[^/\s]*[a-zA-Z/]*)&#39;) as domain
+from messenger_archive) foo;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;email-addresses&#34;&gt;Email Addresses&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select distinct
+substring(content from &#39;([a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+)&#39;) as email
+from messenger_archive
+limit 100;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;looking-forward&#34;&gt;Looking Forward&lt;/h3&gt;
+&lt;p&gt;I have a number of additional queries I&#39;d like to write.
+However, they will have to wait until a future snippet.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>More Browser History Queries</title>
       <link>https://davidbieber.com/snippets/2020-04-11-browser-history-queries/</link>
       <pubDate>Sat, 11 Apr 2020 01:00:00 +0000</pubDate>
@@ -236,6 +492,7 @@ limit 50;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;For most of the queries on this page, you should be able to easily modify them to suit your needs.
 I wouldn&#39;t try modifying this query, though. It would be much better to build a new query from scratch using using the same technique this one was built with, than to try to modify this one to perform another task, because it would be so easy to modify something in one place but subtly miss modifying it in another location in the query that needs to also be modified.&lt;/p&gt;
+&lt;p&gt;Update (April 12, 2020): I&#39;ve now learned that you can introduce intermediate &amp;ldquo;variables&amp;rdquo; in your SQL queries, so I&#39;ve simplified this query &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -297,10 +554,11 @@ I&#39;m in a remote meeting and we&#39;re having a discussion. By default I&#39;
       <link>https://davidbieber.com/snippets/2020-03-20-understanding-oauth2/</link>
       <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-03-20-understanding-oauth2/</guid>
-      <description>&lt;p&gt;OAuth2 is confusing. I&#39;ve set it up several times before, and each time I encounter it it&#39;s a bit of a mental mess to wrap my mind around it again.&lt;/p&gt;
-&lt;p&gt;So, this time, as I set up OAuth2 to let Bieber Bot interact with more Slack workspaces, I will write up my renewed understanding of OAuth2 in the hope that next time I have to set up OAuth2, it&#39;s a little easier.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://oauth.net/2/&#34;&gt;OAuth2&lt;/a&gt; is confusing. I&#39;ve set it up several times before, and each time I encounter it it&#39;s a bit of a mental mess to wrap my mind around it again.&lt;/p&gt;
+&lt;p&gt;So, this time, as I set up OAuth2 to let &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; interact with more Slack workspaces, I will write up my renewed understanding of OAuth2 in the hope that next time I have to set up OAuth2, it&#39;s a little easier.&lt;/p&gt;
+&lt;h2 id=&#34;overview-of-the-oauth2-flow&#34;&gt;Overview of the OAuth2 Flow&lt;/h2&gt;
 &lt;p&gt;How does the OAuth2 flow go? Like this:&lt;/p&gt;
-&lt;p&gt;The user wants to add Bieber Bot to a Slack channel. So, they&#39;re on my website (davidbieber.com) and they click the &lt;em&gt;Add to Slack&lt;/em&gt; button. This takes them to Slack, with GET parameters that indicate they want to add Bieber Bot to some Slack workspace. The workspace id can be part of the URL of the Add to Slack button, but even if it&#39;s not, Slack will do the right thing and just ask the user to choose one of their workspaces. If the user isn&#39;t already logged in to Slack, they&#39;ll be prompted to do so at this point.&lt;/p&gt;
+&lt;p&gt;The user wants to add Bieber Bot to a Slack channel. So, they&#39;re on my website (&lt;a href=&#34;https://davidbieber.com/&#34;&gt;davidbieber.com&lt;/a&gt;) and they click the &lt;em&gt;Add to Slack&lt;/em&gt; button. This takes them to Slack, with GET parameters that indicate they want to add Bieber Bot to some Slack workspace. The workspace id can be part of the URL of the Add to Slack button, but even if it&#39;s not, Slack will do the right thing and just ask the user to choose one of their workspaces. If the user isn&#39;t already logged in to Slack, they&#39;ll be prompted to do so at this point.&lt;/p&gt;
 &lt;p&gt;After the user clicks the &lt;em&gt;Add to Slack&lt;/em&gt; button they are taken to Slack, where they are shown the list of OAuth2 scopes that Bieber Bot is requesting. If they approve giving Bieber Bot the permissions listed in the scopes, they are taken to a &lt;em&gt;redirect url&lt;/em&gt; that I, the developer of Bieber Bot, have specified. I have both pre-informed Slack of the redirect URLs I might use, and I have included a specific redirect URL in the link on the &lt;em&gt;Add to Slack&lt;/em&gt; button. When the user is redirected to this redirect url, two GET parameters are included. The first is a &lt;code&gt;code&lt;/code&gt;, which my server can use to get an Access Token / Bearer Token. The second is a &lt;code&gt;state&lt;/code&gt; which is something that I, the developer, can include on the original link from the &lt;em&gt;Add to Slack&lt;/em&gt; button in order to make sure the request I&#39;m getting at the redirect URL is genuine.&lt;/p&gt;
 &lt;p&gt;When the redirect URL is accessed with a &lt;code&gt;code&lt;/code&gt; GET parameter, it then turns around and uses that &lt;code&gt;code&lt;/code&gt; to request an Access Token from Slack. Once it has that Access Token, it tucks it away. It can use that access token in order to perform any of the permissions granted by the user during the access flow.&lt;/p&gt;
 &lt;p&gt;Usually using the Access Token takes the form of issuing post requests to Slack with the Access Token as a parameter.&lt;/p&gt;

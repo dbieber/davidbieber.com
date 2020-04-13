@@ -28,11 +28,12 @@
   
     
   
-  <meta name="description" content="OAuth2 is confusing. I&#39;ve set it up several times before, and each time I encounter it it&#39;s a bit of a mental mess to wrap my mind around it again.
-So, this time, as I set up OAuth2 to let Bieber Bot interact with more Slack workspaces, I will write up my renewed understanding of OAuth2 in the hope that next time I have to set up OAuth2, it&#39;s a little easier.">
+  <meta name="description" content="In the &ldquo;More Browser History Queries&rdquo; snippet one of the SQL queries I wrote was particularly nasty.
+Since I didn&#39;t know how to introduce intermediate variables, I had to replicate subqueries multiple times throughout the query. The result was a mess of a query. Using WITH clauses, the query becomes considerably more readable and maintainable.
+Cleaned up Query Here&#39;s the cleaned up query. It selects all the GitHub repos you&#39;ve visited from your browser history.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-03-20-understanding-oauth2/">
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/">
 
   
 
@@ -250,7 +251,7 @@ So, this time, as I set up OAuth2 to let Bieber Bot interact with more Slack wor
   <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
 
-  <link rel="canonical" href="https://davidbieber.com/snippets/2020-03-20-understanding-oauth2/">
+  <link rel="canonical" href="https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/">
 
   
   
@@ -267,16 +268,17 @@ So, this time, as I set up OAuth2 to let Bieber Bot interact with more Slack wor
   <meta property="twitter:creator" content="@Bieber">
   
   <meta property="og:site_name" content="David Bieber">
-  <meta property="og:url" content="https://davidbieber.com/snippets/2020-03-20-understanding-oauth2/">
-  <meta property="og:title" content="Understanding OAuth2 | David Bieber">
-  <meta property="og:description" content="OAuth2 is confusing. I&#39;ve set it up several times before, and each time I encounter it it&#39;s a bit of a mental mess to wrap my mind around it again.
-So, this time, as I set up OAuth2 to let Bieber Bot interact with more Slack workspaces, I will write up my renewed understanding of OAuth2 in the hope that next time I have to set up OAuth2, it&#39;s a little easier."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/">
+  <meta property="og:title" content="Simplifying SQL Queries with &#34;WITH&#34; | David Bieber">
+  <meta property="og:description" content="In the &ldquo;More Browser History Queries&rdquo; snippet one of the SQL queries I wrote was particularly nasty.
+Since I didn&#39;t know how to introduce intermediate variables, I had to replicate subqueries multiple times throughout the query. The result was a mess of a query. Using WITH clauses, the query becomes considerably more readable and maintainable.
+Cleaned up Query Here&#39;s the cleaned up query. It selects all the GitHub repos you&#39;ve visited from your browser history."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-03-20T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-04-12T01:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-03-20T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2020-04-12T01:00:00&#43;00:00">
   
 
   
@@ -295,7 +297,7 @@ So, this time, as I set up OAuth2 to let Bieber Bot interact with more Slack wor
 
 
 
-  <title>Understanding OAuth2 | David Bieber</title>
+  <title>Simplifying SQL Queries with &#34;WITH&#34; | David Bieber</title>
 
 </head>
 
@@ -474,7 +476,7 @@ So, this time, as I set up OAuth2 to let Bieber Bot interact with more Slack wor
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Understanding OAuth2</h1>
+  <h1 itemprop="name">Simplifying SQL Queries with &#34;WITH&#34;</h1>
 
   
 
@@ -518,40 +520,103 @@ So, this time, as I set up OAuth2 to let Bieber Bot interact with more Slack wor
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p><a href="https://oauth.net/2/">OAuth2</a> is confusing. I've set it up several times before, and each time I encounter it it's a bit of a mental mess to wrap my mind around it again.</p>
-<p>So, this time, as I set up OAuth2 to let <a href="/projects/bieber-bot">Bieber Bot</a> interact with more Slack workspaces, I will write up my renewed understanding of OAuth2 in the hope that next time I have to set up OAuth2, it's a little easier.</p>
-<h2 id="overview-of-the-oauth2-flow">Overview of the OAuth2 Flow</h2>
-<p>How does the OAuth2 flow go? Like this:</p>
-<p>The user wants to add Bieber Bot to a Slack channel. So, they're on my website (<a href="https://davidbieber.com/">davidbieber.com</a>) and they click the <em>Add to Slack</em> button. This takes them to Slack, with GET parameters that indicate they want to add Bieber Bot to some Slack workspace. The workspace id can be part of the URL of the Add to Slack button, but even if it's not, Slack will do the right thing and just ask the user to choose one of their workspaces. If the user isn't already logged in to Slack, they'll be prompted to do so at this point.</p>
-<p>After the user clicks the <em>Add to Slack</em> button they are taken to Slack, where they are shown the list of OAuth2 scopes that Bieber Bot is requesting. If they approve giving Bieber Bot the permissions listed in the scopes, they are taken to a <em>redirect url</em> that I, the developer of Bieber Bot, have specified. I have both pre-informed Slack of the redirect URLs I might use, and I have included a specific redirect URL in the link on the <em>Add to Slack</em> button. When the user is redirected to this redirect url, two GET parameters are included. The first is a <code>code</code>, which my server can use to get an Access Token / Bearer Token. The second is a <code>state</code> which is something that I, the developer, can include on the original link from the <em>Add to Slack</em> button in order to make sure the request I'm getting at the redirect URL is genuine.</p>
-<p>When the redirect URL is accessed with a <code>code</code> GET parameter, it then turns around and uses that <code>code</code> to request an Access Token from Slack. Once it has that Access Token, it tucks it away. It can use that access token in order to perform any of the permissions granted by the user during the access flow.</p>
-<p>Usually using the Access Token takes the form of issuing post requests to Slack with the Access Token as a parameter.</p>
-<p>The user can revoke access to Bieber Bot at any time. Once they do so, the Access Token becomes invalid. If Bieber Bot tries to use the Access Token at that point, it will get an error. The user will have to give Bieber Bot permissions again, and it will get a new access token, in order for it to continue providing its services and companionship.</p>
-<h2 id="summary-of-the-the-important-bits">Summary of the the Important Bits</h2>
-<ol>
-<li>User navigates from website to service (e.g. via <em>Add to Slack</em> button).</li>
-<li>Service shows user permissions dialog.</li>
-<li>Upon accepting permissions, service redirects user back to website's redirect URL with <code>code</code></li>
-<li>Website uses <code>code</code> to get Access Token</li>
-<li>Website uses Access Token to do the stuff allowed by the permissions granted by the user</li>
-</ol>
-<h2 id="summary-of-the-less-important-bits">Summary of the Less Important Bits</h2>
-<ol>
-<li>
-<p>The <em>Add to Slack</em> button should include GET parameters for: a) <code>state</code> so the redirect url knows the request is genuine, b) <code>redirect_url</code> so Slack knows where to send the user after they accept the permissons, c) <code>scope</code> indicating the permissions being requested, d) <code>client_id</code> indicating the app (e.g. Bieber Bot) that you're adding to Slack.</p>
-</li>
-<li>
-<p>The permissions that the App can request are set up by the App ahead of time. So I think the <code>scope</code> parameter is there if you only need to request a subset of that permissions for a particular user.</p>
-</li>
-<li>
-<p>The full list of possible redirect URLs should be set up ahead of time. Then when you generate the <em>Add to Slack</em> button, you just choose a particular redirect URL that Slack should redirect the user to after they accept the permissions. Why would you want more than one redirect URL? Well, one might be for staging, one for production, and one for local development.</p>
-</li>
-<li>
-<p>The redirect URL receives both the <code>code</code> and <code>state</code> GET parameters. The website creating the <em>Add to Slack</em> button decides on the state. It can then check that the state is there in the redirect URL. This prevents users from going directly to Slack without going through the website, because if they try to do that, they won't have the state and will fail the check at the redirect URL. This is useful if you want to restrict installs for your App to specific customers, e.g. those who've solved a puzzle, or paid.</p>
-</li>
-</ol>
-<h2 id="what-is-this">What is this?</h2>
-<p>This certainly isn't meant to be an OAuth2 guide at all. By writing this out, I think I've helped myself understand the OAuth2 flow better though. That's really what snippets are all about.</p>
+      <p>In the <a href="/snippets/2020-04-11-browser-history-queries/">&ldquo;More Browser History Queries&rdquo; snippet</a> one of the SQL queries I wrote was particularly nasty.</p>
+<p>Since I didn't know how to introduce intermediate variables, I had to replicate subqueries multiple times throughout the query. The result was a mess of a query. Using <code>WITH</code> clauses, the query becomes considerably more readable and maintainable.</p>
+<h2 id="cleaned-up-query">Cleaned up Query</h2>
+<p>Here's the cleaned up query. It selects all the GitHub repos you've visited from your browser history. To run it, first copy your browser history and open it in sqlite:</p>
+<pre><code class="language-bash">cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history
+sqlite3 ~/my-history
+</code></pre>
+<p>Then, you can run this cleaned up query to see all the GitHub repos that you've visited.</p>
+<pre><code class="language-sql">WITH
+data1 as (select LENGTH(&quot;https://github.com/&quot;) as len, * from urls),
+data2 as (select SUBSTR(
+  url,
+  len + 1,
+  INSTR(SUBSTR(url, len + 1), &quot;/&quot;) - 1
+) as user, * from data1),
+data3 as (select SUBSTR(url, len + LENGTH(user) + 2) as rest, * from data2),
+data4 as (select SUBSTR(rest, 0, INSTR(rest, &quot;/&quot;)) as repo, * from data3)
+
+select DISTINCT
+SUBSTR(url, len + 1, LENGTH(user) + 1 + LENGTH(repo)) as user_repo
+from data4
+where url like &quot;https://github.com/%&quot;
+and LENGTH(repo) &gt; 0
+limit 50;
+</code></pre>
+<h2 id="the-original-query">The Original Query</h2>
+<p>Here is the original query, with all its messy replicated subqueries, to emphasize just how much using <code>WITH</code> allowed me to clean this up.</p>
+<pre><code class="language-sql">select DISTINCT
+
+-- Selects the user:
+-- SUBSTR(
+--   urls.url,
+--   LENGTH(&quot;https://github.com/&quot;) + 1,
+--   INSTR(SUBSTR(urls.url, LENGTH(&quot;https://github.com/&quot;) + 1), &quot;/&quot;) - 1
+-- ) as user,
+
+-- Selects everything after the user:
+-- SUBSTR(
+--   urls.url,
+--   LENGTH(&quot;https://github.com/&quot;)
+--   + LENGTH(SUBSTR(urls.url,LENGTH(&quot;https://github.com/&quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&quot;https://github.com/&quot;) + 1), &quot;/&quot;) - 1)) -- length(user)
+--   + 2
+-- ) as rest,
+
+-- Selects the repo:
+-- SUBSTR(SUBSTR(
+--   urls.url,
+--   LENGTH(&quot;https://github.com/&quot;)
+--   + LENGTH(SUBSTR(urls.url,LENGTH(&quot;https://github.com/&quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&quot;https://github.com/&quot;) + 1), &quot;/&quot;) - 1)) -- length(user)
+--   + 2
+-- ), 0,
+-- INSTR(SUBSTR(
+--   urls.url,
+--   LENGTH(&quot;https://github.com/&quot;)
+--   + LENGTH(SUBSTR(urls.url,LENGTH(&quot;https://github.com/&quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&quot;https://github.com/&quot;) + 1), &quot;/&quot;) - 1)) -- length(user)
+--   + 2
+-- ), &quot;/&quot;)) as repo
+
+SUBSTR(
+  urls.url,
+  LENGTH(&quot;https://github.com/&quot;) + 1,
+  LENGTH(SUBSTR(
+    urls.url,
+    LENGTH(&quot;https://github.com/&quot;) + 1,
+    INSTR(SUBSTR(urls.url, LENGTH(&quot;https://github.com/&quot;) + 1), &quot;/&quot;) - 1
+  )) -- LENGTH(user)
+  + 1 -- + 1
+  + LENGTH(SUBSTR(SUBSTR(
+    urls.url,
+    LENGTH(&quot;https://github.com/&quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&quot;https://github.com/&quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&quot;https://github.com/&quot;) + 1), &quot;/&quot;) - 1)) -- length(user)
+    + 2
+  ), 0,
+  INSTR(SUBSTR(
+    urls.url,
+    LENGTH(&quot;https://github.com/&quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&quot;https://github.com/&quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&quot;https://github.com/&quot;) + 1), &quot;/&quot;) - 1)) -- length(user)
+    + 2
+  ), &quot;/&quot;)))
+  ) -- + LENGTH(repo)
+from urls
+where urls.url like &quot;https://github.com/%&quot;
+and LENGTH(SUBSTR(SUBSTR(
+    urls.url,
+    LENGTH(&quot;https://github.com/&quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&quot;https://github.com/&quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&quot;https://github.com/&quot;) + 1), &quot;/&quot;) - 1)) -- length(user)
+    + 2
+  ), 0,
+  INSTR(SUBSTR(
+    urls.url,
+    LENGTH(&quot;https://github.com/&quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&quot;https://github.com/&quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&quot;https://github.com/&quot;) + 1), &quot;/&quot;) - 1)) -- length(user)
+    + 2
+  ), &quot;/&quot;))) &gt; 0  -- LENGTH(repo) &gt; 0
+limit 50;
+</code></pre>
+<p>The two queries should produce the same results.</p>
 
     </div>
 

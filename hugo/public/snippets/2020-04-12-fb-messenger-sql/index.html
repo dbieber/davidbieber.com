@@ -28,11 +28,11 @@
   
     
   
-  <meta name="description" content="OAuth2 is confusing. I&#39;ve set it up several times before, and each time I encounter it it&#39;s a bit of a mental mess to wrap my mind around it again.
-So, this time, as I set up OAuth2 to let Bieber Bot interact with more Slack workspaces, I will write up my renewed understanding of OAuth2 in the hope that next time I have to set up OAuth2, it&#39;s a little easier.">
+  <meta name="description" content="Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a previous snippet for analyzing my browsing history, I&#39;ll use this snippet to sketch out some useful queries for analyzing my message history.
+Table Schemas I have two tables of messages. messenger_archive contains all messages from when I first joined Facebook in August 2008 through February 2020.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-03-20-understanding-oauth2/">
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/">
 
   
 
@@ -250,7 +250,7 @@ So, this time, as I set up OAuth2 to let Bieber Bot interact with more Slack wor
   <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
 
-  <link rel="canonical" href="https://davidbieber.com/snippets/2020-03-20-understanding-oauth2/">
+  <link rel="canonical" href="https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/">
 
   
   
@@ -267,16 +267,16 @@ So, this time, as I set up OAuth2 to let Bieber Bot interact with more Slack wor
   <meta property="twitter:creator" content="@Bieber">
   
   <meta property="og:site_name" content="David Bieber">
-  <meta property="og:url" content="https://davidbieber.com/snippets/2020-03-20-understanding-oauth2/">
-  <meta property="og:title" content="Understanding OAuth2 | David Bieber">
-  <meta property="og:description" content="OAuth2 is confusing. I&#39;ve set it up several times before, and each time I encounter it it&#39;s a bit of a mental mess to wrap my mind around it again.
-So, this time, as I set up OAuth2 to let Bieber Bot interact with more Slack workspaces, I will write up my renewed understanding of OAuth2 in the hope that next time I have to set up OAuth2, it&#39;s a little easier."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/">
+  <meta property="og:title" content="Facebook Messenger SQL Queries | David Bieber">
+  <meta property="og:description" content="Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a previous snippet for analyzing my browsing history, I&#39;ll use this snippet to sketch out some useful queries for analyzing my message history.
+Table Schemas I have two tables of messages. messenger_archive contains all messages from when I first joined Facebook in August 2008 through February 2020."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-03-20T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-04-12T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-03-20T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2020-04-12T00:00:00&#43;00:00">
   
 
   
@@ -295,7 +295,7 @@ So, this time, as I set up OAuth2 to let Bieber Bot interact with more Slack wor
 
 
 
-  <title>Understanding OAuth2 | David Bieber</title>
+  <title>Facebook Messenger SQL Queries | David Bieber</title>
 
 </head>
 
@@ -474,7 +474,7 @@ So, this time, as I set up OAuth2 to let Bieber Bot interact with more Slack wor
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Understanding OAuth2</h1>
+  <h1 itemprop="name">Facebook Messenger SQL Queries</h1>
 
   
 
@@ -518,40 +518,149 @@ So, this time, as I set up OAuth2 to let Bieber Bot interact with more Slack wor
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p><a href="https://oauth.net/2/">OAuth2</a> is confusing. I've set it up several times before, and each time I encounter it it's a bit of a mental mess to wrap my mind around it again.</p>
-<p>So, this time, as I set up OAuth2 to let <a href="/projects/bieber-bot">Bieber Bot</a> interact with more Slack workspaces, I will write up my renewed understanding of OAuth2 in the hope that next time I have to set up OAuth2, it's a little easier.</p>
-<h2 id="overview-of-the-oauth2-flow">Overview of the OAuth2 Flow</h2>
-<p>How does the OAuth2 flow go? Like this:</p>
-<p>The user wants to add Bieber Bot to a Slack channel. So, they're on my website (<a href="https://davidbieber.com/">davidbieber.com</a>) and they click the <em>Add to Slack</em> button. This takes them to Slack, with GET parameters that indicate they want to add Bieber Bot to some Slack workspace. The workspace id can be part of the URL of the Add to Slack button, but even if it's not, Slack will do the right thing and just ask the user to choose one of their workspaces. If the user isn't already logged in to Slack, they'll be prompted to do so at this point.</p>
-<p>After the user clicks the <em>Add to Slack</em> button they are taken to Slack, where they are shown the list of OAuth2 scopes that Bieber Bot is requesting. If they approve giving Bieber Bot the permissions listed in the scopes, they are taken to a <em>redirect url</em> that I, the developer of Bieber Bot, have specified. I have both pre-informed Slack of the redirect URLs I might use, and I have included a specific redirect URL in the link on the <em>Add to Slack</em> button. When the user is redirected to this redirect url, two GET parameters are included. The first is a <code>code</code>, which my server can use to get an Access Token / Bearer Token. The second is a <code>state</code> which is something that I, the developer, can include on the original link from the <em>Add to Slack</em> button in order to make sure the request I'm getting at the redirect URL is genuine.</p>
-<p>When the redirect URL is accessed with a <code>code</code> GET parameter, it then turns around and uses that <code>code</code> to request an Access Token from Slack. Once it has that Access Token, it tucks it away. It can use that access token in order to perform any of the permissions granted by the user during the access flow.</p>
-<p>Usually using the Access Token takes the form of issuing post requests to Slack with the Access Token as a parameter.</p>
-<p>The user can revoke access to Bieber Bot at any time. Once they do so, the Access Token becomes invalid. If Bieber Bot tries to use the Access Token at that point, it will get an error. The user will have to give Bieber Bot permissions again, and it will get a new access token, in order for it to continue providing its services and companionship.</p>
-<h2 id="summary-of-the-the-important-bits">Summary of the the Important Bits</h2>
-<ol>
-<li>User navigates from website to service (e.g. via <em>Add to Slack</em> button).</li>
-<li>Service shows user permissions dialog.</li>
-<li>Upon accepting permissions, service redirects user back to website's redirect URL with <code>code</code></li>
-<li>Website uses <code>code</code> to get Access Token</li>
-<li>Website uses Access Token to do the stuff allowed by the permissions granted by the user</li>
-</ol>
-<h2 id="summary-of-the-less-important-bits">Summary of the Less Important Bits</h2>
-<ol>
-<li>
-<p>The <em>Add to Slack</em> button should include GET parameters for: a) <code>state</code> so the redirect url knows the request is genuine, b) <code>redirect_url</code> so Slack knows where to send the user after they accept the permissons, c) <code>scope</code> indicating the permissions being requested, d) <code>client_id</code> indicating the app (e.g. Bieber Bot) that you're adding to Slack.</p>
-</li>
-<li>
-<p>The permissions that the App can request are set up by the App ahead of time. So I think the <code>scope</code> parameter is there if you only need to request a subset of that permissions for a particular user.</p>
-</li>
-<li>
-<p>The full list of possible redirect URLs should be set up ahead of time. Then when you generate the <em>Add to Slack</em> button, you just choose a particular redirect URL that Slack should redirect the user to after they accept the permissions. Why would you want more than one redirect URL? Well, one might be for staging, one for production, and one for local development.</p>
-</li>
-<li>
-<p>The redirect URL receives both the <code>code</code> and <code>state</code> GET parameters. The website creating the <em>Add to Slack</em> button decides on the state. It can then check that the state is there in the redirect URL. This prevents users from going directly to Slack without going through the website, because if they try to do that, they won't have the state and will fail the check at the redirect URL. This is useful if you want to restrict installs for your App to specific customers, e.g. those who've solved a puzzle, or paid.</p>
-</li>
-</ol>
-<h2 id="what-is-this">What is this?</h2>
-<p>This certainly isn't meant to be an OAuth2 guide at all. By writing this out, I think I've helped myself understand the OAuth2 flow better though. That's really what snippets are all about.</p>
+      <p>Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a <a href="/snippets/2020-04-11-browser-history-queries">previous snippet</a> for analyzing my browsing history, I'll use this snippet to sketch out some useful queries for analyzing my message history.</p>
+<h2 id="table-schemas">Table Schemas</h2>
+<p>I have two tables of messages. <code>messenger_archive</code> contains all messages from when I first joined Facebook in August 2008 through February 2020. <code>messenger</code> contains messages from February 2020 through now, and is updated in real time.</p>
+<p>Using the commands <code>\d messenger</code> and <code>\d messenger_archive</code>, I inspect the table schemas.</p>
+<h3 id="schema-messenger">Schema: messenger</h3>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td>text</td>
+<td>The message content</td>
+</tr>
+<tr>
+<td>uid</td>
+<td>text</td>
+<td>A unique message id</td>
+</tr>
+<tr>
+<td>author</td>
+<td>text</td>
+<td>The <em>fbid</em> of the message author</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>number</td>
+<td>The timestamp in milliseconds</td>
+</tr>
+<tr>
+<td>forwarded</td>
+<td>boolean</td>
+<td>Whether the message is a forwarded message</td>
+</tr>
+<tr>
+<td>thread_id</td>
+<td>text</td>
+<td>A unique thread id</td>
+</tr>
+<tr>
+<td>thread_type</td>
+<td>text</td>
+<td>GROUP or USER, indicating the thread type</td>
+</tr>
+</tbody>
+</table>
+<h3 id="schema-messenger-archive">Schema: messenger_archive</h3>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sender_name</td>
+<td>text</td>
+<td>The message author's name</td>
+</tr>
+<tr>
+<td>timestamp_ms</td>
+<td>number</td>
+<td>The timestamp in milliseconds</td>
+</tr>
+<tr>
+<td>content</td>
+<td>text</td>
+<td>The message content</td>
+</tr>
+<tr>
+<td>type</td>
+<td>text</td>
+<td>One of: Payment, Call, Share, Generic, Unsubscribe, or Subscribe</td>
+</tr>
+<tr>
+<td>title</td>
+<td>text</td>
+<td>The thread title, often the name of the other participant</td>
+</tr>
+<tr>
+<td>is_still_participant</td>
+<td>boolean</td>
+<td>Whether I was still in the conversation at the time of the archive (Feb 2020)</td>
+</tr>
+<tr>
+<td>thread_type</td>
+<td>text</td>
+<td>One of: RegularGroup, Regular</td>
+</tr>
+<tr>
+<td>thread_path</td>
+<td>text</td>
+<td>A unique identifier for the thread</td>
+</tr>
+</tbody>
+</table>
+<h3 id="schema-caveats">Schema Caveats</h3>
+<ul>
+<li>The <code>messenger_archive.thread_path</code> is not the same as the <code>messenger.thread_id</code>.</li>
+<li>The <code>messenger.author</code> is an integer id, whereas the <code>messenger_archive.sender_name</code> is a string name.</li>
+<li>There may be a few overlapping messages between the two tables (?), and there may be a few messages not captured in either table.</li>
+</ul>
+<h2 id="message-queries">Message Queries</h2>
+<p>Let's start sketching some useful queries.</p>
+<h3 id="finding-links">Finding Links</h3>
+<p>Listing domains from the archive:</p>
+<pre><code class="language-sql">select distinct
+substring(content from '.*://([^/]*)') as domain
+from messenger_archive
+limit 1000;
+</code></pre>
+<p>Counting unique domains:</p>
+<pre><code class="language-sql">select count(*) from (select distinct
+substring(content from '.*://([^/]*)') as domain
+from messenger_archive) domains;
+</code></pre>
+<p>Listing links from the archive:</p>
+<pre><code class="language-sql">select distinct
+substring(content from '([a-z]*://[^/\s]*[a-zA-Z/]*)') as domain
+from messenger_archive
+limit 1000;
+</code></pre>
+<p>Counting unique links:</p>
+<pre><code class="language-sql">select count(*) from (select distinct
+substring(content from '([a-z]*://[^/\s]*[a-zA-Z/]*)') as domain
+from messenger_archive) foo;
+</code></pre>
+<h3 id="email-addresses">Email Addresses</h3>
+<pre><code class="language-sql">select distinct
+substring(content from '([a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+)') as email
+from messenger_archive
+limit 100;
+</code></pre>
+<h3 id="looking-forward">Looking Forward</h3>
+<p>I have a number of additional queries I'd like to write.
+However, they will have to wait until a future snippet.</p>
 
     </div>
 
