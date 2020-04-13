@@ -184,7 +184,7 @@ join urls as previous_urls on previous_urls.id == previous_visits.url
 where not (
      domain like "%goog%"
   or domain like "%t.co%"
-  or domain like "twitter.co"
+  or domain like "%twitter.co%"
   or domain like "%wikipedia%"
   or domain like "%youtube%"
   or domain like "%arxiv%"
@@ -193,6 +193,7 @@ where not (
 )
 limit 50;
 ```
+
 ---
 
 ## Using a Different Profile
