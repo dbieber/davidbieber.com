@@ -28,10 +28,12 @@
   
     
   
-  <meta name="description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot.">
+  <meta name="description" content="I wrote a number of SQL queries for browsing my browsing history. In this snippet, I show how to amend them to filter the results by date. Google Chrome selects a slightly non-standard time storage format (microseconds since January 1, 1601 UTC), hence the need for this query stanza.
+To run these queries, first make a copy of your browser history and open it in sqlite3.
+cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sqlite3 ~/my-history  Google Search History for Specific Date Here&#39;s the query we had from before, for accessing our Google Search history.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/">
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/">
 
   
 
@@ -244,14 +246,12 @@
 
 
   
-  <link rel="alternate" href="/snippets/index.xml" type="application/rss+xml" title="David Bieber">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
 
-  <link rel="canonical" href="https://davidbieber.com/snippets/">
+  <link rel="canonical" href="https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/">
 
   
   
@@ -268,29 +268,36 @@
   <meta property="twitter:creator" content="@Bieber">
   
   <meta property="og:site_name" content="David Bieber">
-  <meta property="og:url" content="https://davidbieber.com/snippets/">
-  <meta property="og:title" content="Snippets | David Bieber">
-  <meta property="og:description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/">
+  <meta property="og:title" content="Date and Time Browser History Queries | David Bieber">
+  <meta property="og:description" content="I wrote a number of SQL queries for browsing my browsing history. In this snippet, I show how to amend them to filter the results by date. Google Chrome selects a slightly non-standard time storage format (microseconds since January 1, 1601 UTC), hence the need for this query stanza.
+To run these queries, first make a copy of your browser history and open it in sqlite3.
+cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sqlite3 ~/my-history  Google Search History for Specific Date Here&#39;s the query we had from before, for accessing our Google Search history."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2018-10-26T00:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2020-04-20T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-04-20T00:00:00&#43;00:00">
   
 
   
 
 
 
-
   
 
 
   
 
 
+  
 
 
 
-  <title>Snippets | David Bieber</title>
+
+
+  <title>Date and Time Browser History Queries | David Bieber</title>
 
 </head>
 
@@ -448,144 +455,195 @@
 </nav>
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
+  <article class="article">
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
   
   
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Date and Time Browser History Queries</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">Snippets</h1>
+
+
+<div class="article-metadata">
 
   
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+  <div class="article-container">
 
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-04-20-browser-history-date-queries/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      Date and Time Browser History Queries
-    </a>
-    </h3>
-  </div>
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-04-12-simplifying-sql-with-with/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      Simplifying SQL Queries with &#34;WITH&#34;
-    </a>
-    </h3>
-  </div>
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-04-12-fb-messenger-sql/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      Facebook Messenger SQL Queries
-    </a>
-    </h3>
-  </div>
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-04-11-browser-history-queries/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      More Browser History Queries
-    </a>
-    </h3>
-  </div>
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-04-11-tips-for-obs/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      Tips for Effective OBS
-    </a>
-    </h3>
-  </div>
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-04-09-exploring-obs/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      Exploring OBS and Virtual Cameras
-    </a>
-    </h3>
-  </div>
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-03-20-understanding-oauth2/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      Understanding OAuth2
-    </a>
-    </h3>
-  </div>
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-03-19-browsing-history/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      A Bit of Browser History Analysis
-    </a>
-    </h3>
-  </div>
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-03-02-fastbook/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      Fastbook: Listen to Audiobooks Faster
-    </a>
-    </h3>
-  </div>
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-02-26-video-tooling-progress/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      Video Tooling Progress
-    </a>
-    </h3>
-  </div>
-  
+    <div class="article-style" id="article-content">
+      <p>I wrote a <a href="/snippets/2020-04-11-browser-history-queries/">number of SQL queries</a> for browsing my browsing history. In this snippet, I show how to amend them to filter the results by date. Google Chrome selects a slightly non-standard time storage format (microseconds since January 1, 1601 UTC), hence the need for this query stanza.</p>
+<p>To run these queries, first make a copy of your browser history and open it in sqlite3.</p>
+<pre><code class="language-bash">cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history
+sqlite3 ~/my-history
+</code></pre>
+<h2 id="google-search-history-for-specific-date">Google Search History for Specific Date</h2>
+<p>Here's the query we had from before, for accessing our Google Search history.</p>
+<pre><code class="language-sql">select DISTINCT REPLACE(urls.title, &quot; - Google Search&quot;, &quot;&quot;)
+from urls
+where urls.url like &quot;%www.google.com/search%&quot; 
+limit 50;
+</code></pre>
+<p>To filtering by a specific date, we just add.</p>
+<pre><code class="language-sql">AND
+datetime(last_visit_time / 1000000 + (strftime('%s', '1601-01-01')), 'unixepoch')
+LIKE '2019-12-25%'
+</code></pre>
+<p>What was I searching for on Christmas last year?</p>
+<pre><code class="language-sql">select DISTINCT REPLACE(urls.title, &quot; - Google Search&quot;, &quot;&quot;)
+from urls
+where urls.url like &quot;%www.google.com/search%&quot; 
+and datetime(last_visit_time / 1000000 + (strftime('%s', '1601-01-01')), 'unixepoch')
+LIKE '2019-12-25%'
+limit 50;
+</code></pre>
+<h2 id="youtube-videos-watched-today">YouTube Videos Watched Today</h2>
+<p>To query for results from <em>today</em>, we can do the following.</p>
+<pre><code class="language-sql">select DISTINCT REPLACE(urls.title, &quot; - YouTube&quot;, &quot;&quot;), urls.url, datetime(last_visit_time / 1000000 + (strftime('%s', '1601-01-01')), 'unixepoch') as d
+from urls
+where urls.url like &quot;%www.youtube.com/watch%&quot;
+and datetime(last_visit_time / 1000000 + (strftime('%s', '1601-01-01')), 'unixepoch')
+LIKE (date('now', 'localtime') || '%')
+limit 50;
+</code></pre>
+<p>Note the use of <code>localtime</code> to account for the timezone. <code>||</code> is used here for string concatenation.</p>
+<h2 id="arxiv-papers-visited-last-month">Arxiv Papers Visited Last Month</h2>
+<pre><code class="language-sql">select DISTINCT urls.title, REPLACE(REPLACE(urls.url, &quot;.pdf&quot;, &quot;&quot;), &quot;/pdf/&quot;, &quot;/abs/&quot;)
+from urls
+where (urls.url like &quot;https://arxiv.org/abs%&quot;
+or urls.url like &quot;https://arxiv.org/pdf%&quot;)
+and datetime(last_visit_time / 1000000 + (strftime('%s', '1601-01-01')), 'unixepoch')
+LIKE (substr(date('now', 'localtime', '-1 month'), 0, 9) || '%')
+limit 50;
+</code></pre>
+<p>Here you can see that <code>date</code> gives flexibility in adjusting the date you are requesting. <code>substr</code> is used to transform <code>2020-03-20</code> to <code>2020-03-</code>, to match any date in the month.</p>
+<h2 id="hackernews-links-followed-in-the-last-week">HackerNews Links Followed in the Last Week</h2>
+<pre><code class="language-sql">select DISTINCT urls.title, urls.url
+from visits
+join visits as previous_visits on visits.from_visit == previous_visits.id
+join urls on urls.id == visits.url
+join urls as previous_urls on previous_urls.id == previous_visits.url
+where previous_urls.url like &quot;https://news.ycombinator.com%&quot;
+and urls.url not like &quot;https://news.ycombinator.com%&quot;
+and datetime(visits.visit_time / 1000000 + (strftime('%s', '1601-01-01')), 'unixepoch')
+&gt; date('now', 'localtime', '-7 day')
+limit 50;
+</code></pre>
+<p>For this query, we directly compare the result of <code>datetime</code> and <code>date</code>.
+<a href="https://www.sqlite.org/lang_datefunc.html">sqlite.org/lang_datefunc.html</a> has more useful information about writing queries manipulating dates and times.</p>
+<p>For more query ideas, here's the <a href="/snippets/2020-04-11-browser-history-queries/">link back to the browser history queries snippet</a>.</p>
 
-  
-<nav>
-  <ul class="pagination justify-content-center">
+    </div>
+
     
-    
-    <li class="page-item"><a class="page-link" href="/snippets/page/2/">&raquo;</a></li>
-    
-  </ul>
-</nav>
 
 
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://davidbieber.com/">David Bieber</a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</article>
 
       
 

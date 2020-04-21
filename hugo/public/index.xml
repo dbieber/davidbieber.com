@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Sun, 12 Apr 2020 01:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,74 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Date and Time Browser History Queries</title>
+      <link>https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/</guid>
+      <description>&lt;p&gt;I wrote a &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;number of SQL queries&lt;/a&gt; for browsing my browsing history. In this snippet, I show how to amend them to filter the results by date. Google Chrome selects a slightly non-standard time storage format (microseconds since January 1, 1601 UTC), hence the need for this query stanza.&lt;/p&gt;
+&lt;p&gt;To run these queries, first make a copy of your browser history and open it in sqlite3.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history
+sqlite3 ~/my-history
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;google-search-history-for-specific-date&#34;&gt;Google Search History for Specific Date&lt;/h2&gt;
+&lt;p&gt;Here&#39;s the query we had from before, for accessing our Google Search history.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; - Google Search&amp;quot;, &amp;quot;&amp;quot;)
+from urls
+where urls.url like &amp;quot;%www.google.com/search%&amp;quot; 
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To filtering by a specific date, we just add.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;AND
+datetime(last_visit_time / 1000000 + (strftime(&#39;%s&#39;, &#39;1601-01-01&#39;)), &#39;unixepoch&#39;)
+LIKE &#39;2019-12-25%&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;What was I searching for on Christmas last year?&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; - Google Search&amp;quot;, &amp;quot;&amp;quot;)
+from urls
+where urls.url like &amp;quot;%www.google.com/search%&amp;quot; 
+and datetime(last_visit_time / 1000000 + (strftime(&#39;%s&#39;, &#39;1601-01-01&#39;)), &#39;unixepoch&#39;)
+LIKE &#39;2019-12-25%&#39;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;youtube-videos-watched-today&#34;&gt;YouTube Videos Watched Today&lt;/h2&gt;
+&lt;p&gt;To query for results from &lt;em&gt;today&lt;/em&gt;, we can do the following.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; - YouTube&amp;quot;, &amp;quot;&amp;quot;), urls.url, datetime(last_visit_time / 1000000 + (strftime(&#39;%s&#39;, &#39;1601-01-01&#39;)), &#39;unixepoch&#39;) as d
+from urls
+where urls.url like &amp;quot;%www.youtube.com/watch%&amp;quot;
+and datetime(last_visit_time / 1000000 + (strftime(&#39;%s&#39;, &#39;1601-01-01&#39;)), &#39;unixepoch&#39;)
+LIKE (date(&#39;now&#39;, &#39;localtime&#39;) || &#39;%&#39;)
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note the use of &lt;code&gt;localtime&lt;/code&gt; to account for the timezone. &lt;code&gt;||&lt;/code&gt; is used here for string concatenation.&lt;/p&gt;
+&lt;h2 id=&#34;arxiv-papers-visited-last-month&#34;&gt;Arxiv Papers Visited Last Month&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT urls.title, REPLACE(REPLACE(urls.url, &amp;quot;.pdf&amp;quot;, &amp;quot;&amp;quot;), &amp;quot;/pdf/&amp;quot;, &amp;quot;/abs/&amp;quot;)
+from urls
+where (urls.url like &amp;quot;https://arxiv.org/abs%&amp;quot;
+or urls.url like &amp;quot;https://arxiv.org/pdf%&amp;quot;)
+and datetime(last_visit_time / 1000000 + (strftime(&#39;%s&#39;, &#39;1601-01-01&#39;)), &#39;unixepoch&#39;)
+LIKE (substr(date(&#39;now&#39;, &#39;localtime&#39;, &#39;-1 month&#39;), 0, 9) || &#39;%&#39;)
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here you can see that &lt;code&gt;date&lt;/code&gt; gives flexibility in adjusting the date you are requesting. &lt;code&gt;substr&lt;/code&gt; is used to transform &lt;code&gt;2020-03-20&lt;/code&gt; to &lt;code&gt;2020-03-&lt;/code&gt;, to match any date in the month.&lt;/p&gt;
+&lt;h2 id=&#34;hackernews-links-followed-in-the-last-week&#34;&gt;HackerNews Links Followed in the Last Week&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT urls.title, urls.url
+from visits
+join visits as previous_visits on visits.from_visit == previous_visits.id
+join urls on urls.id == visits.url
+join urls as previous_urls on previous_urls.id == previous_visits.url
+where previous_urls.url like &amp;quot;https://news.ycombinator.com%&amp;quot;
+and urls.url not like &amp;quot;https://news.ycombinator.com%&amp;quot;
+and datetime(visits.visit_time / 1000000 + (strftime(&#39;%s&#39;, &#39;1601-01-01&#39;)), &#39;unixepoch&#39;)
+&amp;gt; date(&#39;now&#39;, &#39;localtime&#39;, &#39;-7 day&#39;)
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For this query, we directly compare the result of &lt;code&gt;datetime&lt;/code&gt; and &lt;code&gt;date&lt;/code&gt;.
+&lt;a href=&#34;https://www.sqlite.org/lang_datefunc.html&#34;&gt;sqlite.org/lang_datefunc.html&lt;/a&gt; has more useful information about writing queries manipulating dates and times.&lt;/p&gt;
+&lt;p&gt;For more query ideas, here&#39;s the &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;link back to the browser history queries snippet&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
