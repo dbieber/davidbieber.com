@@ -187,9 +187,16 @@ where not (
   or domain like "%twitter.co%"
   or domain like "%wikipedia%"
   or domain like "%youtube%"
+  or domain like "%github%"
   or domain like "%arxiv%"
   or domain like "%reddit%"
   or domain like "%ycombinator%"
+  or urls.url like "chrome-extension://%"
+  -- or previous_urls.url like "%t.co%"
+  -- or previous_urls.url like "%twitter.co%"
+  -- or previous_urls.url like "%goog%"
+  -- or previous_urls.url like "%reddit%"
+  -- or previous_urls.url like "%ycombinator%"
 )
 limit 50;
 ```
