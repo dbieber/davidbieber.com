@@ -656,9 +656,16 @@ where not (
   or domain like &quot;%twitter.co%&quot;
   or domain like &quot;%wikipedia%&quot;
   or domain like &quot;%youtube%&quot;
+  or domain like &quot;%github%&quot;
   or domain like &quot;%arxiv%&quot;
   or domain like &quot;%reddit%&quot;
   or domain like &quot;%ycombinator%&quot;
+  or urls.url like &quot;chrome-extension://%&quot;
+  -- or previous_urls.url like &quot;%t.co%&quot;
+  -- or previous_urls.url like &quot;%twitter.co%&quot;
+  -- or previous_urls.url like &quot;%goog%&quot;
+  -- or previous_urls.url like &quot;%reddit%&quot;
+  -- or previous_urls.url like &quot;%ycombinator%&quot;
 )
 limit 50;
 </code></pre>
