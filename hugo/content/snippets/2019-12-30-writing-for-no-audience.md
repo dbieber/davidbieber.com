@@ -23,7 +23,7 @@ To anyone out there who does end up reading this, and there may very well be non
 
 I actually write for No Audience in two different contexts.
 
-(1) The [snippets](/snippets) section of my website\\
+(1) The [snippets](/snippets) section of my website\
 (2) Using [shh-shell](/projects/shh-shell) at night
 
 The snippets section of my website is public, but with no built-in broadcasting. People can read it if they choose to, but I'm not putting it in people's faces (by default; I will if it's appropriate in context). Contrast this with the writing I do with the [shh-shell](/projects/shh-shell). This is more personal writing that I do half-asleep as I drift off at night, and so I don't make it public; I expect almost no one will ever read it. This writing, I suppose is for No Audience to an even more extreme degree. I recommend both practices: public writing for no audience, and private writing for no audience.
