@@ -44,7 +44,7 @@ The `urls` table has these columns (found with `.schema urls`):
 |title           | Text       | The title of website. |                 
 |visit_count     | Integer    | The number of times you've visited the URL. |
 |typed_count     | Integer    | The number of times you've visited the URL by typing in the address (as opposed to by following a link.) |
-|last_visit_time | Integer (milliseconds since the epoch)       | The time of the most recent to the URL. |
+|last_visit_time | Integer (microseconds since the epoch)       | The time of the most recent to the URL. |
 |hidden          | Boolean    | I'm not sure what this is about. |
 
 And the `visits` table has these columns (obtained via `.schema visits`):

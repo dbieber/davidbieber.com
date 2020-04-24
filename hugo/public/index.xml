@@ -1733,7 +1733,7 @@ For some reason, I do it anyway though, and so I think of this habit like an add
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;last_visit_time&lt;/td&gt;
-&lt;td&gt;Integer (milliseconds since the epoch)&lt;/td&gt;
+&lt;td&gt;Integer (microseconds since the epoch)&lt;/td&gt;
 &lt;td&gt;The time of the most recent to the URL.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
