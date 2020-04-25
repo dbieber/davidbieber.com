@@ -78,7 +78,7 @@ Some information appears to get lost in the export. In particular, the following
 
 ## Implications of the JSON Format
 
-Since Roam allows export of its data in such a single format, you can easily write scripts for processing this data. For example, merging two databases is trivial. I include some simple such scripts in the following section.
+Since Roam allows export of its data in such a simple format, you can easily write scripts for processing this data. For example, merging two databases is trivial. I include some simple such scripts in the following section.
 
 The clear export also means that you will continue to be able to use your data long into the future, even if Roam shuts down or otherwise becomes unavailable to you. As long as you occasionally back up your data by exporting it, it is yours forever.
 
