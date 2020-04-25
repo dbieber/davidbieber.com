@@ -13,6 +13,204 @@
     </image>
     
     <item>
+      <title>Roam Research&#39;s JSON Export Format</title>
+      <link>https://davidbieber.com/snippets/2020-04-25-roam-json-export/</link>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-25-roam-json-export/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://roamresearch.com/&#34;&gt;Roam Research&lt;/a&gt; is a note taking tool that makes it really low-friction to take deeply interwoven notes.
+One of its core features is that you can effortlessly add links between pages in your notes, just by surrounding a name with square brackets, e.g. &lt;a href=&#34;https://roamresearch.com/#/app/commons-db/page/wYVaowjId&#34;&gt;&lt;code&gt;[[Roam Research]]&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Roam allows its users to export their Roam database as a JSON file. In this snippet, I describe the JSON format used and some of its implications.&lt;/p&gt;
+&lt;h2 id=&#34;exporting-data-from-roam&#34;&gt;Exporting Data from Roam&lt;/h2&gt;
+&lt;p&gt;From the triple-dots menu, select Export All. Choose JSON as the export format. Then click the Export All button. Your complete Roam database will download as a JSON file.&lt;/p&gt;
+&lt;h2 id=&#34;roams-json-format&#34;&gt;Roam&#39;s JSON Format&lt;/h2&gt;
+&lt;p&gt;We&#39;ll refer to the Roam JSON object you just downloaded as &lt;code&gt;data&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;data&lt;/code&gt; is a list, with each entry in &lt;code&gt;data&lt;/code&gt; corresponding to a single Roam &lt;code&gt;page&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Each &lt;code&gt;page&lt;/code&gt; is an object with keys: &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;children&lt;/code&gt;, &lt;code&gt;create-time&lt;/code&gt;, &lt;code&gt;create-email&lt;/code&gt;, &lt;code&gt;edit-time&lt;/code&gt;, &lt;code&gt;edit-email&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;page-schema&#34;&gt;Page Schema&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;title&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The page title.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;children&lt;/td&gt;
+&lt;td&gt;List[Child]&lt;/td&gt;
+&lt;td&gt;The list of children of the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;create-time&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The time (ms since epoch) when the page was created.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;create-email&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The email of the person to create the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;edit-time&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The time (ms since epoch) of the last edit to the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;edit-email&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The email of the last person to edit the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Note that only &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;edit-time&lt;/code&gt;, and &lt;code&gt;edit-email&lt;/code&gt; appear to be required fields.
+&lt;code&gt;children&lt;/code&gt;, &lt;code&gt;create-time&lt;/code&gt;, and &lt;code&gt;create-email&lt;/code&gt; appear to be omitted when not available.&lt;/p&gt;
+&lt;h3 id=&#34;child-schema&#34;&gt;Child Schema&lt;/h3&gt;
+&lt;p&gt;Each of the children in a page may have the following keys. Only the &lt;code&gt;uid&lt;/code&gt;, &lt;code&gt;string&lt;/code&gt;, &lt;code&gt;edit-time&lt;/code&gt;, and &lt;code&gt;edit-email&lt;/code&gt; keys seem universal. The rest may be omitted when not available.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;uid&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;A short unique identifier for the child.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;string&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The string content of the child.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;children&lt;/td&gt;
+&lt;td&gt;List[Child]&lt;/td&gt;
+&lt;td&gt;The list of children of this child.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;create-time&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The time (ms since epoch) when the page was created.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;create-email&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The email of the person to create the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;edit-time&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The time (ms since epoch) of the last edit to the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;edit-email&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The email of the last person to edit the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Some children may additionally have the following keys.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;heading&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;1, 2, or 3; indicates the note is an h1, h2, or h3 heading.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;emojis&lt;/td&gt;
+&lt;td&gt;List[Emoji]&lt;/td&gt;
+&lt;td&gt;A list of objects indicating who added what emojis and when.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;text-align&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;One of &amp;lsquo;left&amp;rsquo;, &amp;lsquo;right&amp;rsquo;, &amp;lsquo;center&amp;rsquo;, or &amp;lsquo;justify&amp;rsquo; indicating the text alignment.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Note that in Roam, children are referred to as &amp;ldquo;blocks&amp;rdquo;, and a child&#39;s ID is the ID used to reference a block.&lt;/p&gt;
+&lt;p&gt;Last but not least, I include the emoji reaction schema 😂.&lt;/p&gt;
+&lt;h3 id=&#34;emoji-schema&#34;&gt;Emoji Schema&lt;/h3&gt;
+&lt;p&gt;Each Emoji reaction to a child is an object conforming to the following schema.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;emoji&lt;/td&gt;
+&lt;td&gt;object&lt;/td&gt;
+&lt;td&gt;An object with a single key &lt;code&gt;native&lt;/code&gt; containing the emoji itself.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;users&lt;/td&gt;
+&lt;td&gt;List[object]&lt;/td&gt;
+&lt;td&gt;A list of objects indicating who added this emoji and when. The keys are &lt;code&gt;time&lt;/code&gt; (ms since epoch) and &lt;code&gt;email&lt;/code&gt; (the email of the user who added the reaction).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;missing-information&#34;&gt;Missing Information&lt;/h3&gt;
+&lt;p&gt;Some information appears to get lost in the export. In particular, the following information appears to be dropped.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&amp;ldquo;View as Document&amp;rdquo; / &amp;ldquo;View as Numbered List&amp;rdquo;: This formatting information doesn&#39;t seem to get exported.&lt;/li&gt;
+&lt;li&gt;Versions. If you&#39;re using the &amp;ldquo;versions&amp;rdquo; feature of Roam, the versions don&#39;t seem to be exported either.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;implications-of-the-json-format&#34;&gt;Implications of the JSON Format&lt;/h2&gt;
+&lt;p&gt;Since Roam allows export of its data in such a single format, you can easily write scripts for processing this data. For example, merging two databases is trivial. I include some simple such scripts in the following section.&lt;/p&gt;
+&lt;p&gt;The clear export also means that you will continue to be able to use your data long into the future, even if Roam shuts down or otherwise becomes unavailable to you. As long as you occasionally back up your data by exporting it, it is yours forever.&lt;/p&gt;
+&lt;h2 id=&#34;useful-python-snippets-for-processing-roam-json&#34;&gt;Useful Python Snippets for Processing Roam JSON&lt;/h2&gt;
+&lt;p&gt;Once you&#39;ve downloaded your data as JSON from Roam, you can load and manipulate it as follows.&lt;/p&gt;
+&lt;h3 id=&#34;load-json&#34;&gt;Load JSON&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import json
+filepath = &#39;/path/to/roam-database.json&#39;
+data = json.load(open(filepath))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;collect-all-children&#34;&gt;Collect All Children&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;children = []
+blocks = data.copy()
+while blocks:
+  block = blocks.pop()
+  if &#39;children&#39; in block:
+    blocks.extend(block[&#39;children&#39;])
+    children.extend(block[&#39;children&#39;])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;find-all-notes-mentioning-roam&#34;&gt;Find All Notes Mentioning &amp;ldquo;Roam&amp;rdquo;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;for child in children:
+  if &#39;roam&#39; in child.get(&#39;string&#39;, &#39;&#39;).lower():
+    print(child[&#39;string&#39;])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;merge-two-databases&#34;&gt;Merge Two Databases&lt;/h3&gt;
+&lt;p&gt;Since databases are just lists of objects, you can trivially merge them.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;merged = db1 + db2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It&#39;s possible this will result in multiple pages having the same name, but Roam deals with this just fine.&lt;/p&gt;
+&lt;h2 id=&#34;thank-you-roam&#34;&gt;Thank You Roam&lt;/h2&gt;
+&lt;p&gt;I want to conclude with a note of thanks to the Roam developers for allowing export in such a clear and readily understandable manner. Doing so inspires confidence that I will be able to continue using the notes I take in Roam far into the future, no matter what. This makes me so much more comfortable using Roam for my note taking. Props and thank you to the Roam developers for this feature.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Date and Time Browser History Queries</title>
       <link>https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>

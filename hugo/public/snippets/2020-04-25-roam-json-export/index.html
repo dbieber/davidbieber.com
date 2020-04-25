@@ -28,10 +28,11 @@
   
     
   
-  <meta name="description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot.">
+  <meta name="description" content="Roam Research is a note taking tool that makes it really low-friction to take deeply interwoven notes. One of its core features is that you can effortlessly add links between pages in your notes, just by surrounding a name with square brackets, e.g. [[Roam Research]].
+Roam allows its users to export their Roam database as a JSON file. In this snippet, I describe the JSON format used and some of its implications.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/">
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-04-25-roam-json-export/">
 
   
 
@@ -244,14 +245,12 @@
 
 
   
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="David Bieber">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
 
-  <link rel="canonical" href="https://davidbieber.com/">
+  <link rel="canonical" href="https://davidbieber.com/snippets/2020-04-25-roam-json-export/">
 
   
   
@@ -268,28 +267,20 @@
   <meta property="twitter:creator" content="@Bieber">
   
   <meta property="og:site_name" content="David Bieber">
-  <meta property="og:url" content="https://davidbieber.com/">
-  <meta property="og:title" content="David Bieber">
-  <meta property="og:description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2020-04-25-roam-json-export/">
+  <meta property="og:title" content="Roam Research&#39;s JSON Export Format | David Bieber">
+  <meta property="og:description" content="Roam Research is a note taking tool that makes it really low-friction to take deeply interwoven notes. One of its core features is that you can effortlessly add links between pages in your notes, just by surrounding a name with square brackets, e.g. [[Roam Research]].
+Roam allows its users to export their Roam database as a JSON file. In this snippet, I describe the JSON format used and some of its implications."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-04-25T00:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2020-04-25T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-04-25T00:00:00&#43;00:00">
   
 
   
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://davidbieber.com/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  },
-  "url": "https://davidbieber.com/"
-}
-</script>
 
 
   
@@ -304,11 +295,11 @@
 
 
 
-  <title>David Bieber</title>
+  <title>Roam Research&#39;s JSON Export Format | David Bieber</title>
 
 </head>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -389,7 +380,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link  active" href="/" data-target="[]"><span>Home</span></a>
+          <a class="nav-link  active" href="/"><span>Home</span></a>
         </li>
 
         
@@ -462,69 +453,7 @@
 </nav>
 
 
-  
-
-
-
-
-
-
-
-
-
-<span class="js-widget-page d-none"></span>
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="posts" class="home-section wg-pages   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
+  <article class="article">
 
   
 
@@ -539,80 +468,18 @@
 
 
 
+  
 
-
-
-
-
-
-
-
-
-
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Roam Research&#39;s JSON Export Format</h1>
 
   
 
-
-
-
-
   
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Writing</h1>
     
-    
-    <div class="view-all">
-      <a href="/posts/">
-        More Posts
-        <i class="fas fa-angle-double-right"></i>
-      </a>
-    </div>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-
-    
-      
-        
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2019-12-29-track-your-life-in-a-spreadsheet/" >Keeping Track of My Life in a Spreadsheet</a>
-    </h3>
-
-    
-    <div class="article-style">
-      I use a daily activity log to track my habits and plan future activities.
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
@@ -626,7 +493,7 @@
     
       
     
-    December 2019
+    
   </span>
   
 
@@ -643,673 +510,268 @@
 
 </div>
 
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/post/2019-12-29-track-your-life-in-a-spreadsheet/" >
-      <img src="/post/2019-12-29-track-your-life-in-a-spreadsheet/featured_hu74a73d94f8a3fcf59d0bff6508a7d0b7_175554_150x0_resize_box_2.png" alt="">
-    </a>
-    
-  </div>
+  
 </div>
 
-      
-    
-      
-        
 
 
+  <div class="article-container">
+
+    <div class="article-style" id="article-content">
+      <p><a href="https://roamresearch.com/">Roam Research</a> is a note taking tool that makes it really low-friction to take deeply interwoven notes.
+One of its core features is that you can effortlessly add links between pages in your notes, just by surrounding a name with square brackets, e.g. <a href="https://roamresearch.com/#/app/commons-db/page/wYVaowjId"><code>[[Roam Research]]</code></a>.</p>
+<p>Roam allows its users to export their Roam database as a JSON file. In this snippet, I describe the JSON format used and some of its implications.</p>
+<h2 id="exporting-data-from-roam">Exporting Data from Roam</h2>
+<p>From the triple-dots menu, select Export All. Choose JSON as the export format. Then click the Export All button. Your complete Roam database will download as a JSON file.</p>
+<h2 id="roams-json-format">Roam's JSON Format</h2>
+<p>We'll refer to the Roam JSON object you just downloaded as <code>data</code>.</p>
+<p><code>data</code> is a list, with each entry in <code>data</code> corresponding to a single Roam <code>page</code>.</p>
+<p>Each <code>page</code> is an object with keys: <code>title</code>, <code>children</code>, <code>create-time</code>, <code>create-email</code>, <code>edit-time</code>, <code>edit-email</code>.</p>
+<h3 id="page-schema">Page Schema</h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>Text</td>
+<td>The page title.</td>
+</tr>
+<tr>
+<td>children</td>
+<td>List[Child]</td>
+<td>The list of children of the page.</td>
+</tr>
+<tr>
+<td>create-time</td>
+<td>Integer</td>
+<td>The time (ms since epoch) when the page was created.</td>
+</tr>
+<tr>
+<td>create-email</td>
+<td>Text</td>
+<td>The email of the person to create the page.</td>
+</tr>
+<tr>
+<td>edit-time</td>
+<td>Integer</td>
+<td>The time (ms since epoch) of the last edit to the page.</td>
+</tr>
+<tr>
+<td>edit-email</td>
+<td>Text</td>
+<td>The email of the last person to edit the page.</td>
+</tr>
+</tbody>
+</table>
+<p>Note that only <code>title</code>, <code>edit-time</code>, and <code>edit-email</code> appear to be required fields.
+<code>children</code>, <code>create-time</code>, and <code>create-email</code> appear to be omitted when not available.</p>
+<h3 id="child-schema">Child Schema</h3>
+<p>Each of the children in a page may have the following keys. Only the <code>uid</code>, <code>string</code>, <code>edit-time</code>, and <code>edit-email</code> keys seem universal. The rest may be omitted when not available.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>uid</td>
+<td>Text</td>
+<td>A short unique identifier for the child.</td>
+</tr>
+<tr>
+<td>string</td>
+<td>Text</td>
+<td>The string content of the child.</td>
+</tr>
+<tr>
+<td>children</td>
+<td>List[Child]</td>
+<td>The list of children of this child.</td>
+</tr>
+<tr>
+<td>create-time</td>
+<td>Integer</td>
+<td>The time (ms since epoch) when the page was created.</td>
+</tr>
+<tr>
+<td>create-email</td>
+<td>Text</td>
+<td>The email of the person to create the page.</td>
+</tr>
+<tr>
+<td>edit-time</td>
+<td>Integer</td>
+<td>The time (ms since epoch) of the last edit to the page.</td>
+</tr>
+<tr>
+<td>edit-email</td>
+<td>Text</td>
+<td>The email of the last person to edit the page.</td>
+</tr>
+</tbody>
+</table>
+<p>Some children may additionally have the following keys.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>heading</td>
+<td>Integer</td>
+<td>1, 2, or 3; indicates the note is an h1, h2, or h3 heading.</td>
+</tr>
+<tr>
+<td>emojis</td>
+<td>List[Emoji]</td>
+<td>A list of objects indicating who added what emojis and when.</td>
+</tr>
+<tr>
+<td>text-align</td>
+<td>Text</td>
+<td>One of &lsquo;left&rsquo;, &lsquo;right&rsquo;, &lsquo;center&rsquo;, or &lsquo;justify&rsquo; indicating the text alignment.</td>
+</tr>
+</tbody>
+</table>
+<p>Note that in Roam, children are referred to as &ldquo;blocks&rdquo;, and a child's ID is the ID used to reference a block.</p>
+<p>Last but not least, I include the emoji reaction schema 😂.</p>
+<h3 id="emoji-schema">Emoji Schema</h3>
+<p>Each Emoji reaction to a child is an object conforming to the following schema.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>emoji</td>
+<td>object</td>
+<td>An object with a single key <code>native</code> containing the emoji itself.</td>
+</tr>
+<tr>
+<td>users</td>
+<td>List[object]</td>
+<td>A list of objects indicating who added this emoji and when. The keys are <code>time</code> (ms since epoch) and <code>email</code> (the email of the user who added the reaction).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="missing-information">Missing Information</h3>
+<p>Some information appears to get lost in the export. In particular, the following information appears to be dropped.</p>
+<ol>
+<li>&ldquo;View as Document&rdquo; / &ldquo;View as Numbered List&rdquo;: This formatting information doesn't seem to get exported.</li>
+<li>Versions. If you're using the &ldquo;versions&rdquo; feature of Roam, the versions don't seem to be exported either.</li>
+</ol>
+<h2 id="implications-of-the-json-format">Implications of the JSON Format</h2>
+<p>Since Roam allows export of its data in such a single format, you can easily write scripts for processing this data. For example, merging two databases is trivial. I include some simple such scripts in the following section.</p>
+<p>The clear export also means that you will continue to be able to use your data long into the future, even if Roam shuts down or otherwise becomes unavailable to you. As long as you occasionally back up your data by exporting it, it is yours forever.</p>
+<h2 id="useful-python-snippets-for-processing-roam-json">Useful Python Snippets for Processing Roam JSON</h2>
+<p>Once you've downloaded your data as JSON from Roam, you can load and manipulate it as follows.</p>
+<h3 id="load-json">Load JSON</h3>
+<pre><code class="language-python">import json
+filepath = '/path/to/roam-database.json'
+data = json.load(open(filepath))
+</code></pre>
+<h3 id="collect-all-children">Collect All Children</h3>
+<pre><code class="language-python">children = []
+blocks = data.copy()
+while blocks:
+  block = blocks.pop()
+  if 'children' in block:
+    blocks.extend(block['children'])
+    children.extend(block['children'])
+</code></pre>
+<h3 id="find-all-notes-mentioning-roam">Find All Notes Mentioning &ldquo;Roam&rdquo;</h3>
+<pre><code class="language-python">for child in children:
+  if 'roam' in child.get('string', '').lower():
+    print(child['string'])
+</code></pre>
+<h3 id="merge-two-databases">Merge Two Databases</h3>
+<p>Since databases are just lists of objects, you can trivially merge them.</p>
+<pre><code class="language-python">merged = db1 + db2
+</code></pre>
+<p>It's possible this will result in multiple pages having the same name, but Roam deals with this just fine.</p>
+<h2 id="thank-you-roam">Thank You Roam</h2>
+<p>I want to conclude with a note of thanks to the Roam developers for allowing export in such a clear and readily understandable manner. Doing so inspires confidence that I will be able to continue using the notes I take in Roam far into the future, no matter what. This makes me so much more comfortable using Roam for my note taking. Props and thank you to the Roam developers for this feature.</p>
 
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2019-05-10-weisfeiler-lehman-isomorphism-test/" >The Weisfeiler-Lehman Isomorphism Test</a>
-    </h3>
-
-    
-    <div class="article-style">
-      Explains the Weisfeiler-Lehman Graph Isomorphism Test
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    May 2019
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/post/2019-05-10-weisfeiler-lehman-isomorphism-test/" >
-      <img src="/post/2019-05-10-weisfeiler-lehman-isomorphism-test/featured_hu465e8dab66275ec12977edeacd92b6fe_41473_150x0_resize_box_2.png" alt="">
-    </a>
-    
-  </div>
-</div>
-
-      
-    
-      
-        
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2018-10-21-apps-script-mail-merge/" >Writing a Mail Merge in Google Apps Script</a>
-    </h3>
-
-    
-    <div class="article-style">
-      Use Google Apps Script to write a mail merge and schedule emails to send in the future.
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    October 2018
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/post/2018-10-21-apps-script-mail-merge/" >
-      <img src="/post/2018-10-21-apps-script-mail-merge/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_1614959_150x0_resize_q75_box.jpg" alt="">
-    </a>
-    
-  </div>
-</div>
-
-      
-    
-
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="projects" class="home-section wg-portfolio   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-
-    <h1>Projects</h1>
-    
-    
-    <div class="view-all">
-      <a href="/projects">
-        More Projects
-        <i class="fas fa-angle-double-right"></i>
-      </a>
-    </div>
-    
-
-  </div>
-  <div class="col-12 col-lg-8">
-
-
-
-    
-
-    
-
-    <div class="isotope projects-container js-layout-masonry ">
-      
-
-        
-        
-        
-
-        
-          
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-<div class="project-card project-item isotope-item js-id-Software js-id-Productivity js-id-Robot js-id-Just-for-Fun">
-  <div class="card">
-    
-    
-    <a href="/projects/bieber-bot/"  class="card-image hover-overlay">
-      <img src="/projects/bieber-bot/featured_hucfc6299f315b67f5e2f12feaaae25703_103190_550x0_resize_q90_box_2.png" alt="" class="img-responsive">
-    </a>
-    
-    <div class="card-text">
-      <h4><a href="/projects/bieber-bot/" >Bieber Bot</a></h4>
-      
-      <div class="article-style">
-        <p>My faithful robot companion.</p>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-        
-
-      
-
-        
-        
-        
-
-        
-          
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-<div class="project-card project-item isotope-item js-id-Hardware js-id-Just-for-Fun js-id-Puzzle">
-  <div class="card">
-    
-    
-    <a href="/projects/escape-castle-heterodyne/"  class="card-image hover-overlay">
-      <img src="/projects/escape-castle-heterodyne/featured_huc1759788997dc45a956d993bc020a2c9_1358881_550x0_resize_q90_box.jpg" alt="" class="img-responsive">
-    </a>
-    
-    <div class="card-text">
-      <h4><a href="/projects/escape-castle-heterodyne/" >Escape Castle Heterodyne</a></h4>
-      
-      <div class="article-style">
-        <p>We built an escape room!</p>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-        
-
-      
-
-        
-        
-        
-          
-          
-        
-
-        
-          
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-<div class="project-card project-item isotope-item js-id-Software js-id-Productivity">
-  <div class="card">
-    
-    
-    <a href="https://github.com/google/python-fire" target="_blank" rel="noopener" class="card-image hover-overlay">
-      <img src="/projects/python-fire/featured_hu595fb01dc4b252c53d8a9c1a49152f3e_180245_550x0_resize_q90_box_2.png" alt="" class="img-responsive">
-    </a>
-    
-    <div class="card-text">
-      <h4><a href="https://github.com/google/python-fire" target="_blank" rel="noopener">Python Fire</a></h4>
-      
-      <div class="article-style">
-        <p>Automatically generate CLIs from Python objects.</p>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-        
-
-      
-
-        
-        
-        
-          
-          
-        
-
-        
-          
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-<div class="project-card project-item isotope-item js-id-Education">
-  <div class="card">
-    
-    
-    <a href="https://techday.withgoogle.com/" target="_blank" rel="noopener" class="card-image hover-overlay">
-      <img src="/projects/tech-day/featured_huc6793629b8712171fa1b80552890ef93_1672131_550x0_resize_q90_box_2.png" alt="" class="img-responsive">
-    </a>
-    
-    <div class="card-text">
-      <h4><a href="https://techday.withgoogle.com/" target="_blank" rel="noopener">Tech Day</a></h4>
-      
-      <div class="article-style">
-        <p>Tech Day at Google is an educational day of STEM classes offered at Google for high school students around the bay area.</p>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-        
-
-      
-
-        
-        
-        
-          
-          
-        
-
-        
-          
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-<div class="project-card project-item isotope-item js-id-Software js-id-Productivity">
-  <div class="card">
-    
-    
-    <a href="https://github.com/dbieber/at-scheduler/" target="_blank" rel="noopener" class="card-image hover-overlay">
-      <img src="/projects/at-scheduler/featured_huce5d1ab78aa604de589b6cc3d599794b_109108_550x0_resize_q90_box_2.png" alt="" class="img-responsive">
-    </a>
-    
-    <div class="card-text">
-      <h4><a href="https://github.com/dbieber/at-scheduler/" target="_blank" rel="noopener">at Scheduler</a></h4>
-      
-      <div class="article-style">
-        <p>A minimal command line task scheduler.</p>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-        
-
-      
-
-        
-        
-        
-
-        
-          
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-<div class="project-card project-item isotope-item js-id-Software js-id-Productivity">
-  <div class="card">
-    
-    <div class="card-text">
-      <h4><a href="/projects/shh-shell/" >shh Shell</a></h4>
-      
-      <div class="article-style">
-        <p>The soothing shell for while you sleep.</p>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-        
-
-      
     </div>
 
-  </div>
-</div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://davidbieber.com/">David Bieber</a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
 
     </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="contact" class="home-section wg-contact   "  >
-    <div class="container">
-      
-
-
-
-
-
-<div class="row contact-widget">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Contact</h1>
-    
   </div>
-  <div class="col-12 col-lg-8">
-    
 
-    
 
-    
-    
-      
-      
-    
 
-    <div class="mb-3">
-      <form name="contact" method="POST" action="https://formspree.io/dbieber@google.com">
-        <div class="form-group form-inline">
-          <label class="sr-only" for="inputName">Name</label>
-          <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" required>
-        </div>
-        <div class="form-group form-inline">
-          <label class="sr-only" for="inputEmail">Email</label>
-          <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Email" required>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" for="inputMessage">Message</label>
-          <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-outline-primary px-3 py-2">Send</button>
-      </form>
-    </div>
-    
 
-    <ul class="fa-ul">
 
-      
 
-      
 
-      
-      
 
-      
 
-      
+  
+  
 
-      
 
-      
-      
-
-    </ul>
-
-    
 
   </div>
-</div>
-
-    </div>
-  </section>
-
-
+</article>
 
       
 
