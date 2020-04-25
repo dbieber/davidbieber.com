@@ -177,7 +177,7 @@ One of its core features is that you can effortlessly add links between pages in
 &lt;li&gt;Versions. If you&#39;re using the &amp;ldquo;versions&amp;rdquo; feature of Roam, the versions don&#39;t seem to be exported either.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;implications-of-the-json-format&#34;&gt;Implications of the JSON Format&lt;/h2&gt;
-&lt;p&gt;Since Roam allows export of its data in such a single format, you can easily write scripts for processing this data. For example, merging two databases is trivial. I include some simple such scripts in the following section.&lt;/p&gt;
+&lt;p&gt;Since Roam allows export of its data in such a simple format, you can easily write scripts for processing this data. For example, merging two databases is trivial. I include some simple such scripts in the following section.&lt;/p&gt;
 &lt;p&gt;The clear export also means that you will continue to be able to use your data long into the future, even if Roam shuts down or otherwise becomes unavailable to you. As long as you occasionally back up your data by exporting it, it is yours forever.&lt;/p&gt;
 &lt;h2 id=&#34;useful-python-snippets-for-processing-roam-json&#34;&gt;Useful Python Snippets for Processing Roam JSON&lt;/h2&gt;
 &lt;p&gt;Once you&#39;ve downloaded your data as JSON from Roam, you can load and manipulate it as follows.&lt;/p&gt;
