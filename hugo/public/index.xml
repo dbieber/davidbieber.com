@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Sat, 25 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,102 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Daily Summaries of Browsing History</title>
+      <link>https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/</guid>
+      <description>&lt;p&gt;Over the &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&#34;&gt;course&lt;/a&gt; &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;of&lt;/a&gt; &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&#34;&gt;multiple&lt;/a&gt; &lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history/&#34;&gt;previous&lt;/a&gt; &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;snippets&lt;/a&gt;, I put together several SQL queries for analyzing my browsing history.&lt;/p&gt;
+&lt;p&gt;Today, I wanted to write a script to run several of these queries in sequence to assemble a nice summary of my daily browsing histories. Maybe I&#39;ll dump the summary into my &lt;a href=&#34;https://roamresearch.com/#/app/commons-db/page/wYVaowjId&#34;&gt;&lt;code&gt;[[Roam Research]]&lt;/code&gt;&lt;/a&gt; database so I can cross-link ideas with websites I&#39;ve visited.&lt;/p&gt;
+&lt;p&gt;As a first pass, I tried to throw together a quick bash script to string the queries together. It looked a bit like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;date=$1
+if [ -z $1 ];
+then
+  date=$(date &#39;+%Y-%m-%d&#39;);
+fi
+
+cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/Default-History
+cp ~/Library/Application\ Support/Google/Chrome/Profile\ 1/History ~/Profile-1-History
+
+function query() {
+  sqlite3 ~/Default-History $1;
+  sqlite3 ~/Profile-1-History $1;
+}
+
+echo \# YouTube Videos Watched
+echo
+
+query &amp;lt;&amp;lt; SQL
+select DISTINCT REPLACE(REPLACE(urls.title, &amp;quot; - YouTube&amp;quot;, &amp;quot;&amp;quot;), &amp;quot;(1) &amp;quot;, &amp;quot;&amp;quot;), urls.url, &amp;quot;$date%&amp;quot;
+from urls
+where urls.url like &amp;quot;%www.youtube.com/watch%&amp;quot;
+and datetime(last_visit_time / 1000000 + (strftime(&#39;%s&#39;, &#39;1601-01-01&#39;)), &#39;unixepoch&#39;)
+LIKE &amp;quot;$date%&amp;quot;
+limit 50;
+SQL
+
+# Additional queries ran here...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You&#39;ll notice a few things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I want to run each query on two different Chrome histories.&lt;/li&gt;
+&lt;li&gt;I want the script to be parameterized by the date, defaulting to today if no date is specified.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you&#39;re proficient in Bash, you may also notice something else; it doesn&#39;t work. The query is only used properly when I run sqlite3 on the first Chrome History, but an empty query is passed to the second query.&lt;/p&gt;
+&lt;p&gt;Rather than debug my Bash script, I switched over to Python. I used Python Fire to automatically expose all my functions as commands so within minutes I had a working CLI.&lt;/p&gt;
+&lt;p&gt;Here&#39;s what the Python script looks like:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import datetime
+import os
+import subprocess
+
+import fire
+
+
+def copy_histories():
+  check_output = subprocess.check_output
+  check_output([
+      &#39;cp&#39;,
+      os.path.expanduser(&#39;~/Library/Application Support/Google/Chrome/Default/History&#39;),
+      os.path.expanduser(&#39;~/Default-History&#39;)])
+  check_output([
+      &#39;cp&#39;,
+      os.path.expanduser(&#39;~/Library/Application Support/Google/Chrome/Profile 1/History&#39;),
+      os.path.expanduser(&#39;~/Profile-1-History&#39;)])
+
+
+def run_query(query):
+  call = subprocess.call
+  call([&#39;sqlite3&#39;,  os.path.expanduser(&#39;~/Default-History&#39;), query])
+  call([&#39;sqlite3&#39;, os.path.expanduser(&#39;~/Profile-1-History&#39;), query])
+
+
+def run(date=None):
+  copy_histories()
+  date = date or datetime.datetime.now().strftime(&#39;%Y-%m-%d&#39;)
+
+  print(&#39;## YouTube Videos Watched&#39;)
+  print()
+
+  run_query(f&amp;quot;&amp;quot;&amp;quot;
+  select DISTINCT REPLACE(REPLACE(urls.title, &amp;quot; - YouTube&amp;quot;, &amp;quot;&amp;quot;), &amp;quot;(1) &amp;quot;, &amp;quot;&amp;quot;)
+  from urls
+  where urls.url like &amp;quot;%www.youtube.com/watch%&amp;quot;
+  and datetime(last_visit_time / 1000000 + (strftime(&#39;%s&#39;, &#39;1601-01-01&#39;)), &#39;unixepoch&#39;)
+  LIKE &amp;quot;{date}%&amp;quot;
+  limit 50;
+  &amp;quot;&amp;quot;&amp;quot;)
+
+  # Additional queries run here...
+
+if __name__ == &#39;__main__&#39;:
+  fire.Fire()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;At the command line I run this with &lt;code&gt;python historyquery.py run&lt;/code&gt; or &lt;code&gt;python historyquery.py run --date=2020-04-26&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;With Python Fire I was able to quickly switch to a syntax I was more comfortable with, but keep the benefits of working from the context of a shell. I can now much more quickly make improvements to the script since I can operate more efficiently working in Python.&lt;/p&gt;
+&lt;p&gt;Now I have a script I can run that will produce a nice summary of my internet browsing activity for any date I specify. Running it over recent dates provides a nice walk down memory lane.&lt;/p&gt;
 </description>
     </item>
     
