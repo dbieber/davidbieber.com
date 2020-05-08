@@ -13,6 +13,49 @@
     </image>
     
     <item>
+      <title>Posting to HackerNews Programmatically</title>
+      <link>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</guid>
+      <description>&lt;p&gt;If you run this snippet of Python code, it will submit this &lt;a href=&#34;https://davidbieber.com/snippets/&#34;&gt;&amp;ldquo;Snippet&amp;rdquo;&lt;/a&gt; (the one you&#39;re currently reading) to HackerNews.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import getpass
+import requests
+
+USERNAME = (
+    &#39;&#39;  # Put your HackerNews username here.
+    or getpass.getuser()  # (But if you don&#39;t, we&#39;ll try a sensible default.)
+)
+PASSWORD = (
+    &#39;&#39;  # We&#39;ll prompt you for your password, or you can enter it here.
+    or getpass.getpass()
+)
+# You can reconfigure the title and url to submit here.
+TITLE_TO_SUBMIT = &#39;Posting to HackerNews Programmatically&#39;
+URL_TO_SUBMIT = &#39;davidbieber.com/snippets/2020-05-02-hackernews-submit/&#39;
+
+session = requests.Session()
+session.post(
+    &#39;https://news.ycombinator.com/login&#39;,
+    data={
+        &#39;acct&#39;: USERNAME,
+        &#39;pw&#39;: PASSWORD,
+    }
+)
+session.post(
+    &#39;https://news.ycombinator.com/submit&#39;,
+    data={
+        &#39;title&#39;: TITLE_TO_SUBMIT,
+        &#39;url&#39;: URL_TO_SUBMIT,
+    }
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can change the title and URL before running this to make a new submission, or run it as is to submit this snippet.&lt;/p&gt;
+&lt;p&gt;If you try to submit a URL that&#39;s already been submitted recently &amp;ndash; such as this snippet &amp;ndash; it won&#39;t submit a second time, so no harm done in running this.&lt;/p&gt;
+&lt;p&gt;To learn more about sessions and see why this works, you can read about them in the &lt;a href=&#34;https://requests.readthedocs.io/en/master/user/advanced/&#34;&gt;&lt;em&gt;requests&lt;/em&gt; documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Daily Summaries of Browsing History</title>
       <link>https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
