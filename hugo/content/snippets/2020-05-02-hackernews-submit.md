@@ -1,16 +1,16 @@
 +++
-title = "Posting to HackerNews Programmatically"
+title = "Posting to Hacker News Programmatically"
 date = 2020-05-02T00:00:00
 +++
 
-If you run this snippet of Python code, it will submit this ["Snippet"](https://davidbieber.com/snippets/) (the one you're currently reading) to HackerNews.
+If you run this snippet of Python code, it will submit this ["Snippet"](https://davidbieber.com/snippets/) (the one you're currently reading) to Hacker News.
 
 ```python
 import getpass
 import requests
 
 USERNAME = (
-    ''  # Put your HackerNews username here.
+    ''  # Put your Hacker News username here.
     or getpass.getuser()  # (But if you don't, we'll try a sensible default.)
 )
 PASSWORD = (
@@ -18,7 +18,7 @@ PASSWORD = (
     or getpass.getpass()
 )
 # You can reconfigure the title and url to submit here.
-TITLE_TO_SUBMIT = 'Posting to HackerNews Programmatically'
+TITLE_TO_SUBMIT = 'Posting to Hacker News Programmatically'
 URL_TO_SUBMIT = 'davidbieber.com/snippets/2020-05-02-hackernews-submit/'
 
 session = requests.Session()
