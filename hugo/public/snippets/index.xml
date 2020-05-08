@@ -13,16 +13,16 @@
     </image>
     
     <item>
-      <title>Posting to HackerNews Programmatically</title>
+      <title>Posting to Hacker News Programmatically</title>
       <link>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</guid>
-      <description>&lt;p&gt;If you run this snippet of Python code, it will submit this &lt;a href=&#34;https://davidbieber.com/snippets/&#34;&gt;&amp;ldquo;Snippet&amp;rdquo;&lt;/a&gt; (the one you&#39;re currently reading) to HackerNews.&lt;/p&gt;
+      <description>&lt;p&gt;If you run this snippet of Python code, it will submit this &lt;a href=&#34;https://davidbieber.com/snippets/&#34;&gt;&amp;ldquo;Snippet&amp;rdquo;&lt;/a&gt; (the one you&#39;re currently reading) to Hacker News.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import getpass
 import requests
 
 USERNAME = (
-    &#39;&#39;  # Put your HackerNews username here.
+    &#39;&#39;  # Put your Hacker News username here.
     or getpass.getuser()  # (But if you don&#39;t, we&#39;ll try a sensible default.)
 )
 PASSWORD = (
@@ -30,7 +30,7 @@ PASSWORD = (
     or getpass.getpass()
 )
 # You can reconfigure the title and url to submit here.
-TITLE_TO_SUBMIT = &#39;Posting to HackerNews Programmatically&#39;
+TITLE_TO_SUBMIT = &#39;Posting to Hacker News Programmatically&#39;
 URL_TO_SUBMIT = &#39;davidbieber.com/snippets/2020-05-02-hackernews-submit/&#39;
 
 session = requests.Session()
