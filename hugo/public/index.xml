@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Fri, 15 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Wed, 20 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,81 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Accessing Your iMessages with SQL</title>
+      <link>https://davidbieber.com/snippets/2020-05-20-imessage-sql-db/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-05-20-imessage-sql-db/</guid>
+      <description>&lt;p&gt;If you use a Mac and use iMessage, you can access your iMessages programmatically. They are stored by iMessage as a sqlite database, which you can easily access.&lt;/p&gt;
+&lt;h2 id=&#34;accessing-the-database&#34;&gt;Accessing the Database&lt;/h2&gt;
+&lt;p&gt;The database is typically stored at &lt;code&gt;~/Library/Messages/chat.db&lt;/code&gt;, though that location is configurable.&lt;/p&gt;
+&lt;p&gt;If you try to access the database, however, you will likely encounter this unhelpful error message: &lt;code&gt;~/Library/Messages/chat.db: Operation not permitted&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Thankfully, OSXDaily has put together a &lt;a href=&#34;https://osxdaily.com/2018/10/09/fix-operation-not-permitted-terminal-error-macos/&#34;&gt;helpful step by step guide to resolving this error&lt;/a&gt;, which I&#39;ll summarize here:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to your &lt;code&gt;System Preferences &amp;gt; Security &amp;amp; Privacy &amp;gt; Privacy &amp;gt; Full Disk Access&lt;/code&gt; settings.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use the Lock and &lt;code&gt;+&lt;/code&gt; symbol to give full disk access to the Terminal App (located in &lt;code&gt;Applications &amp;gt; Utilities &amp;gt; Terminal&lt;/code&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You may need to relaunch Terminal for the change to take effect; I did not.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Once you&#39;ve done this, you can start poking around at your iMessages programmatically.&lt;/p&gt;
+&lt;h2 id=&#34;taking-a-look-around&#34;&gt;Taking a Look Around&lt;/h2&gt;
+&lt;p&gt;I begin with making a backup:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cp ~/Library/Messages/chat.db ~/chat.db&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Now I open the database with sqlite3.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sqlite3 ~/chat.db&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I run &lt;code&gt;.tables&lt;/code&gt; to see what tables there are:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;_SqliteDatabaseProperties&lt;/td&gt;
+&lt;td&gt;kvtable&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;attachment&lt;/td&gt;
+&lt;td&gt;message&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;chat&lt;/td&gt;
+&lt;td&gt;message_attachment_join&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;chat_handle_join&lt;/td&gt;
+&lt;td&gt;message_processing_task&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;chat_message_join&lt;/td&gt;
+&lt;td&gt;sync_deleted_attachments&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;deleted_messages&lt;/td&gt;
+&lt;td&gt;sync_deleted_chats&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;handle&lt;/td&gt;
+&lt;td&gt;sync_deleted_messages&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;There are some interesting tables in there: &lt;code&gt;message&lt;/code&gt; seems most important. It looks like we&#39;ll also be able to look up attachments using tables &lt;code&gt;attachment&lt;/code&gt; and &lt;code&gt;message_attachment_join&lt;/code&gt;. Strangely, there&#39;s a table present for deleted messages, which suggests a sort of &amp;ldquo;trash can&amp;rdquo; where messages are not permanently deleted immediately upon deletion.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;.schema message&lt;/code&gt; is the command for viewing the schema of the message table.
+We can also jump right in with &lt;code&gt;SELECT * FROM message;&lt;/code&gt; to see what sort of data is contained within. Sure enough, human readable messages are present.&lt;/p&gt;
+&lt;p&gt;This will all be interesting to investigate further at a later date.
+One perk of understanding this mechanism for me is that I&#39;ll be able to write events that are triggered in response to iMessages. This enables me to write custom notification criteria. For example, I can have messages that start &amp;ldquo;URGENT&amp;rdquo; notify me immediately, but I can have all other messages programatically withheld from notifying me until 9pm.&lt;/p&gt;
+&lt;p&gt;This lets me receive the messages at the time and location that I want, rather than at the time Apple chooses for me. Thanks Bieber Bot.&lt;/p&gt;
 </description>
     </item>
     
