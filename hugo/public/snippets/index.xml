@@ -280,7 +280,7 @@ if __name__ == &#39;__main__&#39;:
 WHERE diff_hours &amp;lt; -6;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Unfortunately, my late night and early morning Messenger usage doesn&#39;t appear to be as consistent as I&#39;d imagined, especially since COVID-19 induced shelter-in-place began.
-I&#39;ll have to introduce additional source of data if I want to infer good sleep time estimates.&lt;/p&gt;
+I&#39;ll have to introduce additional sources of data if I want to infer good sleep time estimates.&lt;/p&gt;
 </description>
     </item>
     

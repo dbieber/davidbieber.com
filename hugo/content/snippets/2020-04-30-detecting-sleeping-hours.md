@@ -15,4 +15,4 @@ WHERE diff_hours < -6;
 ```
 
 Unfortunately, my late night and early morning Messenger usage doesn't appear to be as consistent as I'd imagined, especially since COVID-19 induced shelter-in-place began.
-I'll have to introduce additional source of data if I want to infer good sleep time estimates.
+I'll have to introduce additional sources of data if I want to infer good sleep time estimates.
