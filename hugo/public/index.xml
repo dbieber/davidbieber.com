@@ -443,6 +443,23 @@ session.post(
     </item>
     
     <item>
+      <title>Detecting My Sleeping Hours from Data</title>
+      <link>https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/</guid>
+      <description>&lt;p&gt;Between my &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;Chrome browsing history&lt;/a&gt; and my &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/&#34;&gt;Facebook Messenger message logs&lt;/a&gt;, I should be able to get a good estimate of when I&#39;m awake and asleep.&lt;/p&gt;
+&lt;p&gt;Here&#39;s a quick attempt using only Messenger data.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;SELECT * FROM
+  (SELECT to_timestamp(timestamp / 1000), (timestamp - lag(timestamp) over (ORDER BY timestamp DESC)) / 1000 / 60 / 60 AS diff_hours
+   FROM messenger WHERE messenger.author = &#39;1409114395&#39; ORDER BY timestamp DESC LIMIT 100000) AS foo
+WHERE diff_hours &amp;lt; -6;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Unfortunately, my late night and early morning Messenger usage doesn&#39;t appear to be as consistent as I&#39;d imagined, especially since COVID-19 induced shelter-in-place began.
+I&#39;ll have to introduce additional sources of data if I want to infer good sleep time estimates.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Daily Summaries of Browsing History</title>
       <link>https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
@@ -535,23 +552,6 @@ if __name__ == &#39;__main__&#39;:
 &lt;p&gt;At the command line I run this with &lt;code&gt;python historyquery.py run&lt;/code&gt; or &lt;code&gt;python historyquery.py run --date=2020-04-26&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;With Python Fire I was able to quickly switch to a syntax I was more comfortable with, but keep the benefits of working from the context of a shell. I can now much more quickly make improvements to the script since I can operate more efficiently working in Python.&lt;/p&gt;
 &lt;p&gt;Now I have a script I can run that will produce a nice summary of my internet browsing activity for any date I specify. Running it over recent dates provides a nice walk down memory lane.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Detecting My Sleeping Hours from Data</title>
-      <link>https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/</link>
-      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/</guid>
-      <description>&lt;p&gt;Between my &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;Chrome browsing history&lt;/a&gt; and my &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/&#34;&gt;Facebook Messenger message logs&lt;/a&gt;, I should be able to get a good estimate of when I&#39;m awake and asleep.&lt;/p&gt;
-&lt;p&gt;Here&#39;s a quick attempt using only Messenger data.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;SELECT * FROM
-  (SELECT to_timestamp(timestamp / 1000), (timestamp - lag(timestamp) over (ORDER BY timestamp DESC)) / 1000 / 60 / 60 AS diff_hours
-   FROM messenger WHERE messenger.author = &#39;1409114395&#39; ORDER BY timestamp DESC LIMIT 100000) AS foo
-WHERE diff_hours &amp;lt; -6;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Unfortunately, my late night and early morning Messenger usage doesn&#39;t appear to be as consistent as I&#39;d imagined, especially since COVID-19 induced shelter-in-place began.
-I&#39;ll have to introduce additional sources of data if I want to infer good sleep time estimates.&lt;/p&gt;
 </description>
     </item>
     

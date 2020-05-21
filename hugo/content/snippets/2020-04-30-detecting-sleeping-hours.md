@@ -1,6 +1,6 @@
 +++
 title = "Detecting My Sleeping Hours from Data"
-date = 2020-04-26T00:00:00
+date = 2020-04-30T00:00:00
 +++
 
 Between my [Chrome browsing history](/snippets/2020-04-20-browser-history-date-queries/) and my [Facebook Messenger message logs](/snippets/2020-04-12-fb-messenger-sql/), I should be able to get a good estimate of when I'm awake and asleep.
