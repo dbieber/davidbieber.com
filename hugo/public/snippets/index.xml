@@ -268,6 +268,23 @@ if __name__ == &#39;__main__&#39;:
     </item>
     
     <item>
+      <title>Detecting My Sleeping Hours from Data</title>
+      <link>https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/</guid>
+      <description>&lt;p&gt;Between my &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;Chrome browsing history&lt;/a&gt; and my &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/&#34;&gt;Facebook Messenger message logs&lt;/a&gt;, I should be able to get a good estimate of when I&#39;m awake and asleep.&lt;/p&gt;
+&lt;p&gt;Here&#39;s a quick attempt using only Messenger data.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;SELECT * FROM
+  (SELECT to_timestamp(timestamp / 1000), (timestamp - lag(timestamp) over (ORDER BY timestamp DESC)) / 1000 / 60 / 60 AS diff_hours
+   FROM messenger WHERE messenger.author = &#39;1409114395&#39; ORDER BY timestamp DESC LIMIT 100000) AS foo
+WHERE diff_hours &amp;lt; -6;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Unfortunately, my late night and early morning Messenger usage doesn&#39;t appear to be as consistent as I&#39;d imagined, especially since COVID-19 induced shelter-in-place began.
+I&#39;ll have to introduce additional source of data if I want to infer good sleep time estimates.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Roam Research&#39;s JSON Export Format</title>
       <link>https://davidbieber.com/snippets/2020-04-25-roam-json-export/</link>
       <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
