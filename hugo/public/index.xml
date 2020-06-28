@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Wed, 20 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Sun, 28 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,25 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Facebook Mobile Website: News Feed in Chronological Order</title>
+      <link>https://davidbieber.com/snippets/2020-06-28-facebook-chronological-order/</link>
+      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-06-28-facebook-chronological-order/</guid>
+      <description>&lt;p&gt;On your phone, you can navigate to &lt;a href=&#34;https://www.facebook.com/home.php?sk=h_chr&#34;&gt;https://www.facebook.com/home.php?sk=h_chr&lt;/a&gt; to view your News Feed on the Facebook website in chronological order.&lt;/p&gt;
+&lt;p&gt;There are also excellent apps for hiding your Facebook News Feed if you find it draining on your attention, but unfortunately they don&#39;t work on mobile:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.hidefeed.com/&#34;&gt;Hide Feed&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/news-feed-eradicator-for/fjcldmjmjhkklehbacihaiopjklihlgg?hl=en&#34;&gt;Facebook News Feed Eradicator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Since these don&#39;t work on the Facebook mobile website, I&#39;ve turned to this new strategy to combat the attention draining nature of News Feed: only viewing my feed in chronological order.&lt;/p&gt;
+&lt;p&gt;By switching to chronological order, the &amp;ldquo;infinite scroll&amp;rdquo; of the News Feed is interrupted because either you eventually get to posts you&#39;ve seen before, or you notice the timestamp of the posts you&#39;re looking at slowly rising. You also get a more complete picture of what content is available, which helps fight the constant &amp;ldquo;just one more post&amp;rdquo; feeling that drives infinite scrolling.&lt;/p&gt;
+&lt;p&gt;So, how do you switch your news feed to chronological order?&lt;/p&gt;
+&lt;p&gt;On the main Facebook website, you can click the three dots next to &amp;ldquo;News Feed&amp;rdquo; and choose &amp;ldquo;Most Recent&amp;rdquo;. However, you have to choose this option every time you visit Facebook, which can be frustrating. So instead, navigate directly to &lt;a href=&#34;https://www.facebook.com/home.php?sk=h_chr&#34;&gt;https://www.facebook.com/home.php?sk=h_chr&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;On the Facebook mobile website, there isn&#39;t an option to view posts in chronological order. Instead, you can achieve this by accessing the desktop website on your phone. Go to &lt;a href=&#34;https://www.facebook.com/home.php?sk=h_chr&#34;&gt;https://www.facebook.com/home.php?sk=h_chr&lt;/a&gt; to get the Desktop version of Facebook on your phone, with chronological order already enabled. Bookmark the page and use it as your primary way of accessing Facebook on your phone to get chronological order as your News Feed default from now on.&lt;/p&gt;
 </description>
     </item>
     
