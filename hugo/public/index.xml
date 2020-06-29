@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Sun, 28 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Sun, 28 Jun 2020 01:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,16 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Downloading the Online Encylopedia of Integer Sequences</title>
+      <link>https://davidbieber.com/snippets/2020-06-28-oeis-download/</link>
+      <pubDate>Sun, 28 Jun 2020 01:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-06-28-oeis-download/</guid>
+      <description>&lt;p&gt;If you&#39;re looking for a way to download the entire &lt;a href=&#34;https://oeis.org/&#34;&gt;Online Encylopedia of Integer Sequences&lt;/a&gt;, you may come across advice for scraping the site, one sequence at a time. Instead of collecting the sequences one at a time, it might be sufficient to download one of their already collected archives. &lt;a href=&#34;https://oeis.org/stripped.gz&#34;&gt;This file&lt;/a&gt; contains the integer sequences and their A-numbers, and &lt;a href=&#34;https://oeis.org/names.gz&#34;&gt;this file&lt;/a&gt; contains the names of the sequences. No need to stress the OEIS servers when these ready-made archives are ripe for downloading!&lt;/p&gt;
+&lt;p&gt;I found these files from &lt;a href=&#34;https://oeis.org/wiki/JSON_Format,_Compressed_Files&#34;&gt;this page&lt;/a&gt; of the OEIS wiki. The reason I&#39;m linking to it here is that finding that page was difficult, and I hope to save you the trouble of finding it for yourself.&lt;/p&gt;
 </description>
     </item>
     

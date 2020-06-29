@@ -13,6 +13,16 @@
     </image>
     
     <item>
+      <title>Downloading the Online Encylopedia of Integer Sequences</title>
+      <link>https://davidbieber.com/snippets/2020-06-28-oeis-download/</link>
+      <pubDate>Sun, 28 Jun 2020 01:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-06-28-oeis-download/</guid>
+      <description>&lt;p&gt;If you&#39;re looking for a way to download the entire &lt;a href=&#34;https://oeis.org/&#34;&gt;Online Encylopedia of Integer Sequences&lt;/a&gt;, you may come across advice for scraping the site, one sequence at a time. Instead of collecting the sequences one at a time, it might be sufficient to download one of their already collected archives. &lt;a href=&#34;https://oeis.org/stripped.gz&#34;&gt;This file&lt;/a&gt; contains the integer sequences and their A-numbers, and &lt;a href=&#34;https://oeis.org/names.gz&#34;&gt;this file&lt;/a&gt; contains the names of the sequences. No need to stress the OEIS servers when these ready-made archives are ripe for downloading!&lt;/p&gt;
+&lt;p&gt;I found these files from &lt;a href=&#34;https://oeis.org/wiki/JSON_Format,_Compressed_Files&#34;&gt;this page&lt;/a&gt; of the OEIS wiki. The reason I&#39;m linking to it here is that finding that page was difficult, and I hope to save you the trouble of finding it for yourself.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Facebook Mobile Website: News Feed in Chronological Order</title>
       <link>https://davidbieber.com/snippets/2020-06-28-facebook-chronological-order/</link>
       <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
