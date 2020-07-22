@@ -358,7 +358,7 @@ Terms from the paper are in $\LaTeX$, and terms from the source code are in &lt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;class_loss&lt;/code&gt;: $-\log q(y_n | f(x_n, \epsilon))$ (comes from the $I(Z, Y)$ term)
 &lt;ul&gt;
-&lt;li&gt;Recall $z = f(x, \epsilon)$&lt;/li&gt;
+&lt;li&gt;Recall $z = f(x, \epsilon)$; this is &lt;code&gt;encoding.sample()&lt;/code&gt; in the code base.&lt;/li&gt;
 &lt;li&gt;$q$ is &lt;code&gt;decoder&lt;/code&gt; with softmax applied, and $q(y | f(x_n, \epsilon))$ is softmax(&lt;code&gt;logits&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;class_loss = tf.losses.softmax_cross_entropy( logits=logits, onehot_labels=one_hot_labels) / math.log(2)&lt;/code&gt; is $-\log q(y_n | f(x_n, \epsilon))$
 &lt;ul&gt;
@@ -367,6 +367,8 @@ Terms from the paper are in $\LaTeX$, and terms from the source code are in &lt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;$p(Z|x_n)$ is also &lt;code&gt;encoding&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;$KL[p(Z|x_n), r(Z)]$ is &lt;code&gt;info_loss&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;prior&lt;/code&gt; is $r(z)$ (which approximates $p(z)$).&lt;/li&gt;
 &lt;/ul&gt;
 </description>

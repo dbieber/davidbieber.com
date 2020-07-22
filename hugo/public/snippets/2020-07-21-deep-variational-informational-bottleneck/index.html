@@ -595,7 +595,7 @@ Terms from the paper are in $\LaTeX$, and terms from the source code are in <cod
 <ul>
 <li><code>class_loss</code>: $-\log q(y_n | f(x_n, \epsilon))$ (comes from the $I(Z, Y)$ term)
 <ul>
-<li>Recall $z = f(x, \epsilon)$</li>
+<li>Recall $z = f(x, \epsilon)$; this is <code>encoding.sample()</code> in the code base.</li>
 <li>$q$ is <code>decoder</code> with softmax applied, and $q(y | f(x_n, \epsilon))$ is softmax(<code>logits</code>)</li>
 <li><code>class_loss = tf.losses.softmax_cross_entropy( logits=logits, onehot_labels=one_hot_labels) / math.log(2)</code> is $-\log q(y_n | f(x_n, \epsilon))$
 <ul>
@@ -604,6 +604,8 @@ Terms from the paper are in $\LaTeX$, and terms from the source code are in <cod
 </li>
 </ul>
 </li>
+<li>$p(Z|x_n)$ is also <code>encoding</code></li>
+<li>$KL[p(Z|x_n), r(Z)]$ is <code>info_loss</code></li>
 <li><code>prior</code> is $r(z)$ (which approximates $p(z)$).</li>
 </ul>
 
