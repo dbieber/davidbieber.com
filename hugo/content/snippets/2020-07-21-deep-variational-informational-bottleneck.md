@@ -105,9 +105,11 @@ I've describe here the correspondence between the notation used in the source co
 Terms from the paper are in $\LaTeX$, and terms from the source code are in `code blocks`.
 
 - `class_loss`: $-\log q(y_n | f(x_n, \epsilon))$ (comes from the $I(Z, Y)$ term)
-  - Recall $z = f(x, \epsilon)$
+  - Recall $z = f(x, \epsilon)$; this is `encoding.sample()` in the code base.
   - $q$ is `decoder` with softmax applied, and $q(y | f(x_n, \epsilon))$ is softmax(`logits`)
   - `class_loss = tf.losses.softmax_cross_entropy(
 logits=logits, onehot_labels=one_hot_labels) / math.log(2)` is $-\log q(y_n | f(x_n, \epsilon))$
     - $f$ is `encoder`, and $f(x, \cdot)$ is `encoding`
+- $p(Z|x_n)$ is also `encoding`
+- $KL[p(Z|x_n), r(Z)]$ is `info_loss`
 - `prior` is $r(z)$ (which approximates $p(z)$).
