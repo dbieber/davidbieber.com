@@ -110,6 +110,7 @@ Terms from the paper are in $\LaTeX$, and terms from the source code are in `cod
   - `class_loss = tf.losses.softmax_cross_entropy(
 logits=logits, onehot_labels=one_hot_labels) / math.log(2)` is $-\log q(y_n | f(x_n, \epsilon))$
     - $f$ is `encoder`, and $f(x, \cdot)$ is `encoding`
-- $p(Z|x_n)$ is also `encoding`
+  - $p(Z|x_n)$ is also `encoding`
+  - $f$ is the deterministic encoder used by the reparameterization trick, whereas $p$ is the stochastic encoder
 - $KL[p(Z|x_n), r(Z)]$ is `info_loss`
 - `prior` is $r(z)$ (which approximates $p(z)$).

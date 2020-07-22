@@ -602,9 +602,10 @@ Terms from the paper are in $\LaTeX$, and terms from the source code are in <cod
 <li>$f$ is <code>encoder</code>, and $f(x, \cdot)$ is <code>encoding</code></li>
 </ul>
 </li>
+<li>$p(Z|x_n)$ is also <code>encoding</code></li>
+<li>$f$ is the deterministic encoder used by the reparameterization trick, whereas $p$ is the stochastic encoder</li>
 </ul>
 </li>
-<li>$p(Z|x_n)$ is also <code>encoding</code></li>
 <li>$KL[p(Z|x_n), r(Z)]$ is <code>info_loss</code></li>
 <li><code>prior</code> is $r(z)$ (which approximates $p(z)$).</li>
 </ul>
