@@ -13,6 +13,95 @@
     </image>
     
     <item>
+      <title>Deep Variational Information Bottleneck</title>
+      <link>https://davidbieber.com/snippets/2020-07-21-deep-variational-informational-bottleneck/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-07-21-deep-variational-informational-bottleneck/</guid>
+      <description>&lt;p&gt;You can read the 2017 paper &amp;ldquo;Deep Variational Information Bottleneck&amp;rdquo; &lt;a href=&#34;https://arxiv.org/pdf/1612.00410.pdf&#34;&gt;on Arxiv here&lt;/a&gt;, and its reviews are visible &lt;a href=&#34;https://openreview.net/forum?id=HyxQzBceg&#34;&gt;on OpenReview here&lt;/a&gt;. The authors are my coworkers: Alex Alemi, Ian Fischer, Joshua Dillon, and Kevin Murphy.&lt;/p&gt;
+&lt;p&gt;I&#39;ve taken notes on the paper, and will use this snippet to present them.&lt;/p&gt;
+&lt;h2 id=&#34;notation&#34;&gt;Notation&lt;/h2&gt;
+&lt;p&gt;We consider the problem of supervised learning for classification with the following notation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$X$: An example input.&lt;/li&gt;
+&lt;li&gt;$Z$: The output of an intermediate layer of a neural network.
+&lt;ul&gt;
+&lt;li&gt;We view this as a stochastic encoding of $X$.&lt;/li&gt;
+&lt;li&gt;It is the output of a parametric encoder $p(\textbf{z} | \textbf{x}; \theta)$&lt;/li&gt;
+&lt;li&gt;$\theta$ are the parameters of the neural network used to encode $X$ that we wish to learn.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;$Y$: The example&#39;s target class.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;goal&#34;&gt;Goal&lt;/h2&gt;
+&lt;p&gt;The approach of the paper aims first and foremost to learn an encoding $Z$ of $X$ that is maximally informative about $Y$.
+This is measured via mutual information between $Z$ and $Y$: $I(Z, Y; \theta)$.&lt;/p&gt;
+&lt;p&gt;$$I(Z, Y; \theta) = \int dx~dy~p(z, y|\theta) \log \frac{p(z, y)}{p(z)p(y)}$$&lt;/p&gt;
+&lt;p&gt;It&#39;s not enough to maximize $I(Z, Y; \theta)$ though; this can be done by simply letting $Z = X$, which isn&#39;t useful.&lt;/p&gt;
+&lt;p&gt;So, we also want to limit $I(Z, X)$. We do this by enforcing an information constraint: $I(X, Z) &amp;lt; I_c$.&lt;/p&gt;
+&lt;p&gt;Our goal is to maximize $I(Z, Y; \theta)$ subject to $I(X, Z) &amp;lt; I_c$.&lt;/p&gt;
+&lt;p&gt;Rewriting this using Lagrange multiplier $\beta$ brings us to the information bottleneck (IB) objective, which we write as follows:&lt;/p&gt;
+&lt;p&gt;$$R_{IB}(\theta) = I(Z,Y) - \beta I(Z, X).$$&lt;/p&gt;
+&lt;p&gt;The goal of the paper is to maximize $R_{IB}$.&lt;/p&gt;
+&lt;h2 id=&#34;intuition-behind-goal&#34;&gt;Intuition Behind Goal&lt;/h2&gt;
+&lt;p&gt;Why maximize $I(Z, Y)$? This is what allows the model to make correct predictions.&lt;/p&gt;
+&lt;p&gt;Why not just maximize $I(Z, Y)$? Letting $Z = X$ fully maximizes $I(Z, Y)$, but isn&#39;t helpful because the representation of $Z$ is what you started with, so its hard to make good classifications.&lt;/p&gt;
+&lt;p&gt;Why minimize $\beta I(Z, X)$? We want a representation $Z$ that is maximally compressive of the input $X$.&lt;/p&gt;
+&lt;p&gt;That&#39;s the intuition given in the paper for why we seek to minimize $\beta I(Z, X)$, but it isn&#39;t clear the degree to which compression is useful. Yes, a compressive representation of $X$ can lead to better generalization, but it&#39;s a trade off. Greater compression may mean lower $I(Z, Y)$ and hence lower potential accuracy. Balancing this trade off (choosing an appropriate $\beta$) will be important.&lt;/p&gt;
+&lt;h2 id=&#34;why-is-it-difficult&#34;&gt;Why is it difficult?&lt;/h2&gt;
+&lt;p&gt;Mutual information is in general intractable. So we can&#39;t directly optimize the object $R_{IB}(\theta)$ as stated in the goal. Instead, the paper takes the following approach to get around mutual information&#39;s intractability.&lt;/p&gt;
+&lt;h2 id=&#34;the-approach&#34;&gt;The Approach&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Use variational inference to construct a lower bound on the IB objective.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use the &amp;ldquo;reparameterization trick&amp;rdquo; and Monte Carlo sampling to get unbiased estimate of gradient.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Parameterize our distributions with neural networks, and optimize with SGD.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We&#39;ll go into more detail in just a minute.&lt;/p&gt;
+&lt;h2 id=&#34;benefits&#34;&gt;Benefits&lt;/h2&gt;
+&lt;p&gt;This approach provides some robustness to overfitting because model ignores as much of $X$ as possible.&lt;/p&gt;
+&lt;p&gt;It also provides some robustness to adversarial examples because the model maps $X$ to a distribution over $Z$s rather than a single $Z$, so its harder for a single unusual value to influence a final class prediction.&lt;/p&gt;
+&lt;h2 id=&#34;execution&#34;&gt;Execution&lt;/h2&gt;
+&lt;h3 id=&#34;part-1-variational-inference&#34;&gt;Part 1: Variational Inference&lt;/h3&gt;
+&lt;p&gt;You can follow the math in the paper (Section 3), but the first main result is to define&lt;/p&gt;
+&lt;p&gt;$$L = \int dx~dy~dz~ p(x) p(y|x) p(z|x) \log q(y|z) - \beta \int dx~dz~ p(x) p(z|x) \log \frac{p(z|x)}{r(z)}$$&lt;/p&gt;
+&lt;p&gt;and show that
+$$R_{IB}(\theta) = I(Z,Y) - \beta I(Z, X) \ge L.$$&lt;/p&gt;
+&lt;p&gt;To achieve this, we&#39;ve introduced $q(y|z)$ as an approximation of $p(y|z)$, and $r(z)$ as an approximation of $p(z)$.&lt;/p&gt;
+&lt;p&gt;$L$ serves as a lower bound for the objective we care about. $p$, $q$, and $r$ are all parameterized by $\theta$.&lt;/p&gt;
+&lt;p&gt;We can approximate $L$ as&lt;/p&gt;
+&lt;p&gt;$$L \approx \frac{1}{N}\sum_{n=1}^N \left[\int dz~ p(z|x_n) \log q(y_n|z) - \beta~ p(z|x_n) \log \frac{p(z|x_n)}{r(z)} \right].$$&lt;/p&gt;
+&lt;h3 id=&#34;part-2-reparameterization-trick&#34;&gt;Part 2: Reparameterization trick&lt;/h3&gt;
+&lt;p&gt;Suppose $p(z|x)$ is $N(z|f_e^\mu(x), f_e^\Sigma(x))$, with $f_e$ a neural network that outputs the mean and covariance matrix for the Gaussian.&lt;/p&gt;
+&lt;p&gt;Then the &amp;ldquo;reparameterization trick&amp;rdquo; is to write $p(z|x)dz = p(\epsilon)d\epsilon$, where $z = f(x, \epsilon)$ is a deterministic function and $\epsilon$ is a Gaussian random variable. Using this, we can rewrite $L$ as follows.&lt;/p&gt;
+&lt;p&gt;$$J_{IB} = \frac{1}{N} \sum\limits_{n=1}^N E_{\epsilon \sim p(\epsilon)} \left[-\log q(y_n|f(x_n,\epsilon))\right] + \beta KL[p(Z|x_n), r(Z)]$$&lt;/p&gt;
+&lt;p&gt;As long as $q$ is differentiable and $KL[p(Z|x_n), r(Z)]$ is tractable, this is an objective we can optimize with e.g. gradient descent.&lt;/p&gt;
+&lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;A concise demo implementation is available on GitHub at &lt;a href=&#34;https://github.com/alexalemi/vib_demo/blob/master/MNISTVIB.ipynb&#34;&gt;https://github.com/alexalemi/vib_demo/blob/master/MNISTVIB.ipynb&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I&#39;ve describe here the correspondence between the notation used in the source code and the notation used in the paper.
+Terms from the paper are in $\LaTeX$, and terms from the source code are in &lt;code&gt;code blocks&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class_loss&lt;/code&gt;: $-\log q(y_n | f(x_n, \epsilon))$ (comes from the $I(Z, Y)$ term)
+&lt;ul&gt;
+&lt;li&gt;Recall $z = f(x, \epsilon)$&lt;/li&gt;
+&lt;li&gt;$q$ is &lt;code&gt;decoder&lt;/code&gt; with softmax applied, and $q(y | f(x_n, \epsilon))$ is softmax(&lt;code&gt;logits&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;class_loss = tf.losses.softmax_cross_entropy( logits=logits, onehot_labels=one_hot_labels) / math.log(2)&lt;/code&gt; is $-\log q(y_n | f(x_n, \epsilon))$
+&lt;ul&gt;
+&lt;li&gt;$f$ is &lt;code&gt;encoder&lt;/code&gt;, and $f(x, \cdot)$ is &lt;code&gt;encoding&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;prior&lt;/code&gt; is $r(z)$ (which approximates $p(z)$).&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Downloading the Online Encylopedia of Integer Sequences</title>
       <link>https://davidbieber.com/snippets/2020-06-28-oeis-download/</link>
       <pubDate>Sun, 28 Jun 2020 01:00:00 +0000</pubDate>

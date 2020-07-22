@@ -28,10 +28,13 @@
   
     
   
-  <meta name="description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot.">
+  <meta name="description" content="You can read the 2017 paper &ldquo;Deep Variational Information Bottleneck&rdquo; on Arxiv here, and its reviews are visible on OpenReview here. The authors are my coworkers: Alex Alemi, Ian Fischer, Joshua Dillon, and Kevin Murphy.
+I&#39;ve taken notes on the paper, and will use this snippet to present them.
+Notation We consider the problem of supervised learning for classification with the following notation:
+ $X$: An example input. $Z$: The output of an intermediate layer of a neural network.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/">
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-07-21-deep-variational-informational-bottleneck/">
 
   
 
@@ -43,6 +46,9 @@
   
 
   
+  
+  
+  <script src="/js/mathjax-config.js"></script>
   
 
   
@@ -172,9 +178,9 @@
 
       
       
-        
-      
 
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -244,14 +250,12 @@
 
 
   
-  <link rel="alternate" href="/snippets/index.xml" type="application/rss+xml" title="David Bieber">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
 
-  <link rel="canonical" href="https://davidbieber.com/snippets/">
+  <link rel="canonical" href="https://davidbieber.com/snippets/2020-07-21-deep-variational-informational-bottleneck/">
 
   
   
@@ -268,29 +272,37 @@
   <meta property="twitter:creator" content="@Bieber">
   
   <meta property="og:site_name" content="David Bieber">
-  <meta property="og:url" content="https://davidbieber.com/snippets/">
-  <meta property="og:title" content="Snippets | David Bieber">
-  <meta property="og:description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2020-07-21-deep-variational-informational-bottleneck/">
+  <meta property="og:title" content="Deep Variational Information Bottleneck | David Bieber">
+  <meta property="og:description" content="You can read the 2017 paper &ldquo;Deep Variational Information Bottleneck&rdquo; on Arxiv here, and its reviews are visible on OpenReview here. The authors are my coworkers: Alex Alemi, Ian Fischer, Joshua Dillon, and Kevin Murphy.
+I&#39;ve taken notes on the paper, and will use this snippet to present them.
+Notation We consider the problem of supervised learning for classification with the following notation:
+ $X$: An example input. $Z$: The output of an intermediate layer of a neural network."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2018-10-26T00:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2020-07-21T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-07-21T00:00:00&#43;00:00">
   
 
   
 
 
 
-
   
 
 
   
 
 
+  
 
 
 
-  <title>Snippets | David Bieber</title>
+
+
+  <title>Deep Variational Information Bottleneck | David Bieber</title>
 
 </head>
 
@@ -448,146 +460,216 @@
 </nav>
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
+  <article class="article">
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
   
   
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Deep Variational Information Bottleneck</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">Snippets</h1>
+
+
+<div class="article-metadata">
 
   
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
+  <div class="article-container">
+
+    <div class="article-style" id="article-content">
+      <p>You can read the 2017 paper &ldquo;Deep Variational Information Bottleneck&rdquo; <a href="https://arxiv.org/pdf/1612.00410.pdf">on Arxiv here</a>, and its reviews are visible <a href="https://openreview.net/forum?id=HyxQzBceg">on OpenReview here</a>. The authors are my coworkers: Alex Alemi, Ian Fischer, Joshua Dillon, and Kevin Murphy.</p>
+<p>I've taken notes on the paper, and will use this snippet to present them.</p>
+<h2 id="notation">Notation</h2>
+<p>We consider the problem of supervised learning for classification with the following notation:</p>
+<ul>
+<li>$X$: An example input.</li>
+<li>$Z$: The output of an intermediate layer of a neural network.
+<ul>
+<li>We view this as a stochastic encoding of $X$.</li>
+<li>It is the output of a parametric encoder $p(\textbf{z} | \textbf{x}; \theta)$</li>
+<li>$\theta$ are the parameters of the neural network used to encode $X$ that we wish to learn.</li>
+</ul>
+</li>
+<li>$Y$: The example's target class.</li>
+</ul>
+<h2 id="goal">Goal</h2>
+<p>The approach of the paper aims first and foremost to learn an encoding $Z$ of $X$ that is maximally informative about $Y$.
+This is measured via mutual information between $Z$ and $Y$: $I(Z, Y; \theta)$.</p>
+<p>$$I(Z, Y; \theta) = \int dx~dy~p(z, y|\theta) \log \frac{p(z, y)}{p(z)p(y)}$$</p>
+<p>It's not enough to maximize $I(Z, Y; \theta)$ though; this can be done by simply letting $Z = X$, which isn't useful.</p>
+<p>So, we also want to limit $I(Z, X)$. We do this by enforcing an information constraint: $I(X, Z) &lt; I_c$.</p>
+<p>Our goal is to maximize $I(Z, Y; \theta)$ subject to $I(X, Z) &lt; I_c$.</p>
+<p>Rewriting this using Lagrange multiplier $\beta$ brings us to the information bottleneck (IB) objective, which we write as follows:</p>
+<p>$$R_{IB}(\theta) = I(Z,Y) - \beta I(Z, X).$$</p>
+<p>The goal of the paper is to maximize $R_{IB}$.</p>
+<h2 id="intuition-behind-goal">Intuition Behind Goal</h2>
+<p>Why maximize $I(Z, Y)$? This is what allows the model to make correct predictions.</p>
+<p>Why not just maximize $I(Z, Y)$? Letting $Z = X$ fully maximizes $I(Z, Y)$, but isn't helpful because the representation of $Z$ is what you started with, so its hard to make good classifications.</p>
+<p>Why minimize $\beta I(Z, X)$? We want a representation $Z$ that is maximally compressive of the input $X$.</p>
+<p>That's the intuition given in the paper for why we seek to minimize $\beta I(Z, X)$, but it isn't clear the degree to which compression is useful. Yes, a compressive representation of $X$ can lead to better generalization, but it's a trade off. Greater compression may mean lower $I(Z, Y)$ and hence lower potential accuracy. Balancing this trade off (choosing an appropriate $\beta$) will be important.</p>
+<h2 id="why-is-it-difficult">Why is it difficult?</h2>
+<p>Mutual information is in general intractable. So we can't directly optimize the object $R_{IB}(\theta)$ as stated in the goal. Instead, the paper takes the following approach to get around mutual information's intractability.</p>
+<h2 id="the-approach">The Approach</h2>
+<ol>
+<li>
+<p>Use variational inference to construct a lower bound on the IB objective.</p>
+</li>
+<li>
+<p>Use the &ldquo;reparameterization trick&rdquo; and Monte Carlo sampling to get unbiased estimate of gradient.</p>
+</li>
+<li>
+<p>Parameterize our distributions with neural networks, and optimize with SGD.</p>
+</li>
+</ol>
+<p>We'll go into more detail in just a minute.</p>
+<h2 id="benefits">Benefits</h2>
+<p>This approach provides some robustness to overfitting because model ignores as much of $X$ as possible.</p>
+<p>It also provides some robustness to adversarial examples because the model maps $X$ to a distribution over $Z$s rather than a single $Z$, so its harder for a single unusual value to influence a final class prediction.</p>
+<h2 id="execution">Execution</h2>
+<h3 id="part-1-variational-inference">Part 1: Variational Inference</h3>
+<p>You can follow the math in the paper (Section 3), but the first main result is to define</p>
+<p>$$L = \int dx~dy~dz~ p(x) p(y|x) p(z|x) \log q(y|z) - \beta \int dx~dz~ p(x) p(z|x) \log \frac{p(z|x)}{r(z)}$$</p>
+<p>and show that
+$$R_{IB}(\theta) = I(Z,Y) - \beta I(Z, X) \ge L.$$</p>
+<p>To achieve this, we've introduced $q(y|z)$ as an approximation of $p(y|z)$, and $r(z)$ as an approximation of $p(z)$.</p>
+<p>$L$ serves as a lower bound for the objective we care about. $p$, $q$, and $r$ are all parameterized by $\theta$.</p>
+<p>We can approximate $L$ as</p>
+<p>$$L \approx \frac{1}{N}\sum_{n=1}^N \left[\int dz~ p(z|x_n) \log q(y_n|z) - \beta~ p(z|x_n) \log \frac{p(z|x_n)}{r(z)} \right].$$</p>
+<h3 id="part-2-reparameterization-trick">Part 2: Reparameterization trick</h3>
+<p>Suppose $p(z|x)$ is $N(z|f_e^\mu(x), f_e^\Sigma(x))$, with $f_e$ a neural network that outputs the mean and covariance matrix for the Gaussian.</p>
+<p>Then the &ldquo;reparameterization trick&rdquo; is to write $p(z|x)dz = p(\epsilon)d\epsilon$, where $z = f(x, \epsilon)$ is a deterministic function and $\epsilon$ is a Gaussian random variable. Using this, we can rewrite $L$ as follows.</p>
+<p>$$J_{IB} = \frac{1}{N} \sum\limits_{n=1}^N E_{\epsilon \sim p(\epsilon)} \left[-\log q(y_n|f(x_n,\epsilon))\right] + \beta KL[p(Z|x_n), r(Z)]$$</p>
+<p>As long as $q$ is differentiable and $KL[p(Z|x_n), r(Z)]$ is tractable, this is an objective we can optimize with e.g. gradient descent.</p>
+<h2 id="implementation">Implementation</h2>
+<p>A concise demo implementation is available on GitHub at <a href="https://github.com/alexalemi/vib_demo/blob/master/MNISTVIB.ipynb">https://github.com/alexalemi/vib_demo/blob/master/MNISTVIB.ipynb</a>.</p>
+<p>I've describe here the correspondence between the notation used in the source code and the notation used in the paper.
+Terms from the paper are in $\LaTeX$, and terms from the source code are in <code>code blocks</code>.</p>
+<ul>
+<li><code>class_loss</code>: $-\log q(y_n | f(x_n, \epsilon))$ (comes from the $I(Z, Y)$ term)
+<ul>
+<li>Recall $z = f(x, \epsilon)$</li>
+<li>$q$ is <code>decoder</code> with softmax applied, and $q(y | f(x_n, \epsilon))$ is softmax(<code>logits</code>)</li>
+<li><code>class_loss = tf.losses.softmax_cross_entropy( logits=logits, onehot_labels=one_hot_labels) / math.log(2)</code> is $-\log q(y_n | f(x_n, \epsilon))$
+<ul>
+<li>$f$ is <code>encoder</code>, and $f(x, \cdot)$ is <code>encoding</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>prior</code> is $r(z)$ (which approximates $p(z)$).</li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
+
+
+
+
+
 
   
   
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-04-12-simplifying-sql-with-with/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      Simplifying SQL Queries with &#34;WITH&#34;
-    </a>
-    </h3>
-  </div>
   
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-04-12-fb-messenger-sql/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      Facebook Messenger SQL Queries
-    </a>
-    </h3>
-  </div>
+    
   
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-04-11-browser-history-queries/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      More Browser History Queries
-    </a>
-    </h3>
-  </div>
   
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-04-11-tips-for-obs/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      Tips for Effective OBS
-    </a>
-    </h3>
-  </div>
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-04-09-exploring-obs/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      Exploring OBS and Virtual Cameras
-    </a>
-    </h3>
-  </div>
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-03-20-understanding-oauth2/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      Understanding OAuth2
-    </a>
-    </h3>
-  </div>
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-03-19-browsing-history/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      A Bit of Browser History Analysis
-    </a>
-    </h3>
-  </div>
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-03-02-fastbook/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      Fastbook: Listen to Audiobooks Faster
-    </a>
-    </h3>
-  </div>
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-02-26-video-tooling-progress/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      Video Tooling Progress
-    </a>
-    </h3>
-  </div>
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/snippets/2020-02-21-jump-cut-programming/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      Jump-Cut Programming: Take 1
-    </a>
-    </h3>
-  </div>
-  
+  <div class="media author-card content-widget-hr">
+    
 
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://davidbieber.com/">David Bieber</a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
   
-<nav>
-  <ul class="pagination justify-content-center">
-    
-    <li class="page-item"><a class="page-link" href="/snippets/">&laquo;</a></li>
-    
-    
-    <li class="page-item"><a class="page-link" href="/snippets/page/3/">&raquo;</a></li>
-    
-  </ul>
-</nav>
+</ul>
+
+    </div>
+  </div>
 
 
-</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</article>
 
       
 
