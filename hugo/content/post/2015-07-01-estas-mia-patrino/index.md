@@ -20,64 +20,64 @@ _This is my translation of P.D. Eastman's children's book "Are You My Mother?" i
 ## Ĉu Vi Estas Mia Patrino?
 By P.D. Eastman
 
-Patrina birdo sidis sur ŝiaj ovo. La ovo saltis.\\
-"Mi devas ion por mia beba birdo manĝi!" ŝi diris.\\
-Tiel for ŝi iris.
+Patrina birdo sidis sur ŝiaj ovo. La ovo saltis.<br>
+"Mi devas ion por mia beba birdo manĝi!" ŝi diris.<br>
+Tiel for ŝi iris.<br>
 
-Ene la nesto, la ovo saltis.\\
-Ĝi saltis kaj saltis kaj saltis.\\
+Ene la nesto, la ovo saltis.<br>
+Ĝi saltis kaj saltis kaj saltis.<br>
 Gis...
 
-...el venis beban birdon!\\
-"Kie estas mia patrino?" li diris.\\
-Li ne vidis ŝin ie ajn.\\
+...el venis beban birdon!<br>
+"Kie estas mia patrino?" li diris.<br>
+Li ne vidis ŝin ie ajn.<br>
 "Mi iros serĉi ŝin," li diris.
 
-El la nesto li iris.\\
-Malsupren, malsupren, malsupren!\\
-Plopi! (1)\\
-La beba birdo ne povis flugi.\\
+El la nesto li iris.<br>
+Malsupren, malsupren, malsupren!<br>
+Plopi! (1)<br>
+La beba birdo ne povis flugi.<br>
 Sed li povis marŝi.
 
 "Nun mi iros kaj trovi mian patrinon," li diris.
 
-"Ĉu vi estas mia patrino?" la beba birdo demandis katidon.\\
-La katido nur rigardis kaj rigardis.\\
+"Ĉu vi estas mia patrino?" la beba birdo demandis katidon.<br>
+La katido nur rigardis kaj rigardis.<br>
 Ĝi ne diris nenion.
 
-"Ĉu vi estas mia patrino?" la beba birdo demandis kokinon.\\
+"Ĉu vi estas mia patrino?" la beba birdo demandis kokinon.<br>
 "Ne," diris la kokino.
 
-"Ĉu vi estas mia patrino?" la beba birdo demandis hundon.\\
+"Ĉu vi estas mia patrino?" la beba birdo demandis hundon.<br>
 "Mi ne estas via patrino. Mi estas hundo," diris la hundo.
 
-"Ĉu vi estas mia patrino?" la beba birdo demandis bovinon.\\
+"Ĉu vi estas mia patrino?" la beba birdo demandis bovinon.<br>
 "Kiel mi povus esti via patrino?" diris la bovino. "Mi estas bovino."
 
-La beba birdo haltis por pensi.\\
-La katido kaj la kokino ne estis lia patrino.\\
+La beba birdo haltis por pensi.<br>
+La katido kaj la kokino ne estis lia patrino.<br>
 La hundo kaj la bovino ne estis lia patrino.
 
-"Mi havas patrinon," diris la beba birdo.\\
+"Mi havas patrinon," diris la beba birdo.<br>
 "Mi scias ke mi trovos ŝin. Mi. Trovos. Ŝin."
 
-Ĝuste tiam la beba birdo vidis grandan aferon.\\
+Ĝuste tiam la beba birdo vidis grandan aferon.<br>
 "Vi estas mia patrino!" li diris.
 
-La granda afero diris "SNUFANTE!" (2)\\
+La granda afero diris "SNUFANTE!" (2)<br>
 "Ho ne!" diris la beba birdo. Vi estas terura snufanto!
 
 La Snufanto levis la beban birdon supren, supren, supren.
 
-Poste io okazis.\\
-La Snufanto metis la beban birdon reen en la arbo.\\
+Poste io okazis.<br>
+La Snufanto metis la beban birdon reen en la arbo.<br>
 La beba birdo estis hejmo.
 
-Ĝuste tiam la patrina birdo revenis.\\
+Ĝuste tiam la patrina birdo revenis.<br>
 "Mi scias kiu vi estas," diris la beba birdo.
 
-"Vi ne estas katido aŭ kokino aŭ hundo.\\
-Vi ne estas bovino aŭ Snufanto!\\
+"Vi ne estas katido aŭ kokino aŭ hundo.<br>
+Vi ne estas bovino aŭ Snufanto!<br>
 Vi estas birdo, kaj vi estas mia patrino!"
 
 ## Footnotes
