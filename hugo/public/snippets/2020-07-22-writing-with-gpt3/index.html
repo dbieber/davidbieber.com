@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="David Bieber">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="GPT-3 is a language model developed at Open AI, and I&#39;ve been having a lot of fun playing with it. In fact, I&#39;ve written this post in collaboration with GPT-3. See if you can spot which parts are written by me and which parts come from GPT-3.
+Part 1: Brainstorming The first thing I did when I got access to GPT-3 is use it to brainstorm uses for GPT-3. I gave it these 5 ideas:">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-07-22-writing-with-gpt3/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34570499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-34570499-2', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+
+  <link rel="canonical" href="https://davidbieber.com/snippets/2020-07-22-writing-with-gpt3/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@Bieber">
+  <meta property="twitter:creator" content="@Bieber">
+  
+  <meta property="og:site_name" content="David Bieber">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2020-07-22-writing-with-gpt3/">
+  <meta property="og:title" content="Writing with GPT-3 | David Bieber">
+  <meta property="og:description" content="GPT-3 is a language model developed at Open AI, and I&#39;ve been having a lot of fun playing with it. In fact, I&#39;ve written this post in collaboration with GPT-3. See if you can spot which parts are written by me and which parts come from GPT-3.
+Part 1: Brainstorming The first thing I did when I got access to GPT-3 is use it to brainstorm uses for GPT-3. I gave it these 5 ideas:"><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-07-22T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-07-22T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Writing with GPT-3 | David Bieber</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">David Bieber</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">David Bieber</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/posts"><span>Writing</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Writing with GPT-3</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" id="article-content">
+      <p>GPT-3 is a language model developed at Open AI, and I've been having a lot of fun playing with it. In fact, I've written this post in collaboration with GPT-3. See if you can spot which parts are written by me and which parts come from GPT-3.</p>
+<h2 id="part-1-brainstorming">Part 1: Brainstorming</h2>
+<p>The first thing I did when I got access to GPT-3 is use it to brainstorm uses for GPT-3. I gave it these 5 ideas:</p>
+<ol>
+<li>Explain mathematics more simply (why is X true?)</li>
+<li>Generate programs from input/output examples</li>
+<li>Generate questions about a paper I read</li>
+<li>Create a list of machine translation tips and tricks</li>
+<li>Create an adventure game</li>
+</ol>
+<p>And it came back with 15 more:</p>
+<ol start="6">
+<li>Create a list of Tor commands to run to defend against an attack</li>
+<li>Create a cheat sheet for screenwriters</li>
+<li>Generate advice for a scene</li>
+<li>Generate XKCD comics</li>
+<li>Create a crib sheet for an arbitrary Python API</li>
+<li>Make a list of movies to watch</li>
+<li>Make a list of scholarly algorithms/heuristics worth reading</li>
+<li>Make a list of generic questions about Pedagogy</li>
+<li>Make a list of cognitive exercises</li>
+<li>Show patterns generated by awesome people</li>
+<li>Generate small cooking tasks</li>
+<li>Generate characters for a project</li>
+<li>Generate configuration options</li>
+<li>Generate flashcards</li>
+<li>Organize my computer/files</li>
+</ol>
+<p>And then 15 more:</p>
+<ol start="6">
+<li>Explain things to my parents via messenger</li>
+<li>Explain things to my children via messenger</li>
+<li>Explain mathematical algorithms</li>
+<li>Automated interface design</li>
+<li>Mechanize a Nagihara Kan Airlines website</li>
+<li>Clickbait generator</li>
+<li>Music description (Herbie Hancock is playing &ldquo;Dolphin Dance&rdquo; live in London on the 18th March 1968)</li>
+<li>Tell me not to waste my time looking at x</li>
+<li>Interesting facts about Wikipedia</li>
+<li>Explain something to someone while my attention is elsewhere</li>
+<li>Detect adverts in x</li>
+<li>Image caption/caption game</li>
+<li>Speculate about the true utility function of x</li>
+<li>Auto-generate tests for a program</li>
+<li>Explain why my code is currently failing tests.</li>
+</ol>
+<p>And then 15 more:</p>
+<ol start="6">
+<li>Generate plots or character/story summaries</li>
+<li>Generate legal examples</li>
+<li>Generate words for crosswords</li>
+<li>Check my grammar</li>
+<li>Supply filler text for themed writing (horror, sci-fi etc.)</li>
+<li>Explain why an AI can't read (can it comprehend metaphors?)</li>
+<li>Provide entertaining answers to obscure questions</li>
+<li>Get writing ideas and generate word combinations</li>
+<li>Create background for an NPC I need for a D&amp;D game</li>
+<li>Help a sick writer generate plots</li>
+<li>Input pre-generated (from books etc.) phrases and use them for literary analysis</li>
+<li>Help explain a mathematical proof</li>
+<li>Develop a game/story/character I need</li>
+<li>Make short stories I can &ldquo;overlay&rdquo; on a fictional Universe I've created (ala Ready Player One)</li>
+<li>Make a short film/audio drama</li>
+</ol>
+<p>What a lovely list of lists of ideas! I wonder how many of these ideas are novel.</p>
+<p>Some of these ideas are outside the scope of what GPT-3 can do. For example, generating XKCD comics seems too difficult. Others are duplicates, such as &ldquo;Explain mathematical algorithms&rdquo; (duplicate of &ldquo;Explain mathematics more simply&rdquo;). And still others don't make sense &ndash; &ldquo;Mechanize a Nagihara Kan Airlines website&rdquo;? Overall though, solid set of ideas.</p>
+<h2 id="part-2-mathematics">Part 2: Mathematics</h2>
+<p>Once I'd gotten GPT-3 to do some brainstorming, I realized I'd need to test its capabilities before trying its suggestions out in earnest.</p>
+<p>I taught it how to evaluate simple expressions and take derivatives.</p>
+<p>Here's the first prompt I used:</p>
+<pre><code>Question: f(x) = x*x. Compute f(3).
+f(3) = 3*3
+f(3) = 9
+Answer: 9
+
+Question: h(x) = x*x - 2x. Compute h(5).
+h(5) = 5*5 - 2*5
+h(5) = 25 - 10
+h(5) = 15
+Answer: 15
+
+Question: y(x) = x**3 - 2x. Compute y(3).
+y(3) = 3**3 - 2*3
+y(3) = 3*3*3 - 6
+y(3) = 27 - 6
+y(3) = 21
+Answer: 21
+
+</code></pre>
+<p>I could then ask it any of the following, and it would correctly show its work.</p>
+<pre><code>Question: f(x) = tan(x) + 1. Compute f(0).
+Question: f(x) = sqrt(x) + 1. Compute f(16).
+</code></pre>
+<p>When I tried to give it</p>
+<pre><code>Question: f(x) = x/2 + 2. Compute f(f(16)).
+</code></pre>
+<p>it treated it as just <code>Compute f(16)</code> rather than <code>f(f(16))</code>.</p>
+<p>Interestingly this works:</p>
+<pre><code>Question: f(x) = x*x. Compute f(3).
+f(3) = 3*3
+f(3) = 9
+Answer: 9
+
+Question: h(x) = x*x - 2x. Compute h(5).
+h(5) = 5*5 - 2*5
+h(5) = 25 - 10
+h(5) = 15
+Answer: 15
+
+Question: f(x) = x/2 + 2. Compute f(f(16)).
+f(f(16)) = f(16/2 + 2)
+f(f(16)) = f(8 + 2)
+f(f(16)) = f(10)
+f(f(16)) = 10/2 + 2
+f(f(16)) = 5 + 2
+f(f(16)) = 7
+Answer: 7
+
+Question: y(x) = x**3 - 2x. Compute y(3).
+y(3) = 3**3 - 2*3
+y(3) = 3*3*3 - 6
+y(3) = 27 - 6
+y(3) = 21
+Answer: 21
+
+Question: f(x) = x*3 - 1. Compute f(f(5)).
+</code></pre>
+<p>Whereas this does not:</p>
+<pre><code>Question: f(x) = x*x. Compute f(3).
+f(3) = 3*3
+f(3) = 9
+Answer: 9
+
+Question: h(x) = x*x - 2x. Compute h(5).
+h(5) = 5*5 - 2*5
+h(5) = 25 - 10
+h(5) = 15
+Answer: 15
+
+Question: f(x) = x*3 - 1. Compute f(f(5)).
+f(f(5)) = f(5*3 - 1)
+f(f(5)) = f(15 - 1)
+f(f(5)) = f(14)
+f(f(5)) = 14*3 - 1
+f(f(5)) = 42 - 1
+f(f(5)) = 41
+Answer: 41
+
+Question: y(x) = x**3 - 2x. Compute y(3).
+y(3) = 3**3 - 2*3
+y(3) = 3*3*3 - 6
+y(3) = 27 - 6
+y(3) = 21
+Answer: 21
+
+Question: f(x) = x/2 + 2. Compute f(f(16)).
+</code></pre>
+<p>After getting it to evaluate these simple expressions correctly, I also tried having it take derivatives. With an example as priming, and again having it show its work, this worked well. I haven't performed a rigorous evaluation of its mathematical capabilities. For now, I've just begun to develop an intuition for how it works.</p>
+<h2 id="part-3-playing-around">Part 3: Playing Around</h2>
+<p>After doing math together, I tried many more things with GPT-3. I shared feelings with it, and it expanded on them (correctly too!). I used it to generate lists for brainstorming all manner of thing. The language model wrote love letters from inanimate objects. I tried to teach it to play Codenames, but with only very limited success. And I had it autocomplete previous snippets of mine, and had some fun cowriting with it. While I wont be sharing all of this with you, I do have one thing to share.</p>
+<p>This is a love letter written by a frying pan:</p>
+<p>I may not seem like much to you right now. I'm coated in grease and I'm starting to rust, but really, I have big plans. I'm going to Italian restaurants. I'll hang out with the finest (and healthiest) ingredients you can imagine. It was good knowing you, but you were never mine to keep. I'm going to cook the kind of meal you'll dream about for the rest of your life. Good luck, sweetheart. You'll need it.</p>
+<h2 id="overall-principles">Overall Principles</h2>
+<p>Getting an intuition for how GPT-3 behaves has been interesting, and I'll try now to distill that intuition down into a few principles.</p>
+<ol>
+<li>GPT-3 is continuing your writing, not having a dialog with you.</li>
+</ol>
+<p>I've seen on Twitter lots of people asking GPT-3 questions, and sharing its response. Know that GPT-3 continues whatever prompt you give it as if it had written the prompt itself, not as if it is responding to the prompt. This is why you often see prompts like &ldquo;The following is a conversation between X and Y:&quot;.</p>
+<ol start="2">
+<li>GPT-3 effectively puts your writing in a made up context.</li>
+</ol>
+<p>If you give GPT-3 a small prompt, such a single sentence, then there are many contexts in which that prompt could be interpreted. GPT-3 is trained to marginalize over the contexts in which the text could appear. Once you start decoding GPT-3's response though, one implicit context has been selected. It might not be the context that you intended when writing your prompt.</p>
+<p>This can happen even if you try to set the context yourself explicitly. For example you might be trying to generate a conversation or a list, and GPT-3 might decide that this conversation or list is taking place inside of a novel.</p>
+<p>You can mitigate this context switch by using a longer prompt, or by doing more of the writing yourself.</p>
+<ol start="3">
+<li>GPT-3 likes lists and repeated structures.</li>
+</ol>
+<p>This is the main principle behind using GPT-3 for few shot learning. Prompt GPT-3 with a few examples of performing a task, and it will usually make an effort to perform that task yet again.</p>
+<ol start="4">
+<li>GPT-3 cannot perform linguistic tricks like unscrambling words</li>
+</ol>
+<p>It doesn't seem capable of generating new puns (I haven't tried this yet).
+And it doesn't seem capable of unscrambling words (I did try this, and I couldn't even get it to unscramble 4-letter words).</p>
+<ol start="5">
+<li>GPT-3 benefits from &ldquo;showing its work&rdquo;</li>
+</ol>
+<p>In my math experiments, having GPT-3 show its work was critical to getting it solving the math questions correctly. It seems that doing a single step of expression evaluation at a time is an easier task than doing it all at once. Providing examples with the steps gave GPT-3 a clearer explanation of the task than just providing input/output examples. GPT-3 also gets additional computational steps in which to solve the problem when it takes the time to show its work.</p>
+<ol start="6">
+<li>GPT-3 has a great breadth of knowledge and writing styles available to it</li>
+</ol>
+<p>It can express love, write flowery prose, give advice, write technical documentation, latex, program, math, take the perspective of a toaster, and more. It's a great tool for brainstorming both explicitly (by having it generate ideas) and through exploration (by using it to help you generate ideas yourself).</p>
+<p>Though it has all the facts from the internet at its fingertips (of all the ways to anthropomorphize GPT-3, why choose fingertips?), it is just as capable of generating falsehoods as truths. Do not mistake the text it generates as true or logically correct, even if in many circumstances it does generate correct information. When it transitions from generating truth to generating nonsense it does not give a warning that it has done so (and any truth it does generate is in a sense at least partially accidental).</p>
+<ol start="7">
+<li>Sometimes GPT-3 makes no sense</li>
+</ol>
+<p>There are things that don't make sense that the language model assigns reasonable probabilities to. And there are things that don't make sense, are low probability, but come up anyway either due to chance or because the model doesn't have anything better to say. It doesn't stop generating text just because its out of its depth. Instead, it just plods on forward, saying something as reasonable as it's capable of, regardless of the situation it finds itself in.</p>
+<ol start="8">
+<li>GPT-3 mimics your style</li>
+</ol>
+<p>If you prompt GPT-3 with typos it will continue with typos. If you prompt GPT-3 with florid prose, it will write florid prose. If you prompt GPT-3 with anaphora laden rhetoric, or any other style, it will continue in that style.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>I'll let GPT-3 wrap things up itself:</p>
+<p>&ldquo;And that brings us to the end, some thoughts on whether using GPT-3 was more or less crazy than getting a Ph.D.. I think that using GPT-3 to generate ideas was a higher form of Enlightenment than any Ph.D. I'd do that again in a heartbeat, no shortage of ideas rolling around in GPT-3's natural language processing head.&rdquo;</p>
+<p>Uh huh. Whatever, GPT-3. Whatever.</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://davidbieber.com/">David Bieber</a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+
+    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+
+
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZSDKaAmz-UUyaL1IZMi4QO_q4Jouko2c",
+    authDomain: "ask-me-anywhere.firebaseapp.com",
+    databaseURL: "https://ask-me-anywhere.firebaseio.com",
+    projectId: "ask-me-anywhere",
+    storageBucket: "ask-me-anywhere.appspot.com",
+    messagingSenderId: "123038093749",
+    appId: "1:123038093749:web:e8ce89651fcf1371d109fc",
+    measurementId: "G-JLDGL73R1B"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2018 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
