@@ -19,13 +19,21 @@
       <guid>https://davidbieber.com/snippets/2020-09-27-posting-snippets-from-my-phone/</guid>
       <description>&lt;p&gt;I&#39;d like to be able to post snippets from my phone.
 As I&#39;ve stated before, the purpose of the snippets section of my website is to lower the barrier to me publishing as much as possible.
-Being able to post a snippet from my phone would help in this respect.
-This doesn&#39;t seem so hard to set up, especially now that Bieber Bot runs continuously on my laptop.
-I could have Bieber Bot listen for a message like &amp;ldquo;Snippet!
+Being able to post a snippet from my phone would help in this respect.&lt;/p&gt;
+&lt;p&gt;This doesn&#39;t seem so hard to set up, especially now that Bieber Bot runs continuously on my laptop.
+I could have Bieber Bot listen for a message like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Snippet!
 Posting Snippets from My Phone
-I&#39;d like to be able to post&amp;hellip;&amp;rdquo;
-When he receives such a message, what should he do? 1) Create a new file with the appropriate front matter and content. 2) Commit that file and push it to GitHub, 3) Run the ansible update script.
-That&#39;s it. This MVP should be relatively easy to get up and running.&lt;/p&gt;
+I&#39;d like to be able to post...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When he receives such a message, what should he do?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a new file with the appropriate front matter and content.&lt;/li&gt;
+&lt;li&gt;Commit that file and push it to GitHub&lt;/li&gt;
+&lt;li&gt;Run the ansible update script.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That&#39;s it. This MVP should be relatively easy to get up and running.&lt;/p&gt;
+&lt;p&gt;Update: It is indeed up and running now. I wrote this snippet on my phone :).&lt;/p&gt;
 </description>
     </item>
     
