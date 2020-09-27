@@ -1,6 +1,6 @@
 +++
 title = "Posting Snippets from My Phone"
-date = 2020-09-27T16:17:00
+date = 2020-09-27T16:20:00
 +++
 
 I'd like to be able to post snippets from my phone.
