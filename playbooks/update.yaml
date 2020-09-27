@@ -33,7 +33,7 @@
     args:
       chdir: /home/dbieber/davidbieber.com
 
-  - name: download certbot
-    get_url: >
-      url=https://dl.eff.org/certbot-auto
-      dest=/home/dbieber/certbot-auto
+  # - name: download certbot
+  #   get_url: >
+  #     url=https://dl.eff.org/certbot-auto
+  #     dest=/home/dbieber/certbot-auto
