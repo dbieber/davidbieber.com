@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Sun, 27 Sep 2020 16:32:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Sun, 27 Sep 2020 16:45:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,16 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Why Phone Snippets (A Test Phone Snippet)</title>
+      <link>https://davidbieber.com/snippets/2020-09-27-why-phone-snippets-a-test-phone-snippet/</link>
+      <pubDate>Sun, 27 Sep 2020 16:45:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-09-27-why-phone-snippets-a-test-phone-snippet/</guid>
+      <description>&lt;p&gt;Why do I want to be able to post snippets from my phone?
+I enjoy hiking or biking somewhere pleasant, bringing a pocket-sized Bluetooth keyboard, and writing on my phone.&lt;/p&gt;
 </description>
     </item>
     
