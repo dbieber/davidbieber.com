@@ -19,7 +19,7 @@ I'd like to be able to post...
 When he receives such a message, what should he do?
 
 1) Create a new file with the appropriate front matter and content.
-2) Commit that file and push it to GitHub
+2) Commit that file and push it to GitHub.
 3) Run the ansible update script.
 
 That's it. This MVP should be relatively easy to get up and running.

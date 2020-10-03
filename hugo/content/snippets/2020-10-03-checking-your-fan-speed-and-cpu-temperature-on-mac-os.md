@@ -7,18 +7,20 @@ I've seen people monitor their CPU temperature and today my laptop was running h
 
 Indeed, there's a command you can run to get your processor temperatures and fan speeds.
 
-sudo powermetrics --samplers smc
+`sudo powermetrics --samplers smc`
 
-To narrow down the stats you see furhter, you can grep for e.g. "Fan:", "CPU die temperature:", or "GPU die temperature:".
+To narrow down the stats you see further, you can grep for e.g. "Fan:", "CPU die temperature:", or "GPU die temperature:".
 
-`
+```bash
 sudo powermetrics --samplers smc | grep "Fan:"
 sudo powermetrics --samplers smc | grep "CPU die temperature:"
 sudo powermetrics --samplers smc | grep "GPU die temperature:"
-`
+```
 
 Use egrep if you want all three:
 
+```bash
 sudo powermetrics --samplers smc | egrep 'temp|Fan'
+```
 
 Now, why does [mmhmm](https://www.mmhmm.app/) make my machine run so hot?

@@ -32,7 +32,7 @@
 Indeed, there&#39;s a command you can run to get your processor temperatures and fan speeds.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-10-03-checking-your-fan-speed-and-cpu-temperature-on-mac-os-2020/">
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-10-03-checking-your-fan-speed-and-cpu-temperature-on-mac-os/">
 
   
 
@@ -250,7 +250,7 @@ Indeed, there&#39;s a command you can run to get your processor temperatures and
   <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
 
-  <link rel="canonical" href="https://davidbieber.com/snippets/2020-10-03-checking-your-fan-speed-and-cpu-temperature-on-mac-os-2020/">
+  <link rel="canonical" href="https://davidbieber.com/snippets/2020-10-03-checking-your-fan-speed-and-cpu-temperature-on-mac-os/">
 
   
   
@@ -267,7 +267,7 @@ Indeed, there&#39;s a command you can run to get your processor temperatures and
   <meta property="twitter:creator" content="@Bieber">
   
   <meta property="og:site_name" content="David Bieber">
-  <meta property="og:url" content="https://davidbieber.com/snippets/2020-10-03-checking-your-fan-speed-and-cpu-temperature-on-mac-os-2020/">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2020-10-03-checking-your-fan-speed-and-cpu-temperature-on-mac-os/">
   <meta property="og:title" content="Checking Your Fan Speed and CPU Temperature on Mac OS (2020) | David Bieber">
   <meta property="og:description" content="I&#39;ve seen people monitor their CPU temperature and today my laptop was running hot, so I wanted to do so myself. Googling &ldquo;check laptop temperature mac&rdquo; gives projects you can download. I didn&#39;t want to have to trust someone else&#39;s tool or mess around with someone else&#39;s code, and I knew there must be a system call that gives me sensor stats, so I kept looking.
 Indeed, there&#39;s a command you can run to get your processor temperatures and fan speeds."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
@@ -520,11 +520,15 @@ Indeed, there&#39;s a command you can run to get your processor temperatures and
     <div class="article-style" id="article-content">
       <p>I've seen people monitor their CPU temperature and today my laptop was running hot, so I wanted to do so myself. Googling &ldquo;check laptop temperature mac&rdquo; gives projects you can download. I didn't want to have to trust someone else's tool or mess around with someone else's code, and I knew there must be a system call that gives me sensor stats, so I kept looking.</p>
 <p>Indeed, there's a command you can run to get your processor temperatures and fan speeds.</p>
-<p>sudo powermetrics &ndash;samplers smc</p>
-<p>To narrow down the stats you see furhter, you can grep for e.g. &ldquo;Fan:&quot;, &ldquo;CPU die temperature:&quot;, or &ldquo;GPU die temperature:&quot;.</p>
-<p><code>sudo powermetrics --samplers smc | grep &quot;Fan:&quot; sudo powermetrics --samplers smc | grep &quot;CPU die temperature:&quot; sudo powermetrics --samplers smc | grep &quot;GPU die temperature:&quot;</code></p>
+<p><code>sudo powermetrics --samplers smc</code></p>
+<p>To narrow down the stats you see further, you can grep for e.g. &ldquo;Fan:&quot;, &ldquo;CPU die temperature:&quot;, or &ldquo;GPU die temperature:&quot;.</p>
+<pre><code class="language-bash">sudo powermetrics --samplers smc | grep &quot;Fan:&quot;
+sudo powermetrics --samplers smc | grep &quot;CPU die temperature:&quot;
+sudo powermetrics --samplers smc | grep &quot;GPU die temperature:&quot;
+</code></pre>
 <p>Use egrep if you want all three:</p>
-<p>sudo powermetrics &ndash;samplers smc | egrep &lsquo;temp|Fan&rsquo;</p>
+<pre><code class="language-bash">sudo powermetrics --samplers smc | egrep 'temp|Fan'
+</code></pre>
 <p>Now, why does <a href="https://www.mmhmm.app/">mmhmm</a> make my machine run so hot?</p>
 
     </div>
