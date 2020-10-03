@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Thu, 01 Oct 2020 10:54:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Sat, 03 Oct 2020 15:46:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,22 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Checking Your Fan Speed and CPU Temperature on Mac OS (2020)</title>
+      <link>https://davidbieber.com/snippets/2020-10-03-checking-your-fan-speed-and-cpu-temperature-on-mac-os-2020/</link>
+      <pubDate>Sat, 03 Oct 2020 15:46:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-10-03-checking-your-fan-speed-and-cpu-temperature-on-mac-os-2020/</guid>
+      <description>&lt;p&gt;I&#39;ve seen people monitor their CPU temperature and today my laptop was running hot, so I wanted to do so myself. Googling &amp;ldquo;check laptop temperature mac&amp;rdquo; gives projects you can download. I didn&#39;t want to have to trust someone else&#39;s tool or mess around with someone else&#39;s code, and I knew there must be a system call that gives me sensor stats, so I kept looking.&lt;/p&gt;
+&lt;p&gt;Indeed, there&#39;s a command you can run to get your processor temperatures and fan speeds.&lt;/p&gt;
+&lt;p&gt;sudo powermetrics &amp;ndash;samplers smc&lt;/p&gt;
+&lt;p&gt;To narrow down the stats you see furhter, you can grep for e.g. &amp;ldquo;Fan:&amp;quot;, &amp;ldquo;CPU die temperature:&amp;quot;, or &amp;ldquo;GPU die temperature:&amp;quot;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo powermetrics --samplers smc | grep &amp;quot;Fan:&amp;quot; sudo powermetrics --samplers smc | grep &amp;quot;CPU die temperature:&amp;quot; sudo powermetrics --samplers smc | grep &amp;quot;GPU die temperature:&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Use egrep if you want all three:&lt;/p&gt;
+&lt;p&gt;sudo powermetrics &amp;ndash;samplers smc | egrep &amp;lsquo;temp|Fan&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;Now, why does &lt;a href=&#34;https://www.mmhmm.app/&#34;&gt;mmhmm&lt;/a&gt; make my machine run so hot?&lt;/p&gt;
 </description>
     </item>
     
