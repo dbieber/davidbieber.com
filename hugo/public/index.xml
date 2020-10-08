@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Tue, 06 Oct 2020 13:29:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Tue, 06 Oct 2020 22:16:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,17 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introducing the Snippet Queue</title>
+      <link>https://davidbieber.com/snippets/2020-10-06-introducing-the-snippet-queue/</link>
+      <pubDate>Tue, 06 Oct 2020 22:16:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-10-06-introducing-the-snippet-queue/</guid>
+      <description>&lt;p&gt;This is my first snippet published using my &lt;a href=&#34;https://davidbieber.com/snippets/2020-10-06-further-reducing-the-publication-barrier-with-queuing/&#34;&gt;snippet queue idea&lt;/a&gt;. If all goes well, it will be (read: was) published tomorrow evening (October 7, 2020).&lt;/p&gt;
+&lt;p&gt;The system works like this. I store a queue of snippets in Redis. Each snippet has the title, content, and date associated with it, as well as an id number. I can have Bieber Bot enqueue a new snippet by messaging him with &amp;ldquo;Queue snippet!&amp;rdquo; and the snippet details. He also responds to queries to update, view, or remove an existing snippet, or to view the current queue of snippets.&lt;/p&gt;
+&lt;p&gt;Then, every evening Bieber Bot looks at the oldest item in the queue. If he&#39;s already asked me about it, and I haven&#39;t told him not to publish it, he goes and publishes it to my website. If he hasn&#39;t asked me about it yet, he asks me if its OK to publish. As long as I don&#39;t say no and remove the snippet from the queue, Bieber Bot will go forward with publishing the snippet the next day.&lt;/p&gt;
 </description>
     </item>
     
