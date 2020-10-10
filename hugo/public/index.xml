@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Thu, 08 Oct 2020 22:04:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Fri, 09 Oct 2020 22:55:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,17 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An Update on my 2020 Resolution</title>
+      <link>https://davidbieber.com/snippets/2020-10-09-an-update-on-my-2020-resolution/</link>
+      <pubDate>Fri, 09 Oct 2020 22:55:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-10-09-an-update-on-my-2020-resolution/</guid>
+      <description>&lt;p&gt;My goal for this year was to get good at communicating publicly. I decided to measure progress in terms of the number of times I communicated publicly. 100 public communications was the goal. Where am I today?&lt;/p&gt;
+&lt;p&gt;This is my 42nd snippet for the year. I&#39;m giving a talk on Python Fire publicly next week. I published 4 papers (IPA-GNN, TF-Coder, Unique Randomizer, and BUSTLE). So far two of them have been accompanied by open source releases.&lt;/p&gt;
+&lt;p&gt;Add in a handful of paper presentations and Google-internal talks, and its safe to say I&#39;m past the half-way point toward the goal. Only trouble is we&#39;re over 75% of the way through the year. I&#39;d better get communicating!&lt;/p&gt;
 </description>
     </item>
     
