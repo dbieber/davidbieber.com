@@ -8,12 +8,12 @@ install:
   - sudo dpkg -i hugo_extended_0.62.1_Linux-64bit.deb
   - rm hugo_extended_0.62.1_Linux-64bit.deb
   # Install babel with React presets.
-  - cd hugo
-  - npm install babel-cli@6 babel-preset-react-app@3 --save
+  - npm install
   - cat package.json
 
 script:
-  - npx babel assets/js-src/ --out-dir assets/js/ --presets react-app/prod  # Transform jsx to js.
+  - npx babel hugo/assets/js-src/ --out-dir hugo/assets/js/ --presets react-app/prod  # Transform jsx to js.
+  - cd hugo
   - hugo  # Generate the static site.
 
 after_success:
