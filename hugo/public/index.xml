@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Thu, 22 Oct 2020 20:31:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Tue, 03 Nov 2020 15:22:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,22 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Extracting Snippets from Roam Research</title>
+      <link>https://davidbieber.com/snippets/2020-11-03-extracting-snippets-from-roam-research/</link>
+      <pubDate>Tue, 03 Nov 2020 15:22:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-11-03-extracting-snippets-from-roam-research/</guid>
+      <description>&lt;p&gt;I&#39;ve been writing a lot these days inside of Roam Research. I wonder if there&#39;s a good way to identify snippet-quality items from within my Roam database.&lt;/p&gt;
+&lt;p&gt;One option would be to pick out decent-sized sections of continuous text.
+If I&#39;m taking notes in a bunch of different areas, that&#39;s probably not well suited for publishing as a snippet unless I were to clean it up first.
+But if I see there&#39;s a large chunk of text that&#39;s been added in a contiguous block, there&#39;s a decent chance that its snippet-quality.
+&amp;ldquo;Snippet-quality&amp;rdquo; isn&#39;t a particularly high bar. The bar is really just that we&#39;d want text that forms a coherent thought rather than being a few lines on totally unrelated thoughts (which can also appear contiguously in Roam).&lt;/p&gt;
+&lt;p&gt;A few days ago I set up Roam-to-Git, so every hour my Roam database is backed up to a private GitHub repository. It would be easy enough to look through the git diffs to see if there&#39;s something that fits this description.
+One possible issue with this though is that the backup script doesn&#39;t know if I&#39;m in the middle of writing. So it&#39;s possible it will catch me mid-snippet.
+Perhaps if I look at the diff between head and two commits back, I can avoid missing snippets that got split over multiple commits. It&#39;s an idea worth looking in to, though the number of false positives might be too high without a fair amount of tuning.&lt;/p&gt;
 </description>
     </item>
     
