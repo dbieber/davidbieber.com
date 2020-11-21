@@ -3261,8 +3261,8 @@ An example of two isomorphic graphs is shown here.&lt;/p&gt;
 &lt;em&gt;Figure: Graph 1 and Graph 2 are isomorphic.
 The correspondance between nodes is illustrated by the node colors and numbers.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;In general, determining whether two graphs are isomorphic when the correspondance is not provided is a challenging problem; precisely how hard this problem is remains an open question in computer science.
-It isn&#39;t known whether there is a polynomial time algorithm for determining whether graphs are isomorphic, and it also isn&#39;t known whether the problem is $\text{NP-complete}$.
-The graph isomorphism problem may even be an example of an &lt;a href=&#34;https://en.wikipedia.org/wiki/NP-intermediate&#34;&gt;$\text{NP-intermediate}$&lt;/a&gt; problem, but this would only be possible if $\text{P} \ne \text{NP}$.&lt;/p&gt;
+It isn&#39;t known whether there is a polynomial time algorithm for determining whether graphs are isomorphic, and it also isn&#39;t known whether the problem is $\text{NP-complete}.$
+The graph isomorphism problem may even be an example of an &lt;a href=&#34;https://en.wikipedia.org/wiki/NP-intermediate&#34;&gt;$\text{NP-intermediate}$&lt;/a&gt; problem, but this would only be possible if $\text{P} \ne \text{NP}.$&lt;/p&gt;
 &lt;h3 id=&#34;the-weisfeiler-lehman-isomorphism-test&#34;&gt;The Weisfeiler-Lehman Isomorphism Test&lt;/h3&gt;
 &lt;p&gt;Here is the algorithm for the Weisfeiler-Lehman Isomorphism Test.
 It produces for each graph a canonical form.
@@ -3332,7 +3332,8 @@ The Weisfeiler-Lehman isomorphism test itself does not provide a way of narrowin
 &lt;p&gt;Boris Weisfeiler &amp;ndash; one of the two mathematicians responsible for the Weisfeiler-Lehman isomorphism test &amp;ndash; was a professor at Penn State University until he disappeared mysteriously in Chile in 1985.
 His disappearance in the 80s is unsettling, and I would encourage you to visit &lt;a href=&#34;http://www.boris.weisfeiler.com/&#34;&gt;boris.weisfeiler.com&lt;/a&gt; to learn more about the search for Weisfeiler and the ongoing (2018) judicial proceedings surrounding his disappearance.&lt;/p&gt;
 &lt;p&gt;Steven List produced an award winning short film called &lt;em&gt;The Colony&lt;/em&gt; based on the disappearance of Boris Weisfeiler, available &lt;a href=&#34;https://vimeo.com/60220290&#34;&gt;on Vimeo here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;After a brief internet search, I have been unable to find any information about Weisfeiler&#39;s colleague and coauthor A. Lehman, not even a first name.&lt;/p&gt;
+&lt;p&gt;After a brief internet search, I have been unable to find any information about Weisfeiler&#39;s colleague and coauthor A. Lehman, not even a first name.
+(Update Aug. 2020: A reader pointed me to &lt;a href=&#34;https://towardsdatascience.com/a-forgotten-story-of-soviet-ai-4af5daaf9cdf&#34;&gt;this recent story&lt;/a&gt; about &lt;em&gt;Andrey&lt;/em&gt; Leman. Thank you!)&lt;/p&gt;
 &lt;h3 id=&#34;np-intermediate-problems&#34;&gt;NP-Intermediate Problems&lt;/h3&gt;
 &lt;p&gt;As mentioned in the introduction, it is not known whether the graph isomorphism problem is in $\text{P}$ or $\text{NP-complete}$.
 In fact, it is not even known whether graph isomorphism falls in either of these categories, or whether this problem is $\text{NP-intermediate}$.

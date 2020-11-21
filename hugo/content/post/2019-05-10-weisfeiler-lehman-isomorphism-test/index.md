@@ -27,8 +27,8 @@ An example of two isomorphic graphs is shown here.
 The correspondance between nodes is illustrated by the node colors and numbers.*
 
 In general, determining whether two graphs are isomorphic when the correspondance is not provided is a challenging problem; precisely how hard this problem is remains an open question in computer science.
-It isn't known whether there is a polynomial time algorithm for determining whether graphs are isomorphic, and it also isn't known whether the problem is $\text{NP-complete}$.
-The graph isomorphism problem may even be an example of an [$\text{NP-intermediate}$](https://en.wikipedia.org/wiki/NP-intermediate) problem, but this would only be possible if $\text{P} \ne \text{NP}$.
+It isn't known whether there is a polynomial time algorithm for determining whether graphs are isomorphic, and it also isn't known whether the problem is $\text{NP-complete}.$
+The graph isomorphism problem may even be an example of an [$\text{NP-intermediate}$](https://en.wikipedia.org/wiki/NP-intermediate) problem, but this would only be possible if $\text{P} \ne \text{NP}.$
 
 ### The Weisfeiler-Lehman Isomorphism Test
 
@@ -131,6 +131,7 @@ His disappearance in the 80s is unsettling, and I would encourage you to visit [
 Steven List produced an award winning short film called _The Colony_ based on the disappearance of Boris Weisfeiler, available [on Vimeo here](https://vimeo.com/60220290).
 
 After a brief internet search, I have been unable to find any information about Weisfeiler's colleague and coauthor A. Lehman, not even a first name.
+(Update Aug. 2020: A reader pointed me to [this recent story](https://towardsdatascience.com/a-forgotten-story-of-soviet-ai-4af5daaf9cdf) about _Andrey_ Leman. Thank you!)
 
 ### NP-Intermediate Problems
 
