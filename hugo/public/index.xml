@@ -288,11 +288,18 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <link>https://davidbieber.com/snippets/2020-11-30-updating-google-slides-through-roam-research/</link>
       <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-11-30-updating-google-slides-through-roam-research/</guid>
-      <description>&lt;p&gt;Check this out!&lt;/p&gt;
-&lt;video width=&#34;320&#34; height=&#34;240&#34; controls&gt;
-  &lt;source src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2F54GfBjYQz-.mov?alt=media&amp;token=c919138b-637c-4dfc-b21b-3455411c5198&#34; type=&#34;video/mp4&#34;&gt;
-&lt;/video&gt;
-&lt;p&gt;I&#39;ll post more about what this is in a bit. Don&#39;t get too excited.&lt;/p&gt;
+      <description>&lt;p&gt;Check out this &amp;ldquo;demo video&amp;rdquo; I made! It shows me making a presentation using Roam Research references. When I update the block in Roam that I&#39;m referencing, the presentation gets updated automatically.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/YccjrI3fmhc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Editing slides and docs in this way would be so useful! Being able to focus on content in Roam, and presentation in a tool thats built for presentation (like Docs and Slides) would be such a powerful combination.&lt;/p&gt;
+&lt;p&gt;In my experience, Roam is a powerful tool for &lt;strong&gt;thinking&lt;/strong&gt;, but not as useful for sharing those thoughts. When you&#39;re sharing, you want to tell a story. You want to guide the reader through your thought process, and be in control of the narrative the whole time.&lt;/p&gt;
+&lt;p&gt;With Roam, the reader might wander off down some unexpected link you, the writer, weren&#39;t thinking of. Once that happens, you&#39;ve lost the reader. They&#39;re going to find themselves in unpolished not-really-relevant material, and you&#39;re not going to get to convey the narrative you were aiming for.&lt;/p&gt;
+&lt;p&gt;Being able to seamlessly do your thinking in Roam while also producing polished presentations (not just Slides, but anything meant for sharing, like emails, documents, images, etc) will be an absolute game changer for how we think and communicate.&lt;/p&gt;
+&lt;p&gt;This video may not be a real product, but it represents a real vision, and we have the technology to make it real. Now, let&#39;s put in the work and bring this vision into reality.&lt;/p&gt;
+&lt;p&gt;I&#39;ll post more in future snippets about how I think we can build a system like this today. (And I&#39;ll also share how I made the video, despite the product integration not having been developed yet.)&lt;/p&gt;
 </description>
     </item>
     
