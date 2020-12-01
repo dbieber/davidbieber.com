@@ -3,7 +3,7 @@ title = "Publishing Through Roam Research"
 date = 2020-11-24T00:00:00
 +++
 
-With this snippet I'm testing out a new snippet publishing system: publishing snippets directly from [[Roam Research]]. Using the system is simple: I simply tag any bullet with "ok-to-publish" and [[Bieber Bot]] publishes it and its children as a snippet.
+With this snippet I'm testing out a new snippet publishing system: publishing snippets directly from Roam Research. Using the system is simple: I simply tag any bullet with "ok-to-publish" and Bieber Bot publishes it and its children as a snippet.
 
 Why another way of writing snippets? I've been writing quite a bit in Roam lately but I haven't been publishing snippets lately. In truth, this new publishing mechanism is more a novelty than something practically useful. It would be easy enough to copy a snippet out of Roam into a text editor or to Bieber Bot in Facebook Messenger to publish it.
 
