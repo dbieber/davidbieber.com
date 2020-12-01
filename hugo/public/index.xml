@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Tue, 24 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Mon, 30 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,19 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Updating Google Slides through Roam Research</title>
+      <link>https://davidbieber.com/snippets/2020-11-30-updating-google-slides-through-roam-research/</link>
+      <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-11-30-updating-google-slides-through-roam-research/</guid>
+      <description>&lt;p&gt;Check this out!&lt;/p&gt;
+&lt;video width=&#34;320&#34; height=&#34;240&#34; controls&gt;
+  &lt;source src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2F54GfBjYQz-.mov?alt=media&amp;token=c919138b-637c-4dfc-b21b-3455411c5198&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;p&gt;I&#39;ll post more about what this is in a bit. Don&#39;t get too excited.&lt;/p&gt;
 </description>
     </item>
     
