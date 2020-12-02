@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Mon, 30 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Wed, 02 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,24 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Supervisord</title>
+      <link>https://davidbieber.com/snippets/2020-12-02-supervisord/</link>
+      <pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-02-supervisord/</guid>
+      <description>&lt;p&gt;Supervisord has been the single best quality-of-life improvement for software development for me in 2020.&lt;/p&gt;
+&lt;p&gt;Many thanks to &lt;a href=&#34;https://vikb.com/&#34;&gt;Vik Bhandari&lt;/a&gt; for suggesting that I use it.&lt;/p&gt;
+&lt;p&gt;What is supervisord? It&#39;s a &amp;ldquo;process control system,&amp;rdquo; meaning that it&#39;s software that starts, stops, and monitors other software that you want to run.&lt;/p&gt;
+&lt;p&gt;Here&#39;s an example. Let&#39;s say you have a program &lt;code&gt;check_for_sales&lt;/code&gt; that periodically pings Amazon looking for sales on that new shoe-phone you&#39;ve had your eye on. When it notices a drop in prices, it sends you a text.&lt;/p&gt;
+&lt;p&gt;Without supervisord, you might start the program, and find the next day that it has hit an error (maybe one of the requests to Amazon timed out in a way you weren&#39;t anticipating), the program terminated, and the item sold out while you weren&#39;t looking!&lt;/p&gt;
+&lt;p&gt;With supervisord, you can have &lt;code&gt;check_for_sales&lt;/code&gt; automatically restart on failure. Supervisord will notice the failure, and restart the program for you.&lt;/p&gt;
+&lt;p&gt;I&#39;ve been using supervisord for all sorts of things, like monitoring Bieber Bot for new messages, keeping my website&#39;s development server live, automatically posting snippets from Roam (like this one), and auto-processing screenshots and screen recordings that I take. I have 15 processes monitored by supervisord in total across a number of side projects.&lt;/p&gt;
+&lt;p&gt;Before supervisord, I had half the number of processes always-on in the background on my computer. I would keep extra terminal windows open to keep them running. And restarting my computer was a pain because I had to bring up these processes one at a time.&lt;/p&gt;
+&lt;p&gt;Now, with supervisord, restarting my machine is no big deal. This let&#39;s me use my computer more freely, and I feel much less hesitation in starting a new project that requires having an always-on process.&lt;/p&gt;
+&lt;p&gt;You can learn more about supervisord from their website &lt;a href=&#34;http://supervisord.org/&#34;&gt;supervisord.org&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
