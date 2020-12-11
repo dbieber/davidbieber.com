@@ -1,6 +1,7 @@
 +++
 title = "Supervisord"
 date = 2020-12-02T00:00:00
+
 +++
 
 Supervisord has been the single best quality-of-life improvement for software development for me in 2020.
