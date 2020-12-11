@@ -1,6 +1,7 @@
 +++
 title = "Brainstorming “Mandatory Reading” for Dodam"
 date = 2020-12-06T00:00:00
+
 +++
 
 Dodam asked me what ideas I thought were most essential. Here are my first thoughts.
