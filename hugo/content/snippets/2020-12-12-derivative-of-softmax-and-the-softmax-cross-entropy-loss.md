@@ -1,7 +1,7 @@
 +++
 title = "Derivative of Softmax and the Softmax Cross Entropy Loss"
 date = 2020-12-12T00:00:00
-
+math = true
 +++
 
 Write $y_i = \\\text{softmax}(\\\textbf{x})_i = \\\frac{e^{x_i}}{\\\sum e^{x_d}}$.
