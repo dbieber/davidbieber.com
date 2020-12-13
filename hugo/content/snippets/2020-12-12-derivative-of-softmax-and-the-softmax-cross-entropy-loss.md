@@ -10,7 +10,7 @@ That is, $\textbf{y}$ is the softmax of $\textbf{x}$. Softmax computes a normali
 
 Next write $L = -\sum t_i \ln(y_i)$. This is the softmax cross entropy loss. $t_i$ is a 0/1 target representing whether the correct class is class $i$. We will compute the derivative of $L$ with respect to the inputs to the softmax function $\textbf{x}$.
 
-We have $\frac{dL}{dx_j} = -\sum t_i \frac{1}{y_i} \frac{dy_i}{d{x_j}}$
+We have $\frac{dL}{dx_j} = -\sum t_i \frac{1}{y_i} \frac{dy_i}{d{x_j}}$ from the chain rule.
 
 We compute $\frac{dy_i}{dx_j}$ using the quotient rule.
 
@@ -44,4 +44,4 @@ $\frac{dL}{dx_j} = y_j - t_j$
 
 We have computed the derivative of the softmax cross-entropy loss $L$ with respect to the inputs to the softmax function.
 
-This page is an experiment in publishing directly from Roam Research. It is incomplete, and the formatting is probably all wonky. Bear with me while I get this sorted.
+This page is an experiment in publishing directly from Roam Research. ~~It is incomplete, and the formatting is probably all wonky. Bear with me while I get this sorted.~~ (Update (December 13th, 2020): The formatting looks good now!)
