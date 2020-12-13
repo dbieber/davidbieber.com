@@ -1,7 +1,7 @@
 +++
 title = "Derivative of Softmax and the Softmax Cross Entropy Loss"
 date = 2020-12-12T00:00:00
-
+math = true
 +++
 
 Write $y_i = \text{softmax}(\textbf{x})_i = \frac{e^{x_i}}{\sum e^{x_d}}$.
@@ -32,11 +32,11 @@ $\frac{dy_i}{dx_j} = -y_i y_j$
 
 Together these equations give us the derivative of the softmax function:
 
-$\frac{dy_i}{dx_j} = \begin{cases} y_i \cdot (1 - y_i) & i=j \\ -y_i y_j & i \ne j \end{cases}$
+$\frac{dy_i}{dx_j} = \begin{cases} y_i \cdot (1 - y_i) & i=j \\\\\\ -y_i y_j & i \ne j \end{cases}$
 
 Using this result, we can finish computing the derivative of $L$. This gives:
 
-$\frac{dL}{dx_j} = -\sum t_i \frac{1}{y_i} \frac{dy_i}{d{x_j}} = \sum\limits_i \begin{cases} t_i (y_i - 1) & i=j \\ t_i y_j & i \ne j \end{cases}$
+$\frac{dL}{dx_j} = -\sum t_i \frac{1}{y_i} \frac{dy_i}{d{x_j}} = \sum\limits_i \begin{cases} t_i (y_i - 1) & i=j \\\\\\ t_i y_j & i \ne j \end{cases}$
 
 Since exactly one of the $t_i$s is 1 and the rest are zeros this further simplifies to:
 

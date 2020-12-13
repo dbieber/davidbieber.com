@@ -302,9 +302,9 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
 &lt;p&gt;$\frac{dy_i}{dx_j} = -\frac{e^{x_i}}{\sum e^{x_d}} \cdot \frac{e^{x_j}}{\sum e^{x_d}} $&lt;/p&gt;
 &lt;p&gt;$\frac{dy_i}{dx_j} = -y_i y_j$&lt;/p&gt;
 &lt;p&gt;Together these equations give us the derivative of the softmax function:&lt;/p&gt;
-&lt;p&gt;$\frac{dy_i}{dx_j} = \begin{cases} y_i \cdot (1 - y_i) &amp;amp; i=j \ -y_i y_j &amp;amp; i \ne j \end{cases}$&lt;/p&gt;
+&lt;p&gt;$\frac{dy_i}{dx_j} = \begin{cases} y_i \cdot (1 - y_i) &amp;amp; i=j \\\ -y_i y_j &amp;amp; i \ne j \end{cases}$&lt;/p&gt;
 &lt;p&gt;Using this result, we can finish computing the derivative of $L$. This gives:&lt;/p&gt;
-&lt;p&gt;$\frac{dL}{dx_j} = -\sum t_i \frac{1}{y_i} \frac{dy_i}{d{x_j}} = \sum\limits_i \begin{cases} t_i (y_i - 1) &amp;amp; i=j \ t_i y_j &amp;amp; i \ne j \end{cases}$&lt;/p&gt;
+&lt;p&gt;$\frac{dL}{dx_j} = -\sum t_i \frac{1}{y_i} \frac{dy_i}{d{x_j}} = \sum\limits_i \begin{cases} t_i (y_i - 1) &amp;amp; i=j \\\ t_i y_j &amp;amp; i \ne j \end{cases}$&lt;/p&gt;
 &lt;p&gt;Since exactly one of the $t_i$s is 1 and the rest are zeros this further simplifies to:&lt;/p&gt;
 &lt;p&gt;$\frac{dL}{dx_j} = y_j - t_j$&lt;/p&gt;
 &lt;p&gt;We have computed the derivative of the softmax cross-entropy loss $L$ with respect to the inputs to the softmax function.&lt;/p&gt;

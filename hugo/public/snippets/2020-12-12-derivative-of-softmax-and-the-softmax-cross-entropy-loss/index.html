@@ -47,6 +47,9 @@ We have $\frac{dL}{dx_j} = -\sum t_i \frac{1}{y_i} \frac{dy_i}{d{x_j}}$">
 
   
   
+  
+  <script src="/js/mathjax-config.js"></script>
+  
 
   
   
@@ -175,9 +178,9 @@ We have $\frac{dL}{dx_j} = -\sum t_i \frac{1}{y_i} \frac{dy_i}{d{x_j}}$">
 
       
       
-        
-      
 
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -536,9 +539,9 @@ We have $\frac{dL}{dx_j} = -\sum t_i \frac{1}{y_i} \frac{dy_i}{d{x_j}}$"><meta p
 <p>$\frac{dy_i}{dx_j} = -\frac{e^{x_i}}{\sum e^{x_d}} \cdot \frac{e^{x_j}}{\sum e^{x_d}} $</p>
 <p>$\frac{dy_i}{dx_j} = -y_i y_j$</p>
 <p>Together these equations give us the derivative of the softmax function:</p>
-<p>$\frac{dy_i}{dx_j} = \begin{cases} y_i \cdot (1 - y_i) &amp; i=j \ -y_i y_j &amp; i \ne j \end{cases}$</p>
+<p>$\frac{dy_i}{dx_j} = \begin{cases} y_i \cdot (1 - y_i) &amp; i=j \\\ -y_i y_j &amp; i \ne j \end{cases}$</p>
 <p>Using this result, we can finish computing the derivative of $L$. This gives:</p>
-<p>$\frac{dL}{dx_j} = -\sum t_i \frac{1}{y_i} \frac{dy_i}{d{x_j}} = \sum\limits_i \begin{cases} t_i (y_i - 1) &amp; i=j \ t_i y_j &amp; i \ne j \end{cases}$</p>
+<p>$\frac{dL}{dx_j} = -\sum t_i \frac{1}{y_i} \frac{dy_i}{d{x_j}} = \sum\limits_i \begin{cases} t_i (y_i - 1) &amp; i=j \\\ t_i y_j &amp; i \ne j \end{cases}$</p>
 <p>Since exactly one of the $t_i$s is 1 and the rest are zeros this further simplifies to:</p>
 <p>$\frac{dL}{dx_j} = y_j - t_j$</p>
 <p>We have computed the derivative of the softmax cross-entropy loss $L$ with respect to the inputs to the softmax function.</p>
