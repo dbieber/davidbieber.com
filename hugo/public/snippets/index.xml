@@ -20,7 +20,7 @@
       <description>&lt;p&gt;Write $y_i = \text{softmax}(\textbf{x})_i = \frac{e^{x_i}}{\sum e^{x_d}}$.&lt;/p&gt;
 &lt;p&gt;That is, $\textbf{y}$ is the softmax of $\textbf{x}$. Softmax computes a normalized exponential of its input vector.&lt;/p&gt;
 &lt;p&gt;Next write $L = -\sum t_i \ln(y_i)$. This is the softmax cross entropy loss. $t_i$ is a 0/1 target representing whether the correct class is class $i$. We will compute the derivative of $L$ with respect to the inputs to the softmax function $\textbf{x}$.&lt;/p&gt;
-&lt;p&gt;We have $\frac{dL}{dx_j} = -\sum t_i \frac{1}{y_i} \frac{dy_i}{d{x_j}}$&lt;/p&gt;
+&lt;p&gt;We have $\frac{dL}{dx_j} = -\sum t_i \frac{1}{y_i} \frac{dy_i}{d{x_j}}$ from the chain rule.&lt;/p&gt;
 &lt;p&gt;We compute $\frac{dy_i}{dx_j}$ using the quotient rule.&lt;/p&gt;
 &lt;p&gt;If $i = j$, this gives:&lt;/p&gt;
 &lt;p&gt;$\frac{dy_i}{dx_j} = \frac{\sum e^{x_d} \cdot e^{x_i} - e^{x_i} \cdot e^{x_i}}{(\sum e^{x_d})^2}$&lt;/p&gt;
@@ -37,7 +37,7 @@
 &lt;p&gt;Since exactly one of the $t_i$s is 1 and the rest are zeros this further simplifies to:&lt;/p&gt;
 &lt;p&gt;$\frac{dL}{dx_j} = y_j - t_j$&lt;/p&gt;
 &lt;p&gt;We have computed the derivative of the softmax cross-entropy loss $L$ with respect to the inputs to the softmax function.&lt;/p&gt;
-&lt;p&gt;This page is an experiment in publishing directly from Roam Research. It is incomplete, and the formatting is probably all wonky. Bear with me while I get this sorted.&lt;/p&gt;
+&lt;p&gt;This page is an experiment in publishing directly from Roam Research. &lt;del&gt;It is incomplete, and the formatting is probably all wonky. Bear with me while I get this sorted.&lt;/del&gt; (Update (December 13th, 2020): The formatting looks good now!)&lt;/p&gt;
 </description>
     </item>
     
