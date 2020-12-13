@@ -44,4 +44,4 @@ $\frac{dL}{dx_j} = y_j - t_j$
 
 We have computed the derivative of the softmax cross-entropy loss $L$ with respect to the inputs to the softmax function.
 
-This page is an experiment in publishing directly from Roam Research. ~~It is incomplete, and the formatting is probably all wonky. Bear with me while I get this sorted.~~ (Update (December 13th, 2020): The formatting looks good now!)
+This page is an experiment in publishing directly from Roam Research. ~~It is incomplete, and the formatting is probably all wonky. Bear with me while I get this sorted.~~ Update (December 13th, 2020): The formatting looks good now!

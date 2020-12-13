@@ -37,7 +37,7 @@
 &lt;p&gt;Since exactly one of the $t_i$s is 1 and the rest are zeros this further simplifies to:&lt;/p&gt;
 &lt;p&gt;$\frac{dL}{dx_j} = y_j - t_j$&lt;/p&gt;
 &lt;p&gt;We have computed the derivative of the softmax cross-entropy loss $L$ with respect to the inputs to the softmax function.&lt;/p&gt;
-&lt;p&gt;This page is an experiment in publishing directly from Roam Research. &lt;del&gt;It is incomplete, and the formatting is probably all wonky. Bear with me while I get this sorted.&lt;/del&gt; (Update (December 13th, 2020): The formatting looks good now!)&lt;/p&gt;
+&lt;p&gt;This page is an experiment in publishing directly from Roam Research. &lt;del&gt;It is incomplete, and the formatting is probably all wonky. Bear with me while I get this sorted.&lt;/del&gt; Update (December 13th, 2020): The formatting looks good now!&lt;/p&gt;
 </description>
     </item>
     
