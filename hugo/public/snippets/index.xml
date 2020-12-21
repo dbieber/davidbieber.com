@@ -1865,6 +1865,74 @@ limit 50;
     </item>
     
     <item>
+      <title>Principles of Pico</title>
+      <link>https://davidbieber.com/snippets/2020-03-14-principles-of-pico/</link>
+      <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-03-14-principles-of-pico/</guid>
+      <description>&lt;p&gt;Here&#39;s an attempt at capturing and organizing my thoughts on Pico, from our conversation about it March.&lt;/p&gt;
+&lt;p&gt;First, an attempt at an overview of the Pico system.&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;You enter cards through a variety of sources. You can enter cards manually, like flash cards. You can also import cards from your note taking software. Cards can also be created from your contacts list.&lt;/p&gt;
+&lt;p&gt;Then, Pico shows you these cards in an Anki-meets-Tinder swipe-based spaced repetition manner. You get a stack of cards, and each card presents you with a suggested action you should take:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reengage with idea X from your notes&lt;/li&gt;
+&lt;li&gt;Reach out to person Y from your contacts&lt;/li&gt;
+&lt;li&gt;Read a passage from book Z&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can choose to perform the action on the card, swiping right. Or you can ignore the card and get the next one on the stack by swiping left. The app automatically learns which cards are good to show you. Ideally it helps you to read more, to reengage with your own ideas over time, and to keep in touch with your friends.&lt;/p&gt;
+&lt;p&gt;Lots of things to like about this! I&#39;m now going to take a stab at separating out the goals of Pico, the mechanism of Pico, and the specific tasks that Pico targets today.&lt;/p&gt;
+&lt;h2 id=&#34;distilling-the-principles-of-pico&#34;&gt;Distilling the Principles of Pico&lt;/h2&gt;
+&lt;p&gt;The goals are noble. At a high level, Pico aims to help you spend less time on addictive websites with infinite scroll, and more time doing things that matter to you. I applaud anything that sets out to help you reclaim your attention.&lt;/p&gt;
+&lt;p&gt;I think mentally it helps to separate the mechanism of managing attention that Pico provides from the specific tasks it helps its users to achieve.&lt;/p&gt;
+&lt;p&gt;The mechanism seems to operate around these three principles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;offloaded memory&lt;/li&gt;
+&lt;li&gt;entropy injection (offloaded decision making)&lt;/li&gt;
+&lt;li&gt;spaced repetition&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The specific tasks it helps with are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;brainstorming / reengaging with old ideas&lt;/li&gt;
+&lt;li&gt;(re)connecting with people&lt;/li&gt;
+&lt;li&gt;studying&lt;/li&gt;
+&lt;li&gt;reading&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Of course, the mechanism is general enough that other specific tasks can easily be slotted in as cards in the Pico system.&lt;/p&gt;
+&lt;h2 id=&#34;thoughts&#34;&gt;Thoughts!&lt;/h2&gt;
+&lt;p&gt;Alright, stop me if I&#39;ve misrepresented Pico so far. Let me tell you what I think about it.&lt;/p&gt;
+&lt;h3 id=&#34;general-purposeness&#34;&gt;General Purposeness&lt;/h3&gt;
+&lt;p&gt;I think Pico has some really solid ideas underlying it. Particularly I find the idea of using spaced repetition to reengage with your ideas quite compelling.
+The idea of using cards to dive into passages of books is also appealing.&lt;/p&gt;
+&lt;p&gt;Using spaced repetition to reengage with your friends seems a tricky thing to get right, since it risks dehumanizing the relationships without special care taken both by the developer (you) and the user of the system.&lt;/p&gt;
+&lt;p&gt;Each of these different types of cards seems like it comes with lots of room for domain specific tailoring. For example, if a card represents a passage of a book, the user may want to quickly dive into the full book (not just the passage), and then to create a new card at the end of their reading session so they can continue reading from where they left off later.
+If a card represents an idea from my notes, I&#39;d like to be able to read the surrounding notes in my note taking software, where I&#39;m best able to engage with the ideas.&lt;/p&gt;
+&lt;p&gt;Getting each of these domains right in a single app (or through clean interactions with other systems) seems like a difficult challenge, but potentially quite rewarding if done well.&lt;/p&gt;
+&lt;h3 id=&#34;data-entry&#34;&gt;Data Entry&lt;/h3&gt;
+&lt;p&gt;I expect the usability of Pico will be a big part of what makes the Pico experience pleasant or not. Data entry and the whole card creation process seems like one of the tricky things to get right. If I want to create cards for studying, based on my notes, then I&#39;ll want to be taking those notes in some other software (unless you&#39;re also building a Roam / RemNote competitor too!). Going from this other software into Pico can be challenging because there are many possible &amp;ldquo;other softwares&amp;rdquo; that people could be coming from and many possible formats people could be taking notes in.&lt;/p&gt;
+&lt;p&gt;For the book reading case, the experience I would want would be that when I&#39;m reading a PDF or eBook a card is automatically created for each book I&#39;ve opened, that is automatically kept up to date with the part of the book that I&#39;m up to.&lt;/p&gt;
+&lt;h3 id=&#34;overwhelmed-by-cards&#34;&gt;Overwhelmed by Cards&lt;/h3&gt;
+&lt;p&gt;This thought comes from my inexperience with spaced-repetition software systems. It seems like with traditional spaced repetition algorithms, it can be easy to get overwhelmed by a backlog of cards to review if you take a few days (or heavens forbid a week!) off of review.&lt;/p&gt;
+&lt;p&gt;Lately I&#39;ve been doing spaced repetition in Roam Research using an adhoc system I threw together for myself using Browserflow. Instead of having specific days on which to review cards, they get reviewed in a specific review session. If I skip a day, all future review sessions just come a day later; the backlog doesn&#39;t grow.&lt;/p&gt;
+&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;
+&lt;p&gt;Pico is a method for spending your time with intention. This is fantastic!&lt;/p&gt;
+&lt;p&gt;My understanding of the &amp;ldquo;Principles of Pico&amp;rdquo; are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Spend less time on things you don&#39;t want to be doing (Facebook, Twitter, etc)&lt;/li&gt;
+&lt;li&gt;Spend more time on things you do want&lt;/li&gt;
+&lt;li&gt;Use external mechanisms and automation to guide you toward these good uses of time&lt;/li&gt;
+&lt;li&gt;Use gamification to increase time spent on these productive uses of time&lt;/li&gt;
+&lt;li&gt;Learn from experience what works and what doesn&#39;t&lt;/li&gt;
+&lt;li&gt;Reengage with your own ideas using spaced repetition&lt;/li&gt;
+&lt;li&gt;Reengage with people using spaced repetition&lt;/li&gt;
+&lt;li&gt;Learn things via spaced repetition&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I&#39;m 100% on board with these principles and am very excited to see where Pico lands a year from now.&lt;/p&gt;
+&lt;p&gt;Heads up that I wrote most of this snippet back on March 14, 2020, and then only finished it up and published it today December 20, 2020. So, forgive the delay and let&#39;s continue the conversation some time in the next ten months.&lt;/p&gt;
+&lt;p&gt;Cheers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Fastbook: Listen to Audiobooks Faster</title>
       <link>https://davidbieber.com/snippets/2020-03-02-fastbook/</link>
       <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
