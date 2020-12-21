@@ -3,7 +3,7 @@
 
 baseurl = "https://davidbieber.com/"
 title = "David Bieber"
-copyright = "&copy; 2018"
+copyright = ""
 
 theme = "academic"
 enableEmoji = true
