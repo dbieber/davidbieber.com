@@ -13,7 +13,7 @@ The plugin would do two main things automatically:
 
 ## Mind the Details
 
-Of course, the implementation details matter! You don't want to be whisked away from the notes you're taking just because you've linked a link in a different window.
+Of course, the implementation details matter! You don't want to be whisked away from the notes you're taking just because you've clicked a link in a different window.
 
 So, here I'll explain a few of the details I think would make this a good note taking experience.
 

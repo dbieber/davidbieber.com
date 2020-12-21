@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/authors/</link>
       <atom:link href="https://davidbieber.com/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>Authors</title>

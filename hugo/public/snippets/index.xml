@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/snippets/</link>
       <atom:link href="https://davidbieber.com/snippets/index.xml" rel="self" type="application/rss+xml" />
     <description>Snippets</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018</copyright><lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>Snippets</title>
@@ -796,7 +796,7 @@ One perk of understanding this mechanism for me is that I&#39;ll be able to writ
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;mind-the-details&#34;&gt;Mind the Details&lt;/h2&gt;
-&lt;p&gt;Of course, the implementation details matter! You don&#39;t want to be whisked away from the notes you&#39;re taking just because you&#39;ve linked a link in a different window.&lt;/p&gt;
+&lt;p&gt;Of course, the implementation details matter! You don&#39;t want to be whisked away from the notes you&#39;re taking just because you&#39;ve clicked a link in a different window.&lt;/p&gt;
 &lt;p&gt;So, here I&#39;ll explain a few of the details I think would make this a good note taking experience.&lt;/p&gt;
 &lt;p&gt;As I&#39;m browsing the internet, all the websites I visit will get added to a page &amp;ldquo;{Date} Browsing History&amp;rdquo;. A new Roam page will be created for each new website visited. And there will be a Roam window that always stays open to the Roam page for the current website I have open in my browser.&lt;/p&gt;
 &lt;p&gt;What qualifies as a website?&lt;/p&gt;
