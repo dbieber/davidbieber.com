@@ -13,6 +13,30 @@
     </image>
     
     <item>
+      <title>Looking back on my browsing history snippets</title>
+      <link>https://davidbieber.com/snippets/2020-12-20-looking-back-on-my-browsing-history-snippets/</link>
+      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-20-looking-back-on-my-browsing-history-snippets/</guid>
+      <description>&lt;p&gt;I&#39;ve now written several snippets about my analyzing my browsing history programmatically. I figured I&#39;d collect them all in one place here.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&#34;&gt;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history/&#34;&gt;https://davidbieber.com/snippets/2020-03-19-browsing-history/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&#34;&gt;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/&#34;&gt;https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/&#34;&gt;https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-05-15-roaming-the-web/&#34;&gt;https://davidbieber.com/snippets/2020-05-15-roaming-the-web/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Presumably as I write more about this, the list will go out of date. And that&#39;s alright. This is just a snippet.&lt;/p&gt;
+&lt;p&gt;This motivates me to move all my snippets into Roam Research. I&#39;m not going to do this just yet, but it seems a decent idea. Backlinks/tags would then allow for easily keeping an up-to-date list of all the snippets I&#39;ve written about various topics.&lt;/p&gt;
+&lt;p&gt;Looking back on these many browsing history snippets, what themes stand out? Browser histories are rich with information about our lives. There&#39;s a lot we can do to make our lives better using that information.&lt;/p&gt;
+&lt;p&gt;We can detect if we&#39;re getting distracted, and have automated interventions if we are.&lt;/p&gt;
+&lt;p&gt;We can figure out our interests, and notice if they&#39;re drifting over time.&lt;/p&gt;
+&lt;p&gt;We can reflect on things we&#39;ve learned or thought about in the past, revisiting our old ideas. This can help generate new ideas, and also strengthen our memory.&lt;/p&gt;
+&lt;p&gt;I&#39;ve made some progress on automated distraction detection. I&#39;ll have to write a snippet about that soon. I&#39;ve also recently poked at getting my browsing history from my phone on my computer, so that can be analyzed in near real-time too. This promises to make distraction detection even more compelling. Very excited to teach Bieber Bot how to stage a distraction intervention some time in the next year.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Derivative of Softmax and the Softmax Cross Entropy Loss</title>
       <link>https://davidbieber.com/snippets/2020-12-12-derivative-of-softmax-and-the-softmax-cross-entropy-loss/</link>
       <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
