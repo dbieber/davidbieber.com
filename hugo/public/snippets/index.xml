@@ -13,6 +13,124 @@
     </image>
     
     <item>
+      <title>Datalog Queries for Roam Research</title>
+      <link>https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/</link>
+      <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://roamresearch.com/&#34;&gt;Roam Research&lt;/a&gt; is an excellent note taking tool. One of its core features is &amp;ldquo;back links&amp;rdquo; &amp;ndash; any of your notes can easily references any of your other notes, and so all your notes end up linked together in an intricate graph structure. You can quickly see all the references to a note, hence the term &amp;ldquo;back link&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Roam exposes all of the information in your graph through a &lt;strong&gt;datalog API&lt;/strong&gt;. Datalog is a declarative programming language that lets you make queries about your graph.&lt;/p&gt;
+&lt;p&gt;Resources&lt;/p&gt;
+&lt;p&gt;If you want to learn datalog, I recommend &lt;a href=&#34;http://www.learndatalogtoday.org/&#34;&gt;http://www.learndatalogtoday.org/&lt;/a&gt;. It teaches how to write datalog queries in 8 relatively short chapters chock full of examples.&lt;/p&gt;
+&lt;p&gt;If you want to see how to use datalog specifically for Roam, you can head over to &lt;a href=&#34;https://www.putyourleftfoot.in/introduction-to-the-roam-alpha-api&#34;&gt;https://www.putyourleftfoot.in/introduction-to-the-roam-alpha-api&lt;/a&gt;. Or keep reading!&lt;/p&gt;
+&lt;p&gt;Examples&lt;/p&gt;
+&lt;p&gt;In this snippet I include a number of examples of useful datalog queries for Roam Research.&lt;/p&gt;
+&lt;p&gt;How to Run a Query&lt;/p&gt;
+&lt;p&gt;Open the JavaScript console. Paste the query. Hit enter.&lt;/p&gt;
+&lt;p&gt;To open the JavaScript console in Chrome, hit cmd-option-J on Mac or Ctrl-shift-J on Windows. For other systems, &lt;a href=&#34;https://www.google.com/search?q=how%20to%20open%20the%20javascript%20console&#34;&gt;you can look up how to open it&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pages modified today&lt;/p&gt;
+&lt;p&gt;This query returns a list of pages that have been modified today.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let ancestorrule=`[ 
+   [ (ancestor ?b ?a) 
+        [?a :block/children ?b] ] 
+   [ (ancestor ?b ?a) 
+        [?parent :block/children ?b ] 
+        (ancestor ?parent ?a) ] ] ]`;
+
+let references = window.roamAlphaAPI.q(`[
+	:find ?title
+	:in $ ?start_of_day %
+	:where
+	[?page :node/title ?title]
+	(ancestor ?block ?page)
+	[?block :edit/time ?time]
+	[(&amp;gt; ?time ?start_of_day)]
+]`, new Date().setHours(0, 0, 0, 0), ancestorrule);
+
+references.map(
+  (data, index) =&amp;gt; {return `${data[0]}`;})
+.join(&#39;\n&#39;);```
+
+If you run it in the javascript console, it should print out a list of pages that have been modified today.
+
+References to a specific page
+
+This query finds all blocks referencing a specific page. Replace &amp;quot;Roam Research&amp;quot; in the query with the name of the page that you want to find the references of.
+
+```javascript
+let references = window.roamAlphaAPI.q(`[
+	:find ?text
+	:in $ ?title
+	:where
+	[?page :node/title ?title]
+	[?e :block/refs ?page]
+	[?e :block/string ?text]
+]`, &#39;Roam Research&#39;);
+
+references.map((data, index) =&amp;gt; {return data[0];}).join(&#39;\n&#39;);```
+
+All blocks on a specific page
+
+This query finds all blocks on a specific page. Again replace &amp;quot;Roam Research&amp;quot; with the name of the page you&#39;re interested in.
+
+```javascript
+let ancestorrule=`[ 
+   [ (ancestor ?b ?a) 
+        [?a :block/children ?b] ] 
+   [ (ancestor ?b ?a) 
+        [?parent :block/children ?b ] 
+        (ancestor ?parent ?a) ] ] ]`;
+let blocks = window.roamAlphaAPI.q(`[ 
+  :find 
+      ?string
+  :in $ ?pagetitle % 
+  :where 
+      [?block :block/string ?string] 
+      [?page :node/title ?pagetitle] 
+      (ancestor ?block ?page)
+  ]`, &amp;quot;Roam Research&amp;quot;, ancestorrule);
+
+blocks.map((data, index) =&amp;gt; {return data[0];}).join(&#39;\n&#39;);```
+
+All blocks with at least 100 descendants
+
+This script finds all blocks with at least 100 descendants. The idea is that these blocks may have notes that are worth revisiting, either to summarize or reflect on. The threshold &amp;quot;100&amp;quot; is of course configurable at the top of the script.
+
+```javascript
+let threshold = 100;
+let ancestorrule=`[ 
+   [ (ancestor ?child ?parent) 
+        [?parent :block/children ?child] ]
+   [ (ancestor ?child ?a) 
+        [?parent :block/children ?child ] 
+        (ancestor ?parent ?a) ] ] ]`;
+
+let large_blocks = window.roamAlphaAPI.q(`
+[:find ?ancestor (count ?block)
+  :in $ % 
+  :where 
+    [?ancestor :block/string]
+    [?block :block/string]
+    (ancestor ?block ?ancestor)]
+`, ancestorrule).filter((data, index) =&amp;gt; {return data[1] &amp;gt;= threshold});
+
+let results = window.roamAlphaAPI.q(`[
+  :find ?text ?uid ?childcount
+  :in $ ?block ?childcount
+  :where
+  [?block :block/string ?text]
+  [?block :block/uid ?uid]
+]`, large_blocks)
+  
+results.map((data, index) =&amp;gt; {return `((${data[1]})) (${data[2]})`}).join(&#39;\n&#39;);```
+
+Support and Debugging
+
+The &amp;quot;#querying&amp;quot; channel on the [Roam Research Slack](https://roamresearch.slack.com/) is active and the community there is quite friendly. If you&#39;re crafting or debugging a query, that&#39;s a great place to ask for help or share your progress.
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Looking back on my browsing history snippets</title>
       <link>https://davidbieber.com/snippets/2020-12-20-looking-back-on-my-browsing-history-snippets/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
