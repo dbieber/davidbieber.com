@@ -1,4 +1,4 @@
-rsync -av davidbieber.com/ davidbieber.com-deploy/ --delete --exclude=.gitignore --exclude=.git
+rsync -av davidbieber.com-main/ davidbieber.com-deploy/ --delete --exclude=.gitignore --exclude=.git
 
 cd davidbieber.com-deploy
 git config user.email "david810@gmail.com"
