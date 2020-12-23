@@ -538,13 +538,13 @@ Roam exposes all of the information in your graph through a datalog API."><meta 
         (ancestor ?parent ?a) ] ] ]`;
 
 let references = window.roamAlphaAPI.q(`[
-	:find ?title
-	:in $ ?start_of_day %
-	:where
-	[?page :node/title ?title]
-	(ancestor ?block ?page)
-	[?block :edit/time ?time]
-	[(&gt; ?time ?start_of_day)]
+  :find ?title
+  :in $ ?start_of_day %
+  :where
+  [?page :node/title ?title]
+  (ancestor ?block ?page)
+  [?block :edit/time ?time]
+  [(&gt; ?time ?start_of_day)]
 ]`, new Date().setHours(0, 0, 0, 0), ancestorrule);
 
 references.map(
@@ -555,12 +555,12 @@ references.map(
 <h3 id="references-to-a-specific-page">References to a specific page</h3>
 <p>This query finds all blocks referencing a specific page. Replace &ldquo;Roam Research&rdquo; in the query with the name of the page that you want to find the references of.</p>
 <pre><code class="language-javascript">let references = window.roamAlphaAPI.q(`[
-	:find ?text
-	:in $ ?title
-	:where
-	[?page :node/title ?title]
-	[?e :block/refs ?page]
-	[?e :block/string ?text]
+  :find ?text
+  :in $ ?title
+  :where
+  [?page :node/title ?title]
+  [?e :block/refs ?page]
+  [?e :block/string ?text]
 ]`, 'Roam Research');
 
 references.map((data, index) =&gt; {return data[0];}).join('\n');
@@ -614,7 +614,7 @@ let results = window.roamAlphaAPI.q(`[
   
 results.map((data, index) =&gt; {return `((${data[1]})) (${data[2]})`}).join('\n');
 </code></pre>
-<h3 id="support-and-debugging">Support and Debugging</h3>
+<h2 id="support-and-debugging">Support and Debugging</h2>
 <p>The &ldquo;#querying&rdquo; channel on the <a href="https://roamresearch.slack.com/">Roam Research Slack</a> is active and the community there is quite friendly. If you're crafting or debugging a query, that's a great place to ask for help or share your progress.</p>
 
     </div>
