@@ -126,6 +126,6 @@ let results = window.roamAlphaAPI.q(`[
 results.map((data, index) => {return `((${data[1]})) (${data[2]})`}).join('\n');
 ```
 
-### Support and Debugging
+## Support and Debugging
 
 The "#querying" channel on the [Roam Research Slack](https://roamresearch.slack.com/) is active and the community there is quite friendly. If you're crafting or debugging a query, that's a great place to ask for help or share your progress.
