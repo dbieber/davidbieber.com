@@ -12,6 +12,9 @@ jobs:
           path: davidbieber.com-main
       - uses: actions/setup-node@v1
 
+      - run: pwd
+      - run: ls
+
       - name: Install dependencies
         run: ./.github/scripts/install.sh
         shell: bash
