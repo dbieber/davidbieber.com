@@ -1,0 +1,36 @@
+name: build-website
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      # Install Hugo.
+      - run: curl -LO https://github.com/gohugoio/hugo/releases/download/v0.62.1/hugo_extended_0.62.1_Linux-64bit.deb
+      - run: sudo dpkg -i hugo_extended_0.62.1_Linux-64bit.deb
+      - run: rm hugo_extended_0.62.1_Linux-64bit.deb
+      # Install babel with React presets.
+      - run: npm install
+      - run: cat package.json
+
+      - run: npx babel hugo/assets/js-src/ --out-dir hugo/assets/js/ --presets react-app/prod  # Transform jsx to js.
+      - run: cd hugo
+      - run: hugo  # Generate the static site.
+
+      - run: cd ../..
+      - uses: actions/checkout@v2
+        - ref: deploy
+        - path: davidbieber.com-deploy
+      - run: rsync -av davidbieber.com/ davidbieber.com-deploy/ --delete --exclude=.gitignore --exclude=.git
+
+      - run: cd davidbieber.com-deploy
+      - run: git config user.email "david810@gmail.com"
+      - run: git config user.name "David Bieber"
+
+      - run: git add .
+      - run: git commit -m '[skip travis] Automatic commit by GitHub Actions'
+      - run: git push origin deploy
