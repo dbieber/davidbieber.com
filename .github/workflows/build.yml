@@ -12,15 +12,12 @@ jobs:
           path: davidbieber.com-main
       - uses: actions/setup-node@v1
 
-      - run: pwd
-      - run: ls
-
       - name: Install dependencies
-        run: ./.github/scripts/install.sh
+        run: ./davidbieber.com-main/.github/scripts/install.sh
         shell: bash
 
       - name: Run build script
-        run: ./.github/scripts/build.sh
+        run: ./davidbieber.com-main/.github/scripts/build.sh
         shell: bash
 
       - uses: actions/checkout@v2
@@ -29,5 +26,5 @@ jobs:
           path: davidbieber.com-deploy
 
       - name: Push to deploy branch
-        run: ./.github/scripts/deploy.sh
+        run: ./davidbieber.com-main/.github/scripts/deploy.sh
         shell: bash
