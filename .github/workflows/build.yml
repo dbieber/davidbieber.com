@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: deploy
-          path: davidbieber.com-deploy
+          path: ../davidbieber.com-deploy
 
       - name: Push to deploy branch
         run: ./.github/scripts/deploy.sh
