@@ -23,8 +23,8 @@ jobs:
 
       - run: cd ../..
       - uses: actions/checkout@v2
-        - ref: deploy
-        - path: davidbieber.com-deploy
+        ref: deploy
+        path: davidbieber.com-deploy
       - run: rsync -av davidbieber.com/ davidbieber.com-deploy/ --delete --exclude=.gitignore --exclude=.git
 
       - run: cd davidbieber.com-deploy
