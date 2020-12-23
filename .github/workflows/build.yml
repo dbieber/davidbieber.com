@@ -19,6 +19,7 @@ jobs:
 
       - run: npx babel hugo/assets/js-src/ --out-dir hugo/assets/js/ --presets react-app/prod  # Transform jsx to js.
       - run: cd hugo
+      - run: ls
       - run: hugo  # Generate the static site.
 
       - run: cd ../..
