@@ -1,0 +1,30 @@
+name: build-website
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          path: davidbieber.com-main
+      - uses: actions/setup-node@v1
+
+      - name: Install dependencies
+        run: ./davidbieber.com-main/.github/scripts/install.sh
+        shell: bash
+
+      - name: Run build script
+        run: ./davidbieber.com-main/.github/scripts/build.sh
+        shell: bash
+
+      - uses: actions/checkout@v2
+        with:
+          ref: deploy
+          path: davidbieber.com-deploy
+
+      - name: Push to deploy branch
+        run: ./davidbieber.com-main/.github/scripts/deploy.sh
+        shell: bash

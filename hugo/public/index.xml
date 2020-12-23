@@ -308,13 +308,13 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
         (ancestor ?parent ?a) ] ] ]`;
 
 let references = window.roamAlphaAPI.q(`[
-  :find ?title
-  :in $ ?start_of_day %
-  :where
-  [?page :node/title ?title]
-  (ancestor ?block ?page)
-  [?block :edit/time ?time]
-  [(&amp;gt; ?time ?start_of_day)]
+	:find ?title
+	:in $ ?start_of_day %
+	:where
+	[?page :node/title ?title]
+	(ancestor ?block ?page)
+	[?block :edit/time ?time]
+	[(&amp;gt; ?time ?start_of_day)]
 ]`, new Date().setHours(0, 0, 0, 0), ancestorrule);
 
 references.map(
@@ -325,12 +325,12 @@ references.map(
 &lt;h3 id=&#34;references-to-a-specific-page&#34;&gt;References to a specific page&lt;/h3&gt;
 &lt;p&gt;This query finds all blocks referencing a specific page. Replace &amp;ldquo;Roam Research&amp;rdquo; in the query with the name of the page that you want to find the references of.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let references = window.roamAlphaAPI.q(`[
-  :find ?text
-  :in $ ?title
-  :where
-  [?page :node/title ?title]
-  [?e :block/refs ?page]
-  [?e :block/string ?text]
+	:find ?text
+	:in $ ?title
+	:where
+	[?page :node/title ?title]
+	[?e :block/refs ?page]
+	[?e :block/string ?text]
 ]`, &#39;Roam Research&#39;);
 
 references.map((data, index) =&amp;gt; {return data[0];}).join(&#39;\n&#39;);
@@ -384,7 +384,7 @@ let results = window.roamAlphaAPI.q(`[
   
 results.map((data, index) =&amp;gt; {return `((${data[1]})) (${data[2]})`}).join(&#39;\n&#39;);
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;support-and-debugging&#34;&gt;Support and Debugging&lt;/h2&gt;
+&lt;h3 id=&#34;support-and-debugging&#34;&gt;Support and Debugging&lt;/h3&gt;
 &lt;p&gt;The &amp;ldquo;#querying&amp;rdquo; channel on the &lt;a href=&#34;https://roamresearch.slack.com/&#34;&gt;Roam Research Slack&lt;/a&gt; is active and the community there is quite friendly. If you&#39;re crafting or debugging a query, that&#39;s a great place to ask for help or share your progress.&lt;/p&gt;
 </description>
     </item>
