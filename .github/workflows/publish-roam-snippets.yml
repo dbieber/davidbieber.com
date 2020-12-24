@@ -2,9 +2,16 @@ name: publish-roam-snippets
 on:
   repository_dispatch:
     types: snippet-update
+    inputs:
+      name:
+        description: 'Person to greet'
+        required: false
+        default: '@Bieber'
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - run: pwd
-      - run: ls
+      - run: |
+        pwd
+        ls
+        echo "Hello ${{ github.event.inputs.name }}!"
