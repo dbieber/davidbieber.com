@@ -10,4 +10,7 @@ jobs:
       - run: |
           pwd
           ls
-          echo "Hello ${{ github.event.client_payload.name }}!"
+          echo "Hello ${{ github.event.client_payload.uid }}!"
+          echo "Hello ${{ github.event.client_payload.title }}!"
+          echo "Hello ${{ github.event.client_payload.date }}!"
+          echo "Hello ${{ github.event.client_payload.content }}!"
