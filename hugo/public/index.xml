@@ -288,7 +288,7 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <link>https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/</link>
       <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/</guid>
-      <description>&lt;p&gt;Hey folks, I have a &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;workflow&lt;/a&gt; for automatically publishing &amp;ldquo;&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34;&gt;snippets&lt;/a&gt;&amp;rdquo; to my website from Roam. Currently there&#39;s a multi-hour latency between writing a snippet and when it appears on my website. In this thread (click &amp;lsquo;N replies&amp;rsquo;!) I&#39;m going to muse about / ask questions about how to use &lt;strong&gt;puppeteer&lt;/strong&gt; to bring this latency down considerably. This&#39;ll be my first time using puppeteer, so help appreciated. Read on!&lt;/p&gt;
+      <description>&lt;p&gt;Hey folks, I have a &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;workflow&lt;/a&gt; for automatically publishing &amp;ldquo;&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34;&gt;snippets&lt;/a&gt;&amp;rdquo; to my website from Roam. Currently there&#39;s a multi-hour latency between writing a snippet and when it appears on my website. In this snippet I&#39;m going to muse about / ask questions about how to use &lt;strong&gt;puppeteer&lt;/strong&gt; to bring this latency down considerably. This&#39;ll be my first time using puppeteer, so help appreciated. Read on!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-small/1f62e@2x.png&#34; alt=&#34;😮&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The current system relies on my git-to-roam backup, which runs every hour and fails some fraction of the time.&lt;/p&gt;
 &lt;p&gt;So, to bring the latency down, the idea is to use pyppeteer (the python puppeteer bindings) to log into Roam in a headless browser.&lt;/p&gt;
@@ -309,7 +309,7 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
 &lt;p&gt;Abhay suggested using the alpha API for this rather than puppeteering. &lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f64f@2x.png&#34; alt=&#34;🙏&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I think I&#39;ll get started on the puppeteer implementation now though anyway, even if the API ends up being a better way of doing this in the near future.&lt;/p&gt;
 &lt;p&gt;Update:&lt;/p&gt;
-&lt;p&gt;I have a first draft that handles log in and running the query to detect publishable material (blocks with the appropriate two tags)&lt;/p&gt;
+&lt;p&gt;I have a first draft that handles log in and running the query to detect publishable material (blocks with the appropriate two tags).&lt;/p&gt;
 &lt;p&gt;Not sure how reliable login is as I had some hiccups getting it working.&lt;/p&gt;
 &lt;p&gt;And the headless browser seems very slow to notice changes to the Roam graph compared to what I&#39;m used to.&lt;/p&gt;
 &lt;p&gt;So instead of checking every few seconds, I think I&#39;ll just check once a minute or so, refreshing either every time or every few times.&lt;/p&gt;
@@ -317,8 +317,9 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
 &lt;p&gt;(with datalog)&lt;/p&gt;
 &lt;p&gt;I could navigate to the block and look at the dom&amp;hellip; but hopefully I don&#39;t need to do that.&lt;/p&gt;
 &lt;p&gt;Looks like there is an &amp;ldquo;order&amp;rdquo; attribute, so this will be doable. Might be messy though.&lt;/p&gt;
-&lt;p&gt;If I&#39;m understanding right, :block/order gives the index of a block into its parents children&lt;/p&gt;
-&lt;p&gt;We&#39;re good &lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f44d@2x.png&#34; alt=&#34;👍&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If I&#39;m understanding right, :block/order gives the index of a block into its parents children.&lt;/p&gt;
+&lt;p&gt;We&#39;re good! &lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f44d@2x.png&#34; alt=&#34;👍&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you&#39;re reading this on my website, it worked!&lt;/p&gt;
 </description>
     </item>
     

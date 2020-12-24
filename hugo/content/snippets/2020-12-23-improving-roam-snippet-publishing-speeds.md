@@ -4,7 +4,7 @@ date = 2020-12-23T00:00:00
 
 +++
 
-Hey folks, I have a [workflow](https://davidbieber.com/projects/bieber-bot/) for automatically publishing "[snippets](https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/)" to my website from Roam. Currently there's a multi-hour latency between writing a snippet and when it appears on my website. In this thread (click 'N replies'!) I'm going to muse about / ask questions about how to use **puppeteer** to bring this latency down considerably. This'll be my first time using puppeteer, so help appreciated. Read on!
+Hey folks, I have a [workflow](https://davidbieber.com/projects/bieber-bot/) for automatically publishing "[snippets](https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/)" to my website from Roam. Currently there's a multi-hour latency between writing a snippet and when it appears on my website. In this snippet I'm going to muse about / ask questions about how to use **puppeteer** to bring this latency down considerably. This'll be my first time using puppeteer, so help appreciated. Read on!
 
 ![:open_mouth:](https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-small/1f62e@2x.png)
 
@@ -39,7 +39,7 @@ I think I'll get started on the puppeteer implementation now though anyway, even
 
 Update:
 
-I have a first draft that handles log in and running the query to detect publishable material (blocks with the appropriate two tags)
+I have a first draft that handles log in and running the query to detect publishable material (blocks with the appropriate two tags).
 
 Not sure how reliable login is as I had some hiccups getting it working.
 
@@ -55,6 +55,8 @@ I could navigate to the block and look at the dom... but hopefully I don't need 
 
 Looks like there is an "order" attribute, so this will be doable. Might be messy though.
 
-If I'm understanding right, :block/order gives the index of a block into its parents children
+If I'm understanding right, :block/order gives the index of a block into its parents children.
 
-We're good ![:thumbsup:](https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f44d@2x.png)
+We're good! ![:thumbsup:](https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f44d@2x.png)
+
+If you're reading this on my website, it worked!
