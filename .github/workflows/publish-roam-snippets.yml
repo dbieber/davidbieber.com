@@ -12,6 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-        pwd
-        ls
-        echo "Hello ${{ github.event.inputs.name }}!"
+          pwd
+          ls
+          echo "Hello ${{ github.event.inputs.name }}!"
