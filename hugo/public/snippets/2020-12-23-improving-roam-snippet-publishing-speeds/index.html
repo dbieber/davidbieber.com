@@ -28,10 +28,11 @@
   
     
   
-  <meta name="description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot.">
+  <meta name="description" content="Hey folks, I have a workflow for automatically publishing &ldquo;snippets&rdquo; to my website from Roam. Currently there&#39;s a multi-hour latency between writing a snippet and when it appears on my website. In this thread (click &lsquo;N replies&rsquo;!) I&#39;m going to muse about / ask questions about how to use puppeteer to bring this latency down considerably. This&#39;ll be my first time using puppeteer, so help appreciated. Read on!
+The current system relies on my git-to-roam backup, which runs every hour and fails some fraction of the time.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/404.html">
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/">
 
   
 
@@ -249,7 +250,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
 
-  <link rel="canonical" href="https://davidbieber.com/404.html">
+  <link rel="canonical" href="https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/">
 
   
   
@@ -266,29 +267,35 @@
   <meta property="twitter:creator" content="@Bieber">
   
   <meta property="og:site_name" content="David Bieber">
-  <meta property="og:url" content="https://davidbieber.com/404.html">
-  <meta property="og:title" content="404 Page not found | David Bieber">
-  <meta property="og:description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/">
+  <meta property="og:title" content="Improving Roam Snippet Publishing Speeds | David Bieber">
+  <meta property="og:description" content="Hey folks, I have a workflow for automatically publishing &ldquo;snippets&rdquo; to my website from Roam. Currently there&#39;s a multi-hour latency between writing a snippet and when it appears on my website. In this thread (click &lsquo;N replies&rsquo;!) I&#39;m going to muse about / ask questions about how to use puppeteer to bring this latency down considerably. This&#39;ll be my first time using puppeteer, so help appreciated. Read on!
+The current system relies on my git-to-roam backup, which runs every hour and fails some fraction of the time."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
     
+      <meta property="article:published_time" content="2020-12-23T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-12-23T00:00:00&#43;00:00">
   
 
   
 
 
 
-
   
 
 
   
 
 
+  
 
 
 
-  <title>404 Page not found | David Bieber</title>
+
+
+  <title>Improving Roam Snippet Publishing Speeds | David Bieber</title>
 
 </head>
 
@@ -446,51 +453,166 @@
 </nav>
 
 
-  <div class="universal-wrapper pt-3">
-
-  <h1>Page not found</h1>
-
-  
-  
-  <form class="d-flex align-items-center mb-3">
-    <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
-  </form>
-  
+  <article class="article">
 
   
 
-  <p>Perhaps you were looking for one of these?</p>
+
+
+
+
+
+
+
+
+
+
+
+  
 
   
   
   
-  <h2>Latest</h2>
-  <ul>
+<div class="article-container pt-3">
+  <h1 itemprop="name">Improving Roam Snippet Publishing Speeds</h1>
+
+  
+
+  
     
-      <li><a href="/projects/bieber-bot/">Bieber Bot</a></li>
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
     
-      <li><a href="/projects/escape-castle-heterodyne/">Escape Castle Heterodyne</a></li>
     
-      <li><a href="/projects/python-fire/">Python Fire</a></li>
+      
     
-      <li><a href="/projects/tech-day/">Tech Day</a></li>
     
-      <li><a href="/projects/at-scheduler/">at Scheduler</a></li>
-    
-      <li><a href="/projects/shh-shell/">shh Shell</a></li>
-    
-      <li><a href="/projects/scrabble-bot/">Scrabble Bot</a></li>
-    
-      <li><a href="/projects/teach-everyone/">Teach Everyone</a></li>
-    
-      <li><a href="/projects/princeton-acm/">Princeton ACM</a></li>
-    
-      <li><a href="/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/">Improving Roam Snippet Publishing Speeds</a></li>
-    
-  </ul>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
   
 
 </div>
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" id="article-content">
+      <p>Hey folks, I have a <a href="https://davidbieber.com/projects/bieber-bot/">workflow</a> for automatically publishing &ldquo;<a href="https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/">snippets</a>&rdquo; to my website from Roam. Currently there's a multi-hour latency between writing a snippet and when it appears on my website. In this thread (click &lsquo;N replies&rsquo;!) I'm going to muse about / ask questions about how to use <strong>puppeteer</strong> to bring this latency down considerably. This'll be my first time using puppeteer, so help appreciated. Read on!</p>
+<p><img src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-small/1f62e@2x.png" alt="😮"></p>
+<p>The current system relies on my git-to-roam backup, which runs every hour and fails some fraction of the time.</p>
+<p>So, to bring the latency down, the idea is to use pyppeteer (the python puppeteer bindings) to log into Roam in a headless browser.</p>
+<p>This will monitor Roam for new (or modified) snippets, and will publish them to my website.</p>
+<p>A snippet is OK to publish if its tagged with both &ldquo;Snippets&rdquo; and &ldquo;ok-to-publish&rdquo;.</p>
+<p>So, first question: has anyone done this before? B/c if someone's already gotten all the CSS/XPATH selectors for logging in, navigating, etc, that could save me some time</p>
+<p>Another important thing I'm thinking about: are there problems keeping an instance of Roam open in a headless browser could cause?</p>
+<p>E.g. I hear about occasional data loss which seems related to having out-of-date instances of Roam open on other machines &ndash; e.g. maybe the out of date Roam comes back online and overwrites new content with older blank content?</p>
+<p>I think I'll make my headless Roam instances relatively-short lived (&lt;10 minutes) just in case.</p>
+<p>I think the strategy I'll take will be:</p>
+<ul>
+<li>Log in to Roam in headless browser</li>
+<li>Run datalog query in javascript to check for new/updated snippets.</li>
+<li>Run that query fairly frequently (e.g. every few seconds) in order to detect snippets as soon as they're available</li>
+<li>Debounce, so that if a snippet is actively changing its only deployed ~twice, not 100 times</li>
+</ul>
+<p>And then every 10 minutes or so I'll have it take a short breather and refresh</p>
+<p>Abhay suggested using the alpha API for this rather than puppeteering. <img src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f64f@2x.png" alt="🙏"></p>
+<p>I think I'll get started on the puppeteer implementation now though anyway, even if the API ends up being a better way of doing this in the near future.</p>
+<p>Update:</p>
+<p>I have a first draft that handles log in and running the query to detect publishable material (blocks with the appropriate two tags)</p>
+<p>Not sure how reliable login is as I had some hiccups getting it working.</p>
+<p>And the headless browser seems very slow to notice changes to the Roam graph compared to what I'm used to.</p>
+<p>So instead of checking every few seconds, I think I'll just check once a minute or so, refreshing either every time or every few times.</p>
+<p>Unexpected snag: I get the children of a block but I don't know how to put them in the proper order!</p>
+<p>(with datalog)</p>
+<p>I could navigate to the block and look at the dom&hellip; but hopefully I don't need to do that.</p>
+<p>Looks like there is an &ldquo;order&rdquo; attribute, so this will be doable. Might be messy though.</p>
+<p>If I'm understanding right, :block/order gives the index of a block into its parents children</p>
+<p>We're good <img src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f44d@2x.png" alt="👍"></p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://davidbieber.com/">David Bieber</a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</article>
 
       
 

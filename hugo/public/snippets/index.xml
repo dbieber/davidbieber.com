@@ -13,6 +13,45 @@
     </image>
     
     <item>
+      <title>Improving Roam Snippet Publishing Speeds</title>
+      <link>https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/</guid>
+      <description>&lt;p&gt;Hey folks, I have a &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;workflow&lt;/a&gt; for automatically publishing &amp;ldquo;&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34;&gt;snippets&lt;/a&gt;&amp;rdquo; to my website from Roam. Currently there&#39;s a multi-hour latency between writing a snippet and when it appears on my website. In this thread (click &amp;lsquo;N replies&amp;rsquo;!) I&#39;m going to muse about / ask questions about how to use &lt;strong&gt;puppeteer&lt;/strong&gt; to bring this latency down considerably. This&#39;ll be my first time using puppeteer, so help appreciated. Read on!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-small/1f62e@2x.png&#34; alt=&#34;😮&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The current system relies on my git-to-roam backup, which runs every hour and fails some fraction of the time.&lt;/p&gt;
+&lt;p&gt;So, to bring the latency down, the idea is to use pyppeteer (the python puppeteer bindings) to log into Roam in a headless browser.&lt;/p&gt;
+&lt;p&gt;This will monitor Roam for new (or modified) snippets, and will publish them to my website.&lt;/p&gt;
+&lt;p&gt;A snippet is OK to publish if its tagged with both &amp;ldquo;Snippets&amp;rdquo; and &amp;ldquo;ok-to-publish&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;So, first question: has anyone done this before? B/c if someone&#39;s already gotten all the CSS/XPATH selectors for logging in, navigating, etc, that could save me some time&lt;/p&gt;
+&lt;p&gt;Another important thing I&#39;m thinking about: are there problems keeping an instance of Roam open in a headless browser could cause?&lt;/p&gt;
+&lt;p&gt;E.g. I hear about occasional data loss which seems related to having out-of-date instances of Roam open on other machines &amp;ndash; e.g. maybe the out of date Roam comes back online and overwrites new content with older blank content?&lt;/p&gt;
+&lt;p&gt;I think I&#39;ll make my headless Roam instances relatively-short lived (&amp;lt;10 minutes) just in case.&lt;/p&gt;
+&lt;p&gt;I think the strategy I&#39;ll take will be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Log in to Roam in headless browser&lt;/li&gt;
+&lt;li&gt;Run datalog query in javascript to check for new/updated snippets.&lt;/li&gt;
+&lt;li&gt;Run that query fairly frequently (e.g. every few seconds) in order to detect snippets as soon as they&#39;re available&lt;/li&gt;
+&lt;li&gt;Debounce, so that if a snippet is actively changing its only deployed ~twice, not 100 times&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And then every 10 minutes or so I&#39;ll have it take a short breather and refresh&lt;/p&gt;
+&lt;p&gt;Abhay suggested using the alpha API for this rather than puppeteering. &lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f64f@2x.png&#34; alt=&#34;🙏&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I think I&#39;ll get started on the puppeteer implementation now though anyway, even if the API ends up being a better way of doing this in the near future.&lt;/p&gt;
+&lt;p&gt;Update:&lt;/p&gt;
+&lt;p&gt;I have a first draft that handles log in and running the query to detect publishable material (blocks with the appropriate two tags)&lt;/p&gt;
+&lt;p&gt;Not sure how reliable login is as I had some hiccups getting it working.&lt;/p&gt;
+&lt;p&gt;And the headless browser seems very slow to notice changes to the Roam graph compared to what I&#39;m used to.&lt;/p&gt;
+&lt;p&gt;So instead of checking every few seconds, I think I&#39;ll just check once a minute or so, refreshing either every time or every few times.&lt;/p&gt;
+&lt;p&gt;Unexpected snag: I get the children of a block but I don&#39;t know how to put them in the proper order!&lt;/p&gt;
+&lt;p&gt;(with datalog)&lt;/p&gt;
+&lt;p&gt;I could navigate to the block and look at the dom&amp;hellip; but hopefully I don&#39;t need to do that.&lt;/p&gt;
+&lt;p&gt;Looks like there is an &amp;ldquo;order&amp;rdquo; attribute, so this will be doable. Might be messy though.&lt;/p&gt;
+&lt;p&gt;If I&#39;m understanding right, :block/order gives the index of a block into its parents children&lt;/p&gt;
+&lt;p&gt;We&#39;re good &lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f44d@2x.png&#34; alt=&#34;👍&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Datalog Queries for Roam Research</title>
       <link>https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/</link>
       <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
