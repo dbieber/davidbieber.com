@@ -1,0 +1,10 @@
+name: publish-roam-snippets
+on:
+  repository_dispatch:
+    types: snippet-update
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - run: pwd
+      - run: ls
