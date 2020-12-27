@@ -24,3 +24,8 @@ jobs:
           python ./davidbieber.com-main/.github/scripts/publish.py
           cd davidbieber.com-main
           git diff
+          git config user.email "david810@gmail.com"
+          git config user.name "David Bieber"
+          git add .
+          git commit -m "Automatically published '$SNIPPET_TITLE' snippet from Roam via GitHub Actions."
+          git push origin master
