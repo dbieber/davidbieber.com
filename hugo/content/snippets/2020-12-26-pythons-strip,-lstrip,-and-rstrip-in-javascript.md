@@ -8,7 +8,7 @@ Python provides some convenient functions for manipulating strings: `strip`, `ls
 
 ## The Python strip method in JavaScript
 
-In Python, strip removes whitespace from the beginning or end of a string. This is commonly called "trim" in JavaScript, and is provided as a builtin in most modern browsers. You may need to implement it yourself if you want to support older browsers though. Here's one possible implementation, [courtesy of W3Schools](https://www.w3schools.com/python/ref_string_strip.asp).
+In Python, `strip` removes whitespace from the beginning or end of a string. This is commonly called "trim" in JavaScript, and is provided as a builtin in most modern browsers. You may need to implement it yourself if you want to support older browsers though. Here's one possible implementation, [courtesy of W3Schools](https://www.w3schools.com/python/ref_string_strip.asp).
 
 ```javascript
 function trim(x) {
