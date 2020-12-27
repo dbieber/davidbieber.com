@@ -18,7 +18,8 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: '3.x'
-      - run: |
+      - name: Publish snippet
+        run: |
           pip install dateparser
           python ./davidbieber.com-main/.github/scripts/publish.py
           cd davidbieber.com-main
