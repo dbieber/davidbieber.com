@@ -4,10 +4,10 @@ import dateparser
 
 
 def publish():
-  uid = os.environ.get('SNIPPETS_UID')
-  title = os.environ.get('SNIPPETS_TITLE')
-  content = os.environ.get('SNIPPETS_CONTENT')
-  date = os.environ.get('SNIPPETS_DATE')
+  uid = os.environ.get('SNIPPET_UID')
+  title = os.environ.get('SNIPPET_TITLE')
+  content = os.environ.get('SNIPPET_CONTENT')
+  date = os.environ.get('SNIPPET_DATE')
   date = dateparser.parse(date)
   date_str = date.strftime('%Y-%m-%dT%H:%M:00')
 
