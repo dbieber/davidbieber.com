@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 26 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 27 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -284,13 +284,24 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
     </item>
     
     <item>
+      <title>Even Faster Snippet Publishing from Roam</title>
+      <link>https://davidbieber.com/snippets/2020-12-27-even-faster-snippet-publishing-from-roam/</link>
+      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-27-even-faster-snippet-publishing-from-roam/</guid>
+      <description>&lt;p&gt;I&#39;ve set up a GitHub action to enable even faster automatic publishing of snippets from Roam. This is a test-snippet I&#39;m using while writing the auto-publisher.&lt;/p&gt;
+&lt;p&gt;Let&#39;s see how it behaves if I&#39;m editing an existing snippet routinely for a while.&lt;/p&gt;
+&lt;p&gt;If it works as intended, the snippet will update itself on GitHub after I stop typing for several seconds.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Python&#39;s strip, lstrip, and rstrip in JavaScript</title>
       <link>https://davidbieber.com/snippets/2020-12-26-pythons-strip-lstrip-and-rstrip-in-javascript/</link>
       <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-12-26-pythons-strip-lstrip-and-rstrip-in-javascript/</guid>
       <description>&lt;p&gt;Python provides some convenient functions for manipulating strings: &lt;code&gt;strip&lt;/code&gt;, &lt;code&gt;lstrip&lt;/code&gt;, and &lt;code&gt;rstrip&lt;/code&gt;. Recently I was writing some JavaScript and wanted to use &lt;code&gt;rstrip&lt;/code&gt;. So, I&#39;ve implemented all three. Here they are:&lt;/p&gt;
 &lt;h2 id=&#34;the-python-strip-method-in-javascript&#34;&gt;The Python strip method in JavaScript&lt;/h2&gt;
-&lt;p&gt;In Python, strip removes whitespace from the beginning or end of a string. This is commonly called &amp;ldquo;trim&amp;rdquo; in JavaScript, and is provided as a builtin in most modern browsers. You may need to implement it yourself if you want to support older browsers though. Here&#39;s one possible implementation, &lt;a href=&#34;https://www.w3schools.com/python/ref_string_strip.asp&#34;&gt;courtesy of W3Schools&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In Python, &lt;code&gt;strip&lt;/code&gt; removes whitespace from the beginning or end of a string. This is commonly called &amp;ldquo;trim&amp;rdquo; in JavaScript, and is provided as a builtin in most modern browsers. You may need to implement it yourself if you want to support older browsers though. Here&#39;s one possible implementation, &lt;a href=&#34;https://www.w3schools.com/python/ref_string_strip.asp&#34;&gt;courtesy of W3Schools&lt;/a&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function trim(x) {
   return x.replace(/^\s+|\s+$/gm, &#39;&#39;);
 }

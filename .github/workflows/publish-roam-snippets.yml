@@ -7,12 +7,19 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     env:
+      SNIPPET_UID: ${{ github.event.client_payload.uid }}
+      SNIPPET_TITLE: ${{ github.event.client_payload.title }}
+      SNIPPET_DATE: ${{ github.event.client_payload.date }}
       SNIPPET_CONTENT: ${{ github.event.client_payload.content }}
     steps:
+      - uses: actions/checkout@v2
+        with:
+          path: davidbieber.com-main
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
       - run: |
-          pwd
-          ls
-          echo "Hello ${{ github.event.client_payload.uid }}!"
-          echo "Hello ${{ github.event.client_payload.title }}!"
-          echo "Hello ${{ github.event.client_payload.date }}!"
-          echo "Content: $SNIPPET_CONTENT!"
+          pip install dateparser
+          python ./davidbieber.com-main/.github/scripts/publish.py
+          cd davidbieber.com-main
+          git diff

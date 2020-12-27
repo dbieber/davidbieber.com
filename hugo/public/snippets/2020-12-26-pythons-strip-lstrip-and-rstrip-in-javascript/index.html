@@ -520,7 +520,7 @@ The Python strip method in JavaScript In Python, strip removes whitespace from t
     <div class="article-style" id="article-content">
       <p>Python provides some convenient functions for manipulating strings: <code>strip</code>, <code>lstrip</code>, and <code>rstrip</code>. Recently I was writing some JavaScript and wanted to use <code>rstrip</code>. So, I've implemented all three. Here they are:</p>
 <h2 id="the-python-strip-method-in-javascript">The Python strip method in JavaScript</h2>
-<p>In Python, strip removes whitespace from the beginning or end of a string. This is commonly called &ldquo;trim&rdquo; in JavaScript, and is provided as a builtin in most modern browsers. You may need to implement it yourself if you want to support older browsers though. Here's one possible implementation, <a href="https://www.w3schools.com/python/ref_string_strip.asp">courtesy of W3Schools</a>.</p>
+<p>In Python, <code>strip</code> removes whitespace from the beginning or end of a string. This is commonly called &ldquo;trim&rdquo; in JavaScript, and is provided as a builtin in most modern browsers. You may need to implement it yourself if you want to support older browsers though. Here's one possible implementation, <a href="https://www.w3schools.com/python/ref_string_strip.asp">courtesy of W3Schools</a>.</p>
 <pre><code class="language-javascript">function trim(x) {
   return x.replace(/^\s+|\s+$/gm, '');
 }
