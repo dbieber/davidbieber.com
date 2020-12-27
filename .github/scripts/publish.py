@@ -33,6 +33,7 @@ uid = "{uid}"
   filename_title = (
       title.lower()
       .replace(' ', '-')
+      .replace(",", '')
       .replace("/", '')
       .replace("'", '')
       .replace('"', '')
