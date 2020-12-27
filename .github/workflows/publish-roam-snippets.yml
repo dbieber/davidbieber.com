@@ -15,4 +15,11 @@ jobs:
       - uses: actions/checkout@v2
         with:
           path: davidbieber.com-main
-      - run: python ./davidbieber.com-main/.github/scripts/publish.py
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - run: |
+          pip install dateparser
+          python ./davidbieber.com-main/.github/scripts/publish.py
+          cd davidbieber.com-main
+          git diff
