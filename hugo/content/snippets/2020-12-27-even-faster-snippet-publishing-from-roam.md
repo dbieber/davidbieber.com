@@ -13,8 +13,6 @@ If it works as intended, the snippet will update itself on GitHub after I stop t
 
 It worked! [Here's the commit](https://github.com/dbieber/davidbieber.com/commit/1f1ad4680e1d538f699cf2cd420f0c04a4bf528a) that was made automatically after I finished the previous sentence.
 
-This will make publishing snippets __even easier__ going forward.
+This will make publishing snippets __even easier__ going forward. It also means I don't need to keep a puppeteer instance constantly live with Roam open like I'd originally planned for.
 
-The final step, deploying, still waits for a manual message to Bieber Bot to give the OK before proceeding.
-
-The total latency from writing to publication is now just 90 seconds.
+The total latency from writing to publication is now just 90 seconds. So you could be reading this mere minutes after I write it!
