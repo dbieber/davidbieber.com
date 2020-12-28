@@ -16,3 +16,5 @@ It worked! [Here's the commit](https://github.com/dbieber/davidbieber.com/commit
 This will make publishing snippets __even easier__ going forward.
 
 The final step, deploying, still waits for a manual message to Bieber Bot to give the OK before proceeding.
+
+The total latency from writing to publication is:
