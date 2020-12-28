@@ -13,4 +13,4 @@ If it works as intended, the snippet will update itself on GitHub after I stop t
 
 It worked! [Here's the commit](https://github.com/dbieber/davidbieber.com/commit/1f1ad4680e1d538f699cf2cd420f0c04a4bf528a) that was made automatically after I finished the previous sentence.
 
-This will make publishing snippets even easier going forward.
+This will make publishing snippets __even easier__ going forward.
