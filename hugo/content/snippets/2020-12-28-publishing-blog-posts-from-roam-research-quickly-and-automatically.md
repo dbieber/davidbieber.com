@@ -5,7 +5,7 @@ uid = "v8Dfy7xMZ"
 
 +++
 
-I thought today I would attempt a proper treatment of my latest automatic "[snippet](/snippets/)" publishing system. It uses JavaScript embedded directly in Roam Research to publish snippets to my website with minimal latency as I write them.
+I thought today I would attempt a proper treatment of my latest automatic "[snippet](/snippets/)" publishing system. It uses JavaScript embedded directly in Roam Research to publish snippets to my website with low latency as I write them.
 
 ## Prior methods
 
@@ -66,7 +66,8 @@ block_info = window.roamAlphaAPI.q(`[
   [?child :block/uid ?child_uid]
   [?child :block/order ?order]
   [?child :block/string ?child_text]
-]`, ancestor);```
+]`, ancestor);
+```
 
 Let's break down what's happening in this query. First, there's the `ancestor` rule. The Roam datalog schema only includes a blocks immediate children; the `ancestor` rule allows us to query for all a block's descendants or ancestors, not just the immediate ones. It does this through the recursive definition of "ancestor" shown, which you can read as "An ancestor of ?child is ?parent if ?parent has a child ?child, AND ALSO an ancestor of ?child is ?ancestor if there exists some ?parent satisfying both ?parent has a child ?child, and ?parent has ?ancestor as an ancestor."
 
@@ -107,7 +108,8 @@ function publishSnippetRaw(uid, title, date, content) {
     }
   );
 }
-const publishSnippet = debounce(publishSnippetRaw, 15000, true);```
+const publishSnippet = debounce(publishSnippetRaw, 15000, true);
+```
 
 This call to `fetch` starts the GitHub Action running on a GitHub server within seconds.
 
@@ -117,7 +119,8 @@ You will notice that `data` contains a "client_payload" in the above JavaScript.
 
 ```yaml
 env:
-  SNIPPET_UID: ${{ github.event.client_payload.uid }}```
+  SNIPPET_UID: ${{ github.event.client_payload.uid }}
+```
 
 Environment variables like this can then be used by the steps in the action. This allows me to pass the contents of the new/modified snippet to the GitHub Action, which is everything needed for automating its publication.
 
