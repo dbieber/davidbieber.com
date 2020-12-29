@@ -523,10 +523,12 @@ The Python strip method in JavaScript In Python, strip removes whitespace from t
 <p>In Python, <code>strip</code> removes whitespace from the beginning or end of a string. This is commonly called &ldquo;trim&rdquo; in JavaScript, and is provided as a builtin in most modern browsers. You may need to implement it yourself if you want to support older browsers though. Here's one possible implementation, <a href="https://www.w3schools.com/python/ref_string_strip.asp">courtesy of W3Schools</a>.</p>
 <pre><code class="language-javascript">function trim(x) {
   return x.replace(/^\s+|\s+$/gm, '');
-}
-</code></pre>
-<p>The Python <code>strip</code> method optionally accepts an argument, &ldquo;characters&rdquo;, and strips all instances of those characters from the left and right sides of the input string. We implement that here.</p>
-<pre><code class="language-javascript">function trim(x, characters) {
+}```
+
+The Python `strip` method optionally accepts an argument, &quot;characters&quot;, and strips all instances of those characters from the left and right sides of the input string. We implement that here.
+
+```javascript
+function trim(x, characters) {
   var start = 0;
   while (characters.indexOf(x[start]) &gt;= 0) {
     start += 1;
@@ -536,56 +538,75 @@ The Python strip method in JavaScript In Python, strip removes whitespace from t
     end -= 1;
   }
   return x.substr(start, end - start + 1);
-}
-</code></pre>
-<p>This may not be the most efficient implementation (the calls to indexOf in particular could be made faster), but it gets the job done.</p>
-<h2 id="the-python-rstrip-method-in-javascript">The Python rstrip method in JavaScript</h2>
-<p>The rstrip method behaves like strip, but only removes spaces (or the specified characters) from the right side of the input string. We implement this in JavaScript now, calling it &ldquo;rtrim&rdquo; for consistency with the name &ldquo;trim&rdquo;.</p>
-<pre><code class="language-javascript">function rtrim(x) {
+}```
+
+This may not be the most efficient implementation (the calls to indexOf in particular could be made faster), but it gets the job done.
+
+## The Python rstrip method in JavaScript
+
+The rstrip method behaves like strip, but only removes spaces (or the specified characters) from the right side of the input string. We implement this in JavaScript now, calling it &quot;rtrim&quot; for consistency with the name &quot;trim&quot;.
+
+```javascript
+function rtrim(x) {
   // This implementation removes whitespace from the right side
   // of the input string.
   return x.replace(/\s+$/gm, '');
-}
-</code></pre>
-<p>We now implement rtrim a second time, now accepting &ldquo;characters&rdquo; as input:</p>
-<pre><code class="language-javascript">function rtrim(x, characters) {
+}```
+
+We now implement rtrim a second time, now accepting &quot;characters&quot; as input:
+
+```javascript
+function rtrim(x, characters) {
   var start = 0;
   var end = x.length - 1;
   while (characters.indexOf(x[end]) &gt;= 0) {
     end -= 1;
   }
   return x.substr(0, end + 1);
-}
-</code></pre>
-<h2 id="the-python-lstrip-method-in-javascript">The Python lstrip method in JavaScript</h2>
-<p>Finally we provide a port of Python's lstrip to JavaScript, calling it ltrim. We again provide one version that strips only whitespace, and a second that strips the provided &ldquo;characters&rdquo; input.</p>
-<pre><code class="language-javascript">function ltrim(x) {
+}```
+
+## The Python lstrip method in JavaScript
+
+Finally we provide a port of Python's lstrip to JavaScript, calling it ltrim. We again provide one version that strips only whitespace, and a second that strips the provided &quot;characters&quot; input.
+
+```javascript
+function ltrim(x) {
   // This implementation removes whitespace from the left side
   // of the input string.
   return x.replace(/^\s+/gm, '');
-}
-</code></pre>
-<p>We now implement rtrim a second time, now accepting &ldquo;characters&rdquo; as input:</p>
-<pre><code class="language-javascript">function ltrim(x, characters) {
+}```
+
+We now implement rtrim a second time, now accepting &quot;characters&quot; as input:
+
+```javascript
+function ltrim(x, characters) {
   var start = 0;
   while (characters.indexOf(x[start]) &gt;= 0) {
     start += 1;
   }
   var end = x.length - 1;
   return x.substr(start);
-}
-</code></pre>
-<h2 id="example-usage">Example Usage</h2>
-<p>Here are some example usages of the above functions.</p>
-<p>First, using the implementations that strip spaces:</p>
-<pre><code class="language-javascript">trim('   Hello world!   ') === 'Hello world!';
+}```
+
+## Example Usage
+
+Here are some example usages of the above functions.
+
+First, using the implementations that strip spaces:
+
+```javascript
+trim('   Hello world!   ') === 'Hello world!';
 ltrim('   Hello world!   ') === 'Hello world!   ';
-rtrim('   Hello world!   ') === '   Hello world!';
-</code></pre>
-<p>Second, using the implementations that strip the specified characters:</p>
-<pre><code class="language-javascript">trim('Buzzzzzz', 'Bz') === 'u';
+rtrim('   Hello world!   ') === '   Hello world!';```
+
+Second, using the implementations that strip the specified characters:
+
+```javascript
+trim('Buzzzzzz', 'Bz') === 'u';
 ltrim('Buzzzzzz', 'Bz') === 'uzzzzzz';
 rtrim('Buzzzzzz', 'Bz') === 'Bu';```
+
+
 </code></pre>
 
     </div>
