@@ -288,7 +288,7 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <link>https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/</link>
       <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/</guid>
-      <description>&lt;p&gt;I thought today I would attempt a proper treatment of my latest automatic &amp;ldquo;&lt;a href=&#34;https://davidbieber.com/snippets/&#34;&gt;snippet&lt;/a&gt;&amp;rdquo; publishing system. It uses JavaScript embedded directly in Roam Research to publish snippets to my website with minimal latency as I write them.&lt;/p&gt;
+      <description>&lt;p&gt;I thought today I would attempt a proper treatment of my latest automatic &amp;ldquo;&lt;a href=&#34;https://davidbieber.com/snippets/&#34;&gt;snippet&lt;/a&gt;&amp;rdquo; publishing system. It uses JavaScript embedded directly in Roam Research to publish snippets to my website with low latency as I write them.&lt;/p&gt;
 &lt;h2 id=&#34;prior-methods&#34;&gt;Prior methods&lt;/h2&gt;
 &lt;p&gt;Previously I&#39;ve written a system to allow &lt;a href=&#34;https://davidbieber.com/snippets/2020-09-27-posting-snippets-from-my-phone/&#34;&gt;Bieber Bot to publish snippets that I send him&lt;/a&gt;, and followed that up with a &lt;a href=&#34;https://davidbieber.com/snippets/2020-10-06-introducing-the-snippet-queue/&#34;&gt;snippet queue&lt;/a&gt; to allow me to schedule the publication of my snippets.&lt;/p&gt;
 &lt;p&gt;I&#39;ve then also implemented two previous automatic snippet publishers from Roam. The first used my roam-to-git backup to detect new or updated snippets. The second used a puppeteer instance to occasionally check Roam for new or updated snippets.&lt;/p&gt;
@@ -330,26 +330,17 @@ block_info = window.roamAlphaAPI.q(`[
   [?child :block/uid ?child_uid]
   [?child :block/order ?order]
   [?child :block/string ?child_text]
-]`, ancestor);```
-
-Let&#39;s break down what&#39;s happening in this query. First, there&#39;s the `ancestor` rule. The Roam datalog schema only includes a blocks immediate children; the `ancestor` rule allows us to query for all a block&#39;s descendants or ancestors, not just the immediate ones. It does this through the recursive definition of &amp;quot;ancestor&amp;quot; shown, which you can read as &amp;quot;An ancestor of ?child is ?parent if ?parent has a child ?child, AND ALSO an ancestor of ?child is ?ancestor if there exists some ?parent satisfying both ?parent has a child ?child, and ?parent has ?ancestor as an ancestor.&amp;quot;
-
-The rest of the query (lines 10-24) finds blocks that are the descendants of a block ?block that&#39;s tagged with both &amp;quot;Snippets&amp;quot; and &amp;quot;ok-to-publish.&amp;quot;
-
-Since Datalog returns the results in an arbitrary order, we need to use the :block/order attribute to reconstruct the proper order of the blocks that comprise the snippet. The logic for this isn&#39;t shown, but don&#39;t hesitate to reach out if this interests you!
-
-Finally, our mutation observer keeps track of the text of each of the snippets, and if any of them change or if a new snippet is introduced, it triggers a GitHub Action to deploy the snippet to my website.
-
-## Writing a GitHub Action to update my website
-
-My website uses a static site generator, Hugo. So, updating my website consists of adding a markdown file to [its GitHub repo](https://github.com/dbieber/davidbieber.com), rebuilding the site by running Hugo, and then pushing the generated static files up to my server. All of these steps can be automated in a GitHub action.
-
-### Triggering a GitHub Action from Roam Research
-
-To trigger a GitHub Action from Roam Research, I set up the action to trigger on &amp;quot;repository_dispatch&amp;quot; events. I created a personal authentication token, and then use the following JavaScript to trigger the GitHub Action:
-
-```javascript
-function publishSnippetRaw(uid, title, date, content) {
+]`, ancestor);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let&#39;s break down what&#39;s happening in this query. First, there&#39;s the &lt;code&gt;ancestor&lt;/code&gt; rule. The Roam datalog schema only includes a blocks immediate children; the &lt;code&gt;ancestor&lt;/code&gt; rule allows us to query for all a block&#39;s descendants or ancestors, not just the immediate ones. It does this through the recursive definition of &amp;ldquo;ancestor&amp;rdquo; shown, which you can read as &amp;ldquo;An ancestor of ?child is ?parent if ?parent has a child ?child, AND ALSO an ancestor of ?child is ?ancestor if there exists some ?parent satisfying both ?parent has a child ?child, and ?parent has ?ancestor as an ancestor.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;The rest of the query (lines 10-24) finds blocks that are the descendants of a block ?block that&#39;s tagged with both &amp;ldquo;Snippets&amp;rdquo; and &amp;ldquo;ok-to-publish.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Since Datalog returns the results in an arbitrary order, we need to use the :block/order attribute to reconstruct the proper order of the blocks that comprise the snippet. The logic for this isn&#39;t shown, but don&#39;t hesitate to reach out if this interests you!&lt;/p&gt;
+&lt;p&gt;Finally, our mutation observer keeps track of the text of each of the snippets, and if any of them change or if a new snippet is introduced, it triggers a GitHub Action to deploy the snippet to my website.&lt;/p&gt;
+&lt;h2 id=&#34;writing-a-github-action-to-update-my-website&#34;&gt;Writing a GitHub Action to update my website&lt;/h2&gt;
+&lt;p&gt;My website uses a static site generator, Hugo. So, updating my website consists of adding a markdown file to &lt;a href=&#34;https://github.com/dbieber/davidbieber.com&#34;&gt;its GitHub repo&lt;/a&gt;, rebuilding the site by running Hugo, and then pushing the generated static files up to my server. All of these steps can be automated in a GitHub action.&lt;/p&gt;
+&lt;h3 id=&#34;triggering-a-github-action-from-roam-research&#34;&gt;Triggering a GitHub Action from Roam Research&lt;/h3&gt;
+&lt;p&gt;To trigger a GitHub Action from Roam Research, I set up the action to trigger on &amp;ldquo;repository_dispatch&amp;rdquo; events. I created a personal authentication token, and then use the following JavaScript to trigger the GitHub Action:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function publishSnippetRaw(uid, title, date, content) {
   const data = {
     &amp;quot;event_type&amp;quot;: &amp;quot;snippet-update&amp;quot;,
     &amp;quot;client_payload&amp;quot;: {
@@ -371,28 +362,19 @@ function publishSnippetRaw(uid, title, date, content) {
     }
   );
 }
-const publishSnippet = debounce(publishSnippetRaw, 15000, true);```
-
-This call to `fetch` starts the GitHub Action running on a GitHub server within seconds.
-
-### Accepting inputs in a GitHub Action
-
-You will notice that `data` contains a &amp;quot;client_payload&amp;quot; in the above JavaScript. To accept inputs in the GitHub Action, I access the data from the client_payload and set it to an environment variable in the Action YAML like this:
-
-```yaml
-env:
-  SNIPPET_UID: ${{ github.event.client_payload.uid }}```
-
-Environment variables like this can then be used by the steps in the action. This allows me to pass the contents of the new/modified snippet to the GitHub Action, which is everything needed for automating its publication.
-
-The GitHub Action writes the markdown file, commits it to the repository, runs hugo to regenerate the static files for the website, and commits those to the appropriate part of the repo as well. The only step remaining at this point is pushing the new files up to my server to serve.
-
-## Deploying with Ansible
-
-I use [Ansible](https://www.ansible.com/) to deploy my website to its lone server. [Bieber Bot](https://davidbieber.com/projects/bieber-bot/) is also quite capable of using Ansible. So, we have an arrangement where I tell Bieber Bot when to redeploy my website, and he does so for me. This way I can deploy my website even when I&#39;m on the go and not at a computer; I just message him using my phone.
-
-All steps, from the last keystroke of writing a snippet to having it show up live on my website, together take about 90 seconds. This is a significant quality-of-life improvement over the multi-hour latency of just a few days ago. I&#39;m hopeful that the result is I&#39;ll write even more.
+const publishSnippet = debounce(publishSnippetRaw, 15000, true);
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This call to &lt;code&gt;fetch&lt;/code&gt; starts the GitHub Action running on a GitHub server within seconds.&lt;/p&gt;
+&lt;h3 id=&#34;accepting-inputs-in-a-github-action&#34;&gt;Accepting inputs in a GitHub Action&lt;/h3&gt;
+&lt;p&gt;You will notice that &lt;code&gt;data&lt;/code&gt; contains a &amp;ldquo;client_payload&amp;rdquo; in the above JavaScript. To accept inputs in the GitHub Action, I access the data from the client_payload and set it to an environment variable in the Action YAML like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;env:
+  SNIPPET_UID: ${{ github.event.client_payload.uid }}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Environment variables like this can then be used by the steps in the action. This allows me to pass the contents of the new/modified snippet to the GitHub Action, which is everything needed for automating its publication.&lt;/p&gt;
+&lt;p&gt;The GitHub Action writes the markdown file, commits it to the repository, runs hugo to regenerate the static files for the website, and commits those to the appropriate part of the repo as well. The only step remaining at this point is pushing the new files up to my server to serve.&lt;/p&gt;
+&lt;h2 id=&#34;deploying-with-ansible&#34;&gt;Deploying with Ansible&lt;/h2&gt;
+&lt;p&gt;I use &lt;a href=&#34;https://www.ansible.com/&#34;&gt;Ansible&lt;/a&gt; to deploy my website to its lone server. &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;Bieber Bot&lt;/a&gt; is also quite capable of using Ansible. So, we have an arrangement where I tell Bieber Bot when to redeploy my website, and he does so for me. This way I can deploy my website even when I&#39;m on the go and not at a computer; I just message him using my phone.&lt;/p&gt;
+&lt;p&gt;All steps, from the last keystroke of writing a snippet to having it show up live on my website, together take about 90 seconds. This is a significant quality-of-life improvement over the multi-hour latency of just a few days ago. I&#39;m hopeful that the result is I&#39;ll write even more.&lt;/p&gt;
 </description>
     </item>
     

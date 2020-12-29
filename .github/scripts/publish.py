@@ -13,6 +13,10 @@ def publish():
 
   print(uid, title, content, date_str)
 
+  content = content.replace('```\n', '\n```\n')
+  content = content.replace('$$', '$')
+  content = content.replace('\\\\', '\\\\\\\\\\\\')
+
   frontmatter = None
   additional_frontmatter = ''
   if frontmatter is not None:
