@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="David Bieber">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="I thought today I would attempt a proper treatment of my latest automatic &ldquo;snippet&rdquo; publishing system. It uses JavaScript embedded directly in Roam Research to publish snippets to my website with minimal latency as I write them.
+Prior methods Previously I&#39;ve written a system to allow Bieber Bot to publish snippets that I send him, and followed that up with a snippet queue to allow me to schedule the publication of my snippets.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34570499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-34570499-2', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+
+  <link rel="canonical" href="https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@Bieber">
+  <meta property="twitter:creator" content="@Bieber">
+  
+  <meta property="og:site_name" content="David Bieber">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/">
+  <meta property="og:title" content="Publishing Blog Posts from Roam Research Quickly and Automatically | David Bieber">
+  <meta property="og:description" content="I thought today I would attempt a proper treatment of my latest automatic &ldquo;snippet&rdquo; publishing system. It uses JavaScript embedded directly in Roam Research to publish snippets to my website with minimal latency as I write them.
+Prior methods Previously I&#39;ve written a system to allow Bieber Bot to publish snippets that I send him, and followed that up with a snippet queue to allow me to schedule the publication of my snippets."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-12-28T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-12-28T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Publishing Blog Posts from Roam Research Quickly and Automatically | David Bieber</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">David Bieber</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">David Bieber</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/posts"><span>Writing</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Publishing Blog Posts from Roam Research Quickly and Automatically</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" id="article-content">
+      <p>I thought today I would attempt a proper treatment of my latest automatic &ldquo;<a href="/snippets/">snippet</a>&rdquo; publishing system. It uses JavaScript embedded directly in Roam Research to publish snippets to my website with minimal latency as I write them.</p>
+<h2 id="prior-methods">Prior methods</h2>
+<p>Previously I've written a system to allow <a href="/snippets/2020-09-27-posting-snippets-from-my-phone/">Bieber Bot to publish snippets that I send him</a>, and followed that up with a <a href="/snippets/2020-10-06-introducing-the-snippet-queue/">snippet queue</a> to allow me to schedule the publication of my snippets.</p>
+<p>I've then also implemented two previous automatic snippet publishers from Roam. The first used my roam-to-git backup to detect new or updated snippets. The second used a puppeteer instance to occasionally check Roam for new or updated snippets.</p>
+<p>That makes this my third implementation of automatic snippet publishing from Roam, and my fifth automatic snippet publishing project to date. It's the fastest yet, going from Roam to live on the website in just 90 seconds.</p>
+<h2 id="room-for-improvement">Room for improvement</h2>
+<p>Why was publishing through Bieber Bot not enough? Roam is a natural place to write, and I find I write quite a bit more here than I do elsewhere. Since snippets are <a href="/snippets/2019-12-30-writing-for-no-audience/">all about lowering the barrier of entry to writing</a>, supporting writing snippets in Roam seems natural.</p>
+<p>Why was the roam-to-git backup based automatic publication system insufficient? While, adequate, the latency between writing a snippet and having it show up on my website was multiple hours. The roam-to-git backups only trigger every hour, and fail about 30% of the time. The script to use those backups to publish to my website would also only run every hour. Their combined schedules meant it could be 2-3 or more hours between writing a snippet and being able to share the link to it. Lowering this latency would give me more freedom to quickly write and share snippets, and also to iterate on a published snippet. Fast iteration is powerful.</p>
+<p>Finally, why was the puppeteer-based approach insufficient. While this approach had the potential to bring the publication latency down considerably, in practice I scheduled in to run about hourly, since a headless browser is a computationally heavy piece of software.</p>
+<h2 id="the-new-approach-roamjs">The new approach: &ldquo;roam/js&rdquo;</h2>
+<p>Roam Research allows you to write JavaScript to run directly in Roam. My new approach is to run JavaScript in Roam to detect when a new snippet is written or when an existing snippet gets updated. When this occurs, the script will trigger a GitHub Action, using the snippet content and metadata as input. The GitHub Action will commit the snippet to my website's git repo, and trigger a rebuilding of my website. It does everything except the final deploy to the webserver automatically; that final step waits for me to send a message &ldquo;Deploy snippets!&rdquo; to Bieber Bot, upon receipt of which the final deploy step is performed and the website is updated.</p>
+<p>Using this approach it takes only 90 seconds between writing or editing a snippet and having it live on my website.</p>
+<h2 id="detecting-new-snippets-and-snippet-updates">Detecting new snippets and snippet updates</h2>
+<p>There are two key pieces to how I detect new and updated snippets. The first is a &ldquo;mutation observer&rdquo;. A mutation observer is an object in JavaScript that allows you to schedule events to occur when DOM changes are made to a website. In Roam, the DOM is modified when the user makes edits, and so DOM changes can indicate that the user has made a change to their notes.</p>
+<p>We would like to detect when a snippet is created or edited. So, we write a function that detects if a snippet has been created or edited since the last time it was called, and we use a mutation observer to call this function when the DOM changes.</p>
+<p>Since DOM changes can occur very frequently in Roam, we use a technique called <a href="https://davidwalsh.name/javascript-debounce-function">debouncing</a> to limit the number of calls to this detection function during periods of many consecutive DOM changes.</p>
+<p>How do we detect if a snippet has been created or edited? Roam Research provides a datalog API that allows us to query our entire Roam graph using a logic programming language. You can <a href="/snippets/2020-12-22-datalog-queries-for-roam-research/">learn more about how this works here</a>.</p>
+<p>I mark a snippet for publication by tagging it with both the &ldquo;Snippets&rdquo; tag, and the &ldquo;ok-to-publish&rdquo; tag. This query detects those blocks that are part of a publishable snippet.</p>
+<pre><code class="language-javascript">ancestor = `[ 
+ [(ancestor ?child ?parent) 
+  [?parent :block/children ?child]] 
+ [(ancestor ?child ?ancestor) 
+  [?parent :block/children ?child] 
+  (ancestor ?parent ?ancestor)]]
+]`;
+
+block_info = window.roamAlphaAPI.q(`[
+  :find ?uid ?child_text ?child_uid ?parent_uid ?order
+  :in $ %
+  :where
+  [?block :block/uid ?uid]
+  [?block :block/string ?string]
+  [?block :block/refs ?snippets]
+  [?block :block/refs ?publish]
+  [?snippets :node/title &quot;Snippets&quot;]
+  [?publish :node/title &quot;ok-to-publish&quot;]
+  (ancestor ?child ?block)
+  [?parent :block/children ?child]
+  [?parent :block/uid ?parent_uid]
+  [?child :block/uid ?child_uid]
+  [?child :block/order ?order]
+  [?child :block/string ?child_text]
+]`, ancestor);```
+
+Let's break down what's happening in this query. First, there's the `ancestor` rule. The Roam datalog schema only includes a blocks immediate children; the `ancestor` rule allows us to query for all a block's descendants or ancestors, not just the immediate ones. It does this through the recursive definition of &quot;ancestor&quot; shown, which you can read as &quot;An ancestor of ?child is ?parent if ?parent has a child ?child, AND ALSO an ancestor of ?child is ?ancestor if there exists some ?parent satisfying both ?parent has a child ?child, and ?parent has ?ancestor as an ancestor.&quot;
+
+The rest of the query (lines 10-24) finds blocks that are the descendants of a block ?block that's tagged with both &quot;Snippets&quot; and &quot;ok-to-publish.&quot;
+
+Since Datalog returns the results in an arbitrary order, we need to use the :block/order attribute to reconstruct the proper order of the blocks that comprise the snippet. The logic for this isn't shown, but don't hesitate to reach out if this interests you!
+
+Finally, our mutation observer keeps track of the text of each of the snippets, and if any of them change or if a new snippet is introduced, it triggers a GitHub Action to deploy the snippet to my website.
+
+## Writing a GitHub Action to update my website
+
+My website uses a static site generator, Hugo. So, updating my website consists of adding a markdown file to [its GitHub repo](https://github.com/dbieber/davidbieber.com), rebuilding the site by running Hugo, and then pushing the generated static files up to my server. All of these steps can be automated in a GitHub action.
+
+### Triggering a GitHub Action from Roam Research
+
+To trigger a GitHub Action from Roam Research, I set up the action to trigger on &quot;repository_dispatch&quot; events. I created a personal authentication token, and then use the following JavaScript to trigger the GitHub Action:
+
+```javascript
+function publishSnippetRaw(uid, title, date, content) {
+  const data = {
+    &quot;event_type&quot;: &quot;snippet-update&quot;,
+    &quot;client_payload&quot;: {
+      &quot;uid&quot;: uid,
+      &quot;title&quot;: title,
+      &quot;date&quot;: date,
+      &quot;content&quot;: content,
+    }
+  };
+  fetch(
+    &quot;https://api.github.com/repos/dbieber/davidbieber.com/dispatches&quot;,
+    {
+      headers: {
+        Accept: &quot;application/vnd.github.everest-preview+json&quot;,
+        Authorization: &quot;token PERSONAL_AUTHENTICATION_TOKEN&quot;,
+      },
+      method: 'POST',
+      body: JSON.stringify(data),
+    }
+  );
+}
+const publishSnippet = debounce(publishSnippetRaw, 15000, true);```
+
+This call to `fetch` starts the GitHub Action running on a GitHub server within seconds.
+
+### Accepting inputs in a GitHub Action
+
+You will notice that `data` contains a &quot;client_payload&quot; in the above JavaScript. To accept inputs in the GitHub Action, I access the data from the client_payload and set it to an environment variable in the Action YAML like this:
+
+```yaml
+env:
+  SNIPPET_UID: ${{ github.event.client_payload.uid }}```
+
+Environment variables like this can then be used by the steps in the action. This allows me to pass the contents of the new/modified snippet to the GitHub Action, which is everything needed for automating its publication.
+
+The GitHub Action writes the markdown file, commits it to the repository, runs hugo to regenerate the static files for the website, and commits those to the appropriate part of the repo as well. The only step remaining at this point is pushing the new files up to my server to serve.
+
+## Deploying with Ansible
+
+I use [Ansible](https://www.ansible.com/) to deploy my website to its lone server. [Bieber Bot](https://davidbieber.com/projects/bieber-bot/) is also quite capable of using Ansible. So, we have an arrangement where I tell Bieber Bot when to redeploy my website, and he does so for me. This way I can deploy my website even when I'm on the go and not at a computer; I just message him using my phone.
+
+All steps, from the last keystroke of writing a snippet to having it show up live on my website, together take about 90 seconds. This is a significant quality-of-life improvement over the multi-hour latency of just a few days ago. I'm hopeful that the result is I'll write even more.
+</code></pre>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://davidbieber.com/">David Bieber</a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+
+    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+
+
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZSDKaAmz-UUyaL1IZMi4QO_q4Jouko2c",
+    authDomain: "ask-me-anywhere.firebaseapp.com",
+    databaseURL: "https://ask-me-anywhere.firebaseio.com",
+    projectId: "ask-me-anywhere",
+    storageBucket: "ask-me-anywhere.appspot.com",
+    messagingSenderId: "123038093749",
+    appId: "1:123038093749:web:e8ce89651fcf1371d109fc",
+    measurementId: "G-JLDGL73R1B"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
