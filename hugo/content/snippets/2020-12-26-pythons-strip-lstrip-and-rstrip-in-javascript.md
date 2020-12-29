@@ -1,6 +1,7 @@
 +++
 title = "Python's strip, lstrip, and rstrip in JavaScript"
 date = 2020-12-26T00:00:00
+uid = "Srn97sA4j"
 
 +++
 
@@ -13,8 +14,7 @@ In Python, `strip` removes whitespace from the beginning or end of a string. Thi
 ```javascript
 function trim(x) {
   return x.replace(/^\s+|\s+$/gm, '');
-}
-```
+}```
 
 The Python `strip` method optionally accepts an argument, "characters", and strips all instances of those characters from the left and right sides of the input string. We implement that here.
 
@@ -29,8 +29,7 @@ function trim(x, characters) {
     end -= 1;
   }
   return x.substr(start, end - start + 1);
-}
-```
+}```
 
 This may not be the most efficient implementation (the calls to indexOf in particular could be made faster), but it gets the job done.
 
@@ -43,8 +42,7 @@ function rtrim(x) {
   // This implementation removes whitespace from the right side
   // of the input string.
   return x.replace(/\s+$/gm, '');
-}
-```
+}```
 
 We now implement rtrim a second time, now accepting "characters" as input:
 
@@ -56,8 +54,7 @@ function rtrim(x, characters) {
     end -= 1;
   }
   return x.substr(0, end + 1);
-}
-```
+}```
 
 ## The Python lstrip method in JavaScript
 
@@ -68,8 +65,7 @@ function ltrim(x) {
   // This implementation removes whitespace from the left side
   // of the input string.
   return x.replace(/^\s+/gm, '');
-}
-```
+}```
 
 We now implement rtrim a second time, now accepting "characters" as input:
 
@@ -81,8 +77,7 @@ function ltrim(x, characters) {
   }
   var end = x.length - 1;
   return x.substr(start);
-}
-```
+}```
 
 ## Example Usage
 
@@ -93,8 +88,7 @@ First, using the implementations that strip spaces:
 ```javascript
 trim('   Hello world!   ') === 'Hello world!';
 ltrim('   Hello world!   ') === 'Hello world!   ';
-rtrim('   Hello world!   ') === '   Hello world!';
-```
+rtrim('   Hello world!   ') === '   Hello world!';```
 
 Second, using the implementations that strip the specified characters:
 
@@ -102,3 +96,5 @@ Second, using the implementations that strip the specified characters:
 trim('Buzzzzzz', 'Bz') === 'u';
 ltrim('Buzzzzzz', 'Bz') === 'uzzzzzz';
 rtrim('Buzzzzzz', 'Bz') === 'Bu';```
+
+
