@@ -5,7 +5,7 @@ uid = "uYfqQD3pk"
 
 +++
 
-This snippet details a thought experiment I've been encouraging people to do for years. It's simple, and should only take a few minutes of your time. The purpose of the thought experiment is to better understand where your thoughts come from.
+This snippet details a thought experiment I've been encouraging people to do for a few years. It's simple, and should only take a few minutes of your time. The purpose of the thought experiment is to better understand where your thoughts come from.
 
 There are just four steps in the experiment: (1) think thoughts, (2) remember those thoughts and write them down, (3) determine their causes, (4) categorize those causes.
 
