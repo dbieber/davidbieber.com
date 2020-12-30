@@ -11,7 +11,7 @@ There are just four steps in the experiment: (1) think thoughts, (2) remember th
 
 Let me explain in more detail.
 
-(1) To start the experiment, **think thoughts** for one minute. You can set a timer. During this minute, its okay for your mind to wander. It isn't important what you think about. During this time you're just thinking, not writing.
+(1) To start the experiment, **think thoughts** for one minute. You can set a timer. During this minute, it's okay for your mind to wander. It isn't important what you think about. During this time you're just thinking, not writing.
 
 (2) Once the minute is over, try to **remember all the thoughts** you had during that minute; __write them all down__ in a list. As much as possible, put that list in chronological order. It may take much more than a minute to remember and write down all those thoughts. This step can be difficult; try to be as thorough as possible. You may surprise yourself by at first not remembering thinking something, and then only after thinking hard trying to remember it finding it becoming clear as your recollection improves.
 
