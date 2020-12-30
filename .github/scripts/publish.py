@@ -38,6 +38,7 @@ uid = "{uid}"
       title.lower()
       .replace(' ', '-')
       .replace(",", '')
+      .replace(".", '')
       .replace("/", '')
       .replace("?", '')
       .replace("'", '')
