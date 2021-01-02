@@ -15,6 +15,10 @@ def publish():
 
   content = content.replace('```\n', '\n```\n')
   content = content.replace('$$', '$')
+  content = content.replace(r'\{', '{')
+  content = content.replace(r'\}', '}')
+  content = content.replace(r'\[', '[')
+  content = content.replace(r'\]', ']')
   content = content.replace('\\\\', '\\\\\\\\\\\\')
 
   frontmatter = None

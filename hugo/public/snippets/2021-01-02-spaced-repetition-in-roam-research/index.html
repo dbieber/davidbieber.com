@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="David Bieber">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="There are many ways to do spaced repetition in Roam Research. This post describes mine. I was inspired to start this by reading Nicky Case&#39;s comic on spaced repetition, and I highly recommend the read.
+&ldquo;Spaced repetition&rdquo; just means studying flashcards, studying the cards you know best less often, and study the cards you struggle with more often. It&#39;s a powerful technique for learning and remembering material, whether you&#39;re a student or a lifelong learner.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34570499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-34570499-2', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+
+  <link rel="canonical" href="https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@Bieber">
+  <meta property="twitter:creator" content="@Bieber">
+  
+  <meta property="og:site_name" content="David Bieber">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/">
+  <meta property="og:title" content="Spaced Repetition in Roam Research | David Bieber">
+  <meta property="og:description" content="There are many ways to do spaced repetition in Roam Research. This post describes mine. I was inspired to start this by reading Nicky Case&#39;s comic on spaced repetition, and I highly recommend the read.
+&ldquo;Spaced repetition&rdquo; just means studying flashcards, studying the cards you know best less often, and study the cards you struggle with more often. It&#39;s a powerful technique for learning and remembering material, whether you&#39;re a student or a lifelong learner."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-01-02T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-01-02T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Spaced Repetition in Roam Research | David Bieber</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">David Bieber</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">David Bieber</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/posts"><span>Writing</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Spaced Repetition in Roam Research</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" id="article-content">
+      <p>There are many ways to do spaced repetition in Roam Research. This post describes mine. I was inspired to start this by reading <a href="https://ncase.me/remember/">Nicky Case's comic on spaced repetition</a>, and I highly recommend the read.</p>
+<p>&ldquo;Spaced repetition&rdquo; just means studying flashcards, studying the cards you know best less often, and study the cards you struggle with more often. It's a powerful technique for learning and remembering material, whether you're a student or a lifelong learner.</p>
+<p>The system I use is based on a classic system called the &ldquo;Leitner Box&rdquo; method. I'll first describe how to use the &ldquo;Leitner Box&rdquo; approach in Roam, and then I'll describe the adjustments I made to improve it.</p>
+<h2 id="whats-a-leitner-box">What's a &ldquo;Leitner Box&rdquo;?</h2>
+<p>In the &ldquo;Leitner Box&rdquo; system of spaced repetition, there are seven boxes numbered Box 1 through Box 7. When you create a flashcard, you place it into Box 1. Every day, you use a schedule to determine which boxes of cards to review. The cards in box 1 get reviewed most often, and the cards in box 7 get reviewed least often. When you review a card, you move it up a box (e.g. from box 1 to 2 or from box 4 to 5) if you get the card right. But if you get a card wrong, you move the card back to box 1.</p>
+<p>The default Leitner Box schedule looks like this:</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FpW7FsufOIr.png?alt=media&amp;token=3cbd07b1-11e5-4389-896d-9a181f6529fc" alt=""></p>
+<p>How do you read this schedule?</p>
+<p>The colored circles represent the different Leitner Boxes. The red circles represent Box 1, the orange circles represent Box 2, the yellow circles represent Box 3, all the way up to the final pink circle that represents Box 7.</p>
+<p>The numbers along the bottom are &ldquo;session numbers&rdquo;. For your first review session, you look at the circles above &ldquo;01&rdquo; (Boxes 2 and 1). For your second review session, you look at the circles above &ldquo;02&rdquo; (Boxes 3 and 1). Always review boxes for a given day in order from highest to lowest. After completing session &ldquo;64&rdquo;, the schedule wraps around and your next session is session &ldquo;01&rdquo; again.</p>
+<p>To recap, (1) you put new flashcards into Box 1. (2) When you get a card correct, you move it up a box. (3) When you get a card incorrect, you move it all the way back to Box 1. (4) You use the schedule made of colored dots to decide which boxes to review each day, answering questions in higher boxes first.</p>
+<h2 id="setting-up-leitner-boxes-in-roam">Setting up Leitner Boxes in Roam</h2>
+<p>This system is all well and good. How do we put it into practice? Here I'll quickly describe (1) getting set up, (2) creating new flashcards, and (3) how to do a review session.</p>
+<p><strong>Setting up:</strong> You can use my template; simply copy and paste the <a href="https://pastebin.com/GPfhcUug">&ldquo;raw&rdquo; text at the bottom of the page here</a> into Roam Research, e.g. onto a new page named &ldquo;Spaced Repetition&rdquo;. For this to work you need to copy from the region that says <strong>&ldquo;RAW paste data&rdquo;</strong>. You can <a href="https://pastebin.com/zvjFKZAb">get the enhanced template (recommended; see below) here</a>. Again, be sure to copy from the region that says &ldquo;RAW paste data&rdquo;.</p>
+<p>The default template creates a page for each of the seven Leitner boxes. It also puts the default schedule on the page, and gives you a place to keep track of what session number you're up to. It will also add two questions to your Leitner Box 1 (one about avocados, and one about Cloze deletions), and includes some basic instructions for how to do spaced repetition in Roam.</p>
+<p><strong>Creating New Flashcards:</strong> You can create a new card anywhere in your Roam graph simply by tagging a note with &ldquo;#[[Leitner Box 1]]&quot;. Here are two ways to create cards in Roam:</p>
+<ol>
+<li>
+<p>Put the question on one bullet, and put the answer in the child bullets. Then tag the bullet with the question with &ldquo;#[[Leitner Box 1]]&rdquo; to add it to your spaced repetition system.</p>
+</li>
+<li>
+<p>You can use the syntax {{=: question | answer}} in Roam to create text that remains hidden until clicked. The text &ldquo;answer&rdquo; wont appear until you click on the text &ldquo;question.&rdquo; Again, tag the line with &ldquo;#[[Leitner Box 1]]&rdquo; to add it to your spaced repetition system.</p>
+</li>
+</ol>
+<p>I recommend you <a href="https://andymatuschak.org/prompts/">read Andy Matuschak's notes on &ldquo;How to write good prompts&rdquo;</a> for tips on how to create good flashcards. <a href="https://ncase.me/remember/">Nicky Case's comic: &ldquo;How to Remember Anything Forever-ish&rdquo;</a> also has good suggestions for how to create good questions for spaced repetition.</p>
+<p><strong>How to do a Review Session:</strong> Visit your &ldquo;Spaced Repetition&rdquo; page to figure out what session number to do. Increment the session number, and use the schedule to determine which Leitner boxes you'll be looking at in this session. Remember, do the Leitner boxes in decreasing order of their number.</p>
+<p>For each Leitner box, visit its page in Roam. All your questions will appear in the Linked References section of the page.</p>
+<p>Go through the questions one by one. If you get the answer correct, increment the box number by 1. If you get the answer incorrect or struggle with it, set the tag back to &ldquo;#[[Leitner Box 1]]&quot;.</p>
+<p>Don't worry about sending things back to box 1; you'll see those questions very often and soon they'll be back in the higher numbered boxes again!</p>
+<h2 id="enhancements-beyond-the-default-system">Enhancements Beyond the Default System</h2>
+<p>I've made several changes to the default Leitner Box system to improve it to my taste. You're welcome to use them!</p>
+<p><strong>Leitner Boxes 0 and $\infty$:</strong> I use an extra box, &ldquo;Leitner Box 0&rdquo; for flashcards that I'm not ready to put into my rotation yet. I try to only add at most 10 cards a day to keep the total review workload low. If I have more cards than this, I keep them in Box 0 until I'm ready to start studying them, at which point I move them to Box 1.</p>
+<p>Leitner Box $\infty$ is for cards that have graduated from Box 7. In theory, I will remember these cards for the rest of my life.</p>
+<p><strong>Extra box 5s, 6s, and 7s:</strong> I have decided to create two Box 5s (named 5A and 5B), four Box 6s (6A, 6B, 6C, and 6D), and eight Box 7s (7A through 7H). This prevents any individual review session from accumulating too many cards.</p>
+<p>I ran a simulation and under the default system, adding 10 new cards a day and getting 95% of cards correct, some review sessions will require reviewing over 700 cards! Under the enhanced system, the longest review session will only ever be 140 cards (and most review sessions are much shorter than that).</p>
+<p>Here's the modified schedule that allows me to use these extra boxes:</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2F_dSM-MMp85.png?alt=media&amp;token=b3682748-8ea4-4444-97df-0c4592beb1ff" alt=""></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FhFRPfzGpwy.png?alt=media&amp;token=20b7f689-4117-4901-a806-846b0d099d7d" alt=""></p>
+<p>To use this enhanced schedule, first use the review session number to figure out which column of colored circles to look at. As before, a red circle indicates Leitner Box 1, a yellow circle indicates Leitner Box 2, etc. If the circle has a letter inside it, that means to review that particular variant of the box. E.g. a blue circle with a &ldquo;B&rdquo; inside means to review Leitner box 5B. The arrow to the right of a box indicates which box you should move the card to if you get it correct. E.g. in review session &ldquo;51&rdquo; you should review box 5B and move correct cards to box 6D; you should then review boxes 2 and 1 as usual.</p>
+<p><strong>Embed the box list:</strong> I use Roam Research's &ldquo;embed block&rdquo; feature to embed a list of all Leitner Boxes onto all my Leitner Box pages. This makes it easy to quickly navigate from any box to any other box. I couldn't think of a good way to include this in the template, so you'll have to add this yourself if you want to include it.</p>
+<p><strong>Enhanced Template</strong></p>
+<p>You can <a href="https://pastebin.com/zvjFKZAb">access the enhanced version of the template here</a>. It includes more Leitner boxes and the move complicated schedule. To use it, simply paste it into a new page in Roam Research, e.g. &ldquo;Spaced Repetition&rdquo;.</p>
+<h2 id="spaced-repetition-alternatives">Spaced Repetition Alternatives</h2>
+<p>There are multiple ways of doing spaced repetition in Roam, of which is this just one. Note that most spaced repetition systems in Roam Research use the &ldquo;delta&rdquo; feature. However, we are not using this feature. CortexFutura provides <a href="https://www.cortexfutura.com/preliminary-spaced-repetition-roam/">a way of using the delta feature for spaced repetition here</a>.</p>
+<p>One of the most popular spaced repetition systems is called <a href="https://apps.ankiweb.net/">Anki</a>. It's great for language learning. I'd be remiss not to mention it. The reason I prefer doing spaced repetition directly in Roam is that the friction to creating cards is much lower in Roam for me, since I'm taking notes and writing my ideas in there already.</p>
+<p>Additionally RemNote, a competitor note-taking tool to Roam, also offers a highly configurable spaced repetition system out-of-the-box.</p>
+<p>For more, consider joining the conversation in the <a href="https://roamresearch.slack.com/">Roam Research Slack</a> &ldquo;spaced-repetition&rdquo; channel.</p>
+<h2 id="two-advantages-of-this-system-over-traditional-spaced-repetition-systems">Two advantages of this system over traditional spaced repetition systems</h2>
+<ol>
+<li>
+<p><strong>Lower friction:</strong> Creating cards directly in your note-taking app is substantially easier than needing to task switch to create cards. This lower mental overhead makes it easier to keep using spaced repetition for an extended period of time. I started using it two months ago myself, so finger's crossed it indeed is something I keep up for much longer! 🤞</p>
+</li>
+<li>
+<p><strong>Robustness to vacations:</strong> In traditional spaced repetition systems, taking a break for a day, week, or month, can be ruinous to your spaced repetition rhythm. After coming back from the break, you find you have too many cards to review all at once, which can be a real motivation drain. Instead of organizing cards by <strong>date</strong>, by system organizes them by <strong>review session number.</strong> This means that if you skip a day or a week, your reviews simply just get pushed back. The review session number won't go up while you're away. You can even split a review session over multiple days if you like. No trouble! You'll never be left with a review session that's too big to handle.</p>
+</li>
+</ol>
+<h2 id="additional-resources">Additional Resources</h2>
+<p><a href="https://ncase.me/remember/">Nicky Case's comic: &ldquo;How to Remember Anything Forever-ish&rdquo;</a> is what inspired me to start using spaced repetition in my life.</p>
+<p><a href="https://withorbit.com/">Andy Matuschak's &ldquo;Orbit&rdquo; system</a> enables writers to incorporate spaced repetition directly into their writing, to help their readers remember what they learned forever. You can read <a href="https://quantum.country/">Quantum Country</a> to learn quantum computing and give it a try. You could also <a href="https://andymatuschak.org/prompts/">read his tips for &ldquo;How to write good prompts&rdquo;</a>, which is also written with Orbit.</p>
+<p>You can <a href="https://apps.ankiweb.net/">get Anki here</a> or <a href="https://www.remnote.io/">try RemNote here</a>. I also have a dozen+ other <a href="https://davidbieber.com/snippets/">snippets about Roam here</a> (<a href="https://davidbieber.com/snippets/2019-12-25-introducing-snippets/">what's a snippet?</a>).</p>
+<h2 id="get-in-touch">Get in touch</h2>
+<p>I love a good discussion about spaced repetition. You can email me at <a href="mailto:david810+spaced-repetition@gmail.com">david810+spaced-repetition@gmail.com</a>, find me on Twitter (<a href="https://twitter.com/@Bieber">@Bieber</a>), or join the <a href="https://roamresearch.slack.com/">Roam slack</a> to keep the conversation going.</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://davidbieber.com/">David Bieber</a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+
+    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+
+
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZSDKaAmz-UUyaL1IZMi4QO_q4Jouko2c",
+    authDomain: "ask-me-anywhere.firebaseapp.com",
+    databaseURL: "https://ask-me-anywhere.firebaseio.com",
+    projectId: "ask-me-anywhere",
+    storageBucket: "ask-me-anywhere.appspot.com",
+    messagingSenderId: "123038093749",
+    appId: "1:123038093749:web:e8ce89651fcf1371d109fc",
+    measurementId: "G-JLDGL73R1B"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
