@@ -1,5 +1,5 @@
 +++
-title = "Programmatically Accessing Chrome's "Tabs from other devices" Data"
+title = "Programmatically Accessing Chrome's “Tabs from other devices" Data"
 date = 2021-01-01T00:00:00
 uid = "CYc8VlO--"
 
