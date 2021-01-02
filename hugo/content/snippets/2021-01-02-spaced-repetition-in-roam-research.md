@@ -75,7 +75,7 @@ To use this enhanced schedule, first use the review session number to figure out
 
 **Enhanced Template**
 
-You can [access the enhanced version of the template here](https://pastebin.com/zvjFKZAb). It includes more Leitner boxes and the move complicated schedule. To use it, simply paste it into a new page in Roam Research, e.g. "Spaced Repetition".
+You can [access the enhanced version of the template here](https://pastebin.com/zvjFKZAb). It includes more Leitner boxes and the more complicated schedule. To use it, simply paste it into a new page in Roam Research, e.g. "Spaced Repetition".
 
 ## Spaced Repetition Alternatives
 
