@@ -5,7 +5,7 @@ uid = "9sebyGS1e"
 
 +++
 
-There are many ways to do spaced repetition in Roam Research. This post describes mine. I was inspired to start this by reading [Nicky Case's comic on spaced repetition](https://ncase.me/remember/), and I highly recommend the read.
+There are many ways to do spaced repetition in Roam Research. This post describes mine. I was inspired to start this two months ago by reading [Nicky Case's comic on spaced repetition](https://ncase.me/remember/), and I highly recommend the read.
 
 "Spaced repetition" just means studying flashcards, studying the cards you know best less often, and study the cards you struggle with more often. It's a powerful technique for learning and remembering material, whether you're a student or a lifelong learner. 
 
