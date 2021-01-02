@@ -29,7 +29,6 @@ for key, value in db.iterator():
       print(key)
       print(data)
       print()
-
 ```
 
 This script prints out the URLs of the synced tabs, plus some extra data and extra characters. To do this properly, the next step will be to figure out how to parse the data.
