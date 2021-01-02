@@ -91,7 +91,7 @@ For more, consider joining the conversation in the [Roam Research Slack](https:/
 
 1. **Lower friction:** Creating cards directly in your note-taking app is substantially easier than needing to task switch to create cards. This lower mental overhead makes it easier to keep using spaced repetition for an extended period of time. I started using it two months ago myself, so finger's crossed it indeed is something I keep up for much longer! 🤞 
 
-2. **Robustness to vacations:** In traditional spaced repetition systems, taking a break for a day, week, or month, can be ruinous to your spaced repetition rhythm. After coming back from the break, you find you have too many cards to review all at once, which can be a real motivation drain. Instead of organizing cards by __date__, my system organizes them by __review session number.__ This means that if you skip a day or a week, your reviews simply just get pushed back. The review session number won't go up while you're away. You can even split a review session over multiple days if you like. No trouble! You'll never be left with a review session that's too big to handle.
+2. **Robustness to vacations:** In traditional spaced repetition systems, taking a break for a day, week, or month, can be ruinous to your spaced repetition rhythm. After coming back from the break, you find you have too many cards to review all at once, which can be a real motivation drain. Instead of organizing cards by __date__, my system organizes them by __review session number.__ This means that if you skip a day or a week, your reviews simply get pushed back. The review session number won't go up while you're away. You can even split a review session over multiple days if you like. No trouble! You'll never be left with a review session that's too big to handle.
 
 ## Additional Resources
 
@@ -99,7 +99,7 @@ For more, consider joining the conversation in the [Roam Research Slack](https:/
 
 [Andy Matuschak's "Orbit" system](https://withorbit.com/) enables writers to incorporate spaced repetition directly into their writing, to help their readers remember what they learned forever. You can read [Quantum Country](https://quantum.country/) to learn quantum computing and give it a try. You could also [read his tips for "How to write good prompts"](https://andymatuschak.org/prompts/), which is also written with Orbit.
 
-You can [get Anki here](https://apps.ankiweb.net/) or [try RemNote here](https://www.remnote.io/). I also have a dozen+ other [snippets about Roam here](https://davidbieber.com/snippets/) ([what's a snippet?](https://davidbieber.com/snippets/2019-12-25-introducing-snippets/)).
+You can [get Anki here](https://apps.ankiweb.net/) or [try RemNote here](https://www.remnote.io/). I also have a dozen+ other [snippets about Roam here](https://davidbieber.com/snippets/) ([what's a “snippet”?](https://davidbieber.com/snippets/2019-12-25-introducing-snippets/)).
 
 ## Get in touch
 
