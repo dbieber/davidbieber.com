@@ -35,4 +35,4 @@ This script prints out the URLs of the synced tabs, plus some extra data and ext
 
 Why do I want to programmatically figure out which tabs are open on my phone? I want to do automatic distraction detection. When I'm on a distracting website like Twitter for several minutes during a period when I mean to be focusing on something else, I'd like Bieber Bot to be able to stage an intervention to help me focus.
 
-The script above should be sufficient for figuring out if I have any distracting websites open on my phone, so I may be able to implement the distraction detection and intervention logic even before getting the parsing done correctly.
+A variation on the script above should be sufficient for figuring out if I have any distracting websites open on my phone. So, I may be able to implement the distraction detection and intervention logic even before getting the parsing done correctly.
