@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,36 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Programmatically Accessing Chrome&#39;s “Tabs from other devices” Data</title>
+      <link>https://davidbieber.com/snippets/2021-01-01-programmatically-accessing-chromes-tabs-from-other-devices-data/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-01-programmatically-accessing-chromes-tabs-from-other-devices-data/</guid>
+      <description>&lt;p&gt;I use Google Chrome on my Mac laptop and on my iPhone, and I&#39;m logged in to my Google account in both places with syncing turned on. If I go to &amp;ldquo;chrome://history/syncedTabs&amp;rdquo; on my computer I can see what tabs I have open on my phone. Now, I&#39;d like to access this data programatically.&lt;/p&gt;
+&lt;p&gt;With the help of &lt;code&gt;grep&lt;/code&gt;, I&#39;ve figured out that this data is stored in &lt;code&gt;~/Library/Application Support/Google/Chrome/Profile 1/Sync Data/LevelDB/&lt;/code&gt; (Probably for most people the path would be &lt;code&gt;~/Library/Application Support/Google/Chrome/Default/Sync Data/LevelDB/&lt;/code&gt;). Be careful to escape the spaces in the file path!&lt;/p&gt;
+&lt;p&gt;To read from a LevelDB database, I first installed leveldb with &lt;code&gt;brew install leveldb&lt;/code&gt;, and then I installed a Python LevelDB client: &lt;code&gt;pip install plyvel&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;I then use little Python scripts like the following to access the data, though I haven&#39;t quite figured out (1) how to properly parse the data; it&#39;s probably a protocol buffer, or (2) exactly how it&#39;s organized, so I don&#39;t know exactly which keys to look at.&lt;/p&gt;
+&lt;p&gt;Note that I have copied the LevelDB folder to a new location before opening it. This ensures that Chrome doesn&#39;t have a lock on any of the files in the copy, and that even if we make a mistake we won&#39;t damage Chrome&#39;s data.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import plyvel
+import re
+import os
+
+db = plyvel.DB(os.path.expanduser(&amp;quot;~/Profile1/Sync Data/LevelDB/&amp;quot;))
+
+for key, value in db.iterator():
+  if b&#39;sessions-dt&#39; in key:
+    data = re.findall(b&#39;https?://[\x20-\x7F]+&#39;, value)
+    if data:
+      print(key)
+      print(data)
+      print()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This script prints out the URLs of the synced tabs, plus some extra data and extra characters. To do this properly, the next step will be to figure out how to parse the data.&lt;/p&gt;
+&lt;p&gt;Why do I want to programmatically figure out which tabs are open on my phone? I want to do automatic distraction detection. When I&#39;m on a distracting website like Twitter for several minutes during a period when I mean to be focusing on something else, I&#39;d like Bieber Bot to be able to stage an intervention to help me focus.&lt;/p&gt;
+&lt;p&gt;The script above should be sufficient for figuring out if I have any distracting websites open on my phone, so I may be able to implement the distraction detection and intervention logic even before getting the parsing done correctly.&lt;/p&gt;
 </description>
     </item>
     
