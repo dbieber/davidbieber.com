@@ -2,6 +2,7 @@
 title = "Spaced Repetition in Roam Research"
 date = 2021-01-02T00:00:00
 uid = "9sebyGS1e"
+math = true
 
 +++
 

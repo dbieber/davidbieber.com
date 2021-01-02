@@ -26,7 +26,7 @@ def publish():
   if frontmatter is not None:
     additional_frontmatter = frontmatter
   else:
-    if '\\frac' in content:
+    if '\\frac' in content or '\\infty' in content:
       additional_frontmatter = 'math = true'
 
   content = f"""+++
