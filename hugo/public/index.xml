@@ -309,7 +309,7 @@ for key, value in db.iterator():
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This script prints out the URLs of the synced tabs, plus some extra data and extra characters. To do this properly, the next step will be to figure out how to parse the data.&lt;/p&gt;
 &lt;p&gt;Why do I want to programmatically figure out which tabs are open on my phone? I want to do automatic distraction detection. When I&#39;m on a distracting website like Twitter for several minutes during a period when I mean to be focusing on something else, I&#39;d like Bieber Bot to be able to stage an intervention to help me focus.&lt;/p&gt;
-&lt;p&gt;The script above should be sufficient for figuring out if I have any distracting websites open on my phone, so I may be able to implement the distraction detection and intervention logic even before getting the parsing done correctly.&lt;/p&gt;
+&lt;p&gt;A variation on the script above should be sufficient for figuring out if I have any distracting websites open on my phone. So, I may be able to implement the distraction detection and intervention logic even before getting the parsing done correctly.&lt;/p&gt;
 </description>
     </item>
     
