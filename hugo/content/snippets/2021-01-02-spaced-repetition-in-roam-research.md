@@ -7,7 +7,7 @@ math = true
 
 There are many ways to do spaced repetition in Roam Research. This post describes mine. I was inspired to start this two months ago by reading [Nicky Case's comic on spaced repetition](https://ncase.me/remember/), and I highly recommend the read.
 
-"Spaced repetition" just means studying flashcards, studying the cards you know best less often, and study the cards you struggle with more often. It's a powerful technique for learning and remembering material, whether you're a student or a lifelong learner. 
+"Spaced repetition" just means studying flashcards, studying the cards you know best less often, and study the cards you struggle with more often. It's a powerful technique for learning and remembering material, whether you're a student or a lifelong learner.
 
 The system I use is based on a classic system called the "Leitner Box" method. I'll first describe how to use the "Leitner Box" approach in Roam, and then I'll describe the adjustments I made to improve it.
 
@@ -79,7 +79,7 @@ You can [access the enhanced version of the template here](https://pastebin.com/
 
 ## Spaced Repetition Alternatives
 
-There are multiple ways of doing spaced repetition in Roam, of which is this just one. Note that most spaced repetition systems in Roam Research use the "delta" feature. However, we are not using this feature. CortexFutura provides [a way of using the delta feature for spaced repetition here](https://www.cortexfutura.com/preliminary-spaced-repetition-roam/).
+There are multiple ways of doing spaced repetition in Roam, of which this is just one. Note that most spaced repetition systems in Roam Research use the "delta" feature. However, we are not using this feature. CortexFutura provides [a way of using the delta feature for spaced repetition here](https://www.cortexfutura.com/preliminary-spaced-repetition-roam/). Roam Toolkit provides another system for doing spaced repetition in Roam, which you can [view on YouTube here](https://www.youtube.com/watch?v=08o8q_bOedw).
 
 One of the most popular spaced repetition systems is called [Anki](https://apps.ankiweb.net/). It's great for language learning. I'd be remiss not to mention it. The reason I prefer doing spaced repetition directly in Roam is that the friction to creating cards is much lower in Roam for me, since I'm taking notes and writing my ideas in there already.
 
