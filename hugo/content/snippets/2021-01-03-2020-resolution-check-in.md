@@ -11,7 +11,7 @@ By the number's this is approximately 62 snippets, 8 tech talks, 4 published pap
 
 | Year | Resolution | Status| Result |
 |------|------------|-------|--------|
-|2020| Communicate publicly 100 times | 80% | <font color="maroon">Not quite.</font> |
+|2020| Communicate publicly 100 times | 80%'s not bad. | <font color="maroon">Not quite.</font> |
 |2019|Play violin on 100 days | Played on 43 days | <font color="maroon">Nope</font> |
 |2017|Longer arms|  | <font color="green">Yesssss!</font> |
 |2015|Exercise 200 days<br> Read 200 days | Exercise: 200 days by summer<br> Reading: (look this up) | Yes. |
