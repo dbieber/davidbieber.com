@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 04 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,132 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>More Datalog Queries for Roam</title>
+      <link>https://davidbieber.com/snippets/2021-01-04-more-datalog-queries-for-roam/</link>
+      <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-04-more-datalog-queries-for-roam/</guid>
+      <description>&lt;p&gt;In this snippet I share datalog queries for Roam Research. For more such queries (and to see how to run these queries), &lt;a href=&#34;https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/&#34;&gt;see this earlier snippet on the subject&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;pages-tagged-with-x-not-listed-on-page-y&#34;&gt;Pages tagged with &amp;ldquo;X&amp;rdquo; not listed on page &amp;ldquo;Y&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;This query is useful when constructing an index page. Let&#39;s say you want to take all the pages you&#39;ve tagged with &amp;ldquo;[[Brilliant Idea]]&amp;rdquo; and organize them on a page called &amp;ldquo;[[Brilliant Ideas Index]]&amp;quot;. This query will find you all the pages that are tagged with &amp;ldquo;[[Brilliant Idea]]&amp;rdquo; that haven&#39;t yet been added to the &amp;ldquo;[[Brilliant Ideas Index]]&amp;rdquo; page.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let container = &amp;quot;Brilliant Ideas Index&amp;quot;;
+let tag = &amp;quot;Brilliant&amp;quot;;
+let ancestor = `[ 
+  [(ancestor ?child ?parent) 
+   [?parent :block/children ?child]] 
+  [(ancestor ?child ?ancestor) 
+   [?parent :block/children ?child] 
+   (ancestor ?parent ?ancestor)]]
+]`;
+
+var blocks = window.roamAlphaAPI.q(`
+[:find ?page_title
+  :in $ % ?container_title ?tag_text
+  :where 
+    [?container_page :node/title ?container_title]
+    [?page :node/title ?page_title]
+    (ancestor ?tagged_block ?page)
+    [?tagged_block :block/refs ?tag_page]
+    [?tag_page :node/title ?tag_text]
+    (not (ancestor ?container_block ?container_page)
+         [?container_block :block/refs ?page])
+]`, ancestor, container, tag)
+
+console.log(blocks.map((data, index) =&amp;gt; {return `${data[0]}`}).join(&#39;\n&#39;));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hope this is useful for getting your Roam graph organized!&lt;/p&gt;
+&lt;h2 id=&#34;blocks-tagged-with-both-x-and-y&#34;&gt;Blocks tagged with both &amp;ldquo;X&amp;rdquo; and &amp;ldquo;Y&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;I use a query like this to find blocks tagged with both &amp;ldquo;Snippets&amp;rdquo; and &amp;ldquo;ok-to-publish&amp;rdquo;, in order to automatically publish snippets to my website.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let tag1 = &amp;quot;Snippets&amp;quot;;
+let tag2 = &amp;quot;ok-to-publish&amp;quot;;
+var blocks = window.roamAlphaAPI.q(`[
+	:find ?uid ?string
+	:in $ ?tag1 ?tag2
+	:where
+	[?block :block/uid ?uid]
+	[?block :block/string ?string]
+	[?block :block/refs ?block_tag1]
+	[?block :block/refs ?block_tag2]
+	[?block_tag1 :node/title ?tag1]
+	[?block_tag2 :node/title ?tag2]
+]`, tag1, tag2);
+
+blocks.map(
+  (data, index) =&amp;gt; {return `((${data[0]})): ${data[1]}`;})
+.join(&#39;\n&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;info-about-all-children-of-any-block-tagged-with-both-x-and-y&#34;&gt;Info about all children of any block tagged with both &amp;ldquo;X&amp;rdquo; and &amp;ldquo;Y&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;This extends the previous query in two key ways: (1) it gets all children of any block with both tags, and (2) it gets more detailed information about those children. The ?uid indicates which block has the two target tags, while the ?child_uid, ?parent_uid, and ?order fields allow for reconstructing the arrangement of the child blocks. Each returned record has the text of a child block, it&#39;s uid (?child_uid), it&#39;s parent&#39;s uid (?parent_uid), and the order of that child in its parent&#39;s list of children. Together, this information allows you to fully reconstruct the tree of blocks beneath each of the tagged blocks.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let tag1 = &amp;quot;Snippets&amp;quot;;
+let tag2 = &amp;quot;ok-to-publish&amp;quot;;
+let ancestor = `[ 
+  [(ancestor ?child ?parent) 
+   [?parent :block/children ?child]] 
+  [(ancestor ?child ?ancestor) 
+   [?parent :block/children ?child] 
+   (ancestor ?parent ?ancestor)]]
+]`;
+
+let block_info = window.roamAlphaAPI.q(`[
+  :find ?uid ?child_text ?child_uid ?parent_uid ?order
+  :in $ % ?tag1 ?tag2
+  :where
+  [?block :block/uid ?uid]
+  [?block :block/string ?string]
+  [?block :block/refs ?block_tag1]
+  [?block :block/refs ?block_tag2]
+  [?block_tag1 :node/title ?tag1]
+  [?block_tag2 :node/title ?tag2]
+  (ancestor ?child ?block)
+  [?parent :block/children ?child]
+  [?parent :block/uid ?parent_uid]
+  [?child :block/uid ?child_uid]
+  [?child :block/order ?order]
+  [?child :block/string ?child_text]
+]`, ancestor, tag1, tag2);
+
+block_info.map(
+  (data, index) =&amp;gt; {return `((${data[0]})) ${data[1]}`;})
+.join(&#39;\n&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I use the following script to organize the blocks by their parent:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;class DefaultDict {
+  constructor(defaultInit) {
+    return new Proxy({}, {
+      get: (target, name) =&amp;gt; name in target ?
+        target[name] :
+        (target[name] = typeof defaultInit === &#39;function&#39; ?
+          new defaultInit().valueOf() :
+          defaultInit)
+    })
+  }
+}
+
+var blocks_by_parent = new DefaultDict(Array);
+block_info.forEach(
+  (info) =&amp;gt; {
+    [uid, child_text, child_uid, parent_uid, order] = info;
+    blocks_by_parent[parent_uid].push(info);
+  }
+);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And then the following function &lt;code&gt;blocksInOrder&lt;/code&gt; to place the children in their proper order.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function blocksInOrder(blocks_by_parent, uid) {
+  var blocks = [];
+  var blocks_list = blocks_by_parent[uid].sort(
+    (b1, b2) =&amp;gt; {return b1[4] - b2[4];}
+  );
+  blocks_list.forEach((block) =&amp;gt; {
+    blocks.push(block)
+    blocks.push(...blocksInOrder(blocks_by_parent, block[2]));
+  });
+  return blocks;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is a key component of how I do &lt;a href=&#34;https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/&#34;&gt;automatic snippet publishing from Roam to my website&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
