@@ -35,7 +35,7 @@ var blocks = window.roamAlphaAPI.q(`
          [?container_block :block/refs ?page])
 ]`, ancestor, container, tag)
 
-console.log(blocks.map((data, index) => {return `${data[0]}`}).join('\n'));
+console.log(blocks.map((data, index) => {return `[[${data[0]}]]`}).join('\n'));
 ```
 
 Hope this is useful for getting your Roam graph organized!

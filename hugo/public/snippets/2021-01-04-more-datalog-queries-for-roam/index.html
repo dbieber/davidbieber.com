@@ -544,7 +544,7 @@ var blocks = window.roamAlphaAPI.q(`
          [?container_block :block/refs ?page])
 ]`, ancestor, container, tag)
 
-console.log(blocks.map((data, index) =&gt; {return `${data[0]}`}).join('\n'));
+console.log(blocks.map((data, index) =&gt; {return `[[${data[0]}]]`}).join('\n'));
 </code></pre>
 <p>Hope this is useful for getting your Roam graph organized!</p>
 <h2 id="blocks-tagged-with-both-x-and-y">Blocks tagged with both &ldquo;X&rdquo; and &ldquo;Y&rdquo;</h2>
