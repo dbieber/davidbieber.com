@@ -7,7 +7,7 @@ uid = "GEIKnZ7uS"
 
 At the start of 2020 [I resolved to communicate publicly 100 times](/snippets/2020-01-01-new-years-resolutions/). How did I do? I got about 80% of the way there.
 
-By the number's this is approximately 62 snippets, 8 tech talks, 4 published papers, 1 thesis proposal, 2 videos, and a handful of discussions in public on various Slack-like groups.
+By the numbers, this is approximately 62 snippets, 8 tech talks, 4 published papers, 1 thesis proposal, 2 videos, and a handful of discussions in public on various Slack-like groups.
 
 | Year | Resolution | Status| Result |
 |------|------------|-------|--------|
