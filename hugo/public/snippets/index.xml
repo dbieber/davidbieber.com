@@ -13,6 +13,33 @@
     </image>
     
     <item>
+      <title>ffmpeg aspirations</title>
+      <link>https://davidbieber.com/snippets/2021-01-05-ffmpeg-aspirations/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-05-ffmpeg-aspirations/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;turn a collection of photos into a slide show&lt;/li&gt;
+&lt;li&gt;set it to music&lt;/li&gt;
+&lt;li&gt;add gentle transitions, like a slow pan of the camera&lt;/li&gt;
+&lt;li&gt;fade the music in and out to change songs&lt;/li&gt;
+&lt;li&gt;given a file of time stamp ranges, clip to just those parts of the file&lt;/li&gt;
+&lt;li&gt;given a file of timestamp ranges, each with a speed multiplier, adjust the speed of each clip and stitch together the clips&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I have code that does this last one already, but I suspect it can be orders of magnitude faster done as an ffmpeg command compared with the way I&#39;m doing it now.&lt;/p&gt;
+&lt;h2 id=&#34;turn-a-collection-of-photos-into-a-slide-show&#34;&gt;Turn a collection of photos into a slide show:&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;ffmpeg \
+  -r 1/5 \
+  -pattern_type glob -i &amp;quot;/Users/dbieber/Documents/video/raw/*.png&amp;quot; \
+  -c:v libx264 \
+  -r 30 \
+  -pix_fmt yuv420p \
+  output.mp4
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next up, I&#39;ll see if I can add some audio, and I&#39;ll work my way down the list.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>More Datalog Queries for Roam</title>
       <link>https://davidbieber.com/snippets/2021-01-04-more-datalog-queries-for-roam/</link>
       <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
