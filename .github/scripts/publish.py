@@ -45,6 +45,7 @@ uid = "{uid}"
       .replace(".", '')
       .replace("/", '')
       .replace("?", '')
+      .replace(":", '')
       .replace("'", '')
       .replace('"', '')
       .replace('(', '')
