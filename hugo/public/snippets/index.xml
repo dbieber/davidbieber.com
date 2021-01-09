@@ -13,6 +13,48 @@
     </image>
     
     <item>
+      <title>Mobile Distraction Detection, at last</title>
+      <link>https://davidbieber.com/snippets/2021-01-09-mobile-distraction-detection-at-last/</link>
+      <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-09-mobile-distraction-detection-at-last/</guid>
+      <description>&lt;p&gt;I have implemented a minimal working version of mobile &lt;em&gt;distraction detection&lt;/em&gt;, complete with a simple intervention for when I visit distracting websites on my phone.&lt;/p&gt;
+&lt;h2 id=&#34;what-does-distraction-detection-do&#34;&gt;What does &amp;ldquo;distraction detection&amp;rdquo; do?&lt;/h2&gt;
+&lt;p&gt;It runs on my laptop and monitors my &lt;em&gt;phone&lt;/em&gt; for when I visit distracting websites. I give it a list of distracting websites for it to keep an eye out for. My list is: twitter, facebook, hacker news, google news, reddit, and youtube.&lt;/p&gt;
+&lt;p&gt;I can set it to perform some action whenever I&#39;m on one of these websites. For this first iteration, I&#39;m having Bieber Bot message me whenever it notices I&#39;m on one of these websites. Now that it&#39;s working though, it will be easy to customize to my liking.&lt;/p&gt;
+&lt;p&gt;In future iterations, I&#39;ll have it wait until I&#39;ve been spending several minutes on the website before messaging me, and I&#39;ll only have it do this during times when I mean to be focused.&lt;/p&gt;
+&lt;h2 id=&#34;why-is-this-interesting&#34;&gt;Why is this interesting?&lt;/h2&gt;
+&lt;p&gt;There are excellent browser extensions that help you take control of your browsing habits on your computer. I recommend DK&#39;s &lt;a href=&#34;https://getintention.com&#34;&gt;Intention&lt;/a&gt; for this. However, there aren&#39;t great solutions like Intention for mobile browsing.&lt;/p&gt;
+&lt;p&gt;The challenge is that mobile browsers don&#39;t provide good ways for developers to write extensions. I&#39;ve built my mobile distraction detector in spite of this limitation :).&lt;/p&gt;
+&lt;h2 id=&#34;how-does-it-work&#34;&gt;How does it work?&lt;/h2&gt;
+&lt;p&gt;I use an iPhone and the Chrome browser. I&#39;m logged into my Google Account on Chrome on both my phone and my laptop, and I have tab syncing turned on. With tab syncing, all my tab sessions from my phone are synced to my Google account, and are visible on my laptop, usually with a sub-minute latency. You can view this data in human-readable form at &lt;a href=&#34;chrome://history/syncedTabs&#34;&gt;chrome://history/syncedTabs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The tab session data is stored along with the rest of my Chrome data. Since I use a Mac, the path is &lt;code&gt;~/Library/Application\ Support/Google/Chrome/Profile\ 1/Sync\ Data/LevelDB/&lt;/code&gt;. Note that &amp;ldquo;Profile 1&amp;rdquo; may be replaced with either &amp;ldquo;Default&amp;rdquo;, or the name of your Profile, depending on how many Google accounts you have connected with Chrome.&lt;/p&gt;
+&lt;p&gt;The data is stored in a LevelDB database (this is unusual for Chrome; most of the rest of your Chrome data is stored in sqlite3 databases). LevelDB is an efficient key-value store, which was written by Jeff Dean and Sanjay Ghemawat back in 2011. The keys which contain the synced tab data are those prefixed with &amp;ldquo;session-dt&amp;rdquo;. The corresponding values are &lt;code&gt;SessionSpecifics&lt;/code&gt; protocol buffers. &lt;a href=&#34;https://source.chromium.org/chromium/chromium/src/+/master:components/sync/protocol/session_specifics.proto&#34;&gt;The protocol buffer definition is available here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Before parsing the sync data, I always make a copy of it first, and then I only ever open the copy. This ensures that Chrome doesn&#39;t have a lock on the database, and isn&#39;t editing it concurrently with my own program reading it.&lt;/p&gt;
+&lt;p&gt;I use the Python library &lt;code&gt;plyvel&lt;/code&gt; to parse the LevelDB database: &lt;code&gt;db = plyvel.DB(path_to_copy_of_leveldb_directory)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In order to use the protobuf definition, I compiled it first with protoc: &lt;code&gt;protoc -I /chromium/ chromium/components/sync/protocol/*.proto --python_out=dbieber/distraction_detection/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Putting these pieces together, accessing the session data looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import plyvel
+from components.sync.protocol import session_specifics_pb2
+
+db = plyvel.DB(path)
+
+for key, value in db.iterator():
+  if b&#39;sessions-dt&#39; in key:
+	session = session_specifics_pb2.SessionSpecifics.FromString(value)
+
+db.close()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;From here, the key remaining piece to understand is how to figure out which tabs are open on which devices.&lt;/p&gt;
+&lt;p&gt;Each of the SessionSpecifics protos has an attribute: &lt;code&gt;session_tag&lt;/code&gt; which uniquely identifies a session. For each &lt;code&gt;session_tag&lt;/code&gt;, there is a single SessionSpecifics proto with a &lt;code&gt;client_name&lt;/code&gt; attribute: this indicates which device the session lives on. Each of the remaining SessionSpecifics protos with that same tag correspond to a single tab, and the currently open URL for that tab comes from &lt;code&gt;session.tab.navigation[-1].virtual_url&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;From there, it&#39;s just a matter of matching the URLs against my list of distracting websites, and sending the data off to Bieber Bot. Distractions, detected. :D&lt;/p&gt;
+&lt;h2 id=&#34;what-next&#34;&gt;What next?&lt;/h2&gt;
+&lt;p&gt;I&#39;ll tweak my own distraction detection setup to something that makes sense for me. Instead of immediate messages from Bieber Bot, I&#39;ll have him try to keep my total senseless scrolling for a day to a moderate amount. I&#39;ll have him be particularly vigilant about helping me keep my morning scrolling from going on too long.&lt;/p&gt;
+&lt;p&gt;I&#39;ll also send this snippet around to folks interested in building similar tools. While I won&#39;t be turning this into a product for the masses, I&#39;m hopeful that the method does get picked up by projects like Intention, ActivityWatch, and other tools that aim to help people maintain healthy browsing habits.&lt;/p&gt;
+&lt;p&gt;I don&#39;t think it&#39;s common knowledge that with account syncing, rich data about your mobile browsing is available on your computer. So today, there isn&#39;t much tooling that takes advantage of this. If you work on a product in this space, well, now you&#39;ve had a glimpse of what data&#39;s available and what it can do. Consider using this approach to extend the reach of your product.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Will it be harder to write snippets now?</title>
       <link>https://davidbieber.com/snippets/2021-01-09-will-it-be-harder-to-write-snippets-now/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
