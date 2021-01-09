@@ -13,6 +13,19 @@
     </image>
     
     <item>
+      <title>Distraction detection: Proto acquired!</title>
+      <link>https://davidbieber.com/snippets/2021-01-08-distraction-detection-proto-acquired/</link>
+      <pubDate>Fri, 08 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-08-distraction-detection-proto-acquired/</guid>
+      <description>&lt;p&gt;I&#39;m &lt;strong&gt;inching&lt;/strong&gt; my way toward writing a distraction detector that will allow Bieber Bot to notice when I&#39;m distracted on my phone and stage an intervention. (Wow!, I first pitched this idea (to myself) &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&#34;&gt;in one of my very first snippets&lt;/a&gt;, back in 2019.)&lt;/p&gt;
+&lt;p&gt;Most recently &lt;a href=&#34;https://davidbieber.com/snippets/2021-01-01-programmatically-accessing-chromes-tabs-from-other-devices-data/&#34;&gt;I figured out where Chrome&#39;s &amp;ldquo;Tabs from other devices&amp;rdquo; data is stored&lt;/a&gt;. However, I couldn&#39;t parse the data because I didn&#39;t know what the protocol buffer definition being used was.&lt;/p&gt;
+&lt;p&gt;Today, I heard back from someone who works on Chrome. I&#39;ve acquired the proto definitions!&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://source.chromium.org/chromium/chromium/src/+/master:components/sync/protocol/session_specifics.proto&#34;&gt;proto definitions are here&lt;/a&gt; and &lt;a href=&#34;https://source.chromium.org/chromium/chromium/src/+/master:components/sync_sessions/session_store.cc&#34;&gt;the code that persists the data to disk is here&lt;/a&gt;. I can successfully bulid the protos (using protoc) and I can parse my session data from the leveldb database. Progress!&lt;/p&gt;
+&lt;p&gt;The trouble now is my phone seems to have stopped syncing its tabs two days ago. Weird! One more mystery to solve I guess&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>A social network for slow long-form discussions</title>
       <link>https://davidbieber.com/snippets/2021-01-07-a-social-network-for-slow-long-form-discussions/</link>
       <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
