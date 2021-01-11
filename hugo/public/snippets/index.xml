@@ -13,6 +13,23 @@
     </image>
     
     <item>
+      <title>A filesystem for social media</title>
+      <link>https://davidbieber.com/snippets/2021-01-10-a-filesystem-for-social-media/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-10-a-filesystem-for-social-media/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://omar.website/&#34;&gt;Omar Riswan&lt;/a&gt; has an excellent project called &lt;a href=&#34;https://omar.website/tabfs/&#34;&gt;TabFS&lt;/a&gt; that takes your browser tabs and exposes them to you as a filesystem. When you run &lt;code&gt;ls&lt;/code&gt;, you see a list of all your open tabs. &lt;code&gt;rm&lt;/code&gt; on a tab directory closes the tab. Inspecting the tab with standard tools (&lt;code&gt;ls&lt;/code&gt;, &lt;code&gt;cat&lt;/code&gt;, &lt;code&gt;rm&lt;/code&gt;, etc) allow you to do things like reading the title or contents of the tab (yes, the whole tab&#39;s contents!), closing the tab, or running javascript in the tab. The whole thing is quite clever.&lt;/p&gt;
+&lt;p&gt;Inspired by TabFS, I envision another non-conventional filesystem: Social Media FS.&lt;/p&gt;
+&lt;p&gt;First you mount smfs and authenticate with your social media providers. Then if you &lt;code&gt;ls&lt;/code&gt; the mounted directory, you can see each of the places you can read from and write to on social media.&lt;/p&gt;
+&lt;p&gt;There&#39;s a directory full of your chat threads. The timestamps indicate when they were created and when they were most recently modified. You can read the contents of the chat, or send a new message just as easily (and via the same tools) as you would write a file to disk.&lt;/p&gt;
+&lt;p&gt;There&#39;s a directory of all the Facebook posts made by all your friends and all the groups you follow. Each post has a file with its contents, and also one with all the comments and reactions to it. You can make a new post or add a new comment the same way you&#39;d make a new file.&lt;/p&gt;
+&lt;p&gt;You can use standard tools for monitoring for new content. I like to use &lt;a href=&#34;https://pythonhosted.org/watchdog/&#34;&gt;Python&#39;s watchdog&lt;/a&gt; for this.&lt;/p&gt;
+&lt;p&gt;There&#39;s a directory for ads too, which you&#39;re welcome to peruse or delete as you see fit.&lt;/p&gt;
+&lt;p&gt;Reacting to a twitter post, sending a DM, receiving discord or slack or signal messages&amp;hellip; all of these are organized as files and folders, and actions can be performed simply through file reads and writes.&lt;/p&gt;
+&lt;p&gt;I&#39;d sure love to use a filesystem like this, and &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;Bieber Bot&lt;/a&gt; would too.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Mobile Distraction Detection, at last</title>
       <link>https://davidbieber.com/snippets/2021-01-09-mobile-distraction-detection-at-last/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
