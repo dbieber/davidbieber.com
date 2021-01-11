@@ -48,7 +48,7 @@
 &lt;p&gt;The data is stored in a LevelDB database (this is unusual for Chrome; most of the rest of your Chrome data is stored in sqlite3 databases). LevelDB is an efficient key-value store, which was written by Jeff Dean and Sanjay Ghemawat back in 2011. The keys which contain the synced tab data are those prefixed with &amp;ldquo;session-dt&amp;rdquo;. The corresponding values are &lt;code&gt;SessionSpecifics&lt;/code&gt; protocol buffers. &lt;a href=&#34;https://source.chromium.org/chromium/chromium/src/+/master:components/sync/protocol/session_specifics.proto&#34;&gt;The protocol buffer definition is available here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Before parsing the sync data, I always make a copy of it first, and then I only ever open the copy. This ensures that Chrome doesn&#39;t have a lock on the database, and isn&#39;t editing it concurrently with my own program reading it.&lt;/p&gt;
 &lt;p&gt;I use the Python library &lt;code&gt;plyvel&lt;/code&gt; to parse the LevelDB database: &lt;code&gt;db = plyvel.DB(path_to_copy_of_leveldb_directory)&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;In order to use the protobuf definition, I compiled it first with protoc: &lt;code&gt;protoc -I /chromium/ chromium/components/sync/protocol/*.proto --python_out=dbieber/distraction_detection/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In order to use the protobuf definition, I compiled it first with protoc: &lt;code&gt;protoc -I chromium/ chromium/components/sync/protocol/*.proto --python_out=dbieber/distraction_detection/&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Putting these pieces together, accessing the session data looks like this:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import plyvel
 from components.sync.protocol import session_specifics_pb2
