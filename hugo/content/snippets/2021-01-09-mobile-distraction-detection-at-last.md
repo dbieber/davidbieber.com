@@ -33,7 +33,7 @@ Before parsing the sync data, I always make a copy of it first, and then I only 
 
 I use the Python library `plyvel` to parse the LevelDB database: `db = plyvel.DB(path_to_copy_of_leveldb_directory)`.
 
-In order to use the protobuf definition, I compiled it first with protoc: `protoc -I /chromium/ chromium/components/sync/protocol/*.proto --python_out=dbieber/distraction_detection/`
+In order to use the protobuf definition, I compiled it first with protoc: `protoc -I chromium/ chromium/components/sync/protocol/*.proto --python_out=dbieber/distraction_detection/`
 
 Putting these pieces together, accessing the session data looks like this:
 
