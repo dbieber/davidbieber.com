@@ -13,6 +13,88 @@
     </image>
     
     <item>
+      <title>Python hoist()</title>
+      <link>https://davidbieber.com/snippets/2021-01-16-python-hoist/</link>
+      <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-16-python-hoist/</guid>
+      <description>&lt;p&gt;I wrote a little decorator function called &lt;code&gt;hoist&lt;/code&gt;. Calling &lt;code&gt;hoist(f)&lt;/code&gt; transforms &lt;code&gt;f&lt;/code&gt;, such that instead of returning the return value of &lt;code&gt;f&lt;/code&gt;, it returns the values of all local variables in addition to the return value of &lt;code&gt;f&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can use it like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def f(x):
+  y = x + 1
+  z = y * 2
+  return z + 1
+
+f(4) == 11
+hoist(f)(4) == {&#39;x&#39;: 4, &#39;y&#39;: 5, &#39;z&#39;: 10, &#39;return&#39;: 11}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Make sense? The result of &lt;code&gt;f(4)&lt;/code&gt; is just the return value, whereas &lt;code&gt;hoist(f)(4)&lt;/code&gt; gives the values of all local variables.&lt;/p&gt;
+&lt;p&gt;This can be a useful debugging tool, allowing access to the internal state of a function. It works by setting a trace function with Python&#39;s &lt;code&gt;sys.settrace&lt;/code&gt;, as you can see in its definition.&lt;/p&gt;
+&lt;p&gt;Here&#39;s the definition of &lt;code&gt;hoist&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import inspect
+import functools
+
+
+class Collection(object):
+  &amp;quot;&amp;quot;&amp;quot;The full set of variables over time.&amp;quot;&amp;quot;&amp;quot;
+
+  def __init__(self):
+    self.values = {}
+
+  def update(self, values):
+    self.values.update(values)
+
+  def set_return(self, arg):
+    self.values[&#39;return&#39;] = arg
+
+  def __repr__(self):
+    return repr(self.values)
+
+
+def make_trace(results, fn):
+  def trace_local(frame, event, arg):
+    # event: &#39;call&#39;, &#39;line&#39;, &#39;return&#39;, &#39;exception&#39; or &#39;opcode&#39;
+    if event == &#39;line&#39;:
+      arg_info = inspect.getargvalues(frame)
+      results.update(arg_info.locals.copy())
+    if event == &#39;return&#39;:
+      arg_info = inspect.getargvalues(frame)
+      values = arg_info.locals.copy()
+      results.update(values)
+      results.set_return(arg)
+    if event == &#39;call&#39;:
+      return fn
+
+  def trace_global(frame, event, arg):
+    if event == &#39;call&#39;:
+      return trace_local
+  return trace_global
+
+
+def hoist(f):
+
+  @functools.wraps(f)
+  def new_f(*args, **kwargs):
+    original_trace_fn = sys.gettrace()
+
+    results = Collection()
+    trace_fn = make_trace(results, original_trace_fn)
+
+    sys.settrace(trace_fn)
+    f(*args, **kwargs)
+    sys.settrace(original_trace_fn)
+
+    return results
+
+  return new_f
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Some ideas for extensions to &lt;code&gt;hoist&lt;/code&gt; follow. Feel free to go ahead and implement these.&lt;/p&gt;
+&lt;p&gt;(1) Modify &lt;code&gt;hoist&lt;/code&gt; so the outputs are accessible via dot-notation.&lt;/p&gt;
+&lt;p&gt;(2) Modify &lt;code&gt;hoist&lt;/code&gt; so it returns all values taken on by all variables during the execution of &lt;code&gt;f&lt;/code&gt;.
+Make it so that &lt;code&gt;hoist(f)(x)[&#39;value.3&#39;]&lt;/code&gt; returns the third value taken on by the variable &lt;code&gt;value&lt;/code&gt; in the call to &lt;code&gt;f(x)&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Peer Learning Group</title>
       <link>https://davidbieber.com/snippets/2021-01-14-peer-learning-group/</link>
       <pubDate>Thu, 14 Jan 2021 01:00:00 +0000</pubDate>
