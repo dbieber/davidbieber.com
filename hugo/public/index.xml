@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 17 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 18 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,83 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python hoist: immediate locals only</title>
+      <link>https://davidbieber.com/snippets/2021-01-18-python-hoist-locals-only/</link>
+      <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-18-python-hoist-locals-only/</guid>
+      <description>&lt;p&gt;The implementation of &lt;code&gt;hoist&lt;/code&gt; in my earlier snippet returned the values of local variables of all functions called by the hoisted function. This new version only returns the locals of the hoisted function.&lt;/p&gt;
+&lt;p&gt;As before, you can use it like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def f(x):
+  y = x + 1
+  z = y * 2
+  return z + 1
+
+f(4) == 11
+hoist(f)(4) == {&#39;x&#39;: 4, &#39;y&#39;: 5, &#39;z&#39;: 10, &#39;return&#39;: 11}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here&#39;s another usage example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def f(x):
+  y = messy_g(x + 1)
+  return y + 1
+
+def messy_g(z):
+  q = z * 9
+  w = q / 3
+  return w + 1
+
+f(1) == 8
+hoist(f)(1) == {&#39;x&#39;: 1, &#39;y&#39;: 7, &#39;return&#39;: 8}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Notice in this example that the local variables used by &lt;code&gt;messy_g&lt;/code&gt; are not returned by &lt;code&gt;hoist(f)&lt;/code&gt;. Only &lt;code&gt;f&lt;/code&gt;&#39;s local variables are returned.&lt;/p&gt;
+&lt;p&gt;Here&#39;s the implementation.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import functools
+import inspect
+import sys
+
+def make_trace(results, f, original_trace_fn):
+  def trace_local(frame, event, arg):
+    # event: &#39;call&#39;, &#39;line&#39;, &#39;return&#39;, &#39;exception&#39; or &#39;opcode&#39;
+    if event == &#39;line&#39;:
+      arg_info = inspect.getargvalues(frame)
+      results.update(arg_info.locals.copy())
+    if event == &#39;return&#39;:
+      arg_info = inspect.getargvalues(frame)
+      values = arg_info.locals.copy()
+      results.update(values)
+      results[&#39;return&#39;] = arg
+    if event == &#39;call&#39;:
+      return original_trace_fn
+
+  def trace_global(frame, event, arg):
+    if event == &#39;call&#39;:
+      info = inspect.getframeinfo(frame)
+      info_parent = inspect.getframeinfo(frame.f_back)
+      if info.function == f.__name__ and info_parent.function == &#39;hoisted_f__&#39;:
+        return trace_local
+  return trace_global
+
+
+def hoist(f):
+
+  @functools.wraps(f)
+  def hoisted_f__(*args, **kwargs):
+    original_trace_fn = sys.gettrace()
+
+    results = {}
+    trace_fn = make_trace(results, f, original_trace_fn)
+
+    sys.settrace(trace_fn)
+    f(*args, **kwargs)
+    sys.settrace(original_trace_fn)
+
+    return results
+
+  return hoisted_f__
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
