@@ -17,7 +17,7 @@
       <link>https://davidbieber.com/snippets/2021-01-18-python-hoist-locals-only/</link>
       <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2021-01-18-python-hoist-locals-only/</guid>
-      <description>&lt;p&gt;The implementation of &lt;code&gt;hoist&lt;/code&gt; in my earlier snippet returned the values of local variables of all functions called by the hoisted function. This new version only returns the locals of the hoisted function.&lt;/p&gt;
+      <description>&lt;p&gt;The implementation of &lt;code&gt;hoist&lt;/code&gt; in my &lt;a href=&#34;https://davidbieber.com/snippets/2021-01-16-python-hoist/&#34;&gt;earlier snippet&lt;/a&gt; returned the values of local variables of all functions called by the hoisted function. This new version only returns the locals of the hoisted function.&lt;/p&gt;
 &lt;p&gt;As before, you can use it like this:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def f(x):
   y = x + 1
