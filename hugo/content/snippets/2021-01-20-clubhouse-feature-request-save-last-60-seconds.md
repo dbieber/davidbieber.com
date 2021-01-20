@@ -5,7 +5,7 @@ uid = "PWXWXtu-7"
 
 +++
 
-I have a feature request for Clubhouse. Zoom, Meet, Skype, if you're listening, this is a feature request for you all too. The request is a button to save the _previous_ 60 seconds of audio. Details follow.
+I have a feature request for Clubhouse. Zoom, Meet, Skype, if you're listening, this is a feature request for you all too. The request is a button to save the _previous_ 60 seconds of audio. Maybe you're interested because people will share the clips on social media and drive more traffic back to CH 📈🤷‍♂️. I just want the feature for note-taking 📝. Details follow.
 
 ## The button
 
