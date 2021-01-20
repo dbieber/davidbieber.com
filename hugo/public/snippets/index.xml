@@ -28,7 +28,7 @@
 &lt;p&gt;If someone does click save, the speakers still can choose not to have their own audio saved. Since everyone&#39;s on their own phone, it&#39;s possible to save an audio clip with e.g. everyone-except-David&#39;s audio, if David decides they don&#39;t want their audio saved.&lt;/p&gt;
 &lt;p&gt;Maybe David never wants their audio saved except when he explicitly allows it. That&#39;s fine. That&#39;s a setting.&lt;/p&gt;
 &lt;h2 id=&#34;bonus-points&#34;&gt;Bonus points&lt;/h2&gt;
-&lt;p&gt;Bonus points for automatic transcription. Additional bonus points for saving the audio clip and its transcription to a Roam database.&lt;/p&gt;
+&lt;p&gt;Bonus points for automatic transcription. Additional bonus points for saving the audio clip and its transcription to a Roam database. Still more bonus points for allowing sharing the clips to TikTok or Instagram or wherever, but I don&#39;t use those, so someone else will have to provide the points.&lt;/p&gt;
 &lt;h2 id=&#34;prior-art&#34;&gt;Prior Art&lt;/h2&gt;
 &lt;p&gt;OBS Studio has a feature for recording a rolling video buffer. Streamers use it for instant replays, for example. I use it myself for screen recordings sometimes, so I can decide retroactively that something was worth saving, without having to waste gigabytes of storage recording everything.&lt;/p&gt;
 &lt;p&gt;There have been apps for at least a decade that offer cameras and audio recorders with this circular buffer feature to allow capturing the past. However, it&#39;s never been integrated into a social product before, as far as I&#39;m aware. Clubhouse, let&#39;s change that.&lt;/p&gt;
