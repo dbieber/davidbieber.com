@@ -31,6 +31,6 @@ Bonus points for automatic transcription. Additional bonus points for saving the
 
 ## Prior Art
 
-OBS Studio has a feature for recording a rolling video buffer. Streamers use it for instant replays, for example. I use it myself for screen recordings sometimes, so I can decide retroactively that something was worth saving, without having to waste gigabytes of storage recording everything.
+[OBS Studio](https://obsproject.com/) has a feature for recording a circular video buffer. They call it the "replay buffer." Streamers use it for instant replays, for example. I use it myself for screen recordings sometimes, so I can decide retroactively that something was worth saving, without having to waste gigabytes of storage recording everything.
 
-There have been apps for at least a decade that offer cameras and audio recorders with this circular buffer feature to allow capturing the past. However, it's never been integrated into a social product before, as far as I'm aware. Clubhouse, let's change that.
+There have been [apps](https://apps.apple.com/us/app/heard/id615420427) for a long time now offering cameras and audio recorders with this circular buffer feature to allow capturing the past. However, it's never been integrated into a social product before, as far as I'm aware. Clubhouse, let's change that.
