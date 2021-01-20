@@ -27,7 +27,7 @@ Maybe David never wants their audio saved except when he explicitly allows it. T
 
 ## Bonus points
 
-Bonus points for automatic transcription. Additional bonus points for saving the audio clip and its transcription to a Roam database.
+Bonus points for automatic transcription. Additional bonus points for saving the audio clip and its transcription to a Roam database. Still more bonus points for allowing sharing the clips to TikTok or Instagram or wherever, but I don't use those, so someone else will have to provide the points.
 
 ## Prior Art
 
