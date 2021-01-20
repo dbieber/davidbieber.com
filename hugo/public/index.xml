@@ -296,6 +296,29 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
     </item>
     
     <item>
+      <title>Clubhouse feature request: save last 60 seconds</title>
+      <link>https://davidbieber.com/snippets/2021-01-20-clubhouse-feature-request-save-last-60-seconds/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-20-clubhouse-feature-request-save-last-60-seconds/</guid>
+      <description>&lt;p&gt;I have a feature request for Clubhouse. Zoom, Meet, Skype, if you&#39;re listening, this is a feature request for you all too. The request is a button to save the &lt;em&gt;previous&lt;/em&gt; 60 seconds of audio. Details follow.&lt;/p&gt;
+&lt;h2 id=&#34;the-button&#34;&gt;The button&lt;/h2&gt;
+&lt;p&gt;A little floppy disk save icon. 💾. Nonintrusive. When clicked, it triggers a save.&lt;/p&gt;
+&lt;h2 id=&#34;just-60-seconds&#34;&gt;Just 60 seconds&lt;/h2&gt;
+&lt;p&gt;The previous 60 seconds of audio are saved. This means a circular buffer of 60 seconds of audio is being stored at all times.&lt;/p&gt;
+&lt;p&gt;Don&#39;t just blindly save everything, because that&#39;s a lot of data to wade through (and to store). I just want to save the good parts. So when someone says something insightful, I click save. The rest is lost to history.&lt;/p&gt;
+&lt;h2 id=&#34;respecting-privacy&#34;&gt;Respecting Privacy&lt;/h2&gt;
+&lt;p&gt;If no one clicks save, the audio is gone.&lt;/p&gt;
+&lt;p&gt;If someone does click save, the speakers still can choose not to have their own audio saved. Since everyone&#39;s on their own phone, it&#39;s possible to save an audio clip with e.g. everyone-except-David&#39;s audio, if David decides they don&#39;t want their audio saved.&lt;/p&gt;
+&lt;p&gt;Maybe David never wants their audio saved except when he explicitly allows it. That&#39;s fine. That&#39;s a setting.&lt;/p&gt;
+&lt;h2 id=&#34;bonus-points&#34;&gt;Bonus points&lt;/h2&gt;
+&lt;p&gt;Bonus points for automatic transcription. Additional bonus points for saving the audio clip and its transcription to a Roam database.&lt;/p&gt;
+&lt;h2 id=&#34;prior-art&#34;&gt;Prior Art&lt;/h2&gt;
+&lt;p&gt;OBS Studio has a feature for recording a rolling video buffer. Streamers use it for instant replays, for example. I use it myself for screen recordings sometimes, so I can decide retroactively that something was worth saving, without having to waste gigabytes of storage recording everything.&lt;/p&gt;
+&lt;p&gt;There have been apps for at least a decade that offer cameras and audio recorders with this circular buffer feature to allow capturing the past. However, it&#39;s never been integrated into a social product before, as far as I&#39;m aware. Clubhouse, let&#39;s change that.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Python hoist: immediate locals only</title>
       <link>https://davidbieber.com/snippets/2021-01-18-python-hoist-locals-only/</link>
       <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
