@@ -9,7 +9,7 @@ I have a feature request for Clubhouse. Zoom, Meet, Skype, if you're listening, 
 
 ## The button
 
-A little floppy disk save icon. 💾. Nonintrusive. When clicked, it triggers a save.
+A little floppy disk save icon. 💾. Non intrusive. When clicked, it triggers a save.
 
 ## Just 60 seconds
 
