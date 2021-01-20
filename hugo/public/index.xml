@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 18 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 20 Jan 2021 02:04:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,18 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Now</title>
+      <link>https://davidbieber.com/now/</link>
+      <pubDate>Wed, 20 Jan 2021 02:04:00 +0000</pubDate>
+      <guid>https://davidbieber.com/now/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Last updated on 2021-01-20.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Trying out #Fiverr.&lt;/p&gt;
+&lt;p&gt;Setting up my &lt;a href=&#34;http://nownownow.com&#34;&gt;&amp;ldquo;now page&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Integrating Roam Research and Snippets.&lt;/p&gt;
 </description>
     </item>
     
