@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -53,7 +53,7 @@ The plugin would do two main things automatically:
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -65,8 +65,8 @@ The plugin would do two main things automatically:
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -215,13 +215,15 @@ The plugin would do two main things automatically:
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -231,7 +233,7 @@ The plugin would do two main things automatically:
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -272,8 +274,8 @@ The plugin would do two main things automatically:
   <meta property="og:title" content="Taking Notes While Browsing the Web: An Idea for a Roam Research Plugin | David Bieber">
   <meta property="og:description" content="As I&rsquo;m browsing the web, I&rsquo;d like to be able to take notes in Roam Research. In this post, I share an idea I have for a plugin or browser extension that I think would improve the experience of taking notes in Roam while browsing the web.
 The plugin would do two main things automatically:
-  It would automatically insert some browsing history information into your Roam database while you browse the internet."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
-  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
+  It would automatically insert some browsing history information into your Roam database while you browse the internet."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-05-15T00:00:00&#43;00:00">
@@ -337,10 +339,15 @@ The plugin would do two main things automatically:
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -520,7 +527,8 @@ The plugin would do two main things automatically:
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>As I&rsquo;m browsing the web, I&rsquo;d like to be able to take notes in <a href="https://roamresearch.com/">Roam Research</a>. In this post, I share an idea I have for a plugin or browser extension that I think would improve the experience of taking notes in Roam while browsing the web.</p>
+      <p>As I&rsquo;m browsing the web, I&rsquo;d like to be able to take notes in 
+<a href="https://roamresearch.com/" target="_blank" rel="noopener">Roam Research</a>. In this post, I share an idea I have for a plugin or browser extension that I think would improve the experience of taking notes in Roam while browsing the web.</p>
 <p>The plugin would do two main things automatically:</p>
 <ol>
 <li>
@@ -547,12 +555,17 @@ The plugin would do two main things automatically:
 <p>Additionally, the tool should add a little bit of metadata to the pages it&rsquo;s generating. On each of the autogenerated Roam pages, it would be great to see <em>when</em> I visited the website, and what was the referring page. For websites visited multiple times, seeing the earliest and most recent visit times, and the number of times I visited that website would be useful too. Total time spent on the website would be a nice bonus.</p>
 <h2 id="making-this-a-reality">Making this a Reality</h2>
 <p>In the previous section I shared the details that I think would make this work well from a user experience perspective. How about from the technical side?</p>
-<p>I think it would make sense to implement this as a browser extension (though a <a href="http://www.tampermonkey.net/"><em>user script</em></a> could work too).
-<a href="http://dkthehuman.com/">DK the Human</a>, author of the <a href="https://chrome.google.com/webstore/detail/intention/dladanhaondcgpahgiflodhckhoeohoe">Intention</a> browser extension
-has made his <a href="https://github.com/dkthehuman/extension-starter-kit">browser extension starter kit</a> freely available.
+<p>I think it would make sense to implement this as a browser extension (though a 
+<a href="http://www.tampermonkey.net/" target="_blank" rel="noopener"><em>user script</em></a> could work too).
+
+<a href="http://dkthehuman.com/" target="_blank" rel="noopener">DK the Human</a>, author of the 
+<a href="https://chrome.google.com/webstore/detail/intention/dladanhaondcgpahgiflodhckhoeohoe" target="_blank" rel="noopener">Intention</a> browser extension
+has made his 
+<a href="https://github.com/dkthehuman/extension-starter-kit" target="_blank" rel="noopener">browser extension starter kit</a> freely available.
 To notice when what web page you&rsquo;re browsing and determine whether it constitutes a new page, the extension would need to request permission to view your activity on all websites.
 For making additions to a Roam database automatically, I expect the extension would have to navigate to the appropriate Roam page in the background, and would then mimic the user actions to make the desired changes.</p>
-<p>If you&rsquo;re interested in turning this idea into a reality or want to discuss it further, don&rsquo;t hesitate to <a href="mailto:david810+blog@gmail.com">reach out</a>! I&rsquo;d be excited to try a workflow like this, but don&rsquo;t anticipate building it myself in the near future.</p>
+<p>If you&rsquo;re interested in turning this idea into a reality or want to discuss it further, don&rsquo;t hesitate to 
+<a href="mailto:david810&#43;blog@gmail.com">reach out</a>! I&rsquo;d be excited to try a workflow like this, but don&rsquo;t anticipate building it myself in the near future.</p>
 
     </div>
 
@@ -576,7 +589,7 @@ For making additions to a Roam database automatically, I expect the extension wo
 
 
   
-
+  
 
 
 
@@ -586,6 +599,7 @@ For making additions to a Roam database automatically, I expect the extension wo
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -601,6 +615,9 @@ For making additions to a Roam database automatically, I expect the extension wo
 
     </div>
   </div>
+
+
+
 
 
 
@@ -632,11 +649,11 @@ For making additions to a Roam database automatically, I expect the extension wo
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -648,6 +665,11 @@ For making additions to a Roam database automatically, I expect the extension wo
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -716,7 +738,7 @@ For making additions to a Roam database automatically, I expect the extension wo
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

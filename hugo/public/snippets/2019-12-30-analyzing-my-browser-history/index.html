@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -51,7 +51,7 @@
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -63,8 +63,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -213,13 +213,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -229,7 +231,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -268,8 +270,8 @@
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/">
   <meta property="og:title" content="Planning to Analyze My Browsing History | David Bieber">
-  <meta property="og:description" content="I&#39;m planning to analyze my browser history. This is my plan."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
-  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="I&#39;m planning to analyze my browser history. This is my plan."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2019-12-30T00:00:00&#43;00:00">
@@ -333,10 +335,15 @@
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -517,13 +524,20 @@
 
     <div class="article-style" id="article-content">
       <p>I&rsquo;ve learned recently that programmatically accessing your browsing history is rather straightforward. Really exciting! This is rich data, from which I think I&rsquo;ll be able to learn a lot and hopefully combat unwanted distractions.</p>
-<p>First let me describe what information is available, and how you can access it. Then, let&rsquo;s discuss what you can do with this data. As I&rsquo;ve written about previously <a href="/projects/bieber-bot/">[1]</a> <a href="https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/">[2]</a>, I already have a chat bot system in place, which will be able to take advantage of this data to e.g. help me stay focused.</p>
+<p>First let me describe what information is available, and how you can access it. Then, let&rsquo;s discuss what you can do with this data. As I&rsquo;ve written about previously 
+<a href="/projects/bieber-bot/">[1]</a> 
+<a href="https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/" target="_blank" rel="noopener">[2]</a>, I already have a chat bot system in place, which will be able to take advantage of this data to e.g. help me stay focused.</p>
 <h4 id="accessing-your-browser-history">Accessing Your Browser History</h4>
-<p>Thank you to GitHub user <a href="https://github.com/dropmeaword">dropmeaword</a> for compiling <a href="https://gist.github.com/dropmeaword/9372cbeb29e8390521c2">this gist</a> explaining how to access your browser history via sqlite3. The gist covers Safari, Chrome, and Firefox. In this post, I&rsquo;ll just focus on Chrome on OSX, since that&rsquo;s my primary mode of browsing.</p>
+<p>Thank you to GitHub user 
+<a href="https://github.com/dropmeaword" target="_blank" rel="noopener">dropmeaword</a> for compiling 
+<a href="https://gist.github.com/dropmeaword/9372cbeb29e8390521c2" target="_blank" rel="noopener">this gist</a> explaining how to access your browser history via sqlite3. The gist covers Safari, Chrome, and Firefox. In this post, I&rsquo;ll just focus on Chrome on OSX, since that&rsquo;s my primary mode of browsing.</p>
 <p>My Chrome browsing history is located at <code>~/Library/Application Support/Google/Chrome/Default/History</code>. Since I use multiple profiles in Chrome, each profile gets its own browsing history, e.g. located at <code>~/Library/Application Support/Google/Chrome/Profile 1/History</code>.</p>
 <p>Each browsing history is stored as a sqlite3 database. Before analyzing the data, I recommend making a copy of it (<code>cp ~/Library/Application\ Support/Google/Chrome/Default/History my-history</code>); this way your history database (a) wont be locked by Chrome while you&rsquo;re trying to access it, and (b) wont change while you&rsquo;re looking at it, which could cause confusion and inconsistencies in your results.</p>
 <p>This means you can browse it interactively using the sqlite3 REPL by running <code>sqlite3 PATH_TO_DATABASE</code>.</p>
-<p>There are also libraries available for accessing sqlite3 databases in just about every language. For Python, there&rsquo;s the <a href="https://docs.python.org/3/library/sqlite3.html">sqlite3</a> library. Go has <a href="https://godoc.org/github.com/mattn/go-sqlite3">go-sqlite3</a>. JavaScript has <a href="https://www.sqlitetutorial.net/sqlite-nodejs/">this sqlite3 module</a>. However you most like scripting, you&rsquo;ll have a familiar way of accessing the data.</p>
+<p>There are also libraries available for accessing sqlite3 databases in just about every language. For Python, there&rsquo;s the 
+<a href="https://docs.python.org/3/library/sqlite3.html" target="_blank" rel="noopener">sqlite3</a> library. Go has 
+<a href="https://godoc.org/github.com/mattn/go-sqlite3" target="_blank" rel="noopener">go-sqlite3</a>. JavaScript has 
+<a href="https://www.sqlitetutorial.net/sqlite-nodejs/" target="_blank" rel="noopener">this sqlite3 module</a>. However you most like scripting, you&rsquo;ll have a familiar way of accessing the data.</p>
 <h4 id="the-available-data">The Available Data</h4>
 <p>Running sqlite3 macro <code>.tables</code>, we see the following tables are available.</p>
 <table>
@@ -638,7 +652,8 @@
 <tr>
 <td>transition</td>
 <td>Bit vector</td>
-<td>Represents the <a href="https://developer.chrome.com/extensions/history#transition_types">transition type</a> (how you got to the URL)</td>
+<td>Represents the 
+<a href="https://developer.chrome.com/extensions/history#transition_types" target="_blank" rel="noopener">transition type</a> (how you got to the URL)</td>
 </tr>
 <tr>
 <td>segment_id</td>
@@ -668,7 +683,8 @@
 <li>Websites that frequently lead to known-distractor websites (e.g. Reddit, Hacker News, Twitter, YouTube)</li>
 <li>We can do an analysis by time of day (or day of week), to figure out what sites occupy my time late at night vs during daylight hours.</li>
 </ul>
-<p>These are somewhat interesting, but what I&rsquo;m particularly excited for is the ongoing analysis that <a href="/projects/bieber-bot">Bieber Bot</a> can provide by accessing the data.</p>
+<p>These are somewhat interesting, but what I&rsquo;m particularly excited for is the ongoing analysis that 
+<a href="/projects/bieber-bot">Bieber Bot</a> can provide by accessing the data.</p>
 <p>Here is a brainstorm of the more real-time actionable insights we might extract from this data.</p>
 <ul>
 <li>Bieber Bot could ping me if it looks like I&rsquo;m spending too much time on a distraction website.</li>
@@ -739,7 +755,7 @@ Then I would be able to view my &ldquo;saved for later&rdquo; links when I have 
 
 
   
-
+  
 
 
 
@@ -749,6 +765,7 @@ Then I would be able to view my &ldquo;saved for later&rdquo; links when I have 
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -764,6 +781,9 @@ Then I would be able to view my &ldquo;saved for later&rdquo; links when I have 
 
     </div>
   </div>
+
+
+
 
 
 
@@ -795,11 +815,11 @@ Then I would be able to view my &ldquo;saved for later&rdquo; links when I have 
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -811,6 +831,11 @@ Then I would be able to view my &ldquo;saved for later&rdquo; links when I have 
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -879,7 +904,7 @@ Then I would be able to view my &ldquo;saved for later&rdquo; links when I have 
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

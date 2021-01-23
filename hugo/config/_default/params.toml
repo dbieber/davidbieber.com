@@ -3,9 +3,6 @@ role = "Software Engineer"
 
 organizations = [ { name = "Google Brain", url = "" } ]
 
-gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-
 # Details for the Contact Widget
 email = "dbieber@google.com"
 # address = "1600 Amphitheater Parkway, Mountain View, CA"
@@ -27,7 +24,8 @@ font_size = "L"
 # Custom javascript
 plugins_js = []
 
-# Description for social sharing and search engines. If undefined, author role is used in place.
+# Description for social sharing and search engines.
+# If undefined, author role is used in place.
 description = "davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot."
 
 # Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
@@ -123,3 +121,7 @@ contact_links = [
 [marketing]
   google_analytics = "UA-34570499-2"
   google_tag_manager = ""
+
+[avatar]
+  gravatar = true
+  shape = "circle"

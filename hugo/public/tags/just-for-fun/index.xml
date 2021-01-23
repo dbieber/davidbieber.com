@@ -7,7 +7,7 @@
     <description>Just for Fun</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://davidbieber.com/img/portrait.jpg</url>
+      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>Just for Fun</title>
       <link>https://davidbieber.com/tags/just-for-fun/</link>
     </image>
@@ -17,7 +17,8 @@
       <link>https://davidbieber.com/projects/bieber-bot/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/bieber-bot/</guid>
-      <description>&lt;p&gt;Bieber Bot is a highly motivated robot that assists me with my financials, &lt;a href=&#34;https://twitter.com/Bieber&#34;&gt;tweets&lt;/a&gt; on my behalf, and keeps me productive when my brain feels otherwise.&lt;/p&gt;
+      <description>&lt;p&gt;Bieber Bot is a highly motivated robot that assists me with my financials, 
+&lt;a href=&#34;https://twitter.com/Bieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tweets&lt;/a&gt; on my behalf, and keeps me productive when my brain feels otherwise.&lt;/p&gt;
 &lt;h2 id=&#34;is-bieber-bot-related-to-justin-bieber&#34;&gt;Is Bieber Bot related to Justin Bieber?&lt;/h2&gt;
 &lt;p&gt;No, no relation. Bieber Bot is my own creation.&lt;/p&gt;
 &lt;h2 id=&#34;how-does-bieber-bot-work&#34;&gt;How does Bieber Bot work?&lt;/h2&gt;
@@ -38,7 +39,8 @@
 &lt;li&gt;Bieber Bot helps me to get to sleep at a reasonable hour&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;can-you-tell-me-all-of-bieber-bots-capabilities-again-but-this-time-make-each-one-into-a-pun-about-a-justin-bieber-song&#34;&gt;Can you tell me all of Bieber Bot&amp;rsquo;s capabilities again, but this time make each one into a pun about a Justin Bieber song?&lt;/h2&gt;
-&lt;p&gt;Sure. See the hashtag &lt;a href=&#34;https://twitter.com/search?f=tweets&amp;amp;q=%23BieberBotPuns%20OR%20%23BieberBotPun&#34;&gt;#BieberBotPuns&lt;/a&gt; on twitter.&lt;/p&gt;
+&lt;p&gt;Sure. See the hashtag 
+&lt;a href=&#34;https://twitter.com/search?f=tweets&amp;amp;q=%23BieberBotPuns%20OR%20%23BieberBotPun&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#BieberBotPuns&lt;/a&gt; on twitter.&lt;/p&gt;
 &lt;h2 id=&#34;can-i-use-bieber-bot&#34;&gt;Can I use Bieber Bot?&lt;/h2&gt;
 &lt;p&gt;No, not at this time.&lt;/p&gt;
 </description>
@@ -52,9 +54,11 @@
       <description>&lt;p&gt;We built an Escape Room!&lt;/p&gt;
 &lt;p&gt;Serious props to Bianca Homberg and her amazing talented group of friends for making this happen.
 I was just a small piece of this epic endeavor. Bianca was the organizer and driving force for a really impressive piece of puzzle craftsmanship.&lt;/p&gt;
-&lt;p&gt;The premise for the escape room is based on the webcomic &lt;a href=&#34;http://www.girlgeniusonline.com/&#34;&gt;&lt;em&gt;Girl Genius&lt;/em&gt;&lt;/a&gt;. Here&amp;rsquo;s what you need to know:&lt;/p&gt;
+&lt;p&gt;The premise for the escape room is based on the webcomic 
+&lt;a href=&#34;http://www.girlgeniusonline.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Girl Genius&lt;/em&gt;&lt;/a&gt;. Here&amp;rsquo;s what you need to know:&lt;/p&gt;
 &lt;h3 id=&#34;escape-castle-heterodyne&#34;&gt;Escape Castle Heterodyne&lt;/h3&gt;
-&lt;p&gt;There&amp;rsquo;s a castle, &lt;a href=&#34;http://girlgenius.wikia.com/wiki/Castle_Heterodyne&#34;&gt;Castle Heterodyne&lt;/a&gt;, which is a living, breathing, &lt;em&gt;talking&lt;/em&gt; entity. In our escape room, the Castle is voiced by Mark Velednitsky. The castle&amp;rsquo;s personality is damaged, and you and your team (4 people total) have been sent into the castle to see if you can repair it. The castle, in it&amp;rsquo;s damaged state, doesn&amp;rsquo;t understand that you&amp;rsquo;re here to help. Quite the opposite in fact; it considers you hostile! At your entrance, Castle Heterodyne slams its doors shut behind you. It cuts power to the lights and activates its 30 minute self-destruct countdown.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s a castle, 
+&lt;a href=&#34;http://girlgenius.wikia.com/wiki/Castle_Heterodyne&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Castle Heterodyne&lt;/a&gt;, which is a living, breathing, &lt;em&gt;talking&lt;/em&gt; entity. In our escape room, the Castle is voiced by Mark Velednitsky. The castle&amp;rsquo;s personality is damaged, and you and your team (4 people total) have been sent into the castle to see if you can repair it. The castle, in it&amp;rsquo;s damaged state, doesn&amp;rsquo;t understand that you&amp;rsquo;re here to help. Quite the opposite in fact; it considers you hostile! At your entrance, Castle Heterodyne slams its doors shut behind you. It cuts power to the lights and activates its 30 minute self-destruct countdown.&lt;/p&gt;
 &lt;p&gt;Can you repair the castle, thereby bringing it back to its senses? Can you escape your impending doom? You must solve puzzles and make your way through four decorative challenge-filled rooms if you wish to live to see another day.&lt;/p&gt;
 &lt;h3 id=&#34;the-engine-room&#34;&gt;The Engine Room&lt;/h3&gt;
 &lt;p&gt;I was responsible for just the first room of the escape room (as well as, I later learned, anything requiring height). This first room was the Engine Room. When you enter the Engine Room, der Castle promptly kills the lights and initiates the castle&amp;rsquo;s self-destruct sequence.&lt;/p&gt;
@@ -62,13 +66,15 @@ I was just a small piece of this epic endeavor. Bianca was the organizer and dri
 &lt;p&gt;You do this by first locating a blacklight flashlight on the table in the room. You use this blacklight flashlight to read clues written in invisible ink on colored paper hidden around the room. These clues in turn allow you to figure out which of the nearly 50 switches you need to flip in order to turn all the lights on without overheating any of them.&lt;/p&gt;
 &lt;p&gt;This is what the puzzle looks like partial solved:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;engine-room-front.jpg&#34; alt=&#34;The Engine Room: Lights Out Puzzle&#34;&gt;&lt;/p&gt;
-&lt;p&gt;While the physical puzzle is no longer operational, you can have a go at the software-only version of the puzzle: &lt;strong&gt;&lt;a href=&#34;https://davidbieber.com/engine-room-demo&#34;&gt;Click here to try the puzzle&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;While the physical puzzle is no longer operational, you can have a go at the software-only version of the puzzle: &lt;strong&gt;
+&lt;a href=&#34;https://davidbieber.com/engine-room-demo&#34;&gt;Click here to try the puzzle&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;storage-closet&#34;&gt;Storage Closet&lt;/h3&gt;
 &lt;p&gt;Once you successfully turn the lights back on in the Engine Room, the castle realizes your utility, and presents you with the key to the next room: the Storage Closet. It&amp;rsquo;s too late to turn off the self-destruct sequence though, and so your only way out is forward, through the Storage Closet and the rest of the castle.&lt;/p&gt;
 &lt;p&gt;The Storage Closet is in my opinion the coolest room in the Castle. I will refrain from spoiling it here (for now), and simply tell you that I was very impressed with the work that went into it.&lt;/p&gt;
 &lt;h3 id=&#34;escaping-the-castle&#34;&gt;Escaping the Castle&lt;/h3&gt;
 &lt;p&gt;Making your way through the Storage Closet, you must next navigate the Secret Lab, the Pink Torture Chamber (no puzzles here), and lastly the Crypt. Only after solving the puzzles in each of these rooms with the help can you escape der Castle and avoid a ghastly death.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;The source code for the Engine Room puzzle (both the physical version and the software-only version) is available on &lt;a href=&#34;https://github.com/bhomberg/heterodyne/blob/master/engine-room/&#34;&gt;GitHub here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The source code for the Engine Room puzzle (both the physical version and the software-only version) is available on 
+&lt;a href=&#34;https://github.com/bhomberg/heterodyne/blob/master/engine-room/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -77,9 +83,11 @@ I was just a small piece of this epic endeavor. Bianca was the organizer and dri
       <link>https://davidbieber.com/projects/scrabble-bot/</link>
       <pubDate>Fri, 06 Jun 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/scrabble-bot/</guid>
-      <description>&lt;p&gt;Scrabble Bot loves Scrabble and social media! Check out Scrab&amp;rsquo;s &lt;a href=&#34;http://scrabblebot.tumblr.com&#34;&gt;tumblr page&lt;/a&gt; full of Scrabble games it&amp;rsquo;s played against itself.&lt;/p&gt;
+      <description>&lt;p&gt;Scrabble Bot loves Scrabble and social media! Check out Scrab&amp;rsquo;s 
+&lt;a href=&#34;http://scrabblebot.tumblr.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tumblr page&lt;/a&gt; full of Scrabble games it&amp;rsquo;s played against itself.&lt;/p&gt;
 &lt;p&gt;Scrabble Bot is also privacy conscious, and so uses Facebook under a pseudonym, &amp;ldquo;Scrab Blebot&amp;rdquo;. Scrab believes their identity is secure.&lt;/p&gt;
-&lt;p&gt;You can find Scrabble Bot&amp;rsquo;s source &lt;a href=&#34;https://github.com/dbieber/ScrabbleBot&#34;&gt;on GitHub here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can find Scrabble Bot&amp;rsquo;s source 
+&lt;a href=&#34;https://github.com/dbieber/ScrabbleBot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;on GitHub here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

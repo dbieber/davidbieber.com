@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -30,7 +30,7 @@
   
   <meta name="description" content="On your phone, you can navigate to https://www.facebook.com/home.php?sk=h_chr to view your News Feed on the Facebook website in chronological order.
 There are also excellent apps for hiding your Facebook News Feed if you find it draining on your attention, but unfortunately they don&rsquo;t work on mobile:
- Hide Feed Facebook News Feed Eradicator  Since these don&rsquo;t work on the Facebook mobile website, I&rsquo;ve turned to this new strategy to combat the attention draining nature of News Feed: only viewing my feed in chronological order.">
+  Hide Feed  Facebook News Feed Eradicator  Since these don&rsquo;t work on the Facebook mobile website, I&rsquo;ve turned to this new strategy to combat the attention draining nature of News Feed: only viewing my feed in chronological order.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-06-28-facebook-chronological-order/">
@@ -53,7 +53,7 @@ There are also excellent apps for hiding your Facebook News Feed if you find it 
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -65,8 +65,8 @@ There are also excellent apps for hiding your Facebook News Feed if you find it 
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -215,13 +215,15 @@ There are also excellent apps for hiding your Facebook News Feed if you find it 
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -231,7 +233,7 @@ There are also excellent apps for hiding your Facebook News Feed if you find it 
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -272,8 +274,8 @@ There are also excellent apps for hiding your Facebook News Feed if you find it 
   <meta property="og:title" content="Facebook Mobile Website: News Feed in Chronological Order | David Bieber">
   <meta property="og:description" content="On your phone, you can navigate to https://www.facebook.com/home.php?sk=h_chr to view your News Feed on the Facebook website in chronological order.
 There are also excellent apps for hiding your Facebook News Feed if you find it draining on your attention, but unfortunately they don&rsquo;t work on mobile:
- Hide Feed Facebook News Feed Eradicator  Since these don&rsquo;t work on the Facebook mobile website, I&rsquo;ve turned to this new strategy to combat the attention draining nature of News Feed: only viewing my feed in chronological order."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
-  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
+  Hide Feed  Facebook News Feed Eradicator  Since these don&rsquo;t work on the Facebook mobile website, I&rsquo;ve turned to this new strategy to combat the attention draining nature of News Feed: only viewing my feed in chronological order."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-06-28T00:00:00&#43;00:00">
@@ -337,10 +339,15 @@ There are also excellent apps for hiding your Facebook News Feed if you find it 
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -520,17 +527,22 @@ There are also excellent apps for hiding your Facebook News Feed if you find it 
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>On your phone, you can navigate to <a href="https://www.facebook.com/home.php?sk=h_chr">https://www.facebook.com/home.php?sk=h_chr</a> to view your News Feed on the Facebook website in chronological order.</p>
+      <p>On your phone, you can navigate to 
+<a href="https://www.facebook.com/home.php?sk=h_chr" target="_blank" rel="noopener">https://www.facebook.com/home.php?sk=h_chr</a> to view your News Feed on the Facebook website in chronological order.</p>
 <p>There are also excellent apps for hiding your Facebook News Feed if you find it draining on your attention, but unfortunately they don&rsquo;t work on mobile:</p>
 <ul>
-<li><a href="https://www.hidefeed.com/">Hide Feed</a></li>
-<li><a href="https://chrome.google.com/webstore/detail/news-feed-eradicator-for/fjcldmjmjhkklehbacihaiopjklihlgg?hl=en">Facebook News Feed Eradicator</a></li>
+<li>
+<a href="https://www.hidefeed.com/" target="_blank" rel="noopener">Hide Feed</a></li>
+<li>
+<a href="https://chrome.google.com/webstore/detail/news-feed-eradicator-for/fjcldmjmjhkklehbacihaiopjklihlgg?hl=en" target="_blank" rel="noopener">Facebook News Feed Eradicator</a></li>
 </ul>
 <p>Since these don&rsquo;t work on the Facebook mobile website, I&rsquo;ve turned to this new strategy to combat the attention draining nature of News Feed: only viewing my feed in chronological order.</p>
 <p>By switching to chronological order, the &ldquo;infinite scroll&rdquo; of the News Feed is interrupted because either you eventually get to posts you&rsquo;ve seen before, or you notice the timestamp of the posts you&rsquo;re looking at slowly rising. You also get a more complete picture of what content is available, which helps fight the constant &ldquo;just one more post&rdquo; feeling that drives infinite scrolling.</p>
 <p>So, how do you switch your news feed to chronological order?</p>
-<p>On the main Facebook website, you can click the three dots next to &ldquo;News Feed&rdquo; and choose &ldquo;Most Recent&rdquo;. However, you have to choose this option every time you visit Facebook, which can be frustrating. So instead, navigate directly to <a href="https://www.facebook.com/home.php?sk=h_chr">https://www.facebook.com/home.php?sk=h_chr</a>.</p>
-<p>On the Facebook mobile website, there isn&rsquo;t an option to view posts in chronological order. Instead, you can achieve this by accessing the desktop website on your phone. Go to <a href="https://www.facebook.com/home.php?sk=h_chr">https://www.facebook.com/home.php?sk=h_chr</a> to get the Desktop version of Facebook on your phone, with chronological order already enabled. Bookmark the page and use it as your primary way of accessing Facebook on your phone to get chronological order as your News Feed default from now on.</p>
+<p>On the main Facebook website, you can click the three dots next to &ldquo;News Feed&rdquo; and choose &ldquo;Most Recent&rdquo;. However, you have to choose this option every time you visit Facebook, which can be frustrating. So instead, navigate directly to 
+<a href="https://www.facebook.com/home.php?sk=h_chr" target="_blank" rel="noopener">https://www.facebook.com/home.php?sk=h_chr</a>.</p>
+<p>On the Facebook mobile website, there isn&rsquo;t an option to view posts in chronological order. Instead, you can achieve this by accessing the desktop website on your phone. Go to 
+<a href="https://www.facebook.com/home.php?sk=h_chr" target="_blank" rel="noopener">https://www.facebook.com/home.php?sk=h_chr</a> to get the Desktop version of Facebook on your phone, with chronological order already enabled. Bookmark the page and use it as your primary way of accessing Facebook on your phone to get chronological order as your News Feed default from now on.</p>
 
     </div>
 
@@ -554,7 +566,7 @@ There are also excellent apps for hiding your Facebook News Feed if you find it 
 
 
   
-
+  
 
 
 
@@ -564,6 +576,7 @@ There are also excellent apps for hiding your Facebook News Feed if you find it 
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -579,6 +592,9 @@ There are also excellent apps for hiding your Facebook News Feed if you find it 
 
     </div>
   </div>
+
+
+
 
 
 
@@ -610,11 +626,11 @@ There are also excellent apps for hiding your Facebook News Feed if you find it 
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -626,6 +642,11 @@ There are also excellent apps for hiding your Facebook News Feed if you find it 
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -694,7 +715,7 @@ There are also excellent apps for hiding your Facebook News Feed if you find it 
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

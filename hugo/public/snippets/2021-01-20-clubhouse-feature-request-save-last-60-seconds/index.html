@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -52,7 +52,7 @@ The button A little floppy disk save icon.">
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -64,8 +64,8 @@ The button A little floppy disk save icon.">
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -214,13 +214,15 @@ The button A little floppy disk save icon.">
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -230,7 +232,7 @@ The button A little floppy disk save icon.">
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -270,8 +272,8 @@ The button A little floppy disk save icon.">
   <meta property="og:url" content="https://davidbieber.com/snippets/2021-01-20-clubhouse-feature-request-save-last-60-seconds/">
   <meta property="og:title" content="Clubhouse feature request: save last 60 seconds | David Bieber">
   <meta property="og:description" content="I have a feature request for Clubhouse. Zoom, Meet, Skype, if you&rsquo;re listening, this is a feature request for you all too. The request is a button to save the previous 60 seconds of audio. Maybe you&rsquo;re interested because people will share the clips on social media and drive more traffic back to CH 📈🤷‍♂️. I just want the feature for note-taking 📝. Details follow.
-The button A little floppy disk save icon."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
-  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
+The button A little floppy disk save icon."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2021-01-20T00:00:00&#43;00:00">
@@ -335,10 +337,15 @@ The button A little floppy disk save icon."><meta property="og:image" content="h
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -531,8 +538,10 @@ The button A little floppy disk save icon."><meta property="og:image" content="h
 <h2 id="bonus-points">Bonus points</h2>
 <p>Bonus points for automatic transcription. Additional bonus points for saving the audio clip and its transcription to a Roam database. Still more bonus points for allowing sharing the clips to TikTok or Instagram or wherever, but I don&rsquo;t use those, so someone else will have to provide the points.</p>
 <h2 id="prior-art">Prior Art</h2>
-<p><a href="https://obsproject.com/">OBS Studio</a> has a feature for recording a circular video buffer. They call it the &ldquo;replay buffer.&rdquo; Streamers use it for instant replays, for example. I use it myself for screen recordings sometimes, so I can decide retroactively that something was worth saving, without having to waste gigabytes of storage recording everything.</p>
-<p>There have been <a href="https://apps.apple.com/us/app/heard/id615420427">apps</a> for a long time now offering cameras and audio recorders with this circular buffer feature to allow capturing the past. However, it&rsquo;s never been integrated into a social product before, as far as I&rsquo;m aware. Clubhouse, let&rsquo;s change that.</p>
+<p>
+<a href="https://obsproject.com/" target="_blank" rel="noopener">OBS Studio</a> has a feature for recording a circular video buffer. They call it the &ldquo;replay buffer.&rdquo; Streamers use it for instant replays, for example. I use it myself for screen recordings sometimes, so I can decide retroactively that something was worth saving, without having to waste gigabytes of storage recording everything.</p>
+<p>There have been 
+<a href="https://apps.apple.com/us/app/heard/id615420427" target="_blank" rel="noopener">apps</a> for a long time now offering cameras and audio recorders with this circular buffer feature to allow capturing the past. However, it&rsquo;s never been integrated into a social product before, as far as I&rsquo;m aware. Clubhouse, let&rsquo;s change that.</p>
 
     </div>
 
@@ -556,7 +565,7 @@ The button A little floppy disk save icon."><meta property="og:image" content="h
 
 
   
-
+  
 
 
 
@@ -566,6 +575,7 @@ The button A little floppy disk save icon."><meta property="og:image" content="h
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -581,6 +591,9 @@ The button A little floppy disk save icon."><meta property="og:image" content="h
 
     </div>
   </div>
+
+
+
 
 
 
@@ -612,11 +625,11 @@ The button A little floppy disk save icon."><meta property="og:image" content="h
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -628,6 +641,11 @@ The button A little floppy disk save icon."><meta property="og:image" content="h
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -696,7 +714,7 @@ The button A little floppy disk save icon."><meta property="og:image" content="h
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -52,7 +52,7 @@ My passion is education.">
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -64,8 +64,8 @@ My passion is education.">
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -214,13 +214,15 @@ My passion is education.">
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -230,7 +232,7 @@ My passion is education.">
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -293,8 +295,6 @@ My passion is education."><meta property="og:image" content="https://davidbieber
 
 
 
-
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -322,7 +322,7 @@ My passion is education."><meta property="og:image" content="https://davidbieber
     "name": "David Bieber",
     "logo": {
       "@type": "ImageObject",
-      "url": "img/https://davidbieber.com/"
+      "url": "https://davidbieber.com/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png"
     }
   },
   "description": "That concludes day one of the TigerTrek. I flew out of Princeton yesterday with a group of 20 to spend the week visiting technology companies, startups and venture capitalists in Silicon Valley. We\u0026rsquo;re going company to company hearing founder\u0026rsquo;s stories, discussing entrepreneurship, and as we do this I am forced to introspect. What do I want to do with my life? How can I make a difference?\nMy passion is education."
@@ -383,10 +383,15 @@ My passion is education."><meta property="og:image" content="https://davidbieber
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -619,9 +624,16 @@ My passion is education."><meta property="og:image" content="https://davidbieber
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>That concludes day one of the <a href="https://svtigertrek.com/">TigerTrek</a>. I flew out of Princeton yesterday with a group of 20 to spend the week visiting technology companies, startups and venture capitalists in Silicon Valley. We&rsquo;re going company to company hearing founder&rsquo;s stories, discussing entrepreneurship, and as we do this I am forced to introspect. What do I want to do with my life? How can I make a difference?</p>
-<p>My passion is education. I was fortunate enough to have some amazing mentors growing up, and to learn in a lot of diverse ways most people never have a chance to experience. I tried out gifted programs, nerd camps, one-on-one classes, online self paced learning, the works. I got involved in math circles, I took summer classes, I really was blessed to have every educational opportunity one could hope for. This, and the diversity of amazing teachers I&rsquo;ve had has gotten me thinking about how people learn best, and how I learn best. Complementing this interest well, I&rsquo;ve found I really love teaching- particularly math and computer science to younger students. It&rsquo;s always a joy helping someone to tackle the Bessie the Cow problem or <a href="http://en.wikipedia.org/wiki/Nim">the game of Nim</a> for the very first time.</p>
-<p>Today a lot of young companies bring together my interests of education, computer science and technology. Websites like <a href="https://www.coursera.org/">Coursera</a>, <a href="https://www.edx.org/">edX</a>, and <a href="http://www.udacity.com/">Udacity</a> virtualize the university experience, and Khan Academy joins them in making quality education accessible everywhere. Startups like <a href="https://www.crunchbase.com/organization/lore">Lore</a> and <a href="https://piazza.com/">Piazza</a> foster discussions around classes, allowing the learning experience to extend more seamlessly beyond the walls of the classroom.</p>
+      <p>That concludes day one of the 
+<a href="https://svtigertrek.com/" target="_blank" rel="noopener">TigerTrek</a>. I flew out of Princeton yesterday with a group of 20 to spend the week visiting technology companies, startups and venture capitalists in Silicon Valley. We&rsquo;re going company to company hearing founder&rsquo;s stories, discussing entrepreneurship, and as we do this I am forced to introspect. What do I want to do with my life? How can I make a difference?</p>
+<p>My passion is education. I was fortunate enough to have some amazing mentors growing up, and to learn in a lot of diverse ways most people never have a chance to experience. I tried out gifted programs, nerd camps, one-on-one classes, online self paced learning, the works. I got involved in math circles, I took summer classes, I really was blessed to have every educational opportunity one could hope for. This, and the diversity of amazing teachers I&rsquo;ve had has gotten me thinking about how people learn best, and how I learn best. Complementing this interest well, I&rsquo;ve found I really love teaching- particularly math and computer science to younger students. It&rsquo;s always a joy helping someone to tackle the Bessie the Cow problem or 
+<a href="http://en.wikipedia.org/wiki/Nim" target="_blank" rel="noopener">the game of Nim</a> for the very first time.</p>
+<p>Today a lot of young companies bring together my interests of education, computer science and technology. Websites like 
+<a href="https://www.coursera.org/" target="_blank" rel="noopener">Coursera</a>, 
+<a href="https://www.edx.org/" target="_blank" rel="noopener">edX</a>, and 
+<a href="http://www.udacity.com/" target="_blank" rel="noopener">Udacity</a> virtualize the university experience, and Khan Academy joins them in making quality education accessible everywhere. Startups like 
+<a href="https://www.crunchbase.com/organization/lore" target="_blank" rel="noopener">Lore</a> and 
+<a href="https://piazza.com/" target="_blank" rel="noopener">Piazza</a> foster discussions around classes, allowing the learning experience to extend more seamlessly beyond the walls of the classroom.</p>
 <p>Today we trekked over to the new office of Khan Academy where our group got to sit down and discuss education with Sal Khan, and then we were off to Piazza&rsquo;s office where we did Q+A with the question-answer site&rsquo;s founder, Pooja Sankar.</p>
 <p>Sal Khan is a really inspirational person. His collection of tutorials - which now spans a wide range of topics including mathematics and organic chemistry and art history - It all began with Sal tutoring his cousins over the phone back in 2004. Hearing him tell his founding story - how he went from tutoring one cousin, to many, to posting videos on YouTube and being well received all over the world. how he came to tutor the Gates children through his videos, and how after discussions with venture capitalists in the valley Sal made the choice to incorporate Khan Academy as a non-profit - Hearing this story from Sal Khan really drove home how empowering technology is and how tech is shaping the future of education. One smart man with a gift for explaining things clearly now teaches millions of students, an unprecedented feat since most lecture halls barely seat one hundred.</p>
 <p>With the resources Khan Academy is producing, the purpose of the classroom is shifting. Lecture time in classes is becoming less and less valuable, and some classes have adopted a flipped classroom model. Students watch the Khan Academy videos at home, and then come to class with an understanding of the material. Students then use the class time to try out problems that would previously have been homework, now in a setting where they can get immediate help from their peers and their teacher. The flipped classroom model has been highly successful so far.
@@ -631,7 +643,8 @@ One of Khan Academy&rsquo;s ambitions is to, when someone comes to the site to l
 <p>One other amazing thing that Khan Academy, Coursera, and these other online education websites will be doing is individualizing the teaching experience. I already mentioned how Khan Academy could recommend different tutorials based on your performance or ability or interests. The individualization that can be done can also take place at a finer level. Coursera co-founder Daphne Koller came to Princeton to speak recently and she explained some of the work being done in this area. The data that Coursera is receiving from students is tremendous in quality and volume. With classes of tens of thousands of people, a single numerical answer question will garner hundreds of different answers. There will be clusters in these answers, with thousands of people submitting the same incorrect response. This gives professors insights into the minds of their students they never had before. With this information, we can figure out exactly what sorts of mistakes are common, and how to avoid them. People likely to make a particular type of mistake can be shown content in a way tailored to them. There may be groups of people who tend to share patterns in which mistakes they make, or which types of material they&rsquo;re good at. The scale at which these courses are being offered and at which the feedback is being received will allow for insights into teaching that were never possible before.</p>
 <p>That said, I think that while online education is young and still in its stage of constant iteration, feedback should be collected much more explicitly. The value of people&rsquo;s behavior on Khan Academy, Coursera, edX, Udacity, etc should not be understated, but these companies could learn so much more about their content and how students and &ldquo;users&rdquo; respond to their content it they merely asked. If Coursera put up two buttons next to their videos, one labeled &ldquo;boring&rdquo; and one labeled &ldquo;interesting&rdquo; (or &ldquo;simple&rdquo; and &ldquo;confusing&rdquo;, or &ldquo;easy&rdquo; and &ldquo;hard&rdquo;), or if they placed a feedback box underneath their video lectures, then I think the professors offering the courses would have a much better understanding of their audience. As it is, with both online lectures and live lectures, the professor gets very little feedback. They wonder Are my student&rsquo;s understanding what I&rsquo;m saying? Am I going to fast? Too slow? Is that kid in the orange shirt snoring?. This is one area where over the next year we have to leverage technology better. We need to get this feedback cycle right soon. These are the days that content is being produced at an incredible rate. The Khan Academy videos that go up this year, the Coursera classes being recorded every day - this is content that will last forever, and as we produce more of it, it&rsquo;s so important that we maintain the highest possible standards, and for that feedback is critical.</p>
 <p>While quality is important, so too is the opportunity for everyone to become a teacher. More on those thoughts another day. We won&rsquo;t all produce lectures with the quality of Sal Khan or Kevin Wayne. It is primarily at the top that we must ensure the content is the best it can possibly be. Still, feedback from students is so important to anyone teaching in any capacity.</p>
-<p>This notion, allowing anyone to teach, is so fundamental to the way education has to be. People learn from other people. Lore understands this. Piazza understands this. This is the philosophy that makes <a href="http://albanyareamathcircle.blogspot.com/">Albany Area Math Circle</a> such an incredible group. This is why college campuses thrive and produce innovation. During our visit with Piazza, founder Pooja Sankar spoke about (in addition to teaching us some great lessons in entrepreneurship from the company&rsquo;s founding story) Piazza&rsquo;s mission to take down barriers to learning. Piazza is really succeeding in this. They&rsquo;ve empowered people so that everyone in the class can be the teacher in a way that&rsquo;s never worked in lecture classes before.</p>
+<p>This notion, allowing anyone to teach, is so fundamental to the way education has to be. People learn from other people. Lore understands this. Piazza understands this. This is the philosophy that makes 
+<a href="http://albanyareamathcircle.blogspot.com/" target="_blank" rel="noopener">Albany Area Math Circle</a> such an incredible group. This is why college campuses thrive and produce innovation. During our visit with Piazza, founder Pooja Sankar spoke about (in addition to teaching us some great lessons in entrepreneurship from the company&rsquo;s founding story) Piazza&rsquo;s mission to take down barriers to learning. Piazza is really succeeding in this. They&rsquo;ve empowered people so that everyone in the class can be the teacher in a way that&rsquo;s never worked in lecture classes before.</p>
 <p>Going forward, only good can come of these trends toward moving education online. Khan Academy&rsquo;s mission seems inevitable. A world class education is becoming available to anyone, anywhere. The best ways to make this happen are still being discovered, and there&rsquo;s so much to explore in the world of online pedagogy. This is something to be excited about. This is something I want to be a part of.</p>
 
     </div>
@@ -656,11 +669,8 @@ One of Khan Academy&rsquo;s ambitions is to, when someone comes to the site to l
 
 
   
-  
     
-  
-  
-
+    
 
 
 
@@ -670,6 +680,7 @@ One of Khan Academy&rsquo;s ambitions is to, when someone comes to the site to l
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -685,6 +696,10 @@ One of Khan Academy&rsquo;s ambitions is to, when someone comes to the site to l
 
     </div>
   </div>
+
+
+  
+
 
 
 
@@ -716,11 +731,11 @@ One of Khan Academy&rsquo;s ambitions is to, when someone comes to the site to l
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -732,6 +747,11 @@ One of Khan Academy&rsquo;s ambitions is to, when someone comes to the site to l
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -800,7 +820,7 @@ One of Khan Academy&rsquo;s ambitions is to, when someone comes to the site to l
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

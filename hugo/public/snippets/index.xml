@@ -7,7 +7,7 @@
     <description>Snippets</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://davidbieber.com/img/portrait.jpg</url>
+      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>Snippets</title>
       <link>https://davidbieber.com/snippets/</link>
     </image>
@@ -17,7 +17,8 @@
       <link>https://davidbieber.com/snippets/2021-01-22-am-i-available-for-conversation-right-now-dot-com/</link>
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2021-01-22-am-i-available-for-conversation-right-now-dot-com/</guid>
-      <description>&lt;p&gt;I don&amp;rsquo;t know if I like this idea, but I&amp;rsquo;m giving it a try; I&amp;rsquo;ve added a &amp;ldquo;Now&amp;rdquo; page to my website (&lt;a href=&#34;https://davidbieber.com/now&#34;&gt;davidbieber.com/now&lt;/a&gt;).&lt;/p&gt;
+      <description>&lt;p&gt;I don&amp;rsquo;t know if I like this idea, but I&amp;rsquo;m giving it a try; I&amp;rsquo;ve added a &amp;ldquo;Now&amp;rdquo; page to my website (
+&lt;a href=&#34;https://davidbieber.com/now&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;davidbieber.com/now&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;The idea for now pages is described at &lt;a href=&#34;https://nownownow.com/about&#34;&gt;https://nownownow.com/about&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Basically, a now page says what&amp;rsquo;s going on in the author&amp;rsquo;s life now. Not &lt;em&gt;right now&lt;/em&gt; &amp;ndash; that would be a &amp;ldquo;right now page&amp;rdquo; &amp;ndash; but rather, now in the broader sense of &amp;ldquo;what&amp;rsquo;s are you up to these days?&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;This post isn&amp;rsquo;t about my new Now page though, which I don&amp;rsquo;t necessarily plan to keep up (if the link 404s, you know why). Rather, this post is about an idea for a kind of &amp;ldquo;right now&amp;rdquo; page that I&amp;rsquo;m toying with building.&lt;/p&gt;
@@ -56,8 +57,10 @@ It says No if I have recently been on a call for a long time&lt;br/&gt;&lt;/p&gt
 &lt;h2 id=&#34;bonus-points&#34;&gt;Bonus points&lt;/h2&gt;
 &lt;p&gt;Bonus points for automatic transcription. Additional bonus points for saving the audio clip and its transcription to a Roam database. Still more bonus points for allowing sharing the clips to TikTok or Instagram or wherever, but I don&amp;rsquo;t use those, so someone else will have to provide the points.&lt;/p&gt;
 &lt;h2 id=&#34;prior-art&#34;&gt;Prior Art&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://obsproject.com/&#34;&gt;OBS Studio&lt;/a&gt; has a feature for recording a circular video buffer. They call it the &amp;ldquo;replay buffer.&amp;rdquo; Streamers use it for instant replays, for example. I use it myself for screen recordings sometimes, so I can decide retroactively that something was worth saving, without having to waste gigabytes of storage recording everything.&lt;/p&gt;
-&lt;p&gt;There have been &lt;a href=&#34;https://apps.apple.com/us/app/heard/id615420427&#34;&gt;apps&lt;/a&gt; for a long time now offering cameras and audio recorders with this circular buffer feature to allow capturing the past. However, it&amp;rsquo;s never been integrated into a social product before, as far as I&amp;rsquo;m aware. Clubhouse, let&amp;rsquo;s change that.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://obsproject.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OBS Studio&lt;/a&gt; has a feature for recording a circular video buffer. They call it the &amp;ldquo;replay buffer.&amp;rdquo; Streamers use it for instant replays, for example. I use it myself for screen recordings sometimes, so I can decide retroactively that something was worth saving, without having to waste gigabytes of storage recording everything.&lt;/p&gt;
+&lt;p&gt;There have been 
+&lt;a href=&#34;https://apps.apple.com/us/app/heard/id615420427&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;apps&lt;/a&gt; for a long time now offering cameras and audio recorders with this circular buffer feature to allow capturing the past. However, it&amp;rsquo;s never been integrated into a social product before, as far as I&amp;rsquo;m aware. Clubhouse, let&amp;rsquo;s change that.&lt;/p&gt;
 </description>
     </item>
     
@@ -66,7 +69,8 @@ It says No if I have recently been on a call for a long time&lt;br/&gt;&lt;/p&gt
       <link>https://davidbieber.com/snippets/2021-01-18-python-hoist-locals-only/</link>
       <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2021-01-18-python-hoist-locals-only/</guid>
-      <description>&lt;p&gt;The implementation of &lt;code&gt;hoist&lt;/code&gt; in my &lt;a href=&#34;https://davidbieber.com/snippets/2021-01-16-python-hoist/&#34;&gt;earlier snippet&lt;/a&gt; returned the values of local variables of all functions called by the hoisted function. This new version only returns the locals of the hoisted function.&lt;/p&gt;
+      <description>&lt;p&gt;The implementation of &lt;code&gt;hoist&lt;/code&gt; in my 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-16-python-hoist/&#34;&gt;earlier snippet&lt;/a&gt; returned the values of local variables of all functions called by the hoisted function. This new version only returns the locals of the hoisted function.&lt;/p&gt;
 &lt;p&gt;As before, you can use it like this:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def f(x):
   y = x + 1
@@ -263,8 +267,13 @@ Additional details about &amp;ldquo;how it works&amp;rdquo; below the fold.&lt;/
       <description>&lt;p&gt;I don&amp;rsquo;t do a lot of social media, and so over the holidays when I became active on several online discussion platforms simultaneously, I was a bit overwhelmed. I felt like I&amp;rsquo;d been plugged directly into the internet.&lt;/p&gt;
 &lt;p&gt;On the one hand, I enjoyed the conversation. I liked that there was always conversation happening. It skipped right over the step of &lt;em&gt;initiating&lt;/em&gt; a conversation, which requires an activation energy to cross. And it eliminated any need for &lt;em&gt;planning&lt;/em&gt; a conversation, which contributes to that activation energy requirement.&lt;/p&gt;
 &lt;p&gt;However, it was like drinking from a firehose.&lt;/p&gt;
-&lt;p&gt;I already knew that there was &lt;a href=&#34;https://youtu.be/lWNhg9qyTlQ?t=93&#34;&gt;more to see than can ever be seen&lt;/a&gt;, but this experience lead me to reckon with that fact in a more tangible way.&lt;/p&gt;
-&lt;p&gt;I installed &lt;a href=&#34;https://getferdi.com&#34;&gt;Ferdi&lt;/a&gt;, and loaded up all the old Slacks I&amp;rsquo;d ever been added to. I was able to log into both my Discord accounts simultaneously, and also discovered that there are &lt;em&gt;public&lt;/em&gt; Discords about all sorts of things. Discourses too. And &lt;a href=&#34;https://nano.page&#34;&gt;nano.page&lt;/a&gt;. Managed to mostly avoid Reddit. Signed into Gitter, which I previously rarely checked (so if you want to chat about Python Fire, join me &lt;a href=&#34;https://gitter.im/google/python-fire&#34;&gt;there&lt;/a&gt;!) On top of those, and all the messaging apps I was already using before, I also fell into reading &lt;a href=&#34;https://davidbieber.com/snippets/2020-10-01-infinite-distractions-and-getting-a-good-sear/&#34;&gt;my six infinite distractions&lt;/a&gt; more often. There were now more channels of information coming in than I could simultaneously keep in my head. My computer and I both ran out of RAM. Needed a reboot and a new strategy for dealing with these channels.&lt;/p&gt;
+&lt;p&gt;I already knew that there was 
+&lt;a href=&#34;https://youtu.be/lWNhg9qyTlQ?t=93&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;more to see than can ever be seen&lt;/a&gt;, but this experience lead me to reckon with that fact in a more tangible way.&lt;/p&gt;
+&lt;p&gt;I installed 
+&lt;a href=&#34;https://getferdi.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ferdi&lt;/a&gt;, and loaded up all the old Slacks I&amp;rsquo;d ever been added to. I was able to log into both my Discord accounts simultaneously, and also discovered that there are &lt;em&gt;public&lt;/em&gt; Discords about all sorts of things. Discourses too. And 
+&lt;a href=&#34;https://nano.page&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nano.page&lt;/a&gt;. Managed to mostly avoid Reddit. Signed into Gitter, which I previously rarely checked (so if you want to chat about Python Fire, join me 
+&lt;a href=&#34;https://gitter.im/google/python-fire&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;there&lt;/a&gt;!) On top of those, and all the messaging apps I was already using before, I also fell into reading 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-10-01-infinite-distractions-and-getting-a-good-sear/&#34;&gt;my six infinite distractions&lt;/a&gt; more often. There were now more channels of information coming in than I could simultaneously keep in my head. My computer and I both ran out of RAM. Needed a reboot and a new strategy for dealing with these channels.&lt;/p&gt;
 &lt;p&gt;The computer RAM issue turned out to be easier than the personal RAM one. Ferdi supports &amp;ldquo;hibernating&amp;rdquo; chat services when they&amp;rsquo;re not in use. My computer can now keep up with the chatter; I still can&amp;rsquo;t. 🤷‍♂️&lt;/p&gt;
 </description>
     </item>
@@ -274,7 +283,8 @@ Additional details about &amp;ldquo;how it works&amp;rdquo; below the fold.&lt;/
       <link>https://davidbieber.com/snippets/2021-01-12-limitations-of-democratic-delegation-optional-voting/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2021-01-12-limitations-of-democratic-delegation-optional-voting/</guid>
-      <description>&lt;p&gt;In &lt;a href=&#34;https://davidbieber.com/snippets/2021-01-11-democratic-delegation-optional-voting/&#34;&gt;yesterday&amp;rsquo;s snippet&lt;/a&gt; I introduced the idea of &lt;em&gt;democratic delegation-optional voting&lt;/em&gt;. If you haven&amp;rsquo;t yet, read that first. Today, we&amp;rsquo;re going to be looking at its strengths and limitations.&lt;/p&gt;
+      <description>&lt;p&gt;In 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-11-democratic-delegation-optional-voting/&#34;&gt;yesterday&amp;rsquo;s snippet&lt;/a&gt; I introduced the idea of &lt;em&gt;democratic delegation-optional voting&lt;/em&gt;. If you haven&amp;rsquo;t yet, read that first. Today, we&amp;rsquo;re going to be looking at its strengths and limitations.&lt;/p&gt;
 &lt;h2 id=&#34;strengths&#34;&gt;Strengths&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;People can choose which issues matter most to them.&lt;/strong&gt; If an issue matters to you, you can vote on it directly. And so can all the people you convince to support your cause. You can do this even if your representatives disagree with you.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Representatives don&amp;rsquo;t need to be experts on everything.&lt;/strong&gt; If an issue is highly technical, representatives can delegate their constituents&#39; votes to someone who is a subject matter expert with similar values to the representative. If a voter doesn&amp;rsquo;t like the choice, they can make a different choice.&lt;/p&gt;
@@ -344,15 +354,19 @@ Additional details about &amp;ldquo;how it works&amp;rdquo; below the fold.&lt;/
       <link>https://davidbieber.com/snippets/2021-01-10-a-filesystem-for-social-media/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2021-01-10-a-filesystem-for-social-media/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://omar.website/&#34;&gt;Omar Riswan&lt;/a&gt; has an excellent project called &lt;a href=&#34;https://omar.website/tabfs/&#34;&gt;TabFS&lt;/a&gt; that takes your browser tabs and exposes them to you as a filesystem. When you run &lt;code&gt;ls&lt;/code&gt;, you see a list of all your open tabs. &lt;code&gt;rm&lt;/code&gt; on a tab directory closes the tab. Inspecting the tab with standard tools (&lt;code&gt;ls&lt;/code&gt;, &lt;code&gt;cat&lt;/code&gt;, &lt;code&gt;rm&lt;/code&gt;, etc) allow you to do things like reading the title or contents of the tab (yes, the whole tab&amp;rsquo;s contents!), closing the tab, or running javascript in the tab. The whole thing is quite clever.&lt;/p&gt;
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://omar.website/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Omar Riswan&lt;/a&gt; has an excellent project called 
+&lt;a href=&#34;https://omar.website/tabfs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TabFS&lt;/a&gt; that takes your browser tabs and exposes them to you as a filesystem. When you run &lt;code&gt;ls&lt;/code&gt;, you see a list of all your open tabs. &lt;code&gt;rm&lt;/code&gt; on a tab directory closes the tab. Inspecting the tab with standard tools (&lt;code&gt;ls&lt;/code&gt;, &lt;code&gt;cat&lt;/code&gt;, &lt;code&gt;rm&lt;/code&gt;, etc) allow you to do things like reading the title or contents of the tab (yes, the whole tab&amp;rsquo;s contents!), closing the tab, or running javascript in the tab. The whole thing is quite clever.&lt;/p&gt;
 &lt;p&gt;Inspired by TabFS, I envision another non-conventional filesystem: Social Media FS.&lt;/p&gt;
 &lt;p&gt;First you mount smfs and authenticate with your social media providers. Then if you &lt;code&gt;ls&lt;/code&gt; the mounted directory, you can see each of the places you can read from and write to on social media.&lt;/p&gt;
 &lt;p&gt;There&amp;rsquo;s a directory full of your chat threads. The timestamps indicate when they were created and when they were most recently modified. You can read the contents of the chat, or send a new message just as easily (and via the same tools) as you would write a file to disk.&lt;/p&gt;
 &lt;p&gt;There&amp;rsquo;s a directory of all the Facebook posts made by all your friends and all the groups you follow. Each post has a file with its contents, and also one with all the comments and reactions to it. You can make a new post or add a new comment the same way you&amp;rsquo;d make a new file.&lt;/p&gt;
-&lt;p&gt;You can use standard tools for monitoring for new content. I like to use &lt;a href=&#34;https://pythonhosted.org/watchdog/&#34;&gt;Python&amp;rsquo;s watchdog&lt;/a&gt; for this.&lt;/p&gt;
+&lt;p&gt;You can use standard tools for monitoring for new content. I like to use 
+&lt;a href=&#34;https://pythonhosted.org/watchdog/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python&amp;rsquo;s watchdog&lt;/a&gt; for this.&lt;/p&gt;
 &lt;p&gt;There&amp;rsquo;s a directory for ads too, which you&amp;rsquo;re welcome to peruse or delete as you see fit.&lt;/p&gt;
 &lt;p&gt;Reacting to a twitter post, sending a DM, receiving discord or slack or signal messages&amp;hellip; all of these are organized as files and folders, and actions can be performed simply through file reads and writes.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;d sure love to use a filesystem like this, and &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;Bieber Bot&lt;/a&gt; would too.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d sure love to use a filesystem like this, and 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;Bieber Bot&lt;/a&gt; would too.&lt;/p&gt;
 </description>
     </item>
     
@@ -367,12 +381,15 @@ Additional details about &amp;ldquo;how it works&amp;rdquo; below the fold.&lt;/
 &lt;p&gt;I can set it to perform some action whenever I&amp;rsquo;m on one of these websites. For this first iteration, I&amp;rsquo;m having Bieber Bot message me whenever it notices I&amp;rsquo;m on one of these websites. Now that it&amp;rsquo;s working though, it will be easy to customize to my liking.&lt;/p&gt;
 &lt;p&gt;In future iterations, I&amp;rsquo;ll have it wait until I&amp;rsquo;ve been spending several minutes on the website before messaging me, and I&amp;rsquo;ll only have it do this during times when I mean to be focused.&lt;/p&gt;
 &lt;h2 id=&#34;why-is-this-interesting&#34;&gt;Why is this interesting?&lt;/h2&gt;
-&lt;p&gt;There are excellent browser extensions that help you take control of your browsing habits on your computer. I recommend DK&amp;rsquo;s &lt;a href=&#34;https://getintention.com&#34;&gt;Intention&lt;/a&gt; for this. However, there aren&amp;rsquo;t great solutions like Intention for mobile browsing.&lt;/p&gt;
+&lt;p&gt;There are excellent browser extensions that help you take control of your browsing habits on your computer. I recommend DK&amp;rsquo;s 
+&lt;a href=&#34;https://getintention.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Intention&lt;/a&gt; for this. However, there aren&amp;rsquo;t great solutions like Intention for mobile browsing.&lt;/p&gt;
 &lt;p&gt;The challenge is that mobile browsers don&amp;rsquo;t provide good ways for developers to write extensions. I&amp;rsquo;ve built my mobile distraction detector in spite of this limitation :).&lt;/p&gt;
 &lt;h2 id=&#34;how-does-it-work&#34;&gt;How does it work?&lt;/h2&gt;
-&lt;p&gt;I use an iPhone and the Chrome browser. I&amp;rsquo;m logged into my Google Account on Chrome on both my phone and my laptop, and I have tab syncing turned on. With tab syncing, all my tab sessions from my phone are synced to my Google account, and are visible on my laptop, usually with a sub-minute latency. You can view this data in human-readable form at &lt;a href=&#34;chrome://history/syncedTabs&#34;&gt;chrome://history/syncedTabs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I use an iPhone and the Chrome browser. I&amp;rsquo;m logged into my Google Account on Chrome on both my phone and my laptop, and I have tab syncing turned on. With tab syncing, all my tab sessions from my phone are synced to my Google account, and are visible on my laptop, usually with a sub-minute latency. You can view this data in human-readable form at 
+&lt;a href=&#34;chrome://history/syncedTabs&#34;&gt;chrome://history/syncedTabs&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The tab session data is stored along with the rest of my Chrome data. Since I use a Mac, the path is &lt;code&gt;~/Library/Application\ Support/Google/Chrome/Profile\ 1/Sync\ Data/LevelDB/&lt;/code&gt;. Note that &amp;ldquo;Profile 1&amp;rdquo; may be replaced with either &amp;ldquo;Default&amp;rdquo;, or the name of your Profile, depending on how many Google accounts you have connected with Chrome.&lt;/p&gt;
-&lt;p&gt;The data is stored in a LevelDB database (this is unusual for Chrome; most of the rest of your Chrome data is stored in sqlite3 databases). LevelDB is an efficient key-value store, which was written by Jeff Dean and Sanjay Ghemawat back in 2011. The keys which contain the synced tab data are those prefixed with &amp;ldquo;session-dt&amp;rdquo;. The corresponding values are &lt;code&gt;SessionSpecifics&lt;/code&gt; protocol buffers. &lt;a href=&#34;https://source.chromium.org/chromium/chromium/src/+/master:components/sync/protocol/session_specifics.proto&#34;&gt;The protocol buffer definition is available here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The data is stored in a LevelDB database (this is unusual for Chrome; most of the rest of your Chrome data is stored in sqlite3 databases). LevelDB is an efficient key-value store, which was written by Jeff Dean and Sanjay Ghemawat back in 2011. The keys which contain the synced tab data are those prefixed with &amp;ldquo;session-dt&amp;rdquo;. The corresponding values are &lt;code&gt;SessionSpecifics&lt;/code&gt; protocol buffers. 
+&lt;a href=&#34;https://source.chromium.org/chromium/chromium/src/&amp;#43;/master:components/sync/protocol/session_specifics.proto&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The protocol buffer definition is available here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Before parsing the sync data, I always make a copy of it first, and then I only ever open the copy. This ensures that Chrome doesn&amp;rsquo;t have a lock on the database, and isn&amp;rsquo;t editing it concurrently with my own program reading it.&lt;/p&gt;
 &lt;p&gt;I use the Python library &lt;code&gt;plyvel&lt;/code&gt; to parse the LevelDB database: &lt;code&gt;db = plyvel.DB(path_to_copy_of_leveldb_directory)&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;In order to use the protobuf definition, I compiled it first with protoc: &lt;code&gt;protoc -I chromium/ chromium/components/sync/protocol/*.proto --python_out=dbieber/distraction_detection/&lt;/code&gt;&lt;/p&gt;
@@ -403,7 +420,8 @@ db.close()
       <link>https://davidbieber.com/snippets/2021-01-09-will-it-be-harder-to-write-snippets-now/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2021-01-09-will-it-be-harder-to-write-snippets-now/</guid>
-      <description>&lt;p&gt;Now that I&amp;rsquo;ve &lt;a href=&#34;https://davidbieber.com/post/2021-01-08-where-are-all-the-posts-from-2020/&#34;&gt;linked to the snippets section from my main website&lt;/a&gt;, will it be harder to write snippets? I hope not. I&amp;rsquo;ll have to make an even more concerted effort to lower the quality bar though.&lt;/p&gt;
+      <description>&lt;p&gt;Now that I&amp;rsquo;ve 
+&lt;a href=&#34;https://davidbieber.com/post/2021-01-08-where-are-all-the-posts-from-2020/&#34;&gt;linked to the snippets section from my main website&lt;/a&gt;, will it be harder to write snippets? I hope not. I&amp;rsquo;ll have to make an even more concerted effort to lower the quality bar though.&lt;/p&gt;
 &lt;p&gt;The goal, as always, is for the snippets section to avoid any inhibitions. Writing here should be as easy as thinking aloud. A tiny post like this ought to help in this regard.&lt;/p&gt;
 </description>
     </item>
@@ -413,10 +431,14 @@ db.close()
       <link>https://davidbieber.com/snippets/2021-01-08-distraction-detection-proto-acquired/</link>
       <pubDate>Fri, 08 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2021-01-08-distraction-detection-proto-acquired/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m &lt;strong&gt;inching&lt;/strong&gt; my way toward writing a distraction detector that will allow Bieber Bot to notice when I&amp;rsquo;m distracted on my phone and stage an intervention. (Wow!, I first pitched this idea (to myself) &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&#34;&gt;in one of my very first snippets&lt;/a&gt;, back in 2019.)&lt;/p&gt;
-&lt;p&gt;Most recently &lt;a href=&#34;https://davidbieber.com/snippets/2021-01-01-programmatically-accessing-chromes-tabs-from-other-devices-data/&#34;&gt;I figured out where Chrome&amp;rsquo;s &amp;ldquo;Tabs from other devices&amp;rdquo; data is stored&lt;/a&gt;. However, I couldn&amp;rsquo;t parse the data because I didn&amp;rsquo;t know what the protocol buffer definition being used was.&lt;/p&gt;
+      <description>&lt;p&gt;I&amp;rsquo;m &lt;strong&gt;inching&lt;/strong&gt; my way toward writing a distraction detector that will allow Bieber Bot to notice when I&amp;rsquo;m distracted on my phone and stage an intervention. (Wow!, I first pitched this idea (to myself) 
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&#34;&gt;in one of my very first snippets&lt;/a&gt;, back in 2019.)&lt;/p&gt;
+&lt;p&gt;Most recently 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-01-programmatically-accessing-chromes-tabs-from-other-devices-data/&#34;&gt;I figured out where Chrome&amp;rsquo;s &amp;ldquo;Tabs from other devices&amp;rdquo; data is stored&lt;/a&gt;. However, I couldn&amp;rsquo;t parse the data because I didn&amp;rsquo;t know what the protocol buffer definition being used was.&lt;/p&gt;
 &lt;p&gt;Today, I heard back from someone who works on Chrome. I&amp;rsquo;ve acquired the proto definitions!&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;https://source.chromium.org/chromium/chromium/src/+/master:components/sync/protocol/session_specifics.proto&#34;&gt;proto definitions are here&lt;/a&gt; and &lt;a href=&#34;https://source.chromium.org/chromium/chromium/src/+/master:components/sync_sessions/session_store.cc&#34;&gt;the code that persists the data to disk is here&lt;/a&gt;. I can successfully bulid the protos (using protoc) and I can parse my session data from the leveldb database. Progress!&lt;/p&gt;
+&lt;p&gt;The 
+&lt;a href=&#34;https://source.chromium.org/chromium/chromium/src/&amp;#43;/master:components/sync/protocol/session_specifics.proto&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;proto definitions are here&lt;/a&gt; and 
+&lt;a href=&#34;https://source.chromium.org/chromium/chromium/src/&amp;#43;/master:components/sync_sessions/session_store.cc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the code that persists the data to disk is here&lt;/a&gt;. I can successfully bulid the protos (using protoc) and I can parse my session data from the leveldb database. Progress!&lt;/p&gt;
 &lt;p&gt;The trouble now is my phone seems to have stopped syncing its tabs two days ago. Weird! One more mystery to solve I guess&amp;hellip;&lt;/p&gt;
 </description>
     </item>
@@ -440,7 +462,8 @@ db.close()
       <link>https://davidbieber.com/snippets/2021-01-06-brains-dont-do-solomonoff-induction/</link>
       <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2021-01-06-brains-dont-do-solomonoff-induction/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://zhat.io/&#34;&gt;Dan Abolafia&lt;/a&gt; asked me some thought provoking questions about Solomonoff Induction and intelligence. This snippet comes from my answers.&lt;/p&gt;
+      <description>&lt;p&gt;
+&lt;a href=&#34;http://zhat.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dan Abolafia&lt;/a&gt; asked me some thought provoking questions about Solomonoff Induction and intelligence. This snippet comes from my answers.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Question: Do you think a person has a hypothesis space and prior that are fixed at the moment of birth and never change over the course of the person&amp;rsquo;s life?&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -537,7 +560,8 @@ db.close()
       <link>https://davidbieber.com/snippets/2021-01-04-more-datalog-queries-for-roam/</link>
       <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2021-01-04-more-datalog-queries-for-roam/</guid>
-      <description>&lt;p&gt;In this snippet I share datalog queries for Roam Research. For more such queries (and to see how to run these queries), &lt;a href=&#34;https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/&#34;&gt;see this earlier snippet on the subject&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;In this snippet I share datalog queries for Roam Research. For more such queries (and to see how to run these queries), 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/&#34;&gt;see this earlier snippet on the subject&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;pages-tagged-with-x-not-listed-on-page-y&#34;&gt;Pages tagged with &amp;ldquo;X&amp;rdquo; not listed on page &amp;ldquo;Y&amp;rdquo;&lt;/h2&gt;
 &lt;p&gt;This query is useful when constructing an index page. Let&amp;rsquo;s say you want to take all the pages you&amp;rsquo;ve tagged with &amp;ldquo;[[Brilliant Idea]]&amp;rdquo; and organize them on a page called &amp;ldquo;[[Brilliant Ideas Index]]&amp;rdquo;. This query will find you all the pages that are tagged with &amp;ldquo;[[Brilliant Idea]]&amp;rdquo; that haven&amp;rsquo;t yet been added to the &amp;ldquo;[[Brilliant Ideas Index]]&amp;rdquo; page.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let container = &amp;quot;Brilliant Ideas Index&amp;quot;;
@@ -654,7 +678,8 @@ block_info.forEach(
   return blocks;
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This is a key component of how I do &lt;a href=&#34;https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/&#34;&gt;automatic snippet publishing from Roam to my website&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is a key component of how I do 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/&#34;&gt;automatic snippet publishing from Roam to my website&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -663,7 +688,8 @@ block_info.forEach(
       <link>https://davidbieber.com/snippets/2021-01-03-2020-resolution-check-in/</link>
       <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2021-01-03-2020-resolution-check-in/</guid>
-      <description>&lt;p&gt;At the start of 2020 &lt;a href=&#34;https://davidbieber.com/snippets/2020-01-01-new-years-resolutions/&#34;&gt;I resolved to communicate publicly 100 times&lt;/a&gt;. How did I do? I got about 80% of the way there.&lt;/p&gt;
+      <description>&lt;p&gt;At the start of 2020 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-01-01-new-years-resolutions/&#34;&gt;I resolved to communicate publicly 100 times&lt;/a&gt;. How did I do? I got about 80% of the way there.&lt;/p&gt;
 &lt;p&gt;By the numbers, this is approximately 62 snippets, 8 tech talks, 4 published papers, 1 thesis proposal, 2 videos, and a handful of discussions in public on various Slack-like groups.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -716,7 +742,8 @@ block_info.forEach(
       <link>https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/</link>
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/</guid>
-      <description>&lt;p&gt;There are many ways to do spaced repetition in Roam Research. This post describes mine. I was inspired to start this two months ago by reading &lt;a href=&#34;https://ncase.me/remember/&#34;&gt;Nicky Case&amp;rsquo;s comic on spaced repetition&lt;/a&gt;, and I highly recommend the read.&lt;/p&gt;
+      <description>&lt;p&gt;There are many ways to do spaced repetition in Roam Research. This post describes mine. I was inspired to start this two months ago by reading 
+&lt;a href=&#34;https://ncase.me/remember/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nicky Case&amp;rsquo;s comic on spaced repetition&lt;/a&gt;, and I highly recommend the read.&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Spaced repetition&amp;rdquo; just means studying flashcards, studying the cards you know best less often, and study the cards you struggle with more often. It&amp;rsquo;s a powerful technique for learning and remembering material, whether you&amp;rsquo;re a student or a lifelong learner.&lt;/p&gt;
 &lt;p&gt;The system I use is based on a classic system called the &amp;ldquo;Leitner Box&amp;rdquo; method. I&amp;rsquo;ll first describe how to use the &amp;ldquo;Leitner Box&amp;rdquo; approach in Roam, and then I&amp;rsquo;ll describe the adjustments I made to improve it.&lt;/p&gt;
 &lt;h2 id=&#34;whats-a-leitner-box&#34;&gt;What&amp;rsquo;s a &amp;ldquo;Leitner Box&amp;rdquo;?&lt;/h2&gt;
@@ -729,7 +756,9 @@ block_info.forEach(
 &lt;p&gt;To recap, (1) you put new flashcards into Box 1. (2) When you get a card correct, you move it up a box. (3) When you get a card incorrect, you move it all the way back to Box 1. (4) You use the schedule made of colored dots to decide which boxes to review each day, answering questions in higher boxes first.&lt;/p&gt;
 &lt;h2 id=&#34;setting-up-leitner-boxes-in-roam&#34;&gt;Setting up Leitner Boxes in Roam&lt;/h2&gt;
 &lt;p&gt;This system is all well and good. How do we put it into practice? Here I&amp;rsquo;ll quickly describe (1) getting set up, (2) creating new flashcards, and (3) how to do a review session.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Setting up:&lt;/strong&gt; You can use my template; simply copy and paste the &lt;a href=&#34;https://pastebin.com/GPfhcUug&#34;&gt;&amp;ldquo;raw&amp;rdquo; text at the bottom of the page here&lt;/a&gt; into Roam Research, e.g. onto a new page named &amp;ldquo;Spaced Repetition&amp;rdquo;. For this to work you need to copy from the region that says &lt;strong&gt;&amp;ldquo;RAW paste data&amp;rdquo;&lt;/strong&gt;. You can &lt;a href=&#34;https://pastebin.com/zvjFKZAb&#34;&gt;get the enhanced template (recommended; see below) here&lt;/a&gt;. Again, be sure to copy from the region that says &amp;ldquo;RAW paste data&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Setting up:&lt;/strong&gt; You can use my template; simply copy and paste the 
+&lt;a href=&#34;https://pastebin.com/GPfhcUug&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;raw&amp;rdquo; text at the bottom of the page here&lt;/a&gt; into Roam Research, e.g. onto a new page named &amp;ldquo;Spaced Repetition&amp;rdquo;. For this to work you need to copy from the region that says &lt;strong&gt;&amp;ldquo;RAW paste data&amp;rdquo;&lt;/strong&gt;. You can 
+&lt;a href=&#34;https://pastebin.com/zvjFKZAb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get the enhanced template (recommended; see below) here&lt;/a&gt;. Again, be sure to copy from the region that says &amp;ldquo;RAW paste data&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;The default template creates a page for each of the seven Leitner boxes. It also puts the default schedule on the page, and gives you a place to keep track of what session number you&amp;rsquo;re up to. It will also add two questions to your Leitner Box 1 (one about avocados, and one about Cloze deletions), and includes some basic instructions for how to do spaced repetition in Roam.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Creating New Flashcards:&lt;/strong&gt; You can create a new card anywhere in your Roam graph simply by tagging a note with &amp;ldquo;#[[Leitner Box 1]]&amp;rdquo;. Here are two ways to create cards in Roam:&lt;/p&gt;
 &lt;ol&gt;
@@ -740,7 +769,9 @@ block_info.forEach(
 &lt;p&gt;You can use the syntax {{=: question | answer}} in Roam to create text that remains hidden until clicked. The text &amp;ldquo;answer&amp;rdquo; wont appear until you click on the text &amp;ldquo;question.&amp;rdquo; Again, tag the line with &amp;ldquo;#[[Leitner Box 1]]&amp;rdquo; to add it to your spaced repetition system.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;I recommend you &lt;a href=&#34;https://andymatuschak.org/prompts/&#34;&gt;read Andy Matuschak&amp;rsquo;s notes on &amp;ldquo;How to write good prompts&amp;rdquo;&lt;/a&gt; for tips on how to create good flashcards. &lt;a href=&#34;https://ncase.me/remember/&#34;&gt;Nicky Case&amp;rsquo;s comic: &amp;ldquo;How to Remember Anything Forever-ish&amp;rdquo;&lt;/a&gt; also has good suggestions for how to create good questions for spaced repetition.&lt;/p&gt;
+&lt;p&gt;I recommend you 
+&lt;a href=&#34;https://andymatuschak.org/prompts/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;read Andy Matuschak&amp;rsquo;s notes on &amp;ldquo;How to write good prompts&amp;rdquo;&lt;/a&gt; for tips on how to create good flashcards. 
+&lt;a href=&#34;https://ncase.me/remember/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nicky Case&amp;rsquo;s comic: &amp;ldquo;How to Remember Anything Forever-ish&amp;rdquo;&lt;/a&gt; also has good suggestions for how to create good questions for spaced repetition.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;How to do a Review Session:&lt;/strong&gt; Visit your &amp;ldquo;Spaced Repetition&amp;rdquo; page to figure out what session number to do. Increment the session number, and use the schedule to determine which Leitner boxes you&amp;rsquo;ll be looking at in this session. Remember, do the Leitner boxes in decreasing order of their number.&lt;/p&gt;
 &lt;p&gt;For each Leitner box, visit its page in Roam. All your questions will appear in the Linked References section of the page.&lt;/p&gt;
 &lt;p&gt;Go through the questions one by one. If you get the answer correct, increment the box number by 1. If you get the answer incorrect or struggle with it, set the tag back to &amp;ldquo;#[[Leitner Box 1]]&amp;rdquo;.&lt;/p&gt;
@@ -757,12 +788,17 @@ block_info.forEach(
 &lt;p&gt;To use this enhanced schedule, first use the review session number to figure out which column of colored circles to look at. As before, a red circle indicates Leitner Box 1, a yellow circle indicates Leitner Box 2, etc. If the circle has a letter inside it, that means to review that particular variant of the box. E.g. a blue circle with a &amp;ldquo;B&amp;rdquo; inside means to review Leitner box 5B. The arrow to the right of a box indicates which box you should move the card to if you get it correct. E.g. in review session &amp;ldquo;51&amp;rdquo; you should review box 5B and move correct cards to box 6D; you should then review boxes 2 and 1 as usual.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Embed the box list:&lt;/strong&gt; I use Roam Research&amp;rsquo;s &amp;ldquo;embed block&amp;rdquo; feature to embed a list of all Leitner Boxes onto all my Leitner Box pages. This makes it easy to quickly navigate from any box to any other box. I couldn&amp;rsquo;t think of a good way to include this in the template, so you&amp;rsquo;ll have to add this yourself if you want to include it.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Enhanced Template&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;You can &lt;a href=&#34;https://pastebin.com/zvjFKZAb&#34;&gt;access the enhanced version of the template here&lt;/a&gt;. It includes more Leitner boxes and the more complicated schedule. To use it, simply paste it into a new page in Roam Research, e.g. &amp;ldquo;Spaced Repetition&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;You can 
+&lt;a href=&#34;https://pastebin.com/zvjFKZAb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;access the enhanced version of the template here&lt;/a&gt;. It includes more Leitner boxes and the more complicated schedule. To use it, simply paste it into a new page in Roam Research, e.g. &amp;ldquo;Spaced Repetition&amp;rdquo;.&lt;/p&gt;
 &lt;h2 id=&#34;spaced-repetition-alternatives&#34;&gt;Spaced Repetition Alternatives&lt;/h2&gt;
-&lt;p&gt;There are multiple ways of doing spaced repetition in Roam, of which this is just one. Note that most spaced repetition systems in Roam Research use the &amp;ldquo;delta&amp;rdquo; feature. However, we are not using this feature. CortexFutura provides &lt;a href=&#34;https://www.cortexfutura.com/preliminary-spaced-repetition-roam/&#34;&gt;a way of using the delta feature for spaced repetition here&lt;/a&gt;. Roam Toolkit provides another system for doing spaced repetition in Roam, which you can &lt;a href=&#34;https://www.youtube.com/watch?v=08o8q_bOedw&#34;&gt;view on YouTube here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;One of the most popular spaced repetition systems is called &lt;a href=&#34;https://apps.ankiweb.net/&#34;&gt;Anki&lt;/a&gt;. It&amp;rsquo;s great for language learning. I&amp;rsquo;d be remiss not to mention it. The reason I prefer doing spaced repetition directly in Roam is that the friction to creating cards is much lower in Roam for me, since I&amp;rsquo;m taking notes and writing my ideas in there already.&lt;/p&gt;
+&lt;p&gt;There are multiple ways of doing spaced repetition in Roam, of which this is just one. Note that most spaced repetition systems in Roam Research use the &amp;ldquo;delta&amp;rdquo; feature. However, we are not using this feature. CortexFutura provides 
+&lt;a href=&#34;https://www.cortexfutura.com/preliminary-spaced-repetition-roam/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a way of using the delta feature for spaced repetition here&lt;/a&gt;. Roam Toolkit provides another system for doing spaced repetition in Roam, which you can 
+&lt;a href=&#34;https://www.youtube.com/watch?v=08o8q_bOedw&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;view on YouTube here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;One of the most popular spaced repetition systems is called 
+&lt;a href=&#34;https://apps.ankiweb.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anki&lt;/a&gt;. It&amp;rsquo;s great for language learning. I&amp;rsquo;d be remiss not to mention it. The reason I prefer doing spaced repetition directly in Roam is that the friction to creating cards is much lower in Roam for me, since I&amp;rsquo;m taking notes and writing my ideas in there already.&lt;/p&gt;
 &lt;p&gt;Additionally RemNote, a competitor note-taking tool to Roam, also offers a highly configurable spaced repetition system out-of-the-box.&lt;/p&gt;
-&lt;p&gt;For more, consider joining the conversation in the &lt;a href=&#34;https://roamresearch.slack.com/&#34;&gt;Roam Research Slack&lt;/a&gt; &amp;ldquo;spaced-repetition&amp;rdquo; channel.&lt;/p&gt;
+&lt;p&gt;For more, consider joining the conversation in the 
+&lt;a href=&#34;https://roamresearch.slack.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research Slack&lt;/a&gt; &amp;ldquo;spaced-repetition&amp;rdquo; channel.&lt;/p&gt;
 &lt;h2 id=&#34;two-advantages-of-this-system-over-traditional-spaced-repetition-systems&#34;&gt;Two advantages of this system over traditional spaced repetition systems&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -773,11 +809,22 @@ block_info.forEach(
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;additional-resources&#34;&gt;Additional Resources&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://ncase.me/remember/&#34;&gt;Nicky Case&amp;rsquo;s comic: &amp;ldquo;How to Remember Anything Forever-ish&amp;rdquo;&lt;/a&gt; is what inspired me to start using spaced repetition in my life.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://withorbit.com/&#34;&gt;Andy Matuschak&amp;rsquo;s &amp;ldquo;Orbit&amp;rdquo; system&lt;/a&gt; enables writers to incorporate spaced repetition directly into their writing, to help their readers remember what they learned forever. You can read &lt;a href=&#34;https://quantum.country/&#34;&gt;Quantum Country&lt;/a&gt; to learn quantum computing and give it a try. You could also &lt;a href=&#34;https://andymatuschak.org/prompts/&#34;&gt;read his tips for &amp;ldquo;How to write good prompts&amp;rdquo;&lt;/a&gt;, which is also written with Orbit.&lt;/p&gt;
-&lt;p&gt;You can &lt;a href=&#34;https://apps.ankiweb.net/&#34;&gt;get Anki here&lt;/a&gt; or &lt;a href=&#34;https://www.remnote.io/&#34;&gt;try RemNote here&lt;/a&gt;. I also have a dozen+ other &lt;a href=&#34;https://davidbieber.com/snippets/&#34;&gt;snippets about Roam here&lt;/a&gt; (&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-25-introducing-snippets/&#34;&gt;what&amp;rsquo;s a “snippet”?&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://ncase.me/remember/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nicky Case&amp;rsquo;s comic: &amp;ldquo;How to Remember Anything Forever-ish&amp;rdquo;&lt;/a&gt; is what inspired me to start using spaced repetition in my life.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://withorbit.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Andy Matuschak&amp;rsquo;s &amp;ldquo;Orbit&amp;rdquo; system&lt;/a&gt; enables writers to incorporate spaced repetition directly into their writing, to help their readers remember what they learned forever. You can read 
+&lt;a href=&#34;https://quantum.country/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Quantum Country&lt;/a&gt; to learn quantum computing and give it a try. You could also 
+&lt;a href=&#34;https://andymatuschak.org/prompts/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;read his tips for &amp;ldquo;How to write good prompts&amp;rdquo;&lt;/a&gt;, which is also written with Orbit.&lt;/p&gt;
+&lt;p&gt;You can 
+&lt;a href=&#34;https://apps.ankiweb.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get Anki here&lt;/a&gt; or 
+&lt;a href=&#34;https://www.remnote.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;try RemNote here&lt;/a&gt;. I also have a dozen+ other 
+&lt;a href=&#34;https://davidbieber.com/snippets/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;snippets about Roam here&lt;/a&gt; (
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-25-introducing-snippets/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;what&amp;rsquo;s a “snippet”?&lt;/a&gt;).&lt;/p&gt;
 &lt;h2 id=&#34;get-in-touch&#34;&gt;Get in touch&lt;/h2&gt;
-&lt;p&gt;I love a good discussion about spaced repetition. You can email me at &lt;a href=&#34;mailto:david810+spaced-repetition@gmail.com&#34;&gt;david810+spaced-repetition@gmail.com&lt;/a&gt;, find me on Twitter (&lt;a href=&#34;https://twitter.com/@Bieber&#34;&gt;@Bieber&lt;/a&gt;), or join the &lt;a href=&#34;https://roamresearch.slack.com/&#34;&gt;Roam slack&lt;/a&gt; to keep the conversation going.&lt;/p&gt;
+&lt;p&gt;I love a good discussion about spaced repetition. You can email me at 
+&lt;a href=&#34;mailto:david810&amp;#43;spaced-repetition@gmail.com&#34;&gt;david810+spaced-repetition@gmail.com&lt;/a&gt;, find me on Twitter (
+&lt;a href=&#34;https://twitter.com/@Bieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Bieber&lt;/a&gt;), or join the 
+&lt;a href=&#34;https://roamresearch.slack.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam slack&lt;/a&gt; to keep the conversation going.&lt;/p&gt;
 </description>
     </item>
     
@@ -825,7 +872,8 @@ for key, value in db.iterator():
 &lt;p&gt;(4) Finally, look over the complete list of reasons. &lt;strong&gt;Come up with categories&lt;/strong&gt; for the reasons. Maybe one thought arose because something you saw or smelled triggered a memory. Maybe other thoughts arose because one word sounds like another. Be creative in how you categorize thoughts. There&amp;rsquo;s no right or wrong way to do this.&lt;/p&gt;
 &lt;p&gt;That&amp;rsquo;s all. This whole experiment can take less than half an hour, less or more depending on how into it you get and how detailed you are. While it doesn&amp;rsquo;t take that much time, it can be mentally draining. Have some water, relax, treat yourself when you&amp;rsquo;re done :).&lt;/p&gt;
 &lt;p&gt;As I mentioned, the purpose of the experiment is to better understand where thoughts come from. Individually, this experiment helps us better understand ourselves through introspection. Through sharing the results with each other, it can also help us better understand each other.&lt;/p&gt;
-&lt;p&gt;I would be absolutely delighted to hear from you if you do this experiment. You can reach me at &lt;a href=&#34;mailto:david810+thinking@gmail.com&#34;&gt;david810+thinking@gmail.com&lt;/a&gt;. Feel free to send me your thoughts, causes, and categories from the experiment (or just a subset if any of that is too personal to share). And I would of course also love to hear your thoughts about the experiment too, or your thoughts on thinking. Really, don&amp;rsquo;t hesitate to get in touch.&lt;/p&gt;
+&lt;p&gt;I would be absolutely delighted to hear from you if you do this experiment. You can reach me at 
+&lt;a href=&#34;mailto:david810&amp;#43;thinking@gmail.com&#34;&gt;david810+thinking@gmail.com&lt;/a&gt;. Feel free to send me your thoughts, causes, and categories from the experiment (or just a subset if any of that is too personal to share). And I would of course also love to hear your thoughts about the experiment too, or your thoughts on thinking. Really, don&amp;rsquo;t hesitate to get in touch.&lt;/p&gt;
 </description>
     </item>
     
@@ -834,13 +882,17 @@ for key, value in db.iterator():
       <link>https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/</link>
       <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/</guid>
-      <description>&lt;p&gt;I thought today I would attempt a proper treatment of my latest automatic &amp;ldquo;&lt;a href=&#34;https://davidbieber.com/snippets/&#34;&gt;snippet&lt;/a&gt;&amp;rdquo; publishing system. It uses JavaScript embedded directly in Roam Research to publish snippets to my website with low latency as I write them.&lt;/p&gt;
+      <description>&lt;p&gt;I thought today I would attempt a proper treatment of my latest automatic &amp;ldquo;
+&lt;a href=&#34;https://davidbieber.com/snippets/&#34;&gt;snippet&lt;/a&gt;&amp;rdquo; publishing system. It uses JavaScript embedded directly in Roam Research to publish snippets to my website with low latency as I write them.&lt;/p&gt;
 &lt;h2 id=&#34;prior-methods&#34;&gt;Prior methods&lt;/h2&gt;
-&lt;p&gt;Previously I&amp;rsquo;ve written a system to allow &lt;a href=&#34;https://davidbieber.com/snippets/2020-09-27-posting-snippets-from-my-phone/&#34;&gt;Bieber Bot to publish snippets that I send him&lt;/a&gt;, and followed that up with a &lt;a href=&#34;https://davidbieber.com/snippets/2020-10-06-introducing-the-snippet-queue/&#34;&gt;snippet queue&lt;/a&gt; to allow me to schedule the publication of my snippets.&lt;/p&gt;
+&lt;p&gt;Previously I&amp;rsquo;ve written a system to allow 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-09-27-posting-snippets-from-my-phone/&#34;&gt;Bieber Bot to publish snippets that I send him&lt;/a&gt;, and followed that up with a 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-10-06-introducing-the-snippet-queue/&#34;&gt;snippet queue&lt;/a&gt; to allow me to schedule the publication of my snippets.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve then also implemented two previous automatic snippet publishers from Roam. The first used my roam-to-git backup to detect new or updated snippets. The second used a puppeteer instance to occasionally check Roam for new or updated snippets.&lt;/p&gt;
 &lt;p&gt;That makes this my third implementation of automatic snippet publishing from Roam, and my fifth automatic snippet publishing project to date. It&amp;rsquo;s the fastest yet, going from Roam to live on the website in just 90 seconds.&lt;/p&gt;
 &lt;h2 id=&#34;room-for-improvement&#34;&gt;Room for improvement&lt;/h2&gt;
-&lt;p&gt;Why was publishing through Bieber Bot not enough? Roam is a natural place to write, and I find I write quite a bit more here than I do elsewhere. Since snippets are &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34;&gt;all about lowering the barrier of entry to writing&lt;/a&gt;, supporting writing snippets in Roam seems natural.&lt;/p&gt;
+&lt;p&gt;Why was publishing through Bieber Bot not enough? Roam is a natural place to write, and I find I write quite a bit more here than I do elsewhere. Since snippets are 
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34;&gt;all about lowering the barrier of entry to writing&lt;/a&gt;, supporting writing snippets in Roam seems natural.&lt;/p&gt;
 &lt;p&gt;Why was the roam-to-git backup based automatic publication system insufficient? While, adequate, the latency between writing a snippet and having it show up on my website was multiple hours. The roam-to-git backups only trigger every hour, and fail about 30% of the time. The script to use those backups to publish to my website would also only run every hour. Their combined schedules meant it could be 2-3 or more hours between writing a snippet and being able to share the link to it. Lowering this latency would give me more freedom to quickly write and share snippets, and also to iterate on a published snippet. Fast iteration is powerful.&lt;/p&gt;
 &lt;p&gt;Finally, why was the puppeteer-based approach insufficient. While this approach had the potential to bring the publication latency down considerably, in practice I scheduled in to run about hourly, since a headless browser is a computationally heavy piece of software.&lt;/p&gt;
 &lt;h2 id=&#34;the-new-approach-roamjs&#34;&gt;The new approach: &amp;ldquo;roam/js&amp;rdquo;&lt;/h2&gt;
@@ -849,8 +901,10 @@ for key, value in db.iterator():
 &lt;h2 id=&#34;detecting-new-snippets-and-snippet-updates&#34;&gt;Detecting new snippets and snippet updates&lt;/h2&gt;
 &lt;p&gt;There are two key pieces to how I detect new and updated snippets. The first is a &amp;ldquo;mutation observer&amp;rdquo;. A mutation observer is an object in JavaScript that allows you to schedule events to occur when DOM changes are made to a website. In Roam, the DOM is modified when the user makes edits, and so DOM changes can indicate that the user has made a change to their notes.&lt;/p&gt;
 &lt;p&gt;We would like to detect when a snippet is created or edited. So, we write a function that detects if a snippet has been created or edited since the last time it was called, and we use a mutation observer to call this function when the DOM changes.&lt;/p&gt;
-&lt;p&gt;Since DOM changes can occur very frequently in Roam, we use a technique called &lt;a href=&#34;https://davidwalsh.name/javascript-debounce-function&#34;&gt;debouncing&lt;/a&gt; to limit the number of calls to this detection function during periods of many consecutive DOM changes.&lt;/p&gt;
-&lt;p&gt;How do we detect if a snippet has been created or edited? Roam Research provides a datalog API that allows us to query our entire Roam graph using a logic programming language. You can &lt;a href=&#34;https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/&#34;&gt;learn more about how this works here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Since DOM changes can occur very frequently in Roam, we use a technique called 
+&lt;a href=&#34;https://davidwalsh.name/javascript-debounce-function&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;debouncing&lt;/a&gt; to limit the number of calls to this detection function during periods of many consecutive DOM changes.&lt;/p&gt;
+&lt;p&gt;How do we detect if a snippet has been created or edited? Roam Research provides a datalog API that allows us to query our entire Roam graph using a logic programming language. You can 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/&#34;&gt;learn more about how this works here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I mark a snippet for publication by tagging it with both the &amp;ldquo;Snippets&amp;rdquo; tag, and the &amp;ldquo;ok-to-publish&amp;rdquo; tag. This query detects those blocks that are part of a publishable snippet.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;ancestor = `[ 
  [(ancestor ?child ?parent) 
@@ -883,7 +937,8 @@ block_info = window.roamAlphaAPI.q(`[
 &lt;p&gt;Since Datalog returns the results in an arbitrary order, we need to use the :block/order attribute to reconstruct the proper order of the blocks that comprise the snippet. The logic for this isn&amp;rsquo;t shown, but don&amp;rsquo;t hesitate to reach out if this interests you!&lt;/p&gt;
 &lt;p&gt;Finally, our mutation observer keeps track of the text of each of the snippets, and if any of them change or if a new snippet is introduced, it triggers a GitHub Action to deploy the snippet to my website.&lt;/p&gt;
 &lt;h2 id=&#34;writing-a-github-action-to-update-my-website&#34;&gt;Writing a GitHub Action to update my website&lt;/h2&gt;
-&lt;p&gt;My website uses a static site generator, Hugo. So, updating my website consists of adding a markdown file to &lt;a href=&#34;https://github.com/dbieber/davidbieber.com&#34;&gt;its GitHub repo&lt;/a&gt;, rebuilding the site by running Hugo, and then pushing the generated static files up to my server. All of these steps can be automated in a GitHub action.&lt;/p&gt;
+&lt;p&gt;My website uses a static site generator, Hugo. So, updating my website consists of adding a markdown file to 
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;its GitHub repo&lt;/a&gt;, rebuilding the site by running Hugo, and then pushing the generated static files up to my server. All of these steps can be automated in a GitHub action.&lt;/p&gt;
 &lt;h3 id=&#34;triggering-a-github-action-from-roam-research&#34;&gt;Triggering a GitHub Action from Roam Research&lt;/h3&gt;
 &lt;p&gt;To trigger a GitHub Action from Roam Research, I set up the action to trigger on &amp;ldquo;repository_dispatch&amp;rdquo; events. I created a personal authentication token, and then use the following JavaScript to trigger the GitHub Action:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function publishSnippetRaw(uid, title, date, content) {
@@ -919,7 +974,9 @@ const publishSnippet = debounce(publishSnippetRaw, 15000, true);
 &lt;p&gt;Environment variables like this can then be used by the steps in the action. This allows me to pass the contents of the new/modified snippet to the GitHub Action, which is everything needed for automating its publication.&lt;/p&gt;
 &lt;p&gt;The GitHub Action writes the markdown file, commits it to the repository, runs hugo to regenerate the static files for the website, and commits those to the appropriate part of the repo as well. The only step remaining at this point is pushing the new files up to my server to serve.&lt;/p&gt;
 &lt;h2 id=&#34;deploying-with-ansible&#34;&gt;Deploying with Ansible&lt;/h2&gt;
-&lt;p&gt;I use &lt;a href=&#34;https://www.ansible.com/&#34;&gt;Ansible&lt;/a&gt; to deploy my website to its lone server. &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;Bieber Bot&lt;/a&gt; is also quite capable of using Ansible. So, we have an arrangement where I tell Bieber Bot when to redeploy my website, and he does so for me. This way I can deploy my website even when I&amp;rsquo;m on the go and not at a computer; I just message him using my phone.&lt;/p&gt;
+&lt;p&gt;I use 
+&lt;a href=&#34;https://www.ansible.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ansible&lt;/a&gt; to deploy my website to its lone server. 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bieber Bot&lt;/a&gt; is also quite capable of using Ansible. So, we have an arrangement where I tell Bieber Bot when to redeploy my website, and he does so for me. This way I can deploy my website even when I&amp;rsquo;m on the go and not at a computer; I just message him using my phone.&lt;/p&gt;
 &lt;p&gt;All steps, from the last keystroke of writing a snippet to having it show up live on my website, together take about 90 seconds. This is a significant quality-of-life improvement over the multi-hour latency of just a few days ago. I&amp;rsquo;m hopeful that the result is I&amp;rsquo;ll write even more.&lt;/p&gt;
 </description>
     </item>
@@ -932,7 +989,8 @@ const publishSnippet = debounce(publishSnippetRaw, 15000, true);
       <description>&lt;p&gt;I&amp;rsquo;ve set up a GitHub action to enable even faster automatic publishing of snippets from Roam. This is a test-snippet I&amp;rsquo;m using while writing the auto-publisher.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s see how it behaves if I&amp;rsquo;m editing an existing snippet routinely for a while.&lt;/p&gt;
 &lt;p&gt;If it works as intended, the snippet will update itself on GitHub after I stop typing for several seconds. I&amp;rsquo;ve now stopped typing, we&amp;rsquo;ll see what happens.&lt;/p&gt;
-&lt;p&gt;It worked! &lt;a href=&#34;https://github.com/dbieber/davidbieber.com/commit/1f1ad4680e1d538f699cf2cd420f0c04a4bf528a&#34;&gt;Here&amp;rsquo;s the commit&lt;/a&gt; that was made automatically after I finished the previous sentence.&lt;/p&gt;
+&lt;p&gt;It worked! 
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/commit/1f1ad4680e1d538f699cf2cd420f0c04a4bf528a&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Here&amp;rsquo;s the commit&lt;/a&gt; that was made automatically after I finished the previous sentence.&lt;/p&gt;
 &lt;p&gt;This will make publishing snippets &lt;strong&gt;even easier&lt;/strong&gt; going forward. It also means I don&amp;rsquo;t need to keep a puppeteer instance constantly live with Roam open like I&amp;rsquo;d originally planned for.&lt;/p&gt;
 &lt;p&gt;The total latency from writing to publication is now just 90 seconds. So you could be reading this mere minutes after I write it!&lt;/p&gt;
 </description>
@@ -945,7 +1003,8 @@ const publishSnippet = debounce(publishSnippetRaw, 15000, true);
       <guid>https://davidbieber.com/snippets/2020-12-26-pythons-strip-lstrip-and-rstrip-in-javascript/</guid>
       <description>&lt;p&gt;Python provides some convenient functions for manipulating strings: &lt;code&gt;strip&lt;/code&gt;, &lt;code&gt;lstrip&lt;/code&gt;, and &lt;code&gt;rstrip&lt;/code&gt;. Recently I was writing some JavaScript and wanted to use &lt;code&gt;rstrip&lt;/code&gt;. So, I&amp;rsquo;ve implemented all three. Here they are:&lt;/p&gt;
 &lt;h2 id=&#34;the-python-strip-method-in-javascript&#34;&gt;The Python strip method in JavaScript&lt;/h2&gt;
-&lt;p&gt;In Python, &lt;code&gt;strip&lt;/code&gt; removes whitespace from the beginning or end of a string. This is commonly called &amp;ldquo;trim&amp;rdquo; in JavaScript, and is provided as a builtin in most modern browsers. You may need to implement it yourself if you want to support older browsers though. Here&amp;rsquo;s one possible implementation, &lt;a href=&#34;https://www.w3schools.com/python/ref_string_strip.asp&#34;&gt;courtesy of W3Schools&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In Python, &lt;code&gt;strip&lt;/code&gt; removes whitespace from the beginning or end of a string. This is commonly called &amp;ldquo;trim&amp;rdquo; in JavaScript, and is provided as a builtin in most modern browsers. You may need to implement it yourself if you want to support older browsers though. Here&amp;rsquo;s one possible implementation, 
+&lt;a href=&#34;https://www.w3schools.com/python/ref_string_strip.asp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;courtesy of W3Schools&lt;/a&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function trim(x) {
   return x.replace(/^\s+|\s+$/gm, &#39;&#39;);
 }```
@@ -1041,7 +1100,9 @@ rtrim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;Bu&#39;;```
       <link>https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/</link>
       <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/</guid>
-      <description>&lt;p&gt;Hey folks, I have a &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;workflow&lt;/a&gt; for automatically publishing &amp;ldquo;&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34;&gt;snippets&lt;/a&gt;&amp;rdquo; to my website from Roam. Currently there&amp;rsquo;s a multi-hour latency between writing a snippet and when it appears on my website. In this snippet I&amp;rsquo;m going to muse about / ask questions about how to use &lt;strong&gt;puppeteer&lt;/strong&gt; to bring this latency down considerably. This&amp;rsquo;ll be my first time using puppeteer, so help appreciated. Read on!&lt;/p&gt;
+      <description>&lt;p&gt;Hey folks, I have a 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;workflow&lt;/a&gt; for automatically publishing &amp;ldquo;
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;snippets&lt;/a&gt;&amp;rdquo; to my website from Roam. Currently there&amp;rsquo;s a multi-hour latency between writing a snippet and when it appears on my website. In this snippet I&amp;rsquo;m going to muse about / ask questions about how to use &lt;strong&gt;puppeteer&lt;/strong&gt; to bring this latency down considerably. This&amp;rsquo;ll be my first time using puppeteer, so help appreciated. Read on!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-small/1f62e@2x.png&#34; alt=&#34;😮&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The current system relies on my git-to-roam backup, which runs every hour and fails some fraction of the time.&lt;/p&gt;
 &lt;p&gt;So, to bring the latency down, the idea is to use pyppeteer (the python puppeteer bindings) to log into Roam in a headless browser.&lt;/p&gt;
@@ -1081,7 +1142,8 @@ rtrim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;Bu&#39;;```
       <link>https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/</link>
       <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://roamresearch.com/&#34;&gt;Roam Research&lt;/a&gt; is an excellent note taking tool. One of its core features is &amp;ldquo;back links&amp;rdquo; &amp;ndash; any of your notes can easily references any of your other notes, and so all your notes end up linked together in an intricate graph structure. You can quickly see all the references to a note, hence the term &amp;ldquo;back link&amp;rdquo;.&lt;/p&gt;
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://roamresearch.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research&lt;/a&gt; is an excellent note taking tool. One of its core features is &amp;ldquo;back links&amp;rdquo; &amp;ndash; any of your notes can easily references any of your other notes, and so all your notes end up linked together in an intricate graph structure. You can quickly see all the references to a note, hence the term &amp;ldquo;back link&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Roam exposes all of the information in your graph through a &lt;strong&gt;datalog API&lt;/strong&gt;. Datalog is a declarative programming language that lets you make queries about your graph.&lt;/p&gt;
 &lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
 &lt;p&gt;If you want to learn datalog, I recommend &lt;a href=&#34;http://www.learndatalogtoday.org/&#34;&gt;http://www.learndatalogtoday.org/&lt;/a&gt;. It teaches how to write datalog queries in 8 relatively short chapters chock full of examples.&lt;/p&gt;
@@ -1090,7 +1152,8 @@ rtrim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;Bu&#39;;```
 &lt;p&gt;In this snippet I include a number of examples of useful datalog queries for Roam Research.&lt;/p&gt;
 &lt;h3 id=&#34;how-to-run-a-query&#34;&gt;How to Run a Query&lt;/h3&gt;
 &lt;p&gt;Open the JavaScript console. Paste the query. Hit enter.&lt;/p&gt;
-&lt;p&gt;To open the JavaScript console in Chrome, hit cmd-option-J on Mac or Ctrl-shift-J on Windows. For other systems, &lt;a href=&#34;https://www.google.com/search?q=how%20to%20open%20the%20javascript%20console&#34;&gt;you can look up how to open it&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To open the JavaScript console in Chrome, hit cmd-option-J on Mac or Ctrl-shift-J on Windows. For other systems, 
+&lt;a href=&#34;https://www.google.com/search?q=how%20to%20open%20the%20javascript%20console&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;you can look up how to open it&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;pages-modified-today&#34;&gt;Pages modified today&lt;/h3&gt;
 &lt;p&gt;This query returns a list of pages that have been modified today.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let ancestorrule=`[ 
@@ -1178,7 +1241,8 @@ let results = window.roamAlphaAPI.q(`[
 results.map((data, index) =&amp;gt; {return `((${data[1]})) (${data[2]})`}).join(&#39;\n&#39;);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;support-and-debugging&#34;&gt;Support and Debugging&lt;/h2&gt;
-&lt;p&gt;The &amp;ldquo;#querying&amp;rdquo; channel on the &lt;a href=&#34;https://roamresearch.slack.com/&#34;&gt;Roam Research Slack&lt;/a&gt; is active and the community there is quite friendly. If you&amp;rsquo;re crafting or debugging a query, that&amp;rsquo;s a great place to ask for help or share your progress.&lt;/p&gt;
+&lt;p&gt;The &amp;ldquo;#querying&amp;rdquo; channel on the 
+&lt;a href=&#34;https://roamresearch.slack.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research Slack&lt;/a&gt; is active and the community there is quite friendly. If you&amp;rsquo;re crafting or debugging a query, that&amp;rsquo;s a great place to ask for help or share your progress.&lt;/p&gt;
 </description>
     </item>
     
@@ -1328,7 +1392,8 @@ results.map((data, index) =&amp;gt; {return `((${data[1]})) (${data[2]})`}).join
       <pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-12-02-supervisord/</guid>
       <description>&lt;p&gt;Supervisord has been the single best quality-of-life improvement for software development for me in 2020.&lt;/p&gt;
-&lt;p&gt;Many thanks to &lt;a href=&#34;https://vikb.com/&#34;&gt;Vik Bhandari&lt;/a&gt; for suggesting that I use it.&lt;/p&gt;
+&lt;p&gt;Many thanks to 
+&lt;a href=&#34;https://vikb.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vik Bhandari&lt;/a&gt; for suggesting that I use it.&lt;/p&gt;
 &lt;p&gt;What is supervisord? It&amp;rsquo;s a &amp;ldquo;process control system,&amp;rdquo; meaning that it&amp;rsquo;s software that starts, stops, and monitors other software that you want to run.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s an example. Let&amp;rsquo;s say you have a program &lt;code&gt;check_for_sales&lt;/code&gt; that periodically pings Amazon looking for sales on that new shoe-phone you&amp;rsquo;ve had your eye on. When it notices a drop in prices, it sends you a text.&lt;/p&gt;
 &lt;p&gt;Without supervisord, you might start the program, and find the next day that it has hit an error (maybe one of the requests to Amazon timed out in a way you weren&amp;rsquo;t anticipating), the program terminated, and the item sold out while you weren&amp;rsquo;t looking!&lt;/p&gt;
@@ -1336,7 +1401,8 @@ results.map((data, index) =&amp;gt; {return `((${data[1]})) (${data[2]})`}).join
 &lt;p&gt;I&amp;rsquo;ve been using supervisord for all sorts of things, like monitoring Bieber Bot for new messages, keeping my website&amp;rsquo;s development server live, automatically posting snippets from Roam (like this one), and auto-processing screenshots and screen recordings that I take. I have 15 processes monitored by supervisord in total across a number of side projects.&lt;/p&gt;
 &lt;p&gt;Before supervisord, I had half the number of processes always-on in the background on my computer. I would keep extra terminal windows open to keep them running. And restarting my computer was a pain because I had to bring up these processes one at a time.&lt;/p&gt;
 &lt;p&gt;Now, with supervisord, restarting my machine is no big deal. This let&amp;rsquo;s me use my computer more freely, and I feel much less hesitation in starting a new project that requires having an always-on process.&lt;/p&gt;
-&lt;p&gt;You can learn more about supervisord from their website &lt;a href=&#34;http://supervisord.org/&#34;&gt;supervisord.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can learn more about supervisord from their website 
+&lt;a href=&#34;http://supervisord.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;supervisord.org&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -1354,7 +1420,8 @@ results.map((data, index) =&amp;gt; {return `((${data[1]})) (${data[2]})`}).join
 &lt;p&gt;Editing slides and docs in this way would be so useful! Being able to focus on content in Roam, and presentation in a tool that&amp;rsquo;s built for presentation (like Docs and Slides) would be such a powerful combination.&lt;/p&gt;
 &lt;p&gt;In my experience, Roam is a powerful tool for &lt;strong&gt;thinking&lt;/strong&gt; and &lt;strong&gt;note-taking&lt;/strong&gt;, but not as useful for sharing those thoughts. When you&amp;rsquo;re sharing, you want to tell a story. You want to guide the reader through your thought process, and be in control of the narrative the whole time.&lt;/p&gt;
 &lt;p&gt;With Roam, the reader might wander off down some unexpected path you, the writer, weren&amp;rsquo;t anticipating. Once that happens, you&amp;rsquo;ve lost the reader. They&amp;rsquo;re going to find themselves in unpolished not-really-relevant material, and you&amp;rsquo;re not going to get to convey the narrative you were aiming for.&lt;/p&gt;
-&lt;p&gt;This is fine for an &lt;a href=&#34;http://en.wikipedia.org/&#34;&gt;encyclopedia&lt;/a&gt;, but not so good for telling a story.&lt;/p&gt;
+&lt;p&gt;This is fine for an 
+&lt;a href=&#34;http://en.wikipedia.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;encyclopedia&lt;/a&gt;, but not so good for telling a story.&lt;/p&gt;
 &lt;p&gt;Being able to seamlessly do your thinking in Roam while also producing polished presentations (not just Slides, but anything meant for sharing, like emails, documents, images, etc) will be an absolute game changer for how we think and communicate.&lt;/p&gt;
 &lt;p&gt;This video may not be a real product, but it represents a real vision, and we have the technology to make it real. Now, let&amp;rsquo;s put in the work and bring this vision into reality.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ll post more in future snippets about how I think we can build a system like this today. (And I&amp;rsquo;ll also share how I made the video, despite the product integration not having been developed yet.)&lt;/p&gt;
@@ -1425,7 +1492,11 @@ Perhaps if I look at the diff between head and two commits back, I can avoid mis
       <pubDate>Fri, 09 Oct 2020 22:55:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-10-09-an-update-on-my-2020-resolution/</guid>
       <description>&lt;p&gt;My goal for this year was to get good at communicating publicly. I decided to measure progress in terms of the number of times I communicated publicly. 100 public communications was the goal. Where am I today?&lt;/p&gt;
-&lt;p&gt;This is my 42nd snippet for the year. I&amp;rsquo;m giving a talk on Python Fire publicly next week. I published 4 papers (&lt;a href=&#34;https://arxiv.org/abs/2010.12621&#34;&gt;IPA-GNN&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2003.09040&#34;&gt;TF-Coder&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/2002.09067&#34;&gt;Unique Randomizer&lt;/a&gt;, and &lt;a href=&#34;https://arxiv.org/abs/2007.14381&#34;&gt;BUSTLE&lt;/a&gt;). So far two of them have been accompanied by open source releases (update: now three!).&lt;/p&gt;
+&lt;p&gt;This is my 42nd snippet for the year. I&amp;rsquo;m giving a talk on Python Fire publicly next week. I published 4 papers (
+&lt;a href=&#34;https://arxiv.org/abs/2010.12621&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IPA-GNN&lt;/a&gt;, 
+&lt;a href=&#34;https://arxiv.org/abs/2003.09040&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TF-Coder&lt;/a&gt;, 
+&lt;a href=&#34;https://arxiv.org/abs/2002.09067&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Unique Randomizer&lt;/a&gt;, and 
+&lt;a href=&#34;https://arxiv.org/abs/2007.14381&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BUSTLE&lt;/a&gt;). So far two of them have been accompanied by open source releases (update: now three!).&lt;/p&gt;
 &lt;p&gt;Add in a handful of paper presentations and Google-internal talks, and its safe to say I&amp;rsquo;m past the half-way point toward the goal. Only trouble is we&amp;rsquo;re over 75% of the way through the year. I&amp;rsquo;d better get communicating!&lt;/p&gt;
 </description>
     </item>
@@ -1435,7 +1506,8 @@ Perhaps if I look at the diff between head and two commits back, I can avoid mis
       <link>https://davidbieber.com/snippets/2020-10-08-biking-in-the-morning/</link>
       <pubDate>Thu, 08 Oct 2020 22:04:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-10-08-biking-in-the-morning/</guid>
-      <description>&lt;p&gt;Some of the &lt;a href=&#34;https://davidbieber.com/snippets/2020-10-06-the-snippets-i-dont-publish/&#34;&gt;snippets I did not publish&lt;/a&gt; were about my plans for biking in the morning. For the last several days I&amp;rsquo;ve been biking to East Rock each morning, doing so before starting work on work days. I bring my pocket-sized keyboard and my phone, and when I&amp;rsquo;m at the top of the Rock I use my friend Jacob Cole&amp;rsquo;s app, ThoughtStream, to write about whatever&amp;rsquo;s on my mind. Sometimes this is a potential snippet, and sometimes it&amp;rsquo;s just planning for the day.&lt;/p&gt;
+      <description>&lt;p&gt;Some of the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-10-06-the-snippets-i-dont-publish/&#34;&gt;snippets I did not publish&lt;/a&gt; were about my plans for biking in the morning. For the last several days I&amp;rsquo;ve been biking to East Rock each morning, doing so before starting work on work days. I bring my pocket-sized keyboard and my phone, and when I&amp;rsquo;m at the top of the Rock I use my friend Jacob Cole&amp;rsquo;s app, ThoughtStream, to write about whatever&amp;rsquo;s on my mind. Sometimes this is a potential snippet, and sometimes it&amp;rsquo;s just planning for the day.&lt;/p&gt;
 &lt;p&gt;I really like this routine but I&amp;rsquo;m not confident that I&amp;rsquo;ll continue it. Consistently getting up early for an extended period of time can be challenging, and I&amp;rsquo;m not inclined to set an alarm to help. Also, the weather is getting cooler.&lt;/p&gt;
 &lt;p&gt;I certainly hope that I continue this routine, and I intend to maintain it. I simply don&amp;rsquo;t know that I will, and don&amp;rsquo;t feel confidently enough that I will to make any sort of declaration or commitment to doing so. Is there a name for this type of goal? I think &amp;ldquo;intent&amp;rdquo; is appropriate, but doesn&amp;rsquo;t capture the aspirational aspect of it. For now lets call it an &amp;ldquo;aspirational intent&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;I aspirationally intend to keep biking to East Rock most mornings, until the weather gets too cold to permit doing so.&lt;/p&gt;
@@ -1447,7 +1519,8 @@ Perhaps if I look at the diff between head and two commits back, I can avoid mis
       <link>https://davidbieber.com/snippets/2020-10-06-introducing-the-snippet-queue/</link>
       <pubDate>Tue, 06 Oct 2020 22:16:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-10-06-introducing-the-snippet-queue/</guid>
-      <description>&lt;p&gt;This is my first snippet published using my &lt;a href=&#34;https://davidbieber.com/snippets/2020-10-06-further-reducing-the-publication-barrier-with-queuing/&#34;&gt;snippet queue idea&lt;/a&gt;. If all goes well, it will be (read: was) published tomorrow evening (October 7, 2020).&lt;/p&gt;
+      <description>&lt;p&gt;This is my first snippet published using my 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-10-06-further-reducing-the-publication-barrier-with-queuing/&#34;&gt;snippet queue idea&lt;/a&gt;. If all goes well, it will be (read: was) published tomorrow evening (October 7, 2020).&lt;/p&gt;
 &lt;p&gt;The system works like this. I store a queue of snippets in Redis. Each snippet has the title, content, and date associated with it, as well as an id number. I can have Bieber Bot enqueue a new snippet by messaging him with &amp;ldquo;Queue snippet!&amp;rdquo; and the snippet details. He also responds to queries to update, view, or remove an existing snippet, or to view the current queue of snippets.&lt;/p&gt;
 &lt;p&gt;Then, every evening Bieber Bot looks at the oldest item in the queue. If he&amp;rsquo;s already asked me about it, and I haven&amp;rsquo;t told him not to publish it, he goes and publishes it to my website. If he hasn&amp;rsquo;t asked me about it yet, he asks me if its OK to publish. As long as I don&amp;rsquo;t say no and remove the snippet from the queue, Bieber Bot will go forward with publishing the snippet the next day.&lt;/p&gt;
 </description>
@@ -1513,7 +1586,8 @@ sudo powermetrics --samplers smc | grep &amp;quot;GPU die temperature:&amp;quot;
 &lt;p&gt;Use egrep if you want all three:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo powermetrics --samplers smc | egrep &#39;temp|Fan&#39;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now, why does &lt;a href=&#34;https://www.mmhmm.app/&#34;&gt;mmhmm&lt;/a&gt; make my machine run so hot?&lt;/p&gt;
+&lt;p&gt;Now, why does 
+&lt;a href=&#34;https://www.mmhmm.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mmhmm&lt;/a&gt; make my machine run so hot?&lt;/p&gt;
 </description>
     </item>
     
@@ -1783,7 +1857,9 @@ And it doesn&amp;rsquo;t seem capable of unscrambling words (I did try this, and
       <link>https://davidbieber.com/snippets/2020-07-21-deep-variational-informational-bottleneck/</link>
       <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-07-21-deep-variational-informational-bottleneck/</guid>
-      <description>&lt;p&gt;You can read the 2017 paper &amp;ldquo;Deep Variational Information Bottleneck&amp;rdquo; &lt;a href=&#34;https://arxiv.org/pdf/1612.00410.pdf&#34;&gt;on Arxiv here&lt;/a&gt;, and its reviews are visible &lt;a href=&#34;https://openreview.net/forum?id=HyxQzBceg&#34;&gt;on OpenReview here&lt;/a&gt;. The authors are my coworkers: Alex Alemi, Ian Fischer, Joshua Dillon, and Kevin Murphy.&lt;/p&gt;
+      <description>&lt;p&gt;You can read the 2017 paper &amp;ldquo;Deep Variational Information Bottleneck&amp;rdquo; 
+&lt;a href=&#34;https://arxiv.org/pdf/1612.00410.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;on Arxiv here&lt;/a&gt;, and its reviews are visible 
+&lt;a href=&#34;https://openreview.net/forum?id=HyxQzBceg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;on OpenReview here&lt;/a&gt;. The authors are my coworkers: Alex Alemi, Ian Fischer, Joshua Dillon, and Kevin Murphy.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve taken notes on the paper, and will use this snippet to present them.&lt;/p&gt;
 &lt;h2 id=&#34;notation&#34;&gt;Notation&lt;/h2&gt;
 &lt;p&gt;We consider the problem of supervised learning for classification with the following notation:&lt;/p&gt;
@@ -1875,8 +1951,12 @@ Terms from the paper are in $\LaTeX$, and terms from the source code are in &lt;
       <link>https://davidbieber.com/snippets/2020-06-28-oeis-download/</link>
       <pubDate>Sun, 28 Jun 2020 01:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-06-28-oeis-download/</guid>
-      <description>&lt;p&gt;If you&amp;rsquo;re looking for a way to download the entire &lt;a href=&#34;https://oeis.org/&#34;&gt;Online Encylopedia of Integer Sequences&lt;/a&gt;, you may come across advice for scraping the site, one sequence at a time. Instead of collecting the sequences one at a time, it might be sufficient to download one of their already collected archives. &lt;a href=&#34;https://oeis.org/stripped.gz&#34;&gt;This file&lt;/a&gt; contains the integer sequences and their A-numbers, and &lt;a href=&#34;https://oeis.org/names.gz&#34;&gt;this file&lt;/a&gt; contains the names of the sequences. No need to stress the OEIS servers when these ready-made archives are ripe for downloading!&lt;/p&gt;
-&lt;p&gt;I found these files from &lt;a href=&#34;https://oeis.org/wiki/JSON_Format,_Compressed_Files&#34;&gt;this page&lt;/a&gt; of the OEIS wiki. The reason I&amp;rsquo;m linking to it here is that finding that page was difficult, and I hope to save you the trouble of finding it for yourself.&lt;/p&gt;
+      <description>&lt;p&gt;If you&amp;rsquo;re looking for a way to download the entire 
+&lt;a href=&#34;https://oeis.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Online Encylopedia of Integer Sequences&lt;/a&gt;, you may come across advice for scraping the site, one sequence at a time. Instead of collecting the sequences one at a time, it might be sufficient to download one of their already collected archives. 
+&lt;a href=&#34;https://oeis.org/stripped.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This file&lt;/a&gt; contains the integer sequences and their A-numbers, and 
+&lt;a href=&#34;https://oeis.org/names.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this file&lt;/a&gt; contains the names of the sequences. No need to stress the OEIS servers when these ready-made archives are ripe for downloading!&lt;/p&gt;
+&lt;p&gt;I found these files from 
+&lt;a href=&#34;https://oeis.org/wiki/JSON_Format,_Compressed_Files&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this page&lt;/a&gt; of the OEIS wiki. The reason I&amp;rsquo;m linking to it here is that finding that page was difficult, and I hope to save you the trouble of finding it for yourself.&lt;/p&gt;
 </description>
     </item>
     
@@ -1885,17 +1965,22 @@ Terms from the paper are in $\LaTeX$, and terms from the source code are in &lt;
       <link>https://davidbieber.com/snippets/2020-06-28-facebook-chronological-order/</link>
       <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-06-28-facebook-chronological-order/</guid>
-      <description>&lt;p&gt;On your phone, you can navigate to &lt;a href=&#34;https://www.facebook.com/home.php?sk=h_chr&#34;&gt;https://www.facebook.com/home.php?sk=h_chr&lt;/a&gt; to view your News Feed on the Facebook website in chronological order.&lt;/p&gt;
+      <description>&lt;p&gt;On your phone, you can navigate to 
+&lt;a href=&#34;https://www.facebook.com/home.php?sk=h_chr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.facebook.com/home.php?sk=h_chr&lt;/a&gt; to view your News Feed on the Facebook website in chronological order.&lt;/p&gt;
 &lt;p&gt;There are also excellent apps for hiding your Facebook News Feed if you find it draining on your attention, but unfortunately they don&amp;rsquo;t work on mobile:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.hidefeed.com/&#34;&gt;Hide Feed&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/news-feed-eradicator-for/fjcldmjmjhkklehbacihaiopjklihlgg?hl=en&#34;&gt;Facebook News Feed Eradicator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.hidefeed.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hide Feed&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://chrome.google.com/webstore/detail/news-feed-eradicator-for/fjcldmjmjhkklehbacihaiopjklihlgg?hl=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Facebook News Feed Eradicator&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Since these don&amp;rsquo;t work on the Facebook mobile website, I&amp;rsquo;ve turned to this new strategy to combat the attention draining nature of News Feed: only viewing my feed in chronological order.&lt;/p&gt;
 &lt;p&gt;By switching to chronological order, the &amp;ldquo;infinite scroll&amp;rdquo; of the News Feed is interrupted because either you eventually get to posts you&amp;rsquo;ve seen before, or you notice the timestamp of the posts you&amp;rsquo;re looking at slowly rising. You also get a more complete picture of what content is available, which helps fight the constant &amp;ldquo;just one more post&amp;rdquo; feeling that drives infinite scrolling.&lt;/p&gt;
 &lt;p&gt;So, how do you switch your news feed to chronological order?&lt;/p&gt;
-&lt;p&gt;On the main Facebook website, you can click the three dots next to &amp;ldquo;News Feed&amp;rdquo; and choose &amp;ldquo;Most Recent&amp;rdquo;. However, you have to choose this option every time you visit Facebook, which can be frustrating. So instead, navigate directly to &lt;a href=&#34;https://www.facebook.com/home.php?sk=h_chr&#34;&gt;https://www.facebook.com/home.php?sk=h_chr&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;On the Facebook mobile website, there isn&amp;rsquo;t an option to view posts in chronological order. Instead, you can achieve this by accessing the desktop website on your phone. Go to &lt;a href=&#34;https://www.facebook.com/home.php?sk=h_chr&#34;&gt;https://www.facebook.com/home.php?sk=h_chr&lt;/a&gt; to get the Desktop version of Facebook on your phone, with chronological order already enabled. Bookmark the page and use it as your primary way of accessing Facebook on your phone to get chronological order as your News Feed default from now on.&lt;/p&gt;
+&lt;p&gt;On the main Facebook website, you can click the three dots next to &amp;ldquo;News Feed&amp;rdquo; and choose &amp;ldquo;Most Recent&amp;rdquo;. However, you have to choose this option every time you visit Facebook, which can be frustrating. So instead, navigate directly to 
+&lt;a href=&#34;https://www.facebook.com/home.php?sk=h_chr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.facebook.com/home.php?sk=h_chr&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;On the Facebook mobile website, there isn&amp;rsquo;t an option to view posts in chronological order. Instead, you can achieve this by accessing the desktop website on your phone. Go to 
+&lt;a href=&#34;https://www.facebook.com/home.php?sk=h_chr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.facebook.com/home.php?sk=h_chr&lt;/a&gt; to get the Desktop version of Facebook on your phone, with chronological order already enabled. Bookmark the page and use it as your primary way of accessing Facebook on your phone to get chronological order as your News Feed default from now on.&lt;/p&gt;
 </description>
     </item>
     
@@ -1908,7 +1993,8 @@ Terms from the paper are in $\LaTeX$, and terms from the source code are in &lt;
 &lt;h2 id=&#34;accessing-the-database&#34;&gt;Accessing the Database&lt;/h2&gt;
 &lt;p&gt;The database is typically stored at &lt;code&gt;~/Library/Messages/chat.db&lt;/code&gt;, though that location is configurable.&lt;/p&gt;
 &lt;p&gt;If you try to access the database, however, you will likely encounter this unhelpful error message: &lt;code&gt;~/Library/Messages/chat.db: Operation not permitted&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Thankfully, OSXDaily has put together a &lt;a href=&#34;https://osxdaily.com/2018/10/09/fix-operation-not-permitted-terminal-error-macos/&#34;&gt;helpful step by step guide to resolving this error&lt;/a&gt;, which I&amp;rsquo;ll summarize here:&lt;/p&gt;
+&lt;p&gt;Thankfully, OSXDaily has put together a 
+&lt;a href=&#34;https://osxdaily.com/2018/10/09/fix-operation-not-permitted-terminal-error-macos/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;helpful step by step guide to resolving this error&lt;/a&gt;, which I&amp;rsquo;ll summarize here:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Navigate to your &lt;code&gt;System Preferences &amp;gt; Security &amp;amp; Privacy &amp;gt; Privacy &amp;gt; Full Disk Access&lt;/code&gt; settings.&lt;/p&gt;
@@ -1979,7 +2065,8 @@ One perk of understanding this mechanism for me is that I&amp;rsquo;ll be able t
       <link>https://davidbieber.com/snippets/2020-05-15-roaming-the-web/</link>
       <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-05-15-roaming-the-web/</guid>
-      <description>&lt;p&gt;As I&amp;rsquo;m browsing the web, I&amp;rsquo;d like to be able to take notes in &lt;a href=&#34;https://roamresearch.com/&#34;&gt;Roam Research&lt;/a&gt;. In this post, I share an idea I have for a plugin or browser extension that I think would improve the experience of taking notes in Roam while browsing the web.&lt;/p&gt;
+      <description>&lt;p&gt;As I&amp;rsquo;m browsing the web, I&amp;rsquo;d like to be able to take notes in 
+&lt;a href=&#34;https://roamresearch.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research&lt;/a&gt;. In this post, I share an idea I have for a plugin or browser extension that I think would improve the experience of taking notes in Roam while browsing the web.&lt;/p&gt;
 &lt;p&gt;The plugin would do two main things automatically:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -2006,12 +2093,17 @@ One perk of understanding this mechanism for me is that I&amp;rsquo;ll be able t
 &lt;p&gt;Additionally, the tool should add a little bit of metadata to the pages it&amp;rsquo;s generating. On each of the autogenerated Roam pages, it would be great to see &lt;em&gt;when&lt;/em&gt; I visited the website, and what was the referring page. For websites visited multiple times, seeing the earliest and most recent visit times, and the number of times I visited that website would be useful too. Total time spent on the website would be a nice bonus.&lt;/p&gt;
 &lt;h2 id=&#34;making-this-a-reality&#34;&gt;Making this a Reality&lt;/h2&gt;
 &lt;p&gt;In the previous section I shared the details that I think would make this work well from a user experience perspective. How about from the technical side?&lt;/p&gt;
-&lt;p&gt;I think it would make sense to implement this as a browser extension (though a &lt;a href=&#34;http://www.tampermonkey.net/&#34;&gt;&lt;em&gt;user script&lt;/em&gt;&lt;/a&gt; could work too).
-&lt;a href=&#34;http://dkthehuman.com/&#34;&gt;DK the Human&lt;/a&gt;, author of the &lt;a href=&#34;https://chrome.google.com/webstore/detail/intention/dladanhaondcgpahgiflodhckhoeohoe&#34;&gt;Intention&lt;/a&gt; browser extension
-has made his &lt;a href=&#34;https://github.com/dkthehuman/extension-starter-kit&#34;&gt;browser extension starter kit&lt;/a&gt; freely available.
+&lt;p&gt;I think it would make sense to implement this as a browser extension (though a 
+&lt;a href=&#34;http://www.tampermonkey.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;user script&lt;/em&gt;&lt;/a&gt; could work too).
+
+&lt;a href=&#34;http://dkthehuman.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DK the Human&lt;/a&gt;, author of the 
+&lt;a href=&#34;https://chrome.google.com/webstore/detail/intention/dladanhaondcgpahgiflodhckhoeohoe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Intention&lt;/a&gt; browser extension
+has made his 
+&lt;a href=&#34;https://github.com/dkthehuman/extension-starter-kit&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;browser extension starter kit&lt;/a&gt; freely available.
 To notice when what web page you&amp;rsquo;re browsing and determine whether it constitutes a new page, the extension would need to request permission to view your activity on all websites.
 For making additions to a Roam database automatically, I expect the extension would have to navigate to the appropriate Roam page in the background, and would then mimic the user actions to make the desired changes.&lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in turning this idea into a reality or want to discuss it further, don&amp;rsquo;t hesitate to &lt;a href=&#34;mailto:david810+blog@gmail.com&#34;&gt;reach out&lt;/a&gt;! I&amp;rsquo;d be excited to try a workflow like this, but don&amp;rsquo;t anticipate building it myself in the near future.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in turning this idea into a reality or want to discuss it further, don&amp;rsquo;t hesitate to 
+&lt;a href=&#34;mailto:david810&amp;#43;blog@gmail.com&#34;&gt;reach out&lt;/a&gt;! I&amp;rsquo;d be excited to try a workflow like this, but don&amp;rsquo;t anticipate building it myself in the near future.&lt;/p&gt;
 </description>
     </item>
     
@@ -2020,7 +2112,8 @@ For making additions to a Roam database automatically, I expect the extension wo
       <link>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</guid>
-      <description>&lt;p&gt;If you run this snippet of Python code, it will submit this &lt;a href=&#34;https://davidbieber.com/snippets/&#34;&gt;&amp;ldquo;Snippet&amp;rdquo;&lt;/a&gt; (the one you&amp;rsquo;re currently reading) to Hacker News.&lt;/p&gt;
+      <description>&lt;p&gt;If you run this snippet of Python code, it will submit this 
+&lt;a href=&#34;https://davidbieber.com/snippets/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Snippet&amp;rdquo;&lt;/a&gt; (the one you&amp;rsquo;re currently reading) to Hacker News.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import getpass
 import requests
 
@@ -2054,7 +2147,8 @@ session.post(
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You can change the title and URL before running this to make a new submission, or run it as is to submit this snippet.&lt;/p&gt;
 &lt;p&gt;If you try to submit a URL that&amp;rsquo;s already been submitted recently &amp;ndash; such as this snippet &amp;ndash; it won&amp;rsquo;t submit a second time, so no harm done in running this.&lt;/p&gt;
-&lt;p&gt;To learn more about sessions and see why this works, you can read about them in the &lt;a href=&#34;https://requests.readthedocs.io/en/master/user/advanced/&#34;&gt;&lt;em&gt;requests&lt;/em&gt; documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To learn more about sessions and see why this works, you can read about them in the 
+&lt;a href=&#34;https://requests.readthedocs.io/en/master/user/advanced/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;requests&lt;/em&gt; documentation&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -2063,7 +2157,9 @@ session.post(
       <link>https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/</link>
       <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/</guid>
-      <description>&lt;p&gt;Between my &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;Chrome browsing history&lt;/a&gt; and my &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/&#34;&gt;Facebook Messenger message logs&lt;/a&gt;, I should be able to get a good estimate of when I&amp;rsquo;m awake and asleep.&lt;/p&gt;
+      <description>&lt;p&gt;Between my 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;Chrome browsing history&lt;/a&gt; and my 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/&#34;&gt;Facebook Messenger message logs&lt;/a&gt;, I should be able to get a good estimate of when I&amp;rsquo;m awake and asleep.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s a quick attempt using only Messenger data.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;SELECT * FROM
   (SELECT to_timestamp(timestamp / 1000), (timestamp - lag(timestamp) over (ORDER BY timestamp DESC)) / 1000 / 60 / 60 AS diff_hours
@@ -2080,8 +2176,14 @@ I&amp;rsquo;ll have to introduce additional sources of data if I want to infer g
       <link>https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/</guid>
-      <description>&lt;p&gt;Over the &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&#34;&gt;course&lt;/a&gt; &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;of&lt;/a&gt; &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&#34;&gt;multiple&lt;/a&gt; &lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history/&#34;&gt;previous&lt;/a&gt; &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;snippets&lt;/a&gt;, I put together several SQL queries for analyzing my browsing history.&lt;/p&gt;
-&lt;p&gt;Today, I wanted to write a script to run several of these queries in sequence to assemble a nice summary of my daily browsing histories. Maybe I&amp;rsquo;ll dump the summary into my &lt;a href=&#34;https://roamresearch.com/#/app/commons-db/page/wYVaowjId&#34;&gt;&lt;code&gt;[[Roam Research]]&lt;/code&gt;&lt;/a&gt; database so I can cross-link ideas with websites I&amp;rsquo;ve visited.&lt;/p&gt;
+      <description>&lt;p&gt;Over the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&#34;&gt;course&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;of&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&#34;&gt;multiple&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history/&#34;&gt;previous&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;snippets&lt;/a&gt;, I put together several SQL queries for analyzing my browsing history.&lt;/p&gt;
+&lt;p&gt;Today, I wanted to write a script to run several of these queries in sequence to assemble a nice summary of my daily browsing histories. Maybe I&amp;rsquo;ll dump the summary into my 
+&lt;a href=&#34;https://roamresearch.com/#/app/commons-db/page/wYVaowjId&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;[[Roam Research]]&lt;/code&gt;&lt;/a&gt; database so I can cross-link ideas with websites I&amp;rsquo;ve visited.&lt;/p&gt;
 &lt;p&gt;As a first pass, I tried to throw together a quick bash script to string the queries together. It looked a bit like this:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;date=$1
 if [ -z $1 ];
@@ -2176,8 +2278,10 @@ if __name__ == &#39;__main__&#39;:
       <link>https://davidbieber.com/snippets/2020-04-25-roam-json-export/</link>
       <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-04-25-roam-json-export/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://roamresearch.com/&#34;&gt;Roam Research&lt;/a&gt; is a note taking tool that makes it really low-friction to take deeply interwoven notes.
-One of its core features is that you can effortlessly add links between pages in your notes, just by surrounding a name with square brackets, e.g. &lt;a href=&#34;https://roamresearch.com/#/app/commons-db/page/wYVaowjId&#34;&gt;&lt;code&gt;[[Roam Research]]&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://roamresearch.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research&lt;/a&gt; is a note taking tool that makes it really low-friction to take deeply interwoven notes.
+One of its core features is that you can effortlessly add links between pages in your notes, just by surrounding a name with square brackets, e.g. 
+&lt;a href=&#34;https://roamresearch.com/#/app/commons-db/page/wYVaowjId&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;[[Roam Research]]&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Roam allows its users to export their Roam database as a JSON file. In this snippet, I describe the JSON format used and some of its implications.&lt;/p&gt;
 &lt;h2 id=&#34;exporting-data-from-roam&#34;&gt;Exporting Data from Roam&lt;/h2&gt;
 &lt;p&gt;From the triple-dots menu, select Export All. Choose JSON as the export format. Then click the Export All button. Your complete Roam database will download as a JSON file.&lt;/p&gt;
@@ -2374,7 +2478,8 @@ while blocks:
       <link>https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/</guid>
-      <description>&lt;p&gt;I wrote a &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;number of SQL queries&lt;/a&gt; for browsing my browsing history. In this snippet, I show how to amend them to filter the results by date. Google Chrome selects a slightly non-standard time storage format (microseconds since January 1, 1601 UTC), hence the need for this query stanza.&lt;/p&gt;
+      <description>&lt;p&gt;I wrote a 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;number of SQL queries&lt;/a&gt; for browsing my browsing history. In this snippet, I show how to amend them to filter the results by date. Google Chrome selects a slightly non-standard time storage format (microseconds since January 1, 1601 UTC), hence the need for this query stanza.&lt;/p&gt;
 &lt;p&gt;To run these queries, first make a copy of your browser history and open it in sqlite3.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history
 sqlite3 ~/my-history
@@ -2432,8 +2537,10 @@ and datetime(visits.visit_time / 1000000 + (strftime(&#39;%s&#39;, &#39;1601-01-
 limit 50;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;For this query, we directly compare the result of &lt;code&gt;datetime&lt;/code&gt; and &lt;code&gt;date&lt;/code&gt;.
-&lt;a href=&#34;https://www.sqlite.org/lang_datefunc.html&#34;&gt;sqlite.org/lang_datefunc.html&lt;/a&gt; has more useful information about writing queries manipulating dates and times.&lt;/p&gt;
-&lt;p&gt;For more query ideas, here&amp;rsquo;s the &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;link back to the browser history queries snippet&lt;/a&gt;.&lt;/p&gt;
+
+&lt;a href=&#34;https://www.sqlite.org/lang_datefunc.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sqlite.org/lang_datefunc.html&lt;/a&gt; has more useful information about writing queries manipulating dates and times.&lt;/p&gt;
+&lt;p&gt;For more query ideas, here&amp;rsquo;s the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;link back to the browser history queries snippet&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -2442,7 +2549,8 @@ limit 50;
       <link>https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/</link>
       <pubDate>Sun, 12 Apr 2020 01:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/</guid>
-      <description>&lt;p&gt;In the &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;&amp;ldquo;More Browser History Queries&amp;rdquo; snippet&lt;/a&gt; one of the SQL queries I wrote was particularly nasty.&lt;/p&gt;
+      <description>&lt;p&gt;In the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;&amp;ldquo;More Browser History Queries&amp;rdquo; snippet&lt;/a&gt; one of the SQL queries I wrote was particularly nasty.&lt;/p&gt;
 &lt;p&gt;Since I didn&amp;rsquo;t know how to introduce intermediate variables, I had to replicate subqueries multiple times throughout the query. The result was a mess of a query. Using &lt;code&gt;WITH&lt;/code&gt; clauses, the query becomes considerably more readable and maintainable.&lt;/p&gt;
 &lt;h2 id=&#34;cleaned-up-query&#34;&gt;Cleaned up Query&lt;/h2&gt;
 &lt;p&gt;Here&amp;rsquo;s the cleaned up query. It selects all the GitHub repos you&amp;rsquo;ve visited from your browser history. To run it, first copy your browser history and open it in sqlite:&lt;/p&gt;
@@ -2547,7 +2655,8 @@ limit 50;
       <link>https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/</link>
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/</guid>
-      <description>&lt;p&gt;Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries&#34;&gt;previous snippet&lt;/a&gt; for analyzing my browsing history, I&amp;rsquo;ll use this snippet to sketch out some useful queries for analyzing my message history.&lt;/p&gt;
+      <description>&lt;p&gt;Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries&#34;&gt;previous snippet&lt;/a&gt; for analyzing my browsing history, I&amp;rsquo;ll use this snippet to sketch out some useful queries for analyzing my message history.&lt;/p&gt;
 &lt;h2 id=&#34;table-schemas&#34;&gt;Table Schemas&lt;/h2&gt;
 &lt;p&gt;I have two tables of messages. &lt;code&gt;messenger_archive&lt;/code&gt; contains all messages from when I first joined Facebook in August 2008 through February 2020. &lt;code&gt;messenger&lt;/code&gt; contains messages from February 2020 through now, and is updated in real time.&lt;/p&gt;
 &lt;p&gt;Using the commands &lt;code&gt;\d messenger&lt;/code&gt; and &lt;code&gt;\d messenger_archive&lt;/code&gt;, I inspect the table schemas.&lt;/p&gt;
@@ -2698,7 +2807,8 @@ However, they will have to wait until a future snippet.&lt;/p&gt;
       <link>https://davidbieber.com/snippets/2020-04-11-browser-history-queries/</link>
       <pubDate>Sat, 11 Apr 2020 01:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-04-11-browser-history-queries/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history&#34;&gt;Previously&lt;/a&gt; I listed out a few queries for poking at my browser history. Here are some more!&lt;/p&gt;
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history&#34;&gt;Previously&lt;/a&gt; I listed out a few queries for poking at my browser history. Here are some more!&lt;/p&gt;
 &lt;p&gt;As before, I begin by making a copy of my browsing history and opening sqlite3:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history
 sqlite3 ~/my-history
@@ -2924,7 +3034,8 @@ limit 50;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;For most of the queries on this page, you should be able to easily modify them to suit your needs.
 I wouldn&amp;rsquo;t try modifying this query, though. It would be much better to build a new query from scratch using using the same technique this one was built with, than to try to modify this one to perform another task, because it would be so easy to modify something in one place but subtly miss modifying it in another location in the query that needs to also be modified.&lt;/p&gt;
-&lt;p&gt;Update (April 12, 2020): I&amp;rsquo;ve now learned that you can introduce intermediate &amp;ldquo;variables&amp;rdquo; in your SQL queries, so I&amp;rsquo;ve simplified this query &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Update (April 12, 2020): I&amp;rsquo;ve now learned that you can introduce intermediate &amp;ldquo;variables&amp;rdquo; in your SQL queries, so I&amp;rsquo;ve simplified this query 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -2943,7 +3054,8 @@ I wouldn&amp;rsquo;t try modifying this query, though. It would be much better t
 &lt;h2 id=&#34;replay-buffer&#34;&gt;Replay Buffer&lt;/h2&gt;
 &lt;p&gt;I leave the replay buffer on in between recording scenes. By setting the replay buffer to a reasonable size like 60 seconds, I can leave it rolling without consuming too much memory (and the CPU consumption has been reasonable too, e.g. 10%). This way, if anything noteworthy happens in this period between recordings, I can still capture it.&lt;/p&gt;
 &lt;h2 id=&#34;virtual-cameras&#34;&gt;Virtual Cameras&lt;/h2&gt;
-&lt;p&gt;If you&amp;rsquo;re willing to get your hands dirty, the instructions at &lt;a href=&#34;https://github.com/johnboiles/obs-mac-virtualcam&#34;&gt;johnboiles/obs-mac-virtualcam&lt;/a&gt; will let you use OBS as a virtual camera on Mac.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re willing to get your hands dirty, the instructions at 
+&lt;a href=&#34;https://github.com/johnboiles/obs-mac-virtualcam&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;johnboiles/obs-mac-virtualcam&lt;/a&gt; will let you use OBS as a virtual camera on Mac.&lt;/p&gt;
 &lt;h2 id=&#34;transform-editing-and-scene-json-files&#34;&gt;Transform Editing and Scene &lt;code&gt;.json&lt;/code&gt; files&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;cmd-e&lt;/code&gt; opens the Scene Item Transform for a Scene Item. Using that, you can get pixel perfect positioning of any video source. You can also see and edit the json files that describe your scenes. On Mac, these scene json files can be found at &lt;code&gt;~/Library/Application Support/obs-studio/basic/scenes&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;keyboard-shortcuts&#34;&gt;Keyboard Shortcuts&lt;/h2&gt;
@@ -2956,16 +3068,24 @@ I wouldn&amp;rsquo;t try modifying this query, though. It would be much better t
       <link>https://davidbieber.com/snippets/2020-04-09-exploring-obs/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-04-09-exploring-obs/</guid>
-      <description>&lt;p&gt;This week I&amp;rsquo;ve been exploring &lt;a href=&#34;https://obsproject.com/&#34;&gt;&lt;em&gt;Open Broadcasting Software&lt;/em&gt; (OBS)&lt;/a&gt; and toying with using it as a virtual camera. I use a Mac, and historically there hasn&amp;rsquo;t been a good way to use OBS as a virtual camera. With &lt;a href=&#34;https://twitter.com/tobi&#34;&gt;@tobi&lt;/a&gt;&amp;rsquo;s recent &lt;a href=&#34;https://github.com/obsproject/obs-studio/issues/2568&#34;&gt;$10,000 bounty&lt;/a&gt; for making this a core feature, however, some developers in the OBS community leapt into action and a &lt;a href=&#34;https://github.com/johnboiles/obs-mac-virtualcam&#34;&gt;working prototype&lt;/a&gt; of the feature was available on GitHub within days.&lt;/p&gt;
+      <description>&lt;p&gt;This week I&amp;rsquo;ve been exploring 
+&lt;a href=&#34;https://obsproject.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Open Broadcasting Software&lt;/em&gt; (OBS)&lt;/a&gt; and toying with using it as a virtual camera. I use a Mac, and historically there hasn&amp;rsquo;t been a good way to use OBS as a virtual camera. With 
+&lt;a href=&#34;https://twitter.com/tobi&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@tobi&lt;/a&gt;&amp;rsquo;s recent 
+&lt;a href=&#34;https://github.com/obsproject/obs-studio/issues/2568&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;$10,000 bounty&lt;/a&gt; for making this a core feature, however, some developers in the OBS community leapt into action and a 
+&lt;a href=&#34;https://github.com/johnboiles/obs-mac-virtualcam&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;working prototype&lt;/a&gt; of the feature was available on GitHub within days.&lt;/p&gt;
 &lt;h2 id=&#34;virtual-cameras&#34;&gt;Virtual Cameras&lt;/h2&gt;
 &lt;p&gt;OBS is popular software among Twitch streamers. It lets you take a bunch of video sources and rearrange them into scenes. Streamers will often overlay a camera feed of their head and a live stream of a video game, maybe with cool graphics overlaid on the whole thing.&lt;/p&gt;
 &lt;p&gt;For years, OBS has let you take the scenes you create and stream them in real time to YouTube Live or Twitch or any number of other streaming services. If you wanted to use your OBS scene in Zoom or Google Meet, however, it wasn&amp;rsquo;t straightforward, at least on Mac.&lt;/p&gt;
 &lt;p&gt;There were workarounds. You could project your scene to an external monitor, and then use screen sharing to share that. At times there were combinations of tools and plugins that could similarly get the job done.&lt;/p&gt;
 &lt;p&gt;Now, however, it&amp;rsquo;s considerably easier. John Boiles&amp;rsquo;s has made a OBS plugin that works without fuss. For now it still requires a technical background to use, following build instructions and executing commands on the terminal to get it set up. In a matter of months, however, I expect it will make its way as a core feature into OBS.&lt;/p&gt;
 &lt;h2 id=&#34;combining-obs-with-auto-video-editing&#34;&gt;Combining OBS with Auto Video Editing&lt;/h2&gt;
-&lt;p&gt;As you may know, I&amp;rsquo;ve been working on &lt;a href=&#34;https://davidbieber.com/snippets/2020-02-21-jump-cut-programming&#34;&gt;automatic&lt;/a&gt; &lt;a href=&#34;https://davidbieber.com/snippets/2020-02-26-video-tooling-progress&#34;&gt;video&lt;/a&gt; &lt;a href=&#34;https://davidbieber.com/snippets/2020-03-02-fastbook&#34;&gt;editing&lt;/a&gt; software. I&amp;rsquo;d like to be able to make quality content &amp;ndash; e.g. videos teaching interesting aspects of programming &amp;ndash; without needing to spend time on the video editing process. The cutting and rearranging would happen automatically. The music and audio adjustments would be added automatically. All I&amp;rsquo;d need to do is write a script and record the footage, and the auto editor would take care of the rest.&lt;/p&gt;
+&lt;p&gt;As you may know, I&amp;rsquo;ve been working on 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-02-21-jump-cut-programming&#34;&gt;automatic&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-02-26-video-tooling-progress&#34;&gt;video&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-03-02-fastbook&#34;&gt;editing&lt;/a&gt; software. I&amp;rsquo;d like to be able to make quality content &amp;ndash; e.g. videos teaching interesting aspects of programming &amp;ndash; without needing to spend time on the video editing process. The cutting and rearranging would happen automatically. The music and audio adjustments would be added automatically. All I&amp;rsquo;d need to do is write a script and record the footage, and the auto editor would take care of the rest.&lt;/p&gt;
 &lt;p&gt;Originally I was using Mac&amp;rsquo;s cmd-shift-5 screen capture capability to create these recordings. OBS lets you rearrange video feeds deliberately and use a variety of video sources. These video sources include window captures, cameras, and prerecorded media. The result is much more flexible than Mac&amp;rsquo;s screen capture, and so I&amp;rsquo;ve switched my auto video editing software over to use OBS for recording.&lt;/p&gt;
-&lt;p&gt;As an aside, I&amp;rsquo;ve also discovered &lt;a href=&#34;https://obsproject.com/forum/resources/obs-ndi-newtek-ndi%E2%84%A2-integration-into-obs-studio.528/&#34;&gt;NDI&lt;/a&gt;, a plugin for OBS. It lets me use my phone&amp;rsquo;s camera as a video source with minimal setup. It was so easy to get working, in fact, that I&amp;rsquo;m convinced it must be a large security vulnerability to use it at all.&lt;/p&gt;
+&lt;p&gt;As an aside, I&amp;rsquo;ve also discovered 
+&lt;a href=&#34;https://obsproject.com/forum/resources/obs-ndi-newtek-ndi%E2%84%A2-integration-into-obs-studio.528/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NDI&lt;/a&gt;, a plugin for OBS. It lets me use my phone&amp;rsquo;s camera as a video source with minimal setup. It was so easy to get working, in fact, that I&amp;rsquo;m convinced it must be a large security vulnerability to use it at all.&lt;/p&gt;
 &lt;p&gt;Now that I&amp;rsquo;m using OBS to record, I enabled my auto video editing software to run automatically on any recording produced by OBS. As soon as the recording gets saved, my software starts editing it automatically (preserving the original). I&amp;rsquo;d love to have my auto editing start even sooner than that though, &lt;em&gt;before&lt;/em&gt; the recording is complete. The OBS codebase is surprisingly approachable, so I may be able to get this working.&lt;/p&gt;
 &lt;h2 id=&#34;hacking-on-the-obs-codebase&#34;&gt;Hacking on the OBS Codebase&lt;/h2&gt;
 &lt;p&gt;When John Boiles released the Mac Virtual Cam plugin for OBS, it was initially stuck on the wrong resolution. John told me it was hard coded to 720x480, and that was the impetus for me to poke at the code. Changing the hard coded resolution proved easy enough. Then I ran into a bug where OBS would fail to capture a window if I changed tabs in that window while OBS was closed. Though there&amp;rsquo;s inertia with entering any unfamiliar codebase, I found I was able to solve this issue for myself too. Through these two debugging experiences I got enough glimpses of the OBS plugin set up to think that OBS really is approachably hackable. I think, with hard work, I could integrate my auto editing code into OBS so that it runs in real time. It&amp;rsquo;s not the very top of my todo list for the auto video editor, but I&amp;rsquo;m excited to give this a try.&lt;/p&gt;
@@ -2975,7 +3095,8 @@ I wouldn&amp;rsquo;t try modifying this query, though. It would be much better t
 &lt;p&gt;There&amp;rsquo;s a second reason I&amp;rsquo;m excited about the replay buffer though; it may enable me to use auto-edited videos in conversations in &lt;em&gt;real time&lt;/em&gt;. I imagine the user experience like this:
 I&amp;rsquo;m in a remote meeting and we&amp;rsquo;re having a discussion. By default I&amp;rsquo;m unmuted and people can hear what I&amp;rsquo;m saying. Whenever I hold down a keyboard shortcut, I&amp;rsquo;m muted in the call and OBS starts recording me. When I release the shortcut, I can continue to talk in the call. Once I&amp;rsquo;ve recorded a satisfactory amount of content for OBS, the auto-editing will be applied and I can use OBS as a virtual camera to send that recorded and edited content to my colleagues in the meeting.&lt;/p&gt;
 &lt;h2 id=&#34;looking-forward&#34;&gt;Looking Forward&lt;/h2&gt;
-&lt;p&gt;I&amp;rsquo;m excited to become more proficient using OBS, and to explore the various plugins and overlays that streamers use with OBS. Particularly I&amp;rsquo;m excited to look into the &lt;a href=&#34;https://obsproject.com/forum/resources/vst-plugins.848/&#34;&gt;audio plugins&lt;/a&gt; that are available.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m excited to become more proficient using OBS, and to explore the various plugins and overlays that streamers use with OBS. Particularly I&amp;rsquo;m excited to look into the 
+&lt;a href=&#34;https://obsproject.com/forum/resources/vst-plugins.848/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;audio plugins&lt;/a&gt; that are available.&lt;/p&gt;
 &lt;p&gt;I also intend to continue my auto-editing plans from before: I&amp;rsquo;m still looking forward to introducing a &amp;ldquo;script&amp;rdquo; with audio auto-transcribed and key events entered via keyboard shortcuts and auto-tracked file saves. And I still want to be able to modify this script to automatically edit the video based on the modifications.&lt;/p&gt;
 &lt;p&gt;Having explored OBS for a little while now, I&amp;rsquo;m also looking forward to integrating my auto-video editing more closely with OBS, ideally resulting in real time auto editing in the end. Here&amp;rsquo;s to hoping OBS continues to feel approachably hackable!&lt;/p&gt;
 </description>
@@ -2986,11 +3107,14 @@ I&amp;rsquo;m in a remote meeting and we&amp;rsquo;re having a discussion. By de
       <link>https://davidbieber.com/snippets/2020-03-20-understanding-oauth2/</link>
       <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-03-20-understanding-oauth2/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://oauth.net/2/&#34;&gt;OAuth2&lt;/a&gt; is confusing. I&amp;rsquo;ve set it up several times before, and each time I encounter it it&amp;rsquo;s a bit of a mental mess to wrap my mind around it again.&lt;/p&gt;
-&lt;p&gt;So, this time, as I set up OAuth2 to let &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; interact with more Slack workspaces, I will write up my renewed understanding of OAuth2 in the hope that next time I have to set up OAuth2, it&amp;rsquo;s a little easier.&lt;/p&gt;
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://oauth.net/2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OAuth2&lt;/a&gt; is confusing. I&amp;rsquo;ve set it up several times before, and each time I encounter it it&amp;rsquo;s a bit of a mental mess to wrap my mind around it again.&lt;/p&gt;
+&lt;p&gt;So, this time, as I set up OAuth2 to let 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; interact with more Slack workspaces, I will write up my renewed understanding of OAuth2 in the hope that next time I have to set up OAuth2, it&amp;rsquo;s a little easier.&lt;/p&gt;
 &lt;h2 id=&#34;overview-of-the-oauth2-flow&#34;&gt;Overview of the OAuth2 Flow&lt;/h2&gt;
 &lt;p&gt;How does the OAuth2 flow go? Like this:&lt;/p&gt;
-&lt;p&gt;The user wants to add Bieber Bot to a Slack channel. So, they&amp;rsquo;re on my website (&lt;a href=&#34;https://davidbieber.com/&#34;&gt;davidbieber.com&lt;/a&gt;) and they click the &lt;em&gt;Add to Slack&lt;/em&gt; button. This takes them to Slack, with GET parameters that indicate they want to add Bieber Bot to some Slack workspace. The workspace id can be part of the URL of the Add to Slack button, but even if it&amp;rsquo;s not, Slack will do the right thing and just ask the user to choose one of their workspaces. If the user isn&amp;rsquo;t already logged in to Slack, they&amp;rsquo;ll be prompted to do so at this point.&lt;/p&gt;
+&lt;p&gt;The user wants to add Bieber Bot to a Slack channel. So, they&amp;rsquo;re on my website (
+&lt;a href=&#34;https://davidbieber.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;davidbieber.com&lt;/a&gt;) and they click the &lt;em&gt;Add to Slack&lt;/em&gt; button. This takes them to Slack, with GET parameters that indicate they want to add Bieber Bot to some Slack workspace. The workspace id can be part of the URL of the Add to Slack button, but even if it&amp;rsquo;s not, Slack will do the right thing and just ask the user to choose one of their workspaces. If the user isn&amp;rsquo;t already logged in to Slack, they&amp;rsquo;ll be prompted to do so at this point.&lt;/p&gt;
 &lt;p&gt;After the user clicks the &lt;em&gt;Add to Slack&lt;/em&gt; button they are taken to Slack, where they are shown the list of OAuth2 scopes that Bieber Bot is requesting. If they approve giving Bieber Bot the permissions listed in the scopes, they are taken to a &lt;em&gt;redirect url&lt;/em&gt; that I, the developer of Bieber Bot, have specified. I have both pre-informed Slack of the redirect URLs I might use, and I have included a specific redirect URL in the link on the &lt;em&gt;Add to Slack&lt;/em&gt; button. When the user is redirected to this redirect url, two GET parameters are included. The first is a &lt;code&gt;code&lt;/code&gt;, which my server can use to get an Access Token / Bearer Token. The second is a &lt;code&gt;state&lt;/code&gt; which is something that I, the developer, can include on the original link from the &lt;em&gt;Add to Slack&lt;/em&gt; button in order to make sure the request I&amp;rsquo;m getting at the redirect URL is genuine.&lt;/p&gt;
 &lt;p&gt;When the redirect URL is accessed with a &lt;code&gt;code&lt;/code&gt; GET parameter, it then turns around and uses that &lt;code&gt;code&lt;/code&gt; to request an Access Token from Slack. Once it has that Access Token, it tucks it away. It can use that access token in order to perform any of the permissions granted by the user during the access flow.&lt;/p&gt;
 &lt;p&gt;Usually using the Access Token takes the form of issuing post requests to Slack with the Access Token as a parameter.&lt;/p&gt;
@@ -3028,7 +3152,8 @@ I&amp;rsquo;m in a remote meeting and we&amp;rsquo;re having a discussion. By de
       <link>https://davidbieber.com/snippets/2020-03-19-browsing-history/</link>
       <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-03-19-browsing-history/</guid>
-      <description>&lt;p&gt;In a &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history&#34;&gt;previous snippet&lt;/a&gt; I started looking into how to analyze my browser history. Revisiting that idea tonight, I began looking into whether I might be able to infer topics of interest from my browsing history.&lt;/p&gt;
+      <description>&lt;p&gt;In a 
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history&#34;&gt;previous snippet&lt;/a&gt; I started looking into how to analyze my browser history. Revisiting that idea tonight, I began looking into whether I might be able to infer topics of interest from my browsing history.&lt;/p&gt;
 &lt;p&gt;Using my previous post as reference, I first made a copy of my browsing history:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history
 &lt;/code&gt;&lt;/pre&gt;
@@ -3131,20 +3256,27 @@ If a card represents an idea from my notes, I&amp;rsquo;d like to be able to rea
       <link>https://davidbieber.com/snippets/2020-03-02-fastbook/</link>
       <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-03-02-fastbook/</guid>
-      <description>&lt;p&gt;Aaron Mayer &lt;a href=&#34;https://medium.com/100audiobooks/the-100-audiobook-challenge-terms-and-conditions-455c7e9409aa&#34;&gt;aims to listen to 100 audiobooks in a single month&lt;/a&gt;. He intends to listen to these audiobooks at 2x - 3x speed. Intense!&lt;/p&gt;
-&lt;p&gt;For the last few weeks, I&amp;rsquo;ve been working on &lt;a href=&#34;https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/&#34;&gt;automatic video&lt;/a&gt; &lt;a href=&#34;https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/&#34;&gt;editing tools&lt;/a&gt;. And one of the core features I&amp;rsquo;ve been working with is &lt;a href=&#34;https://github.com/carykh/jumpcutter/&#34;&gt;automatic speed adjustments to videos&lt;/a&gt; to eliminate silent airtime and make the videos more engaging. This seems like a perfect fit for Aaron&amp;rsquo;s challenge.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;ve adapted this tooling into a new tool I&amp;rsquo;m calling &lt;a href=&#34;https://gist.github.com/dbieber/98f909640773b5b0a0fe5696da369a1b&#34;&gt;Fastbook&lt;/a&gt;. It accepts audiobooks in the form of &lt;code&gt;.wav&lt;/code&gt; files, and can apply speed adjustments to the silence and the spoken word independently, even removing silence entirely if desired.&lt;/p&gt;
+      <description>&lt;p&gt;Aaron Mayer 
+&lt;a href=&#34;https://medium.com/100audiobooks/the-100-audiobook-challenge-terms-and-conditions-455c7e9409aa&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;aims to listen to 100 audiobooks in a single month&lt;/a&gt;. He intends to listen to these audiobooks at 2x - 3x speed. Intense!&lt;/p&gt;
+&lt;p&gt;For the last few weeks, I&amp;rsquo;ve been working on 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;automatic video&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;editing tools&lt;/a&gt;. And one of the core features I&amp;rsquo;ve been working with is 
+&lt;a href=&#34;https://github.com/carykh/jumpcutter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;automatic speed adjustments to videos&lt;/a&gt; to eliminate silent airtime and make the videos more engaging. This seems like a perfect fit for Aaron&amp;rsquo;s challenge.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve adapted this tooling into a new tool I&amp;rsquo;m calling 
+&lt;a href=&#34;https://gist.github.com/dbieber/98f909640773b5b0a0fe5696da369a1b&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fastbook&lt;/a&gt;. It accepts audiobooks in the form of &lt;code&gt;.wav&lt;/code&gt; files, and can apply speed adjustments to the silence and the spoken word independently, even removing silence entirely if desired.&lt;/p&gt;
 &lt;p&gt;If Aaron can already comfortably (with great focus) listen to a book at 2.5x speed, he can listen to a 10 hour book in 4 hours. If 20% of that book is actually silence, then the 10 hour book becomes an 8 hour book with silence removed, and the total listen time drops to just 3h12. I think 20% may actually be a conservative estimate for silent time, though it will vary from narrator to narrator.&lt;/p&gt;
 &lt;p&gt;Estimating 45 minutes saved per book, this tool can save over 3 days total time across 100 books. Or, alternatively, Aaron could drop the playback speed down from 2.5x to 2x without increasing his total listening time at all, but potentially helping out his comprehension substantially.&lt;/p&gt;
 &lt;p&gt;This tool wont be appropriate for all audiobook listeners. For many, the silences matter, and removing them would degrade the quality of the book. For many, listening at 2.5x would also degrade the quality of the book. So use this tool with caution.&lt;/p&gt;
 &lt;p&gt;For those of you who are intersted, however, here&amp;rsquo;s how to use Fastbook.&lt;/p&gt;
 &lt;h2 id=&#34;installing-fastbook&#34;&gt;Installing Fastbook&lt;/h2&gt;
-&lt;p&gt;I&amp;rsquo;ve made Fastbook available for free on GitHub. You can &lt;a href=&#34;https://gist.github.com/dbieber/98f909640773b5b0a0fe5696da369a1b&#34;&gt;access it here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve made Fastbook available for free on GitHub. You can 
+&lt;a href=&#34;https://gist.github.com/dbieber/98f909640773b5b0a0fe5696da369a1b&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;access it here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;To use it, save it to your computer as &lt;code&gt;fastbook.py&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Next, make sure you have all the dependencies installed. See the dependencies section for what is required.&lt;/p&gt;
 &lt;h2 id=&#34;pre-work-converting-your-book-to-wav&#34;&gt;Pre-work: Converting Your Book to &lt;code&gt;.wav&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;You need your audiobook in wav format to use Fastbook.&lt;/p&gt;
-&lt;p&gt;To convert an audiobook to wav, use &lt;a href=&#34;https://www.ffmpeg.org/&#34;&gt;ffmpeg&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To convert an audiobook to wav, use 
+&lt;a href=&#34;https://www.ffmpeg.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ffmpeg&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Install ffmpeg. Then, run &lt;code&gt;ffmpeg -i book.aax book.wav&lt;/code&gt; to convert an Audible audiobook to a wav file. There may be an additional step if your aax file is DRM protected.&lt;/p&gt;
 &lt;h2 id=&#34;using-fastbook&#34;&gt;Using Fastbook&lt;/h2&gt;
 &lt;p&gt;Now you can use Fastbook like this:&lt;/p&gt;
@@ -3157,9 +3289,11 @@ If a card represents an idea from my notes, I&amp;rsquo;d like to be able to rea
 &lt;p&gt;&lt;code&gt;--audio_path&lt;/code&gt; should point to an existing wav file that you downloaded or generated in the pre-work section. &lt;code&gt;--output_path&lt;/code&gt; is the path to the file that Fastbook will generate. Finally, &lt;code&gt;--loud_speed&lt;/code&gt; is how much to speed up the normal spoke text of the book by, and &lt;code&gt;--quiet_speed&lt;/code&gt; is how much to speed up the silence in the book by. You can remove silence by setting &lt;code&gt;--quiet_speed=99999&lt;/code&gt; or any other similiarly large number.&lt;/p&gt;
 &lt;h3 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h3&gt;
 &lt;p&gt;Here are the dependencies you need to use Fastbook.&lt;/p&gt;
-&lt;p&gt;First, you need &lt;strong&gt;Python 3&lt;/strong&gt;. You can follow &lt;a href=&#34;https://realpython.com/installing-python/&#34;&gt;these instructions&lt;/a&gt; to set up Python 3 if you don&amp;rsquo;t already have it installed.&lt;/p&gt;
+&lt;p&gt;First, you need &lt;strong&gt;Python 3&lt;/strong&gt;. You can follow 
+&lt;a href=&#34;https://realpython.com/installing-python/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these instructions&lt;/a&gt; to set up Python 3 if you don&amp;rsquo;t already have it installed.&lt;/p&gt;
 &lt;p&gt;Then, you need these Python depenencies: &lt;em&gt;fire&lt;/em&gt;, &lt;em&gt;scipy&lt;/em&gt;, &lt;em&gt;tqdm&lt;/em&gt;, &lt;em&gt;numpy&lt;/em&gt;, and &lt;em&gt;audiotsm&lt;/em&gt;. Install these with &lt;code&gt;pip install fire scipy tqdm numpy audiotsm&lt;/code&gt; or use your favorite Python package manager.&lt;/p&gt;
-&lt;p&gt;Finally, to do the pre-work, you will likely need ffmpeg. Installation instructions are available &lt;a href=&#34;https://www.ffmpeg.org/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Finally, to do the pre-work, you will likely need ffmpeg. Installation instructions are available 
+&lt;a href=&#34;https://www.ffmpeg.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;read-quick&#34;&gt;Read quick!&lt;/h2&gt;
 &lt;p&gt;I recommend for Aaron to use the default speed settings of &lt;code&gt;--loud_speed=1 --quiet_speed=5&lt;/code&gt;. This wont eliminate the silence entirely, but will reduce the audio time considerably. Then, for the remaining speed-up, I suggest using whatever media player you were already using, such as VLC which supports arbitrary speed adjustments in real time. Hpy rdng!&lt;/p&gt;
 &lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
@@ -3185,13 +3319,17 @@ Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
       <guid>https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/</guid>
       <description>&lt;p&gt;Over the last week and a half I&amp;rsquo;ve been making screen recordings of myself programming. Mostly what I&amp;rsquo;ve been programming is tooling to help myself make better screen recordings. Here&amp;rsquo;s an overview of what I&amp;rsquo;ve put together so far.&lt;/p&gt;
 &lt;h2 id=&#34;auto-auto-jumpcutter&#34;&gt;Auto Auto-Jumpcutter&lt;/h2&gt;
-&lt;p&gt;This springboards directly from carykh&amp;rsquo;s &lt;a href=&#34;https://github.com/carykh/jumpcutter&#34;&gt;jumpcutter&lt;/a&gt; project, which uses &lt;a href=&#34;https://www.ffmpeg.org/&#34;&gt;ffmpeg&lt;/a&gt; and AudioTSM to speed up the silent sections of a video. Auto Auto-Jumpcutter has two &amp;ldquo;auto&amp;quot;s in its name because jumpcutter already does automatic jumpcutting of videos, and Auto Auto-Jumpcutter uses &lt;a href=&#34;https://pythonhosted.org/watchdog/&#34;&gt;watchdog&lt;/a&gt; to automatically apply jumpcutter the moment a screen recording is captured.&lt;/p&gt;
+&lt;p&gt;This springboards directly from carykh&amp;rsquo;s 
+&lt;a href=&#34;https://github.com/carykh/jumpcutter&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jumpcutter&lt;/a&gt; project, which uses 
+&lt;a href=&#34;https://www.ffmpeg.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ffmpeg&lt;/a&gt; and AudioTSM to speed up the silent sections of a video. Auto Auto-Jumpcutter has two &amp;ldquo;auto&amp;quot;s in its name because jumpcutter already does automatic jumpcutting of videos, and Auto Auto-Jumpcutter uses 
+&lt;a href=&#34;https://pythonhosted.org/watchdog/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;watchdog&lt;/a&gt; to automatically apply jumpcutter the moment a screen recording is captured.&lt;/p&gt;
 &lt;p&gt;The result is that my typing appears superhuman in speed, but slows down while I&amp;rsquo;m speaking, without me needing to do any manual editing to the video to achieve this effect.&lt;/p&gt;
 &lt;h2 id=&#34;auto-commit&#34;&gt;Auto-Commit&lt;/h2&gt;
 &lt;p&gt;I also made for myself a git auto-committer. Every time I save a file during a screen recording session, the change is immediately and automatically committed. The commit message is selected automatically from the diff. The result is that I have a timestamped log of all changes made during the recording. This is super useful for editing the recordings (both automatically and manually) because I can pinpoint exactly where in the recording any change took place. It also works hand-in-hand with the next piece of tooling.&lt;/p&gt;
 &lt;h2 id=&#34;keyboard-shortcuts&#34;&gt;Keyboard Shortcuts&lt;/h2&gt;
 &lt;p&gt;Just using Auto Auto-Jumpcutter goes a long way toward having automatically edited videos, but it doesn&amp;rsquo;t completely eliminate the need for manual editing.
-For example, it provides no way to do multiple takes and stitch together the good parts of each. For this I&amp;rsquo;ve set up a keyboard shortcut system for myself using the Python &lt;a href=&#34;https://pypi.org/project/keyboard/&#34;&gt;keyboard&lt;/a&gt; module. This way I can indicate via keyboard shortcuts to remove a selection of footage during the recording session, and have it automatically be removed during the automatic editing phase. This last step &amp;ndash; using the keyboard shortcuts to guide automatic editing &amp;ndash; is an active work in progress.&lt;/p&gt;
+For example, it provides no way to do multiple takes and stitch together the good parts of each. For this I&amp;rsquo;ve set up a keyboard shortcut system for myself using the Python 
+&lt;a href=&#34;https://pypi.org/project/keyboard/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;keyboard&lt;/a&gt; module. This way I can indicate via keyboard shortcuts to remove a selection of footage during the recording session, and have it automatically be removed during the automatic editing phase. This last step &amp;ndash; using the keyboard shortcuts to guide automatic editing &amp;ndash; is an active work in progress.&lt;/p&gt;
 </description>
     </item>
     
@@ -3202,8 +3340,13 @@ For example, it provides no way to do multiple takes and stitch together the goo
       <guid>https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been toying around with recording myself programming. Here&amp;rsquo;s a clip.&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/OxsuHWVtMSM&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;In this clip I use &lt;a href=&#34;https://davidbieber.com/projects/python-fire&#34;&gt;Python Fire&lt;/a&gt; to create a simple two-function calculator. Nothing special about that.&lt;/p&gt;
-&lt;p&gt;What is special is that the programming has automatically been sped up by &lt;a href=&#34;https://github.com/carykh/jumpcutter&#34;&gt;carykh/jumpcutter&lt;/a&gt;, and that I&amp;rsquo;ve used &lt;a href=&#34;https://zulko.github.io/moviepy/&#34;&gt;moviepy&lt;/a&gt; to set the programming to the music &lt;a href=&#34;http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100414&#34;&gt;&amp;ldquo;Dangerous&amp;rdquo;&lt;/a&gt;, a clip I got from &lt;a href=&#34;https://www.youtube.com/audiolibrary/music&#34;&gt;YouTube&amp;rsquo;s free Audio Library&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In this clip I use 
+&lt;a href=&#34;https://davidbieber.com/projects/python-fire&#34;&gt;Python Fire&lt;/a&gt; to create a simple two-function calculator. Nothing special about that.&lt;/p&gt;
+&lt;p&gt;What is special is that the programming has automatically been sped up by 
+&lt;a href=&#34;https://github.com/carykh/jumpcutter&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;carykh/jumpcutter&lt;/a&gt;, and that I&amp;rsquo;ve used 
+&lt;a href=&#34;https://zulko.github.io/moviepy/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;moviepy&lt;/a&gt; to set the programming to the music 
+&lt;a href=&#34;http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100414&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Dangerous&amp;rdquo;&lt;/a&gt;, a clip I got from 
+&lt;a href=&#34;https://www.youtube.com/audiolibrary/music&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;YouTube&amp;rsquo;s free Audio Library&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;lessons-learned-from-take-1&#34;&gt;Lessons Learned from &amp;ldquo;Take 1&amp;rdquo;&lt;/h2&gt;
 &lt;h3 id=&#34;what-worked-well&#34;&gt;What worked well?&lt;/h3&gt;
 &lt;ol&gt;
@@ -3211,13 +3354,15 @@ For example, it provides no way to do multiple takes and stitch together the goo
 &lt;p&gt;&lt;strong&gt;External Monitor&lt;/strong&gt;: I purchased an external monitor. This made a huge difference. Now I can manage video-editing tools, a terminal, a browser, etc on one screen, while keeping the contents of the video (the editor and public terminal) on the other screen and recording it.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/carykh/jumpcutter&#34;&gt;carykh/jumpcutter&lt;/a&gt;&lt;/strong&gt;: This tool can automatically speed up the silent parts of a video, resulting in shorter less-boring videos.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;
+&lt;a href=&#34;https://github.com/carykh/jumpcutter&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;carykh/jumpcutter&lt;/a&gt;&lt;/strong&gt;: This tool can automatically speed up the silent parts of a video, resulting in shorter less-boring videos.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Mac Screen Capture&lt;/strong&gt;: cmd-shift-5 lets you capture video on Mac. You can choose what directory the captured video is saved to. Before I discovered this, I used QuickTime, but this is easier to use.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Using &lt;a href=&#34;https://pythonhosted.org/watchdog/&#34;&gt;watchdog&lt;/a&gt;&lt;/strong&gt; This is a Python module that can monitor your filesystem and trigger an action when files are created or modified. I use it to a) automatically rename video files as they&amp;rsquo;re created, and b) to automatically apply jumpcutting to new captured videos. The filename format I use is &lt;code&gt;YYYY-MM-DD-screen-recording-###.mov&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Using 
+&lt;a href=&#34;https://pythonhosted.org/watchdog/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;watchdog&lt;/a&gt;&lt;/strong&gt; This is a Python module that can monitor your filesystem and trigger an action when files are created or modified. I use it to a) automatically rename video files as they&amp;rsquo;re created, and b) to automatically apply jumpcutting to new captured videos. The filename format I use is &lt;code&gt;YYYY-MM-DD-screen-recording-###.mov&lt;/code&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Python Fire&lt;/strong&gt;: The first twenty clips I recorded (not released) were all of me building the tooling I now use as I record videos. Most of this tooling lives in Python Fire CLIs. These CLIs let me do things like composite audio, perform auto-jumpcutting, and rename videos.&lt;/p&gt;
@@ -3254,7 +3399,8 @@ For example, it provides no way to do multiple takes and stitch together the goo
 Also, the host knows what box you will choose, and has placed $1 million in A if you will choose only A, and $0 in A if you will choose both A and B.&lt;/p&gt;
 &lt;p&gt;Some contestants, faced with this choice, would choose both A and B. They reason that since the money has already been placed, choosing A and B is guaranteed to yield $1000 more than choosing just A.
 Others would choose only A, since per the host&amp;rsquo;s plans this option leads to a significantly better payout.&lt;/p&gt;
-&lt;p&gt;Clearly choosing only A is $1000 worse than choosing both A and B, yet choosing A only is allegedly better given the host&amp;rsquo;s foresight. These statements appear contradictory, and this situation is known as &lt;a href=&#34;https://en.wikipedia.org/wiki/Newcomb%27s_paradox&#34;&gt;Newcomb&amp;rsquo;s Paradox&lt;/a&gt;.
+&lt;p&gt;Clearly choosing only A is $1000 worse than choosing both A and B, yet choosing A only is allegedly better given the host&amp;rsquo;s foresight. These statements appear contradictory, and this situation is known as 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Newcomb%27s_paradox&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Newcomb&amp;rsquo;s Paradox&lt;/a&gt;.
 How can we reconcile these two true but contradictory statements?&lt;/p&gt;
 &lt;p&gt;We do so by clarifying:&lt;/p&gt;
 &lt;ul&gt;
@@ -3280,7 +3426,8 @@ One extreme way you may have been predictable is if the host knows exactly how e
 &lt;p&gt;It doesn&amp;rsquo;t have to be &lt;em&gt;quite&lt;/em&gt; so extreme though. The host only claimed to have roughly one bit of information about you and the future: what binary choice you would make when confronted with the box dilemma. That doesn&amp;rsquo;t require omniscience. The host may have no idea what the weather is going to be the next day, as long as they&amp;rsquo;re able to predict whether or not you&amp;rsquo;re taking box B.&lt;/p&gt;
 &lt;p&gt;So maybe they know a little about how your mind works, or they&amp;rsquo;ve read something you&amp;rsquo;ve posted online that lets them conclude how you will handle the box situation.&lt;/p&gt;
 &lt;p&gt;You must consider that whatever they know, they knew it at the time that they chose how to fill the boxes. (They likely also knew it at the time they chose to host the gameshow in the first place.)&lt;/p&gt;
-&lt;p&gt;What I think is most likely is that this host does know precisely how you think about this choice. They do this by understanding to a very high degree of precision how your brain is going to cope with the decision of which boxes to choose. Think of the host as a very skilled poker player, that can read you like a book. Instead of just knowing whether you&amp;rsquo;re bluffing or not, they know what you&amp;rsquo;re going to think &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/6640273&#34;&gt;before you even think it&lt;/a&gt;. It&amp;rsquo;s like weather forecasting, but instead of understanding the atmosphere, they&amp;rsquo;re understanding you.&lt;/p&gt;
+&lt;p&gt;What I think is most likely is that this host does know precisely how you think about this choice. They do this by understanding to a very high degree of precision how your brain is going to cope with the decision of which boxes to choose. Think of the host as a very skilled poker player, that can read you like a book. Instead of just knowing whether you&amp;rsquo;re bluffing or not, they know what you&amp;rsquo;re going to think 
+&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/6640273&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;before you even think it&lt;/a&gt;. It&amp;rsquo;s like weather forecasting, but instead of understanding the atmosphere, they&amp;rsquo;re understanding you.&lt;/p&gt;
 &lt;p&gt;And like with weather forecasting, their model is imperfect. It&amp;rsquo;s good enough to know what box you&amp;rsquo;ll choose, with certainty, but only because that only requires forecasting a small window (a week, let&amp;rsquo;s say) into the future. Like the atmospheric conditions that determine the weather, your brain is a chaotic system. Any imperfection in the model, however small, will eventually blow up and lead to large errors in the model in the future. So our host can&amp;rsquo;t model your every thought a year into the future, let alone e.g. the whole population&amp;rsquo;s behaviors.&lt;/p&gt;
 &lt;p&gt;So what boxes should you choose?&lt;/p&gt;
 &lt;p&gt;You should choose to open just box A. By reaching this conclusion (and more importantly, by adopting the strategy for reasoning that leads to this conclusion), you guarantee yourself $1 million the next time you encounter a wealthy generous time travelling gameshow host interested in philosophy and mathematics.&lt;/p&gt;
@@ -3300,7 +3447,9 @@ One extreme way you may have been predictable is if the host knows exactly how e
       <link>https://davidbieber.com/snippets/2020-02-04-bieber-bot-capabilities/</link>
       <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-02-04-bieber-bot-capabilities/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; has an ever-growing list of capabilities. I&amp;rsquo;ve tried to capture that complete list here. Feel free to use &lt;a href=&#34;https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere&#34;&gt;Ask Me Anywhere&lt;/a&gt; to inquire about any of these features and leave some contact info if you&amp;rsquo;d like me to get in touch.&lt;/p&gt;
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; has an ever-growing list of capabilities. I&amp;rsquo;ve tried to capture that complete list here. Feel free to use 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere&#34;&gt;Ask Me Anywhere&lt;/a&gt; to inquire about any of these features and leave some contact info if you&amp;rsquo;d like me to get in touch.&lt;/p&gt;
 &lt;h2 id=&#34;timer-triggered-capabilities&#34;&gt;Timer-triggered capabilities:&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Greetings, encouragement, and love!&lt;/li&gt;
@@ -3354,7 +3503,8 @@ One extreme way you may have been predictable is if the host knows exactly how e
       <link>https://davidbieber.com/snippets/2020-01-26-next-steps-for-ama/</link>
       <pubDate>Sun, 26 Jan 2020 10:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-01-26-next-steps-for-ama/</guid>
-      <description>&lt;p&gt;Yesterday I put up an early version of &lt;a href=&#34;https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere/&#34;&gt;Ask Me Anywhere&lt;/a&gt;. You&amp;rsquo;ll notice it&amp;rsquo;s in the snippets section of the website, rather than part of the main blog. This gives me the freedom to post it even though I know it&amp;rsquo;s not as polished as it could be.&lt;/p&gt;
+      <description>&lt;p&gt;Yesterday I put up an early version of 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere/&#34;&gt;Ask Me Anywhere&lt;/a&gt;. You&amp;rsquo;ll notice it&amp;rsquo;s in the snippets section of the website, rather than part of the main blog. This gives me the freedom to post it even though I know it&amp;rsquo;s not as polished as it could be.&lt;/p&gt;
 &lt;p&gt;Now that this first pass is published, it&amp;rsquo;s time to start thinking about where to go next with Ask Me Anywhere.&lt;/p&gt;
 &lt;h2 id=&#34;short-term-stylistic-improvements&#34;&gt;Short Term: Stylistic Improvements&lt;/h2&gt;
 &lt;p&gt;On mobile, the &amp;ldquo;Click to React&amp;rdquo; text shows up and is improperly styled. I didn&amp;rsquo;t intend for it to show up at all. On certain mobile devices and browsers, it seems there are even larger issues than this, such as double tapping sometimes not working at all. Let me know if it doesn&amp;rsquo;t work with your browser so I can fix it.&lt;/p&gt;
@@ -3395,9 +3545,13 @@ The goal is to encourage readers to respond to my writing, because I&amp;rsquo;m
 &lt;p&gt;You can try it right now. Either &lt;strong&gt;double click&lt;/strong&gt; (double-tap on mobile) on any paragraph, or click between two paragraphs, to open a comment box. Enter your thoughts, click submit, and &lt;em&gt;voila!&lt;/em&gt;, comment submitted.&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;re welcome to enter your email address, name, Twitter handle, Facebook ID, or any other form of contact info if you&amp;rsquo;d like me to respond. And if you do, there is high likelihood that I will respond. If you don&amp;rsquo;t, you&amp;rsquo;re anonymous, and you certainly won&amp;rsquo;t receive a private response.&lt;/p&gt;
 &lt;p&gt;Comments and questions that you submit are not posted publicly anywhere. This isn&amp;rsquo;t a comments section for public discussion. If you want to discuss my posts publicly, submit them on Hacker News or Reddit, or head to Twitter to engage. While this website isn&amp;rsquo;t the place for public discussions, I am curious to know about such a discussion if it&amp;rsquo;s happening. So, feel free to let me know about such a discussion via &amp;ldquo;AMA&amp;rdquo; if you&amp;rsquo;re starting one.&lt;/p&gt;
-&lt;p&gt;What happens when you leave a comment? This part&amp;rsquo;s still a work in progress, but ideally my digital personal assistant &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; will notify me of the new comment at the next convenient time. If there are many comments coming in, Bieber Bot will try to be smart about batching the notifications together, and so the notification may be delayed, but I&amp;rsquo;ll soon read your message.&lt;/p&gt;
-&lt;p&gt;For now, Ask Me Anywhere is only activated for this one post. Once I&amp;rsquo;ve tested it out a bit, and perhaps made some changes, I&amp;rsquo;m hoping to then activate it for the &lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;rest of my posts&lt;/a&gt; &lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;and snippets&lt;/a&gt; as well. So I&amp;rsquo;m particularly keen to get feedback early so I can iterate and improve it soon. Give it a try, let me know what you think. You know how to reach me!&lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in learning more about the internals, the source is &lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/772b5dd87da532357a1cdf04a8caa027268bfbac/hugo/assets/js-src/ask-me-anywhere.jsx&#34;&gt;available on GitHub&lt;/a&gt;. Feel free to have a poke around.&lt;/p&gt;
+&lt;p&gt;What happens when you leave a comment? This part&amp;rsquo;s still a work in progress, but ideally my digital personal assistant 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; will notify me of the new comment at the next convenient time. If there are many comments coming in, Bieber Bot will try to be smart about batching the notifications together, and so the notification may be delayed, but I&amp;rsquo;ll soon read your message.&lt;/p&gt;
+&lt;p&gt;For now, Ask Me Anywhere is only activated for this one post. Once I&amp;rsquo;ve tested it out a bit, and perhaps made some changes, I&amp;rsquo;m hoping to then activate it for the 
+&lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;rest of my posts&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;and snippets&lt;/a&gt; as well. So I&amp;rsquo;m particularly keen to get feedback early so I can iterate and improve it soon. Give it a try, let me know what you think. You know how to reach me!&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in learning more about the internals, the source is 
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/772b5dd87da532357a1cdf04a8caa027268bfbac/hugo/assets/js-src/ask-me-anywhere.jsx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on GitHub&lt;/a&gt;. Feel free to have a poke around.&lt;/p&gt;
 &lt;p&gt;The name of the project &amp;ndash; &amp;ldquo;Ask Me Anywhere&amp;rdquo; &amp;ndash; reflects my intention to enable readers to ask questions as they&amp;rsquo;re reading. However, I welcome all types of reactions: questions, comments, feedback, corrections, new ideas, etc. I look forward to hearing what you have to say.&lt;/p&gt;
 </description>
     </item>
@@ -3414,7 +3568,8 @@ How much of it is duplicate work (e.g. two nations or organizations independentl
 &lt;p&gt;What fraction of this is done by professors, post docs, PhD students, etc?&lt;/p&gt;
 &lt;p&gt;Particularly in the last 100 years, what have these numbers been?&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m interested in visualizing some of these metrics, because I think they would be useful for putting the work that I see happening around me in machine learning and in neuroscience into perspective. I also think this data would tell a fascinating story.&lt;/p&gt;
-&lt;p&gt;For example, one plot that I think would be compelling would be person-hours-per-year spent thinking about physics plotted as a function of time over the last 100 years, with important physics milestones shown on the same plot (e.g. as a &lt;a href=&#34;https://medium.com/berkeleyischool/how-to-create-a-visualization-showing-events-on-time-series-data-in-excel-96abbc1475e0&#34;&gt;time series plot with events&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;For example, one plot that I think would be compelling would be person-hours-per-year spent thinking about physics plotted as a function of time over the last 100 years, with important physics milestones shown on the same plot (e.g. as a 
+&lt;a href=&#34;https://medium.com/berkeleyischool/how-to-create-a-visualization-showing-events-on-time-series-data-in-excel-96abbc1475e0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;time series plot with events&lt;/a&gt;.)&lt;/p&gt;
 &lt;p&gt;One worry with such a visualization is that the population is growing rapidly, and so the interesting story of how humanity&amp;rsquo;s attention has shifted between fields over time may be lost to a visualization that simply shows population growth. It may be necessary to normalize by population to tell such a story.&lt;/p&gt;
 &lt;p&gt;It may seem infeasible to precisely collect this data, as there is no public registry of who is thinking about what. However, I think the data is perhaps more readily available than appears at first blush.&lt;/p&gt;
 &lt;p&gt;Where would the data come from?&lt;/p&gt;
@@ -3458,7 +3613,8 @@ How much of it is duplicate work (e.g. two nations or organizations independentl
       <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-01-13-writing-tool-idea/</guid>
       <description>&lt;h3 id=&#34;background-writing-is-hard&#34;&gt;Background: Writing is Hard&lt;/h3&gt;
-&lt;p&gt;Sometimes I find writing feels easy &amp;ndash; e.g. when &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34;&gt;writing for no audience&lt;/a&gt;, when writing something you&amp;rsquo;ve already thought extensively about, when telling a story in a logical order that you&amp;rsquo;re deeply familiar with. Other times, I find writing very difficult.&lt;/p&gt;
+&lt;p&gt;Sometimes I find writing feels easy &amp;ndash; e.g. when 
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34;&gt;writing for no audience&lt;/a&gt;, when writing something you&amp;rsquo;ve already thought extensively about, when telling a story in a logical order that you&amp;rsquo;re deeply familiar with. Other times, I find writing very difficult.&lt;/p&gt;
 &lt;p&gt;When I&amp;rsquo;m writing a paper, I am writing explicitly for an audience, the story is not always clear immediately, and the material is something I&amp;rsquo;m becoming familiar with over time, not something about which I&amp;rsquo;m already deeply familiar.
 So, I find paper writing hard.&lt;/p&gt;
 &lt;p&gt;I have an idea that I think will help me write more effectively. It&amp;rsquo;s a software tool that structures the time you spend writing. I&amp;rsquo;ll describe the tool, but I don&amp;rsquo;t anticipate building it. Perhaps we can come up with a low-resource version of this idea, e.g. with paper and pencil, that I can try even without building this tool.&lt;/p&gt;
@@ -3486,7 +3642,8 @@ E.g. &lt;code&gt;!0&lt;/code&gt; is highest priority, and so such a line will be
 &lt;p&gt;The idea is to move quickly, and get all your thoughts onto the page, without getting bogged down in a DFS traversal of information about a single line of the overall text.&lt;/p&gt;
 &lt;h3 id=&#34;additional-details&#34;&gt;Additional details&lt;/h3&gt;
 &lt;p&gt;Every keystroke is logged, so if you write something, and then switch to a new version of it, you will still be able to see the original version. No need to worry about pasting in a password though, since the keylogging data is readily accessible in a plaintext format and you can edit it directly e.g. if anything sensitive does leak in.&lt;/p&gt;
-&lt;p&gt;This system has a decent amount of overlap with the &lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;shh shell&lt;/a&gt; project that I&amp;rsquo;ve already built,
+&lt;p&gt;This system has a decent amount of overlap with the 
+&lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;shh shell&lt;/a&gt; project that I&amp;rsquo;ve already built,
 and perhaps a version of this new idea could be easily added to the shh shell. Alternatively, the shh-shell could be forked to build this new system.&lt;/p&gt;
 &lt;p&gt;Calendar integration would be cool, so that it times your prompts nicely if you have a meeting coming up so you get to a good break point in time for your meeting.&lt;/p&gt;
 &lt;h3 id=&#34;implementation-thoughts&#34;&gt;Implementation Thoughts&lt;/h3&gt;
@@ -3507,7 +3664,9 @@ However, the disadvantage of this is that it makes the keystroke logging feature
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-01-09-learning-by-teaching/</guid>
       <description>&lt;p&gt;Long ago (2013) I spent a summer interning at Khan Academy.
-Also long ago (2014) &lt;a href=&#34;https://twitter.com/harvest_zhang&#34;&gt;Harvest&lt;/a&gt; and I built a tool for creating educational videos online, in the browser (&lt;a href=&#34;https://davidbieber.com/projects/teach-everyone&#34;&gt;Teach Everyone&lt;/a&gt;; warning, bit rot ahead).&lt;/p&gt;
+Also long ago (2014) 
+&lt;a href=&#34;https://twitter.com/harvest_zhang&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Harvest&lt;/a&gt; and I built a tool for creating educational videos online, in the browser (
+&lt;a href=&#34;https://davidbieber.com/projects/teach-everyone&#34;&gt;Teach Everyone&lt;/a&gt;; warning, bit rot ahead).&lt;/p&gt;
 &lt;p&gt;Today, I want to see these two methodologies combined.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;I want it to become common practice that after you spend significant time learning something online, you make a quick-and-dirty video explaining what you just learned.&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;the-vision&#34;&gt;The Vision&lt;/h3&gt;
@@ -3538,7 +3697,8 @@ In minutes, you&amp;rsquo;re able to assemble a video teaching the material you&
 &lt;p&gt;I intend to write more about the details of this vision for video creation tool at a later point, but for now the most important thing about it is that it prioritizes being quick to use over being fully featured and professional, and that it can be used directly in the browser. This way it can be used by online learners as part of their online learning experience.&lt;/p&gt;
 &lt;h3 id=&#34;additional-notes&#34;&gt;Additional Notes&lt;/h3&gt;
 &lt;p&gt;My main premise is that students, young and old, should have a light-weight way to create educational videos immediately after learning something online.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;ve framed this discussion around a hypothetical tool for students to use on Khan Academy, but it applies equally well to educational videos on YouTube and elsewhere. &lt;a href=&#34;https://davidbieber.com/projects/teach-everyone&#34;&gt;Teach Everyone&lt;/a&gt; was an early prototype showing that you can create Khan Academy style animated drawings (i.e. virtual writing on a blackboard) with accompanying audio directly in the browser. Since then, Teach Everyone has suffered some bit rot and unfortunately isn&amp;rsquo;t operational today. However, I&amp;rsquo;m hopeful that some new project will step up, and provide an even better in-browser experience for educational video creation. And then beyond that, I&amp;rsquo;m hopeful that this tool becomes common place for students to use as part of their everyday online learning routine.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve framed this discussion around a hypothetical tool for students to use on Khan Academy, but it applies equally well to educational videos on YouTube and elsewhere. 
+&lt;a href=&#34;https://davidbieber.com/projects/teach-everyone&#34;&gt;Teach Everyone&lt;/a&gt; was an early prototype showing that you can create Khan Academy style animated drawings (i.e. virtual writing on a blackboard) with accompanying audio directly in the browser. Since then, Teach Everyone has suffered some bit rot and unfortunately isn&amp;rsquo;t operational today. However, I&amp;rsquo;m hopeful that some new project will step up, and provide an even better in-browser experience for educational video creation. And then beyond that, I&amp;rsquo;m hopeful that this tool becomes common place for students to use as part of their everyday online learning routine.&lt;/p&gt;
 &lt;p&gt;If you want to discuss these ideas, don&amp;rsquo;t hesitate to get in touch: &lt;a href=&#34;mailto:david810+learning-by-teaching@gmail.com&#34;&gt;david810+learning-by-teaching@gmail.com&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
@@ -3623,9 +3783,11 @@ For some reason, I do it anyway though, and so I think of this habit like an add
 &lt;li&gt;Think.&lt;/li&gt;
 &lt;li&gt;Make plans for the future.&lt;/li&gt;
 &lt;li&gt;Evaluate HALT (hungry? angry? lonely? tired?)&lt;/li&gt;
-&lt;li&gt;Evaluate &lt;a href=&#34;https://davidbieber.com/snippets/2020-01-02-pyd-swyt-cf-bh-din&#34;&gt;pyd-swyt; cf-bh-din&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Evaluate 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-01-02-pyd-swyt-cf-bh-din&#34;&gt;pyd-swyt; cf-bh-din&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;I&amp;rsquo;m &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history&#34;&gt;toying with&lt;/a&gt; the idea of getting Bieber Bot to notice when I&amp;rsquo;m exhibiting addictive behavior. If I can get that working, I&amp;rsquo;d love for Bieber Bot to notice when I&amp;rsquo;m addicted to YouTube, Hacker News, or Twitter and suggest one of the above activities for me to perform instead.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m 
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history&#34;&gt;toying with&lt;/a&gt; the idea of getting Bieber Bot to notice when I&amp;rsquo;m exhibiting addictive behavior. If I can get that working, I&amp;rsquo;d love for Bieber Bot to notice when I&amp;rsquo;m addicted to YouTube, Hacker News, or Twitter and suggest one of the above activities for me to perform instead.&lt;/p&gt;
 </description>
     </item>
     
@@ -3711,9 +3873,11 @@ For some reason, I do it anyway though, and so I think of this habit like an add
 &lt;/table&gt;
 &lt;p&gt;What counts as &amp;ldquo;communicating publicly&amp;rdquo;?&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;A &lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;snippet&lt;/a&gt; like this one&lt;/li&gt;
+&lt;li&gt;A 
+&lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;snippet&lt;/a&gt; like this one&lt;/li&gt;
 &lt;li&gt;Giving a tech talk&lt;/li&gt;
-&lt;li&gt;Writing a &lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;blog post&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Writing a 
+&lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;blog post&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Publishing a paper&lt;/li&gt;
 &lt;li&gt;Uploading a video&lt;/li&gt;
 &lt;/ul&gt;
@@ -3757,18 +3921,24 @@ For some reason, I do it anyway though, and so I think of this habit like an add
       <link>https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/</link>
       <pubDate>Mon, 30 Dec 2019 01:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/</guid>
-      <description>&lt;p&gt;I started this &lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;&amp;ldquo;snippets&amp;rdquo;&lt;/a&gt; section of my website just a few days ago with the intention of being able to write without needing to put polish on a piece before publishing it.&lt;/p&gt;
-&lt;p&gt;My thinking was that I would be able to put small notes there, and half-baked ideas, and not have to worry about diluting the quality of the content of my &lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;main website&lt;/a&gt;. I could put high quality posts on the main site, and a whole range of both good and bad posts in the snippets section. This way, assuming I do a good job, readers could come to expect that any post on the main website would be high quality. Curious people looking for additional content could come here to the snippets section if they wanted to, but more often posts here would either (1) almost never get read, or (2) be linked to directly, e.g. if they were relevent in some other context.&lt;/p&gt;
+      <description>&lt;p&gt;I started this 
+&lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;&amp;ldquo;snippets&amp;rdquo;&lt;/a&gt; section of my website just a few days ago with the intention of being able to write without needing to put polish on a piece before publishing it.&lt;/p&gt;
+&lt;p&gt;My thinking was that I would be able to put small notes there, and half-baked ideas, and not have to worry about diluting the quality of the content of my 
+&lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;main website&lt;/a&gt;. I could put high quality posts on the main site, and a whole range of both good and bad posts in the snippets section. This way, assuming I do a good job, readers could come to expect that any post on the main website would be high quality. Curious people looking for additional content could come here to the snippets section if they wanted to, but more often posts here would either (1) almost never get read, or (2) be linked to directly, e.g. if they were relevent in some other context.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve been surprised and delighted by the effect that having this &amp;ldquo;No Audience&amp;rdquo; section of the website has had on my writing. Writing for no one is so much easier than writing for someone.&lt;/p&gt;
 &lt;p&gt;On a few occasions (and it&amp;rsquo;s only been a few days since I started this section), I&amp;rsquo;ve started writing snippets intending for them to be brief thoughts meant for no one but myself. Then, after starting, it has felt natural to expand the post into something more substantial than I originally intended, e.g. answering questions that a hypothetical reader might have.&lt;/p&gt;
-&lt;p&gt;On one &lt;a href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet&#34;&gt;occasion&lt;/a&gt; I even decided to bump the post up in importance after getting started, placing it in the main section of the website rather than relegating it to the mostly hidden snippets section.&lt;/p&gt;
+&lt;p&gt;On one 
+&lt;a href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet&#34;&gt;occasion&lt;/a&gt; I even decided to bump the post up in importance after getting started, placing it in the main section of the website rather than relegating it to the mostly hidden snippets section.&lt;/p&gt;
 &lt;p&gt;To anyone out there who does end up reading this, and there may very well be none of you: if you&amp;rsquo;re having trouble getting started with writing, write for no audience.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4 id=&#34;the-different-degrees-of-no-audience&#34;&gt;The Different Degrees of &amp;ldquo;No Audience&amp;rdquo;&lt;/h4&gt;
 &lt;p&gt;I actually write for No Audience in two different contexts.&lt;/p&gt;
-&lt;p&gt;(1) The &lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;snippets&lt;/a&gt; section of my website&lt;br&gt;
-(2) Using &lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;shh-shell&lt;/a&gt; at night&lt;/p&gt;
-&lt;p&gt;The snippets section of my website is public, but with no built-in broadcasting. People can read it if they choose to, but I&amp;rsquo;m not putting it in people&amp;rsquo;s faces (by default; I will if it&amp;rsquo;s appropriate in context). Contrast this with the writing I do with the &lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;shh-shell&lt;/a&gt;. This is more personal writing that I do half-asleep as I drift off at night, and so I don&amp;rsquo;t make it public; I expect almost no one will ever read it. This writing, I suppose is for No Audience to an even more extreme degree. I recommend both practices: public writing for no audience, and private writing for no audience.&lt;/p&gt;
+&lt;p&gt;(1) The 
+&lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;snippets&lt;/a&gt; section of my website&lt;br&gt;
+(2) Using 
+&lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;shh-shell&lt;/a&gt; at night&lt;/p&gt;
+&lt;p&gt;The snippets section of my website is public, but with no built-in broadcasting. People can read it if they choose to, but I&amp;rsquo;m not putting it in people&amp;rsquo;s faces (by default; I will if it&amp;rsquo;s appropriate in context). Contrast this with the writing I do with the 
+&lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;shh-shell&lt;/a&gt;. This is more personal writing that I do half-asleep as I drift off at night, and so I don&amp;rsquo;t make it public; I expect almost no one will ever read it. This writing, I suppose is for No Audience to an even more extreme degree. I recommend both practices: public writing for no audience, and private writing for no audience.&lt;/p&gt;
 &lt;h4 id=&#34;social-media-doesnt-cut-it&#34;&gt;Social Media Doesn&amp;rsquo;t Cut It&lt;/h4&gt;
 &lt;p&gt;Now that I&amp;rsquo;ve discovered this practice and am quite fond of it, I think it could be a promising addition to social media.&lt;/p&gt;
 &lt;p&gt;No social media platform, to my knowledge, has given people a place to write public posts with an option to publish but not share them. The absense of such a feature makes sense; social media platforms need you to share for them to succeed, so how would giving you a space to publish-but-not-share help them? The answer lies in the psychology of the many social-media lurkers. There is a significant market segment of people who perhaps consume, but do not post, on social media. An option to publish-but-not-broadcast might help to convert some of that segment into sharers.&lt;/p&gt;
@@ -3776,7 +3946,8 @@ For some reason, I do it anyway though, and so I think of this habit like an add
 &lt;p&gt;If a feature for publishing-without-sharing were added to Facebook or Twitter, perhaps others would have an experience like mine over the last few days. Having the option to publish-but-not-share has significantly reduced the barrier to start writing for me. Then, once I&amp;rsquo;ve started writing, I&amp;rsquo;ve often changed my mind and decided I want to share what I&amp;rsquo;ve written after all.&lt;/p&gt;
 &lt;p&gt;If other social-media lurkers are like me, a feature enabling this behavior could help &amp;ldquo;break the ice&amp;rdquo; so to speak, and could make social media platforms more relevant to them.&lt;/p&gt;
 &lt;h4 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h4&gt;
-&lt;p&gt;I&amp;rsquo;m going to continue building this snippets section for myself, with the default behavior being no-broadcasting as I add snippets. For snippets I&amp;rsquo;m fond of, I may choose to broadcast (e.g. by posting about the post on social media). Contrast this with the &lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;main posts section&lt;/a&gt; of my website; for new posts there, I will generally always broadcast the post, at least a little bit.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m going to continue building this snippets section for myself, with the default behavior being no-broadcasting as I add snippets. For snippets I&amp;rsquo;m fond of, I may choose to broadcast (e.g. by posting about the post on social media). Contrast this with the 
+&lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;main posts section&lt;/a&gt; of my website; for new posts there, I will generally always broadcast the post, at least a little bit.&lt;/p&gt;
 &lt;p&gt;If you&amp;rsquo;d like to receive such broadcasts, e.g. when I write a post that I&amp;rsquo;m particularly keen on sharing, please consider subscribing:&lt;/p&gt;
 
 &lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/classic-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
@@ -3808,7 +3979,9 @@ For some reason, I do it anyway though, and so I think of this habit like an add
 &lt;script type=&#39;text/javascript&#39; src=&#39;//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js&#39;&gt;&lt;/script&gt;
 &lt;script type=&#39;text/javascript&#39;&gt;(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=&#39;EMAIL&#39;;ftypes[0]=&#39;email&#39;;fnames[1]=&#39;FNAME&#39;;ftypes[1]=&#39;text&#39;;fnames[2]=&#39;LNAME&#39;;ftypes[2]=&#39;text&#39;;fnames[3]=&#39;ADDRESS&#39;;ftypes[3]=&#39;address&#39;;fnames[4]=&#39;PHONE&#39;;ftypes[4]=&#39;phone&#39;;fnames[5]=&#39;BIRTHDAY&#39;;ftypes[5]=&#39;birthday&#39;;}(jQuery));var $mcj = jQuery.noConflict(true);&lt;/script&gt;
 
-&lt;p&gt;Ironically, you are also welcome to follow the snippets section with &lt;a href=&#34;https://davidbieber.com/snippets/index.xml&#34;&gt;RSS&lt;/a&gt;. Don&amp;rsquo;t tell me if you do though, since I would like to continue to feel like I&amp;rsquo;m writing for No Audience. You can follow the posts section with &lt;a href=&#34;https://davidbieber.com/posts/index.xml&#34;&gt;RSS&lt;/a&gt; as well.&lt;/p&gt;
+&lt;p&gt;Ironically, you are also welcome to follow the snippets section with 
+&lt;a href=&#34;https://davidbieber.com/snippets/index.xml&#34;&gt;RSS&lt;/a&gt;. Don&amp;rsquo;t tell me if you do though, since I would like to continue to feel like I&amp;rsquo;m writing for No Audience. You can follow the posts section with 
+&lt;a href=&#34;https://davidbieber.com/posts/index.xml&#34;&gt;RSS&lt;/a&gt; as well.&lt;/p&gt;
 </description>
     </item>
     
@@ -3818,13 +3991,20 @@ For some reason, I do it anyway though, and so I think of this habit like an add
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve learned recently that programmatically accessing your browsing history is rather straightforward. Really exciting! This is rich data, from which I think I&amp;rsquo;ll be able to learn a lot and hopefully combat unwanted distractions.&lt;/p&gt;
-&lt;p&gt;First let me describe what information is available, and how you can access it. Then, let&amp;rsquo;s discuss what you can do with this data. As I&amp;rsquo;ve written about previously &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;[1]&lt;/a&gt; &lt;a href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/&#34;&gt;[2]&lt;/a&gt;, I already have a chat bot system in place, which will be able to take advantage of this data to e.g. help me stay focused.&lt;/p&gt;
+&lt;p&gt;First let me describe what information is available, and how you can access it. Then, let&amp;rsquo;s discuss what you can do with this data. As I&amp;rsquo;ve written about previously 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;[1]&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[2]&lt;/a&gt;, I already have a chat bot system in place, which will be able to take advantage of this data to e.g. help me stay focused.&lt;/p&gt;
 &lt;h4 id=&#34;accessing-your-browser-history&#34;&gt;Accessing Your Browser History&lt;/h4&gt;
-&lt;p&gt;Thank you to GitHub user &lt;a href=&#34;https://github.com/dropmeaword&#34;&gt;dropmeaword&lt;/a&gt; for compiling &lt;a href=&#34;https://gist.github.com/dropmeaword/9372cbeb29e8390521c2&#34;&gt;this gist&lt;/a&gt; explaining how to access your browser history via sqlite3. The gist covers Safari, Chrome, and Firefox. In this post, I&amp;rsquo;ll just focus on Chrome on OSX, since that&amp;rsquo;s my primary mode of browsing.&lt;/p&gt;
+&lt;p&gt;Thank you to GitHub user 
+&lt;a href=&#34;https://github.com/dropmeaword&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dropmeaword&lt;/a&gt; for compiling 
+&lt;a href=&#34;https://gist.github.com/dropmeaword/9372cbeb29e8390521c2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this gist&lt;/a&gt; explaining how to access your browser history via sqlite3. The gist covers Safari, Chrome, and Firefox. In this post, I&amp;rsquo;ll just focus on Chrome on OSX, since that&amp;rsquo;s my primary mode of browsing.&lt;/p&gt;
 &lt;p&gt;My Chrome browsing history is located at &lt;code&gt;~/Library/Application Support/Google/Chrome/Default/History&lt;/code&gt;. Since I use multiple profiles in Chrome, each profile gets its own browsing history, e.g. located at &lt;code&gt;~/Library/Application Support/Google/Chrome/Profile 1/History&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Each browsing history is stored as a sqlite3 database. Before analyzing the data, I recommend making a copy of it (&lt;code&gt;cp ~/Library/Application\ Support/Google/Chrome/Default/History my-history&lt;/code&gt;); this way your history database (a) wont be locked by Chrome while you&amp;rsquo;re trying to access it, and (b) wont change while you&amp;rsquo;re looking at it, which could cause confusion and inconsistencies in your results.&lt;/p&gt;
 &lt;p&gt;This means you can browse it interactively using the sqlite3 REPL by running &lt;code&gt;sqlite3 PATH_TO_DATABASE&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;There are also libraries available for accessing sqlite3 databases in just about every language. For Python, there&amp;rsquo;s the &lt;a href=&#34;https://docs.python.org/3/library/sqlite3.html&#34;&gt;sqlite3&lt;/a&gt; library. Go has &lt;a href=&#34;https://godoc.org/github.com/mattn/go-sqlite3&#34;&gt;go-sqlite3&lt;/a&gt;. JavaScript has &lt;a href=&#34;https://www.sqlitetutorial.net/sqlite-nodejs/&#34;&gt;this sqlite3 module&lt;/a&gt;. However you most like scripting, you&amp;rsquo;ll have a familiar way of accessing the data.&lt;/p&gt;
+&lt;p&gt;There are also libraries available for accessing sqlite3 databases in just about every language. For Python, there&amp;rsquo;s the 
+&lt;a href=&#34;https://docs.python.org/3/library/sqlite3.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sqlite3&lt;/a&gt; library. Go has 
+&lt;a href=&#34;https://godoc.org/github.com/mattn/go-sqlite3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;go-sqlite3&lt;/a&gt;. JavaScript has 
+&lt;a href=&#34;https://www.sqlitetutorial.net/sqlite-nodejs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this sqlite3 module&lt;/a&gt;. However you most like scripting, you&amp;rsquo;ll have a familiar way of accessing the data.&lt;/p&gt;
 &lt;h4 id=&#34;the-available-data&#34;&gt;The Available Data&lt;/h4&gt;
 &lt;p&gt;Running sqlite3 macro &lt;code&gt;.tables&lt;/code&gt;, we see the following tables are available.&lt;/p&gt;
 &lt;table&gt;
@@ -3939,7 +4119,8 @@ For some reason, I do it anyway though, and so I think of this habit like an add
 &lt;tr&gt;
 &lt;td&gt;transition&lt;/td&gt;
 &lt;td&gt;Bit vector&lt;/td&gt;
-&lt;td&gt;Represents the &lt;a href=&#34;https://developer.chrome.com/extensions/history#transition_types&#34;&gt;transition type&lt;/a&gt; (how you got to the URL)&lt;/td&gt;
+&lt;td&gt;Represents the 
+&lt;a href=&#34;https://developer.chrome.com/extensions/history#transition_types&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;transition type&lt;/a&gt; (how you got to the URL)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;segment_id&lt;/td&gt;
@@ -3969,7 +4150,8 @@ For some reason, I do it anyway though, and so I think of this habit like an add
 &lt;li&gt;Websites that frequently lead to known-distractor websites (e.g. Reddit, Hacker News, Twitter, YouTube)&lt;/li&gt;
 &lt;li&gt;We can do an analysis by time of day (or day of week), to figure out what sites occupy my time late at night vs during daylight hours.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;These are somewhat interesting, but what I&amp;rsquo;m particularly excited for is the ongoing analysis that &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; can provide by accessing the data.&lt;/p&gt;
+&lt;p&gt;These are somewhat interesting, but what I&amp;rsquo;m particularly excited for is the ongoing analysis that 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; can provide by accessing the data.&lt;/p&gt;
 &lt;p&gt;Here is a brainstorm of the more real-time actionable insights we might extract from this data.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Bieber Bot could ping me if it looks like I&amp;rsquo;m spending too much time on a distraction website.&lt;/li&gt;
@@ -4025,17 +4207,21 @@ Then I would be able to view my &amp;ldquo;saved for later&amp;rdquo; links when
       <link>https://davidbieber.com/snippets/2019-12-29-feedingstuffs/</link>
       <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2019-12-29-feedingstuffs/</guid>
-      <description>&lt;p&gt;Today I learned the word &lt;a href=&#34;https://en.wiktionary.org/wiki/feedingstuff#English&#34;&gt;&amp;ldquo;feedingstuffs&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;Today I learned the word 
+&lt;a href=&#34;https://en.wiktionary.org/wiki/feedingstuff#English&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;feedingstuffs&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;feedingstuff (countable and uncountable, plural feedingstuffs)
 
   Any foodstuff used to feed livestock.
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;It&amp;rsquo;s not in every dictionary, and it&amp;rsquo;s not a valid Scrabble word.&lt;/p&gt;
 &lt;p&gt;How did this word come up? I had heard previously that salmon is not naturally as pink as it is in supermarkets. I was wondering how this could be. Surely salmon aren&amp;rsquo;t being colored during the packaging process, right? That&amp;rsquo;s right, salmon are still that same color when they&amp;rsquo;re first cut open.&lt;/p&gt;
-&lt;p&gt;The coloring, &lt;a href=&#34;https://ec.europa.eu/food/sites/food/files/safety/docs/animal-feed_additives_rules_scan-old_report_out81.pdf&#34;&gt;I learned&lt;/a&gt;, is added to the salmon&amp;rsquo;s &lt;strong&gt;feedingstuffs&lt;/strong&gt;!&lt;/p&gt;
-&lt;p&gt;Yes, that&amp;rsquo;s an official European Commission report from 2002 recommending that the amount of allowable &lt;a href=&#34;https://en.wikipedia.org/wiki/Canthaxanthin&#34;&gt;Canthaxanthin&lt;/a&gt; (&lt;font color=&#34;salmon&#34;&gt;salmon&lt;/font&gt; coloring) in salmon feed be reevaluated, and possibly lowered.&lt;/p&gt;
+&lt;p&gt;The coloring, 
+&lt;a href=&#34;https://ec.europa.eu/food/sites/food/files/safety/docs/animal-feed_additives_rules_scan-old_report_out81.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;I learned&lt;/a&gt;, is added to the salmon&amp;rsquo;s &lt;strong&gt;feedingstuffs&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;Yes, that&amp;rsquo;s an official European Commission report from 2002 recommending that the amount of allowable 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Canthaxanthin&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Canthaxanthin&lt;/a&gt; (&lt;font color=&#34;salmon&#34;&gt;salmon&lt;/font&gt; coloring) in salmon feed be reevaluated, and possibly lowered.&lt;/p&gt;
 &lt;p&gt;At the time, the maximum amount of Canthaxanthin allowable in salmon and trout feedingstuffs in the EU was 80 mg / kg of feedingstuff.&lt;/p&gt;
-&lt;p&gt;Fast-forward to today, and only &lt;a href=&#34;https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32008R0775&amp;amp;qid=1577681296736&amp;amp;from=EN&#34;&gt;10 mg / kg of Canthaxanthin is permitted&lt;/a&gt;. More interesting than this though, is that in the 2008 journal reporting this new, lower limit, they instead use the word &lt;strong&gt;foodstuffs&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Fast-forward to today, and only 
+&lt;a href=&#34;https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32008R0775&amp;amp;qid=1577681296736&amp;amp;from=EN&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10 mg / kg of Canthaxanthin is permitted&lt;/a&gt;. More interesting than this though, is that in the 2008 journal reporting this new, lower limit, they instead use the word &lt;strong&gt;foodstuffs&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Feedingstuffs, it would seem, are no more.&lt;/p&gt;
 </description>
     </item>
@@ -4047,9 +4233,14 @@ Then I would be able to view my &amp;ldquo;saved for later&amp;rdquo; links when
       <guid>https://davidbieber.com/snippets/2019-12-26-learning-to-communicate/</guid>
       <description>&lt;p&gt;My goal for 2020 is to learn to communicate better with the world. I work in a research group at Google, and our main job function is performing research in program synthesis. But research is only as valuable as how well it is communicated. So in 2020 I&amp;rsquo;d like to get better at communicating publicly.&lt;/p&gt;
 &lt;p&gt;There are a few options for doing this. The first is writing blog posts. This may be too large an undertaking to do frequently. I&amp;rsquo;d really like something that&amp;rsquo;s lower barrier to do, and with a lower quality bar, so that I can do this more often. The natural alternative with these properties is academic Twitter. However, I want to avoid the addictive nature of Twitter. I also want to write more than 280 characters at a time, and I don&amp;rsquo;t want to put every little thing I write in front of people&amp;rsquo;s faces with equal importance. Twitter seems a good place for announcing a new paper or a Python Fire update, but not for sharing a musing like this one.&lt;/p&gt;
-&lt;p&gt;So instead I think I&amp;rsquo;m going to start by silently posting my writings to my website, but in a &lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;separate section&lt;/a&gt; from the main blog. This way when there&amp;rsquo;s something with a little more polish that I think is explicitly worth reading, I can put it in the &lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;main blog section&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/Bieber&#34;&gt;tweet&lt;/a&gt; about it, etc.&lt;/p&gt;
-&lt;p&gt;If you want to receive updates for every small writing I put up here, you can use this &lt;a href=&#34;https://davidbieber.com/snippets/index.xml&#34;&gt;RSS feed&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;If you want to receive updates only for major posts, such as new publications or major life updates, you can use this &lt;a href=&#34;https://davidbieber.com/posts/index.xml&#34;&gt;RSS feed&lt;/a&gt; or you can subscribe here:&lt;/p&gt;
+&lt;p&gt;So instead I think I&amp;rsquo;m going to start by silently posting my writings to my website, but in a 
+&lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;separate section&lt;/a&gt; from the main blog. This way when there&amp;rsquo;s something with a little more polish that I think is explicitly worth reading, I can put it in the 
+&lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;main blog section&lt;/a&gt; and 
+&lt;a href=&#34;https://twitter.com/Bieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tweet&lt;/a&gt; about it, etc.&lt;/p&gt;
+&lt;p&gt;If you want to receive updates for every small writing I put up here, you can use this 
+&lt;a href=&#34;https://davidbieber.com/snippets/index.xml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RSS feed&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to receive updates only for major posts, such as new publications or major life updates, you can use this 
+&lt;a href=&#34;https://davidbieber.com/posts/index.xml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RSS feed&lt;/a&gt; or you can subscribe here:&lt;/p&gt;
 
 &lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/classic-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
 &lt;style type=&#34;text/css&#34;&gt;

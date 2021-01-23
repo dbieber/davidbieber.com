@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -51,7 +51,7 @@
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -63,8 +63,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -213,13 +213,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -229,7 +231,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -270,8 +272,8 @@
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/posts/">
   <meta property="og:title" content="Posts | David Bieber">
-  <meta property="og:description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
-  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2018-10-26T00:00:00&#43;00:00">
   
@@ -330,10 +332,15 @@
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -1238,7 +1245,12 @@
 
     
     <div class="article-style">
-      Last week I did a Q+A for the Life at KA blog. The last time I did an education-centric online Q+A was more than three years earlier. …
+      Last week I did a Q+A for the Life at KA blog. The last time I did an education-centric online Q+A was more than three years earlier. Let&rsquo;s take a look.
+Originally posted at mathcounts.org in March 2010.
+How long have you been a MATHCOUNTS coach?
+This is my second year coaching the Van Antwerp MATHCOUNTS team.
+What is your favorite part about being a MATHCOUNTS coach?
+It&rsquo;s great to see my students having a good time with math.
     </div>
     
 
@@ -1422,7 +1434,9 @@
       You&rsquo;re used to ssh-ing into machine B from machine A by typing:
 ssh username@B.com
 password
-Now you wish to ssh from machine A …
+Now you wish to ssh from machine A into machine B without having to enter your password. Just follow these steps.
+  Create a public/private RSA key pair by issuing the unix command ssh-keygen. Do not enter a passphrase.
+  Put the private key on machine A (the machine you wish to ssh from).
     </div>
     
 
@@ -1515,7 +1529,8 @@ Now you wish to ssh from machine A …
 
     
     <div class="article-style">
-      The best way to learn is to teach. It&rsquo;s also, most of the time, the most fun way to learn. And as an added bonus, the person …
+      The best way to learn is to teach. It&rsquo;s also, most of the time, the most fun way to learn. And as an added bonus, the person you&rsquo;re teaching learns too.
+I strongly believe that you, as someone who has found themselves reading strange blogs on the internet, have a lot to offer the world in the way of teaching. So I want you to teach at scale. Yes, I&rsquo;m looking at you Mom and Dad, former Facebook and Twitter interns, my fellow interns here at Khan Academy.
     </div>
     
 
@@ -1790,7 +1805,7 @@ Now you wish to ssh from machine A …
     
     <div class="article-style">
       In this post, clicking the bold word Life will replace it with the bold word Blokus.
-Life is simple. It gets more complex over time, …
+Life is simple. It gets more complex over time, but nothing insurmountable. In the beginning, your path is pretty much laid out. You have some control over what directions you go, and these are important decisions. They&rsquo;ll shape your future. They&rsquo;ll change what opportunities you have down the road. But as important as they are, there are relatively few wrong decisions.
     </div>
     
 
@@ -1884,7 +1899,10 @@ Life is simple. It gets more complex over time, …
     
     <div class="article-style">
       You&rsquo;ll have your Django web app up and running live on the internet with AppFog in a matter of minutes.
-Here&rsquo;s what you …
+Here&rsquo;s what you have to do.
+  Start a project on AppFog.  Clone the django-appfog-helloworld repository.  Push to AppFog.  The repository is available at https://github.com/dbieber/django-appfog-helloworld.
+Here&rsquo;s what comes with this repo.
+It&rsquo;s a Django project that works out of the box (just download it and python manage.
     </div>
     
 
@@ -1978,7 +1996,10 @@ Here&rsquo;s what you …
     
     <div class="article-style">
       In this blog post I recommend Streak, a customer relationship management (CRM) tool that lives inside Gmail.
-Discuss on Hacker News. …
+Discuss on Hacker News.
+What do you use email for? I’m curious, so feel free to let me know before reading further (Google form).
+Personally, there are a just a handful of use cases that make up the vast majority of my email usage. Let’s list them.
+Organizing talks and events for ACM and Splash!
     </div>
     
 
@@ -2071,7 +2092,8 @@ Discuss on Hacker News. …
 
     
     <div class="article-style">
-      That concludes day one of the TigerTrek. I flew out of Princeton yesterday with a group of 20 to spend the week visiting technology …
+      That concludes day one of the TigerTrek. I flew out of Princeton yesterday with a group of 20 to spend the week visiting technology companies, startups and venture capitalists in Silicon Valley. We&rsquo;re going company to company hearing founder&rsquo;s stories, discussing entrepreneurship, and as we do this I am forced to introspect. What do I want to do with my life? How can I make a difference?
+My passion is education.
     </div>
     
 
@@ -2164,7 +2186,9 @@ Discuss on Hacker News. …
 
     
     <div class="article-style">
-      If you&rsquo;ve taken any online classes, read on! Online education is growing rapidly, and I want to make the online education …
+      If you&rsquo;ve taken any online classes, read on! Online education is growing rapidly, and I want to make the online education experience the best it can be. To that end, I would really appreciate your insight regarding online courses such as those offered at Coursera, Udacity, edX, Khan Academy, and MIT&rsquo;s OpenCourseWare.
+Please help me by filling out this short 4 question form regarding your online education experiences:
+The questions asked are: &ldquo;Which platforms have you used?
     </div>
     
 
@@ -2258,7 +2282,8 @@ Discuss on Hacker News. …
     
     <div class="article-style">
       Check out this video showing what Code@Nights are all about!
-Since you’re reading my blog, you should know a little bit about myself. …
+Since you’re reading my blog, you should know a little bit about myself. I’m a big fan of Scrabble. I love math, puzzles, and playing tennis. I spend a lot of my would-be-free time on Coursera. And I’m vice chair of Princeton’s ACM Group.
+ACM stands for Association for Computing Machinery, but that’s not important. I think that name is silly.
     </div>
     
 
@@ -2438,11 +2463,11 @@ Since you’re reading my blog, you should know a little bit about myself. …
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -2454,6 +2479,11 @@ Since you’re reading my blog, you should know a little bit about myself. …
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -2522,7 +2552,7 @@ Since you’re reading my blog, you should know a little bit about myself. …
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

@@ -7,7 +7,7 @@
     <description>Python Fire</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 06 Mar 2017 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://davidbieber.com/img/portrait.jpg</url>
+      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>Python Fire</title>
       <link>https://davidbieber.com/tags/python-fire/</link>
     </image>
@@ -18,7 +18,10 @@
       <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/post/2017-03-06-introducing-python-fire/</guid>
       <description>&lt;p&gt;&lt;em&gt;Originally posted on the Google Open Source Blog&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Today we are pleased to announce the open-sourcing of &lt;a href=&#34;https://github.com/google/python-fire&#34;&gt;Python Fire&lt;/a&gt;. Python Fire generates command line interfaces (CLIs) from any Python code. Simply call the Fire function in any Python program to automatically turn that program into a CLI. The library is available from &lt;a href=&#34;https://pypi.org/project/fire/&#34;&gt;pypi&lt;/a&gt; via &lt;code&gt;pip install fire&lt;/code&gt;, and the source is &lt;a href=&#34;https://github.com/google/python-fire&#34;&gt;available on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Today we are pleased to announce the open-sourcing of 
+&lt;a href=&#34;https://github.com/google/python-fire&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python Fire&lt;/a&gt;. Python Fire generates command line interfaces (CLIs) from any Python code. Simply call the Fire function in any Python program to automatically turn that program into a CLI. The library is available from 
+&lt;a href=&#34;https://pypi.org/project/fire/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pypi&lt;/a&gt; via &lt;code&gt;pip install fire&lt;/code&gt;, and the source is 
+&lt;a href=&#34;https://github.com/google/python-fire&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Python Fire will automatically turn your code into a CLI without you needing to do any additional work. You don’t have to define arguments, set up help information, or write a main function that defines how your code is run. Instead, you simply call the &lt;code&gt;Fire&lt;/code&gt; function from your main module, and Python Fire takes care of the rest. It uses inspection to turn whatever Python object you give it – whether it’s a class, an object, a dictionary, a function, or even a whole module – into a command line interface, complete with tab completion and documentation, and the CLI will stay up-to-date even as the code changes.&lt;/p&gt;
 &lt;p&gt;To illustrate this, let’s look at a simple example.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#!/usr/bin/env python
@@ -44,8 +47,13 @@ $ ./example.py hello --name=Google
 Hello Google!
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Of course, you can continue to use this module like an ordinary Python library, enabling you to use the exact same code both from Bash and Python. If you’re writing a Python library, then you no longer need to update your main method or client when experimenting with it; instead you can simply run the piece of your library that you’re experimenting with from the command line. Even as the library changes, the command line tool stays up to date.&lt;/p&gt;
-&lt;p&gt;At Google, engineers use Python Fire to generate command line tools from Python libraries. We have an image manipulation tool built by using Fire with the &lt;a href=&#34;https://en.wikipedia.org/wiki/Python_Imaging_Library&#34;&gt;Python Imaging Library&lt;/a&gt;, PIL. In &lt;a href=&#34;https://ai.google/research/teams/brain&#34;&gt;Google Brain&lt;/a&gt;, we use an experiment management tool built with Fire, allowing us to manage experiments equally well from Python or from Bash.&lt;/p&gt;
-&lt;p&gt;Every Fire CLI comes with an interactive mode. Run the CLI with the &lt;code&gt;--interactive&lt;/code&gt; flag to launch an &lt;a href=&#34;https://ipython.org/&#34;&gt;IPython&lt;/a&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop&#34;&gt;REPL&lt;/a&gt; with the result of your command, as well as other useful variables already defined and ready to use. Be sure to check out &lt;a href=&#34;https://github.com/google/python-fire#python-fire-&#34;&gt;Python Fire’s documentation&lt;/a&gt; for more on this and the other useful features Fire provides.&lt;/p&gt;
+&lt;p&gt;At Google, engineers use Python Fire to generate command line tools from Python libraries. We have an image manipulation tool built by using Fire with the 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Python_Imaging_Library&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python Imaging Library&lt;/a&gt;, PIL. In 
+&lt;a href=&#34;https://ai.google/research/teams/brain&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Brain&lt;/a&gt;, we use an experiment management tool built with Fire, allowing us to manage experiments equally well from Python or from Bash.&lt;/p&gt;
+&lt;p&gt;Every Fire CLI comes with an interactive mode. Run the CLI with the &lt;code&gt;--interactive&lt;/code&gt; flag to launch an 
+&lt;a href=&#34;https://ipython.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IPython&lt;/a&gt; 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;REPL&lt;/a&gt; with the result of your command, as well as other useful variables already defined and ready to use. Be sure to check out 
+&lt;a href=&#34;https://github.com/google/python-fire#python-fire-&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python Fire’s documentation&lt;/a&gt; for more on this and the other useful features Fire provides.&lt;/p&gt;
 &lt;p&gt;Between Python Fire’s simplicity, generality, and power, we hope you find it a useful library for your own projects.&lt;/p&gt;
 </description>
     </item>

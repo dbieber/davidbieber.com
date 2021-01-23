@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -52,7 +52,7 @@ Auto Auto-Jumpcutter This springboards directly from carykh&rsquo;s jumpcutter p
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -64,8 +64,8 @@ Auto Auto-Jumpcutter This springboards directly from carykh&rsquo;s jumpcutter p
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -214,13 +214,15 @@ Auto Auto-Jumpcutter This springboards directly from carykh&rsquo;s jumpcutter p
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -230,7 +232,7 @@ Auto Auto-Jumpcutter This springboards directly from carykh&rsquo;s jumpcutter p
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -270,8 +272,8 @@ Auto Auto-Jumpcutter This springboards directly from carykh&rsquo;s jumpcutter p
   <meta property="og:url" content="https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/">
   <meta property="og:title" content="Video Tooling Progress | David Bieber">
   <meta property="og:description" content="Over the last week and a half I&rsquo;ve been making screen recordings of myself programming. Mostly what I&rsquo;ve been programming is tooling to help myself make better screen recordings. Here&rsquo;s an overview of what I&rsquo;ve put together so far.
-Auto Auto-Jumpcutter This springboards directly from carykh&rsquo;s jumpcutter project, which uses ffmpeg and AudioTSM to speed up the silent sections of a video. Auto Auto-Jumpcutter has two &ldquo;auto&quot;s in its name because jumpcutter already does automatic jumpcutting of videos, and Auto Auto-Jumpcutter uses watchdog to automatically apply jumpcutter the moment a screen recording is captured."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
-  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
+Auto Auto-Jumpcutter This springboards directly from carykh&rsquo;s jumpcutter project, which uses ffmpeg and AudioTSM to speed up the silent sections of a video. Auto Auto-Jumpcutter has two &ldquo;auto&quot;s in its name because jumpcutter already does automatic jumpcutting of videos, and Auto Auto-Jumpcutter uses watchdog to automatically apply jumpcutter the moment a screen recording is captured."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-02-26T00:00:00&#43;00:00">
@@ -335,10 +337,15 @@ Auto Auto-Jumpcutter This springboards directly from carykh&rsquo;s jumpcutter p
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -520,13 +527,17 @@ Auto Auto-Jumpcutter This springboards directly from carykh&rsquo;s jumpcutter p
     <div class="article-style" id="article-content">
       <p>Over the last week and a half I&rsquo;ve been making screen recordings of myself programming. Mostly what I&rsquo;ve been programming is tooling to help myself make better screen recordings. Here&rsquo;s an overview of what I&rsquo;ve put together so far.</p>
 <h2 id="auto-auto-jumpcutter">Auto Auto-Jumpcutter</h2>
-<p>This springboards directly from carykh&rsquo;s <a href="https://github.com/carykh/jumpcutter">jumpcutter</a> project, which uses <a href="https://www.ffmpeg.org/">ffmpeg</a> and AudioTSM to speed up the silent sections of a video. Auto Auto-Jumpcutter has two &ldquo;auto&quot;s in its name because jumpcutter already does automatic jumpcutting of videos, and Auto Auto-Jumpcutter uses <a href="https://pythonhosted.org/watchdog/">watchdog</a> to automatically apply jumpcutter the moment a screen recording is captured.</p>
+<p>This springboards directly from carykh&rsquo;s 
+<a href="https://github.com/carykh/jumpcutter" target="_blank" rel="noopener">jumpcutter</a> project, which uses 
+<a href="https://www.ffmpeg.org/" target="_blank" rel="noopener">ffmpeg</a> and AudioTSM to speed up the silent sections of a video. Auto Auto-Jumpcutter has two &ldquo;auto&quot;s in its name because jumpcutter already does automatic jumpcutting of videos, and Auto Auto-Jumpcutter uses 
+<a href="https://pythonhosted.org/watchdog/" target="_blank" rel="noopener">watchdog</a> to automatically apply jumpcutter the moment a screen recording is captured.</p>
 <p>The result is that my typing appears superhuman in speed, but slows down while I&rsquo;m speaking, without me needing to do any manual editing to the video to achieve this effect.</p>
 <h2 id="auto-commit">Auto-Commit</h2>
 <p>I also made for myself a git auto-committer. Every time I save a file during a screen recording session, the change is immediately and automatically committed. The commit message is selected automatically from the diff. The result is that I have a timestamped log of all changes made during the recording. This is super useful for editing the recordings (both automatically and manually) because I can pinpoint exactly where in the recording any change took place. It also works hand-in-hand with the next piece of tooling.</p>
 <h2 id="keyboard-shortcuts">Keyboard Shortcuts</h2>
 <p>Just using Auto Auto-Jumpcutter goes a long way toward having automatically edited videos, but it doesn&rsquo;t completely eliminate the need for manual editing.
-For example, it provides no way to do multiple takes and stitch together the good parts of each. For this I&rsquo;ve set up a keyboard shortcut system for myself using the Python <a href="https://pypi.org/project/keyboard/">keyboard</a> module. This way I can indicate via keyboard shortcuts to remove a selection of footage during the recording session, and have it automatically be removed during the automatic editing phase. This last step &ndash; using the keyboard shortcuts to guide automatic editing &ndash; is an active work in progress.</p>
+For example, it provides no way to do multiple takes and stitch together the good parts of each. For this I&rsquo;ve set up a keyboard shortcut system for myself using the Python 
+<a href="https://pypi.org/project/keyboard/" target="_blank" rel="noopener">keyboard</a> module. This way I can indicate via keyboard shortcuts to remove a selection of footage during the recording session, and have it automatically be removed during the automatic editing phase. This last step &ndash; using the keyboard shortcuts to guide automatic editing &ndash; is an active work in progress.</p>
 
     </div>
 
@@ -550,7 +561,7 @@ For example, it provides no way to do multiple takes and stitch together the goo
 
 
   
-
+  
 
 
 
@@ -560,6 +571,7 @@ For example, it provides no way to do multiple takes and stitch together the goo
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -575,6 +587,9 @@ For example, it provides no way to do multiple takes and stitch together the goo
 
     </div>
   </div>
+
+
+
 
 
 
@@ -606,11 +621,11 @@ For example, it provides no way to do multiple takes and stitch together the goo
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -622,6 +637,11 @@ For example, it provides no way to do multiple takes and stitch together the goo
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -690,7 +710,7 @@ For example, it provides no way to do multiple takes and stitch together the goo
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

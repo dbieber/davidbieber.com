@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -51,7 +51,7 @@
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -63,8 +63,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -213,13 +213,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -229,7 +231,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -268,8 +270,8 @@
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/projects/shh-shell/">
   <meta property="og:title" content="shh Shell | David Bieber">
-  <meta property="og:description" content="The soothing shell for while you sleep."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
-  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="The soothing shell for while you sleep."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2014-08-03T00:00:00&#43;00:00">
@@ -333,10 +335,15 @@
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -542,14 +549,16 @@
 <li>Recording audio memos of myself for later</li>
 <li>Executing arbitrary shell commands</li>
 </ul>
-<p>The current list of shh commands is <a href="https://github.com/dbieber/shh-shell/blob/master/shh_commands.py">available here</a>.</p>
+<p>The current list of shh commands is 
+<a href="https://github.com/dbieber/shh-shell/blob/master/shh_commands.py" target="_blank" rel="noopener">available here</a>.</p>
 <p>Of course, not all of these have proven to be useful features. The most useful features for me have been the ability to leave notes for myself for the morning, the ability to check the time without opening my eyes, and the ability to set alarms and listen to music via the shell. The audio memo feature has been occasionally useful too.</p>
 <p>At no point did I find the ability to check my email via the shh shell useful.</p>
 <p>I did temporarily get good at recognizing pitch intervals, but I have not sustained that ability.</p>
 <h2 id="is-this-a-replacement-for-shells-like-bash-zsh-and-fish">Is this a replacement for shells like Bash, zsh, and Fish?</h2>
 <p>No, this is not meant as a full replacement for Bash, zsh, Fish, etc.</p>
 <p>That said, it does support arbitrary command execution though, via the <code>shell</code> command. That means typing <code>:shell rm -f important_file</code> <em>will</em> cause important_file to be removed. So, you have to make sure you&rsquo;re not a self-sabotaging hacker in your sleep before you start using shh as your night time shell.</p>
-<p>You can additionally add arbitrary new commands by editing the file <a href="https://github.com/dbieber/shh-shell/blob/master/shh_commands.py">shh_commands.py</a>.</p>
+<p>You can additionally add arbitrary new commands by editing the file 
+<a href="https://github.com/dbieber/shh-shell/blob/master/shh_commands.py" target="_blank" rel="noopener">shh_commands.py</a>.</p>
 <h3 id="where-do-you-use-the-shh-shell">Where do you use the shh shell?</h3>
 <p>I use the shh shell by keeping a wireless keyboard in my bed. It is connected to my laptop, which I leave open but with the monitor turned fully off.</p>
 <p>This means I&rsquo;m not at risk of damaging my computer by rolling over on it or drooling on it :).</p>
@@ -601,14 +610,17 @@
 <p>The &ldquo;at&rdquo; command is useful because it allows you to simply schedule other commands to run at a designated time in the future.</p>
 <p>To use the at command, type <code>:at &lt;when&gt;:&lt;command&gt;</code>. It&rsquo;s OK if <code>&lt;when&gt;</code> has a colon in the middle, e.g. <code>&lt;when&gt;</code> could be <code>7:30am</code>. It could also be <code>tomorrow at 9am</code> &ndash; the syntax for <code>&lt;when&gt;</code> is flexible. <code>&lt;command&gt;</code> can be any of the commands shh supports, such as <code>alarm</code> for playing music from youtube. E.g. <code>:at 7:30am : alarm</code> would schedule a musical alarm for 7:30am the following day.</p>
 <h3 id="adding-new-commands">Adding new commands</h3>
-<p>You can easily add new commands by adding new functions to <a href="https://github.com/dbieber/shh-shell/blob/master/shh_commands.py">shh_commands.py</a>.</p>
+<p>You can easily add new commands by adding new functions to 
+<a href="https://github.com/dbieber/shh-shell/blob/master/shh_commands.py" target="_blank" rel="noopener">shh_commands.py</a>.</p>
 <p>Simply add a function decorated with the <code>@command</code> decorator to add a new command to your shh shell. If your command accepts arguments, include <code>{}</code> in the format string for your command, and the user&rsquo;s arguments will be passed to your function when the command is run.</p>
 <h3 id="troubleshooting">Troubleshooting</h3>
 <p>One common mistake is to start typing a command in the middle of a line. When in doubt about whether you are at the start of a line, just hit enter. You cannot go by the visual representation in the black box &ndash; all that is is a text field, but it doesn&rsquo;t necessarily represent the internal state of your shell. So, just hit enter, then type your command, beginning with a colon.</p>
 <p>There is no concept of a cursor in shh. The arrow keys don&rsquo;t do anything. So even if the cursor in the text box appears to be in the middle of a line, in practice you are always typing at the end of the current content and the logged text will reflect this.</p>
-<p>For additional issues, please open an <a href="https://github.com/dbieber/shh-shell">Issue on GitHub</a>.</p>
+<p>For additional issues, please open an 
+<a href="https://github.com/dbieber/shh-shell" target="_blank" rel="noopener">Issue on GitHub</a>.</p>
 <h3 id="installing-the-shh-shell">Installing the Shh Shell</h3>
-<p>Head on over to <a href="https://github.com/dbieber/shh-shell">https://github.com/dbieber/shh-shell</a> for instructions on how to set up the shh shell.</p>
+<p>Head on over to 
+<a href="https://github.com/dbieber/shh-shell" target="_blank" rel="noopener">https://github.com/dbieber/shh-shell</a> for instructions on how to set up the shh shell.</p>
 <h1 id="a-bit-of-backstory">A bit of backstory</h1>
 <h2 id="why-did-you-create-a-non-visual-shell">Why did you create a non-visual shell?</h2>
 <p>There was a time during undergrad when I was losing sleep to thoughts swirling around in my head. &ldquo;Does she like me?&rdquo;, &ldquo;I should have responded in this slightly different way,&rdquo; etc. Variations on a theme would rattle around in my head, each variation only slightly different from thoughts I had already thought. How could I make them stop?</p>
@@ -617,7 +629,8 @@
 <p>I tried turning the lights on to write down my thoughts, but I didn&rsquo;t like how that woke me up. I tried notepad apps on my phone for writing down my thoughts, but my phone is bright and this was not much better than turning the lights on and using paper.</p>
 <p>So, I started typing on my computer with the monitor off. This was a great solution, but it came with it&rsquo;s own problem: I needed to know if I was typing in the right window. Hence, shh shell was born. The gradual addition of commands over time has an added bonus that makes shh shell even more useful for me.</p>
 <h2 id="isnt-the-audio-annoying-to-anyone-else-trying-to-sleep">Isn&rsquo;t the audio annoying to anyone else trying to sleep?</h2>
-<p>Yes, my college roommate <a href="http://harvestzhang.com">Harvest</a> can attest to the annoyance of hearing repeated &ldquo;focused&rdquo;, &ldquo;focus lost&rdquo; throughout the night.</p>
+<p>Yes, my college roommate 
+<a href="http://harvestzhang.com" target="_blank" rel="noopener">Harvest</a> can attest to the annoyance of hearing repeated &ldquo;focused&rdquo;, &ldquo;focus lost&rdquo; throughout the night.</p>
 <p>I cannot in good conscience recommend use of shh shell when sleeping with your significant other.</p>
 <h2 id="what-have-you-typed-into-your-shh-shell">What have you typed into your shh shell?</h2>
 <p>When I first started typing at night back in 2014, I wasn&rsquo;t used to typing without visual feedback. So in the morning when I went to look at what I had typed, I was surprised to find a large paragraph of complete gibberish!
@@ -629,7 +642,8 @@ Only the final line of the text was readable: &ldquo;I hope the FBI doesn&rsquo;
 <p>Before I decoded the mysterious paragraph, I had forgotten entirely about the dream. As I decoded though, I remembered the dream, waking from it, and writing down what had happened.</p>
 <p>Since then, I&rsquo;ve now gotten used to typing in the dark and using the little bumps on the F and J keys to guide my hands. So, I don&rsquo;t have to decode mysterious passages about hiding secrets from the FBI anymore. I have now repeatedly experienced not remembering having typed something until I see what I typed in the morning, and each time the memory of typing it comes back as I read what I wrote. This hasn&rsquo;t ceased to be a very cool feeling each time it occurs.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>While I built this for myself, I have made it open source in the hope that you too may benefit from it. I hope it helps someone out there get a better night&rsquo;s sleep or remember a key idea they would have forgotten. Definitely check out the <a href="https://github.com/dbieber/shh-shell">shh shell on GitHub</a> and give it a try if you&rsquo;re Python-inclined. And as always, feel free to get in touch if you want to discuss this project or anything else.</p>
+<p>While I built this for myself, I have made it open source in the hope that you too may benefit from it. I hope it helps someone out there get a better night&rsquo;s sleep or remember a key idea they would have forgotten. Definitely check out the 
+<a href="https://github.com/dbieber/shh-shell" target="_blank" rel="noopener">shh shell on GitHub</a> and give it a try if you&rsquo;re Python-inclined. And as always, feel free to get in touch if you want to discuss this project or anything else.</p>
 
     </div>
 
@@ -661,7 +675,7 @@ Only the final line of the text was readable: &ldquo;I hope the FBI doesn&rsquo;
 
 
   
-
+  
 
 
 
@@ -671,6 +685,7 @@ Only the final line of the text was readable: &ldquo;I hope the FBI doesn&rsquo;
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -686,6 +701,9 @@ Only the final line of the text was readable: &ldquo;I hope the FBI doesn&rsquo;
 
     </div>
   </div>
+
+
+
 
 
 
@@ -728,11 +746,11 @@ Only the final line of the text was readable: &ldquo;I hope the FBI doesn&rsquo;
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -744,6 +762,11 @@ Only the final line of the text was readable: &ldquo;I hope the FBI doesn&rsquo;
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -812,7 +835,7 @@ Only the final line of the text was readable: &ldquo;I hope the FBI doesn&rsquo;
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

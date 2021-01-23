@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -52,7 +52,7 @@ Life is simple. It gets more complex over time, but nothing insurmountable. In t
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -64,8 +64,8 @@ Life is simple. It gets more complex over time, but nothing insurmountable. In t
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -214,13 +214,15 @@ Life is simple. It gets more complex over time, but nothing insurmountable. In t
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -230,7 +232,7 @@ Life is simple. It gets more complex over time, but nothing insurmountable. In t
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -293,8 +295,6 @@ Life is simple. It gets more complex over time, but nothing insurmountable. In t
 
 
 
-
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -322,7 +322,7 @@ Life is simple. It gets more complex over time, but nothing insurmountable. In t
     "name": "David Bieber",
     "logo": {
       "@type": "ImageObject",
-      "url": "img/https://davidbieber.com/"
+      "url": "https://davidbieber.com/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png"
     }
   },
   "description": "In this post, clicking the bold word Life will replace it with the bold word Blokus.\nLife is simple. It gets more complex over time, but nothing insurmountable. In the beginning, your path is pretty much laid out. You have some control over what directions you go, and these are important decisions. They\u0026rsquo;ll shape your future. They\u0026rsquo;ll change what opportunities you have down the road. But as important as they are, there are relatively few wrong decisions."
@@ -383,10 +383,15 @@ Life is simple. It gets more complex over time, but nothing insurmountable. In t
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -632,7 +637,8 @@ Life is simple. It gets more complex over time, but nothing insurmountable. In t
 <p><strong><span class="blokus">Life</span></strong>, we all know, eventually comes to an end. And as it does so, think about what you want to leave behind. Where do you want your possessions to go? You can&rsquo;t take them with you. So be charitable, and get rid of as much as you can afford. As much as the world is ready for. Think of those who will follow you, and ask yourself how will they feel about your end. Did you leave them in a good situation? Perhaps you set them up to finish soon, just as you did.</p>
 <p>Think of everything. It&rsquo;s all about strategy. <strong><span class="blokus">Life</span></strong> is a game.</p>
 <p>Sorry, have I been writing <strong><span class="blokus">life</span></strong>? I meant <strong><span class="blokus">Blokus</span></strong>.</p>
-<p><a href="http://en.wikipedia.org/wiki/Blokus"><strong><span class="blokus">Blokus</span></strong> is a game.</a></p>
+<p>
+<a href="http://en.wikipedia.org/wiki/Blokus" target="_blank" rel="noopener"><strong><span class="blokus">Blokus</span></strong> is a game.</a></p>
 <p>Here&rsquo;s the gist. You can click the bold words to go between <strong><span class="blokus">Blokus</span></strong> and <strong><span class="blokus">Life</span></strong>.</p>
 <script src="https://gist.github.com/dbieber/4693513.js"></script>
 
@@ -658,11 +664,8 @@ Life is simple. It gets more complex over time, but nothing insurmountable. In t
 
 
   
-  
     
-  
-  
-
+    
 
 
 
@@ -672,6 +675,7 @@ Life is simple. It gets more complex over time, but nothing insurmountable. In t
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -687,6 +691,10 @@ Life is simple. It gets more complex over time, but nothing insurmountable. In t
 
     </div>
   </div>
+
+
+  
+
 
 
 
@@ -718,11 +726,11 @@ Life is simple. It gets more complex over time, but nothing insurmountable. In t
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -734,6 +742,11 @@ Life is simple. It gets more complex over time, but nothing insurmountable. In t
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -802,7 +815,7 @@ Life is simple. It gets more complex over time, but nothing insurmountable. In t
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

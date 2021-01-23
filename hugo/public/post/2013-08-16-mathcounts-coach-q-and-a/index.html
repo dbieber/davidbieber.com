@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -56,7 +56,7 @@ It&rsquo;s great to see my students having a good time with math.">
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -68,8 +68,8 @@ It&rsquo;s great to see my students having a good time with math.">
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -218,13 +218,15 @@ It&rsquo;s great to see my students having a good time with math.">
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -234,7 +236,7 @@ It&rsquo;s great to see my students having a good time with math.">
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -301,8 +303,6 @@ It&rsquo;s great to see my students having a good time with math."><meta propert
 
 
 
-
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -330,7 +330,7 @@ It&rsquo;s great to see my students having a good time with math."><meta propert
     "name": "David Bieber",
     "logo": {
       "@type": "ImageObject",
-      "url": "img/https://davidbieber.com/"
+      "url": "https://davidbieber.com/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png"
     }
   },
   "description": "Last week I did a Q+A for the Life at KA blog. The last time I did an education-centric online Q+A was more than three years earlier. Let\u0026rsquo;s take a look.\nOriginally posted at mathcounts.org in March 2010.\nHow long have you been a MATHCOUNTS coach?\nThis is my second year coaching the Van Antwerp MATHCOUNTS team.\nWhat is your favorite part about being a MATHCOUNTS coach?\nIt\u0026rsquo;s great to see my students having a good time with math."
@@ -391,10 +391,15 @@ It&rsquo;s great to see my students having a good time with math."><meta propert
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -627,15 +632,20 @@ It&rsquo;s great to see my students having a good time with math."><meta propert
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>Last week I did a Q+A for the <a href="http://life.khanacademy.org/post/58251244282/im-a-belieber-a-khanversation-with-sw-dev-intern">Life at KA</a> blog. The last time I did an education-centric online Q+A was more than three years earlier. Let&rsquo;s take a look.</p>
-<p><em>Originally posted at <a href="https://www.mathcounts.org/">mathcounts.org</a> in March 2010.</em></p>
+      <p>Last week I did a Q+A for the 
+<a href="http://life.khanacademy.org/post/58251244282/im-a-belieber-a-khanversation-with-sw-dev-intern" target="_blank" rel="noopener">Life at KA</a> blog. The last time I did an education-centric online Q+A was more than three years earlier. Let&rsquo;s take a look.</p>
+<p><em>Originally posted at 
+<a href="https://www.mathcounts.org/" target="_blank" rel="noopener">mathcounts.org</a> in March 2010.</em></p>
 <p><strong>How long have you been a MATHCOUNTS coach?</strong><br>
 This is my second year coaching the Van Antwerp MATHCOUNTS team.</p>
 <p><strong>What is your favorite part about being a MATHCOUNTS coach?</strong><br>
 It&rsquo;s great to see my students having a good time with math. I love seeing their expressions when an idea becomes clear to them (an Aha! moment, as Martin Gardner would have it) or when they solve a challenging problem. I also like seeing their reactions to the problems I write. They seem to enjoy when I put their names into our practice problems. On some occasions, I&rsquo;ll have one idea in mind when I write a problem, but I&rsquo;ll make a typo that makes the question quite absurd. That&rsquo;s always fun to laugh about.</p>
 <p><strong>How do you prepare your students for MATHCOUNTS competitions?</strong><br>
-Leading up to the Chapter Competition we met once a week after school. These meetings lasted 90 minutes, with a snack break (often called &ldquo;Scoff Time!&rdquo; in excited voices by the students) in the middle. After the team qualified for the State Competition we added a second shorter (45 minute) practice day to the week. On some days we practice with old MATHCOUNTS rounds. Other times we&rsquo;ve played mathematical games such as variations of <a href="http://www.math.usu.edu/~schneit/CTIS/GreedyPig/">Greedy Pig</a> and mathified versions of Jeopardy, Tic-Tac-Toe and Hangman. We&rsquo;ve also experimented with a variety of practice formats including relays, topic-specific stations, and something akin to <a href="https://www.hmmt.co/archive/problems/">HMMT&rsquo;s Guts Round</a>.</p>
-<p>Before the Chapter Competition we also hosted a MATHCOUNTS scrimmage at <a href="http://www.union.edu/">Union College</a> for six local MATHCOUNTS teams, so that the students got a chance to practice in a competition setting before the official contest date. At the scrimmage we also ran an unofficial Countdown Round for all the students interested in participating, which I had a lot of fun emceeing, and I think the students enjoyed as well.</p>
+Leading up to the Chapter Competition we met once a week after school. These meetings lasted 90 minutes, with a snack break (often called &ldquo;Scoff Time!&rdquo; in excited voices by the students) in the middle. After the team qualified for the State Competition we added a second shorter (45 minute) practice day to the week. On some days we practice with old MATHCOUNTS rounds. Other times we&rsquo;ve played mathematical games such as variations of 
+<a href="http://www.math.usu.edu/~schneit/CTIS/GreedyPig/" target="_blank" rel="noopener">Greedy Pig</a> and mathified versions of Jeopardy, Tic-Tac-Toe and Hangman. We&rsquo;ve also experimented with a variety of practice formats including relays, topic-specific stations, and something akin to 
+<a href="https://www.hmmt.co/archive/problems/" target="_blank" rel="noopener">HMMT&rsquo;s Guts Round</a>.</p>
+<p>Before the Chapter Competition we also hosted a MATHCOUNTS scrimmage at 
+<a href="http://www.union.edu/" target="_blank" rel="noopener">Union College</a> for six local MATHCOUNTS teams, so that the students got a chance to practice in a competition setting before the official contest date. At the scrimmage we also ran an unofficial Countdown Round for all the students interested in participating, which I had a lot of fun emceeing, and I think the students enjoyed as well.</p>
 <p><strong>What interesting techniques have you used in the classroom or after school with your students to get them excited about math?</strong><br>
 When our final practice before the Chapter Competition was cancelled due to snow, I put together a set of problems for the team to solve before the competition. Each member of the team received one question by email. What was interesting about these problems was that each one depended on the answer to another. This encouraged the team members to work together in the days before the competition to find a set of solutions that satisfied all of the problems simultaneously.</p>
 <p>Another technique is to encourage the students to share their methods of solving MATHCOUNTS problems with the rest of the team. By sharing their ideas, they frequently spot errors in their own work. Teaching is also a great way to become better versed in the material (that&rsquo;s one of the reasons I do this!), so its a great learning tool for everyone in the room. Often it is easier for someone on the team to explain a difficult concept to another student than for a coach to do this because the students have a better perspective on what parts of the idea are challenging or confusing. It helps a bit that I&rsquo;m only a few years older than my team!</p>
@@ -644,7 +654,11 @@ To start, it can be fun. The problem solving skills that stem from practicing ma
 <p>Speaking as a high school student, I can also tell you that having a solid foundation in mathematics can be a big stress reducer in school, so it&rsquo;s great to get interested in math early!</p>
 <p><strong>Do you have any advice for Mathletes® hoping to advance in the Competition series?</strong><br>
 Practice, ask questions, and develop a good sleep habit.</p>
-<p>Attending MATHCOUNTS practices is a great place to start, but there are so many ways to go beyond that in becoming a better problem solver. If you&rsquo;re clever with a search engine, you&rsquo;ll find there are tons of resources available including <a href="https://www.mathcounts.org/programs/competition-series/past-competitions">problems on the MATHCOUNTS website</a>, these <a href="http://mathcounts.saab.org/mc.cgi">MATHCOUNTS drills</a>, <a href="http://www.unidata.ucar.edu/staff/russ/mathcounts/diaz.html">Mr. Diaz&rsquo;s MATHCOUNTS Bible</a>, and <a href="http://mathweb.scranton.edu/monks/courses/ProblemSolving/MathCountsPlaybook.pdf">Coach Monks’s MATHCOUNTS Playbook</a>. Get together with members of your team to practice outside of school. Use problems you find online or, better yet, write your own, and don&rsquo;t forget to ask your parents to provide you with a snack.</p>
+<p>Attending MATHCOUNTS practices is a great place to start, but there are so many ways to go beyond that in becoming a better problem solver. If you&rsquo;re clever with a search engine, you&rsquo;ll find there are tons of resources available including 
+<a href="https://www.mathcounts.org/programs/competition-series/past-competitions" target="_blank" rel="noopener">problems on the MATHCOUNTS website</a>, these 
+<a href="http://mathcounts.saab.org/mc.cgi" target="_blank" rel="noopener">MATHCOUNTS drills</a>, 
+<a href="http://www.unidata.ucar.edu/staff/russ/mathcounts/diaz.html" target="_blank" rel="noopener">Mr. Diaz&rsquo;s MATHCOUNTS Bible</a>, and 
+<a href="http://mathweb.scranton.edu/monks/courses/ProblemSolving/MathCountsPlaybook.pdf" target="_blank" rel="noopener">Coach Monks’s MATHCOUNTS Playbook</a>. Get together with members of your team to practice outside of school. Use problems you find online or, better yet, write your own, and don&rsquo;t forget to ask your parents to provide you with a snack.</p>
 <p>If ever there are problems you don&rsquo;t understand (and this should happen very often), ask about them. At practice it can be difficult to get to all of them because there is so much to do in so little time, but don&rsquo;t limit your questions to your practices. Talk to or email your coach or teachers or siblings or parents or friends or friends' parents. Anyone might have the knowledge or insight to answer/explore your questions.</p>
 <p><strong>What advice would you give to new coaches just starting a MATHCOUNTS program?</strong><br>
 Have fun with it, and your students will have fun too (at least in principle, anyhow). Chances are your students will know things and ask things you don&rsquo;t know or can&rsquo;t answer, and that&rsquo;s good. Being a coach is an opportunity to learn as well as to teach.</p>
@@ -678,11 +692,8 @@ Have fun with it, and your students will have fun too (at least in principle, an
 
 
   
-  
     
-  
-  
-
+    
 
 
 
@@ -692,6 +703,7 @@ Have fun with it, and your students will have fun too (at least in principle, an
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -707,6 +719,10 @@ Have fun with it, and your students will have fun too (at least in principle, an
 
     </div>
   </div>
+
+
+  
+
 
 
 
@@ -749,11 +765,11 @@ Have fun with it, and your students will have fun too (at least in principle, an
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -765,6 +781,11 @@ Have fun with it, and your students will have fun too (at least in principle, an
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -833,7 +854,7 @@ Have fun with it, and your students will have fun too (at least in principle, an
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -52,7 +52,7 @@ Roam exposes all of the information in your graph through a datalog API.">
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -64,8 +64,8 @@ Roam exposes all of the information in your graph through a datalog API.">
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -214,13 +214,15 @@ Roam exposes all of the information in your graph through a datalog API.">
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -230,7 +232,7 @@ Roam exposes all of the information in your graph through a datalog API.">
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -270,8 +272,8 @@ Roam exposes all of the information in your graph through a datalog API.">
   <meta property="og:url" content="https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/">
   <meta property="og:title" content="Datalog Queries for Roam Research | David Bieber">
   <meta property="og:description" content="Roam Research is an excellent note taking tool. One of its core features is &ldquo;back links&rdquo; &ndash; any of your notes can easily references any of your other notes, and so all your notes end up linked together in an intricate graph structure. You can quickly see all the references to a note, hence the term &ldquo;back link&rdquo;.
-Roam exposes all of the information in your graph through a datalog API."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
-  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
+Roam exposes all of the information in your graph through a datalog API."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-12-22T00:00:00&#43;00:00">
@@ -335,10 +337,15 @@ Roam exposes all of the information in your graph through a datalog API."><meta 
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -518,7 +525,8 @@ Roam exposes all of the information in your graph through a datalog API."><meta 
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p><a href="https://roamresearch.com/">Roam Research</a> is an excellent note taking tool. One of its core features is &ldquo;back links&rdquo; &ndash; any of your notes can easily references any of your other notes, and so all your notes end up linked together in an intricate graph structure. You can quickly see all the references to a note, hence the term &ldquo;back link&rdquo;.</p>
+      <p>
+<a href="https://roamresearch.com/" target="_blank" rel="noopener">Roam Research</a> is an excellent note taking tool. One of its core features is &ldquo;back links&rdquo; &ndash; any of your notes can easily references any of your other notes, and so all your notes end up linked together in an intricate graph structure. You can quickly see all the references to a note, hence the term &ldquo;back link&rdquo;.</p>
 <p>Roam exposes all of the information in your graph through a <strong>datalog API</strong>. Datalog is a declarative programming language that lets you make queries about your graph.</p>
 <h2 id="resources">Resources</h2>
 <p>If you want to learn datalog, I recommend <a href="http://www.learndatalogtoday.org/">http://www.learndatalogtoday.org/</a>. It teaches how to write datalog queries in 8 relatively short chapters chock full of examples.</p>
@@ -527,7 +535,8 @@ Roam exposes all of the information in your graph through a datalog API."><meta 
 <p>In this snippet I include a number of examples of useful datalog queries for Roam Research.</p>
 <h3 id="how-to-run-a-query">How to Run a Query</h3>
 <p>Open the JavaScript console. Paste the query. Hit enter.</p>
-<p>To open the JavaScript console in Chrome, hit cmd-option-J on Mac or Ctrl-shift-J on Windows. For other systems, <a href="https://www.google.com/search?q=how%20to%20open%20the%20javascript%20console">you can look up how to open it</a>.</p>
+<p>To open the JavaScript console in Chrome, hit cmd-option-J on Mac or Ctrl-shift-J on Windows. For other systems, 
+<a href="https://www.google.com/search?q=how%20to%20open%20the%20javascript%20console" target="_blank" rel="noopener">you can look up how to open it</a>.</p>
 <h3 id="pages-modified-today">Pages modified today</h3>
 <p>This query returns a list of pages that have been modified today.</p>
 <pre><code class="language-javascript">let ancestorrule=`[ 
@@ -615,7 +624,8 @@ let results = window.roamAlphaAPI.q(`[
 results.map((data, index) =&gt; {return `((${data[1]})) (${data[2]})`}).join('\n');
 </code></pre>
 <h2 id="support-and-debugging">Support and Debugging</h2>
-<p>The &ldquo;#querying&rdquo; channel on the <a href="https://roamresearch.slack.com/">Roam Research Slack</a> is active and the community there is quite friendly. If you&rsquo;re crafting or debugging a query, that&rsquo;s a great place to ask for help or share your progress.</p>
+<p>The &ldquo;#querying&rdquo; channel on the 
+<a href="https://roamresearch.slack.com/" target="_blank" rel="noopener">Roam Research Slack</a> is active and the community there is quite friendly. If you&rsquo;re crafting or debugging a query, that&rsquo;s a great place to ask for help or share your progress.</p>
 
     </div>
 
@@ -639,7 +649,7 @@ results.map((data, index) =&gt; {return `((${data[1]})) (${data[2]})`}).join('\n
 
 
   
-
+  
 
 
 
@@ -649,6 +659,7 @@ results.map((data, index) =&gt; {return `((${data[1]})) (${data[2]})`}).join('\n
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -664,6 +675,9 @@ results.map((data, index) =&gt; {return `((${data[1]})) (${data[2]})`}).join('\n
 
     </div>
   </div>
+
+
+
 
 
 
@@ -695,11 +709,11 @@ results.map((data, index) =&gt; {return `((${data[1]})) (${data[2]})`}).join('\n
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -711,6 +725,11 @@ results.map((data, index) =&gt; {return `((${data[1]})) (${data[2]})`}).join('\n
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -779,7 +798,7 @@ results.map((data, index) =&gt; {return `((${data[1]})) (${data[2]})`}).join('\n
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

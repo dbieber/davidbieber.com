@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -51,7 +51,7 @@
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -63,8 +63,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -213,13 +213,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -229,7 +231,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -268,8 +270,8 @@
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/snippets/2020-01-13-writing-tool-idea/">
   <meta property="og:title" content="Writing Assistant Tool Idea | David Bieber">
-  <meta property="og:description" content="A structured question-asking tool may be useful for writing effectively."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
-  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="A structured question-asking tool may be useful for writing effectively."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-01-13T00:00:00&#43;00:00">
@@ -333,10 +335,15 @@
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -517,7 +524,8 @@
 
     <div class="article-style" id="article-content">
       <h3 id="background-writing-is-hard">Background: Writing is Hard</h3>
-<p>Sometimes I find writing feels easy &ndash; e.g. when <a href="/snippets/2019-12-30-writing-for-no-audience/">writing for no audience</a>, when writing something you&rsquo;ve already thought extensively about, when telling a story in a logical order that you&rsquo;re deeply familiar with. Other times, I find writing very difficult.</p>
+<p>Sometimes I find writing feels easy &ndash; e.g. when 
+<a href="/snippets/2019-12-30-writing-for-no-audience/">writing for no audience</a>, when writing something you&rsquo;ve already thought extensively about, when telling a story in a logical order that you&rsquo;re deeply familiar with. Other times, I find writing very difficult.</p>
 <p>When I&rsquo;m writing a paper, I am writing explicitly for an audience, the story is not always clear immediately, and the material is something I&rsquo;m becoming familiar with over time, not something about which I&rsquo;m already deeply familiar.
 So, I find paper writing hard.</p>
 <p>I have an idea that I think will help me write more effectively. It&rsquo;s a software tool that structures the time you spend writing. I&rsquo;ll describe the tool, but I don&rsquo;t anticipate building it. Perhaps we can come up with a low-resource version of this idea, e.g. with paper and pencil, that I can try even without building this tool.</p>
@@ -545,7 +553,8 @@ E.g. <code>!0</code> is highest priority, and so such a line will become the nex
 <p>The idea is to move quickly, and get all your thoughts onto the page, without getting bogged down in a DFS traversal of information about a single line of the overall text.</p>
 <h3 id="additional-details">Additional details</h3>
 <p>Every keystroke is logged, so if you write something, and then switch to a new version of it, you will still be able to see the original version. No need to worry about pasting in a password though, since the keylogging data is readily accessible in a plaintext format and you can edit it directly e.g. if anything sensitive does leak in.</p>
-<p>This system has a decent amount of overlap with the <a href="/projects/shh-shell">shh shell</a> project that I&rsquo;ve already built,
+<p>This system has a decent amount of overlap with the 
+<a href="/projects/shh-shell">shh shell</a> project that I&rsquo;ve already built,
 and perhaps a version of this new idea could be easily added to the shh shell. Alternatively, the shh-shell could be forked to build this new system.</p>
 <p>Calendar integration would be cool, so that it times your prompts nicely if you have a meeting coming up so you get to a good break point in time for your meeting.</p>
 <h3 id="implementation-thoughts">Implementation Thoughts</h3>
@@ -580,7 +589,7 @@ However, the disadvantage of this is that it makes the keystroke logging feature
 
 
   
-
+  
 
 
 
@@ -590,6 +599,7 @@ However, the disadvantage of this is that it makes the keystroke logging feature
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -605,6 +615,9 @@ However, the disadvantage of this is that it makes the keystroke logging feature
 
     </div>
   </div>
+
+
+
 
 
 
@@ -636,11 +649,11 @@ However, the disadvantage of this is that it makes the keystroke logging feature
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -652,6 +665,11 @@ However, the disadvantage of this is that it makes the keystroke logging feature
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -720,7 +738,7 @@ However, the disadvantage of this is that it makes the keystroke logging feature
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

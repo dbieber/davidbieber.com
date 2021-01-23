@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -51,7 +51,7 @@
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -63,8 +63,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -213,13 +213,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -229,7 +231,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -291,8 +293,6 @@
 
 
 
-
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -320,7 +320,7 @@
     "name": "David Bieber",
     "logo": {
       "@type": "ImageObject",
-      "url": "img/https://davidbieber.com/"
+      "url": "https://davidbieber.com/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png"
     }
   },
   "description": "I've taken to writing \"snippets\", which are like blog posts, but without an audience or quality bar. Read them here."
@@ -381,10 +381,15 @@
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -617,8 +622,11 @@
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>You&rsquo;ll notice I have no <a href="/posts/">blog posts</a> from 2020, but this is not because I stopped writing. Instead, I have been writing &ldquo;snippets,&rdquo; which <a href="/snippets/">you can read here</a>.</p>
-<p>If you&rsquo;re going to read just one snippet, <a href="/snippets/2019-12-30-writing-for-no-audience/">I recommend that it be this one</a>.
+      <p>You&rsquo;ll notice I have no 
+<a href="/posts/">blog posts</a> from 2020, but this is not because I stopped writing. Instead, I have been writing &ldquo;snippets,&rdquo; which 
+<a href="/snippets/">you can read here</a>.</p>
+<p>If you&rsquo;re going to read just one snippet, 
+<a href="/snippets/2019-12-30-writing-for-no-audience/">I recommend that it be this one</a>.
 The main idea behind snippets is to allow me to write without the inhibitions I sometimes experience when writing a blog post for publication.
 By writing in a secluded section of the website with no (now, few) inbound links, and by deliberately keeping the quality bar for publication low to non-existent, I made it easier for myself to write often.</p>
 <p>To keep the quality bar low,
@@ -626,10 +634,12 @@ sometimes I would deliberately post a short half-baked thought, possibly without
 Despite this aim of keeping the quality bar low, and despite explicitly writing for no one, I often would find myself pleased with what I had written and eager for someone else to read it.</p>
 <p>To me, this is the beauty of the setup. The (lack of) quality standards make <em>starting writing</em> easy. I typically start writing a snippet with the mindset that I have a little idea I want to get out of my head and onto paper. As I begin, I think it&rsquo;s a small idea that will take just a few lines. Perhaps in the back of my mind I even think it will contribute to lowering of the quality-bar for the section of the website. And sometimes it does. But just as often, I find myself ready to elaborate on the idea. Perhaps I explain where the idea came from, or why I find it interesting. And by the time I&rsquo;ve finished writing, I have a snippet that I&rsquo;m proud of, and which I would love to discuss.</p>
 <p>This is why I sometimes put my email address at the end of a snippet. With just a cursory description of the snippets section (&ldquo;a place to write for no audience&rdquo;), seeing my contact info at the end of a post may feel contradictory. Now you see that it is not; the lack of a quality bar and the lack of an audience serve their purpose in allowing me to start writing easily, and to publish readily, but once I have written something and released it to (a tiny unlinked corner of) the world I do not necessarily want to keep it hidden.</p>
-<p>So, I am now for the first time linking from my main website <a href="/snippets/">directly to the snippets section of my website</a>. It&rsquo;s not a prominent link, as it&rsquo;s contained only within this blog post, but it&rsquo;s a meaningful step for me. Web crawlers now have a means in to index the site. Visitors to the site now have a means in too, not just people to whom I explicitly send the link.</p>
+<p>So, I am now for the first time linking from my main website 
+<a href="/snippets/">directly to the snippets section of my website</a>. It&rsquo;s not a prominent link, as it&rsquo;s contained only within this blog post, but it&rsquo;s a meaningful step for me. Web crawlers now have a means in to index the site. Visitors to the site now have a means in too, not just people to whom I explicitly send the link.</p>
 <p>If you do venture in, and read a snippet or two, there are a few things to know.
 First, you&rsquo;re welcome here. It&rsquo;s not voyeurism. These aren&rsquo;t private posts; they&rsquo;re simply not written for an audience, but I am happy for them to have one. Second, they&rsquo;re snippets. Think of them like ideas scrawled in a hurry. I&rsquo;m not wedded to the ideas I express, and I&rsquo;m open to reconsidering what I wrote. And thirdly, I value your thoughts (and your time!), and it would delight me to hear them.</p>
-<p>You&rsquo;ll find ideas for side-projects, philosophical musings, technical notes meant mainly for future-me, technical notes meant for other people, project updates, nonsense, personal notes, and more. All of this, <a href="/snippets">here</a>.</p>
+<p>You&rsquo;ll find ideas for side-projects, philosophical musings, technical notes meant mainly for future-me, technical notes meant for other people, project updates, nonsense, personal notes, and more. All of this, 
+<a href="/snippets">here</a>.</p>
 
     </div>
 
@@ -653,7 +663,7 @@ First, you&rsquo;re welcome here. It&rsquo;s not voyeurism. These aren&rsquo;t p
 
 
   
-
+  
 
 
 
@@ -663,6 +673,7 @@ First, you&rsquo;re welcome here. It&rsquo;s not voyeurism. These aren&rsquo;t p
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -678,6 +689,9 @@ First, you&rsquo;re welcome here. It&rsquo;s not voyeurism. These aren&rsquo;t p
 
     </div>
   </div>
+
+
+
 
 
 
@@ -709,11 +723,11 @@ First, you&rsquo;re welcome here. It&rsquo;s not voyeurism. These aren&rsquo;t p
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -725,6 +739,11 @@ First, you&rsquo;re welcome here. It&rsquo;s not voyeurism. These aren&rsquo;t p
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -793,7 +812,7 @@ First, you&rsquo;re welcome here. It&rsquo;s not voyeurism. These aren&rsquo;t p
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

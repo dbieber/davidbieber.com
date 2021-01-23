@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -51,7 +51,7 @@
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -63,8 +63,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -213,13 +213,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -229,7 +231,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -332,10 +334,15 @@
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -571,9 +578,11 @@
       <p>We built an Escape Room!</p>
 <p>Serious props to Bianca Homberg and her amazing talented group of friends for making this happen.
 I was just a small piece of this epic endeavor. Bianca was the organizer and driving force for a really impressive piece of puzzle craftsmanship.</p>
-<p>The premise for the escape room is based on the webcomic <a href="http://www.girlgeniusonline.com/"><em>Girl Genius</em></a>. Here&rsquo;s what you need to know:</p>
+<p>The premise for the escape room is based on the webcomic 
+<a href="http://www.girlgeniusonline.com/" target="_blank" rel="noopener"><em>Girl Genius</em></a>. Here&rsquo;s what you need to know:</p>
 <h3 id="escape-castle-heterodyne">Escape Castle Heterodyne</h3>
-<p>There&rsquo;s a castle, <a href="http://girlgenius.wikia.com/wiki/Castle_Heterodyne">Castle Heterodyne</a>, which is a living, breathing, <em>talking</em> entity. In our escape room, the Castle is voiced by Mark Velednitsky. The castle&rsquo;s personality is damaged, and you and your team (4 people total) have been sent into the castle to see if you can repair it. The castle, in it&rsquo;s damaged state, doesn&rsquo;t understand that you&rsquo;re here to help. Quite the opposite in fact; it considers you hostile! At your entrance, Castle Heterodyne slams its doors shut behind you. It cuts power to the lights and activates its 30 minute self-destruct countdown.</p>
+<p>There&rsquo;s a castle, 
+<a href="http://girlgenius.wikia.com/wiki/Castle_Heterodyne" target="_blank" rel="noopener">Castle Heterodyne</a>, which is a living, breathing, <em>talking</em> entity. In our escape room, the Castle is voiced by Mark Velednitsky. The castle&rsquo;s personality is damaged, and you and your team (4 people total) have been sent into the castle to see if you can repair it. The castle, in it&rsquo;s damaged state, doesn&rsquo;t understand that you&rsquo;re here to help. Quite the opposite in fact; it considers you hostile! At your entrance, Castle Heterodyne slams its doors shut behind you. It cuts power to the lights and activates its 30 minute self-destruct countdown.</p>
 <p>Can you repair the castle, thereby bringing it back to its senses? Can you escape your impending doom? You must solve puzzles and make your way through four decorative challenge-filled rooms if you wish to live to see another day.</p>
 <h3 id="the-engine-room">The Engine Room</h3>
 <p>I was responsible for just the first room of the escape room (as well as, I later learned, anything requiring height). This first room was the Engine Room. When you enter the Engine Room, der Castle promptly kills the lights and initiates the castle&rsquo;s self-destruct sequence.</p>
@@ -581,13 +590,15 @@ I was just a small piece of this epic endeavor. Bianca was the organizer and dri
 <p>You do this by first locating a blacklight flashlight on the table in the room. You use this blacklight flashlight to read clues written in invisible ink on colored paper hidden around the room. These clues in turn allow you to figure out which of the nearly 50 switches you need to flip in order to turn all the lights on without overheating any of them.</p>
 <p>This is what the puzzle looks like partial solved:</p>
 <p><img src="engine-room-front.jpg" alt="The Engine Room: Lights Out Puzzle"></p>
-<p>While the physical puzzle is no longer operational, you can have a go at the software-only version of the puzzle: <strong><a href="/engine-room-demo">Click here to try the puzzle</a></strong>.</p>
+<p>While the physical puzzle is no longer operational, you can have a go at the software-only version of the puzzle: <strong>
+<a href="/engine-room-demo">Click here to try the puzzle</a></strong>.</p>
 <h3 id="storage-closet">Storage Closet</h3>
 <p>Once you successfully turn the lights back on in the Engine Room, the castle realizes your utility, and presents you with the key to the next room: the Storage Closet. It&rsquo;s too late to turn off the self-destruct sequence though, and so your only way out is forward, through the Storage Closet and the rest of the castle.</p>
 <p>The Storage Closet is in my opinion the coolest room in the Castle. I will refrain from spoiling it here (for now), and simply tell you that I was very impressed with the work that went into it.</p>
 <h3 id="escaping-the-castle">Escaping the Castle</h3>
 <p>Making your way through the Storage Closet, you must next navigate the Secret Lab, the Pink Torture Chamber (no puzzles here), and lastly the Crypt. Only after solving the puzzles in each of these rooms with the help can you escape der Castle and avoid a ghastly death.</p>
-<p><em>The source code for the Engine Room puzzle (both the physical version and the software-only version) is available on <a href="https://github.com/bhomberg/heterodyne/blob/master/engine-room/">GitHub here</a>.</em></p>
+<p><em>The source code for the Engine Room puzzle (both the physical version and the software-only version) is available on 
+<a href="https://github.com/bhomberg/heterodyne/blob/master/engine-room/" target="_blank" rel="noopener">GitHub here</a>.</em></p>
 
     </div>
 
@@ -621,7 +632,7 @@ I was just a small piece of this epic endeavor. Bianca was the organizer and dri
 
 
   
-
+  
 
 
 
@@ -631,6 +642,7 @@ I was just a small piece of this epic endeavor. Bianca was the organizer and dri
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -646,6 +658,9 @@ I was just a small piece of this epic endeavor. Bianca was the organizer and dri
 
     </div>
   </div>
+
+
+
 
 
 
@@ -688,11 +703,11 @@ I was just a small piece of this epic endeavor. Bianca was the organizer and dri
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -704,6 +719,11 @@ I was just a small piece of this epic endeavor. Bianca was the organizer and dri
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -772,7 +792,7 @@ I was just a small piece of this epic endeavor. Bianca was the organizer and dri
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

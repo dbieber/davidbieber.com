@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -53,7 +53,7 @@ cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sql
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -65,8 +65,8 @@ cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sql
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -215,13 +215,15 @@ cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sql
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -231,7 +233,7 @@ cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sql
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -272,8 +274,8 @@ cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sql
   <meta property="og:title" content="Date and Time Browser History Queries | David Bieber">
   <meta property="og:description" content="I wrote a number of SQL queries for browsing my browsing history. In this snippet, I show how to amend them to filter the results by date. Google Chrome selects a slightly non-standard time storage format (microseconds since January 1, 1601 UTC), hence the need for this query stanza.
 To run these queries, first make a copy of your browser history and open it in sqlite3.
-cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sqlite3 ~/my-history  Google Search History for Specific Date Here&rsquo;s the query we had from before, for accessing our Google Search history."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
-  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
+cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sqlite3 ~/my-history  Google Search History for Specific Date Here&rsquo;s the query we had from before, for accessing our Google Search history."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-04-20T00:00:00&#43;00:00">
@@ -337,10 +339,15 @@ cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sql
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -520,7 +527,8 @@ cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sql
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>I wrote a <a href="/snippets/2020-04-11-browser-history-queries/">number of SQL queries</a> for browsing my browsing history. In this snippet, I show how to amend them to filter the results by date. Google Chrome selects a slightly non-standard time storage format (microseconds since January 1, 1601 UTC), hence the need for this query stanza.</p>
+      <p>I wrote a 
+<a href="/snippets/2020-04-11-browser-history-queries/">number of SQL queries</a> for browsing my browsing history. In this snippet, I show how to amend them to filter the results by date. Google Chrome selects a slightly non-standard time storage format (microseconds since January 1, 1601 UTC), hence the need for this query stanza.</p>
 <p>To run these queries, first make a copy of your browser history and open it in sqlite3.</p>
 <pre><code class="language-bash">cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history
 sqlite3 ~/my-history
@@ -578,8 +586,10 @@ and datetime(visits.visit_time / 1000000 + (strftime('%s', '1601-01-01')), 'unix
 limit 50;
 </code></pre>
 <p>For this query, we directly compare the result of <code>datetime</code> and <code>date</code>.
-<a href="https://www.sqlite.org/lang_datefunc.html">sqlite.org/lang_datefunc.html</a> has more useful information about writing queries manipulating dates and times.</p>
-<p>For more query ideas, here&rsquo;s the <a href="/snippets/2020-04-11-browser-history-queries/">link back to the browser history queries snippet</a>.</p>
+
+<a href="https://www.sqlite.org/lang_datefunc.html" target="_blank" rel="noopener">sqlite.org/lang_datefunc.html</a> has more useful information about writing queries manipulating dates and times.</p>
+<p>For more query ideas, here&rsquo;s the 
+<a href="/snippets/2020-04-11-browser-history-queries/">link back to the browser history queries snippet</a>.</p>
 
     </div>
 
@@ -603,7 +613,7 @@ limit 50;
 
 
   
-
+  
 
 
 
@@ -613,6 +623,7 @@ limit 50;
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -628,6 +639,9 @@ limit 50;
 
     </div>
   </div>
+
+
+
 
 
 
@@ -659,11 +673,11 @@ limit 50;
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -675,6 +689,11 @@ limit 50;
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -743,7 +762,7 @@ limit 50;
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

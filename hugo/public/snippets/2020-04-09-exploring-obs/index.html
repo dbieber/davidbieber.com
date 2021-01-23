@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -51,7 +51,7 @@
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -63,8 +63,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -213,13 +213,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -229,7 +231,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -268,8 +270,8 @@
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/snippets/2020-04-09-exploring-obs/">
   <meta property="og:title" content="Exploring OBS and Virtual Cameras | David Bieber">
-  <meta property="og:description" content="This week I&rsquo;ve been exploring Open Broadcasting Software (OBS) and toying with using it as a virtual camera. I use a Mac, and historically there hasn&rsquo;t been a good way to use OBS as a virtual camera. With @tobi&rsquo;s recent $10,000 bounty for making this a core feature, however, some developers in the OBS community leapt into action and a working prototype of the feature was available on GitHub within days."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
-  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="This week I&rsquo;ve been exploring Open Broadcasting Software (OBS) and toying with using it as a virtual camera. I use a Mac, and historically there hasn&rsquo;t been a good way to use OBS as a virtual camera. With @tobi&rsquo;s recent $10,000 bounty for making this a core feature, however, some developers in the OBS community leapt into action and a working prototype of the feature was available on GitHub within days."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-04-09T00:00:00&#43;00:00">
@@ -333,10 +335,15 @@
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -516,16 +523,24 @@
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>This week I&rsquo;ve been exploring <a href="https://obsproject.com/"><em>Open Broadcasting Software</em> (OBS)</a> and toying with using it as a virtual camera. I use a Mac, and historically there hasn&rsquo;t been a good way to use OBS as a virtual camera. With <a href="https://twitter.com/tobi">@tobi</a>&rsquo;s recent <a href="https://github.com/obsproject/obs-studio/issues/2568">$10,000 bounty</a> for making this a core feature, however, some developers in the OBS community leapt into action and a <a href="https://github.com/johnboiles/obs-mac-virtualcam">working prototype</a> of the feature was available on GitHub within days.</p>
+      <p>This week I&rsquo;ve been exploring 
+<a href="https://obsproject.com/" target="_blank" rel="noopener"><em>Open Broadcasting Software</em> (OBS)</a> and toying with using it as a virtual camera. I use a Mac, and historically there hasn&rsquo;t been a good way to use OBS as a virtual camera. With 
+<a href="https://twitter.com/tobi" target="_blank" rel="noopener">@tobi</a>&rsquo;s recent 
+<a href="https://github.com/obsproject/obs-studio/issues/2568" target="_blank" rel="noopener">$10,000 bounty</a> for making this a core feature, however, some developers in the OBS community leapt into action and a 
+<a href="https://github.com/johnboiles/obs-mac-virtualcam" target="_blank" rel="noopener">working prototype</a> of the feature was available on GitHub within days.</p>
 <h2 id="virtual-cameras">Virtual Cameras</h2>
 <p>OBS is popular software among Twitch streamers. It lets you take a bunch of video sources and rearrange them into scenes. Streamers will often overlay a camera feed of their head and a live stream of a video game, maybe with cool graphics overlaid on the whole thing.</p>
 <p>For years, OBS has let you take the scenes you create and stream them in real time to YouTube Live or Twitch or any number of other streaming services. If you wanted to use your OBS scene in Zoom or Google Meet, however, it wasn&rsquo;t straightforward, at least on Mac.</p>
 <p>There were workarounds. You could project your scene to an external monitor, and then use screen sharing to share that. At times there were combinations of tools and plugins that could similarly get the job done.</p>
 <p>Now, however, it&rsquo;s considerably easier. John Boiles&rsquo;s has made a OBS plugin that works without fuss. For now it still requires a technical background to use, following build instructions and executing commands on the terminal to get it set up. In a matter of months, however, I expect it will make its way as a core feature into OBS.</p>
 <h2 id="combining-obs-with-auto-video-editing">Combining OBS with Auto Video Editing</h2>
-<p>As you may know, I&rsquo;ve been working on <a href="/snippets/2020-02-21-jump-cut-programming">automatic</a> <a href="/snippets/2020-02-26-video-tooling-progress">video</a> <a href="/snippets/2020-03-02-fastbook">editing</a> software. I&rsquo;d like to be able to make quality content &ndash; e.g. videos teaching interesting aspects of programming &ndash; without needing to spend time on the video editing process. The cutting and rearranging would happen automatically. The music and audio adjustments would be added automatically. All I&rsquo;d need to do is write a script and record the footage, and the auto editor would take care of the rest.</p>
+<p>As you may know, I&rsquo;ve been working on 
+<a href="/snippets/2020-02-21-jump-cut-programming">automatic</a> 
+<a href="/snippets/2020-02-26-video-tooling-progress">video</a> 
+<a href="/snippets/2020-03-02-fastbook">editing</a> software. I&rsquo;d like to be able to make quality content &ndash; e.g. videos teaching interesting aspects of programming &ndash; without needing to spend time on the video editing process. The cutting and rearranging would happen automatically. The music and audio adjustments would be added automatically. All I&rsquo;d need to do is write a script and record the footage, and the auto editor would take care of the rest.</p>
 <p>Originally I was using Mac&rsquo;s cmd-shift-5 screen capture capability to create these recordings. OBS lets you rearrange video feeds deliberately and use a variety of video sources. These video sources include window captures, cameras, and prerecorded media. The result is much more flexible than Mac&rsquo;s screen capture, and so I&rsquo;ve switched my auto video editing software over to use OBS for recording.</p>
-<p>As an aside, I&rsquo;ve also discovered <a href="https://obsproject.com/forum/resources/obs-ndi-newtek-ndi%E2%84%A2-integration-into-obs-studio.528/">NDI</a>, a plugin for OBS. It lets me use my phone&rsquo;s camera as a video source with minimal setup. It was so easy to get working, in fact, that I&rsquo;m convinced it must be a large security vulnerability to use it at all.</p>
+<p>As an aside, I&rsquo;ve also discovered 
+<a href="https://obsproject.com/forum/resources/obs-ndi-newtek-ndi%E2%84%A2-integration-into-obs-studio.528/" target="_blank" rel="noopener">NDI</a>, a plugin for OBS. It lets me use my phone&rsquo;s camera as a video source with minimal setup. It was so easy to get working, in fact, that I&rsquo;m convinced it must be a large security vulnerability to use it at all.</p>
 <p>Now that I&rsquo;m using OBS to record, I enabled my auto video editing software to run automatically on any recording produced by OBS. As soon as the recording gets saved, my software starts editing it automatically (preserving the original). I&rsquo;d love to have my auto editing start even sooner than that though, <em>before</em> the recording is complete. The OBS codebase is surprisingly approachable, so I may be able to get this working.</p>
 <h2 id="hacking-on-the-obs-codebase">Hacking on the OBS Codebase</h2>
 <p>When John Boiles released the Mac Virtual Cam plugin for OBS, it was initially stuck on the wrong resolution. John told me it was hard coded to 720x480, and that was the impetus for me to poke at the code. Changing the hard coded resolution proved easy enough. Then I ran into a bug where OBS would fail to capture a window if I changed tabs in that window while OBS was closed. Though there&rsquo;s inertia with entering any unfamiliar codebase, I found I was able to solve this issue for myself too. Through these two debugging experiences I got enough glimpses of the OBS plugin set up to think that OBS really is approachably hackable. I think, with hard work, I could integrate my auto editing code into OBS so that it runs in real time. It&rsquo;s not the very top of my todo list for the auto video editor, but I&rsquo;m excited to give this a try.</p>
@@ -535,7 +550,8 @@
 <p>There&rsquo;s a second reason I&rsquo;m excited about the replay buffer though; it may enable me to use auto-edited videos in conversations in <em>real time</em>. I imagine the user experience like this:
 I&rsquo;m in a remote meeting and we&rsquo;re having a discussion. By default I&rsquo;m unmuted and people can hear what I&rsquo;m saying. Whenever I hold down a keyboard shortcut, I&rsquo;m muted in the call and OBS starts recording me. When I release the shortcut, I can continue to talk in the call. Once I&rsquo;ve recorded a satisfactory amount of content for OBS, the auto-editing will be applied and I can use OBS as a virtual camera to send that recorded and edited content to my colleagues in the meeting.</p>
 <h2 id="looking-forward">Looking Forward</h2>
-<p>I&rsquo;m excited to become more proficient using OBS, and to explore the various plugins and overlays that streamers use with OBS. Particularly I&rsquo;m excited to look into the <a href="https://obsproject.com/forum/resources/vst-plugins.848/">audio plugins</a> that are available.</p>
+<p>I&rsquo;m excited to become more proficient using OBS, and to explore the various plugins and overlays that streamers use with OBS. Particularly I&rsquo;m excited to look into the 
+<a href="https://obsproject.com/forum/resources/vst-plugins.848/" target="_blank" rel="noopener">audio plugins</a> that are available.</p>
 <p>I also intend to continue my auto-editing plans from before: I&rsquo;m still looking forward to introducing a &ldquo;script&rdquo; with audio auto-transcribed and key events entered via keyboard shortcuts and auto-tracked file saves. And I still want to be able to modify this script to automatically edit the video based on the modifications.</p>
 <p>Having explored OBS for a little while now, I&rsquo;m also looking forward to integrating my auto-video editing more closely with OBS, ideally resulting in real time auto editing in the end. Here&rsquo;s to hoping OBS continues to feel approachably hackable!</p>
 
@@ -561,7 +577,7 @@ I&rsquo;m in a remote meeting and we&rsquo;re having a discussion. By default I&
 
 
   
-
+  
 
 
 
@@ -571,6 +587,7 @@ I&rsquo;m in a remote meeting and we&rsquo;re having a discussion. By default I&
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -586,6 +603,9 @@ I&rsquo;m in a remote meeting and we&rsquo;re having a discussion. By default I&
 
     </div>
   </div>
+
+
+
 
 
 
@@ -617,11 +637,11 @@ I&rsquo;m in a remote meeting and we&rsquo;re having a discussion. By default I&
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -633,6 +653,11 @@ I&rsquo;m in a remote meeting and we&rsquo;re having a discussion. By default I&
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -701,7 +726,7 @@ I&rsquo;m in a remote meeting and we&rsquo;re having a discussion. By default I&
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

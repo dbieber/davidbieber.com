@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -51,7 +51,7 @@
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -63,8 +63,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -213,13 +213,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -229,7 +231,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -291,8 +293,6 @@
 
 
 
-
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -320,7 +320,7 @@
     "name": "David Bieber",
     "logo": {
       "@type": "ImageObject",
-      "url": "img/https://davidbieber.com/"
+      "url": "https://davidbieber.com/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png"
     }
   },
   "description": "Use Google Apps Script to write a mail merge and schedule emails to send in the future."
@@ -381,10 +381,15 @@
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -635,11 +640,13 @@ Body:
   Party on!
   David
 </code></pre>
-<p>Next, we create a Google Spreadsheet (<a href="https://sheets.google.com">sheets.google.com</a>) with three columns like this:</p>
+<p>Next, we create a Google Spreadsheet (
+<a href="https://sheets.google.com" target="_blank" rel="noopener">sheets.google.com</a>) with three columns like this:</p>
 <pre><code>Name  Email  Age  
 ...   ...    ...
 </code></pre>
-<p>(To add yourself to my spreadsheet and actually receive a happy birthday email on your alleged birthday, just <a href="https://goo.gl/forms/qEy8f5CQ8itVVFoe2">fill out this form</a>.)</p>
+<p>(To add yourself to my spreadsheet and actually receive a happy birthday email on your alleged birthday, just 
+<a href="https://goo.gl/forms/qEy8f5CQ8itVVFoe2" target="_blank" rel="noopener">fill out this form</a>.)</p>
 <p>Inside your spreadsheet, choose <em>Tools &gt; Script Editor</em>. This creates a new Apps Script associated with your spreadsheet.</p>
 <p>Now it&rsquo;s time to write some JavaScript. We&rsquo;re going to write a function to perform the mail merge.
 We&rsquo;ll call it <code>performMailMerge</code> and it won&rsquo;t have any parameters, e.g.:</p>
@@ -652,7 +659,8 @@ We&rsquo;ll call it <code>performMailMerge</code> and it won&rsquo;t have any pa
 <p>To use the library SpreadsheetDB, choose Resources &gt; Libraries &gt; Add a library and enter <code>193p7IxBukPVkoxwMH8UDcdkYJiNCDWSylMA_htgliEPxjjqixhzKt_2g</code>. This is the ID of the SpreadsheetDB library. Select the latest version from the version dropdown menu. It should say &ldquo;SpreadsheetDB&rdquo; if you&rsquo;ve done it right. This will allow you to use functions from the SpreadsheetDB library in your project.</p>
 </li>
 <li>
-<p>To use SpreadsheetDB from source, create a new file in your project and name it <code>spreadsheet.gs</code> (the name is not important). Copy and paste in the source of SpreadsheetDB from the <a href="https://gist.github.com/dbieber/471a3103adb727d6985892338de00aea">Gist here</a>. If you choose to copy and paste the source into your project, then you must omit the prefix &ldquo;SpreadsheetDB.&rdquo; from your calls to the SpreadsheetDB functions in the following code. E.g. <code>SpreadsheetDB.getColumnIndexesFromSheet</code> would become just <code>getColumnIndexesFromSheet</code>.</p>
+<p>To use SpreadsheetDB from source, create a new file in your project and name it <code>spreadsheet.gs</code> (the name is not important). Copy and paste in the source of SpreadsheetDB from the 
+<a href="https://gist.github.com/dbieber/471a3103adb727d6985892338de00aea" target="_blank" rel="noopener">Gist here</a>. If you choose to copy and paste the source into your project, then you must omit the prefix &ldquo;SpreadsheetDB.&rdquo; from your calls to the SpreadsheetDB functions in the following code. E.g. <code>SpreadsheetDB.getColumnIndexesFromSheet</code> would become just <code>getColumnIndexesFromSheet</code>.</p>
 </li>
 </ol>
 <p>Now that you&rsquo;re set up with SpreadsheetDB, I&rsquo;ll start by showing you the full program, then I&rsquo;ll explain what each line does.</p>
@@ -683,12 +691,15 @@ function getDraftMessageBySubject(subject) {
   }
 }
 </code></pre>
-<p>The documentation for the built in libraries is very good. You can find the documentation for <a href="https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet-app">SpreadsheetApp</a> here and for <a href="https://developers.google.com/apps-script/reference/gmail/gmail-app">GmailApp</a> here.</p>
+<p>The documentation for the built in libraries is very good. You can find the documentation for 
+<a href="https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet-app" target="_blank" rel="noopener">SpreadsheetApp</a> here and for 
+<a href="https://developers.google.com/apps-script/reference/gmail/gmail-app" target="_blank" rel="noopener">GmailApp</a> here.</p>
 <p>Let’s look at the pieces of this function individually:</p>
 <pre><code class="language-javascript">var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
 var sheet = spreadsheet.getSheetByName(&quot;Sheet 1&quot;);
 </code></pre>
-<p>This gives us a <a href="https://developers.google.com/apps-script/reference/spreadsheet/sheet">Sheet</a> object that we can use to access and edit the main sheet of our spreadsheet.</p>
+<p>This gives us a 
+<a href="https://developers.google.com/apps-script/reference/spreadsheet/sheet" target="_blank" rel="noopener">Sheet</a> object that we can use to access and edit the main sheet of our spreadsheet.</p>
 <p>The function call SpreadsheetDB.getColumnIndexesFromSheet(sheet) gives us back a mapping from column name to index. This is useful for accessing elements of a row by name later on. In our case, the result of getColumnIndexesFromSheet is the following mapping: <code>{Name: 0, Email: 1, Age: 2}</code>. This means that Name is column index 0, Email is column index 1, and Age is column index 2. We’re counting columns starting with zero. Perfect!</p>
 <p>The call to <code>getDraftMessageBySubject</code> gets a draft from our Gmail drafts that we’ll use later to send the emails to our friends.</p>
 <p>We use the <code>SpreadsheetDB.forEachRow</code> function to perform an action for each row in the spreadsheet except the headers. We pass a function with no name (an &ldquo;anonymous function&rdquo;) to SpreadsheetDB, and SpreadsheetDB will call that function once per non-header row of our spreadsheet.</p>
@@ -761,7 +772,8 @@ In order to update the row, we modify the <code>row</code> array and return it a
 <pre><code>Name  Email  Age   Birthday  Status
 ...   ...    ...   ...       ...
 </code></pre>
-<p>We&rsquo;re going to use the moment.js library for working with dates. Create a new file (<em>File &gt; New &gt; Script File</em>) in your Apps Script project. Call it moment.gs, or anything else, and paste in the contents of the moment.js library. You can copy and paste moment.js from <a href="https://momentjs.com/downloads/moment.js">here</a>. Note: Be sure to use the non-minified version of moment.js; if you try using the minified version you will likely have trouble pasting the library into your Apps Script project.</p>
+<p>We&rsquo;re going to use the moment.js library for working with dates. Create a new file (<em>File &gt; New &gt; Script File</em>) in your Apps Script project. Call it moment.gs, or anything else, and paste in the contents of the moment.js library. You can copy and paste moment.js from 
+<a href="https://momentjs.com/downloads/moment.js" target="_blank" rel="noopener">here</a>. Note: Be sure to use the non-minified version of moment.js; if you try using the minified version you will likely have trouble pasting the library into your Apps Script project.</p>
 <p>Now that we have moment.js, we can get the date of our friends birthday like this:
 <code>moment(row[indexes[&quot;Birthday&quot;]])</code></p>
 <p>We can then write the function isTodaysDate like this. This will check that the month and day of the given date are today&rsquo;s month and day, irrespective of what year the given date has.</p>
@@ -822,7 +834,8 @@ function getDraftMessageBySubject(subject) {
 <p>While sending birthday emails automatically is somewhat impersonal, the techniques used here are broadly applicable. With Apps Script, you can send yourself reminders, monitor your Calendar events, track your finances, and more. It&rsquo;s a super useful and super friendly set of APIs, and this automated birthday emailer just scratches the surface of what Apps Script makes possible.</p>
 <h2 id="wrap-up">Wrap up</h2>
 <p>You&rsquo;ve now learned how to program a mail merge function that uses a spreadsheet as input. You can use a template to send multiple recipients personalized emails. You can schedule these emails to send in the future.</p>
-<p>You now have a great power, and with it comes great responsibility. Don&rsquo;t use this for spam. Be kind and courteous to your fellow citizens of the internet. If you find this useful, do let me know what you use it for (I&rsquo;m <a href="https://twitter.com/Bieber">@Bieber</a> on Twitter). I&rsquo;m using Google Apps Script for a variety of things these days and I am always interested to hear how others are using the same tools.</p>
+<p>You now have a great power, and with it comes great responsibility. Don&rsquo;t use this for spam. Be kind and courteous to your fellow citizens of the internet. If you find this useful, do let me know what you use it for (I&rsquo;m 
+<a href="https://twitter.com/Bieber" target="_blank" rel="noopener">@Bieber</a> on Twitter). I&rsquo;m using Google Apps Script for a variety of things these days and I am always interested to hear how others are using the same tools.</p>
 
     </div>
 
@@ -854,11 +867,8 @@ function getDraftMessageBySubject(subject) {
 
 
   
-  
     
-  
-  
-
+    
 
 
 
@@ -868,6 +878,7 @@ function getDraftMessageBySubject(subject) {
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -883,6 +894,10 @@ function getDraftMessageBySubject(subject) {
 
     </div>
   </div>
+
+
+  
+
 
 
 
@@ -925,11 +940,11 @@ function getDraftMessageBySubject(subject) {
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -941,6 +956,11 @@ function getDraftMessageBySubject(subject) {
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -1009,7 +1029,7 @@ function getDraftMessageBySubject(subject) {
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

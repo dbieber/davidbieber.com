@@ -7,7 +7,7 @@
     <description>Software</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://davidbieber.com/img/portrait.jpg</url>
+      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>Software</title>
       <link>https://davidbieber.com/tags/software/</link>
     </image>
@@ -17,7 +17,8 @@
       <link>https://davidbieber.com/projects/bieber-bot/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/bieber-bot/</guid>
-      <description>&lt;p&gt;Bieber Bot is a highly motivated robot that assists me with my financials, &lt;a href=&#34;https://twitter.com/Bieber&#34;&gt;tweets&lt;/a&gt; on my behalf, and keeps me productive when my brain feels otherwise.&lt;/p&gt;
+      <description>&lt;p&gt;Bieber Bot is a highly motivated robot that assists me with my financials, 
+&lt;a href=&#34;https://twitter.com/Bieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tweets&lt;/a&gt; on my behalf, and keeps me productive when my brain feels otherwise.&lt;/p&gt;
 &lt;h2 id=&#34;is-bieber-bot-related-to-justin-bieber&#34;&gt;Is Bieber Bot related to Justin Bieber?&lt;/h2&gt;
 &lt;p&gt;No, no relation. Bieber Bot is my own creation.&lt;/p&gt;
 &lt;h2 id=&#34;how-does-bieber-bot-work&#34;&gt;How does Bieber Bot work?&lt;/h2&gt;
@@ -38,7 +39,8 @@
 &lt;li&gt;Bieber Bot helps me to get to sleep at a reasonable hour&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;can-you-tell-me-all-of-bieber-bots-capabilities-again-but-this-time-make-each-one-into-a-pun-about-a-justin-bieber-song&#34;&gt;Can you tell me all of Bieber Bot&amp;rsquo;s capabilities again, but this time make each one into a pun about a Justin Bieber song?&lt;/h2&gt;
-&lt;p&gt;Sure. See the hashtag &lt;a href=&#34;https://twitter.com/search?f=tweets&amp;amp;q=%23BieberBotPuns%20OR%20%23BieberBotPun&#34;&gt;#BieberBotPuns&lt;/a&gt; on twitter.&lt;/p&gt;
+&lt;p&gt;Sure. See the hashtag 
+&lt;a href=&#34;https://twitter.com/search?f=tweets&amp;amp;q=%23BieberBotPuns%20OR%20%23BieberBotPun&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#BieberBotPuns&lt;/a&gt; on twitter.&lt;/p&gt;
 &lt;h2 id=&#34;can-i-use-bieber-bot&#34;&gt;Can I use Bieber Bot?&lt;/h2&gt;
 &lt;p&gt;No, not at this time.&lt;/p&gt;
 </description>
@@ -53,7 +55,8 @@
 &lt;p&gt;Check it out at &lt;a href=&#34;https://github.com/google/python-fire&#34;&gt;https://github.com/google/python-fire&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I originally wrote Python Fire after joining Google Brain in 2016. In March 2017 we open sourced the project, and I proud and delighted by the growth and reception it has seen since.&lt;/p&gt;
 &lt;p&gt;To give it a try, simply &lt;code&gt;pip install fire&lt;/code&gt;, and then call &lt;code&gt;fire.Fire()&lt;/code&gt; as the main of any Python program.&lt;/p&gt;
-&lt;p&gt;Here&amp;rsquo;s a simple example to pique your interest, and then if you want to learn more, you should read the &lt;a href=&#34;http://google.github.io/python-fire&#34;&gt;Python Fire Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a simple example to pique your interest, and then if you want to learn more, you should read the 
+&lt;a href=&#34;http://google.github.io/python-fire&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python Fire Guide&lt;/a&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import fire
 
 def gcd(a, b):
@@ -75,7 +78,8 @@ $ python gcdfire.py 34 90
 2
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Just by calling Fire, we&amp;rsquo;ve turned our gcd function into a command line utility.&lt;/p&gt;
-&lt;p&gt;Fire works on functions, classes, objects, lists, etc. Any Python object at all will be turned into a sensible CLI just by calling &lt;code&gt;fire.Fire&lt;/code&gt; on it. Learn more from the &lt;a href=&#34;http://google.github.io/python-fire&#34;&gt;documentation here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Fire works on functions, classes, objects, lists, etc. Any Python object at all will be turned into a sensible CLI just by calling &lt;code&gt;fire.Fire&lt;/code&gt; on it. Learn more from the 
+&lt;a href=&#34;http://google.github.io/python-fire&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documentation here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -85,11 +89,13 @@ $ python gcdfire.py 34 90
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/at-scheduler/</guid>
       <description>&lt;p&gt;The at-scheduler is a simple command line scheduler.&lt;/p&gt;
-&lt;p&gt;For installation instructions, see the &lt;a href=&#34;https://github.com/dbieber/at-scheduler/&#34;&gt;README&lt;/a&gt; on GitHub.&lt;/p&gt;
+&lt;p&gt;For installation instructions, see the 
+&lt;a href=&#34;https://github.com/dbieber/at-scheduler/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;README&lt;/a&gt; on GitHub.&lt;/p&gt;
 &lt;p&gt;Once it&amp;rsquo;s installed, using the at-scheduler is simple. From your shell, just run a command &lt;code&gt;at &amp;lt;when&amp;gt; &amp;lt;command&amp;gt;&lt;/code&gt;. This will schedule your command to be run at the time specified.&lt;/p&gt;
 &lt;p&gt;The syntax for &lt;code&gt;&amp;lt;when&amp;gt;&lt;/code&gt; is lenient. Specific times like &amp;ldquo;9:30am&amp;rdquo; work, as do named dates like &amp;ldquo;tomorrow at 10pm&amp;rdquo; or &amp;ldquo;next Tuesday at 3pm&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;The syntax for &lt;code&gt;&amp;lt;command&amp;gt;&lt;/code&gt; is simply whatever is supported by your shell. Whatever you put for &lt;code&gt;&amp;lt;command&amp;gt;&lt;/code&gt; will be run in a shell at the time specified.&lt;/p&gt;
-&lt;p&gt;Learn more on &lt;a href=&#34;https://github.com/dbieber/at-scheduler/&#34;&gt;GitHub here&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Learn more on 
+&lt;a href=&#34;https://github.com/dbieber/at-scheduler/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub here&lt;/a&gt;!&lt;/p&gt;
 </description>
     </item>
     
@@ -124,14 +130,16 @@ $ python gcdfire.py 34 90
 &lt;li&gt;Recording audio memos of myself for later&lt;/li&gt;
 &lt;li&gt;Executing arbitrary shell commands&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The current list of shh commands is &lt;a href=&#34;https://github.com/dbieber/shh-shell/blob/master/shh_commands.py&#34;&gt;available here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The current list of shh commands is 
+&lt;a href=&#34;https://github.com/dbieber/shh-shell/blob/master/shh_commands.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Of course, not all of these have proven to be useful features. The most useful features for me have been the ability to leave notes for myself for the morning, the ability to check the time without opening my eyes, and the ability to set alarms and listen to music via the shell. The audio memo feature has been occasionally useful too.&lt;/p&gt;
 &lt;p&gt;At no point did I find the ability to check my email via the shh shell useful.&lt;/p&gt;
 &lt;p&gt;I did temporarily get good at recognizing pitch intervals, but I have not sustained that ability.&lt;/p&gt;
 &lt;h2 id=&#34;is-this-a-replacement-for-shells-like-bash-zsh-and-fish&#34;&gt;Is this a replacement for shells like Bash, zsh, and Fish?&lt;/h2&gt;
 &lt;p&gt;No, this is not meant as a full replacement for Bash, zsh, Fish, etc.&lt;/p&gt;
 &lt;p&gt;That said, it does support arbitrary command execution though, via the &lt;code&gt;shell&lt;/code&gt; command. That means typing &lt;code&gt;:shell rm -f important_file&lt;/code&gt; &lt;em&gt;will&lt;/em&gt; cause important_file to be removed. So, you have to make sure you&amp;rsquo;re not a self-sabotaging hacker in your sleep before you start using shh as your night time shell.&lt;/p&gt;
-&lt;p&gt;You can additionally add arbitrary new commands by editing the file &lt;a href=&#34;https://github.com/dbieber/shh-shell/blob/master/shh_commands.py&#34;&gt;shh_commands.py&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can additionally add arbitrary new commands by editing the file 
+&lt;a href=&#34;https://github.com/dbieber/shh-shell/blob/master/shh_commands.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shh_commands.py&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;where-do-you-use-the-shh-shell&#34;&gt;Where do you use the shh shell?&lt;/h3&gt;
 &lt;p&gt;I use the shh shell by keeping a wireless keyboard in my bed. It is connected to my laptop, which I leave open but with the monitor turned fully off.&lt;/p&gt;
 &lt;p&gt;This means I&amp;rsquo;m not at risk of damaging my computer by rolling over on it or drooling on it :).&lt;/p&gt;
@@ -183,14 +191,17 @@ $ python gcdfire.py 34 90
 &lt;p&gt;The &amp;ldquo;at&amp;rdquo; command is useful because it allows you to simply schedule other commands to run at a designated time in the future.&lt;/p&gt;
 &lt;p&gt;To use the at command, type &lt;code&gt;:at &amp;lt;when&amp;gt;:&amp;lt;command&amp;gt;&lt;/code&gt;. It&amp;rsquo;s OK if &lt;code&gt;&amp;lt;when&amp;gt;&lt;/code&gt; has a colon in the middle, e.g. &lt;code&gt;&amp;lt;when&amp;gt;&lt;/code&gt; could be &lt;code&gt;7:30am&lt;/code&gt;. It could also be &lt;code&gt;tomorrow at 9am&lt;/code&gt; &amp;ndash; the syntax for &lt;code&gt;&amp;lt;when&amp;gt;&lt;/code&gt; is flexible. &lt;code&gt;&amp;lt;command&amp;gt;&lt;/code&gt; can be any of the commands shh supports, such as &lt;code&gt;alarm&lt;/code&gt; for playing music from youtube. E.g. &lt;code&gt;:at 7:30am : alarm&lt;/code&gt; would schedule a musical alarm for 7:30am the following day.&lt;/p&gt;
 &lt;h3 id=&#34;adding-new-commands&#34;&gt;Adding new commands&lt;/h3&gt;
-&lt;p&gt;You can easily add new commands by adding new functions to &lt;a href=&#34;https://github.com/dbieber/shh-shell/blob/master/shh_commands.py&#34;&gt;shh_commands.py&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can easily add new commands by adding new functions to 
+&lt;a href=&#34;https://github.com/dbieber/shh-shell/blob/master/shh_commands.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shh_commands.py&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Simply add a function decorated with the &lt;code&gt;@command&lt;/code&gt; decorator to add a new command to your shh shell. If your command accepts arguments, include &lt;code&gt;{}&lt;/code&gt; in the format string for your command, and the user&amp;rsquo;s arguments will be passed to your function when the command is run.&lt;/p&gt;
 &lt;h3 id=&#34;troubleshooting&#34;&gt;Troubleshooting&lt;/h3&gt;
 &lt;p&gt;One common mistake is to start typing a command in the middle of a line. When in doubt about whether you are at the start of a line, just hit enter. You cannot go by the visual representation in the black box &amp;ndash; all that is is a text field, but it doesn&amp;rsquo;t necessarily represent the internal state of your shell. So, just hit enter, then type your command, beginning with a colon.&lt;/p&gt;
 &lt;p&gt;There is no concept of a cursor in shh. The arrow keys don&amp;rsquo;t do anything. So even if the cursor in the text box appears to be in the middle of a line, in practice you are always typing at the end of the current content and the logged text will reflect this.&lt;/p&gt;
-&lt;p&gt;For additional issues, please open an &lt;a href=&#34;https://github.com/dbieber/shh-shell&#34;&gt;Issue on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For additional issues, please open an 
+&lt;a href=&#34;https://github.com/dbieber/shh-shell&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Issue on GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;installing-the-shh-shell&#34;&gt;Installing the Shh Shell&lt;/h3&gt;
-&lt;p&gt;Head on over to &lt;a href=&#34;https://github.com/dbieber/shh-shell&#34;&gt;https://github.com/dbieber/shh-shell&lt;/a&gt; for instructions on how to set up the shh shell.&lt;/p&gt;
+&lt;p&gt;Head on over to 
+&lt;a href=&#34;https://github.com/dbieber/shh-shell&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/dbieber/shh-shell&lt;/a&gt; for instructions on how to set up the shh shell.&lt;/p&gt;
 &lt;h1 id=&#34;a-bit-of-backstory&#34;&gt;A bit of backstory&lt;/h1&gt;
 &lt;h2 id=&#34;why-did-you-create-a-non-visual-shell&#34;&gt;Why did you create a non-visual shell?&lt;/h2&gt;
 &lt;p&gt;There was a time during undergrad when I was losing sleep to thoughts swirling around in my head. &amp;ldquo;Does she like me?&amp;rdquo;, &amp;ldquo;I should have responded in this slightly different way,&amp;rdquo; etc. Variations on a theme would rattle around in my head, each variation only slightly different from thoughts I had already thought. How could I make them stop?&lt;/p&gt;
@@ -199,7 +210,8 @@ $ python gcdfire.py 34 90
 &lt;p&gt;I tried turning the lights on to write down my thoughts, but I didn&amp;rsquo;t like how that woke me up. I tried notepad apps on my phone for writing down my thoughts, but my phone is bright and this was not much better than turning the lights on and using paper.&lt;/p&gt;
 &lt;p&gt;So, I started typing on my computer with the monitor off. This was a great solution, but it came with it&amp;rsquo;s own problem: I needed to know if I was typing in the right window. Hence, shh shell was born. The gradual addition of commands over time has an added bonus that makes shh shell even more useful for me.&lt;/p&gt;
 &lt;h2 id=&#34;isnt-the-audio-annoying-to-anyone-else-trying-to-sleep&#34;&gt;Isn&amp;rsquo;t the audio annoying to anyone else trying to sleep?&lt;/h2&gt;
-&lt;p&gt;Yes, my college roommate &lt;a href=&#34;http://harvestzhang.com&#34;&gt;Harvest&lt;/a&gt; can attest to the annoyance of hearing repeated &amp;ldquo;focused&amp;rdquo;, &amp;ldquo;focus lost&amp;rdquo; throughout the night.&lt;/p&gt;
+&lt;p&gt;Yes, my college roommate 
+&lt;a href=&#34;http://harvestzhang.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Harvest&lt;/a&gt; can attest to the annoyance of hearing repeated &amp;ldquo;focused&amp;rdquo;, &amp;ldquo;focus lost&amp;rdquo; throughout the night.&lt;/p&gt;
 &lt;p&gt;I cannot in good conscience recommend use of shh shell when sleeping with your significant other.&lt;/p&gt;
 &lt;h2 id=&#34;what-have-you-typed-into-your-shh-shell&#34;&gt;What have you typed into your shh shell?&lt;/h2&gt;
 &lt;p&gt;When I first started typing at night back in 2014, I wasn&amp;rsquo;t used to typing without visual feedback. So in the morning when I went to look at what I had typed, I was surprised to find a large paragraph of complete gibberish!
@@ -211,7 +223,8 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
 &lt;p&gt;Before I decoded the mysterious paragraph, I had forgotten entirely about the dream. As I decoded though, I remembered the dream, waking from it, and writing down what had happened.&lt;/p&gt;
 &lt;p&gt;Since then, I&amp;rsquo;ve now gotten used to typing in the dark and using the little bumps on the F and J keys to guide my hands. So, I don&amp;rsquo;t have to decode mysterious passages about hiding secrets from the FBI anymore. I have now repeatedly experienced not remembering having typed something until I see what I typed in the morning, and each time the memory of typing it comes back as I read what I wrote. This hasn&amp;rsquo;t ceased to be a very cool feeling each time it occurs.&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;While I built this for myself, I have made it open source in the hope that you too may benefit from it. I hope it helps someone out there get a better night&amp;rsquo;s sleep or remember a key idea they would have forgotten. Definitely check out the &lt;a href=&#34;https://github.com/dbieber/shh-shell&#34;&gt;shh shell on GitHub&lt;/a&gt; and give it a try if you&amp;rsquo;re Python-inclined. And as always, feel free to get in touch if you want to discuss this project or anything else.&lt;/p&gt;
+&lt;p&gt;While I built this for myself, I have made it open source in the hope that you too may benefit from it. I hope it helps someone out there get a better night&amp;rsquo;s sleep or remember a key idea they would have forgotten. Definitely check out the 
+&lt;a href=&#34;https://github.com/dbieber/shh-shell&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shh shell on GitHub&lt;/a&gt; and give it a try if you&amp;rsquo;re Python-inclined. And as always, feel free to get in touch if you want to discuss this project or anything else.&lt;/p&gt;
 </description>
     </item>
     
@@ -220,9 +233,11 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <link>https://davidbieber.com/projects/scrabble-bot/</link>
       <pubDate>Fri, 06 Jun 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/scrabble-bot/</guid>
-      <description>&lt;p&gt;Scrabble Bot loves Scrabble and social media! Check out Scrab&amp;rsquo;s &lt;a href=&#34;http://scrabblebot.tumblr.com&#34;&gt;tumblr page&lt;/a&gt; full of Scrabble games it&amp;rsquo;s played against itself.&lt;/p&gt;
+      <description>&lt;p&gt;Scrabble Bot loves Scrabble and social media! Check out Scrab&amp;rsquo;s 
+&lt;a href=&#34;http://scrabblebot.tumblr.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tumblr page&lt;/a&gt; full of Scrabble games it&amp;rsquo;s played against itself.&lt;/p&gt;
 &lt;p&gt;Scrabble Bot is also privacy conscious, and so uses Facebook under a pseudonym, &amp;ldquo;Scrab Blebot&amp;rdquo;. Scrab believes their identity is secure.&lt;/p&gt;
-&lt;p&gt;You can find Scrabble Bot&amp;rsquo;s source &lt;a href=&#34;https://github.com/dbieber/ScrabbleBot&#34;&gt;on GitHub here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can find Scrabble Bot&amp;rsquo;s source 
+&lt;a href=&#34;https://github.com/dbieber/ScrabbleBot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;on GitHub here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -231,7 +246,8 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <link>https://davidbieber.com/projects/teach-everyone/</link>
       <pubDate>Fri, 06 Jun 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/teach-everyone/</guid>
-      <description>&lt;p&gt;The Teach Everyone website is available at &lt;a href=&#34;http://teacheveryone.org&#34;&gt;teacheveryone.org&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;The Teach Everyone website is available at 
+&lt;a href=&#34;http://teacheveryone.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;teacheveryone.org&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Note: The &lt;strong&gt;Save Video&lt;/strong&gt; functionality is not currently exposed on the website.&lt;/p&gt;
 </description>
     </item>

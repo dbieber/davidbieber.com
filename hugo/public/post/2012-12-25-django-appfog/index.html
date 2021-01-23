@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -30,9 +30,9 @@
   
   <meta name="description" content="You&rsquo;ll have your Django web app up and running live on the internet with AppFog in a matter of minutes.
 Here&rsquo;s what you have to do.
- Start a project on AppFog. Clone the django-appfog-helloworld repository. Push to AppFog.  The repository is available at https://github.com/dbieber/django-appfog-helloworld.
+  Start a project on AppFog.  Clone the django-appfog-helloworld repository.  Push to AppFog.  The repository is available at https://github.com/dbieber/django-appfog-helloworld.
 Here&rsquo;s what comes with this repo.
-It&rsquo;s a Django project that works out of the box (just download it and python manage.py runserver. If you have Django installed, it&rsquo;ll work!">
+It&rsquo;s a Django project that works out of the box (just download it and python manage.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/post/2012-12-25-django-appfog/">
@@ -55,7 +55,7 @@ It&rsquo;s a Django project that works out of the box (just download it and pyth
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -67,8 +67,8 @@ It&rsquo;s a Django project that works out of the box (just download it and pyth
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -217,13 +217,15 @@ It&rsquo;s a Django project that works out of the box (just download it and pyth
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -233,7 +235,7 @@ It&rsquo;s a Django project that works out of the box (just download it and pyth
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -273,9 +275,9 @@ It&rsquo;s a Django project that works out of the box (just download it and pyth
   <meta property="og:title" content="Get your new Django based web app live with AppFog in minutes | David Bieber">
   <meta property="og:description" content="You&rsquo;ll have your Django web app up and running live on the internet with AppFog in a matter of minutes.
 Here&rsquo;s what you have to do.
- Start a project on AppFog. Clone the django-appfog-helloworld repository. Push to AppFog.  The repository is available at https://github.com/dbieber/django-appfog-helloworld.
+  Start a project on AppFog.  Clone the django-appfog-helloworld repository.  Push to AppFog.  The repository is available at https://github.com/dbieber/django-appfog-helloworld.
 Here&rsquo;s what comes with this repo.
-It&rsquo;s a Django project that works out of the box (just download it and python manage.py runserver. If you have Django installed, it&rsquo;ll work!"><meta property="og:image" content="https://davidbieber.com/post/2012-12-25-django-appfog/featured.png">
+It&rsquo;s a Django project that works out of the box (just download it and python manage."><meta property="og:image" content="https://davidbieber.com/post/2012-12-25-django-appfog/featured.png">
   <meta property="twitter:image" content="https://davidbieber.com/post/2012-12-25-django-appfog/featured.png"><meta property="og:locale" content="en-us">
   
     
@@ -295,8 +297,6 @@ It&rsquo;s a Django project that works out of the box (just download it and pyth
 
 
   
-
-
 
 
 
@@ -328,10 +328,10 @@ It&rsquo;s a Django project that works out of the box (just download it and pyth
     "name": "David Bieber",
     "logo": {
       "@type": "ImageObject",
-      "url": "img/https://davidbieber.com/"
+      "url": "https://davidbieber.com/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png"
     }
   },
-  "description": "You\u0026rsquo;ll have your Django web app up and running live on the internet with AppFog in a matter of minutes.\nHere\u0026rsquo;s what you have to do.\n Start a project on AppFog. Clone the django-appfog-helloworld repository. Push to AppFog.  The repository is available at https://github.com/dbieber/django-appfog-helloworld.\nHere\u0026rsquo;s what comes with this repo.\nIt\u0026rsquo;s a Django project that works out of the box (just download it and python manage.py runserver. If you have Django installed, it\u0026rsquo;ll work!"
+  "description": "You\u0026rsquo;ll have your Django web app up and running live on the internet with AppFog in a matter of minutes.\nHere\u0026rsquo;s what you have to do.\n  Start a project on AppFog.  Clone the django-appfog-helloworld repository.  Push to AppFog.  The repository is available at https://github.com/dbieber/django-appfog-helloworld.\nHere\u0026rsquo;s what comes with this repo.\nIt\u0026rsquo;s a Django project that works out of the box (just download it and python manage."
 }
 </script>
 
@@ -389,10 +389,15 @@ It&rsquo;s a Django project that works out of the box (just download it and pyth
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -628,18 +633,26 @@ It&rsquo;s a Django project that works out of the box (just download it and pyth
       <p>You&rsquo;ll have your Django web app up and running live on the internet with AppFog in a matter of minutes.</p>
 <p>Here&rsquo;s what you have to do.</p>
 <ol>
-<li><a href="#setting-up-appfog">Start a project on AppFog.</a></li>
-<li><a href="#cloning-this-repository">Clone the django-appfog-helloworld repository.</a></li>
-<li><a href="#pushing-to-appfog">Push to AppFog.</a></li>
+<li>
+<a href="#setting-up-appfog">Start a project on AppFog.</a></li>
+<li>
+<a href="#cloning-this-repository">Clone the django-appfog-helloworld repository.</a></li>
+<li>
+<a href="#pushing-to-appfog">Push to AppFog.</a></li>
 </ol>
-<p>The repository is available at <a href="https://github.com/dbieber/django-appfog-helloworld">https://github.com/dbieber/django-appfog-helloworld</a>.</p>
+<p>The repository is available at 
+<a href="https://github.com/dbieber/django-appfog-helloworld" target="_blank" rel="noopener">https://github.com/dbieber/django-appfog-helloworld</a>.</p>
 <p>Here&rsquo;s what comes with this repo.</p>
 <p>It&rsquo;s a Django project that works out of the box (just download it and <code>python manage.py runserver</code>. If you have Django installed, it&rsquo;ll work!). It&rsquo;s already setup to serve static files. It&rsquo;s all ready to use MySQL or sqlite3. It ships with Bootstrap and jQuery. Django&rsquo;s admin app is enabled and ready to go. It has templates for 404 and 500 errors so you can quickly see how to get error handling working. And it has one app, named <code>app_name</code>, that demonstrates the core functionality of Django: models, views, templating, and forms, by collecting email address of early users to your site. It&rsquo;s a rudimentary version of LaunchRock.</p>
 <p>My hope is that it will work well both as start code and as reference code for how to get Django working quickly.</p>
-<h5 id="this-template-is-great-for-quick-and-dirty-websites-its-perfect-for-a-hackathon-or-for-prototyping-an-idea-with-friends-and-its-a-great-template-for-getting-started-with-djangohttpswwwdjangoprojectcom-bootstraphttptwittergithubcombootstrap-and-jqueryhttpjquerycom-but-its-not-production-quality-in-two-key-respects-security-and-scalability-keep-that-in-mind-as-you-start-building">This template is great for quick and dirty websites. It&rsquo;s perfect for a hackathon or for prototyping an idea with friends. And it&rsquo;s a great template for getting started with <a href="https://www.djangoproject.com/">Django</a>, <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>, and <a href="http://jquery.com/">jQuery</a>. But it&rsquo;s not production quality in two key respects, security and scalability. Keep that in mind as you start building.</h5>
+<h5 id="this-template-is-great-for-quick-and-dirty-websites-its-perfect-for-a-hackathon-or-for-prototyping-an-idea-with-friends-and-its-a-great-template-for-getting-started-with-djangohttpswwwdjangoprojectcom-bootstraphttptwittergithubcombootstrap-and-jqueryhttpjquerycom-but-its-not-production-quality-in-two-key-respects-security-and-scalability-keep-that-in-mind-as-you-start-building">This template is great for quick and dirty websites. It&rsquo;s perfect for a hackathon or for prototyping an idea with friends. And it&rsquo;s a great template for getting started with 
+<a href="https://www.djangoproject.com/" target="_blank" rel="noopener">Django</a>, 
+<a href="http://twitter.github.com/bootstrap/" target="_blank" rel="noopener">Bootstrap</a>, and 
+<a href="http://jquery.com/" target="_blank" rel="noopener">jQuery</a>. But it&rsquo;s not production quality in two key respects, security and scalability. Keep that in mind as you start building.</h5>
 <p>Now, let&rsquo;s dive deeper into getting your Django app running.</p>
 <h4 id="setting-up-appfog">Setting up AppFog</h4>
-<p>Register for an account at <a href="http://appfog.com">AppFog.com</a>.</p>
+<p>Register for an account at 
+<a href="http://appfog.com" target="_blank" rel="noopener">AppFog.com</a>.</p>
 <p>Create a new &ldquo;Django Python&rdquo; app. Host it on AWS. And give it a name. I called mine &ldquo;helloworld-django&rdquo;. Let&rsquo;s say you call yours <code>name_of_app</code>.</p>
 <p>You&rsquo;ll want to set up the <code>af</code> command line utility to make deploying your site easier later. On Mac or Unix this is as simple as <code>gem install af</code>. Windows instructions are simple too, and are available in the &ldquo;Update Source Code&rdquo; tab of your app on AppFog.</p>
 <p>(Optional) Make sure you have a MySQL database service provisioned. To do this, log in to AppFog, choose your app, and choose the &ldquo;Services&rdquo; tab. You can either bind an existing MySQL database service to your app or create a new one. If you don&rsquo;t have a MySQL database provisioned, the app we deploy in a moment will use sqlite3 as a fallback and should work just fine.</p>
@@ -656,18 +669,22 @@ It&rsquo;s a Django project that works out of the box (just download it and pyth
 <p>Now you&rsquo;re ready to go live!</p>
 <h4 id="pushing-to-appfog">Pushing to AppFog</h4>
 <p>Be sure to either run <code>python manage.py collectstatic</code> or place all your static files your <code>static</code> directory before pushing.</p>
-<p>Log in to AppFog with the command <code>af login</code>. (Find instructions for setting up the command line tool in the &ldquo;Update Source Code&rdquo; tab of your app on <a href="http://appfog.com">AppFog.com</a>.</p>
+<p>Log in to AppFog with the command <code>af login</code>. (Find instructions for setting up the command line tool in the &ldquo;Update Source Code&rdquo; tab of your app on 
+<a href="http://appfog.com" target="_blank" rel="noopener">AppFog.com</a>.</p>
 <p>From inside the <code>django-appfog-helloworld</code> directory (which, by the way, you are free to rename) run <code>af update name_of_app</code>.</p>
 <p>That&rsquo;s it. Your site is live! You&rsquo;re already collecting email address of beta-testers. Huzzah!</p>
 <h3 id="testing-locally">Testing Locally</h3>
-<p>To test locally, you&rsquo;ll need to <a href="https://docs.djangoproject.com/en/dev/topics/install/">install Django</a>.</p>
+<p>To test locally, you&rsquo;ll need to 
+<a href="https://docs.djangoproject.com/en/dev/topics/install/" target="_blank" rel="noopener">install Django</a>.</p>
 <p>To test your app locally, navigate to the <code>django-appfog-helloworld</code> directory containing <code>manage.py</code>:</p>
 <p><code>python manage.py runserver</code> runs your app locally. View it at <code>localhost:8000</code>. <br>
 <code>python manage.py syncdb</code> sets up your local database by default in a file called <code>dev.db</code>. <br>
 <code>python manage.py collectstatic</code> copies all your static files into your static files directory. <br>
 <code>python manage.py help</code> for more.</p>
-<p>Django is a Python based web framework with excellent documentation and tutorials. To learn more about Django, visit <a href="https://www.djangoproject.com/">www.djangoproject.com</a>. Happy hacking!</p>
-<p><a href="http://news.ycombinator.com/item?id=4965184">Comments? Head over to HackerNews.</a></p>
+<p>Django is a Python based web framework with excellent documentation and tutorials. To learn more about Django, visit 
+<a href="https://www.djangoproject.com/" target="_blank" rel="noopener">www.djangoproject.com</a>. Happy hacking!</p>
+<p>
+<a href="http://news.ycombinator.com/item?id=4965184" target="_blank" rel="noopener">Comments? Head over to HackerNews.</a></p>
 
     </div>
 
@@ -691,11 +708,8 @@ It&rsquo;s a Django project that works out of the box (just download it and pyth
 
 
   
-  
     
-  
-  
-
+    
 
 
 
@@ -705,6 +719,7 @@ It&rsquo;s a Django project that works out of the box (just download it and pyth
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -720,6 +735,10 @@ It&rsquo;s a Django project that works out of the box (just download it and pyth
 
     </div>
   </div>
+
+
+  
+
 
 
 
@@ -751,11 +770,11 @@ It&rsquo;s a Django project that works out of the box (just download it and pyth
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -767,6 +786,11 @@ It&rsquo;s a Django project that works out of the box (just download it and pyth
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -835,7 +859,7 @@ It&rsquo;s a Django project that works out of the box (just download it and pyth
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

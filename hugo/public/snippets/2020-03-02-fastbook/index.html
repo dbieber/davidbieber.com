@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -52,7 +52,7 @@ For the last few weeks, I&rsquo;ve been working on automatic video editing tools
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -64,8 +64,8 @@ For the last few weeks, I&rsquo;ve been working on automatic video editing tools
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -214,13 +214,15 @@ For the last few weeks, I&rsquo;ve been working on automatic video editing tools
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -230,7 +232,7 @@ For the last few weeks, I&rsquo;ve been working on automatic video editing tools
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -270,8 +272,8 @@ For the last few weeks, I&rsquo;ve been working on automatic video editing tools
   <meta property="og:url" content="https://davidbieber.com/snippets/2020-03-02-fastbook/">
   <meta property="og:title" content="Fastbook: Listen to Audiobooks Faster | David Bieber">
   <meta property="og:description" content="Aaron Mayer aims to listen to 100 audiobooks in a single month. He intends to listen to these audiobooks at 2x - 3x speed. Intense!
-For the last few weeks, I&rsquo;ve been working on automatic video editing tools. And one of the core features I&rsquo;ve been working with is automatic speed adjustments to videos to eliminate silent airtime and make the videos more engaging. This seems like a perfect fit for Aaron&rsquo;s challenge."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
-  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
+For the last few weeks, I&rsquo;ve been working on automatic video editing tools. And one of the core features I&rsquo;ve been working with is automatic speed adjustments to videos to eliminate silent airtime and make the videos more engaging. This seems like a perfect fit for Aaron&rsquo;s challenge."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-03-02T00:00:00&#43;00:00">
@@ -335,10 +337,15 @@ For the last few weeks, I&rsquo;ve been working on automatic video editing tools
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -518,20 +525,27 @@ For the last few weeks, I&rsquo;ve been working on automatic video editing tools
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>Aaron Mayer <a href="https://medium.com/100audiobooks/the-100-audiobook-challenge-terms-and-conditions-455c7e9409aa">aims to listen to 100 audiobooks in a single month</a>. He intends to listen to these audiobooks at 2x - 3x speed. Intense!</p>
-<p>For the last few weeks, I&rsquo;ve been working on <a href="https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/">automatic video</a> <a href="https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/">editing tools</a>. And one of the core features I&rsquo;ve been working with is <a href="https://github.com/carykh/jumpcutter/">automatic speed adjustments to videos</a> to eliminate silent airtime and make the videos more engaging. This seems like a perfect fit for Aaron&rsquo;s challenge.</p>
-<p>I&rsquo;ve adapted this tooling into a new tool I&rsquo;m calling <a href="https://gist.github.com/dbieber/98f909640773b5b0a0fe5696da369a1b">Fastbook</a>. It accepts audiobooks in the form of <code>.wav</code> files, and can apply speed adjustments to the silence and the spoken word independently, even removing silence entirely if desired.</p>
+      <p>Aaron Mayer 
+<a href="https://medium.com/100audiobooks/the-100-audiobook-challenge-terms-and-conditions-455c7e9409aa" target="_blank" rel="noopener">aims to listen to 100 audiobooks in a single month</a>. He intends to listen to these audiobooks at 2x - 3x speed. Intense!</p>
+<p>For the last few weeks, I&rsquo;ve been working on 
+<a href="https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/" target="_blank" rel="noopener">automatic video</a> 
+<a href="https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/" target="_blank" rel="noopener">editing tools</a>. And one of the core features I&rsquo;ve been working with is 
+<a href="https://github.com/carykh/jumpcutter/" target="_blank" rel="noopener">automatic speed adjustments to videos</a> to eliminate silent airtime and make the videos more engaging. This seems like a perfect fit for Aaron&rsquo;s challenge.</p>
+<p>I&rsquo;ve adapted this tooling into a new tool I&rsquo;m calling 
+<a href="https://gist.github.com/dbieber/98f909640773b5b0a0fe5696da369a1b" target="_blank" rel="noopener">Fastbook</a>. It accepts audiobooks in the form of <code>.wav</code> files, and can apply speed adjustments to the silence and the spoken word independently, even removing silence entirely if desired.</p>
 <p>If Aaron can already comfortably (with great focus) listen to a book at 2.5x speed, he can listen to a 10 hour book in 4 hours. If 20% of that book is actually silence, then the 10 hour book becomes an 8 hour book with silence removed, and the total listen time drops to just 3h12. I think 20% may actually be a conservative estimate for silent time, though it will vary from narrator to narrator.</p>
 <p>Estimating 45 minutes saved per book, this tool can save over 3 days total time across 100 books. Or, alternatively, Aaron could drop the playback speed down from 2.5x to 2x without increasing his total listening time at all, but potentially helping out his comprehension substantially.</p>
 <p>This tool wont be appropriate for all audiobook listeners. For many, the silences matter, and removing them would degrade the quality of the book. For many, listening at 2.5x would also degrade the quality of the book. So use this tool with caution.</p>
 <p>For those of you who are intersted, however, here&rsquo;s how to use Fastbook.</p>
 <h2 id="installing-fastbook">Installing Fastbook</h2>
-<p>I&rsquo;ve made Fastbook available for free on GitHub. You can <a href="https://gist.github.com/dbieber/98f909640773b5b0a0fe5696da369a1b">access it here</a>.</p>
+<p>I&rsquo;ve made Fastbook available for free on GitHub. You can 
+<a href="https://gist.github.com/dbieber/98f909640773b5b0a0fe5696da369a1b" target="_blank" rel="noopener">access it here</a>.</p>
 <p>To use it, save it to your computer as <code>fastbook.py</code>.</p>
 <p>Next, make sure you have all the dependencies installed. See the dependencies section for what is required.</p>
 <h2 id="pre-work-converting-your-book-to-wav">Pre-work: Converting Your Book to <code>.wav</code></h2>
 <p>You need your audiobook in wav format to use Fastbook.</p>
-<p>To convert an audiobook to wav, use <a href="https://www.ffmpeg.org/">ffmpeg</a>.</p>
+<p>To convert an audiobook to wav, use 
+<a href="https://www.ffmpeg.org/" target="_blank" rel="noopener">ffmpeg</a>.</p>
 <p>Install ffmpeg. Then, run <code>ffmpeg -i book.aax book.wav</code> to convert an Audible audiobook to a wav file. There may be an additional step if your aax file is DRM protected.</p>
 <h2 id="using-fastbook">Using Fastbook</h2>
 <p>Now you can use Fastbook like this:</p>
@@ -544,9 +558,11 @@ For the last few weeks, I&rsquo;ve been working on automatic video editing tools
 <p><code>--audio_path</code> should point to an existing wav file that you downloaded or generated in the pre-work section. <code>--output_path</code> is the path to the file that Fastbook will generate. Finally, <code>--loud_speed</code> is how much to speed up the normal spoke text of the book by, and <code>--quiet_speed</code> is how much to speed up the silence in the book by. You can remove silence by setting <code>--quiet_speed=99999</code> or any other similiarly large number.</p>
 <h3 id="dependencies">Dependencies</h3>
 <p>Here are the dependencies you need to use Fastbook.</p>
-<p>First, you need <strong>Python 3</strong>. You can follow <a href="https://realpython.com/installing-python/">these instructions</a> to set up Python 3 if you don&rsquo;t already have it installed.</p>
+<p>First, you need <strong>Python 3</strong>. You can follow 
+<a href="https://realpython.com/installing-python/" target="_blank" rel="noopener">these instructions</a> to set up Python 3 if you don&rsquo;t already have it installed.</p>
 <p>Then, you need these Python depenencies: <em>fire</em>, <em>scipy</em>, <em>tqdm</em>, <em>numpy</em>, and <em>audiotsm</em>. Install these with <code>pip install fire scipy tqdm numpy audiotsm</code> or use your favorite Python package manager.</p>
-<p>Finally, to do the pre-work, you will likely need ffmpeg. Installation instructions are available <a href="https://www.ffmpeg.org/">here</a>.</p>
+<p>Finally, to do the pre-work, you will likely need ffmpeg. Installation instructions are available 
+<a href="https://www.ffmpeg.org/" target="_blank" rel="noopener">here</a>.</p>
 <h2 id="read-quick">Read quick!</h2>
 <p>I recommend for Aaron to use the default speed settings of <code>--loud_speed=1 --quiet_speed=5</code>. This wont eliminate the silence entirely, but will reduce the audio time considerably. Then, for the remaining speed-up, I suggest using whatever media player you were already using, such as VLC which supports arbitrary speed adjustments in real time. Hpy rdng!</p>
 <h2 id="demo">Demo</h2>
@@ -585,7 +601,7 @@ Your browser does not support the <code>audio</code> element.
 
 
   
-
+  
 
 
 
@@ -595,6 +611,7 @@ Your browser does not support the <code>audio</code> element.
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -610,6 +627,9 @@ Your browser does not support the <code>audio</code> element.
 
     </div>
   </div>
+
+
+
 
 
 
@@ -641,11 +661,11 @@ Your browser does not support the <code>audio</code> element.
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -657,6 +677,11 @@ Your browser does not support the <code>audio</code> element.
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -725,7 +750,7 @@ Your browser does not support the <code>audio</code> element.
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

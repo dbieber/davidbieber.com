@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -51,7 +51,7 @@
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -63,8 +63,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -213,13 +213,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -229,7 +231,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -268,8 +270,8 @@
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/post/2013-08-14-khanversation/">
   <meta property="og:title" content="Life at KA: A Khanversation with David Bieber | David Bieber">
-  <meta property="og:description" content="In which David Bieber interviews himself."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
-  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="In which David Bieber interviews himself."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2013-08-14T01:00:00&#43;00:00">
@@ -288,8 +290,6 @@
 
 
   
-
-
 
 
 
@@ -317,7 +317,7 @@
     "name": "David Bieber",
     "logo": {
       "@type": "ImageObject",
-      "url": "img/https://davidbieber.com/"
+      "url": "https://davidbieber.com/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png"
     }
   },
   "description": "In which David Bieber interviews himself."
@@ -378,10 +378,15 @@
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -561,7 +566,8 @@
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p><a href="http://life.khanacademy.org/post/58251244282/im-a-belieber-a-khanversation-with-sw-dev-intern"><em>Originally posted at life.khanacademy.org</em></a></p>
+      <p>
+<a href="http://life.khanacademy.org/post/58251244282/im-a-belieber-a-khanversation-with-sw-dev-intern" target="_blank" rel="noopener"><em>Originally posted at life.khanacademy.org</em></a></p>
 <p>We&rsquo;ll dive straight into the questions for our latest Khan Academy Khanversation, this time featuring rising Princeton senior David Bieber.</p>
 <p><strong>David, let&rsquo;s begin with the question everyone is dying to hear you answer. Are you related to Justin Bieber?</strong></p>
 <p>It&rsquo;s funny you should ask that. People tell me all the time &ldquo;sorry about your last name&rdquo; or &ldquo;I hope you&rsquo;re not related to <em>that singer</em>&rdquo; or &ldquo;can you get me free tickets to the Bieber concert?&rdquo; And because of that, I&rsquo;ve started feeling a real connection to the guy. I root for his success. I feel down when people trash his music. I think we could become genuinely good friends if we weren&rsquo;t both vying for the top spot on Google for the search term &ldquo;Bieber.&rdquo;</p>
@@ -569,7 +575,8 @@
 <p><img src="david-bieber-no-beber.png" alt="No Bieber!"></p>
 <p><strong>So, Bieber, how did you come to work at Khan Academy?</strong></p>
 <p>Sounds like life story time.</p>
-<p>I had some pretty incredible teachers growing up. Lots of them. And not just the grown-up kind &ndash; the peer kind too. Throughout middle and high school I was involved in this fantastic math community, the <a href="http://albanyareamathcircle.blogspot.com">Albany Area Math Circle</a>. We practiced loads of competition math, and most of what I learned, I learned from other students. Some a few years older than me, some a few years younger.</p>
+<p>I had some pretty incredible teachers growing up. Lots of them. And not just the grown-up kind &ndash; the peer kind too. Throughout middle and high school I was involved in this fantastic math community, the 
+<a href="http://albanyareamathcircle.blogspot.com" target="_blank" rel="noopener">Albany Area Math Circle</a>. We practiced loads of competition math, and most of what I learned, I learned from other students. Some a few years older than me, some a few years younger.</p>
 <p>Here I got involved in coaching MathCounts, and I quickly realized that I love teaching. I ran a math camp for middle school students one summer and I had a blast doing it. Whatever I was going to do with my life, it was going to involve teaching in some capacity.</p>
 <p>Fast forward a couple years, and I&rsquo;m sitting in a dining hall in some castle in Princeton. I&rsquo;m talking with some friends about startup ideas &ndash; I have a lot of friends interested in entrepreneurship &ndash; and I have a brilliant idea for a company. (I love getting lost in the excitement of a good idea.) &ldquo;We&rsquo;ll take classes, and we&rsquo;ll put them online. Just Princeton classes to start &ndash; it&rsquo;ll be like MIT&rsquo;s OpenCourseWare &ndash; but we&rsquo;ll make it scalable. And any student with their professor&rsquo;s permission will be able to really easily get their classes' lectures online.&rdquo; Sounds a bit like Coursera. Or YouTube. From there on out, I gave a lot of thought to teaching at scale.</p>
 <p>Which brings us to Khan Academy. I&rsquo;m interested in programming and technology and education, and I&rsquo;m all for making the world a better place. What better way than the KA way to leverage my interests to facilitate teaching at scale?</p>
@@ -589,7 +596,8 @@
 <p>So what you&rsquo;re telling me is that I&rsquo;m involved in a virtual interview&hellip; with myself?</p>
 <p><strong>Yeah.</strong></p>
 <p>And to think I thought the Turing test was hard&hellip; why are you writing all this anyway?</p>
-<p><strong>Well, it&rsquo;s good to take a break from coding every now and again. Plus, I really like having people read the things I write &ndash; I found this out after starting my blog a year ago (<a href="http://blog.davidbieber.com">take a look!</a>) &ndash; it makes the writing process a lot more fun. It also gives you all a better feel for life at Khan Academy, and that transparency is really valuable. We’re real people who make KA run! Seeing all the awesome stuff on this blog is part of why I came to work here. But most of all, the writing really is fun! Especially the Bieber bit &ndash; I had a good time writing that. And no, we’re not related.</strong></p>
+<p><strong>Well, it&rsquo;s good to take a break from coding every now and again. Plus, I really like having people read the things I write &ndash; I found this out after starting my blog a year ago (
+<a href="http://blog.davidbieber.com" target="_blank" rel="noopener">take a look!</a>) &ndash; it makes the writing process a lot more fun. It also gives you all a better feel for life at Khan Academy, and that transparency is really valuable. We’re real people who make KA run! Seeing all the awesome stuff on this blog is part of why I came to work here. But most of all, the writing really is fun! Especially the Bieber bit &ndash; I had a good time writing that. And no, we’re not related.</strong></p>
 
     </div>
 
@@ -621,11 +629,8 @@
 
 
   
-  
     
-  
-  
-
+    
 
 
 
@@ -635,6 +640,7 @@
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -650,6 +656,10 @@
 
     </div>
   </div>
+
+
+  
+
 
 
 
@@ -690,11 +700,11 @@
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -706,6 +716,11 @@
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -774,7 +789,7 @@
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

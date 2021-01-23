@@ -12,8 +12,8 @@
   sri = "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   url = "https://cdnjs.cloudflare.com/ajax/libs/jquery/%s/jquery.min.js"
 [js.highlight]
-  version = "9.15.10"
-  sri = "sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0="
+  version = "9.18.1"
+  sri = "sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ="
   url = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/%s/highlight.min.js"
 [js.mathJax]
   version = "3"
@@ -57,8 +57,8 @@
   sri = "sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck="
   url = "https://cdnjs.cloudflare.com/ajax/libs/anchor-js/%s/anchor.min.js"
 [js.mermaid]
-  version = "8.4.3"
-  sri = ""  # SRI unavailable.
+  version = "8.4.8"
+  sri = "sha256-lyWCDMnMeZiXRi7Zl54sZGKYmgQs4izcT7+tKc+KUBk="
   url = "https://cdnjs.cloudflare.com/ajax/libs/mermaid/%s/mermaid.min.js"
 [js.lazysizes]
   version = "5.1.2"
@@ -73,8 +73,8 @@
 # CSS
 
 [css.fontAwesome]
-  version = "5.11.2"
-  sri = "sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+  version = "5.12.0-1"
+  sri = "sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU="
   url = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/%s/css/all.min.css"
 [css.academicons]
   version = "1.8.6"
@@ -97,7 +97,7 @@
   sri = "sha256-uL8LUd3zkI/lXvc/Hv/oOu8ld6RJcOZiUY/8c+I+3/o="
   url = "https://cdnjs.cloudflare.com/ajax/libs/instantsearch.js/%s/instantsearch-theme-algolia.min.css"
 [css.highlight]
-  version = "9.15.10"
+  version = "9.18.1"
   sri = ""  # No SRI as highlight style is determined at run time.
   url = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/%s/styles/%s.min.css"
 [css.cookieconsent]

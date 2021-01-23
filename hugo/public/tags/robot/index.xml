@@ -7,7 +7,7 @@
     <description>Robot</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://davidbieber.com/img/portrait.jpg</url>
+      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>Robot</title>
       <link>https://davidbieber.com/tags/robot/</link>
     </image>
@@ -17,7 +17,8 @@
       <link>https://davidbieber.com/projects/bieber-bot/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/bieber-bot/</guid>
-      <description>&lt;p&gt;Bieber Bot is a highly motivated robot that assists me with my financials, &lt;a href=&#34;https://twitter.com/Bieber&#34;&gt;tweets&lt;/a&gt; on my behalf, and keeps me productive when my brain feels otherwise.&lt;/p&gt;
+      <description>&lt;p&gt;Bieber Bot is a highly motivated robot that assists me with my financials, 
+&lt;a href=&#34;https://twitter.com/Bieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tweets&lt;/a&gt; on my behalf, and keeps me productive when my brain feels otherwise.&lt;/p&gt;
 &lt;h2 id=&#34;is-bieber-bot-related-to-justin-bieber&#34;&gt;Is Bieber Bot related to Justin Bieber?&lt;/h2&gt;
 &lt;p&gt;No, no relation. Bieber Bot is my own creation.&lt;/p&gt;
 &lt;h2 id=&#34;how-does-bieber-bot-work&#34;&gt;How does Bieber Bot work?&lt;/h2&gt;
@@ -38,7 +39,8 @@
 &lt;li&gt;Bieber Bot helps me to get to sleep at a reasonable hour&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;can-you-tell-me-all-of-bieber-bots-capabilities-again-but-this-time-make-each-one-into-a-pun-about-a-justin-bieber-song&#34;&gt;Can you tell me all of Bieber Bot&amp;rsquo;s capabilities again, but this time make each one into a pun about a Justin Bieber song?&lt;/h2&gt;
-&lt;p&gt;Sure. See the hashtag &lt;a href=&#34;https://twitter.com/search?f=tweets&amp;amp;q=%23BieberBotPuns%20OR%20%23BieberBotPun&#34;&gt;#BieberBotPuns&lt;/a&gt; on twitter.&lt;/p&gt;
+&lt;p&gt;Sure. See the hashtag 
+&lt;a href=&#34;https://twitter.com/search?f=tweets&amp;amp;q=%23BieberBotPuns%20OR%20%23BieberBotPun&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#BieberBotPuns&lt;/a&gt; on twitter.&lt;/p&gt;
 &lt;h2 id=&#34;can-i-use-bieber-bot&#34;&gt;Can I use Bieber Bot?&lt;/h2&gt;
 &lt;p&gt;No, not at this time.&lt;/p&gt;
 </description>

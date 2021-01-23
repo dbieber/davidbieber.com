@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -54,7 +54,7 @@ Lessons Learned from &ldquo;Take 1&rdquo; What worked well?">
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -66,8 +66,8 @@ Lessons Learned from &ldquo;Take 1&rdquo; What worked well?">
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -216,13 +216,15 @@ Lessons Learned from &ldquo;Take 1&rdquo; What worked well?">
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -232,7 +234,7 @@ Lessons Learned from &ldquo;Take 1&rdquo; What worked well?">
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -274,8 +276,8 @@ Lessons Learned from &ldquo;Take 1&rdquo; What worked well?">
   <meta property="og:description" content="I&rsquo;ve been toying around with recording myself programming. Here&rsquo;s a clip.
  In this clip I use Python Fire to create a simple two-function calculator. Nothing special about that.
 What is special is that the programming has automatically been sped up by carykh/jumpcutter, and that I&rsquo;ve used moviepy to set the programming to the music &ldquo;Dangerous&rdquo;, a clip I got from YouTube&rsquo;s free Audio Library.
-Lessons Learned from &ldquo;Take 1&rdquo; What worked well?"><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
-  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
+Lessons Learned from &ldquo;Take 1&rdquo; What worked well?"><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-02-21T00:00:00&#43;00:00">
@@ -339,10 +341,15 @@ Lessons Learned from &ldquo;Take 1&rdquo; What worked well?"><meta property="og:
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -524,8 +531,13 @@ Lessons Learned from &ldquo;Take 1&rdquo; What worked well?"><meta property="og:
     <div class="article-style" id="article-content">
       <p>I&rsquo;ve been toying around with recording myself programming. Here&rsquo;s a clip.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OxsuHWVtMSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>In this clip I use <a href="/projects/python-fire">Python Fire</a> to create a simple two-function calculator. Nothing special about that.</p>
-<p>What is special is that the programming has automatically been sped up by <a href="https://github.com/carykh/jumpcutter">carykh/jumpcutter</a>, and that I&rsquo;ve used <a href="https://zulko.github.io/moviepy/">moviepy</a> to set the programming to the music <a href="http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100414">&ldquo;Dangerous&rdquo;</a>, a clip I got from <a href="https://www.youtube.com/audiolibrary/music">YouTube&rsquo;s free Audio Library</a>.</p>
+<p>In this clip I use 
+<a href="/projects/python-fire">Python Fire</a> to create a simple two-function calculator. Nothing special about that.</p>
+<p>What is special is that the programming has automatically been sped up by 
+<a href="https://github.com/carykh/jumpcutter" target="_blank" rel="noopener">carykh/jumpcutter</a>, and that I&rsquo;ve used 
+<a href="https://zulko.github.io/moviepy/" target="_blank" rel="noopener">moviepy</a> to set the programming to the music 
+<a href="http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100414" target="_blank" rel="noopener">&ldquo;Dangerous&rdquo;</a>, a clip I got from 
+<a href="https://www.youtube.com/audiolibrary/music" target="_blank" rel="noopener">YouTube&rsquo;s free Audio Library</a>.</p>
 <h2 id="lessons-learned-from-take-1">Lessons Learned from &ldquo;Take 1&rdquo;</h2>
 <h3 id="what-worked-well">What worked well?</h3>
 <ol>
@@ -533,13 +545,15 @@ Lessons Learned from &ldquo;Take 1&rdquo; What worked well?"><meta property="og:
 <p><strong>External Monitor</strong>: I purchased an external monitor. This made a huge difference. Now I can manage video-editing tools, a terminal, a browser, etc on one screen, while keeping the contents of the video (the editor and public terminal) on the other screen and recording it.</p>
 </li>
 <li>
-<p><strong><a href="https://github.com/carykh/jumpcutter">carykh/jumpcutter</a></strong>: This tool can automatically speed up the silent parts of a video, resulting in shorter less-boring videos.</p>
+<p><strong>
+<a href="https://github.com/carykh/jumpcutter" target="_blank" rel="noopener">carykh/jumpcutter</a></strong>: This tool can automatically speed up the silent parts of a video, resulting in shorter less-boring videos.</p>
 </li>
 <li>
 <p><strong>Mac Screen Capture</strong>: cmd-shift-5 lets you capture video on Mac. You can choose what directory the captured video is saved to. Before I discovered this, I used QuickTime, but this is easier to use.</p>
 </li>
 <li>
-<p><strong>Using <a href="https://pythonhosted.org/watchdog/">watchdog</a></strong> This is a Python module that can monitor your filesystem and trigger an action when files are created or modified. I use it to a) automatically rename video files as they&rsquo;re created, and b) to automatically apply jumpcutting to new captured videos. The filename format I use is <code>YYYY-MM-DD-screen-recording-###.mov</code>.</p>
+<p><strong>Using 
+<a href="https://pythonhosted.org/watchdog/" target="_blank" rel="noopener">watchdog</a></strong> This is a Python module that can monitor your filesystem and trigger an action when files are created or modified. I use it to a) automatically rename video files as they&rsquo;re created, and b) to automatically apply jumpcutting to new captured videos. The filename format I use is <code>YYYY-MM-DD-screen-recording-###.mov</code>.</p>
 </li>
 <li>
 <p><strong>Python Fire</strong>: The first twenty clips I recorded (not released) were all of me building the tooling I now use as I record videos. Most of this tooling lives in Python Fire CLIs. These CLIs let me do things like composite audio, perform auto-jumpcutting, and rename videos.</p>
@@ -585,7 +599,7 @@ Lessons Learned from &ldquo;Take 1&rdquo; What worked well?"><meta property="og:
 
 
   
-
+  
 
 
 
@@ -595,6 +609,7 @@ Lessons Learned from &ldquo;Take 1&rdquo; What worked well?"><meta property="og:
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -610,6 +625,9 @@ Lessons Learned from &ldquo;Take 1&rdquo; What worked well?"><meta property="og:
 
     </div>
   </div>
+
+
+
 
 
 
@@ -641,11 +659,11 @@ Lessons Learned from &ldquo;Take 1&rdquo; What worked well?"><meta property="og:
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -657,6 +675,11 @@ Lessons Learned from &ldquo;Take 1&rdquo; What worked well?"><meta property="og:
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -725,7 +748,7 @@ Lessons Learned from &ldquo;Take 1&rdquo; What worked well?"><meta property="og:
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

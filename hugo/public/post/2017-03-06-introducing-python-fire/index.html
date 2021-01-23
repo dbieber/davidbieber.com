@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -51,7 +51,7 @@
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -63,8 +63,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -213,13 +213,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -229,7 +231,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -291,8 +293,6 @@
 
 
 
-
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -320,7 +320,7 @@
     "name": "David Bieber",
     "logo": {
       "@type": "ImageObject",
-      "url": "img/https://davidbieber.com/"
+      "url": "https://davidbieber.com/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png"
     }
   },
   "description": "Python Fire automatically generates command line interfaces from any Python objects."
@@ -381,10 +381,15 @@
 
   
 
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
-    
     
     <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">David Bieber</a>
@@ -622,7 +627,10 @@
 
     <div class="article-style" id="article-content">
       <p><em>Originally posted on the Google Open Source Blog</em></p>
-<p>Today we are pleased to announce the open-sourcing of <a href="https://github.com/google/python-fire">Python Fire</a>. Python Fire generates command line interfaces (CLIs) from any Python code. Simply call the Fire function in any Python program to automatically turn that program into a CLI. The library is available from <a href="https://pypi.org/project/fire/">pypi</a> via <code>pip install fire</code>, and the source is <a href="https://github.com/google/python-fire">available on GitHub</a>.</p>
+<p>Today we are pleased to announce the open-sourcing of 
+<a href="https://github.com/google/python-fire" target="_blank" rel="noopener">Python Fire</a>. Python Fire generates command line interfaces (CLIs) from any Python code. Simply call the Fire function in any Python program to automatically turn that program into a CLI. The library is available from 
+<a href="https://pypi.org/project/fire/" target="_blank" rel="noopener">pypi</a> via <code>pip install fire</code>, and the source is 
+<a href="https://github.com/google/python-fire" target="_blank" rel="noopener">available on GitHub</a>.</p>
 <p>Python Fire will automatically turn your code into a CLI without you needing to do any additional work. You don’t have to define arguments, set up help information, or write a main function that defines how your code is run. Instead, you simply call the <code>Fire</code> function from your main module, and Python Fire takes care of the rest. It uses inspection to turn whatever Python object you give it – whether it’s a class, an object, a dictionary, a function, or even a whole module – into a command line interface, complete with tab completion and documentation, and the CLI will stay up-to-date even as the code changes.</p>
 <p>To illustrate this, let’s look at a simple example.</p>
 <pre><code class="language-python">#!/usr/bin/env python
@@ -648,8 +656,13 @@ $ ./example.py hello --name=Google
 Hello Google!
 </code></pre>
 <p>Of course, you can continue to use this module like an ordinary Python library, enabling you to use the exact same code both from Bash and Python. If you’re writing a Python library, then you no longer need to update your main method or client when experimenting with it; instead you can simply run the piece of your library that you’re experimenting with from the command line. Even as the library changes, the command line tool stays up to date.</p>
-<p>At Google, engineers use Python Fire to generate command line tools from Python libraries. We have an image manipulation tool built by using Fire with the <a href="https://en.wikipedia.org/wiki/Python_Imaging_Library">Python Imaging Library</a>, PIL. In <a href="https://ai.google/research/teams/brain">Google Brain</a>, we use an experiment management tool built with Fire, allowing us to manage experiments equally well from Python or from Bash.</p>
-<p>Every Fire CLI comes with an interactive mode. Run the CLI with the <code>--interactive</code> flag to launch an <a href="https://ipython.org/">IPython</a> <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">REPL</a> with the result of your command, as well as other useful variables already defined and ready to use. Be sure to check out <a href="https://github.com/google/python-fire#python-fire-">Python Fire’s documentation</a> for more on this and the other useful features Fire provides.</p>
+<p>At Google, engineers use Python Fire to generate command line tools from Python libraries. We have an image manipulation tool built by using Fire with the 
+<a href="https://en.wikipedia.org/wiki/Python_Imaging_Library" target="_blank" rel="noopener">Python Imaging Library</a>, PIL. In 
+<a href="https://ai.google/research/teams/brain" target="_blank" rel="noopener">Google Brain</a>, we use an experiment management tool built with Fire, allowing us to manage experiments equally well from Python or from Bash.</p>
+<p>Every Fire CLI comes with an interactive mode. Run the CLI with the <code>--interactive</code> flag to launch an 
+<a href="https://ipython.org/" target="_blank" rel="noopener">IPython</a> 
+<a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop" target="_blank" rel="noopener">REPL</a> with the result of your command, as well as other useful variables already defined and ready to use. Be sure to check out 
+<a href="https://github.com/google/python-fire#python-fire-" target="_blank" rel="noopener">Python Fire’s documentation</a> for more on this and the other useful features Fire provides.</p>
 <p>Between Python Fire’s simplicity, generality, and power, we hope you find it a useful library for your own projects.</p>
 
     </div>
@@ -680,11 +693,8 @@ Hello Google!
 
 
   
-  
     
-  
-  
-
+    
 
 
 
@@ -694,6 +704,7 @@ Hello Google!
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
@@ -709,6 +720,10 @@ Hello Google!
 
     </div>
   </div>
+
+
+  
+
 
 
 
@@ -740,11 +755,11 @@ Hello Google!
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
         
       
 
@@ -756,6 +771,11 @@ Hello Google!
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -824,7 +844,7 @@ Hello Google!
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
