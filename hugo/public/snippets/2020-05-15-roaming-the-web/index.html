@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="As I&#39;m browsing the web, I&#39;d like to be able to take notes in Roam Research. In this post, I share an idea I have for a plugin or browser extension that I think would improve the experience of taking notes in Roam while browsing the web.
+  <meta name="description" content="As I&rsquo;m browsing the web, I&rsquo;d like to be able to take notes in Roam Research. In this post, I share an idea I have for a plugin or browser extension that I think would improve the experience of taking notes in Roam while browsing the web.
 The plugin would do two main things automatically:
   It would automatically insert some browsing history information into your Roam database while you browse the internet.">
 
@@ -270,7 +270,7 @@ The plugin would do two main things automatically:
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/snippets/2020-05-15-roaming-the-web/">
   <meta property="og:title" content="Taking Notes While Browsing the Web: An Idea for a Roam Research Plugin | David Bieber">
-  <meta property="og:description" content="As I&#39;m browsing the web, I&#39;d like to be able to take notes in Roam Research. In this post, I share an idea I have for a plugin or browser extension that I think would improve the experience of taking notes in Roam while browsing the web.
+  <meta property="og:description" content="As I&rsquo;m browsing the web, I&rsquo;d like to be able to take notes in Roam Research. In this post, I share an idea I have for a plugin or browser extension that I think would improve the experience of taking notes in Roam while browsing the web.
 The plugin would do two main things automatically:
   It would automatically insert some browsing history information into your Roam database while you browse the internet."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
@@ -520,20 +520,20 @@ The plugin would do two main things automatically:
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>As I'm browsing the web, I'd like to be able to take notes in <a href="https://roamresearch.com/">Roam Research</a>. In this post, I share an idea I have for a plugin or browser extension that I think would improve the experience of taking notes in Roam while browsing the web.</p>
+      <p>As I&rsquo;m browsing the web, I&rsquo;d like to be able to take notes in <a href="https://roamresearch.com/">Roam Research</a>. In this post, I share an idea I have for a plugin or browser extension that I think would improve the experience of taking notes in Roam while browsing the web.</p>
 <p>The plugin would do two main things automatically:</p>
 <ol>
 <li>
 <p>It would automatically insert some browsing history information into your Roam database while you browse the internet.</p>
 </li>
 <li>
-<p>As you navigate the web, it would automatically bring you to the Roam page that corresponds to the web page you're reading.</p>
+<p>As you navigate the web, it would automatically bring you to the Roam page that corresponds to the web page you&rsquo;re reading.</p>
 </li>
 </ol>
 <h2 id="mind-the-details">Mind the Details</h2>
-<p>Of course, the implementation details matter! You don't want to be whisked away from the notes you're taking just because you've clicked a link in a different window.</p>
-<p>So, here I'll explain a few of the details I think would make this a good note taking experience.</p>
-<p>As I'm browsing the internet, all the websites I visit will get added to a page &ldquo;{Date} Browsing History&rdquo;. A new Roam page will be created for each new website visited. And there will be a Roam window that always stays open to the Roam page for the current website I have open in my browser.</p>
+<p>Of course, the implementation details matter! You don&rsquo;t want to be whisked away from the notes you&rsquo;re taking just because you&rsquo;ve clicked a link in a different window.</p>
+<p>So, here I&rsquo;ll explain a few of the details I think would make this a good note taking experience.</p>
+<p>As I&rsquo;m browsing the internet, all the websites I visit will get added to a page &ldquo;{Date} Browsing History&rdquo;. A new Roam page will be created for each new website visited. And there will be a Roam window that always stays open to the Roam page for the current website I have open in my browser.</p>
 <p>What qualifies as a website?</p>
 <p>By default there would be one Roam page per <em>domain</em> visited. However, there are several exceptions:</p>
 <ul>
@@ -543,16 +543,16 @@ The plugin would do two main things automatically:
 <li>For <strong>Arxiv</strong> it would be one Roam page per paper</li>
 <li>For <strong>Roam</strong> it would be one Roam page per Roam database</li>
 </ul>
-<p>It will be great to have a window that always stays open to the Roam page for the current website I have open in my browser. This way if I visit a website I've been to before, I will see my notes from that website. And the websites I visit will be linked to the day I visit them on, and also to any other pages my notes reference.</p>
-<p>Additionally, the tool should add a little bit of metadata to the pages it's generating. On each of the autogenerated Roam pages, it would be great to see <em>when</em> I visited the website, and what was the referring page. For websites visited multiple times, seeing the earliest and most recent visit times, and the number of times I visited that website would be useful too. Total time spent on the website would be a nice bonus.</p>
+<p>It will be great to have a window that always stays open to the Roam page for the current website I have open in my browser. This way if I visit a website I&rsquo;ve been to before, I will see my notes from that website. And the websites I visit will be linked to the day I visit them on, and also to any other pages my notes reference.</p>
+<p>Additionally, the tool should add a little bit of metadata to the pages it&rsquo;s generating. On each of the autogenerated Roam pages, it would be great to see <em>when</em> I visited the website, and what was the referring page. For websites visited multiple times, seeing the earliest and most recent visit times, and the number of times I visited that website would be useful too. Total time spent on the website would be a nice bonus.</p>
 <h2 id="making-this-a-reality">Making this a Reality</h2>
 <p>In the previous section I shared the details that I think would make this work well from a user experience perspective. How about from the technical side?</p>
 <p>I think it would make sense to implement this as a browser extension (though a <a href="http://www.tampermonkey.net/"><em>user script</em></a> could work too).
 <a href="http://dkthehuman.com/">DK the Human</a>, author of the <a href="https://chrome.google.com/webstore/detail/intention/dladanhaondcgpahgiflodhckhoeohoe">Intention</a> browser extension
 has made his <a href="https://github.com/dkthehuman/extension-starter-kit">browser extension starter kit</a> freely available.
-To notice when what web page you're browsing and determine whether it constitutes a new page, the extension would need to request permission to view your activity on all websites.
+To notice when what web page you&rsquo;re browsing and determine whether it constitutes a new page, the extension would need to request permission to view your activity on all websites.
 For making additions to a Roam database automatically, I expect the extension would have to navigate to the appropriate Roam page in the background, and would then mimic the user actions to make the desired changes.</p>
-<p>If you're interested in turning this idea into a reality or want to discuss it further, don't hesitate to <a href="mailto:david810+blog@gmail.com">reach out</a>! I'd be excited to try a workflow like this, but don't anticipate building it myself in the near future.</p>
+<p>If you&rsquo;re interested in turning this idea into a reality or want to discuss it further, don&rsquo;t hesitate to <a href="mailto:david810+blog@gmail.com">reach out</a>! I&rsquo;d be excited to try a workflow like this, but don&rsquo;t anticipate building it myself in the near future.</p>
 
     </div>
 

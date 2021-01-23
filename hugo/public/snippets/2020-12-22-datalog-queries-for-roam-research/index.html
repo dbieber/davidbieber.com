@@ -566,7 +566,7 @@ references.map(
 references.map((data, index) =&gt; {return data[0];}).join('\n');
 </code></pre>
 <h3 id="all-blocks-on-a-specific-page">All blocks on a specific page</h3>
-<p>This query finds all blocks on a specific page. Again replace &ldquo;Roam Research&rdquo; with the name of the page you're interested in.</p>
+<p>This query finds all blocks on a specific page. Again replace &ldquo;Roam Research&rdquo; with the name of the page you&rsquo;re interested in.</p>
 <pre><code class="language-javascript">let ancestorrule=`[ 
    [ (ancestor ?b ?a) 
         [?a :block/children ?b] ] 
@@ -615,7 +615,7 @@ let results = window.roamAlphaAPI.q(`[
 results.map((data, index) =&gt; {return `((${data[1]})) (${data[2]})`}).join('\n');
 </code></pre>
 <h2 id="support-and-debugging">Support and Debugging</h2>
-<p>The &ldquo;#querying&rdquo; channel on the <a href="https://roamresearch.slack.com/">Roam Research Slack</a> is active and the community there is quite friendly. If you're crafting or debugging a query, that's a great place to ask for help or share your progress.</p>
+<p>The &ldquo;#querying&rdquo; channel on the <a href="https://roamresearch.slack.com/">Roam Research Slack</a> is active and the community there is quite friendly. If you&rsquo;re crafting or debugging a query, that&rsquo;s a great place to ask for help or share your progress.</p>
 
     </div>
 

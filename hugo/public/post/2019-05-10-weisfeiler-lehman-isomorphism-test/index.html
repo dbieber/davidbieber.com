@@ -628,7 +628,7 @@ An example of two isomorphic graphs is shown here.</p>
 <em>Figure: Graph 1 and Graph 2 are isomorphic.
 The correspondance between nodes is illustrated by the node colors and numbers.</em></p>
 <p>In general, determining whether two graphs are isomorphic when the correspondance is not provided is a challenging problem; precisely how hard this problem is remains an open question in computer science.
-It isn't known whether there is a polynomial time algorithm for determining whether graphs are isomorphic, and it also isn't known whether the problem is $\text{NP-complete}.$
+It isn&rsquo;t known whether there is a polynomial time algorithm for determining whether graphs are isomorphic, and it also isn&rsquo;t known whether the problem is $\text{NP-complete}.$
 The graph isomorphism problem may even be an example of an <a href="https://en.wikipedia.org/wiki/NP-intermediate">$\text{NP-intermediate}$</a> problem, but this would only be possible if $\text{P} \ne \text{NP}.$</p>
 <h3 id="the-weisfeiler-lehman-isomorphism-test">The Weisfeiler-Lehman Isomorphism Test</h3>
 <p>Here is the algorithm for the Weisfeiler-Lehman Isomorphism Test.
@@ -637,14 +637,14 @@ If the canonical forms of two graphs are not equivalent, then the graphs are def
 However, it is possible for two non-isomorphic graphs to share a canonical form, so this test alone cannot provide conclusive evidence that two graphs are isomorphic.</p>
 <p>The Algorithm:</p>
 <ul>
-<li>For iteration $i$ of the algorithm we will be assigning to each node a tuple $L_{i,n}$ containing the node's old compressed label and a multiset of the node's neighbors&rsquo; compressed labels.
+<li>For iteration $i$ of the algorithm we will be assigning to each node a tuple $L_{i,n}$ containing the node&rsquo;s old compressed label and a multiset of the node&rsquo;s neighbors' compressed labels.
 A multiset is a set (a collection of elements where order is not important) where elements may appear multiple times.</li>
-<li>At each iteration we will additionally be assigning to each node $n$ a new &ldquo;compressed&rdquo; label $C_{i,n}$ for that node's set of labels.
+<li>At each iteration we will additionally be assigning to each node $n$ a new &ldquo;compressed&rdquo; label $C_{i,n}$ for that node&rsquo;s set of labels.
 Any two nodes with the same $L_{i,n}$ will get the same compressed label.</li>
 </ul>
 <ol>
 <li>To begin, we initialize $C_{0,n} = 1$ for all nodes $n$.</li>
-<li>At iteration $i$ of the algorithm (beginning with $i=1$), for each node $n$, we set $L_{i,n}$ to be a tuple containing the node's old label $C_{i-1,n}$ and the multiset of compressed node labels $C_{i-1,m}$ from all nodes $m$ neighboring $n$ from the previous iteration $(i-1)$.</li>
+<li>At iteration $i$ of the algorithm (beginning with $i=1$), for each node $n$, we set $L_{i,n}$ to be a tuple containing the node&rsquo;s old label $C_{i-1,n}$ and the multiset of compressed node labels $C_{i-1,m}$ from all nodes $m$ neighboring $n$ from the previous iteration $(i-1)$.</li>
 <li>We then complete iteration $i$ by setting $C_{i,n}$ to be a new &ldquo;compressed&rdquo; label, such as a hash of $L_{i,n}$.
 Any two nodes with the same labels $L_{i,n}$ must get the same compressed label $C_{i,n}$.</li>
 <li>Partition the nodes in the graph by their compressed label.
@@ -661,7 +661,7 @@ We will apply the Weisfeiler-Lehman isomorphism test to these graphs as a means 
 <p>To initialize the algorithm (Step 1), we set $C_{0,n} = 1$ for all nodes $n$.</p>
 <p><img src="graph-isomorphism-001.png" alt="Initialization: $C\_{0,n} = 1$ for all nodes $n$" title="We initialize $C_{0,n} = 1$ for all nodes."></p>
 <p>For iteration 1, Step 2, we compute $L_{1,n}$.
-The first part of a node's $L$ is the node's old compressed label; the second part of a node's $L$ is the multiset of the neighboring nodes&rsquo; compressed labels.</p>
+The first part of a node&rsquo;s $L$ is the node&rsquo;s old compressed label; the second part of a node&rsquo;s $L$ is the multiset of the neighboring nodes' compressed labels.</p>
 <p><img src="graph-isomorphism-002.png" alt="Iteration 1, Step 2: $L\_{1,n}$" title="Iteration 1, Step 2: $L_{1,n}$"></p>
 <p>For iteration 1, Step 3, we introduce &ldquo;compressed&rdquo; labels $C_{1,n}$ for the nodes:</p>
 <p><img src="graph-isomorphism-003.png" alt="Iteration 1, Step 3: $C\_{1,n}$" title="Iteration 1, Step 3: $C_{1,n}$"></p>
@@ -678,7 +678,7 @@ In iteration 2, Step 2, we compute $L_{2,n}$:</p>
 <p>Concretely, the partition of nodes by compressed label may be represented as the number of nodes with each compressed label.
 That is: <strong>&ldquo;2 7s, 1 8, and 2 9s&rdquo;</strong>.
 This is the canonical form of our graph.
-Since both Graph 1 and Graph 2 have this same canonical form, we cannot rule out the possibility that they are isomorphic (they <em>are</em> in fact isomorphic, but the algorithm doesn't allow us to conclude this definitively.)</p>
+Since both Graph 1 and Graph 2 have this same canonical form, we cannot rule out the possibility that they are isomorphic (they <em>are</em> in fact isomorphic, but the algorithm doesn&rsquo;t allow us to conclude this definitively.)</p>
 <h3 id="implementation-considerations">Implementation Considerations</h3>
 <p>One detail omitted is that the algorithm requires canonical forms of the multisets for comparison.
 Placing the elements of the multiset in sorted order provides one way of doing this.</p>
@@ -699,16 +699,16 @@ The Weisfeiler-Lehman isomorphism test itself does not provide a way of narrowin
 <p>Boris Weisfeiler &ndash; one of the two mathematicians responsible for the Weisfeiler-Lehman isomorphism test &ndash; was a professor at Penn State University until he disappeared mysteriously in Chile in 1985.
 His disappearance in the 80s is unsettling, and I would encourage you to visit <a href="http://www.boris.weisfeiler.com/">boris.weisfeiler.com</a> to learn more about the search for Weisfeiler and the ongoing (2018) judicial proceedings surrounding his disappearance.</p>
 <p>Steven List produced an award winning short film called <em>The Colony</em> based on the disappearance of Boris Weisfeiler, available <a href="https://vimeo.com/60220290">on Vimeo here</a>.</p>
-<p>After a brief internet search, I have been unable to find any information about Weisfeiler's colleague and coauthor A. Lehman, not even a first name.
+<p>After a brief internet search, I have been unable to find any information about Weisfeiler&rsquo;s colleague and coauthor A. Lehman, not even a first name.
 (Update Aug. 2020: A reader pointed me to <a href="https://towardsdatascience.com/a-forgotten-story-of-soviet-ai-4af5daaf9cdf">this recent story</a> about <em>Andrey</em> Leman. Thank you!)</p>
 <h3 id="np-intermediate-problems">NP-Intermediate Problems</h3>
 <p>As mentioned in the introduction, it is not known whether the graph isomorphism problem is in $\text{P}$ or $\text{NP-complete}$.
 In fact, it is not even known whether graph isomorphism falls in either of these categories, or whether this problem is $\text{NP-intermediate}$.
 The problem of factoring integers is another problem like this, where it is unknown whether the problem is in $\text{P}$, $\text{NP-complete}$, or is $\text{NP-intermediate}$.
 Bear in mind that $\text{NP-intermediate}$ problems can only exist if $\text{P} \ne \text{NP}$.
-So if anyone were to show conclusively that factoring or graph isomorphism were $\text{NP-intermediate}$ they would also have shown $\text{P} \ne \text{NP}$ and won the <a href="https://www.claymath.org/millennium-problems/p-vs-np-problem">Clay Institute P vs NP Millenium Problem</a>&lsquo;s million dollar prize.</p>
+So if anyone were to show conclusively that factoring or graph isomorphism were $\text{NP-intermediate}$ they would also have shown $\text{P} \ne \text{NP}$ and won the <a href="https://www.claymath.org/millennium-problems/p-vs-np-problem">Clay Institute P vs NP Millenium Problem</a>&rsquo;s million dollar prize.</p>
 <h3 id="applications-of-graph-isomorphisms">Applications of Graph Isomorphisms</h3>
-<p>Now that you're familiar with the Weisfeiler-Lehman test for graph isomorphisms, what is the graph isomorphism problem good for?</p>
+<p>Now that you&rsquo;re familiar with the Weisfeiler-Lehman test for graph isomorphisms, what is the graph isomorphism problem good for?</p>
 <p>There are applications of the graph isomorphism problem in, for example, computational chemistry and in circuit design.</p>
 <p>In chemistry, it is common to represent a molecule as a graph, with the atoms in the molecule being the nodes of the graph and the bonds between molecules being the edges.
 Here, the graph isomorphism problem can be used to determine if two chemical structures are in fact the same structure.

@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="Omar Riswan has an excellent project called TabFS that takes your browser tabs and exposes them to you as a filesystem. When you run ls, you see a list of all your open tabs. rm on a tab directory closes the tab. Inspecting the tab with standard tools (ls, cat, rm, etc) allow you to do things like reading the title or contents of the tab (yes, the whole tab&#39;s contents!">
+  <meta name="description" content="Omar Riswan has an excellent project called TabFS that takes your browser tabs and exposes them to you as a filesystem. When you run ls, you see a list of all your open tabs. rm on a tab directory closes the tab. Inspecting the tab with standard tools (ls, cat, rm, etc) allow you to do things like reading the title or contents of the tab (yes, the whole tab&rsquo;s contents!">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-01-10-a-filesystem-for-social-media/">
@@ -268,7 +268,7 @@
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/snippets/2021-01-10-a-filesystem-for-social-media/">
   <meta property="og:title" content="A filesystem for social media | David Bieber">
-  <meta property="og:description" content="Omar Riswan has an excellent project called TabFS that takes your browser tabs and exposes them to you as a filesystem. When you run ls, you see a list of all your open tabs. rm on a tab directory closes the tab. Inspecting the tab with standard tools (ls, cat, rm, etc) allow you to do things like reading the title or contents of the tab (yes, the whole tab&#39;s contents!"><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+  <meta property="og:description" content="Omar Riswan has an excellent project called TabFS that takes your browser tabs and exposes them to you as a filesystem. When you run ls, you see a list of all your open tabs. rm on a tab directory closes the tab. Inspecting the tab with standard tools (ls, cat, rm, etc) allow you to do things like reading the title or contents of the tab (yes, the whole tab&rsquo;s contents!"><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
     
@@ -516,15 +516,15 @@
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p><a href="https://omar.website/">Omar Riswan</a> has an excellent project called <a href="https://omar.website/tabfs/">TabFS</a> that takes your browser tabs and exposes them to you as a filesystem. When you run <code>ls</code>, you see a list of all your open tabs. <code>rm</code> on a tab directory closes the tab. Inspecting the tab with standard tools (<code>ls</code>, <code>cat</code>, <code>rm</code>, etc) allow you to do things like reading the title or contents of the tab (yes, the whole tab's contents!), closing the tab, or running javascript in the tab. The whole thing is quite clever.</p>
+      <p><a href="https://omar.website/">Omar Riswan</a> has an excellent project called <a href="https://omar.website/tabfs/">TabFS</a> that takes your browser tabs and exposes them to you as a filesystem. When you run <code>ls</code>, you see a list of all your open tabs. <code>rm</code> on a tab directory closes the tab. Inspecting the tab with standard tools (<code>ls</code>, <code>cat</code>, <code>rm</code>, etc) allow you to do things like reading the title or contents of the tab (yes, the whole tab&rsquo;s contents!), closing the tab, or running javascript in the tab. The whole thing is quite clever.</p>
 <p>Inspired by TabFS, I envision another non-conventional filesystem: Social Media FS.</p>
 <p>First you mount smfs and authenticate with your social media providers. Then if you <code>ls</code> the mounted directory, you can see each of the places you can read from and write to on social media.</p>
-<p>There's a directory full of your chat threads. The timestamps indicate when they were created and when they were most recently modified. You can read the contents of the chat, or send a new message just as easily (and via the same tools) as you would write a file to disk.</p>
-<p>There's a directory of all the Facebook posts made by all your friends and all the groups you follow. Each post has a file with its contents, and also one with all the comments and reactions to it. You can make a new post or add a new comment the same way you'd make a new file.</p>
-<p>You can use standard tools for monitoring for new content. I like to use <a href="https://pythonhosted.org/watchdog/">Python's watchdog</a> for this.</p>
-<p>There's a directory for ads too, which you're welcome to peruse or delete as you see fit.</p>
+<p>There&rsquo;s a directory full of your chat threads. The timestamps indicate when they were created and when they were most recently modified. You can read the contents of the chat, or send a new message just as easily (and via the same tools) as you would write a file to disk.</p>
+<p>There&rsquo;s a directory of all the Facebook posts made by all your friends and all the groups you follow. Each post has a file with its contents, and also one with all the comments and reactions to it. You can make a new post or add a new comment the same way you&rsquo;d make a new file.</p>
+<p>You can use standard tools for monitoring for new content. I like to use <a href="https://pythonhosted.org/watchdog/">Python&rsquo;s watchdog</a> for this.</p>
+<p>There&rsquo;s a directory for ads too, which you&rsquo;re welcome to peruse or delete as you see fit.</p>
 <p>Reacting to a twitter post, sending a DM, receiving discord or slack or signal messages&hellip; all of these are organized as files and folders, and actions can be performed simply through file reads and writes.</p>
-<p>I'd sure love to use a filesystem like this, and <a href="/projects/bieber-bot/">Bieber Bot</a> would too.</p>
+<p>I&rsquo;d sure love to use a filesystem like this, and <a href="/projects/bieber-bot/">Bieber Bot</a> would too.</p>
 
     </div>
 

@@ -521,7 +521,7 @@
 <p>Notably, you can keep your eyes closed while you use it.</p>
 <p>The shell is controlled by typing and the only output is audio; there are no visual components of shh. It is designed to minimize the mental energy required for use, to avoid disturbing your attempt at sleep as much as possible.</p>
 <h3 id="why-is-it-called-shh-shell">Why is it called shh shell?</h3>
-<p>It's a play on &ldquo;ssh&rdquo;, a common unix utility that stands for &ldquo;secure shell&rdquo;. shh (prounced in a whisper, &ldquo;shhh&hellip;&quot;) is a quiet shell that takes minimal mental energy to use, great for use while you're drifting off to sleep.</p>
+<p>It&rsquo;s a play on &ldquo;ssh&rdquo;, a common unix utility that stands for &ldquo;secure shell&rdquo;. shh (prounced in a whisper, &ldquo;shhh&hellip;&quot;) is a quiet shell that takes minimal mental energy to use, great for use while you&rsquo;re drifting off to sleep.</p>
 <h3 id="what-can-the-shh-shell-do">What can the shh shell do?</h3>
 <p>My primary use of the shh shell is leaving notes for myself. I also use shh to set peaceful YouTube music alarms for myself, and to check the time without needing to open my eyes.</p>
 <p>Here is the full list (as of 2015-11-28) of my uses of shh shell, past and present:</p>
@@ -548,31 +548,31 @@
 <p>I did temporarily get good at recognizing pitch intervals, but I have not sustained that ability.</p>
 <h2 id="is-this-a-replacement-for-shells-like-bash-zsh-and-fish">Is this a replacement for shells like Bash, zsh, and Fish?</h2>
 <p>No, this is not meant as a full replacement for Bash, zsh, Fish, etc.</p>
-<p>That said, it does support arbitrary command execution though, via the <code>shell</code> command. That means typing <code>:shell rm -f important_file</code> <em>will</em> cause important_file to be removed. So, you have to make sure you're not a self-sabotaging hacker in your sleep before you start using shh as your night time shell.</p>
+<p>That said, it does support arbitrary command execution though, via the <code>shell</code> command. That means typing <code>:shell rm -f important_file</code> <em>will</em> cause important_file to be removed. So, you have to make sure you&rsquo;re not a self-sabotaging hacker in your sleep before you start using shh as your night time shell.</p>
 <p>You can additionally add arbitrary new commands by editing the file <a href="https://github.com/dbieber/shh-shell/blob/master/shh_commands.py">shh_commands.py</a>.</p>
 <h3 id="where-do-you-use-the-shh-shell">Where do you use the shh shell?</h3>
 <p>I use the shh shell by keeping a wireless keyboard in my bed. It is connected to my laptop, which I leave open but with the monitor turned fully off.</p>
-<p>This means I'm not at risk of damaging my computer by rolling over on it or drooling on it :).</p>
-<p>I leave the volume on my laptop on, so I can hear the shh shell's output, but I never need to open my eyes to use it.</p>
+<p>This means I&rsquo;m not at risk of damaging my computer by rolling over on it or drooling on it :).</p>
+<p>I leave the volume on my laptop on, so I can hear the shh shell&rsquo;s output, but I never need to open my eyes to use it.</p>
 <h3 id="can-you-use-it-in-the-shower">Can you use it in the shower?</h3>
 <p>Yes, I sometimes also use shh shell from the shower. I have a waterproof wireless keyboard in my shower. I am mildly embarassed by this.</p>
 <p>The keyboard is connected wirelessly to my laptop running the shh shell in another room. There is no computer in the bathroom. For audio, I have a waterproof shower speaker connected via bluetooth to the laptop in the other room. The speaker sits in the shower next to the keyboard, which both rest on a ledge. There is a 3D-printed shaving cream holder nearby.</p>
 <p>I know, I hear myself too.</p>
 <h1 id="using-the-shh-shell">Using the shh shell</h1>
-<p>When you open the shh shell on your computer, you get a small black window into which you can type large white text. When you're new to the shell, it can be useful to look at this window to see what you're typing. As you become more experienced with the shh shell, you can turn your monitor off and close your eyes, relying only on the auditory feedback the shell provides.</p>
+<p>When you open the shh shell on your computer, you get a small black window into which you can type large white text. When you&rsquo;re new to the shell, it can be useful to look at this window to see what you&rsquo;re typing. As you become more experienced with the shh shell, you can turn your monitor off and close your eyes, relying only on the auditory feedback the shell provides.</p>
 <h3 id="getting-in-focus">Getting in Focus</h3>
-<p>When you type, it's important that you're typing in the shell. If you're not in the shell, you might be typing in another application on your computer or you might not be typing in an application at all.</p>
-<p>To assist with this, the shell will audibly say &ldquo;focused&rdquo; when the shell becomes your selected application, and &ldquo;focus lost&rdquo; when the shell loses focus. If the shh shell is not in focus, or if you're not sure if the shell is in focus, then use &ldquo;cmd-TAB&rdquo; to switch applications until you hear the shell announce &ldquo;focused&rdquo;. Once you hear this sound, you can safely type knowing that the shell is receiving your input.</p>
+<p>When you type, it&rsquo;s important that you&rsquo;re typing in the shell. If you&rsquo;re not in the shell, you might be typing in another application on your computer or you might not be typing in an application at all.</p>
+<p>To assist with this, the shell will audibly say &ldquo;focused&rdquo; when the shell becomes your selected application, and &ldquo;focus lost&rdquo; when the shell loses focus. If the shh shell is not in focus, or if you&rsquo;re not sure if the shell is in focus, then use &ldquo;cmd-TAB&rdquo; to switch applications until you hear the shell announce &ldquo;focused&rdquo;. Once you hear this sound, you can safely type knowing that the shell is receiving your input.</p>
 <h3 id="leaving-notes-for-yourself">Leaving Notes for Yourself</h3>
-<p>The default mode of the shell is to act as a notepad and keylogger. Every letter typed and every key pressed is logged with a timestamp when you are in the shh shell. Don't worry, this data is only saved locally and keys aren't logged when you're in other applications, so it's not going to steal your credentials for other apps.</p>
-<p>Only if you start a line with <code>:</code> does shh interpret the line as a command. So, its unlikely you'll accidentally run commands you don't intend to if you roll over your keyboard while sleeping.</p>
+<p>The default mode of the shell is to act as a notepad and keylogger. Every letter typed and every key pressed is logged with a timestamp when you are in the shh shell. Don&rsquo;t worry, this data is only saved locally and keys aren&rsquo;t logged when you&rsquo;re in other applications, so it&rsquo;s not going to steal your credentials for other apps.</p>
+<p>Only if you start a line with <code>:</code> does shh interpret the line as a command. So, its unlikely you&rsquo;ll accidentally run commands you don&rsquo;t intend to if you roll over your keyboard while sleeping.</p>
 <p>Everything you type will be there waiting for you in the morning, so leave yourself notes, dream diaries, action items, whatever it is that you need to get out of your head so late at night.</p>
 <p>Even if you accidentally fall asleep on the delete key, thereby deleting everything you typed (ahh!), in the morning you will still be able to view the notes you typed since every character is logged.</p>
 <h3 id="running-commands">Running Commands</h3>
 <p>To run a command, start a new line with a colon (<code>:</code>) followed by the command name, and then the command arguments.</p>
 <p>For example, type <code>:help</code> in the shh shell to get a full list of supported commands.</p>
 <p>Some of my favorite commands are <code>time</code>, <code>m</code> (short for <code>music</code>), <code>say</code>, and <code>at</code>.</p>
-<p>Here are some of the commands I'll type frequently:</p>
+<p>Here are some of the commands I&rsquo;ll type frequently:</p>
 <ul>
 <li><code>:time</code>
 <ul>
@@ -587,49 +587,49 @@
 <li><code>:at 9:30am :m billy joel</code>
 <ul>
 <li>This will set an alarm for 9:30am the following morning. At that time, it will execute the command <code>m billy joel</code>, which will cause some Billy Joel music from YouTube to start playing. What a nice way to wake up!</li>
-<li>The shell is forgiving about small changes to syntax such as added spaces, so don't worry about getting the commands exactly right.</li>
+<li>The shell is forgiving about small changes to syntax such as added spaces, so don&rsquo;t worry about getting the commands exactly right.</li>
 </ul>
 </li>
 <li><code>:say hi</code>
 <ul>
-<li>I use this as a test that my hands are aligned properly with the keyboard. If it doesn't say &ldquo;hi&rdquo;, that probably means my hands are offset from the keys and I typed a bit of gibberish.</li>
+<li>I use this as a test that my hands are aligned properly with the keyboard. If it doesn&rsquo;t say &ldquo;hi&rdquo;, that probably means my hands are offset from the keys and I typed a bit of gibberish.</li>
 <li>The command <code>:status</code> serves the same purpose, but just says &ldquo;ok&rdquo; instead of &ldquo;hi&rdquo;.</li>
 </ul>
 </li>
 </ul>
 <h3 id="using-the-at-command">Using the &ldquo;at&rdquo; command</h3>
 <p>The &ldquo;at&rdquo; command is useful because it allows you to simply schedule other commands to run at a designated time in the future.</p>
-<p>To use the at command, type <code>:at &lt;when&gt;:&lt;command&gt;</code>. It's OK if <code>&lt;when&gt;</code> has a colon in the middle, e.g. <code>&lt;when&gt;</code> could be <code>7:30am</code>. It could also be <code>tomorrow at 9am</code> &ndash; the syntax for <code>&lt;when&gt;</code> is flexible. <code>&lt;command&gt;</code> can be any of the commands shh supports, such as <code>alarm</code> for playing music from youtube. E.g. <code>:at 7:30am : alarm</code> would schedule a musical alarm for 7:30am the following day.</p>
+<p>To use the at command, type <code>:at &lt;when&gt;:&lt;command&gt;</code>. It&rsquo;s OK if <code>&lt;when&gt;</code> has a colon in the middle, e.g. <code>&lt;when&gt;</code> could be <code>7:30am</code>. It could also be <code>tomorrow at 9am</code> &ndash; the syntax for <code>&lt;when&gt;</code> is flexible. <code>&lt;command&gt;</code> can be any of the commands shh supports, such as <code>alarm</code> for playing music from youtube. E.g. <code>:at 7:30am : alarm</code> would schedule a musical alarm for 7:30am the following day.</p>
 <h3 id="adding-new-commands">Adding new commands</h3>
 <p>You can easily add new commands by adding new functions to <a href="https://github.com/dbieber/shh-shell/blob/master/shh_commands.py">shh_commands.py</a>.</p>
-<p>Simply add a function decorated with the <code>@command</code> decorator to add a new command to your shh shell. If your command accepts arguments, include <code>{}</code> in the format string for your command, and the user's arguments will be passed to your function when the command is run.</p>
+<p>Simply add a function decorated with the <code>@command</code> decorator to add a new command to your shh shell. If your command accepts arguments, include <code>{}</code> in the format string for your command, and the user&rsquo;s arguments will be passed to your function when the command is run.</p>
 <h3 id="troubleshooting">Troubleshooting</h3>
-<p>One common mistake is to start typing a command in the middle of a line. When in doubt about whether you are at the start of a line, just hit enter. You cannot go by the visual representation in the black box &ndash; all that is is a text field, but it doesn't necessarily represent the internal state of your shell. So, just hit enter, then type your command, beginning with a colon.</p>
-<p>There is no concept of a cursor in shh. The arrow keys don't do anything. So even if the cursor in the text box appears to be in the middle of a line, in practice you are always typing at the end of the current content and the logged text will reflect this.</p>
+<p>One common mistake is to start typing a command in the middle of a line. When in doubt about whether you are at the start of a line, just hit enter. You cannot go by the visual representation in the black box &ndash; all that is is a text field, but it doesn&rsquo;t necessarily represent the internal state of your shell. So, just hit enter, then type your command, beginning with a colon.</p>
+<p>There is no concept of a cursor in shh. The arrow keys don&rsquo;t do anything. So even if the cursor in the text box appears to be in the middle of a line, in practice you are always typing at the end of the current content and the logged text will reflect this.</p>
 <p>For additional issues, please open an <a href="https://github.com/dbieber/shh-shell">Issue on GitHub</a>.</p>
 <h3 id="installing-the-shh-shell">Installing the Shh Shell</h3>
 <p>Head on over to <a href="https://github.com/dbieber/shh-shell">https://github.com/dbieber/shh-shell</a> for instructions on how to set up the shh shell.</p>
 <h1 id="a-bit-of-backstory">A bit of backstory</h1>
 <h2 id="why-did-you-create-a-non-visual-shell">Why did you create a non-visual shell?</h2>
-<p>There was a time during undergrad when I was losing sleep to thoughts swirling around in my head. &ldquo;Does she like me?&quot;, &ldquo;I should have responded in this slightly different way,&rdquo; etc. Variations on a theme would rattle around in my head, each variation only slightly different from thoughts I had already thought. How could I make them stop?</p>
+<p>There was a time during undergrad when I was losing sleep to thoughts swirling around in my head. &ldquo;Does she like me?&rdquo;, &ldquo;I should have responded in this slightly different way,&rdquo; etc. Variations on a theme would rattle around in my head, each variation only slightly different from thoughts I had already thought. How could I make them stop?</p>
 <p>I found that writing down my thoughts helped stop this rattling. Once a single canonical representation of the thought was written on paper, that was sufficient for my brain. It stopped feeling the need to iterate on the thought, and it let me get to sleep.</p>
-<p>However, writing on paper in the dark meant that in the morning, I couldn't easily read what I had written. My handwriting at night was slanted and somewhat illegible.</p>
-<p>I tried turning the lights on to write down my thoughts, but I didn't like how that woke me up. I tried notepad apps on my phone for writing down my thoughts, but my phone is bright and this was not much better than turning the lights on and using paper.</p>
-<p>So, I started typing on my computer with the monitor off. This was a great solution, but it came with it's own problem: I needed to know if I was typing in the right window. Hence, shh shell was born. The gradual addition of commands over time has an added bonus that makes shh shell even more useful for me.</p>
-<h2 id="isnt-the-audio-annoying-to-anyone-else-trying-to-sleep">Isn't the audio annoying to anyone else trying to sleep?</h2>
+<p>However, writing on paper in the dark meant that in the morning, I couldn&rsquo;t easily read what I had written. My handwriting at night was slanted and somewhat illegible.</p>
+<p>I tried turning the lights on to write down my thoughts, but I didn&rsquo;t like how that woke me up. I tried notepad apps on my phone for writing down my thoughts, but my phone is bright and this was not much better than turning the lights on and using paper.</p>
+<p>So, I started typing on my computer with the monitor off. This was a great solution, but it came with it&rsquo;s own problem: I needed to know if I was typing in the right window. Hence, shh shell was born. The gradual addition of commands over time has an added bonus that makes shh shell even more useful for me.</p>
+<h2 id="isnt-the-audio-annoying-to-anyone-else-trying-to-sleep">Isn&rsquo;t the audio annoying to anyone else trying to sleep?</h2>
 <p>Yes, my college roommate <a href="http://harvestzhang.com">Harvest</a> can attest to the annoyance of hearing repeated &ldquo;focused&rdquo;, &ldquo;focus lost&rdquo; throughout the night.</p>
 <p>I cannot in good conscience recommend use of shh shell when sleeping with your significant other.</p>
 <h2 id="what-have-you-typed-into-your-shh-shell">What have you typed into your shh shell?</h2>
-<p>When I first started typing at night back in 2014, I wasn't used to typing without visual feedback. So in the morning when I went to look at what I had typed, I was surprised to find a large paragraph of complete gibberish!
+<p>When I first started typing at night back in 2014, I wasn&rsquo;t used to typing without visual feedback. So in the morning when I went to look at what I had typed, I was surprised to find a large paragraph of complete gibberish!
 My hands had been offset by a key or so on the keyboard as I was typing.
 To me, it looked like a cryptographic code.
-Only the final line of the text was readable: &ldquo;I hope the FBI doesn't find out about this.&rdquo;</p>
+Only the final line of the text was readable: &ldquo;I hope the FBI doesn&rsquo;t find out about this.&rdquo;</p>
 <p>What made this particularly cool for me was that I had no recollection of what I had typed the night before. What was I concerned about the FBI finding out!?</p>
-<p>Decoding the paragrah wasn't too challenging, since each letter was just off by one or so on the keyboard, and so I was soon able to figure out what I had typed. It was an amazing experience decoding this, because as I did so, my memory came back. The text was a description of a dream that I had woken up from and typed into shh before falling back asleep. I was not involved in any criminal activity :).</p>
+<p>Decoding the paragrah wasn&rsquo;t too challenging, since each letter was just off by one or so on the keyboard, and so I was soon able to figure out what I had typed. It was an amazing experience decoding this, because as I did so, my memory came back. The text was a description of a dream that I had woken up from and typed into shh before falling back asleep. I was not involved in any criminal activity :).</p>
 <p>Before I decoded the mysterious paragraph, I had forgotten entirely about the dream. As I decoded though, I remembered the dream, waking from it, and writing down what had happened.</p>
-<p>Since then, I've now gotten used to typing in the dark and using the little bumps on the F and J keys to guide my hands. So, I don't have to decode mysterious passages about hiding secrets from the FBI anymore. I have now repeatedly experienced not remembering having typed something until I see what I typed in the morning, and each time the memory of typing it comes back as I read what I wrote. This hasn't ceased to be a very cool feeling each time it occurs.</p>
+<p>Since then, I&rsquo;ve now gotten used to typing in the dark and using the little bumps on the F and J keys to guide my hands. So, I don&rsquo;t have to decode mysterious passages about hiding secrets from the FBI anymore. I have now repeatedly experienced not remembering having typed something until I see what I typed in the morning, and each time the memory of typing it comes back as I read what I wrote. This hasn&rsquo;t ceased to be a very cool feeling each time it occurs.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>While I built this for myself, I have made it open source in the hope that you too may benefit from it. I hope it helps someone out there get a better night's sleep or remember a key idea they would have forgotten. Definitely check out the <a href="https://github.com/dbieber/shh-shell">shh shell on GitHub</a> and give it a try if you're Python-inclined. And as always, feel free to get in touch if you want to discuss this project or anything else.</p>
+<p>While I built this for myself, I have made it open source in the hope that you too may benefit from it. I hope it helps someone out there get a better night&rsquo;s sleep or remember a key idea they would have forgotten. Definitely check out the <a href="https://github.com/dbieber/shh-shell">shh shell on GitHub</a> and give it a try if you&rsquo;re Python-inclined. And as always, feel free to get in touch if you want to discuss this project or anything else.</p>
 
     </div>
 

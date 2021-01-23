@@ -523,8 +523,8 @@ One of its core features is that you can effortlessly add links between pages in
 <p>Roam allows its users to export their Roam database as a JSON file. In this snippet, I describe the JSON format used and some of its implications.</p>
 <h2 id="exporting-data-from-roam">Exporting Data from Roam</h2>
 <p>From the triple-dots menu, select Export All. Choose JSON as the export format. Then click the Export All button. Your complete Roam database will download as a JSON file.</p>
-<h2 id="roams-json-format">Roam's JSON Format</h2>
-<p>We'll refer to the Roam JSON object you just downloaded as <code>data</code>.</p>
+<h2 id="roams-json-format">Roam&rsquo;s JSON Format</h2>
+<p>We&rsquo;ll refer to the Roam JSON object you just downloaded as <code>data</code>.</p>
 <p><code>data</code> is a list, with each entry in <code>data</code> corresponding to a single Roam <code>page</code>.</p>
 <p>Each <code>page</code> is an object with keys: <code>title</code>, <code>children</code>, <code>create-time</code>, <code>create-email</code>, <code>edit-time</code>, <code>edit-email</code>.</p>
 <h3 id="page-schema">Page Schema</h3>
@@ -646,7 +646,7 @@ One of its core features is that you can effortlessly add links between pages in
 </tr>
 </tbody>
 </table>
-<p>Note that in Roam, children are referred to as &ldquo;blocks&rdquo;, and a child's ID is the ID used to reference a block.</p>
+<p>Note that in Roam, children are referred to as &ldquo;blocks&rdquo;, and a child&rsquo;s ID is the ID used to reference a block.</p>
 <p>Last but not least, I include the emoji reaction schema 😂.</p>
 <h3 id="emoji-schema">Emoji Schema</h3>
 <p>Each Emoji reaction to a child is an object conforming to the following schema.</p>
@@ -674,14 +674,14 @@ One of its core features is that you can effortlessly add links between pages in
 <h3 id="missing-information">Missing Information</h3>
 <p>Some information appears to get lost in the export. In particular, the following information appears to be dropped.</p>
 <ol>
-<li>&ldquo;View as Document&rdquo; / &ldquo;View as Numbered List&rdquo;: This formatting information doesn't seem to get exported.</li>
-<li>Versions. If you're using the &ldquo;versions&rdquo; feature of Roam, the versions don't seem to be exported either.</li>
+<li>&ldquo;View as Document&rdquo; / &ldquo;View as Numbered List&rdquo;: This formatting information doesn&rsquo;t seem to get exported.</li>
+<li>Versions. If you&rsquo;re using the &ldquo;versions&rdquo; feature of Roam, the versions don&rsquo;t seem to be exported either.</li>
 </ol>
 <h2 id="implications-of-the-json-format">Implications of the JSON Format</h2>
 <p>Since Roam allows export of its data in such a simple format, you can easily write scripts for processing this data. For example, merging two databases is trivial. I include some simple such scripts in the following section.</p>
 <p>The clear export also means that you will continue to be able to use your data long into the future, even if Roam shuts down or otherwise becomes unavailable to you. As long as you occasionally back up your data by exporting it, it is yours forever.</p>
 <h2 id="useful-python-snippets-for-processing-roam-json">Useful Python Snippets for Processing Roam JSON</h2>
-<p>Once you've downloaded your data as JSON from Roam, you can load and manipulate it as follows.</p>
+<p>Once you&rsquo;ve downloaded your data as JSON from Roam, you can load and manipulate it as follows.</p>
 <h3 id="load-json">Load JSON</h3>
 <pre><code class="language-python">import json
 filepath = '/path/to/roam-database.json'
@@ -705,7 +705,7 @@ while blocks:
 <p>Since databases are just lists of objects, you can trivially merge them.</p>
 <pre><code class="language-python">merged = db1 + db2
 </code></pre>
-<p>It's possible this will result in multiple pages having the same name, but Roam deals with this just fine.</p>
+<p>It&rsquo;s possible this will result in multiple pages having the same name, but Roam deals with this just fine.</p>
 <h2 id="thank-you-roam">Thank You Roam</h2>
 <p>I want to conclude with a note of thanks to the Roam developers for allowing export in such a clear and readily understandable manner. Doing so inspires confidence that I will be able to continue using the notes I take in Roam far into the future, no matter what. This makes me so much more comfortable using Roam for my note taking. Props and thank you to the Roam developers for this feature.</p>
 

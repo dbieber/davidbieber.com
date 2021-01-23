@@ -30,7 +30,7 @@
   
   <meta name="description" content="I wrote a number of SQL queries for browsing my browsing history. In this snippet, I show how to amend them to filter the results by date. Google Chrome selects a slightly non-standard time storage format (microseconds since January 1, 1601 UTC), hence the need for this query stanza.
 To run these queries, first make a copy of your browser history and open it in sqlite3.
-cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sqlite3 ~/my-history  Google Search History for Specific Date Here&#39;s the query we had from before, for accessing our Google Search history.">
+cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sqlite3 ~/my-history  Google Search History for Specific Date Here&rsquo;s the query we had from before, for accessing our Google Search history.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/">
@@ -272,7 +272,7 @@ cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sql
   <meta property="og:title" content="Date and Time Browser History Queries | David Bieber">
   <meta property="og:description" content="I wrote a number of SQL queries for browsing my browsing history. In this snippet, I show how to amend them to filter the results by date. Google Chrome selects a slightly non-standard time storage format (microseconds since January 1, 1601 UTC), hence the need for this query stanza.
 To run these queries, first make a copy of your browser history and open it in sqlite3.
-cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sqlite3 ~/my-history  Google Search History for Specific Date Here&#39;s the query we had from before, for accessing our Google Search history."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sqlite3 ~/my-history  Google Search History for Specific Date Here&rsquo;s the query we had from before, for accessing our Google Search history."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
     
@@ -526,7 +526,7 @@ cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sql
 sqlite3 ~/my-history
 </code></pre>
 <h2 id="google-search-history-for-specific-date">Google Search History for Specific Date</h2>
-<p>Here's the query we had from before, for accessing our Google Search history.</p>
+<p>Here&rsquo;s the query we had from before, for accessing our Google Search history.</p>
 <pre><code class="language-sql">select DISTINCT REPLACE(urls.title, &quot; - Google Search&quot;, &quot;&quot;)
 from urls
 where urls.url like &quot;%www.google.com/search%&quot; 
@@ -579,7 +579,7 @@ limit 50;
 </code></pre>
 <p>For this query, we directly compare the result of <code>datetime</code> and <code>date</code>.
 <a href="https://www.sqlite.org/lang_datefunc.html">sqlite.org/lang_datefunc.html</a> has more useful information about writing queries manipulating dates and times.</p>
-<p>For more query ideas, here's the <a href="/snippets/2020-04-11-browser-history-queries/">link back to the browser history queries snippet</a>.</p>
+<p>For more query ideas, here&rsquo;s the <a href="/snippets/2020-04-11-browser-history-queries/">link back to the browser history queries snippet</a>.</p>
 
     </div>
 

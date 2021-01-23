@@ -520,7 +520,7 @@ The system works like this. I store a queue of snippets in Redis. Each snippet h
     <div class="article-style" id="article-content">
       <p>This is my first snippet published using my <a href="/snippets/2020-10-06-further-reducing-the-publication-barrier-with-queuing/">snippet queue idea</a>. If all goes well, it will be (read: was) published tomorrow evening (October 7, 2020).</p>
 <p>The system works like this. I store a queue of snippets in Redis. Each snippet has the title, content, and date associated with it, as well as an id number. I can have Bieber Bot enqueue a new snippet by messaging him with &ldquo;Queue snippet!&rdquo; and the snippet details. He also responds to queries to update, view, or remove an existing snippet, or to view the current queue of snippets.</p>
-<p>Then, every evening Bieber Bot looks at the oldest item in the queue. If he's already asked me about it, and I haven't told him not to publish it, he goes and publishes it to my website. If he hasn't asked me about it yet, he asks me if its OK to publish. As long as I don't say no and remove the snippet from the queue, Bieber Bot will go forward with publishing the snippet the next day.</p>
+<p>Then, every evening Bieber Bot looks at the oldest item in the queue. If he&rsquo;s already asked me about it, and I haven&rsquo;t told him not to publish it, he goes and publishes it to my website. If he hasn&rsquo;t asked me about it yet, he asks me if its OK to publish. As long as I don&rsquo;t say no and remove the snippet from the queue, Bieber Bot will go forward with publishing the snippet the next day.</p>
 
     </div>
 

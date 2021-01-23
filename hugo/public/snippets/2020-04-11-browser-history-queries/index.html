@@ -30,7 +30,7 @@
   
   <meta name="description" content="Previously I listed out a few queries for poking at my browser history. Here are some more!
 As before, I begin by making a copy of my browsing history and opening sqlite3:
-cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sqlite3 ~/my-history  Once that&#39;s done, we can start running the queries.
+cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sqlite3 ~/my-history  Once that&rsquo;s done, we can start running the queries.
 YouTube Videos Watched select DISTINCT REPLACE(urls.title, &quot; - YouTube&quot;, &quot;&quot;), urls.url from urls where urls.url like &quot;%www.youtube.com/watch%&quot; limit 50;  YouTube Search Queries select DISTINCT REPLACE(urls.">
 
   
@@ -273,7 +273,7 @@ YouTube Videos Watched select DISTINCT REPLACE(urls.title, &quot; - YouTube&quot
   <meta property="og:title" content="More Browser History Queries | David Bieber">
   <meta property="og:description" content="Previously I listed out a few queries for poking at my browser history. Here are some more!
 As before, I begin by making a copy of my browsing history and opening sqlite3:
-cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sqlite3 ~/my-history  Once that&#39;s done, we can start running the queries.
+cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sqlite3 ~/my-history  Once that&rsquo;s done, we can start running the queries.
 YouTube Videos Watched select DISTINCT REPLACE(urls.title, &quot; - YouTube&quot;, &quot;&quot;), urls.url from urls where urls.url like &quot;%www.youtube.com/watch%&quot; limit 50;  YouTube Search Queries select DISTINCT REPLACE(urls."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
@@ -527,7 +527,7 @@ YouTube Videos Watched select DISTINCT REPLACE(urls.title, &quot; - YouTube&quot
 <pre><code class="language-bash">cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history
 sqlite3 ~/my-history
 </code></pre>
-<p>Once that's done, we can start running the queries.</p>
+<p>Once that&rsquo;s done, we can start running the queries.</p>
 <h2 id="youtube-videos-watched">YouTube Videos Watched</h2>
 <pre><code class="language-sql">select DISTINCT REPLACE(urls.title, &quot; - YouTube&quot;, &quot;&quot;), urls.url
 from urls
@@ -570,7 +570,7 @@ from urls
 where urls.url like &quot;https://github.com/%&quot;
 limit 50;
 </code></pre>
-<p>The rest of the GitHub queries ended up being quite messy, so I've placed them at the end of the document.</p>
+<p>The rest of the GitHub queries ended up being quite messy, so I&rsquo;ve placed them at the end of the document.</p>
 <h2 id="arxiv-papers-visited">Arxiv Papers Visited</h2>
 <pre><code class="language-sql">select DISTINCT urls.title, REPLACE(REPLACE(urls.url, &quot;.pdf&quot;, &quot;&quot;), &quot;/pdf/&quot;, &quot;/abs/&quot;)
 from urls
@@ -676,7 +676,7 @@ limit 50;
 sqlite3 ~/my-history
 </code></pre>
 <h2 id="messy-queries-github-repos-visited">Messy Queries: GitHub Repos Visited</h2>
-<p>This query ended up being quite messy because I wasn't able to save intermediate results as a variable. So, in order to build the query, I copied and pasted intermediate queries to reuse them. The result, with intermediate queries shown in comments, follows.</p>
+<p>This query ended up being quite messy because I wasn&rsquo;t able to save intermediate results as a variable. So, in order to build the query, I copied and pasted intermediate queries to reuse them. The result, with intermediate queries shown in comments, follows.</p>
 <pre><code class="language-sql">select DISTINCT
 
 -- Selects the user:
@@ -747,8 +747,8 @@ and LENGTH(SUBSTR(SUBSTR(
 limit 50;
 </code></pre>
 <p>For most of the queries on this page, you should be able to easily modify them to suit your needs.
-I wouldn't try modifying this query, though. It would be much better to build a new query from scratch using using the same technique this one was built with, than to try to modify this one to perform another task, because it would be so easy to modify something in one place but subtly miss modifying it in another location in the query that needs to also be modified.</p>
-<p>Update (April 12, 2020): I've now learned that you can introduce intermediate &ldquo;variables&rdquo; in your SQL queries, so I've simplified this query <a href="/snippets/2020-04-12-simplifying-sql-with-with">here</a>.</p>
+I wouldn&rsquo;t try modifying this query, though. It would be much better to build a new query from scratch using using the same technique this one was built with, than to try to modify this one to perform another task, because it would be so easy to modify something in one place but subtly miss modifying it in another location in the query that needs to also be modified.</p>
+<p>Update (April 12, 2020): I&rsquo;ve now learned that you can introduce intermediate &ldquo;variables&rdquo; in your SQL queries, so I&rsquo;ve simplified this query <a href="/snippets/2020-04-12-simplifying-sql-with-with">here</a>.</p>
 
     </div>
 

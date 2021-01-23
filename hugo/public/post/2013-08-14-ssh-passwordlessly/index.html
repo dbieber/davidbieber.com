@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="You&#39;re used to ssh-ing into machine B from machine A by typing:
+  <meta name="description" content="You&rsquo;re used to ssh-ing into machine B from machine A by typing:
 ssh username@B.com
 password
 Now you wish to ssh from machine A into machine B without having to enter your password. Just follow these steps.
@@ -272,7 +272,7 @@ Now you wish to ssh from machine A into machine B without having to enter your p
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/post/2013-08-14-ssh-passwordlessly/">
   <meta property="og:title" content="ssh Passwordlessly | David Bieber">
-  <meta property="og:description" content="You&#39;re used to ssh-ing into machine B from machine A by typing:
+  <meta property="og:description" content="You&rsquo;re used to ssh-ing into machine B from machine A by typing:
 ssh username@B.com
 password
 Now you wish to ssh from machine A into machine B without having to enter your password. Just follow these steps.
@@ -333,7 +333,7 @@ Now you wish to ssh from machine A into machine B without having to enter your p
       "url": "img/https://davidbieber.com/"
     }
   },
-  "description": "You're used to ssh-ing into machine B from machine A by typing:\nssh username@B.com\npassword\nNow you wish to ssh from machine A into machine B without having to enter your password. Just follow these steps.\n  Create a public/private RSA key pair by issuing the unix command ssh-keygen. Do not enter a passphrase.\n  Put the private key on machine A (the machine you wish to ssh from)."
+  "description": "You\u0026rsquo;re used to ssh-ing into machine B from machine A by typing:\nssh username@B.com\npassword\nNow you wish to ssh from machine A into machine B without having to enter your password. Just follow these steps.\n  Create a public/private RSA key pair by issuing the unix command ssh-keygen. Do not enter a passphrase.\n  Put the private key on machine A (the machine you wish to ssh from)."
 }
 </script>
 
@@ -627,7 +627,7 @@ Now you wish to ssh from machine A into machine B without having to enter your p
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>You're used to ssh-ing into machine <strong>B</strong> from machine <strong>A</strong> by typing:</p>
+      <p>You&rsquo;re used to ssh-ing into machine <strong>B</strong> from machine <strong>A</strong> by typing:</p>
 <p><code>ssh username@B.com</code><br>
 <code>password</code></p>
 <p>Now you wish to ssh from machine <strong>A</strong> into machine <strong>B</strong> without having to enter your password. Just follow these steps.</p>
@@ -649,13 +649,13 @@ Now you wish to ssh from machine A into machine B without having to enter your p
 <code>IdentityFile ~/.ssh/private_key</code></p>
 </li>
 </ol>
-<p>That's it. You can now passwordlessly ssh into machine <strong>B</strong> from machine <strong>A</strong> just by typing:</p>
+<p>That&rsquo;s it. You can now passwordlessly ssh into machine <strong>B</strong> from machine <strong>A</strong> just by typing:</p>
 <p><code>ssh anyname</code></p>
 <p>And as a bonus, you can now <a href="http://en.wikipedia.org/wiki/Secure_copy"><code>scp</code></a> to and from machine <strong>B</strong> passwordlessly as well.</p>
-<p>There's <a href="http://nerderati.com/2011/03/simplify-your-life-with-an-ssh-config-file/">loads</a> <a href="http://linux.die.net/man/5/ssh_config">more</a> that you can do with an ssh config file. So have a Google, and see what you can see.</p>
+<p>There&rsquo;s <a href="http://nerderati.com/2011/03/simplify-your-life-with-an-ssh-config-file/">loads</a> <a href="http://linux.die.net/man/5/ssh_config">more</a> that you can do with an ssh config file. So have a Google, and see what you can see.</p>
 <hr>
-<p>I'm posting this online because it's something I wish I had known sooner. Hopefully you can benefit from it.</p>
-<p>This post isn't the whole story though! Using an ssh key without a passphrase (a la step 1) is dangerous; if anyone gains access to your private key then they'll be able to ssh into machine B as you. The solution is to (back in step 1) create a passphrase for your private key, and then <a href="http://en.wikipedia.org/wiki/Ssh-agent">ssh-agent</a> will remember your decrypted private key so that you don't need to enter your password too often.</p>
+<p>I&rsquo;m posting this online because it&rsquo;s something I wish I had known sooner. Hopefully you can benefit from it.</p>
+<p>This post isn&rsquo;t the whole story though! Using an ssh key without a passphrase (a la step 1) is dangerous; if anyone gains access to your private key then they&rsquo;ll be able to ssh into machine B as you. The solution is to (back in step 1) create a passphrase for your private key, and then <a href="http://en.wikipedia.org/wiki/Ssh-agent">ssh-agent</a> will remember your decrypted private key so that you don&rsquo;t need to enter your password too often.</p>
 
     </div>
 

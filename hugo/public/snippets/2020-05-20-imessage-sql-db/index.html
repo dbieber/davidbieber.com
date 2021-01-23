@@ -31,7 +31,7 @@
   <meta name="description" content="If you use a Mac and use iMessage, you can access your iMessages programmatically. They are stored by iMessage as a sqlite database, which you can easily access.
 Accessing the Database The database is typically stored at ~/Library/Messages/chat.db, though that location is configurable.
 If you try to access the database, however, you will likely encounter this unhelpful error message: ~/Library/Messages/chat.db: Operation not permitted
-Thankfully, OSXDaily has put together a helpful step by step guide to resolving this error, which I&#39;ll summarize here:">
+Thankfully, OSXDaily has put together a helpful step by step guide to resolving this error, which I&rsquo;ll summarize here:">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-05-20-imessage-sql-db/">
@@ -274,7 +274,7 @@ Thankfully, OSXDaily has put together a helpful step by step guide to resolving 
   <meta property="og:description" content="If you use a Mac and use iMessage, you can access your iMessages programmatically. They are stored by iMessage as a sqlite database, which you can easily access.
 Accessing the Database The database is typically stored at ~/Library/Messages/chat.db, though that location is configurable.
 If you try to access the database, however, you will likely encounter this unhelpful error message: ~/Library/Messages/chat.db: Operation not permitted
-Thankfully, OSXDaily has put together a helpful step by step guide to resolving this error, which I&#39;ll summarize here:"><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+Thankfully, OSXDaily has put together a helpful step by step guide to resolving this error, which I&rsquo;ll summarize here:"><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
     
@@ -526,7 +526,7 @@ Thankfully, OSXDaily has put together a helpful step by step guide to resolving 
 <h2 id="accessing-the-database">Accessing the Database</h2>
 <p>The database is typically stored at <code>~/Library/Messages/chat.db</code>, though that location is configurable.</p>
 <p>If you try to access the database, however, you will likely encounter this unhelpful error message: <code>~/Library/Messages/chat.db: Operation not permitted</code></p>
-<p>Thankfully, OSXDaily has put together a <a href="https://osxdaily.com/2018/10/09/fix-operation-not-permitted-terminal-error-macos/">helpful step by step guide to resolving this error</a>, which I'll summarize here:</p>
+<p>Thankfully, OSXDaily has put together a <a href="https://osxdaily.com/2018/10/09/fix-operation-not-permitted-terminal-error-macos/">helpful step by step guide to resolving this error</a>, which I&rsquo;ll summarize here:</p>
 <ol>
 <li>
 <p>Navigate to your <code>System Preferences &gt; Security &amp; Privacy &gt; Privacy &gt; Full Disk Access</code> settings.</p>
@@ -538,7 +538,7 @@ Thankfully, OSXDaily has put together a helpful step by step guide to resolving 
 <p>You may need to relaunch Terminal for the change to take effect; I did not.</p>
 </li>
 </ol>
-<p>Once you've done this, you can start poking around at your iMessages programmatically.</p>
+<p>Once you&rsquo;ve done this, you can start poking around at your iMessages programmatically.</p>
 <h2 id="taking-a-look-around">Taking a Look Around</h2>
 <p>I begin with making a backup:</p>
 <p><code>cp ~/Library/Messages/chat.db ~/chat.db</code></p>
@@ -583,11 +583,11 @@ Thankfully, OSXDaily has put together a helpful step by step guide to resolving 
 </tr>
 </tbody>
 </table>
-<p>There are some interesting tables in there: <code>message</code> seems most important. It looks like we'll also be able to look up attachments using tables <code>attachment</code> and <code>message_attachment_join</code>. Strangely, there's a table present for deleted messages, which suggests a sort of &ldquo;trash can&rdquo; where messages are not permanently deleted immediately upon deletion.</p>
+<p>There are some interesting tables in there: <code>message</code> seems most important. It looks like we&rsquo;ll also be able to look up attachments using tables <code>attachment</code> and <code>message_attachment_join</code>. Strangely, there&rsquo;s a table present for deleted messages, which suggests a sort of &ldquo;trash can&rdquo; where messages are not permanently deleted immediately upon deletion.</p>
 <p><code>.schema message</code> is the command for viewing the schema of the message table.
 We can also jump right in with <code>SELECT * FROM message;</code> to see what sort of data is contained within. Sure enough, human readable messages are present.</p>
 <p>This will all be interesting to investigate further at a later date.
-One perk of understanding this mechanism for me is that I'll be able to write events that are triggered in response to iMessages. This enables me to write custom notification criteria. For example, I can have messages that start &ldquo;URGENT&rdquo; notify me immediately, but I can have all other messages programatically withheld from notifying me until 9pm.</p>
+One perk of understanding this mechanism for me is that I&rsquo;ll be able to write events that are triggered in response to iMessages. This enables me to write custom notification criteria. For example, I can have messages that start &ldquo;URGENT&rdquo; notify me immediately, but I can have all other messages programatically withheld from notifying me until 9pm.</p>
 <p>This lets me receive the messages at the time and location that I want, rather than at the time Apple chooses for me. Thanks Bieber Bot.</p>
 
     </div>

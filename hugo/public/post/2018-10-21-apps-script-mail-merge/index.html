@@ -617,11 +617,11 @@
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>Google Apps Script is endlessly useful; in this post you will learn how to write a mail merge with Google Apps Script. It's less than 30 lines of code! You can use this technique to send personalized emails individually to many recipients. In the second part of this post, you will learn how to schedule these emails to send in the future.</p>
+      <p>Google Apps Script is endlessly useful; in this post you will learn how to write a mail merge with Google Apps Script. It&rsquo;s less than 30 lines of code! You can use this technique to send personalized emails individually to many recipients. In the second part of this post, you will learn how to schedule these emails to send in the future.</p>
 <h2 id="part-1-writing-a-mail-merge">Part 1: Writing a Mail Merge</h2>
-<p>A <em>mail merge</em> is a program that sends an email to many recipients, automatically filling in the contents of the email according to a template. It's like a form letter. Each recipient receives a personalized copy of the email.</p>
+<p>A <em>mail merge</em> is a program that sends an email to many recipients, automatically filling in the contents of the email according to a template. It&rsquo;s like a form letter. Each recipient receives a personalized copy of the email.</p>
 <p>In this section we use Google Apps Script to create a mail merge that sends personalized &ldquo;Happy Birthday&rdquo; messages to a group of our friends. This will involve writing a template email, creating a spreadsheet, and writing a small amount of JavaScript code. With practice, you can perform tasks like this in well under an hour.</p>
-<p>First, we draft the email in Gmail. We'll use angle brackets for the parts of the message we want to replace with data from our spreadsheet.</p>
+<p>First, we draft the email in Gmail. We&rsquo;ll use angle brackets for the parts of the message we want to replace with data from our spreadsheet.</p>
 <pre><code>Subject:
   Happiest Birthday!
 
@@ -641,21 +641,21 @@ Body:
 </code></pre>
 <p>(To add yourself to my spreadsheet and actually receive a happy birthday email on your alleged birthday, just <a href="https://goo.gl/forms/qEy8f5CQ8itVVFoe2">fill out this form</a>.)</p>
 <p>Inside your spreadsheet, choose <em>Tools &gt; Script Editor</em>. This creates a new Apps Script associated with your spreadsheet.</p>
-<p>Now it's time to write some JavaScript. We're going to write a function to perform the mail merge.
-We'll call it <code>performMailMerge</code> and it won't have any parameters, e.g.:</p>
+<p>Now it&rsquo;s time to write some JavaScript. We&rsquo;re going to write a function to perform the mail merge.
+We&rsquo;ll call it <code>performMailMerge</code> and it won&rsquo;t have any parameters, e.g.:</p>
 <pre><code class="language-javascript">function performMailMerge() {}
 </code></pre>
 <p>It will use the built in SpreadsheetApp library to access the spreadsheet, the SpreadsheetDB library to perform basic data lookup operations on the spreadsheet, and the built in GmailApp library to look up drafts and send emails.</p>
 <p>SpreadsheetDB is a small library (a collection of useful functions) that allows us to quickly process rows in a spreadsheet, referencing columns by their header names. Choose one of the two options below for using SpreadsheetDB.</p>
 <ol>
 <li>
-<p>To use the library SpreadsheetDB, choose Resources &gt; Libraries &gt; Add a library and enter <code>193p7IxBukPVkoxwMH8UDcdkYJiNCDWSylMA_htgliEPxjjqixhzKt_2g</code>. This is the ID of the SpreadsheetDB library. Select the latest version from the version dropdown menu. It should say &ldquo;SpreadsheetDB&rdquo; if you've done it right. This will allow you to use functions from the SpreadsheetDB library in your project.</p>
+<p>To use the library SpreadsheetDB, choose Resources &gt; Libraries &gt; Add a library and enter <code>193p7IxBukPVkoxwMH8UDcdkYJiNCDWSylMA_htgliEPxjjqixhzKt_2g</code>. This is the ID of the SpreadsheetDB library. Select the latest version from the version dropdown menu. It should say &ldquo;SpreadsheetDB&rdquo; if you&rsquo;ve done it right. This will allow you to use functions from the SpreadsheetDB library in your project.</p>
 </li>
 <li>
 <p>To use SpreadsheetDB from source, create a new file in your project and name it <code>spreadsheet.gs</code> (the name is not important). Copy and paste in the source of SpreadsheetDB from the <a href="https://gist.github.com/dbieber/471a3103adb727d6985892338de00aea">Gist here</a>. If you choose to copy and paste the source into your project, then you must omit the prefix &ldquo;SpreadsheetDB.&rdquo; from your calls to the SpreadsheetDB functions in the following code. E.g. <code>SpreadsheetDB.getColumnIndexesFromSheet</code> would become just <code>getColumnIndexesFromSheet</code>.</p>
 </li>
 </ol>
-<p>Now that you're set up with SpreadsheetDB, I'll start by showing you the full program, then I'll explain what each line does.</p>
+<p>Now that you&rsquo;re set up with SpreadsheetDB, I&rsquo;ll start by showing you the full program, then I&rsquo;ll explain what each line does.</p>
 <pre><code class="language-javascript">function performMailMerge() {
   var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = spreadsheet.getSheetByName(&quot;Sheet 1&quot;);
@@ -699,23 +699,23 @@ var sheet = spreadsheet.getSheetByName(&quot;Sheet 1&quot;);
 <p>The input to our anonymous function, row, is an array with the contents of the row currently being processed. From earlier, indexes[&ldquo;Name&rdquo;] is 0, indexes[&ldquo;Email&rdquo;] is 1, and indexes[&ldquo;Age&rdquo;] is 2. We can use this to get the name, email, and age of one of our friends from the spreadsheet.</p>
 <pre><code class="language-javascript">var body = templateBody.replace(/&lt;name&gt;/g, name).replace(/&lt;age&gt;/g, age);
 </code></pre>
-<p>This is where the textual replacement actually happens. <code>&lt;name&gt;</code> is replaced with your friend's name. <code>&lt;age&gt;</code> is replaced with your friend's age. The &lsquo;g&rsquo; indicates that a &ldquo;global&rdquo; replacement should be performed, so every time the string <code>&lt;name&gt;</code> appears it will be replaced by the name of your friend from the spreadsheet. Without the &lsquo;g&rsquo;, only the first occurence of <code>&lt;name&gt;</code> would be replaced.</p>
+<p>This is where the textual replacement actually happens. <code>&lt;name&gt;</code> is replaced with your friend&rsquo;s name. <code>&lt;age&gt;</code> is replaced with your friend&rsquo;s age. The &lsquo;g&rsquo; indicates that a &ldquo;global&rdquo; replacement should be performed, so every time the string <code>&lt;name&gt;</code> appears it will be replaced by the name of your friend from the spreadsheet. Without the &lsquo;g&rsquo;, only the first occurence of <code>&lt;name&gt;</code> would be replaced.</p>
 <pre><code class="language-javascript">GmailApp.sendMail(email, subject, body);
 </code></pre>
 <p>Last, this line sends the email!</p>
 <p>Since this is JavaScript, you can comment out lines by putting <code>//</code> at the start of the line. Everything occuring after <code>//</code> on the line will have no affect.</p>
-<p>I recommend commenting out the GmailApp.sendMail line before running this for the first time to so that you don't accidently email people incorrectly.</p>
-<p>Add the line <code>Logger.log(&quot;To: &quot; + email); Logger.log(&quot;Subj: &quot; + subject); Logger.log(&quot;Body: &quot; + body);</code> in place of the GmailApp.sendMail line until you're convinced that the correct emails are going to be sent to the correct people. Only once you are sure it's working as intended, uncomment the GmailApp.sendMail line so it actually sends the emails.</p>
+<p>I recommend commenting out the GmailApp.sendMail line before running this for the first time to so that you don&rsquo;t accidently email people incorrectly.</p>
+<p>Add the line <code>Logger.log(&quot;To: &quot; + email); Logger.log(&quot;Subj: &quot; + subject); Logger.log(&quot;Body: &quot; + body);</code> in place of the GmailApp.sendMail line until you&rsquo;re convinced that the correct emails are going to be sent to the correct people. Only once you are sure it&rsquo;s working as intended, uncomment the GmailApp.sendMail line so it actually sends the emails.</p>
 <p>To run the performMailMerge function, choose performMailMerge from the dropdown and click the run (right-arrow) button.
 To see your logs (the inputs to the Logger.log function calls), choose &ldquo;View &gt; Logs&rdquo; or press ctrl-Enter or cmd-Enter.</p>
 <img src="https://66.media.tumblr.com/da2acd06f66fb2c9b6f6e68f046029de/tumblr_pgyx7hQlOL1rfccnto1_1280.png" alt="Apps Script menu bar: Run button" style="width:700px;">
-<p>That's it. When you run performMailMerge, the emails will be sent with the values from the spreadsheet substituted for the &ldquo;<name>&rdquo; and &ldquo;<age>&rdquo; placeholders in the draft. Once you've got the hang of this, let's add a few finishing touches before moving on to scheduling emails to be sent in the future.</p>
+<p>That&rsquo;s it. When you run performMailMerge, the emails will be sent with the values from the spreadsheet substituted for the &ldquo;<name>&rdquo; and &ldquo;<age>&rdquo; placeholders in the draft. Once you&rsquo;ve got the hang of this, let&rsquo;s add a few finishing touches before moving on to scheduling emails to be sent in the future.</p>
 <h3 id="finishing-touches">Finishing Touches</h3>
 <p><em>Finishing touch 1:</em> Adding a &ldquo;Status&rdquo; column to avoid emailing people twice.</p>
 <pre><code>Name  Email  Age  Status
 ...   ...    ...  ...
 </code></pre>
-<p>Let's add some finishing touches. Add to your spreadsheet a new column &ldquo;Status&rdquo;. When an email sends successfully, we'll set the status of the row to &ldquo;Done&rdquo;. If the status of a row is already &ldquo;Done&rdquo;, we'll skip that row. The updated code is shown here:</p>
+<p>Let&rsquo;s add some finishing touches. Add to your spreadsheet a new column &ldquo;Status&rdquo;. When an email sends successfully, we&rsquo;ll set the status of the row to &ldquo;Done&rdquo;. If the status of a row is already &ldquo;Done&rdquo;, we&rsquo;ll skip that row. The updated code is shown here:</p>
 <pre><code class="language-javascript">function performMailMerge() {
   var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = spreadsheet.getSheetByName(&quot;Sheet 1&quot;);
@@ -743,7 +743,7 @@ To see your logs (the inputs to the Logger.log function calls), choose &ldquo;Vi
 </code></pre>
 <p>In order to make this change, we just check the value of <code>row[indexes[&quot;Status&quot;]]</code>, and use a return statement to skip the row if the status is &ldquo;Done&rdquo;.
 In order to update the row, we modify the <code>row</code> array and return it and SpreadsheetDB takes care of updating the underlying spreadsheet.</p>
-<p>With this change in place, we can now add new recipients to our spreadsheet even after having run the performMailMerge function, and if we run performMailMerge again we won't email anyone who has already received an email.</p>
+<p>With this change in place, we can now add new recipients to our spreadsheet even after having run the performMailMerge function, and if we run performMailMerge again we won&rsquo;t email anyone who has already received an email.</p>
 <p><em>Finishing touch 2:</em> Adding a menu item that triggers our function.</p>
 <p>When we created our Apps Script, it was automatically associated with our spreadsheet. If we add a function named <code>onOpen()</code> to our Apps Script, it will automatically get run when the associated spreadsheet is opened. We can add a menu item to our spreadsheet by writing an onOpen function like this one:</p>
 <pre><code class="language-javascript">function onOpen() {
@@ -756,15 +756,15 @@ In order to update the row, we modify the <code>row</code> array and return it a
 <p>Go ahead and refresh your spreadsheet. You should now see a menu called &ldquo;Mail Merge&rdquo; with a menu item &ldquo;Send Emails&rdquo;. Selecting &ldquo;Send Emails&rdquo; will cause your performMailMerge function to be run.</p>
 <img src="https://66.media.tumblr.com/bba93c6c694c1ed6196e86baa1307648/tumblr_pgyxyq8CVX1rfccnto1_1280.png" alt="Mail merge custom menu bar" style="width:700px;">
 <h2 id="part-2-scheduling-emails-for-the-future">Part 2: Scheduling Emails for the Future</h2>
-<p>In Part 1 we wrote a mail merge function that emails our friends &ldquo;personalized&rdquo; Happy Birthday messages when we run performMailMerge. But why would we want to say happy birthday to all our friends at once? That's silly, it makes much more sense to send them a happy birthday message <em>on their birthday</em>. In this section, we'll modify our mail merge to send emails only on the birthday of the recipient.</p>
-<p>To start, let's add a new &ldquo;Birthday&rdquo; column to our spreadsheet.</p>
+<p>In Part 1 we wrote a mail merge function that emails our friends &ldquo;personalized&rdquo; Happy Birthday messages when we run performMailMerge. But why would we want to say happy birthday to all our friends at once? That&rsquo;s silly, it makes much more sense to send them a happy birthday message <em>on their birthday</em>. In this section, we&rsquo;ll modify our mail merge to send emails only on the birthday of the recipient.</p>
+<p>To start, let&rsquo;s add a new &ldquo;Birthday&rdquo; column to our spreadsheet.</p>
 <pre><code>Name  Email  Age   Birthday  Status
 ...   ...    ...   ...       ...
 </code></pre>
-<p>We're going to use the moment.js library for working with dates. Create a new file (<em>File &gt; New &gt; Script File</em>) in your Apps Script project. Call it moment.gs, or anything else, and paste in the contents of the moment.js library. You can copy and paste moment.js from <a href="https://momentjs.com/downloads/moment.js">here</a>. Note: Be sure to use the non-minified version of moment.js; if you try using the minified version you will likely have trouble pasting the library into your Apps Script project.</p>
+<p>We&rsquo;re going to use the moment.js library for working with dates. Create a new file (<em>File &gt; New &gt; Script File</em>) in your Apps Script project. Call it moment.gs, or anything else, and paste in the contents of the moment.js library. You can copy and paste moment.js from <a href="https://momentjs.com/downloads/moment.js">here</a>. Note: Be sure to use the non-minified version of moment.js; if you try using the minified version you will likely have trouble pasting the library into your Apps Script project.</p>
 <p>Now that we have moment.js, we can get the date of our friends birthday like this:
 <code>moment(row[indexes[&quot;Birthday&quot;]])</code></p>
-<p>We can then write the function isTodaysDate like this. This will check that the month and day of the given date are today's month and day, irrespective of what year the given date has.</p>
+<p>We can then write the function isTodaysDate like this. This will check that the month and day of the given date are today&rsquo;s month and day, irrespective of what year the given date has.</p>
 <pre><code class="language-javascript">function isTodaysDate(date) {
   var now = moment();
   return now.isSame(date.year(now.year()), &quot;day&quot;);
@@ -818,11 +818,11 @@ function getDraftMessageBySubject(subject) {
 <p>Now the only step remaining is to make this performMailMerge function run every day. To do this, click the &ldquo;Triggers&rdquo; button in the toolbar (the clock icon). Create a new time-based trigger, and set it up so that it runs Daily (you get to choose when each day it will run). Configure it to run the performMailMerge each day at a time of your choice.</p>
 <img src="https://66.media.tumblr.com/587d3371fc52f0ae50434a52337dbdfc/tumblr_pgyxa5usTC1rfccnto1_1280.png" alt="Apps Script menu bar: Set a trigger" style="width:700px;">
 <p><em>Viola!</em></p>
-<p>You now have a mail merge that's running daily automatically, sending your friends Happy Birthday messages on their birthdays. Aren't you a good friend?</p>
-<p>While sending birthday emails automatically is somewhat impersonal, the techniques used here are broadly applicable. With Apps Script, you can send yourself reminders, monitor your Calendar events, track your finances, and more. It's a super useful and super friendly set of APIs, and this automated birthday emailer just scratches the surface of what Apps Script makes possible.</p>
+<p>You now have a mail merge that&rsquo;s running daily automatically, sending your friends Happy Birthday messages on their birthdays. Aren&rsquo;t you a good friend?</p>
+<p>While sending birthday emails automatically is somewhat impersonal, the techniques used here are broadly applicable. With Apps Script, you can send yourself reminders, monitor your Calendar events, track your finances, and more. It&rsquo;s a super useful and super friendly set of APIs, and this automated birthday emailer just scratches the surface of what Apps Script makes possible.</p>
 <h2 id="wrap-up">Wrap up</h2>
-<p>You've now learned how to program a mail merge function that uses a spreadsheet as input. You can use a template to send multiple recipients personalized emails. You can schedule these emails to send in the future.</p>
-<p>You now have a great power, and with it comes great responsibility. Don't use this for spam. Be kind and courteous to your fellow citizens of the internet. If you find this useful, do let me know what you use it for (I'm <a href="https://twitter.com/Bieber">@Bieber</a> on Twitter). I'm using Google Apps Script for a variety of things these days and I am always interested to hear how others are using the same tools.</p>
+<p>You&rsquo;ve now learned how to program a mail merge function that uses a spreadsheet as input. You can use a template to send multiple recipients personalized emails. You can schedule these emails to send in the future.</p>
+<p>You now have a great power, and with it comes great responsibility. Don&rsquo;t use this for spam. Be kind and courteous to your fellow citizens of the internet. If you find this useful, do let me know what you use it for (I&rsquo;m <a href="https://twitter.com/Bieber">@Bieber</a> on Twitter). I&rsquo;m using Google Apps Script for a variety of things these days and I am always interested to hear how others are using the same tools.</p>
 
     </div>
 

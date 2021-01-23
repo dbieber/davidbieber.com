@@ -29,8 +29,8 @@
     
   
   <meta name="description" content="In the &ldquo;More Browser History Queries&rdquo; snippet one of the SQL queries I wrote was particularly nasty.
-Since I didn&#39;t know how to introduce intermediate variables, I had to replicate subqueries multiple times throughout the query. The result was a mess of a query. Using WITH clauses, the query becomes considerably more readable and maintainable.
-Cleaned up Query Here&#39;s the cleaned up query. It selects all the GitHub repos you&#39;ve visited from your browser history.">
+Since I didn&rsquo;t know how to introduce intermediate variables, I had to replicate subqueries multiple times throughout the query. The result was a mess of a query. Using WITH clauses, the query becomes considerably more readable and maintainable.
+Cleaned up Query Here&rsquo;s the cleaned up query. It selects all the GitHub repos you&rsquo;ve visited from your browser history.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/">
@@ -271,8 +271,8 @@ Cleaned up Query Here&#39;s the cleaned up query. It selects all the GitHub repo
   <meta property="og:url" content="https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/">
   <meta property="og:title" content="Simplifying SQL Queries with &#34;WITH&#34; | David Bieber">
   <meta property="og:description" content="In the &ldquo;More Browser History Queries&rdquo; snippet one of the SQL queries I wrote was particularly nasty.
-Since I didn&#39;t know how to introduce intermediate variables, I had to replicate subqueries multiple times throughout the query. The result was a mess of a query. Using WITH clauses, the query becomes considerably more readable and maintainable.
-Cleaned up Query Here&#39;s the cleaned up query. It selects all the GitHub repos you&#39;ve visited from your browser history."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+Since I didn&rsquo;t know how to introduce intermediate variables, I had to replicate subqueries multiple times throughout the query. The result was a mess of a query. Using WITH clauses, the query becomes considerably more readable and maintainable.
+Cleaned up Query Here&rsquo;s the cleaned up query. It selects all the GitHub repos you&rsquo;ve visited from your browser history."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
     
@@ -521,13 +521,13 @@ Cleaned up Query Here&#39;s the cleaned up query. It selects all the GitHub repo
 
     <div class="article-style" id="article-content">
       <p>In the <a href="/snippets/2020-04-11-browser-history-queries/">&ldquo;More Browser History Queries&rdquo; snippet</a> one of the SQL queries I wrote was particularly nasty.</p>
-<p>Since I didn't know how to introduce intermediate variables, I had to replicate subqueries multiple times throughout the query. The result was a mess of a query. Using <code>WITH</code> clauses, the query becomes considerably more readable and maintainable.</p>
+<p>Since I didn&rsquo;t know how to introduce intermediate variables, I had to replicate subqueries multiple times throughout the query. The result was a mess of a query. Using <code>WITH</code> clauses, the query becomes considerably more readable and maintainable.</p>
 <h2 id="cleaned-up-query">Cleaned up Query</h2>
-<p>Here's the cleaned up query. It selects all the GitHub repos you've visited from your browser history. To run it, first copy your browser history and open it in sqlite:</p>
+<p>Here&rsquo;s the cleaned up query. It selects all the GitHub repos you&rsquo;ve visited from your browser history. To run it, first copy your browser history and open it in sqlite:</p>
 <pre><code class="language-bash">cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history
 sqlite3 ~/my-history
 </code></pre>
-<p>Then, you can run this cleaned up query to see all the GitHub repos that you've visited.</p>
+<p>Then, you can run this cleaned up query to see all the GitHub repos that you&rsquo;ve visited.</p>
 <pre><code class="language-sql">WITH
 data1 as (select LENGTH(&quot;https://github.com/&quot;) as len, * from urls),
 data2 as (select SUBSTR(

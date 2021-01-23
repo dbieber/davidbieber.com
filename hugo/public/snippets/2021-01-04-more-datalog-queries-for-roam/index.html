@@ -29,7 +29,7 @@
     
   
   <meta name="description" content="In this snippet I share datalog queries for Roam Research. For more such queries (and to see how to run these queries), see this earlier snippet on the subject.
-Pages tagged with &ldquo;X&rdquo; not listed on page &ldquo;Y&rdquo; This query is useful when constructing an index page. Let&#39;s say you want to take all the pages you&#39;ve tagged with &ldquo;[[Brilliant Idea]]&rdquo; and organize them on a page called &ldquo;[[Brilliant Ideas Index]]&quot;.">
+Pages tagged with &ldquo;X&rdquo; not listed on page &ldquo;Y&rdquo; This query is useful when constructing an index page. Let&rsquo;s say you want to take all the pages you&rsquo;ve tagged with &ldquo;[[Brilliant Idea]]&rdquo; and organize them on a page called &ldquo;[[Brilliant Ideas Index]]&rdquo;.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-01-04-more-datalog-queries-for-roam/">
@@ -270,7 +270,7 @@ Pages tagged with &ldquo;X&rdquo; not listed on page &ldquo;Y&rdquo; This query 
   <meta property="og:url" content="https://davidbieber.com/snippets/2021-01-04-more-datalog-queries-for-roam/">
   <meta property="og:title" content="More Datalog Queries for Roam | David Bieber">
   <meta property="og:description" content="In this snippet I share datalog queries for Roam Research. For more such queries (and to see how to run these queries), see this earlier snippet on the subject.
-Pages tagged with &ldquo;X&rdquo; not listed on page &ldquo;Y&rdquo; This query is useful when constructing an index page. Let&#39;s say you want to take all the pages you&#39;ve tagged with &ldquo;[[Brilliant Idea]]&rdquo; and organize them on a page called &ldquo;[[Brilliant Ideas Index]]&quot;."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+Pages tagged with &ldquo;X&rdquo; not listed on page &ldquo;Y&rdquo; This query is useful when constructing an index page. Let&rsquo;s say you want to take all the pages you&rsquo;ve tagged with &ldquo;[[Brilliant Idea]]&rdquo; and organize them on a page called &ldquo;[[Brilliant Ideas Index]]&rdquo;."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
     
@@ -520,7 +520,7 @@ Pages tagged with &ldquo;X&rdquo; not listed on page &ldquo;Y&rdquo; This query 
     <div class="article-style" id="article-content">
       <p>In this snippet I share datalog queries for Roam Research. For more such queries (and to see how to run these queries), <a href="/snippets/2020-12-22-datalog-queries-for-roam-research/">see this earlier snippet on the subject</a>.</p>
 <h2 id="pages-tagged-with-x-not-listed-on-page-y">Pages tagged with &ldquo;X&rdquo; not listed on page &ldquo;Y&rdquo;</h2>
-<p>This query is useful when constructing an index page. Let's say you want to take all the pages you've tagged with &ldquo;[[Brilliant Idea]]&rdquo; and organize them on a page called &ldquo;[[Brilliant Ideas Index]]&quot;. This query will find you all the pages that are tagged with &ldquo;[[Brilliant Idea]]&rdquo; that haven't yet been added to the &ldquo;[[Brilliant Ideas Index]]&rdquo; page.</p>
+<p>This query is useful when constructing an index page. Let&rsquo;s say you want to take all the pages you&rsquo;ve tagged with &ldquo;[[Brilliant Idea]]&rdquo; and organize them on a page called &ldquo;[[Brilliant Ideas Index]]&rdquo;. This query will find you all the pages that are tagged with &ldquo;[[Brilliant Idea]]&rdquo; that haven&rsquo;t yet been added to the &ldquo;[[Brilliant Ideas Index]]&rdquo; page.</p>
 <pre><code class="language-javascript">let container = &quot;Brilliant Ideas Index&quot;;
 let tag = &quot;Brilliant&quot;;
 let ancestor = `[ 
@@ -568,7 +568,7 @@ blocks.map(
 .join('\n');
 </code></pre>
 <h2 id="info-about-all-children-of-any-block-tagged-with-both-x-and-y">Info about all children of any block tagged with both &ldquo;X&rdquo; and &ldquo;Y&rdquo;</h2>
-<p>This extends the previous query in two key ways: (1) it gets all children of any block with both tags, and (2) it gets more detailed information about those children. The ?uid indicates which block has the two target tags, while the ?child_uid, ?parent_uid, and ?order fields allow for reconstructing the arrangement of the child blocks. Each returned record has the text of a child block, it's uid (?child_uid), it's parent's uid (?parent_uid), and the order of that child in its parent's list of children. Together, this information allows you to fully reconstruct the tree of blocks beneath each of the tagged blocks.</p>
+<p>This extends the previous query in two key ways: (1) it gets all children of any block with both tags, and (2) it gets more detailed information about those children. The ?uid indicates which block has the two target tags, while the ?child_uid, ?parent_uid, and ?order fields allow for reconstructing the arrangement of the child blocks. Each returned record has the text of a child block, it&rsquo;s uid (?child_uid), it&rsquo;s parent&rsquo;s uid (?parent_uid), and the order of that child in its parent&rsquo;s list of children. Together, this information allows you to fully reconstruct the tree of blocks beneath each of the tagged blocks.</p>
 <pre><code class="language-javascript">let tag1 = &quot;Snippets&quot;;
 let tag2 = &quot;ok-to-publish&quot;;
 let ancestor = `[ 

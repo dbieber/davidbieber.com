@@ -29,7 +29,7 @@
     
   
   <meta name="description" content="Over the course of multiple previous snippets, I put together several SQL queries for analyzing my browsing history.
-Today, I wanted to write a script to run several of these queries in sequence to assemble a nice summary of my daily browsing histories. Maybe I&#39;ll dump the summary into my [[Roam Research]] database so I can cross-link ideas with websites I&#39;ve visited.
+Today, I wanted to write a script to run several of these queries in sequence to assemble a nice summary of my daily browsing histories. Maybe I&rsquo;ll dump the summary into my [[Roam Research]] database so I can cross-link ideas with websites I&rsquo;ve visited.
 As a first pass, I tried to throw together a quick bash script to string the queries together.">
 
   
@@ -271,7 +271,7 @@ As a first pass, I tried to throw together a quick bash script to string the que
   <meta property="og:url" content="https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/">
   <meta property="og:title" content="Daily Summaries of Browsing History | David Bieber">
   <meta property="og:description" content="Over the course of multiple previous snippets, I put together several SQL queries for analyzing my browsing history.
-Today, I wanted to write a script to run several of these queries in sequence to assemble a nice summary of my daily browsing histories. Maybe I&#39;ll dump the summary into my [[Roam Research]] database so I can cross-link ideas with websites I&#39;ve visited.
+Today, I wanted to write a script to run several of these queries in sequence to assemble a nice summary of my daily browsing histories. Maybe I&rsquo;ll dump the summary into my [[Roam Research]] database so I can cross-link ideas with websites I&rsquo;ve visited.
 As a first pass, I tried to throw together a quick bash script to string the queries together."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
@@ -521,7 +521,7 @@ As a first pass, I tried to throw together a quick bash script to string the que
 
     <div class="article-style" id="article-content">
       <p>Over the <a href="/snippets/2020-04-12-simplifying-sql-with-with/">course</a> <a href="/snippets/2020-04-20-browser-history-date-queries/">of</a> <a href="/snippets/2019-12-30-analyzing-my-browser-history/">multiple</a> <a href="/snippets/2020-03-19-browsing-history/">previous</a> <a href="/snippets/2020-04-11-browser-history-queries/">snippets</a>, I put together several SQL queries for analyzing my browsing history.</p>
-<p>Today, I wanted to write a script to run several of these queries in sequence to assemble a nice summary of my daily browsing histories. Maybe I'll dump the summary into my <a href="https://roamresearch.com/#/app/commons-db/page/wYVaowjId"><code>[[Roam Research]]</code></a> database so I can cross-link ideas with websites I've visited.</p>
+<p>Today, I wanted to write a script to run several of these queries in sequence to assemble a nice summary of my daily browsing histories. Maybe I&rsquo;ll dump the summary into my <a href="https://roamresearch.com/#/app/commons-db/page/wYVaowjId"><code>[[Roam Research]]</code></a> database so I can cross-link ideas with websites I&rsquo;ve visited.</p>
 <p>As a first pass, I tried to throw together a quick bash script to string the queries together. It looked a bit like this:</p>
 <pre><code class="language-bash">date=$1
 if [ -z $1 ];
@@ -551,14 +551,14 @@ SQL
 
 # Additional queries ran here...
 </code></pre>
-<p>You'll notice a few things:</p>
+<p>You&rsquo;ll notice a few things:</p>
 <ol>
 <li>I want to run each query on two different Chrome histories.</li>
 <li>I want the script to be parameterized by the date, defaulting to today if no date is specified.</li>
 </ol>
-<p>If you're proficient in Bash, you may also notice something else; it doesn't work. The query is only used properly when I run sqlite3 on the first Chrome History, but an empty query is passed to the second query.</p>
+<p>If you&rsquo;re proficient in Bash, you may also notice something else; it doesn&rsquo;t work. The query is only used properly when I run sqlite3 on the first Chrome History, but an empty query is passed to the second query.</p>
 <p>Rather than debug my Bash script, I switched over to Python. I used Python Fire to automatically expose all my functions as commands so within minutes I had a working CLI.</p>
-<p>Here's what the Python script looks like:</p>
+<p>Here&rsquo;s what the Python script looks like:</p>
 <pre><code class="language-python">import datetime
 import os
 import subprocess

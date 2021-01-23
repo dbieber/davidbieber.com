@@ -28,9 +28,9 @@
   
     
   
-  <meta name="description" content="Between my Chrome browsing history and my Facebook Messenger message logs, I should be able to get a good estimate of when I&#39;m awake and asleep.
-Here&#39;s a quick attempt using only Messenger data.
-SELECT * FROM (SELECT to_timestamp(timestamp / 1000), (timestamp - lag(timestamp) over (ORDER BY timestamp DESC)) / 1000 / 60 / 60 AS diff_hours FROM messenger WHERE messenger.author = &#39;1409114395&#39; ORDER BY timestamp DESC LIMIT 100000) AS foo WHERE diff_hours &lt; -6;  Unfortunately, my late night and early morning Messenger usage doesn&#39;t appear to be as consistent as I&#39;d imagined, especially since COVID-19 induced shelter-in-place began.">
+  <meta name="description" content="Between my Chrome browsing history and my Facebook Messenger message logs, I should be able to get a good estimate of when I&rsquo;m awake and asleep.
+Here&rsquo;s a quick attempt using only Messenger data.
+SELECT * FROM (SELECT to_timestamp(timestamp / 1000), (timestamp - lag(timestamp) over (ORDER BY timestamp DESC)) / 1000 / 60 / 60 AS diff_hours FROM messenger WHERE messenger.author = &#39;1409114395&#39; ORDER BY timestamp DESC LIMIT 100000) AS foo WHERE diff_hours &lt; -6;  Unfortunately, my late night and early morning Messenger usage doesn&rsquo;t appear to be as consistent as I&rsquo;d imagined, especially since COVID-19 induced shelter-in-place began.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/">
@@ -270,9 +270,9 @@ SELECT * FROM (SELECT to_timestamp(timestamp / 1000), (timestamp - lag(timestamp
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/">
   <meta property="og:title" content="Detecting My Sleeping Hours from Data | David Bieber">
-  <meta property="og:description" content="Between my Chrome browsing history and my Facebook Messenger message logs, I should be able to get a good estimate of when I&#39;m awake and asleep.
-Here&#39;s a quick attempt using only Messenger data.
-SELECT * FROM (SELECT to_timestamp(timestamp / 1000), (timestamp - lag(timestamp) over (ORDER BY timestamp DESC)) / 1000 / 60 / 60 AS diff_hours FROM messenger WHERE messenger.author = &#39;1409114395&#39; ORDER BY timestamp DESC LIMIT 100000) AS foo WHERE diff_hours &lt; -6;  Unfortunately, my late night and early morning Messenger usage doesn&#39;t appear to be as consistent as I&#39;d imagined, especially since COVID-19 induced shelter-in-place began."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+  <meta property="og:description" content="Between my Chrome browsing history and my Facebook Messenger message logs, I should be able to get a good estimate of when I&rsquo;m awake and asleep.
+Here&rsquo;s a quick attempt using only Messenger data.
+SELECT * FROM (SELECT to_timestamp(timestamp / 1000), (timestamp - lag(timestamp) over (ORDER BY timestamp DESC)) / 1000 / 60 / 60 AS diff_hours FROM messenger WHERE messenger.author = &#39;1409114395&#39; ORDER BY timestamp DESC LIMIT 100000) AS foo WHERE diff_hours &lt; -6;  Unfortunately, my late night and early morning Messenger usage doesn&rsquo;t appear to be as consistent as I&rsquo;d imagined, especially since COVID-19 induced shelter-in-place began."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
     
@@ -520,15 +520,15 @@ SELECT * FROM (SELECT to_timestamp(timestamp / 1000), (timestamp - lag(timestamp
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>Between my <a href="/snippets/2020-04-20-browser-history-date-queries/">Chrome browsing history</a> and my <a href="/snippets/2020-04-12-fb-messenger-sql/">Facebook Messenger message logs</a>, I should be able to get a good estimate of when I'm awake and asleep.</p>
-<p>Here's a quick attempt using only Messenger data.</p>
+      <p>Between my <a href="/snippets/2020-04-20-browser-history-date-queries/">Chrome browsing history</a> and my <a href="/snippets/2020-04-12-fb-messenger-sql/">Facebook Messenger message logs</a>, I should be able to get a good estimate of when I&rsquo;m awake and asleep.</p>
+<p>Here&rsquo;s a quick attempt using only Messenger data.</p>
 <pre><code class="language-sql">SELECT * FROM
   (SELECT to_timestamp(timestamp / 1000), (timestamp - lag(timestamp) over (ORDER BY timestamp DESC)) / 1000 / 60 / 60 AS diff_hours
    FROM messenger WHERE messenger.author = '1409114395' ORDER BY timestamp DESC LIMIT 100000) AS foo
 WHERE diff_hours &lt; -6;
 </code></pre>
-<p>Unfortunately, my late night and early morning Messenger usage doesn't appear to be as consistent as I'd imagined, especially since COVID-19 induced shelter-in-place began.
-I'll have to introduce additional sources of data if I want to infer good sleep time estimates.</p>
+<p>Unfortunately, my late night and early morning Messenger usage doesn&rsquo;t appear to be as consistent as I&rsquo;d imagined, especially since COVID-19 induced shelter-in-place began.
+I&rsquo;ll have to introduce additional sources of data if I want to infer good sleep time estimates.</p>
 
     </div>
 

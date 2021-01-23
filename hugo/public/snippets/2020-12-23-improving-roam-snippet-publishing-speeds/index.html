@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="Hey folks, I have a workflow for automatically publishing &ldquo;snippets&rdquo; to my website from Roam. Currently there&#39;s a multi-hour latency between writing a snippet and when it appears on my website. In this snippet I&#39;m going to muse about / ask questions about how to use puppeteer to bring this latency down considerably. This&#39;ll be my first time using puppeteer, so help appreciated. Read on!
+  <meta name="description" content="Hey folks, I have a workflow for automatically publishing &ldquo;snippets&rdquo; to my website from Roam. Currently there&rsquo;s a multi-hour latency between writing a snippet and when it appears on my website. In this snippet I&rsquo;m going to muse about / ask questions about how to use puppeteer to bring this latency down considerably. This&rsquo;ll be my first time using puppeteer, so help appreciated. Read on!
 The current system relies on my git-to-roam backup, which runs every hour and fails some fraction of the time.">
 
   
@@ -269,7 +269,7 @@ The current system relies on my git-to-roam backup, which runs every hour and fa
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/">
   <meta property="og:title" content="Improving Roam Snippet Publishing Speeds | David Bieber">
-  <meta property="og:description" content="Hey folks, I have a workflow for automatically publishing &ldquo;snippets&rdquo; to my website from Roam. Currently there&#39;s a multi-hour latency between writing a snippet and when it appears on my website. In this snippet I&#39;m going to muse about / ask questions about how to use puppeteer to bring this latency down considerably. This&#39;ll be my first time using puppeteer, so help appreciated. Read on!
+  <meta property="og:description" content="Hey folks, I have a workflow for automatically publishing &ldquo;snippets&rdquo; to my website from Roam. Currently there&rsquo;s a multi-hour latency between writing a snippet and when it appears on my website. In this snippet I&rsquo;m going to muse about / ask questions about how to use puppeteer to bring this latency down considerably. This&rsquo;ll be my first time using puppeteer, so help appreciated. Read on!
 The current system relies on my git-to-roam backup, which runs every hour and fails some fraction of the time."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
@@ -518,38 +518,38 @@ The current system relies on my git-to-roam backup, which runs every hour and fa
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>Hey folks, I have a <a href="https://davidbieber.com/projects/bieber-bot/">workflow</a> for automatically publishing &ldquo;<a href="https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/">snippets</a>&rdquo; to my website from Roam. Currently there's a multi-hour latency between writing a snippet and when it appears on my website. In this snippet I'm going to muse about / ask questions about how to use <strong>puppeteer</strong> to bring this latency down considerably. This'll be my first time using puppeteer, so help appreciated. Read on!</p>
+      <p>Hey folks, I have a <a href="https://davidbieber.com/projects/bieber-bot/">workflow</a> for automatically publishing &ldquo;<a href="https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/">snippets</a>&rdquo; to my website from Roam. Currently there&rsquo;s a multi-hour latency between writing a snippet and when it appears on my website. In this snippet I&rsquo;m going to muse about / ask questions about how to use <strong>puppeteer</strong> to bring this latency down considerably. This&rsquo;ll be my first time using puppeteer, so help appreciated. Read on!</p>
 <p><img src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-small/1f62e@2x.png" alt="😮"></p>
 <p>The current system relies on my git-to-roam backup, which runs every hour and fails some fraction of the time.</p>
 <p>So, to bring the latency down, the idea is to use pyppeteer (the python puppeteer bindings) to log into Roam in a headless browser.</p>
 <p>This will monitor Roam for new (or modified) snippets, and will publish them to my website.</p>
 <p>A snippet is OK to publish if its tagged with both &ldquo;Snippets&rdquo; and &ldquo;ok-to-publish&rdquo;.</p>
-<p>So, first question: has anyone done this before? B/c if someone's already gotten all the CSS/XPATH selectors for logging in, navigating, etc, that could save me some time</p>
-<p>Another important thing I'm thinking about: are there problems keeping an instance of Roam open in a headless browser could cause?</p>
+<p>So, first question: has anyone done this before? B/c if someone&rsquo;s already gotten all the CSS/XPATH selectors for logging in, navigating, etc, that could save me some time</p>
+<p>Another important thing I&rsquo;m thinking about: are there problems keeping an instance of Roam open in a headless browser could cause?</p>
 <p>E.g. I hear about occasional data loss which seems related to having out-of-date instances of Roam open on other machines &ndash; e.g. maybe the out of date Roam comes back online and overwrites new content with older blank content?</p>
-<p>I think I'll make my headless Roam instances relatively-short lived (&lt;10 minutes) just in case.</p>
-<p>I think the strategy I'll take will be:</p>
+<p>I think I&rsquo;ll make my headless Roam instances relatively-short lived (&lt;10 minutes) just in case.</p>
+<p>I think the strategy I&rsquo;ll take will be:</p>
 <ul>
 <li>Log in to Roam in headless browser</li>
 <li>Run datalog query in javascript to check for new/updated snippets.</li>
-<li>Run that query fairly frequently (e.g. every few seconds) in order to detect snippets as soon as they're available</li>
+<li>Run that query fairly frequently (e.g. every few seconds) in order to detect snippets as soon as they&rsquo;re available</li>
 <li>Debounce, so that if a snippet is actively changing its only deployed ~twice, not 100 times</li>
 </ul>
-<p>And then every 10 minutes or so I'll have it take a short breather and refresh</p>
+<p>And then every 10 minutes or so I&rsquo;ll have it take a short breather and refresh</p>
 <p>Abhay suggested using the alpha API for this rather than puppeteering. <img src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f64f@2x.png" alt="🙏"></p>
-<p>I think I'll get started on the puppeteer implementation now though anyway, even if the API ends up being a better way of doing this in the near future.</p>
+<p>I think I&rsquo;ll get started on the puppeteer implementation now though anyway, even if the API ends up being a better way of doing this in the near future.</p>
 <p>Update:</p>
 <p>I have a first draft that handles log in and running the query to detect publishable material (blocks with the appropriate two tags).</p>
 <p>Not sure how reliable login is as I had some hiccups getting it working.</p>
-<p>And the headless browser seems very slow to notice changes to the Roam graph compared to what I'm used to.</p>
-<p>So instead of checking every few seconds, I think I'll just check once a minute or so, refreshing either every time or every few times.</p>
-<p>Unexpected snag: I get the children of a block but I don't know how to put them in the proper order!</p>
+<p>And the headless browser seems very slow to notice changes to the Roam graph compared to what I&rsquo;m used to.</p>
+<p>So instead of checking every few seconds, I think I&rsquo;ll just check once a minute or so, refreshing either every time or every few times.</p>
+<p>Unexpected snag: I get the children of a block but I don&rsquo;t know how to put them in the proper order!</p>
 <p>(with datalog)</p>
-<p>I could navigate to the block and look at the dom&hellip; but hopefully I don't need to do that.</p>
+<p>I could navigate to the block and look at the dom&hellip; but hopefully I don&rsquo;t need to do that.</p>
 <p>Looks like there is an &ldquo;order&rdquo; attribute, so this will be doable. Might be messy though.</p>
-<p>If I'm understanding right, :block/order gives the index of a block into its parents children.</p>
-<p>We're good! <img src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f44d@2x.png" alt="👍"></p>
-<p>If you're reading this on my website, it worked!</p>
+<p>If I&rsquo;m understanding right, :block/order gives the index of a block into its parents children.</p>
+<p>We&rsquo;re good! <img src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f44d@2x.png" alt="👍"></p>
+<p>If you&rsquo;re reading this on my website, it worked!</p>
 
     </div>
 

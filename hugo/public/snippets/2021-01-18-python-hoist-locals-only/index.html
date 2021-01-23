@@ -30,7 +30,7 @@
   
   <meta name="description" content="The implementation of hoist in my earlier snippet returned the values of local variables of all functions called by the hoisted function. This new version only returns the locals of the hoisted function.
 As before, you can use it like this:
-def f(x): y = x &#43; 1 z = y * 2 return z &#43; 1 f(4) == 11 hoist(f)(4) == {&#39;x&#39;: 4, &#39;y&#39;: 5, &#39;z&#39;: 10, &#39;return&#39;: 11}  Here&#39;s another usage example:">
+def f(x): y = x &#43; 1 z = y * 2 return z &#43; 1 f(4) == 11 hoist(f)(4) == {&#39;x&#39;: 4, &#39;y&#39;: 5, &#39;z&#39;: 10, &#39;return&#39;: 11}  Here&rsquo;s another usage example:">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-01-18-python-hoist-locals-only/">
@@ -272,7 +272,7 @@ def f(x): y = x &#43; 1 z = y * 2 return z &#43; 1 f(4) == 11 hoist(f)(4) == {&#
   <meta property="og:title" content="Python hoist: immediate locals only | David Bieber">
   <meta property="og:description" content="The implementation of hoist in my earlier snippet returned the values of local variables of all functions called by the hoisted function. This new version only returns the locals of the hoisted function.
 As before, you can use it like this:
-def f(x): y = x &#43; 1 z = y * 2 return z &#43; 1 f(4) == 11 hoist(f)(4) == {&#39;x&#39;: 4, &#39;y&#39;: 5, &#39;z&#39;: 10, &#39;return&#39;: 11}  Here&#39;s another usage example:"><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+def f(x): y = x &#43; 1 z = y * 2 return z &#43; 1 f(4) == 11 hoist(f)(4) == {&#39;x&#39;: 4, &#39;y&#39;: 5, &#39;z&#39;: 10, &#39;return&#39;: 11}  Here&rsquo;s another usage example:"><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
     
@@ -530,7 +530,7 @@ def f(x): y = x &#43; 1 z = y * 2 return z &#43; 1 f(4) == 11 hoist(f)(4) == {&#
 f(4) == 11
 hoist(f)(4) == {'x': 4, 'y': 5, 'z': 10, 'return': 11}
 </code></pre>
-<p>Here's another usage example:</p>
+<p>Here&rsquo;s another usage example:</p>
 <pre><code class="language-python">def f(x):
   y = messy_g(x + 1)
   return y + 1
@@ -543,8 +543,8 @@ def messy_g(z):
 f(1) == 8
 hoist(f)(1) == {'x': 1, 'y': 7, 'return': 8}
 </code></pre>
-<p>Notice in this example that the local variables used by <code>messy_g</code> are not returned by <code>hoist(f)</code>. Only <code>f</code>'s local variables are returned.</p>
-<p>Here's the implementation.</p>
+<p>Notice in this example that the local variables used by <code>messy_g</code> are not returned by <code>hoist(f)</code>. Only <code>f</code>&rsquo;s local variables are returned.</p>
+<p>Here&rsquo;s the implementation.</p>
 <pre><code class="language-python">import functools
 import inspect
 import sys

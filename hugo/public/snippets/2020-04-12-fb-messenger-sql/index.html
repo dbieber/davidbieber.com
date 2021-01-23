@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a previous snippet for analyzing my browsing history, I&#39;ll use this snippet to sketch out some useful queries for analyzing my message history.
+  <meta name="description" content="Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a previous snippet for analyzing my browsing history, I&rsquo;ll use this snippet to sketch out some useful queries for analyzing my message history.
 Table Schemas I have two tables of messages. messenger_archive contains all messages from when I first joined Facebook in August 2008 through February 2020.">
 
   
@@ -269,7 +269,7 @@ Table Schemas I have two tables of messages. messenger_archive contains all mess
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/">
   <meta property="og:title" content="Facebook Messenger SQL Queries | David Bieber">
-  <meta property="og:description" content="Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a previous snippet for analyzing my browsing history, I&#39;ll use this snippet to sketch out some useful queries for analyzing my message history.
+  <meta property="og:description" content="Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a previous snippet for analyzing my browsing history, I&rsquo;ll use this snippet to sketch out some useful queries for analyzing my message history.
 Table Schemas I have two tables of messages. messenger_archive contains all messages from when I first joined Facebook in August 2008 through February 2020."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
@@ -518,7 +518,7 @@ Table Schemas I have two tables of messages. messenger_archive contains all mess
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a <a href="/snippets/2020-04-11-browser-history-queries">previous snippet</a> for analyzing my browsing history, I'll use this snippet to sketch out some useful queries for analyzing my message history.</p>
+      <p>Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a <a href="/snippets/2020-04-11-browser-history-queries">previous snippet</a> for analyzing my browsing history, I&rsquo;ll use this snippet to sketch out some useful queries for analyzing my message history.</p>
 <h2 id="table-schemas">Table Schemas</h2>
 <p>I have two tables of messages. <code>messenger_archive</code> contains all messages from when I first joined Facebook in August 2008 through February 2020. <code>messenger</code> contains messages from February 2020 through now, and is updated in real time.</p>
 <p>Using the commands <code>\d messenger</code> and <code>\d messenger_archive</code>, I inspect the table schemas.</p>
@@ -569,7 +569,7 @@ Table Schemas I have two tables of messages. messenger_archive contains all mess
 </tr>
 </tbody>
 </table>
-<h3 id="schema-messenger-archive">Schema: messenger_archive</h3>
+<h3 id="schema-messenger_archive">Schema: messenger_archive</h3>
 <table>
 <thead>
 <tr>
@@ -582,7 +582,7 @@ Table Schemas I have two tables of messages. messenger_archive contains all mess
 <tr>
 <td>sender_name</td>
 <td>text</td>
-<td>The message author's name</td>
+<td>The message author&rsquo;s name</td>
 </tr>
 <tr>
 <td>timestamp_ms</td>
@@ -628,7 +628,7 @@ Table Schemas I have two tables of messages. messenger_archive contains all mess
 <li>There may be a few overlapping messages between the two tables (?), and there may be a few messages not captured in either table.</li>
 </ul>
 <h2 id="message-queries">Message Queries</h2>
-<p>Let's start sketching some useful queries.</p>
+<p>Let&rsquo;s start sketching some useful queries.</p>
 <h3 id="finding-links">Finding Links</h3>
 <p>Listing domains from the archive:</p>
 <pre><code class="language-sql">select distinct
@@ -659,7 +659,7 @@ from messenger_archive
 limit 100;
 </code></pre>
 <h3 id="looking-forward">Looking Forward</h3>
-<p>I have a number of additional queries I'd like to write.
+<p>I have a number of additional queries I&rsquo;d like to write.
 However, they will have to wait until a future snippet.</p>
 
     </div>

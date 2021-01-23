@@ -29,7 +29,7 @@
     
   
   <meta name="description" content="You can read the 2017 paper &ldquo;Deep Variational Information Bottleneck&rdquo; on Arxiv here, and its reviews are visible on OpenReview here. The authors are my coworkers: Alex Alemi, Ian Fischer, Joshua Dillon, and Kevin Murphy.
-I&#39;ve taken notes on the paper, and will use this snippet to present them.
+I&rsquo;ve taken notes on the paper, and will use this snippet to present them.
 Notation We consider the problem of supervised learning for classification with the following notation:
  $X$: An example input. $Z$: The output of an intermediate layer of a neural network.">
 
@@ -275,7 +275,7 @@ Notation We consider the problem of supervised learning for classification with 
   <meta property="og:url" content="https://davidbieber.com/snippets/2020-07-21-deep-variational-informational-bottleneck/">
   <meta property="og:title" content="Deep Variational Information Bottleneck | David Bieber">
   <meta property="og:description" content="You can read the 2017 paper &ldquo;Deep Variational Information Bottleneck&rdquo; on Arxiv here, and its reviews are visible on OpenReview here. The authors are my coworkers: Alex Alemi, Ian Fischer, Joshua Dillon, and Kevin Murphy.
-I&#39;ve taken notes on the paper, and will use this snippet to present them.
+I&rsquo;ve taken notes on the paper, and will use this snippet to present them.
 Notation We consider the problem of supervised learning for classification with the following notation:
  $X$: An example input. $Z$: The output of an intermediate layer of a neural network."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
   <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
@@ -526,7 +526,7 @@ Notation We consider the problem of supervised learning for classification with 
 
     <div class="article-style" id="article-content">
       <p>You can read the 2017 paper &ldquo;Deep Variational Information Bottleneck&rdquo; <a href="https://arxiv.org/pdf/1612.00410.pdf">on Arxiv here</a>, and its reviews are visible <a href="https://openreview.net/forum?id=HyxQzBceg">on OpenReview here</a>. The authors are my coworkers: Alex Alemi, Ian Fischer, Joshua Dillon, and Kevin Murphy.</p>
-<p>I've taken notes on the paper, and will use this snippet to present them.</p>
+<p>I&rsquo;ve taken notes on the paper, and will use this snippet to present them.</p>
 <h2 id="notation">Notation</h2>
 <p>We consider the problem of supervised learning for classification with the following notation:</p>
 <ul>
@@ -538,13 +538,13 @@ Notation We consider the problem of supervised learning for classification with 
 <li>$\theta$ are the parameters of the neural network used to encode $X$ that we wish to learn.</li>
 </ul>
 </li>
-<li>$Y$: The example's target class.</li>
+<li>$Y$: The example&rsquo;s target class.</li>
 </ul>
 <h2 id="goal">Goal</h2>
 <p>The approach of the paper aims first and foremost to learn an encoding $Z$ of $X$ that is maximally informative about $Y$.
 This is measured via mutual information between $Z$ and $Y$: $I(Z, Y; \theta)$.</p>
 <p>$$I(Z, Y; \theta) = \int dx~dy~p(z, y|\theta) \log \frac{p(z, y)}{p(z)p(y)}$$</p>
-<p>It's not enough to maximize $I(Z, Y; \theta)$ though; this can be done by simply letting $Z = X$, which isn't useful.</p>
+<p>It&rsquo;s not enough to maximize $I(Z, Y; \theta)$ though; this can be done by simply letting $Z = X$, which isn&rsquo;t useful.</p>
 <p>So, we also want to limit $I(Z, X)$. We do this by enforcing an information constraint: $I(X, Z) &lt; I_c$.</p>
 <p>Our goal is to maximize $I(Z, Y; \theta)$ subject to $I(X, Z) &lt; I_c$.</p>
 <p>Rewriting this using Lagrange multiplier $\beta$ brings us to the information bottleneck (IB) objective, which we write as follows:</p>
@@ -552,11 +552,11 @@ This is measured via mutual information between $Z$ and $Y$: $I(Z, Y; \theta)$.<
 <p>The goal of the paper is to maximize $R_{IB}$.</p>
 <h2 id="intuition-behind-goal">Intuition Behind Goal</h2>
 <p>Why maximize $I(Z, Y)$? This is what allows the model to make correct predictions.</p>
-<p>Why not just maximize $I(Z, Y)$? Letting $Z = X$ fully maximizes $I(Z, Y)$, but isn't helpful because the representation of $Z$ is what you started with, so its hard to make good classifications.</p>
+<p>Why not just maximize $I(Z, Y)$? Letting $Z = X$ fully maximizes $I(Z, Y)$, but isn&rsquo;t helpful because the representation of $Z$ is what you started with, so its hard to make good classifications.</p>
 <p>Why minimize $\beta I(Z, X)$? We want a representation $Z$ that is maximally compressive of the input $X$.</p>
-<p>That's the intuition given in the paper for why we seek to minimize $\beta I(Z, X)$, but it isn't clear the degree to which compression is useful. Yes, a compressive representation of $X$ can lead to better generalization, but it's a trade off. Greater compression may mean lower $I(Z, Y)$ and hence lower potential accuracy. Balancing this trade off (choosing an appropriate $\beta$) will be important.</p>
+<p>That&rsquo;s the intuition given in the paper for why we seek to minimize $\beta I(Z, X)$, but it isn&rsquo;t clear the degree to which compression is useful. Yes, a compressive representation of $X$ can lead to better generalization, but it&rsquo;s a trade off. Greater compression may mean lower $I(Z, Y)$ and hence lower potential accuracy. Balancing this trade off (choosing an appropriate $\beta$) will be important.</p>
 <h2 id="why-is-it-difficult">Why is it difficult?</h2>
-<p>Mutual information is in general intractable. So we can't directly optimize the object $R_{IB}(\theta)$ as stated in the goal. Instead, the paper takes the following approach to get around mutual information's intractability.</p>
+<p>Mutual information is in general intractable. So we can&rsquo;t directly optimize the object $R_{IB}(\theta)$ as stated in the goal. Instead, the paper takes the following approach to get around mutual information&rsquo;s intractability.</p>
 <h2 id="the-approach">The Approach</h2>
 <ol>
 <li>
@@ -569,7 +569,7 @@ This is measured via mutual information between $Z$ and $Y$: $I(Z, Y; \theta)$.<
 <p>Parameterize our distributions with neural networks, and optimize with SGD.</p>
 </li>
 </ol>
-<p>We'll go into more detail in just a minute.</p>
+<p>We&rsquo;ll go into more detail in just a minute.</p>
 <h2 id="benefits">Benefits</h2>
 <p>This approach provides some robustness to overfitting because model ignores as much of $X$ as possible.</p>
 <p>It also provides some robustness to adversarial examples because the model maps $X$ to a distribution over $Z$s rather than a single $Z$, so its harder for a single unusual value to influence a final class prediction.</p>
@@ -579,7 +579,7 @@ This is measured via mutual information between $Z$ and $Y$: $I(Z, Y; \theta)$.<
 <p>$$L = \int dx~dy~dz~ p(x) p(y|x) p(z|x) \log q(y|z) - \beta \int dx~dz~ p(x) p(z|x) \log \frac{p(z|x)}{r(z)}$$</p>
 <p>and show that
 $$R_{IB}(\theta) = I(Z,Y) - \beta I(Z, X) \ge L.$$</p>
-<p>To achieve this, we've introduced $q(y|z)$ as an approximation of $p(y|z)$, and $r(z)$ as an approximation of $p(z)$.</p>
+<p>To achieve this, we&rsquo;ve introduced $q(y|z)$ as an approximation of $p(y|z)$, and $r(z)$ as an approximation of $p(z)$.</p>
 <p>$L$ serves as a lower bound for the objective we care about. $p$, $q$, and $r$ are all parameterized by $\theta$.</p>
 <p>We can approximate $L$ as</p>
 <p>$$L \approx \frac{1}{N}\sum_{n=1}^N \left[\int dz~ p(z|x_n) \log q(y_n|z) - \beta~ p(z|x_n) \log \frac{p(z|x_n)}{r(z)} \right].$$</p>
@@ -590,7 +590,7 @@ $$R_{IB}(\theta) = I(Z,Y) - \beta I(Z, X) \ge L.$$</p>
 <p>As long as $q$ is differentiable and $KL[p(Z|x_n), r(Z)]$ is tractable, this is an objective we can optimize with e.g. gradient descent.</p>
 <h2 id="implementation">Implementation</h2>
 <p>A concise demo implementation is available on GitHub at <a href="https://github.com/alexalemi/vib_demo/blob/master/MNISTVIB.ipynb">https://github.com/alexalemi/vib_demo/blob/master/MNISTVIB.ipynb</a>.</p>
-<p>I've describe here the correspondence between the notation used in the source code and the notation used in the paper.
+<p>I&rsquo;ve describe here the correspondence between the notation used in the source code and the notation used in the paper.
 Terms from the paper are in $\LaTeX$, and terms from the source code are in <code>code blocks</code>.</p>
 <ul>
 <li><code>class_loss</code>: $-\log q(y_n | f(x_n, \epsilon))$ (comes from the $I(Z, Y)$ term)

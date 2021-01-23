@@ -516,14 +516,14 @@
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>I've learned recently that programmatically accessing your browsing history is rather straightforward. Really exciting! This is rich data, from which I think I'll be able to learn a lot and hopefully combat unwanted distractions.</p>
-<p>First let me describe what information is available, and how you can access it. Then, let's discuss what you can do with this data. As I've written about previously <a href="/projects/bieber-bot/">[1]</a> <a href="https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/">[2]</a>, I already have a chat bot system in place, which will be able to take advantage of this data to e.g. help me stay focused.</p>
+      <p>I&rsquo;ve learned recently that programmatically accessing your browsing history is rather straightforward. Really exciting! This is rich data, from which I think I&rsquo;ll be able to learn a lot and hopefully combat unwanted distractions.</p>
+<p>First let me describe what information is available, and how you can access it. Then, let&rsquo;s discuss what you can do with this data. As I&rsquo;ve written about previously <a href="/projects/bieber-bot/">[1]</a> <a href="https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/">[2]</a>, I already have a chat bot system in place, which will be able to take advantage of this data to e.g. help me stay focused.</p>
 <h4 id="accessing-your-browser-history">Accessing Your Browser History</h4>
-<p>Thank you to GitHub user <a href="https://github.com/dropmeaword">dropmeaword</a> for compiling <a href="https://gist.github.com/dropmeaword/9372cbeb29e8390521c2">this gist</a> explaining how to access your browser history via sqlite3. The gist covers Safari, Chrome, and Firefox. In this post, I'll just focus on Chrome on OSX, since that's my primary mode of browsing.</p>
+<p>Thank you to GitHub user <a href="https://github.com/dropmeaword">dropmeaword</a> for compiling <a href="https://gist.github.com/dropmeaword/9372cbeb29e8390521c2">this gist</a> explaining how to access your browser history via sqlite3. The gist covers Safari, Chrome, and Firefox. In this post, I&rsquo;ll just focus on Chrome on OSX, since that&rsquo;s my primary mode of browsing.</p>
 <p>My Chrome browsing history is located at <code>~/Library/Application Support/Google/Chrome/Default/History</code>. Since I use multiple profiles in Chrome, each profile gets its own browsing history, e.g. located at <code>~/Library/Application Support/Google/Chrome/Profile 1/History</code>.</p>
-<p>Each browsing history is stored as a sqlite3 database. Before analyzing the data, I recommend making a copy of it (<code>cp ~/Library/Application\ Support/Google/Chrome/Default/History my-history</code>); this way your history database (a) wont be locked by Chrome while you're trying to access it, and (b) wont change while you're looking at it, which could cause confusion and inconsistencies in your results.</p>
+<p>Each browsing history is stored as a sqlite3 database. Before analyzing the data, I recommend making a copy of it (<code>cp ~/Library/Application\ Support/Google/Chrome/Default/History my-history</code>); this way your history database (a) wont be locked by Chrome while you&rsquo;re trying to access it, and (b) wont change while you&rsquo;re looking at it, which could cause confusion and inconsistencies in your results.</p>
 <p>This means you can browse it interactively using the sqlite3 REPL by running <code>sqlite3 PATH_TO_DATABASE</code>.</p>
-<p>There are also libraries available for accessing sqlite3 databases in just about every language. For Python, there's the <a href="https://docs.python.org/3/library/sqlite3.html">sqlite3</a> library. Go has <a href="https://godoc.org/github.com/mattn/go-sqlite3">go-sqlite3</a>. JavaScript has <a href="https://www.sqlitetutorial.net/sqlite-nodejs/">this sqlite3 module</a>. However you most like scripting, you'll have a familiar way of accessing the data.</p>
+<p>There are also libraries available for accessing sqlite3 databases in just about every language. For Python, there&rsquo;s the <a href="https://docs.python.org/3/library/sqlite3.html">sqlite3</a> library. Go has <a href="https://godoc.org/github.com/mattn/go-sqlite3">go-sqlite3</a>. JavaScript has <a href="https://www.sqlitetutorial.net/sqlite-nodejs/">this sqlite3 module</a>. However you most like scripting, you&rsquo;ll have a familiar way of accessing the data.</p>
 <h4 id="the-available-data">The Available Data</h4>
 <p>Running sqlite3 macro <code>.tables</code>, we see the following tables are available.</p>
 <table>
@@ -557,7 +557,7 @@
 </tr>
 </tbody>
 </table>
-<p>We'll be most interested in the <code>urls</code> and <code>visits</code> tables.</p>
+<p>We&rsquo;ll be most interested in the <code>urls</code> and <code>visits</code> tables.</p>
 <p>The <code>urls</code> table has these columns (found with <code>.schema urls</code>):</p>
 <table>
 <thead>
@@ -586,12 +586,12 @@
 <tr>
 <td>visit_count</td>
 <td>Integer</td>
-<td>The number of times you've visited the URL.</td>
+<td>The number of times you&rsquo;ve visited the URL.</td>
 </tr>
 <tr>
 <td>typed_count</td>
 <td>Integer</td>
-<td>The number of times you've visited the URL by typing in the address (as opposed to by following a link.)</td>
+<td>The number of times you&rsquo;ve visited the URL by typing in the address (as opposed to by following a link.)</td>
 </tr>
 <tr>
 <td>last_visit_time</td>
@@ -601,7 +601,7 @@
 <tr>
 <td>hidden</td>
 <td>Boolean</td>
-<td>I'm not sure what this is about.</td>
+<td>I&rsquo;m not sure what this is about.</td>
 </tr>
 </tbody>
 </table>
@@ -643,7 +643,7 @@
 <tr>
 <td>segment_id</td>
 <td>Integer Id</td>
-<td>The <code>id</code> of the segment in the database. I'm not quite sure what a segment is, but there is a <code>segments</code> table you can look at.</td>
+<td>The <code>id</code> of the segment in the database. I&rsquo;m not quite sure what a segment is, but there is a <code>segments</code> table you can look at.</td>
 </tr>
 <tr>
 <td>visit_duration</td>
@@ -657,7 +657,7 @@
 </tr>
 </tbody>
 </table>
-<p>As you can see, we can access every visit to every website that we've made since the last time we cleared our browsing history. We can see what website we visited (<code>visits.url</code>), when we visited it (<code>visits.visit_time</code>), how many times we've visited it (<code>urls.visit_count</code>), and how long each visit was for (<code>visits.visit_duration</code>).</p>
+<p>As you can see, we can access every visit to every website that we&rsquo;ve made since the last time we cleared our browsing history. We can see what website we visited (<code>visits.url</code>), when we visited it (<code>visits.visit_time</code>), how many times we&rsquo;ve visited it (<code>urls.visit_count</code>), and how long each visit was for (<code>visits.visit_duration</code>).</p>
 <p>We can even use <code>visits.from_visit</code> to figure out what website linked us to each url, if that interests us.</p>
 <h4 id="what-can-we-deduce">What Can We Deduce?</h4>
 <p>We can (1) perform a historical analysis on the data, as well as (2) do real-time monitoring of the data.</p>
@@ -668,23 +668,23 @@
 <li>Websites that frequently lead to known-distractor websites (e.g. Reddit, Hacker News, Twitter, YouTube)</li>
 <li>We can do an analysis by time of day (or day of week), to figure out what sites occupy my time late at night vs during daylight hours.</li>
 </ul>
-<p>These are somewhat interesting, but what I'm particularly excited for is the ongoing analysis that <a href="/projects/bieber-bot">Bieber Bot</a> can provide by accessing the data.</p>
+<p>These are somewhat interesting, but what I&rsquo;m particularly excited for is the ongoing analysis that <a href="/projects/bieber-bot">Bieber Bot</a> can provide by accessing the data.</p>
 <p>Here is a brainstorm of the more real-time actionable insights we might extract from this data.</p>
 <ul>
-<li>Bieber Bot could ping me if it looks like I'm spending too much time on a distraction website.</li>
+<li>Bieber Bot could ping me if it looks like I&rsquo;m spending too much time on a distraction website.</li>
 <li>He could try to detect if I went to a website with a particular purpose, but ended up getting distracted and not completing the purpose I set out to do.</li>
 </ul>
-<p>For example, if I'm on a productive website and then switch to a distraction website for more than a few minutes, particularly during work hours, Bieber Bot might message asking if I got distracted. Think you could do that for me Bieber Bot?</p>
+<p>For example, if I&rsquo;m on a productive website and then switch to a distraction website for more than a few minutes, particularly during work hours, Bieber Bot might message asking if I got distracted. Think you could do that for me Bieber Bot?</p>
 <ul>
 <li>I could signal that I want to view a website later by opening it and immediately closing it again.</li>
-<li>Perhaps we could detect if I'm researching a particular topic, and then Bieber Bot could try to help me with my research.</li>
+<li>Perhaps we could detect if I&rsquo;m researching a particular topic, and then Bieber Bot could try to help me with my research.</li>
 </ul>
 <h4 id="related-idea">Related Idea</h4>
-<p>In order to reduce distractions, I'd like to be able to switch my browsing mode from &ldquo;clicking opens links&rdquo; to &ldquo;clicking saves a link for later&rdquo;. When in this new mode, whenever I click a link it wouldn't open that link; instead, it would save the link to a list of deferred links.
-Then I would be able to view my &ldquo;saved for later&rdquo; links when I have time that I've explicitly set aside, rather than during the time that I would rather be doing something more productive.</p>
+<p>In order to reduce distractions, I&rsquo;d like to be able to switch my browsing mode from &ldquo;clicking opens links&rdquo; to &ldquo;clicking saves a link for later&rdquo;. When in this new mode, whenever I click a link it wouldn&rsquo;t open that link; instead, it would save the link to a list of deferred links.
+Then I would be able to view my &ldquo;saved for later&rdquo; links when I have time that I&rsquo;ve explicitly set aside, rather than during the time that I would rather be doing something more productive.</p>
 <h4 id="next-steps">Next Steps</h4>
-<p>So far I've done a little bit of manual exploration of my browsing history data. I've set up a little Python script to be able to access the data programmatically.</p>
-<p>Next, I'll do more manual analysis, and then I'll see if I'm able to give Bieber Bot the real-time access to the data that I described above. I'm particularly excited to see if I can get the &ldquo;looks like you've gotten distracted&rdquo; messages set up with Bieber Bot. As a bonus, since Bieber Bot can message other people too, this system could help me leverage social accountability to stay on task.</p>
+<p>So far I&rsquo;ve done a little bit of manual exploration of my browsing history data. I&rsquo;ve set up a little Python script to be able to access the data programmatically.</p>
+<p>Next, I&rsquo;ll do more manual analysis, and then I&rsquo;ll see if I&rsquo;m able to give Bieber Bot the real-time access to the data that I described above. I&rsquo;m particularly excited to see if I can get the &ldquo;looks like you&rsquo;ve gotten distracted&rdquo; messages set up with Bieber Bot. As a bonus, since Bieber Bot can message other people too, this system could help me leverage social accountability to stay on task.</p>
 <p>Want to see where this project leads? You can subscribe for infrequent email updates.</p>
 
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">

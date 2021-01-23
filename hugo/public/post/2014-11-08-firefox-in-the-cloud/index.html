@@ -617,52 +617,52 @@
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>I found running Firefox in the cloud difficult, but with enough digging around I was able to get it working. Now I'm able to drive a headless version of Firefox with Selenium using Python. This lets me do things like have my <a href="https://github.com/dbieber/ScrabbleBot">Scrabble Bot</a> play Words with Friends autonomously on Facebook.</p>
+      <p>I found running Firefox in the cloud difficult, but with enough digging around I was able to get it working. Now I&rsquo;m able to drive a headless version of Firefox with Selenium using Python. This lets me do things like have my <a href="https://github.com/dbieber/ScrabbleBot">Scrabble Bot</a> play Words with Friends autonomously on Facebook.</p>
 <p><strong>What am I going to show you how to do?</strong></p>
-<p>I'm going to explain how you can install Firefox and Selenium on a virtual machine in the cloud. I'm going to show this using a Debian instance on <a href="https://cloud.google.com/compute/">Google Compute Engine</a>, but you could also do this using a virtual machine from Amazon EC2.</p>
+<p>I&rsquo;m going to explain how you can install Firefox and Selenium on a virtual machine in the cloud. I&rsquo;m going to show this using a Debian instance on <a href="https://cloud.google.com/compute/">Google Compute Engine</a>, but you could also do this using a virtual machine from Amazon EC2.</p>
 <p>Before continuing you should create a virtual machine running Debian on Google Compute Engine (GCE). <a href="https://cloud.google.com/compute/docs/quickstart">You can learn how to spin up a VM here</a>. Make sure that you can SSH into your machine.</p>
 <p><strong>Installing Firefox</strong></p>
-<p>We're actually going to install Iceweasel. To the best of my knowledge, the only difference between Iceweasel and Firefox is the branding. To do this, we're going to:</p>
+<p>We&rsquo;re actually going to install Iceweasel. To the best of my knowledge, the only difference between Iceweasel and Firefox is the branding. To do this, we&rsquo;re going to:</p>
 <ol>
 <li>Update the sources list that apt-get uses to find packages.
 Edit the file <code>/etc/apt/sources.list</code> and add the line <code>deb http://mozilla.debian.net/ wheezy-backports iceweasel-release</code>.</li>
 <li>Update apt-get by running the command <code>sudo apt-get update</code>.</li>
 <li>Install Iceweasel by running the command <code>sudo apt-get install -t wheezy-backports iceweasel</code>.</li>
 </ol>
-<p>I figured this out by searching for &ldquo;iceweasel sources list&rdquo;, which brought me to <a href="http://mozilla.debian.net/">http://mozilla.debian.net/</a>. If you're looking to install a different version of Iceweasel/Firefox or have a different version of Debian, check there.</p>
+<p>I figured this out by searching for &ldquo;iceweasel sources list&rdquo;, which brought me to <a href="http://mozilla.debian.net/">http://mozilla.debian.net/</a>. If you&rsquo;re looking to install a different version of Iceweasel/Firefox or have a different version of Debian, check there.</p>
 <p><strong>Running Firefox</strong></p>
-<p>We can now run the browser we installed with the command <code>firefox</code> or <code>iceweasel</code>, but it will shut down because there is no display. To run the browser without a display (that is, to run it &ldquo;headlessly&rdquo;), we're going to:</p>
+<p>We can now run the browser we installed with the command <code>firefox</code> or <code>iceweasel</code>, but it will shut down because there is no display. To run the browser without a display (that is, to run it &ldquo;headlessly&rdquo;), we&rsquo;re going to:</p>
 <ol>
 <li>Install the display server Xvfb (X virtual framebuffer) with the command <code>sudo apt-get install xvfb</code>.</li>
-<li>Start the display server with the command <code>sudo Xvfb :10</code>. Here, :10 is the server number we chose for the virtual display we're creating.</li>
+<li>Start the display server with the command <code>sudo Xvfb :10</code>. Here, :10 is the server number we chose for the virtual display we&rsquo;re creating.</li>
 <li>Now run <code>export DISPLAY=:10</code>.</li>
 </ol>
 <p>You should now be able to run <code>firefox</code> or <code>iceweasel</code> successfully.</p>
-<p>If you'd like to see what's on your virtual display, <a href="http://en.wikipedia.org/wiki/Xvfb#Usage_examples">Wikipedia provides an example of how to take a screenshot of your virtual display</a>.</p>
+<p>If you&rsquo;d like to see what&rsquo;s on your virtual display, <a href="http://en.wikipedia.org/wiki/Xvfb#Usage_examples">Wikipedia provides an example of how to take a screenshot of your virtual display</a>.</p>
 <p><strong>Installing Selenium</strong></p>
-<p>We can now run a headless version of Firefox. Since there's no user interface to click around in, the next logical step is to learn how to drive the browser. For this, we're going to set up Selenium in Python. When dealing with packages in Python, I recommend using pip inside a virtualenv with virtualenvwrapper. There are instructions for setting up these packages below.</p>
-<p>Once you have virtualenvwrapper installed and you're safely working in a virtual environment, just issue the command <code>pip install selenium</code> to install selenium. If you're not in a virtualenv, you may need to issue the command with sudo.</p>
-<p>Try running this Python script to see if it's all working. It should take you to Google Images, search for cute kittens, and then save a screenshot to the file &lsquo;adorable.png&rsquo;.</p>
+<p>We can now run a headless version of Firefox. Since there&rsquo;s no user interface to click around in, the next logical step is to learn how to drive the browser. For this, we&rsquo;re going to set up Selenium in Python. When dealing with packages in Python, I recommend using pip inside a virtualenv with virtualenvwrapper. There are instructions for setting up these packages below.</p>
+<p>Once you have virtualenvwrapper installed and you&rsquo;re safely working in a virtual environment, just issue the command <code>pip install selenium</code> to install selenium. If you&rsquo;re not in a virtualenv, you may need to issue the command with sudo.</p>
+<p>Try running this Python script to see if it&rsquo;s all working. It should take you to Google Images, search for cute kittens, and then save a screenshot to the file &lsquo;adorable.png&rsquo;.</p>
 <script src="https://gist.github.com/dbieber/1c4a7bdca8f9820b3612.js"></script>
 <p><strong>Installing virtualenvwrapper</strong></p>
 <p>As promised above, here is a section about virtualenvwrapper.</p>
-<p>Managing Python packages effectively is difficult, and I can't do the topic justice here. I recommend using virtualenvwrapper to help, and <a href="http://virtualenvwrapper.readthedocs.org/en/latest/install.html">you can read more about how to do this here</a>. For completeness, I'll briefly run through the steps of getting set up with pip, virtualenv, and virtualenvwrapper.</p>
-<p><code>pip</code> is Python's package manager. Once you have pip set up, you can run <code>pip install package-name</code> to install the package called package-name.</p>
+<p>Managing Python packages effectively is difficult, and I can&rsquo;t do the topic justice here. I recommend using virtualenvwrapper to help, and <a href="http://virtualenvwrapper.readthedocs.org/en/latest/install.html">you can read more about how to do this here</a>. For completeness, I&rsquo;ll briefly run through the steps of getting set up with pip, virtualenv, and virtualenvwrapper.</p>
+<p><code>pip</code> is Python&rsquo;s package manager. Once you have pip set up, you can run <code>pip install package-name</code> to install the package called package-name.</p>
 <p>To set up pip, run the following commands:</p>
 <ol>
 <li><code>curl https://bootstrap.pypa.io/get-pip.py &gt; get-pip.py</code></li>
 <li><code>sudo python get-pip.py</code></li>
 </ol>
-<p><code>virtualenv</code> is a tool that let's you have different versions of Python and Python packages for different projects that you work on. Combined with <code>virtualenvwrapper</code>, it will help you avoid headaches of keeping track of where your various Python versions live and where they can find their packages on your machine.</p>
+<p><code>virtualenv</code> is a tool that let&rsquo;s you have different versions of Python and Python packages for different projects that you work on. Combined with <code>virtualenvwrapper</code>, it will help you avoid headaches of keeping track of where your various Python versions live and where they can find their packages on your machine.</p>
 <p>To install virtualenv, run the command <code>sudo pip install virtualenv</code>.</p>
 <p>To install virtualenvwrapper, run the command <code>sudo pip install virtualenvwrapper</code>.</p>
 <p>Add the following three lines to your .bashrc or another startup script:</p>
 <p><code>export WORKON_HOME=$HOME/.virtualenvs</code></p>
 <p><code>export PROJECT_HOME=$HOME/Devel</code></p>
 <p><code>source /usr/local/bin/virtualenvwrapper.sh</code></p>
-<p>You're now ready to go. <a href="http://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html">Learn more about how to use virtualenvwrapper effectively here</a>.</p>
+<p>You&rsquo;re now ready to go. <a href="http://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html">Learn more about how to use virtualenvwrapper effectively here</a>.</p>
 <p><strong>Last thoughts</strong></p>
-<p>I hope you find this helpful. You can now install Firefox on Google Compute Engine, run it using a virtual display, and drive it using Selenium with Python. If something isn't working, or if something is working really well and has you super excited, I'm happy to talk it through with you. Email's the best way to contact me. Go forth and automate your life!</p>
+<p>I hope you find this helpful. You can now install Firefox on Google Compute Engine, run it using a virtual display, and drive it using Selenium with Python. If something isn&rsquo;t working, or if something is working really well and has you super excited, I&rsquo;m happy to talk it through with you. Email&rsquo;s the best way to contact me. Go forth and automate your life!</p>
 
     </div>
 

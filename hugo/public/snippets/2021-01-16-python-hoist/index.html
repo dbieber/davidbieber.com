@@ -531,8 +531,8 @@ f(4) == 11
 hoist(f)(4) == {'x': 4, 'y': 5, 'z': 10, 'return': 11}
 </code></pre>
 <p>Make sense? The result of <code>f(4)</code> is just the return value, whereas <code>hoist(f)(4)</code> gives the values of all local variables.</p>
-<p>This can be a useful debugging tool, allowing access to the internal state of a function. It works by setting a trace function with Python's <code>sys.settrace</code>, as you can see in its definition.</p>
-<p>Here's the definition of <code>hoist</code>:</p>
+<p>This can be a useful debugging tool, allowing access to the internal state of a function. It works by setting a trace function with Python&rsquo;s <code>sys.settrace</code>, as you can see in its definition.</p>
+<p>Here&rsquo;s the definition of <code>hoist</code>:</p>
 <pre><code class="language-python">import inspect
 import functools
 
