@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 20 Jan 2021 02:04:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://davidbieber.com/img/portrait.jpg</url>
       <title>David Bieber</title>
@@ -280,6 +280,32 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&#3
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at &lt;a href=&#34;https://princetonacm.com&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>am I available for conversation right now dot com</title>
+      <link>https://davidbieber.com/snippets/2021-01-22-am-i-available-for-conversation-right-now-dot-com/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-22-am-i-available-for-conversation-right-now-dot-com/</guid>
+      <description>&lt;p&gt;I don&#39;t know if I like this idea, but I&#39;m giving it a try; I&#39;ve added a &amp;ldquo;Now&amp;rdquo; page to my website (&lt;a href=&#34;https://davidbieber.com/now&#34;&gt;davidbieber.com/now&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;The idea for now pages is described at &lt;a href=&#34;https://nownownow.com/about&#34;&gt;https://nownownow.com/about&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Basically, a now page says what&#39;s going on in the author&#39;s life now. Not &lt;em&gt;right now&lt;/em&gt; &amp;ndash; that would be a &amp;ldquo;right now page&amp;rdquo; &amp;ndash; but rather, now in the broader sense of &amp;ldquo;what&#39;s are you up to these days?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;This post isn&#39;t about my new Now page though, which I don&#39;t necessarily plan to keep up (if the link 404s, you know why). Rather, this post is about an idea for a kind of &amp;ldquo;right now&amp;rdquo; page that I&#39;m toying with building.&lt;/p&gt;
+&lt;p&gt;I&#39;d like to make a page that tells the reader if I&#39;m likely available for a conversation &lt;em&gt;right now&lt;/em&gt;. I&#39;d call it the &amp;ldquo;is David available to talk now&amp;rdquo; page, and here&#39;s how it might work.&lt;/p&gt;
+&lt;h3 id=&#34;it-aims-only-to-give-a-best-guess-as-to-whether-i-can-talk-now&#34;&gt;It aims only to give a best guess as to whether I can talk now.&lt;/h3&gt;
+&lt;p&gt;It says No during work.&lt;br/&gt;
+It says No during sleep hours.&lt;br/&gt;
+It says No while I&#39;m on a phone call / skype / zoom / meet etc&lt;br/&gt;
+It says No if I have recently been on a call for a long time&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;It says Yes during explicitly times (there would be a button I can press to set it to Yes for 30 minutes)&lt;/p&gt;
+&lt;p&gt;If I&#39;m deliberately in a public space (e.g. Gather Town, Clubhouse) AND looking for conversation (aka I&#39;ve pushed the button), then it shows where to find me.&lt;/p&gt;
+&lt;p&gt;And the rest of the time, it simply shrugs.&lt;/p&gt;
+&lt;h3 id=&#34;why-would-i-want-such-a-system&#34;&gt;Why would I want such a system?&lt;/h3&gt;
+&lt;p&gt;Well, what I really want is for &lt;em&gt;everyone&lt;/em&gt; to use such a system. I want the &amp;ldquo;open door&amp;rdquo; system that professors so often use; if my door is open, you&#39;re welcome to come in and talk. I want to avoid people avoiding saying hi because they don&#39;t know if I&#39;m available. And I want to avoid the mental overhead of making plans for conversations that aren&#39;t time sensitive. Plans are tough.&lt;/p&gt;
+&lt;p&gt;My ideal system for when I want to talk to someone isn&#39;t &amp;ldquo;let&#39;s pick a time to talk&amp;rdquo;, because that has scheduling overhead and will likely break up my day at an inconvenient time. Instead, I&#39;d prefer a more flexible approach. When I&#39;m free, I open my door (a digital, virtual, door). I send you a message that I&#39;d like to talk; you see it when you&#39;re free (because you have notifications disabled 👍). If I&#39;m still free then, my door will still be open and we can talk. If I&#39;ve moved on to another activity, my door will be closed and we&#39;ll reconnect later.&lt;/p&gt;
+&lt;p&gt;In the absence of doors, the &amp;ldquo;is David available to talk now&amp;rdquo; page is my idea for an approximation.&lt;/p&gt;
+&lt;p&gt;But I don&#39;t know yet how I would build it. The idea requires programmatically determining when I&#39;ve been on the phone, in skype, in zoom, etc. I haven&#39;t looking into how approachable these services are to work with. And I likely wont. This is the sort of idea that, while fun to entertain, will likely need to morph considerably before it turns into a real project. Such is the nature of the Snippet.&lt;/p&gt;
 </description>
     </item>
     
