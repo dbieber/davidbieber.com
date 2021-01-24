@@ -9,7 +9,7 @@ I'd like to add margin notes to my website. [^1]
 I'd also like to learn how to use Fiverr. [^2]
 So, I'm going to hire someone on Fiverr to add margin notes on my website.
 
-[^1]: I'd like this to be a margin note. At the time of this writing, it's a footnote. (Update: Now its a margin note! At least if your browser is wide enough... otherwise it's still a footnote.)
+[^1]: I'd like this to be a margin note. At the time of this writing, it's a footnote. *Update*: Now it's a margin note! At least if your browser is wide enough... otherwise it's still a footnote.
 
 [^2]: I've used it twice before, but I didn't have a great experience with the one programmer I hired.
 
