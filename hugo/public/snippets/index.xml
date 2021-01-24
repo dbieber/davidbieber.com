@@ -23,6 +23,8 @@ So, I&amp;rsquo;m going to hire someone on Fiverr to add margin notes on my webs
 &lt;p&gt;Fabian, over at capnfabs.net, has an 
 &lt;a href=&#34;https://capnfabs.net/posts/margin-notes-hugo-theme/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;excellent post&lt;/a&gt; where he adds margin notes to his own hugo blog. We&amp;rsquo;ll be using that for guidance.&lt;/p&gt;
 &lt;p&gt;After my Fiverr experience I&amp;rsquo;ll update this snippet or add a new one, ideally one full of margin notes.&lt;/p&gt;
+&lt;p&gt;Update (same day): I&amp;rsquo;m back! I didn&amp;rsquo;t use Fiverr. I used the post on capnfabs for reference and set up margin notes myself. Thank you Fabian for documenting your process. &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; I&amp;rsquo;ll have to learn to use Fiverr another day.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m glad to have this working. There&amp;rsquo;s room to improve the style though. Perhaps in a future iteration I&amp;rsquo;ll move the main content left to give more space for the margin notes, or make some changes to the font and size.&lt;/p&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
@@ -31,6 +33,9 @@ So, I&amp;rsquo;m going to hire someone on Fiverr to add margin notes on my webs
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;I&amp;rsquo;ve used it twice before, but I didn&amp;rsquo;t have a great experience with the one programmer I hired. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Really, it is greatly appreciated! 🙏 &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
