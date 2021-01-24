@@ -5,8 +5,8 @@ plugins_js = ["margin-notes"]
 
 +++
 
-I'd like to add margin notes to my website. [^1]
-I'd also like to learn how to use Fiverr. [^2]
+I'd like to add margin notes to my website.[^1]
+I'd also like to learn how to use Fiverr.[^2]
 So, I'm going to hire someone on Fiverr to add margin notes on my website.
 
 [^1]: I'd like this to be a margin note. At the time of this writing, it's a footnote. *Update*: Now it's a margin note! At least if your browser is wide enough... otherwise it's still a footnote.
@@ -17,7 +17,7 @@ Fabian, over at capnfabs.net, has an [excellent post](https://capnfabs.net/posts
 
 After my Fiverr experience I'll update this snippet or add a new one, ideally one full of margin notes.
 
-Update (same day): I'm back! I didn't use Fiverr. I used the post on capnfabs for reference and set up margin notes myself. Thank you Fabian for documenting your process. [^3] I'll have to learn to use Fiverr another day.
+Update (same day): I'm back! I didn't use Fiverr. I used the post on capnfabs for reference and set up margin notes myself. Thank you Fabian for documenting your process.[^3] I'll have to learn to use Fiverr another day.
 
 [^3]: Really, it is greatly appreciated! 🙏
 
