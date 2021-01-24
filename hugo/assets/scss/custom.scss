@@ -86,3 +86,36 @@
 [id^=_] { 
   display: none;  
 }
+
+/* Margin notes */
+/*
+This cursed incantation works around a display bug in Firefox, where writing
+an emoji with default Emoji Presentation (e.g. 🐻) followed by a non-default
+emoji character (e.g. ↩) results in the latter being rendered with emoji
+presentation as well.
+This is only a problem on the newer Goldmark renderer, which I'm not using yet.
+*/
+#article-content {
+  position: relative;
+}
+
+a.footnote-backref::before {
+  content: ' ';
+}
+
+.floating-footnotes {
+  width: 20em;
+  margin-top: 0;
+  position: absolute;
+  top: 0;
+  /* The entire main article content, + the margins */
+  left: 100%;
+}
+
+.floating-footnotes hr {
+  display: none;
+}
+
+.floating-footnotes li[role=doc-endnote] p:last-child {
+  margin-bottom: 0;
+}
