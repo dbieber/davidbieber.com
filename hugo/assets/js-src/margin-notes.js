@@ -8,7 +8,7 @@ import { ResizeObserver } from '@juggle/resize-observer';
 
 const ARTICLE_CONTENT_SELECTOR = "#article-content";
 const FOOTNOTE_SECTION_SELECTOR = "section.footnotes[role=doc-endnotes]";
-const FLOATING_FOOTNOTE_MIN_WIDTH = 1500;
+const FLOATING_FOOTNOTE_MIN_WIDTH = 1620;
 
 // Computes an offset such that setting `top` on elemToAlign will put it
 // in vertical alignment with targetAlignment.
