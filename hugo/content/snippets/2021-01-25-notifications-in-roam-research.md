@@ -59,7 +59,9 @@ And for references to Python Fire, a daily digest at 9am is more than sufficient
 
 #### Primitive: Notification Strategies
 
-Anyone with a bit of JavaScript or Clojure knowledge can define a notification strategy. A notification strategy defines the rules for how notifications should be handled. The interface for a notification strategy is: stream of notifications in, stream of notifications out (_soni-sono_ for short).
+Anyone with a bit of JavaScript or Clojure knowledge can define a notification strategy. A notification strategy defines the rules for how notifications should be handled. The interface for a notification strategy is: stream of notifications in, stream of notifications out.[^sonisono]
+
+[^sonisono]: _soni-sono_ for short.
 
 By allowing users to define and share notification strategies, we can empower uses to take back their attention and get more out of their Roam experience.
 

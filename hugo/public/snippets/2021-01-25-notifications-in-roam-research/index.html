@@ -553,7 +553,7 @@ Let&rsquo;s disentangle what you get notified about, when you get notified about
 <p>When I become unblocked on a task, I want a notification within the hour, but if multiple tasks become unblocked they the notifications can totally be bundled. I don&rsquo;t need an <em>individual notification</em> per task. That would just be overkill.</p>
 <p>And for references to Python Fire, a daily digest at 9am is more than sufficient.</p>
 <h4 id="primitive-notification-strategies">Primitive: Notification Strategies</h4>
-<p>Anyone with a bit of JavaScript or Clojure knowledge can define a notification strategy. A notification strategy defines the rules for how notifications should be handled. The interface for a notification strategy is: stream of notifications in, stream of notifications out (<em>soni-sono</em> for short).</p>
+<p>Anyone with a bit of JavaScript or Clojure knowledge can define a notification strategy. A notification strategy defines the rules for how notifications should be handled. The interface for a notification strategy is: stream of notifications in, stream of notifications out.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
 <p>By allowing users to define and share notification strategies, we can empower uses to take back their attention and get more out of their Roam experience.</p>
 <p>The &ldquo;Notification strategies&rdquo; approach benefits non-programmers too, because notification strategies can be shared in the Roam-depot. I&rsquo;m hoping for a future where RoamHacker and David Vargas and others have developed both simple and sophisticated &ldquo;notification managers&rdquo;: UIs where non-programmers can configure their notification settings in the level of detail best suited for them.</p>
 <h4 id="primitive-tags-connect-references-and-queries-to-notification-strategies">Primitive: Tags connect references and queries to notification strategies</h4>
@@ -566,7 +566,7 @@ Let&rsquo;s disentangle what you get notified about, when you get notified about
 <h2 id="sending-notifications">Sending notifications</h2>
 <p>Great, we&rsquo;ve talked about how to decide what to notify about, and when to send the notifications. How/where do the notifications actually get sent?</p>
 <p>A sensible default for the first pass is to use browser notifications. But we&rsquo;re thinking long term, so I won&rsquo;t dwell on this &ldquo;first pass&rdquo; for too long.</p>
-<p>If you do want to use browser notifications, it&rsquo;s easy to do so<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. You can try this in your Roam graph (or browser console<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>) right now:</p>
+<p>If you do want to use browser notifications, it&rsquo;s easy to do so<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. You can try this in your Roam graph (or browser console<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>) right now:</p>
 <pre><code class="language-javascript">function notify(text) {
   // Let's check if the browser supports notifications
   if (!(&quot;Notification&quot; in window)) {
@@ -627,12 +627,15 @@ notify(&quot;You've got mail.&quot;);
 <a href="/snippets/2021-01-04-more-datalog-queries-for-roam/">snippets</a> for lots of examples of what you can do with datalog queries. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p>Code courtesy of 
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/notification" target="_blank" rel="noopener">MDN</a>. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><em>soni-sono</em> for short. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
+<p>Code courtesy of 
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/notification" target="_blank" rel="noopener">MDN</a>. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
 <p>cmd-option-i to open your browser console on Chrome on Mac. 
-<a href="https://www.google.com/search?q=how&#43;to&#43;open&#43;the&#43;browser&#43;console" target="_blank" rel="noopener">Look it up here</a> for other browsers or operating systems. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<a href="https://www.google.com/search?q=how&#43;to&#43;open&#43;the&#43;browser&#43;console" target="_blank" rel="noopener">Look it up here</a> for other browsers or operating systems. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
