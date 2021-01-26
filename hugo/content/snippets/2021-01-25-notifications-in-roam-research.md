@@ -2,16 +2,18 @@
 title = "Notifications in Roam Research"
 date = 2021-01-25T00:00:00
 uid = "zA0iyJXpl"
-
+plugins_js = ["margin-notes"]
 +++
 
 [#RoamGames](https://twitter.com/hashtag/RoamGames) are upon us! The challenge: *project management* in Roam.
 
 So, let's talk notifications. They're going to be essential for any multiplayer Roam scenario. They're also ruthless attention vampires that kill productivity. We've got to get this right.
 
-We disentangle _what_ you get notified about, _when_ you get notified about it, and _where/how_ you're notified.
+Let's disentangle _what_ you get notified about, _when_ you get notified about it, and _where/how_ you're notified. This leads us to a vision where users can define _notification strategies_ and take control of their attention[^users].
 
-## **What** (References and Queries)
+[^users]: And still provides sensible defaults and easy configs for non-power users.
+
+## **What** to notify on (References and Queries)
 
 What do we want to get notified about? First, three scenarios to motivate our discussion. Then, the primitives: references and queries.
 
@@ -27,7 +29,7 @@ You're working on Task A. But it's blocked by Tasks B and C. You represent this 
 
 (As an aside, being able to embed a tiny piece of my Roam graph in my blog would be super helpful.)
 
-Once Task B and Task C are done, you want to get notified so you can resume working on Task A.
+Once Task B and Task C are marked DONE, you want to get notified so you can resume working on Task A.
 
 #### Scenario 3, Topic Tracking:
 
@@ -45,7 +47,7 @@ Advanced usage: Roam queries and Datalog queries[^2] are extremely expressive. I
 
 Now that we've set out what we want to get notified about, let's talk about when we want to receive the notifications. We'll get to how we want to configure the notifications a little bit later on.
 
-## When (Immediately, Batched, Delayed, At specific times?)
+## *When* to notify (Immediately, Batched, Delayed, At specific times?)
 
 Most apps have minimal options for when you receive notifications. A typical message board config offers "every individual email", "daily digest", "weekly digest." This is Roam. We can do better than that.
 
@@ -75,7 +77,7 @@ Say I have a query ("all Tasks with 'Blockers' where all Blockers are 'DONE'"), 
 
 Once I've added that tag, the notification strategy will be called every time the query results change, and it will be able to start emitting notifications.
 
-Similarly if I write [[Python Fire]] and tag it with #[[Bundle on the Hour]], then an instance of the notification strategy will also be called whenever the references to or contents of the Python Fire page change.
+Similarly if I write [[Python Fire]] and tag it with #[[Digest at 9am]], then _that_ notification strategy will be called whenever the references to or contents of the Python Fire page change.
 
 ## Sending notifications
 
@@ -140,7 +142,7 @@ Ideally turning on notifications for messages could be as simple as adding a blo
 
 Turning on notifications for unblocked tasks could be as simple as (1) getting the unblocked tasks query from the Roam depot, and then (2) adding a block `[[Unblocked tasks]] #[[Bundle on the Hour]]`.
 
-And turning on notifications for references to Python Fire should simply mean adding a block `[[Python Fire]] #[[Bundle on the Hour]]`.
+And turning on notifications for references to Python Fire should simply mean adding a block `[[Python Fire]] #[[Digest at 9am]]`.
 
 ## Let's build it
 
