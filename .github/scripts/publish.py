@@ -62,6 +62,8 @@ def publish():
   else:
     if '\\frac' in content or '\\infty' in content:
       additional_frontmatter = 'math = true'
+    elif '[^1]' in content:
+      additional_frontmatter = 'plugins_js = ["margin-notes"]'
 
   # Determine content.
   if uid == 'now-page':
