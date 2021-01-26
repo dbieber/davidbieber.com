@@ -33,7 +33,7 @@ Once Task B and Task C are marked DONE, you want to get notified so you can resu
 
 #### Scenario 3, Topic Tracking:
 
-You're in a big multiplayer graph and you've carefully curated a page about your own project Python Fire. You're excited when people talk about Fire, so you want notifications when people reference it.
+You're in a big multiplayer graph and you've carefully curated a page about your own project [Python Fire](https://github.com/google/python-fire). You're excited when people talk about Fire, so you want notifications when people reference it.
 
 #### The Primitives: References and Queries
 

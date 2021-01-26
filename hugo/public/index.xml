@@ -324,7 +324,8 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
 &lt;p&gt;(As an aside, being able to embed a tiny piece of my Roam graph in my blog would be super helpful.)&lt;/p&gt;
 &lt;p&gt;Once Task B and Task C are marked DONE, you want to get notified so you can resume working on Task A.&lt;/p&gt;
 &lt;h4 id=&#34;scenario-3-topic-tracking&#34;&gt;Scenario 3, Topic Tracking:&lt;/h4&gt;
-&lt;p&gt;You&amp;rsquo;re in a big multiplayer graph and you&amp;rsquo;ve carefully curated a page about your own project Python Fire. You&amp;rsquo;re excited when people talk about Fire, so you want notifications when people reference it.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;re in a big multiplayer graph and you&amp;rsquo;ve carefully curated a page about your own project 
+&lt;a href=&#34;https://github.com/google/python-fire&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python Fire&lt;/a&gt;. You&amp;rsquo;re excited when people talk about Fire, so you want notifications when people reference it.&lt;/p&gt;
 &lt;h4 id=&#34;the-primitives-references-and-queries&#34;&gt;The Primitives: References and Queries&lt;/h4&gt;
 &lt;p&gt;Basic usage: Notifications when someone responds to me&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, notifications when someone references a particular page or block (linked or unlinked)&lt;/p&gt;
 &lt;p&gt;Advanced usage: Roam queries and Datalog queries&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; are extremely expressive. I should be able to set up a query and get notified whenever the query results change.&lt;/p&gt;
