@@ -547,7 +547,7 @@ Let&rsquo;s disentangle what you get notified about, when you get notified about
 <p>Basic usage: Notifications when someone responds to me<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>, notifications when someone references a particular page or block (linked or unlinked)</p>
 <p>Advanced usage: Roam queries and Datalog queries<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> are extremely expressive. I should be able to set up a query and get notified whenever the query results change.</p>
 <p>Now that we&rsquo;ve set out what we want to get notified about, let&rsquo;s talk about when we want to receive the notifications. We&rsquo;ll get to how we want to configure the notifications a little bit later on.</p>
-<h2 id="when-to-notify-immediately-batched-delayed-at-specific-times"><em>When</em> to notify (Immediately, Batched, Delayed, At specific times?)</h2>
+<h2 id="when-to-notify-immediately-batched-delayed-at-specific-times"><strong>When</strong> to notify (Immediately, Batched, Delayed, At specific times?)</h2>
 <p>Most apps have minimal options for when you receive notifications. A typical message board config offers &ldquo;every individual email&rdquo;, &ldquo;daily digest&rdquo;, &ldquo;weekly digest.&rdquo; This is Roam. We can do better than that.</p>
 <p>For the messages from Abhay about Project XX, I want notifications to pop up immediately.</p>
 <p>When I become unblocked on a task, I want a notification within the hour, but if multiple tasks become unblocked they the notifications can totally be bundled. I don&rsquo;t need an <em>individual notification</em> per task. That would just be overkill.</p>
@@ -563,7 +563,7 @@ Let&rsquo;s disentangle what you get notified about, when you get notified about
 <p>Say I have a query (&ldquo;all Tasks with &lsquo;Blockers&rsquo; where all Blockers are &lsquo;DONE&rsquo;&quot;), and a notification strategy named &ldquo;Bundle on the Hour&rdquo; (&ldquo;bundle all incoming notifications and emit them on the hour as a single notification&rdquo;). Then I can tag the query with #[[Bundle on the Hour]] to start applying that notification strategy to the results of the query.</p>
 <p>Once I&rsquo;ve added that tag, the notification strategy will be called every time the query results change, and it will be able to start emitting notifications.</p>
 <p>Similarly if I write [[Python Fire]] and tag it with #[[Digest at 9am]], then <em>that</em> notification strategy will be called whenever the references to or contents of the Python Fire page change.</p>
-<h2 id="sending-notifications">Sending notifications</h2>
+<h2 id="wherehow-actually-sending-notifications"><strong>Where/How</strong>: Actually sending notifications</h2>
 <p>Great, we&rsquo;ve talked about how to decide what to notify about, and when to send the notifications. How/where do the notifications actually get sent?</p>
 <p>A sensible default for the first pass is to use browser notifications. But we&rsquo;re thinking long term, so I won&rsquo;t dwell on this &ldquo;first pass&rdquo; for too long.</p>
 <p>If you do want to use browser notifications, it&rsquo;s easy to do so<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. You can try this in your Roam graph (or browser console<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>) right now:</p>
