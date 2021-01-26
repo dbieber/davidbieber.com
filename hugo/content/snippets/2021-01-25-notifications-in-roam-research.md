@@ -150,4 +150,4 @@ And turning on notifications for references to Python Fire should simply mean ad
 
 ## Let's build it
 
-Want to build this with me? I'm @Bieber on Twitter and active as dbieber on the [Roam Slack](https://roamresearch.slack.com).
+Want to build this with me? I'm [@Bieber](https://twitter.com/Bieber) on Twitter and active as dbieber on the [Roam Slack](https://roamresearch.slack.com).

@@ -100,7 +100,8 @@ notify(&amp;quot;You&#39;ve got mail.&amp;quot;);
 &lt;p&gt;Turning on notifications for unblocked tasks could be as simple as (1) getting the unblocked tasks query from the Roam Depot, and then (2) adding a block &lt;code&gt;[[Unblocked tasks]] #[[Bundle on the Hour]]&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;And turning on notifications for references to Python Fire should simply mean adding a block &lt;code&gt;[[Python Fire]] #[[Digest at 9am]]&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;lets-build-it&#34;&gt;Let&amp;rsquo;s build it&lt;/h2&gt;
-&lt;p&gt;Want to build this with me? I&amp;rsquo;m @Bieber on Twitter and active as dbieber on the 
+&lt;p&gt;Want to build this with me? I&amp;rsquo;m 
+&lt;a href=&#34;https://twitter.com/Bieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Bieber&lt;/a&gt; on Twitter and active as dbieber on the 
 &lt;a href=&#34;https://roamresearch.slack.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Slack&lt;/a&gt;.&lt;/p&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
