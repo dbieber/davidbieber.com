@@ -65,7 +65,9 @@ Anyone with a bit of JavaScript or Clojure knowledge can define a notification s
 
 By allowing users to define and share notification strategies, we can empower uses to take back their attention and get more out of their Roam experience.
 
-The "Notification strategies" approach benefits non-programmers too, because notification strategies can be shared in the Roam-depot. I'm hoping for a future where RoamHacker and David Vargas and others have developed both simple and sophisticated "notification managers": UIs where non-programmers can configure their notification settings in the level of detail best suited for them.
+The "Notification strategies" approach benefits non-programmers too, because notification strategies can be shared in the Roam Depot[^font]. I'm hoping for a future where RoamHacker and David Vargas and others have developed both simple and sophisticated "notification managers": UIs where non-programmers can configure their notification settings in the level of detail best suited for them.
+
+[^font]: Has anyone taken the [Home Depot logo](https://fontmeme.com/the-home-depot-font/) and replaced the word Home with Roam in the appropriate font yet?
 
 #### Primitive: Tags connect references and queries to notification strategies
 
@@ -142,7 +144,7 @@ Ideally turning on notifications for messages could be as simple as adding a blo
 
 `[[roam/messages]] #[[Notify me immediately]]`
 
-Turning on notifications for unblocked tasks could be as simple as (1) getting the unblocked tasks query from the Roam depot, and then (2) adding a block `[[Unblocked tasks]] #[[Bundle on the Hour]]`.
+Turning on notifications for unblocked tasks could be as simple as (1) getting the unblocked tasks query from the Roam Depot, and then (2) adding a block `[[Unblocked tasks]] #[[Bundle on the Hour]]`.
 
 And turning on notifications for references to Python Fire should simply mean adding a block `[[Python Fire]] #[[Digest at 9am]]`.
 

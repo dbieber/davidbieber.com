@@ -555,7 +555,7 @@ Let&rsquo;s disentangle what you get notified about, when you get notified about
 <h4 id="primitive-notification-strategies">Primitive: Notification Strategies</h4>
 <p>Anyone with a bit of JavaScript or Clojure knowledge can define a notification strategy. A notification strategy defines the rules for how notifications should be handled. The interface for a notification strategy is: stream of notifications in, stream of notifications out.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
 <p>By allowing users to define and share notification strategies, we can empower uses to take back their attention and get more out of their Roam experience.</p>
-<p>The &ldquo;Notification strategies&rdquo; approach benefits non-programmers too, because notification strategies can be shared in the Roam-depot. I&rsquo;m hoping for a future where RoamHacker and David Vargas and others have developed both simple and sophisticated &ldquo;notification managers&rdquo;: UIs where non-programmers can configure their notification settings in the level of detail best suited for them.</p>
+<p>The &ldquo;Notification strategies&rdquo; approach benefits non-programmers too, because notification strategies can be shared in the Roam Depot<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. I&rsquo;m hoping for a future where RoamHacker and David Vargas and others have developed both simple and sophisticated &ldquo;notification managers&rdquo;: UIs where non-programmers can configure their notification settings in the level of detail best suited for them.</p>
 <h4 id="primitive-tags-connect-references-and-queries-to-notification-strategies">Primitive: Tags connect references and queries to notification strategies</h4>
 <p>That is, tags connect <em>what</em> to <em>when</em>.</p>
 <p>When you write a notification strategy, you name it. Tag a reference of a query with the name of a notification strategy to run that strategy on that reference or query.</p>
@@ -566,7 +566,7 @@ Let&rsquo;s disentangle what you get notified about, when you get notified about
 <h2 id="sending-notifications">Sending notifications</h2>
 <p>Great, we&rsquo;ve talked about how to decide what to notify about, and when to send the notifications. How/where do the notifications actually get sent?</p>
 <p>A sensible default for the first pass is to use browser notifications. But we&rsquo;re thinking long term, so I won&rsquo;t dwell on this &ldquo;first pass&rdquo; for too long.</p>
-<p>If you do want to use browser notifications, it&rsquo;s easy to do so<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. You can try this in your Roam graph (or browser console<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>) right now:</p>
+<p>If you do want to use browser notifications, it&rsquo;s easy to do so<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. You can try this in your Roam graph (or browser console<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>) right now:</p>
 <pre><code class="language-javascript">function notify(text) {
   // Let's check if the browser supports notifications
   if (!(&quot;Notification&quot; in window)) {
@@ -607,7 +607,7 @@ notify(&quot;You've got mail.&quot;);
 <p>This was a lot, and reading the above it might sound complicated. And that&rsquo;s because it <em>can</em> be complicated; you can have as complicated a notification strategy as you like. But it doesn&rsquo;t have to be complicated, and for most users it won&rsquo;t be.</p>
 <p>Ideally turning on notifications for messages could be as simple as adding a block in your graph that says:</p>
 <p><code>[[roam/messages]] #[[Notify me immediately]]</code></p>
-<p>Turning on notifications for unblocked tasks could be as simple as (1) getting the unblocked tasks query from the Roam depot, and then (2) adding a block <code>[[Unblocked tasks]] #[[Bundle on the Hour]]</code>.</p>
+<p>Turning on notifications for unblocked tasks could be as simple as (1) getting the unblocked tasks query from the Roam Depot, and then (2) adding a block <code>[[Unblocked tasks]] #[[Bundle on the Hour]]</code>.</p>
 <p>And turning on notifications for references to Python Fire should simply mean adding a block <code>[[Python Fire]] #[[Digest at 9am]]</code>.</p>
 <h2 id="lets-build-it">Let&rsquo;s build it</h2>
 <p>Want to build this with me? I&rsquo;m @Bieber on Twitter and active as dbieber on the 
@@ -630,12 +630,16 @@ notify(&quot;You've got mail.&quot;);
 <p><em>soni-sono</em> for short. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
-<p>Code courtesy of 
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/notification" target="_blank" rel="noopener">MDN</a>. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Has anyone taken the 
+<a href="https://fontmeme.com/the-home-depot-font/" target="_blank" rel="noopener">Home Depot logo</a> and replaced the word Home with Roam in the appropriate font yet? <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6" role="doc-endnote">
+<p>Code courtesy of 
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/notification" target="_blank" rel="noopener">MDN</a>. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
 <p>cmd-option-i to open your browser console on Chrome on Mac. 
-<a href="https://www.google.com/search?q=how&#43;to&#43;open&#43;the&#43;browser&#43;console" target="_blank" rel="noopener">Look it up here</a> for other browsers or operating systems. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<a href="https://www.google.com/search?q=how&#43;to&#43;open&#43;the&#43;browser&#43;console" target="_blank" rel="noopener">Look it up here</a> for other browsers or operating systems. <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

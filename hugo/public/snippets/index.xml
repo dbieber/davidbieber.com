@@ -45,7 +45,7 @@
 &lt;h4 id=&#34;primitive-notification-strategies&#34;&gt;Primitive: Notification Strategies&lt;/h4&gt;
 &lt;p&gt;Anyone with a bit of JavaScript or Clojure knowledge can define a notification strategy. A notification strategy defines the rules for how notifications should be handled. The interface for a notification strategy is: stream of notifications in, stream of notifications out.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;By allowing users to define and share notification strategies, we can empower uses to take back their attention and get more out of their Roam experience.&lt;/p&gt;
-&lt;p&gt;The &amp;ldquo;Notification strategies&amp;rdquo; approach benefits non-programmers too, because notification strategies can be shared in the Roam-depot. I&amp;rsquo;m hoping for a future where RoamHacker and David Vargas and others have developed both simple and sophisticated &amp;ldquo;notification managers&amp;rdquo;: UIs where non-programmers can configure their notification settings in the level of detail best suited for them.&lt;/p&gt;
+&lt;p&gt;The &amp;ldquo;Notification strategies&amp;rdquo; approach benefits non-programmers too, because notification strategies can be shared in the Roam Depot&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;. I&amp;rsquo;m hoping for a future where RoamHacker and David Vargas and others have developed both simple and sophisticated &amp;ldquo;notification managers&amp;rdquo;: UIs where non-programmers can configure their notification settings in the level of detail best suited for them.&lt;/p&gt;
 &lt;h4 id=&#34;primitive-tags-connect-references-and-queries-to-notification-strategies&#34;&gt;Primitive: Tags connect references and queries to notification strategies&lt;/h4&gt;
 &lt;p&gt;That is, tags connect &lt;em&gt;what&lt;/em&gt; to &lt;em&gt;when&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;When you write a notification strategy, you name it. Tag a reference of a query with the name of a notification strategy to run that strategy on that reference or query.&lt;/p&gt;
@@ -56,7 +56,7 @@
 &lt;h2 id=&#34;sending-notifications&#34;&gt;Sending notifications&lt;/h2&gt;
 &lt;p&gt;Great, we&amp;rsquo;ve talked about how to decide what to notify about, and when to send the notifications. How/where do the notifications actually get sent?&lt;/p&gt;
 &lt;p&gt;A sensible default for the first pass is to use browser notifications. But we&amp;rsquo;re thinking long term, so I won&amp;rsquo;t dwell on this &amp;ldquo;first pass&amp;rdquo; for too long.&lt;/p&gt;
-&lt;p&gt;If you do want to use browser notifications, it&amp;rsquo;s easy to do so&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;. You can try this in your Roam graph (or browser console&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;) right now:&lt;/p&gt;
+&lt;p&gt;If you do want to use browser notifications, it&amp;rsquo;s easy to do so&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;. You can try this in your Roam graph (or browser console&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;) right now:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function notify(text) {
   // Let&#39;s check if the browser supports notifications
   if (!(&amp;quot;Notification&amp;quot; in window)) {
@@ -97,7 +97,7 @@ notify(&amp;quot;You&#39;ve got mail.&amp;quot;);
 &lt;p&gt;This was a lot, and reading the above it might sound complicated. And that&amp;rsquo;s because it &lt;em&gt;can&lt;/em&gt; be complicated; you can have as complicated a notification strategy as you like. But it doesn&amp;rsquo;t have to be complicated, and for most users it won&amp;rsquo;t be.&lt;/p&gt;
 &lt;p&gt;Ideally turning on notifications for messages could be as simple as adding a block in your graph that says:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;[[roam/messages]] #[[Notify me immediately]]&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Turning on notifications for unblocked tasks could be as simple as (1) getting the unblocked tasks query from the Roam depot, and then (2) adding a block &lt;code&gt;[[Unblocked tasks]] #[[Bundle on the Hour]]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Turning on notifications for unblocked tasks could be as simple as (1) getting the unblocked tasks query from the Roam Depot, and then (2) adding a block &lt;code&gt;[[Unblocked tasks]] #[[Bundle on the Hour]]&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;And turning on notifications for references to Python Fire should simply mean adding a block &lt;code&gt;[[Python Fire]] #[[Digest at 9am]]&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;lets-build-it&#34;&gt;Let&amp;rsquo;s build it&lt;/h2&gt;
 &lt;p&gt;Want to build this with me? I&amp;rsquo;m @Bieber on Twitter and active as dbieber on the 
@@ -120,12 +120,16 @@ notify(&amp;quot;You&#39;ve got mail.&amp;quot;);
 &lt;p&gt;&lt;em&gt;soni-sono&lt;/em&gt; for short. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Code courtesy of 
-&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/notification&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MDN&lt;/a&gt;. &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Has anyone taken the 
+&lt;a href=&#34;https://fontmeme.com/the-home-depot-font/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Home Depot logo&lt;/a&gt; and replaced the word Home with Roam in the appropriate font yet? &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Code courtesy of 
+&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/notification&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MDN&lt;/a&gt;. &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;cmd-option-i to open your browser console on Chrome on Mac. 
-&lt;a href=&#34;https://www.google.com/search?q=how&amp;#43;to&amp;#43;open&amp;#43;the&amp;#43;browser&amp;#43;console&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Look it up here&lt;/a&gt; for other browsers or operating systems. &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://www.google.com/search?q=how&amp;#43;to&amp;#43;open&amp;#43;the&amp;#43;browser&amp;#43;console&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Look it up here&lt;/a&gt; for other browsers or operating systems. &lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
