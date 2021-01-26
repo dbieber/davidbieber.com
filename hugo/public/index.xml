@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 24 Jan 2021 01:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 25 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>David Bieber</title>
@@ -302,6 +302,119 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Notifications in Roam Research</title>
+      <link>https://davidbieber.com/snippets/2021-01-25-notifications-in-roam-research/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-25-notifications-in-roam-research/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://twitter.com/hashtag/RoamGames&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#RoamGames&lt;/a&gt; are upon us! The challenge: &lt;em&gt;project management&lt;/em&gt; in Roam.&lt;/p&gt;
+&lt;p&gt;So, let&amp;rsquo;s talk notifications. They&amp;rsquo;re going to be essential for any multiplayer Roam scenario. They&amp;rsquo;re also ruthless attention vampires that kill productivity. We&amp;rsquo;ve got to get this right.&lt;/p&gt;
+&lt;p&gt;We disentangle &lt;em&gt;what&lt;/em&gt; you get notified about, &lt;em&gt;when&lt;/em&gt; you get notified about it, and &lt;em&gt;where/how&lt;/em&gt; you&amp;rsquo;re notified.&lt;/p&gt;
+&lt;h2 id=&#34;what-references-and-queries&#34;&gt;&lt;strong&gt;What&lt;/strong&gt; (References and Queries)&lt;/h2&gt;
+&lt;p&gt;What do we want to get notified about? First, three scenarios to motivate our discussion. Then, the primitives: references and queries.&lt;/p&gt;
+&lt;h4 id=&#34;scenario-1-chat&#34;&gt;Scenario 1, Chat:&lt;/h4&gt;
+&lt;p&gt;You&amp;rsquo;re working on Secret Project X, conversing asynchronously with your teammate Abhay about Feature XX. It&amp;rsquo;s gonna be big. While you&amp;rsquo;re off working on something else Abhay responds to a bunch of your earlier messages. You want to get notified about this, for sure.&lt;/p&gt;
+&lt;h4 id=&#34;scenario-2-blockers&#34;&gt;Scenario 2, Blockers:&lt;/h4&gt;
+&lt;p&gt;You&amp;rsquo;re working on Task A. But it&amp;rsquo;s blocked by Tasks B and C. You represent this in your Roam graph like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FjLpcHwI9aQ.png?alt=media&amp;amp;token=eeb11581-2466-4824-a725-35a0bd720eff&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;(As an aside, being able to embed a tiny piece of my Roam graph in my blog would be super helpful.)&lt;/p&gt;
+&lt;p&gt;Once Task B and Task C are done, you want to get notified so you can resume working on Task A.&lt;/p&gt;
+&lt;h4 id=&#34;scenario-3-topic-tracking&#34;&gt;Scenario 3, Topic Tracking:&lt;/h4&gt;
+&lt;p&gt;You&amp;rsquo;re in a big multiplayer graph and you&amp;rsquo;ve carefully curated a page about your own project Python Fire. You&amp;rsquo;re excited when people talk about Fire, so you want notifications when people reference it.&lt;/p&gt;
+&lt;h4 id=&#34;the-primitives-references-and-queries&#34;&gt;The Primitives: References and Queries&lt;/h4&gt;
+&lt;p&gt;Basic usage: Notifications when someone responds to me&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, notifications when someone references a particular page or block (linked or unlinked)&lt;/p&gt;
+&lt;p&gt;Advanced usage: Roam queries and Datalog queries&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; are extremely expressive. I should be able to set up a query and get notified whenever the query results change.&lt;/p&gt;
+&lt;p&gt;Now that we&amp;rsquo;ve set out what we want to get notified about, let&amp;rsquo;s talk about when we want to receive the notifications. We&amp;rsquo;ll get to how we want to configure the notifications a little bit later on.&lt;/p&gt;
+&lt;h2 id=&#34;when-immediately-batched-delayed-at-specific-times&#34;&gt;When (Immediately, Batched, Delayed, At specific times?)&lt;/h2&gt;
+&lt;p&gt;Most apps have minimal options for when you receive notifications. A typical message board config offers &amp;ldquo;every individual email&amp;rdquo;, &amp;ldquo;daily digest&amp;rdquo;, &amp;ldquo;weekly digest.&amp;rdquo; This is Roam. We can do better than that.&lt;/p&gt;
+&lt;p&gt;For the messages from Abhay about Project XX, I want notifications to pop up immediately.&lt;/p&gt;
+&lt;p&gt;When I become unblocked on a task, I want a notification within the hour, but if multiple tasks become unblocked they the notifications can totally be bundled. I don&amp;rsquo;t need an &lt;em&gt;individual notification&lt;/em&gt; per task. That would just be overkill.&lt;/p&gt;
+&lt;p&gt;And for references to Python Fire, a daily digest at 9am is more than sufficient.&lt;/p&gt;
+&lt;h4 id=&#34;primitive-notification-strategies&#34;&gt;Primitive: Notification Strategies&lt;/h4&gt;
+&lt;p&gt;Anyone with a bit of JavaScript or Clojure knowledge can define a notification strategy. A notification strategy defines the rules for how notifications should be handled. The interface for a notification strategy is: stream of notifications in, stream of notifications out (&lt;em&gt;soni-sono&lt;/em&gt; for short).&lt;/p&gt;
+&lt;p&gt;By allowing users to define and share notification strategies, we can empower uses to take back their attention and get more out of their Roam experience.&lt;/p&gt;
+&lt;p&gt;The &amp;ldquo;Notification strategies&amp;rdquo; approach benefits non-programmers too, because notification strategies can be shared in the Roam-depot. I&amp;rsquo;m hoping for a future where RoamHacker and David Vargas and others have developed both simple and sophisticated &amp;ldquo;notification managers&amp;rdquo;: UIs where non-programmers can configure their notification settings in the level of detail best suited for them.&lt;/p&gt;
+&lt;h4 id=&#34;primitive-tags-connect-references-and-queries-to-notification-strategies&#34;&gt;Primitive: Tags connect references and queries to notification strategies&lt;/h4&gt;
+&lt;p&gt;That is, tags connect &lt;em&gt;what&lt;/em&gt; to &lt;em&gt;when&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;When you write a notification strategy, you name it. Tag a reference of a query with the name of a notification strategy to run that strategy on that reference or query.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s clarify with an example.&lt;/p&gt;
+&lt;p&gt;Say I have a query (&amp;ldquo;all Tasks with &amp;lsquo;Blockers&amp;rsquo; where all Blockers are &amp;lsquo;DONE&amp;rsquo;&amp;quot;), and a notification strategy named &amp;ldquo;Bundle on the Hour&amp;rdquo; (&amp;ldquo;bundle all incoming notifications and emit them on the hour as a single notification&amp;rdquo;). Then I can tag the query with #[[Bundle on the Hour]] to start applying that notification strategy to the results of the query.&lt;/p&gt;
+&lt;p&gt;Once I&amp;rsquo;ve added that tag, the notification strategy will be called every time the query results change, and it will be able to start emitting notifications.&lt;/p&gt;
+&lt;p&gt;Similarly if I write [[Python Fire]] and tag it with #[[Bundle on the Hour]], then an instance of the notification strategy will also be called whenever the references to or contents of the Python Fire page change.&lt;/p&gt;
+&lt;h2 id=&#34;sending-notifications&#34;&gt;Sending notifications&lt;/h2&gt;
+&lt;p&gt;Great, we&amp;rsquo;ve talked about how to decide what to notify about, and when to send the notifications. How/where do the notifications actually get sent?&lt;/p&gt;
+&lt;p&gt;A sensible default for the first pass is to use browser notifications. But we&amp;rsquo;re thinking long term, so I won&amp;rsquo;t dwell on this &amp;ldquo;first pass&amp;rdquo; for too long.&lt;/p&gt;
+&lt;p&gt;If you do want to use browser notifications, it&amp;rsquo;s easy to do so&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. You can try this in your Roam graph (or browser console&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;) right now:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function notify(text) {
+  // Let&#39;s check if the browser supports notifications
+  if (!(&amp;quot;Notification&amp;quot; in window)) {
+    alert(text);
+  }
+
+  // Let&#39;s check whether notification permissions have already been granted
+  else if (Notification.permission === &amp;quot;granted&amp;quot;) {
+    // If it&#39;s okay let&#39;s create a notification
+    var notification = new Notification(text);
+  }
+
+  // Otherwise, we need to ask the user for permission
+  else if (Notification.permission !== &amp;quot;denied&amp;quot;) {
+    Notification.requestPermission().then(function (permission) {
+      // If the user accepts, let&#39;s create a notification
+      if (permission === &amp;quot;granted&amp;quot;) {
+        var notification = new Notification(text);
+      } else {
+        console.log(text);
+      }
+    });
+  } else {
+    // At last, if the user has denied notifications, and you
+    // want to be respectful there is no need to bother them any more.
+    console.log(text);
+  }
+}
+
+notify(&amp;quot;You&#39;ve got mail.&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I don&amp;rsquo;t want browser notifications though. I want my personal digital assistant 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;Bieber Bot&lt;/a&gt; to send me notifications. Now, this is no trouble in a private graph. I can use a webhook to send myself a message as Bieber Bot. In a public graph, however, this would be dangerous. Anyone could see the code and start impersonating Bieber Bot. A travesty!&lt;/p&gt;
+&lt;p&gt;So, we need Roam to support &lt;em&gt;secrets&lt;/em&gt;. Ideally this would come from the Roam core team, not the community. First class secrets would enable me to use write roam/js that communicates securely with my own services, like Bieber Bot and others, without giving others the capability of doing the same.&lt;/p&gt;
+&lt;p&gt;As an alternative approach to secrets, having all Roam graphs be &lt;em&gt;one giant graph&lt;/em&gt; with a good permissions model would also be sufficient. Then I could put my notifier code in my graph (private), but have the queries that trigger the notifier apply to a graph I share with my team.&lt;/p&gt;
+&lt;p&gt;How does specifying a notifier (browser notifications vs Bieber Bot) fit in with writing queries and enabling notifications? You can set your default &amp;ldquo;notify&amp;rdquo; function just by defining the function &amp;ldquo;notify&amp;rdquo; and tagging it / nesting it under roam/notify. You can also set a notify function whenever you define notifications just by adding an extra reference with the name of the notify function.&lt;/p&gt;
+&lt;h2 id=&#34;some-examples&#34;&gt;Some Examples&lt;/h2&gt;
+&lt;p&gt;This was a lot, and reading the above it might sound complicated. And that&amp;rsquo;s because it &lt;em&gt;can&lt;/em&gt; be complicated; you can have as complicated a notification strategy as you like. But it doesn&amp;rsquo;t have to be complicated, and for most users it won&amp;rsquo;t be.&lt;/p&gt;
+&lt;p&gt;Ideally turning on notifications for messages could be as simple as adding a block in your graph that says:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[[roam/messages]] #[[Notify me immediately]]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Turning on notifications for unblocked tasks could be as simple as (1) getting the unblocked tasks query from the Roam depot, and then (2) adding a block &lt;code&gt;[[Unblocked tasks]] #[[Bundle on the Hour]]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;And turning on notifications for references to Python Fire should simply mean adding a block &lt;code&gt;[[Python Fire]] #[[Bundle on the Hour]]&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;lets-build-it&#34;&gt;Let&amp;rsquo;s build it&lt;/h2&gt;
+&lt;p&gt;Want to build this with me? I&amp;rsquo;m @Bieber on Twitter and active as dbieber on the 
+&lt;a href=&#34;https://roamresearch.slack.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Slack&lt;/a&gt;.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;This one, while a basic use case, is actually tricky to express as a query. But we can do it, I&amp;rsquo;m confident. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;See my 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/&#34;&gt;two&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-04-more-datalog-queries-for-roam/&#34;&gt;snippets&lt;/a&gt; for lots of examples of what you can do with datalog queries. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Code courtesy of 
+&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/notification&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MDN&lt;/a&gt;. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Cmd-option-i to open your browser console on Chrome on Mac. 
+&lt;a href=&#34;https://www.google.com/search?q=how&amp;#43;to&amp;#43;open&amp;#43;the&amp;#43;browser&amp;#43;console&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Look it up here&lt;/a&gt; for other browsers or operating systems. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 </description>
     </item>
     

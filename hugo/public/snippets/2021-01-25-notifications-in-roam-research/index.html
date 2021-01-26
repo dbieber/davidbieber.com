@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="David Bieber">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="#RoamGames are upon us! The challenge: project management in Roam.
+So, let&rsquo;s talk notifications. They&rsquo;re going to be essential for any multiplayer Roam scenario. They&rsquo;re also ruthless attention vampires that kill productivity. We&rsquo;ve got to get this right.
+We disentangle what you get notified about, when you get notified about it, and where/how you&rsquo;re notified.
+What (References and Queries) What do we want to get notified about? First, three scenarios to motivate our discussion.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-01-25-notifications-in-roam-research/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34570499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-34570499-2', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+
+  <link rel="canonical" href="https://davidbieber.com/snippets/2021-01-25-notifications-in-roam-research/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@Bieber">
+  <meta property="twitter:creator" content="@Bieber">
+  
+  <meta property="og:site_name" content="David Bieber">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2021-01-25-notifications-in-roam-research/">
+  <meta property="og:title" content="Notifications in Roam Research | David Bieber">
+  <meta property="og:description" content="#RoamGames are upon us! The challenge: project management in Roam.
+So, let&rsquo;s talk notifications. They&rsquo;re going to be essential for any multiplayer Roam scenario. They&rsquo;re also ruthless attention vampires that kill productivity. We&rsquo;ve got to get this right.
+We disentangle what you get notified about, when you get notified about it, and where/how you&rsquo;re notified.
+What (References and Queries) What do we want to get notified about? First, three scenarios to motivate our discussion."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-01-25T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-01-25T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Notifications in Roam Research | David Bieber</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">David Bieber</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">David Bieber</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/posts"><span>Writing</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Notifications in Roam Research</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" id="article-content">
+      <p>
+<a href="https://twitter.com/hashtag/RoamGames" target="_blank" rel="noopener">#RoamGames</a> are upon us! The challenge: <em>project management</em> in Roam.</p>
+<p>So, let&rsquo;s talk notifications. They&rsquo;re going to be essential for any multiplayer Roam scenario. They&rsquo;re also ruthless attention vampires that kill productivity. We&rsquo;ve got to get this right.</p>
+<p>We disentangle <em>what</em> you get notified about, <em>when</em> you get notified about it, and <em>where/how</em> you&rsquo;re notified.</p>
+<h2 id="what-references-and-queries"><strong>What</strong> (References and Queries)</h2>
+<p>What do we want to get notified about? First, three scenarios to motivate our discussion. Then, the primitives: references and queries.</p>
+<h4 id="scenario-1-chat">Scenario 1, Chat:</h4>
+<p>You&rsquo;re working on Secret Project X, conversing asynchronously with your teammate Abhay about Feature XX. It&rsquo;s gonna be big. While you&rsquo;re off working on something else Abhay responds to a bunch of your earlier messages. You want to get notified about this, for sure.</p>
+<h4 id="scenario-2-blockers">Scenario 2, Blockers:</h4>
+<p>You&rsquo;re working on Task A. But it&rsquo;s blocked by Tasks B and C. You represent this in your Roam graph like this:</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FjLpcHwI9aQ.png?alt=media&amp;token=eeb11581-2466-4824-a725-35a0bd720eff" alt=""></p>
+<p>(As an aside, being able to embed a tiny piece of my Roam graph in my blog would be super helpful.)</p>
+<p>Once Task B and Task C are done, you want to get notified so you can resume working on Task A.</p>
+<h4 id="scenario-3-topic-tracking">Scenario 3, Topic Tracking:</h4>
+<p>You&rsquo;re in a big multiplayer graph and you&rsquo;ve carefully curated a page about your own project Python Fire. You&rsquo;re excited when people talk about Fire, so you want notifications when people reference it.</p>
+<h4 id="the-primitives-references-and-queries">The Primitives: References and Queries</h4>
+<p>Basic usage: Notifications when someone responds to me<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, notifications when someone references a particular page or block (linked or unlinked)</p>
+<p>Advanced usage: Roam queries and Datalog queries<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> are extremely expressive. I should be able to set up a query and get notified whenever the query results change.</p>
+<p>Now that we&rsquo;ve set out what we want to get notified about, let&rsquo;s talk about when we want to receive the notifications. We&rsquo;ll get to how we want to configure the notifications a little bit later on.</p>
+<h2 id="when-immediately-batched-delayed-at-specific-times">When (Immediately, Batched, Delayed, At specific times?)</h2>
+<p>Most apps have minimal options for when you receive notifications. A typical message board config offers &ldquo;every individual email&rdquo;, &ldquo;daily digest&rdquo;, &ldquo;weekly digest.&rdquo; This is Roam. We can do better than that.</p>
+<p>For the messages from Abhay about Project XX, I want notifications to pop up immediately.</p>
+<p>When I become unblocked on a task, I want a notification within the hour, but if multiple tasks become unblocked they the notifications can totally be bundled. I don&rsquo;t need an <em>individual notification</em> per task. That would just be overkill.</p>
+<p>And for references to Python Fire, a daily digest at 9am is more than sufficient.</p>
+<h4 id="primitive-notification-strategies">Primitive: Notification Strategies</h4>
+<p>Anyone with a bit of JavaScript or Clojure knowledge can define a notification strategy. A notification strategy defines the rules for how notifications should be handled. The interface for a notification strategy is: stream of notifications in, stream of notifications out (<em>soni-sono</em> for short).</p>
+<p>By allowing users to define and share notification strategies, we can empower uses to take back their attention and get more out of their Roam experience.</p>
+<p>The &ldquo;Notification strategies&rdquo; approach benefits non-programmers too, because notification strategies can be shared in the Roam-depot. I&rsquo;m hoping for a future where RoamHacker and David Vargas and others have developed both simple and sophisticated &ldquo;notification managers&rdquo;: UIs where non-programmers can configure their notification settings in the level of detail best suited for them.</p>
+<h4 id="primitive-tags-connect-references-and-queries-to-notification-strategies">Primitive: Tags connect references and queries to notification strategies</h4>
+<p>That is, tags connect <em>what</em> to <em>when</em>.</p>
+<p>When you write a notification strategy, you name it. Tag a reference of a query with the name of a notification strategy to run that strategy on that reference or query.</p>
+<p>Let&rsquo;s clarify with an example.</p>
+<p>Say I have a query (&ldquo;all Tasks with &lsquo;Blockers&rsquo; where all Blockers are &lsquo;DONE&rsquo;&quot;), and a notification strategy named &ldquo;Bundle on the Hour&rdquo; (&ldquo;bundle all incoming notifications and emit them on the hour as a single notification&rdquo;). Then I can tag the query with #[[Bundle on the Hour]] to start applying that notification strategy to the results of the query.</p>
+<p>Once I&rsquo;ve added that tag, the notification strategy will be called every time the query results change, and it will be able to start emitting notifications.</p>
+<p>Similarly if I write [[Python Fire]] and tag it with #[[Bundle on the Hour]], then an instance of the notification strategy will also be called whenever the references to or contents of the Python Fire page change.</p>
+<h2 id="sending-notifications">Sending notifications</h2>
+<p>Great, we&rsquo;ve talked about how to decide what to notify about, and when to send the notifications. How/where do the notifications actually get sent?</p>
+<p>A sensible default for the first pass is to use browser notifications. But we&rsquo;re thinking long term, so I won&rsquo;t dwell on this &ldquo;first pass&rdquo; for too long.</p>
+<p>If you do want to use browser notifications, it&rsquo;s easy to do so<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. You can try this in your Roam graph (or browser console<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>) right now:</p>
+<pre><code class="language-javascript">function notify(text) {
+  // Let's check if the browser supports notifications
+  if (!(&quot;Notification&quot; in window)) {
+    alert(text);
+  }
+
+  // Let's check whether notification permissions have already been granted
+  else if (Notification.permission === &quot;granted&quot;) {
+    // If it's okay let's create a notification
+    var notification = new Notification(text);
+  }
+
+  // Otherwise, we need to ask the user for permission
+  else if (Notification.permission !== &quot;denied&quot;) {
+    Notification.requestPermission().then(function (permission) {
+      // If the user accepts, let's create a notification
+      if (permission === &quot;granted&quot;) {
+        var notification = new Notification(text);
+      } else {
+        console.log(text);
+      }
+    });
+  } else {
+    // At last, if the user has denied notifications, and you
+    // want to be respectful there is no need to bother them any more.
+    console.log(text);
+  }
+}
+
+notify(&quot;You've got mail.&quot;);
+</code></pre>
+<p>I don&rsquo;t want browser notifications though. I want my personal digital assistant 
+<a href="/projects/bieber-bot/">Bieber Bot</a> to send me notifications. Now, this is no trouble in a private graph. I can use a webhook to send myself a message as Bieber Bot. In a public graph, however, this would be dangerous. Anyone could see the code and start impersonating Bieber Bot. A travesty!</p>
+<p>So, we need Roam to support <em>secrets</em>. Ideally this would come from the Roam core team, not the community. First class secrets would enable me to use write roam/js that communicates securely with my own services, like Bieber Bot and others, without giving others the capability of doing the same.</p>
+<p>As an alternative approach to secrets, having all Roam graphs be <em>one giant graph</em> with a good permissions model would also be sufficient. Then I could put my notifier code in my graph (private), but have the queries that trigger the notifier apply to a graph I share with my team.</p>
+<p>How does specifying a notifier (browser notifications vs Bieber Bot) fit in with writing queries and enabling notifications? You can set your default &ldquo;notify&rdquo; function just by defining the function &ldquo;notify&rdquo; and tagging it / nesting it under roam/notify. You can also set a notify function whenever you define notifications just by adding an extra reference with the name of the notify function.</p>
+<h2 id="some-examples">Some Examples</h2>
+<p>This was a lot, and reading the above it might sound complicated. And that&rsquo;s because it <em>can</em> be complicated; you can have as complicated a notification strategy as you like. But it doesn&rsquo;t have to be complicated, and for most users it won&rsquo;t be.</p>
+<p>Ideally turning on notifications for messages could be as simple as adding a block in your graph that says:</p>
+<p><code>[[roam/messages]] #[[Notify me immediately]]</code></p>
+<p>Turning on notifications for unblocked tasks could be as simple as (1) getting the unblocked tasks query from the Roam depot, and then (2) adding a block <code>[[Unblocked tasks]] #[[Bundle on the Hour]]</code>.</p>
+<p>And turning on notifications for references to Python Fire should simply mean adding a block <code>[[Python Fire]] #[[Bundle on the Hour]]</code>.</p>
+<h2 id="lets-build-it">Let&rsquo;s build it</h2>
+<p>Want to build this with me? I&rsquo;m @Bieber on Twitter and active as dbieber on the 
+<a href="https://roamresearch.slack.com" target="_blank" rel="noopener">Roam Slack</a>.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>This one, while a basic use case, is actually tricky to express as a query. But we can do it, I&rsquo;m confident. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>See my 
+<a href="/snippets/2020-12-22-datalog-queries-for-roam-research/">two</a> 
+<a href="/snippets/2021-01-04-more-datalog-queries-for-roam/">snippets</a> for lots of examples of what you can do with datalog queries. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Code courtesy of 
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/notification" target="_blank" rel="noopener">MDN</a>. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Cmd-option-i to open your browser console on Chrome on Mac. 
+<a href="https://www.google.com/search?q=how&#43;to&#43;open&#43;the&#43;browser&#43;console" target="_blank" rel="noopener">Look it up here</a> for other browsers or operating systems. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://davidbieber.com/">David Bieber</a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+
+    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+
+
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZSDKaAmz-UUyaL1IZMi4QO_q4Jouko2c",
+    authDomain: "ask-me-anywhere.firebaseapp.com",
+    databaseURL: "https://ask-me-anywhere.firebaseio.com",
+    projectId: "ask-me-anywhere",
+    storageBucket: "ask-me-anywhere.appspot.com",
+    messagingSenderId: "123038093749",
+    appId: "1:123038093749:web:e8ce89651fcf1371d109fc",
+    measurementId: "G-JLDGL73R1B"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
