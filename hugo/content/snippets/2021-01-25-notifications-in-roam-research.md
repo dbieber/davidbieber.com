@@ -130,7 +130,7 @@ notify("You've got mail.");
 
 I don't want browser notifications though. I want my personal digital assistant [Bieber Bot](/projects/bieber-bot/) to send me notifications. Now, this is no trouble in a private graph. I can use a webhook to send myself a message as Bieber Bot. In a public graph, however, this would be dangerous. Anyone could see the code and start impersonating Bieber Bot. A travesty!
 
-So, we need Roam to support *secrets*. Ideally this would come from the Roam core team, not the community. First class secrets would enable me to use write roam/js that communicates securely with my own services, like Bieber Bot and others, without giving others the capability of doing the same.
+So, we need Roam to support *secrets*. Ideally this would come from the Roam core team, not the community. First class secrets would enable me to write roam/js that communicates securely with my own services, like Bieber Bot and others, without giving other users the capability of doing the same.
 
 As an alternative approach to secrets, having all Roam graphs be *one giant graph* with a good permissions model would also be sufficient. Then I could put my notifier code in my graph (private), but have the queries that trigger the notifier apply to a graph I share with my team.
 
