@@ -120,7 +120,7 @@ function notify(text) {
 notify("You've got mail.");
 ```
 
-[^3]: Cmd-option-i to open your browser console on Chrome on Mac. [Look it up here](https://www.google.com/search?q=how+to+open+the+browser+console) for other browsers or operating systems.
+[^3]: cmd-option-i to open your browser console on Chrome on Mac. [Look it up here](https://www.google.com/search?q=how+to+open+the+browser+console) for other browsers or operating systems.
 
 [^mozilla]: Code courtesy of [MDN](https://developer.mozilla.org/en-US/docs/Web/API/notification).
 
