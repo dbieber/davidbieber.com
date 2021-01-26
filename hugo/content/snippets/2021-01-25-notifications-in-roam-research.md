@@ -47,7 +47,7 @@ Advanced usage: Roam queries and Datalog queries[^2] are extremely expressive. I
 
 Now that we've set out what we want to get notified about, let's talk about when we want to receive the notifications. We'll get to how we want to configure the notifications a little bit later on.
 
-## *When* to notify (Immediately, Batched, Delayed, At specific times?)
+## **When** to notify (Immediately, Batched, Delayed, At specific times?)
 
 Most apps have minimal options for when you receive notifications. A typical message board config offers "every individual email", "daily digest", "weekly digest." This is Roam. We can do better than that.
 
@@ -83,7 +83,7 @@ Once I've added that tag, the notification strategy will be called every time th
 
 Similarly if I write [[Python Fire]] and tag it with #[[Digest at 9am]], then _that_ notification strategy will be called whenever the references to or contents of the Python Fire page change.
 
-## Sending notifications
+## **Where/How**: Actually sending notifications
 
 Great, we've talked about how to decide what to notify about, and when to send the notifications. How/where do the notifications actually get sent?
 
