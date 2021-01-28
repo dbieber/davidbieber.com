@@ -1073,7 +1073,7 @@ let ancestor = `[
    [?parent :block/children ?child]] 
   [(ancestor ?child ?ancestor) 
    [?parent :block/children ?child] 
-   (ancestor ?parent ?ancestor)]]
+   (ancestor ?parent ?ancestor)]
 ]`;
 
 var blocks = window.roamAlphaAPI.q(`
