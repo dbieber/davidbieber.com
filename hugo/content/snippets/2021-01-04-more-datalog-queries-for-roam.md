@@ -15,10 +15,10 @@ This query is useful when constructing an index page. Let's say you want to take
 let container = "Brilliant Ideas Index";
 let tag = "Brilliant";
 let ancestor = `[ 
-  [(ancestor ?child ?parent) 
-   [?parent :block/children ?child]] 
-  [(ancestor ?child ?ancestor) 
-   [?parent :block/children ?child] 
+  [(ancestor ?child ?parent)
+   [?parent :block/children ?child]]
+  [(ancestor ?child ?ancestor)
+   [?parent :block/children ?child]
    (ancestor ?parent ?ancestor)]
 ]`;
 
@@ -72,11 +72,11 @@ This extends the previous query in two key ways: (1) it gets all children of any
 let tag1 = "Snippets";
 let tag2 = "ok-to-publish";
 let ancestor = `[ 
-  [(ancestor ?child ?parent) 
-   [?parent :block/children ?child]] 
-  [(ancestor ?child ?ancestor) 
-   [?parent :block/children ?child] 
-   (ancestor ?parent ?ancestor)]]
+  [(ancestor ?child ?parent)
+   [?parent :block/children ?child]]
+  [(ancestor ?child ?ancestor)
+   [?parent :block/children ?child]
+   (ancestor ?parent ?ancestor)]
 ]`;
 
 let block_info = window.roamAlphaAPI.q(`[

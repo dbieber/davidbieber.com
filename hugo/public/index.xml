@@ -1069,10 +1069,10 @@ First, you&amp;rsquo;re welcome here. It&amp;rsquo;s not voyeurism. These aren&a
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let container = &amp;quot;Brilliant Ideas Index&amp;quot;;
 let tag = &amp;quot;Brilliant&amp;quot;;
 let ancestor = `[ 
-  [(ancestor ?child ?parent) 
-   [?parent :block/children ?child]] 
-  [(ancestor ?child ?ancestor) 
-   [?parent :block/children ?child] 
+  [(ancestor ?child ?parent)
+   [?parent :block/children ?child]]
+  [(ancestor ?child ?ancestor)
+   [?parent :block/children ?child]
    (ancestor ?parent ?ancestor)]
 ]`;
 
@@ -1117,11 +1117,11 @@ blocks.map(
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let tag1 = &amp;quot;Snippets&amp;quot;;
 let tag2 = &amp;quot;ok-to-publish&amp;quot;;
 let ancestor = `[ 
-  [(ancestor ?child ?parent) 
-   [?parent :block/children ?child]] 
-  [(ancestor ?child ?ancestor) 
-   [?parent :block/children ?child] 
-   (ancestor ?parent ?ancestor)]]
+  [(ancestor ?child ?parent)
+   [?parent :block/children ?child]]
+  [(ancestor ?child ?ancestor)
+   [?parent :block/children ?child]
+   (ancestor ?parent ?ancestor)]
 ]`;
 
 let block_info = window.roamAlphaAPI.q(`[

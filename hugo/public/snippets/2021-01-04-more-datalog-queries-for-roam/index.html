@@ -532,10 +532,10 @@ Pages tagged with &ldquo;X&rdquo; not listed on page &ldquo;Y&rdquo; This query 
 <pre><code class="language-javascript">let container = &quot;Brilliant Ideas Index&quot;;
 let tag = &quot;Brilliant&quot;;
 let ancestor = `[ 
-  [(ancestor ?child ?parent) 
-   [?parent :block/children ?child]] 
-  [(ancestor ?child ?ancestor) 
-   [?parent :block/children ?child] 
+  [(ancestor ?child ?parent)
+   [?parent :block/children ?child]]
+  [(ancestor ?child ?ancestor)
+   [?parent :block/children ?child]
    (ancestor ?parent ?ancestor)]
 ]`;
 
@@ -580,11 +580,11 @@ blocks.map(
 <pre><code class="language-javascript">let tag1 = &quot;Snippets&quot;;
 let tag2 = &quot;ok-to-publish&quot;;
 let ancestor = `[ 
-  [(ancestor ?child ?parent) 
-   [?parent :block/children ?child]] 
-  [(ancestor ?child ?ancestor) 
-   [?parent :block/children ?child] 
-   (ancestor ?parent ?ancestor)]]
+  [(ancestor ?child ?parent)
+   [?parent :block/children ?child]]
+  [(ancestor ?child ?ancestor)
+   [?parent :block/children ?child]
+   (ancestor ?parent ?ancestor)]
 ]`;
 
 let block_info = window.roamAlphaAPI.q(`[
