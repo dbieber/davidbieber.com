@@ -5,7 +5,7 @@ uid = "uTT1gaOcQ"
 plugins_js = ["margin-notes"]
 +++
 
- The purpose of the Kangaroo Auto-responder is to:
+The purpose of the Kangaroo Auto-responder is to:
 
 1. Avoid people expecting a response from me when I don't realize they're expecting a response, e.g. because I've forgotten about their message
 2. It should let me let my guard down a bit about feeling obligated to respond to people
@@ -14,7 +14,7 @@ What will it do?
 
 It will automatically respond to messages that I've seen but haven't responded to for 2+ hours with a kangaroo[^1].
 
-[^1]: With a picture of a kangaroo, that is. Like this one: 🦘 , or this: ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FtBz98tV75N.png?alt=media&token=66762cac-d0b0-43ba-91a8-eaefa6ef7626). It will not send them an actual real-life kangaroo.
+[^1]: With a picture of a kangaroo, that is. Like this one: 🦘 , or this: ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FtBz98tV75N.png?alt=media&token=66762cac-d0b0-43ba-91a8-eaefa6ef7626) It will not send them an actual real-life kangaroo.
 
 The first time it sends someone a kangaroo, it will also explain:
 
