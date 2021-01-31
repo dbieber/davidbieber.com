@@ -13,6 +13,115 @@
     </image>
     
     <item>
+      <title>SQL for the Kangaroo Auto-responder</title>
+      <link>https://davidbieber.com/snippets/2021-01-30-sql-for-the-kangaroo-auto-responder/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-30-sql-for-the-kangaroo-auto-responder/</guid>
+      <description>&lt;p&gt;I turned on the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/&#34;&gt;Kangaroo Auto-responder&lt;/a&gt; this morning. The rules for when to send a kangaroo 🦘 are as follows:&lt;/p&gt;
+&lt;p&gt;You get a kangaroo if the &lt;strong&gt;most-recent&lt;/strong&gt; message in our chat (ignoring trivial messages from you) is &lt;strong&gt;non-trivial&lt;/strong&gt;, &lt;strong&gt;read-by-me&lt;/strong&gt;, &lt;strong&gt;written-by-you&lt;/strong&gt;, &lt;strong&gt;not a response&lt;/strong&gt;, and &lt;strong&gt;eight-hours old&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s look at each of these criteria in more detail.&lt;/p&gt;
+&lt;h2 id=&#34;most-recent-message&#34;&gt;Most-recent message&lt;/h2&gt;
+&lt;p&gt;The criteria are being applied to the most recent message in our chat ignoring trivial messages from you.&lt;/p&gt;
+&lt;p&gt;In SQL, this looks like&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select thread_id, max(timestamp) as timestamp
+from messenger
+where (author = &#39;1409114395&#39; or (author &amp;lt;&amp;gt; &#39;1409114395&#39; and LENGTH(text) &amp;gt; 15))
+group by thread_id;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;1409114395 is my Facebook ID.&lt;/p&gt;
+&lt;p&gt;This query selects the most recent timestamp from only a single message in each thread. It considers all messages from me, but only non-trivial (more than 15 characters) messages from the other participant.&lt;/p&gt;
+&lt;p&gt;The reason for this is that if I have sent the most recent message in a conversation (regardless of the length of the message), then no kangaroo is needed. If the other person has sent the most recent message, a kangaroo might be in order, but trivial messages should not trigger kangaroos. So we ignore them, and see if the most recent message is still from the other person even when ignoring their trivial messages.&lt;/p&gt;
+&lt;h2 id=&#34;non-trivial&#34;&gt;Non-trivial&lt;/h2&gt;
+&lt;p&gt;We choose 15-characters as the threshold for what makes a message trivial. The reason we ignore trivial messages is because they often don&amp;rsquo;t warrant a response. I am considering removing this constraint, as the &amp;ldquo;Not a response&amp;rdquo; constraint seems to obviate the need for it.&lt;/p&gt;
+&lt;p&gt;This shows up as &lt;code&gt;LENGTH(text) &amp;gt; 15)&lt;/code&gt; in the query.&lt;/p&gt;
+&lt;h2 id=&#34;read-by-me&#34;&gt;Read-by-me&lt;/h2&gt;
+&lt;p&gt;Unfortunately I do not have read receipt information in my messages database, so I did not include this rule in the first version of the Kangaroo Auto-responder.&lt;/p&gt;
+&lt;h2 id=&#34;written-by-you&#34;&gt;Written-by-you&lt;/h2&gt;
+&lt;p&gt;Only if the most recent message is from you is a kangaroo necessary. If its from me, I&amp;rsquo;ve already responded!&lt;/p&gt;
+&lt;p&gt;In this query, this is a simple check:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;WHERE messenger.author &amp;lt;&amp;gt; &#39;1409114395&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;not-a-response&#34;&gt;Not-a-response&lt;/h2&gt;
+&lt;p&gt;This is an interesting piece. When I wrote out the rules for the auto-responder yesterday, I was thinking I&amp;rsquo;d ignore messages sent within 5 minutes of a message I sent. My thinking was that this small filter would prevent me from needing to get the last word in every conversation to avoid oversending of kangaroos.&lt;/p&gt;
+&lt;p&gt;Now, I&amp;rsquo;m thinking I&amp;rsquo;ll ignore messages sent within &lt;em&gt;36 hours&lt;/em&gt; of a message I sent. This is a much tighter restriction. It means that I may miss sending some kangaroos that I ought to have sent, but it also means that if someone takes two hours to reply to me and that&amp;rsquo;s the end of the conversation, I don&amp;rsquo;t need to reply to prevent a kangaroo from going out.&lt;/p&gt;
+&lt;p&gt;It seems like striking a good balance between the non-trivial message criteria and the not-a-response criteria is key, and I may adjust these going forward.&lt;/p&gt;
+&lt;p&gt;To determine if a message is a response, I first determine the time of my own most recent message in the chat. In SQL, this is:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select thread_id, max(timestamp) as outgoing_timestamp
+from messenger
+where author = &#39;1409114395&#39; -- my FB id
+group by thread_id;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I then compare this message&amp;rsquo;s timestamp with that of the most recent message in the thread, which we selected earlier:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;(  -- The reply is at least X minutes after my latest message.
+  (latest_messages.timestamp - outgoing_timestamp)/1000 &amp;gt; 36*60*60
+  or outgoing_timestamp IS NULL
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;8-hours-old&#34;&gt;8-hours old&lt;/h2&gt;
+&lt;p&gt;The final criteria for whether to send a kangaroo is that the message must be eight hours old. Yesterday I was initially planning for 2-hours old, but I decided to give myself more time to respond manually before the kangaroo would go out. Here&amp;rsquo;s the SQL for that:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;-- Message is 8 hours old:
+AND NOW() - to_timestamp(messenger.timestamp/1000) at time zone &#39;UTC&#39; &amp;gt; INTERVAL &#39;8 HOURS&#39;
+AND NOW() - to_timestamp(messenger.timestamp/1000) at time zone &#39;UTC&#39; &amp;lt; INTERVAL &#39;8.25 HOURS&#39;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;putting-it-all-together&#34;&gt;Putting it all together&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s the complete SQL query that finds messages which warrant an automated kangaroo response.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;-- Select the most recent message per thread
+-- (ignoring trivial messages from you),
+-- and the most recent message per thread specifically from me.
+-- If the most recent message (ignoring trivial messages from you)
+-- is non-trivial,
+-- written-by-you,
+-- not a reply to my message,
+-- and a specific age,
+-- then we&#39;ve got ourselves a Kangaroo!
+--
+-- In a future iteration we will also ensure the message has been read-by-me.
+
+SELECT * FROM
+
+-- The first sub-query:
+-- Selects the most recent message from each thread that is either:
+-- (A) from me, or (B) from you and non-trivial in length
+-- And is also less than 8 hours old.
+((select thread_id, max(timestamp) as timestamp
+ from messenger
+ where (author = &#39;1409114395&#39; or (author &amp;lt;&amp;gt; &#39;1409114395&#39; and LENGTH(text) &amp;gt; 15))
+ -- and to_timestamp(timestamp/1000) at time zone &#39;UTC&#39; &amp;gt; NOW() - INTERVAL &#39;800 HOURS&#39;
+ group by thread_id) AS latest_messages
+INNER JOIN
+  messenger
+ON
+  messenger.thread_id = latest_messages.thread_id AND
+  messenger.timestamp = latest_messages.timestamp)
+LEFT JOIN
+    -- Selects the most recent message from each thread from me:
+    (select thread_id, max(timestamp) as outgoing_timestamp
+     from messenger
+     where author = &#39;1409114395&#39;
+     -- and to_timestamp(timestamp/1000) at time zone &#39;UTC&#39; &amp;gt; NOW() - INTERVAL &#39;800 HOURS&#39;
+     group by thread_id) AS latest_outgoing_messages
+ON
+  messenger.thread_id = latest_outgoing_messages.thread_id
+WHERE messenger.author &amp;lt;&amp;gt; &#39;1409114395&#39; -- David Bieber
+AND messenger.author &amp;lt;&amp;gt; &#39;1985867351654140&#39; -- Bieber Bot
+AND (  -- The reply is at least X minutes after my latest message.
+  (latest_messages.timestamp - outgoing_timestamp)/1000 &amp;gt; 36*60*60
+  or outgoing_timestamp IS NULL
+)
+AND thread_type = &#39;USER&#39; -- Message is a 1:1 chat, not a group chat
+-- Message is 8 hours old:
+AND NOW() - to_timestamp(messenger.timestamp/1000) at time zone &#39;UTC&#39; &amp;gt; INTERVAL &#39;8 HOURS&#39;
+AND NOW() - to_timestamp(messenger.timestamp/1000) at time zone &#39;UTC&#39; &amp;lt; INTERVAL &#39;8.25 HOURS&#39;
+ORDER BY messenger.timestamp desc;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This checks all the criteria for whether a message needs a kangaroo. I&amp;rsquo;ve set up a script that runs this query every ten minutes, and sends kangaroos as necessary.&lt;/p&gt;
+&lt;p&gt;At the time of this writing, no kangaroos have been sent yet. I hope it works 🤞!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Kangaroo Auto-responder</title>
       <link>https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/</link>
       <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
