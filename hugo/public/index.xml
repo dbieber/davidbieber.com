@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 30 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 31 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>David Bieber</title>
@@ -302,6 +302,19 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Asking for upvotes</title>
+      <link>https://davidbieber.com/snippets/2021-01-31-asking-for-upvotes/</link>
+      <pubDate>Sun, 31 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-31-asking-for-upvotes/</guid>
+      <description>&lt;p&gt;Hello! Can I let you know when I post new content? In particular, can I let you know when I post things to e.g. Hacker News, which require upvotes to be seen? This should go without saying: there&amp;rsquo;s no pressure to actually upvote anything &amp;ndash; but if you think my submission deserves it and you do upvote it, that&amp;rsquo;s much appreciated!&lt;/p&gt;
+&lt;p&gt;If &lt;em&gt;Yes&lt;/em&gt;, let me know. You can let me know 
+&lt;a href=&#34;https://www.messenger.com/t/dbieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;on Facebook messenger&lt;/a&gt;, or you can fill out this form. Info about the &lt;em&gt;content-sharing group&lt;/em&gt; option below the fold.&lt;/p&gt;
+&lt;iframe src=&#34;https://docs.google.com/forms/d/e/1FAIpQLSeKINUItuKwpf_wG221Q2c-QnntQabeXTGPFtzUrhlF9H6qvw/viewform?embedded=true&#34; width=&#34;640&#34; height=&#34;765&#34; frameborder=&#34;0&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34;&gt;Loading…&lt;/iframe&gt;
+&lt;p&gt;&amp;ldquo;What&amp;rsquo;s a &lt;em&gt;content-sharing group&lt;/em&gt;?&amp;rdquo;, you may be wondering. It&amp;rsquo;s a small Facebook messenger group where the social norm is to share your creative output. This is a place to share things you&amp;rsquo;ve made, posts you&amp;rsquo;ve written, or progress updates on your latest side-project. All sharing of this kind is welcome. Feel free to brag. Incremental updates are welcome too, so there&amp;rsquo;s no need to wait until a project is finished. It&amp;rsquo;s not spamming; it&amp;rsquo;s what the group is for! To join, just let me know or fill out the form and I&amp;rsquo;ll add you.&lt;/p&gt;
 </description>
     </item>
     
