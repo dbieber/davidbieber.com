@@ -13,6 +13,22 @@
     </image>
     
     <item>
+      <title>Focused Reading Browserflow Flow Idea</title>
+      <link>https://davidbieber.com/snippets/2021-02-02-focused-reading-browserflow-flow-idea/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-02-02-focused-reading-browserflow-flow-idea/</guid>
+      <description>&lt;p&gt;This idea for an assistive technology for focused reading comes from 
+&lt;a href=&#34;https://accessibe.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;accessiBe&lt;/a&gt;. I stumbled upon it on 
+&lt;a href=&#34;https://www.tasteofhome.com/recipes/homemade-potato-chips/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tasteofhome.com&lt;/a&gt;. The idea is to make the web more accessible to folks with ADHD by dimming the part of the screen they&amp;rsquo;re not actively looking at.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a video of the accessiBe implementation in action on the tasteofhome.com website.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FbF12xbo8EB.gif?alt=media&amp;amp;token=d1cc35a1-8354-4859-9415-7a48e5283310&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;As you can see, the screen is dimmed everywhere except on the lines surrounding the mouse pointer. This helps me to regain focus more quickly if my attention is drawn away from the text I was reading.&lt;/p&gt;
+&lt;p&gt;I find this way of reading helpful, and so I&amp;rsquo;m thinking about making it for myself as a Browserflow flow. It should be easy enough to do. When the flow starts, it just has to add two large transparent rectangles to the DOM, and an event handler to update their positions whenever my mouse moves.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll put up another snippet if and when I build this.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Asking for upvotes</title>
       <link>https://davidbieber.com/snippets/2021-01-31-asking-for-upvotes/</link>
       <pubDate>Sun, 31 Jan 2021 00:00:00 +0000</pubDate>
