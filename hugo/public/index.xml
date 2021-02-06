@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>David Bieber</title>
@@ -306,6 +306,74 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
     </item>
     
     <item>
+      <title>A Flow for Focused Reading</title>
+      <link>https://davidbieber.com/snippets/2021-02-05-focused-reading/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-02-05-focused-reading/</guid>
+      <description>&lt;p&gt;As you can see from the snippet you&amp;rsquo;re currently reading, I&amp;rsquo;ve implemented a simple tool to help with focused reading. (It&amp;rsquo;s 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-02-02-focused-reading-browserflow-flow-idea/&#34;&gt;the idea from the previous snippet&lt;/a&gt;). The majority of the page is dimmed, except for a few lines above and below your mouse cursor. As you move your mouse, the focused region follows. Give it a try; move your mouse (or touch) over the next paragraph, and watch as the light region follows.&lt;/p&gt;
+&lt;p&gt;This is useful for staying focused when reading. If your eyes or mind wander while reading, it&amp;rsquo;s easy to quickly bring your attention back to exactly where you left off.&lt;/p&gt;
+&lt;p&gt;For the 
+&lt;a href=&#34;https://browserflow.app&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Browserflow&lt;/a&gt; users among you (psst&amp;hellip; DK, you need to ship Browserflow so there &lt;em&gt;are&lt;/em&gt; Browserflow users out there), you can enable this effect on any page using 
+&lt;a href=&#34;https://browserflow.app/shared/8c2f3de8-2666-4578-8b42-58f5cad105b0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this BrowserFlow flow I made&lt;/a&gt;. Once you get the flow you can simply type cmd-J and select &amp;ldquo;Focus Bar&amp;rdquo; from the typeahead to enable this effect anywhere.&lt;/p&gt;
+&lt;p&gt;For everyone else, you can paste this script into your JavaScript console. 🤷&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var mouseY = 0;
+var scrollY = 0;
+var offset = 50;
+var div_below, div_above;
+
+div_below = document.createElement(&amp;quot;div&amp;quot;);
+div_below.style.position = &amp;quot;absolute&amp;quot;;
+div_below.style.left = &amp;quot;0px&amp;quot;;
+div_below.style.top = &amp;quot;0px&amp;quot;;
+div_below.style.width = &amp;quot;100%&amp;quot;;
+div_below.style.height = &amp;quot;100%&amp;quot;;
+div_below.style.background = &amp;quot;black&amp;quot;;
+div_below.style.opacity = &amp;quot;30%&amp;quot;;
+
+div_above = document.createElement(&amp;quot;div&amp;quot;);
+div_above.style.position = &amp;quot;absolute&amp;quot;;
+div_above.style.left = &amp;quot;0px&amp;quot;;
+div_above.style.bottom = &amp;quot;0px&amp;quot;;
+div_above.style.width = &amp;quot;100%&amp;quot;;
+div_above.style.height = &amp;quot;100%&amp;quot;;
+div_above.style.background = &amp;quot;black&amp;quot;;
+div_above.style.opacity = &amp;quot;30%&amp;quot;;
+
+document.body.appendChild(div_below);
+document.body.appendChild(div_above);
+
+function adjust_divs() {
+  scrollY = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+  div_below.style.top = (mouseY + offset + scrollY) + &#39;px&#39;;
+  div_above.style.bottom = (
+      &#39;calc(100% - &#39; + (mouseY - offset + scrollY) + &#39;px&#39;);
+  div_below.style.height = (
+      &#39;calc(100% - &#39; + (mouseY + offset) + &#39;px&#39;);
+}
+
+document.addEventListener(&#39;mousemove&#39;, function(event) {
+  mouseY = event.clientY;
+  adjust_divs();
+}, true);
+
+document.addEventListener(&#39;scroll&#39;, function(event) {
+  adjust_divs();
+}, true);
+document.addEventListener(&#39;touchstart&#39;, function(event) {
+  mouseY = event.touches[0].clientY;
+  adjust_divs();
+}, true);
+document.addEventListener(&#39;touchmove&#39;, function(event) {
+  mouseY = event.touches[0].clientY;
+  adjust_divs();
+}, true);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Sorry about the jitter. Let me know if you know how to fix it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Focused Reading Browserflow Flow Idea</title>
       <link>https://davidbieber.com/snippets/2021-02-02-focused-reading-browserflow-flow-idea/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
@@ -318,6 +386,8 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
 &lt;p&gt;As you can see, the screen is dimmed everywhere except on the lines surrounding the mouse pointer. This helps me to regain focus more quickly if my attention is drawn away from the text I was reading.&lt;/p&gt;
 &lt;p&gt;I find this way of reading helpful, and so I&amp;rsquo;m thinking about making it for myself as a Browserflow flow. It should be easy enough to do. When the flow starts, it just has to add two large transparent rectangles to the DOM, and an event handler to update their positions whenever my mouse moves.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ll put up another snippet if and when I build this.&lt;/p&gt;
+&lt;p&gt;Update Feb 5, 2021: As you may have noticed, I&amp;rsquo;ve now implemented this idea. It&amp;rsquo;s enabled on this page, and also available as a Browserflow flow. 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-02-05-focused-reading&#34;&gt;See the snippet here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
