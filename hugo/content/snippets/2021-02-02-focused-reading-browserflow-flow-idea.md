@@ -2,6 +2,7 @@
 title = "Focused Reading Browserflow Flow Idea"
 date = 2021-02-02T00:00:00
 uid = "BrAgF4Rxw"
+plugins_js = ["focus-bar"]
 
 +++
 
@@ -16,3 +17,5 @@ As you can see, the screen is dimmed everywhere except on the lines surrounding 
 I find this way of reading helpful, and so I'm thinking about making it for myself as a Browserflow flow. It should be easy enough to do. When the flow starts, it just has to add two large transparent rectangles to the DOM, and an event handler to update their positions whenever my mouse moves.
 
 I'll put up another snippet if and when I build this.
+
+Update Feb 5, 2021: As you may have noticed, I've now implemented this idea. It's enabled on this page, and also available as a Browserflow flow. [See the snippet here](/snippets/2021-02-05-focused-reading).
