@@ -10,9 +10,9 @@ The experiment will last for four weeks, and requires only a small time commitme
 During these four weeks, you will learn about several topics, and you will also teach the group about one or two topics yourself.
 The next peer learning group session will be March 1 - March 28, 2021.
 If this interests you, I encourage you to sign up here.
-Additional details about "how it works" below the fold.
+Additional details about "how it works" below the fold. We're [making some changes](/snippets/2021-02-07-ways-to-improve-peer-learning-group/) compared to the first group.
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfxG5T0ljW4DAKTM5M0nedNnkMmxxAPgywwv0VZcFAAlWR0yQ/viewform?embedded=true" width="640" height="878" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfxG5T0ljW4DAKTM5M0nedNnkMmxxAPgywwv0VZcFAAlWR0yQ/viewform?embedded=true" width="640" height="920" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 ## How it works
 
