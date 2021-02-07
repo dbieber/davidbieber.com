@@ -14,7 +14,7 @@ The first peer learning group session will be January 25 - February 7, 2021.
 If this interests you, I encourage you to sign up here.
 Additional details about "how it works" below the fold.
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf32hojaa3E-v0w8jHXpLThnPJUAQrnFcRHk9kCuGW7pMQZeg/viewform?embedded=true" width="640" height="250" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf32hojaa3E-v0w8jHXpLThnPJUAQrnFcRHk9kCuGW7pMQZeg/viewform?embedded=true" width="640" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 ## How it works
 
