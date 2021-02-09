@@ -13,7 +13,7 @@ My personal Twitter account is @Bieber, and I use a picture of myself for the pr
 
 How does it decide what to tweet? It chooses tweets from my Roam Research database. I already frequently write down things I'd like to learn about, and ideas I'd like to try in Roam. It's where I keep my snippet ideas, my spaced repetition system, and my "Fleeting TODOs".
 
-Fleeting TODOs are what I call TODO items that tug at my brain in the moment, eager to take my attention away from the task at hand. Rather than do them then, I write them down. I only ever get around to doing a small fraction of my fleeting TODOs, but its nice to have a record of them. It makes it easier to notice if I keep coming back to the same idea, in which case maybe it's worth actually pursuing.
+Fleeting TODOs are what I call TODO items that tug at my brain in the moment, eager to take my attention away from the task at hand. Rather than do them then, I write them down. I only ever get around to doing a small fraction of my fleeting TODOs, but it's nice to have a record of them. It makes it easier to notice if I keep coming back to the same idea, in which case maybe it's worth actually pursuing.
 
 So, I have a script that occasionally -- currently every 10 minutes -- picks out one of these items from my Roam Research database and tweets it in a way that's only visible to me.
 
