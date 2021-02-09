@@ -2,16 +2,18 @@
 title = "Repurposing my Twitter Feed"
 date = 2021-02-08T00:00:00
 uid = "exyLoYHb7"
-
+plugins_js = ["margin-notes"]
 +++
 
 Twitter's addicting. It's not a good use of my time, but I scroll there anyway. If I'm going to be scrolling there anyway, might as well make it worthwhile. So, I've decided to repurpose my Twitter timeline and inject things I actually care about into it.
 
-How? You might think to do this with a Chrome extension, injecting content in between the existing tweets. There's an easier way though. I've made a new, private Twitter account, and I programmatically tweet as that.
+How? You might think to do this with a Chrome extension, injecting content in between the existing tweets. There's an easier way though. I've made a new, private Twitter account, and I programmatically[^1] tweet as that.
 
 My personal Twitter account is @Bieber, and I use a picture of myself for the profile. The new account goes by "Private Bieber", and uses a deep dream-ified version of my profile picture.
 
-How does it decide what to tweet? It chooses tweets from my Roam Research database. I already frequently write down things I'd like to learn about, and ideas I'd like to try in Roam. It's where I keep my snippet ideas, my spaced repetition system, and my "Fleeting TODOs".
+How does it decide what to tweet? It chooses tweets from my Roam Research database. I already frequently write down things I'd like to learn about, and ideas I'd like to try in Roam. It's where I keep my snippet ideas, my spaced repetition system, and my "Fleeting TODOs". Source code available in the footnotes.
+
+[^1]: [Source code is here.](https://gist.github.com/dbieber/47660493954e62f4607cd8d19d54cf59)
 
 Fleeting TODOs are what I call TODO items that tug at my brain in the moment, eager to take my attention away from the task at hand. Rather than do them then, I write them down. I only ever get around to doing a small fraction of my fleeting TODOs, but it's nice to have a record of them. It makes it easier to notice if I keep coming back to the same idea, in which case maybe it's worth actually pursuing.
 

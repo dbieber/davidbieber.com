@@ -29,7 +29,7 @@
     
   
   <meta name="description" content="Twitter&rsquo;s addicting. It&rsquo;s not a good use of my time, but I scroll there anyway. If I&rsquo;m going to be scrolling there anyway, might as well make it worthwhile. So, I&rsquo;ve decided to repurpose my Twitter timeline and inject things I actually care about into it.
-How? You might think to do this with a Chrome extension, injecting content in between the existing tweets. There&rsquo;s an easier way though. I&rsquo;ve made a new, private Twitter account, and I programmatically tweet as that.">
+How? You might think to do this with a Chrome extension, injecting content in between the existing tweets. There&rsquo;s an easier way though. I&rsquo;ve made a new, private Twitter account, and I programmatically1 tweet as that.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-02-08-repurposing-my-twitter-feed/">
@@ -272,7 +272,7 @@ How? You might think to do this with a Chrome extension, injecting content in be
   <meta property="og:url" content="https://davidbieber.com/snippets/2021-02-08-repurposing-my-twitter-feed/">
   <meta property="og:title" content="Repurposing my Twitter Feed | David Bieber">
   <meta property="og:description" content="Twitter&rsquo;s addicting. It&rsquo;s not a good use of my time, but I scroll there anyway. If I&rsquo;m going to be scrolling there anyway, might as well make it worthwhile. So, I&rsquo;ve decided to repurpose my Twitter timeline and inject things I actually care about into it.
-How? You might think to do this with a Chrome extension, injecting content in between the existing tweets. There&rsquo;s an easier way though. I&rsquo;ve made a new, private Twitter account, and I programmatically tweet as that."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+How? You might think to do this with a Chrome extension, injecting content in between the existing tweets. There&rsquo;s an easier way though. I&rsquo;ve made a new, private Twitter account, and I programmatically1 tweet as that."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
@@ -526,15 +526,24 @@ How? You might think to do this with a Chrome extension, injecting content in be
 
     <div class="article-style" id="article-content">
       <p>Twitter&rsquo;s addicting. It&rsquo;s not a good use of my time, but I scroll there anyway. If I&rsquo;m going to be scrolling there anyway, might as well make it worthwhile. So, I&rsquo;ve decided to repurpose my Twitter timeline and inject things I actually care about into it.</p>
-<p>How? You might think to do this with a Chrome extension, injecting content in between the existing tweets. There&rsquo;s an easier way though. I&rsquo;ve made a new, private Twitter account, and I programmatically tweet as that.</p>
+<p>How? You might think to do this with a Chrome extension, injecting content in between the existing tweets. There&rsquo;s an easier way though. I&rsquo;ve made a new, private Twitter account, and I programmatically<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> tweet as that.</p>
 <p>My personal Twitter account is @Bieber, and I use a picture of myself for the profile. The new account goes by &ldquo;Private Bieber&rdquo;, and uses a deep dream-ified version of my profile picture.</p>
-<p>How does it decide what to tweet? It chooses tweets from my Roam Research database. I already frequently write down things I&rsquo;d like to learn about, and ideas I&rsquo;d like to try in Roam. It&rsquo;s where I keep my snippet ideas, my spaced repetition system, and my &ldquo;Fleeting TODOs&rdquo;.</p>
+<p>How does it decide what to tweet? It chooses tweets from my Roam Research database. I already frequently write down things I&rsquo;d like to learn about, and ideas I&rsquo;d like to try in Roam. It&rsquo;s where I keep my snippet ideas, my spaced repetition system, and my &ldquo;Fleeting TODOs&rdquo;. Source code available in the footnotes.</p>
 <p>Fleeting TODOs are what I call TODO items that tug at my brain in the moment, eager to take my attention away from the task at hand. Rather than do them then, I write them down. I only ever get around to doing a small fraction of my fleeting TODOs, but it&rsquo;s nice to have a record of them. It makes it easier to notice if I keep coming back to the same idea, in which case maybe it&rsquo;s worth actually pursuing.</p>
 <p>So, I have a script that occasionally &ndash; currently every 10 minutes &ndash; picks out one of these items from my Roam Research database and tweets it in a way that&rsquo;s only visible to me.</p>
 <p>Since I have my Twitter feed configured to show me tweets chronologically, this means there&rsquo;s always a tweet from Private Bieber sitting at the top, to remind me of something <em>I</em> care about, rather than something the <em>Twitter algorithm</em> has picked out for me to care about.</p>
 <p><img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FxD83QrK9_D.png?alt=media&amp;token=76f275ac-62fd-4844-829c-b44cf9cf568f" alt=""></p>
 <p>Currently the tweet selection is random, but already in this first 20 minutes I&rsquo;ve been happy with the tweets it&rsquo;s been writing. Perhaps in a future iteration I&rsquo;ll make some adjustments to what it tweets and when. It&rsquo;s nice to have this kind of control over my attention, especially in a setting like Twitter where I&rsquo;m so used to mindless scrolling.</p>
 <p>This same technique ought to work fine for taking control of my Facebook feed too, so perhaps I&rsquo;ll get Private Bieber an account there next.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>
+<a href="https://gist.github.com/dbieber/47660493954e62f4607cd8d19d54cf59" target="_blank" rel="noopener">Source code is here.</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 
     </div>
 
@@ -734,6 +743,18 @@ How? You might think to do this with a Chrome extension, injecting content in be
 </script>
 
     
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/page-repurposing-my-twitter-feed.a1986a3915fb74aab9ac97c00ea2f715.js"></script>
+
 
 
 
