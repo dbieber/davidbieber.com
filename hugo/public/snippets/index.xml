@@ -13,6 +13,24 @@
     </image>
     
     <item>
+      <title>Repurposing my Twitter Feed</title>
+      <link>https://davidbieber.com/snippets/2021-02-08-repurposing-my-twitter-feed/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-02-08-repurposing-my-twitter-feed/</guid>
+      <description>&lt;p&gt;Twitter&amp;rsquo;s addicting. It&amp;rsquo;s not a good use of my time, but I scroll there anyway. If I&amp;rsquo;m going to be scrolling there anyway, might as well make it worthwhile. So, I&amp;rsquo;ve decided to repurpose my Twitter timeline and inject things I actually care about into it.&lt;/p&gt;
+&lt;p&gt;How? You might think to do this with a Chrome extension, injecting content in between the existing tweets. There&amp;rsquo;s an easier way though. I&amp;rsquo;ve made a new, private Twitter account, and I programmatically tweet as that.&lt;/p&gt;
+&lt;p&gt;My personal Twitter account is @Bieber, and I use a picture of myself for the profile. The new account goes by &amp;ldquo;Private Bieber&amp;rdquo;, and uses a deep dream-ified version of my profile picture.&lt;/p&gt;
+&lt;p&gt;How does it decide what to tweet? It chooses tweets from my Roam Research database. I already frequently write down things I&amp;rsquo;d like to learn about, and ideas I&amp;rsquo;d like to try in Roam. It&amp;rsquo;s where I keep my snippet ideas, my spaced repetition system, and my &amp;ldquo;Fleeting TODOs&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Fleeting TODOs are what I call TODO items that tug at my brain in the moment, eager to take my attention away from the task at hand. Rather than do them then, I write them down. I only ever get around to doing a small fraction of my fleeting TODOs, but its nice to have a record of them. It makes it easier to notice if I keep coming back to the same idea, in which case maybe it&amp;rsquo;s worth actually pursuing.&lt;/p&gt;
+&lt;p&gt;So, I have a script that occasionally &amp;ndash; currently every 10 minutes &amp;ndash; picks out one of these items from my Roam Research database and tweets it in a way that&amp;rsquo;s only visible to me.&lt;/p&gt;
+&lt;p&gt;Since I have my Twitter feed configured to show me tweets chronologically, this means there&amp;rsquo;s always a tweet from Private Bieber sitting at the top, to remind me of something &lt;em&gt;I&lt;/em&gt; care about, rather than something the &lt;em&gt;Twitter algorithm&lt;/em&gt; has picked out for me to care about.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FxD83QrK9_D.png?alt=media&amp;amp;token=76f275ac-62fd-4844-829c-b44cf9cf568f&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Currently the tweet selection is random, but already in this first 20 minutes I&amp;rsquo;ve been happy with the tweets it&amp;rsquo;s been writing. Perhaps in a future iteration I&amp;rsquo;ll make some adjustments to what it tweets and when. It&amp;rsquo;s nice to have this kind of control over my attention, especially in a setting like Twitter where I&amp;rsquo;m so used to mindless scrolling.&lt;/p&gt;
+&lt;p&gt;This same technique ought to work fine for taking control of my Facebook feed too, so perhaps I&amp;rsquo;ll get Private Bieber an account there next.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Peer Learning Group Sign Up</title>
       <link>https://davidbieber.com/snippets/2021-02-07-peer-learning-group-sign-up/</link>
       <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
