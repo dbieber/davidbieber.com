@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 08 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 09 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>David Bieber</title>
@@ -302,6 +302,46 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What does Browserflow do beyond what Tampermonkey does?</title>
+      <link>https://davidbieber.com/snippets/2021-02-09-what-does-browserflow-do-beyond-what-tampermonkey-does/</link>
+      <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-02-09-what-does-browserflow-do-beyond-what-tampermonkey-does/</guid>
+      <description>&lt;p&gt;Someone recently asked me what 
+&lt;a href=&#34;https://dkthehuman.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DK&lt;/a&gt;&amp;rsquo;s 
+&lt;a href=&#34;http://browserflow.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Browserflow&lt;/a&gt; does beyond what e.g. 
+&lt;a href=&#34;https://www.tampermonkey.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tampermonkey&lt;/a&gt; provides. Here&amp;rsquo;s my answer.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;1. &lt;em&gt;&lt;strong&gt;Way&lt;/strong&gt;&lt;/em&gt; easier to use both for programmers and non-programmers&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Allows recording macros or writing them as &amp;ldquo;flows&amp;rdquo;/programs&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Everything (okay, maybe not &lt;em&gt;everything&lt;/em&gt;) &amp;ldquo;just works&amp;rdquo; &amp;ndash; e.g. if you want to write a for loop over tweets on Twitter, you just do. No need to deal with handling scrolling, or with race conditions about when dom elements appear and disappear, or if twitter decides to reuse dom elements, etc. Browserflow takes care of those details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Provides high level commands like taking screenshots of elements, writing to csv, selecting parts of a page, looping over elements, getting input from the user, etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Easy to share flows with other users! Unfortunately there&amp;rsquo;s like ~2 other users right now 😛&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The typeahead for running flows is super convenient. cmd-J then type a piece of the flow name, then hit enter. The flow runs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;Really it&amp;rsquo;s (3) that sets it apart. The attention to detail in the product is impressive. Thanks DK.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;My experience with Tampermonkey is limited, so take this with some salt. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 </description>
     </item>
     
