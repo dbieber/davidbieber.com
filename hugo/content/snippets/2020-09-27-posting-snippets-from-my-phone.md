@@ -1,6 +1,7 @@
 +++
 title = "Posting Snippets from My Phone"
 date = 2020-09-27T16:32:00
+tags = ["snippets"]
 +++
 
 I'd like to be able to post snippets from my phone.

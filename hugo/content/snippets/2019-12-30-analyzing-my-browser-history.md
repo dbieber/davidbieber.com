@@ -3,6 +3,7 @@ title = "Planning to Analyze My Browsing History"
 date = 2019-12-30T00:00:00
 
 summary = "I'm planning to analyze my browser history. This is my plan."
+tags = ["attention", "browser-history", "sql", "python"]
 +++
 
 I've learned recently that programmatically accessing your browsing history is rather straightforward. Really exciting! This is rich data, from which I think I'll be able to learn a lot and hopefully combat unwanted distractions.

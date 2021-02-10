@@ -3,6 +3,7 @@ title = "Repurposing my Twitter Feed"
 date = 2021-02-08T00:00:00
 uid = "exyLoYHb7"
 plugins_js = ["margin-notes"]
+tags = ["attention", "taking-silly-ideas-seriously"]
 +++
 
 Twitter's addicting. It's not a good use of my time, but I scroll there anyway. If I'm going to be scrolling there anyway, might as well make it worthwhile. So, I've decided to repurpose my Twitter timeline and inject things I actually care about into it.

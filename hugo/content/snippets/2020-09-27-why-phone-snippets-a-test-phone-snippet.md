@@ -1,6 +1,7 @@
 +++
 title = "Why Phone Snippets (A Test Phone Snippet)"
 date = 2020-09-27T16:49:00
+tags = ["snippets"]
 +++
 
 Why do I want to be able to post snippets from my phone?

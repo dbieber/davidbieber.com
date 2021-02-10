@@ -3,6 +3,7 @@ title = "What does Browserflow do beyond what Tampermonkey does?"
 date = 2021-02-09T00:00:00
 uid = "o0d9MAbGW"
 plugins_js = ["margin-notes"]
+tags = ["Browserflow"]
 +++
 
 Someone recently asked me what [DK](https://dkthehuman.com/)'s [Browserflow](http://browserflow.app/) does beyond what e.g. [Tampermonkey](https://www.tampermonkey.net/) provides. Here's my answer.[^1]

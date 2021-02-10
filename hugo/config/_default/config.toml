@@ -48,5 +48,22 @@ enableGitInfo = false
 # Taxonomies.
 [taxonomies]
   tag = "tags"
-  category = "categories"
-  publication_type = "publication_types"
+  # category = "categories"
+  # publication_type = "publication_types"
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+
+[[related.indices]]
+  name = "tags"
+  weight = 50
+
+[[related.indices]]
+  name = "keywords"
+  weight = 45
+
+[[related.indices]]
+  name = "date"
+  weight = 5

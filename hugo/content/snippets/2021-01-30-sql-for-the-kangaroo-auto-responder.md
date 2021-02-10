@@ -2,7 +2,8 @@
 title = "SQL for the Kangaroo Auto-responder"
 date = 2021-01-30T00:00:00
 uid = "b8DWPQEND"
-
+tags = ["sql", "python", "taking-silly-ideas-seriously"]
+keywords = ["kangaroo", "auto-responder"]
 +++
 
 I turned on the [Kangaroo Auto-responder](/snippets/2021-01-29-kangaroo-auto-responder/) this morning. The rules for when to send a kangaroo 🦘 are as follows:

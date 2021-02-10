@@ -1,6 +1,7 @@
 +++
 title = 'Simplifying SQL Queries with "WITH"'
 date = 2020-04-12T01:00:00
+tags = ["browser-history", "sql"]
 +++
 
 In the ["More Browser History Queries" snippet](/snippets/2020-04-11-browser-history-queries/) one of the SQL queries I wrote was particularly nasty.

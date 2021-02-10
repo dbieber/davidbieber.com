@@ -1,6 +1,8 @@
 +++
 title = "Facebook Messenger SQL Queries"
 date = 2020-04-12T00:00:00
+tags = ["sql"]
+keywords = ["messager"]
 +++
 
 Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a [previous snippet](/snippets/2020-04-11-browser-history-queries) for analyzing my browsing history, I'll use this snippet to sketch out some useful queries for analyzing my message history.

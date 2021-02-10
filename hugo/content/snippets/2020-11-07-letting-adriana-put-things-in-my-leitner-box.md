@@ -1,6 +1,7 @@
 +++
 title = "Letting Adriana put things in my Leitner Box"
 date = 2020-11-07T08:14:00
+tags = ["roam-research", "spaced-repetition", "taking-silly-ideas-seriously"]
 +++
 
 I’ve been using spaced repetition for 2-3 weeks now. I’m not using Anki or any of the prebuilt systems that track your queue of items for you. Instead, I’m keeping the things I want to study in Roam Research and using a make-shift system of tags and Browserflow Flows to make the spaced repetition system relatively frictionless.

@@ -7,8 +7,8 @@ draft = false
 authors = ["admin"]
 math = false
 
-tags = []
 summary = "An easy way to add new content to the website that isn't featured prominently anywhere on the site."
+tags = ["snippets"]
 
 [image]
   caption = ""

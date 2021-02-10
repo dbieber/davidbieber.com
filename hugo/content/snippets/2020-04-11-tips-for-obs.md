@@ -1,6 +1,7 @@
 +++
 title = "Tips for Effective OBS"
 date = 2020-04-11T00:00:00
+tags = ["automatic-video-editing"]
 +++
 
 As a newcomer to OBS, I've been regularly discovering new features that make my OBS experience better. Here are a handful of things I've found useful, that perhaps weren't immediately obvious to me, from my early experiences with OBS.

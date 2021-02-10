@@ -1,6 +1,7 @@
 +++
 title = "Questions to Answer About Python Fire"
 date = 2020-10-22T20:31:00
+tags = ["python-fire", "python"]
 +++
 
 Tomorrow I'm giving a talk to Women Who Code on Python Fire. Python Fire is a Python library I wrote back in 2017 that makes command line interfaces automatically out of any Python object you give it.

@@ -1,6 +1,7 @@
 +++
 title = "Introducing the Snippet Queue"
 date = 2020-10-06T22:16:00
+tags = ["snippets", "taking-silly-ideas-seriously"]
 +++
 
 This is my first snippet published using my [snippet queue idea](/snippets/2020-10-06-further-reducing-the-publication-barrier-with-queuing/). If all goes well, it will be (read: was) published tomorrow evening (October 7, 2020).

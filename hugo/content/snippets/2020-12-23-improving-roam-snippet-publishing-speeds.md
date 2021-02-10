@@ -1,6 +1,7 @@
 +++
 title = "Improving Roam Snippet Publishing Speeds"
 date = 2020-12-23T00:00:00
+tags = ["snippets", "roam-research", "python"]
 
 +++
 

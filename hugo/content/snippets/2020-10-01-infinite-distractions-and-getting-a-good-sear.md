@@ -1,6 +1,7 @@
 +++
 title = "Infinite Distractions and Getting a Good Sear"
 date = 2020-10-01T10:54:00
+tags = ["attention"]
 +++
 
 These days I have six "infinite distractions" — things I do mindlessly that are roughly limitless in content. They are: YouTube, YCombinator News, Google News, Reddit, Facebook, and Twitter.

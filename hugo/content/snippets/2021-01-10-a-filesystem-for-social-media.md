@@ -2,7 +2,7 @@
 title = "A filesystem for social media"
 date = 2021-01-10T00:00:00
 uid = "N95z25MWk"
-
+tags = ["taking-silly-ideas-seriously"]
 +++
 
 [Omar Riswan](https://omar.website/) has an excellent project called [TabFS](https://omar.website/tabfs/) that takes your browser tabs and exposes them to you as a filesystem. When you run `ls`, you see a list of all your open tabs. `rm` on a tab directory closes the tab. Inspecting the tab with standard tools (`ls`, `cat`, `rm`, etc) allow you to do things like reading the title or contents of the tab (yes, the whole tab's contents!), closing the tab, or running javascript in the tab. The whole thing is quite clever.

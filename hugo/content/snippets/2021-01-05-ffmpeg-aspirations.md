@@ -2,7 +2,7 @@
 title = "ffmpeg aspirations"
 date = 2021-01-05T00:00:00
 uid = "LlQ7HLkgk"
-
+tags = ["automatic-video-editing"]
 +++
 
 - turn a collection of photos into a slide show

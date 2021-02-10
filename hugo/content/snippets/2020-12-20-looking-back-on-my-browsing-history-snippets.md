@@ -1,6 +1,7 @@
 +++
 title = "Looking back on my browsing history snippets"
 date = 2020-12-20T00:00:00
+tags = ["browser-history", "snippets"]
 
 +++
 

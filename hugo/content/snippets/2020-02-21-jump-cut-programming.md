@@ -1,6 +1,7 @@
 +++
 title = "Jump-Cut Programming: Take 1"
 date = 2020-02-21T00:00:00
+tags = ["automatic-video-editing", "python-fire", "python"]
 +++
 
 I've been toying around with recording myself programming. Here's a clip.

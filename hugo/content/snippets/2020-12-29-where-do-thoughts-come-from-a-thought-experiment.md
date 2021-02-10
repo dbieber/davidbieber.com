@@ -2,7 +2,7 @@
 title = "Where do thoughts come from? A thought experiment."
 date = 2020-12-29T00:00:00
 uid = "uYfqQD3pk"
-
+tags = ["thought-experiments"]
 +++
 
 This snippet details a thought experiment I've been encouraging people to do for years. It's simple, and should only take a few minutes of your time. The purpose of the thought experiment is to better understand where your thoughts come from.

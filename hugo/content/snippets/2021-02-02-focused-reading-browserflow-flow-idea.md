@@ -3,7 +3,8 @@ title = "Focused Reading Browserflow Flow Idea"
 date = 2021-02-02T00:00:00
 uid = "BrAgF4Rxw"
 plugins_js = ["focus-bar"]
-
+tags = ["Browserflow", "Attention"]
+keywords = ["focus bar"]
 +++
 
 This idea for an assistive technology for focused reading comes from [accessiBe](https://accessibe.com/). I stumbled upon it on [tasteofhome.com](https://www.tasteofhome.com/recipes/homemade-potato-chips/). The idea is to make the web more accessible to folks with ADHD by dimming the part of the screen they're not actively looking at.

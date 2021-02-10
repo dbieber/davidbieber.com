@@ -3,6 +3,7 @@ title = "Spaced Repetition in Roam Research"
 date = 2021-01-02T00:00:00
 uid = "9sebyGS1e"
 math = true
+tags = ["spaced-repetition", "attention", "roam-research", "browserflow"]
 +++
 
 There are many ways to do spaced repetition in Roam Research. This post describes mine. I was inspired to start this two months ago by reading [Nicky Case's comic on spaced repetition](https://ncase.me/remember/), and I highly recommend the read.

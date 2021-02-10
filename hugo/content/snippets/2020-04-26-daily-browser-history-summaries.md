@@ -1,6 +1,7 @@
 +++
 title = "Daily Summaries of Browsing History"
 date = 2020-04-26T00:00:00
+tags = ["browser-history", "sql", "python"]
 +++
 
 Over the [course](/snippets/2020-04-12-simplifying-sql-with-with/) [of](/snippets/2020-04-20-browser-history-date-queries/) [multiple](/snippets/2019-12-30-analyzing-my-browser-history/) [previous](/snippets/2020-03-19-browsing-history/) [snippets](/snippets/2020-04-11-browser-history-queries/), I put together several SQL queries for analyzing my browsing history.

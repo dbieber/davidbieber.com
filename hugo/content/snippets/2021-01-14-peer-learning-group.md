@@ -1,7 +1,7 @@
 +++
-title = "Peer Learning Group"
+title = "Introducing Peer Learning Group"
 date = 2021-01-14T01:00:00
-
+tags = ["peer-learning-group"]
 +++
 
 _Alright. I've been toying with this idea for months now. Perfection is the enemy of the good. It's time to launch a peer learning experiment. Here we go._

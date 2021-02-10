@@ -2,6 +2,7 @@
 title = "Will it be harder to write snippets now?"
 date = 2021-01-09T00:00:00
 uid = "jXwF7zgQ9"
+tags = ["snippets"]
 
 +++
 

@@ -1,8 +1,8 @@
 +++
 title = "What does \"Ordinary\" mean in Ordinary Least Squares?"
 date = 2020-01-08T02:00:00
-
 summary = "It means the standard method. Nothing fancy."
+tags = ["math"]
 +++
 
 "Ordinary Least Squares" regression, or OLS for short, is a method for finding a best-fit line, given a set of data points. When people refer to linear regression without additional context or qualifiers, they're probably referring to ordinary least squares regression.

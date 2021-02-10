@@ -1,6 +1,7 @@
 +++
 title = "Exploring OBS and Virtual Cameras"
 date = 2020-04-09T00:00:00
+tags = ["automatic-video-editing"]
 +++
 
 This week I've been exploring [_Open Broadcasting Software_ (OBS)](https://obsproject.com/) and toying with using it as a virtual camera. I use a Mac, and historically there hasn't been a good way to use OBS as a virtual camera. With [@tobi](https://twitter.com/tobi)'s recent [$10,000 bounty](https://github.com/obsproject/obs-studio/issues/2568) for making this a core feature, however, some developers in the OBS community leapt into action and a [working prototype](https://github.com/johnboiles/obs-mac-virtualcam) of the feature was available on GitHub within days.

@@ -1,7 +1,8 @@
 +++
 title = "Python hoist()"
 date = 2021-01-16T00:00:00
-
+tags = ["python", "taking-silly-ideas-seriously"]
+keywords = ["python hoist"]
 +++
 
 I wrote a little decorator function called `hoist`. Calling `hoist(f)` transforms `f`, such that instead of returning the return value of `f`, it returns the values of all local variables in addition to the return value of `f`.

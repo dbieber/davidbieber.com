@@ -2,6 +2,7 @@
 title = "Plugged directly into the internet"
 date = 2021-01-13T00:00:00
 uid = "5fK4bRvah"
+tags = ["attention"]
 
 +++
 

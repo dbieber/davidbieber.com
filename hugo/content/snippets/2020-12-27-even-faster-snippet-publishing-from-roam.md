@@ -2,6 +2,7 @@
 title = "Even Faster Snippet Publishing from Roam"
 date = 2020-12-27T00:00:00
 uid = "f3_BH6oAq"
+tags = ["snippets", "roam-research"]
 
 +++
 

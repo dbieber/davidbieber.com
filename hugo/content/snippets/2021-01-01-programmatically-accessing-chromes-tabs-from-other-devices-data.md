@@ -2,7 +2,7 @@
 title = "Programmatically Accessing Chrome's “Tabs from other devices” Data"
 date = 2021-01-01T00:00:00
 uid = "CYc8VlO--"
-
+tags = ["attention"]
 +++
 
 I use Google Chrome on my Mac laptop and on my iPhone, and I'm logged in to my Google account in both places with syncing turned on. If I go to "chrome://history/syncedTabs" on my computer I can see what tabs I have open on my phone. Now, I'd like to access this data programatically.

@@ -1,6 +1,7 @@
 +++
 title = "Extracting Snippets from Roam Research"
 date = 2020-11-03T15:22:00
+tags = ["snippets", "roam-research"]
 +++
 
 I've been writing a lot these days inside of Roam Research. I wonder if there's a good way to identify snippet-quality items from within my Roam database.

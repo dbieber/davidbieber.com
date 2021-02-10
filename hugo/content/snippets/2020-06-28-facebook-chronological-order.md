@@ -1,6 +1,7 @@
 +++
 title = "Facebook Mobile Website: News Feed in Chronological Order"
 date = 2020-06-28T00:00:00
+tags = ["attention"]
 +++
 
 On your phone, you can navigate to [https://www.facebook.com/home.php?sk=h_chr](https://www.facebook.com/home.php?sk=h_chr) to view your News Feed on the Facebook website in chronological order.
