@@ -5,7 +5,7 @@ uid = "E5mRxhvgs"
 tags = ["attention", "taking-silly-ideas-seriously"]
 +++
 
-I don't know if I like this idea, but I'm giving it a try; I've added a "Now" page to my website ([davidbieber.com/now](https://davidbieber.com/now)).
+I don't know if I like this idea, but I'm giving it a try; I've added a "Now" page to my website ([davidbieber.com/now](https://davidbieber.com/now/)).
 
 The idea for now pages is described at https://nownownow.com/about.
 
