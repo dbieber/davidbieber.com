@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ask-me-anywhere | David Bieber</title>
+    <link>https://davidbieber.com/tags/ask-me-anywhere/</link>
+      <atom:link href="https://davidbieber.com/tags/ask-me-anywhere/index.xml" rel="self" type="application/rss+xml" />
+    <description>ask-me-anywhere</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 26 Jan 2020 10:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
+      <title>ask-me-anywhere</title>
+      <link>https://davidbieber.com/tags/ask-me-anywhere/</link>
+    </image>
+    
+    <item>
+      <title>What&#39;s Next for Ask Me Anywhere?</title>
+      <link>https://davidbieber.com/snippets/2020-01-26-next-steps-for-ama/</link>
+      <pubDate>Sun, 26 Jan 2020 10:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-01-26-next-steps-for-ama/</guid>
+      <description>&lt;p&gt;Yesterday I put up an early version of 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere/&#34;&gt;Ask Me Anywhere&lt;/a&gt;. You&amp;rsquo;ll notice it&amp;rsquo;s in the snippets section of the website, rather than part of the main blog. This gives me the freedom to post it even though I know it&amp;rsquo;s not as polished as it could be.&lt;/p&gt;
+&lt;p&gt;Now that this first pass is published, it&amp;rsquo;s time to start thinking about where to go next with Ask Me Anywhere.&lt;/p&gt;
+&lt;h2 id=&#34;short-term-stylistic-improvements&#34;&gt;Short Term: Stylistic Improvements&lt;/h2&gt;
+&lt;p&gt;On mobile, the &amp;ldquo;Click to React&amp;rdquo; text shows up and is improperly styled. I didn&amp;rsquo;t intend for it to show up at all. On certain mobile devices and browsers, it seems there are even larger issues than this, such as double tapping sometimes not working at all. Let me know if it doesn&amp;rsquo;t work with your browser so I can fix it.&lt;/p&gt;
+&lt;p&gt;The &amp;ldquo;Click to React&amp;rdquo; text also sometimes causes the flow of the text to change, which interrupts the reading experience somewhat. I would like to fix this so that the text flow is never changed by the presence of this message.&lt;/p&gt;
+&lt;p&gt;I also would like to tweak the styling to minimize the friction someone feels in deciding to leave a message. I think adding a question-mark icon, which when moused-over gives an explanation of why this feature is there in the first place could be useful. This could strike a good balance between being non-intrusive and letting people know that their thoughts are warmly welcomed.&lt;/p&gt;
+&lt;h2 id=&#34;longer-term-socratic-tutorials&#34;&gt;Longer Term: &amp;ldquo;Socratic Tutorials&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;&amp;ldquo;Ask Me Anywhere&amp;rdquo; is really an MVP that came out of a larger idea: &amp;ldquo;Socratic Tutorials&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;My idea is that a &lt;em&gt;Socratic Tutorial&lt;/em&gt; is a blog post structured in a very particular way. It begins with a brief introduction to a topic, followed by a series of questions you might want to ask about that topic. Click a question to reveal an answer to that question, followed by additional questions you might have about the topic. In this way, you can explore the contents of the post in the order that best suits your interests. I also hope that by having to click questions to view the answers, it will help motivate what you&amp;rsquo;re reading, since you&amp;rsquo;ll be actively wondering about the question when you read the response.&lt;/p&gt;
+&lt;p&gt;If a reader of a &lt;em&gt;Socratic Tutorial&lt;/em&gt; doesn&amp;rsquo;t understand something, or has a question that isn&amp;rsquo;t already addressed, they can choose to ask that question. The author can then add it to the list of questions available during reading if they choose to do so. In that way, &amp;ldquo;Ask Me Anywhere&amp;rdquo; is almost a subset of the features planned for Socratic Tutorials.&lt;/p&gt;
+&lt;p id=&#34;cbp_example&#34;&gt;
+My very first blog post ever was about &lt;a href=&#34;https://davidbieber.com/post/2012-09-04-collapsible-blog-posts/&#34;&gt;Collapsible Blog Posts&lt;/a&gt;. The premise was that you could click on a paragraph, and it would be replaced with a summary of that paragraph. This paragraph is an example; click on it, and it will be replaced with a summary.
+&lt;/p&gt;
+&lt;p id=&#34;_cbp_example&#34;&gt;
+This was a
+&lt;a href=&#34;https://davidbieber.com/post/2012-09-04-collapsible-blog-posts/&#34;&gt;Collapsible Blog Post&lt;/a&gt; paragraph. Click to un-collapse.
+&lt;/p&gt;
+&lt;p&gt;I learned early on from this experiment that the reverse process actually is more useful. Present the user with a short summary, and let them click if they want to read additional details.&lt;/p&gt;
+&lt;p id=&#34;cbp_reverse&#34;&gt;
+Here&#39;s an example of a short paragraph that you can click to reveal additional details.
+&lt;/p&gt;
+&lt;p id=&#34;_cbp_reverse&#34;&gt;
+The reason it makes more sense to show the summary first is that it empowers the user to choose how to spend their time. If they are interested in understanding more about a topic, they can choose to expand the paragraph and read the details. If instead they read the extended paragraph first, there isn&#39;t much value to them also reading the summarized version. And if they just want the summarized version, having them see the full version first isn&#39;t too useful either.
+&lt;/p&gt;
+&lt;p&gt;In some ways the idea for &amp;ldquo;Socratic Tutorials&amp;rdquo; is a spiritual descendent of Collapsible Blog Posts. They both share a goal: give the user control over the information they&amp;rsquo;re consuming, as they&amp;rsquo;re reading. Socratic Tutorials and Ask Me Anywhere take an additional step though, giving the user the ability to communicate directly with the author while they&amp;rsquo;re reading.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll likely have noticed that this post uses &amp;ldquo;Ask Me Anywhere&amp;rdquo;. That means you can double click any paragraph, or click between two paragraphs, in order to send a note directly to the author.
+I hope you do this, as I&amp;rsquo;d love to hear any thoughts you may have.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ask Me Anywhere</title>
+      <link>https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere/</link>
+      <pubDate>Sat, 25 Jan 2020 10:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere/</guid>
+      <description>&lt;p&gt;With this post, I&amp;rsquo;m demoing a new work-in-progress feature for my blog called &amp;ldquo;Ask Me Anywhere&amp;rdquo;.
+The feature lets you leave a comment or ask a question at &lt;em&gt;any&lt;/em&gt; point while reading my writing.
+The goal is to encourage readers to respond to my writing, because I&amp;rsquo;m interested in having a conversation and hearing what you have to say.&lt;/p&gt;
+&lt;p&gt;You can try it right now. Either &lt;strong&gt;double click&lt;/strong&gt; (double-tap on mobile) on any paragraph, or click between two paragraphs, to open a comment box. Enter your thoughts, click submit, and &lt;em&gt;voila!&lt;/em&gt;, comment submitted.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;re welcome to enter your email address, name, Twitter handle, Facebook ID, or any other form of contact info if you&amp;rsquo;d like me to respond. And if you do, there is high likelihood that I will respond. If you don&amp;rsquo;t, you&amp;rsquo;re anonymous, and you certainly won&amp;rsquo;t receive a private response.&lt;/p&gt;
+&lt;p&gt;Comments and questions that you submit are not posted publicly anywhere. This isn&amp;rsquo;t a comments section for public discussion. If you want to discuss my posts publicly, submit them on Hacker News or Reddit, or head to Twitter to engage. While this website isn&amp;rsquo;t the place for public discussions, I am curious to know about such a discussion if it&amp;rsquo;s happening. So, feel free to let me know about such a discussion via &amp;ldquo;AMA&amp;rdquo; if you&amp;rsquo;re starting one.&lt;/p&gt;
+&lt;p&gt;What happens when you leave a comment? This part&amp;rsquo;s still a work in progress, but ideally my digital personal assistant 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; will notify me of the new comment at the next convenient time. If there are many comments coming in, Bieber Bot will try to be smart about batching the notifications together, and so the notification may be delayed, but I&amp;rsquo;ll soon read your message.&lt;/p&gt;
+&lt;p&gt;For now, Ask Me Anywhere is only activated for this one post. Once I&amp;rsquo;ve tested it out a bit, and perhaps made some changes, I&amp;rsquo;m hoping to then activate it for the 
+&lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;rest of my posts&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;and snippets&lt;/a&gt; as well. So I&amp;rsquo;m particularly keen to get feedback early so I can iterate and improve it soon. Give it a try, let me know what you think. You know how to reach me!&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in learning more about the internals, the source is 
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/772b5dd87da532357a1cdf04a8caa027268bfbac/hugo/assets/js-src/ask-me-anywhere.jsx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on GitHub&lt;/a&gt;. Feel free to have a poke around.&lt;/p&gt;
+&lt;p&gt;The name of the project &amp;ndash; &amp;ldquo;Ask Me Anywhere&amp;rdquo; &amp;ndash; reflects my intention to enable readers to ask questions as they&amp;rsquo;re reading. However, I welcome all types of reactions: questions, comments, feedback, corrections, new ideas, etc. I look forward to hearing what you have to say.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

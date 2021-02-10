@@ -1,6 +1,7 @@
 +++
 title = "Writing with GPT-3"
 date = 2020-07-22T00:00:00
+tags = ["taking-silly-ideas-seriously"]
 +++
 
 GPT-3 is a language model developed at Open AI, and I've been having a lot of fun playing with it. In fact, I've written this post in collaboration with GPT-3. See if you can spot which parts are written by me and which parts come from GPT-3.

@@ -1,6 +1,7 @@
 +++
 title = "An Update on my 2020 Resolution"
 date = 2020-10-09T22:55:00
+tags = ["goals"]
 +++
 
 My goal for this year was to get good at communicating publicly. I decided to measure progress in terms of the number of times I communicated publicly. 100 public communications was the goal. Where am I today?

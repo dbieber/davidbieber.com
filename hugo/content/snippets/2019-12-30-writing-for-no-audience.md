@@ -3,6 +3,7 @@ title = "Writing for No Audience"
 date = 2019-12-30T01:00:00
 
 summary = "Writing for no one is so much easier than writing for someone."
+tags = ["snippets"]
 +++
 
 I started this ["snippets"](/snippets) section of my website just a few days ago with the intention of being able to write without needing to put polish on a piece before publishing it.

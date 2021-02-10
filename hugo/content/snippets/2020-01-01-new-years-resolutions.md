@@ -3,6 +3,7 @@ title = "2020 Resolutions"
 date = 2019-12-30T01:00:00
 
 summary = ""
+tags = ["goals"]
 +++
 
 I've set New Year's Resolutions most years for the last several years. Let's review:

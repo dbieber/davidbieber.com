@@ -2,6 +2,7 @@
 title = "Publishing Blog Posts from Roam Research Quickly and Automatically"
 date = 2020-12-28T00:00:00
 uid = "v8Dfy7xMZ"
+tags = ["snippets", "roam-research"]
 
 +++
 

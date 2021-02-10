@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript | David Bieber</title>
+    <link>https://davidbieber.com/tags/javascript/</link>
+      <atom:link href="https://davidbieber.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <description>javascript</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 23 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
+      <title>javascript</title>
+      <link>https://davidbieber.com/tags/javascript/</link>
+    </image>
+    
+    <item>
+      <title>Margin notes</title>
+      <link>https://davidbieber.com/snippets/2021-01-23-margin-notes/</link>
+      <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-23-margin-notes/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;d like to add margin notes to my website.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+I&amp;rsquo;d also like to learn how to use Fiverr.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
+So, I&amp;rsquo;m going to hire someone on Fiverr to add margin notes on my website.&lt;/p&gt;
+&lt;p&gt;Fabian, over at capnfabs.net, has an 
+&lt;a href=&#34;https://capnfabs.net/posts/margin-notes-hugo-theme/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;excellent post&lt;/a&gt; where he adds margin notes to his own hugo blog. We&amp;rsquo;ll be using that for guidance.&lt;/p&gt;
+&lt;p&gt;After my Fiverr experience I&amp;rsquo;ll update this snippet or add a new one, ideally one full of margin notes.&lt;/p&gt;
+&lt;p&gt;Update (same day): I&amp;rsquo;m back! I didn&amp;rsquo;t use Fiverr. I used the post on capnfabs for reference and set up margin notes myself. Thank you Fabian for documenting your process.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; I&amp;rsquo;ll have to learn to use Fiverr another day.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m glad to have this working. There&amp;rsquo;s room to improve the style though. Perhaps in a future iteration I&amp;rsquo;ll move the main content left to give more space for the margin notes, or make some changes to the font and size.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;I&amp;rsquo;d like this to be a margin note. At the time of this writing, it&amp;rsquo;s a footnote. &lt;em&gt;Update&lt;/em&gt;: Now it&amp;rsquo;s a margin note! At least if your browser is wide enough&amp;hellip; otherwise it&amp;rsquo;s still a footnote. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;I&amp;rsquo;ve used it twice before, but I didn&amp;rsquo;t have a great experience with the one programmer I hired. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Really, it is greatly appreciated! 🙏 &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python&#39;s strip, lstrip, and rstrip in JavaScript</title>
+      <link>https://davidbieber.com/snippets/2020-12-26-pythons-strip-lstrip-and-rstrip-in-javascript/</link>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-26-pythons-strip-lstrip-and-rstrip-in-javascript/</guid>
+      <description>&lt;p&gt;Python provides some convenient functions for manipulating strings: &lt;code&gt;strip&lt;/code&gt;, &lt;code&gt;lstrip&lt;/code&gt;, and &lt;code&gt;rstrip&lt;/code&gt;. Recently I was writing some JavaScript and wanted to use &lt;code&gt;rstrip&lt;/code&gt;. So, I&amp;rsquo;ve implemented all three. Here they are:&lt;/p&gt;
+&lt;h2 id=&#34;the-python-strip-method-in-javascript&#34;&gt;The Python strip method in JavaScript&lt;/h2&gt;
+&lt;p&gt;In Python, &lt;code&gt;strip&lt;/code&gt; removes whitespace from the beginning or end of a string. This is commonly called &amp;ldquo;trim&amp;rdquo; in JavaScript, and is provided as a builtin in most modern browsers. You may need to implement it yourself if you want to support older browsers though. Here&amp;rsquo;s one possible implementation, 
+&lt;a href=&#34;https://www.w3schools.com/python/ref_string_strip.asp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;courtesy of W3Schools&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function trim(x) {
+  return x.replace(/^\s+|\s+$/gm, &#39;&#39;);
+}```
+
+The Python `strip` method optionally accepts an argument, &amp;quot;characters&amp;quot;, and strips all instances of those characters from the left and right sides of the input string. We implement that here.
+
+```javascript
+function trim(x, characters) {
+  var start = 0;
+  while (characters.indexOf(x[start]) &amp;gt;= 0) {
+    start += 1;
+  }
+  var end = x.length - 1;
+  while (characters.indexOf(x[end]) &amp;gt;= 0) {
+    end -= 1;
+  }
+  return x.substr(start, end - start + 1);
+}```
+
+This may not be the most efficient implementation (the calls to indexOf in particular could be made faster), but it gets the job done.
+
+## The Python rstrip method in JavaScript
+
+The rstrip method behaves like strip, but only removes spaces (or the specified characters) from the right side of the input string. We implement this in JavaScript now, calling it &amp;quot;rtrim&amp;quot; for consistency with the name &amp;quot;trim&amp;quot;.
+
+```javascript
+function rtrim(x) {
+  // This implementation removes whitespace from the right side
+  // of the input string.
+  return x.replace(/\s+$/gm, &#39;&#39;);
+}```
+
+We now implement rtrim a second time, now accepting &amp;quot;characters&amp;quot; as input:
+
+```javascript
+function rtrim(x, characters) {
+  var start = 0;
+  var end = x.length - 1;
+  while (characters.indexOf(x[end]) &amp;gt;= 0) {
+    end -= 1;
+  }
+  return x.substr(0, end + 1);
+}```
+
+## The Python lstrip method in JavaScript
+
+Finally we provide a port of Python&#39;s lstrip to JavaScript, calling it ltrim. We again provide one version that strips only whitespace, and a second that strips the provided &amp;quot;characters&amp;quot; input.
+
+```javascript
+function ltrim(x) {
+  // This implementation removes whitespace from the left side
+  // of the input string.
+  return x.replace(/^\s+/gm, &#39;&#39;);
+}```
+
+We now implement rtrim a second time, now accepting &amp;quot;characters&amp;quot; as input:
+
+```javascript
+function ltrim(x, characters) {
+  var start = 0;
+  while (characters.indexOf(x[start]) &amp;gt;= 0) {
+    start += 1;
+  }
+  var end = x.length - 1;
+  return x.substr(start);
+}```
+
+## Example Usage
+
+Here are some example usages of the above functions.
+
+First, using the implementations that strip spaces:
+
+```javascript
+trim(&#39;   Hello world!   &#39;) === &#39;Hello world!&#39;;
+ltrim(&#39;   Hello world!   &#39;) === &#39;Hello world!   &#39;;
+rtrim(&#39;   Hello world!   &#39;) === &#39;   Hello world!&#39;;```
+
+Second, using the implementations that strip the specified characters:
+
+```javascript
+trim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;u&#39;;
+ltrim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;uzzzzzz&#39;;
+rtrim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;Bu&#39;;```
+
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Roam Research&#39;s JSON Export Format</title>
+      <link>https://davidbieber.com/snippets/2020-04-25-roam-json-export/</link>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-25-roam-json-export/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://roamresearch.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research&lt;/a&gt; is a note taking tool that makes it really low-friction to take deeply interwoven notes.
+One of its core features is that you can effortlessly add links between pages in your notes, just by surrounding a name with square brackets, e.g. 
+&lt;a href=&#34;https://roamresearch.com/#/app/commons-db/page/wYVaowjId&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;[[Roam Research]]&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Roam allows its users to export their Roam database as a JSON file. In this snippet, I describe the JSON format used and some of its implications.&lt;/p&gt;
+&lt;h2 id=&#34;exporting-data-from-roam&#34;&gt;Exporting Data from Roam&lt;/h2&gt;
+&lt;p&gt;From the triple-dots menu, select Export All. Choose JSON as the export format. Then click the Export All button. Your complete Roam database will download as a JSON file.&lt;/p&gt;
+&lt;h2 id=&#34;roams-json-format&#34;&gt;Roam&amp;rsquo;s JSON Format&lt;/h2&gt;
+&lt;p&gt;We&amp;rsquo;ll refer to the Roam JSON object you just downloaded as &lt;code&gt;data&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;data&lt;/code&gt; is a list, with each entry in &lt;code&gt;data&lt;/code&gt; corresponding to a single Roam &lt;code&gt;page&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Each &lt;code&gt;page&lt;/code&gt; is an object with keys: &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;children&lt;/code&gt;, &lt;code&gt;create-time&lt;/code&gt;, &lt;code&gt;create-email&lt;/code&gt;, &lt;code&gt;edit-time&lt;/code&gt;, &lt;code&gt;edit-email&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;page-schema&#34;&gt;Page Schema&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;title&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The page title.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;children&lt;/td&gt;
+&lt;td&gt;List[Child]&lt;/td&gt;
+&lt;td&gt;The list of children of the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;create-time&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The time (ms since epoch) when the page was created.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;create-email&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The email of the person to create the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;edit-time&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The time (ms since epoch) of the last edit to the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;edit-email&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The email of the last person to edit the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Note that only &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;edit-time&lt;/code&gt;, and &lt;code&gt;edit-email&lt;/code&gt; appear to be required fields.
+&lt;code&gt;children&lt;/code&gt;, &lt;code&gt;create-time&lt;/code&gt;, and &lt;code&gt;create-email&lt;/code&gt; appear to be omitted when not available.&lt;/p&gt;
+&lt;h3 id=&#34;child-schema&#34;&gt;Child Schema&lt;/h3&gt;
+&lt;p&gt;Each of the children in a page may have the following keys. Only the &lt;code&gt;uid&lt;/code&gt;, &lt;code&gt;string&lt;/code&gt;, &lt;code&gt;edit-time&lt;/code&gt;, and &lt;code&gt;edit-email&lt;/code&gt; keys seem universal. The rest may be omitted when not available.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;uid&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;A short unique identifier for the child.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;string&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The string content of the child.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;children&lt;/td&gt;
+&lt;td&gt;List[Child]&lt;/td&gt;
+&lt;td&gt;The list of children of this child.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;create-time&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The time (ms since epoch) when the page was created.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;create-email&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The email of the person to create the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;edit-time&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The time (ms since epoch) of the last edit to the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;edit-email&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The email of the last person to edit the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Some children may additionally have the following keys.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;heading&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;1, 2, or 3; indicates the note is an h1, h2, or h3 heading.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;emojis&lt;/td&gt;
+&lt;td&gt;List[Emoji]&lt;/td&gt;
+&lt;td&gt;A list of objects indicating who added what emojis and when.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;text-align&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;One of &amp;lsquo;left&amp;rsquo;, &amp;lsquo;right&amp;rsquo;, &amp;lsquo;center&amp;rsquo;, or &amp;lsquo;justify&amp;rsquo; indicating the text alignment.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Note that in Roam, children are referred to as &amp;ldquo;blocks&amp;rdquo;, and a child&amp;rsquo;s ID is the ID used to reference a block.&lt;/p&gt;
+&lt;p&gt;Last but not least, I include the emoji reaction schema 😂.&lt;/p&gt;
+&lt;h3 id=&#34;emoji-schema&#34;&gt;Emoji Schema&lt;/h3&gt;
+&lt;p&gt;Each Emoji reaction to a child is an object conforming to the following schema.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;emoji&lt;/td&gt;
+&lt;td&gt;object&lt;/td&gt;
+&lt;td&gt;An object with a single key &lt;code&gt;native&lt;/code&gt; containing the emoji itself.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;users&lt;/td&gt;
+&lt;td&gt;List[object]&lt;/td&gt;
+&lt;td&gt;A list of objects indicating who added this emoji and when. The keys are &lt;code&gt;time&lt;/code&gt; (ms since epoch) and &lt;code&gt;email&lt;/code&gt; (the email of the user who added the reaction).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;missing-information&#34;&gt;Missing Information&lt;/h3&gt;
+&lt;p&gt;Some information appears to get lost in the export. In particular, the following information appears to be dropped.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&amp;ldquo;View as Document&amp;rdquo; / &amp;ldquo;View as Numbered List&amp;rdquo;: This formatting information doesn&amp;rsquo;t seem to get exported.&lt;/li&gt;
+&lt;li&gt;Versions. If you&amp;rsquo;re using the &amp;ldquo;versions&amp;rdquo; feature of Roam, the versions don&amp;rsquo;t seem to be exported either.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;implications-of-the-json-format&#34;&gt;Implications of the JSON Format&lt;/h2&gt;
+&lt;p&gt;Since Roam allows export of its data in such a simple format, you can easily write scripts for processing this data. For example, merging two databases is trivial. I include some simple such scripts in the following section.&lt;/p&gt;
+&lt;p&gt;The clear export also means that you will continue to be able to use your data long into the future, even if Roam shuts down or otherwise becomes unavailable to you. As long as you occasionally back up your data by exporting it, it is yours forever.&lt;/p&gt;
+&lt;h2 id=&#34;useful-python-snippets-for-processing-roam-json&#34;&gt;Useful Python Snippets for Processing Roam JSON&lt;/h2&gt;
+&lt;p&gt;Once you&amp;rsquo;ve downloaded your data as JSON from Roam, you can load and manipulate it as follows.&lt;/p&gt;
+&lt;h3 id=&#34;load-json&#34;&gt;Load JSON&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import json
+filepath = &#39;/path/to/roam-database.json&#39;
+data = json.load(open(filepath))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;collect-all-children&#34;&gt;Collect All Children&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;children = []
+blocks = data.copy()
+while blocks:
+  block = blocks.pop()
+  if &#39;children&#39; in block:
+    blocks.extend(block[&#39;children&#39;])
+    children.extend(block[&#39;children&#39;])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;find-all-notes-mentioning-roam&#34;&gt;Find All Notes Mentioning &amp;ldquo;Roam&amp;rdquo;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;for child in children:
+  if &#39;roam&#39; in child.get(&#39;string&#39;, &#39;&#39;).lower():
+    print(child[&#39;string&#39;])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;merge-two-databases&#34;&gt;Merge Two Databases&lt;/h3&gt;
+&lt;p&gt;Since databases are just lists of objects, you can trivially merge them.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;merged = db1 + db2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It&amp;rsquo;s possible this will result in multiple pages having the same name, but Roam deals with this just fine.&lt;/p&gt;
+&lt;h2 id=&#34;thank-you-roam&#34;&gt;Thank You Roam&lt;/h2&gt;
+&lt;p&gt;I want to conclude with a note of thanks to the Roam developers for allowing export in such a clear and readily understandable manner. Doing so inspires confidence that I will be able to continue using the notes I take in Roam far into the future, no matter what. This makes me so much more comfortable using Roam for my note taking. Props and thank you to the Roam developers for this feature.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ask Me Anywhere</title>
+      <link>https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere/</link>
+      <pubDate>Sat, 25 Jan 2020 10:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere/</guid>
+      <description>&lt;p&gt;With this post, I&amp;rsquo;m demoing a new work-in-progress feature for my blog called &amp;ldquo;Ask Me Anywhere&amp;rdquo;.
+The feature lets you leave a comment or ask a question at &lt;em&gt;any&lt;/em&gt; point while reading my writing.
+The goal is to encourage readers to respond to my writing, because I&amp;rsquo;m interested in having a conversation and hearing what you have to say.&lt;/p&gt;
+&lt;p&gt;You can try it right now. Either &lt;strong&gt;double click&lt;/strong&gt; (double-tap on mobile) on any paragraph, or click between two paragraphs, to open a comment box. Enter your thoughts, click submit, and &lt;em&gt;voila!&lt;/em&gt;, comment submitted.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;re welcome to enter your email address, name, Twitter handle, Facebook ID, or any other form of contact info if you&amp;rsquo;d like me to respond. And if you do, there is high likelihood that I will respond. If you don&amp;rsquo;t, you&amp;rsquo;re anonymous, and you certainly won&amp;rsquo;t receive a private response.&lt;/p&gt;
+&lt;p&gt;Comments and questions that you submit are not posted publicly anywhere. This isn&amp;rsquo;t a comments section for public discussion. If you want to discuss my posts publicly, submit them on Hacker News or Reddit, or head to Twitter to engage. While this website isn&amp;rsquo;t the place for public discussions, I am curious to know about such a discussion if it&amp;rsquo;s happening. So, feel free to let me know about such a discussion via &amp;ldquo;AMA&amp;rdquo; if you&amp;rsquo;re starting one.&lt;/p&gt;
+&lt;p&gt;What happens when you leave a comment? This part&amp;rsquo;s still a work in progress, but ideally my digital personal assistant 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; will notify me of the new comment at the next convenient time. If there are many comments coming in, Bieber Bot will try to be smart about batching the notifications together, and so the notification may be delayed, but I&amp;rsquo;ll soon read your message.&lt;/p&gt;
+&lt;p&gt;For now, Ask Me Anywhere is only activated for this one post. Once I&amp;rsquo;ve tested it out a bit, and perhaps made some changes, I&amp;rsquo;m hoping to then activate it for the 
+&lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;rest of my posts&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;and snippets&lt;/a&gt; as well. So I&amp;rsquo;m particularly keen to get feedback early so I can iterate and improve it soon. Give it a try, let me know what you think. You know how to reach me!&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in learning more about the internals, the source is 
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/772b5dd87da532357a1cdf04a8caa027268bfbac/hugo/assets/js-src/ask-me-anywhere.jsx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on GitHub&lt;/a&gt;. Feel free to have a poke around.&lt;/p&gt;
+&lt;p&gt;The name of the project &amp;ndash; &amp;ldquo;Ask Me Anywhere&amp;rdquo; &amp;ndash; reflects my intention to enable readers to ask questions as they&amp;rsquo;re reading. However, I welcome all types of reactions: questions, comments, feedback, corrections, new ideas, etc. I look forward to hearing what you have to say.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

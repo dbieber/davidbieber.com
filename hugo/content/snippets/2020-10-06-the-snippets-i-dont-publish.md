@@ -1,6 +1,7 @@
 +++
 title = "The Snippets I Don't Publish"
 date = 2020-10-06T12:33:00
+tags = ["snippets"]
 +++
 
 The goal of Snippets is to minimize the barrier to writing as much as possible. To this end, it has been very effective. Still, there are several snippets that I write and do not publish, despite my self-insistence that the barrier to publication be minimal.

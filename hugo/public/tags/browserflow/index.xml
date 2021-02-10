@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>browserflow | David Bieber</title>
+    <link>https://davidbieber.com/tags/browserflow/</link>
+      <atom:link href="https://davidbieber.com/tags/browserflow/index.xml" rel="self" type="application/rss+xml" />
+    <description>browserflow</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 09 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
+      <title>browserflow</title>
+      <link>https://davidbieber.com/tags/browserflow/</link>
+    </image>
+    
+    <item>
+      <title>What does Browserflow do beyond what Tampermonkey does?</title>
+      <link>https://davidbieber.com/snippets/2021-02-09-what-does-browserflow-do-beyond-what-tampermonkey-does/</link>
+      <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-02-09-what-does-browserflow-do-beyond-what-tampermonkey-does/</guid>
+      <description>&lt;p&gt;Someone recently asked me what 
+&lt;a href=&#34;https://dkthehuman.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DK&lt;/a&gt;&amp;rsquo;s 
+&lt;a href=&#34;http://browserflow.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Browserflow&lt;/a&gt; does beyond what e.g. 
+&lt;a href=&#34;https://www.tampermonkey.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tampermonkey&lt;/a&gt; provides. Here&amp;rsquo;s my answer.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;1. &lt;em&gt;&lt;strong&gt;Way&lt;/strong&gt;&lt;/em&gt; easier to use both for programmers and non-programmers&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Allows recording macros or writing them as &amp;ldquo;flows&amp;rdquo;/programs&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Everything (okay, maybe not &lt;em&gt;everything&lt;/em&gt;) &amp;ldquo;just works&amp;rdquo; &amp;ndash; e.g. if you want to write a for loop over tweets on Twitter, you just do. No need to deal with handling scrolling, or with race conditions about when dom elements appear and disappear, or if twitter decides to reuse dom elements, etc. Browserflow takes care of those details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Provides high level commands like taking screenshots of elements, writing to csv, selecting parts of a page, looping over elements, getting input from the user, etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Easy to share flows with other users! Unfortunately there&amp;rsquo;s like ~2 other users right now 😛&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The typeahead for running flows is super convenient. cmd-J then type a piece of the flow name, then hit enter. The flow runs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;Really it&amp;rsquo;s (3) that sets it apart. The attention to detail in the product is impressive. Thanks DK.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;My experience with Tampermonkey is limited, so take this with some salt. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Flow for Focused Reading</title>
+      <link>https://davidbieber.com/snippets/2021-02-05-focused-reading/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-02-05-focused-reading/</guid>
+      <description>&lt;p&gt;As you can see from the snippet you&amp;rsquo;re currently reading, I&amp;rsquo;ve implemented a simple tool to help with focused reading. (It&amp;rsquo;s 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-02-02-focused-reading-browserflow-flow-idea/&#34;&gt;the idea from the previous snippet&lt;/a&gt;). The majority of the page is dimmed, except for a few lines above and below your mouse cursor. As you move your mouse, the focused region follows. Give it a try; move your mouse (or touch) over the next paragraph, and watch as the light region follows.&lt;/p&gt;
+&lt;p&gt;This is useful for staying focused when reading. If your eyes or mind wander while reading, it&amp;rsquo;s easy to quickly bring your attention back to exactly where you left off.&lt;/p&gt;
+&lt;p&gt;For the 
+&lt;a href=&#34;https://browserflow.app&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Browserflow&lt;/a&gt; users among you (psst&amp;hellip; DK, you need to ship Browserflow so there &lt;em&gt;are&lt;/em&gt; Browserflow users out there), you can enable this effect on any page using 
+&lt;a href=&#34;https://browserflow.app/shared/8c2f3de8-2666-4578-8b42-58f5cad105b0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this BrowserFlow flow I made&lt;/a&gt;. Once you get the flow you can simply type cmd-J and select &amp;ldquo;Focus Bar&amp;rdquo; from the typeahead to enable this effect anywhere.&lt;/p&gt;
+&lt;p&gt;For everyone else, you can paste this script into your JavaScript console. 🤷&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var mouseY = 0;
+var scrollY = 0;
+var offset = 50;
+var div_below, div_above;
+
+div_below = document.createElement(&amp;quot;div&amp;quot;);
+div_below.style.position = &amp;quot;absolute&amp;quot;;
+div_below.style.left = &amp;quot;0px&amp;quot;;
+div_below.style.top = &amp;quot;0px&amp;quot;;
+div_below.style.width = &amp;quot;100%&amp;quot;;
+div_below.style.height = &amp;quot;100%&amp;quot;;
+div_below.style.background = &amp;quot;black&amp;quot;;
+div_below.style.opacity = &amp;quot;30%&amp;quot;;
+
+div_above = document.createElement(&amp;quot;div&amp;quot;);
+div_above.style.position = &amp;quot;absolute&amp;quot;;
+div_above.style.left = &amp;quot;0px&amp;quot;;
+div_above.style.bottom = &amp;quot;0px&amp;quot;;
+div_above.style.width = &amp;quot;100%&amp;quot;;
+div_above.style.height = &amp;quot;100%&amp;quot;;
+div_above.style.background = &amp;quot;black&amp;quot;;
+div_above.style.opacity = &amp;quot;30%&amp;quot;;
+
+document.body.appendChild(div_below);
+document.body.appendChild(div_above);
+
+function adjust_divs() {
+  scrollY = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+  div_below.style.top = (mouseY + offset + scrollY) + &#39;px&#39;;
+  div_above.style.bottom = (
+      &#39;calc(100% - &#39; + (mouseY - offset + scrollY) + &#39;px&#39;);
+  div_below.style.height = (
+      &#39;calc(100% - &#39; + (mouseY + offset) + &#39;px&#39;);
+}
+
+document.addEventListener(&#39;mousemove&#39;, function(event) {
+  mouseY = event.clientY;
+  adjust_divs();
+}, true);
+
+document.addEventListener(&#39;scroll&#39;, function(event) {
+  adjust_divs();
+}, true);
+document.addEventListener(&#39;touchstart&#39;, function(event) {
+  mouseY = event.touches[0].clientY;
+  adjust_divs();
+}, true);
+document.addEventListener(&#39;touchmove&#39;, function(event) {
+  mouseY = event.touches[0].clientY;
+  adjust_divs();
+}, true);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Sorry about the jitter. Let me know if you know how to fix it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Focused Reading Browserflow Flow Idea</title>
+      <link>https://davidbieber.com/snippets/2021-02-02-focused-reading-browserflow-flow-idea/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-02-02-focused-reading-browserflow-flow-idea/</guid>
+      <description>&lt;p&gt;This idea for an assistive technology for focused reading comes from 
+&lt;a href=&#34;https://accessibe.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;accessiBe&lt;/a&gt;. I stumbled upon it on 
+&lt;a href=&#34;https://www.tasteofhome.com/recipes/homemade-potato-chips/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tasteofhome.com&lt;/a&gt;. The idea is to make the web more accessible to folks with ADHD by dimming the part of the screen they&amp;rsquo;re not actively looking at.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a video of the accessiBe implementation in action on the tasteofhome.com website.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FbF12xbo8EB.gif?alt=media&amp;amp;token=d1cc35a1-8354-4859-9415-7a48e5283310&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;As you can see, the screen is dimmed everywhere except on the lines surrounding the mouse pointer. This helps me to regain focus more quickly if my attention is drawn away from the text I was reading.&lt;/p&gt;
+&lt;p&gt;I find this way of reading helpful, and so I&amp;rsquo;m thinking about making it for myself as a Browserflow flow. It should be easy enough to do. When the flow starts, it just has to add two large transparent rectangles to the DOM, and an event handler to update their positions whenever my mouse moves.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll put up another snippet if and when I build this.&lt;/p&gt;
+&lt;p&gt;Update Feb 5, 2021: As you may have noticed, I&amp;rsquo;ve now implemented this idea. It&amp;rsquo;s enabled on this page, and also available as a Browserflow flow. 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-02-05-focused-reading&#34;&gt;See the snippet here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spaced Repetition in Roam Research</title>
+      <link>https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/</guid>
+      <description>&lt;p&gt;There are many ways to do spaced repetition in Roam Research. This post describes mine. I was inspired to start this two months ago by reading 
+&lt;a href=&#34;https://ncase.me/remember/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nicky Case&amp;rsquo;s comic on spaced repetition&lt;/a&gt;, and I highly recommend the read.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Spaced repetition&amp;rdquo; just means studying flashcards, studying the cards you know best less often, and study the cards you struggle with more often. It&amp;rsquo;s a powerful technique for learning and remembering material, whether you&amp;rsquo;re a student or a lifelong learner.&lt;/p&gt;
+&lt;p&gt;The system I use is based on a classic system called the &amp;ldquo;Leitner Box&amp;rdquo; method. I&amp;rsquo;ll first describe how to use the &amp;ldquo;Leitner Box&amp;rdquo; approach in Roam, and then I&amp;rsquo;ll describe the adjustments I made to improve it.&lt;/p&gt;
+&lt;h2 id=&#34;whats-a-leitner-box&#34;&gt;What&amp;rsquo;s a &amp;ldquo;Leitner Box&amp;rdquo;?&lt;/h2&gt;
+&lt;p&gt;In the &amp;ldquo;Leitner Box&amp;rdquo; system of spaced repetition, there are seven boxes numbered Box 1 through Box 7. When you create a flashcard, you place it into Box 1. Every day, you use a schedule to determine which boxes of cards to review. The cards in box 1 get reviewed most often, and the cards in box 7 get reviewed least often. When you review a card, you move it up a box (e.g. from box 1 to 2 or from box 4 to 5) if you get the card right. But if you get a card wrong, you move the card back to box 1.&lt;/p&gt;
+&lt;p&gt;The default Leitner Box schedule looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FpW7FsufOIr.png?alt=media&amp;amp;token=3cbd07b1-11e5-4389-896d-9a181f6529fc&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;How do you read this schedule?&lt;/p&gt;
+&lt;p&gt;The colored circles represent the different Leitner Boxes. The red circles represent Box 1, the orange circles represent Box 2, the yellow circles represent Box 3, all the way up to the final pink circle that represents Box 7.&lt;/p&gt;
+&lt;p&gt;The numbers along the bottom are &amp;ldquo;session numbers&amp;rdquo;. For your first review session, you look at the circles above &amp;ldquo;01&amp;rdquo; (Boxes 2 and 1). For your second review session, you look at the circles above &amp;ldquo;02&amp;rdquo; (Boxes 3 and 1). Always review boxes for a given day in order from highest to lowest. After completing session &amp;ldquo;64&amp;rdquo;, the schedule wraps around and your next session is session &amp;ldquo;01&amp;rdquo; again.&lt;/p&gt;
+&lt;p&gt;To recap, (1) you put new flashcards into Box 1. (2) When you get a card correct, you move it up a box. (3) When you get a card incorrect, you move it all the way back to Box 1. (4) You use the schedule made of colored dots to decide which boxes to review each day, answering questions in higher boxes first.&lt;/p&gt;
+&lt;h2 id=&#34;setting-up-leitner-boxes-in-roam&#34;&gt;Setting up Leitner Boxes in Roam&lt;/h2&gt;
+&lt;p&gt;This system is all well and good. How do we put it into practice? Here I&amp;rsquo;ll quickly describe (1) getting set up, (2) creating new flashcards, and (3) how to do a review session.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Setting up:&lt;/strong&gt; You can use my template; simply copy and paste the 
+&lt;a href=&#34;https://pastebin.com/GPfhcUug&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;raw&amp;rdquo; text at the bottom of the page here&lt;/a&gt; into Roam Research, e.g. onto a new page named &amp;ldquo;Spaced Repetition&amp;rdquo;. For this to work you need to copy from the region that says &lt;strong&gt;&amp;ldquo;RAW paste data&amp;rdquo;&lt;/strong&gt;. You can 
+&lt;a href=&#34;https://pastebin.com/zvjFKZAb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get the enhanced template (recommended; see below) here&lt;/a&gt;. Again, be sure to copy from the region that says &amp;ldquo;RAW paste data&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;The default template creates a page for each of the seven Leitner boxes. It also puts the default schedule on the page, and gives you a place to keep track of what session number you&amp;rsquo;re up to. It will also add two questions to your Leitner Box 1 (one about avocados, and one about Cloze deletions), and includes some basic instructions for how to do spaced repetition in Roam.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Creating New Flashcards:&lt;/strong&gt; You can create a new card anywhere in your Roam graph simply by tagging a note with &amp;ldquo;#[[Leitner Box 1]]&amp;rdquo;. Here are two ways to create cards in Roam:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Put the question on one bullet, and put the answer in the child bullets. Then tag the bullet with the question with &amp;ldquo;#[[Leitner Box 1]]&amp;rdquo; to add it to your spaced repetition system.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can use the syntax {{=: question | answer}} in Roam to create text that remains hidden until clicked. The text &amp;ldquo;answer&amp;rdquo; wont appear until you click on the text &amp;ldquo;question.&amp;rdquo; Again, tag the line with &amp;ldquo;#[[Leitner Box 1]]&amp;rdquo; to add it to your spaced repetition system.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I recommend you 
+&lt;a href=&#34;https://andymatuschak.org/prompts/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;read Andy Matuschak&amp;rsquo;s notes on &amp;ldquo;How to write good prompts&amp;rdquo;&lt;/a&gt; for tips on how to create good flashcards. 
+&lt;a href=&#34;https://ncase.me/remember/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nicky Case&amp;rsquo;s comic: &amp;ldquo;How to Remember Anything Forever-ish&amp;rdquo;&lt;/a&gt; also has good suggestions for how to create good questions for spaced repetition.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How to do a Review Session:&lt;/strong&gt; Visit your &amp;ldquo;Spaced Repetition&amp;rdquo; page to figure out what session number to do. Increment the session number, and use the schedule to determine which Leitner boxes you&amp;rsquo;ll be looking at in this session. Remember, do the Leitner boxes in decreasing order of their number.&lt;/p&gt;
+&lt;p&gt;For each Leitner box, visit its page in Roam. All your questions will appear in the Linked References section of the page.&lt;/p&gt;
+&lt;p&gt;Go through the questions one by one. If you get the answer correct, increment the box number by 1. If you get the answer incorrect or struggle with it, set the tag back to &amp;ldquo;#[[Leitner Box 1]]&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Don&amp;rsquo;t worry about sending things back to box 1; you&amp;rsquo;ll see those questions very often and soon they&amp;rsquo;ll be back in the higher numbered boxes again!&lt;/p&gt;
+&lt;h2 id=&#34;enhancements-beyond-the-default-system&#34;&gt;Enhancements Beyond the Default System&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ve made several changes to the default Leitner Box system to improve it to my taste. You&amp;rsquo;re welcome to use them!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Leitner Boxes 0 and $\infty$:&lt;/strong&gt; I use an extra box, &amp;ldquo;Leitner Box 0&amp;rdquo; for flashcards that I&amp;rsquo;m not ready to put into my rotation yet. I try to only add at most 10 cards a day to keep the total review workload low. If I have more cards than this, I keep them in Box 0 until I&amp;rsquo;m ready to start studying them, at which point I move them to Box 1.&lt;/p&gt;
+&lt;p&gt;Leitner Box $\infty$ is for cards that have graduated from Box 7. In theory, I will remember these cards for the rest of my life.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Extra box 5s, 6s, and 7s:&lt;/strong&gt; I have decided to create two Box 5s (named 5A and 5B), four Box 6s (6A, 6B, 6C, and 6D), and eight Box 7s (7A through 7H). This prevents any individual review session from accumulating too many cards.&lt;/p&gt;
+&lt;p&gt;I ran a simulation and under the default system, adding 10 new cards a day and getting 95% of cards correct, some review sessions will require reviewing over 700 cards! Under the enhanced system, the longest review session will only ever be 140 cards (and most review sessions are much shorter than that).&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the modified schedule that allows me to use these extra boxes:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2F_dSM-MMp85.png?alt=media&amp;amp;token=b3682748-8ea4-4444-97df-0c4592beb1ff&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FhFRPfzGpwy.png?alt=media&amp;amp;token=20b7f689-4117-4901-a806-846b0d099d7d&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To use this enhanced schedule, first use the review session number to figure out which column of colored circles to look at. As before, a red circle indicates Leitner Box 1, a yellow circle indicates Leitner Box 2, etc. If the circle has a letter inside it, that means to review that particular variant of the box. E.g. a blue circle with a &amp;ldquo;B&amp;rdquo; inside means to review Leitner box 5B. The arrow to the right of a box indicates which box you should move the card to if you get it correct. E.g. in review session &amp;ldquo;51&amp;rdquo; you should review box 5B and move correct cards to box 6D; you should then review boxes 2 and 1 as usual.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Embed the box list:&lt;/strong&gt; I use Roam Research&amp;rsquo;s &amp;ldquo;embed block&amp;rdquo; feature to embed a list of all Leitner Boxes onto all my Leitner Box pages. This makes it easy to quickly navigate from any box to any other box. I couldn&amp;rsquo;t think of a good way to include this in the template, so you&amp;rsquo;ll have to add this yourself if you want to include it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Enhanced Template&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You can 
+&lt;a href=&#34;https://pastebin.com/zvjFKZAb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;access the enhanced version of the template here&lt;/a&gt;. It includes more Leitner boxes and the more complicated schedule. To use it, simply paste it into a new page in Roam Research, e.g. &amp;ldquo;Spaced Repetition&amp;rdquo;.&lt;/p&gt;
+&lt;h2 id=&#34;spaced-repetition-alternatives&#34;&gt;Spaced Repetition Alternatives&lt;/h2&gt;
+&lt;p&gt;There are multiple ways of doing spaced repetition in Roam, of which this is just one. Note that most spaced repetition systems in Roam Research use the &amp;ldquo;delta&amp;rdquo; feature. However, we are not using this feature. CortexFutura provides 
+&lt;a href=&#34;https://www.cortexfutura.com/preliminary-spaced-repetition-roam/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a way of using the delta feature for spaced repetition here&lt;/a&gt;. Roam Toolkit provides another system for doing spaced repetition in Roam, which you can 
+&lt;a href=&#34;https://www.youtube.com/watch?v=08o8q_bOedw&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;view on YouTube here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;One of the most popular spaced repetition systems is called 
+&lt;a href=&#34;https://apps.ankiweb.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anki&lt;/a&gt;. It&amp;rsquo;s great for language learning. I&amp;rsquo;d be remiss not to mention it. The reason I prefer doing spaced repetition directly in Roam is that the friction to creating cards is much lower in Roam for me, since I&amp;rsquo;m taking notes and writing my ideas in there already.&lt;/p&gt;
+&lt;p&gt;Additionally RemNote, a competitor note-taking tool to Roam, also offers a highly configurable spaced repetition system out-of-the-box.&lt;/p&gt;
+&lt;p&gt;For more, consider joining the conversation in the 
+&lt;a href=&#34;https://roamresearch.slack.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research Slack&lt;/a&gt; &amp;ldquo;spaced-repetition&amp;rdquo; channel.&lt;/p&gt;
+&lt;h2 id=&#34;two-advantages-of-this-system-over-traditional-spaced-repetition-systems&#34;&gt;Two advantages of this system over traditional spaced repetition systems&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Lower friction:&lt;/strong&gt; Creating cards directly in your note-taking app is substantially easier than needing to task switch to create cards. This lower mental overhead makes it easier to keep using spaced repetition for an extended period of time. I started using it two months ago myself, so finger&amp;rsquo;s crossed it indeed is something I keep up for much longer! 🤞&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Robustness to vacations:&lt;/strong&gt; In traditional spaced repetition systems, taking a break for a day, week, or month, can be ruinous to your spaced repetition rhythm. After coming back from the break, you find you have too many cards to review all at once, which can be a real motivation drain. Instead of organizing cards by &lt;strong&gt;date&lt;/strong&gt;, my system organizes them by &lt;strong&gt;review session number.&lt;/strong&gt; This means that if you skip a day or a week, your reviews simply get pushed back. The review session number won&amp;rsquo;t go up while you&amp;rsquo;re away. You can even split a review session over multiple days if you like. No trouble! You&amp;rsquo;ll never be left with a review session that&amp;rsquo;s too big to handle.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;additional-resources&#34;&gt;Additional Resources&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://ncase.me/remember/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nicky Case&amp;rsquo;s comic: &amp;ldquo;How to Remember Anything Forever-ish&amp;rdquo;&lt;/a&gt; is what inspired me to start using spaced repetition in my life.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://withorbit.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Andy Matuschak&amp;rsquo;s &amp;ldquo;Orbit&amp;rdquo; system&lt;/a&gt; enables writers to incorporate spaced repetition directly into their writing, to help their readers remember what they learned forever. You can read 
+&lt;a href=&#34;https://quantum.country/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Quantum Country&lt;/a&gt; to learn quantum computing and give it a try. You could also 
+&lt;a href=&#34;https://andymatuschak.org/prompts/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;read his tips for &amp;ldquo;How to write good prompts&amp;rdquo;&lt;/a&gt;, which is also written with Orbit.&lt;/p&gt;
+&lt;p&gt;You can 
+&lt;a href=&#34;https://apps.ankiweb.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get Anki here&lt;/a&gt; or 
+&lt;a href=&#34;https://www.remnote.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;try RemNote here&lt;/a&gt;. I also have a dozen+ other 
+&lt;a href=&#34;https://davidbieber.com/snippets/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;snippets about Roam here&lt;/a&gt; (
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-25-introducing-snippets/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;what&amp;rsquo;s a “snippet”?&lt;/a&gt;).&lt;/p&gt;
+&lt;h2 id=&#34;get-in-touch&#34;&gt;Get in touch&lt;/h2&gt;
+&lt;p&gt;I love a good discussion about spaced repetition. You can email me at 
+&lt;a href=&#34;mailto:david810&amp;#43;spaced-repetition@gmail.com&#34;&gt;david810+spaced-repetition@gmail.com&lt;/a&gt;, find me on Twitter (
+&lt;a href=&#34;https://twitter.com/@Bieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Bieber&lt;/a&gt;), or join the 
+&lt;a href=&#34;https://roamresearch.slack.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam slack&lt;/a&gt; to keep the conversation going.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

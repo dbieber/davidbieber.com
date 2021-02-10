@@ -2,7 +2,7 @@
 title = "2020 Resolution Check-in"
 date = 2021-01-03T00:00:00
 uid = "GEIKnZ7uS"
-
+tags = ["goals"]
 +++
 
 At the start of 2020 [I resolved to communicate publicly 100 times](/snippets/2020-01-01-new-years-resolutions/). How did I do? I got about 80% of the way there.

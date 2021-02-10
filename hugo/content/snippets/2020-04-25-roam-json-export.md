@@ -1,6 +1,7 @@
 +++
 title = "Roam Research's JSON Export Format"
 date = 2020-04-25T00:00:00
+tags = ["roam-research", "python", "javascript"]
 +++
 
 [Roam Research](https://roamresearch.com/) is a note taking tool that makes it really low-friction to take deeply interwoven notes.

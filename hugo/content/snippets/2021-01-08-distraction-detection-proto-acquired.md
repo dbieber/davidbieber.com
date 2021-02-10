@@ -2,6 +2,7 @@
 title = "Distraction detection: Proto acquired!"
 date = 2021-01-08T00:00:00
 uid = "js34VMN3G"
+tags = ["attention"]
 
 +++
 

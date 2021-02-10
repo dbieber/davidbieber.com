@@ -1,7 +1,7 @@
 +++
 title = "The Future-Predicting Gameshow Host"
 date = 2020-02-08T00:00:00
-
+tags = ["thought-experiments", "math"]
 plugins_js = ["ask-me-anywhere"]
 +++
 

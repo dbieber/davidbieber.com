@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>goals | David Bieber</title>
+    <link>https://davidbieber.com/tags/goals/</link>
+      <atom:link href="https://davidbieber.com/tags/goals/index.xml" rel="self" type="application/rss+xml" />
+    <description>goals</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
+      <title>goals</title>
+      <link>https://davidbieber.com/tags/goals/</link>
+    </image>
+    
+    <item>
+      <title>2020 Resolution Check-in</title>
+      <link>https://davidbieber.com/snippets/2021-01-03-2020-resolution-check-in/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-03-2020-resolution-check-in/</guid>
+      <description>&lt;p&gt;At the start of 2020 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-01-01-new-years-resolutions/&#34;&gt;I resolved to communicate publicly 100 times&lt;/a&gt;. How did I do? I got about 80% of the way there.&lt;/p&gt;
+&lt;p&gt;By the numbers, this is approximately 62 snippets, 8 tech talks, 4 published papers, 1 thesis proposal, 2 videos, and a handful of discussions in public on various Slack-like groups.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Resolution&lt;/th&gt;
+&lt;th&gt;Status&lt;/th&gt;
+&lt;th&gt;Result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2020&lt;/td&gt;
+&lt;td&gt;Communicate publicly 100 times&lt;/td&gt;
+&lt;td&gt;80%&amp;rsquo;s not bad.&lt;/td&gt;
+&lt;td&gt;&lt;font color=&#34;maroon&#34;&gt;Not quite.&lt;/font&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2019&lt;/td&gt;
+&lt;td&gt;Play violin on 100 days&lt;/td&gt;
+&lt;td&gt;Played on 43 days&lt;/td&gt;
+&lt;td&gt;&lt;font color=&#34;maroon&#34;&gt;Nope&lt;/font&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017&lt;/td&gt;
+&lt;td&gt;Longer arms&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;font color=&#34;green&#34;&gt;Yesssss!&lt;/font&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2015&lt;/td&gt;
+&lt;td&gt;Exercise 200 days&lt;br&gt; Read 200 days&lt;/td&gt;
+&lt;td&gt;Exercise: 200 days by summer&lt;br&gt; Reading: (look this up)&lt;/td&gt;
+&lt;td&gt;Yes.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;100 days of push ups&lt;/td&gt;
+&lt;td&gt;145 done by December&lt;/td&gt;
+&lt;td&gt;&lt;font color=&#34;green&#34;&gt;Yes!&lt;/font&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Here&amp;rsquo;s to 2021 🥂&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An Update on my 2020 Resolution</title>
+      <link>https://davidbieber.com/snippets/2020-10-09-an-update-on-my-2020-resolution/</link>
+      <pubDate>Fri, 09 Oct 2020 22:55:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-10-09-an-update-on-my-2020-resolution/</guid>
+      <description>&lt;p&gt;My goal for this year was to get good at communicating publicly. I decided to measure progress in terms of the number of times I communicated publicly. 100 public communications was the goal. Where am I today?&lt;/p&gt;
+&lt;p&gt;This is my 42nd snippet for the year. I&amp;rsquo;m giving a talk on Python Fire publicly next week. I published 4 papers (
+&lt;a href=&#34;https://arxiv.org/abs/2010.12621&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IPA-GNN&lt;/a&gt;, 
+&lt;a href=&#34;https://arxiv.org/abs/2003.09040&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TF-Coder&lt;/a&gt;, 
+&lt;a href=&#34;https://arxiv.org/abs/2002.09067&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Unique Randomizer&lt;/a&gt;, and 
+&lt;a href=&#34;https://arxiv.org/abs/2007.14381&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BUSTLE&lt;/a&gt;). So far two of them have been accompanied by open source releases (update: now three!).&lt;/p&gt;
+&lt;p&gt;Add in a handful of paper presentations and Google-internal talks, and its safe to say I&amp;rsquo;m past the half-way point toward the goal. Only trouble is we&amp;rsquo;re over 75% of the way through the year. I&amp;rsquo;d better get communicating!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2020 Resolutions</title>
+      <link>https://davidbieber.com/snippets/2020-01-01-new-years-resolutions/</link>
+      <pubDate>Mon, 30 Dec 2019 01:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-01-01-new-years-resolutions/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve set New Year&amp;rsquo;s Resolutions most years for the last several years. Let&amp;rsquo;s review:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Resolution&lt;/th&gt;
+&lt;th&gt;Status&lt;/th&gt;
+&lt;th&gt;Result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2019&lt;/td&gt;
+&lt;td&gt;Play violin on 100 days&lt;/td&gt;
+&lt;td&gt;Played on 43 days&lt;/td&gt;
+&lt;td&gt;&lt;font color=&#34;maroon&#34;&gt;Nope&lt;/font&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2018&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017&lt;/td&gt;
+&lt;td&gt;Longer arms&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;font color=&#34;green&#34;&gt;Yesssss!&lt;/font&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2016&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2015&lt;/td&gt;
+&lt;td&gt;Exercise 200 days&lt;br&gt; Read 200 days&lt;/td&gt;
+&lt;td&gt;Exercise: 200 days by summer&lt;br&gt; Reading: (look this up)&lt;/td&gt;
+&lt;td&gt;Yes.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2014&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;100 days of push ups&lt;/td&gt;
+&lt;td&gt;145 done by December&lt;/td&gt;
+&lt;td&gt;&lt;font color=&#34;green&#34;&gt;Yes!&lt;/font&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The missing entries I don&amp;rsquo;t recall or have readily available, but I had goals in those years too.&lt;/p&gt;
+&lt;p&gt;This year, I add a new resolution to the table:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Resolution&lt;/th&gt;
+&lt;th&gt;Status&lt;/th&gt;
+&lt;th&gt;Result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2020&lt;/td&gt;
+&lt;td&gt;Communicate publicly 100 times&lt;/td&gt;
+&lt;td&gt;**Finger&amp;rsquo;s crossed**&lt;/td&gt;
+&lt;td&gt;TBD!&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;What counts as &amp;ldquo;communicating publicly&amp;rdquo;?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A 
+&lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;snippet&lt;/a&gt; like this one&lt;/li&gt;
+&lt;li&gt;Giving a tech talk&lt;/li&gt;
+&lt;li&gt;Writing a 
+&lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;blog post&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Publishing a paper&lt;/li&gt;
+&lt;li&gt;Uploading a video&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to get infrequent updates about my progress, you can subscribe here:&lt;/p&gt;
+
+&lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/classic-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+  #mc_embed_signup{
+    background:#fff;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+  }
+&lt;/style&gt;
+&lt;div id=&#34;mc_embed_signup&#34;&gt;
+&lt;form action=&#34;https://gmail.us3.list-manage.com/subscribe/post?u=a55774562ae9fa9a1d879fa75&amp;amp;id=132f89def3&#34; method=&#34;post&#34; id=&#34;mc-embedded-subscribe-form&#34; name=&#34;mc-embedded-subscribe-form&#34; class=&#34;validate&#34; target=&#34;_blank&#34; novalidate&gt;
+    &lt;div id=&#34;mc_embed_signup_scroll&#34;&gt;
+  
+&lt;div class=&#34;mc-field-group&#34;&gt;
+  &lt;label for=&#34;mce-EMAIL&#34;&gt;Email Address&lt;/label&gt;
+  &lt;input type=&#34;email&#34; value=&#34;&#34; name=&#34;EMAIL&#34; class=&#34;required email&#34; id=&#34;mce-EMAIL&#34;&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;mce-responses&#34; class=&#34;clear&#34;&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-error-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-success-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;    
+    &lt;div style=&#34;position: absolute; left: -5000px;&#34; aria-hidden=&#34;true&#34;&gt;&lt;input type=&#34;text&#34; name=&#34;b_a55774562ae9fa9a1d879fa75_132f89def3&#34; tabindex=&#34;-1&#34; value=&#34;&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;
+      &lt;input type=&#34;submit&#34; value=&#34;Subscribe&#34; name=&#34;subscribe&#34; id=&#34;mc-embedded-subscribe&#34; class=&#34;button&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=&#39;EMAIL&#39;;ftypes[0]=&#39;email&#39;;fnames[1]=&#39;FNAME&#39;;ftypes[1]=&#39;text&#39;;fnames[2]=&#39;LNAME&#39;;ftypes[2]=&#39;text&#39;;fnames[3]=&#39;ADDRESS&#39;;ftypes[3]=&#39;address&#39;;fnames[4]=&#39;PHONE&#39;;ftypes[4]=&#39;phone&#39;;fnames[5]=&#39;BIRTHDAY&#39;;ftypes[5]=&#39;birthday&#39;;}(jQuery));var $mcj = jQuery.noConflict(true);&lt;/script&gt;
+
+&lt;p&gt;You can expect fewer than one email per month, not 100 per year, so don&amp;rsquo;t worry about spam.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning to Communicate</title>
+      <link>https://davidbieber.com/snippets/2019-12-26-learning-to-communicate/</link>
+      <pubDate>Thu, 26 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2019-12-26-learning-to-communicate/</guid>
+      <description>&lt;p&gt;My goal for 2020 is to learn to communicate better with the world. I work in a research group at Google, and our main job function is performing research in program synthesis. But research is only as valuable as how well it is communicated. So in 2020 I&amp;rsquo;d like to get better at communicating publicly.&lt;/p&gt;
+&lt;p&gt;There are a few options for doing this. The first is writing blog posts. This may be too large an undertaking to do frequently. I&amp;rsquo;d really like something that&amp;rsquo;s lower barrier to do, and with a lower quality bar, so that I can do this more often. The natural alternative with these properties is academic Twitter. However, I want to avoid the addictive nature of Twitter. I also want to write more than 280 characters at a time, and I don&amp;rsquo;t want to put every little thing I write in front of people&amp;rsquo;s faces with equal importance. Twitter seems a good place for announcing a new paper or a Python Fire update, but not for sharing a musing like this one.&lt;/p&gt;
+&lt;p&gt;So instead I think I&amp;rsquo;m going to start by silently posting my writings to my website, but in a 
+&lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;separate section&lt;/a&gt; from the main blog. This way when there&amp;rsquo;s something with a little more polish that I think is explicitly worth reading, I can put it in the 
+&lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;main blog section&lt;/a&gt; and 
+&lt;a href=&#34;https://twitter.com/Bieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tweet&lt;/a&gt; about it, etc.&lt;/p&gt;
+&lt;p&gt;If you want to receive updates for every small writing I put up here, you can use this 
+&lt;a href=&#34;https://davidbieber.com/snippets/index.xml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RSS feed&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to receive updates only for major posts, such as new publications or major life updates, you can use this 
+&lt;a href=&#34;https://davidbieber.com/posts/index.xml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RSS feed&lt;/a&gt; or you can subscribe here:&lt;/p&gt;
+
+&lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/classic-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+  #mc_embed_signup{
+    background:#fff;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+  }
+&lt;/style&gt;
+&lt;div id=&#34;mc_embed_signup&#34;&gt;
+&lt;form action=&#34;https://gmail.us3.list-manage.com/subscribe/post?u=a55774562ae9fa9a1d879fa75&amp;amp;id=132f89def3&#34; method=&#34;post&#34; id=&#34;mc-embedded-subscribe-form&#34; name=&#34;mc-embedded-subscribe-form&#34; class=&#34;validate&#34; target=&#34;_blank&#34; novalidate&gt;
+    &lt;div id=&#34;mc_embed_signup_scroll&#34;&gt;
+  
+&lt;div class=&#34;mc-field-group&#34;&gt;
+  &lt;label for=&#34;mce-EMAIL&#34;&gt;Email Address&lt;/label&gt;
+  &lt;input type=&#34;email&#34; value=&#34;&#34; name=&#34;EMAIL&#34; class=&#34;required email&#34; id=&#34;mce-EMAIL&#34;&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;mce-responses&#34; class=&#34;clear&#34;&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-error-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-success-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;    
+    &lt;div style=&#34;position: absolute; left: -5000px;&#34; aria-hidden=&#34;true&#34;&gt;&lt;input type=&#34;text&#34; name=&#34;b_a55774562ae9fa9a1d879fa75_132f89def3&#34; tabindex=&#34;-1&#34; value=&#34;&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;
+      &lt;input type=&#34;submit&#34; value=&#34;Subscribe&#34; name=&#34;subscribe&#34; id=&#34;mc-embedded-subscribe&#34; class=&#34;button&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=&#39;EMAIL&#39;;ftypes[0]=&#39;email&#39;;fnames[1]=&#39;FNAME&#39;;ftypes[1]=&#39;text&#39;;fnames[2]=&#39;LNAME&#39;;ftypes[2]=&#39;text&#39;;fnames[3]=&#39;ADDRESS&#39;;ftypes[3]=&#39;address&#39;;fnames[4]=&#39;PHONE&#39;;ftypes[4]=&#39;phone&#39;;fnames[5]=&#39;BIRTHDAY&#39;;ftypes[5]=&#39;birthday&#39;;}(jQuery));var $mcj = jQuery.noConflict(true);&lt;/script&gt;
+
+&lt;p&gt;Happy early new year!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

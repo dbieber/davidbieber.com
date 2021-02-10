@@ -1,7 +1,7 @@
 +++
 title = "Datalog Queries for Roam Research"
 date = 2020-12-22T00:00:00
-
+tags = ["roam-research"]
 +++
 
 [Roam Research](https://roamresearch.com/) is an excellent note taking tool. One of its core features is "back links" -- any of your notes can easily references any of your other notes, and so all your notes end up linked together in an intricate graph structure. You can quickly see all the references to a note, hence the term "back link".

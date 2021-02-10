@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>browser-history | David Bieber</title>
+    <link>https://davidbieber.com/tags/browser-history/</link>
+      <atom:link href="https://davidbieber.com/tags/browser-history/index.xml" rel="self" type="application/rss+xml" />
+    <description>browser-history</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 09 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
+      <title>browser-history</title>
+      <link>https://davidbieber.com/tags/browser-history/</link>
+    </image>
+    
+    <item>
+      <title>Mobile Distraction Detection, at last</title>
+      <link>https://davidbieber.com/snippets/2021-01-09-mobile-distraction-detection-at-last/</link>
+      <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-09-mobile-distraction-detection-at-last/</guid>
+      <description>&lt;p&gt;I have implemented a minimal working version of mobile &lt;em&gt;distraction detection&lt;/em&gt;, complete with a simple intervention for when I visit distracting websites on my phone.&lt;/p&gt;
+&lt;h2 id=&#34;what-does-distraction-detection-do&#34;&gt;What does &amp;ldquo;distraction detection&amp;rdquo; do?&lt;/h2&gt;
+&lt;p&gt;It runs on my laptop and monitors my &lt;em&gt;phone&lt;/em&gt; for when I visit distracting websites. I give it a list of distracting websites for it to keep an eye out for. My list is: twitter, facebook, hacker news, google news, reddit, and youtube.&lt;/p&gt;
+&lt;p&gt;I can set it to perform some action whenever I&amp;rsquo;m on one of these websites. For this first iteration, I&amp;rsquo;m having Bieber Bot message me whenever it notices I&amp;rsquo;m on one of these websites. Now that it&amp;rsquo;s working though, it will be easy to customize to my liking.&lt;/p&gt;
+&lt;p&gt;In future iterations, I&amp;rsquo;ll have it wait until I&amp;rsquo;ve been spending several minutes on the website before messaging me, and I&amp;rsquo;ll only have it do this during times when I mean to be focused.&lt;/p&gt;
+&lt;h2 id=&#34;why-is-this-interesting&#34;&gt;Why is this interesting?&lt;/h2&gt;
+&lt;p&gt;There are excellent browser extensions that help you take control of your browsing habits on your computer. I recommend DK&amp;rsquo;s 
+&lt;a href=&#34;https://getintention.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Intention&lt;/a&gt; for this. However, there aren&amp;rsquo;t great solutions like Intention for mobile browsing.&lt;/p&gt;
+&lt;p&gt;The challenge is that mobile browsers don&amp;rsquo;t provide good ways for developers to write extensions. I&amp;rsquo;ve built my mobile distraction detector in spite of this limitation :).&lt;/p&gt;
+&lt;h2 id=&#34;how-does-it-work&#34;&gt;How does it work?&lt;/h2&gt;
+&lt;p&gt;I use an iPhone and the Chrome browser. I&amp;rsquo;m logged into my Google Account on Chrome on both my phone and my laptop, and I have tab syncing turned on. With tab syncing, all my tab sessions from my phone are synced to my Google account, and are visible on my laptop, usually with a sub-minute latency. You can view this data in human-readable form at 
+&lt;a href=&#34;chrome://history/syncedTabs&#34;&gt;chrome://history/syncedTabs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The tab session data is stored along with the rest of my Chrome data. Since I use a Mac, the path is &lt;code&gt;~/Library/Application\ Support/Google/Chrome/Profile\ 1/Sync\ Data/LevelDB/&lt;/code&gt;. Note that &amp;ldquo;Profile 1&amp;rdquo; may be replaced with either &amp;ldquo;Default&amp;rdquo;, or the name of your Profile, depending on how many Google accounts you have connected with Chrome.&lt;/p&gt;
+&lt;p&gt;The data is stored in a LevelDB database (this is unusual for Chrome; most of the rest of your Chrome data is stored in sqlite3 databases). LevelDB is an efficient key-value store, which was written by Jeff Dean and Sanjay Ghemawat back in 2011. The keys which contain the synced tab data are those prefixed with &amp;ldquo;session-dt&amp;rdquo;. The corresponding values are &lt;code&gt;SessionSpecifics&lt;/code&gt; protocol buffers. 
+&lt;a href=&#34;https://source.chromium.org/chromium/chromium/src/&amp;#43;/master:components/sync/protocol/session_specifics.proto&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The protocol buffer definition is available here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Before parsing the sync data, I always make a copy of it first, and then I only ever open the copy. This ensures that Chrome doesn&amp;rsquo;t have a lock on the database, and isn&amp;rsquo;t editing it concurrently with my own program reading it.&lt;/p&gt;
+&lt;p&gt;I use the Python library &lt;code&gt;plyvel&lt;/code&gt; to parse the LevelDB database: &lt;code&gt;db = plyvel.DB(path_to_copy_of_leveldb_directory)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In order to use the protobuf definition, I compiled it first with protoc: &lt;code&gt;protoc -I chromium/ chromium/components/sync/protocol/*.proto --python_out=dbieber/distraction_detection/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Putting these pieces together, accessing the session data looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import plyvel
+from components.sync.protocol import session_specifics_pb2
+
+db = plyvel.DB(path)
+
+for key, value in db.iterator():
+  if b&#39;sessions-dt&#39; in key:
+	session = session_specifics_pb2.SessionSpecifics.FromString(value)
+
+db.close()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;From here, the key remaining piece to understand is how to figure out which tabs are open on which devices.&lt;/p&gt;
+&lt;p&gt;Each of the SessionSpecifics protos has an attribute: &lt;code&gt;session_tag&lt;/code&gt; which uniquely identifies a session. For each &lt;code&gt;session_tag&lt;/code&gt;, there is a single SessionSpecifics proto with a &lt;code&gt;client_name&lt;/code&gt; attribute: this indicates which device the session lives on. Each of the remaining SessionSpecifics protos with that same tag correspond to a single tab, and the currently open URL for that tab comes from &lt;code&gt;session.tab.navigation[-1].virtual_url&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;From there, it&amp;rsquo;s just a matter of matching the URLs against my list of distracting websites, and sending the data off to Bieber Bot. Distractions, detected. :D&lt;/p&gt;
+&lt;h2 id=&#34;what-next&#34;&gt;What next?&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ll tweak my own distraction detection setup to something that makes sense for me. Instead of immediate messages from Bieber Bot, I&amp;rsquo;ll have him try to keep my total senseless scrolling for a day to a moderate amount. I&amp;rsquo;ll have him be particularly vigilant about helping me keep my morning scrolling from going on too long.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll also send this snippet around to folks interested in building similar tools. While I won&amp;rsquo;t be turning this into a product for the masses, I&amp;rsquo;m hopeful that the method does get picked up by projects like Intention, ActivityWatch, and other tools that aim to help people maintain healthy browsing habits.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t think it&amp;rsquo;s common knowledge that with account syncing, rich data about your mobile browsing is available on your computer. So today, there isn&amp;rsquo;t much tooling that takes advantage of this. If you work on a product in this space, well, now you&amp;rsquo;ve had a glimpse of what data&amp;rsquo;s available and what it can do. Consider using this approach to extend the reach of your product.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Looking back on my browsing history snippets</title>
+      <link>https://davidbieber.com/snippets/2020-12-20-looking-back-on-my-browsing-history-snippets/</link>
+      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-20-looking-back-on-my-browsing-history-snippets/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve now written several snippets about my analyzing my browsing history programmatically. I figured I&amp;rsquo;d collect them all in one place here.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&#34;&gt;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history/&#34;&gt;https://davidbieber.com/snippets/2020-03-19-browsing-history/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&#34;&gt;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/&#34;&gt;https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/&#34;&gt;https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-05-15-roaming-the-web/&#34;&gt;https://davidbieber.com/snippets/2020-05-15-roaming-the-web/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Presumably as I write more about this, the list will go out of date. And that&amp;rsquo;s alright. This is just a snippet.&lt;/p&gt;
+&lt;p&gt;This motivates me to move all my snippets into Roam Research. I&amp;rsquo;m not going to do this just yet, but it seems a decent idea. Backlinks/tags would then allow for easily keeping an up-to-date list of all the snippets I&amp;rsquo;ve written about various topics.&lt;/p&gt;
+&lt;p&gt;Looking back on these many browsing history snippets, what themes stand out? Browser histories are rich with information about our lives. There&amp;rsquo;s a lot we can do to make our lives better using that information.&lt;/p&gt;
+&lt;p&gt;We can detect if we&amp;rsquo;re getting distracted, and have automated interventions if we are.&lt;/p&gt;
+&lt;p&gt;We can figure out our interests, and notice if they&amp;rsquo;re drifting over time.&lt;/p&gt;
+&lt;p&gt;We can reflect on things we&amp;rsquo;ve learned or thought about in the past, revisiting our old ideas. This can help generate new ideas, and also strengthen our memory.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve made some progress on automated distraction detection. I&amp;rsquo;ll have to write a snippet about that soon. I&amp;rsquo;ve also recently poked at getting my browsing history from my phone on my computer, so that can be analyzed in near real-time too. This promises to make distraction detection even more compelling. Very excited to teach Bieber Bot how to stage a distraction intervention some time in the next year.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Taking Notes While Browsing the Web: An Idea for a Roam Research Plugin</title>
+      <link>https://davidbieber.com/snippets/2020-05-15-roaming-the-web/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-05-15-roaming-the-web/</guid>
+      <description>&lt;p&gt;As I&amp;rsquo;m browsing the web, I&amp;rsquo;d like to be able to take notes in 
+&lt;a href=&#34;https://roamresearch.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research&lt;/a&gt;. In this post, I share an idea I have for a plugin or browser extension that I think would improve the experience of taking notes in Roam while browsing the web.&lt;/p&gt;
+&lt;p&gt;The plugin would do two main things automatically:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;It would automatically insert some browsing history information into your Roam database while you browse the internet.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;As you navigate the web, it would automatically bring you to the Roam page that corresponds to the web page you&amp;rsquo;re reading.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;mind-the-details&#34;&gt;Mind the Details&lt;/h2&gt;
+&lt;p&gt;Of course, the implementation details matter! You don&amp;rsquo;t want to be whisked away from the notes you&amp;rsquo;re taking just because you&amp;rsquo;ve clicked a link in a different window.&lt;/p&gt;
+&lt;p&gt;So, here I&amp;rsquo;ll explain a few of the details I think would make this a good note taking experience.&lt;/p&gt;
+&lt;p&gt;As I&amp;rsquo;m browsing the internet, all the websites I visit will get added to a page &amp;ldquo;{Date} Browsing History&amp;rdquo;. A new Roam page will be created for each new website visited. And there will be a Roam window that always stays open to the Roam page for the current website I have open in my browser.&lt;/p&gt;
+&lt;p&gt;What qualifies as a website?&lt;/p&gt;
+&lt;p&gt;By default there would be one Roam page per &lt;em&gt;domain&lt;/em&gt; visited. However, there are several exceptions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For &lt;strong&gt;Wikipedia&lt;/strong&gt; it would be one Roam page per Wikipedia entry&lt;/li&gt;
+&lt;li&gt;For websites reached from &lt;strong&gt;HackerNews&lt;/strong&gt;, &lt;strong&gt;Twitter&lt;/strong&gt;, and &lt;strong&gt;Reddit&lt;/strong&gt;, it would be one Roam page per link followed from the aggregator (but links followed within the reached website would not count as new websites)&lt;/li&gt;
+&lt;li&gt;For &lt;strong&gt;GitHub&lt;/strong&gt; it would be one Roam page per user, organization, or repo visited&lt;/li&gt;
+&lt;li&gt;For &lt;strong&gt;Arxiv&lt;/strong&gt; it would be one Roam page per paper&lt;/li&gt;
+&lt;li&gt;For &lt;strong&gt;Roam&lt;/strong&gt; it would be one Roam page per Roam database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It will be great to have a window that always stays open to the Roam page for the current website I have open in my browser. This way if I visit a website I&amp;rsquo;ve been to before, I will see my notes from that website. And the websites I visit will be linked to the day I visit them on, and also to any other pages my notes reference.&lt;/p&gt;
+&lt;p&gt;Additionally, the tool should add a little bit of metadata to the pages it&amp;rsquo;s generating. On each of the autogenerated Roam pages, it would be great to see &lt;em&gt;when&lt;/em&gt; I visited the website, and what was the referring page. For websites visited multiple times, seeing the earliest and most recent visit times, and the number of times I visited that website would be useful too. Total time spent on the website would be a nice bonus.&lt;/p&gt;
+&lt;h2 id=&#34;making-this-a-reality&#34;&gt;Making this a Reality&lt;/h2&gt;
+&lt;p&gt;In the previous section I shared the details that I think would make this work well from a user experience perspective. How about from the technical side?&lt;/p&gt;
+&lt;p&gt;I think it would make sense to implement this as a browser extension (though a 
+&lt;a href=&#34;http://www.tampermonkey.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;user script&lt;/em&gt;&lt;/a&gt; could work too).
+
+&lt;a href=&#34;http://dkthehuman.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DK the Human&lt;/a&gt;, author of the 
+&lt;a href=&#34;https://chrome.google.com/webstore/detail/intention/dladanhaondcgpahgiflodhckhoeohoe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Intention&lt;/a&gt; browser extension
+has made his 
+&lt;a href=&#34;https://github.com/dkthehuman/extension-starter-kit&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;browser extension starter kit&lt;/a&gt; freely available.
+To notice when what web page you&amp;rsquo;re browsing and determine whether it constitutes a new page, the extension would need to request permission to view your activity on all websites.
+For making additions to a Roam database automatically, I expect the extension would have to navigate to the appropriate Roam page in the background, and would then mimic the user actions to make the desired changes.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in turning this idea into a reality or want to discuss it further, don&amp;rsquo;t hesitate to 
+&lt;a href=&#34;mailto:david810&amp;#43;blog@gmail.com&#34;&gt;reach out&lt;/a&gt;! I&amp;rsquo;d be excited to try a workflow like this, but don&amp;rsquo;t anticipate building it myself in the near future.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Detecting My Sleeping Hours from Data</title>
+      <link>https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/</guid>
+      <description>&lt;p&gt;Between my 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;Chrome browsing history&lt;/a&gt; and my 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/&#34;&gt;Facebook Messenger message logs&lt;/a&gt;, I should be able to get a good estimate of when I&amp;rsquo;m awake and asleep.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a quick attempt using only Messenger data.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;SELECT * FROM
+  (SELECT to_timestamp(timestamp / 1000), (timestamp - lag(timestamp) over (ORDER BY timestamp DESC)) / 1000 / 60 / 60 AS diff_hours
+   FROM messenger WHERE messenger.author = &#39;1409114395&#39; ORDER BY timestamp DESC LIMIT 100000) AS foo
+WHERE diff_hours &amp;lt; -6;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Unfortunately, my late night and early morning Messenger usage doesn&amp;rsquo;t appear to be as consistent as I&amp;rsquo;d imagined, especially since COVID-19 induced shelter-in-place began.
+I&amp;rsquo;ll have to introduce additional sources of data if I want to infer good sleep time estimates.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Daily Summaries of Browsing History</title>
+      <link>https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/</guid>
+      <description>&lt;p&gt;Over the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&#34;&gt;course&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;of&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&#34;&gt;multiple&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history/&#34;&gt;previous&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;snippets&lt;/a&gt;, I put together several SQL queries for analyzing my browsing history.&lt;/p&gt;
+&lt;p&gt;Today, I wanted to write a script to run several of these queries in sequence to assemble a nice summary of my daily browsing histories. Maybe I&amp;rsquo;ll dump the summary into my 
+&lt;a href=&#34;https://roamresearch.com/#/app/commons-db/page/wYVaowjId&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;[[Roam Research]]&lt;/code&gt;&lt;/a&gt; database so I can cross-link ideas with websites I&amp;rsquo;ve visited.&lt;/p&gt;
+&lt;p&gt;As a first pass, I tried to throw together a quick bash script to string the queries together. It looked a bit like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;date=$1
+if [ -z $1 ];
+then
+  date=$(date &#39;+%Y-%m-%d&#39;);
+fi
+
+cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/Default-History
+cp ~/Library/Application\ Support/Google/Chrome/Profile\ 1/History ~/Profile-1-History
+
+function query() {
+  sqlite3 ~/Default-History $1;
+  sqlite3 ~/Profile-1-History $1;
+}
+
+echo \# YouTube Videos Watched
+echo
+
+query &amp;lt;&amp;lt; SQL
+select DISTINCT REPLACE(REPLACE(urls.title, &amp;quot; - YouTube&amp;quot;, &amp;quot;&amp;quot;), &amp;quot;(1) &amp;quot;, &amp;quot;&amp;quot;), urls.url, &amp;quot;$date%&amp;quot;
+from urls
+where urls.url like &amp;quot;%www.youtube.com/watch%&amp;quot;
+and datetime(last_visit_time / 1000000 + (strftime(&#39;%s&#39;, &#39;1601-01-01&#39;)), &#39;unixepoch&#39;)
+LIKE &amp;quot;$date%&amp;quot;
+limit 50;
+SQL
+
+# Additional queries ran here...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You&amp;rsquo;ll notice a few things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I want to run each query on two different Chrome histories.&lt;/li&gt;
+&lt;li&gt;I want the script to be parameterized by the date, defaulting to today if no date is specified.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you&amp;rsquo;re proficient in Bash, you may also notice something else; it doesn&amp;rsquo;t work. The query is only used properly when I run sqlite3 on the first Chrome History, but an empty query is passed to the second query.&lt;/p&gt;
+&lt;p&gt;Rather than debug my Bash script, I switched over to Python. I used Python Fire to automatically expose all my functions as commands so within minutes I had a working CLI.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what the Python script looks like:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import datetime
+import os
+import subprocess
+
+import fire
+
+
+def copy_histories():
+  check_output = subprocess.check_output
+  check_output([
+      &#39;cp&#39;,
+      os.path.expanduser(&#39;~/Library/Application Support/Google/Chrome/Default/History&#39;),
+      os.path.expanduser(&#39;~/Default-History&#39;)])
+  check_output([
+      &#39;cp&#39;,
+      os.path.expanduser(&#39;~/Library/Application Support/Google/Chrome/Profile 1/History&#39;),
+      os.path.expanduser(&#39;~/Profile-1-History&#39;)])
+
+
+def run_query(query):
+  call = subprocess.call
+  call([&#39;sqlite3&#39;,  os.path.expanduser(&#39;~/Default-History&#39;), query])
+  call([&#39;sqlite3&#39;, os.path.expanduser(&#39;~/Profile-1-History&#39;), query])
+
+
+def run(date=None):
+  copy_histories()
+  date = date or datetime.datetime.now().strftime(&#39;%Y-%m-%d&#39;)
+
+  print(&#39;## YouTube Videos Watched&#39;)
+  print()
+
+  run_query(f&amp;quot;&amp;quot;&amp;quot;
+  select DISTINCT REPLACE(REPLACE(urls.title, &amp;quot; - YouTube&amp;quot;, &amp;quot;&amp;quot;), &amp;quot;(1) &amp;quot;, &amp;quot;&amp;quot;)
+  from urls
+  where urls.url like &amp;quot;%www.youtube.com/watch%&amp;quot;
+  and datetime(last_visit_time / 1000000 + (strftime(&#39;%s&#39;, &#39;1601-01-01&#39;)), &#39;unixepoch&#39;)
+  LIKE &amp;quot;{date}%&amp;quot;
+  limit 50;
+  &amp;quot;&amp;quot;&amp;quot;)
+
+  # Additional queries run here...
+
+if __name__ == &#39;__main__&#39;:
+  fire.Fire()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;At the command line I run this with &lt;code&gt;python historyquery.py run&lt;/code&gt; or &lt;code&gt;python historyquery.py run --date=2020-04-26&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;With Python Fire I was able to quickly switch to a syntax I was more comfortable with, but keep the benefits of working from the context of a shell. I can now much more quickly make improvements to the script since I can operate more efficiently working in Python.&lt;/p&gt;
+&lt;p&gt;Now I have a script I can run that will produce a nice summary of my internet browsing activity for any date I specify. Running it over recent dates provides a nice walk down memory lane.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Date and Time Browser History Queries</title>
+      <link>https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/</guid>
+      <description>&lt;p&gt;I wrote a 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;number of SQL queries&lt;/a&gt; for browsing my browsing history. In this snippet, I show how to amend them to filter the results by date. Google Chrome selects a slightly non-standard time storage format (microseconds since January 1, 1601 UTC), hence the need for this query stanza.&lt;/p&gt;
+&lt;p&gt;To run these queries, first make a copy of your browser history and open it in sqlite3.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history
+sqlite3 ~/my-history
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;google-search-history-for-specific-date&#34;&gt;Google Search History for Specific Date&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s the query we had from before, for accessing our Google Search history.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; - Google Search&amp;quot;, &amp;quot;&amp;quot;)
+from urls
+where urls.url like &amp;quot;%www.google.com/search%&amp;quot; 
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To filtering by a specific date, we just add.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;AND
+datetime(last_visit_time / 1000000 + (strftime(&#39;%s&#39;, &#39;1601-01-01&#39;)), &#39;unixepoch&#39;)
+LIKE &#39;2019-12-25%&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;What was I searching for on Christmas last year?&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; - Google Search&amp;quot;, &amp;quot;&amp;quot;)
+from urls
+where urls.url like &amp;quot;%www.google.com/search%&amp;quot; 
+and datetime(last_visit_time / 1000000 + (strftime(&#39;%s&#39;, &#39;1601-01-01&#39;)), &#39;unixepoch&#39;)
+LIKE &#39;2019-12-25%&#39;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;youtube-videos-watched-today&#34;&gt;YouTube Videos Watched Today&lt;/h2&gt;
+&lt;p&gt;To query for results from &lt;em&gt;today&lt;/em&gt;, we can do the following.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; - YouTube&amp;quot;, &amp;quot;&amp;quot;), urls.url, datetime(last_visit_time / 1000000 + (strftime(&#39;%s&#39;, &#39;1601-01-01&#39;)), &#39;unixepoch&#39;) as d
+from urls
+where urls.url like &amp;quot;%www.youtube.com/watch%&amp;quot;
+and datetime(last_visit_time / 1000000 + (strftime(&#39;%s&#39;, &#39;1601-01-01&#39;)), &#39;unixepoch&#39;)
+LIKE (date(&#39;now&#39;, &#39;localtime&#39;) || &#39;%&#39;)
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note the use of &lt;code&gt;localtime&lt;/code&gt; to account for the timezone. &lt;code&gt;||&lt;/code&gt; is used here for string concatenation.&lt;/p&gt;
+&lt;h2 id=&#34;arxiv-papers-visited-last-month&#34;&gt;Arxiv Papers Visited Last Month&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT urls.title, REPLACE(REPLACE(urls.url, &amp;quot;.pdf&amp;quot;, &amp;quot;&amp;quot;), &amp;quot;/pdf/&amp;quot;, &amp;quot;/abs/&amp;quot;)
+from urls
+where (urls.url like &amp;quot;https://arxiv.org/abs%&amp;quot;
+or urls.url like &amp;quot;https://arxiv.org/pdf%&amp;quot;)
+and datetime(last_visit_time / 1000000 + (strftime(&#39;%s&#39;, &#39;1601-01-01&#39;)), &#39;unixepoch&#39;)
+LIKE (substr(date(&#39;now&#39;, &#39;localtime&#39;, &#39;-1 month&#39;), 0, 9) || &#39;%&#39;)
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here you can see that &lt;code&gt;date&lt;/code&gt; gives flexibility in adjusting the date you are requesting. &lt;code&gt;substr&lt;/code&gt; is used to transform &lt;code&gt;2020-03-20&lt;/code&gt; to &lt;code&gt;2020-03-&lt;/code&gt;, to match any date in the month.&lt;/p&gt;
+&lt;h2 id=&#34;hackernews-links-followed-in-the-last-week&#34;&gt;HackerNews Links Followed in the Last Week&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT urls.title, urls.url
+from visits
+join visits as previous_visits on visits.from_visit == previous_visits.id
+join urls on urls.id == visits.url
+join urls as previous_urls on previous_urls.id == previous_visits.url
+where previous_urls.url like &amp;quot;https://news.ycombinator.com%&amp;quot;
+and urls.url not like &amp;quot;https://news.ycombinator.com%&amp;quot;
+and datetime(visits.visit_time / 1000000 + (strftime(&#39;%s&#39;, &#39;1601-01-01&#39;)), &#39;unixepoch&#39;)
+&amp;gt; date(&#39;now&#39;, &#39;localtime&#39;, &#39;-7 day&#39;)
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For this query, we directly compare the result of &lt;code&gt;datetime&lt;/code&gt; and &lt;code&gt;date&lt;/code&gt;.
+
+&lt;a href=&#34;https://www.sqlite.org/lang_datefunc.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sqlite.org/lang_datefunc.html&lt;/a&gt; has more useful information about writing queries manipulating dates and times.&lt;/p&gt;
+&lt;p&gt;For more query ideas, here&amp;rsquo;s the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;link back to the browser history queries snippet&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simplifying SQL Queries with &#34;WITH&#34;</title>
+      <link>https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/</link>
+      <pubDate>Sun, 12 Apr 2020 01:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/</guid>
+      <description>&lt;p&gt;In the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;&amp;ldquo;More Browser History Queries&amp;rdquo; snippet&lt;/a&gt; one of the SQL queries I wrote was particularly nasty.&lt;/p&gt;
+&lt;p&gt;Since I didn&amp;rsquo;t know how to introduce intermediate variables, I had to replicate subqueries multiple times throughout the query. The result was a mess of a query. Using &lt;code&gt;WITH&lt;/code&gt; clauses, the query becomes considerably more readable and maintainable.&lt;/p&gt;
+&lt;h2 id=&#34;cleaned-up-query&#34;&gt;Cleaned up Query&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s the cleaned up query. It selects all the GitHub repos you&amp;rsquo;ve visited from your browser history. To run it, first copy your browser history and open it in sqlite:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history
+sqlite3 ~/my-history
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then, you can run this cleaned up query to see all the GitHub repos that you&amp;rsquo;ve visited.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;WITH
+data1 as (select LENGTH(&amp;quot;https://github.com/&amp;quot;) as len, * from urls),
+data2 as (select SUBSTR(
+  url,
+  len + 1,
+  INSTR(SUBSTR(url, len + 1), &amp;quot;/&amp;quot;) - 1
+) as user, * from data1),
+data3 as (select SUBSTR(url, len + LENGTH(user) + 2) as rest, * from data2),
+data4 as (select SUBSTR(rest, 0, INSTR(rest, &amp;quot;/&amp;quot;)) as repo, * from data3)
+
+select DISTINCT
+SUBSTR(url, len + 1, LENGTH(user) + 1 + LENGTH(repo)) as user_repo
+from data4
+where url like &amp;quot;https://github.com/%&amp;quot;
+and LENGTH(repo) &amp;gt; 0
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;the-original-query&#34;&gt;The Original Query&lt;/h2&gt;
+&lt;p&gt;Here is the original query, with all its messy replicated subqueries, to emphasize just how much using &lt;code&gt;WITH&lt;/code&gt; allowed me to clean this up.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT
+
+-- Selects the user:
+-- SUBSTR(
+--   urls.url,
+--   LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,
+--   INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1
+-- ) as user,
+
+-- Selects everything after the user:
+-- SUBSTR(
+--   urls.url,
+--   LENGTH(&amp;quot;https://github.com/&amp;quot;)
+--   + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+--   + 2
+-- ) as rest,
+
+-- Selects the repo:
+-- SUBSTR(SUBSTR(
+--   urls.url,
+--   LENGTH(&amp;quot;https://github.com/&amp;quot;)
+--   + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+--   + 2
+-- ), 0,
+-- INSTR(SUBSTR(
+--   urls.url,
+--   LENGTH(&amp;quot;https://github.com/&amp;quot;)
+--   + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+--   + 2
+-- ), &amp;quot;/&amp;quot;)) as repo
+
+SUBSTR(
+  urls.url,
+  LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,
+  LENGTH(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,
+    INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1
+  )) -- LENGTH(user)
+  + 1 -- + 1
+  + LENGTH(SUBSTR(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+    + 2
+  ), 0,
+  INSTR(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+    + 2
+  ), &amp;quot;/&amp;quot;)))
+  ) -- + LENGTH(repo)
+from urls
+where urls.url like &amp;quot;https://github.com/%&amp;quot;
+and LENGTH(SUBSTR(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+    + 2
+  ), 0,
+  INSTR(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+    + 2
+  ), &amp;quot;/&amp;quot;))) &amp;gt; 0  -- LENGTH(repo) &amp;gt; 0
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The two queries should produce the same results.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>More Browser History Queries</title>
+      <link>https://davidbieber.com/snippets/2020-04-11-browser-history-queries/</link>
+      <pubDate>Sat, 11 Apr 2020 01:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-11-browser-history-queries/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history&#34;&gt;Previously&lt;/a&gt; I listed out a few queries for poking at my browser history. Here are some more!&lt;/p&gt;
+&lt;p&gt;As before, I begin by making a copy of my browsing history and opening sqlite3:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history
+sqlite3 ~/my-history
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once that&amp;rsquo;s done, we can start running the queries.&lt;/p&gt;
+&lt;h2 id=&#34;youtube-videos-watched&#34;&gt;YouTube Videos Watched&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; - YouTube&amp;quot;, &amp;quot;&amp;quot;), urls.url
+from urls
+where urls.url like &amp;quot;%www.youtube.com/watch%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;youtube-search-queries&#34;&gt;YouTube Search Queries&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; - YouTube&amp;quot;, &amp;quot;&amp;quot;)
+from urls
+where urls.url like &amp;quot;%www.youtube.com/results?search_query%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;google-search-queries&#34;&gt;Google Search Queries&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; - Google Search&amp;quot;, &amp;quot;&amp;quot;)
+from urls
+where urls.url like &amp;quot;%www.google.com/search%&amp;quot; 
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;google-maps-usage&#34;&gt;Google Maps Usage&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; - Google Maps&amp;quot;, &amp;quot;&amp;quot;)
+from urls
+where urls.url like &amp;quot;%www.google.com/maps%&amp;quot; 
+and urls.title != &amp;quot;Google Maps&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;wikipedia-browsing-history&#34;&gt;Wikipedia Browsing History&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; - Wikipedia&amp;quot;, &amp;quot;&amp;quot;)
+from urls
+where urls.url like &amp;quot;%wikipedia.org/wiki/%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;github-users-and-orgs&#34;&gt;GitHub Users and Orgs&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT
+SUBSTR(
+  urls.url,
+  LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,
+  INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1
+) as user
+from urls
+where urls.url like &amp;quot;https://github.com/%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The rest of the GitHub queries ended up being quite messy, so I&amp;rsquo;ve placed them at the end of the document.&lt;/p&gt;
+&lt;h2 id=&#34;arxiv-papers-visited&#34;&gt;Arxiv Papers Visited&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT urls.title, REPLACE(REPLACE(urls.url, &amp;quot;.pdf&amp;quot;, &amp;quot;&amp;quot;), &amp;quot;/pdf/&amp;quot;, &amp;quot;/abs/&amp;quot;)
+from urls
+where urls.url like &amp;quot;https://arxiv.org/abs%&amp;quot;
+or urls.url like &amp;quot;https://arxiv.org/pdf%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;hackernews-comments-read&#34;&gt;HackerNews Comments Read&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; | Hacker News&amp;quot;, &amp;quot;&amp;quot;), urls.url
+from urls
+where urls.url like &amp;quot;https://news.ycombinator.com/item%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;hackernews-posts-read&#34;&gt;HackerNews Posts Read&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT urls.title, urls.url
+from visits
+join visits as previous_visits on visits.from_visit == previous_visits.id
+join urls on urls.id == visits.url
+join urls as previous_urls on previous_urls.id == previous_visits.url
+where previous_urls.url like &amp;quot;https://news.ycombinator.com%&amp;quot;
+and urls.url not like &amp;quot;https://news.ycombinator.com%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;reddit-usage&#34;&gt;Reddit Usage&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT urls.title
+from urls
+where urls.url like &amp;quot;https://www.reddit.com/%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;reddit-links-followed&#34;&gt;Reddit Links Followed&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT urls.title, urls.url
+from visits
+join visits as previous_visits on visits.from_visit == previous_visits.id
+join urls on urls.id == visits.url
+join urls as previous_urls on previous_urls.id == previous_visits.url
+where previous_urls.url like &amp;quot;%reddit.com%&amp;quot;
+and urls.url not like &amp;quot;%reddit.com%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;reddit-subreddits-visited&#34;&gt;Reddit Subreddits Visited&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT
+SUBSTR(
+  SUBSTR(urls.url, LENGTH(&amp;quot;https://www.reddit.com/r/&amp;quot;) + 1),
+  0,
+  INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://www.reddit.com/r/&amp;quot;) + 1), &amp;quot;/&amp;quot;)
+) as subreddit
+from urls
+where urls.url like &amp;quot;https://www.reddit.com/r/%&amp;quot;
+order by subreddit asc
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;twitter-search-queries&#34;&gt;Twitter Search Queries&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(urls.title, &amp;quot; - Twitter Search / Twitter&amp;quot;, &amp;quot;&amp;quot;)
+from urls
+where urls.url like &amp;quot;https://twitter.com/search%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;twitter-links-followed&#34;&gt;Twitter Links Followed&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT urls.title, urls.url
+from visits
+join visits as previous_visits on visits.from_visit == previous_visits.id
+join urls on urls.id == visits.url
+join urls as previous_urls on previous_urls.id == previous_visits.url
+where previous_urls.url like &amp;quot;%://t.co%&amp;quot;
+and urls.url not like &amp;quot;%twitter.com%&amp;quot;
+and urls.url not like &amp;quot;%://t.co%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;other-domains-visited&#34;&gt;Other Domains Visited&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT REPLACE(
+SUBSTR(
+  urls.url,
+  INSTR(urls.url, &amp;quot;//&amp;quot;) + 2, -- strips https://
+  INSTR(SUBSTR(urls.url, INSTR(urls.url, &amp;quot;//&amp;quot;) + 2), &amp;quot;/&amp;quot;) - 1
+), &amp;quot;www.&amp;quot;, &amp;quot;&amp;quot;) as domain
+from visits
+join visits as previous_visits on visits.from_visit == previous_visits.id
+join urls on urls.id == visits.url
+join urls as previous_urls on previous_urls.id == previous_visits.url
+where not (
+     domain like &amp;quot;%goog%&amp;quot;
+  or domain like &amp;quot;%t.co%&amp;quot;
+  or domain like &amp;quot;%twitter.co%&amp;quot;
+  or domain like &amp;quot;%wikipedia%&amp;quot;
+  or domain like &amp;quot;%youtube%&amp;quot;
+  or domain like &amp;quot;%github%&amp;quot;
+  or domain like &amp;quot;%arxiv%&amp;quot;
+  or domain like &amp;quot;%reddit%&amp;quot;
+  or domain like &amp;quot;%ycombinator%&amp;quot;
+  or urls.url like &amp;quot;chrome-extension://%&amp;quot;
+  -- or previous_urls.url like &amp;quot;%t.co%&amp;quot;
+  -- or previous_urls.url like &amp;quot;%twitter.co%&amp;quot;
+  -- or previous_urls.url like &amp;quot;%goog%&amp;quot;
+  -- or previous_urls.url like &amp;quot;%reddit%&amp;quot;
+  -- or previous_urls.url like &amp;quot;%ycombinator%&amp;quot;
+)
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;using-a-different-profile&#34;&gt;Using a Different Profile&lt;/h2&gt;
+&lt;p&gt;If you want to query your search history for a profile other than the default one, you can do so. E.g.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cp ~/Library/Application\ Support/Google/Chrome/Profile\ 1/History ~/my-history
+sqlite3 ~/my-history
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;messy-queries-github-repos-visited&#34;&gt;Messy Queries: GitHub Repos Visited&lt;/h2&gt;
+&lt;p&gt;This query ended up being quite messy because I wasn&amp;rsquo;t able to save intermediate results as a variable. So, in order to build the query, I copied and pasted intermediate queries to reuse them. The result, with intermediate queries shown in comments, follows.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select DISTINCT
+
+-- Selects the user:
+-- SUBSTR(
+--   urls.url,
+--   LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,
+--   INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1
+-- ) as user,
+
+-- Selects everything after the user:
+-- SUBSTR(
+--   urls.url,
+--   LENGTH(&amp;quot;https://github.com/&amp;quot;)
+--   + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+--   + 2
+-- ) as rest,
+
+-- Selects the repo:
+-- SUBSTR(SUBSTR(
+--   urls.url,
+--   LENGTH(&amp;quot;https://github.com/&amp;quot;)
+--   + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+--   + 2
+-- ), 0,
+-- INSTR(SUBSTR(
+--   urls.url,
+--   LENGTH(&amp;quot;https://github.com/&amp;quot;)
+--   + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+--   + 2
+-- ), &amp;quot;/&amp;quot;)) as repo
+
+SUBSTR(
+  urls.url,
+  LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,
+  LENGTH(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,
+    INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1
+  )) -- LENGTH(user)
+  + 1 -- + 1
+  + LENGTH(SUBSTR(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+    + 2
+  ), 0,
+  INSTR(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+    + 2
+  ), &amp;quot;/&amp;quot;)))
+  ) -- + LENGTH(repo)
+from urls
+where urls.url like &amp;quot;https://github.com/%&amp;quot;
+and LENGTH(SUBSTR(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+    + 2
+  ), 0,
+  INSTR(SUBSTR(
+    urls.url,
+    LENGTH(&amp;quot;https://github.com/&amp;quot;)
+    + LENGTH(SUBSTR(urls.url,LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1,INSTR(SUBSTR(urls.url, LENGTH(&amp;quot;https://github.com/&amp;quot;) + 1), &amp;quot;/&amp;quot;) - 1)) -- length(user)
+    + 2
+  ), &amp;quot;/&amp;quot;))) &amp;gt; 0  -- LENGTH(repo) &amp;gt; 0
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For most of the queries on this page, you should be able to easily modify them to suit your needs.
+I wouldn&amp;rsquo;t try modifying this query, though. It would be much better to build a new query from scratch using using the same technique this one was built with, than to try to modify this one to perform another task, because it would be so easy to modify something in one place but subtly miss modifying it in another location in the query that needs to also be modified.&lt;/p&gt;
+&lt;p&gt;Update (April 12, 2020): I&amp;rsquo;ve now learned that you can introduce intermediate &amp;ldquo;variables&amp;rdquo; in your SQL queries, so I&amp;rsquo;ve simplified this query 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Bit of Browser History Analysis</title>
+      <link>https://davidbieber.com/snippets/2020-03-19-browsing-history/</link>
+      <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-03-19-browsing-history/</guid>
+      <description>&lt;p&gt;In a 
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history&#34;&gt;previous snippet&lt;/a&gt; I started looking into how to analyze my browser history. Revisiting that idea tonight, I began looking into whether I might be able to infer topics of interest from my browsing history.&lt;/p&gt;
+&lt;p&gt;Using my previous post as reference, I first made a copy of my browsing history:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then, using sqlite3 (&lt;code&gt;sqlite3 ~/my-history&lt;/code&gt;) I began poking around.&lt;/p&gt;
+&lt;p&gt;This query allowed me to pull up all my YouTube video views:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select visits.id, urls.title, urls.url
+from visits
+join urls on urls.id == visits.url
+where urls.url like &amp;quot;%www.youtube.com/w%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And this query gave me my Google Search history:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select visits.id, urls.title
+from visits
+join urls on urls.id == visits.url
+where urls.url like &amp;quot;%www.google.com/search%&amp;quot; 
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This one gave me my Wikipedia browsing history:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select distinct urls.title 
+from visits
+join urls on urls.id == visits.url
+where urls.url like &amp;quot;%wikipedia.org/wiki/%&amp;quot;
+limit 50;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I think it will be useful to bring in the contents of the URLs too, not just the title and url string, for determining topics of interest. Even without that, my Google Search history, YouTube history, and Wikipedia history are already an interesting start.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Planning to Analyze My Browsing History</title>
+      <link>https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/</link>
+      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve learned recently that programmatically accessing your browsing history is rather straightforward. Really exciting! This is rich data, from which I think I&amp;rsquo;ll be able to learn a lot and hopefully combat unwanted distractions.&lt;/p&gt;
+&lt;p&gt;First let me describe what information is available, and how you can access it. Then, let&amp;rsquo;s discuss what you can do with this data. As I&amp;rsquo;ve written about previously 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;[1]&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[2]&lt;/a&gt;, I already have a chat bot system in place, which will be able to take advantage of this data to e.g. help me stay focused.&lt;/p&gt;
+&lt;h4 id=&#34;accessing-your-browser-history&#34;&gt;Accessing Your Browser History&lt;/h4&gt;
+&lt;p&gt;Thank you to GitHub user 
+&lt;a href=&#34;https://github.com/dropmeaword&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dropmeaword&lt;/a&gt; for compiling 
+&lt;a href=&#34;https://gist.github.com/dropmeaword/9372cbeb29e8390521c2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this gist&lt;/a&gt; explaining how to access your browser history via sqlite3. The gist covers Safari, Chrome, and Firefox. In this post, I&amp;rsquo;ll just focus on Chrome on OSX, since that&amp;rsquo;s my primary mode of browsing.&lt;/p&gt;
+&lt;p&gt;My Chrome browsing history is located at &lt;code&gt;~/Library/Application Support/Google/Chrome/Default/History&lt;/code&gt;. Since I use multiple profiles in Chrome, each profile gets its own browsing history, e.g. located at &lt;code&gt;~/Library/Application Support/Google/Chrome/Profile 1/History&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Each browsing history is stored as a sqlite3 database. Before analyzing the data, I recommend making a copy of it (&lt;code&gt;cp ~/Library/Application\ Support/Google/Chrome/Default/History my-history&lt;/code&gt;); this way your history database (a) wont be locked by Chrome while you&amp;rsquo;re trying to access it, and (b) wont change while you&amp;rsquo;re looking at it, which could cause confusion and inconsistencies in your results.&lt;/p&gt;
+&lt;p&gt;This means you can browse it interactively using the sqlite3 REPL by running &lt;code&gt;sqlite3 PATH_TO_DATABASE&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;There are also libraries available for accessing sqlite3 databases in just about every language. For Python, there&amp;rsquo;s the 
+&lt;a href=&#34;https://docs.python.org/3/library/sqlite3.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sqlite3&lt;/a&gt; library. Go has 
+&lt;a href=&#34;https://godoc.org/github.com/mattn/go-sqlite3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;go-sqlite3&lt;/a&gt;. JavaScript has 
+&lt;a href=&#34;https://www.sqlitetutorial.net/sqlite-nodejs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this sqlite3 module&lt;/a&gt;. However you most like scripting, you&amp;rsquo;ll have a familiar way of accessing the data.&lt;/p&gt;
+&lt;h4 id=&#34;the-available-data&#34;&gt;The Available Data&lt;/h4&gt;
+&lt;p&gt;Running sqlite3 macro &lt;code&gt;.tables&lt;/code&gt;, we see the following tables are available.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;downloads&lt;/td&gt;
+&lt;td&gt;meta&lt;/td&gt;
+&lt;td&gt;urls&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;downloads_slices&lt;/td&gt;
+&lt;td&gt;segment_usage&lt;/td&gt;
+&lt;td&gt;visit_source&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;downloads_url_chains&lt;/td&gt;
+&lt;td&gt;segments&lt;/td&gt;
+&lt;td&gt;visits&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;keyword_search_terms&lt;/td&gt;
+&lt;td&gt;typed_url_sync_metadata&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;We&amp;rsquo;ll be most interested in the &lt;code&gt;urls&lt;/code&gt; and &lt;code&gt;visits&lt;/code&gt; tables.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;urls&lt;/code&gt; table has these columns (found with &lt;code&gt;.schema urls&lt;/code&gt;):&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;id&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the URL in the database.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;url&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The URL of the website.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;title&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The title of website.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;visit_count&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The number of times you&amp;rsquo;ve visited the URL.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;typed_count&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The number of times you&amp;rsquo;ve visited the URL by typing in the address (as opposed to by following a link.)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;last_visit_time&lt;/td&gt;
+&lt;td&gt;Integer (microseconds since the epoch)&lt;/td&gt;
+&lt;td&gt;The time of the most recent to the URL.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;hidden&lt;/td&gt;
+&lt;td&gt;Boolean&lt;/td&gt;
+&lt;td&gt;I&amp;rsquo;m not sure what this is about.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;And the &lt;code&gt;visits&lt;/code&gt; table has these columns (obtained via &lt;code&gt;.schema visits&lt;/code&gt;):&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;id&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the visit in the database.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;url&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the url in the &lt;code&gt;urls&lt;/code&gt; table.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;visit_time&lt;/td&gt;
+&lt;td&gt;Integer (milliseconds since the epoch)&lt;/td&gt;
+&lt;td&gt;The time of the visit.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;from_visit&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the visit that lead you to this one.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;transition&lt;/td&gt;
+&lt;td&gt;Bit vector&lt;/td&gt;
+&lt;td&gt;Represents the 
+&lt;a href=&#34;https://developer.chrome.com/extensions/history#transition_types&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;transition type&lt;/a&gt; (how you got to the URL)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;segment_id&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the segment in the database. I&amp;rsquo;m not quite sure what a segment is, but there is a &lt;code&gt;segments&lt;/code&gt; table you can look at.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;visit_duration&lt;/td&gt;
+&lt;td&gt;Integer (microseconds)&lt;/td&gt;
+&lt;td&gt;The amount of time spent at the website, or 0 if not available.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;incremented_omnibox_typed_score&lt;/td&gt;
+&lt;td&gt;Boolean&lt;/td&gt;
+&lt;td&gt;I do not know what this is about.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;As you can see, we can access every visit to every website that we&amp;rsquo;ve made since the last time we cleared our browsing history. We can see what website we visited (&lt;code&gt;visits.url&lt;/code&gt;), when we visited it (&lt;code&gt;visits.visit_time&lt;/code&gt;), how many times we&amp;rsquo;ve visited it (&lt;code&gt;urls.visit_count&lt;/code&gt;), and how long each visit was for (&lt;code&gt;visits.visit_duration&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;We can even use &lt;code&gt;visits.from_visit&lt;/code&gt; to figure out what website linked us to each url, if that interests us.&lt;/p&gt;
+&lt;h4 id=&#34;what-can-we-deduce&#34;&gt;What Can We Deduce?&lt;/h4&gt;
+&lt;p&gt;We can (1) perform a historical analysis on the data, as well as (2) do real-time monitoring of the data.&lt;/p&gt;
+&lt;p&gt;Here I brainstorm some of the historical trends we will be able to uncover:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Most frequently visited websites&lt;/li&gt;
+&lt;li&gt;Websites where we spend the majority of our time&lt;/li&gt;
+&lt;li&gt;Websites that frequently lead to known-distractor websites (e.g. Reddit, Hacker News, Twitter, YouTube)&lt;/li&gt;
+&lt;li&gt;We can do an analysis by time of day (or day of week), to figure out what sites occupy my time late at night vs during daylight hours.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are somewhat interesting, but what I&amp;rsquo;m particularly excited for is the ongoing analysis that 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; can provide by accessing the data.&lt;/p&gt;
+&lt;p&gt;Here is a brainstorm of the more real-time actionable insights we might extract from this data.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bieber Bot could ping me if it looks like I&amp;rsquo;m spending too much time on a distraction website.&lt;/li&gt;
+&lt;li&gt;He could try to detect if I went to a website with a particular purpose, but ended up getting distracted and not completing the purpose I set out to do.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For example, if I&amp;rsquo;m on a productive website and then switch to a distraction website for more than a few minutes, particularly during work hours, Bieber Bot might message asking if I got distracted. Think you could do that for me Bieber Bot?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I could signal that I want to view a website later by opening it and immediately closing it again.&lt;/li&gt;
+&lt;li&gt;Perhaps we could detect if I&amp;rsquo;m researching a particular topic, and then Bieber Bot could try to help me with my research.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;related-idea&#34;&gt;Related Idea&lt;/h4&gt;
+&lt;p&gt;In order to reduce distractions, I&amp;rsquo;d like to be able to switch my browsing mode from &amp;ldquo;clicking opens links&amp;rdquo; to &amp;ldquo;clicking saves a link for later&amp;rdquo;. When in this new mode, whenever I click a link it wouldn&amp;rsquo;t open that link; instead, it would save the link to a list of deferred links.
+Then I would be able to view my &amp;ldquo;saved for later&amp;rdquo; links when I have time that I&amp;rsquo;ve explicitly set aside, rather than during the time that I would rather be doing something more productive.&lt;/p&gt;
+&lt;h4 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h4&gt;
+&lt;p&gt;So far I&amp;rsquo;ve done a little bit of manual exploration of my browsing history data. I&amp;rsquo;ve set up a little Python script to be able to access the data programmatically.&lt;/p&gt;
+&lt;p&gt;Next, I&amp;rsquo;ll do more manual analysis, and then I&amp;rsquo;ll see if I&amp;rsquo;m able to give Bieber Bot the real-time access to the data that I described above. I&amp;rsquo;m particularly excited to see if I can get the &amp;ldquo;looks like you&amp;rsquo;ve gotten distracted&amp;rdquo; messages set up with Bieber Bot. As a bonus, since Bieber Bot can message other people too, this system could help me leverage social accountability to stay on task.&lt;/p&gt;
+&lt;p&gt;Want to see where this project leads? You can subscribe for infrequent email updates.&lt;/p&gt;
+
+&lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/classic-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+  #mc_embed_signup{
+    background:#fff;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+  }
+&lt;/style&gt;
+&lt;div id=&#34;mc_embed_signup&#34;&gt;
+&lt;form action=&#34;https://gmail.us3.list-manage.com/subscribe/post?u=a55774562ae9fa9a1d879fa75&amp;amp;id=132f89def3&#34; method=&#34;post&#34; id=&#34;mc-embedded-subscribe-form&#34; name=&#34;mc-embedded-subscribe-form&#34; class=&#34;validate&#34; target=&#34;_blank&#34; novalidate&gt;
+    &lt;div id=&#34;mc_embed_signup_scroll&#34;&gt;
+  
+&lt;div class=&#34;mc-field-group&#34;&gt;
+  &lt;label for=&#34;mce-EMAIL&#34;&gt;Email Address&lt;/label&gt;
+  &lt;input type=&#34;email&#34; value=&#34;&#34; name=&#34;EMAIL&#34; class=&#34;required email&#34; id=&#34;mce-EMAIL&#34;&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;mce-responses&#34; class=&#34;clear&#34;&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-error-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-success-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;    
+    &lt;div style=&#34;position: absolute; left: -5000px;&#34; aria-hidden=&#34;true&#34;&gt;&lt;input type=&#34;text&#34; name=&#34;b_a55774562ae9fa9a1d879fa75_132f89def3&#34; tabindex=&#34;-1&#34; value=&#34;&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;
+      &lt;input type=&#34;submit&#34; value=&#34;Subscribe&#34; name=&#34;subscribe&#34; id=&#34;mc-embedded-subscribe&#34; class=&#34;button&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=&#39;EMAIL&#39;;ftypes[0]=&#39;email&#39;;fnames[1]=&#39;FNAME&#39;;ftypes[1]=&#39;text&#39;;fnames[2]=&#39;LNAME&#39;;ftypes[2]=&#39;text&#39;;fnames[3]=&#39;ADDRESS&#39;;ftypes[3]=&#39;address&#39;;fnames[4]=&#39;PHONE&#39;;ftypes[4]=&#39;phone&#39;;fnames[5]=&#39;BIRTHDAY&#39;;ftypes[5]=&#39;birthday&#39;;}(jQuery));var $mcj = jQuery.noConflict(true);&lt;/script&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

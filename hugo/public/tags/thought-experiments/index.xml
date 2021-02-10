@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>thought-experiments | David Bieber</title>
+    <link>https://davidbieber.com/tags/thought-experiments/</link>
+      <atom:link href="https://davidbieber.com/tags/thought-experiments/index.xml" rel="self" type="application/rss+xml" />
+    <description>thought-experiments</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
+      <title>thought-experiments</title>
+      <link>https://davidbieber.com/tags/thought-experiments/</link>
+    </image>
+    
+    <item>
+      <title>A social network for slow long-form discussions</title>
+      <link>https://davidbieber.com/snippets/2021-01-07-a-social-network-for-slow-long-form-discussions/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-07-a-social-network-for-slow-long-form-discussions/</guid>
+      <description>&lt;p&gt;A social network&amp;rsquo;s design influences the conversations that people will have on it. Can we design a social network that will facilitate healthy debate and discussion, while avoiding toxic discourse?&lt;/p&gt;
+&lt;p&gt;Consider this: a variant of Twitter where instead of a 140 character maximum, there&amp;rsquo;s a 1400 word maximum. (We could also impose a 140 character minimum?) And you&amp;rsquo;re limited to just 3 posts per day.&lt;/p&gt;
+&lt;p&gt;The real twist though? All posts are posted at the same time: at 8am, 2pm, 8pm, and 2am. We choose times scatter across the day so your timezone doesn&amp;rsquo;t matter.&lt;/p&gt;
+&lt;p&gt;Actually, scrap the reference to Twitter altogether. The feel I&amp;rsquo;m going for is discussion focused, not shouting-into-the-void focused. So, think Reddit with all these weird limitations tacked on.&lt;/p&gt;
+&lt;p&gt;The hope is that having infrequent postings gives people a chance to breathe: no one&amp;rsquo;s expecting a response in seconds or minutes. The hope is that this also gives people a chance to think; this can be a place where long-form well thought out discussion takes place. And the hope is also this rate-limited schedule eliminates any of the infinite-scroll / endless-refreshing that comes with existing popular social media.&lt;/p&gt;
+&lt;p&gt;Think it could work? I think it could.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Brains Don&#39;t Do Solomonoff Induction</title>
+      <link>https://davidbieber.com/snippets/2021-01-06-brains-dont-do-solomonoff-induction/</link>
+      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-06-brains-dont-do-solomonoff-induction/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;http://zhat.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dan Abolafia&lt;/a&gt; asked me some thought provoking questions about Solomonoff Induction and intelligence. This snippet comes from my answers.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Question: Do you think a person has a hypothesis space and prior that are fixed at the moment of birth and never change over the course of the person&amp;rsquo;s life?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;tl;dr Nope.&lt;/p&gt;
+&lt;p&gt;There are different levels at which you can define hypothesis space. Consider two statements.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Statement [1]: People learn and change their prior over hypotheses based on their observations and experiences over time.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In statement [1] (which I hope is unobjectionably true), &amp;ldquo;hypotheses&amp;rdquo; refers to hypotheses that will be formed during a person&amp;rsquo;s life.&lt;/p&gt;
+&lt;p&gt;A person&amp;rsquo;s belief about their hypotheses can change in response to new information. This can be done in a Bayesian way, using as a prior at any particular moment their beliefs from before gaining that new information. When they gain new information, they apply Bayesian inference to compute the posterior. The posterior becomes the new prior for the next time new information is obtained.&lt;/p&gt;
+&lt;p&gt;You can also &amp;ldquo;refactor&amp;rdquo; statement [1] to instead read:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Statement [2]: The &amp;lsquo;computation that a person embodies&amp;rsquo; is fixed at birth.&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;[1] and [2] are completely consistent with one another.&lt;/p&gt;
+&lt;p&gt;(Let me know if the term &amp;lsquo;computation that a person embodies&amp;rsquo; needs clarifying.)&lt;/p&gt;
+&lt;p&gt;From the perspective of [2], a person has a single prior over &amp;ldquo;hypotheses&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;(Or more precisely: a person has a single &amp;ldquo;hypothesis&amp;rdquo;, which came from a single prior. But the person didn&amp;rsquo;t &amp;lsquo;have&amp;rsquo; that prior; instead, the process by which they were created did.)&lt;/p&gt;
+&lt;p&gt;Here a &amp;ldquo;hypothesis&amp;rdquo; is a much larger thing than in [1]. It&amp;rsquo;s the complete manner in which the person will determine how to respond to inputs over the course of their life. (That is, it&amp;rsquo;s the &amp;lsquo;computation that the person embodies&amp;rsquo;.)&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s an interesting question to ask whether these hypotheses come from something that approximates Solomonoff induction.&lt;/p&gt;
+&lt;p&gt;Note that this wouldn&amp;rsquo;t be the &amp;ldquo;brain approximating Solomonoff induction&amp;rdquo; original question &amp;ndash; rather, it would be more like &amp;ldquo;evolution approximating Solomonoff induction&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;[Aside: And to answer this question: I don&amp;rsquo;t think single reward minimization is the most natural way to model what these complex physical processes are doing; there are lots of competing forces at play. So even though you could in principle distill them to a single reward function, I don&amp;rsquo;t think that&amp;rsquo;s the most useful way of modeling things of this complexity and scale. Update: now that I have a better understanding of Solomonoff induction, I see how this doesn&amp;rsquo;t answer the question.]&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If the answer to the main question is No, there needs to be an extra-Bayesian method for choosing priors and hypothesis spaces.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I agree with this.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s return to perspective [1]. At any given time, a person might have some beliefs about the world. Then they acquire new information. They update their beliefs. This in principle can be done in a Bayesian way all throughout ones life.&lt;/p&gt;
+&lt;p&gt;In practice, there need to be other processes at work, because people develop new concepts, choose to think about some things more than others, forget stuff, etc.&lt;/p&gt;
+&lt;p&gt;But with infinite memory and infinitely fast compute, an agent could in principle start with all possible concepts, and just keep doing Bayesian updates throughout their life, and I think such an agent would do quite well for themselves.&lt;/p&gt;
+&lt;p&gt;Note: for a hypothetical agent like this, the answer to the original question would be Yes. But agents like this don&amp;rsquo;t exist.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Agree or disagree: The brain samples hypotheses from a universal unchanging prior.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This I disagree with. I hope perspective [1] clarifies why.&lt;/p&gt;
+&lt;p&gt;Any action that the brain takes, such as sampling a hypothesis, is happening during an individual&amp;rsquo;s life. Of course it&amp;rsquo;s going to take into account all the experiences of the individual.&lt;/p&gt;
+&lt;p&gt;You could of course mean &amp;ldquo;hypothesis&amp;rdquo; in the sense of [2], where the complete life experiences of the individual are inputs to the hypothesis. But then why wait until there&amp;rsquo;s a brain at all to sample the hypothesis? Now we&amp;rsquo;re talking about a hypothesis (the &amp;lsquo;computation that the person embodies&amp;rsquo;) that has been in existence at least since the person&amp;rsquo;s birth.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Do you think [1] and [2] are equivalent?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I think they are two ways of describing the same situation. So, in that sense, yes.&lt;/p&gt;
+&lt;p&gt;I could see why people might disagree with this though. People can make good arguments that you&amp;rsquo;re not just a fixed embodied computation. I think these arguments are wrong, but people can still make them. These hypothetical people would regard [1] as correct and [2] as incorrect, whereas I think both [1] and [2] are correct.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Bayesian inference doesn&amp;rsquo;t provide a way to create or destroy hypotheses. It merely provides a way for updating one&amp;rsquo;s beliefs about existing hypotheses. How do you reconcile this with [1] and [2]?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is right. Hypotheses can&amp;rsquo;t be &amp;ldquo;formed&amp;rdquo; from Bayesian inference. As I was describing perspective [1], I was envisioning hypotheses being formed in some (likely extra-Bayesian, but it wasn&amp;rsquo;t important) way and merely being updated via Bayesian inference.&lt;/p&gt;
+&lt;p&gt;[Aside: How are these hypotheses formed though?&lt;/p&gt;
+&lt;p&gt;Well, if you already have a prior for the state of the universe, then you might (1) make a determination about what variables are relevant to the situation, and (2) marginalize out all other variables. No need to do this though if memory and compute aren&amp;rsquo;t limited.]&lt;/p&gt;
+&lt;p&gt;Earlier I wrote:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Let&amp;rsquo;s return to perspective [1]. At any given time, a person might have some beliefs about the world. Then they acquire new information. They update their beliefs. This in principle can be done in a Bayesian way all throughout ones life.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;How does this work, you ask?&lt;/p&gt;
+&lt;p&gt;It relies on the agent starting with a prior over all possible hypotheses. This avoids the issue of needing to create hypotheses along the way, which Bayesian inference doesn&amp;rsquo;t provide a mechanism for.&lt;/p&gt;
+&lt;p&gt;I tried to describe this by the following text:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;With infinite memory and infinitely fast compute, an agent could in principle start with all possible concepts, and just keep doing Bayesian updates throughout their life, and I think such an agent would do quite well for themselves.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If I understand correctly, this &lt;strong&gt;is&lt;/strong&gt; (more or less) Solomonoff induction. (I didn&amp;rsquo;t realize this at the start of the conversation.)&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve started with a universal prior and applied bayesian inference to update it as we made observations.&lt;/p&gt;
+&lt;p&gt;Of course, this isn&amp;rsquo;t what people do. So, my answer to the overall initial question is just a simple &amp;ldquo;Nope.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Where do thoughts come from? A thought experiment.</title>
+      <link>https://davidbieber.com/snippets/2020-12-29-where-do-thoughts-come-from-a-thought-experiment/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-29-where-do-thoughts-come-from-a-thought-experiment/</guid>
+      <description>&lt;p&gt;This snippet details a thought experiment I&amp;rsquo;ve been encouraging people to do for years. It&amp;rsquo;s simple, and should only take a few minutes of your time. The purpose of the thought experiment is to better understand where your thoughts come from.&lt;/p&gt;
+&lt;p&gt;There are just four steps in the experiment: (1) think thoughts, (2) remember those thoughts and write them down, (3) determine their causes, (4) categorize those causes.&lt;/p&gt;
+&lt;p&gt;Let me explain in more detail.&lt;/p&gt;
+&lt;p&gt;(1) To start the experiment, &lt;strong&gt;think thoughts&lt;/strong&gt; for one minute. You can set a timer. During this minute, it&amp;rsquo;s okay for your mind to wander. It isn&amp;rsquo;t important what you think about. During this time you&amp;rsquo;re just thinking, not writing.&lt;/p&gt;
+&lt;p&gt;(2) Once the minute is over, try to &lt;strong&gt;remember all the thoughts&lt;/strong&gt; you had during that minute; &lt;strong&gt;write them all down&lt;/strong&gt; in a list. As much as possible, put that list in chronological order. It may take much more than a minute to remember and write down all those thoughts. This step can be difficult; try to be as thorough as possible. You may surprise yourself by at first not remembering thinking something, and then only after thinking hard trying to remember it finding it becoming clear as your recollection improves.&lt;/p&gt;
+&lt;p&gt;(3) &lt;strong&gt;Determine the causes&lt;/strong&gt; of the thoughts. For each thought on the list, try to determine &lt;strong&gt;why&lt;/strong&gt; that thought arose. What was the cause of that thought arising in your mind? For some thoughts the cause will be obvious. For others it may not be obvious at all; don&amp;rsquo;t give up. Really spend some time trying to determine why you thought all the things you thought. I believe there is always a reason.&lt;/p&gt;
+&lt;p&gt;(4) Finally, look over the complete list of reasons. &lt;strong&gt;Come up with categories&lt;/strong&gt; for the reasons. Maybe one thought arose because something you saw or smelled triggered a memory. Maybe other thoughts arose because one word sounds like another. Be creative in how you categorize thoughts. There&amp;rsquo;s no right or wrong way to do this.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s all. This whole experiment can take less than half an hour, less or more depending on how into it you get and how detailed you are. While it doesn&amp;rsquo;t take that much time, it can be mentally draining. Have some water, relax, treat yourself when you&amp;rsquo;re done :).&lt;/p&gt;
+&lt;p&gt;As I mentioned, the purpose of the experiment is to better understand where thoughts come from. Individually, this experiment helps us better understand ourselves through introspection. Through sharing the results with each other, it can also help us better understand each other.&lt;/p&gt;
+&lt;p&gt;I would be absolutely delighted to hear from you if you do this experiment. You can reach me at 
+&lt;a href=&#34;mailto:david810&amp;#43;thinking@gmail.com&#34;&gt;david810+thinking@gmail.com&lt;/a&gt;. Feel free to send me your thoughts, causes, and categories from the experiment (or just a subset if any of that is too personal to share). And I would of course also love to hear your thoughts about the experiment too, or your thoughts on thinking. Really, don&amp;rsquo;t hesitate to get in touch.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>4.2e-8 of All of Human Experience</title>
+      <link>https://davidbieber.com/snippets/2020-12-03-4.2e-8-of-all-of-human-experience/</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-03-4.2e-8-of-all-of-human-experience/</guid>
+      <description>&lt;p&gt;About 107 billion people have &lt;em&gt;ever&lt;/em&gt; lived.&lt;/p&gt;
+&lt;p&gt;Across all time, the average life expectancy of a person is just under 30 years.&lt;/p&gt;
+&lt;p&gt;So, there have only been 3.21 trillion person-years experienced. Total.&lt;/p&gt;
+&lt;p&gt;7.8 billion people are alive today.&lt;/p&gt;
+&lt;p&gt;The average age globally is about 30 years.&lt;/p&gt;
+&lt;p&gt;So living people today collectively hold about 234 billion years of experience.&lt;/p&gt;
+&lt;p&gt;That means that a little &lt;strong&gt;over 7% of all human experience is held by living people&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;One day spent alone constitutes 8.5e-16 of all of human experience. A month is 2.6e-14 of all of human experience.&lt;/p&gt;
+&lt;p&gt;A year spent with a partner is 6.2e-13 of all of human experience.&lt;/p&gt;
+&lt;p&gt;Four years spent with 1500 other students is 1.9e-9 of all of human experience.&lt;/p&gt;
+&lt;p&gt;By a crude estimate, a whopping 4.2e-8 of all human experience was spent watching Game of Thrones. Humanity will never get that time back.&lt;/p&gt;
+&lt;p&gt;These are small numbers, but not &lt;strong&gt;that&lt;/strong&gt; small. Thinking that my graduating class alone (not even counting the people a year above or below me) holds nearly 2e-9 of all human experience from our four years together is kind of mind-bending.&lt;/p&gt;
+&lt;p&gt;For comparison, let&amp;rsquo;s imagine that the surface of Earth represents all of human experience. Then 4.2e-8 of human experience (the amount dedicated to watching Game of Thrones) is represented by 8.3 square miles.&lt;/p&gt;
+&lt;p&gt;The 6.2e-13 of human experience held by you and your partner quarantining for a year? That&amp;rsquo;s over 3400 square feet. And a whole lifetime (est. 80 years) covers 3.141 acres.&lt;/p&gt;
+&lt;p&gt;These are not at all negligible!&lt;/p&gt;
+&lt;p&gt;All of this is to say: let&amp;rsquo;s treasure our existence, and let&amp;rsquo;s also not discount its significance.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Future-Predicting Gameshow Host</title>
+      <link>https://davidbieber.com/snippets/2020-02-08-future-gameshow-host/</link>
+      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-02-08-future-gameshow-host/</guid>
+      <description>&lt;p&gt;A gameshow host reveals 2 boxes, box A and box B. In box A is either $1 million or 0, in box B there is $1000.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;re told, choose either just box A or both A and B.&lt;/p&gt;
+&lt;p&gt;You keep the contents of the boxes you choose.
+Also, the host knows what box you will choose, and has placed $1 million in A if you will choose only A, and $0 in A if you will choose both A and B.&lt;/p&gt;
+&lt;p&gt;Some contestants, faced with this choice, would choose both A and B. They reason that since the money has already been placed, choosing A and B is guaranteed to yield $1000 more than choosing just A.
+Others would choose only A, since per the host&amp;rsquo;s plans this option leads to a significantly better payout.&lt;/p&gt;
+&lt;p&gt;Clearly choosing only A is $1000 worse than choosing both A and B, yet choosing A only is allegedly better given the host&amp;rsquo;s foresight. These statements appear contradictory, and this situation is known as 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Newcomb%27s_paradox&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Newcomb&amp;rsquo;s Paradox&lt;/a&gt;.
+How can we reconcile these two true but contradictory statements?&lt;/p&gt;
+&lt;p&gt;We do so by clarifying:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Right now&lt;/em&gt; choosing only A is $1000 worse than choosing both A and B.&lt;/li&gt;
+&lt;li&gt;However, having a brain&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;em&gt;at the time the money is placed&lt;/em&gt; that will lead you to choose only A at the time of choosing gives the $1 million outcome.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Is this something you have control over? Can you &lt;em&gt;decide&lt;/em&gt; at the time the money is placed to have a brain that will lead you to later choose only box A?&lt;/p&gt;
+&lt;p&gt;Yes.&lt;/p&gt;
+&lt;p&gt;It may seem like &lt;em&gt;no&lt;/em&gt;, for a few reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You didn&amp;rsquo;t even know there was a choice to make.&lt;/li&gt;
+&lt;li&gt;You surely don&amp;rsquo;t get to make choices about how your brain works, right?&lt;/li&gt;
+&lt;li&gt;Since the host is able know your choice ahead of time, that must mean it&amp;rsquo;s predetermined, right?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;However, none of these reasons are entirely valid.&lt;/p&gt;
+&lt;p&gt;First, it&amp;rsquo;s true that at the time the money is placed, you didn&amp;rsquo;t necessarily know you had a choice to make. You hadn&amp;rsquo;t yet been informed that you would later be on this gameshow. However, it&amp;rsquo;s possible you considered the situation as a hypothetical anyway (maybe while reading a blog post, for instance). It isn&amp;rsquo;t necessary that you considered precisely the situation that you would later find yourself in, only that you&amp;rsquo;ve given conscious deliberate thought to the way you make choices. By thinking this through, you can decide now whether you have a brain that would later choose box A or one that would later choose both A and B, should the gameshow situation ever arise.&lt;/p&gt;
+&lt;p&gt;Next, you absolutely do get to make choices about how your brain works. You can choose when to sleep, when to study, what substances to ingest, and most importantly, what to focus your attention on. All of these levers are yours to pull, and they all affect how your brain will operate in the future.&lt;/p&gt;
+&lt;p&gt;At the time you choose the boxes, it&amp;rsquo;s still your decision as to which box(es) to choose. (In the sense that it&amp;rsquo;s your brain that produces the decision.)
+But you must have been predictable, at least to the host, for them to have predicted what choice you would later make.
+(Nothing wrong with being predictable!)&lt;/p&gt;
+&lt;p&gt;How is it that you were predictable? Does this require determinism?
+One extreme way you may have been predictable is if the host knows exactly how events will play out, right down to the thoughts you will have and the choices you will make.&lt;/p&gt;
+&lt;p&gt;It doesn&amp;rsquo;t have to be &lt;em&gt;quite&lt;/em&gt; so extreme though. The host only claimed to have roughly one bit of information about you and the future: what binary choice you would make when confronted with the box dilemma. That doesn&amp;rsquo;t require omniscience. The host may have no idea what the weather is going to be the next day, as long as they&amp;rsquo;re able to predict whether or not you&amp;rsquo;re taking box B.&lt;/p&gt;
+&lt;p&gt;So maybe they know a little about how your mind works, or they&amp;rsquo;ve read something you&amp;rsquo;ve posted online that lets them conclude how you will handle the box situation.&lt;/p&gt;
+&lt;p&gt;You must consider that whatever they know, they knew it at the time that they chose how to fill the boxes. (They likely also knew it at the time they chose to host the gameshow in the first place.)&lt;/p&gt;
+&lt;p&gt;What I think is most likely is that this host does know precisely how you think about this choice. They do this by understanding to a very high degree of precision how your brain is going to cope with the decision of which boxes to choose. Think of the host as a very skilled poker player, that can read you like a book. Instead of just knowing whether you&amp;rsquo;re bluffing or not, they know what you&amp;rsquo;re going to think 
+&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/6640273&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;before you even think it&lt;/a&gt;. It&amp;rsquo;s like weather forecasting, but instead of understanding the atmosphere, they&amp;rsquo;re understanding you.&lt;/p&gt;
+&lt;p&gt;And like with weather forecasting, their model is imperfect. It&amp;rsquo;s good enough to know what box you&amp;rsquo;ll choose, with certainty, but only because that only requires forecasting a small window (a week, let&amp;rsquo;s say) into the future. Like the atmospheric conditions that determine the weather, your brain is a chaotic system. Any imperfection in the model, however small, will eventually blow up and lead to large errors in the model in the future. So our host can&amp;rsquo;t model your every thought a year into the future, let alone e.g. the whole population&amp;rsquo;s behaviors.&lt;/p&gt;
+&lt;p&gt;So what boxes should you choose?&lt;/p&gt;
+&lt;p&gt;You should choose to open just box A. By reaching this conclusion (and more importantly, by adopting the strategy for reasoning that leads to this conclusion), you guarantee yourself $1 million the next time you encounter a wealthy generous time travelling gameshow host interested in philosophy and mathematics.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;I say &amp;ldquo;brain&amp;rdquo;, but I really mean the whole of your situation and life circumstances. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How much time has humanity spent on different areas of science?</title>
+      <link>https://davidbieber.com/snippets/2020-01-24-time-spent-on-science/</link>
+      <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-01-24-time-spent-on-science/</guid>
+      <description>&lt;p&gt;How much time has humanity, collectively, spent researching physics?&lt;/p&gt;
+&lt;p&gt;What about chemistry? Neuroscience? Algorithms? (etc&amp;hellip;)&lt;/p&gt;
+&lt;p&gt;How has this rate of study changed over time?
+How much of it is duplicate work (e.g. two nations or organizations independently working toward the same milestones before sharing their findings)?&lt;/p&gt;
+&lt;p&gt;What fraction of this is done by professors, post docs, PhD students, etc?&lt;/p&gt;
+&lt;p&gt;Particularly in the last 100 years, what have these numbers been?&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m interested in visualizing some of these metrics, because I think they would be useful for putting the work that I see happening around me in machine learning and in neuroscience into perspective. I also think this data would tell a fascinating story.&lt;/p&gt;
+&lt;p&gt;For example, one plot that I think would be compelling would be person-hours-per-year spent thinking about physics plotted as a function of time over the last 100 years, with important physics milestones shown on the same plot (e.g. as a 
+&lt;a href=&#34;https://medium.com/berkeleyischool/how-to-create-a-visualization-showing-events-on-time-series-data-in-excel-96abbc1475e0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;time series plot with events&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;One worry with such a visualization is that the population is growing rapidly, and so the interesting story of how humanity&amp;rsquo;s attention has shifted between fields over time may be lost to a visualization that simply shows population growth. It may be necessary to normalize by population to tell such a story.&lt;/p&gt;
+&lt;p&gt;It may seem infeasible to precisely collect this data, as there is no public registry of who is thinking about what. However, I think the data is perhaps more readily available than appears at first blush.&lt;/p&gt;
+&lt;p&gt;Where would the data come from?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Search trends&lt;/li&gt;
+&lt;li&gt;University enrollments&lt;/li&gt;
+&lt;li&gt;Publication counts&lt;/li&gt;
+&lt;li&gt;Surveys&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Search trends are of course a more recent source of data, only going back one or two decades. The pre-1990s version of search trends might be library records, or book sales.&lt;/p&gt;
+&lt;p&gt;University enrollments and degrees granted tells a significant story about how many people are studying different areas. You can roughly estimate how much time a student majoring in physics puts into their studies, and if course enrollments are available that estimate can be even more precise.&lt;/p&gt;
+&lt;p&gt;Scientific fields make their mark on the world by publishing their research. Counting publications can provide an estimate of one piece of humanity&amp;rsquo;s effort studying science.&lt;/p&gt;
+&lt;p&gt;Finally, for contemporary data, and maybe even a little historical data, one could uses surveys / polling techniques to estimate where scientific mindshare is going today.&lt;/p&gt;
+&lt;p&gt;Among this data I&amp;rsquo;d be curious to see when historically there have been large swings in mindshare toward a particular topic. Right now, anecdotally, machine learning research is engaging a quickly increasing number of people, including drawing people away from other fields. I&amp;rsquo;d love to see this anecdotal evidence backed up (or refuted) by data. And I expect there are plenty of similar historical precidents that I would be quite interested in learning more about as well.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t forsee collecting this data or performing these visualizations myself in the near future. This post is just an opportunity to think aloud, not a plan for my own action. But if you have data like this, or know of someone who has done a related analysis, I&amp;rsquo;d be quite interested to hear about it. Don&amp;rsquo;t hesitate to get in touch.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

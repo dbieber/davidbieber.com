@@ -3,6 +3,8 @@ title = "Kangaroo Auto-responder"
 date = 2021-01-29T00:00:00
 uid = "uTT1gaOcQ"
 plugins_js = ["margin-notes"]
+tags = ["attention", "python", "taking-silly-ideas-seriously"]
+keywords = ["kangaroo", "auto-responder"]
 +++
 
 The purpose of the Kangaroo Auto-responder is to:

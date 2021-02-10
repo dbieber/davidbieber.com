@@ -1,6 +1,7 @@
 +++
 title = "More Browser History Queries"
 date = 2020-04-11T01:00:00
+tags = ["browser-history", "sql"]
 +++
 
 [Previously](/snippets/2020-03-19-browsing-history) I listed out a few queries for poking at my browser history. Here are some more!

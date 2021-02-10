@@ -2,7 +2,7 @@
 title = "Python's strip, lstrip, and rstrip in JavaScript"
 date = 2020-12-26T00:00:00
 uid = "Srn97sA4j"
-
+tags = ["python", "javascript"]
 +++
 
 Python provides some convenient functions for manipulating strings: `strip`, `lstrip`, and `rstrip`. Recently I was writing some JavaScript and wanted to use `rstrip`. So, I've implemented all three. Here they are:

@@ -3,6 +3,7 @@ title = "Notifications in Roam Research"
 date = 2021-01-25T00:00:00
 uid = "zA0iyJXpl"
 plugins_js = ["margin-notes"]
+tags = ["attention", "roam-research"]
 +++
 
 [#RoamGames](https://twitter.com/hashtag/RoamGames) are upon us! The challenge: *project management* in Roam.

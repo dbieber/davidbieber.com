@@ -1,6 +1,7 @@
 +++
 title = "Further Reducing the Publication Barrier with Queuing"
 date = 2020-10-06T13:29:00
+tags = ["snippets"]
 +++
 
 What is the barrier to publication? It's first and foremost a mental barrier. Sure, the act of writing presents its own challenges, but for me the mental hurdle of clicking send can be significant. Snippets lowers the barrier substantially compared with social media, messaging individuals, or even traditional blogging. Still, there's room to lower the barrier even more; e.g. private journaling and _thinking_ itself have much lower barriers than Snippets does.

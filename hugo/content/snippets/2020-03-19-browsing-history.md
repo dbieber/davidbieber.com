@@ -1,6 +1,7 @@
 +++
 title = "A Bit of Browser History Analysis"
 date = 2020-03-19T00:00:00
+tags = ["browser-history", "sql"]
 +++
 
 In a [previous snippet](/snippets/2019-12-30-analyzing-my-browser-history) I started looking into how to analyze my browser history. Revisiting that idea tonight, I began looking into whether I might be able to infer topics of interest from my browsing history.

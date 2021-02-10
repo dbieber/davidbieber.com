@@ -2,6 +2,8 @@
 title = "A Flow for Focused Reading"
 date = 2021-02-05T00:00:00
 plugins_js = ["focus-bar"]
+tags = ["Browserflow", "attention"]
+keywords = ["focus bar"]
 +++
 
 As you can see from the snippet you're currently reading, I've implemented a simple tool to help with focused reading. (It's [the idea from the previous snippet](/snippets/2021-02-02-focused-reading-browserflow-flow-idea/)). The majority of the page is dimmed, except for a few lines above and below your mouse cursor. As you move your mouse, the focused region follows. Give it a try; move your mouse (or touch) over the next paragraph, and watch as the light region follows.

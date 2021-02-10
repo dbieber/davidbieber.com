@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>snippets | David Bieber</title>
+    <link>https://davidbieber.com/tags/snippets/</link>
+      <atom:link href="https://davidbieber.com/tags/snippets/index.xml" rel="self" type="application/rss+xml" />
+    <description>snippets</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 23 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
+      <title>snippets</title>
+      <link>https://davidbieber.com/tags/snippets/</link>
+    </image>
+    
+    <item>
+      <title>Margin notes</title>
+      <link>https://davidbieber.com/snippets/2021-01-23-margin-notes/</link>
+      <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-23-margin-notes/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;d like to add margin notes to my website.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+I&amp;rsquo;d also like to learn how to use Fiverr.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
+So, I&amp;rsquo;m going to hire someone on Fiverr to add margin notes on my website.&lt;/p&gt;
+&lt;p&gt;Fabian, over at capnfabs.net, has an 
+&lt;a href=&#34;https://capnfabs.net/posts/margin-notes-hugo-theme/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;excellent post&lt;/a&gt; where he adds margin notes to his own hugo blog. We&amp;rsquo;ll be using that for guidance.&lt;/p&gt;
+&lt;p&gt;After my Fiverr experience I&amp;rsquo;ll update this snippet or add a new one, ideally one full of margin notes.&lt;/p&gt;
+&lt;p&gt;Update (same day): I&amp;rsquo;m back! I didn&amp;rsquo;t use Fiverr. I used the post on capnfabs for reference and set up margin notes myself. Thank you Fabian for documenting your process.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; I&amp;rsquo;ll have to learn to use Fiverr another day.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m glad to have this working. There&amp;rsquo;s room to improve the style though. Perhaps in a future iteration I&amp;rsquo;ll move the main content left to give more space for the margin notes, or make some changes to the font and size.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;I&amp;rsquo;d like this to be a margin note. At the time of this writing, it&amp;rsquo;s a footnote. &lt;em&gt;Update&lt;/em&gt;: Now it&amp;rsquo;s a margin note! At least if your browser is wide enough&amp;hellip; otherwise it&amp;rsquo;s still a footnote. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;I&amp;rsquo;ve used it twice before, but I didn&amp;rsquo;t have a great experience with the one programmer I hired. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Really, it is greatly appreciated! 🙏 &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Will it be harder to write snippets now?</title>
+      <link>https://davidbieber.com/snippets/2021-01-09-will-it-be-harder-to-write-snippets-now/</link>
+      <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-09-will-it-be-harder-to-write-snippets-now/</guid>
+      <description>&lt;p&gt;Now that I&amp;rsquo;ve 
+&lt;a href=&#34;https://davidbieber.com/post/2021-01-08-where-are-all-the-posts-from-2020/&#34;&gt;linked to the snippets section from my main website&lt;/a&gt;, will it be harder to write snippets? I hope not. I&amp;rsquo;ll have to make an even more concerted effort to lower the quality bar though.&lt;/p&gt;
+&lt;p&gt;The goal, as always, is for the snippets section to avoid any inhibitions. Writing here should be as easy as thinking aloud. A tiny post like this ought to help in this regard.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Publishing Blog Posts from Roam Research Quickly and Automatically</title>
+      <link>https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/</link>
+      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/</guid>
+      <description>&lt;p&gt;I thought today I would attempt a proper treatment of my latest automatic &amp;ldquo;
+&lt;a href=&#34;https://davidbieber.com/snippets/&#34;&gt;snippet&lt;/a&gt;&amp;rdquo; publishing system. It uses JavaScript embedded directly in Roam Research to publish snippets to my website with low latency as I write them.&lt;/p&gt;
+&lt;h2 id=&#34;prior-methods&#34;&gt;Prior methods&lt;/h2&gt;
+&lt;p&gt;Previously I&amp;rsquo;ve written a system to allow 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-09-27-posting-snippets-from-my-phone/&#34;&gt;Bieber Bot to publish snippets that I send him&lt;/a&gt;, and followed that up with a 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-10-06-introducing-the-snippet-queue/&#34;&gt;snippet queue&lt;/a&gt; to allow me to schedule the publication of my snippets.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve then also implemented two previous automatic snippet publishers from Roam. The first used my roam-to-git backup to detect new or updated snippets. The second used a puppeteer instance to occasionally check Roam for new or updated snippets.&lt;/p&gt;
+&lt;p&gt;That makes this my third implementation of automatic snippet publishing from Roam, and my fifth automatic snippet publishing project to date. It&amp;rsquo;s the fastest yet, going from Roam to live on the website in just 90 seconds.&lt;/p&gt;
+&lt;h2 id=&#34;room-for-improvement&#34;&gt;Room for improvement&lt;/h2&gt;
+&lt;p&gt;Why was publishing through Bieber Bot not enough? Roam is a natural place to write, and I find I write quite a bit more here than I do elsewhere. Since snippets are 
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34;&gt;all about lowering the barrier of entry to writing&lt;/a&gt;, supporting writing snippets in Roam seems natural.&lt;/p&gt;
+&lt;p&gt;Why was the roam-to-git backup based automatic publication system insufficient? While, adequate, the latency between writing a snippet and having it show up on my website was multiple hours. The roam-to-git backups only trigger every hour, and fail about 30% of the time. The script to use those backups to publish to my website would also only run every hour. Their combined schedules meant it could be 2-3 or more hours between writing a snippet and being able to share the link to it. Lowering this latency would give me more freedom to quickly write and share snippets, and also to iterate on a published snippet. Fast iteration is powerful.&lt;/p&gt;
+&lt;p&gt;Finally, why was the puppeteer-based approach insufficient. While this approach had the potential to bring the publication latency down considerably, in practice I scheduled in to run about hourly, since a headless browser is a computationally heavy piece of software.&lt;/p&gt;
+&lt;h2 id=&#34;the-new-approach-roamjs&#34;&gt;The new approach: &amp;ldquo;roam/js&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;Roam Research allows you to write JavaScript to run directly in Roam. My new approach is to run JavaScript in Roam to detect when a new snippet is written or when an existing snippet gets updated. When this occurs, the script will trigger a GitHub Action, using the snippet content and metadata as input. The GitHub Action will commit the snippet to my website&amp;rsquo;s git repo, and trigger a rebuilding of my website. It does everything except the final deploy to the webserver automatically; that final step waits for me to send a message &amp;ldquo;Deploy snippets!&amp;rdquo; to Bieber Bot, upon receipt of which the final deploy step is performed and the website is updated.&lt;/p&gt;
+&lt;p&gt;Using this approach it takes only 90 seconds between writing or editing a snippet and having it live on my website.&lt;/p&gt;
+&lt;h2 id=&#34;detecting-new-snippets-and-snippet-updates&#34;&gt;Detecting new snippets and snippet updates&lt;/h2&gt;
+&lt;p&gt;There are two key pieces to how I detect new and updated snippets. The first is a &amp;ldquo;mutation observer&amp;rdquo;. A mutation observer is an object in JavaScript that allows you to schedule events to occur when DOM changes are made to a website. In Roam, the DOM is modified when the user makes edits, and so DOM changes can indicate that the user has made a change to their notes.&lt;/p&gt;
+&lt;p&gt;We would like to detect when a snippet is created or edited. So, we write a function that detects if a snippet has been created or edited since the last time it was called, and we use a mutation observer to call this function when the DOM changes.&lt;/p&gt;
+&lt;p&gt;Since DOM changes can occur very frequently in Roam, we use a technique called 
+&lt;a href=&#34;https://davidwalsh.name/javascript-debounce-function&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;debouncing&lt;/a&gt; to limit the number of calls to this detection function during periods of many consecutive DOM changes.&lt;/p&gt;
+&lt;p&gt;How do we detect if a snippet has been created or edited? Roam Research provides a datalog API that allows us to query our entire Roam graph using a logic programming language. You can 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/&#34;&gt;learn more about how this works here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I mark a snippet for publication by tagging it with both the &amp;ldquo;Snippets&amp;rdquo; tag, and the &amp;ldquo;ok-to-publish&amp;rdquo; tag. This query detects those blocks that are part of a publishable snippet.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;ancestor = `[ 
+ [(ancestor ?child ?parent) 
+  [?parent :block/children ?child]] 
+ [(ancestor ?child ?ancestor) 
+  [?parent :block/children ?child] 
+  (ancestor ?parent ?ancestor)]]
+]`;
+
+block_info = window.roamAlphaAPI.q(`[
+  :find ?uid ?child_text ?child_uid ?parent_uid ?order
+  :in $ %
+  :where
+  [?block :block/uid ?uid]
+  [?block :block/string ?string]
+  [?block :block/refs ?snippets]
+  [?block :block/refs ?publish]
+  [?snippets :node/title &amp;quot;Snippets&amp;quot;]
+  [?publish :node/title &amp;quot;ok-to-publish&amp;quot;]
+  (ancestor ?child ?block)
+  [?parent :block/children ?child]
+  [?parent :block/uid ?parent_uid]
+  [?child :block/uid ?child_uid]
+  [?child :block/order ?order]
+  [?child :block/string ?child_text]
+]`, ancestor);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let&amp;rsquo;s break down what&amp;rsquo;s happening in this query. First, there&amp;rsquo;s the &lt;code&gt;ancestor&lt;/code&gt; rule. The Roam datalog schema only includes a blocks immediate children; the &lt;code&gt;ancestor&lt;/code&gt; rule allows us to query for all a block&amp;rsquo;s descendants or ancestors, not just the immediate ones. It does this through the recursive definition of &amp;ldquo;ancestor&amp;rdquo; shown, which you can read as &amp;ldquo;An ancestor of ?child is ?parent if ?parent has a child ?child, AND ALSO an ancestor of ?child is ?ancestor if there exists some ?parent satisfying both ?parent has a child ?child, and ?parent has ?ancestor as an ancestor.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;The rest of the query (lines 10-24) finds blocks that are the descendants of a block ?block that&amp;rsquo;s tagged with both &amp;ldquo;Snippets&amp;rdquo; and &amp;ldquo;ok-to-publish.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Since Datalog returns the results in an arbitrary order, we need to use the :block/order attribute to reconstruct the proper order of the blocks that comprise the snippet. The logic for this isn&amp;rsquo;t shown, but don&amp;rsquo;t hesitate to reach out if this interests you!&lt;/p&gt;
+&lt;p&gt;Finally, our mutation observer keeps track of the text of each of the snippets, and if any of them change or if a new snippet is introduced, it triggers a GitHub Action to deploy the snippet to my website.&lt;/p&gt;
+&lt;h2 id=&#34;writing-a-github-action-to-update-my-website&#34;&gt;Writing a GitHub Action to update my website&lt;/h2&gt;
+&lt;p&gt;My website uses a static site generator, Hugo. So, updating my website consists of adding a markdown file to 
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;its GitHub repo&lt;/a&gt;, rebuilding the site by running Hugo, and then pushing the generated static files up to my server. All of these steps can be automated in a GitHub action.&lt;/p&gt;
+&lt;h3 id=&#34;triggering-a-github-action-from-roam-research&#34;&gt;Triggering a GitHub Action from Roam Research&lt;/h3&gt;
+&lt;p&gt;To trigger a GitHub Action from Roam Research, I set up the action to trigger on &amp;ldquo;repository_dispatch&amp;rdquo; events. I created a personal authentication token, and then use the following JavaScript to trigger the GitHub Action:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function publishSnippetRaw(uid, title, date, content) {
+  const data = {
+    &amp;quot;event_type&amp;quot;: &amp;quot;snippet-update&amp;quot;,
+    &amp;quot;client_payload&amp;quot;: {
+      &amp;quot;uid&amp;quot;: uid,
+      &amp;quot;title&amp;quot;: title,
+      &amp;quot;date&amp;quot;: date,
+      &amp;quot;content&amp;quot;: content,
+    }
+  };
+  fetch(
+    &amp;quot;https://api.github.com/repos/dbieber/davidbieber.com/dispatches&amp;quot;,
+    {
+      headers: {
+        Accept: &amp;quot;application/vnd.github.everest-preview+json&amp;quot;,
+        Authorization: &amp;quot;token PERSONAL_AUTHENTICATION_TOKEN&amp;quot;,
+      },
+      method: &#39;POST&#39;,
+      body: JSON.stringify(data),
+    }
+  );
+}
+const publishSnippet = debounce(publishSnippetRaw, 15000, true);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This call to &lt;code&gt;fetch&lt;/code&gt; starts the GitHub Action running on a GitHub server within seconds.&lt;/p&gt;
+&lt;h3 id=&#34;accepting-inputs-in-a-github-action&#34;&gt;Accepting inputs in a GitHub Action&lt;/h3&gt;
+&lt;p&gt;You will notice that &lt;code&gt;data&lt;/code&gt; contains a &amp;ldquo;client_payload&amp;rdquo; in the above JavaScript. To accept inputs in the GitHub Action, I access the data from the client_payload and set it to an environment variable in the Action YAML like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;env:
+  SNIPPET_UID: ${{ github.event.client_payload.uid }}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Environment variables like this can then be used by the steps in the action. This allows me to pass the contents of the new/modified snippet to the GitHub Action, which is everything needed for automating its publication.&lt;/p&gt;
+&lt;p&gt;The GitHub Action writes the markdown file, commits it to the repository, runs hugo to regenerate the static files for the website, and commits those to the appropriate part of the repo as well. The only step remaining at this point is pushing the new files up to my server to serve.&lt;/p&gt;
+&lt;h2 id=&#34;deploying-with-ansible&#34;&gt;Deploying with Ansible&lt;/h2&gt;
+&lt;p&gt;I use 
+&lt;a href=&#34;https://www.ansible.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ansible&lt;/a&gt; to deploy my website to its lone server. 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bieber Bot&lt;/a&gt; is also quite capable of using Ansible. So, we have an arrangement where I tell Bieber Bot when to redeploy my website, and he does so for me. This way I can deploy my website even when I&amp;rsquo;m on the go and not at a computer; I just message him using my phone.&lt;/p&gt;
+&lt;p&gt;All steps, from the last keystroke of writing a snippet to having it show up live on my website, together take about 90 seconds. This is a significant quality-of-life improvement over the multi-hour latency of just a few days ago. I&amp;rsquo;m hopeful that the result is I&amp;rsquo;ll write even more.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Even Faster Snippet Publishing from Roam</title>
+      <link>https://davidbieber.com/snippets/2020-12-27-even-faster-snippet-publishing-from-roam/</link>
+      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-27-even-faster-snippet-publishing-from-roam/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve set up a GitHub action to enable even faster automatic publishing of snippets from Roam. This is a test-snippet I&amp;rsquo;m using while writing the auto-publisher.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s see how it behaves if I&amp;rsquo;m editing an existing snippet routinely for a while.&lt;/p&gt;
+&lt;p&gt;If it works as intended, the snippet will update itself on GitHub after I stop typing for several seconds. I&amp;rsquo;ve now stopped typing, we&amp;rsquo;ll see what happens.&lt;/p&gt;
+&lt;p&gt;It worked! 
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/commit/1f1ad4680e1d538f699cf2cd420f0c04a4bf528a&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Here&amp;rsquo;s the commit&lt;/a&gt; that was made automatically after I finished the previous sentence.&lt;/p&gt;
+&lt;p&gt;This will make publishing snippets &lt;strong&gt;even easier&lt;/strong&gt; going forward. It also means I don&amp;rsquo;t need to keep a puppeteer instance constantly live with Roam open like I&amp;rsquo;d originally planned for.&lt;/p&gt;
+&lt;p&gt;The total latency from writing to publication is now just 90 seconds. So you could be reading this mere minutes after I write it!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Improving Roam Snippet Publishing Speeds</title>
+      <link>https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/</guid>
+      <description>&lt;p&gt;Hey folks, I have a 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;workflow&lt;/a&gt; for automatically publishing &amp;ldquo;
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;snippets&lt;/a&gt;&amp;rdquo; to my website from Roam. Currently there&amp;rsquo;s a multi-hour latency between writing a snippet and when it appears on my website. In this snippet I&amp;rsquo;m going to muse about / ask questions about how to use &lt;strong&gt;puppeteer&lt;/strong&gt; to bring this latency down considerably. This&amp;rsquo;ll be my first time using puppeteer, so help appreciated. Read on!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-small/1f62e@2x.png&#34; alt=&#34;😮&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The current system relies on my git-to-roam backup, which runs every hour and fails some fraction of the time.&lt;/p&gt;
+&lt;p&gt;So, to bring the latency down, the idea is to use pyppeteer (the python puppeteer bindings) to log into Roam in a headless browser.&lt;/p&gt;
+&lt;p&gt;This will monitor Roam for new (or modified) snippets, and will publish them to my website.&lt;/p&gt;
+&lt;p&gt;A snippet is OK to publish if its tagged with both &amp;ldquo;Snippets&amp;rdquo; and &amp;ldquo;ok-to-publish&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;So, first question: has anyone done this before? B/c if someone&amp;rsquo;s already gotten all the CSS/XPATH selectors for logging in, navigating, etc, that could save me some time&lt;/p&gt;
+&lt;p&gt;Another important thing I&amp;rsquo;m thinking about: are there problems keeping an instance of Roam open in a headless browser could cause?&lt;/p&gt;
+&lt;p&gt;E.g. I hear about occasional data loss which seems related to having out-of-date instances of Roam open on other machines &amp;ndash; e.g. maybe the out of date Roam comes back online and overwrites new content with older blank content?&lt;/p&gt;
+&lt;p&gt;I think I&amp;rsquo;ll make my headless Roam instances relatively-short lived (&amp;lt;10 minutes) just in case.&lt;/p&gt;
+&lt;p&gt;I think the strategy I&amp;rsquo;ll take will be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Log in to Roam in headless browser&lt;/li&gt;
+&lt;li&gt;Run datalog query in javascript to check for new/updated snippets.&lt;/li&gt;
+&lt;li&gt;Run that query fairly frequently (e.g. every few seconds) in order to detect snippets as soon as they&amp;rsquo;re available&lt;/li&gt;
+&lt;li&gt;Debounce, so that if a snippet is actively changing its only deployed ~twice, not 100 times&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And then every 10 minutes or so I&amp;rsquo;ll have it take a short breather and refresh&lt;/p&gt;
+&lt;p&gt;Abhay suggested using the alpha API for this rather than puppeteering. &lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f64f@2x.png&#34; alt=&#34;🙏&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I think I&amp;rsquo;ll get started on the puppeteer implementation now though anyway, even if the API ends up being a better way of doing this in the near future.&lt;/p&gt;
+&lt;p&gt;Update:&lt;/p&gt;
+&lt;p&gt;I have a first draft that handles log in and running the query to detect publishable material (blocks with the appropriate two tags).&lt;/p&gt;
+&lt;p&gt;Not sure how reliable login is as I had some hiccups getting it working.&lt;/p&gt;
+&lt;p&gt;And the headless browser seems very slow to notice changes to the Roam graph compared to what I&amp;rsquo;m used to.&lt;/p&gt;
+&lt;p&gt;So instead of checking every few seconds, I think I&amp;rsquo;ll just check once a minute or so, refreshing either every time or every few times.&lt;/p&gt;
+&lt;p&gt;Unexpected snag: I get the children of a block but I don&amp;rsquo;t know how to put them in the proper order!&lt;/p&gt;
+&lt;p&gt;(with datalog)&lt;/p&gt;
+&lt;p&gt;I could navigate to the block and look at the dom&amp;hellip; but hopefully I don&amp;rsquo;t need to do that.&lt;/p&gt;
+&lt;p&gt;Looks like there is an &amp;ldquo;order&amp;rdquo; attribute, so this will be doable. Might be messy though.&lt;/p&gt;
+&lt;p&gt;If I&amp;rsquo;m understanding right, :block/order gives the index of a block into its parents children.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re good! &lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f44d@2x.png&#34; alt=&#34;👍&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re reading this on my website, it worked!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Looking back on my browsing history snippets</title>
+      <link>https://davidbieber.com/snippets/2020-12-20-looking-back-on-my-browsing-history-snippets/</link>
+      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-20-looking-back-on-my-browsing-history-snippets/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve now written several snippets about my analyzing my browsing history programmatically. I figured I&amp;rsquo;d collect them all in one place here.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&#34;&gt;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history/&#34;&gt;https://davidbieber.com/snippets/2020-03-19-browsing-history/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&#34;&gt;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/&#34;&gt;https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/&#34;&gt;https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-05-15-roaming-the-web/&#34;&gt;https://davidbieber.com/snippets/2020-05-15-roaming-the-web/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Presumably as I write more about this, the list will go out of date. And that&amp;rsquo;s alright. This is just a snippet.&lt;/p&gt;
+&lt;p&gt;This motivates me to move all my snippets into Roam Research. I&amp;rsquo;m not going to do this just yet, but it seems a decent idea. Backlinks/tags would then allow for easily keeping an up-to-date list of all the snippets I&amp;rsquo;ve written about various topics.&lt;/p&gt;
+&lt;p&gt;Looking back on these many browsing history snippets, what themes stand out? Browser histories are rich with information about our lives. There&amp;rsquo;s a lot we can do to make our lives better using that information.&lt;/p&gt;
+&lt;p&gt;We can detect if we&amp;rsquo;re getting distracted, and have automated interventions if we are.&lt;/p&gt;
+&lt;p&gt;We can figure out our interests, and notice if they&amp;rsquo;re drifting over time.&lt;/p&gt;
+&lt;p&gt;We can reflect on things we&amp;rsquo;ve learned or thought about in the past, revisiting our old ideas. This can help generate new ideas, and also strengthen our memory.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve made some progress on automated distraction detection. I&amp;rsquo;ll have to write a snippet about that soon. I&amp;rsquo;ve also recently poked at getting my browsing history from my phone on my computer, so that can be analyzed in near real-time too. This promises to make distraction detection even more compelling. Very excited to teach Bieber Bot how to stage a distraction intervention some time in the next year.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Publishing Through Roam Research</title>
+      <link>https://davidbieber.com/snippets/2020-11-24-publishing-through-roam-research/</link>
+      <pubDate>Tue, 24 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-11-24-publishing-through-roam-research/</guid>
+      <description>&lt;p&gt;With this snippet I&amp;rsquo;m testing out a new snippet publishing system: publishing snippets directly from Roam Research. Using the system is simple: I simply tag any bullet with &amp;ldquo;ok-to-publish&amp;rdquo; and Bieber Bot publishes it and its children as a snippet.&lt;/p&gt;
+&lt;p&gt;Why another way of writing snippets? I&amp;rsquo;ve been writing quite a bit in Roam lately but I haven&amp;rsquo;t been publishing snippets lately. In truth, this new publishing mechanism is more a novelty than something practically useful. It would be easy enough to copy a snippet out of Roam into a text editor or to Bieber Bot in Facebook Messenger to publish it.&lt;/p&gt;
+&lt;p&gt;It certainly is appealing to be able to publish directly in Roam where I spend a lot of my time writing though. I think being able to publish directly from Roam may appeal to many other people as well.&lt;/p&gt;
+&lt;p&gt;The place where it may save time is in making changes to snippets. If I write a snippet in Roam today and publish it in the usual way, any changes I make it Roam aren’t reflected in the published version. Under this new system the copy on my website can automatically be updated to match the copy in Roam whenever I make changes there.&lt;/p&gt;
+&lt;p&gt;Anyway, I&amp;rsquo;ve marked this snippet as ok-to-publish, so once I build the system this should show up on my website. If you&amp;rsquo;re reading this there, it worked!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Extracting Snippets from Roam Research</title>
+      <link>https://davidbieber.com/snippets/2020-11-03-extracting-snippets-from-roam-research/</link>
+      <pubDate>Tue, 03 Nov 2020 15:22:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-11-03-extracting-snippets-from-roam-research/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been writing a lot these days inside of Roam Research. I wonder if there&amp;rsquo;s a good way to identify snippet-quality items from within my Roam database.&lt;/p&gt;
+&lt;p&gt;One option would be to pick out decent-sized sections of continuous text.
+If I&amp;rsquo;m taking notes in a bunch of different areas, that&amp;rsquo;s probably not well suited for publishing as a snippet unless I were to clean it up first.
+But if I see there&amp;rsquo;s a large chunk of text that&amp;rsquo;s been added in a contiguous block, there&amp;rsquo;s a decent chance that its snippet-quality.
+&amp;ldquo;Snippet-quality&amp;rdquo; isn&amp;rsquo;t a particularly high bar. The bar is really just that we&amp;rsquo;d want text that forms a coherent thought rather than being a few lines on totally unrelated thoughts (which can also appear contiguously in Roam).&lt;/p&gt;
+&lt;p&gt;A few days ago I set up Roam-to-Git, so every hour my Roam database is backed up to a private GitHub repository. It would be easy enough to look through the git diffs to see if there&amp;rsquo;s something that fits this description.
+One possible issue with this though is that the backup script doesn&amp;rsquo;t know if I&amp;rsquo;m in the middle of writing. So it&amp;rsquo;s possible it will catch me mid-snippet.
+Perhaps if I look at the diff between head and two commits back, I can avoid missing snippets that got split over multiple commits. It&amp;rsquo;s an idea worth looking in to, though the number of false positives might be too high without a fair amount of tuning.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introducing the Snippet Queue</title>
+      <link>https://davidbieber.com/snippets/2020-10-06-introducing-the-snippet-queue/</link>
+      <pubDate>Tue, 06 Oct 2020 22:16:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-10-06-introducing-the-snippet-queue/</guid>
+      <description>&lt;p&gt;This is my first snippet published using my 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-10-06-further-reducing-the-publication-barrier-with-queuing/&#34;&gt;snippet queue idea&lt;/a&gt;. If all goes well, it will be (read: was) published tomorrow evening (October 7, 2020).&lt;/p&gt;
+&lt;p&gt;The system works like this. I store a queue of snippets in Redis. Each snippet has the title, content, and date associated with it, as well as an id number. I can have Bieber Bot enqueue a new snippet by messaging him with &amp;ldquo;Queue snippet!&amp;rdquo; and the snippet details. He also responds to queries to update, view, or remove an existing snippet, or to view the current queue of snippets.&lt;/p&gt;
+&lt;p&gt;Then, every evening Bieber Bot looks at the oldest item in the queue. If he&amp;rsquo;s already asked me about it, and I haven&amp;rsquo;t told him not to publish it, he goes and publishes it to my website. If he hasn&amp;rsquo;t asked me about it yet, he asks me if its OK to publish. As long as I don&amp;rsquo;t say no and remove the snippet from the queue, Bieber Bot will go forward with publishing the snippet the next day.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Further Reducing the Publication Barrier with Queuing</title>
+      <link>https://davidbieber.com/snippets/2020-10-06-further-reducing-the-publication-barrier-with-queuing/</link>
+      <pubDate>Tue, 06 Oct 2020 13:29:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-10-06-further-reducing-the-publication-barrier-with-queuing/</guid>
+      <description>&lt;p&gt;What is the barrier to publication? It&amp;rsquo;s first and foremost a mental barrier. Sure, the act of writing presents its own challenges, but for me the mental hurdle of clicking send can be significant. Snippets lowers the barrier substantially compared with social media, messaging individuals, or even traditional blogging. Still, there&amp;rsquo;s room to lower the barrier even more; e.g. private journaling and &lt;em&gt;thinking&lt;/em&gt; itself have much lower barriers than Snippets does.&lt;/p&gt;
+&lt;p&gt;The idea today for lowering the barrier is a publication queue. In this idea, I write a snippet, send it to Bieber Bot, and he holds on to it for a bit. Then, after a day or so, he lets me know that he&amp;rsquo;s going to publish it soon. He gives me an opportunity to tell him not to publish it, but after some time has passed, he goes ahead and publishes it in my Snippets section on my behalf.&lt;/p&gt;
+&lt;p&gt;During that waiting period, I can send Bieber Bot revised versions of the Snippet, which will supersede the original. This way, when I send Bieber Bot the original snippet, I do so knowing that it will only be published as is if 1) I don&amp;rsquo;t come up with a way to improve it and 2) I don&amp;rsquo;t decide not to publish it. This takes a bit of the decision making burden off of present-David, and gives it to future-David. Between the two of them, they should be able to handle the publication no problem.&lt;/p&gt;
+&lt;p&gt;This idea acts similarly to GMail&amp;rsquo;s &amp;ldquo;send later&amp;rdquo; feature, but without the need to choose a send time. Clicking &amp;ldquo;send later&amp;rdquo; is easier than clicking &amp;ldquo;send&amp;rdquo; because there&amp;rsquo;s an opportunity to undo or make changes.&lt;/p&gt;
+&lt;p&gt;In addition to decreasing the barrier to publication, one thing I like about this idea is that it gives me an opportunity to revisit old ideas. When Bieber Bot tells me &amp;ldquo;Hey, last chance to rescind publication of this Snippet&amp;rdquo; that gives me an opportunity to reflect on what I&amp;rsquo;d written.&lt;/p&gt;
+&lt;p&gt;I also like that it can spread out the publication of snippets that I write in a single sitting. Currently, after publishing a single snippet, I&amp;rsquo;m not inclined to write more because I would feel funny publishing multiple snippets in quick succession (another mental barrier to climb over, I suppose). If I knew that Bieber Bot would take care of spacing out the publications, I might feel more comfortable writing a second or third snippet in a single sitting. I&amp;rsquo;d like that.&lt;/p&gt;
+&lt;p&gt;So, a publication queue it is! This shouldn&amp;rsquo;t be too much effort to implement given the work I&amp;rsquo;ve already done to support snippet publications, scheduling, question-asking, and messaging in Bieber Bot.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Snippets I Don&#39;t Publish</title>
+      <link>https://davidbieber.com/snippets/2020-10-06-the-snippets-i-dont-publish/</link>
+      <pubDate>Tue, 06 Oct 2020 12:33:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-10-06-the-snippets-i-dont-publish/</guid>
+      <description>&lt;p&gt;The goal of Snippets is to minimize the barrier to writing as much as possible. To this end, it has been very effective. Still, there are several snippets that I write and do not publish, despite my self-insistence that the barrier to publication be minimal.&lt;/p&gt;
+&lt;p&gt;What don&amp;rsquo;t I publish, and why? Looking over my recent unpublished snippets, some themes appear. Here&amp;rsquo;s what I don&amp;rsquo;t tend to publish:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work related snippets&lt;/li&gt;
+&lt;li&gt;Ideas that trail off mid thought&lt;/li&gt;
+&lt;li&gt;Status update + planning snippets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I tend not to post work related snippets just to be on the safe side with respect to Google confidentiality, though I&amp;rsquo;m confident the snippets I&amp;rsquo;m writing would be OK to publish if I requested permission to do so (of course, that would raise the barrier to publishing significantly which defeats the purpose of snippets.)&lt;/p&gt;
+&lt;p&gt;This has a cascading effect though, because now when I write a status update or planning snippet, it references things I&amp;rsquo;ve written in unpublished snippets. Such a snippet wouldn&amp;rsquo;t stand alone effectively. I suppose that&amp;rsquo;s not such a problem though; if I ever post a snippet mentioning in-progress projects, feel free to ask me about them, or feel free to ignore. The main audience of the snippet is probably me.&lt;/p&gt;
+&lt;p&gt;In brief, the recent snippets I did not publish are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A follow up to the &amp;ldquo;Infinite Distractions&amp;rdquo; plan&lt;/li&gt;
+&lt;li&gt;Considering discrete vs fuzzy decision making&lt;/li&gt;
+&lt;li&gt;Several activities I&amp;rsquo;d like to do more of, and strategies to help me to do them&lt;/li&gt;
+&lt;li&gt;A plan for biking the next day&lt;/li&gt;
+&lt;li&gt;An idea for how to teach Bieber Bot to ask and answer questions&lt;/li&gt;
+&lt;li&gt;Reflecting, work planning, and more Bieber Bot interaction planning&lt;/li&gt;
+&lt;li&gt;Some reflecting and daily planning (half work-related) from yesterday&lt;/li&gt;
+&lt;li&gt;A 4-line idea for queuing publication of snippets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Perhaps I&amp;rsquo;ll put a few of these up. I would, after all, like to get better at communicating publicly.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Why Phone Snippets (A Test Phone Snippet)</title>
+      <link>https://davidbieber.com/snippets/2020-09-27-why-phone-snippets-a-test-phone-snippet/</link>
+      <pubDate>Sun, 27 Sep 2020 16:49:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-09-27-why-phone-snippets-a-test-phone-snippet/</guid>
+      <description>&lt;p&gt;Why do I want to be able to post snippets from my phone?
+I enjoy hiking or biking somewhere pleasant, bringing a pocket-sized Bluetooth keyboard, and writing on my phone.&lt;/p&gt;
+&lt;p&gt;If you’re seeing this snippet (which you are), that means not only does posting snippets through Bieber Bot work, editing them though Bieber Bot does too.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Posting Snippets from My Phone</title>
+      <link>https://davidbieber.com/snippets/2020-09-27-posting-snippets-from-my-phone/</link>
+      <pubDate>Sun, 27 Sep 2020 16:32:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-09-27-posting-snippets-from-my-phone/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;d like to be able to post snippets from my phone.
+As I&amp;rsquo;ve stated before, the purpose of the snippets section of my website is to lower the barrier to me publishing as much as possible.
+Being able to post a snippet from my phone would help in this respect.&lt;/p&gt;
+&lt;p&gt;This doesn&amp;rsquo;t seem so hard to set up, especially now that Bieber Bot runs continuously on my laptop.
+I could have Bieber Bot listen for a message like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Snippet!
+Posting Snippets from My Phone
+I&#39;d like to be able to post...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When he receives such a message, what should he do?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a new file with the appropriate front matter and content.&lt;/li&gt;
+&lt;li&gt;Commit that file and push it to GitHub.&lt;/li&gt;
+&lt;li&gt;Run the ansible update script.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That&amp;rsquo;s it. This MVP should be relatively easy to get up and running.&lt;/p&gt;
+&lt;p&gt;Update: It is indeed up and running now. I wrote this snippet on my phone :).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ask Me Anywhere</title>
+      <link>https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere/</link>
+      <pubDate>Sat, 25 Jan 2020 10:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere/</guid>
+      <description>&lt;p&gt;With this post, I&amp;rsquo;m demoing a new work-in-progress feature for my blog called &amp;ldquo;Ask Me Anywhere&amp;rdquo;.
+The feature lets you leave a comment or ask a question at &lt;em&gt;any&lt;/em&gt; point while reading my writing.
+The goal is to encourage readers to respond to my writing, because I&amp;rsquo;m interested in having a conversation and hearing what you have to say.&lt;/p&gt;
+&lt;p&gt;You can try it right now. Either &lt;strong&gt;double click&lt;/strong&gt; (double-tap on mobile) on any paragraph, or click between two paragraphs, to open a comment box. Enter your thoughts, click submit, and &lt;em&gt;voila!&lt;/em&gt;, comment submitted.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;re welcome to enter your email address, name, Twitter handle, Facebook ID, or any other form of contact info if you&amp;rsquo;d like me to respond. And if you do, there is high likelihood that I will respond. If you don&amp;rsquo;t, you&amp;rsquo;re anonymous, and you certainly won&amp;rsquo;t receive a private response.&lt;/p&gt;
+&lt;p&gt;Comments and questions that you submit are not posted publicly anywhere. This isn&amp;rsquo;t a comments section for public discussion. If you want to discuss my posts publicly, submit them on Hacker News or Reddit, or head to Twitter to engage. While this website isn&amp;rsquo;t the place for public discussions, I am curious to know about such a discussion if it&amp;rsquo;s happening. So, feel free to let me know about such a discussion via &amp;ldquo;AMA&amp;rdquo; if you&amp;rsquo;re starting one.&lt;/p&gt;
+&lt;p&gt;What happens when you leave a comment? This part&amp;rsquo;s still a work in progress, but ideally my digital personal assistant 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; will notify me of the new comment at the next convenient time. If there are many comments coming in, Bieber Bot will try to be smart about batching the notifications together, and so the notification may be delayed, but I&amp;rsquo;ll soon read your message.&lt;/p&gt;
+&lt;p&gt;For now, Ask Me Anywhere is only activated for this one post. Once I&amp;rsquo;ve tested it out a bit, and perhaps made some changes, I&amp;rsquo;m hoping to then activate it for the 
+&lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;rest of my posts&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;and snippets&lt;/a&gt; as well. So I&amp;rsquo;m particularly keen to get feedback early so I can iterate and improve it soon. Give it a try, let me know what you think. You know how to reach me!&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in learning more about the internals, the source is 
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/772b5dd87da532357a1cdf04a8caa027268bfbac/hugo/assets/js-src/ask-me-anywhere.jsx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on GitHub&lt;/a&gt;. Feel free to have a poke around.&lt;/p&gt;
+&lt;p&gt;The name of the project &amp;ndash; &amp;ldquo;Ask Me Anywhere&amp;rdquo; &amp;ndash; reflects my intention to enable readers to ask questions as they&amp;rsquo;re reading. However, I welcome all types of reactions: questions, comments, feedback, corrections, new ideas, etc. I look forward to hearing what you have to say.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Writing for No Audience</title>
+      <link>https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/</link>
+      <pubDate>Mon, 30 Dec 2019 01:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/</guid>
+      <description>&lt;p&gt;I started this 
+&lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;&amp;ldquo;snippets&amp;rdquo;&lt;/a&gt; section of my website just a few days ago with the intention of being able to write without needing to put polish on a piece before publishing it.&lt;/p&gt;
+&lt;p&gt;My thinking was that I would be able to put small notes there, and half-baked ideas, and not have to worry about diluting the quality of the content of my 
+&lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;main website&lt;/a&gt;. I could put high quality posts on the main site, and a whole range of both good and bad posts in the snippets section. This way, assuming I do a good job, readers could come to expect that any post on the main website would be high quality. Curious people looking for additional content could come here to the snippets section if they wanted to, but more often posts here would either (1) almost never get read, or (2) be linked to directly, e.g. if they were relevent in some other context.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been surprised and delighted by the effect that having this &amp;ldquo;No Audience&amp;rdquo; section of the website has had on my writing. Writing for no one is so much easier than writing for someone.&lt;/p&gt;
+&lt;p&gt;On a few occasions (and it&amp;rsquo;s only been a few days since I started this section), I&amp;rsquo;ve started writing snippets intending for them to be brief thoughts meant for no one but myself. Then, after starting, it has felt natural to expand the post into something more substantial than I originally intended, e.g. answering questions that a hypothetical reader might have.&lt;/p&gt;
+&lt;p&gt;On one 
+&lt;a href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet&#34;&gt;occasion&lt;/a&gt; I even decided to bump the post up in importance after getting started, placing it in the main section of the website rather than relegating it to the mostly hidden snippets section.&lt;/p&gt;
+&lt;p&gt;To anyone out there who does end up reading this, and there may very well be none of you: if you&amp;rsquo;re having trouble getting started with writing, write for no audience.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;the-different-degrees-of-no-audience&#34;&gt;The Different Degrees of &amp;ldquo;No Audience&amp;rdquo;&lt;/h4&gt;
+&lt;p&gt;I actually write for No Audience in two different contexts.&lt;/p&gt;
+&lt;p&gt;(1) The 
+&lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;snippets&lt;/a&gt; section of my website&lt;br&gt;
+(2) Using 
+&lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;shh-shell&lt;/a&gt; at night&lt;/p&gt;
+&lt;p&gt;The snippets section of my website is public, but with no built-in broadcasting. People can read it if they choose to, but I&amp;rsquo;m not putting it in people&amp;rsquo;s faces (by default; I will if it&amp;rsquo;s appropriate in context). Contrast this with the writing I do with the 
+&lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;shh-shell&lt;/a&gt;. This is more personal writing that I do half-asleep as I drift off at night, and so I don&amp;rsquo;t make it public; I expect almost no one will ever read it. This writing, I suppose is for No Audience to an even more extreme degree. I recommend both practices: public writing for no audience, and private writing for no audience.&lt;/p&gt;
+&lt;h4 id=&#34;social-media-doesnt-cut-it&#34;&gt;Social Media Doesn&amp;rsquo;t Cut It&lt;/h4&gt;
+&lt;p&gt;Now that I&amp;rsquo;ve discovered this practice and am quite fond of it, I think it could be a promising addition to social media.&lt;/p&gt;
+&lt;p&gt;No social media platform, to my knowledge, has given people a place to write public posts with an option to publish but not share them. The absense of such a feature makes sense; social media platforms need you to share for them to succeed, so how would giving you a space to publish-but-not-share help them? The answer lies in the psychology of the many social-media lurkers. There is a significant market segment of people who perhaps consume, but do not post, on social media. An option to publish-but-not-broadcast might help to convert some of that segment into sharers.&lt;/p&gt;
+&lt;p&gt;As a social media consumer, but infrequent producer, I can tell you I am hesitant even to Like something on Twitter, because I know Twitter often treats Likes like Retweets, and will put the content I hearted in front of my followers with my name attached, and that&amp;rsquo;s not something I want.&lt;/p&gt;
+&lt;p&gt;If a feature for publishing-without-sharing were added to Facebook or Twitter, perhaps others would have an experience like mine over the last few days. Having the option to publish-but-not-share has significantly reduced the barrier to start writing for me. Then, once I&amp;rsquo;ve started writing, I&amp;rsquo;ve often changed my mind and decided I want to share what I&amp;rsquo;ve written after all.&lt;/p&gt;
+&lt;p&gt;If other social-media lurkers are like me, a feature enabling this behavior could help &amp;ldquo;break the ice&amp;rdquo; so to speak, and could make social media platforms more relevant to them.&lt;/p&gt;
+&lt;h4 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h4&gt;
+&lt;p&gt;I&amp;rsquo;m going to continue building this snippets section for myself, with the default behavior being no-broadcasting as I add snippets. For snippets I&amp;rsquo;m fond of, I may choose to broadcast (e.g. by posting about the post on social media). Contrast this with the 
+&lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;main posts section&lt;/a&gt; of my website; for new posts there, I will generally always broadcast the post, at least a little bit.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;d like to receive such broadcasts, e.g. when I write a post that I&amp;rsquo;m particularly keen on sharing, please consider subscribing:&lt;/p&gt;
+
+&lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/classic-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+  #mc_embed_signup{
+    background:#fff;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+  }
+&lt;/style&gt;
+&lt;div id=&#34;mc_embed_signup&#34;&gt;
+&lt;form action=&#34;https://gmail.us3.list-manage.com/subscribe/post?u=a55774562ae9fa9a1d879fa75&amp;amp;id=132f89def3&#34; method=&#34;post&#34; id=&#34;mc-embedded-subscribe-form&#34; name=&#34;mc-embedded-subscribe-form&#34; class=&#34;validate&#34; target=&#34;_blank&#34; novalidate&gt;
+    &lt;div id=&#34;mc_embed_signup_scroll&#34;&gt;
+  
+&lt;div class=&#34;mc-field-group&#34;&gt;
+  &lt;label for=&#34;mce-EMAIL&#34;&gt;Email Address&lt;/label&gt;
+  &lt;input type=&#34;email&#34; value=&#34;&#34; name=&#34;EMAIL&#34; class=&#34;required email&#34; id=&#34;mce-EMAIL&#34;&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;mce-responses&#34; class=&#34;clear&#34;&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-error-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-success-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;    
+    &lt;div style=&#34;position: absolute; left: -5000px;&#34; aria-hidden=&#34;true&#34;&gt;&lt;input type=&#34;text&#34; name=&#34;b_a55774562ae9fa9a1d879fa75_132f89def3&#34; tabindex=&#34;-1&#34; value=&#34;&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;
+      &lt;input type=&#34;submit&#34; value=&#34;Subscribe&#34; name=&#34;subscribe&#34; id=&#34;mc-embedded-subscribe&#34; class=&#34;button&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=&#39;EMAIL&#39;;ftypes[0]=&#39;email&#39;;fnames[1]=&#39;FNAME&#39;;ftypes[1]=&#39;text&#39;;fnames[2]=&#39;LNAME&#39;;ftypes[2]=&#39;text&#39;;fnames[3]=&#39;ADDRESS&#39;;ftypes[3]=&#39;address&#39;;fnames[4]=&#39;PHONE&#39;;ftypes[4]=&#39;phone&#39;;fnames[5]=&#39;BIRTHDAY&#39;;ftypes[5]=&#39;birthday&#39;;}(jQuery));var $mcj = jQuery.noConflict(true);&lt;/script&gt;
+
+&lt;p&gt;Ironically, you are also welcome to follow the snippets section with 
+&lt;a href=&#34;https://davidbieber.com/snippets/index.xml&#34;&gt;RSS&lt;/a&gt;. Don&amp;rsquo;t tell me if you do though, since I would like to continue to feel like I&amp;rsquo;m writing for No Audience. You can follow the posts section with 
+&lt;a href=&#34;https://davidbieber.com/posts/index.xml&#34;&gt;RSS&lt;/a&gt; as well.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning to Communicate</title>
+      <link>https://davidbieber.com/snippets/2019-12-26-learning-to-communicate/</link>
+      <pubDate>Thu, 26 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2019-12-26-learning-to-communicate/</guid>
+      <description>&lt;p&gt;My goal for 2020 is to learn to communicate better with the world. I work in a research group at Google, and our main job function is performing research in program synthesis. But research is only as valuable as how well it is communicated. So in 2020 I&amp;rsquo;d like to get better at communicating publicly.&lt;/p&gt;
+&lt;p&gt;There are a few options for doing this. The first is writing blog posts. This may be too large an undertaking to do frequently. I&amp;rsquo;d really like something that&amp;rsquo;s lower barrier to do, and with a lower quality bar, so that I can do this more often. The natural alternative with these properties is academic Twitter. However, I want to avoid the addictive nature of Twitter. I also want to write more than 280 characters at a time, and I don&amp;rsquo;t want to put every little thing I write in front of people&amp;rsquo;s faces with equal importance. Twitter seems a good place for announcing a new paper or a Python Fire update, but not for sharing a musing like this one.&lt;/p&gt;
+&lt;p&gt;So instead I think I&amp;rsquo;m going to start by silently posting my writings to my website, but in a 
+&lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;separate section&lt;/a&gt; from the main blog. This way when there&amp;rsquo;s something with a little more polish that I think is explicitly worth reading, I can put it in the 
+&lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;main blog section&lt;/a&gt; and 
+&lt;a href=&#34;https://twitter.com/Bieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tweet&lt;/a&gt; about it, etc.&lt;/p&gt;
+&lt;p&gt;If you want to receive updates for every small writing I put up here, you can use this 
+&lt;a href=&#34;https://davidbieber.com/snippets/index.xml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RSS feed&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to receive updates only for major posts, such as new publications or major life updates, you can use this 
+&lt;a href=&#34;https://davidbieber.com/posts/index.xml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RSS feed&lt;/a&gt; or you can subscribe here:&lt;/p&gt;
+
+&lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/classic-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+  #mc_embed_signup{
+    background:#fff;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+  }
+&lt;/style&gt;
+&lt;div id=&#34;mc_embed_signup&#34;&gt;
+&lt;form action=&#34;https://gmail.us3.list-manage.com/subscribe/post?u=a55774562ae9fa9a1d879fa75&amp;amp;id=132f89def3&#34; method=&#34;post&#34; id=&#34;mc-embedded-subscribe-form&#34; name=&#34;mc-embedded-subscribe-form&#34; class=&#34;validate&#34; target=&#34;_blank&#34; novalidate&gt;
+    &lt;div id=&#34;mc_embed_signup_scroll&#34;&gt;
+  
+&lt;div class=&#34;mc-field-group&#34;&gt;
+  &lt;label for=&#34;mce-EMAIL&#34;&gt;Email Address&lt;/label&gt;
+  &lt;input type=&#34;email&#34; value=&#34;&#34; name=&#34;EMAIL&#34; class=&#34;required email&#34; id=&#34;mce-EMAIL&#34;&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;mce-responses&#34; class=&#34;clear&#34;&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-error-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-success-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;    
+    &lt;div style=&#34;position: absolute; left: -5000px;&#34; aria-hidden=&#34;true&#34;&gt;&lt;input type=&#34;text&#34; name=&#34;b_a55774562ae9fa9a1d879fa75_132f89def3&#34; tabindex=&#34;-1&#34; value=&#34;&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;
+      &lt;input type=&#34;submit&#34; value=&#34;Subscribe&#34; name=&#34;subscribe&#34; id=&#34;mc-embedded-subscribe&#34; class=&#34;button&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=&#39;EMAIL&#39;;ftypes[0]=&#39;email&#39;;fnames[1]=&#39;FNAME&#39;;ftypes[1]=&#39;text&#39;;fnames[2]=&#39;LNAME&#39;;ftypes[2]=&#39;text&#39;;fnames[3]=&#39;ADDRESS&#39;;ftypes[3]=&#39;address&#39;;fnames[4]=&#39;PHONE&#39;;ftypes[4]=&#39;phone&#39;;fnames[5]=&#39;BIRTHDAY&#39;;ftypes[5]=&#39;birthday&#39;;}(jQuery));var $mcj = jQuery.noConflict(true);&lt;/script&gt;
+
+&lt;p&gt;Happy early new year!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Snippets for davidbieber.com</title>
+      <link>https://davidbieber.com/snippets/2019-12-25-introducing-snippets/</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2019-12-25-introducing-snippets/</guid>
+      <description>&lt;p&gt;Today I&amp;rsquo;m introducing the &amp;ldquo;snippets&amp;rdquo; section of my website. The goal is to give myself a place to post content online that&amp;rsquo;s extremely easy to post to, but isn&amp;rsquo;t featured prominently anywhere on the site. This way I can post things without them needing polish or production value, but still link to them and share them as I see fit.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

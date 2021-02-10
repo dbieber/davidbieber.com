@@ -1,7 +1,8 @@
 +++
 title = "Python hoist: immediate locals only"
 date = 2021-01-18T00:00:00
-
+tags = ["python", "taking-silly-ideas-seriously"]
+keywords = ["python hoist"]
 +++
 
 The implementation of `hoist` in my [earlier snippet](/snippets/2021-01-16-python-hoist/) returned the values of local variables of all functions called by the hoisted function. This new version only returns the locals of the hoisted function.

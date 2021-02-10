@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>roam-research | David Bieber</title>
+    <link>https://davidbieber.com/tags/roam-research/</link>
+      <atom:link href="https://davidbieber.com/tags/roam-research/index.xml" rel="self" type="application/rss+xml" />
+    <description>roam-research</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 25 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
+      <title>roam-research</title>
+      <link>https://davidbieber.com/tags/roam-research/</link>
+    </image>
+    
+    <item>
+      <title>Notifications in Roam Research</title>
+      <link>https://davidbieber.com/snippets/2021-01-25-notifications-in-roam-research/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-25-notifications-in-roam-research/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://twitter.com/hashtag/RoamGames&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#RoamGames&lt;/a&gt; are upon us! The challenge: &lt;em&gt;project management&lt;/em&gt; in Roam.&lt;/p&gt;
+&lt;p&gt;So, let&amp;rsquo;s talk notifications. They&amp;rsquo;re going to be essential for any multiplayer Roam scenario. They&amp;rsquo;re also ruthless attention vampires that kill productivity. We&amp;rsquo;ve got to get this right.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s disentangle &lt;em&gt;what&lt;/em&gt; you get notified about, &lt;em&gt;when&lt;/em&gt; you get notified about it, and &lt;em&gt;where/how&lt;/em&gt; you&amp;rsquo;re notified. This leads us to a vision where users can define &lt;em&gt;notification strategies&lt;/em&gt; and take control of their attention&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;what-to-notify-on-references-and-queries&#34;&gt;&lt;strong&gt;What&lt;/strong&gt; to notify on (References and Queries)&lt;/h2&gt;
+&lt;p&gt;What do we want to get notified about? First, three scenarios to motivate our discussion. Then, the primitives: references and queries.&lt;/p&gt;
+&lt;h4 id=&#34;scenario-1-chat&#34;&gt;Scenario 1, Chat:&lt;/h4&gt;
+&lt;p&gt;You&amp;rsquo;re working on Secret Project X, conversing asynchronously with your teammate Abhay about Feature XX. It&amp;rsquo;s gonna be big. While you&amp;rsquo;re off working on something else Abhay responds to a bunch of your earlier messages. You want to get notified about this, for sure.&lt;/p&gt;
+&lt;h4 id=&#34;scenario-2-blockers&#34;&gt;Scenario 2, Blockers:&lt;/h4&gt;
+&lt;p&gt;You&amp;rsquo;re working on Task A. But it&amp;rsquo;s blocked by Tasks B and C. You represent this in your Roam graph like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FjLpcHwI9aQ.png?alt=media&amp;amp;token=eeb11581-2466-4824-a725-35a0bd720eff&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;(As an aside, being able to embed a tiny piece of my Roam graph in my blog would be super helpful.)&lt;/p&gt;
+&lt;p&gt;Once Task B and Task C are marked DONE, you want to get notified so you can resume working on Task A.&lt;/p&gt;
+&lt;h4 id=&#34;scenario-3-topic-tracking&#34;&gt;Scenario 3, Topic Tracking:&lt;/h4&gt;
+&lt;p&gt;You&amp;rsquo;re in a big multiplayer graph and you&amp;rsquo;ve carefully curated a page about your own project 
+&lt;a href=&#34;https://github.com/google/python-fire&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python Fire&lt;/a&gt;. You&amp;rsquo;re excited when people talk about Fire, so you want notifications when people reference it.&lt;/p&gt;
+&lt;h4 id=&#34;the-primitives-references-and-queries&#34;&gt;The Primitives: References and Queries&lt;/h4&gt;
+&lt;p&gt;Basic usage: Notifications when someone responds to me&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, notifications when someone references a particular page or block (linked or unlinked)&lt;/p&gt;
+&lt;p&gt;Advanced usage: Roam queries and Datalog queries&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; are extremely expressive. I should be able to set up a query and get notified whenever the query results change.&lt;/p&gt;
+&lt;p&gt;Now that we&amp;rsquo;ve set out what we want to get notified about, let&amp;rsquo;s talk about when we want to receive the notifications. We&amp;rsquo;ll get to how we want to configure the notifications a little bit later on.&lt;/p&gt;
+&lt;h2 id=&#34;when-to-notify-immediately-batched-delayed-at-specific-times&#34;&gt;&lt;strong&gt;When&lt;/strong&gt; to notify (Immediately, Batched, Delayed, At specific times?)&lt;/h2&gt;
+&lt;p&gt;Most apps have minimal options for when you receive notifications. A typical message board config offers &amp;ldquo;every individual email&amp;rdquo;, &amp;ldquo;daily digest&amp;rdquo;, &amp;ldquo;weekly digest.&amp;rdquo; This is Roam. We can do better than that.&lt;/p&gt;
+&lt;p&gt;For the messages from Abhay about Project XX, I want notifications to pop up immediately.&lt;/p&gt;
+&lt;p&gt;When I become unblocked on a task, I want a notification within the hour, but if multiple tasks become unblocked they the notifications can totally be bundled. I don&amp;rsquo;t need an &lt;em&gt;individual notification&lt;/em&gt; per task. That would just be overkill.&lt;/p&gt;
+&lt;p&gt;And for references to Python Fire, a daily digest at 9am is more than sufficient.&lt;/p&gt;
+&lt;h4 id=&#34;primitive-notification-strategies&#34;&gt;Primitive: Notification Strategies&lt;/h4&gt;
+&lt;p&gt;Anyone with a bit of JavaScript or Clojure knowledge can define a notification strategy. A notification strategy defines the rules for how notifications should be handled. The interface for a notification strategy is: stream of notifications in, stream of notifications out.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;By allowing users to define and share notification strategies, we can empower uses to take back their attention and get more out of their Roam experience.&lt;/p&gt;
+&lt;p&gt;The &amp;ldquo;Notification strategies&amp;rdquo; approach benefits non-programmers too, because notification strategies can be shared in the Roam Depot&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;. I&amp;rsquo;m hoping for a future where RoamHacker and David Vargas and others have developed both simple and sophisticated &amp;ldquo;notification managers&amp;rdquo;: UIs where non-programmers can configure their notification settings in the level of detail best suited for them.&lt;/p&gt;
+&lt;h4 id=&#34;primitive-tags-connect-references-and-queries-to-notification-strategies&#34;&gt;Primitive: Tags connect references and queries to notification strategies&lt;/h4&gt;
+&lt;p&gt;That is, tags connect &lt;em&gt;what&lt;/em&gt; to &lt;em&gt;when&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;When you write a notification strategy, you name it. Tag a reference of a query with the name of a notification strategy to run that strategy on that reference or query.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s clarify with an example.&lt;/p&gt;
+&lt;p&gt;Say I have a query (&amp;ldquo;all Tasks with &amp;lsquo;Blockers&amp;rsquo; where all Blockers are &amp;lsquo;DONE&amp;rsquo;&amp;quot;), and a notification strategy named &amp;ldquo;Bundle on the Hour&amp;rdquo; (&amp;ldquo;bundle all incoming notifications and emit them on the hour as a single notification&amp;rdquo;). Then I can tag the query with #[[Bundle on the Hour]] to start applying that notification strategy to the results of the query.&lt;/p&gt;
+&lt;p&gt;Once I&amp;rsquo;ve added that tag, the notification strategy will be called every time the query results change, and it will be able to start emitting notifications.&lt;/p&gt;
+&lt;p&gt;Similarly if I write [[Python Fire]] and tag it with #[[Digest at 9am]], then &lt;em&gt;that&lt;/em&gt; notification strategy will be called whenever the references to or contents of the Python Fire page change.&lt;/p&gt;
+&lt;h2 id=&#34;wherehow-actually-sending-notifications&#34;&gt;&lt;strong&gt;Where/How&lt;/strong&gt;: Actually sending notifications&lt;/h2&gt;
+&lt;p&gt;Great, we&amp;rsquo;ve talked about how to decide what to notify about, and when to send the notifications. How/where do the notifications actually get sent?&lt;/p&gt;
+&lt;p&gt;A sensible default for the first pass is to use browser notifications. But we&amp;rsquo;re thinking long term, so I won&amp;rsquo;t dwell on this &amp;ldquo;first pass&amp;rdquo; for too long.&lt;/p&gt;
+&lt;p&gt;If you do want to use browser notifications, it&amp;rsquo;s easy to do so&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;. You can try this in your Roam graph (or browser console&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;) right now:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function notify(text) {
+  // Let&#39;s check if the browser supports notifications
+  if (!(&amp;quot;Notification&amp;quot; in window)) {
+    alert(text);
+  }
+
+  // Let&#39;s check whether notification permissions have already been granted
+  else if (Notification.permission === &amp;quot;granted&amp;quot;) {
+    // If it&#39;s okay let&#39;s create a notification
+    var notification = new Notification(text);
+  }
+
+  // Otherwise, we need to ask the user for permission
+  else if (Notification.permission !== &amp;quot;denied&amp;quot;) {
+    Notification.requestPermission().then(function (permission) {
+      // If the user accepts, let&#39;s create a notification
+      if (permission === &amp;quot;granted&amp;quot;) {
+        var notification = new Notification(text);
+      } else {
+        console.log(text);
+      }
+    });
+  } else {
+    // At last, if the user has denied notifications, and you
+    // want to be respectful there is no need to bother them any more.
+    console.log(text);
+  }
+}
+
+notify(&amp;quot;You&#39;ve got mail.&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I don&amp;rsquo;t want browser notifications though. I want my personal digital assistant 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;Bieber Bot&lt;/a&gt; to send me notifications. Now, this is no trouble in a private graph. I can use a webhook to send myself a message as Bieber Bot. In a public graph, however, this would be dangerous. Anyone could see the code and start impersonating Bieber Bot. A travesty!&lt;/p&gt;
+&lt;p&gt;So, we need Roam to support &lt;em&gt;secrets&lt;/em&gt;. Ideally this would come from the Roam core team, not the community. First class secrets would enable me to write roam/js that communicates securely with my own services, like Bieber Bot and others, without giving other users the capability of doing the same.&lt;/p&gt;
+&lt;p&gt;As an alternative approach to secrets, having all Roam graphs be &lt;em&gt;one giant graph&lt;/em&gt; with a good permissions model would also be sufficient. Then I could put my notifier code in my graph (private), but have the queries that trigger the notifier apply to a graph I share with my team.&lt;/p&gt;
+&lt;p&gt;How does specifying a notifier (browser notifications vs Bieber Bot) fit in with writing queries and enabling notifications? You can set your default &amp;ldquo;notify&amp;rdquo; function just by defining the function &amp;ldquo;notify&amp;rdquo; and tagging it / nesting it under roam/notify. You can also set a notify function whenever you define notifications just by adding an extra reference with the name of the notify function.&lt;/p&gt;
+&lt;h2 id=&#34;some-examples&#34;&gt;Some Examples&lt;/h2&gt;
+&lt;p&gt;This was a lot, and reading the above it might sound complicated. And that&amp;rsquo;s because it &lt;em&gt;can&lt;/em&gt; be complicated; you can have as complicated a notification strategy as you like. But it doesn&amp;rsquo;t have to be complicated, and for most users it won&amp;rsquo;t be.&lt;/p&gt;
+&lt;p&gt;Ideally turning on notifications for messages could be as simple as adding a block in your graph that says:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[[roam/messages]] #[[Notify me immediately]]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Turning on notifications for unblocked tasks could be as simple as (1) getting the unblocked tasks query from the Roam Depot, and then (2) adding a block &lt;code&gt;[[Unblocked tasks]] #[[Bundle on the Hour]]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;And turning on notifications for references to Python Fire should simply mean adding a block &lt;code&gt;[[Python Fire]] #[[Digest at 9am]]&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;lets-build-it&#34;&gt;Let&amp;rsquo;s build it&lt;/h2&gt;
+&lt;p&gt;Want to build this with me? I&amp;rsquo;m 
+&lt;a href=&#34;https://twitter.com/Bieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Bieber&lt;/a&gt; on Twitter and active as dbieber on the 
+&lt;a href=&#34;https://roamresearch.slack.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Slack&lt;/a&gt;.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;And still provides sensible defaults and easy configs for non-power users. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;This one, while a basic use case, is actually tricky to express as a query. But we can do it, I&amp;rsquo;m confident. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;See my 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/&#34;&gt;two&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-04-more-datalog-queries-for-roam/&#34;&gt;snippets&lt;/a&gt; for lots of examples of what you can do with datalog queries. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;em&gt;soni-sono&lt;/em&gt; for short. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Has anyone taken the 
+&lt;a href=&#34;https://fontmeme.com/the-home-depot-font/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Home Depot logo&lt;/a&gt; and replaced the word Home with Roam in the appropriate font yet? &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Code courtesy of 
+&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/notification&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MDN&lt;/a&gt;. &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;cmd-option-i to open your browser console on Chrome on Mac. 
+&lt;a href=&#34;https://www.google.com/search?q=how&amp;#43;to&amp;#43;open&amp;#43;the&amp;#43;browser&amp;#43;console&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Look it up here&lt;/a&gt; for other browsers or operating systems. &lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>More Datalog Queries for Roam</title>
+      <link>https://davidbieber.com/snippets/2021-01-04-more-datalog-queries-for-roam/</link>
+      <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-04-more-datalog-queries-for-roam/</guid>
+      <description>&lt;p&gt;In this snippet I share datalog queries for Roam Research. For more such queries (and to see how to run these queries), 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/&#34;&gt;see this earlier snippet on the subject&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;pages-tagged-with-x-not-listed-on-page-y&#34;&gt;Pages tagged with &amp;ldquo;X&amp;rdquo; not listed on page &amp;ldquo;Y&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;This query is useful when constructing an index page. Let&amp;rsquo;s say you want to take all the pages you&amp;rsquo;ve tagged with &amp;ldquo;[[Brilliant Idea]]&amp;rdquo; and organize them on a page called &amp;ldquo;[[Brilliant Ideas Index]]&amp;rdquo;. This query will find you all the pages that are tagged with &amp;ldquo;[[Brilliant Idea]]&amp;rdquo; that haven&amp;rsquo;t yet been added to the &amp;ldquo;[[Brilliant Ideas Index]]&amp;rdquo; page.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let container = &amp;quot;Brilliant Ideas Index&amp;quot;;
+let tag = &amp;quot;Brilliant&amp;quot;;
+let ancestor = `[ 
+  [(ancestor ?child ?parent)
+   [?parent :block/children ?child]]
+  [(ancestor ?child ?ancestor)
+   [?parent :block/children ?child]
+   (ancestor ?parent ?ancestor)]
+]`;
+
+var blocks = window.roamAlphaAPI.q(`
+[:find ?page_title
+  :in $ % ?container_title ?tag_text
+  :where 
+    [?container_page :node/title ?container_title]
+    [?page :node/title ?page_title]
+    (ancestor ?tagged_block ?page)
+    [?tagged_block :block/refs ?tag_page]
+    [?tag_page :node/title ?tag_text]
+    (not (ancestor ?container_block ?container_page)
+         [?container_block :block/refs ?page])
+]`, ancestor, container, tag)
+
+console.log(blocks.map((data, index) =&amp;gt; {return `[[${data[0]}]]`}).join(&#39;\n&#39;));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hope this is useful for getting your Roam graph organized!&lt;/p&gt;
+&lt;h2 id=&#34;blocks-tagged-with-both-x-and-y&#34;&gt;Blocks tagged with both &amp;ldquo;X&amp;rdquo; and &amp;ldquo;Y&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;I use a query like this to find blocks tagged with both &amp;ldquo;Snippets&amp;rdquo; and &amp;ldquo;ok-to-publish&amp;rdquo;, in order to automatically publish snippets to my website.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let tag1 = &amp;quot;Snippets&amp;quot;;
+let tag2 = &amp;quot;ok-to-publish&amp;quot;;
+var blocks = window.roamAlphaAPI.q(`[
+	:find ?uid ?string
+	:in $ ?tag1 ?tag2
+	:where
+	[?block :block/uid ?uid]
+	[?block :block/string ?string]
+	[?block :block/refs ?block_tag1]
+	[?block :block/refs ?block_tag2]
+	[?block_tag1 :node/title ?tag1]
+	[?block_tag2 :node/title ?tag2]
+]`, tag1, tag2);
+
+blocks.map(
+  (data, index) =&amp;gt; {return `((${data[0]})): ${data[1]}`;})
+.join(&#39;\n&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;info-about-all-children-of-any-block-tagged-with-both-x-and-y&#34;&gt;Info about all children of any block tagged with both &amp;ldquo;X&amp;rdquo; and &amp;ldquo;Y&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;This extends the previous query in two key ways: (1) it gets all children of any block with both tags, and (2) it gets more detailed information about those children. The ?uid indicates which block has the two target tags, while the ?child_uid, ?parent_uid, and ?order fields allow for reconstructing the arrangement of the child blocks. Each returned record has the text of a child block, it&amp;rsquo;s uid (?child_uid), it&amp;rsquo;s parent&amp;rsquo;s uid (?parent_uid), and the order of that child in its parent&amp;rsquo;s list of children. Together, this information allows you to fully reconstruct the tree of blocks beneath each of the tagged blocks.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let tag1 = &amp;quot;Snippets&amp;quot;;
+let tag2 = &amp;quot;ok-to-publish&amp;quot;;
+let ancestor = `[ 
+  [(ancestor ?child ?parent)
+   [?parent :block/children ?child]]
+  [(ancestor ?child ?ancestor)
+   [?parent :block/children ?child]
+   (ancestor ?parent ?ancestor)]
+]`;
+
+let block_info = window.roamAlphaAPI.q(`[
+  :find ?uid ?child_text ?child_uid ?parent_uid ?order
+  :in $ % ?tag1 ?tag2
+  :where
+  [?block :block/uid ?uid]
+  [?block :block/string ?string]
+  [?block :block/refs ?block_tag1]
+  [?block :block/refs ?block_tag2]
+  [?block_tag1 :node/title ?tag1]
+  [?block_tag2 :node/title ?tag2]
+  (ancestor ?child ?block)
+  [?parent :block/children ?child]
+  [?parent :block/uid ?parent_uid]
+  [?child :block/uid ?child_uid]
+  [?child :block/order ?order]
+  [?child :block/string ?child_text]
+]`, ancestor, tag1, tag2);
+
+block_info.map(
+  (data, index) =&amp;gt; {return `((${data[0]})) ${data[1]}`;})
+.join(&#39;\n&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I use the following script to organize the blocks by their parent:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;class DefaultDict {
+  constructor(defaultInit) {
+    return new Proxy({}, {
+      get: (target, name) =&amp;gt; name in target ?
+        target[name] :
+        (target[name] = typeof defaultInit === &#39;function&#39; ?
+          new defaultInit().valueOf() :
+          defaultInit)
+    })
+  }
+}
+
+var blocks_by_parent = new DefaultDict(Array);
+block_info.forEach(
+  (info) =&amp;gt; {
+    [uid, child_text, child_uid, parent_uid, order] = info;
+    blocks_by_parent[parent_uid].push(info);
+  }
+);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And then the following function &lt;code&gt;blocksInOrder&lt;/code&gt; to place the children in their proper order.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function blocksInOrder(blocks_by_parent, uid) {
+  var blocks = [];
+  var blocks_list = blocks_by_parent[uid].sort(
+    (b1, b2) =&amp;gt; {return b1[4] - b2[4];}
+  );
+  blocks_list.forEach((block) =&amp;gt; {
+    blocks.push(block)
+    blocks.push(...blocksInOrder(blocks_by_parent, block[2]));
+  });
+  return blocks;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is a key component of how I do 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/&#34;&gt;automatic snippet publishing from Roam to my website&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spaced Repetition in Roam Research</title>
+      <link>https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/</guid>
+      <description>&lt;p&gt;There are many ways to do spaced repetition in Roam Research. This post describes mine. I was inspired to start this two months ago by reading 
+&lt;a href=&#34;https://ncase.me/remember/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nicky Case&amp;rsquo;s comic on spaced repetition&lt;/a&gt;, and I highly recommend the read.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Spaced repetition&amp;rdquo; just means studying flashcards, studying the cards you know best less often, and study the cards you struggle with more often. It&amp;rsquo;s a powerful technique for learning and remembering material, whether you&amp;rsquo;re a student or a lifelong learner.&lt;/p&gt;
+&lt;p&gt;The system I use is based on a classic system called the &amp;ldquo;Leitner Box&amp;rdquo; method. I&amp;rsquo;ll first describe how to use the &amp;ldquo;Leitner Box&amp;rdquo; approach in Roam, and then I&amp;rsquo;ll describe the adjustments I made to improve it.&lt;/p&gt;
+&lt;h2 id=&#34;whats-a-leitner-box&#34;&gt;What&amp;rsquo;s a &amp;ldquo;Leitner Box&amp;rdquo;?&lt;/h2&gt;
+&lt;p&gt;In the &amp;ldquo;Leitner Box&amp;rdquo; system of spaced repetition, there are seven boxes numbered Box 1 through Box 7. When you create a flashcard, you place it into Box 1. Every day, you use a schedule to determine which boxes of cards to review. The cards in box 1 get reviewed most often, and the cards in box 7 get reviewed least often. When you review a card, you move it up a box (e.g. from box 1 to 2 or from box 4 to 5) if you get the card right. But if you get a card wrong, you move the card back to box 1.&lt;/p&gt;
+&lt;p&gt;The default Leitner Box schedule looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FpW7FsufOIr.png?alt=media&amp;amp;token=3cbd07b1-11e5-4389-896d-9a181f6529fc&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;How do you read this schedule?&lt;/p&gt;
+&lt;p&gt;The colored circles represent the different Leitner Boxes. The red circles represent Box 1, the orange circles represent Box 2, the yellow circles represent Box 3, all the way up to the final pink circle that represents Box 7.&lt;/p&gt;
+&lt;p&gt;The numbers along the bottom are &amp;ldquo;session numbers&amp;rdquo;. For your first review session, you look at the circles above &amp;ldquo;01&amp;rdquo; (Boxes 2 and 1). For your second review session, you look at the circles above &amp;ldquo;02&amp;rdquo; (Boxes 3 and 1). Always review boxes for a given day in order from highest to lowest. After completing session &amp;ldquo;64&amp;rdquo;, the schedule wraps around and your next session is session &amp;ldquo;01&amp;rdquo; again.&lt;/p&gt;
+&lt;p&gt;To recap, (1) you put new flashcards into Box 1. (2) When you get a card correct, you move it up a box. (3) When you get a card incorrect, you move it all the way back to Box 1. (4) You use the schedule made of colored dots to decide which boxes to review each day, answering questions in higher boxes first.&lt;/p&gt;
+&lt;h2 id=&#34;setting-up-leitner-boxes-in-roam&#34;&gt;Setting up Leitner Boxes in Roam&lt;/h2&gt;
+&lt;p&gt;This system is all well and good. How do we put it into practice? Here I&amp;rsquo;ll quickly describe (1) getting set up, (2) creating new flashcards, and (3) how to do a review session.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Setting up:&lt;/strong&gt; You can use my template; simply copy and paste the 
+&lt;a href=&#34;https://pastebin.com/GPfhcUug&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;raw&amp;rdquo; text at the bottom of the page here&lt;/a&gt; into Roam Research, e.g. onto a new page named &amp;ldquo;Spaced Repetition&amp;rdquo;. For this to work you need to copy from the region that says &lt;strong&gt;&amp;ldquo;RAW paste data&amp;rdquo;&lt;/strong&gt;. You can 
+&lt;a href=&#34;https://pastebin.com/zvjFKZAb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get the enhanced template (recommended; see below) here&lt;/a&gt;. Again, be sure to copy from the region that says &amp;ldquo;RAW paste data&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;The default template creates a page for each of the seven Leitner boxes. It also puts the default schedule on the page, and gives you a place to keep track of what session number you&amp;rsquo;re up to. It will also add two questions to your Leitner Box 1 (one about avocados, and one about Cloze deletions), and includes some basic instructions for how to do spaced repetition in Roam.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Creating New Flashcards:&lt;/strong&gt; You can create a new card anywhere in your Roam graph simply by tagging a note with &amp;ldquo;#[[Leitner Box 1]]&amp;rdquo;. Here are two ways to create cards in Roam:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Put the question on one bullet, and put the answer in the child bullets. Then tag the bullet with the question with &amp;ldquo;#[[Leitner Box 1]]&amp;rdquo; to add it to your spaced repetition system.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can use the syntax {{=: question | answer}} in Roam to create text that remains hidden until clicked. The text &amp;ldquo;answer&amp;rdquo; wont appear until you click on the text &amp;ldquo;question.&amp;rdquo; Again, tag the line with &amp;ldquo;#[[Leitner Box 1]]&amp;rdquo; to add it to your spaced repetition system.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I recommend you 
+&lt;a href=&#34;https://andymatuschak.org/prompts/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;read Andy Matuschak&amp;rsquo;s notes on &amp;ldquo;How to write good prompts&amp;rdquo;&lt;/a&gt; for tips on how to create good flashcards. 
+&lt;a href=&#34;https://ncase.me/remember/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nicky Case&amp;rsquo;s comic: &amp;ldquo;How to Remember Anything Forever-ish&amp;rdquo;&lt;/a&gt; also has good suggestions for how to create good questions for spaced repetition.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How to do a Review Session:&lt;/strong&gt; Visit your &amp;ldquo;Spaced Repetition&amp;rdquo; page to figure out what session number to do. Increment the session number, and use the schedule to determine which Leitner boxes you&amp;rsquo;ll be looking at in this session. Remember, do the Leitner boxes in decreasing order of their number.&lt;/p&gt;
+&lt;p&gt;For each Leitner box, visit its page in Roam. All your questions will appear in the Linked References section of the page.&lt;/p&gt;
+&lt;p&gt;Go through the questions one by one. If you get the answer correct, increment the box number by 1. If you get the answer incorrect or struggle with it, set the tag back to &amp;ldquo;#[[Leitner Box 1]]&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Don&amp;rsquo;t worry about sending things back to box 1; you&amp;rsquo;ll see those questions very often and soon they&amp;rsquo;ll be back in the higher numbered boxes again!&lt;/p&gt;
+&lt;h2 id=&#34;enhancements-beyond-the-default-system&#34;&gt;Enhancements Beyond the Default System&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ve made several changes to the default Leitner Box system to improve it to my taste. You&amp;rsquo;re welcome to use them!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Leitner Boxes 0 and $\infty$:&lt;/strong&gt; I use an extra box, &amp;ldquo;Leitner Box 0&amp;rdquo; for flashcards that I&amp;rsquo;m not ready to put into my rotation yet. I try to only add at most 10 cards a day to keep the total review workload low. If I have more cards than this, I keep them in Box 0 until I&amp;rsquo;m ready to start studying them, at which point I move them to Box 1.&lt;/p&gt;
+&lt;p&gt;Leitner Box $\infty$ is for cards that have graduated from Box 7. In theory, I will remember these cards for the rest of my life.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Extra box 5s, 6s, and 7s:&lt;/strong&gt; I have decided to create two Box 5s (named 5A and 5B), four Box 6s (6A, 6B, 6C, and 6D), and eight Box 7s (7A through 7H). This prevents any individual review session from accumulating too many cards.&lt;/p&gt;
+&lt;p&gt;I ran a simulation and under the default system, adding 10 new cards a day and getting 95% of cards correct, some review sessions will require reviewing over 700 cards! Under the enhanced system, the longest review session will only ever be 140 cards (and most review sessions are much shorter than that).&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the modified schedule that allows me to use these extra boxes:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2F_dSM-MMp85.png?alt=media&amp;amp;token=b3682748-8ea4-4444-97df-0c4592beb1ff&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FhFRPfzGpwy.png?alt=media&amp;amp;token=20b7f689-4117-4901-a806-846b0d099d7d&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To use this enhanced schedule, first use the review session number to figure out which column of colored circles to look at. As before, a red circle indicates Leitner Box 1, a yellow circle indicates Leitner Box 2, etc. If the circle has a letter inside it, that means to review that particular variant of the box. E.g. a blue circle with a &amp;ldquo;B&amp;rdquo; inside means to review Leitner box 5B. The arrow to the right of a box indicates which box you should move the card to if you get it correct. E.g. in review session &amp;ldquo;51&amp;rdquo; you should review box 5B and move correct cards to box 6D; you should then review boxes 2 and 1 as usual.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Embed the box list:&lt;/strong&gt; I use Roam Research&amp;rsquo;s &amp;ldquo;embed block&amp;rdquo; feature to embed a list of all Leitner Boxes onto all my Leitner Box pages. This makes it easy to quickly navigate from any box to any other box. I couldn&amp;rsquo;t think of a good way to include this in the template, so you&amp;rsquo;ll have to add this yourself if you want to include it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Enhanced Template&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You can 
+&lt;a href=&#34;https://pastebin.com/zvjFKZAb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;access the enhanced version of the template here&lt;/a&gt;. It includes more Leitner boxes and the more complicated schedule. To use it, simply paste it into a new page in Roam Research, e.g. &amp;ldquo;Spaced Repetition&amp;rdquo;.&lt;/p&gt;
+&lt;h2 id=&#34;spaced-repetition-alternatives&#34;&gt;Spaced Repetition Alternatives&lt;/h2&gt;
+&lt;p&gt;There are multiple ways of doing spaced repetition in Roam, of which this is just one. Note that most spaced repetition systems in Roam Research use the &amp;ldquo;delta&amp;rdquo; feature. However, we are not using this feature. CortexFutura provides 
+&lt;a href=&#34;https://www.cortexfutura.com/preliminary-spaced-repetition-roam/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a way of using the delta feature for spaced repetition here&lt;/a&gt;. Roam Toolkit provides another system for doing spaced repetition in Roam, which you can 
+&lt;a href=&#34;https://www.youtube.com/watch?v=08o8q_bOedw&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;view on YouTube here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;One of the most popular spaced repetition systems is called 
+&lt;a href=&#34;https://apps.ankiweb.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anki&lt;/a&gt;. It&amp;rsquo;s great for language learning. I&amp;rsquo;d be remiss not to mention it. The reason I prefer doing spaced repetition directly in Roam is that the friction to creating cards is much lower in Roam for me, since I&amp;rsquo;m taking notes and writing my ideas in there already.&lt;/p&gt;
+&lt;p&gt;Additionally RemNote, a competitor note-taking tool to Roam, also offers a highly configurable spaced repetition system out-of-the-box.&lt;/p&gt;
+&lt;p&gt;For more, consider joining the conversation in the 
+&lt;a href=&#34;https://roamresearch.slack.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research Slack&lt;/a&gt; &amp;ldquo;spaced-repetition&amp;rdquo; channel.&lt;/p&gt;
+&lt;h2 id=&#34;two-advantages-of-this-system-over-traditional-spaced-repetition-systems&#34;&gt;Two advantages of this system over traditional spaced repetition systems&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Lower friction:&lt;/strong&gt; Creating cards directly in your note-taking app is substantially easier than needing to task switch to create cards. This lower mental overhead makes it easier to keep using spaced repetition for an extended period of time. I started using it two months ago myself, so finger&amp;rsquo;s crossed it indeed is something I keep up for much longer! 🤞&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Robustness to vacations:&lt;/strong&gt; In traditional spaced repetition systems, taking a break for a day, week, or month, can be ruinous to your spaced repetition rhythm. After coming back from the break, you find you have too many cards to review all at once, which can be a real motivation drain. Instead of organizing cards by &lt;strong&gt;date&lt;/strong&gt;, my system organizes them by &lt;strong&gt;review session number.&lt;/strong&gt; This means that if you skip a day or a week, your reviews simply get pushed back. The review session number won&amp;rsquo;t go up while you&amp;rsquo;re away. You can even split a review session over multiple days if you like. No trouble! You&amp;rsquo;ll never be left with a review session that&amp;rsquo;s too big to handle.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;additional-resources&#34;&gt;Additional Resources&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://ncase.me/remember/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nicky Case&amp;rsquo;s comic: &amp;ldquo;How to Remember Anything Forever-ish&amp;rdquo;&lt;/a&gt; is what inspired me to start using spaced repetition in my life.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://withorbit.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Andy Matuschak&amp;rsquo;s &amp;ldquo;Orbit&amp;rdquo; system&lt;/a&gt; enables writers to incorporate spaced repetition directly into their writing, to help their readers remember what they learned forever. You can read 
+&lt;a href=&#34;https://quantum.country/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Quantum Country&lt;/a&gt; to learn quantum computing and give it a try. You could also 
+&lt;a href=&#34;https://andymatuschak.org/prompts/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;read his tips for &amp;ldquo;How to write good prompts&amp;rdquo;&lt;/a&gt;, which is also written with Orbit.&lt;/p&gt;
+&lt;p&gt;You can 
+&lt;a href=&#34;https://apps.ankiweb.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get Anki here&lt;/a&gt; or 
+&lt;a href=&#34;https://www.remnote.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;try RemNote here&lt;/a&gt;. I also have a dozen+ other 
+&lt;a href=&#34;https://davidbieber.com/snippets/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;snippets about Roam here&lt;/a&gt; (
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-25-introducing-snippets/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;what&amp;rsquo;s a “snippet”?&lt;/a&gt;).&lt;/p&gt;
+&lt;h2 id=&#34;get-in-touch&#34;&gt;Get in touch&lt;/h2&gt;
+&lt;p&gt;I love a good discussion about spaced repetition. You can email me at 
+&lt;a href=&#34;mailto:david810&amp;#43;spaced-repetition@gmail.com&#34;&gt;david810+spaced-repetition@gmail.com&lt;/a&gt;, find me on Twitter (
+&lt;a href=&#34;https://twitter.com/@Bieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Bieber&lt;/a&gt;), or join the 
+&lt;a href=&#34;https://roamresearch.slack.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam slack&lt;/a&gt; to keep the conversation going.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Publishing Blog Posts from Roam Research Quickly and Automatically</title>
+      <link>https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/</link>
+      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/</guid>
+      <description>&lt;p&gt;I thought today I would attempt a proper treatment of my latest automatic &amp;ldquo;
+&lt;a href=&#34;https://davidbieber.com/snippets/&#34;&gt;snippet&lt;/a&gt;&amp;rdquo; publishing system. It uses JavaScript embedded directly in Roam Research to publish snippets to my website with low latency as I write them.&lt;/p&gt;
+&lt;h2 id=&#34;prior-methods&#34;&gt;Prior methods&lt;/h2&gt;
+&lt;p&gt;Previously I&amp;rsquo;ve written a system to allow 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-09-27-posting-snippets-from-my-phone/&#34;&gt;Bieber Bot to publish snippets that I send him&lt;/a&gt;, and followed that up with a 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-10-06-introducing-the-snippet-queue/&#34;&gt;snippet queue&lt;/a&gt; to allow me to schedule the publication of my snippets.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve then also implemented two previous automatic snippet publishers from Roam. The first used my roam-to-git backup to detect new or updated snippets. The second used a puppeteer instance to occasionally check Roam for new or updated snippets.&lt;/p&gt;
+&lt;p&gt;That makes this my third implementation of automatic snippet publishing from Roam, and my fifth automatic snippet publishing project to date. It&amp;rsquo;s the fastest yet, going from Roam to live on the website in just 90 seconds.&lt;/p&gt;
+&lt;h2 id=&#34;room-for-improvement&#34;&gt;Room for improvement&lt;/h2&gt;
+&lt;p&gt;Why was publishing through Bieber Bot not enough? Roam is a natural place to write, and I find I write quite a bit more here than I do elsewhere. Since snippets are 
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34;&gt;all about lowering the barrier of entry to writing&lt;/a&gt;, supporting writing snippets in Roam seems natural.&lt;/p&gt;
+&lt;p&gt;Why was the roam-to-git backup based automatic publication system insufficient? While, adequate, the latency between writing a snippet and having it show up on my website was multiple hours. The roam-to-git backups only trigger every hour, and fail about 30% of the time. The script to use those backups to publish to my website would also only run every hour. Their combined schedules meant it could be 2-3 or more hours between writing a snippet and being able to share the link to it. Lowering this latency would give me more freedom to quickly write and share snippets, and also to iterate on a published snippet. Fast iteration is powerful.&lt;/p&gt;
+&lt;p&gt;Finally, why was the puppeteer-based approach insufficient. While this approach had the potential to bring the publication latency down considerably, in practice I scheduled in to run about hourly, since a headless browser is a computationally heavy piece of software.&lt;/p&gt;
+&lt;h2 id=&#34;the-new-approach-roamjs&#34;&gt;The new approach: &amp;ldquo;roam/js&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;Roam Research allows you to write JavaScript to run directly in Roam. My new approach is to run JavaScript in Roam to detect when a new snippet is written or when an existing snippet gets updated. When this occurs, the script will trigger a GitHub Action, using the snippet content and metadata as input. The GitHub Action will commit the snippet to my website&amp;rsquo;s git repo, and trigger a rebuilding of my website. It does everything except the final deploy to the webserver automatically; that final step waits for me to send a message &amp;ldquo;Deploy snippets!&amp;rdquo; to Bieber Bot, upon receipt of which the final deploy step is performed and the website is updated.&lt;/p&gt;
+&lt;p&gt;Using this approach it takes only 90 seconds between writing or editing a snippet and having it live on my website.&lt;/p&gt;
+&lt;h2 id=&#34;detecting-new-snippets-and-snippet-updates&#34;&gt;Detecting new snippets and snippet updates&lt;/h2&gt;
+&lt;p&gt;There are two key pieces to how I detect new and updated snippets. The first is a &amp;ldquo;mutation observer&amp;rdquo;. A mutation observer is an object in JavaScript that allows you to schedule events to occur when DOM changes are made to a website. In Roam, the DOM is modified when the user makes edits, and so DOM changes can indicate that the user has made a change to their notes.&lt;/p&gt;
+&lt;p&gt;We would like to detect when a snippet is created or edited. So, we write a function that detects if a snippet has been created or edited since the last time it was called, and we use a mutation observer to call this function when the DOM changes.&lt;/p&gt;
+&lt;p&gt;Since DOM changes can occur very frequently in Roam, we use a technique called 
+&lt;a href=&#34;https://davidwalsh.name/javascript-debounce-function&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;debouncing&lt;/a&gt; to limit the number of calls to this detection function during periods of many consecutive DOM changes.&lt;/p&gt;
+&lt;p&gt;How do we detect if a snippet has been created or edited? Roam Research provides a datalog API that allows us to query our entire Roam graph using a logic programming language. You can 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/&#34;&gt;learn more about how this works here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I mark a snippet for publication by tagging it with both the &amp;ldquo;Snippets&amp;rdquo; tag, and the &amp;ldquo;ok-to-publish&amp;rdquo; tag. This query detects those blocks that are part of a publishable snippet.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;ancestor = `[ 
+ [(ancestor ?child ?parent) 
+  [?parent :block/children ?child]] 
+ [(ancestor ?child ?ancestor) 
+  [?parent :block/children ?child] 
+  (ancestor ?parent ?ancestor)]]
+]`;
+
+block_info = window.roamAlphaAPI.q(`[
+  :find ?uid ?child_text ?child_uid ?parent_uid ?order
+  :in $ %
+  :where
+  [?block :block/uid ?uid]
+  [?block :block/string ?string]
+  [?block :block/refs ?snippets]
+  [?block :block/refs ?publish]
+  [?snippets :node/title &amp;quot;Snippets&amp;quot;]
+  [?publish :node/title &amp;quot;ok-to-publish&amp;quot;]
+  (ancestor ?child ?block)
+  [?parent :block/children ?child]
+  [?parent :block/uid ?parent_uid]
+  [?child :block/uid ?child_uid]
+  [?child :block/order ?order]
+  [?child :block/string ?child_text]
+]`, ancestor);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let&amp;rsquo;s break down what&amp;rsquo;s happening in this query. First, there&amp;rsquo;s the &lt;code&gt;ancestor&lt;/code&gt; rule. The Roam datalog schema only includes a blocks immediate children; the &lt;code&gt;ancestor&lt;/code&gt; rule allows us to query for all a block&amp;rsquo;s descendants or ancestors, not just the immediate ones. It does this through the recursive definition of &amp;ldquo;ancestor&amp;rdquo; shown, which you can read as &amp;ldquo;An ancestor of ?child is ?parent if ?parent has a child ?child, AND ALSO an ancestor of ?child is ?ancestor if there exists some ?parent satisfying both ?parent has a child ?child, and ?parent has ?ancestor as an ancestor.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;The rest of the query (lines 10-24) finds blocks that are the descendants of a block ?block that&amp;rsquo;s tagged with both &amp;ldquo;Snippets&amp;rdquo; and &amp;ldquo;ok-to-publish.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Since Datalog returns the results in an arbitrary order, we need to use the :block/order attribute to reconstruct the proper order of the blocks that comprise the snippet. The logic for this isn&amp;rsquo;t shown, but don&amp;rsquo;t hesitate to reach out if this interests you!&lt;/p&gt;
+&lt;p&gt;Finally, our mutation observer keeps track of the text of each of the snippets, and if any of them change or if a new snippet is introduced, it triggers a GitHub Action to deploy the snippet to my website.&lt;/p&gt;
+&lt;h2 id=&#34;writing-a-github-action-to-update-my-website&#34;&gt;Writing a GitHub Action to update my website&lt;/h2&gt;
+&lt;p&gt;My website uses a static site generator, Hugo. So, updating my website consists of adding a markdown file to 
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;its GitHub repo&lt;/a&gt;, rebuilding the site by running Hugo, and then pushing the generated static files up to my server. All of these steps can be automated in a GitHub action.&lt;/p&gt;
+&lt;h3 id=&#34;triggering-a-github-action-from-roam-research&#34;&gt;Triggering a GitHub Action from Roam Research&lt;/h3&gt;
+&lt;p&gt;To trigger a GitHub Action from Roam Research, I set up the action to trigger on &amp;ldquo;repository_dispatch&amp;rdquo; events. I created a personal authentication token, and then use the following JavaScript to trigger the GitHub Action:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function publishSnippetRaw(uid, title, date, content) {
+  const data = {
+    &amp;quot;event_type&amp;quot;: &amp;quot;snippet-update&amp;quot;,
+    &amp;quot;client_payload&amp;quot;: {
+      &amp;quot;uid&amp;quot;: uid,
+      &amp;quot;title&amp;quot;: title,
+      &amp;quot;date&amp;quot;: date,
+      &amp;quot;content&amp;quot;: content,
+    }
+  };
+  fetch(
+    &amp;quot;https://api.github.com/repos/dbieber/davidbieber.com/dispatches&amp;quot;,
+    {
+      headers: {
+        Accept: &amp;quot;application/vnd.github.everest-preview+json&amp;quot;,
+        Authorization: &amp;quot;token PERSONAL_AUTHENTICATION_TOKEN&amp;quot;,
+      },
+      method: &#39;POST&#39;,
+      body: JSON.stringify(data),
+    }
+  );
+}
+const publishSnippet = debounce(publishSnippetRaw, 15000, true);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This call to &lt;code&gt;fetch&lt;/code&gt; starts the GitHub Action running on a GitHub server within seconds.&lt;/p&gt;
+&lt;h3 id=&#34;accepting-inputs-in-a-github-action&#34;&gt;Accepting inputs in a GitHub Action&lt;/h3&gt;
+&lt;p&gt;You will notice that &lt;code&gt;data&lt;/code&gt; contains a &amp;ldquo;client_payload&amp;rdquo; in the above JavaScript. To accept inputs in the GitHub Action, I access the data from the client_payload and set it to an environment variable in the Action YAML like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;env:
+  SNIPPET_UID: ${{ github.event.client_payload.uid }}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Environment variables like this can then be used by the steps in the action. This allows me to pass the contents of the new/modified snippet to the GitHub Action, which is everything needed for automating its publication.&lt;/p&gt;
+&lt;p&gt;The GitHub Action writes the markdown file, commits it to the repository, runs hugo to regenerate the static files for the website, and commits those to the appropriate part of the repo as well. The only step remaining at this point is pushing the new files up to my server to serve.&lt;/p&gt;
+&lt;h2 id=&#34;deploying-with-ansible&#34;&gt;Deploying with Ansible&lt;/h2&gt;
+&lt;p&gt;I use 
+&lt;a href=&#34;https://www.ansible.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ansible&lt;/a&gt; to deploy my website to its lone server. 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bieber Bot&lt;/a&gt; is also quite capable of using Ansible. So, we have an arrangement where I tell Bieber Bot when to redeploy my website, and he does so for me. This way I can deploy my website even when I&amp;rsquo;m on the go and not at a computer; I just message him using my phone.&lt;/p&gt;
+&lt;p&gt;All steps, from the last keystroke of writing a snippet to having it show up live on my website, together take about 90 seconds. This is a significant quality-of-life improvement over the multi-hour latency of just a few days ago. I&amp;rsquo;m hopeful that the result is I&amp;rsquo;ll write even more.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Even Faster Snippet Publishing from Roam</title>
+      <link>https://davidbieber.com/snippets/2020-12-27-even-faster-snippet-publishing-from-roam/</link>
+      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-27-even-faster-snippet-publishing-from-roam/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve set up a GitHub action to enable even faster automatic publishing of snippets from Roam. This is a test-snippet I&amp;rsquo;m using while writing the auto-publisher.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s see how it behaves if I&amp;rsquo;m editing an existing snippet routinely for a while.&lt;/p&gt;
+&lt;p&gt;If it works as intended, the snippet will update itself on GitHub after I stop typing for several seconds. I&amp;rsquo;ve now stopped typing, we&amp;rsquo;ll see what happens.&lt;/p&gt;
+&lt;p&gt;It worked! 
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/commit/1f1ad4680e1d538f699cf2cd420f0c04a4bf528a&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Here&amp;rsquo;s the commit&lt;/a&gt; that was made automatically after I finished the previous sentence.&lt;/p&gt;
+&lt;p&gt;This will make publishing snippets &lt;strong&gt;even easier&lt;/strong&gt; going forward. It also means I don&amp;rsquo;t need to keep a puppeteer instance constantly live with Roam open like I&amp;rsquo;d originally planned for.&lt;/p&gt;
+&lt;p&gt;The total latency from writing to publication is now just 90 seconds. So you could be reading this mere minutes after I write it!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Improving Roam Snippet Publishing Speeds</title>
+      <link>https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/</guid>
+      <description>&lt;p&gt;Hey folks, I have a 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;workflow&lt;/a&gt; for automatically publishing &amp;ldquo;
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;snippets&lt;/a&gt;&amp;rdquo; to my website from Roam. Currently there&amp;rsquo;s a multi-hour latency between writing a snippet and when it appears on my website. In this snippet I&amp;rsquo;m going to muse about / ask questions about how to use &lt;strong&gt;puppeteer&lt;/strong&gt; to bring this latency down considerably. This&amp;rsquo;ll be my first time using puppeteer, so help appreciated. Read on!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-small/1f62e@2x.png&#34; alt=&#34;😮&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The current system relies on my git-to-roam backup, which runs every hour and fails some fraction of the time.&lt;/p&gt;
+&lt;p&gt;So, to bring the latency down, the idea is to use pyppeteer (the python puppeteer bindings) to log into Roam in a headless browser.&lt;/p&gt;
+&lt;p&gt;This will monitor Roam for new (or modified) snippets, and will publish them to my website.&lt;/p&gt;
+&lt;p&gt;A snippet is OK to publish if its tagged with both &amp;ldquo;Snippets&amp;rdquo; and &amp;ldquo;ok-to-publish&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;So, first question: has anyone done this before? B/c if someone&amp;rsquo;s already gotten all the CSS/XPATH selectors for logging in, navigating, etc, that could save me some time&lt;/p&gt;
+&lt;p&gt;Another important thing I&amp;rsquo;m thinking about: are there problems keeping an instance of Roam open in a headless browser could cause?&lt;/p&gt;
+&lt;p&gt;E.g. I hear about occasional data loss which seems related to having out-of-date instances of Roam open on other machines &amp;ndash; e.g. maybe the out of date Roam comes back online and overwrites new content with older blank content?&lt;/p&gt;
+&lt;p&gt;I think I&amp;rsquo;ll make my headless Roam instances relatively-short lived (&amp;lt;10 minutes) just in case.&lt;/p&gt;
+&lt;p&gt;I think the strategy I&amp;rsquo;ll take will be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Log in to Roam in headless browser&lt;/li&gt;
+&lt;li&gt;Run datalog query in javascript to check for new/updated snippets.&lt;/li&gt;
+&lt;li&gt;Run that query fairly frequently (e.g. every few seconds) in order to detect snippets as soon as they&amp;rsquo;re available&lt;/li&gt;
+&lt;li&gt;Debounce, so that if a snippet is actively changing its only deployed ~twice, not 100 times&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And then every 10 minutes or so I&amp;rsquo;ll have it take a short breather and refresh&lt;/p&gt;
+&lt;p&gt;Abhay suggested using the alpha API for this rather than puppeteering. &lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f64f@2x.png&#34; alt=&#34;🙏&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I think I&amp;rsquo;ll get started on the puppeteer implementation now though anyway, even if the API ends up being a better way of doing this in the near future.&lt;/p&gt;
+&lt;p&gt;Update:&lt;/p&gt;
+&lt;p&gt;I have a first draft that handles log in and running the query to detect publishable material (blocks with the appropriate two tags).&lt;/p&gt;
+&lt;p&gt;Not sure how reliable login is as I had some hiccups getting it working.&lt;/p&gt;
+&lt;p&gt;And the headless browser seems very slow to notice changes to the Roam graph compared to what I&amp;rsquo;m used to.&lt;/p&gt;
+&lt;p&gt;So instead of checking every few seconds, I think I&amp;rsquo;ll just check once a minute or so, refreshing either every time or every few times.&lt;/p&gt;
+&lt;p&gt;Unexpected snag: I get the children of a block but I don&amp;rsquo;t know how to put them in the proper order!&lt;/p&gt;
+&lt;p&gt;(with datalog)&lt;/p&gt;
+&lt;p&gt;I could navigate to the block and look at the dom&amp;hellip; but hopefully I don&amp;rsquo;t need to do that.&lt;/p&gt;
+&lt;p&gt;Looks like there is an &amp;ldquo;order&amp;rdquo; attribute, so this will be doable. Might be messy though.&lt;/p&gt;
+&lt;p&gt;If I&amp;rsquo;m understanding right, :block/order gives the index of a block into its parents children.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re good! &lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f44d@2x.png&#34; alt=&#34;👍&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re reading this on my website, it worked!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Datalog Queries for Roam Research</title>
+      <link>https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/</link>
+      <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://roamresearch.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research&lt;/a&gt; is an excellent note taking tool. One of its core features is &amp;ldquo;back links&amp;rdquo; &amp;ndash; any of your notes can easily references any of your other notes, and so all your notes end up linked together in an intricate graph structure. You can quickly see all the references to a note, hence the term &amp;ldquo;back link&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Roam exposes all of the information in your graph through a &lt;strong&gt;datalog API&lt;/strong&gt;. Datalog is a declarative programming language that lets you make queries about your graph.&lt;/p&gt;
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;p&gt;If you want to learn datalog, I recommend &lt;a href=&#34;http://www.learndatalogtoday.org/&#34;&gt;http://www.learndatalogtoday.org/&lt;/a&gt;. It teaches how to write datalog queries in 8 relatively short chapters chock full of examples.&lt;/p&gt;
+&lt;p&gt;If you want to see how to use datalog specifically for Roam, you can head over to &lt;a href=&#34;https://www.putyourleftfoot.in/introduction-to-the-roam-alpha-api&#34;&gt;https://www.putyourleftfoot.in/introduction-to-the-roam-alpha-api&lt;/a&gt;. Or keep reading!&lt;/p&gt;
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;p&gt;In this snippet I include a number of examples of useful datalog queries for Roam Research.&lt;/p&gt;
+&lt;h3 id=&#34;how-to-run-a-query&#34;&gt;How to Run a Query&lt;/h3&gt;
+&lt;p&gt;Open the JavaScript console. Paste the query. Hit enter.&lt;/p&gt;
+&lt;p&gt;To open the JavaScript console in Chrome, hit cmd-option-J on Mac or Ctrl-shift-J on Windows. For other systems, 
+&lt;a href=&#34;https://www.google.com/search?q=how%20to%20open%20the%20javascript%20console&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;you can look up how to open it&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;pages-modified-today&#34;&gt;Pages modified today&lt;/h3&gt;
+&lt;p&gt;This query returns a list of pages that have been modified today.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let ancestorrule=`[ 
+   [ (ancestor ?b ?a) 
+        [?a :block/children ?b] ] 
+   [ (ancestor ?b ?a) 
+        [?parent :block/children ?b ] 
+        (ancestor ?parent ?a) ] ] ]`;
+
+let references = window.roamAlphaAPI.q(`[
+  :find ?title
+  :in $ ?start_of_day %
+  :where
+  [?page :node/title ?title]
+  (ancestor ?block ?page)
+  [?block :edit/time ?time]
+  [(&amp;gt; ?time ?start_of_day)]
+]`, new Date().setHours(0, 0, 0, 0), ancestorrule);
+
+references.map(
+  (data, index) =&amp;gt; {return `${data[0]}`;})
+.join(&#39;\n&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you run it in the javascript console, it should print out a list of pages that have been modified today.&lt;/p&gt;
+&lt;h3 id=&#34;references-to-a-specific-page&#34;&gt;References to a specific page&lt;/h3&gt;
+&lt;p&gt;This query finds all blocks referencing a specific page. Replace &amp;ldquo;Roam Research&amp;rdquo; in the query with the name of the page that you want to find the references of.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let references = window.roamAlphaAPI.q(`[
+  :find ?text
+  :in $ ?title
+  :where
+  [?page :node/title ?title]
+  [?e :block/refs ?page]
+  [?e :block/string ?text]
+]`, &#39;Roam Research&#39;);
+
+references.map((data, index) =&amp;gt; {return data[0];}).join(&#39;\n&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;all-blocks-on-a-specific-page&#34;&gt;All blocks on a specific page&lt;/h3&gt;
+&lt;p&gt;This query finds all blocks on a specific page. Again replace &amp;ldquo;Roam Research&amp;rdquo; with the name of the page you&amp;rsquo;re interested in.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let ancestorrule=`[ 
+   [ (ancestor ?b ?a) 
+        [?a :block/children ?b] ] 
+   [ (ancestor ?b ?a) 
+        [?parent :block/children ?b ] 
+        (ancestor ?parent ?a) ] ] ]`;
+let blocks = window.roamAlphaAPI.q(`[ 
+  :find 
+      ?string
+  :in $ ?pagetitle % 
+  :where 
+      [?block :block/string ?string] 
+      [?page :node/title ?pagetitle] 
+      (ancestor ?block ?page)
+  ]`, &amp;quot;Roam Research&amp;quot;, ancestorrule);
+
+blocks.map((data, index) =&amp;gt; {return data[0];}).join(&#39;\n&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;all-blocks-with-at-least-100-descendants&#34;&gt;All blocks with at least 100 descendants&lt;/h3&gt;
+&lt;p&gt;This script finds all blocks with at least 100 descendants. The idea is that these blocks may have notes that are worth revisiting, either to summarize or reflect on. The threshold &amp;ldquo;100&amp;rdquo; is of course configurable at the top of the script.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let threshold = 100;
+let ancestorrule=`[ 
+   [ (ancestor ?child ?parent) 
+        [?parent :block/children ?child] ]
+   [ (ancestor ?child ?a) 
+        [?parent :block/children ?child ] 
+        (ancestor ?parent ?a) ] ] ]`;
+
+let large_blocks = window.roamAlphaAPI.q(`
+[:find ?ancestor (count ?block)
+  :in $ % 
+  :where 
+    [?ancestor :block/string]
+    [?block :block/string]
+    (ancestor ?block ?ancestor)]
+`, ancestorrule).filter((data, index) =&amp;gt; {return data[1] &amp;gt;= threshold});
+
+let results = window.roamAlphaAPI.q(`[
+  :find ?text ?uid ?childcount
+  :in $ ?block ?childcount
+  :where
+  [?block :block/string ?text]
+  [?block :block/uid ?uid]
+]`, large_blocks)
+  
+results.map((data, index) =&amp;gt; {return `((${data[1]})) (${data[2]})`}).join(&#39;\n&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;support-and-debugging&#34;&gt;Support and Debugging&lt;/h2&gt;
+&lt;p&gt;The &amp;ldquo;#querying&amp;rdquo; channel on the 
+&lt;a href=&#34;https://roamresearch.slack.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research Slack&lt;/a&gt; is active and the community there is quite friendly. If you&amp;rsquo;re crafting or debugging a query, that&amp;rsquo;s a great place to ask for help or share your progress.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Updating Google Slides through Roam Research</title>
+      <link>https://davidbieber.com/snippets/2020-11-30-updating-google-slides-through-roam-research/</link>
+      <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-11-30-updating-google-slides-through-roam-research/</guid>
+      <description>&lt;p&gt;Check out this &amp;ldquo;demo video&amp;rdquo; I made! It shows me making a presentation using Roam Research references. When I update the block in Roam that I&amp;rsquo;m referencing, the presentation gets updated automatically.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/YccjrI3fmhc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Editing slides and docs in this way would be so useful! Being able to focus on content in Roam, and presentation in a tool that&amp;rsquo;s built for presentation (like Docs and Slides) would be such a powerful combination.&lt;/p&gt;
+&lt;p&gt;In my experience, Roam is a powerful tool for &lt;strong&gt;thinking&lt;/strong&gt; and &lt;strong&gt;note-taking&lt;/strong&gt;, but not as useful for sharing those thoughts. When you&amp;rsquo;re sharing, you want to tell a story. You want to guide the reader through your thought process, and be in control of the narrative the whole time.&lt;/p&gt;
+&lt;p&gt;With Roam, the reader might wander off down some unexpected path you, the writer, weren&amp;rsquo;t anticipating. Once that happens, you&amp;rsquo;ve lost the reader. They&amp;rsquo;re going to find themselves in unpolished not-really-relevant material, and you&amp;rsquo;re not going to get to convey the narrative you were aiming for.&lt;/p&gt;
+&lt;p&gt;This is fine for an 
+&lt;a href=&#34;http://en.wikipedia.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;encyclopedia&lt;/a&gt;, but not so good for telling a story.&lt;/p&gt;
+&lt;p&gt;Being able to seamlessly do your thinking in Roam while also producing polished presentations (not just Slides, but anything meant for sharing, like emails, documents, images, etc) will be an absolute game changer for how we think and communicate.&lt;/p&gt;
+&lt;p&gt;This video may not be a real product, but it represents a real vision, and we have the technology to make it real. Now, let&amp;rsquo;s put in the work and bring this vision into reality.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll post more in future snippets about how I think we can build a system like this today. (And I&amp;rsquo;ll also share how I made the video, despite the product integration not having been developed yet.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Publishing Through Roam Research</title>
+      <link>https://davidbieber.com/snippets/2020-11-24-publishing-through-roam-research/</link>
+      <pubDate>Tue, 24 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-11-24-publishing-through-roam-research/</guid>
+      <description>&lt;p&gt;With this snippet I&amp;rsquo;m testing out a new snippet publishing system: publishing snippets directly from Roam Research. Using the system is simple: I simply tag any bullet with &amp;ldquo;ok-to-publish&amp;rdquo; and Bieber Bot publishes it and its children as a snippet.&lt;/p&gt;
+&lt;p&gt;Why another way of writing snippets? I&amp;rsquo;ve been writing quite a bit in Roam lately but I haven&amp;rsquo;t been publishing snippets lately. In truth, this new publishing mechanism is more a novelty than something practically useful. It would be easy enough to copy a snippet out of Roam into a text editor or to Bieber Bot in Facebook Messenger to publish it.&lt;/p&gt;
+&lt;p&gt;It certainly is appealing to be able to publish directly in Roam where I spend a lot of my time writing though. I think being able to publish directly from Roam may appeal to many other people as well.&lt;/p&gt;
+&lt;p&gt;The place where it may save time is in making changes to snippets. If I write a snippet in Roam today and publish it in the usual way, any changes I make it Roam aren’t reflected in the published version. Under this new system the copy on my website can automatically be updated to match the copy in Roam whenever I make changes there.&lt;/p&gt;
+&lt;p&gt;Anyway, I&amp;rsquo;ve marked this snippet as ok-to-publish, so once I build the system this should show up on my website. If you&amp;rsquo;re reading this there, it worked!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Letting Adriana put things in my Leitner Box</title>
+      <link>https://davidbieber.com/snippets/2020-11-07-letting-adriana-put-things-in-my-leitner-box/</link>
+      <pubDate>Sat, 07 Nov 2020 08:14:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-11-07-letting-adriana-put-things-in-my-leitner-box/</guid>
+      <description>&lt;p&gt;I’ve been using spaced repetition for 2-3 weeks now. I’m not using Anki or any of the prebuilt systems that track your queue of items for you. Instead, I’m keeping the things I want to study in Roam Research and using a make-shift system of tags and Browserflow Flows to make the spaced repetition system relatively frictionless.&lt;/p&gt;
+&lt;p&gt;I’ll save the details of the system for another snippet. Today, I just want to jot down the idea of allowing Adriana (through the use of Bieber Bot) to add items to my spaced repetition system.&lt;/p&gt;
+&lt;p&gt;The idea is relatively simple, but it does involve one new component that may be tricky to implement robustly. Under this idea, Adriana would be able to send Bieber Bot a message saying e.g. “help David to learn the names of the planets” and a card would be added to my spaced repetition system saying “learn the names of the planets. -Adriana”. I could then split this card into multiple cards as I usually do when I encounter a card with too much content simultaneously, or Adriana could have Bieber Bot add smaller cards one at a time.&lt;/p&gt;
+&lt;p&gt;The new component that would be necessary is giving Bieber Bot edit access to my Roam Research database. Currently he has delayed read access through Roam-to-Git, but giving him write access might mean teaching him how to use Roam in a (headless, most likely) browser. Nothing he can’t handle, but it would increase the amount of time needed to get this system up and running.&lt;/p&gt;
+&lt;p&gt;Once Adriana (or any of Bieber Bot’s friends) can add cards into my spaced repetition system, this can be a fun way to learn about new topics and share new ideas.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Extracting Snippets from Roam Research</title>
+      <link>https://davidbieber.com/snippets/2020-11-03-extracting-snippets-from-roam-research/</link>
+      <pubDate>Tue, 03 Nov 2020 15:22:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-11-03-extracting-snippets-from-roam-research/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been writing a lot these days inside of Roam Research. I wonder if there&amp;rsquo;s a good way to identify snippet-quality items from within my Roam database.&lt;/p&gt;
+&lt;p&gt;One option would be to pick out decent-sized sections of continuous text.
+If I&amp;rsquo;m taking notes in a bunch of different areas, that&amp;rsquo;s probably not well suited for publishing as a snippet unless I were to clean it up first.
+But if I see there&amp;rsquo;s a large chunk of text that&amp;rsquo;s been added in a contiguous block, there&amp;rsquo;s a decent chance that its snippet-quality.
+&amp;ldquo;Snippet-quality&amp;rdquo; isn&amp;rsquo;t a particularly high bar. The bar is really just that we&amp;rsquo;d want text that forms a coherent thought rather than being a few lines on totally unrelated thoughts (which can also appear contiguously in Roam).&lt;/p&gt;
+&lt;p&gt;A few days ago I set up Roam-to-Git, so every hour my Roam database is backed up to a private GitHub repository. It would be easy enough to look through the git diffs to see if there&amp;rsquo;s something that fits this description.
+One possible issue with this though is that the backup script doesn&amp;rsquo;t know if I&amp;rsquo;m in the middle of writing. So it&amp;rsquo;s possible it will catch me mid-snippet.
+Perhaps if I look at the diff between head and two commits back, I can avoid missing snippets that got split over multiple commits. It&amp;rsquo;s an idea worth looking in to, though the number of false positives might be too high without a fair amount of tuning.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Taking Notes While Browsing the Web: An Idea for a Roam Research Plugin</title>
+      <link>https://davidbieber.com/snippets/2020-05-15-roaming-the-web/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-05-15-roaming-the-web/</guid>
+      <description>&lt;p&gt;As I&amp;rsquo;m browsing the web, I&amp;rsquo;d like to be able to take notes in 
+&lt;a href=&#34;https://roamresearch.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research&lt;/a&gt;. In this post, I share an idea I have for a plugin or browser extension that I think would improve the experience of taking notes in Roam while browsing the web.&lt;/p&gt;
+&lt;p&gt;The plugin would do two main things automatically:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;It would automatically insert some browsing history information into your Roam database while you browse the internet.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;As you navigate the web, it would automatically bring you to the Roam page that corresponds to the web page you&amp;rsquo;re reading.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;mind-the-details&#34;&gt;Mind the Details&lt;/h2&gt;
+&lt;p&gt;Of course, the implementation details matter! You don&amp;rsquo;t want to be whisked away from the notes you&amp;rsquo;re taking just because you&amp;rsquo;ve clicked a link in a different window.&lt;/p&gt;
+&lt;p&gt;So, here I&amp;rsquo;ll explain a few of the details I think would make this a good note taking experience.&lt;/p&gt;
+&lt;p&gt;As I&amp;rsquo;m browsing the internet, all the websites I visit will get added to a page &amp;ldquo;{Date} Browsing History&amp;rdquo;. A new Roam page will be created for each new website visited. And there will be a Roam window that always stays open to the Roam page for the current website I have open in my browser.&lt;/p&gt;
+&lt;p&gt;What qualifies as a website?&lt;/p&gt;
+&lt;p&gt;By default there would be one Roam page per &lt;em&gt;domain&lt;/em&gt; visited. However, there are several exceptions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For &lt;strong&gt;Wikipedia&lt;/strong&gt; it would be one Roam page per Wikipedia entry&lt;/li&gt;
+&lt;li&gt;For websites reached from &lt;strong&gt;HackerNews&lt;/strong&gt;, &lt;strong&gt;Twitter&lt;/strong&gt;, and &lt;strong&gt;Reddit&lt;/strong&gt;, it would be one Roam page per link followed from the aggregator (but links followed within the reached website would not count as new websites)&lt;/li&gt;
+&lt;li&gt;For &lt;strong&gt;GitHub&lt;/strong&gt; it would be one Roam page per user, organization, or repo visited&lt;/li&gt;
+&lt;li&gt;For &lt;strong&gt;Arxiv&lt;/strong&gt; it would be one Roam page per paper&lt;/li&gt;
+&lt;li&gt;For &lt;strong&gt;Roam&lt;/strong&gt; it would be one Roam page per Roam database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It will be great to have a window that always stays open to the Roam page for the current website I have open in my browser. This way if I visit a website I&amp;rsquo;ve been to before, I will see my notes from that website. And the websites I visit will be linked to the day I visit them on, and also to any other pages my notes reference.&lt;/p&gt;
+&lt;p&gt;Additionally, the tool should add a little bit of metadata to the pages it&amp;rsquo;s generating. On each of the autogenerated Roam pages, it would be great to see &lt;em&gt;when&lt;/em&gt; I visited the website, and what was the referring page. For websites visited multiple times, seeing the earliest and most recent visit times, and the number of times I visited that website would be useful too. Total time spent on the website would be a nice bonus.&lt;/p&gt;
+&lt;h2 id=&#34;making-this-a-reality&#34;&gt;Making this a Reality&lt;/h2&gt;
+&lt;p&gt;In the previous section I shared the details that I think would make this work well from a user experience perspective. How about from the technical side?&lt;/p&gt;
+&lt;p&gt;I think it would make sense to implement this as a browser extension (though a 
+&lt;a href=&#34;http://www.tampermonkey.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;user script&lt;/em&gt;&lt;/a&gt; could work too).
+
+&lt;a href=&#34;http://dkthehuman.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DK the Human&lt;/a&gt;, author of the 
+&lt;a href=&#34;https://chrome.google.com/webstore/detail/intention/dladanhaondcgpahgiflodhckhoeohoe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Intention&lt;/a&gt; browser extension
+has made his 
+&lt;a href=&#34;https://github.com/dkthehuman/extension-starter-kit&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;browser extension starter kit&lt;/a&gt; freely available.
+To notice when what web page you&amp;rsquo;re browsing and determine whether it constitutes a new page, the extension would need to request permission to view your activity on all websites.
+For making additions to a Roam database automatically, I expect the extension would have to navigate to the appropriate Roam page in the background, and would then mimic the user actions to make the desired changes.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in turning this idea into a reality or want to discuss it further, don&amp;rsquo;t hesitate to 
+&lt;a href=&#34;mailto:david810&amp;#43;blog@gmail.com&#34;&gt;reach out&lt;/a&gt;! I&amp;rsquo;d be excited to try a workflow like this, but don&amp;rsquo;t anticipate building it myself in the near future.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Roam Research&#39;s JSON Export Format</title>
+      <link>https://davidbieber.com/snippets/2020-04-25-roam-json-export/</link>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-25-roam-json-export/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://roamresearch.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research&lt;/a&gt; is a note taking tool that makes it really low-friction to take deeply interwoven notes.
+One of its core features is that you can effortlessly add links between pages in your notes, just by surrounding a name with square brackets, e.g. 
+&lt;a href=&#34;https://roamresearch.com/#/app/commons-db/page/wYVaowjId&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;[[Roam Research]]&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Roam allows its users to export their Roam database as a JSON file. In this snippet, I describe the JSON format used and some of its implications.&lt;/p&gt;
+&lt;h2 id=&#34;exporting-data-from-roam&#34;&gt;Exporting Data from Roam&lt;/h2&gt;
+&lt;p&gt;From the triple-dots menu, select Export All. Choose JSON as the export format. Then click the Export All button. Your complete Roam database will download as a JSON file.&lt;/p&gt;
+&lt;h2 id=&#34;roams-json-format&#34;&gt;Roam&amp;rsquo;s JSON Format&lt;/h2&gt;
+&lt;p&gt;We&amp;rsquo;ll refer to the Roam JSON object you just downloaded as &lt;code&gt;data&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;data&lt;/code&gt; is a list, with each entry in &lt;code&gt;data&lt;/code&gt; corresponding to a single Roam &lt;code&gt;page&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Each &lt;code&gt;page&lt;/code&gt; is an object with keys: &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;children&lt;/code&gt;, &lt;code&gt;create-time&lt;/code&gt;, &lt;code&gt;create-email&lt;/code&gt;, &lt;code&gt;edit-time&lt;/code&gt;, &lt;code&gt;edit-email&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;page-schema&#34;&gt;Page Schema&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;title&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The page title.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;children&lt;/td&gt;
+&lt;td&gt;List[Child]&lt;/td&gt;
+&lt;td&gt;The list of children of the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;create-time&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The time (ms since epoch) when the page was created.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;create-email&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The email of the person to create the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;edit-time&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The time (ms since epoch) of the last edit to the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;edit-email&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The email of the last person to edit the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Note that only &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;edit-time&lt;/code&gt;, and &lt;code&gt;edit-email&lt;/code&gt; appear to be required fields.
+&lt;code&gt;children&lt;/code&gt;, &lt;code&gt;create-time&lt;/code&gt;, and &lt;code&gt;create-email&lt;/code&gt; appear to be omitted when not available.&lt;/p&gt;
+&lt;h3 id=&#34;child-schema&#34;&gt;Child Schema&lt;/h3&gt;
+&lt;p&gt;Each of the children in a page may have the following keys. Only the &lt;code&gt;uid&lt;/code&gt;, &lt;code&gt;string&lt;/code&gt;, &lt;code&gt;edit-time&lt;/code&gt;, and &lt;code&gt;edit-email&lt;/code&gt; keys seem universal. The rest may be omitted when not available.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;uid&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;A short unique identifier for the child.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;string&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The string content of the child.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;children&lt;/td&gt;
+&lt;td&gt;List[Child]&lt;/td&gt;
+&lt;td&gt;The list of children of this child.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;create-time&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The time (ms since epoch) when the page was created.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;create-email&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The email of the person to create the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;edit-time&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The time (ms since epoch) of the last edit to the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;edit-email&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The email of the last person to edit the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Some children may additionally have the following keys.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;heading&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;1, 2, or 3; indicates the note is an h1, h2, or h3 heading.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;emojis&lt;/td&gt;
+&lt;td&gt;List[Emoji]&lt;/td&gt;
+&lt;td&gt;A list of objects indicating who added what emojis and when.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;text-align&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;One of &amp;lsquo;left&amp;rsquo;, &amp;lsquo;right&amp;rsquo;, &amp;lsquo;center&amp;rsquo;, or &amp;lsquo;justify&amp;rsquo; indicating the text alignment.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Note that in Roam, children are referred to as &amp;ldquo;blocks&amp;rdquo;, and a child&amp;rsquo;s ID is the ID used to reference a block.&lt;/p&gt;
+&lt;p&gt;Last but not least, I include the emoji reaction schema 😂.&lt;/p&gt;
+&lt;h3 id=&#34;emoji-schema&#34;&gt;Emoji Schema&lt;/h3&gt;
+&lt;p&gt;Each Emoji reaction to a child is an object conforming to the following schema.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;emoji&lt;/td&gt;
+&lt;td&gt;object&lt;/td&gt;
+&lt;td&gt;An object with a single key &lt;code&gt;native&lt;/code&gt; containing the emoji itself.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;users&lt;/td&gt;
+&lt;td&gt;List[object]&lt;/td&gt;
+&lt;td&gt;A list of objects indicating who added this emoji and when. The keys are &lt;code&gt;time&lt;/code&gt; (ms since epoch) and &lt;code&gt;email&lt;/code&gt; (the email of the user who added the reaction).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;missing-information&#34;&gt;Missing Information&lt;/h3&gt;
+&lt;p&gt;Some information appears to get lost in the export. In particular, the following information appears to be dropped.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&amp;ldquo;View as Document&amp;rdquo; / &amp;ldquo;View as Numbered List&amp;rdquo;: This formatting information doesn&amp;rsquo;t seem to get exported.&lt;/li&gt;
+&lt;li&gt;Versions. If you&amp;rsquo;re using the &amp;ldquo;versions&amp;rdquo; feature of Roam, the versions don&amp;rsquo;t seem to be exported either.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;implications-of-the-json-format&#34;&gt;Implications of the JSON Format&lt;/h2&gt;
+&lt;p&gt;Since Roam allows export of its data in such a simple format, you can easily write scripts for processing this data. For example, merging two databases is trivial. I include some simple such scripts in the following section.&lt;/p&gt;
+&lt;p&gt;The clear export also means that you will continue to be able to use your data long into the future, even if Roam shuts down or otherwise becomes unavailable to you. As long as you occasionally back up your data by exporting it, it is yours forever.&lt;/p&gt;
+&lt;h2 id=&#34;useful-python-snippets-for-processing-roam-json&#34;&gt;Useful Python Snippets for Processing Roam JSON&lt;/h2&gt;
+&lt;p&gt;Once you&amp;rsquo;ve downloaded your data as JSON from Roam, you can load and manipulate it as follows.&lt;/p&gt;
+&lt;h3 id=&#34;load-json&#34;&gt;Load JSON&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import json
+filepath = &#39;/path/to/roam-database.json&#39;
+data = json.load(open(filepath))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;collect-all-children&#34;&gt;Collect All Children&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;children = []
+blocks = data.copy()
+while blocks:
+  block = blocks.pop()
+  if &#39;children&#39; in block:
+    blocks.extend(block[&#39;children&#39;])
+    children.extend(block[&#39;children&#39;])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;find-all-notes-mentioning-roam&#34;&gt;Find All Notes Mentioning &amp;ldquo;Roam&amp;rdquo;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;for child in children:
+  if &#39;roam&#39; in child.get(&#39;string&#39;, &#39;&#39;).lower():
+    print(child[&#39;string&#39;])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;merge-two-databases&#34;&gt;Merge Two Databases&lt;/h3&gt;
+&lt;p&gt;Since databases are just lists of objects, you can trivially merge them.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;merged = db1 + db2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It&amp;rsquo;s possible this will result in multiple pages having the same name, but Roam deals with this just fine.&lt;/p&gt;
+&lt;h2 id=&#34;thank-you-roam&#34;&gt;Thank You Roam&lt;/h2&gt;
+&lt;p&gt;I want to conclude with a note of thanks to the Roam developers for allowing export in such a clear and readily understandable manner. Doing so inspires confidence that I will be able to continue using the notes I take in Roam far into the future, no matter what. This makes me so much more comfortable using Roam for my note taking. Props and thank you to the Roam developers for this feature.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

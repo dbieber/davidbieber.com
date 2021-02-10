@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>taking-silly-ideas-seriously | David Bieber</title>
+    <link>https://davidbieber.com/tags/taking-silly-ideas-seriously/</link>
+      <atom:link href="https://davidbieber.com/tags/taking-silly-ideas-seriously/index.xml" rel="self" type="application/rss+xml" />
+    <description>taking-silly-ideas-seriously</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 08 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
+      <title>taking-silly-ideas-seriously</title>
+      <link>https://davidbieber.com/tags/taking-silly-ideas-seriously/</link>
+    </image>
+    
+    <item>
+      <title>Repurposing my Twitter Feed</title>
+      <link>https://davidbieber.com/snippets/2021-02-08-repurposing-my-twitter-feed/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-02-08-repurposing-my-twitter-feed/</guid>
+      <description>&lt;p&gt;Twitter&amp;rsquo;s addicting. It&amp;rsquo;s not a good use of my time, but I scroll there anyway. If I&amp;rsquo;m going to be scrolling there anyway, might as well make it worthwhile. So, I&amp;rsquo;ve decided to repurpose my Twitter timeline and inject things I actually care about into it.&lt;/p&gt;
+&lt;p&gt;How? You might think to do this with a Chrome extension, injecting content in between the existing tweets. There&amp;rsquo;s an easier way though. I&amp;rsquo;ve made a new, private Twitter account, and I programmatically&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; tweet as that.&lt;/p&gt;
+&lt;p&gt;My personal Twitter account is @Bieber, and I use a picture of myself for the profile. The new account goes by &amp;ldquo;Private Bieber&amp;rdquo;, and uses a deep dream-ified version of my profile picture.&lt;/p&gt;
+&lt;p&gt;How does it decide what to tweet? It chooses tweets from my Roam Research database. I already frequently write down things I&amp;rsquo;d like to learn about, and ideas I&amp;rsquo;d like to try in Roam. It&amp;rsquo;s where I keep my snippet ideas, my spaced repetition system, and my &amp;ldquo;Fleeting TODOs&amp;rdquo;. Source code available in the footnotes.&lt;/p&gt;
+&lt;p&gt;Fleeting TODOs are what I call TODO items that tug at my brain in the moment, eager to take my attention away from the task at hand. Rather than do them then, I write them down. I only ever get around to doing a small fraction of my fleeting TODOs, but it&amp;rsquo;s nice to have a record of them. It makes it easier to notice if I keep coming back to the same idea, in which case maybe it&amp;rsquo;s worth actually pursuing.&lt;/p&gt;
+&lt;p&gt;So, I have a script that occasionally &amp;ndash; currently every 10 minutes &amp;ndash; picks out one of these items from my Roam Research database and tweets it in a way that&amp;rsquo;s only visible to me.&lt;/p&gt;
+&lt;p&gt;Since I have my Twitter feed configured to show me tweets chronologically, this means there&amp;rsquo;s always a tweet from Private Bieber sitting at the top, to remind me of something &lt;em&gt;I&lt;/em&gt; care about, rather than something the &lt;em&gt;Twitter algorithm&lt;/em&gt; has picked out for me to care about.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FxD83QrK9_D.png?alt=media&amp;amp;token=76f275ac-62fd-4844-829c-b44cf9cf568f&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Currently the tweet selection is random, but already in this first 20 minutes I&amp;rsquo;ve been happy with the tweets it&amp;rsquo;s been writing. Perhaps in a future iteration I&amp;rsquo;ll make some adjustments to what it tweets and when. It&amp;rsquo;s nice to have this kind of control over my attention, especially in a setting like Twitter where I&amp;rsquo;m so used to mindless scrolling.&lt;/p&gt;
+&lt;p&gt;This same technique ought to work fine for taking control of my Facebook feed too, so perhaps I&amp;rsquo;ll get Private Bieber an account there next.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://gist.github.com/dbieber/47660493954e62f4607cd8d19d54cf59&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source code is here.&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SQL for the Kangaroo Auto-responder</title>
+      <link>https://davidbieber.com/snippets/2021-01-30-sql-for-the-kangaroo-auto-responder/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-30-sql-for-the-kangaroo-auto-responder/</guid>
+      <description>&lt;p&gt;I turned on the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/&#34;&gt;Kangaroo Auto-responder&lt;/a&gt; this morning. The rules for when to send a kangaroo 🦘 are as follows:&lt;/p&gt;
+&lt;p&gt;You get a kangaroo if the &lt;strong&gt;most-recent&lt;/strong&gt; message in our chat (ignoring trivial messages from you) is &lt;strong&gt;non-trivial&lt;/strong&gt;, &lt;strong&gt;read-by-me&lt;/strong&gt;, &lt;strong&gt;written-by-you&lt;/strong&gt;, &lt;strong&gt;not a response&lt;/strong&gt;, and &lt;strong&gt;eight-hours old&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s look at each of these criteria in more detail.&lt;/p&gt;
+&lt;h2 id=&#34;most-recent-message&#34;&gt;Most-recent message&lt;/h2&gt;
+&lt;p&gt;The criteria are being applied to the most recent message in our chat ignoring trivial messages from you.&lt;/p&gt;
+&lt;p&gt;In SQL, this looks like&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select thread_id, max(timestamp) as timestamp
+from messenger
+where (author = &#39;1409114395&#39; or (author &amp;lt;&amp;gt; &#39;1409114395&#39; and LENGTH(text) &amp;gt; 15))
+group by thread_id;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;1409114395 is my Facebook ID.&lt;/p&gt;
+&lt;p&gt;This query selects the most recent timestamp from only a single message in each thread. It considers all messages from me, but only non-trivial (more than 15 characters) messages from the other participant.&lt;/p&gt;
+&lt;p&gt;The reason for this is that if I have sent the most recent message in a conversation (regardless of the length of the message), then no kangaroo is needed. If the other person has sent the most recent message, a kangaroo might be in order, but trivial messages should not trigger kangaroos. So we ignore them, and see if the most recent message is still from the other person even when ignoring their trivial messages.&lt;/p&gt;
+&lt;h2 id=&#34;non-trivial&#34;&gt;Non-trivial&lt;/h2&gt;
+&lt;p&gt;We choose 15-characters as the threshold for what makes a message trivial. The reason we ignore trivial messages is because they often don&amp;rsquo;t warrant a response. I am considering removing this constraint, as the &amp;ldquo;Not a response&amp;rdquo; constraint seems to obviate the need for it.&lt;/p&gt;
+&lt;p&gt;This shows up as &lt;code&gt;LENGTH(text) &amp;gt; 15)&lt;/code&gt; in the query.&lt;/p&gt;
+&lt;h2 id=&#34;read-by-me&#34;&gt;Read-by-me&lt;/h2&gt;
+&lt;p&gt;Unfortunately I do not have read receipt information in my messages database, so I did not include this rule in the first version of the Kangaroo Auto-responder.&lt;/p&gt;
+&lt;h2 id=&#34;written-by-you&#34;&gt;Written-by-you&lt;/h2&gt;
+&lt;p&gt;Only if the most recent message is from you is a kangaroo necessary. If its from me, I&amp;rsquo;ve already responded!&lt;/p&gt;
+&lt;p&gt;In this query, this is a simple check:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;WHERE messenger.author &amp;lt;&amp;gt; &#39;1409114395&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;not-a-response&#34;&gt;Not-a-response&lt;/h2&gt;
+&lt;p&gt;This is an interesting piece. When I wrote out the rules for the auto-responder yesterday, I was thinking I&amp;rsquo;d ignore messages sent within 5 minutes of a message I sent. My thinking was that this small filter would prevent me from needing to get the last word in every conversation to avoid oversending of kangaroos.&lt;/p&gt;
+&lt;p&gt;Now, I&amp;rsquo;m thinking I&amp;rsquo;ll ignore messages sent within &lt;em&gt;36 hours&lt;/em&gt; of a message I sent. This is a much tighter restriction. It means that I may miss sending some kangaroos that I ought to have sent, but it also means that if someone takes two hours to reply to me and that&amp;rsquo;s the end of the conversation, I don&amp;rsquo;t need to reply to prevent a kangaroo from going out.&lt;/p&gt;
+&lt;p&gt;It seems like striking a good balance between the non-trivial message criteria and the not-a-response criteria is key, and I may adjust these going forward.&lt;/p&gt;
+&lt;p&gt;To determine if a message is a response, I first determine the time of my own most recent message in the chat. In SQL, this is:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select thread_id, max(timestamp) as outgoing_timestamp
+from messenger
+where author = &#39;1409114395&#39; -- my FB id
+group by thread_id;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I then compare this message&amp;rsquo;s timestamp with that of the most recent message in the thread, which we selected earlier:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;(  -- The reply is at least X minutes after my latest message.
+  (latest_messages.timestamp - outgoing_timestamp)/1000 &amp;gt; 36*60*60
+  or outgoing_timestamp IS NULL
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;8-hours-old&#34;&gt;8-hours old&lt;/h2&gt;
+&lt;p&gt;The final criteria for whether to send a kangaroo is that the message must be eight hours old. Yesterday I was initially planning for 2-hours old, but I decided to give myself more time to respond manually before the kangaroo would go out. Here&amp;rsquo;s the SQL for that:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;-- Message is 8 hours old:
+AND NOW() - to_timestamp(messenger.timestamp/1000) at time zone &#39;UTC&#39; &amp;gt; INTERVAL &#39;8 HOURS&#39;
+AND NOW() - to_timestamp(messenger.timestamp/1000) at time zone &#39;UTC&#39; &amp;lt; INTERVAL &#39;8.25 HOURS&#39;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;putting-it-all-together&#34;&gt;Putting it all together&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s the complete SQL query that finds messages which warrant an automated kangaroo response.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;-- Select the most recent message per thread
+-- (ignoring trivial messages from you),
+-- and the most recent message per thread specifically from me.
+-- If the most recent message (ignoring trivial messages from you)
+-- is non-trivial,
+-- written-by-you,
+-- not a reply to my message,
+-- and a specific age,
+-- then we&#39;ve got ourselves a Kangaroo!
+--
+-- In a future iteration we will also ensure the message has been read-by-me.
+
+SELECT * FROM
+
+-- The first sub-query:
+-- Selects the most recent message from each thread that is either:
+-- (A) from me, or (B) from you and non-trivial in length
+-- And is also less than 8 hours old.
+((select thread_id, max(timestamp) as timestamp
+ from messenger
+ where (author = &#39;1409114395&#39; or (author &amp;lt;&amp;gt; &#39;1409114395&#39; and LENGTH(text) &amp;gt; 15))
+ -- and to_timestamp(timestamp/1000) at time zone &#39;UTC&#39; &amp;gt; NOW() - INTERVAL &#39;800 HOURS&#39;
+ group by thread_id) AS latest_messages
+INNER JOIN
+  messenger
+ON
+  messenger.thread_id = latest_messages.thread_id AND
+  messenger.timestamp = latest_messages.timestamp)
+LEFT JOIN
+    -- Selects the most recent message from each thread from me:
+    (select thread_id, max(timestamp) as outgoing_timestamp
+     from messenger
+     where author = &#39;1409114395&#39;
+     -- and to_timestamp(timestamp/1000) at time zone &#39;UTC&#39; &amp;gt; NOW() - INTERVAL &#39;800 HOURS&#39;
+     group by thread_id) AS latest_outgoing_messages
+ON
+  messenger.thread_id = latest_outgoing_messages.thread_id
+WHERE messenger.author &amp;lt;&amp;gt; &#39;1409114395&#39; -- David Bieber
+AND messenger.author &amp;lt;&amp;gt; &#39;1985867351654140&#39; -- Bieber Bot
+AND (  -- The reply is at least X minutes after my latest message.
+  (latest_messages.timestamp - outgoing_timestamp)/1000 &amp;gt; 36*60*60
+  or outgoing_timestamp IS NULL
+)
+AND thread_type = &#39;USER&#39; -- Message is a 1:1 chat, not a group chat
+-- Message is 8 hours old:
+AND NOW() - to_timestamp(messenger.timestamp/1000) at time zone &#39;UTC&#39; &amp;gt; INTERVAL &#39;8 HOURS&#39;
+AND NOW() - to_timestamp(messenger.timestamp/1000) at time zone &#39;UTC&#39; &amp;lt; INTERVAL &#39;8.25 HOURS&#39;
+ORDER BY messenger.timestamp desc;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This checks all the criteria for whether a message needs a kangaroo. I&amp;rsquo;ve set up a script that runs this query every ten minutes, and sends kangaroos as necessary.&lt;/p&gt;
+&lt;p&gt;At the time of this writing, no kangaroos have been sent yet. I hope it works 🤞!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kangaroo Auto-responder</title>
+      <link>https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/</link>
+      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/</guid>
+      <description>&lt;p&gt;The purpose of the Kangaroo Auto-responder is to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Avoid people expecting a response from me when I don&amp;rsquo;t realize they&amp;rsquo;re expecting a response, e.g. because I&amp;rsquo;ve forgotten about their message&lt;/li&gt;
+&lt;li&gt;It should let me let my guard down a bit about feeling obligated to respond to people&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;What will it do?&lt;/p&gt;
+&lt;p&gt;It will automatically respond to messages that I&amp;rsquo;ve seen but haven&amp;rsquo;t responded to for 2+ hours with a kangaroo&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;The first time it sends someone a kangaroo, it will also explain:&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;[Kangaroo] Hello! This is an automated reply from the Kangaroo Auto-responder. You&amp;rsquo;re getting this message because it looks like David might forget to reply to your message. If you want a response, you should contact him again. (Just saying &amp;ldquo;ping&amp;rdquo; is often enough!)&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Text for the second time:&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;[Kangaroo] Me again. David might forget to reply to your message. In the future I&amp;rsquo;ll just send you a picture of a Kangaroo to symbolize this. 🦘  If you ever get a picture of a Kangaroo from me, it just means David may have dropped the ball on your message and you should contact him again if you&amp;rsquo;re expecting a response.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Subsequent kangaroos will be unaccompanied by explanations.&lt;/p&gt;
+&lt;p&gt;The details on exactly when to send kangaroos are still a work in progress. I don&amp;rsquo;t want to overwhelm anyone with kangaroos. I&amp;rsquo;m thinking about some rules: (1) only send kangaroos if there was a message of non-trivial length, e.g. more than 20 characters, (2) only send a kangaroo after I&amp;rsquo;ve read the message; if I genuinely haven&amp;rsquo;t seen the message yet, no need for a kangaroo, as the message will still appear as unread in my inbox, (3) if you send follow-up messages, that resets the timer on the 2 hours, (4) any messages you send within 5 minutes of me sending you a message are ineligible for triggering kangaroos (this way I don&amp;rsquo;t need to get the last word), and (5) obviously, don&amp;rsquo;t send a kangaroo for a message I&amp;rsquo;ve already responded too.&lt;/p&gt;
+&lt;p&gt;To summarize, the rules of kangaroos are: You get a kangaroo if the &lt;strong&gt;most-recent&lt;/strong&gt; message in our chat is &lt;strong&gt;non-trivial&lt;/strong&gt;, &lt;strong&gt;read-by-me&lt;/strong&gt;, &lt;strong&gt;written-by-you&lt;/strong&gt;, &lt;strong&gt;not an immediate reply&lt;/strong&gt;, and &lt;strong&gt;two-hours old&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Why kangaroos? They bounce 🤷‍♂️ ? This is kind of like a message bouncing&amp;hellip;&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;With a picture of a kangaroo, that is. Like this one: 🦘, or this: &lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FtBz98tV75N.png?alt=media&amp;amp;token=66762cac-d0b0-43ba-91a8-eaefa6ef7626&#34; alt=&#34;&#34;&gt; It will not send them an actual real-life kangaroo. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>am I available for conversation right now dot com</title>
+      <link>https://davidbieber.com/snippets/2021-01-22-am-i-available-for-conversation-right-now-dot-com/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-22-am-i-available-for-conversation-right-now-dot-com/</guid>
+      <description>&lt;p&gt;I don&amp;rsquo;t know if I like this idea, but I&amp;rsquo;m giving it a try; I&amp;rsquo;ve added a &amp;ldquo;Now&amp;rdquo; page to my website (
+&lt;a href=&#34;https://davidbieber.com/now&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;davidbieber.com/now&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;The idea for now pages is described at &lt;a href=&#34;https://nownownow.com/about&#34;&gt;https://nownownow.com/about&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Basically, a now page says what&amp;rsquo;s going on in the author&amp;rsquo;s life now. Not &lt;em&gt;right now&lt;/em&gt; &amp;ndash; that would be a &amp;ldquo;right now page&amp;rdquo; &amp;ndash; but rather, now in the broader sense of &amp;ldquo;what&amp;rsquo;s are you up to these days?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;This post isn&amp;rsquo;t about my new Now page though, which I don&amp;rsquo;t necessarily plan to keep up (if the link 404s, you know why). Rather, this post is about an idea for a kind of &amp;ldquo;right now&amp;rdquo; page that I&amp;rsquo;m toying with building.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d like to make a page that tells the reader if I&amp;rsquo;m likely available for a conversation &lt;em&gt;right now&lt;/em&gt;. I&amp;rsquo;d call it the &amp;ldquo;is David available to talk now&amp;rdquo; page, and here&amp;rsquo;s how it might work.&lt;/p&gt;
+&lt;h3 id=&#34;it-aims-only-to-give-a-best-guess-as-to-whether-i-can-talk-now&#34;&gt;It aims only to give a best guess as to whether I can talk now.&lt;/h3&gt;
+&lt;p&gt;It says No during work.&lt;br/&gt;
+It says No during sleep hours.&lt;br/&gt;
+It says No while I&amp;rsquo;m on a phone call / skype / zoom / meet etc&lt;br/&gt;
+It says No if I have recently been on a call for a long time&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;It says Yes during explicitly times (there would be a button I can press to set it to Yes for 30 minutes)&lt;/p&gt;
+&lt;p&gt;If I&amp;rsquo;m deliberately in a public space (e.g. Gather Town, Clubhouse) AND looking for conversation (aka I&amp;rsquo;ve pushed the button), then it shows where to find me.&lt;/p&gt;
+&lt;p&gt;And the rest of the time, it simply shrugs.&lt;/p&gt;
+&lt;h3 id=&#34;why-would-i-want-such-a-system&#34;&gt;Why would I want such a system?&lt;/h3&gt;
+&lt;p&gt;Well, what I really want is for &lt;em&gt;everyone&lt;/em&gt; to use such a system. I want the &amp;ldquo;open door&amp;rdquo; system that professors so often use; if my door is open, you&amp;rsquo;re welcome to come in and talk. I want to avoid people avoiding saying hi because they don&amp;rsquo;t know if I&amp;rsquo;m available. And I want to avoid the mental overhead of making plans for conversations that aren&amp;rsquo;t time sensitive. Plans are tough.&lt;/p&gt;
+&lt;p&gt;My ideal system for when I want to talk to someone isn&amp;rsquo;t &amp;ldquo;let&amp;rsquo;s pick a time to talk&amp;rdquo;, because that has scheduling overhead and will likely break up my day at an inconvenient time. Instead, I&amp;rsquo;d prefer a more flexible approach. When I&amp;rsquo;m free, I open my door (a digital, virtual, door). I send you a message that I&amp;rsquo;d like to talk; you see it when you&amp;rsquo;re free (because you have notifications disabled 👍). If I&amp;rsquo;m still free then, my door will still be open and we can talk. If I&amp;rsquo;ve moved on to another activity, my door will be closed and we&amp;rsquo;ll reconnect later.&lt;/p&gt;
+&lt;p&gt;In the absence of doors, the &amp;ldquo;is David available to talk now&amp;rdquo; page is my idea for an approximation.&lt;/p&gt;
+&lt;p&gt;But I don&amp;rsquo;t know yet how I would build it. The idea requires programmatically determining when I&amp;rsquo;ve been on the phone, in skype, in zoom, etc. I haven&amp;rsquo;t looking into how approachable these services are to work with. And I likely wont. This is the sort of idea that, while fun to entertain, will likely need to morph considerably before it turns into a real project. Such is the nature of the Snippet.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Clubhouse feature request: save last 60 seconds</title>
+      <link>https://davidbieber.com/snippets/2021-01-20-clubhouse-feature-request-save-last-60-seconds/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-20-clubhouse-feature-request-save-last-60-seconds/</guid>
+      <description>&lt;p&gt;I have a feature request for Clubhouse. Zoom, Meet, Skype, if you&amp;rsquo;re listening, this is a feature request for you all too. The request is a button to save the &lt;em&gt;previous&lt;/em&gt; 60 seconds of audio. Maybe you&amp;rsquo;re interested because people will share the clips on social media and drive more traffic back to CH 📈🤷‍♂️. I just want the feature for note-taking 📝. Details follow.&lt;/p&gt;
+&lt;h2 id=&#34;the-button&#34;&gt;The button&lt;/h2&gt;
+&lt;p&gt;A little floppy disk save icon. 💾. Non intrusive. When clicked, it triggers a save.&lt;/p&gt;
+&lt;h2 id=&#34;just-60-seconds&#34;&gt;Just 60 seconds&lt;/h2&gt;
+&lt;p&gt;The previous 60 seconds of audio are saved. This means a circular buffer of 60 seconds of audio is being stored at all times.&lt;/p&gt;
+&lt;p&gt;Don&amp;rsquo;t just blindly save everything, because that&amp;rsquo;s a lot of data to wade through (and to store). I just want to save the good parts. So when someone says something insightful, I click save. The rest is lost to history.&lt;/p&gt;
+&lt;h2 id=&#34;respecting-privacy&#34;&gt;Respecting Privacy&lt;/h2&gt;
+&lt;p&gt;If no one clicks save, the audio is gone.&lt;/p&gt;
+&lt;p&gt;If someone does click save, the speakers still can choose not to have their own audio saved. Since everyone&amp;rsquo;s on their own phone, it&amp;rsquo;s possible to save an audio clip with e.g. everyone-except-David&amp;rsquo;s audio, if David decides they don&amp;rsquo;t want their audio saved.&lt;/p&gt;
+&lt;p&gt;Maybe David never wants their audio saved except when he explicitly allows it. That&amp;rsquo;s fine. That&amp;rsquo;s a setting.&lt;/p&gt;
+&lt;h2 id=&#34;bonus-points&#34;&gt;Bonus points&lt;/h2&gt;
+&lt;p&gt;Bonus points for automatic transcription. Additional bonus points for saving the audio clip and its transcription to a Roam database. Still more bonus points for allowing sharing the clips to TikTok or Instagram or wherever, but I don&amp;rsquo;t use those, so someone else will have to provide the points.&lt;/p&gt;
+&lt;h2 id=&#34;prior-art&#34;&gt;Prior Art&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://obsproject.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OBS Studio&lt;/a&gt; has a feature for recording a circular video buffer. They call it the &amp;ldquo;replay buffer.&amp;rdquo; Streamers use it for instant replays, for example. I use it myself for screen recordings sometimes, so I can decide retroactively that something was worth saving, without having to waste gigabytes of storage recording everything.&lt;/p&gt;
+&lt;p&gt;There have been 
+&lt;a href=&#34;https://apps.apple.com/us/app/heard/id615420427&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;apps&lt;/a&gt; for a long time now offering cameras and audio recorders with this circular buffer feature to allow capturing the past. However, it&amp;rsquo;s never been integrated into a social product before, as far as I&amp;rsquo;m aware. Clubhouse, let&amp;rsquo;s change that.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python hoist: immediate locals only</title>
+      <link>https://davidbieber.com/snippets/2021-01-18-python-hoist-locals-only/</link>
+      <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-18-python-hoist-locals-only/</guid>
+      <description>&lt;p&gt;The implementation of &lt;code&gt;hoist&lt;/code&gt; in my 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-16-python-hoist/&#34;&gt;earlier snippet&lt;/a&gt; returned the values of local variables of all functions called by the hoisted function. This new version only returns the locals of the hoisted function.&lt;/p&gt;
+&lt;p&gt;As before, you can use it like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def f(x):
+  y = x + 1
+  z = y * 2
+  return z + 1
+
+f(4) == 11
+hoist(f)(4) == {&#39;x&#39;: 4, &#39;y&#39;: 5, &#39;z&#39;: 10, &#39;return&#39;: 11}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here&amp;rsquo;s another usage example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def f(x):
+  y = messy_g(x + 1)
+  return y + 1
+
+def messy_g(z):
+  q = z * 9
+  w = q / 3
+  return w + 1
+
+f(1) == 8
+hoist(f)(1) == {&#39;x&#39;: 1, &#39;y&#39;: 7, &#39;return&#39;: 8}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Notice in this example that the local variables used by &lt;code&gt;messy_g&lt;/code&gt; are not returned by &lt;code&gt;hoist(f)&lt;/code&gt;. Only &lt;code&gt;f&lt;/code&gt;&amp;rsquo;s local variables are returned.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the implementation.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import functools
+import inspect
+import sys
+
+def make_trace(results, f, original_trace_fn):
+  def trace_local(frame, event, arg):
+    # event: &#39;call&#39;, &#39;line&#39;, &#39;return&#39;, &#39;exception&#39; or &#39;opcode&#39;
+    if event == &#39;line&#39;:
+      arg_info = inspect.getargvalues(frame)
+      results.update(arg_info.locals.copy())
+    if event == &#39;return&#39;:
+      arg_info = inspect.getargvalues(frame)
+      values = arg_info.locals.copy()
+      results.update(values)
+      results[&#39;return&#39;] = arg
+    if event == &#39;call&#39;:
+      return original_trace_fn
+
+  def trace_global(frame, event, arg):
+    if event == &#39;call&#39;:
+      info = inspect.getframeinfo(frame)
+      info_parent = inspect.getframeinfo(frame.f_back)
+      if info.function == f.__name__ and info_parent.function == &#39;hoisted_f__&#39;:
+        return trace_local
+  return trace_global
+
+
+def hoist(f):
+
+  @functools.wraps(f)
+  def hoisted_f__(*args, **kwargs):
+    original_trace_fn = sys.gettrace()
+
+    results = {}
+    trace_fn = make_trace(results, f, original_trace_fn)
+
+    sys.settrace(trace_fn)
+    f(*args, **kwargs)
+    sys.settrace(original_trace_fn)
+
+    return results
+
+  return hoisted_f__
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python hoist()</title>
+      <link>https://davidbieber.com/snippets/2021-01-16-python-hoist/</link>
+      <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-16-python-hoist/</guid>
+      <description>&lt;p&gt;I wrote a little decorator function called &lt;code&gt;hoist&lt;/code&gt;. Calling &lt;code&gt;hoist(f)&lt;/code&gt; transforms &lt;code&gt;f&lt;/code&gt;, such that instead of returning the return value of &lt;code&gt;f&lt;/code&gt;, it returns the values of all local variables in addition to the return value of &lt;code&gt;f&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can use it like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def f(x):
+  y = x + 1
+  z = y * 2
+  return z + 1
+
+f(4) == 11
+hoist(f)(4) == {&#39;x&#39;: 4, &#39;y&#39;: 5, &#39;z&#39;: 10, &#39;return&#39;: 11}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Make sense? The result of &lt;code&gt;f(4)&lt;/code&gt; is just the return value, whereas &lt;code&gt;hoist(f)(4)&lt;/code&gt; gives the values of all local variables.&lt;/p&gt;
+&lt;p&gt;This can be a useful debugging tool, allowing access to the internal state of a function. It works by setting a trace function with Python&amp;rsquo;s &lt;code&gt;sys.settrace&lt;/code&gt;, as you can see in its definition.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the definition of &lt;code&gt;hoist&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import inspect
+import functools
+
+
+class Collection(object):
+  &amp;quot;&amp;quot;&amp;quot;The full set of variables over time.&amp;quot;&amp;quot;&amp;quot;
+
+  def __init__(self):
+    self.values = {}
+
+  def update(self, values):
+    self.values.update(values)
+
+  def set_return(self, arg):
+    self.values[&#39;return&#39;] = arg
+
+  def __repr__(self):
+    return repr(self.values)
+
+
+def make_trace(results, fn):
+  def trace_local(frame, event, arg):
+    # event: &#39;call&#39;, &#39;line&#39;, &#39;return&#39;, &#39;exception&#39; or &#39;opcode&#39;
+    if event == &#39;line&#39;:
+      arg_info = inspect.getargvalues(frame)
+      results.update(arg_info.locals.copy())
+    if event == &#39;return&#39;:
+      arg_info = inspect.getargvalues(frame)
+      values = arg_info.locals.copy()
+      results.update(values)
+      results.set_return(arg)
+    if event == &#39;call&#39;:
+      return fn
+
+  def trace_global(frame, event, arg):
+    if event == &#39;call&#39;:
+      return trace_local
+  return trace_global
+
+
+def hoist(f):
+
+  @functools.wraps(f)
+  def new_f(*args, **kwargs):
+    original_trace_fn = sys.gettrace()
+
+    results = Collection()
+    trace_fn = make_trace(results, original_trace_fn)
+
+    sys.settrace(trace_fn)
+    f(*args, **kwargs)
+    sys.settrace(original_trace_fn)
+
+    return results
+
+  return new_f
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Some ideas for extensions to &lt;code&gt;hoist&lt;/code&gt; follow. Feel free to go ahead and implement these.&lt;/p&gt;
+&lt;p&gt;(1) Modify &lt;code&gt;hoist&lt;/code&gt; so the outputs are accessible via dot-notation.&lt;/p&gt;
+&lt;p&gt;(2) Modify &lt;code&gt;hoist&lt;/code&gt; so it returns all values taken on by all variables during the execution of &lt;code&gt;f&lt;/code&gt;.
+Make it so that &lt;code&gt;hoist(f)(x)[&#39;value.3&#39;]&lt;/code&gt; returns the third value taken on by the variable &lt;code&gt;value&lt;/code&gt; in the call to &lt;code&gt;f(x)&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A filesystem for social media</title>
+      <link>https://davidbieber.com/snippets/2021-01-10-a-filesystem-for-social-media/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-10-a-filesystem-for-social-media/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://omar.website/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Omar Riswan&lt;/a&gt; has an excellent project called 
+&lt;a href=&#34;https://omar.website/tabfs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TabFS&lt;/a&gt; that takes your browser tabs and exposes them to you as a filesystem. When you run &lt;code&gt;ls&lt;/code&gt;, you see a list of all your open tabs. &lt;code&gt;rm&lt;/code&gt; on a tab directory closes the tab. Inspecting the tab with standard tools (&lt;code&gt;ls&lt;/code&gt;, &lt;code&gt;cat&lt;/code&gt;, &lt;code&gt;rm&lt;/code&gt;, etc) allow you to do things like reading the title or contents of the tab (yes, the whole tab&amp;rsquo;s contents!), closing the tab, or running javascript in the tab. The whole thing is quite clever.&lt;/p&gt;
+&lt;p&gt;Inspired by TabFS, I envision another non-conventional filesystem: Social Media FS.&lt;/p&gt;
+&lt;p&gt;First you mount smfs and authenticate with your social media providers. Then if you &lt;code&gt;ls&lt;/code&gt; the mounted directory, you can see each of the places you can read from and write to on social media.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s a directory full of your chat threads. The timestamps indicate when they were created and when they were most recently modified. You can read the contents of the chat, or send a new message just as easily (and via the same tools) as you would write a file to disk.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s a directory of all the Facebook posts made by all your friends and all the groups you follow. Each post has a file with its contents, and also one with all the comments and reactions to it. You can make a new post or add a new comment the same way you&amp;rsquo;d make a new file.&lt;/p&gt;
+&lt;p&gt;You can use standard tools for monitoring for new content. I like to use 
+&lt;a href=&#34;https://pythonhosted.org/watchdog/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python&amp;rsquo;s watchdog&lt;/a&gt; for this.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s a directory for ads too, which you&amp;rsquo;re welcome to peruse or delete as you see fit.&lt;/p&gt;
+&lt;p&gt;Reacting to a twitter post, sending a DM, receiving discord or slack or signal messages&amp;hellip; all of these are organized as files and folders, and actions can be performed simply through file reads and writes.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d sure love to use a filesystem like this, and 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;Bieber Bot&lt;/a&gt; would too.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mobile Distraction Detection, at last</title>
+      <link>https://davidbieber.com/snippets/2021-01-09-mobile-distraction-detection-at-last/</link>
+      <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-09-mobile-distraction-detection-at-last/</guid>
+      <description>&lt;p&gt;I have implemented a minimal working version of mobile &lt;em&gt;distraction detection&lt;/em&gt;, complete with a simple intervention for when I visit distracting websites on my phone.&lt;/p&gt;
+&lt;h2 id=&#34;what-does-distraction-detection-do&#34;&gt;What does &amp;ldquo;distraction detection&amp;rdquo; do?&lt;/h2&gt;
+&lt;p&gt;It runs on my laptop and monitors my &lt;em&gt;phone&lt;/em&gt; for when I visit distracting websites. I give it a list of distracting websites for it to keep an eye out for. My list is: twitter, facebook, hacker news, google news, reddit, and youtube.&lt;/p&gt;
+&lt;p&gt;I can set it to perform some action whenever I&amp;rsquo;m on one of these websites. For this first iteration, I&amp;rsquo;m having Bieber Bot message me whenever it notices I&amp;rsquo;m on one of these websites. Now that it&amp;rsquo;s working though, it will be easy to customize to my liking.&lt;/p&gt;
+&lt;p&gt;In future iterations, I&amp;rsquo;ll have it wait until I&amp;rsquo;ve been spending several minutes on the website before messaging me, and I&amp;rsquo;ll only have it do this during times when I mean to be focused.&lt;/p&gt;
+&lt;h2 id=&#34;why-is-this-interesting&#34;&gt;Why is this interesting?&lt;/h2&gt;
+&lt;p&gt;There are excellent browser extensions that help you take control of your browsing habits on your computer. I recommend DK&amp;rsquo;s 
+&lt;a href=&#34;https://getintention.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Intention&lt;/a&gt; for this. However, there aren&amp;rsquo;t great solutions like Intention for mobile browsing.&lt;/p&gt;
+&lt;p&gt;The challenge is that mobile browsers don&amp;rsquo;t provide good ways for developers to write extensions. I&amp;rsquo;ve built my mobile distraction detector in spite of this limitation :).&lt;/p&gt;
+&lt;h2 id=&#34;how-does-it-work&#34;&gt;How does it work?&lt;/h2&gt;
+&lt;p&gt;I use an iPhone and the Chrome browser. I&amp;rsquo;m logged into my Google Account on Chrome on both my phone and my laptop, and I have tab syncing turned on. With tab syncing, all my tab sessions from my phone are synced to my Google account, and are visible on my laptop, usually with a sub-minute latency. You can view this data in human-readable form at 
+&lt;a href=&#34;chrome://history/syncedTabs&#34;&gt;chrome://history/syncedTabs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The tab session data is stored along with the rest of my Chrome data. Since I use a Mac, the path is &lt;code&gt;~/Library/Application\ Support/Google/Chrome/Profile\ 1/Sync\ Data/LevelDB/&lt;/code&gt;. Note that &amp;ldquo;Profile 1&amp;rdquo; may be replaced with either &amp;ldquo;Default&amp;rdquo;, or the name of your Profile, depending on how many Google accounts you have connected with Chrome.&lt;/p&gt;
+&lt;p&gt;The data is stored in a LevelDB database (this is unusual for Chrome; most of the rest of your Chrome data is stored in sqlite3 databases). LevelDB is an efficient key-value store, which was written by Jeff Dean and Sanjay Ghemawat back in 2011. The keys which contain the synced tab data are those prefixed with &amp;ldquo;session-dt&amp;rdquo;. The corresponding values are &lt;code&gt;SessionSpecifics&lt;/code&gt; protocol buffers. 
+&lt;a href=&#34;https://source.chromium.org/chromium/chromium/src/&amp;#43;/master:components/sync/protocol/session_specifics.proto&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The protocol buffer definition is available here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Before parsing the sync data, I always make a copy of it first, and then I only ever open the copy. This ensures that Chrome doesn&amp;rsquo;t have a lock on the database, and isn&amp;rsquo;t editing it concurrently with my own program reading it.&lt;/p&gt;
+&lt;p&gt;I use the Python library &lt;code&gt;plyvel&lt;/code&gt; to parse the LevelDB database: &lt;code&gt;db = plyvel.DB(path_to_copy_of_leveldb_directory)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In order to use the protobuf definition, I compiled it first with protoc: &lt;code&gt;protoc -I chromium/ chromium/components/sync/protocol/*.proto --python_out=dbieber/distraction_detection/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Putting these pieces together, accessing the session data looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import plyvel
+from components.sync.protocol import session_specifics_pb2
+
+db = plyvel.DB(path)
+
+for key, value in db.iterator():
+  if b&#39;sessions-dt&#39; in key:
+	session = session_specifics_pb2.SessionSpecifics.FromString(value)
+
+db.close()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;From here, the key remaining piece to understand is how to figure out which tabs are open on which devices.&lt;/p&gt;
+&lt;p&gt;Each of the SessionSpecifics protos has an attribute: &lt;code&gt;session_tag&lt;/code&gt; which uniquely identifies a session. For each &lt;code&gt;session_tag&lt;/code&gt;, there is a single SessionSpecifics proto with a &lt;code&gt;client_name&lt;/code&gt; attribute: this indicates which device the session lives on. Each of the remaining SessionSpecifics protos with that same tag correspond to a single tab, and the currently open URL for that tab comes from &lt;code&gt;session.tab.navigation[-1].virtual_url&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;From there, it&amp;rsquo;s just a matter of matching the URLs against my list of distracting websites, and sending the data off to Bieber Bot. Distractions, detected. :D&lt;/p&gt;
+&lt;h2 id=&#34;what-next&#34;&gt;What next?&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ll tweak my own distraction detection setup to something that makes sense for me. Instead of immediate messages from Bieber Bot, I&amp;rsquo;ll have him try to keep my total senseless scrolling for a day to a moderate amount. I&amp;rsquo;ll have him be particularly vigilant about helping me keep my morning scrolling from going on too long.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll also send this snippet around to folks interested in building similar tools. While I won&amp;rsquo;t be turning this into a product for the masses, I&amp;rsquo;m hopeful that the method does get picked up by projects like Intention, ActivityWatch, and other tools that aim to help people maintain healthy browsing habits.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t think it&amp;rsquo;s common knowledge that with account syncing, rich data about your mobile browsing is available on your computer. So today, there isn&amp;rsquo;t much tooling that takes advantage of this. If you work on a product in this space, well, now you&amp;rsquo;ve had a glimpse of what data&amp;rsquo;s available and what it can do. Consider using this approach to extend the reach of your product.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>4.2e-8 of All of Human Experience</title>
+      <link>https://davidbieber.com/snippets/2020-12-03-4.2e-8-of-all-of-human-experience/</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-03-4.2e-8-of-all-of-human-experience/</guid>
+      <description>&lt;p&gt;About 107 billion people have &lt;em&gt;ever&lt;/em&gt; lived.&lt;/p&gt;
+&lt;p&gt;Across all time, the average life expectancy of a person is just under 30 years.&lt;/p&gt;
+&lt;p&gt;So, there have only been 3.21 trillion person-years experienced. Total.&lt;/p&gt;
+&lt;p&gt;7.8 billion people are alive today.&lt;/p&gt;
+&lt;p&gt;The average age globally is about 30 years.&lt;/p&gt;
+&lt;p&gt;So living people today collectively hold about 234 billion years of experience.&lt;/p&gt;
+&lt;p&gt;That means that a little &lt;strong&gt;over 7% of all human experience is held by living people&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;One day spent alone constitutes 8.5e-16 of all of human experience. A month is 2.6e-14 of all of human experience.&lt;/p&gt;
+&lt;p&gt;A year spent with a partner is 6.2e-13 of all of human experience.&lt;/p&gt;
+&lt;p&gt;Four years spent with 1500 other students is 1.9e-9 of all of human experience.&lt;/p&gt;
+&lt;p&gt;By a crude estimate, a whopping 4.2e-8 of all human experience was spent watching Game of Thrones. Humanity will never get that time back.&lt;/p&gt;
+&lt;p&gt;These are small numbers, but not &lt;strong&gt;that&lt;/strong&gt; small. Thinking that my graduating class alone (not even counting the people a year above or below me) holds nearly 2e-9 of all human experience from our four years together is kind of mind-bending.&lt;/p&gt;
+&lt;p&gt;For comparison, let&amp;rsquo;s imagine that the surface of Earth represents all of human experience. Then 4.2e-8 of human experience (the amount dedicated to watching Game of Thrones) is represented by 8.3 square miles.&lt;/p&gt;
+&lt;p&gt;The 6.2e-13 of human experience held by you and your partner quarantining for a year? That&amp;rsquo;s over 3400 square feet. And a whole lifetime (est. 80 years) covers 3.141 acres.&lt;/p&gt;
+&lt;p&gt;These are not at all negligible!&lt;/p&gt;
+&lt;p&gt;All of this is to say: let&amp;rsquo;s treasure our existence, and let&amp;rsquo;s also not discount its significance.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Updating Google Slides through Roam Research</title>
+      <link>https://davidbieber.com/snippets/2020-11-30-updating-google-slides-through-roam-research/</link>
+      <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-11-30-updating-google-slides-through-roam-research/</guid>
+      <description>&lt;p&gt;Check out this &amp;ldquo;demo video&amp;rdquo; I made! It shows me making a presentation using Roam Research references. When I update the block in Roam that I&amp;rsquo;m referencing, the presentation gets updated automatically.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/YccjrI3fmhc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Editing slides and docs in this way would be so useful! Being able to focus on content in Roam, and presentation in a tool that&amp;rsquo;s built for presentation (like Docs and Slides) would be such a powerful combination.&lt;/p&gt;
+&lt;p&gt;In my experience, Roam is a powerful tool for &lt;strong&gt;thinking&lt;/strong&gt; and &lt;strong&gt;note-taking&lt;/strong&gt;, but not as useful for sharing those thoughts. When you&amp;rsquo;re sharing, you want to tell a story. You want to guide the reader through your thought process, and be in control of the narrative the whole time.&lt;/p&gt;
+&lt;p&gt;With Roam, the reader might wander off down some unexpected path you, the writer, weren&amp;rsquo;t anticipating. Once that happens, you&amp;rsquo;ve lost the reader. They&amp;rsquo;re going to find themselves in unpolished not-really-relevant material, and you&amp;rsquo;re not going to get to convey the narrative you were aiming for.&lt;/p&gt;
+&lt;p&gt;This is fine for an 
+&lt;a href=&#34;http://en.wikipedia.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;encyclopedia&lt;/a&gt;, but not so good for telling a story.&lt;/p&gt;
+&lt;p&gt;Being able to seamlessly do your thinking in Roam while also producing polished presentations (not just Slides, but anything meant for sharing, like emails, documents, images, etc) will be an absolute game changer for how we think and communicate.&lt;/p&gt;
+&lt;p&gt;This video may not be a real product, but it represents a real vision, and we have the technology to make it real. Now, let&amp;rsquo;s put in the work and bring this vision into reality.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll post more in future snippets about how I think we can build a system like this today. (And I&amp;rsquo;ll also share how I made the video, despite the product integration not having been developed yet.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Letting Adriana put things in my Leitner Box</title>
+      <link>https://davidbieber.com/snippets/2020-11-07-letting-adriana-put-things-in-my-leitner-box/</link>
+      <pubDate>Sat, 07 Nov 2020 08:14:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-11-07-letting-adriana-put-things-in-my-leitner-box/</guid>
+      <description>&lt;p&gt;I’ve been using spaced repetition for 2-3 weeks now. I’m not using Anki or any of the prebuilt systems that track your queue of items for you. Instead, I’m keeping the things I want to study in Roam Research and using a make-shift system of tags and Browserflow Flows to make the spaced repetition system relatively frictionless.&lt;/p&gt;
+&lt;p&gt;I’ll save the details of the system for another snippet. Today, I just want to jot down the idea of allowing Adriana (through the use of Bieber Bot) to add items to my spaced repetition system.&lt;/p&gt;
+&lt;p&gt;The idea is relatively simple, but it does involve one new component that may be tricky to implement robustly. Under this idea, Adriana would be able to send Bieber Bot a message saying e.g. “help David to learn the names of the planets” and a card would be added to my spaced repetition system saying “learn the names of the planets. -Adriana”. I could then split this card into multiple cards as I usually do when I encounter a card with too much content simultaneously, or Adriana could have Bieber Bot add smaller cards one at a time.&lt;/p&gt;
+&lt;p&gt;The new component that would be necessary is giving Bieber Bot edit access to my Roam Research database. Currently he has delayed read access through Roam-to-Git, but giving him write access might mean teaching him how to use Roam in a (headless, most likely) browser. Nothing he can’t handle, but it would increase the amount of time needed to get this system up and running.&lt;/p&gt;
+&lt;p&gt;Once Adriana (or any of Bieber Bot’s friends) can add cards into my spaced repetition system, this can be a fun way to learn about new topics and share new ideas.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introducing the Snippet Queue</title>
+      <link>https://davidbieber.com/snippets/2020-10-06-introducing-the-snippet-queue/</link>
+      <pubDate>Tue, 06 Oct 2020 22:16:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-10-06-introducing-the-snippet-queue/</guid>
+      <description>&lt;p&gt;This is my first snippet published using my 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-10-06-further-reducing-the-publication-barrier-with-queuing/&#34;&gt;snippet queue idea&lt;/a&gt;. If all goes well, it will be (read: was) published tomorrow evening (October 7, 2020).&lt;/p&gt;
+&lt;p&gt;The system works like this. I store a queue of snippets in Redis. Each snippet has the title, content, and date associated with it, as well as an id number. I can have Bieber Bot enqueue a new snippet by messaging him with &amp;ldquo;Queue snippet!&amp;rdquo; and the snippet details. He also responds to queries to update, view, or remove an existing snippet, or to view the current queue of snippets.&lt;/p&gt;
+&lt;p&gt;Then, every evening Bieber Bot looks at the oldest item in the queue. If he&amp;rsquo;s already asked me about it, and I haven&amp;rsquo;t told him not to publish it, he goes and publishes it to my website. If he hasn&amp;rsquo;t asked me about it yet, he asks me if its OK to publish. As long as I don&amp;rsquo;t say no and remove the snippet from the queue, Bieber Bot will go forward with publishing the snippet the next day.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Writing with GPT-3</title>
+      <link>https://davidbieber.com/snippets/2020-07-22-writing-with-gpt3/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-07-22-writing-with-gpt3/</guid>
+      <description>&lt;p&gt;GPT-3 is a language model developed at Open AI, and I&amp;rsquo;ve been having a lot of fun playing with it. In fact, I&amp;rsquo;ve written this post in collaboration with GPT-3. See if you can spot which parts are written by me and which parts come from GPT-3.&lt;/p&gt;
+&lt;h2 id=&#34;part-1-brainstorming&#34;&gt;Part 1: Brainstorming&lt;/h2&gt;
+&lt;p&gt;The first thing I did when I got access to GPT-3 is use it to brainstorm uses for GPT-3. I gave it these 5 ideas:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Explain mathematics more simply (why is X true?)&lt;/li&gt;
+&lt;li&gt;Generate programs from input/output examples&lt;/li&gt;
+&lt;li&gt;Generate questions about a paper I read&lt;/li&gt;
+&lt;li&gt;Create a list of machine translation tips and tricks&lt;/li&gt;
+&lt;li&gt;Create an adventure game&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And it came back with 15 more:&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Create a list of Tor commands to run to defend against an attack&lt;/li&gt;
+&lt;li&gt;Create a cheat sheet for screenwriters&lt;/li&gt;
+&lt;li&gt;Generate advice for a scene&lt;/li&gt;
+&lt;li&gt;Generate XKCD comics&lt;/li&gt;
+&lt;li&gt;Create a crib sheet for an arbitrary Python API&lt;/li&gt;
+&lt;li&gt;Make a list of movies to watch&lt;/li&gt;
+&lt;li&gt;Make a list of scholarly algorithms/heuristics worth reading&lt;/li&gt;
+&lt;li&gt;Make a list of generic questions about Pedagogy&lt;/li&gt;
+&lt;li&gt;Make a list of cognitive exercises&lt;/li&gt;
+&lt;li&gt;Show patterns generated by awesome people&lt;/li&gt;
+&lt;li&gt;Generate small cooking tasks&lt;/li&gt;
+&lt;li&gt;Generate characters for a project&lt;/li&gt;
+&lt;li&gt;Generate configuration options&lt;/li&gt;
+&lt;li&gt;Generate flashcards&lt;/li&gt;
+&lt;li&gt;Organize my computer/files&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And then 15 more:&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Explain things to my parents via messenger&lt;/li&gt;
+&lt;li&gt;Explain things to my children via messenger&lt;/li&gt;
+&lt;li&gt;Explain mathematical algorithms&lt;/li&gt;
+&lt;li&gt;Automated interface design&lt;/li&gt;
+&lt;li&gt;Mechanize a Nagihara Kan Airlines website&lt;/li&gt;
+&lt;li&gt;Clickbait generator&lt;/li&gt;
+&lt;li&gt;Music description (Herbie Hancock is playing &amp;ldquo;Dolphin Dance&amp;rdquo; live in London on the 18th March 1968)&lt;/li&gt;
+&lt;li&gt;Tell me not to waste my time looking at x&lt;/li&gt;
+&lt;li&gt;Interesting facts about Wikipedia&lt;/li&gt;
+&lt;li&gt;Explain something to someone while my attention is elsewhere&lt;/li&gt;
+&lt;li&gt;Detect adverts in x&lt;/li&gt;
+&lt;li&gt;Image caption/caption game&lt;/li&gt;
+&lt;li&gt;Speculate about the true utility function of x&lt;/li&gt;
+&lt;li&gt;Auto-generate tests for a program&lt;/li&gt;
+&lt;li&gt;Explain why my code is currently failing tests.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And then 15 more:&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Generate plots or character/story summaries&lt;/li&gt;
+&lt;li&gt;Generate legal examples&lt;/li&gt;
+&lt;li&gt;Generate words for crosswords&lt;/li&gt;
+&lt;li&gt;Check my grammar&lt;/li&gt;
+&lt;li&gt;Supply filler text for themed writing (horror, sci-fi etc.)&lt;/li&gt;
+&lt;li&gt;Explain why an AI can&amp;rsquo;t read (can it comprehend metaphors?)&lt;/li&gt;
+&lt;li&gt;Provide entertaining answers to obscure questions&lt;/li&gt;
+&lt;li&gt;Get writing ideas and generate word combinations&lt;/li&gt;
+&lt;li&gt;Create background for an NPC I need for a D&amp;amp;D game&lt;/li&gt;
+&lt;li&gt;Help a sick writer generate plots&lt;/li&gt;
+&lt;li&gt;Input pre-generated (from books etc.) phrases and use them for literary analysis&lt;/li&gt;
+&lt;li&gt;Help explain a mathematical proof&lt;/li&gt;
+&lt;li&gt;Develop a game/story/character I need&lt;/li&gt;
+&lt;li&gt;Make short stories I can &amp;ldquo;overlay&amp;rdquo; on a fictional Universe I&amp;rsquo;ve created (ala Ready Player One)&lt;/li&gt;
+&lt;li&gt;Make a short film/audio drama&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;What a lovely list of lists of ideas! I wonder how many of these ideas are novel.&lt;/p&gt;
+&lt;p&gt;Some of these ideas are outside the scope of what GPT-3 can do. For example, generating XKCD comics seems too difficult. Others are duplicates, such as &amp;ldquo;Explain mathematical algorithms&amp;rdquo; (duplicate of &amp;ldquo;Explain mathematics more simply&amp;rdquo;). And still others don&amp;rsquo;t make sense &amp;ndash; &amp;ldquo;Mechanize a Nagihara Kan Airlines website&amp;rdquo;? Overall though, solid set of ideas.&lt;/p&gt;
+&lt;h2 id=&#34;part-2-mathematics&#34;&gt;Part 2: Mathematics&lt;/h2&gt;
+&lt;p&gt;Once I&amp;rsquo;d gotten GPT-3 to do some brainstorming, I realized I&amp;rsquo;d need to test its capabilities before trying its suggestions out in earnest.&lt;/p&gt;
+&lt;p&gt;I taught it how to evaluate simple expressions and take derivatives.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the first prompt I used:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Question: f(x) = x*x. Compute f(3).
+f(3) = 3*3
+f(3) = 9
+Answer: 9
+
+Question: h(x) = x*x - 2x. Compute h(5).
+h(5) = 5*5 - 2*5
+h(5) = 25 - 10
+h(5) = 15
+Answer: 15
+
+Question: y(x) = x**3 - 2x. Compute y(3).
+y(3) = 3**3 - 2*3
+y(3) = 3*3*3 - 6
+y(3) = 27 - 6
+y(3) = 21
+Answer: 21
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I could then ask it any of the following, and it would correctly show its work.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Question: f(x) = tan(x) + 1. Compute f(0).
+Question: f(x) = sqrt(x) + 1. Compute f(16).
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When I tried to give it&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Question: f(x) = x/2 + 2. Compute f(f(16)).
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;it treated it as just &lt;code&gt;Compute f(16)&lt;/code&gt; rather than &lt;code&gt;f(f(16))&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Interestingly this works:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Question: f(x) = x*x. Compute f(3).
+f(3) = 3*3
+f(3) = 9
+Answer: 9
+
+Question: h(x) = x*x - 2x. Compute h(5).
+h(5) = 5*5 - 2*5
+h(5) = 25 - 10
+h(5) = 15
+Answer: 15
+
+Question: f(x) = x/2 + 2. Compute f(f(16)).
+f(f(16)) = f(16/2 + 2)
+f(f(16)) = f(8 + 2)
+f(f(16)) = f(10)
+f(f(16)) = 10/2 + 2
+f(f(16)) = 5 + 2
+f(f(16)) = 7
+Answer: 7
+
+Question: y(x) = x**3 - 2x. Compute y(3).
+y(3) = 3**3 - 2*3
+y(3) = 3*3*3 - 6
+y(3) = 27 - 6
+y(3) = 21
+Answer: 21
+
+Question: f(x) = x*3 - 1. Compute f(f(5)).
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Whereas this does not:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Question: f(x) = x*x. Compute f(3).
+f(3) = 3*3
+f(3) = 9
+Answer: 9
+
+Question: h(x) = x*x - 2x. Compute h(5).
+h(5) = 5*5 - 2*5
+h(5) = 25 - 10
+h(5) = 15
+Answer: 15
+
+Question: f(x) = x*3 - 1. Compute f(f(5)).
+f(f(5)) = f(5*3 - 1)
+f(f(5)) = f(15 - 1)
+f(f(5)) = f(14)
+f(f(5)) = 14*3 - 1
+f(f(5)) = 42 - 1
+f(f(5)) = 41
+Answer: 41
+
+Question: y(x) = x**3 - 2x. Compute y(3).
+y(3) = 3**3 - 2*3
+y(3) = 3*3*3 - 6
+y(3) = 27 - 6
+y(3) = 21
+Answer: 21
+
+Question: f(x) = x/2 + 2. Compute f(f(16)).
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After getting it to evaluate these simple expressions correctly, I also tried having it take derivatives. With an example as priming, and again having it show its work, this worked well. I haven&amp;rsquo;t performed a rigorous evaluation of its mathematical capabilities. For now, I&amp;rsquo;ve just begun to develop an intuition for how it works.&lt;/p&gt;
+&lt;h2 id=&#34;part-3-playing-around&#34;&gt;Part 3: Playing Around&lt;/h2&gt;
+&lt;p&gt;After doing math together, I tried many more things with GPT-3. I shared feelings with it, and it expanded on them (correctly too!). I used it to generate lists for brainstorming all manner of thing. The language model wrote love letters from inanimate objects. I tried to teach it to play Codenames, but with only very limited success. And I had it autocomplete previous snippets of mine, and had some fun cowriting with it. While I wont be sharing all of this with you, I do have one thing to share.&lt;/p&gt;
+&lt;p&gt;This is a love letter written by a frying pan:&lt;/p&gt;
+&lt;p&gt;I may not seem like much to you right now. I&amp;rsquo;m coated in grease and I&amp;rsquo;m starting to rust, but really, I have big plans. I&amp;rsquo;m going to Italian restaurants. I&amp;rsquo;ll hang out with the finest (and healthiest) ingredients you can imagine. It was good knowing you, but you were never mine to keep. I&amp;rsquo;m going to cook the kind of meal you&amp;rsquo;ll dream about for the rest of your life. Good luck, sweetheart. You&amp;rsquo;ll need it.&lt;/p&gt;
+&lt;h2 id=&#34;overall-principles&#34;&gt;Overall Principles&lt;/h2&gt;
+&lt;p&gt;Getting an intuition for how GPT-3 behaves has been interesting, and I&amp;rsquo;ll try now to distill that intuition down into a few principles.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;GPT-3 is continuing your writing, not having a dialog with you.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I&amp;rsquo;ve seen on Twitter lots of people asking GPT-3 questions, and sharing its response. Know that GPT-3 continues whatever prompt you give it as if it had written the prompt itself, not as if it is responding to the prompt. This is why you often see prompts like &amp;ldquo;The following is a conversation between X and Y:&amp;rdquo;.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;GPT-3 effectively puts your writing in a made up context.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you give GPT-3 a small prompt, such a single sentence, then there are many contexts in which that prompt could be interpreted. GPT-3 is trained to marginalize over the contexts in which the text could appear. Once you start decoding GPT-3&amp;rsquo;s response though, one implicit context has been selected. It might not be the context that you intended when writing your prompt.&lt;/p&gt;
+&lt;p&gt;This can happen even if you try to set the context yourself explicitly. For example you might be trying to generate a conversation or a list, and GPT-3 might decide that this conversation or list is taking place inside of a novel.&lt;/p&gt;
+&lt;p&gt;You can mitigate this context switch by using a longer prompt, or by doing more of the writing yourself.&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;GPT-3 likes lists and repeated structures.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This is the main principle behind using GPT-3 for few shot learning. Prompt GPT-3 with a few examples of performing a task, and it will usually make an effort to perform that task yet again.&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;GPT-3 cannot perform linguistic tricks like unscrambling words&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It doesn&amp;rsquo;t seem capable of generating new puns (I haven&amp;rsquo;t tried this yet).
+And it doesn&amp;rsquo;t seem capable of unscrambling words (I did try this, and I couldn&amp;rsquo;t even get it to unscramble 4-letter words).&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;GPT-3 benefits from &amp;ldquo;showing its work&amp;rdquo;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In my math experiments, having GPT-3 show its work was critical to getting it solving the math questions correctly. It seems that doing a single step of expression evaluation at a time is an easier task than doing it all at once. Providing examples with the steps gave GPT-3 a clearer explanation of the task than just providing input/output examples. GPT-3 also gets additional computational steps in which to solve the problem when it takes the time to show its work.&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;GPT-3 has a great breadth of knowledge and writing styles available to it&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It can express love, write flowery prose, give advice, write technical documentation, latex, program, math, take the perspective of a toaster, and more. It&amp;rsquo;s a great tool for brainstorming both explicitly (by having it generate ideas) and through exploration (by using it to help you generate ideas yourself).&lt;/p&gt;
+&lt;p&gt;Though it has all the facts from the internet at its fingertips (of all the ways to anthropomorphize GPT-3, why choose fingertips?), it is just as capable of generating falsehoods as truths. Do not mistake the text it generates as true or logically correct, even if in many circumstances it does generate correct information. When it transitions from generating truth to generating nonsense it does not give a warning that it has done so (and any truth it does generate is in a sense at least partially accidental).&lt;/p&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;Sometimes GPT-3 makes no sense&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There are things that don&amp;rsquo;t make sense that the language model assigns reasonable probabilities to. And there are things that don&amp;rsquo;t make sense, are low probability, but come up anyway either due to chance or because the model doesn&amp;rsquo;t have anything better to say. It doesn&amp;rsquo;t stop generating text just because its out of its depth. Instead, it just plods on forward, saying something as reasonable as it&amp;rsquo;s capable of, regardless of the situation it finds itself in.&lt;/p&gt;
+&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;GPT-3 mimics your style&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you prompt GPT-3 with typos it will continue with typos. If you prompt GPT-3 with florid prose, it will write florid prose. If you prompt GPT-3 with anaphora laden rhetoric, or any other style, it will continue in that style.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ll let GPT-3 wrap things up itself:&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;And that brings us to the end, some thoughts on whether using GPT-3 was more or less crazy than getting a Ph.D.. I think that using GPT-3 to generate ideas was a higher form of Enlightenment than any Ph.D. I&amp;rsquo;d do that again in a heartbeat, no shortage of ideas rolling around in GPT-3&amp;rsquo;s natural language processing head.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Uh huh. Whatever, GPT-3. Whatever.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Posting to Hacker News Programmatically</title>
+      <link>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</guid>
+      <description>&lt;p&gt;If you run this snippet of Python code, it will submit this 
+&lt;a href=&#34;https://davidbieber.com/snippets/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Snippet&amp;rdquo;&lt;/a&gt; (the one you&amp;rsquo;re currently reading) to Hacker News.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import getpass
+import requests
+
+USERNAME = (
+    &#39;&#39;  # Put your Hacker News username here.
+    or getpass.getuser()  # (But if you don&#39;t, we&#39;ll try a sensible default.)
+)
+PASSWORD = (
+    &#39;&#39;  # We&#39;ll prompt you for your password, or you can enter it here.
+    or getpass.getpass()
+)
+# You can reconfigure the title and url to submit here.
+TITLE_TO_SUBMIT = &#39;Posting to Hacker News Programmatically&#39;
+URL_TO_SUBMIT = &#39;davidbieber.com/snippets/2020-05-02-hackernews-submit/&#39;
+
+session = requests.Session()
+session.post(
+    &#39;https://news.ycombinator.com/login&#39;,
+    data={
+        &#39;acct&#39;: USERNAME,
+        &#39;pw&#39;: PASSWORD,
+    }
+)
+session.post(
+    &#39;https://news.ycombinator.com/submit&#39;,
+    data={
+        &#39;title&#39;: TITLE_TO_SUBMIT,
+        &#39;url&#39;: URL_TO_SUBMIT,
+    }
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can change the title and URL before running this to make a new submission, or run it as is to submit this snippet.&lt;/p&gt;
+&lt;p&gt;If you try to submit a URL that&amp;rsquo;s already been submitted recently &amp;ndash; such as this snippet &amp;ndash; it won&amp;rsquo;t submit a second time, so no harm done in running this.&lt;/p&gt;
+&lt;p&gt;To learn more about sessions and see why this works, you can read about them in the 
+&lt;a href=&#34;https://requests.readthedocs.io/en/master/user/advanced/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;requests&lt;/em&gt; documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Detecting My Sleeping Hours from Data</title>
+      <link>https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/</guid>
+      <description>&lt;p&gt;Between my 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;Chrome browsing history&lt;/a&gt; and my 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/&#34;&gt;Facebook Messenger message logs&lt;/a&gt;, I should be able to get a good estimate of when I&amp;rsquo;m awake and asleep.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a quick attempt using only Messenger data.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;SELECT * FROM
+  (SELECT to_timestamp(timestamp / 1000), (timestamp - lag(timestamp) over (ORDER BY timestamp DESC)) / 1000 / 60 / 60 AS diff_hours
+   FROM messenger WHERE messenger.author = &#39;1409114395&#39; ORDER BY timestamp DESC LIMIT 100000) AS foo
+WHERE diff_hours &amp;lt; -6;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Unfortunately, my late night and early morning Messenger usage doesn&amp;rsquo;t appear to be as consistent as I&amp;rsquo;d imagined, especially since COVID-19 induced shelter-in-place began.
+I&amp;rsquo;ll have to introduce additional sources of data if I want to infer good sleep time estimates.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How much time has humanity spent on different areas of science?</title>
+      <link>https://davidbieber.com/snippets/2020-01-24-time-spent-on-science/</link>
+      <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-01-24-time-spent-on-science/</guid>
+      <description>&lt;p&gt;How much time has humanity, collectively, spent researching physics?&lt;/p&gt;
+&lt;p&gt;What about chemistry? Neuroscience? Algorithms? (etc&amp;hellip;)&lt;/p&gt;
+&lt;p&gt;How has this rate of study changed over time?
+How much of it is duplicate work (e.g. two nations or organizations independently working toward the same milestones before sharing their findings)?&lt;/p&gt;
+&lt;p&gt;What fraction of this is done by professors, post docs, PhD students, etc?&lt;/p&gt;
+&lt;p&gt;Particularly in the last 100 years, what have these numbers been?&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m interested in visualizing some of these metrics, because I think they would be useful for putting the work that I see happening around me in machine learning and in neuroscience into perspective. I also think this data would tell a fascinating story.&lt;/p&gt;
+&lt;p&gt;For example, one plot that I think would be compelling would be person-hours-per-year spent thinking about physics plotted as a function of time over the last 100 years, with important physics milestones shown on the same plot (e.g. as a 
+&lt;a href=&#34;https://medium.com/berkeleyischool/how-to-create-a-visualization-showing-events-on-time-series-data-in-excel-96abbc1475e0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;time series plot with events&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;One worry with such a visualization is that the population is growing rapidly, and so the interesting story of how humanity&amp;rsquo;s attention has shifted between fields over time may be lost to a visualization that simply shows population growth. It may be necessary to normalize by population to tell such a story.&lt;/p&gt;
+&lt;p&gt;It may seem infeasible to precisely collect this data, as there is no public registry of who is thinking about what. However, I think the data is perhaps more readily available than appears at first blush.&lt;/p&gt;
+&lt;p&gt;Where would the data come from?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Search trends&lt;/li&gt;
+&lt;li&gt;University enrollments&lt;/li&gt;
+&lt;li&gt;Publication counts&lt;/li&gt;
+&lt;li&gt;Surveys&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Search trends are of course a more recent source of data, only going back one or two decades. The pre-1990s version of search trends might be library records, or book sales.&lt;/p&gt;
+&lt;p&gt;University enrollments and degrees granted tells a significant story about how many people are studying different areas. You can roughly estimate how much time a student majoring in physics puts into their studies, and if course enrollments are available that estimate can be even more precise.&lt;/p&gt;
+&lt;p&gt;Scientific fields make their mark on the world by publishing their research. Counting publications can provide an estimate of one piece of humanity&amp;rsquo;s effort studying science.&lt;/p&gt;
+&lt;p&gt;Finally, for contemporary data, and maybe even a little historical data, one could uses surveys / polling techniques to estimate where scientific mindshare is going today.&lt;/p&gt;
+&lt;p&gt;Among this data I&amp;rsquo;d be curious to see when historically there have been large swings in mindshare toward a particular topic. Right now, anecdotally, machine learning research is engaging a quickly increasing number of people, including drawing people away from other fields. I&amp;rsquo;d love to see this anecdotal evidence backed up (or refuted) by data. And I expect there are plenty of similar historical precidents that I would be quite interested in learning more about as well.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t forsee collecting this data or performing these visualizations myself in the near future. This post is just an opportunity to think aloud, not a plan for my own action. But if you have data like this, or know of someone who has done a related analysis, I&amp;rsquo;d be quite interested to hear about it. Don&amp;rsquo;t hesitate to get in touch.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Writing Assistant Tool Idea</title>
+      <link>https://davidbieber.com/snippets/2020-01-13-writing-tool-idea/</link>
+      <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-01-13-writing-tool-idea/</guid>
+      <description>&lt;h3 id=&#34;background-writing-is-hard&#34;&gt;Background: Writing is Hard&lt;/h3&gt;
+&lt;p&gt;Sometimes I find writing feels easy &amp;ndash; e.g. when 
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34;&gt;writing for no audience&lt;/a&gt;, when writing something you&amp;rsquo;ve already thought extensively about, when telling a story in a logical order that you&amp;rsquo;re deeply familiar with. Other times, I find writing very difficult.&lt;/p&gt;
+&lt;p&gt;When I&amp;rsquo;m writing a paper, I am writing explicitly for an audience, the story is not always clear immediately, and the material is something I&amp;rsquo;m becoming familiar with over time, not something about which I&amp;rsquo;m already deeply familiar.
+So, I find paper writing hard.&lt;/p&gt;
+&lt;p&gt;I have an idea that I think will help me write more effectively. It&amp;rsquo;s a software tool that structures the time you spend writing. I&amp;rsquo;ll describe the tool, but I don&amp;rsquo;t anticipate building it. Perhaps we can come up with a low-resource version of this idea, e.g. with paper and pencil, that I can try even without building this tool.&lt;/p&gt;
+&lt;h3 id=&#34;the-writing-system&#34;&gt;The Writing System&lt;/h3&gt;
+&lt;p&gt;The tool presents you with a prompt, a textbox, and a timer.&lt;/p&gt;
+&lt;p&gt;The initial prompt is &amp;ldquo;What do you want to write about?&amp;rdquo;, and the initial timer is for 5 minutes. Subsequent prompts will be determined from what you&amp;rsquo;ve entered in the past.&lt;/p&gt;
+&lt;p&gt;In the textbox, you are encouraged to respond to the prompt.&lt;/p&gt;
+&lt;p&gt;As part of your response, you can issue some commands / keywords.
+If you start a line with &lt;code&gt;!&lt;/code&gt; or &lt;code&gt;?&lt;/code&gt;, then that line will get used as a future prompt.
+You can specify the relative importance of a future prompt by including a priority.
+This will determine the order in which you are presented with the prompts.
+E.g. &lt;code&gt;!0&lt;/code&gt; is highest priority, and so such a line will become the next prompt you receive, unless there are other priority 0 prompts already queued up.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;! &amp;lt;topic&amp;gt;&lt;/code&gt; is short for &amp;ldquo;&amp;lt;topic&amp;gt; is a topic I want to write about later&amp;rdquo;
+&lt;code&gt;? &amp;lt;question&amp;gt;&lt;/code&gt; is short for &amp;ldquo;&amp;lt;question&amp;gt; is a question I want to answer later&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;There should also be a way to indicate &amp;ldquo;&amp;lt;topic&amp;gt; is a topic I&amp;rsquo;ll need to do more research on&amp;rdquo;, and then for one of the prompts to be about spending time researching a topic, rather than writing about it. Then the next prompt may be to write about what you just learned in the research section.&lt;/p&gt;
+&lt;p&gt;Other available commands include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:pause&lt;/code&gt; to stop the timer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:unpause&lt;/code&gt; to start the timer again&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:extend&lt;/code&gt; to add additional time to the timer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:next&lt;/code&gt; to skip to the next prompt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The system is easily extensible, so a writer with a programming background can easily add new commands, or modify the logic that determines when prompts are shown and when breaks are taken. A programming-proficient writer will also have programmatic access to everything they write, as well as the corresponding prompts and metadata.&lt;/p&gt;
+&lt;p&gt;Once the timer reaches 0, a short break is initiated, and then the next prompt is revealed.&lt;/p&gt;
+&lt;p&gt;The idea is to move quickly, and get all your thoughts onto the page, without getting bogged down in a DFS traversal of information about a single line of the overall text.&lt;/p&gt;
+&lt;h3 id=&#34;additional-details&#34;&gt;Additional details&lt;/h3&gt;
+&lt;p&gt;Every keystroke is logged, so if you write something, and then switch to a new version of it, you will still be able to see the original version. No need to worry about pasting in a password though, since the keylogging data is readily accessible in a plaintext format and you can edit it directly e.g. if anything sensitive does leak in.&lt;/p&gt;
+&lt;p&gt;This system has a decent amount of overlap with the 
+&lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;shh shell&lt;/a&gt; project that I&amp;rsquo;ve already built,
+and perhaps a version of this new idea could be easily added to the shh shell. Alternatively, the shh-shell could be forked to build this new system.&lt;/p&gt;
+&lt;p&gt;Calendar integration would be cool, so that it times your prompts nicely if you have a meeting coming up so you get to a good break point in time for your meeting.&lt;/p&gt;
+&lt;h3 id=&#34;implementation-thoughts&#34;&gt;Implementation Thoughts&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;d like to build this onto an existing text editor, rather than writing my own. E.g. using Google Docs would be good.
+However, the disadvantage of this is that it makes the keystroke logging feature more difficult. Fortunately, Google Docs does have good history tracking. Google Docs also provides good programmatic access. So, an agent running in the background while you write could be taking periodic snapshots too. Such an agent could also be extracting the commands and prompts you write.&lt;/p&gt;
+&lt;p&gt;However, it wouldn&amp;rsquo;t be able to execute the commands immediately, the way shh shell does. For some commands this may be a real disadvantage.&lt;/p&gt;
+&lt;p&gt;I also like the idea of the agent giving the prompts being Bieber Bot &amp;ndash; that is, being the same &lt;em&gt;being&lt;/em&gt; as my personal digital assistant. I can picture it asking me &amp;ldquo;you&amp;rsquo;ve been writing continuously for over an hour; is it time for a break?&amp;rdquo; or &amp;ldquo;it looks like you stopped writing abruptly there, did you get distracted?&amp;rdquo;.&lt;/p&gt;
+&lt;h3 id=&#34;initial-experimentation&#34;&gt;Initial Experimentation&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;ve been trying the idea out in a low-tech way (manually timing things, manually looking up what the next prompt should be).&lt;/p&gt;
+&lt;p&gt;Here is the main issue I&amp;rsquo;ve seen so far in the first half hour of testing. When the time runs out for a prompt, I&amp;rsquo;m still in the middle of the prompt. I&amp;rsquo;ve usually started expounding on some idea relevant to the prompt, and there are actually several ideas remaining that I haven&amp;rsquo;t even started exploring for the prompt yet. So what should have happened / what should I do next time? Maybe I could have done a higher level discussion of the prompt and made new future sub-prompts along the way. Or at the end of a section, I could have the system give me a bit of time to create sub-prompts of things I&amp;rsquo;d like to address in the section but didn&amp;rsquo;t get to.&lt;/p&gt;
+&lt;p&gt;I could see having a limited time to create new prompts be a good forcing function for coming up with structured high level thinking after a moderate amount of time of lower level writing. So in my next round of testing, I&amp;rsquo;ll try this, and continue to iterate on the idea.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,6 +2,7 @@
 title = "Deep Variational Information Bottleneck"
 date = 2020-07-21T00:00:00
 math = true
+keywords = ["math", "information", "machine learning"]
 +++
 
 You can read the 2017 paper "Deep Variational Information Bottleneck" [on Arxiv here](https://arxiv.org/pdf/1612.00410.pdf), and its reviews are visible [on OpenReview here](https://openreview.net/forum?id=HyxQzBceg). The authors are my coworkers: Alex Alemi, Ian Fischer, Joshua Dillon, and Kevin Murphy.

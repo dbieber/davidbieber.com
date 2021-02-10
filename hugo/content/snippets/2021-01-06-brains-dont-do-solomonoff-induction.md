@@ -2,7 +2,8 @@
 title = "Brains Don't Do Solomonoff Induction"
 date = 2021-01-06T00:00:00
 uid = "IaqebZa62"
-
+tags = ["thought-experiments"]
+keywords = ["information"]
 +++
 
 [Dan Abolafia](http://zhat.io/) asked me some thought provoking questions about Solomonoff Induction and intelligence. This snippet comes from my answers.

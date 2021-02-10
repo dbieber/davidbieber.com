@@ -1,0 +1,1174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python | David Bieber</title>
+    <link>https://davidbieber.com/tags/python/</link>
+      <atom:link href="https://davidbieber.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <description>python</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 30 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
+      <title>python</title>
+      <link>https://davidbieber.com/tags/python/</link>
+    </image>
+    
+    <item>
+      <title>SQL for the Kangaroo Auto-responder</title>
+      <link>https://davidbieber.com/snippets/2021-01-30-sql-for-the-kangaroo-auto-responder/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-30-sql-for-the-kangaroo-auto-responder/</guid>
+      <description>&lt;p&gt;I turned on the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/&#34;&gt;Kangaroo Auto-responder&lt;/a&gt; this morning. The rules for when to send a kangaroo 🦘 are as follows:&lt;/p&gt;
+&lt;p&gt;You get a kangaroo if the &lt;strong&gt;most-recent&lt;/strong&gt; message in our chat (ignoring trivial messages from you) is &lt;strong&gt;non-trivial&lt;/strong&gt;, &lt;strong&gt;read-by-me&lt;/strong&gt;, &lt;strong&gt;written-by-you&lt;/strong&gt;, &lt;strong&gt;not a response&lt;/strong&gt;, and &lt;strong&gt;eight-hours old&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s look at each of these criteria in more detail.&lt;/p&gt;
+&lt;h2 id=&#34;most-recent-message&#34;&gt;Most-recent message&lt;/h2&gt;
+&lt;p&gt;The criteria are being applied to the most recent message in our chat ignoring trivial messages from you.&lt;/p&gt;
+&lt;p&gt;In SQL, this looks like&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select thread_id, max(timestamp) as timestamp
+from messenger
+where (author = &#39;1409114395&#39; or (author &amp;lt;&amp;gt; &#39;1409114395&#39; and LENGTH(text) &amp;gt; 15))
+group by thread_id;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;1409114395 is my Facebook ID.&lt;/p&gt;
+&lt;p&gt;This query selects the most recent timestamp from only a single message in each thread. It considers all messages from me, but only non-trivial (more than 15 characters) messages from the other participant.&lt;/p&gt;
+&lt;p&gt;The reason for this is that if I have sent the most recent message in a conversation (regardless of the length of the message), then no kangaroo is needed. If the other person has sent the most recent message, a kangaroo might be in order, but trivial messages should not trigger kangaroos. So we ignore them, and see if the most recent message is still from the other person even when ignoring their trivial messages.&lt;/p&gt;
+&lt;h2 id=&#34;non-trivial&#34;&gt;Non-trivial&lt;/h2&gt;
+&lt;p&gt;We choose 15-characters as the threshold for what makes a message trivial. The reason we ignore trivial messages is because they often don&amp;rsquo;t warrant a response. I am considering removing this constraint, as the &amp;ldquo;Not a response&amp;rdquo; constraint seems to obviate the need for it.&lt;/p&gt;
+&lt;p&gt;This shows up as &lt;code&gt;LENGTH(text) &amp;gt; 15)&lt;/code&gt; in the query.&lt;/p&gt;
+&lt;h2 id=&#34;read-by-me&#34;&gt;Read-by-me&lt;/h2&gt;
+&lt;p&gt;Unfortunately I do not have read receipt information in my messages database, so I did not include this rule in the first version of the Kangaroo Auto-responder.&lt;/p&gt;
+&lt;h2 id=&#34;written-by-you&#34;&gt;Written-by-you&lt;/h2&gt;
+&lt;p&gt;Only if the most recent message is from you is a kangaroo necessary. If its from me, I&amp;rsquo;ve already responded!&lt;/p&gt;
+&lt;p&gt;In this query, this is a simple check:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;WHERE messenger.author &amp;lt;&amp;gt; &#39;1409114395&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;not-a-response&#34;&gt;Not-a-response&lt;/h2&gt;
+&lt;p&gt;This is an interesting piece. When I wrote out the rules for the auto-responder yesterday, I was thinking I&amp;rsquo;d ignore messages sent within 5 minutes of a message I sent. My thinking was that this small filter would prevent me from needing to get the last word in every conversation to avoid oversending of kangaroos.&lt;/p&gt;
+&lt;p&gt;Now, I&amp;rsquo;m thinking I&amp;rsquo;ll ignore messages sent within &lt;em&gt;36 hours&lt;/em&gt; of a message I sent. This is a much tighter restriction. It means that I may miss sending some kangaroos that I ought to have sent, but it also means that if someone takes two hours to reply to me and that&amp;rsquo;s the end of the conversation, I don&amp;rsquo;t need to reply to prevent a kangaroo from going out.&lt;/p&gt;
+&lt;p&gt;It seems like striking a good balance between the non-trivial message criteria and the not-a-response criteria is key, and I may adjust these going forward.&lt;/p&gt;
+&lt;p&gt;To determine if a message is a response, I first determine the time of my own most recent message in the chat. In SQL, this is:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select thread_id, max(timestamp) as outgoing_timestamp
+from messenger
+where author = &#39;1409114395&#39; -- my FB id
+group by thread_id;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I then compare this message&amp;rsquo;s timestamp with that of the most recent message in the thread, which we selected earlier:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;(  -- The reply is at least X minutes after my latest message.
+  (latest_messages.timestamp - outgoing_timestamp)/1000 &amp;gt; 36*60*60
+  or outgoing_timestamp IS NULL
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;8-hours-old&#34;&gt;8-hours old&lt;/h2&gt;
+&lt;p&gt;The final criteria for whether to send a kangaroo is that the message must be eight hours old. Yesterday I was initially planning for 2-hours old, but I decided to give myself more time to respond manually before the kangaroo would go out. Here&amp;rsquo;s the SQL for that:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;-- Message is 8 hours old:
+AND NOW() - to_timestamp(messenger.timestamp/1000) at time zone &#39;UTC&#39; &amp;gt; INTERVAL &#39;8 HOURS&#39;
+AND NOW() - to_timestamp(messenger.timestamp/1000) at time zone &#39;UTC&#39; &amp;lt; INTERVAL &#39;8.25 HOURS&#39;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;putting-it-all-together&#34;&gt;Putting it all together&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s the complete SQL query that finds messages which warrant an automated kangaroo response.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;-- Select the most recent message per thread
+-- (ignoring trivial messages from you),
+-- and the most recent message per thread specifically from me.
+-- If the most recent message (ignoring trivial messages from you)
+-- is non-trivial,
+-- written-by-you,
+-- not a reply to my message,
+-- and a specific age,
+-- then we&#39;ve got ourselves a Kangaroo!
+--
+-- In a future iteration we will also ensure the message has been read-by-me.
+
+SELECT * FROM
+
+-- The first sub-query:
+-- Selects the most recent message from each thread that is either:
+-- (A) from me, or (B) from you and non-trivial in length
+-- And is also less than 8 hours old.
+((select thread_id, max(timestamp) as timestamp
+ from messenger
+ where (author = &#39;1409114395&#39; or (author &amp;lt;&amp;gt; &#39;1409114395&#39; and LENGTH(text) &amp;gt; 15))
+ -- and to_timestamp(timestamp/1000) at time zone &#39;UTC&#39; &amp;gt; NOW() - INTERVAL &#39;800 HOURS&#39;
+ group by thread_id) AS latest_messages
+INNER JOIN
+  messenger
+ON
+  messenger.thread_id = latest_messages.thread_id AND
+  messenger.timestamp = latest_messages.timestamp)
+LEFT JOIN
+    -- Selects the most recent message from each thread from me:
+    (select thread_id, max(timestamp) as outgoing_timestamp
+     from messenger
+     where author = &#39;1409114395&#39;
+     -- and to_timestamp(timestamp/1000) at time zone &#39;UTC&#39; &amp;gt; NOW() - INTERVAL &#39;800 HOURS&#39;
+     group by thread_id) AS latest_outgoing_messages
+ON
+  messenger.thread_id = latest_outgoing_messages.thread_id
+WHERE messenger.author &amp;lt;&amp;gt; &#39;1409114395&#39; -- David Bieber
+AND messenger.author &amp;lt;&amp;gt; &#39;1985867351654140&#39; -- Bieber Bot
+AND (  -- The reply is at least X minutes after my latest message.
+  (latest_messages.timestamp - outgoing_timestamp)/1000 &amp;gt; 36*60*60
+  or outgoing_timestamp IS NULL
+)
+AND thread_type = &#39;USER&#39; -- Message is a 1:1 chat, not a group chat
+-- Message is 8 hours old:
+AND NOW() - to_timestamp(messenger.timestamp/1000) at time zone &#39;UTC&#39; &amp;gt; INTERVAL &#39;8 HOURS&#39;
+AND NOW() - to_timestamp(messenger.timestamp/1000) at time zone &#39;UTC&#39; &amp;lt; INTERVAL &#39;8.25 HOURS&#39;
+ORDER BY messenger.timestamp desc;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This checks all the criteria for whether a message needs a kangaroo. I&amp;rsquo;ve set up a script that runs this query every ten minutes, and sends kangaroos as necessary.&lt;/p&gt;
+&lt;p&gt;At the time of this writing, no kangaroos have been sent yet. I hope it works 🤞!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kangaroo Auto-responder</title>
+      <link>https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/</link>
+      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/</guid>
+      <description>&lt;p&gt;The purpose of the Kangaroo Auto-responder is to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Avoid people expecting a response from me when I don&amp;rsquo;t realize they&amp;rsquo;re expecting a response, e.g. because I&amp;rsquo;ve forgotten about their message&lt;/li&gt;
+&lt;li&gt;It should let me let my guard down a bit about feeling obligated to respond to people&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;What will it do?&lt;/p&gt;
+&lt;p&gt;It will automatically respond to messages that I&amp;rsquo;ve seen but haven&amp;rsquo;t responded to for 2+ hours with a kangaroo&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;The first time it sends someone a kangaroo, it will also explain:&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;[Kangaroo] Hello! This is an automated reply from the Kangaroo Auto-responder. You&amp;rsquo;re getting this message because it looks like David might forget to reply to your message. If you want a response, you should contact him again. (Just saying &amp;ldquo;ping&amp;rdquo; is often enough!)&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Text for the second time:&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;[Kangaroo] Me again. David might forget to reply to your message. In the future I&amp;rsquo;ll just send you a picture of a Kangaroo to symbolize this. 🦘  If you ever get a picture of a Kangaroo from me, it just means David may have dropped the ball on your message and you should contact him again if you&amp;rsquo;re expecting a response.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Subsequent kangaroos will be unaccompanied by explanations.&lt;/p&gt;
+&lt;p&gt;The details on exactly when to send kangaroos are still a work in progress. I don&amp;rsquo;t want to overwhelm anyone with kangaroos. I&amp;rsquo;m thinking about some rules: (1) only send kangaroos if there was a message of non-trivial length, e.g. more than 20 characters, (2) only send a kangaroo after I&amp;rsquo;ve read the message; if I genuinely haven&amp;rsquo;t seen the message yet, no need for a kangaroo, as the message will still appear as unread in my inbox, (3) if you send follow-up messages, that resets the timer on the 2 hours, (4) any messages you send within 5 minutes of me sending you a message are ineligible for triggering kangaroos (this way I don&amp;rsquo;t need to get the last word), and (5) obviously, don&amp;rsquo;t send a kangaroo for a message I&amp;rsquo;ve already responded too.&lt;/p&gt;
+&lt;p&gt;To summarize, the rules of kangaroos are: You get a kangaroo if the &lt;strong&gt;most-recent&lt;/strong&gt; message in our chat is &lt;strong&gt;non-trivial&lt;/strong&gt;, &lt;strong&gt;read-by-me&lt;/strong&gt;, &lt;strong&gt;written-by-you&lt;/strong&gt;, &lt;strong&gt;not an immediate reply&lt;/strong&gt;, and &lt;strong&gt;two-hours old&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Why kangaroos? They bounce 🤷‍♂️ ? This is kind of like a message bouncing&amp;hellip;&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;With a picture of a kangaroo, that is. Like this one: 🦘, or this: &lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FtBz98tV75N.png?alt=media&amp;amp;token=66762cac-d0b0-43ba-91a8-eaefa6ef7626&#34; alt=&#34;&#34;&gt; It will not send them an actual real-life kangaroo. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python hoist: immediate locals only</title>
+      <link>https://davidbieber.com/snippets/2021-01-18-python-hoist-locals-only/</link>
+      <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-18-python-hoist-locals-only/</guid>
+      <description>&lt;p&gt;The implementation of &lt;code&gt;hoist&lt;/code&gt; in my 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-16-python-hoist/&#34;&gt;earlier snippet&lt;/a&gt; returned the values of local variables of all functions called by the hoisted function. This new version only returns the locals of the hoisted function.&lt;/p&gt;
+&lt;p&gt;As before, you can use it like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def f(x):
+  y = x + 1
+  z = y * 2
+  return z + 1
+
+f(4) == 11
+hoist(f)(4) == {&#39;x&#39;: 4, &#39;y&#39;: 5, &#39;z&#39;: 10, &#39;return&#39;: 11}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here&amp;rsquo;s another usage example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def f(x):
+  y = messy_g(x + 1)
+  return y + 1
+
+def messy_g(z):
+  q = z * 9
+  w = q / 3
+  return w + 1
+
+f(1) == 8
+hoist(f)(1) == {&#39;x&#39;: 1, &#39;y&#39;: 7, &#39;return&#39;: 8}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Notice in this example that the local variables used by &lt;code&gt;messy_g&lt;/code&gt; are not returned by &lt;code&gt;hoist(f)&lt;/code&gt;. Only &lt;code&gt;f&lt;/code&gt;&amp;rsquo;s local variables are returned.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the implementation.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import functools
+import inspect
+import sys
+
+def make_trace(results, f, original_trace_fn):
+  def trace_local(frame, event, arg):
+    # event: &#39;call&#39;, &#39;line&#39;, &#39;return&#39;, &#39;exception&#39; or &#39;opcode&#39;
+    if event == &#39;line&#39;:
+      arg_info = inspect.getargvalues(frame)
+      results.update(arg_info.locals.copy())
+    if event == &#39;return&#39;:
+      arg_info = inspect.getargvalues(frame)
+      values = arg_info.locals.copy()
+      results.update(values)
+      results[&#39;return&#39;] = arg
+    if event == &#39;call&#39;:
+      return original_trace_fn
+
+  def trace_global(frame, event, arg):
+    if event == &#39;call&#39;:
+      info = inspect.getframeinfo(frame)
+      info_parent = inspect.getframeinfo(frame.f_back)
+      if info.function == f.__name__ and info_parent.function == &#39;hoisted_f__&#39;:
+        return trace_local
+  return trace_global
+
+
+def hoist(f):
+
+  @functools.wraps(f)
+  def hoisted_f__(*args, **kwargs):
+    original_trace_fn = sys.gettrace()
+
+    results = {}
+    trace_fn = make_trace(results, f, original_trace_fn)
+
+    sys.settrace(trace_fn)
+    f(*args, **kwargs)
+    sys.settrace(original_trace_fn)
+
+    return results
+
+  return hoisted_f__
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python hoist()</title>
+      <link>https://davidbieber.com/snippets/2021-01-16-python-hoist/</link>
+      <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-01-16-python-hoist/</guid>
+      <description>&lt;p&gt;I wrote a little decorator function called &lt;code&gt;hoist&lt;/code&gt;. Calling &lt;code&gt;hoist(f)&lt;/code&gt; transforms &lt;code&gt;f&lt;/code&gt;, such that instead of returning the return value of &lt;code&gt;f&lt;/code&gt;, it returns the values of all local variables in addition to the return value of &lt;code&gt;f&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can use it like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def f(x):
+  y = x + 1
+  z = y * 2
+  return z + 1
+
+f(4) == 11
+hoist(f)(4) == {&#39;x&#39;: 4, &#39;y&#39;: 5, &#39;z&#39;: 10, &#39;return&#39;: 11}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Make sense? The result of &lt;code&gt;f(4)&lt;/code&gt; is just the return value, whereas &lt;code&gt;hoist(f)(4)&lt;/code&gt; gives the values of all local variables.&lt;/p&gt;
+&lt;p&gt;This can be a useful debugging tool, allowing access to the internal state of a function. It works by setting a trace function with Python&amp;rsquo;s &lt;code&gt;sys.settrace&lt;/code&gt;, as you can see in its definition.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the definition of &lt;code&gt;hoist&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import inspect
+import functools
+
+
+class Collection(object):
+  &amp;quot;&amp;quot;&amp;quot;The full set of variables over time.&amp;quot;&amp;quot;&amp;quot;
+
+  def __init__(self):
+    self.values = {}
+
+  def update(self, values):
+    self.values.update(values)
+
+  def set_return(self, arg):
+    self.values[&#39;return&#39;] = arg
+
+  def __repr__(self):
+    return repr(self.values)
+
+
+def make_trace(results, fn):
+  def trace_local(frame, event, arg):
+    # event: &#39;call&#39;, &#39;line&#39;, &#39;return&#39;, &#39;exception&#39; or &#39;opcode&#39;
+    if event == &#39;line&#39;:
+      arg_info = inspect.getargvalues(frame)
+      results.update(arg_info.locals.copy())
+    if event == &#39;return&#39;:
+      arg_info = inspect.getargvalues(frame)
+      values = arg_info.locals.copy()
+      results.update(values)
+      results.set_return(arg)
+    if event == &#39;call&#39;:
+      return fn
+
+  def trace_global(frame, event, arg):
+    if event == &#39;call&#39;:
+      return trace_local
+  return trace_global
+
+
+def hoist(f):
+
+  @functools.wraps(f)
+  def new_f(*args, **kwargs):
+    original_trace_fn = sys.gettrace()
+
+    results = Collection()
+    trace_fn = make_trace(results, original_trace_fn)
+
+    sys.settrace(trace_fn)
+    f(*args, **kwargs)
+    sys.settrace(original_trace_fn)
+
+    return results
+
+  return new_f
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Some ideas for extensions to &lt;code&gt;hoist&lt;/code&gt; follow. Feel free to go ahead and implement these.&lt;/p&gt;
+&lt;p&gt;(1) Modify &lt;code&gt;hoist&lt;/code&gt; so the outputs are accessible via dot-notation.&lt;/p&gt;
+&lt;p&gt;(2) Modify &lt;code&gt;hoist&lt;/code&gt; so it returns all values taken on by all variables during the execution of &lt;code&gt;f&lt;/code&gt;.
+Make it so that &lt;code&gt;hoist(f)(x)[&#39;value.3&#39;]&lt;/code&gt; returns the third value taken on by the variable &lt;code&gt;value&lt;/code&gt; in the call to &lt;code&gt;f(x)&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python&#39;s strip, lstrip, and rstrip in JavaScript</title>
+      <link>https://davidbieber.com/snippets/2020-12-26-pythons-strip-lstrip-and-rstrip-in-javascript/</link>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-26-pythons-strip-lstrip-and-rstrip-in-javascript/</guid>
+      <description>&lt;p&gt;Python provides some convenient functions for manipulating strings: &lt;code&gt;strip&lt;/code&gt;, &lt;code&gt;lstrip&lt;/code&gt;, and &lt;code&gt;rstrip&lt;/code&gt;. Recently I was writing some JavaScript and wanted to use &lt;code&gt;rstrip&lt;/code&gt;. So, I&amp;rsquo;ve implemented all three. Here they are:&lt;/p&gt;
+&lt;h2 id=&#34;the-python-strip-method-in-javascript&#34;&gt;The Python strip method in JavaScript&lt;/h2&gt;
+&lt;p&gt;In Python, &lt;code&gt;strip&lt;/code&gt; removes whitespace from the beginning or end of a string. This is commonly called &amp;ldquo;trim&amp;rdquo; in JavaScript, and is provided as a builtin in most modern browsers. You may need to implement it yourself if you want to support older browsers though. Here&amp;rsquo;s one possible implementation, 
+&lt;a href=&#34;https://www.w3schools.com/python/ref_string_strip.asp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;courtesy of W3Schools&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function trim(x) {
+  return x.replace(/^\s+|\s+$/gm, &#39;&#39;);
+}```
+
+The Python `strip` method optionally accepts an argument, &amp;quot;characters&amp;quot;, and strips all instances of those characters from the left and right sides of the input string. We implement that here.
+
+```javascript
+function trim(x, characters) {
+  var start = 0;
+  while (characters.indexOf(x[start]) &amp;gt;= 0) {
+    start += 1;
+  }
+  var end = x.length - 1;
+  while (characters.indexOf(x[end]) &amp;gt;= 0) {
+    end -= 1;
+  }
+  return x.substr(start, end - start + 1);
+}```
+
+This may not be the most efficient implementation (the calls to indexOf in particular could be made faster), but it gets the job done.
+
+## The Python rstrip method in JavaScript
+
+The rstrip method behaves like strip, but only removes spaces (or the specified characters) from the right side of the input string. We implement this in JavaScript now, calling it &amp;quot;rtrim&amp;quot; for consistency with the name &amp;quot;trim&amp;quot;.
+
+```javascript
+function rtrim(x) {
+  // This implementation removes whitespace from the right side
+  // of the input string.
+  return x.replace(/\s+$/gm, &#39;&#39;);
+}```
+
+We now implement rtrim a second time, now accepting &amp;quot;characters&amp;quot; as input:
+
+```javascript
+function rtrim(x, characters) {
+  var start = 0;
+  var end = x.length - 1;
+  while (characters.indexOf(x[end]) &amp;gt;= 0) {
+    end -= 1;
+  }
+  return x.substr(0, end + 1);
+}```
+
+## The Python lstrip method in JavaScript
+
+Finally we provide a port of Python&#39;s lstrip to JavaScript, calling it ltrim. We again provide one version that strips only whitespace, and a second that strips the provided &amp;quot;characters&amp;quot; input.
+
+```javascript
+function ltrim(x) {
+  // This implementation removes whitespace from the left side
+  // of the input string.
+  return x.replace(/^\s+/gm, &#39;&#39;);
+}```
+
+We now implement rtrim a second time, now accepting &amp;quot;characters&amp;quot; as input:
+
+```javascript
+function ltrim(x, characters) {
+  var start = 0;
+  while (characters.indexOf(x[start]) &amp;gt;= 0) {
+    start += 1;
+  }
+  var end = x.length - 1;
+  return x.substr(start);
+}```
+
+## Example Usage
+
+Here are some example usages of the above functions.
+
+First, using the implementations that strip spaces:
+
+```javascript
+trim(&#39;   Hello world!   &#39;) === &#39;Hello world!&#39;;
+ltrim(&#39;   Hello world!   &#39;) === &#39;Hello world!   &#39;;
+rtrim(&#39;   Hello world!   &#39;) === &#39;   Hello world!&#39;;```
+
+Second, using the implementations that strip the specified characters:
+
+```javascript
+trim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;u&#39;;
+ltrim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;uzzzzzz&#39;;
+rtrim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;Bu&#39;;```
+
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Improving Roam Snippet Publishing Speeds</title>
+      <link>https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/</guid>
+      <description>&lt;p&gt;Hey folks, I have a 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;workflow&lt;/a&gt; for automatically publishing &amp;ldquo;
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;snippets&lt;/a&gt;&amp;rdquo; to my website from Roam. Currently there&amp;rsquo;s a multi-hour latency between writing a snippet and when it appears on my website. In this snippet I&amp;rsquo;m going to muse about / ask questions about how to use &lt;strong&gt;puppeteer&lt;/strong&gt; to bring this latency down considerably. This&amp;rsquo;ll be my first time using puppeteer, so help appreciated. Read on!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-small/1f62e@2x.png&#34; alt=&#34;😮&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The current system relies on my git-to-roam backup, which runs every hour and fails some fraction of the time.&lt;/p&gt;
+&lt;p&gt;So, to bring the latency down, the idea is to use pyppeteer (the python puppeteer bindings) to log into Roam in a headless browser.&lt;/p&gt;
+&lt;p&gt;This will monitor Roam for new (or modified) snippets, and will publish them to my website.&lt;/p&gt;
+&lt;p&gt;A snippet is OK to publish if its tagged with both &amp;ldquo;Snippets&amp;rdquo; and &amp;ldquo;ok-to-publish&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;So, first question: has anyone done this before? B/c if someone&amp;rsquo;s already gotten all the CSS/XPATH selectors for logging in, navigating, etc, that could save me some time&lt;/p&gt;
+&lt;p&gt;Another important thing I&amp;rsquo;m thinking about: are there problems keeping an instance of Roam open in a headless browser could cause?&lt;/p&gt;
+&lt;p&gt;E.g. I hear about occasional data loss which seems related to having out-of-date instances of Roam open on other machines &amp;ndash; e.g. maybe the out of date Roam comes back online and overwrites new content with older blank content?&lt;/p&gt;
+&lt;p&gt;I think I&amp;rsquo;ll make my headless Roam instances relatively-short lived (&amp;lt;10 minutes) just in case.&lt;/p&gt;
+&lt;p&gt;I think the strategy I&amp;rsquo;ll take will be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Log in to Roam in headless browser&lt;/li&gt;
+&lt;li&gt;Run datalog query in javascript to check for new/updated snippets.&lt;/li&gt;
+&lt;li&gt;Run that query fairly frequently (e.g. every few seconds) in order to detect snippets as soon as they&amp;rsquo;re available&lt;/li&gt;
+&lt;li&gt;Debounce, so that if a snippet is actively changing its only deployed ~twice, not 100 times&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And then every 10 minutes or so I&amp;rsquo;ll have it take a short breather and refresh&lt;/p&gt;
+&lt;p&gt;Abhay suggested using the alpha API for this rather than puppeteering. &lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f64f@2x.png&#34; alt=&#34;🙏&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I think I&amp;rsquo;ll get started on the puppeteer implementation now though anyway, even if the API ends up being a better way of doing this in the near future.&lt;/p&gt;
+&lt;p&gt;Update:&lt;/p&gt;
+&lt;p&gt;I have a first draft that handles log in and running the query to detect publishable material (blocks with the appropriate two tags).&lt;/p&gt;
+&lt;p&gt;Not sure how reliable login is as I had some hiccups getting it working.&lt;/p&gt;
+&lt;p&gt;And the headless browser seems very slow to notice changes to the Roam graph compared to what I&amp;rsquo;m used to.&lt;/p&gt;
+&lt;p&gt;So instead of checking every few seconds, I think I&amp;rsquo;ll just check once a minute or so, refreshing either every time or every few times.&lt;/p&gt;
+&lt;p&gt;Unexpected snag: I get the children of a block but I don&amp;rsquo;t know how to put them in the proper order!&lt;/p&gt;
+&lt;p&gt;(with datalog)&lt;/p&gt;
+&lt;p&gt;I could navigate to the block and look at the dom&amp;hellip; but hopefully I don&amp;rsquo;t need to do that.&lt;/p&gt;
+&lt;p&gt;Looks like there is an &amp;ldquo;order&amp;rdquo; attribute, so this will be doable. Might be messy though.&lt;/p&gt;
+&lt;p&gt;If I&amp;rsquo;m understanding right, :block/order gives the index of a block into its parents children.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re good! &lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f44d@2x.png&#34; alt=&#34;👍&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re reading this on my website, it worked!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Questions to Answer About Python Fire</title>
+      <link>https://davidbieber.com/snippets/2020-10-22-questions-to-answer-about-python-fire/</link>
+      <pubDate>Thu, 22 Oct 2020 20:31:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-10-22-questions-to-answer-about-python-fire/</guid>
+      <description>&lt;p&gt;Tomorrow I&amp;rsquo;m giving a talk to Women Who Code on Python Fire. Python Fire is a Python library I wrote back in 2017 that makes command line interfaces automatically out of any Python object you give it.&lt;/p&gt;
+&lt;p&gt;I have my talk planned but there are a few pieces of the story I haven&amp;rsquo;t included in my talk yet. They are 1) Why did I build Python Fire? 2) How are people using Python Fire in the real world? 3) What&amp;rsquo;s it like maintaining an open source project?&lt;/p&gt;
+&lt;p&gt;To the first question, I should explain how we used Boom at Nest. Boom was the proto-version of Fire that inspired Fire&amp;rsquo;s development. At Nest we had an ETL pipeline consisting of several distributed systems. For example data would pass through SQS, Kafka, Storm, and Pentaho while it was being ingested. We wanted to write tests for this complex series of systems. And we also wanted to be able to manually operate the systems. So we wrote Python functions for controlling each part of the system.&lt;/p&gt;
+&lt;p&gt;Using Python&amp;rsquo;s inspect feature we then turned this collection of functions automatically into a CLI. This allowed us to reuse the same code both for writing tests and for giving the operators control over the ingestion pipelines without needing to do duplicate work. This was the inspiration for Fire.&lt;/p&gt;
+&lt;p&gt;To question two: there are thousands of uses of Fire on GitHub. OkCupid uses it for data analysis. One person I corresponded with uses Fire to control after market engines. About 10% of uses on GitHub are for machine learning projects, including the GPT codebase. There are also a couple hundred uses within Google too, though gflags (aka abseil) is the Google standard for CLIs still.&lt;/p&gt;
+&lt;p&gt;And finally to question three, it&amp;rsquo;s really nice to be appreciated! I built Fire to scratch my own itch from working at Nest and Google, but after releasing Fire it&amp;rsquo;s gotten quite popular. Over 17k stars on GitHub, thousands of open source projects using it, and over ten million installs from every country around the world. It&amp;rsquo;s really nice to see my effort appreciated.&lt;/p&gt;
+&lt;p&gt;My favorite is that someone has written a blog post explaining why Fire is a good tool for teaching Python, because it lets the beginner start programming without needing to understand any boilerplate. I&amp;rsquo;m hopeful that Fire is indeed helping people learn to program.&lt;/p&gt;
+&lt;p&gt;Time permitting I will add these questions and answers to my talk tomorrow.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Posting to Hacker News Programmatically</title>
+      <link>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</guid>
+      <description>&lt;p&gt;If you run this snippet of Python code, it will submit this 
+&lt;a href=&#34;https://davidbieber.com/snippets/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Snippet&amp;rdquo;&lt;/a&gt; (the one you&amp;rsquo;re currently reading) to Hacker News.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import getpass
+import requests
+
+USERNAME = (
+    &#39;&#39;  # Put your Hacker News username here.
+    or getpass.getuser()  # (But if you don&#39;t, we&#39;ll try a sensible default.)
+)
+PASSWORD = (
+    &#39;&#39;  # We&#39;ll prompt you for your password, or you can enter it here.
+    or getpass.getpass()
+)
+# You can reconfigure the title and url to submit here.
+TITLE_TO_SUBMIT = &#39;Posting to Hacker News Programmatically&#39;
+URL_TO_SUBMIT = &#39;davidbieber.com/snippets/2020-05-02-hackernews-submit/&#39;
+
+session = requests.Session()
+session.post(
+    &#39;https://news.ycombinator.com/login&#39;,
+    data={
+        &#39;acct&#39;: USERNAME,
+        &#39;pw&#39;: PASSWORD,
+    }
+)
+session.post(
+    &#39;https://news.ycombinator.com/submit&#39;,
+    data={
+        &#39;title&#39;: TITLE_TO_SUBMIT,
+        &#39;url&#39;: URL_TO_SUBMIT,
+    }
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can change the title and URL before running this to make a new submission, or run it as is to submit this snippet.&lt;/p&gt;
+&lt;p&gt;If you try to submit a URL that&amp;rsquo;s already been submitted recently &amp;ndash; such as this snippet &amp;ndash; it won&amp;rsquo;t submit a second time, so no harm done in running this.&lt;/p&gt;
+&lt;p&gt;To learn more about sessions and see why this works, you can read about them in the 
+&lt;a href=&#34;https://requests.readthedocs.io/en/master/user/advanced/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;requests&lt;/em&gt; documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Daily Summaries of Browsing History</title>
+      <link>https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/</guid>
+      <description>&lt;p&gt;Over the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&#34;&gt;course&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;of&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&#34;&gt;multiple&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history/&#34;&gt;previous&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;snippets&lt;/a&gt;, I put together several SQL queries for analyzing my browsing history.&lt;/p&gt;
+&lt;p&gt;Today, I wanted to write a script to run several of these queries in sequence to assemble a nice summary of my daily browsing histories. Maybe I&amp;rsquo;ll dump the summary into my 
+&lt;a href=&#34;https://roamresearch.com/#/app/commons-db/page/wYVaowjId&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;[[Roam Research]]&lt;/code&gt;&lt;/a&gt; database so I can cross-link ideas with websites I&amp;rsquo;ve visited.&lt;/p&gt;
+&lt;p&gt;As a first pass, I tried to throw together a quick bash script to string the queries together. It looked a bit like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;date=$1
+if [ -z $1 ];
+then
+  date=$(date &#39;+%Y-%m-%d&#39;);
+fi
+
+cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/Default-History
+cp ~/Library/Application\ Support/Google/Chrome/Profile\ 1/History ~/Profile-1-History
+
+function query() {
+  sqlite3 ~/Default-History $1;
+  sqlite3 ~/Profile-1-History $1;
+}
+
+echo \# YouTube Videos Watched
+echo
+
+query &amp;lt;&amp;lt; SQL
+select DISTINCT REPLACE(REPLACE(urls.title, &amp;quot; - YouTube&amp;quot;, &amp;quot;&amp;quot;), &amp;quot;(1) &amp;quot;, &amp;quot;&amp;quot;), urls.url, &amp;quot;$date%&amp;quot;
+from urls
+where urls.url like &amp;quot;%www.youtube.com/watch%&amp;quot;
+and datetime(last_visit_time / 1000000 + (strftime(&#39;%s&#39;, &#39;1601-01-01&#39;)), &#39;unixepoch&#39;)
+LIKE &amp;quot;$date%&amp;quot;
+limit 50;
+SQL
+
+# Additional queries ran here...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You&amp;rsquo;ll notice a few things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I want to run each query on two different Chrome histories.&lt;/li&gt;
+&lt;li&gt;I want the script to be parameterized by the date, defaulting to today if no date is specified.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you&amp;rsquo;re proficient in Bash, you may also notice something else; it doesn&amp;rsquo;t work. The query is only used properly when I run sqlite3 on the first Chrome History, but an empty query is passed to the second query.&lt;/p&gt;
+&lt;p&gt;Rather than debug my Bash script, I switched over to Python. I used Python Fire to automatically expose all my functions as commands so within minutes I had a working CLI.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what the Python script looks like:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import datetime
+import os
+import subprocess
+
+import fire
+
+
+def copy_histories():
+  check_output = subprocess.check_output
+  check_output([
+      &#39;cp&#39;,
+      os.path.expanduser(&#39;~/Library/Application Support/Google/Chrome/Default/History&#39;),
+      os.path.expanduser(&#39;~/Default-History&#39;)])
+  check_output([
+      &#39;cp&#39;,
+      os.path.expanduser(&#39;~/Library/Application Support/Google/Chrome/Profile 1/History&#39;),
+      os.path.expanduser(&#39;~/Profile-1-History&#39;)])
+
+
+def run_query(query):
+  call = subprocess.call
+  call([&#39;sqlite3&#39;,  os.path.expanduser(&#39;~/Default-History&#39;), query])
+  call([&#39;sqlite3&#39;, os.path.expanduser(&#39;~/Profile-1-History&#39;), query])
+
+
+def run(date=None):
+  copy_histories()
+  date = date or datetime.datetime.now().strftime(&#39;%Y-%m-%d&#39;)
+
+  print(&#39;## YouTube Videos Watched&#39;)
+  print()
+
+  run_query(f&amp;quot;&amp;quot;&amp;quot;
+  select DISTINCT REPLACE(REPLACE(urls.title, &amp;quot; - YouTube&amp;quot;, &amp;quot;&amp;quot;), &amp;quot;(1) &amp;quot;, &amp;quot;&amp;quot;)
+  from urls
+  where urls.url like &amp;quot;%www.youtube.com/watch%&amp;quot;
+  and datetime(last_visit_time / 1000000 + (strftime(&#39;%s&#39;, &#39;1601-01-01&#39;)), &#39;unixepoch&#39;)
+  LIKE &amp;quot;{date}%&amp;quot;
+  limit 50;
+  &amp;quot;&amp;quot;&amp;quot;)
+
+  # Additional queries run here...
+
+if __name__ == &#39;__main__&#39;:
+  fire.Fire()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;At the command line I run this with &lt;code&gt;python historyquery.py run&lt;/code&gt; or &lt;code&gt;python historyquery.py run --date=2020-04-26&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;With Python Fire I was able to quickly switch to a syntax I was more comfortable with, but keep the benefits of working from the context of a shell. I can now much more quickly make improvements to the script since I can operate more efficiently working in Python.&lt;/p&gt;
+&lt;p&gt;Now I have a script I can run that will produce a nice summary of my internet browsing activity for any date I specify. Running it over recent dates provides a nice walk down memory lane.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Roam Research&#39;s JSON Export Format</title>
+      <link>https://davidbieber.com/snippets/2020-04-25-roam-json-export/</link>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-25-roam-json-export/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://roamresearch.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research&lt;/a&gt; is a note taking tool that makes it really low-friction to take deeply interwoven notes.
+One of its core features is that you can effortlessly add links between pages in your notes, just by surrounding a name with square brackets, e.g. 
+&lt;a href=&#34;https://roamresearch.com/#/app/commons-db/page/wYVaowjId&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;[[Roam Research]]&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Roam allows its users to export their Roam database as a JSON file. In this snippet, I describe the JSON format used and some of its implications.&lt;/p&gt;
+&lt;h2 id=&#34;exporting-data-from-roam&#34;&gt;Exporting Data from Roam&lt;/h2&gt;
+&lt;p&gt;From the triple-dots menu, select Export All. Choose JSON as the export format. Then click the Export All button. Your complete Roam database will download as a JSON file.&lt;/p&gt;
+&lt;h2 id=&#34;roams-json-format&#34;&gt;Roam&amp;rsquo;s JSON Format&lt;/h2&gt;
+&lt;p&gt;We&amp;rsquo;ll refer to the Roam JSON object you just downloaded as &lt;code&gt;data&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;data&lt;/code&gt; is a list, with each entry in &lt;code&gt;data&lt;/code&gt; corresponding to a single Roam &lt;code&gt;page&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Each &lt;code&gt;page&lt;/code&gt; is an object with keys: &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;children&lt;/code&gt;, &lt;code&gt;create-time&lt;/code&gt;, &lt;code&gt;create-email&lt;/code&gt;, &lt;code&gt;edit-time&lt;/code&gt;, &lt;code&gt;edit-email&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;page-schema&#34;&gt;Page Schema&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;title&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The page title.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;children&lt;/td&gt;
+&lt;td&gt;List[Child]&lt;/td&gt;
+&lt;td&gt;The list of children of the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;create-time&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The time (ms since epoch) when the page was created.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;create-email&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The email of the person to create the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;edit-time&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The time (ms since epoch) of the last edit to the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;edit-email&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The email of the last person to edit the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Note that only &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;edit-time&lt;/code&gt;, and &lt;code&gt;edit-email&lt;/code&gt; appear to be required fields.
+&lt;code&gt;children&lt;/code&gt;, &lt;code&gt;create-time&lt;/code&gt;, and &lt;code&gt;create-email&lt;/code&gt; appear to be omitted when not available.&lt;/p&gt;
+&lt;h3 id=&#34;child-schema&#34;&gt;Child Schema&lt;/h3&gt;
+&lt;p&gt;Each of the children in a page may have the following keys. Only the &lt;code&gt;uid&lt;/code&gt;, &lt;code&gt;string&lt;/code&gt;, &lt;code&gt;edit-time&lt;/code&gt;, and &lt;code&gt;edit-email&lt;/code&gt; keys seem universal. The rest may be omitted when not available.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;uid&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;A short unique identifier for the child.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;string&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The string content of the child.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;children&lt;/td&gt;
+&lt;td&gt;List[Child]&lt;/td&gt;
+&lt;td&gt;The list of children of this child.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;create-time&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The time (ms since epoch) when the page was created.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;create-email&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The email of the person to create the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;edit-time&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The time (ms since epoch) of the last edit to the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;edit-email&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The email of the last person to edit the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Some children may additionally have the following keys.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;heading&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;1, 2, or 3; indicates the note is an h1, h2, or h3 heading.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;emojis&lt;/td&gt;
+&lt;td&gt;List[Emoji]&lt;/td&gt;
+&lt;td&gt;A list of objects indicating who added what emojis and when.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;text-align&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;One of &amp;lsquo;left&amp;rsquo;, &amp;lsquo;right&amp;rsquo;, &amp;lsquo;center&amp;rsquo;, or &amp;lsquo;justify&amp;rsquo; indicating the text alignment.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Note that in Roam, children are referred to as &amp;ldquo;blocks&amp;rdquo;, and a child&amp;rsquo;s ID is the ID used to reference a block.&lt;/p&gt;
+&lt;p&gt;Last but not least, I include the emoji reaction schema 😂.&lt;/p&gt;
+&lt;h3 id=&#34;emoji-schema&#34;&gt;Emoji Schema&lt;/h3&gt;
+&lt;p&gt;Each Emoji reaction to a child is an object conforming to the following schema.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;emoji&lt;/td&gt;
+&lt;td&gt;object&lt;/td&gt;
+&lt;td&gt;An object with a single key &lt;code&gt;native&lt;/code&gt; containing the emoji itself.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;users&lt;/td&gt;
+&lt;td&gt;List[object]&lt;/td&gt;
+&lt;td&gt;A list of objects indicating who added this emoji and when. The keys are &lt;code&gt;time&lt;/code&gt; (ms since epoch) and &lt;code&gt;email&lt;/code&gt; (the email of the user who added the reaction).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;missing-information&#34;&gt;Missing Information&lt;/h3&gt;
+&lt;p&gt;Some information appears to get lost in the export. In particular, the following information appears to be dropped.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&amp;ldquo;View as Document&amp;rdquo; / &amp;ldquo;View as Numbered List&amp;rdquo;: This formatting information doesn&amp;rsquo;t seem to get exported.&lt;/li&gt;
+&lt;li&gt;Versions. If you&amp;rsquo;re using the &amp;ldquo;versions&amp;rdquo; feature of Roam, the versions don&amp;rsquo;t seem to be exported either.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;implications-of-the-json-format&#34;&gt;Implications of the JSON Format&lt;/h2&gt;
+&lt;p&gt;Since Roam allows export of its data in such a simple format, you can easily write scripts for processing this data. For example, merging two databases is trivial. I include some simple such scripts in the following section.&lt;/p&gt;
+&lt;p&gt;The clear export also means that you will continue to be able to use your data long into the future, even if Roam shuts down or otherwise becomes unavailable to you. As long as you occasionally back up your data by exporting it, it is yours forever.&lt;/p&gt;
+&lt;h2 id=&#34;useful-python-snippets-for-processing-roam-json&#34;&gt;Useful Python Snippets for Processing Roam JSON&lt;/h2&gt;
+&lt;p&gt;Once you&amp;rsquo;ve downloaded your data as JSON from Roam, you can load and manipulate it as follows.&lt;/p&gt;
+&lt;h3 id=&#34;load-json&#34;&gt;Load JSON&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import json
+filepath = &#39;/path/to/roam-database.json&#39;
+data = json.load(open(filepath))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;collect-all-children&#34;&gt;Collect All Children&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;children = []
+blocks = data.copy()
+while blocks:
+  block = blocks.pop()
+  if &#39;children&#39; in block:
+    blocks.extend(block[&#39;children&#39;])
+    children.extend(block[&#39;children&#39;])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;find-all-notes-mentioning-roam&#34;&gt;Find All Notes Mentioning &amp;ldquo;Roam&amp;rdquo;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;for child in children:
+  if &#39;roam&#39; in child.get(&#39;string&#39;, &#39;&#39;).lower():
+    print(child[&#39;string&#39;])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;merge-two-databases&#34;&gt;Merge Two Databases&lt;/h3&gt;
+&lt;p&gt;Since databases are just lists of objects, you can trivially merge them.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;merged = db1 + db2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It&amp;rsquo;s possible this will result in multiple pages having the same name, but Roam deals with this just fine.&lt;/p&gt;
+&lt;h2 id=&#34;thank-you-roam&#34;&gt;Thank You Roam&lt;/h2&gt;
+&lt;p&gt;I want to conclude with a note of thanks to the Roam developers for allowing export in such a clear and readily understandable manner. Doing so inspires confidence that I will be able to continue using the notes I take in Roam far into the future, no matter what. This makes me so much more comfortable using Roam for my note taking. Props and thank you to the Roam developers for this feature.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fastbook: Listen to Audiobooks Faster</title>
+      <link>https://davidbieber.com/snippets/2020-03-02-fastbook/</link>
+      <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-03-02-fastbook/</guid>
+      <description>&lt;p&gt;Aaron Mayer 
+&lt;a href=&#34;https://medium.com/100audiobooks/the-100-audiobook-challenge-terms-and-conditions-455c7e9409aa&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;aims to listen to 100 audiobooks in a single month&lt;/a&gt;. He intends to listen to these audiobooks at 2x - 3x speed. Intense!&lt;/p&gt;
+&lt;p&gt;For the last few weeks, I&amp;rsquo;ve been working on 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;automatic video&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;editing tools&lt;/a&gt;. And one of the core features I&amp;rsquo;ve been working with is 
+&lt;a href=&#34;https://github.com/carykh/jumpcutter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;automatic speed adjustments to videos&lt;/a&gt; to eliminate silent airtime and make the videos more engaging. This seems like a perfect fit for Aaron&amp;rsquo;s challenge.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve adapted this tooling into a new tool I&amp;rsquo;m calling 
+&lt;a href=&#34;https://gist.github.com/dbieber/98f909640773b5b0a0fe5696da369a1b&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fastbook&lt;/a&gt;. It accepts audiobooks in the form of &lt;code&gt;.wav&lt;/code&gt; files, and can apply speed adjustments to the silence and the spoken word independently, even removing silence entirely if desired.&lt;/p&gt;
+&lt;p&gt;If Aaron can already comfortably (with great focus) listen to a book at 2.5x speed, he can listen to a 10 hour book in 4 hours. If 20% of that book is actually silence, then the 10 hour book becomes an 8 hour book with silence removed, and the total listen time drops to just 3h12. I think 20% may actually be a conservative estimate for silent time, though it will vary from narrator to narrator.&lt;/p&gt;
+&lt;p&gt;Estimating 45 minutes saved per book, this tool can save over 3 days total time across 100 books. Or, alternatively, Aaron could drop the playback speed down from 2.5x to 2x without increasing his total listening time at all, but potentially helping out his comprehension substantially.&lt;/p&gt;
+&lt;p&gt;This tool wont be appropriate for all audiobook listeners. For many, the silences matter, and removing them would degrade the quality of the book. For many, listening at 2.5x would also degrade the quality of the book. So use this tool with caution.&lt;/p&gt;
+&lt;p&gt;For those of you who are intersted, however, here&amp;rsquo;s how to use Fastbook.&lt;/p&gt;
+&lt;h2 id=&#34;installing-fastbook&#34;&gt;Installing Fastbook&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ve made Fastbook available for free on GitHub. You can 
+&lt;a href=&#34;https://gist.github.com/dbieber/98f909640773b5b0a0fe5696da369a1b&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;access it here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To use it, save it to your computer as &lt;code&gt;fastbook.py&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Next, make sure you have all the dependencies installed. See the dependencies section for what is required.&lt;/p&gt;
+&lt;h2 id=&#34;pre-work-converting-your-book-to-wav&#34;&gt;Pre-work: Converting Your Book to &lt;code&gt;.wav&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;You need your audiobook in wav format to use Fastbook.&lt;/p&gt;
+&lt;p&gt;To convert an audiobook to wav, use 
+&lt;a href=&#34;https://www.ffmpeg.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ffmpeg&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Install ffmpeg. Then, run &lt;code&gt;ffmpeg -i book.aax book.wav&lt;/code&gt; to convert an Audible audiobook to a wav file. There may be an additional step if your aax file is DRM protected.&lt;/p&gt;
+&lt;h2 id=&#34;using-fastbook&#34;&gt;Using Fastbook&lt;/h2&gt;
+&lt;p&gt;Now you can use Fastbook like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;python fastbook.py \
+--audio_path=/path/to/book.wav \
+--output_path=/path/to/book-fast.wav \
+--loud_speed=1 \
+--quiet_speed=5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;--audio_path&lt;/code&gt; should point to an existing wav file that you downloaded or generated in the pre-work section. &lt;code&gt;--output_path&lt;/code&gt; is the path to the file that Fastbook will generate. Finally, &lt;code&gt;--loud_speed&lt;/code&gt; is how much to speed up the normal spoke text of the book by, and &lt;code&gt;--quiet_speed&lt;/code&gt; is how much to speed up the silence in the book by. You can remove silence by setting &lt;code&gt;--quiet_speed=99999&lt;/code&gt; or any other similiarly large number.&lt;/p&gt;
+&lt;h3 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h3&gt;
+&lt;p&gt;Here are the dependencies you need to use Fastbook.&lt;/p&gt;
+&lt;p&gt;First, you need &lt;strong&gt;Python 3&lt;/strong&gt;. You can follow 
+&lt;a href=&#34;https://realpython.com/installing-python/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these instructions&lt;/a&gt; to set up Python 3 if you don&amp;rsquo;t already have it installed.&lt;/p&gt;
+&lt;p&gt;Then, you need these Python depenencies: &lt;em&gt;fire&lt;/em&gt;, &lt;em&gt;scipy&lt;/em&gt;, &lt;em&gt;tqdm&lt;/em&gt;, &lt;em&gt;numpy&lt;/em&gt;, and &lt;em&gt;audiotsm&lt;/em&gt;. Install these with &lt;code&gt;pip install fire scipy tqdm numpy audiotsm&lt;/code&gt; or use your favorite Python package manager.&lt;/p&gt;
+&lt;p&gt;Finally, to do the pre-work, you will likely need ffmpeg. Installation instructions are available 
+&lt;a href=&#34;https://www.ffmpeg.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;read-quick&#34;&gt;Read quick!&lt;/h2&gt;
+&lt;p&gt;I recommend for Aaron to use the default speed settings of &lt;code&gt;--loud_speed=1 --quiet_speed=5&lt;/code&gt;. This wont eliminate the silence entirely, but will reduce the audio time considerably. Then, for the remaining speed-up, I suggest using whatever media player you were already using, such as VLC which supports arbitrary speed adjustments in real time. Hpy rdng!&lt;/p&gt;
+&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
+&lt;p&gt;This blog post, narrated slowly:&lt;/p&gt;
+&lt;p&gt;&lt;audio
+controls
+src=&#34;https://davidbieber.com/audio/fastbook.m4a&#34;&gt;
+Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
+&lt;/audio&gt;&lt;/p&gt;
+&lt;p&gt;This blog post again, now with just the silence accelerated:&lt;/p&gt;
+&lt;p&gt;&lt;audio
+controls
+src=&#34;https://davidbieber.com/audio/fastbook-fast.m4a&#34;&gt;
+Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
+&lt;/audio&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Video Tooling Progress</title>
+      <link>https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/</link>
+      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/</guid>
+      <description>&lt;p&gt;Over the last week and a half I&amp;rsquo;ve been making screen recordings of myself programming. Mostly what I&amp;rsquo;ve been programming is tooling to help myself make better screen recordings. Here&amp;rsquo;s an overview of what I&amp;rsquo;ve put together so far.&lt;/p&gt;
+&lt;h2 id=&#34;auto-auto-jumpcutter&#34;&gt;Auto Auto-Jumpcutter&lt;/h2&gt;
+&lt;p&gt;This springboards directly from carykh&amp;rsquo;s 
+&lt;a href=&#34;https://github.com/carykh/jumpcutter&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jumpcutter&lt;/a&gt; project, which uses 
+&lt;a href=&#34;https://www.ffmpeg.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ffmpeg&lt;/a&gt; and AudioTSM to speed up the silent sections of a video. Auto Auto-Jumpcutter has two &amp;ldquo;auto&amp;quot;s in its name because jumpcutter already does automatic jumpcutting of videos, and Auto Auto-Jumpcutter uses 
+&lt;a href=&#34;https://pythonhosted.org/watchdog/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;watchdog&lt;/a&gt; to automatically apply jumpcutter the moment a screen recording is captured.&lt;/p&gt;
+&lt;p&gt;The result is that my typing appears superhuman in speed, but slows down while I&amp;rsquo;m speaking, without me needing to do any manual editing to the video to achieve this effect.&lt;/p&gt;
+&lt;h2 id=&#34;auto-commit&#34;&gt;Auto-Commit&lt;/h2&gt;
+&lt;p&gt;I also made for myself a git auto-committer. Every time I save a file during a screen recording session, the change is immediately and automatically committed. The commit message is selected automatically from the diff. The result is that I have a timestamped log of all changes made during the recording. This is super useful for editing the recordings (both automatically and manually) because I can pinpoint exactly where in the recording any change took place. It also works hand-in-hand with the next piece of tooling.&lt;/p&gt;
+&lt;h2 id=&#34;keyboard-shortcuts&#34;&gt;Keyboard Shortcuts&lt;/h2&gt;
+&lt;p&gt;Just using Auto Auto-Jumpcutter goes a long way toward having automatically edited videos, but it doesn&amp;rsquo;t completely eliminate the need for manual editing.
+For example, it provides no way to do multiple takes and stitch together the good parts of each. For this I&amp;rsquo;ve set up a keyboard shortcut system for myself using the Python 
+&lt;a href=&#34;https://pypi.org/project/keyboard/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;keyboard&lt;/a&gt; module. This way I can indicate via keyboard shortcuts to remove a selection of footage during the recording session, and have it automatically be removed during the automatic editing phase. This last step &amp;ndash; using the keyboard shortcuts to guide automatic editing &amp;ndash; is an active work in progress.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Jump-Cut Programming: Take 1</title>
+      <link>https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/</link>
+      <pubDate>Fri, 21 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been toying around with recording myself programming. Here&amp;rsquo;s a clip.&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/OxsuHWVtMSM&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;In this clip I use 
+&lt;a href=&#34;https://davidbieber.com/projects/python-fire&#34;&gt;Python Fire&lt;/a&gt; to create a simple two-function calculator. Nothing special about that.&lt;/p&gt;
+&lt;p&gt;What is special is that the programming has automatically been sped up by 
+&lt;a href=&#34;https://github.com/carykh/jumpcutter&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;carykh/jumpcutter&lt;/a&gt;, and that I&amp;rsquo;ve used 
+&lt;a href=&#34;https://zulko.github.io/moviepy/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;moviepy&lt;/a&gt; to set the programming to the music 
+&lt;a href=&#34;http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100414&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Dangerous&amp;rdquo;&lt;/a&gt;, a clip I got from 
+&lt;a href=&#34;https://www.youtube.com/audiolibrary/music&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;YouTube&amp;rsquo;s free Audio Library&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;lessons-learned-from-take-1&#34;&gt;Lessons Learned from &amp;ldquo;Take 1&amp;rdquo;&lt;/h2&gt;
+&lt;h3 id=&#34;what-worked-well&#34;&gt;What worked well?&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;External Monitor&lt;/strong&gt;: I purchased an external monitor. This made a huge difference. Now I can manage video-editing tools, a terminal, a browser, etc on one screen, while keeping the contents of the video (the editor and public terminal) on the other screen and recording it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;
+&lt;a href=&#34;https://github.com/carykh/jumpcutter&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;carykh/jumpcutter&lt;/a&gt;&lt;/strong&gt;: This tool can automatically speed up the silent parts of a video, resulting in shorter less-boring videos.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Mac Screen Capture&lt;/strong&gt;: cmd-shift-5 lets you capture video on Mac. You can choose what directory the captured video is saved to. Before I discovered this, I used QuickTime, but this is easier to use.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Using 
+&lt;a href=&#34;https://pythonhosted.org/watchdog/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;watchdog&lt;/a&gt;&lt;/strong&gt; This is a Python module that can monitor your filesystem and trigger an action when files are created or modified. I use it to a) automatically rename video files as they&amp;rsquo;re created, and b) to automatically apply jumpcutting to new captured videos. The filename format I use is &lt;code&gt;YYYY-MM-DD-screen-recording-###.mov&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Python Fire&lt;/strong&gt;: The first twenty clips I recorded (not released) were all of me building the tooling I now use as I record videos. Most of this tooling lives in Python Fire CLIs. These CLIs let me do things like composite audio, perform auto-jumpcutting, and rename videos.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;things-to-improve&#34;&gt;Things to improve:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Zoom in!&lt;/strong&gt; The code is blurry and small and the video as is needs to be watched at 1080p to look OK, which is silly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Audio Quality&lt;/strong&gt; I have a lapel mic I&amp;rsquo;m using for new recordings and it helps.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Storytelling&lt;/strong&gt; Is a Python Fire CLI for adding and subtracting the most compelling story? I think there&amp;rsquo;s room for improvement.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Manual Editing&lt;/strong&gt; I did no manual editing for the clip above. I think for quality videos, however, learning to do some manual editing is going to be essential. We&amp;rsquo;ll see how far my inclination to automate everything takes me first though.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;I&amp;rsquo;m really enjoying this process of recording videos. And more than making the videos, I&amp;rsquo;m enjoying building the software to help me make the videos. Next step for me is getting more familiar with moviepy. And Davinci Resolve. But one thing at a time.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Planning to Analyze My Browsing History</title>
+      <link>https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/</link>
+      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve learned recently that programmatically accessing your browsing history is rather straightforward. Really exciting! This is rich data, from which I think I&amp;rsquo;ll be able to learn a lot and hopefully combat unwanted distractions.&lt;/p&gt;
+&lt;p&gt;First let me describe what information is available, and how you can access it. Then, let&amp;rsquo;s discuss what you can do with this data. As I&amp;rsquo;ve written about previously 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;[1]&lt;/a&gt; 
+&lt;a href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[2]&lt;/a&gt;, I already have a chat bot system in place, which will be able to take advantage of this data to e.g. help me stay focused.&lt;/p&gt;
+&lt;h4 id=&#34;accessing-your-browser-history&#34;&gt;Accessing Your Browser History&lt;/h4&gt;
+&lt;p&gt;Thank you to GitHub user 
+&lt;a href=&#34;https://github.com/dropmeaword&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dropmeaword&lt;/a&gt; for compiling 
+&lt;a href=&#34;https://gist.github.com/dropmeaword/9372cbeb29e8390521c2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this gist&lt;/a&gt; explaining how to access your browser history via sqlite3. The gist covers Safari, Chrome, and Firefox. In this post, I&amp;rsquo;ll just focus on Chrome on OSX, since that&amp;rsquo;s my primary mode of browsing.&lt;/p&gt;
+&lt;p&gt;My Chrome browsing history is located at &lt;code&gt;~/Library/Application Support/Google/Chrome/Default/History&lt;/code&gt;. Since I use multiple profiles in Chrome, each profile gets its own browsing history, e.g. located at &lt;code&gt;~/Library/Application Support/Google/Chrome/Profile 1/History&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Each browsing history is stored as a sqlite3 database. Before analyzing the data, I recommend making a copy of it (&lt;code&gt;cp ~/Library/Application\ Support/Google/Chrome/Default/History my-history&lt;/code&gt;); this way your history database (a) wont be locked by Chrome while you&amp;rsquo;re trying to access it, and (b) wont change while you&amp;rsquo;re looking at it, which could cause confusion and inconsistencies in your results.&lt;/p&gt;
+&lt;p&gt;This means you can browse it interactively using the sqlite3 REPL by running &lt;code&gt;sqlite3 PATH_TO_DATABASE&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;There are also libraries available for accessing sqlite3 databases in just about every language. For Python, there&amp;rsquo;s the 
+&lt;a href=&#34;https://docs.python.org/3/library/sqlite3.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sqlite3&lt;/a&gt; library. Go has 
+&lt;a href=&#34;https://godoc.org/github.com/mattn/go-sqlite3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;go-sqlite3&lt;/a&gt;. JavaScript has 
+&lt;a href=&#34;https://www.sqlitetutorial.net/sqlite-nodejs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this sqlite3 module&lt;/a&gt;. However you most like scripting, you&amp;rsquo;ll have a familiar way of accessing the data.&lt;/p&gt;
+&lt;h4 id=&#34;the-available-data&#34;&gt;The Available Data&lt;/h4&gt;
+&lt;p&gt;Running sqlite3 macro &lt;code&gt;.tables&lt;/code&gt;, we see the following tables are available.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;downloads&lt;/td&gt;
+&lt;td&gt;meta&lt;/td&gt;
+&lt;td&gt;urls&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;downloads_slices&lt;/td&gt;
+&lt;td&gt;segment_usage&lt;/td&gt;
+&lt;td&gt;visit_source&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;downloads_url_chains&lt;/td&gt;
+&lt;td&gt;segments&lt;/td&gt;
+&lt;td&gt;visits&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;keyword_search_terms&lt;/td&gt;
+&lt;td&gt;typed_url_sync_metadata&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;We&amp;rsquo;ll be most interested in the &lt;code&gt;urls&lt;/code&gt; and &lt;code&gt;visits&lt;/code&gt; tables.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;urls&lt;/code&gt; table has these columns (found with &lt;code&gt;.schema urls&lt;/code&gt;):&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;id&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the URL in the database.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;url&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The URL of the website.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;title&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;The title of website.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;visit_count&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The number of times you&amp;rsquo;ve visited the URL.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;typed_count&lt;/td&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;The number of times you&amp;rsquo;ve visited the URL by typing in the address (as opposed to by following a link.)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;last_visit_time&lt;/td&gt;
+&lt;td&gt;Integer (microseconds since the epoch)&lt;/td&gt;
+&lt;td&gt;The time of the most recent to the URL.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;hidden&lt;/td&gt;
+&lt;td&gt;Boolean&lt;/td&gt;
+&lt;td&gt;I&amp;rsquo;m not sure what this is about.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;And the &lt;code&gt;visits&lt;/code&gt; table has these columns (obtained via &lt;code&gt;.schema visits&lt;/code&gt;):&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;id&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the visit in the database.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;url&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the url in the &lt;code&gt;urls&lt;/code&gt; table.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;visit_time&lt;/td&gt;
+&lt;td&gt;Integer (milliseconds since the epoch)&lt;/td&gt;
+&lt;td&gt;The time of the visit.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;from_visit&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the visit that lead you to this one.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;transition&lt;/td&gt;
+&lt;td&gt;Bit vector&lt;/td&gt;
+&lt;td&gt;Represents the 
+&lt;a href=&#34;https://developer.chrome.com/extensions/history#transition_types&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;transition type&lt;/a&gt; (how you got to the URL)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;segment_id&lt;/td&gt;
+&lt;td&gt;Integer Id&lt;/td&gt;
+&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the segment in the database. I&amp;rsquo;m not quite sure what a segment is, but there is a &lt;code&gt;segments&lt;/code&gt; table you can look at.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;visit_duration&lt;/td&gt;
+&lt;td&gt;Integer (microseconds)&lt;/td&gt;
+&lt;td&gt;The amount of time spent at the website, or 0 if not available.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;incremented_omnibox_typed_score&lt;/td&gt;
+&lt;td&gt;Boolean&lt;/td&gt;
+&lt;td&gt;I do not know what this is about.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;As you can see, we can access every visit to every website that we&amp;rsquo;ve made since the last time we cleared our browsing history. We can see what website we visited (&lt;code&gt;visits.url&lt;/code&gt;), when we visited it (&lt;code&gt;visits.visit_time&lt;/code&gt;), how many times we&amp;rsquo;ve visited it (&lt;code&gt;urls.visit_count&lt;/code&gt;), and how long each visit was for (&lt;code&gt;visits.visit_duration&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;We can even use &lt;code&gt;visits.from_visit&lt;/code&gt; to figure out what website linked us to each url, if that interests us.&lt;/p&gt;
+&lt;h4 id=&#34;what-can-we-deduce&#34;&gt;What Can We Deduce?&lt;/h4&gt;
+&lt;p&gt;We can (1) perform a historical analysis on the data, as well as (2) do real-time monitoring of the data.&lt;/p&gt;
+&lt;p&gt;Here I brainstorm some of the historical trends we will be able to uncover:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Most frequently visited websites&lt;/li&gt;
+&lt;li&gt;Websites where we spend the majority of our time&lt;/li&gt;
+&lt;li&gt;Websites that frequently lead to known-distractor websites (e.g. Reddit, Hacker News, Twitter, YouTube)&lt;/li&gt;
+&lt;li&gt;We can do an analysis by time of day (or day of week), to figure out what sites occupy my time late at night vs during daylight hours.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are somewhat interesting, but what I&amp;rsquo;m particularly excited for is the ongoing analysis that 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; can provide by accessing the data.&lt;/p&gt;
+&lt;p&gt;Here is a brainstorm of the more real-time actionable insights we might extract from this data.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bieber Bot could ping me if it looks like I&amp;rsquo;m spending too much time on a distraction website.&lt;/li&gt;
+&lt;li&gt;He could try to detect if I went to a website with a particular purpose, but ended up getting distracted and not completing the purpose I set out to do.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For example, if I&amp;rsquo;m on a productive website and then switch to a distraction website for more than a few minutes, particularly during work hours, Bieber Bot might message asking if I got distracted. Think you could do that for me Bieber Bot?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I could signal that I want to view a website later by opening it and immediately closing it again.&lt;/li&gt;
+&lt;li&gt;Perhaps we could detect if I&amp;rsquo;m researching a particular topic, and then Bieber Bot could try to help me with my research.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;related-idea&#34;&gt;Related Idea&lt;/h4&gt;
+&lt;p&gt;In order to reduce distractions, I&amp;rsquo;d like to be able to switch my browsing mode from &amp;ldquo;clicking opens links&amp;rdquo; to &amp;ldquo;clicking saves a link for later&amp;rdquo;. When in this new mode, whenever I click a link it wouldn&amp;rsquo;t open that link; instead, it would save the link to a list of deferred links.
+Then I would be able to view my &amp;ldquo;saved for later&amp;rdquo; links when I have time that I&amp;rsquo;ve explicitly set aside, rather than during the time that I would rather be doing something more productive.&lt;/p&gt;
+&lt;h4 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h4&gt;
+&lt;p&gt;So far I&amp;rsquo;ve done a little bit of manual exploration of my browsing history data. I&amp;rsquo;ve set up a little Python script to be able to access the data programmatically.&lt;/p&gt;
+&lt;p&gt;Next, I&amp;rsquo;ll do more manual analysis, and then I&amp;rsquo;ll see if I&amp;rsquo;m able to give Bieber Bot the real-time access to the data that I described above. I&amp;rsquo;m particularly excited to see if I can get the &amp;ldquo;looks like you&amp;rsquo;ve gotten distracted&amp;rdquo; messages set up with Bieber Bot. As a bonus, since Bieber Bot can message other people too, this system could help me leverage social accountability to stay on task.&lt;/p&gt;
+&lt;p&gt;Want to see where this project leads? You can subscribe for infrequent email updates.&lt;/p&gt;
+
+&lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/classic-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+  #mc_embed_signup{
+    background:#fff;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+  }
+&lt;/style&gt;
+&lt;div id=&#34;mc_embed_signup&#34;&gt;
+&lt;form action=&#34;https://gmail.us3.list-manage.com/subscribe/post?u=a55774562ae9fa9a1d879fa75&amp;amp;id=132f89def3&#34; method=&#34;post&#34; id=&#34;mc-embedded-subscribe-form&#34; name=&#34;mc-embedded-subscribe-form&#34; class=&#34;validate&#34; target=&#34;_blank&#34; novalidate&gt;
+    &lt;div id=&#34;mc_embed_signup_scroll&#34;&gt;
+  
+&lt;div class=&#34;mc-field-group&#34;&gt;
+  &lt;label for=&#34;mce-EMAIL&#34;&gt;Email Address&lt;/label&gt;
+  &lt;input type=&#34;email&#34; value=&#34;&#34; name=&#34;EMAIL&#34; class=&#34;required email&#34; id=&#34;mce-EMAIL&#34;&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;mce-responses&#34; class=&#34;clear&#34;&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-error-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;response&#34; id=&#34;mce-success-response&#34; style=&#34;display:none&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;    
+    &lt;div style=&#34;position: absolute; left: -5000px;&#34; aria-hidden=&#34;true&#34;&gt;&lt;input type=&#34;text&#34; name=&#34;b_a55774562ae9fa9a1d879fa75_132f89def3&#34; tabindex=&#34;-1&#34; value=&#34;&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;clear&#34;&gt;
+      &lt;input type=&#34;submit&#34; value=&#34;Subscribe&#34; name=&#34;subscribe&#34; id=&#34;mc-embedded-subscribe&#34; class=&#34;button&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=&#39;EMAIL&#39;;ftypes[0]=&#39;email&#39;;fnames[1]=&#39;FNAME&#39;;ftypes[1]=&#39;text&#39;;fnames[2]=&#39;LNAME&#39;;ftypes[2]=&#39;text&#39;;fnames[3]=&#39;ADDRESS&#39;;ftypes[3]=&#39;address&#39;;fnames[4]=&#39;PHONE&#39;;ftypes[4]=&#39;phone&#39;;fnames[5]=&#39;BIRTHDAY&#39;;ftypes[5]=&#39;birthday&#39;;}(jQuery));var $mcj = jQuery.noConflict(true);&lt;/script&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

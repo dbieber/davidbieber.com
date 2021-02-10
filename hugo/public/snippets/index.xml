@@ -677,7 +677,7 @@ def hoist(f):
       <link>https://davidbieber.com/snippets/2021-01-17-refrigerator-insight/</link>
       <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2021-01-17-refrigerator-insight/</guid>
-      <description>&lt;p&gt;When browsing the foods in your fridge, do not ask yourself &amp;ldquo;do I want to eat this now?&amp;rdquo; Instead, ask yourself &amp;ldquo;when do I want to eat this?&amp;rdquo;&lt;/p&gt;
+      <description>&lt;p&gt;When looking through the food in your refrigerator, ask not &amp;ldquo;is this what I want to eat right now?&amp;rdquo;, ask &amp;ldquo;when do I want to eat this?&amp;rdquo;&lt;/p&gt;
 </description>
     </item>
     
@@ -764,7 +764,7 @@ Make it so that &lt;code&gt;hoist(f)(x)[&#39;value.3&#39;]&lt;/code&gt; returns 
     </item>
     
     <item>
-      <title>Peer Learning Group</title>
+      <title>Introducing Peer Learning Group</title>
       <link>https://davidbieber.com/snippets/2021-01-14-peer-learning-group/</link>
       <pubDate>Thu, 14 Jan 2021 01:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2021-01-14-peer-learning-group/</guid>

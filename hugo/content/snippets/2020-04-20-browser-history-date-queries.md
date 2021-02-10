@@ -1,6 +1,7 @@
 +++
 title = "Date and Time Browser History Queries"
 date = 2020-04-20T00:00:00
+tags = ["browser-history", "sql"]
 +++
 
 I wrote a [number of SQL queries](/snippets/2020-04-11-browser-history-queries/) for browsing my browsing history. In this snippet, I show how to amend them to filter the results by date. Google Chrome selects a slightly non-standard time storage format (microseconds since January 1, 1601 UTC), hence the need for this query stanza.

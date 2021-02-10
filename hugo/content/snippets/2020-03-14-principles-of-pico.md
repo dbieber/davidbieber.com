@@ -1,6 +1,7 @@
 +++
 title = "Principles of Pico"
 date = 2020-03-14T00:00:00
+tags = ["attention", "spaced-repetition"]
 +++
 
 Here's an attempt at capturing and organizing my thoughts on Pico, from our conversation about it March.
