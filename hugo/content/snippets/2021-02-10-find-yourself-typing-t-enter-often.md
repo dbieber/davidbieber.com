@@ -7,7 +7,7 @@ uid = "a9DYMhnN8"
 
  A common attention pitfall is to mindless type cmd-t t ENTER. cmd-t creates a new tab. "t" autocompletes to twitter.com. ENTER. Four keystrokes and you're scrolling. "r" for reddit. "f" for facebook. etc.
 
-Less than a second of mindless activity, leading to hundreds of seconds (minutes? hours?) of productivity lost.
+Less than a second of mindless activity, leading to hundreds of seconds (minutes? hours?) of scrolling that you didn't intend to do.
 
 Here's the solution. **Delete websites from your browser's autocomplete.**
 
