@@ -2,7 +2,8 @@
 title = "Find yourself typing t-ENTER often?"
 date = 2021-02-10T00:00:00
 uid = "a9DYMhnN8"
-
+tags = ["attention"]
+keywords = ["twitter", "social media"]
 +++
 
  A common attention pitfall is to mindless type cmd-t t ENTER. cmd-t creates a new tab. "t" autocompletes to twitter.com. ENTER. Four keystrokes and you're scrolling. "r" for reddit. "f" for facebook. etc.
