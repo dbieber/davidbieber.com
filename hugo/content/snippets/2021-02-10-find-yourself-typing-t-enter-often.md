@@ -18,4 +18,4 @@ Just select the website from Chrome's dropdown and press fn-shift-delete, and th
 
 In Firefox, it's even easier: just press shift-delete.
 
-Eventually the websites will make them back into your autocomplete, but it will take awhile for this to happen. And when it does, now you know what to do: fn-shift-delete.
+Eventually the websites will make them back into your autocomplete, but it will take a while for this to happen. And when it does, now you know what to do: fn-shift-delete.
