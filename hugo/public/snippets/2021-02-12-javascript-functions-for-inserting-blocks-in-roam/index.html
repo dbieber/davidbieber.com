@@ -28,10 +28,12 @@
   
     
   
-  <meta name="description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot.">
+  <meta name="description" content="At the end of this snippet I include some helpful javascript functions for accessing and inserting pages and blocks in Roam Research. Hope you find these useful!
+getPage(page): returns the uid of a specific page in your graph. page: the title of the page.
+getOrCreatePage(page): returns the uid of a specific page in your graph, creating it first if it does not already exist. page: the title of the page.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/404.html">
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-02-12-javascript-functions-for-inserting-blocks-in-roam/">
 
   
 
@@ -251,7 +253,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
 
-  <link rel="canonical" href="https://davidbieber.com/404.html">
+  <link rel="canonical" href="https://davidbieber.com/snippets/2021-02-12-javascript-functions-for-inserting-blocks-in-roam/">
 
   
   
@@ -268,29 +270,36 @@
   <meta property="twitter:creator" content="@Bieber">
   
   <meta property="og:site_name" content="David Bieber">
-  <meta property="og:url" content="https://davidbieber.com/404.html">
-  <meta property="og:title" content="404 Page not found | David Bieber">
-  <meta property="og:description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2021-02-12-javascript-functions-for-inserting-blocks-in-roam/">
+  <meta property="og:title" content="JavaScript Functions for Inserting Blocks in Roam | David Bieber">
+  <meta property="og:description" content="At the end of this snippet I include some helpful javascript functions for accessing and inserting pages and blocks in Roam Research. Hope you find these useful!
+getPage(page): returns the uid of a specific page in your graph. page: the title of the page.
+getOrCreatePage(page): returns the uid of a specific page in your graph, creating it first if it does not already exist. page: the title of the page."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
+      <meta property="article:published_time" content="2021-02-12T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-02-12T00:00:00&#43;00:00">
   
 
   
 
 
 
-
   
 
 
   
 
 
+  
 
 
 
-  <title>404 Page not found | David Bieber</title>
+
+
+  <title>JavaScript Functions for Inserting Blocks in Roam | David Bieber</title>
 
 </head>
 
@@ -453,51 +462,285 @@
 </nav>
 
 
-  <div class="universal-wrapper pt-3">
-
-  <h1>Page not found</h1>
-
-  
-  
-  <form class="d-flex align-items-center mb-3">
-    <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
-  </form>
-  
+  <article class="article">
 
   
 
-  <p>Perhaps you were looking for one of these?</p>
+
+
+
+
+
+
+
+
+
+
+
+  
 
   
   
   
-  <h2>Latest</h2>
-  <ul>
+<div class="article-container pt-3">
+  <h1 itemprop="name">JavaScript Functions for Inserting Blocks in Roam</h1>
+
+  
+
+  
     
-      <li><a href="/projects/bieber-bot/">Bieber Bot</a></li>
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
     
-      <li><a href="/projects/escape-castle-heterodyne/">Escape Castle Heterodyne</a></li>
     
-      <li><a href="/projects/python-fire/">Python Fire</a></li>
+      
     
-      <li><a href="/projects/tech-day/">Tech Day</a></li>
     
-      <li><a href="/projects/at-scheduler/">at Scheduler</a></li>
-    
-      <li><a href="/projects/shh-shell/">shh Shell</a></li>
-    
-      <li><a href="/projects/scrabble-bot/">Scrabble Bot</a></li>
-    
-      <li><a href="/projects/teach-everyone/">Teach Everyone</a></li>
-    
-      <li><a href="/projects/princeton-acm/">Princeton ACM</a></li>
-    
-      <li><a href="/snippets/2021-02-12-javascript-functions-for-inserting-blocks-in-roam/">JavaScript Functions for Inserting Blocks in Roam</a></li>
-    
-  </ul>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
   
 
 </div>
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" id="article-content">
+      <p>At the end of this snippet I include some helpful javascript functions for accessing and inserting pages and blocks in Roam Research. Hope you find these useful!</p>
+<p><strong>getPage(page):</strong> returns the uid of a specific page in your graph. <em>page</em>: the title of the page.</p>
+<p><strong>getOrCreatePage(page):</strong> returns the uid of a specific page in your graph, creating it first if it does not already exist. <em>page</em>: the title of the page.</p>
+<p><strong>getBlockOnPage(page, block):</strong> returns the uid of a specific block on a specific page. <em>page</em>: the title of the page. <em>block</em>: the text of the block.</p>
+<p><strong>createBlockOnPage(page, block, order):</strong> creates a new top-level block on a specific page, returning the new block&rsquo;s uid. <em>page</em>: the title of the page. <em>block</em>: the text of the block. <em>order</em>: (optional) controls where to create the block, 0 for top of page, -1 for bottom of page.</p>
+<p><strong>getOrCreateBlockOnPage(page, block, order):</strong> returns the uid of a specific block on a specific page, creating it first as a top-level block if it&rsquo;s not already there. <em>page</em>: the title of the page. <em>block</em>: the text of the block. <em>order</em>: (optional) controls where to create the block, 0 for top of page, -1 for bottom of page.</p>
+<p><strong>getChildBlock(parent_uid, block):</strong> returns the uid of a specific child block underneath a specific parent block. <em>parent_uid</em>: the uid of the parent block. <em>block</em>: the text of the child block.</p>
+<p><strong>createChildBlock(parent_uid, block, order):</strong> creates a new child block underneath a specific parent block, returning the new block&rsquo;s uid. <em>parent_uid</em>: the uid of the parent block. <em>block</em>: the text of the new block. <em>order</em>: (optional) controls where to create the block, 0 for inserting at the top, -1 for inserting at the bottom.</p>
+<p><strong>getOrCreateChildBlock(parent_uid, block, order):</strong> returns the uid of a specific child block underneath a specific parent block, creating it first if it&rsquo;s not already there. <em>parent_uid</em>: the uid of the parent block. <em>block</em>: the text of the child block. <em>order</em>: (optional) controls where to create the block, 0 for inserting at the top, -1 for inserting at the bottom.</p>
+<p>A word of caution: if multiple blocks with the same text exist on the page, these functions may return the uid of the wrong block.</p>
+<pre><code class="language-javascript">function sleep(ms) {
+  return new Promise(resolve =&gt; setTimeout(resolve, ms));
+}
+
+let ancestor = `[ 
+  [(ancestor ?child ?parent)
+   [?parent :block/children ?child]]
+  [(ancestor ?child ?ancestor)
+   [?parent :block/children ?child]
+   (ancestor ?parent ?ancestor)]
+]`;
+
+function getPage(page) {
+  // returns the uid of a specific page in your graph.
+  // _page_: the title of the page.
+  let results = window.roamAlphaAPI.q(`
+    [:find ?uid
+     :in $ ?title
+     :where
+     [?page :node/title ?title]
+     [?page :block/uid ?uid]
+    ]`, page);
+  if (results.length) {
+    return results[0][0];
+  }
+}
+
+async function getOrCreatePage(page) {
+  // returns the uid of a specific page in your graph, creating it first if it does not already exist.
+  // _page_: the title of the page.
+  roamAlphaAPI.createPage({page: {title: page}});
+  let result;
+  while (!result) {
+    await sleep(25);
+    result = getPage(page);
+  }
+  return result;
+}
+
+function getBlockOnPage(page, block) {
+  // returns the uid of a specific block on a specific page.
+  // _page_: the title of the page.
+  // _block_: the text of the block.
+  let results = window.roamAlphaAPI.q(`
+    [:find ?block_uid
+     :in $ % ?page_title ?block_string
+     :where
+     [?page :node/title ?page_title]
+     [?page :block/uid ?page_uid]
+     (ancestor ?block ?page)
+     [?block :block/string ?block_string]
+     [?block :block/uid ?block_uid]
+    ]`, ancestor, page, block);
+  if (results.length) {
+    return results[0][0];
+  }
+}
+
+async function createBlockOnPage(page, block, order) {
+  // creates a new top-level block on a specific page, returning the new block's uid.
+  // _page_: the title of the page.
+  // _block_: the text of the block.
+  // _order_: (optional) controls where to create the block, 0 for top of page, -1 for bottom of page.
+  let page_uid = getPage(page);
+  createChildBlock(page_uid, block, order);
+}
+
+async function getOrCreateBlockOnPage(page, block, order) {
+  // returns the uid of a specific block on a specific page, creating it first as a top-level block if it's not already there.
+  // _page_: the title of the page.
+  // _block_: the text of the block.
+  // _order_: (optional) controls where to create the block, 0 for top of page, -1 for bottom of page.
+  let block_uid = getBlockOnPage(page, block);
+  if (block_uid) return block_uid;
+  return createBlockOnPage(page, block, order);
+}
+
+function getChildBlock(parent_uid, block) {
+  // returns the uid of a specific child block underneath a specific parent block.
+  // _parent_uid_: the uid of the parent block.
+  // _block_: the text of the child block.
+  let results = window.roamAlphaAPI.q(`
+    [:find ?block_uid
+     :in $ % ?parent_uid ?block_string
+     :where
+     [?parent :block/uid ?parent_uid]
+     (ancestor ?block ?page)
+     [?block :block/string ?block_string]
+     [?block :block/uid ?block_uid]
+    ]`, ancestor, parent_uid, block);
+  if (results.length) {
+    return results[0][0];
+  }
+}
+
+async function getOrCreateChildBlock(parent_uid, block, order) {
+  // creates a new child block underneath a specific parent block, returning the new block's uid.
+  // _parent_uid_: the uid of the parent block.
+  // _block_: the text of the new block.
+  // _order_: (optional) controls where to create the block, 0 for inserting at the top, -1 for inserting at the bottom.
+  let block_uid = getChildBlock(parent_uid, block);
+  if (block_uid) return block_uid;
+  return createChildBlock(parent_uid, block, order);
+}
+
+async function createChildBlock(parent_uid, block, order) {
+  // returns the uid of a specific child block underneath a specific parent block, creating it first if it's not already there.
+  // _parent_uid_: the uid of the parent block.
+  // _block_: the text of the child block.
+  // _order_: (optional) controls where to create the block, 0 for inserting at the top, -1 for inserting at the bottom.
+  if (!order) {
+    order = 0;
+  }
+  window.roamAlphaAPI.createBlock(
+    {
+      &quot;location&quot;: {&quot;parent-uid&quot;: parent_uid, &quot;order&quot;: order},
+      &quot;block&quot;: {&quot;string&quot;: block}
+    }
+  );
+  let block_uid;
+  while (!block_uid) {
+    await sleep(25);
+    block_uid = getChildBlock(parent_uid, block);
+  }
+}
+
+window.getPage = getPage;
+window.getOrCreatePage = getOrCreatePage;
+window.getBlockOnPage = getBlockOnPage;
+window.createBlockOnPage = createBlockOnPage;
+window.getOrCreateBlockOnPage = getOrCreateBlockOnPage;
+window.getChildBlock = getChildBlock;
+window.getOrCreateChildBlock = getOrCreateChildBlock;
+window.createChildBlockwindow = createChildBlockwindow;```
+</code></pre>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://davidbieber.com/">David Bieber</a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  </div>
+</article>
 
       
 
