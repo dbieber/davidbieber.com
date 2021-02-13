@@ -24,4 +24,4 @@ let urls = await getOrCreateBlockOnPage($page, 'Saved URLs:', -1);
 await createChildBlock(urls, $url)
 ```
 
-The first line creates the "Saved URLs:" block, but only if it doesn't already exists. It returns the uid of that block. The second line saves the url. Nothing else to it!
+The first line creates the "Saved URLs:" block, but only if it doesn't already exist. It returns the uid of that block. The second line saves the url. Nothing else to it!
