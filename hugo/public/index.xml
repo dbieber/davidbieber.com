@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 13 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 13 Feb 2021 01:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>David Bieber</title>
@@ -302,6 +302,22 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Two more Browserflow flows for Roam Research</title>
+      <link>https://davidbieber.com/snippets/2021-02-13-flows-for-roam-research/</link>
+      <pubDate>Sat, 13 Feb 2021 01:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-02-13-flows-for-roam-research/</guid>
+      <description>&lt;p&gt;I wrote three Browserflow flows for Roam Research today. None of them took me more than 20-30 minutes to write. The first one was for saving the current webpage to Roam. I 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/&#34;&gt;wrote about that flow here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The next flow I wrote is for saving any link you click on to Roam. The idea behind this flow is to prevent doing depth first exploration of the web. Better to look at a bunch of links and then later choose the most interesting, than to dive head first into the first link you click on.&lt;/p&gt;
+&lt;p&gt;Video of that flow here:&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/KMxnws2Laww&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;And then I also wrote a flow for saving highlights from any web page to Roam. You can see that flow in action here:&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/MaV0GP4sZoM&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;In this flow, whenever I press enter the text I&amp;rsquo;ve highlighted is saved to my Roam Research Daily Notes page.&lt;/p&gt;
 </description>
     </item>
     
