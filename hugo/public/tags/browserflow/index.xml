@@ -5,12 +5,33 @@
     <link>https://davidbieber.com/tags/browserflow/</link>
       <atom:link href="https://davidbieber.com/tags/browserflow/index.xml" rel="self" type="application/rss+xml" />
     <description>browserflow</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 09 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 13 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>browserflow</title>
       <link>https://davidbieber.com/tags/browserflow/</link>
     </image>
+    
+    <item>
+      <title>Saving URLs to Roam with Browserflow</title>
+      <link>https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/</guid>
+      <description>&lt;p&gt;Using the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-02-12-javascript-functions-for-inserting-blocks-in-roam/&#34;&gt;Roam JavaScript primitives I wrote yesterday&lt;/a&gt; it was extremely easy (less than 10 minutes, I think) to create a robust Browserflow flow for saving URLs to Roam Research.&lt;/p&gt;
+&lt;p&gt;Now when I&amp;rsquo;m browsing the web, I can press cmd-J (Browserflow&amp;rsquo;s keyboard shortcut) and choose &amp;ldquo;Roam: Save URL&amp;rdquo; from the typeahead to save the current URL to my Roam Daily Notes page.&lt;/p&gt;
+&lt;p&gt;If there&amp;rsquo;s not already a &amp;ldquo;Saved URLs:&amp;rdquo; block on daily notes, it makes it. Then it nests the URL beneath.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what the flow looks like in action:&lt;/p&gt;
+&lt;iframe width=&#34;640&#34; height=&#34;360&#34; src=&#34;https://www.youtube.com/embed/ORpBuE4UYSA&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;Here&amp;rsquo;s what the flow itself looks like:&lt;/p&gt;
+&lt;img src=&#34;save-urls-flow.png&#34;/&gt;
+&lt;p&gt;Notice there are really only two meaningful lines of code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let urls = await getOrCreateBlockOnPage($page, &#39;Saved URLs:&#39;, -1);
+await createChildBlock(urls, $url)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The first line creates the &amp;ldquo;Saved URLs:&amp;rdquo; block, but only if it doesn&amp;rsquo;t already exists. It returns the uid of that block. The second line saves the url. Nothing else to it!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>What does Browserflow do beyond what Tampermonkey does?</title>
