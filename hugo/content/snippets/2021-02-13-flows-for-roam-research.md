@@ -18,3 +18,5 @@ And then I also wrote a flow for saving highlights from any web page to Roam. Yo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MaV0GP4sZoM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 In this flow, whenever I press enter the text I've highlighted is saved to my Roam Research Daily Notes page.
+
+Links to all the flows are in the video descriptions. Browserflow is currently in private beta. Looks like in the short-term DK will likely ask [$20](https://www.notion.so/dkthehuman/Day-404-Choosing-My-Users-2a6b2c9cfc194fd3b561c370a62c60d5) for access to the private beta. You can join the waitlist at [browserflow.app](https://browserflow.app).
