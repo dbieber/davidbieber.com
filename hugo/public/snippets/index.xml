@@ -29,7 +29,7 @@
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let urls = await getOrCreateBlockOnPage($page, &#39;Saved URLs:&#39;, -1);
 await createChildBlock(urls, $url)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The first line creates the &amp;ldquo;Saved URLs:&amp;rdquo; block, but only if it doesn&amp;rsquo;t already exists. It returns the uid of that block. The second line saves the url. Nothing else to it!&lt;/p&gt;
+&lt;p&gt;The first line creates the &amp;ldquo;Saved URLs:&amp;rdquo; block, but only if it doesn&amp;rsquo;t already exist. It returns the uid of that block. The second line saves the url. Nothing else to it!&lt;/p&gt;
 </description>
     </item>
     
