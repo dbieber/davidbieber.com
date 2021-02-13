@@ -3,6 +3,7 @@ title = "More Datalog Queries for Roam"
 date = 2021-01-04T00:00:00
 uid = "yP0U4Rgb5"
 tags = ["roam-research"]
+keywords = ["datalog"]
 +++
 
 In this snippet I share datalog queries for Roam Research. For more such queries (and to see how to run these queries), [see this earlier snippet on the subject](/snippets/2020-12-22-datalog-queries-for-roam-research/).
