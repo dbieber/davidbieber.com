@@ -2,7 +2,8 @@
 title = "JavaScript Functions for Inserting Blocks in Roam"
 date = 2021-02-12T00:00:00
 uid = "BG51q3IqW"
-
+tags = ["roam-research", "javascript"]
+keywords = ["datalog"]
 +++
 
 At the end of this snippet I include some helpful javascript functions for accessing and inserting pages and blocks in Roam Research. Hope you find these useful!
@@ -23,7 +24,7 @@ At the end of this snippet I include some helpful javascript functions for acces
 
 **getOrCreateChildBlock(parent_uid, block, order):** returns the uid of a specific child block underneath a specific parent block, creating it first if it's not already there. _parent_uid_: the uid of the parent block. _block_: the text of the child block. _order_: (optional) controls where to create the block, 0 for inserting at the top, -1 for inserting at the bottom.
 
-A word of caution: if multiple blocks with the same text exist on the page, these functions may return the uid of the wrong block.
+Caution :warning: If multiple blocks with the same text exist on the page, these functions may return the uid of the wrong block.
 
 ```javascript
 function sleep(ms) {
@@ -90,7 +91,7 @@ async function createBlockOnPage(page, block, order) {
   // _block_: the text of the block.
   // _order_: (optional) controls where to create the block, 0 for top of page, -1 for bottom of page.
   let page_uid = getPage(page);
-  createChildBlock(page_uid, block, order);
+  return createChildBlock(page_uid, block, order);
 }
 
 async function getOrCreateBlockOnPage(page, block, order) {
@@ -112,7 +113,7 @@ function getChildBlock(parent_uid, block) {
      :in $ % ?parent_uid ?block_string
      :where
      [?parent :block/uid ?parent_uid]
-     (ancestor ?block ?page)
+     (ancestor ?block ?parent)
      [?block :block/string ?block_string]
      [?block :block/uid ?block_uid]
     ]`, ancestor, parent_uid, block);
@@ -150,6 +151,7 @@ async function createChildBlock(parent_uid, block, order) {
     await sleep(25);
     block_uid = getChildBlock(parent_uid, block);
   }
+  return block_uid;
 }
 
 window.getPage = getPage;
@@ -159,4 +161,16 @@ window.createBlockOnPage = createBlockOnPage;
 window.getOrCreateBlockOnPage = getOrCreateBlockOnPage;
 window.getChildBlock = getChildBlock;
 window.getOrCreateChildBlock = getOrCreateChildBlock;
-window.createChildBlockwindow = createChildBlockwindow;```
+window.createChildBlock = createChildBlock;
+```
+
+To use these functions in your Roam database, create a block with the string `{{[[roam/js]]}}`, create a code block by typing triple-backticks (\`\`\`), paste the above JavaScript into the code block, and click "Yes, I know what I'm doing."
+
+As a reminder, you get the result of an async function with `await`, e.g.
+
+```javascript
+let uid = await getOrCreateBlockOnPage(
+    "February 12, 2020", "Fleeting TODOs:")
+```
+
+The create- and getOrCreate- functions are async, whereas the pure get- functions are regular functions. So, be sure to use await accordingly.

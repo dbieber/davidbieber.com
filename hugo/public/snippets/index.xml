@@ -26,7 +26,7 @@
 &lt;p&gt;&lt;strong&gt;getChildBlock(parent_uid, block):&lt;/strong&gt; returns the uid of a specific child block underneath a specific parent block. &lt;em&gt;parent_uid&lt;/em&gt;: the uid of the parent block. &lt;em&gt;block&lt;/em&gt;: the text of the child block.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;createChildBlock(parent_uid, block, order):&lt;/strong&gt; creates a new child block underneath a specific parent block, returning the new block&amp;rsquo;s uid. &lt;em&gt;parent_uid&lt;/em&gt;: the uid of the parent block. &lt;em&gt;block&lt;/em&gt;: the text of the new block. &lt;em&gt;order&lt;/em&gt;: (optional) controls where to create the block, 0 for inserting at the top, -1 for inserting at the bottom.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;getOrCreateChildBlock(parent_uid, block, order):&lt;/strong&gt; returns the uid of a specific child block underneath a specific parent block, creating it first if it&amp;rsquo;s not already there. &lt;em&gt;parent_uid&lt;/em&gt;: the uid of the parent block. &lt;em&gt;block&lt;/em&gt;: the text of the child block. &lt;em&gt;order&lt;/em&gt;: (optional) controls where to create the block, 0 for inserting at the top, -1 for inserting at the bottom.&lt;/p&gt;
-&lt;p&gt;A word of caution: if multiple blocks with the same text exist on the page, these functions may return the uid of the wrong block.&lt;/p&gt;
+&lt;p&gt;Caution ⚠️ If multiple blocks with the same text exist on the page, these functions may return the uid of the wrong block.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function sleep(ms) {
   return new Promise(resolve =&amp;gt; setTimeout(resolve, ms));
 }
@@ -91,7 +91,7 @@ async function createBlockOnPage(page, block, order) {
   // _block_: the text of the block.
   // _order_: (optional) controls where to create the block, 0 for top of page, -1 for bottom of page.
   let page_uid = getPage(page);
-  createChildBlock(page_uid, block, order);
+  return createChildBlock(page_uid, block, order);
 }
 
 async function getOrCreateBlockOnPage(page, block, order) {
@@ -113,7 +113,7 @@ function getChildBlock(parent_uid, block) {
      :in $ % ?parent_uid ?block_string
      :where
      [?parent :block/uid ?parent_uid]
-     (ancestor ?block ?page)
+     (ancestor ?block ?parent)
      [?block :block/string ?block_string]
      [?block :block/uid ?block_uid]
     ]`, ancestor, parent_uid, block);
@@ -151,6 +151,7 @@ async function createChildBlock(parent_uid, block, order) {
     await sleep(25);
     block_uid = getChildBlock(parent_uid, block);
   }
+  return block_uid;
 }
 
 window.getPage = getPage;
@@ -160,8 +161,14 @@ window.createBlockOnPage = createBlockOnPage;
 window.getOrCreateBlockOnPage = getOrCreateBlockOnPage;
 window.getChildBlock = getChildBlock;
 window.getOrCreateChildBlock = getOrCreateChildBlock;
-window.createChildBlockwindow = createChildBlockwindow;```
+window.createChildBlock = createChildBlock;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To use these functions in your Roam database, create a block with the string &lt;code&gt;{{[[roam/js]]}}&lt;/code&gt;, create a code block by typing triple-backticks (```), paste the above JavaScript into the code block, and click &amp;ldquo;Yes, I know what I&amp;rsquo;m doing.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;As a reminder, you get the result of an async function with &lt;code&gt;await&lt;/code&gt;, e.g.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let uid = await getOrCreateBlockOnPage(
+    &amp;quot;February 12, 2020&amp;quot;, &amp;quot;Fleeting TODOs:&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The create- and getOrCreate- functions are async, whereas the pure get- functions are regular functions. So, be sure to use await accordingly.&lt;/p&gt;
 </description>
     </item>
     

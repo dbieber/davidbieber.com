@@ -536,7 +536,7 @@ getOrCreatePage(page): returns the uid of a specific page in your graph, creatin
 <p><strong>getChildBlock(parent_uid, block):</strong> returns the uid of a specific child block underneath a specific parent block. <em>parent_uid</em>: the uid of the parent block. <em>block</em>: the text of the child block.</p>
 <p><strong>createChildBlock(parent_uid, block, order):</strong> creates a new child block underneath a specific parent block, returning the new block&rsquo;s uid. <em>parent_uid</em>: the uid of the parent block. <em>block</em>: the text of the new block. <em>order</em>: (optional) controls where to create the block, 0 for inserting at the top, -1 for inserting at the bottom.</p>
 <p><strong>getOrCreateChildBlock(parent_uid, block, order):</strong> returns the uid of a specific child block underneath a specific parent block, creating it first if it&rsquo;s not already there. <em>parent_uid</em>: the uid of the parent block. <em>block</em>: the text of the child block. <em>order</em>: (optional) controls where to create the block, 0 for inserting at the top, -1 for inserting at the bottom.</p>
-<p>A word of caution: if multiple blocks with the same text exist on the page, these functions may return the uid of the wrong block.</p>
+<p>Caution ⚠️ If multiple blocks with the same text exist on the page, these functions may return the uid of the wrong block.</p>
 <pre><code class="language-javascript">function sleep(ms) {
   return new Promise(resolve =&gt; setTimeout(resolve, ms));
 }
@@ -601,7 +601,7 @@ async function createBlockOnPage(page, block, order) {
   // _block_: the text of the block.
   // _order_: (optional) controls where to create the block, 0 for top of page, -1 for bottom of page.
   let page_uid = getPage(page);
-  createChildBlock(page_uid, block, order);
+  return createChildBlock(page_uid, block, order);
 }
 
 async function getOrCreateBlockOnPage(page, block, order) {
@@ -623,7 +623,7 @@ function getChildBlock(parent_uid, block) {
      :in $ % ?parent_uid ?block_string
      :where
      [?parent :block/uid ?parent_uid]
-     (ancestor ?block ?page)
+     (ancestor ?block ?parent)
      [?block :block/string ?block_string]
      [?block :block/uid ?block_uid]
     ]`, ancestor, parent_uid, block);
@@ -661,6 +661,7 @@ async function createChildBlock(parent_uid, block, order) {
     await sleep(25);
     block_uid = getChildBlock(parent_uid, block);
   }
+  return block_uid;
 }
 
 window.getPage = getPage;
@@ -670,8 +671,14 @@ window.createBlockOnPage = createBlockOnPage;
 window.getOrCreateBlockOnPage = getOrCreateBlockOnPage;
 window.getChildBlock = getChildBlock;
 window.getOrCreateChildBlock = getOrCreateChildBlock;
-window.createChildBlockwindow = createChildBlockwindow;```
+window.createChildBlock = createChildBlock;
 </code></pre>
+<p>To use these functions in your Roam database, create a block with the string <code>{{[[roam/js]]}}</code>, create a code block by typing triple-backticks (```), paste the above JavaScript into the code block, and click &ldquo;Yes, I know what I&rsquo;m doing.&rdquo;</p>
+<p>As a reminder, you get the result of an async function with <code>await</code>, e.g.</p>
+<pre><code class="language-javascript">let uid = await getOrCreateBlockOnPage(
+    &quot;February 12, 2020&quot;, &quot;Fleeting TODOs:&quot;)
+</code></pre>
+<p>The create- and getOrCreate- functions are async, whereas the pure get- functions are regular functions. So, be sure to use await accordingly.</p>
 
     </div>
 
@@ -680,6 +687,14 @@ window.createChildBlockwindow = createChildBlockwindow;```
 
 
 
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/roam-research/">roam-research</a>
+  
+  <a class="badge badge-light" href="/tags/javascript/">javascript</a>
+  
+</div>
 
 
 
@@ -691,6 +706,21 @@ window.createChildBlockwindow = createChildBlockwindow;```
 
 
   
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/snippets/2021-01-04-more-datalog-queries-for-roam/">More Datalog Queries for Roam</a></li>
+      
+      <li><a href="/snippets/2020-04-25-roam-json-export/">Roam Research&#39;s JSON Export Format</a></li>
+      
+      <li><a href="/snippets/2020-12-22-datalog-queries-for-roam-research/">Datalog Queries for Roam Research</a></li>
+      
+      <li><a href="/snippets/2021-01-25-notifications-in-roam-research/">Notifications in Roam Research</a></li>
+      
+    </ul>
+  </div>
   
 
 
