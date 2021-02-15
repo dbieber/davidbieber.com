@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 13 Feb 2021 01:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 14 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>David Bieber</title>
@@ -302,6 +302,24 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Python Fire shebang</title>
+      <link>https://davidbieber.com/snippets/2021-02-14-the-python-fire-shebang/</link>
+      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-02-14-the-python-fire-shebang/</guid>
+      <description>&lt;p&gt;Happy valentine&amp;rsquo;s day! Today&amp;rsquo;s snippet is about a feature of Python Fire, new in v0.4.0, and how you can use it to create Python Fire executables just by adding a shebang to an existing Python file. This idea is courtesy of 
+&lt;a href=&#34;https://github.com/c6401&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;c6401&lt;/a&gt; in GitHub issue 
+&lt;a href=&#34;https://github.com/google/python-fire/issues/319&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#319&lt;/a&gt;. The shebang line is &lt;code&gt;#!/usr/bin/env -S python3 -m fire&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The feature introduced in fire v0.4.0 is that &lt;code&gt;python -m fire&lt;/code&gt; now accepts filepaths.&lt;/p&gt;
+&lt;p&gt;Suppose you have a Python file at &lt;code&gt;path/to/module.py&lt;/code&gt;. Previously, you could invoke module.py as a Fire CLI with the command &lt;code&gt;python -m fire path.to.module&lt;/code&gt;. That still works, but now you can also use the command &lt;code&gt;python -m fire path/to/module.py&lt;/code&gt;. This is roughly equivalent to running module.py and then calling &lt;code&gt;fire.Fire()&lt;/code&gt; as the final line of the module.&lt;/p&gt;
+&lt;p&gt;A consequence of this new feature is that the shebang &lt;code&gt;#!/usr/bin/env -S python3 -m fire&lt;/code&gt; allows you to create executable CLIs out of Python files. &lt;code&gt;/usr/bin/env -S&lt;/code&gt; is explained 
+&lt;a href=&#34;https://www.gnu.org/software/coreutils/manual/html_node/env-invocation.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. To create a Python Fire executable, simply add the shebang line as the first line of the file, and then use &lt;code&gt;chmod +x&lt;/code&gt; to mark the file as executable.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a quick example:&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/dbieber/ab8ed63ebbd7afad3c1f19c70028ae31.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;Save it as e.g. &lt;code&gt;shebang.py&lt;/code&gt;, run &lt;code&gt;chmod +x shebang.py&lt;/code&gt; to make it executable, and run it with &lt;code&gt;./shebang.py hello --name=David&lt;/code&gt;&lt;/p&gt;
 </description>
     </item>
     
