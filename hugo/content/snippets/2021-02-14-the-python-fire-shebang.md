@@ -2,7 +2,8 @@
 title = "The Python Fire shebang"
 date = 2021-02-14T00:00:00
 uid = "O_izatGFP"
-
+tags = ["python-fire"]
+keywords = ["github"]
 +++
 
 Happy valentine's day! Today's snippet is about a feature of Python Fire, new in v0.4.0, and how you can use it to create Python Fire executables just by adding a shebang to an existing Python file. This idea is courtesy of [c6401](https://github.com/c6401) in GitHub issue [#319](https://github.com/google/python-fire/issues/319). The shebang line is `#!/usr/bin/env -S python3 -m fire`.
