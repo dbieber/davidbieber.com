@@ -310,7 +310,8 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <link>https://davidbieber.com/snippets/2021-02-14-the-python-fire-shebang/</link>
       <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2021-02-14-the-python-fire-shebang/</guid>
-      <description>&lt;p&gt;Happy valentine&amp;rsquo;s day! Today&amp;rsquo;s snippet is about a feature of Python Fire, new in v0.4.0, and how you can use it to create Python Fire executables just by adding a shebang to an existing Python file. This idea is courtesy of 
+      <description>&lt;p&gt;Happy valentine&amp;rsquo;s day! Today&amp;rsquo;s snippet is about a feature of 
+&lt;a href=&#34;https://github.com/google/python-fire&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python Fire&lt;/a&gt;, new in v0.4.0, and how you can use it to create Python Fire executables just by adding a shebang to an existing Python file. This idea is courtesy of 
 &lt;a href=&#34;https://github.com/c6401&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;c6401&lt;/a&gt; in GitHub issue 
 &lt;a href=&#34;https://github.com/google/python-fire/issues/319&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#319&lt;/a&gt;. The shebang line is &lt;code&gt;#!/usr/bin/env -S python3 -m fire&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The feature introduced in fire v0.4.0 is that &lt;code&gt;python -m fire&lt;/code&gt; now accepts filepaths.&lt;/p&gt;
