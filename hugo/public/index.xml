@@ -320,6 +320,9 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
 &lt;p&gt;Here&amp;rsquo;s a quick example:&lt;/p&gt;
 &lt;script src=&#34;https://gist.github.com/dbieber/ab8ed63ebbd7afad3c1f19c70028ae31.js&#34;&gt;&lt;/script&gt;
 &lt;p&gt;Save it as e.g. &lt;code&gt;shebang.py&lt;/code&gt;, run &lt;code&gt;chmod +x shebang.py&lt;/code&gt; to make it executable, and run it with &lt;code&gt;./shebang.py hello --name=David&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;gt; ./shebang.py hello --name=David
+Hello David!
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
