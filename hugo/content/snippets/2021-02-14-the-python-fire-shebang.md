@@ -18,3 +18,8 @@ Here's a quick example:
 <script src="https://gist.github.com/dbieber/ab8ed63ebbd7afad3c1f19c70028ae31.js"></script>
 
 Save it as e.g. `shebang.py`, run `chmod +x shebang.py` to make it executable, and run it with `./shebang.py hello --name=David`
+
+```bash
+> ./shebang.py hello --name=David
+Hello David!
+```
