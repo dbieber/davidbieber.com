@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 14 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>David Bieber</title>
@@ -302,6 +302,80 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Magic Functions in Python</title>
+      <link>https://davidbieber.com/snippets/2021-02-17-python-magic-functions/</link>
+      <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-02-17-python-magic-functions/</guid>
+      <description>&lt;p&gt;In this snippet I introduce and implement, but do not condone, Python &amp;ldquo;Magic functions&amp;rdquo;.
+Magic functions are interesting to think about and to study, but I discourage their use in anything but the most experimental of code. You&amp;rsquo;ll soon see why.&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;magic function&lt;/strong&gt; is a function where the arguments and return values are both implicit, handled through the magic of Python&amp;rsquo;s powerful stack introspection.&lt;/p&gt;
+&lt;p&gt;Consider the following example, which implements the quadratic formula. Pay special attention to where quadratic_formula is called. No arguments are passed, and the result is not assigned to anything. Still, the program works.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import math
+import magic
+
+def quadratic_formula(context):
+  magic.unpack(context)
+  discriminant = b**2 - 4*a*c
+  x0, x1 = (
+      (-b + math.sqrt(discriminant)) / (2*a),
+      (-b - math.sqrt(discriminant)) / (2*a),
+  )
+  return magic.context()
+
+
+def main():
+  a, b, c = 1, -1, -12
+  magic.call(quadratic_formula)
+  print(f&#39;x = {x0} or {x1}  (Discriminant is {discriminant})&#39;)
+
+if __name__ == &#39;__main__&#39;:
+  main()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We say quadratic_formula is a &amp;ldquo;magic function&amp;rdquo;, and it is called by invoking magic.call.&lt;/p&gt;
+&lt;p&gt;When we run this program, the result is:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;x = 4.0 or -3.0  (Discriminant is 49)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;How did a, b, and c get passed to quadratic_formula? How did x0, x1, and discriminant find their way back to main? This is the magic of magic functions.&lt;/p&gt;
+&lt;p&gt;To implement a magic function, simply write a function that accepts a single argument &lt;code&gt;context&lt;/code&gt;, calls &lt;code&gt;magic.unpack(context)&lt;/code&gt; as its first line, and returns with &lt;code&gt;return magic.context()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To call a magic function, use &lt;code&gt;magic.call(fn)&lt;/code&gt; as in the example above.&lt;/p&gt;
+&lt;p&gt;To &amp;ldquo;install&amp;rdquo; magic, so that you can import it as in the example above, simply save the following three-function Python file as &lt;code&gt;magic.py&lt;/code&gt; in the directory where you&amp;rsquo;d like to use magic functions.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import inspect
+
+def call(fn, n=1):
+  c = context(n=n+1)
+  result = fn(c)
+  unpack(result, n=n+1)
+
+def context(n=1):
+  c = {}
+  caller = inspect.stack()[n]
+  caller_frame = caller[0]
+  caller_globals = caller_frame.f_globals
+  caller_locals = caller_frame.f_locals
+  c.update(caller_globals)
+  c.update(caller_locals)
+  return c
+
+def unpack(c, n=1):
+  caller = inspect.stack()[n]
+  caller_frame = caller[0]
+  caller_frame.f_globals.update(c)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;These twenty lines of code comprise the complete implementation of the magic module.
+Magic works by inspecting the stack to get the locals and globals when calling a magic function and when returning from a magic function &amp;ndash; this is done in the &lt;code&gt;context&lt;/code&gt; function. Magic then makes use of stack inspection a second time to update the globals in the caller after a magic function returns &amp;ndash; this is done in &lt;code&gt;unpack&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;What purpose does this all serve? Why would you ever want to use magic functions?
+The short answer is that you should &lt;em&gt;never&lt;/em&gt; use magic functions.
+They will confuse readers of your code and are error prone.
+Nevertheless, I will explain the situation that prompted me to write this module.&lt;/p&gt;
+&lt;p&gt;I wanted to write a machine learning training loop and reuse it for many different machine learning training pipelines. Each of the training pipelines needed to track metrics in its own way, save summaries in its own way, make plots in its own way, etc. A natural way to support all of these different needs is with hooks. A hook is a user provided callback function that the training loop library can call each iteration through the loop.&lt;/p&gt;
+&lt;p&gt;The trouble with hooks in this situation is that they require either very long argument lists, or bundling of many arguments into a single argument. If different functions need different bundles of arguments, the bundling approach can be quite cumbersome. Also, if two hooks wish to communicate with one another, that needs to be accommodated too. Magic functions provide one mechanism for dealing with this complexity. Different magic hooks can make use of different parts of the training loop&amp;rsquo;s state. A magic hook can also use state set by another hook.
+While this approach does satisfactorily address the complexity of writing a training loop library,
+I must stress that I do not recommend this approach.&lt;/p&gt;
+&lt;p&gt;As with real magic, use &lt;code&gt;magic&lt;/code&gt; at your own peril. 🧙‍♀️ 😉&lt;/p&gt;
 </description>
     </item>
     
