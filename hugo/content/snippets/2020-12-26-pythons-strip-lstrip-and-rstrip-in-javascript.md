@@ -72,7 +72,7 @@ function ltrim(x) {
 }
 ```
 
-We now implement rtrim a second time, now accepting "characters" as input:
+We now implement ltrim a second time, now accepting "characters" as input:
 
 ```javascript
 function ltrim(x, characters) {
