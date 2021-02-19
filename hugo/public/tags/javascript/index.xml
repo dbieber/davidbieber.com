@@ -135,12 +135,10 @@ So, I&amp;rsquo;m going to hire someone on Fiverr to add margin notes on my webs
 &lt;p&gt;First, using the implementations that strip spaces:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;trim(&#39;   Hello world!   &#39;) === &#39;Hello world!&#39;;
 ltrim(&#39;   Hello world!   &#39;) === &#39;Hello world!   &#39;;
-rtrim(&#39;   Hello world!   &#39;) === &#39;   Hello world!&#39;;```
-
-Second, using the implementations that strip the specified characters:
-
-```javascript
-trim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;u&#39;;
+rtrim(&#39;   Hello world!   &#39;) === &#39;   Hello world!&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Second, using the implementations that strip the specified characters:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;trim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;u&#39;;
 ltrim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;uzzzzzz&#39;;
 rtrim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;Bu&#39;;
 &lt;/code&gt;&lt;/pre&gt;

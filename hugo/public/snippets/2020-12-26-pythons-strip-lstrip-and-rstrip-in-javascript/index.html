@@ -588,12 +588,10 @@ The Python strip method in JavaScript In Python, strip removes whitespace from t
 <p>First, using the implementations that strip spaces:</p>
 <pre><code class="language-javascript">trim('   Hello world!   ') === 'Hello world!';
 ltrim('   Hello world!   ') === 'Hello world!   ';
-rtrim('   Hello world!   ') === '   Hello world!';```
-
-Second, using the implementations that strip the specified characters:
-
-```javascript
-trim('Buzzzzzz', 'Bz') === 'u';
+rtrim('   Hello world!   ') === '   Hello world!';
+</code></pre>
+<p>Second, using the implementations that strip the specified characters:</p>
+<pre><code class="language-javascript">trim('Buzzzzzz', 'Bz') === 'u';
 ltrim('Buzzzzzz', 'Bz') === 'uzzzzzz';
 rtrim('Buzzzzzz', 'Bz') === 'Bu';
 </code></pre>

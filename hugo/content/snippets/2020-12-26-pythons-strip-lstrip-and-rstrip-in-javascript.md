@@ -94,7 +94,8 @@ First, using the implementations that strip spaces:
 ```javascript
 trim('   Hello world!   ') === 'Hello world!';
 ltrim('   Hello world!   ') === 'Hello world!   ';
-rtrim('   Hello world!   ') === '   Hello world!';```
+rtrim('   Hello world!   ') === '   Hello world!';
+```
 
 Second, using the implementations that strip the specified characters:
 
