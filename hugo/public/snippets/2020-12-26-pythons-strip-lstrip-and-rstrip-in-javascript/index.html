@@ -573,7 +573,7 @@ The Python strip method in JavaScript In Python, strip removes whitespace from t
   return x.replace(/^\s+/gm, '');
 }
 </code></pre>
-<p>We now implement rtrim a second time, now accepting &ldquo;characters&rdquo; as input:</p>
+<p>We now implement ltrim a second time, now accepting &ldquo;characters&rdquo; as input:</p>
 <pre><code class="language-javascript">function ltrim(x, characters) {
   var start = 0;
   while (characters.indexOf(x[start]) &gt;= 0) {

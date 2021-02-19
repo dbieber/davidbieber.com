@@ -120,7 +120,7 @@ So, I&amp;rsquo;m going to hire someone on Fiverr to add margin notes on my webs
   return x.replace(/^\s+/gm, &#39;&#39;);
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;We now implement rtrim a second time, now accepting &amp;ldquo;characters&amp;rdquo; as input:&lt;/p&gt;
+&lt;p&gt;We now implement ltrim a second time, now accepting &amp;ldquo;characters&amp;rdquo; as input:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function ltrim(x, characters) {
   var start = 0;
   while (characters.indexOf(x[start]) &amp;gt;= 0) {
