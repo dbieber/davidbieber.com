@@ -13,6 +13,54 @@
     </image>
     
     <item>
+      <title>Snippets Dry Spell</title>
+      <link>https://davidbieber.com/snippets/2021-02-21-snippets-dry-spell/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-02-21-snippets-dry-spell/</guid>
+      <description>&lt;p&gt;After writing a snippet almost every day this year, the last week has been comparatively sparse. I&amp;rsquo;ve skipped about 7 days recently! Now, I don&amp;rsquo;t have any sort of quota that I&amp;rsquo;m aiming for (unlike last year, where I wanted to communicate publicly 100 times.) So, this isn&amp;rsquo;t necessarily a problem. Still, good to reflect on why I&amp;rsquo;ve slowed down in writing snippets and where I&amp;rsquo;ll go next.&lt;/p&gt;
+&lt;p&gt;My recent snippets have been: quirky small Python projects&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, lots of Roam and Browserflow projects&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, and some Peer Learning Group planning&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. Essentially, almost all my writing has been project-based, usually about programming projects. It&amp;rsquo;s been a month since I&amp;rsquo;ve written about an idea I&amp;rsquo;m not actually acting on&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. Let&amp;rsquo;s do more of those. I don&amp;rsquo;t want to set an expectation of myself that I write code or organize a big event for every little snippet. Snippets are supposed to be almost as easy for me to write and publish (but not to broadcast) as it is for me to think. So, self, expect some low-effort low-quality snippets in the coming weeks as we reset this expectation.&lt;/p&gt;
+&lt;p&gt;This growing implicit expectation could be one reason for skipping several days lately. Another is the &amp;ldquo;OPP Back-pressure&amp;rdquo;. OPP stands for &amp;ldquo;Other People&amp;rsquo;s Projects.&amp;rdquo; I&amp;rsquo;ve found myself writing a lot about Roam Research, and a bit about Browserflow, both OPP. And with this &amp;ndash; particularly with writing about Roam &amp;ndash; comes an internal pressure to write less about OPP. Can explore this idea more later.&lt;/p&gt;
+&lt;p&gt;Here are some of the snippet ideas I&amp;rsquo;ve written down for myself that I&amp;rsquo;d like to write eventually:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Crashing Facebook Japan&lt;/li&gt;
+&lt;li&gt;The &amp;ldquo;content sharing group&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;2021 goals&lt;/li&gt;
+&lt;li&gt;The &amp;ldquo;programmer&amp;rsquo;s apprentice&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Making decisions for 10,000 people&lt;/li&gt;
+&lt;li&gt;Roam Primitives: subscribe to changes&lt;/li&gt;
+&lt;li&gt;Castles in the clouds (as a mental model for belief systems)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As I get around to writing these, I can update this page with links to the snippets. (I don&amp;rsquo;t anticipate writing these in the short-term though.)&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-18-python-hoist-locals-only/&#34;&gt;hoist&lt;/a&gt; and 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-02-17-python-magic-functions/&#34;&gt;magic&lt;/a&gt; and the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-02-14-the-python-fire-shebang/&#34;&gt;Python Fire shebang&lt;/a&gt; and the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/&#34;&gt;Kangaroo Auto-responder&lt;/a&gt;. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/roam-research&#34;&gt;Here (Roam)&lt;/a&gt; and 
+&lt;a href=&#34;https://davidbieber.com/tags/browserflow&#34;&gt;here (Browserflow)&lt;/a&gt; respectively. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/peer-learning-group&#34;&gt;PLG snippets here.&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;The latest examples are 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-22-am-i-available-for-conversation-right-now-dot-com/&#34;&gt;am i available for conversation right now dot com&lt;/a&gt; and my 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-20-clubhouse-feature-request-save-last-60-seconds/&#34;&gt;clubhouse feature request&lt;/a&gt;. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Magic Functions in Python</title>
       <link>https://davidbieber.com/snippets/2021-02-17-python-magic-functions/</link>
       <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
