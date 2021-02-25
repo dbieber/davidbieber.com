@@ -2,7 +2,8 @@
 title = "Brainstorming: Roam Terminal"
 date = 2021-02-24T00:00:00
 uid = "3jSWpMmH8"
-
+tags = ["roam-research", "taking-silly-ideas-seriously"]
+keywords = ["terminal", "brainstorm", "shell"]
 +++
 
 In Roam Research, I'd like to be able to type "/terminal" to insert a shell into my current block. Each command issued in the shell will become a block hidden behind the terminal (nested but collapsed). The output of each command will become a block as well.
