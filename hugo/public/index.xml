@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 21 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 24 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>David Bieber</title>
@@ -302,6 +302,34 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Brainstorming: Roam Terminal</title>
+      <link>https://davidbieber.com/snippets/2021-02-24-brainstorming-roam-terminal/</link>
+      <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-02-24-brainstorming-roam-terminal/</guid>
+      <description>&lt;p&gt;In Roam Research, I&amp;rsquo;d like to be able to type &amp;ldquo;/terminal&amp;rdquo; to insert a shell into my current block. Each command issued in the shell will become a block hidden behind the terminal (nested but collapsed). The output of each command will become a block as well.&lt;/p&gt;
+&lt;p&gt;What sorts of commands do you want to be able to issue from within Roam? Deploying snippets. Querying the Roam graph. sshing into another machine and using it natively. Treating Roam like a file system.&lt;/p&gt;
+&lt;p&gt;Of course I&amp;rsquo;d like all the basic shell features (history, basic unix commands sed/grep/ls/cd/awk/&amp;hellip;, piping).&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d also like my commands to be able to use my Roam content as inputs. I&amp;rsquo;d like a new type of shell expansion &amp;ndash; expanding block references. echo $((7yNZl3Gf-)) will echo the contents of that block (precise syntax tbd).&lt;/p&gt;
+&lt;p&gt;Pages in the Roam database can be treated like files. cat [[Roam Research]] will output the full contents of the Roam Research page of my graph.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll have new primitives too, like the unix classics, more suited for the Roam data structure. List all references on a page. grep that list for a keyword. Sort by date. &lt;code&gt;refs Roam Research | grep Conor | sort -t&lt;/code&gt;. There would be primitives for accessing a block&amp;rsquo;s children, parents, refs, backrefs, etc.&lt;/p&gt;
+&lt;p&gt;Of course you can write your own commands too. Like 
+&lt;a href=&#34;https://github.com/google/python-fire&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python Fire&lt;/a&gt;, we&amp;rsquo;ll provide a mechanism to trivially translate any javascript/closure function in your roam/js into a command line utility. The function name becomes the command name. The function arguments become its flags. Help is generated automatically.&lt;/p&gt;
+&lt;p&gt;The real power comes from being able to apply the unix philosophy simultaneously on Roam and on a remote machine. How does this look? Maybe the Roam graph is mounted as a filesystem on the remote machine. /roam/pages/Roam Research.md views [[Roam Research]] as a markdown file. Also viewable as json or edn. Syntactic sugar provided by the shell allows you to operate directly on &amp;ldquo;[[Roam Research]]&amp;rdquo; allowing for natural commands like the one above.&lt;/p&gt;
+&lt;p&gt;You can write to pages and blocks via these unix utilities too. Makes it super easy to copy data between the remote machine and your graph in both directions.&lt;/p&gt;
+&lt;p&gt;How to implement this? roam/render may be essential. 
+&lt;a href=&#34;https://chrome.google.com/webstore/detail/secure-shell-app/pnhechapfaindjhompbnflcldabbghjo?hl=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Secure shell app&lt;/a&gt; (chrome extension) suggests feasibility. There&amp;rsquo;s a 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Web-based_SSH&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wikipedia page on Web-based SSH&lt;/a&gt; for inspiration. 
+&lt;a href=&#34;https://xtermjs.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;xterm.js&lt;/a&gt; is used in loads of places for javascript-based terminals.&lt;/p&gt;
+&lt;p&gt;Rerunning a command from your shell history? Appears as a block reference. Even works for modified commands.&lt;/p&gt;
+&lt;p&gt;This just comes for free for being in Roam: you can tag your commands to make them easy to find later. In bash # starts a comment, so the syntax for tagging tag-teams nicely with bash&amp;rsquo;s syntax. Similarly using block and page references in your commands pages it easy to resurface them.&lt;/p&gt;
+&lt;p&gt;For v0 we don&amp;rsquo;t necessarily need a roam/render UI. Instead we could just write some roam/js that listens for ENTER on blocks nested below &amp;ldquo;{{roam/terminal}}&amp;rdquo;. When ENTER is pressed, the block&amp;rsquo;s contents are parsed, the command gets run, output gets streamed to a new block nested below the command. I think a specialized UI could go a long way though. At the very least history search and tab completion are pretty essential shell features, and there are so many more (e.g. curses, colors).&lt;/p&gt;
+&lt;p&gt;As I wrap up this idea, I&amp;rsquo;ll also point out the deep similarity between terminal UIs and chat UIs. Both are at their core just call and response. In one you communicate with the computer, in the other with human beings. (With 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; and my Messager project, it&amp;rsquo;s not always clear which is which 😃.) Details like the number of participants, the format of messages, and whether a response can be issued without a corresponding call are just that: details.&lt;/p&gt;
+&lt;p&gt;If we could get a solid terminal experience, legitimately enabling developers to make Roam their default shell, the fusing of note-taking, thinking, and command-issuing that would result would be super powerful. All just a half-baked idea, for now. For now.&lt;/p&gt;
 </description>
     </item>
     
