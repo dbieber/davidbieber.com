@@ -1,7 +1,8 @@
 +++
 title = "The Efficient Minds Hypothesis"
 date = 2021-03-04T13:36:00
-
+tags = ["taking-silly-ideas-seriously", "attention"]
+keywords = ["hypothesis", "thought", "attention"]
 +++
 
 The "Efficient Minds Hypothesis" states that a person is able to reach whatever conclusions they are able to reach in a small finite amount of time. Unless new information is presented, after that small duration no new conclusions will be reached. Stated more succinctly, the Efficient Minds Hypothesis states that "thinking is near-instantaneous."
