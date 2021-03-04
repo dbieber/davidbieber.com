@@ -5,12 +5,44 @@
     <link>https://davidbieber.com/tags/attention/</link>
       <atom:link href="https://davidbieber.com/tags/attention/index.xml" rel="self" type="application/rss+xml" />
     <description>attention</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 10 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 04 Mar 2021 13:36:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>attention</title>
       <link>https://davidbieber.com/tags/attention/</link>
     </image>
+    
+    <item>
+      <title>The Efficient Minds Hypothesis</title>
+      <link>https://davidbieber.com/snippets/2021-03-04-the-efficient-minds-hypothesis/</link>
+      <pubDate>Thu, 04 Mar 2021 13:36:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-03-04-the-efficient-minds-hypothesis/</guid>
+      <description>&lt;p&gt;The &amp;ldquo;Efficient Minds Hypothesis&amp;rdquo; states that a person is able to reach whatever conclusions they are able to reach in a small finite amount of time. Unless new information is presented, after that small duration no new conclusions will be reached. Stated more succinctly, the Efficient Minds Hypothesis states that &amp;ldquo;thinking is near-instantaneous.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;This is of course, preposterous. However, when it is not named and stated so explicitly, believing the EMH is an easy trap to fall into.&lt;/p&gt;
+&lt;p&gt;There are negative consequences to believing the EMH, even implicitly or subconsciously. It can lead to asking fewer questions. It can lead to scheduling less time for planning and Great Thoughts, and spending too large a proportion of your time on building and chasing short-term goals. It can lead to too much self-reliance, and a reluctance to delegate or share the burden of a project with others.&lt;/p&gt;
+&lt;p&gt;While the Efficient Minds Hypothesis is mainly a strawman that I don&amp;rsquo;t think many people would claim to believe outright, I do think it&amp;rsquo;s an idea that people (at least myself) sometimes believe implicitly. Making it explicit helps to make its status as a fallacy clearer.&lt;/p&gt;
+&lt;p&gt;I write about the Efficient Minds Hypothesis from personal experience. While I don&amp;rsquo;t consciously believe the EMH (as I stated above, I think it&amp;rsquo;s preposterous), I find that beneath the surface of my thoughts I often do believe it, and can act or think accordingly. Being surrounded by creative intelligent people at work, spending every day thinking about challenging problems, the falsity of the EMH (at least with respect to my own mind), has been crystal clear day after day.&lt;/p&gt;
+&lt;p&gt;Its falsity is most clear when a colleague suggests a solution to a problem that I have that I have not seen. The solution feels like something simple enough to arrive at quickly given my experience, but it is apparently not, for it&amp;rsquo;s a solution I did not foresee. On N occasions it has even been the case that I have not even begun to properly start thinking about the problem when a colleague presents the solution, perhaps because there are many possible problems to attend to, and selecting where to place one&amp;rsquo;s attention is a problem in itself.&lt;/p&gt;
+&lt;p&gt;Under the EMH, the idea that you can present a problem to a colleague without first having given it the small finite first attempt doesn&amp;rsquo;t make sense. If EMH were true, you would present only problems that you cannot yourself solve to your colleagues. In the time it takes to present a problem, you would have attempted solving it yourself.&lt;/p&gt;
+&lt;p&gt;The maxims of &amp;ldquo;bring me solutions, not problems&amp;rdquo; and &amp;ldquo;don&amp;rsquo;t come to me until you&amp;rsquo;ve worked this out as much as you can on your own&amp;rdquo; are weakened by the lack of an EMH too. Sometimes you need to engage other minds simply to parallelize computation, not because one mind alone cannot solve something. The benefits of multiple minds go beyond parallelization though. Freshness and specialization are two principles that make a collaboration more than the sum of its parts.&lt;/p&gt;
+&lt;p&gt;Why believe the EMH at all?&lt;/p&gt;
+&lt;p&gt;When young, when working on easier problems, when you can anticipate what comes next, when your mind is fresh, well rested, and well equipped for the tasks at hand, the EMH can appear and feel true.
+A quick look at any complex task, say chess or a hard math problem, makes it apparent that it&amp;rsquo;s not universally true. But those System 2 tasks do nothing to dispel the EMH in System 1 heavy situations.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;It isn&amp;rsquo;t always apparent that thinking takes time. It isn&amp;rsquo;t always apparent that System 1 thinking in particular takes time. It isn&amp;rsquo;t always apparent that something requires System 2 thought. And finally it isn&amp;rsquo;t always apparent that thinking has bandwidth, and that ideas and projects can be thought-bandwidth bottlenecked.&lt;/p&gt;
+&lt;p&gt;The result is that we need to be deliberate with how we choose to spend our brainpower. And this starts with being mindful and intentional with our attention.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;As an exercise for the reader: Would the Efficient Minds Hypothesis imply the Efficient Market Hypothesis? How about the reverse?&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&amp;ldquo;System 1&amp;rdquo; and &amp;ldquo;System 2&amp;rdquo; refer to Kahneman&amp;rsquo;s dichotomy of fast intuitive (System 1) vs slow, deliberate, planned (System 2) thought from 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thinking, Fast and Slow&lt;/a&gt;. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
     
     <item>
       <title>Find yourself typing t-ENTER often?</title>
