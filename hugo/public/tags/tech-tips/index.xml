@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tech-tips | David Bieber</title>
+    <link>https://davidbieber.com/tags/tech-tips/</link>
+      <atom:link href="https://davidbieber.com/tags/tech-tips/index.xml" rel="self" type="application/rss+xml" />
+    <description>tech-tips</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 10 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
+      <title>tech-tips</title>
+      <link>https://davidbieber.com/tags/tech-tips/</link>
+    </image>
+    
+    <item>
+      <title>Find yourself typing t-ENTER often?</title>
+      <link>https://davidbieber.com/snippets/2021-02-10-find-yourself-typing-t-enter-often/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-02-10-find-yourself-typing-t-enter-often/</guid>
+      <description>&lt;p&gt;A common attention pitfall is to mindless type cmd-t t ENTER. cmd-t creates a new tab. &amp;ldquo;t&amp;rdquo; autocompletes to twitter.com. ENTER. Four keystrokes and you&amp;rsquo;re scrolling. &amp;ldquo;r&amp;rdquo; for reddit. &amp;ldquo;f&amp;rdquo; for facebook. etc.&lt;/p&gt;
+&lt;p&gt;Less than a second of mindless activity, leading to hundreds of seconds (minutes? hours?) of scrolling that you didn&amp;rsquo;t intend to do.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the solution. &lt;strong&gt;Delete websites from your browser&amp;rsquo;s autocomplete.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s easy to do. On Mac, it&amp;rsquo;s &lt;strong&gt;fn-shift-delete&lt;/strong&gt;. On Windows, just shift-delete.&lt;/p&gt;
+&lt;p&gt;Just select the website from Chrome&amp;rsquo;s dropdown and press fn-shift-delete, and the website is removed from your browser&amp;rsquo;s autocomplete.&lt;/p&gt;
+&lt;p&gt;In Firefox, it&amp;rsquo;s even easier: just press shift-delete.&lt;/p&gt;
+&lt;p&gt;Eventually the websites will make their way back into your autocomplete, but it will take a while for this to happen. And when it does, now you know what to do: fn-shift-delete.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Supervisord</title>
+      <link>https://davidbieber.com/snippets/2020-12-02-supervisord/</link>
+      <pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-12-02-supervisord/</guid>
+      <description>&lt;p&gt;Supervisord has been the single best quality-of-life improvement for software development for me in 2020.&lt;/p&gt;
+&lt;p&gt;Many thanks to 
+&lt;a href=&#34;https://vikb.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vik Bhandari&lt;/a&gt; for suggesting that I use it.&lt;/p&gt;
+&lt;p&gt;What is supervisord? It&amp;rsquo;s a &amp;ldquo;process control system,&amp;rdquo; meaning that it&amp;rsquo;s software that starts, stops, and monitors other software that you want to run.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s an example. Let&amp;rsquo;s say you have a program &lt;code&gt;check_for_sales&lt;/code&gt; that periodically pings Amazon looking for sales on that new shoe-phone you&amp;rsquo;ve had your eye on. When it notices a drop in prices, it sends you a text.&lt;/p&gt;
+&lt;p&gt;Without supervisord, you might start the program, and find the next day that it has hit an error (maybe one of the requests to Amazon timed out in a way you weren&amp;rsquo;t anticipating), the program terminated, and the item sold out while you weren&amp;rsquo;t looking!&lt;/p&gt;
+&lt;p&gt;With supervisord, you can have &lt;code&gt;check_for_sales&lt;/code&gt; automatically restart on failure. Supervisord will notice the failure, and restart the program for you.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been using supervisord for all sorts of things, like monitoring Bieber Bot for new messages, keeping my website&amp;rsquo;s development server live, automatically posting snippets from Roam (like this one), and auto-processing screenshots and screen recordings that I take. I have 15 processes monitored by supervisord in total across a number of side projects.&lt;/p&gt;
+&lt;p&gt;Before supervisord, I had half the number of processes always-on in the background on my computer. I would keep extra terminal windows open to keep them running. And restarting my computer was a pain because I had to bring up these processes one at a time.&lt;/p&gt;
+&lt;p&gt;Now, with supervisord, restarting my machine is no big deal. This let&amp;rsquo;s me use my computer more freely, and I feel much less hesitation in starting a new project that requires having an always-on process.&lt;/p&gt;
+&lt;p&gt;You can learn more about supervisord from their website 
+&lt;a href=&#34;http://supervisord.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;supervisord.org&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Checking Your Fan Speed and CPU Temperature on Mac OS (2020)</title>
+      <link>https://davidbieber.com/snippets/2020-10-03-checking-your-fan-speed-and-cpu-temperature-on-mac-os/</link>
+      <pubDate>Sat, 03 Oct 2020 15:46:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-10-03-checking-your-fan-speed-and-cpu-temperature-on-mac-os/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve seen people monitor their CPU temperature and today my laptop was running hot, so I wanted to do so myself. Googling &amp;ldquo;check laptop temperature mac&amp;rdquo; gives projects you can download. I didn&amp;rsquo;t want to have to trust someone else&amp;rsquo;s tool or mess around with someone else&amp;rsquo;s code, and I knew there must be a system call that gives me sensor stats, so I kept looking.&lt;/p&gt;
+&lt;p&gt;Indeed, there&amp;rsquo;s a command you can run to get your processor temperatures and fan speeds.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo powermetrics --samplers smc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To narrow down the stats you see further, you can grep for e.g. &amp;ldquo;Fan:&amp;rdquo;, &amp;ldquo;CPU die temperature:&amp;rdquo;, or &amp;ldquo;GPU die temperature:&amp;rdquo;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo powermetrics --samplers smc | grep &amp;quot;Fan:&amp;quot;
+sudo powermetrics --samplers smc | grep &amp;quot;CPU die temperature:&amp;quot;
+sudo powermetrics --samplers smc | grep &amp;quot;GPU die temperature:&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Use egrep if you want all three:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo powermetrics --samplers smc | egrep &#39;temp|Fan&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, why does 
+&lt;a href=&#34;https://www.mmhmm.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mmhmm&lt;/a&gt; make my machine run so hot?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tips for Effective OBS</title>
+      <link>https://davidbieber.com/snippets/2020-04-11-tips-for-obs/</link>
+      <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-11-tips-for-obs/</guid>
+      <description>&lt;p&gt;As a newcomer to OBS, I&amp;rsquo;ve been regularly discovering new features that make my OBS experience better. Here are a handful of things I&amp;rsquo;ve found useful, that perhaps weren&amp;rsquo;t immediately obvious to me, from my early experiences with OBS.&lt;/p&gt;
+&lt;h2 id=&#34;using-media-sources&#34;&gt;Using Media Sources&lt;/h2&gt;
+&lt;p&gt;&amp;ldquo;Media Source&amp;rdquo; video sources are essential when showing prerecorded video, or using a replay buffer. However, it wasn&amp;rsquo;t obvious to me how to get media sources to play their audio.&lt;/p&gt;
+&lt;p&gt;When using a Media Source, here&amp;rsquo;s out to turn on the audio. In the Audio Mixer panel choose &lt;code&gt;Gear Settings &amp;gt; Advanced Audio Properties&lt;/code&gt; then set &lt;code&gt;Audio Monitoring&lt;/code&gt; to &amp;ldquo;Monitor and Output&amp;rdquo;.&lt;/p&gt;
+&lt;h2 id=&#34;namespaces-for-scenes--turning-off-the-camera&#34;&gt;Namespaces for Scenes + Turning Off the Camera&lt;/h2&gt;
+&lt;p&gt;You can create multiple Profiles and Scene Collections in OBS. I only have one Profile, which I&amp;rsquo;ve named &amp;ldquo;Default&amp;rdquo; (rather than the default of &amp;ldquo;Untitled&amp;rdquo;). I made a few Scene Collections. Making new Scene Collections gives you a space to play around with new ideas for scenes and keyboard shortcuts, without disrupting the main setup(s) that you&amp;rsquo;ve put together. I like to fiddle around with new ideas in a Scene Collection I&amp;rsquo;ve named &amp;ldquo;Playground&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;If you have any sources in a Scene Collection that use your webcam, then your webcam will stay on even when it isn&amp;rsquo;t being used. If you switch to a Scene Collection with no sources using your webcam, then your webcam will turn off. I use a Scene Collection that leaves my webcam off by default, and only switch to a Scene Collection with a webcam source when I actually intend to record something that needs the webcam.&lt;/p&gt;
+&lt;h2 id=&#34;replay-buffer&#34;&gt;Replay Buffer&lt;/h2&gt;
+&lt;p&gt;I leave the replay buffer on in between recording scenes. By setting the replay buffer to a reasonable size like 60 seconds, I can leave it rolling without consuming too much memory (and the CPU consumption has been reasonable too, e.g. 10%). This way, if anything noteworthy happens in this period between recordings, I can still capture it.&lt;/p&gt;
+&lt;h2 id=&#34;virtual-cameras&#34;&gt;Virtual Cameras&lt;/h2&gt;
+&lt;p&gt;If you&amp;rsquo;re willing to get your hands dirty, the instructions at 
+&lt;a href=&#34;https://github.com/johnboiles/obs-mac-virtualcam&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;johnboiles/obs-mac-virtualcam&lt;/a&gt; will let you use OBS as a virtual camera on Mac.&lt;/p&gt;
+&lt;h2 id=&#34;transform-editing-and-scene-json-files&#34;&gt;Transform Editing and Scene &lt;code&gt;.json&lt;/code&gt; files&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;cmd-e&lt;/code&gt; opens the Scene Item Transform for a Scene Item. Using that, you can get pixel perfect positioning of any video source. You can also see and edit the json files that describe your scenes. On Mac, these scene json files can be found at &lt;code&gt;~/Library/Application Support/obs-studio/basic/scenes&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;keyboard-shortcuts&#34;&gt;Keyboard Shortcuts&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;cmd-,&lt;/code&gt; opens your settings. There&amp;rsquo;s a panel for setting keyboard shortcuts. This is a core OBS feature, and it&amp;rsquo;s extremely valuable. I really appreciate how easy OBS has made it to set up these keyboard shortcuts for switching between scenes, starting and stopping recordings, pausing and playing media, etc. I only wish I could have extra modifier keys so I could set up more shortcuts that don&amp;rsquo;t collide with the shortcuts of my IDE!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Understanding OAuth2</title>
+      <link>https://davidbieber.com/snippets/2020-03-20-understanding-oauth2/</link>
+      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-03-20-understanding-oauth2/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://oauth.net/2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OAuth2&lt;/a&gt; is confusing. I&amp;rsquo;ve set it up several times before, and each time I encounter it it&amp;rsquo;s a bit of a mental mess to wrap my mind around it again.&lt;/p&gt;
+&lt;p&gt;So, this time, as I set up OAuth2 to let 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; interact with more Slack workspaces, I will write up my renewed understanding of OAuth2 in the hope that next time I have to set up OAuth2, it&amp;rsquo;s a little easier.&lt;/p&gt;
+&lt;h2 id=&#34;overview-of-the-oauth2-flow&#34;&gt;Overview of the OAuth2 Flow&lt;/h2&gt;
+&lt;p&gt;How does the OAuth2 flow go? Like this:&lt;/p&gt;
+&lt;p&gt;The user wants to add Bieber Bot to a Slack channel. So, they&amp;rsquo;re on my website (
+&lt;a href=&#34;https://davidbieber.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;davidbieber.com&lt;/a&gt;) and they click the &lt;em&gt;Add to Slack&lt;/em&gt; button. This takes them to Slack, with GET parameters that indicate they want to add Bieber Bot to some Slack workspace. The workspace id can be part of the URL of the Add to Slack button, but even if it&amp;rsquo;s not, Slack will do the right thing and just ask the user to choose one of their workspaces. If the user isn&amp;rsquo;t already logged in to Slack, they&amp;rsquo;ll be prompted to do so at this point.&lt;/p&gt;
+&lt;p&gt;After the user clicks the &lt;em&gt;Add to Slack&lt;/em&gt; button they are taken to Slack, where they are shown the list of OAuth2 scopes that Bieber Bot is requesting. If they approve giving Bieber Bot the permissions listed in the scopes, they are taken to a &lt;em&gt;redirect url&lt;/em&gt; that I, the developer of Bieber Bot, have specified. I have both pre-informed Slack of the redirect URLs I might use, and I have included a specific redirect URL in the link on the &lt;em&gt;Add to Slack&lt;/em&gt; button. When the user is redirected to this redirect url, two GET parameters are included. The first is a &lt;code&gt;code&lt;/code&gt;, which my server can use to get an Access Token / Bearer Token. The second is a &lt;code&gt;state&lt;/code&gt; which is something that I, the developer, can include on the original link from the &lt;em&gt;Add to Slack&lt;/em&gt; button in order to make sure the request I&amp;rsquo;m getting at the redirect URL is genuine.&lt;/p&gt;
+&lt;p&gt;When the redirect URL is accessed with a &lt;code&gt;code&lt;/code&gt; GET parameter, it then turns around and uses that &lt;code&gt;code&lt;/code&gt; to request an Access Token from Slack. Once it has that Access Token, it tucks it away. It can use that access token in order to perform any of the permissions granted by the user during the access flow.&lt;/p&gt;
+&lt;p&gt;Usually using the Access Token takes the form of issuing post requests to Slack with the Access Token as a parameter.&lt;/p&gt;
+&lt;p&gt;The user can revoke access to Bieber Bot at any time. Once they do so, the Access Token becomes invalid. If Bieber Bot tries to use the Access Token at that point, it will get an error. The user will have to give Bieber Bot permissions again, and it will get a new access token, in order for it to continue providing its services and companionship.&lt;/p&gt;
+&lt;h2 id=&#34;summary-of-the-the-important-bits&#34;&gt;Summary of the the Important Bits&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;User navigates from website to service (e.g. via &lt;em&gt;Add to Slack&lt;/em&gt; button).&lt;/li&gt;
+&lt;li&gt;Service shows user permissions dialog.&lt;/li&gt;
+&lt;li&gt;Upon accepting permissions, service redirects user back to website&amp;rsquo;s redirect URL with &lt;code&gt;code&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Website uses &lt;code&gt;code&lt;/code&gt; to get Access Token&lt;/li&gt;
+&lt;li&gt;Website uses Access Token to do the stuff allowed by the permissions granted by the user&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;summary-of-the-less-important-bits&#34;&gt;Summary of the Less Important Bits&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;em&gt;Add to Slack&lt;/em&gt; button should include GET parameters for: a) &lt;code&gt;state&lt;/code&gt; so the redirect url knows the request is genuine, b) &lt;code&gt;redirect_url&lt;/code&gt; so Slack knows where to send the user after they accept the permissons, c) &lt;code&gt;scope&lt;/code&gt; indicating the permissions being requested, d) &lt;code&gt;client_id&lt;/code&gt; indicating the app (e.g. Bieber Bot) that you&amp;rsquo;re adding to Slack.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The permissions that the App can request are set up by the App ahead of time. So I think the &lt;code&gt;scope&lt;/code&gt; parameter is there if you only need to request a subset of that permissions for a particular user.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The full list of possible redirect URLs should be set up ahead of time. Then when you generate the &lt;em&gt;Add to Slack&lt;/em&gt; button, you just choose a particular redirect URL that Slack should redirect the user to after they accept the permissions. Why would you want more than one redirect URL? Well, one might be for staging, one for production, and one for local development.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The redirect URL receives both the &lt;code&gt;code&lt;/code&gt; and &lt;code&gt;state&lt;/code&gt; GET parameters. The website creating the &lt;em&gt;Add to Slack&lt;/em&gt; button decides on the state. It can then check that the state is there in the redirect URL. This prevents users from going directly to Slack without going through the website, because if they try to do that, they won&amp;rsquo;t have the state and will fail the check at the redirect URL. This is useful if you want to restrict installs for your App to specific customers, e.g. those who&amp;rsquo;ve solved a puzzle, or paid.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;what-is-this&#34;&gt;What is this?&lt;/h2&gt;
+&lt;p&gt;This certainly isn&amp;rsquo;t meant to be an OAuth2 guide at all. By writing this out, I think I&amp;rsquo;ve helped myself understand the OAuth2 flow better though. That&amp;rsquo;s really what snippets are all about.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

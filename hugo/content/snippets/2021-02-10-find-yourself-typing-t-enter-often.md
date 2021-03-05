@@ -2,7 +2,7 @@
 title = "Find yourself typing t-ENTER often?"
 date = 2021-02-10T00:00:00
 uid = "a9DYMhnN8"
-tags = ["attention"]
+tags = ["attention", "tech-tips"]
 keywords = ["twitter", "social"]
 +++
 

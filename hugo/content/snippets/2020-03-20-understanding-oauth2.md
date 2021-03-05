@@ -1,6 +1,7 @@
 +++
 title = "Understanding OAuth2"
 date = 2020-03-20T00:00:00
+tags = ["tech-tips"]
 +++
 
 [OAuth2](https://oauth.net/2/) is confusing. I've set it up several times before, and each time I encounter it it's a bit of a mental mess to wrap my mind around it again.

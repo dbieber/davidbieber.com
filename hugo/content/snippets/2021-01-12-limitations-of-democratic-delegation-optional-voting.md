@@ -2,7 +2,7 @@
 title = "Limitations of Democratic Delegation-optional Voting"
 date = 2021-01-12T00:00:00
 uid = "n53F4owfm"
-
+keywords = ["delegation", "voting"]
 +++
 
 In [yesterday's snippet](/snippets/2021-01-11-democratic-delegation-optional-voting/) I introduced the idea of _democratic delegation-optional voting_. If you haven't yet, read that first. Today, we're going to be looking at its strengths and limitations.
