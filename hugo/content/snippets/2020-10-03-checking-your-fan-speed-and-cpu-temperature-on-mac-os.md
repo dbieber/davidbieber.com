@@ -1,6 +1,7 @@
 +++
 title = "Checking Your Fan Speed and CPU Temperature on Mac OS (2020)"
 date = 2020-10-03T15:46:00
+tags = ["tech-tips"]
 +++
 
 I've seen people monitor their CPU temperature and today my laptop was running hot, so I wanted to do so myself. Googling "check laptop temperature mac" gives projects you can download. I didn't want to have to trust someone else's tool or mess around with someone else's code, and I knew there must be a system call that gives me sensor stats, so I kept looking.
