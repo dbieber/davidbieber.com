@@ -7,7 +7,7 @@ plugins_js = ["margin-notes"]
 summary = "Use this guide to build a Roam Research Twitter bot that only you can see, to reclaim your attention when scrolling."
 +++
 
-Last month I wrote a little Twitter bot for myself with the goal of reclaiming my attention from Twitter. The idea is to fill my Twitter feed with things that _I_ care about, rather than letting the Twitter algorithm control my attention. By programmatically injecting cards into my Twitter feed I can repurpose the time I spend scrolling on Twitter from time lost to time well spent.
+[Last month I wrote a little Twitter bot for myself](/snippets/2021-02-08-repurposing-my-twitter-feed/) with the goal of reclaiming my attention from Twitter. The idea is to fill my Twitter feed with things that _I_ care about, rather than letting the Twitter algorithm control my attention. By programmatically injecting cards into my Twitter feed I can repurpose the time I spend scrolling on Twitter from time lost to time well spent.
 
 This post explains, step-by-step, how you can build your own private Twitter bot so you too can repurpose the time you spend doom-scrolling.
 
@@ -265,8 +265,8 @@ With supervisord set up, you're bot is now bullet-proof! (Not bug-proof though.)
 
 ## Wrap-up
 
-Hopefully this guide makes it clear how you can use a private Twitter bot to reclaim your attention. The main contribution of this guide is it's emphasis on using a private Twitter bot to design your own personal Twitter feed. We selected Roam Research backups as the source of tweets for our bot, but of course you can substitute Roam with any tweet generator that you please.
+Hopefully this guide makes it clear how you can use a private Twitter bot to reclaim your attention. The main contribution of this guide is its emphasis on using a private Twitter bot to design your own personal Twitter feed. We selected Roam Research backups as the source of tweets for our bot, but of course you can substitute Roam with any tweet generator that you please.
 
 You can use a bot like this for revisiting old ideas, for surfacing your TODOs when you're distracted, for sending yourself messages, or anything else you come up with.
 
-Since making myself a private Twitter bot one month ago, I've been delighted to find that it's tweets are often among the highest quality on my timeline. I hope you find the same.
+Since making myself a private Twitter bot one month ago, I've been delighted to find that its tweets are often among the highest quality on my timeline. I hope you find the same.
