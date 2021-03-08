@@ -307,10 +307,11 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
     
     <item>
       <title>A Step-by-Step Developer Guide to Building a Personal Roam-to-Twitter Bot</title>
-      <link>https://davidbieber.com/snippets/2021-03-07-a-step-by-step-developer-guide-to-building-a-personal-roam-to-twitter-bot/</link>
+      <link>https://davidbieber.com/post/2021-03-07-roam-twitter-bot-dev-guide/</link>
       <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://davidbieber.com/snippets/2021-03-07-a-step-by-step-developer-guide-to-building-a-personal-roam-to-twitter-bot/</guid>
-      <description>&lt;p&gt;Last month I wrote a little Twitter bot for myself with the goal of reclaiming my attention from Twitter. The idea is to fill my Twitter feed with things that &lt;em&gt;I&lt;/em&gt; care about, rather than letting the Twitter algorithm control my attention. By programmatically injecting cards into my Twitter feed I can repurpose the time I spend scrolling on Twitter from time lost to time well spent.&lt;/p&gt;
+      <guid>https://davidbieber.com/post/2021-03-07-roam-twitter-bot-dev-guide/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-02-08-repurposing-my-twitter-feed/&#34;&gt;Last month I wrote a little Twitter bot for myself&lt;/a&gt; with the goal of reclaiming my attention from Twitter. The idea is to fill my Twitter feed with things that &lt;em&gt;I&lt;/em&gt; care about, rather than letting the Twitter algorithm control my attention. By programmatically injecting cards into my Twitter feed I can repurpose the time I spend scrolling on Twitter from time lost to time well spent.&lt;/p&gt;
 &lt;p&gt;This post explains, step-by-step, how you can build your own private Twitter bot so you too can repurpose the time you spend doom-scrolling.&lt;/p&gt;
 &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;In this guide you&amp;rsquo;ll see how to set up a private personal Twitter bot that only you can follow. We&amp;rsquo;ll use this to inject content directly into your own feed. In order to choose what to Tweet, we&amp;rsquo;ll extract content from our Roam Research database. Here are the six steps we&amp;rsquo;ll follow.&lt;/p&gt;
@@ -515,9 +516,9 @@ directory=/Users/dbieber/code/playground/private-bieber-twitter
 &lt;p&gt;Finally, start supervisord with &lt;code&gt;sudo&lt;/code&gt; indicating the path to the config. (e.g. for me the command is &lt;code&gt;sudo /Users/dbieber/.virtualenvs/_3/bin/supervisord -c ~/path/to/supervisord.conf&lt;/code&gt;)&lt;/p&gt;
 &lt;p&gt;With supervisord set up, you&amp;rsquo;re bot is now bullet-proof! (Not bug-proof though.) Even if it encounters an error, it will automatically restart.&lt;/p&gt;
 &lt;h2 id=&#34;wrap-up&#34;&gt;Wrap-up&lt;/h2&gt;
-&lt;p&gt;Hopefully this guide makes it clear how you can use a private Twitter bot to reclaim your attention. The main contribution of this guide is it&amp;rsquo;s emphasis on using a private Twitter bot to design your own personal Twitter feed. We selected Roam Research backups as the source of tweets for our bot, but of course you can substitute Roam with any tweet generator that you please.&lt;/p&gt;
+&lt;p&gt;Hopefully this guide makes it clear how you can use a private Twitter bot to reclaim your attention. The main contribution of this guide is its emphasis on using a private Twitter bot to design your own personal Twitter feed. We selected Roam Research backups as the source of tweets for our bot, but of course you can substitute Roam with any tweet generator that you please.&lt;/p&gt;
 &lt;p&gt;You can use a bot like this for revisiting old ideas, for surfacing your TODOs when you&amp;rsquo;re distracted, for sending yourself messages, or anything else you come up with.&lt;/p&gt;
-&lt;p&gt;Since making myself a private Twitter bot one month ago, I&amp;rsquo;ve been delighted to find that it&amp;rsquo;s tweets are often among the highest quality on my timeline. I hope you find the same.&lt;/p&gt;
+&lt;p&gt;Since making myself a private Twitter bot one month ago, I&amp;rsquo;ve been delighted to find that its tweets are often among the highest quality on my timeline. I hope you find the same.&lt;/p&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;

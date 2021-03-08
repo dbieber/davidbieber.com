@@ -28,11 +28,10 @@
   
     
   
-  <meta name="description" content="Last month I wrote a little Twitter bot for myself with the goal of reclaiming my attention from Twitter. The idea is to fill my Twitter feed with things that I care about, rather than letting the Twitter algorithm control my attention. By programmatically injecting cards into my Twitter feed I can repurpose the time I spend scrolling on Twitter from time lost to time well spent.
-This post explains, step-by-step, how you can build your own private Twitter bot so you too can repurpose the time you spend doom-scrolling.">
+  <meta name="description" content="Use this guide to build a Roam Research Twitter bot that only you can see, to reclaim your attention when scrolling.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-03-07-a-step-by-step-developer-guide-to-building-a-personal-roam-to-twitter-bot/">
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/post/2021-03-07-roam-twitter-bot-dev-guide/">
 
   
 
@@ -252,7 +251,7 @@ This post explains, step-by-step, how you can build your own private Twitter bot
   <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
 
-  <link rel="canonical" href="https://davidbieber.com/snippets/2021-03-07-a-step-by-step-developer-guide-to-building-a-personal-roam-to-twitter-bot/">
+  <link rel="canonical" href="https://davidbieber.com/post/2021-03-07-roam-twitter-bot-dev-guide/">
 
   
   
@@ -269,10 +268,9 @@ This post explains, step-by-step, how you can build your own private Twitter bot
   <meta property="twitter:creator" content="@Bieber">
   
   <meta property="og:site_name" content="David Bieber">
-  <meta property="og:url" content="https://davidbieber.com/snippets/2021-03-07-a-step-by-step-developer-guide-to-building-a-personal-roam-to-twitter-bot/">
+  <meta property="og:url" content="https://davidbieber.com/post/2021-03-07-roam-twitter-bot-dev-guide/">
   <meta property="og:title" content="A Step-by-Step Developer Guide to Building a Personal Roam-to-Twitter Bot | David Bieber">
-  <meta property="og:description" content="Last month I wrote a little Twitter bot for myself with the goal of reclaiming my attention from Twitter. The idea is to fill my Twitter feed with things that I care about, rather than letting the Twitter algorithm control my attention. By programmatically injecting cards into my Twitter feed I can repurpose the time I spend scrolling on Twitter from time lost to time well spent.
-This post explains, step-by-step, how you can build your own private Twitter bot so you too can repurpose the time you spend doom-scrolling."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="og:description" content="Use this guide to build a Roam Research Twitter bot that only you can see, to reclaim your attention when scrolling."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
@@ -284,6 +282,49 @@ This post explains, step-by-step, how you can build your own private Twitter bot
   
 
 
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://davidbieber.com/post/2021-03-07-roam-twitter-bot-dev-guide/"
+  },
+  "headline": "A Step-by-Step Developer Guide to Building a Personal Roam-to-Twitter Bot",
+  
+  "datePublished": "2021-03-07T00:00:00Z",
+  "dateModified": "2021-03-07T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "David Bieber"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "David Bieber",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://davidbieber.com/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png"
+    }
+  },
+  "description": "Use this guide to build a Roam Research Twitter bot that only you can see, to reclaim your attention when scrolling."
+}
+</script>
+
+  
 
   
 
@@ -525,7 +566,8 @@ This post explains, step-by-step, how you can build your own private Twitter bot
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>Last month I wrote a little Twitter bot for myself with the goal of reclaiming my attention from Twitter. The idea is to fill my Twitter feed with things that <em>I</em> care about, rather than letting the Twitter algorithm control my attention. By programmatically injecting cards into my Twitter feed I can repurpose the time I spend scrolling on Twitter from time lost to time well spent.</p>
+      <p>
+<a href="/snippets/2021-02-08-repurposing-my-twitter-feed/">Last month I wrote a little Twitter bot for myself</a> with the goal of reclaiming my attention from Twitter. The idea is to fill my Twitter feed with things that <em>I</em> care about, rather than letting the Twitter algorithm control my attention. By programmatically injecting cards into my Twitter feed I can repurpose the time I spend scrolling on Twitter from time lost to time well spent.</p>
 <p>This post explains, step-by-step, how you can build your own private Twitter bot so you too can repurpose the time you spend doom-scrolling.</p>
 <h2 id="overview">Overview</h2>
 <p>In this guide you&rsquo;ll see how to set up a private personal Twitter bot that only you can follow. We&rsquo;ll use this to inject content directly into your own feed. In order to choose what to Tweet, we&rsquo;ll extract content from our Roam Research database. Here are the six steps we&rsquo;ll follow.</p>
@@ -730,9 +772,9 @@ directory=/Users/dbieber/code/playground/private-bieber-twitter
 <p>Finally, start supervisord with <code>sudo</code> indicating the path to the config. (e.g. for me the command is <code>sudo /Users/dbieber/.virtualenvs/_3/bin/supervisord -c ~/path/to/supervisord.conf</code>)</p>
 <p>With supervisord set up, you&rsquo;re bot is now bullet-proof! (Not bug-proof though.) Even if it encounters an error, it will automatically restart.</p>
 <h2 id="wrap-up">Wrap-up</h2>
-<p>Hopefully this guide makes it clear how you can use a private Twitter bot to reclaim your attention. The main contribution of this guide is it&rsquo;s emphasis on using a private Twitter bot to design your own personal Twitter feed. We selected Roam Research backups as the source of tweets for our bot, but of course you can substitute Roam with any tweet generator that you please.</p>
+<p>Hopefully this guide makes it clear how you can use a private Twitter bot to reclaim your attention. The main contribution of this guide is its emphasis on using a private Twitter bot to design your own personal Twitter feed. We selected Roam Research backups as the source of tweets for our bot, but of course you can substitute Roam with any tweet generator that you please.</p>
 <p>You can use a bot like this for revisiting old ideas, for surfacing your TODOs when you&rsquo;re distracted, for sending yourself messages, or anything else you come up with.</p>
-<p>Since making myself a private Twitter bot one month ago, I&rsquo;ve been delighted to find that it&rsquo;s tweets are often among the highest quality on my timeline. I hope you find the same.</p>
+<p>Since making myself a private Twitter bot one month ago, I&rsquo;ve been delighted to find that its tweets are often among the highest quality on my timeline. I hope you find the same.</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
