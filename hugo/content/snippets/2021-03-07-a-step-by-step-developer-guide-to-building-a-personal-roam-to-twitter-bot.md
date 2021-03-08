@@ -39,7 +39,7 @@ Once you've created your new account, two important things to do:
 
 1. **Follow it from your main account!**
 
-2. **Set it to protected.** To do this, go to your settings (https://twitter.com/settings/account), choose "Privacy and safety" > "Audience and tagging" > Protect your Tweets.
+2. **Set it to protected.** To do this, go to your settings ([https://twitter.com/settings/account](https://twitter.com/settings/account)), choose "Privacy and safety" > "Audience and tagging" > Protect your Tweets.
 
 With this enabled, you'll be the only one able to see the tweets from this account.
 
@@ -82,7 +82,7 @@ def sendTweet(text):
 sendTweet("Hello world!")
 ```
 
-On lines 2-5, place the keys you got from Step 2 in stead of the placeholders I've included above.
+On lines 4-7, place the keys you got from Step 2 in stead of the placeholders I've included above.
 
 Now, run your program! `python hellotweet.py`
 
@@ -106,7 +106,7 @@ def choose_message():
 
 We're going to write a more interesting tweet generator that pulls tweets out of a Roam Research database.
 
-To do this, first set up a recurring json backup of your Roam Research database. You can use the project [roam2github](https://github.com/everruler12/roam2github-demo) to set up the backup. There are detailed instructions on its github page for how to do this.
+To do this, first set up a recurring json backup of your Roam Research database. You can use the project [roam2github](https://github.com/everruler12/roam2github-demo) to set up the backup. There are detailed instructions on its github page for how to do this. You also have the option of using Roam's built-in automatic backups, which you access from the command palette (cmd-P).
 
 Use git to clone your backup locally. If your github repo is "https://github.com/user/roam-backup", then the command to clone the repo is `git clone https://github.com/dbieber/roam-backup`.
 
@@ -243,7 +243,7 @@ And that's it! While this is running, your Twitter bot will post a new tweet to 
 
 This is an optional step, but highly worthwhile! Supervisord is a utility you can use to monitor processes and automatically restart them if they die. If you plan on using your computer for long-running processes like a Twitter bot, this can save you lots of headaches.
 
-Follow the instructions at supervisord.org to get set up. The key steps are:
+Follow the instructions at [supervisord.org](http://supervisord.org/installing.html) to get set up. The key steps are:
 
 To install supervisord, use `pip install supervisord`
 
@@ -259,7 +259,7 @@ Notice that I've included the full Path to python in the command.
 
 Finally, start supervisord with `sudo` indicating the path to the config. (e.g. for me the command is `sudo /Users/dbieber/.virtualenvs/_3/bin/supervisord -c ~/path/to/supervisord.conf`)
 
-With supervisord set up, you're bot is now bullet-proof! Even if it encounter's an error, it will automatically restart.
+With supervisord set up, you're bot is now bullet-proof! (Not bug-proof though.) Even if it encounters an error, it will automatically restart.
 
 ## Wrap-up
 

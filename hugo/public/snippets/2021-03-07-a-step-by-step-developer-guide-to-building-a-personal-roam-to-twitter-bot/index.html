@@ -560,7 +560,8 @@ This post explains, step-by-step, how you can build your own private Twitter bot
 <p><strong>Follow it from your main account!</strong></p>
 </li>
 <li>
-<p><strong>Set it to protected.</strong> To do this, go to your settings (<a href="https://twitter.com/settings/account),">https://twitter.com/settings/account),</a> choose &ldquo;Privacy and safety&rdquo; &gt; &ldquo;Audience and tagging&rdquo; &gt; Protect your Tweets.</p>
+<p><strong>Set it to protected.</strong> To do this, go to your settings (
+<a href="https://twitter.com/settings/account" target="_blank" rel="noopener">https://twitter.com/settings/account</a>), choose &ldquo;Privacy and safety&rdquo; &gt; &ldquo;Audience and tagging&rdquo; &gt; Protect your Tweets.</p>
 </li>
 </ol>
 <p>With this enabled, you&rsquo;ll be the only one able to see the tweets from this account.</p>
@@ -589,7 +590,7 @@ def sendTweet(text):
 
 sendTweet(&quot;Hello world!&quot;)
 </code></pre>
-<p>On lines 2-5, place the keys you got from Step 2 in stead of the placeholders I&rsquo;ve included above.</p>
+<p>On lines 4-7, place the keys you got from Step 2 in stead of the placeholders I&rsquo;ve included above.</p>
 <p>Now, run your program! <code>python hellotweet.py</code></p>
 <p>If everything&rsquo;s worked, you&rsquo;ll have a new tweet from your private account saying &ldquo;Hello world!&rdquo;</p>
 <p>Don&rsquo;t move on to the next steps until you get this working.</p>
@@ -605,7 +606,7 @@ def choose_message():
 </code></pre>
 <p>We&rsquo;re going to write a more interesting tweet generator that pulls tweets out of a Roam Research database.</p>
 <p>To do this, first set up a recurring json backup of your Roam Research database. You can use the project 
-<a href="https://github.com/everruler12/roam2github-demo" target="_blank" rel="noopener">roam2github</a> to set up the backup. There are detailed instructions on its github page for how to do this.</p>
+<a href="https://github.com/everruler12/roam2github-demo" target="_blank" rel="noopener">roam2github</a> to set up the backup. There are detailed instructions on its github page for how to do this. You also have the option of using Roam&rsquo;s built-in automatic backups, which you access from the command palette (cmd-P).</p>
 <p>Use git to clone your backup locally. If your github repo is &ldquo;<a href="https://github.com/user/roam-backup%22,">https://github.com/user/roam-backup&quot;,</a> then the command to clone the repo is <code>git clone https://github.com/dbieber/roam-backup</code>.</p>
 <p>Create roam.py. You can 
 <a href="https://gist.github.com/dbieber/7722280c7fa10d1fdfa507612427001d" target="_blank" rel="noopener">copy the contents of roam.py from here</a>. This will allow us to pull the latest backup of our Roam database from GitHub programmatically. (1) Set the ROAMRESEARCH_DBPATH variable in roam.py to the location of json backup in your roam-backup directory. For me, this is &lsquo;/Users/dbieber/code/github/dbieber/roam-backup/json/playground.json&rsquo;. (2) Set the roam_dir variable in the update function to the path to your roam-backup directory. For me, this is &lsquo;/Users/dbieber/code/github/dbieber/roam-backup&rsquo;.</p>
@@ -717,7 +718,8 @@ if __name__ == '__main__':
 <p>And that&rsquo;s it! While this is running, your Twitter bot will post a new tweet to twitter every ten minutes. Using this, you can flood your Twitter timeline with things <em>you</em> care about, whether that&rsquo;s your TODOs, spaced repetition, or old ideas you want to revisit.</p>
 <h2 id="step-6-bonus-use-supervisord-to-keep-your-twitter-bot-running">Step 6 (Bonus): Use supervisord to keep your Twitter bot running</h2>
 <p>This is an optional step, but highly worthwhile! Supervisord is a utility you can use to monitor processes and automatically restart them if they die. If you plan on using your computer for long-running processes like a Twitter bot, this can save you lots of headaches.</p>
-<p>Follow the instructions at supervisord.org to get set up. The key steps are:</p>
+<p>Follow the instructions at 
+<a href="http://supervisord.org/installing.html" target="_blank" rel="noopener">supervisord.org</a> to get set up. The key steps are:</p>
 <p>To install supervisord, use <code>pip install supervisord</code></p>
 <p>Add a config for running your Twitter bot. Mine looks like this:</p>
 <pre><code class="language-shell">[program:private-bieber-twitter]
@@ -726,7 +728,7 @@ directory=/Users/dbieber/code/playground/private-bieber-twitter
 </code></pre>
 <p>Notice that I&rsquo;ve included the full Path to python in the command.</p>
 <p>Finally, start supervisord with <code>sudo</code> indicating the path to the config. (e.g. for me the command is <code>sudo /Users/dbieber/.virtualenvs/_3/bin/supervisord -c ~/path/to/supervisord.conf</code>)</p>
-<p>With supervisord set up, you&rsquo;re bot is now bullet-proof! Even if it encounter&rsquo;s an error, it will automatically restart.</p>
+<p>With supervisord set up, you&rsquo;re bot is now bullet-proof! (Not bug-proof though.) Even if it encounters an error, it will automatically restart.</p>
 <h2 id="wrap-up">Wrap-up</h2>
 <p>Hopefully this guide makes it clear how you can use a private Twitter bot to reclaim your attention. The main contribution of this guide is it&rsquo;s emphasis on using a private Twitter bot to design your own personal Twitter feed. We selected Roam Research backups as the source of tweets for our bot, but of course you can substitute Roam with any tweet generator that you please.</p>
 <p>You can use a bot like this for revisiting old ideas, for surfacing your TODOs when you&rsquo;re distracted, for sending yourself messages, or anything else you come up with.</p>

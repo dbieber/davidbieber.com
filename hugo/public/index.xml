@@ -345,7 +345,8 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
 &lt;p&gt;&lt;strong&gt;Follow it from your main account!&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Set it to protected.&lt;/strong&gt; To do this, go to your settings (&lt;a href=&#34;https://twitter.com/settings/account),&#34;&gt;https://twitter.com/settings/account),&lt;/a&gt; choose &amp;ldquo;Privacy and safety&amp;rdquo; &amp;gt; &amp;ldquo;Audience and tagging&amp;rdquo; &amp;gt; Protect your Tweets.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Set it to protected.&lt;/strong&gt; To do this, go to your settings (
+&lt;a href=&#34;https://twitter.com/settings/account&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://twitter.com/settings/account&lt;/a&gt;), choose &amp;ldquo;Privacy and safety&amp;rdquo; &amp;gt; &amp;ldquo;Audience and tagging&amp;rdquo; &amp;gt; Protect your Tweets.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;With this enabled, you&amp;rsquo;ll be the only one able to see the tweets from this account.&lt;/p&gt;
@@ -374,7 +375,7 @@ def sendTweet(text):
 
 sendTweet(&amp;quot;Hello world!&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;On lines 2-5, place the keys you got from Step 2 in stead of the placeholders I&amp;rsquo;ve included above.&lt;/p&gt;
+&lt;p&gt;On lines 4-7, place the keys you got from Step 2 in stead of the placeholders I&amp;rsquo;ve included above.&lt;/p&gt;
 &lt;p&gt;Now, run your program! &lt;code&gt;python hellotweet.py&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;If everything&amp;rsquo;s worked, you&amp;rsquo;ll have a new tweet from your private account saying &amp;ldquo;Hello world!&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;Don&amp;rsquo;t move on to the next steps until you get this working.&lt;/p&gt;
@@ -390,7 +391,7 @@ def choose_message():
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;We&amp;rsquo;re going to write a more interesting tweet generator that pulls tweets out of a Roam Research database.&lt;/p&gt;
 &lt;p&gt;To do this, first set up a recurring json backup of your Roam Research database. You can use the project 
-&lt;a href=&#34;https://github.com/everruler12/roam2github-demo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;roam2github&lt;/a&gt; to set up the backup. There are detailed instructions on its github page for how to do this.&lt;/p&gt;
+&lt;a href=&#34;https://github.com/everruler12/roam2github-demo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;roam2github&lt;/a&gt; to set up the backup. There are detailed instructions on its github page for how to do this. You also have the option of using Roam&amp;rsquo;s built-in automatic backups, which you access from the command palette (cmd-P).&lt;/p&gt;
 &lt;p&gt;Use git to clone your backup locally. If your github repo is &amp;ldquo;&lt;a href=&#34;https://github.com/user/roam-backup%22,&#34;&gt;https://github.com/user/roam-backup&amp;quot;,&lt;/a&gt; then the command to clone the repo is &lt;code&gt;git clone https://github.com/dbieber/roam-backup&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Create roam.py. You can 
 &lt;a href=&#34;https://gist.github.com/dbieber/7722280c7fa10d1fdfa507612427001d&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;copy the contents of roam.py from here&lt;/a&gt;. This will allow us to pull the latest backup of our Roam database from GitHub programmatically. (1) Set the ROAMRESEARCH_DBPATH variable in roam.py to the location of json backup in your roam-backup directory. For me, this is &amp;lsquo;/Users/dbieber/code/github/dbieber/roam-backup/json/playground.json&amp;rsquo;. (2) Set the roam_dir variable in the update function to the path to your roam-backup directory. For me, this is &amp;lsquo;/Users/dbieber/code/github/dbieber/roam-backup&amp;rsquo;.&lt;/p&gt;
@@ -502,7 +503,8 @@ if __name__ == &#39;__main__&#39;:
 &lt;p&gt;And that&amp;rsquo;s it! While this is running, your Twitter bot will post a new tweet to twitter every ten minutes. Using this, you can flood your Twitter timeline with things &lt;em&gt;you&lt;/em&gt; care about, whether that&amp;rsquo;s your TODOs, spaced repetition, or old ideas you want to revisit.&lt;/p&gt;
 &lt;h2 id=&#34;step-6-bonus-use-supervisord-to-keep-your-twitter-bot-running&#34;&gt;Step 6 (Bonus): Use supervisord to keep your Twitter bot running&lt;/h2&gt;
 &lt;p&gt;This is an optional step, but highly worthwhile! Supervisord is a utility you can use to monitor processes and automatically restart them if they die. If you plan on using your computer for long-running processes like a Twitter bot, this can save you lots of headaches.&lt;/p&gt;
-&lt;p&gt;Follow the instructions at supervisord.org to get set up. The key steps are:&lt;/p&gt;
+&lt;p&gt;Follow the instructions at 
+&lt;a href=&#34;http://supervisord.org/installing.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;supervisord.org&lt;/a&gt; to get set up. The key steps are:&lt;/p&gt;
 &lt;p&gt;To install supervisord, use &lt;code&gt;pip install supervisord&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Add a config for running your Twitter bot. Mine looks like this:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;[program:private-bieber-twitter]
@@ -511,7 +513,7 @@ directory=/Users/dbieber/code/playground/private-bieber-twitter
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Notice that I&amp;rsquo;ve included the full Path to python in the command.&lt;/p&gt;
 &lt;p&gt;Finally, start supervisord with &lt;code&gt;sudo&lt;/code&gt; indicating the path to the config. (e.g. for me the command is &lt;code&gt;sudo /Users/dbieber/.virtualenvs/_3/bin/supervisord -c ~/path/to/supervisord.conf&lt;/code&gt;)&lt;/p&gt;
-&lt;p&gt;With supervisord set up, you&amp;rsquo;re bot is now bullet-proof! Even if it encounter&amp;rsquo;s an error, it will automatically restart.&lt;/p&gt;
+&lt;p&gt;With supervisord set up, you&amp;rsquo;re bot is now bullet-proof! (Not bug-proof though.) Even if it encounters an error, it will automatically restart.&lt;/p&gt;
 &lt;h2 id=&#34;wrap-up&#34;&gt;Wrap-up&lt;/h2&gt;
 &lt;p&gt;Hopefully this guide makes it clear how you can use a private Twitter bot to reclaim your attention. The main contribution of this guide is it&amp;rsquo;s emphasis on using a private Twitter bot to design your own personal Twitter feed. We selected Roam Research backups as the source of tweets for our bot, but of course you can substitute Roam with any tweet generator that you please.&lt;/p&gt;
 &lt;p&gt;You can use a bot like this for revisiting old ideas, for surfacing your TODOs when you&amp;rsquo;re distracted, for sending yourself messages, or anything else you come up with.&lt;/p&gt;
