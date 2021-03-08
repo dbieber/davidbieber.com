@@ -1,8 +1,10 @@
 +++
 title = "A Step-by-Step Developer Guide to Building a Personal Roam-to-Twitter Bot"
 date = 2021-03-07T00:00:00
+type = "post"
 uid = "mo0zBj4Up"
 plugins_js = ["margin-notes"]
+summary = "Use this guide to build a Roam Research Twitter bot that only you can see, to reclaim your attention when scrolling."
 +++
 
 Last month I wrote a little Twitter bot for myself with the goal of reclaiming my attention from Twitter. The idea is to fill my Twitter feed with things that _I_ care about, rather than letting the Twitter algorithm control my attention. By programmatically injecting cards into my Twitter feed I can repurpose the time I spend scrolling on Twitter from time lost to time well spent.
