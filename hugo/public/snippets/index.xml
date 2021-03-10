@@ -13,6 +13,21 @@
     </image>
     
     <item>
+      <title>Simplest Possible Case of the Efficient Minds Hypothesis Failing</title>
+      <link>https://davidbieber.com/snippets/2021-03-10-simplest-possible-case-of-the-efficient-minds-hypothesis-failing/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-03-10-simplest-possible-case-of-the-efficient-minds-hypothesis-failing/</guid>
+      <description>&lt;p&gt;Suppose you know $A$, and you know $A \to B$. Conventional wisdom suggests you also know $B$. However, this is not necessarily true. Conventional wisdom has incorrectly assumed the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-03-04-the-efficient-minds-hypothesis/&#34;&gt;Efficient Minds Hypothesis&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Why isn&amp;rsquo;t this true? Isn&amp;rsquo;t it the first thing you&amp;rsquo;re taught in an Introductory Logic course? The reason is that it takes time and attention to conclude $B$ given that you know (1) $A$ and (2) $A \to B$. Whether or not you&amp;rsquo;ve noticed that you know both (1) and (2) and made the connection between them isn&amp;rsquo;t specified, so we can&amp;rsquo;t conclude that you&amp;rsquo;ve reached the conclusion $B$.&lt;/p&gt;
+&lt;p&gt;You might object &amp;ldquo;well if &lt;em&gt;I&lt;/em&gt; knew $A$ and $A \to B$, I would conclude $B$ immediately. It&amp;rsquo;s obvious.&amp;rdquo; To this I would reply &amp;ldquo;not so fast &amp;ndash; no pun intended,&amp;rdquo; while clearly intending the pun.&lt;/p&gt;
+&lt;p&gt;You might know thousands of facts $P_1, \cdots, P_{9000}$. Noticing that two of them collective have the form (1) $A$ and (2) $A \to B$ is a bit like finding a needle in a haystack; there are $9000^2$ fact pairs in that set. While finding these pairs can _sometimes_ be fast, it&amp;rsquo;s _never_ immediate and sometimes doesn&amp;rsquo;t happen at all.&lt;/p&gt;
+&lt;p&gt;Similarly, if you know (1) $A$ and (2) $B$, you still may not know $A\text{ and }B$. And if you know (1) $A$, you may not realize $A\text{ or }B$. Each of these conclusions requires time and attention to reach, even if classical first order logic tells us the conclusions are trivial.&lt;/p&gt;
+&lt;p&gt;That we are often able to perform inference really quickly is a remarkable thing, attributable to our brain&amp;rsquo;s natural but imperfect tendency to index information by its important properties. While our brains are remarkable, they are not perfectly efficient, and we should behoove ourselves not to fall prey to the fallacy of the Efficient Minds Hypothesis.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Healthy Games Inter-company Compact</title>
       <link>https://davidbieber.com/snippets/2021-03-08-healthy-games-inter-company-compact/</link>
       <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
