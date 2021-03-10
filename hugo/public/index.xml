@@ -307,9 +307,9 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
     
     <item>
       <title>Simplest Possible Case of the Efficient Minds Hypothesis Failing</title>
-      <link>https://davidbieber.com/snippets/2021-03-10-simplest-possible-case-of-the-efficient-minds-hypothesis-failing/</link>
+      <link>https://davidbieber.com/snippets/2021-03-10-efficient-minds-hypothesis-failing/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://davidbieber.com/snippets/2021-03-10-simplest-possible-case-of-the-efficient-minds-hypothesis-failing/</guid>
+      <guid>https://davidbieber.com/snippets/2021-03-10-efficient-minds-hypothesis-failing/</guid>
       <description>&lt;p&gt;Suppose you know $A$, and you know $A \to B$. Conventional wisdom suggests you also know $B$. However, this is not necessarily true. Conventional wisdom has incorrectly assumed the 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-03-04-the-efficient-minds-hypothesis/&#34;&gt;Efficient Minds Hypothesis&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Why isn&amp;rsquo;t this true? Isn&amp;rsquo;t it the first thing you&amp;rsquo;re taught in an Introductory Logic course? The reason is that it takes time and attention to conclude $B$ given that you know (1) $A$ and (2) $A \to B$. Whether or not you&amp;rsquo;ve noticed that you know both (1) and (2) and made the connection between them isn&amp;rsquo;t specified, so we can&amp;rsquo;t conclude that you&amp;rsquo;ve reached the conclusion $B$.&lt;/p&gt;
