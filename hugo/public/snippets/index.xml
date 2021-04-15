@@ -13,6 +13,85 @@
     </image>
     
     <item>
+      <title>Learning about LASIK</title>
+      <link>https://davidbieber.com/snippets/2021-04-08-laser-eye-surgery/</link>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-04-08-laser-eye-surgery/</guid>
+      <description>&lt;p&gt;My topic for the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-03-11-peer-learning-group-topics/&#34;&gt;March 2021 Peer Learning Group&lt;/a&gt; was &amp;ldquo;Laser Eye Surgery.&amp;rdquo; So, I spent an hour learning about LASIK. Here&amp;rsquo;s what I learned.&lt;/p&gt;
+&lt;h2 id=&#34;the-name-lasik&#34;&gt;The name &amp;ldquo;LASIK&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;LASIK stands for Laser-assisted in situ keratomileusis.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lasers&lt;/strong&gt;, which you&amp;rsquo;re probably familiar, emit high power beams of light. This is useful for laser eye surgery because a computer-guided laser can be used to precisely burn away pieces of your cornea in order to reshape your eye and correct your vision.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In situ&lt;/strong&gt; is Latin for &amp;ldquo;on site&amp;rdquo; or &amp;ldquo;in position&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keratomileusis&lt;/strong&gt; comes from the Greek &lt;em&gt;κέρας&lt;/em&gt;/&lt;em&gt;kéras&lt;/em&gt; for &lt;em&gt;horn&lt;/em&gt; and &lt;em&gt;σμίλευσις&lt;/em&gt;/&lt;em&gt;smileusis&lt;/em&gt; for &lt;em&gt;carving&lt;/em&gt;, and refers to the reshaping of the cornea that is central to LASIK.&lt;/p&gt;
+&lt;h2 id=&#34;how-does-lasik-work&#34;&gt;How does LASIK work?&lt;/h2&gt;
+&lt;p&gt;Laser eye surgery uses a laser to reshape the cornea in your eye. By reshaping the cornea, it changes how your eye refracts light. And if done correctly (as it usually is!), this improves your vision.&lt;/p&gt;
+&lt;p&gt;To access the cornea, the eye surgeon first cuts a flap into the surface of the cornea. This allows the surgeon to move that part of the cornea out of the way, exposing the remainder of the cornea. Once the flap is lifted, the surgeon uses a laser to reshape the cornea. Finally, the flap is returned to its original position and allowed to heal naturally.&lt;/p&gt;
+&lt;p&gt;So, we summarize the process of LASIK with three steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Cut a flap into the cornea&lt;/li&gt;
+&lt;li&gt;Reshape the cornea&lt;/li&gt;
+&lt;li&gt;Reposition the flap to heal&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Let&amp;rsquo;s go through the steps one by one.&lt;/p&gt;
+&lt;h2 id=&#34;1-cutting-a-flap-into-the-cornea&#34;&gt;1. Cutting a flap into the cornea&lt;/h2&gt;
+&lt;p&gt;There are two main approaches used for cutting this initial flap into the cornea: using a microkeratome or a femtosecond laser.&lt;/p&gt;
+&lt;p&gt;A microkeratome is not a laser: it&amp;rsquo;s a mechanical device, basically a knife. That&amp;rsquo;s right, with the microkeratome approach the surgeon is more-or-less taking a knife to your eye.
+It&amp;rsquo;s a special knife though, designed to create the micron-thin slip in the cornea needed to prepare your eye for LASIK.&lt;/p&gt;
+&lt;p&gt;The second approach is the femtosecond laser, so called because its pulses last a few femtoseconds. That&amp;rsquo;s less than a picosecond! ($1\text{ fs} = 10^{-15}\text{ s}$)&lt;/p&gt;
+&lt;p&gt;The flap we&amp;rsquo;re making here is really thin, measuring just 83 to 200 micrometers.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4089871/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This paper&lt;/a&gt; discusses common considerations in management and complications of the flap-cutting step in femtosecond laser LASIK.&lt;/p&gt;
+&lt;p&gt;What are the possible complications? The paper lists &amp;ldquo;incomplete or partial flaps, free flaps, buttonholes, and small irregular flaps&amp;rdquo; as possible complications when using a microkeratome. The paper also describes the complications as &amp;ldquo;plaguing refractive surgeons&amp;rdquo; rather than plaguing the patients, which I think may be misdirected.&lt;/p&gt;
+&lt;p&gt;My understanding is that femtosecond laser LASIK was steadily on the rise in 2008, and perhaps at this point is the standard approach to LASIK.&lt;/p&gt;
+&lt;p&gt;The paper linked above lists these advantages of femtosecond LASIK over microkeratome LASIK: flap thickness reproducibility, wavefront measurements, stromal bed quality, and biomechanical outcomes.&lt;/p&gt;
+&lt;p&gt;Regardless of what approach to cutting the flap the surgeon uses, this step takes just a couple of seconds. In fact, the whole procedure is rather short, lasting no more than a few minutes.&lt;/p&gt;
+&lt;h2 id=&#34;2-reshaping-the-cornea&#34;&gt;2. Reshaping the cornea&lt;/h2&gt;
+&lt;p&gt;This is the central step of LASIK! This is the step that can actually improve your vision. A computer-guided excimer laser removes part of the cornea, reshaping.&lt;/p&gt;
+&lt;p&gt;What&amp;rsquo;s a &amp;ldquo;computer-guided excimer laser&amp;rdquo;? It&amp;rsquo;s a powerful and precise laser capable of removing as little as 0.25 microns of tissue at a time. The &amp;ldquo;computer-guided&amp;rdquo; part of the laser uses eye-tracking to adjust where it cuts in response to any eye-movements you make.&lt;/p&gt;
+&lt;p&gt;One of the perks of using a computer-guided laser is that it can respond quickly to any eye or head movements you make. If you move a little, it adjusts where it cuts. If you move too much, it shuts off the laser.&lt;/p&gt;
+&lt;p&gt;Wikipedia informs me that the term &amp;ldquo;excimer&amp;rdquo; in excimer laser is a bit of a misnomer, and that &amp;ldquo;exciplex&amp;rdquo; would be more correct. An exciplex is an &lt;em&gt;excited complex&lt;/em&gt;, in our case an excited noble gas halide.&lt;/p&gt;
+&lt;p&gt;During this step of LASIK, the excimer laser adjusts the shape of the cornea in order to correct the patient&amp;rsquo;s vision. Reshaping the cornea is an effective technique for correcting nearsightedness, farsightedness, and astigmatism.&lt;/p&gt;
+&lt;p&gt;Nearsightedness occurs when the shape of your eye causes light to refract incorrectly such that images are focused in front of your retina, rather than directly &lt;em&gt;on&lt;/em&gt; your retina. Similarly, farsightedness occurs when your the shape of your eye causes the image to focus behind your retina. Vision impairments like these are perfect candidates for fixing with LASIK, since they can be remedied simply by modifying the shape of your cornea.&lt;/p&gt;
+&lt;p&gt;To correct nearsightedness, the excimer laser is used to flatten the cornea. This causes incoming light to refract less, such that the focal point is moved further back, toward your retina. For farsightedness, the laser makes the cornea steeper, bringing the focal point forward in your eye. For an astigmatism, it aims to smooth the cornea into a more symmetrical shape.&lt;/p&gt;
+&lt;h2 id=&#34;3-repositioning-the-flap-to-heal&#34;&gt;3. Repositioning the flap to heal&lt;/h2&gt;
+&lt;p&gt;Once the cornea has been reshaped, the surgeon repositions the flap over the cornea. This acts as a natural bandage, and the cornea heals quickly.&lt;/p&gt;
+&lt;h2 id=&#34;is-anesthesia-used&#34;&gt;Is anesthesia used?&lt;/h2&gt;
+&lt;p&gt;Yes, eye numbing drops are given. You&amp;rsquo;re awake the whole time though. If you move a little, the computer-guidance will account for it. If you move too much, the laser will shut off automatically.&lt;/p&gt;
+&lt;h2 id=&#34;risks&#34;&gt;Risks&lt;/h2&gt;
+&lt;p&gt;Loss of vision is very rare. Dry eyes is common. Temporary vision problems like glare are common too.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the complete list of risks I found:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dry eyes&lt;/li&gt;
+&lt;li&gt;Glare, halos, double vision&lt;/li&gt;
+&lt;li&gt;Undercorrections&lt;/li&gt;
+&lt;li&gt;Overcorrections&lt;/li&gt;
+&lt;li&gt;Astigmatism&lt;/li&gt;
+&lt;li&gt;Flap problems&lt;/li&gt;
+&lt;li&gt;Regression&lt;/li&gt;
+&lt;li&gt;Vision loss or changes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For myself, I would (naively) be primarily worried about regression. That said, it does seem to be an uncommon issue.&lt;/p&gt;
+&lt;h2 id=&#34;costs&#34;&gt;Costs&lt;/h2&gt;
+&lt;p&gt;LASIK is not usually covered by insurance, as it is typically considered elective surgery. The cost of LASIK is reported to be between $1,000 and $3,000 per eye. 
+&lt;a href=&#34;https://www.vsp.com/eyewear-wellness/lasik-glasses-lenses/lasik-eye-surgery-cost&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VSP has this page&lt;/a&gt; with a list of questions you should ask to understand exactly what is included in the cost of LASIK (Pre- and post- operative care? Follow-up procedures if fine-tuning is needed? One eye or two?).&lt;/p&gt;
+&lt;h2 id=&#34;open-questions&#34;&gt;Open questions:&lt;/h2&gt;
+&lt;p&gt;Keep in mind I only spent about an hour researching LASIK. There are many questions I am not qualified to answer. Here are some of the questions I still have:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How common are each of the risks?&lt;/li&gt;
+&lt;li&gt;How is the flap moved out of the way? How is it repositioned?&lt;/li&gt;
+&lt;li&gt;What do the medical devices and surgery actually look like?&lt;/li&gt;
+&lt;li&gt;For myself, I would be concerned that my vision changes too quickly. Is there a way to measure this to verify or invalidate this concern?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;peer-learning-group&#34;&gt;Peer Learning Group&lt;/h2&gt;
+&lt;p&gt;I wrote up this topic at the conclusion to the March 2021 Peer Learning Group. We&amp;rsquo;re in between Peer Learning Groups right now. If you&amp;rsquo;re interested in participating in the next one, you can email me at &lt;a href=&#34;mailto:david810@gmail.com&#34;&gt;david810@gmail.com&lt;/a&gt; to be notified when sign-ups for the next Peer Learning Group session open up.&lt;/p&gt;
+&lt;p&gt;During the PLG, I took my notes on Laser Eye Surgery 
+&lt;a href=&#34;https://roamresearch.com/#/app/commons-db/page/vgNgwbZlz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;in Roam Research here&lt;/a&gt;. The notes are publicly visible (and editable), so feel free to have a look. You can also see an image preview of them below.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://roamresearch.com/#/app/commons-db/page/vgNgwbZlz&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://davidbieber.com/snippets/2021-04-08-lasiknotes.png&#34; alt=&#34;My Roam Research notes on Laser Eye Surgery.&#34; height=&#34;400px&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>March 2021 Peer Learning Group Topics</title>
       <link>https://davidbieber.com/snippets/2021-03-11-peer-learning-group-topics/</link>
       <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>

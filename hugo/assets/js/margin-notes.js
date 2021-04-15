@@ -1,125 +1,59 @@
-// MIT License
-// Copyright (c) 2019 Fabian Tamp
-// Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-// The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="function"==typeof require&&require;function f(t,n){if(!r[t]){if(!e[t]){var i="function"==typeof parcelRequire&&parcelRequire;if(!n&&i)return i(t,!0);if(o)return o(t,!0);if(u&&"string"==typeof t)return u(t);var c=new Error("Cannot find module '"+t+"'");throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r){return e[t][1][r]||r},p.cache={};var l=r[t]=new f.Module(t);e[t][0].call(l.exports,p,l,l.exports,this)}return r[t].exports;function p(e){return f(p.resolve(e))}}f.isParcelRequire=!0,f.Module=function(e){this.id=e,this.bundle=f,this.exports={}},f.modules=e,f.cache=r,f.parent=o,f.register=function(r,t){e[r]=[function(e,r){r.exports=t},{}]};for(var c=0;c<t.length;c++)try{f(t[c])}catch(e){i||(i=e)}if(t.length){var l=f(t[t.length-1]);"object"==typeof exports&&"undefined"!=typeof module?module.exports=l:"function"==typeof define&&define.amd?define(function(){return l}):n&&(this[n]=l)}if(parcelRequire=f,i)throw i;return f}({"WjTv":[function(require,module,exports) {
+"use strict";function e(e){"complete"===document.readyState||"interactive"===document.readyState?setTimeout(e,1):document.addEventListener("DOMContentLoaded",e)}function t(e){"complete"===document.readyState?setTimeout(e,1):window.addEventListener("load",e)}function o(e){t(function(){window.addEventListener("resize",e),setTimeout(e,1)})}Object.defineProperty(exports,"__esModule",{value:!0}),exports.docReady=e,exports.windowLoaded=t,exports.onWindowResize=o;
+},{}],"sVsf":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.resizeObservers=void 0;var e=[];exports.resizeObservers=e;
+},{}],"fRmm":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.hasActiveObservations=void 0;var e=require("../utils/resizeObservers"),r=function(){return e.resizeObservers.some(function(e){return e.activeTargets.length>0})};exports.hasActiveObservations=r;
+},{"../utils/resizeObservers":"sVsf"}],"q4zT":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.hasSkippedObservations=void 0;var e=require("../utils/resizeObservers"),r=function(){return e.resizeObservers.some(function(e){return e.skippedTargets.length>0})};exports.hasSkippedObservations=r;
+},{"../utils/resizeObservers":"sVsf"}],"IwgX":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.deliverResizeLoopError=void 0;var e="ResizeObserver loop completed with undelivered notifications.",r=function(){var r;"function"==typeof ErrorEvent?r=new ErrorEvent("error",{message:e}):((r=document.createEvent("Event")).initEvent("error",!1,!1),r.message=e),window.dispatchEvent(r)};exports.deliverResizeLoopError=r;
+},{}],"gl2t":[function(require,module,exports) {
+"use strict";var e;Object.defineProperty(exports,"__esModule",{value:!0}),exports.ResizeObserverBoxOptions=void 0,exports.ResizeObserverBoxOptions=e,function(e){e.BORDER_BOX="border-box",e.CONTENT_BOX="content-box",e.DEVICE_PIXEL_CONTENT_BOX="device-pixel-content-box"}(e||(exports.ResizeObserverBoxOptions=e={}));
+},{}],"gFCk":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.freeze=void 0;var e=function(e){return Object.freeze(e)};exports.freeze=e;
+},{}],"LRfI":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.ResizeObserverSize=void 0;var e=require("./utils/freeze"),i=function(){return function(i,r){this.inlineSize=i,this.blockSize=r,(0,e.freeze)(this)}}();exports.ResizeObserverSize=i;
+},{"./utils/freeze":"gFCk"}],"yApv":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.DOMRectReadOnly=void 0;var t=require("./utils/freeze"),e=function(){function e(e,i,h,r){return this.x=e,this.y=i,this.width=h,this.height=r,this.top=this.y,this.left=this.x,this.bottom=this.top+this.height,this.right=this.left+this.width,(0,t.freeze)(this)}return e.prototype.toJSON=function(){var t=this;return{x:t.x,y:t.y,top:t.top,right:t.right,bottom:t.bottom,left:t.left,width:t.width,height:t.height}},e.fromRect=function(t){return new e(t.x,t.y,t.width,t.height)},e}();exports.DOMRectReadOnly=e;
+},{"./utils/freeze":"gFCk"}],"JNs1":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.isReplacedElement=exports.isElement=exports.isHidden=exports.isSVG=void 0;var e=function(e){return e instanceof SVGElement&&"getBBox"in e};exports.isSVG=e;var t=function(t){if(e(t)){var i=t.getBBox(),n=i.width,s=i.height;return!n&&!s}var r=t,o=r.offsetWidth,a=r.offsetHeight;return!(o||a||t.getClientRects().length)};exports.isHidden=t;var i=function(e){var t,i,n=null===(i=null===(t=e)||void 0===t?void 0:t.ownerDocument)||void 0===i?void 0:i.defaultView;return!!(n&&e instanceof n.Element)};exports.isElement=i;var n=function(e){switch(e.tagName){case"INPUT":if("image"!==e.type)break;case"VIDEO":case"AUDIO":case"EMBED":case"OBJECT":case"CANVAS":case"IFRAME":case"IMG":return!0}return!1};exports.isReplacedElement=n;
+},{}],"SawC":[function(require,module,exports) {
 
-import { docReady, onWindowResize } from "./margin-notes-utils.js";
-import { ResizeObserver } from '@juggle/resize-observer';
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.global=void 0;var e="undefined"!=typeof window?window:{};exports.global=e;
+},{}],"rQXb":[function(require,module,exports) {
 
-var ARTICLE_CONTENT_SELECTOR = "#article-content";
-var FOOTNOTE_SECTION_SELECTOR = "section.footnotes[role=doc-endnotes]";
-var FLOATING_FOOTNOTE_MIN_WIDTH = 1620;
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.calculateBoxSizes=exports.calculateBoxSize=void 0;var e=require("../ResizeObserverBoxOptions"),t=require("../ResizeObserverSize"),i=require("../DOMRectReadOnly"),r=require("../utils/element"),o=require("../utils/freeze"),n=require("../utils/global"),d=new WeakMap,s=/auto|scroll/,a=/^tb|vertical/,l=/msie|trident/i.test(n.global.navigator&&n.global.navigator.userAgent),c=function(e){return parseFloat(e||"0")},u=function(e,i,r){return void 0===e&&(e=0),void 0===i&&(i=0),void 0===r&&(r=!1),new t.ResizeObserverSize((r?i:e)||0,(r?e:i)||0)},x=(0,o.freeze)({devicePixelContentBoxSize:u(),borderBoxSize:u(),contentBoxSize:u(),contentRect:new i.DOMRectReadOnly(0,0,0,0)}),v=function(e,t){if(void 0===t&&(t=!1),d.has(e)&&!t)return d.get(e);if((0,r.isHidden)(e))return d.set(e,x),x;var n=getComputedStyle(e),v=(0,r.isSVG)(e)&&e.ownerSVGElement&&e.getBBox(),z=!l&&"border-box"===n.boxSizing,B=a.test(n.writingMode||""),g=!v&&s.test(n.overflowY||""),b=!v&&s.test(n.overflowX||""),h=v?0:c(n.paddingTop),f=v?0:c(n.paddingRight),O=v?0:c(n.paddingBottom),R=v?0:c(n.paddingLeft),S=v?0:c(n.borderTopWidth),p=v?0:c(n.borderRightWidth),w=v?0:c(n.borderBottomWidth),M=R+f,P=h+O,W=(v?0:c(n.borderLeftWidth))+p,m=S+w,q=b?e.offsetHeight-m-e.clientHeight:0,C=g?e.offsetWidth-W-e.clientWidth:0,E=z?M+W:0,_=z?P+m:0,y=v?v.width:c(n.width)-E-C,D=v?v.height:c(n.height)-_-q,T=y+M+C+W,X=D+P+q+m,H=(0,o.freeze)({devicePixelContentBoxSize:u(Math.round(y*devicePixelRatio),Math.round(D*devicePixelRatio),B),borderBoxSize:u(T,X,B),contentBoxSize:u(y,D,B),contentRect:new i.DOMRectReadOnly(R,h,y,D)});return d.set(e,H),H};exports.calculateBoxSizes=v;var z=function(t,i,r){var o=v(t,r),n=o.borderBoxSize,d=o.contentBoxSize,s=o.devicePixelContentBoxSize;switch(i){case e.ResizeObserverBoxOptions.DEVICE_PIXEL_CONTENT_BOX:return s;case e.ResizeObserverBoxOptions.BORDER_BOX:return n;default:return d}};exports.calculateBoxSize=z;
+},{"../ResizeObserverBoxOptions":"gl2t","../ResizeObserverSize":"LRfI","../DOMRectReadOnly":"yApv","../utils/element":"JNs1","../utils/freeze":"gFCk","../utils/global":"SawC"}],"jOYK":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.ResizeObserverEntry=void 0;var e=require("./algorithms/calculateBoxSize"),t=require("./utils/freeze"),r=function(){return function(r){var i=(0,e.calculateBoxSizes)(r);this.target=r,this.contentRect=i.contentRect,this.borderBoxSize=(0,t.freeze)([i.borderBoxSize]),this.contentBoxSize=(0,t.freeze)([i.contentBoxSize]),this.devicePixelContentBoxSize=(0,t.freeze)([i.devicePixelContentBoxSize])}}();exports.ResizeObserverEntry=r;
+},{"./algorithms/calculateBoxSize":"rQXb","./utils/freeze":"gFCk"}],"rJz5":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.calculateDepthForNode=void 0;var e=require("../utils/element"),r=function(r){if((0,e.isHidden)(r))return 1/0;for(var t=0,o=r.parentNode;o;)t+=1,o=o.parentNode;return t};exports.calculateDepthForNode=r;
+},{"../utils/element":"JNs1"}],"pNbI":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.broadcastActiveObservations=void 0;var e=require("../utils/resizeObservers"),r=require("../ResizeObserverEntry"),t=require("./calculateDepthForNode"),a=require("./calculateBoxSize"),s=function(){var s=1/0,i=[];e.resizeObservers.forEach(function(e){if(0!==e.activeTargets.length){var c=[];e.activeTargets.forEach(function(e){var i=new r.ResizeObserverEntry(e.target),o=(0,t.calculateDepthForNode)(e.target);c.push(i),e.lastReportedSize=(0,a.calculateBoxSize)(e.target,e.observedBox),o<s&&(s=o)}),i.push(function(){e.callback.call(e.observer,c,e.observer)}),e.activeTargets.splice(0,e.activeTargets.length)}});for(var c=0,o=i;c<o.length;c++){(0,o[c])()}return s};exports.broadcastActiveObservations=s;
+},{"../utils/resizeObservers":"sVsf","../ResizeObserverEntry":"jOYK","./calculateDepthForNode":"rJz5","./calculateBoxSize":"rQXb"}],"lCXI":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.gatherActiveObservationsAtDepth=void 0;var e=require("../utils/resizeObservers"),t=require("./calculateDepthForNode"),r=function(r){e.resizeObservers.forEach(function(e){e.activeTargets.splice(0,e.activeTargets.length),e.skippedTargets.splice(0,e.skippedTargets.length),e.observationTargets.forEach(function(s){s.isActive()&&((0,t.calculateDepthForNode)(s.target)>r?e.activeTargets.push(s):e.skippedTargets.push(s))})})};exports.gatherActiveObservationsAtDepth=r;
+},{"../utils/resizeObservers":"sVsf","./calculateDepthForNode":"rJz5"}],"lEKP":[function(require,module,exports) {
 
-// Computes an offset such that setting `top` on elemToAlign will put it
-// in vertical alignment with targetAlignment.
-function computeOffsetForAlignment(elemToAlign, targetAlignment) {
-    var offsetParentTop = elemToAlign.offsetParent.getBoundingClientRect().top;
-    // Distance between the top of the offset parent and the top of the target alignment
-    return targetAlignment.getBoundingClientRect().top - offsetParentTop;
-}
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.process=void 0;var e=require("../algorithms/hasActiveObservations"),r=require("../algorithms/hasSkippedObservations"),s=require("../algorithms/deliverResizeLoopError"),t=require("../algorithms/broadcastActiveObservations"),i=require("../algorithms/gatherActiveObservationsAtDepth"),o=function(){var o=0;for((0,i.gatherActiveObservationsAtDepth)(o);(0,e.hasActiveObservations)();)o=(0,t.broadcastActiveObservations)(),(0,i.gatherActiveObservationsAtDepth)(o);return(0,r.hasSkippedObservations)()&&(0,s.deliverResizeLoopError)(),o>0};exports.process=o;
+},{"../algorithms/hasActiveObservations":"fRmm","../algorithms/hasSkippedObservations":"q4zT","../algorithms/deliverResizeLoopError":"IwgX","../algorithms/broadcastActiveObservations":"pNbI","../algorithms/gatherActiveObservationsAtDepth":"lCXI"}],"B5ee":[function(require,module,exports) {
+"use strict";var e;Object.defineProperty(exports,"__esModule",{value:!0}),exports.queueMicroTask=void 0;var t=[],r=function(){return t.splice(0).forEach(function(e){return e()})},n=function(n){if(!e){var o=0,u=document.createTextNode("");new MutationObserver(function(){return r()}).observe(u,{characterData:!0}),e=function(){u.textContent=""+(o?o--:o++)}}t.push(n),e()};exports.queueMicroTask=n;
+},{}],"Wwt2":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.queueResizeObserver=void 0;var e=require("./queueMicroTask"),r=function(r){(0,e.queueMicroTask)(function(){requestAnimationFrame(r)})};exports.queueResizeObserver=r;
+},{"./queueMicroTask":"B5ee"}],"cG1N":[function(require,module,exports) {
 
-function setFootnoteOffsets(footnotes) {
-    // Keep track of the bottom of the last element, because we don't want to
-    // overlap footnotes.
-    var bottomOfLastElem = 0;
-    Array.prototype.forEach.call(footnotes, function (footnote, i) {
 
-        // In theory, don't need to escape this because IDs can't contain
-        // quotes, in practice, not sure. ¯\_(ツ)_/¯
-
-        // Get the thing that refers to the footnote
-        var intextLink = document.querySelector("a.footnote-ref[href='#" + footnote.id + "']");
-        // Find its "content parent"; nearest paragraph or list item or
-        // whatever. We use this for alignment because it looks much cleaner.
-        // If it doesn't, your paragraphs are too long :P
-        // Fallback - use the same height as the link.
-        var verticalAlignmentTarget = intextLink.closest('p,li') || intextLink;
-
-        var offset = computeOffsetForAlignment(footnote, verticalAlignmentTarget);
-        if (offset < bottomOfLastElem) {
-            offset = bottomOfLastElem;
-        }
-        // computedStyle values are always in pixels, but have the suffix 'px'.
-        // offsetHeight doesn't include margins, but we want it to use them so
-        // we retain the style / visual fidelity when all the footnotes are
-        // crammed together.
-        bottomOfLastElem = offset + footnote.offsetHeight + parseInt(window.getComputedStyle(footnote).marginBottom) + parseInt(window.getComputedStyle(footnote).marginTop);
-
-        footnote.style.top = offset + 'px';
-        footnote.style.position = 'absolute';
-    });
-}
-
-function clearFootnoteOffsets(footnotes) {
-    // Reset all
-    Array.prototype.forEach.call(footnotes, function (fn, i) {
-        fn.style.top = null;
-        fn.style.position = null;
-    });
-}
-
-// Contract: this is idempotent. It won't wreck anything if you call it
-// with the same value over and over again. Though maybe it'll wreck performance...
-function updateFootnoteFloat(shouldFloat) {
-    var footnoteSection = document.querySelector(FOOTNOTE_SECTION_SELECTOR);
-    var footnotes = footnoteSection.querySelectorAll("li[role=doc-endnote]");
-
-    if (shouldFloat) {
-        // Do this first because we need styles applied before doing other
-        // calculations
-        footnoteSection.classList.add('floating-footnotes');
-        setFootnoteOffsets(footnotes);
-        subscribeToUpdates();
-    } else {
-        unsubscribeFromUpdates();
-        clearFootnoteOffsets(footnotes);
-        footnoteSection.classList.remove('floating-footnotes');
-    }
-}
-
-function subscribeToUpdates() {
-    var article = document.querySelector(ARTICLE_CONTENT_SELECTOR);
-    // Watch for dimension changes on the thing that holds all the footnotes so
-    // we can reposition as required
-    resizeObserver.observe(article);
-}
-
-function unsubscribeFromUpdates() {
-    resizeObserver.disconnect();
-}
-
-var notifySizeChange = function () {
-    // Default state, not expanded.
-    var bigEnough = false;
-
-    return function () {
-        // Pixel width at which this looks good
-        var nowBigEnough = window.innerWidth >= FLOATING_FOOTNOTE_MIN_WIDTH;
-        if (nowBigEnough !== bigEnough) {
-            updateFootnoteFloat(nowBigEnough);
-            bigEnough = nowBigEnough;
-        }
-    };
-}();
-
-var resizeObserver = new ResizeObserver(function (_entries, observer) {
-    // By virtue of the fact that we're subscribed, we know this is true.
-    updateFootnoteFloat(true);
-});
-
-export default function enableFloatingFootnotes() {
-    docReady(function () {
-        var footnoteSection = document.querySelector(FOOTNOTE_SECTION_SELECTOR);
-        var article = document.querySelector(ARTICLE_CONTENT_SELECTOR);
-        var allowFloatingFootnotes = article && !article.classList.contains('no-floating-footnotes');
-
-        // only set it all up if there's actually a footnote section and
-        // we haven't explicitly disabled floating footnotes.
-        if (footnoteSection && allowFloatingFootnotes) {
-            onWindowResize(notifySizeChange);
-        }
-    });
-}
-
-window.enableFloatingFootnotes = enableFloatingFootnotes;
-enableFloatingFootnotes();
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.updateCount=exports.scheduler=void 0;var e=require("./process"),t=require("./global"),r=require("./queueResizeObserver"),o=0,n=function(){return!!o},s=250,i={attributes:!0,characterData:!0,childList:!0,subtree:!0},u=["resize","load","transitionend","animationend","animationstart","animationiteration","keyup","keydown","mouseup","mousedown","mouseover","mouseout","blur","focus"],a=function(e){return void 0===e&&(e=0),Date.now()+e},p=!1,c=function(){function o(){var e=this;this.stopped=!0,this.listener=function(){return e.schedule()}}return o.prototype.run=function(t){var o=this;if(void 0===t&&(t=s),!p){p=!0;var i=a(t);(0,r.queueResizeObserver)(function(){var r=!1;try{r=(0,e.process)()}finally{if(p=!1,t=i-a(),!n())return;r?o.run(1e3):t>0?o.run(t):o.start()}})}},o.prototype.schedule=function(){this.stop(),this.run()},o.prototype.observe=function(){var e=this,r=function(){return e.observer&&e.observer.observe(document.body,i)};document.body?r():t.global.addEventListener("DOMContentLoaded",r)},o.prototype.start=function(){var e=this;this.stopped&&(this.stopped=!1,this.observer=new MutationObserver(this.listener),this.observe(),u.forEach(function(r){return t.global.addEventListener(r,e.listener,!0)}))},o.prototype.stop=function(){var e=this;this.stopped||(this.observer&&this.observer.disconnect(),u.forEach(function(r){return t.global.removeEventListener(r,e.listener,!0)}),this.stopped=!0)},o}(),d=new c;exports.scheduler=d;var v=function(e){!o&&e>0&&d.start(),!(o+=e)&&d.stop()};exports.updateCount=v;
+},{"./process":"lEKP","./global":"SawC","./queueResizeObserver":"Wwt2"}],"ZP1i":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.ResizeObservation=void 0;var e=require("./ResizeObserverBoxOptions"),i=require("./algorithms/calculateBoxSize"),t=require("./utils/element"),r=function(e){return!(0,t.isSVG)(e)&&!(0,t.isReplacedElement)(e)&&"inline"===getComputedStyle(e).display},s=function(){function t(i,t){this.target=i,this.observedBox=t||e.ResizeObserverBoxOptions.CONTENT_BOX,this.lastReportedSize={inlineSize:0,blockSize:0}}return t.prototype.isActive=function(){var e=(0,i.calculateBoxSize)(this.target,this.observedBox,!0);return r(this.target)&&(this.lastReportedSize=e),this.lastReportedSize.inlineSize!==e.inlineSize||this.lastReportedSize.blockSize!==e.blockSize},t}();exports.ResizeObservation=s;
+},{"./ResizeObserverBoxOptions":"gl2t","./algorithms/calculateBoxSize":"rQXb","./utils/element":"JNs1"}],"H6au":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.ResizeObserverDetail=void 0;var e=function(){return function(e,t){this.activeTargets=[],this.skippedTargets=[],this.observationTargets=[],this.observer=e,this.callback=t}}();exports.ResizeObserverDetail=e;
+},{}],"nWdP":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.ResizeObserverController=void 0;var e=require("./utils/scheduler"),r=require("./ResizeObservation"),t=require("./ResizeObserverDetail"),s=require("./utils/resizeObservers"),i=new WeakMap,n=function(e,r){for(var t=0;t<e.length;t+=1)if(e[t].target===r)return t;return-1},o=function(){function o(){}return o.connect=function(e,r){var s=new t.ResizeObserverDetail(e,r);i.set(e,s)},o.observe=function(t,o,a){var u=i.get(t),v=0===u.observationTargets.length;n(u.observationTargets,o)<0&&(v&&s.resizeObservers.push(u),u.observationTargets.push(new r.ResizeObservation(o,a&&a.box)),(0,e.updateCount)(1),e.scheduler.schedule())},o.unobserve=function(r,t){var o=i.get(r),a=n(o.observationTargets,t),u=1===o.observationTargets.length;a>=0&&(u&&s.resizeObservers.splice(s.resizeObservers.indexOf(o),1),o.observationTargets.splice(a,1),(0,e.updateCount)(-1))},o.disconnect=function(e){var r=this,t=i.get(e);t.observationTargets.slice().forEach(function(t){return r.unobserve(e,t.target)}),t.activeTargets.splice(0,t.activeTargets.length)},o}();exports.ResizeObserverController=o;
+},{"./utils/scheduler":"cG1N","./ResizeObservation":"ZP1i","./ResizeObserverDetail":"H6au","./utils/resizeObservers":"sVsf"}],"G80b":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.ResizeObserver=void 0;var e=require("./ResizeObserverController"),r=require("./utils/element"),t=function(){function t(r){if(0===arguments.length)throw new TypeError("Failed to construct 'ResizeObserver': 1 argument required, but only 0 present.");if("function"!=typeof r)throw new TypeError("Failed to construct 'ResizeObserver': The callback provided as parameter 1 is not a function.");e.ResizeObserverController.connect(this,r)}return t.prototype.observe=function(t,o){if(0===arguments.length)throw new TypeError("Failed to execute 'observe' on 'ResizeObserver': 1 argument required, but only 0 present.");if(!(0,r.isElement)(t))throw new TypeError("Failed to execute 'observe' on 'ResizeObserver': parameter 1 is not of type 'Element");e.ResizeObserverController.observe(this,t,o)},t.prototype.unobserve=function(t){if(0===arguments.length)throw new TypeError("Failed to execute 'unobserve' on 'ResizeObserver': 1 argument required, but only 0 present.");if(!(0,r.isElement)(t))throw new TypeError("Failed to execute 'unobserve' on 'ResizeObserver': parameter 1 is not of type 'Element");e.ResizeObserverController.unobserve(this,t)},t.prototype.disconnect=function(){e.ResizeObserverController.disconnect(this)},t.toString=function(){return"function ResizeObserver () { [polyfill code] }"},t}();exports.ResizeObserver=t;
+},{"./ResizeObserverController":"nWdP","./utils/element":"JNs1"}],"q2rS":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),Object.defineProperty(exports,"ResizeObserver",{enumerable:!0,get:function(){return e.ResizeObserver}}),Object.defineProperty(exports,"ResizeObserverEntry",{enumerable:!0,get:function(){return r.ResizeObserverEntry}}),Object.defineProperty(exports,"ResizeObserverSize",{enumerable:!0,get:function(){return t.ResizeObserverSize}});var e=require("../ResizeObserver"),r=require("../ResizeObserverEntry"),t=require("../ResizeObserverSize");
+},{"../ResizeObserver":"G80b","../ResizeObserverEntry":"jOYK","../ResizeObserverSize":"LRfI"}],"TA3W":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=p;var e=require("./margin-notes-utils.js"),t=require("@juggle/resize-observer"),o="#article-content",n="section.footnotes[role=doc-endnotes]",r=1620;function i(e,t){var o=e.offsetParent.getBoundingClientRect().top;return t.getBoundingClientRect().top-o}function c(e){var t=0;Array.prototype.forEach.call(e,function(e,o){var n=document.querySelector("a.footnote-ref[href='#"+e.id+"']"),r=i(e,n.closest("p,li")||n);r<t&&(r=t),t=r+e.offsetHeight+parseInt(window.getComputedStyle(e).marginBottom)+parseInt(window.getComputedStyle(e).marginTop),e.style.top=r+"px",e.style.position="absolute"})}function s(e){Array.prototype.forEach.call(e,function(e,t){e.style.top=null,e.style.position=null})}function l(e){var t=document.querySelector(n),o=t.querySelectorAll("li[role=doc-endnote]");e?(t.classList.add("floating-footnotes"),c(o),u()):(a(),s(o),t.classList.remove("floating-footnotes"))}function u(){var e=document.querySelector(o);d.observe(e)}function a(){d.disconnect()}var f=function(){var e=!1;return function(){var t=window.innerWidth>=r;t!==e&&(l(t),e=t)}}(),d=new t.ResizeObserver(function(e,t){l(!0)});function p(){(0,e.docReady)(function(){var t=document.querySelector(n),r=document.querySelector(o),i=r&&!r.classList.contains("no-floating-footnotes");t&&i&&(0,e.onWindowResize)(f)})}window.enableFloatingFootnotes=p,p();
+},{"./margin-notes-utils.js":"WjTv","@juggle/resize-observer":"q2rS"}]},{},["TA3W"], null)
+//# sourceMappingURL=/margin-notes.js.map
