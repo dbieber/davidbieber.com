@@ -96,7 +96,7 @@ For myself, I would (naively) be primarily worried about regression. That said, 
 
 ## Costs
 
-LASIK is not usually covered by insurance, as it is typically considered elective surgery. The cost of LASIK is reported to be between $1,000 and $3,000 per eye. [VSP has this page](https://www.vsp.com/eyewear-wellness/lasik-glasses-lenses/lasik-eye-surgery-cost) with a list of questions you should ask to understand exactly what is included in the cost of LASIK (Pre- and post- operative care? Follow-up procedures if fine-tuning is needed? One eye or two?).
+LASIK is not usually covered by insurance, as it is typically considered elective surgery. The cost of LASIK is reported to be between $\text{\\$1,000}$ and $\text{\\$3,000}$ per eye. [VSP has this page](https://www.vsp.com/eyewear-wellness/lasik-glasses-lenses/lasik-eye-surgery-cost) with a list of questions you should ask to understand exactly what is included in the cost of LASIK (Pre- and post- operative care? Follow-up procedures if fine-tuning is needed? One eye or two?).
 
 ## Open questions:
 
