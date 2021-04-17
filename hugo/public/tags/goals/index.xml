@@ -5,12 +5,41 @@
     <link>https://davidbieber.com/tags/goals/</link>
       <atom:link href="https://davidbieber.com/tags/goals/index.xml" rel="self" type="application/rss+xml" />
     <description>goals</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 17 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>goals</title>
       <link>https://davidbieber.com/tags/goals/</link>
     </image>
+    
+    <item>
+      <title>Resuming snippet writing?</title>
+      <link>https://davidbieber.com/snippets/2021-04-17-resuming-snippet-writing/</link>
+      <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-04-17-resuming-snippet-writing/</guid>
+      <description>&lt;p&gt;About two month ago I encountered a 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-02-21-snippets-dry-spell/&#34;&gt;snippets dry spell&lt;/a&gt;. At the time I didn&amp;rsquo;t foresee writing snippets at the same rate I had been leading up to that point. Sure enough, over the two months that followed I only wrote a handful of snippets. March saw two simultaneous Peer Learning Groups, and April lead into a period of intense virtual ping pong playing and lots of real-life hiking.&lt;/p&gt;
+&lt;p&gt;We wrapped up the Peer Learning Groups, a largely asynchronous low-commitment activity, with a virtual synchronous meet-up and coworking session. During these I produced these two snippets about what I learned for my PLG sessions: one on 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-04-15-oil-pricing/&#34;&gt;Laser Eye Surgery&lt;/a&gt;, one on 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-04-15-oil-pricing/&#34;&gt;Oil Pricing&lt;/a&gt;. I think this could be the trigger that brings me back into the pattern of writing snippets again, though I&amp;rsquo;m not certain.&lt;/p&gt;
+&lt;p&gt;Setting out to write snippets once more, I have a handful of half-baked ideas about what to write about: sleep, ping pong, virtual reality, hiking, the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-02-21-snippets-dry-spell/&#34;&gt;list of ideas from February&lt;/a&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, yet more snippets about Browserflow and Roam Research, machine learning research, PLG and other online learning ideas, and pandemic coping are all on my list.&lt;/p&gt;
+&lt;p&gt;When I sat down today to pen a snippet, I initially thought I would write about my ideas for using virtual reality table tennis for group coaching sessions. It felt funny though; I wasn&amp;rsquo;t sure why I was writing it. Was snippets a place to collect good ideas I may want to share with people in the future?&lt;/p&gt;
+&lt;p&gt;This snippet is me taking a moment to reflect on why I write snippets, to reload my old reasoning back into memory, and to see if it still makes sense to me.&lt;/p&gt;
+&lt;p&gt;I had a few early reasons. Learning to communicate was a big one early on. Avoiding the addicting nature of social media was part of why I chose to write here, rather than on another platform. Feeling like I was writing for no audience, and the freedoms and desires that I found came with that, was a bigger reason for continuing on this platform rather than another. All of these continue to ring true, though there is one key way in which my writing deviates from its stated purpose.&lt;/p&gt;
+&lt;p&gt;When I set out to get better at communicating, one of my motivations was for communicating research. I&amp;rsquo;ve hardly written about my research at all! I don&amp;rsquo;t want to make a big change here; I like the type of topic I tend to select for snippets, and I like the expectation that I&amp;rsquo;ve set for myself that I can write about anything, with the bar set extremely low. That said, I will make a small mental adjustment, and add to my internal Potential Topics List writing about my published research.&lt;/p&gt;
+&lt;p&gt;So, with this snippet, I hope and intend that I am resuming somewhat more frequent writing. This is a non-promise, 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-10-08-biking-in-the-morning/&#34;&gt;a mere &amp;ldquo;aspirational intent&amp;rdquo; like the one I made about biking back in October&lt;/a&gt;. That one worked out though; I continued biking regularly well into the cold season, so I&amp;rsquo;m optimistic that this one will pan out positively as well.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Crashing Facebook Japan, The “content sharing group”, 2021 goals, The “programmer’s apprentice”, Making decisions for 10,000 people, Roam Primitives: subscribe to changes, and Castles in the clouds (as a mental model for belief systems) &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
     
     <item>
       <title>2020 Resolution Check-in</title>
@@ -78,6 +107,19 @@
 &lt;a href=&#34;https://arxiv.org/abs/2002.09067&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Unique Randomizer&lt;/a&gt;, and 
 &lt;a href=&#34;https://arxiv.org/abs/2007.14381&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BUSTLE&lt;/a&gt;). So far two of them have been accompanied by open source releases (update: now three!).&lt;/p&gt;
 &lt;p&gt;Add in a handful of paper presentations and Google-internal talks, and its safe to say I&amp;rsquo;m past the half-way point toward the goal. Only trouble is we&amp;rsquo;re over 75% of the way through the year. I&amp;rsquo;d better get communicating!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Biking in the Morning</title>
+      <link>https://davidbieber.com/snippets/2020-10-08-biking-in-the-morning/</link>
+      <pubDate>Thu, 08 Oct 2020 22:04:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-10-08-biking-in-the-morning/</guid>
+      <description>&lt;p&gt;Some of the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-10-06-the-snippets-i-dont-publish/&#34;&gt;snippets I did not publish&lt;/a&gt; were about my plans for biking in the morning. For the last several days I&amp;rsquo;ve been biking to East Rock each morning, doing so before starting work on work days. I bring my pocket-sized keyboard and my phone, and when I&amp;rsquo;m at the top of the Rock I use my friend Jacob Cole&amp;rsquo;s app, ThoughtStream, to write about whatever&amp;rsquo;s on my mind. Sometimes this is a potential snippet, and sometimes it&amp;rsquo;s just planning for the day.&lt;/p&gt;
+&lt;p&gt;I really like this routine but I&amp;rsquo;m not confident that I&amp;rsquo;ll continue it. Consistently getting up early for an extended period of time can be challenging, and I&amp;rsquo;m not inclined to set an alarm to help. Also, the weather is getting cooler.&lt;/p&gt;
+&lt;p&gt;I certainly hope that I continue this routine, and I intend to maintain it. I simply don&amp;rsquo;t know that I will, and don&amp;rsquo;t feel confidently enough that I will to make any sort of declaration or commitment to doing so. Is there a name for this type of goal? I think &amp;ldquo;intent&amp;rdquo; is appropriate, but doesn&amp;rsquo;t capture the aspirational aspect of it. For now lets call it an &amp;ldquo;aspirational intent&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;I aspirationally intend to keep biking to East Rock most mornings, until the weather gets too cold to permit doing so.&lt;/p&gt;
 </description>
     </item>
     

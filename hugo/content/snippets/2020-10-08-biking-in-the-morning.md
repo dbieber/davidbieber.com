@@ -1,6 +1,7 @@
 +++
 title = "Biking in the Morning"
 date = 2020-10-08T22:04:00
+tags = ["goals", "aspirational-intent"]
 +++
 
 Some of the [snippets I did not publish](/snippets/2020-10-06-the-snippets-i-dont-publish/) were about my plans for biking in the morning. For the last several days I've been biking to East Rock each morning, doing so before starting work on work days. I bring my pocket-sized keyboard and my phone, and when I'm at the top of the Rock I use my friend Jacob Cole's app, ThoughtStream, to write about whatever's on my mind. Sometimes this is a potential snippet, and sometimes it's just planning for the day.
