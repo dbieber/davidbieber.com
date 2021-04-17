@@ -13,6 +13,48 @@
     </image>
     
     <item>
+      <title>Learning about Oil Pricing</title>
+      <link>https://davidbieber.com/snippets/2021-04-15-oil-pricing/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-04-15-oil-pricing/</guid>
+      <description>&lt;p&gt;For the March 2021 Climate Change Peer Learning Group, I spent a couple of hours learning about Oil Pricing. This proved far too large a topic to cover in the allotted time, far more so than for any of the other topics I&amp;rsquo;ve studied in a PLG before. Here&amp;rsquo;s what I learned.&lt;/p&gt;
+&lt;h2 id=&#34;learning-trajectory&#34;&gt;Learning Trajectory&lt;/h2&gt;
+&lt;p&gt;I started with Wikipedia and some assorted Googling to get the basics of crude oil, shale, natural gas, to get an idea for their rough production levels around the world, and to learn a bit of history about OPEC. Eventually, I landed on 
+&lt;a href=&#34;https://www.e-education.psu.edu/eme801/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this course from PennState: &lt;strong&gt;Energy Markets, Policy, and Regulation&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This course is an excellent resource, and I spent about an hour going through the first lesson (of 12), which is about the global market for crude oil. It was well written, interesting, and provided a good not-too-heavy mix of history, geopolitics, and economics to bring me up to speed.&lt;/p&gt;
+&lt;p&gt;Future lessons promise to cover the markets for refined petroleum products, the markets for natural gas, and then further topics on natural gas, electricity, energy regulations, challenges with adopting renewables, and a number of related econ and finance topics.&lt;/p&gt;
+&lt;p&gt;If you want a thorough introduction to the topic, check out 
+&lt;a href=&#34;https://www.e-education.psu.edu/eme801/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the course&lt;/a&gt;.
+If you instead want a lighter more enjoyable exploration of the topic, check out 
+&lt;a href=&#34;https://www.npr.org/sections/money/2016/08/26/491342091/planet-money-buys-oil&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Planet Money Buys Oil&lt;/a&gt;, a 20-minute episode of NPR&amp;rsquo;s &lt;em&gt;Planet Money&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;understanding-oil&#34;&gt;Understanding Oil&lt;/h2&gt;
+&lt;p&gt;There&amp;rsquo;s crude oil, shale oil, and natural gas. Crude oil is found at a depth of about 6000 ft, and requires the most refining of the three to be useful. Shale oil is found at a depth of about 9000 ft. Natural gas is primarily methane, and requires the least work of the three to refine.&lt;/p&gt;
+&lt;p&gt;Within each of these main categories of oil, there is a large numbers of kinds of oil. Take a look at the futures and indexes listed 
+&lt;a href=&#34;https://oilprice.com/oil-price-charts/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;on these oil price charts&lt;/a&gt; to get a sense for how many different kinds of oil trade every day. The two at the top of the charts, West Texas Intermediate (WTI) and Brent, are the most important, as those two serve as benchmark oil prices for the rest.&lt;/p&gt;
+&lt;p&gt;What makes an oil higher or lower quality? Two important dimensions are its sulfur content, and its viscosity. Oils low in sulfur are said to be &amp;ldquo;sweet&amp;rdquo;, while those high in sulfur are termed &amp;ldquo;sour&amp;rdquo;. The lower the sulfur content, the higher quality the oil. Viscosity of crude oil is measured on the API (&amp;ldquo;American Petroleum Institute&amp;rdquo;) gravity scale. Low viscosity oils are called &amp;ldquo;light&amp;rdquo;, and high viscosity oils are called &amp;ldquo;heavy&amp;rdquo;, with lower viscosity being preferable and more valuable than higher viscosity oils.&lt;/p&gt;
+&lt;p&gt;WTI is a light sweet oil representative of the US market. Brent is a blend of light sweet crude oils from the North Sea, with just slightly higher levels of sulfur than WTI.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2F-WMfNd5Pis.png?alt=media&amp;amp;token=f9149939-7126-438b-8487-4de6a601529c&#34; alt=&#34;Details about several different oil blends around the world.&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;oil-production-levels&#34;&gt;Oil Production Levels&lt;/h2&gt;
+&lt;p&gt;US, Russian, and Saudi Arabia all producing near peak rates 9 to 11 million barrels per day.
+In the US, that works out to about 1 barrel per person per month.
+In the Russia, production is about 2 barrels per person per month.
+And in Saudi Arabia, production is about 10 barrels per person per month.
+(The differences here come from differences in the nations&#39; populations, not from their oil production levels, which are all the same order of magnitude.)&lt;/p&gt;
+&lt;p&gt;I like thinking about production in terms of barrels per person per month because you get nice tangible values that you can compare to your own oil usage. How often do you get gas for your car? How long does it take you to go through a barrel of oil yourself? Far more than a month, I&amp;rsquo;m sure.&lt;/p&gt;
+&lt;h2 id=&#34;a-wee-bit-of-history&#34;&gt;A Wee Bit of History&lt;/h2&gt;
+&lt;p&gt;There were important oil embargos in 1973 and 1979. I&amp;rsquo;ll summarize what I read about briefly here, but I recommend reading through 
+&lt;a href=&#34;https://www.e-education.psu.edu/eme801/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the course&amp;rsquo;s text&lt;/a&gt; rather than this short summary.
+In 1973: an unwarranted energy scare leads to the Arab oil embargo. The Middle East countries announce a 5% production cut per month as a reaction to the Yom Kippur war between Egypt and Israel. Though they announced a 5% decrease in production, in practice decreased production less than 1%.&lt;/p&gt;
+&lt;p&gt;Main takeaway from this event: Cartel coordination is hard! Each country still had an individual profit motive, which prevented the embargo participants from carrying out their stated embargo.&lt;/p&gt;
+&lt;p&gt;The 1979 embargo: An Iranian worker strike lead to oil prices rising. Again, this was mostly due to speculation not an actual production decrease.&lt;/p&gt;
+&lt;p&gt;The main takeaways from these two events:  Fear of control due to OPEC is just as powerful (perhaps more so) as the actual control exerted by OPEC. More recently, fear of geopolitical instability in the Middle East and Africa has a similar effect. It&amp;rsquo;s abundantly clear there is so much important history and geopolitics that I haven&amp;rsquo;t gotten to read about yet.&lt;/p&gt;
+&lt;h2 id=&#34;my-notes&#34;&gt;My Notes&lt;/h2&gt;
+&lt;p&gt;There is lots more from the PennState course. I&amp;rsquo;ll recommend it one last time for anyone who wants to dive deeper into the subject. This is a massive topic and I spent a little under two hours reading about it. So, there&amp;rsquo;s much more to learn! To see what else I encountered in my brief foray into the topic, have a look at 
+&lt;a href=&#34;https://roamresearch.com/#/app/commons-db/page/5AnRSW3BW&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;my notes here on Roam Research&lt;/a&gt;. They&amp;rsquo;re world-readable and world-editable, so feel free to peruse or even make contributions if you&amp;rsquo;re so inclined.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Learning about LASIK</title>
       <link>https://davidbieber.com/snippets/2021-04-08-laser-eye-surgery/</link>
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
