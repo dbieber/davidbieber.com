@@ -2,7 +2,7 @@
 title = "Eleven: Table Tennis VR"
 date = 2021-04-16T00:00:00
 tags = []
-keywords = []
+keywords = ["table tennis", "virtual reality"]
 math = true
 +++
 

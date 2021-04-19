@@ -2,7 +2,8 @@
 title = "Virtual table tennis coaching"
 date = 2021-04-18T00:00:00
 uid = "4ZZsyeeLa"
-
+tags = []
+keywords = ["table tennis", "virtual reality"]
 +++
 
 For the last few weeks I've been playing virtual reality table tennis quite a lot. It's competitive; some highly ranked real-life table tennis players from around the world play this game. My ranking has been going up: my ELO recently reached 2000+, bringing me (at least temporarily) into the top 1500 ranked players online (out of upwards of 440,000 players total.)
