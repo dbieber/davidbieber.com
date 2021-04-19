@@ -7,7 +7,7 @@ keywords = []
 
 If you Google "Python set intersection", you get a number of results about the `set.intersection` function. It isn't until the fourth result that you reach a page mentioning Python's convenient syntax for performing set operations. This was surprising to me, hence this snippet.
 
-## Background: Sets in Python
+## Background: Collections in Python
 
 Python has a few primitive collection types: tuples, lists, dictionaries (aka dicts), and sets. Use parenthesis to create a tuple `(1, 2, 3)`, square brackets to create a list `[4, 5, 6]`, and squirrelly brackets to create a dict or set: `{7: 8, 9: 10}` makes a dict and `{11, 12, 13}` makes a set. Just like a set in mathematics, a set in Python is an __unordered__ collection of __distinct__ elements.
 
@@ -69,4 +69,4 @@ print(x)  # {4, 6, 7, 8}
 
 Remember, sets can contain any elements as long as they are hashable. So, a set can contain numbers, strings, and bools. A set can also contain tuples, but not lists or dicts or other sets. If you want a set to contain a dict or another set, you can use a "frozendict" or "frozenset", which are immutable hashable versions of dicts and sets.
 
-To check if an object `x` is hashable, you can run `hash(x)`. This will raise a TypeError if `x` cannot be hashed, and will return the hash of `x` if it can be.
+To check if an object `x` is hashable, you can run `hash(x)`. This will return the hash of `x` if `x` can be hashed, and will raise a TypeError otherwise.
