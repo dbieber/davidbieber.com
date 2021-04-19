@@ -311,7 +311,7 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <pubDate>Mon, 19 Apr 2021 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2021-04-19-python-set-operations/</guid>
       <description>&lt;p&gt;If you Google &amp;ldquo;Python set intersection&amp;rdquo;, you get a number of results about the &lt;code&gt;set.intersection&lt;/code&gt; function. It isn&amp;rsquo;t until the fourth result that you reach a page mentioning Python&amp;rsquo;s convenient syntax for performing set operations. This was surprising to me, hence this snippet.&lt;/p&gt;
-&lt;h2 id=&#34;background-sets-in-python&#34;&gt;Background: Sets in Python&lt;/h2&gt;
+&lt;h2 id=&#34;background-collections-in-python&#34;&gt;Background: Collections in Python&lt;/h2&gt;
 &lt;p&gt;Python has a few primitive collection types: tuples, lists, dictionaries (aka dicts), and sets. Use parenthesis to create a tuple &lt;code&gt;(1, 2, 3)&lt;/code&gt;, square brackets to create a list &lt;code&gt;[4, 5, 6]&lt;/code&gt;, and squirrelly brackets to create a dict or set: &lt;code&gt;{7: 8, 9: 10}&lt;/code&gt; makes a dict and &lt;code&gt;{11, 12, 13}&lt;/code&gt; makes a set. Just like a set in mathematics, a set in Python is an &lt;strong&gt;unordered&lt;/strong&gt; collection of &lt;strong&gt;distinct&lt;/strong&gt; elements.&lt;/p&gt;
 &lt;h2 id=&#34;convenient-syntax&#34;&gt;Convenient Syntax&lt;/h2&gt;
 &lt;p&gt;Once you&amp;rsquo;ve constructed a set, the following operations allow you to perform set operations on it with clean concise syntax.&lt;/p&gt;
@@ -352,7 +352,7 @@ print(x)  # {4, 6, 7, 8}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;set-elements-must-be-hashable&#34;&gt;Set elements must be hashable&lt;/h2&gt;
 &lt;p&gt;Remember, sets can contain any elements as long as they are hashable. So, a set can contain numbers, strings, and bools. A set can also contain tuples, but not lists or dicts or other sets. If you want a set to contain a dict or another set, you can use a &amp;ldquo;frozendict&amp;rdquo; or &amp;ldquo;frozenset&amp;rdquo;, which are immutable hashable versions of dicts and sets.&lt;/p&gt;
-&lt;p&gt;To check if an object &lt;code&gt;x&lt;/code&gt; is hashable, you can run &lt;code&gt;hash(x)&lt;/code&gt;. This will raise a TypeError if &lt;code&gt;x&lt;/code&gt; cannot be hashed, and will return the hash of &lt;code&gt;x&lt;/code&gt; if it can be.&lt;/p&gt;
+&lt;p&gt;To check if an object &lt;code&gt;x&lt;/code&gt; is hashable, you can run &lt;code&gt;hash(x)&lt;/code&gt;. This will return the hash of &lt;code&gt;x&lt;/code&gt; if &lt;code&gt;x&lt;/code&gt; can be hashed, and will raise a TypeError otherwise.&lt;/p&gt;
 </description>
     </item>
     

@@ -29,7 +29,7 @@
     
   
   <meta name="description" content="If you Google &ldquo;Python set intersection&rdquo;, you get a number of results about the set.intersection function. It isn&rsquo;t until the fourth result that you reach a page mentioning Python&rsquo;s convenient syntax for performing set operations. This was surprising to me, hence this snippet.
-Background: Sets in Python Python has a few primitive collection types: tuples, lists, dictionaries (aka dicts), and sets. Use parenthesis to create a tuple (1, 2, 3), square brackets to create a list [4, 5, 6], and squirrelly brackets to create a dict or set: {7: 8, 9: 10} makes a dict and {11, 12, 13} makes a set.">
+Background: Collections in Python Python has a few primitive collection types: tuples, lists, dictionaries (aka dicts), and sets. Use parenthesis to create a tuple (1, 2, 3), square brackets to create a list [4, 5, 6], and squirrelly brackets to create a dict or set: {7: 8, 9: 10} makes a dict and {11, 12, 13} makes a set.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-04-19-python-set-operations/">
@@ -272,7 +272,7 @@ Background: Sets in Python Python has a few primitive collection types: tuples, 
   <meta property="og:url" content="https://davidbieber.com/snippets/2021-04-19-python-set-operations/">
   <meta property="og:title" content="Python set operations | David Bieber">
   <meta property="og:description" content="If you Google &ldquo;Python set intersection&rdquo;, you get a number of results about the set.intersection function. It isn&rsquo;t until the fourth result that you reach a page mentioning Python&rsquo;s convenient syntax for performing set operations. This was surprising to me, hence this snippet.
-Background: Sets in Python Python has a few primitive collection types: tuples, lists, dictionaries (aka dicts), and sets. Use parenthesis to create a tuple (1, 2, 3), square brackets to create a list [4, 5, 6], and squirrelly brackets to create a dict or set: {7: 8, 9: 10} makes a dict and {11, 12, 13} makes a set."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+Background: Collections in Python Python has a few primitive collection types: tuples, lists, dictionaries (aka dicts), and sets. Use parenthesis to create a tuple (1, 2, 3), square brackets to create a list [4, 5, 6], and squirrelly brackets to create a dict or set: {7: 8, 9: 10} makes a dict and {11, 12, 13} makes a set."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
@@ -526,7 +526,7 @@ Background: Sets in Python Python has a few primitive collection types: tuples, 
 
     <div class="article-style" id="article-content">
       <p>If you Google &ldquo;Python set intersection&rdquo;, you get a number of results about the <code>set.intersection</code> function. It isn&rsquo;t until the fourth result that you reach a page mentioning Python&rsquo;s convenient syntax for performing set operations. This was surprising to me, hence this snippet.</p>
-<h2 id="background-sets-in-python">Background: Sets in Python</h2>
+<h2 id="background-collections-in-python">Background: Collections in Python</h2>
 <p>Python has a few primitive collection types: tuples, lists, dictionaries (aka dicts), and sets. Use parenthesis to create a tuple <code>(1, 2, 3)</code>, square brackets to create a list <code>[4, 5, 6]</code>, and squirrelly brackets to create a dict or set: <code>{7: 8, 9: 10}</code> makes a dict and <code>{11, 12, 13}</code> makes a set. Just like a set in mathematics, a set in Python is an <strong>unordered</strong> collection of <strong>distinct</strong> elements.</p>
 <h2 id="convenient-syntax">Convenient Syntax</h2>
 <p>Once you&rsquo;ve constructed a set, the following operations allow you to perform set operations on it with clean concise syntax.</p>
@@ -567,7 +567,7 @@ print(x)  # {4, 6, 7, 8}
 </code></pre>
 <h2 id="set-elements-must-be-hashable">Set elements must be hashable</h2>
 <p>Remember, sets can contain any elements as long as they are hashable. So, a set can contain numbers, strings, and bools. A set can also contain tuples, but not lists or dicts or other sets. If you want a set to contain a dict or another set, you can use a &ldquo;frozendict&rdquo; or &ldquo;frozenset&rdquo;, which are immutable hashable versions of dicts and sets.</p>
-<p>To check if an object <code>x</code> is hashable, you can run <code>hash(x)</code>. This will raise a TypeError if <code>x</code> cannot be hashed, and will return the hash of <code>x</code> if it can be.</p>
+<p>To check if an object <code>x</code> is hashable, you can run <code>hash(x)</code>. This will return the hash of <code>x</code> if <code>x</code> can be hashed, and will raise a TypeError otherwise.</p>
 
     </div>
 
