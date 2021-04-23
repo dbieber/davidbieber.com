@@ -13,6 +13,80 @@
     </image>
     
     <item>
+      <title>Incomplete snippets</title>
+      <link>https://davidbieber.com/snippets/2021-04-23-incomplete-snippets/</link>
+      <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-04-23-incomplete-snippets/</guid>
+      <description>&lt;p&gt;Yesterday and two days ago I started writing 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-04-22-sensible-units.md&#34;&gt;a snippet called &amp;ldquo;sensible units &amp;ndash; per capita isn&amp;rsquo;t enough&amp;rdquo;&lt;/a&gt;. In this snippet I take statements with big numbers and rewrite them to make them more intuitive. For example &amp;ldquo;The global population growth rate is about 1.05% per year.&amp;rdquo; becomes &amp;ldquo;In a city of 100,000 (like Mountain View, or New Haven), the population rises by about 1050 people each year (1850 births, 700 deaths). That&amp;rsquo;s 5 new babies a day in this city on average!&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t finish the snippet though. While I hope to finish the snippet and publish it this weekend, this experience also made me think about how to publish incomplete snippets.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve had other incomplete snippets over the years. Peer Learning Group was initially an incomplete snippet back in July 2020, which I never published. Eventually (in January 2021) I decided to launch PLG without &amp;ldquo;finishing&amp;rdquo; the idea as I&amp;rsquo;d originally intended. The original idea was going to rely more heavily on automation and in principle could scale well. The actual idea I went with had a fair bit of manual coordination work, but was definitely worthwhile (in part because it actually happened!).&lt;/p&gt;
+&lt;p&gt;My idea for publishing incomplete snippets is: to start, simply publish the snippet with a label &amp;ldquo;incomplete&amp;rdquo; in the title. Then, if I decide to continue the snippet, I will make a copy of the incomplete snippet, and change the date. If I finish it, I will remove incomplete from the title.&lt;/p&gt;
+&lt;p&gt;Once I have a complete version of the snippet (which might sometimes never happen), I can link from the complete version to all the incomplete versions that preceded it. I may also remove the incomplete snippets from the main snippets index once a complete version is available. Or in that main index I may make the main link go to the complete version, with a smaller link that goes to the incomplete version.&lt;/p&gt;
+&lt;p&gt;This idea requires a bit of development, but in the spirit of the idea itself, I think I&amp;rsquo;ll start publishing incomplete snippets even while the incomplete-snippet-publication-idea is itself incomplete.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sensible units -- Per capita isn&#39;t enough (incomplete)</title>
+      <link>https://davidbieber.com/snippets/2021-04-22-sensible-units/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-04-22-sensible-units/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This is an 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-04-23-incomplete-snippets/&#34;&gt;&lt;strong&gt;incomplete&lt;/strong&gt; snippet&lt;/a&gt;. If I complete it, I&amp;rsquo;ll add a link to the completed snippet here.&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The world population is about 7.9 billion people.&lt;/li&gt;
+&lt;li&gt;The global GDP is about 90 trillion USD.&lt;/li&gt;
+&lt;li&gt;Global oil production is about 100 million barrels per day.&lt;/li&gt;
+&lt;li&gt;The US federal budget for the 2020 fiscal year was set at $4.79 trillion USD.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this snippet we&amp;rsquo;ll take these statements, complete with their large and unwieldy numbers, and turn them into something a big more tangible. A common (and very good strategy) for making large numbers tangible is to look at their per capita interpretation. Take the number, divide by the relevant population, and you start to get a better picture of what the number means. As we&amp;rsquo;ll see with our first example, this strategy isn&amp;rsquo;t always enough.&lt;/p&gt;
+&lt;p&gt;How do we make 7.7 billion people more tangible?
+Dividing by the world population here would be silly. The population is 1 person per capita. That&amp;rsquo;s not a useful statistic.&lt;/p&gt;
+&lt;p&gt;Instead, we can use space and time to make it more tangible.&lt;/p&gt;
+&lt;h2 id=&#34;population-in-space&#34;&gt;Population in Space&lt;/h2&gt;
+&lt;p&gt;Here are some numbers we may find useful (too big to make immediate sense of for now, but we can deal with that momentarily):
+The surface area of Earth is 196.9 million mi².
+Of that, 57.51 million mi² is land area, and only about 24.64 million mi² of that is habitable.&lt;/p&gt;
+&lt;p&gt;This gives us a global population density of 312 people per habitable square mile. Still not the most intuitive for two reasons: 1) a square mile is a pretty large area (Manhattan is 23 mi²; San Francisco is 47 mi²) and imagining 312 people scattered across it can be challenging, 2) the population density varies wildly across different regions (population density in Manhattan is 69,468 people per square mile; in San Francisco its 17,246 people per square mile).&lt;/p&gt;
+&lt;p&gt;We can deal with reason (1) pretty simply. 312 people per habitable square mile is 89353 square feet per person. The Manhattan population density equals 401 square feet per person. The San Francisco population density equals 1616 square feet per person.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s tempting to compare these &amp;ldquo;square feet per person&amp;rdquo; figures to typical apartment sizes in these regions. &amp;ldquo;Four hundred square feet per person,&amp;rdquo; we might be tempted to remark, &amp;ldquo;no wonder apartments in the city are so small!&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Before we do that though, we have to remember two things: First, Manhattan&amp;rsquo;s 23 mi² isn&amp;rsquo;t all apartment space; it also includes public infrastructure like roads and parks, and commercial spaces like stores and offices. Only a fraction of the space is available for living. Second, redeemingly, Manhattan is built &lt;em&gt;up&lt;/em&gt; considerably. For every 10-story building built on 400 square feet of habitable land, we get nearly 4000 square feet of potential living space, not a mere 400.&lt;/p&gt;
+&lt;p&gt;We can turn to 
+&lt;a href=&#34;http://www.nyc.gov/html/housing/assets/downloads/pdf/housing_plan.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;New York&amp;rsquo;s 2014 ten-year housing plan&lt;/a&gt; to add more color to these numbers. There were 3.4 million units across New York City in 2014.&lt;/p&gt;
+&lt;p&gt;A bit of Googling suggests the average apartment size in New York City is 700 square feet. Of course this is going to vary considerably by location and apartment type, and I don&amp;rsquo;t know how much we can trust this estimate. Still, let&amp;rsquo;s work with the number. Using the overall NYC population density of 27,000 people per square mile (1032 square feet per person)&lt;/p&gt;
+&lt;h2 id=&#34;population-in-time&#34;&gt;Population in Time&lt;/h2&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;h2 id=&#34;recapping-the-original-statements&#34;&gt;Recapping the original statements&lt;/h2&gt;
+&lt;p&gt;Here we take each of the original statements the way you might find it in a fact book,
+and we restate them in more tangible terms.&lt;/p&gt;
+&lt;p&gt;Original:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The world population is about 7.7 billion people.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Restated:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There is X square feet of habitable land per person globally (Y in a typical city, Z in a typical suburb)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Original:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The global population growth rate is about 1.05% per year.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Restated:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In a city of 100,000 (like Mountain View, or New Haven), the population rises by about 1050 people each year (1850 births, 700 deaths).&lt;/li&gt;
+&lt;li&gt;That&amp;rsquo;s 5 new babies a day in this city on average!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;todo&#34;&gt;TODO:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The global GDP is about 90 trillion USD.&lt;/li&gt;
+&lt;li&gt;Global oil production is about 100 million barrels per day.&lt;/li&gt;
+&lt;li&gt;The US federal budget for the 2020 fiscal year was set at $4.79 trillion USD.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Early to bed, so no snippet</title>
       <link>https://davidbieber.com/snippets/2021-04-20-sleep-no-snippet/</link>
       <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
