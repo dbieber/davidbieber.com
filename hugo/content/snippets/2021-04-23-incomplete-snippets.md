@@ -5,7 +5,7 @@ tags = ['snippets']
 keywords = []
 +++
 
-Yesterday and two days ago I started writing a snippet called "sensible units -- per capita isn't enough". In this snippet I take statements with big numbers and rewrite them to make them more intuitive. For example "The global population growth rate is about 1.05% per year." becomes "In a city of 100,000 (like Mountain View, or New Haven), the population rises by about 1050 people each year (1850 births, 700 deaths). That's 5 new babies a day in this city on average!"
+Yesterday and two days ago I started writing [a snippet called "sensible units -- per capita isn't enough"](/snippets/2021-04-22-sensible-units.md). In this snippet I take statements with big numbers and rewrite them to make them more intuitive. For example "The global population growth rate is about 1.05% per year." becomes "In a city of 100,000 (like Mountain View, or New Haven), the population rises by about 1050 people each year (1850 births, 700 deaths). That's 5 new babies a day in this city on average!"
 
 I didn't finish the snippet though. While I hope to finish the snippet and publish it this weekend, this experience also made me think about how to publish incomplete snippets.
 
