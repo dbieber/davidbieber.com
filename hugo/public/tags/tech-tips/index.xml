@@ -5,12 +5,34 @@
     <link>https://davidbieber.com/tags/tech-tips/</link>
       <atom:link href="https://davidbieber.com/tags/tech-tips/index.xml" rel="self" type="application/rss+xml" />
     <description>tech-tips</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 10 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 24 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>tech-tips</title>
       <link>https://davidbieber.com/tags/tech-tips/</link>
     </image>
+    
+    <item>
+      <title>What links here?</title>
+      <link>https://davidbieber.com/snippets/2021-04-24-backlinks/</link>
+      <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-04-24-backlinks/</guid>
+      <description>&lt;p&gt;I wanted to write about backlinks today but didn&amp;rsquo;t get a chance (except you&amp;rsquo;re reading it, so of course I &lt;em&gt;did&lt;/em&gt; get a chance in the end).&lt;/p&gt;
+&lt;p&gt;Quick outline of what I was hoping to write about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Backlinks appear in Roam Research&lt;/li&gt;
+&lt;li&gt;I have a BrowserFlow flow that uses Google search to produce backlinks for any website&lt;/li&gt;
+&lt;li&gt;And I saw that either some of Gwern&amp;rsquo;s writing or Less Wrong includes a &amp;ldquo;What links here?&amp;rdquo; section (it wasn&amp;rsquo;t clear to me which of Gwern or LessWrong was providing this functionality)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A backlink on a page X is an indication of what other content links to X. Seeing a list of backlinks can be mildly interesting, and I was curious to see what pages link to my own writing.&lt;/p&gt;
+&lt;p&gt;I have some visibility into this through a couple different mechanisms. This website uses Google Analytics, so I can see where traffic comes from. This provides a decent view into what other websites are linking to my content. I can also see how traffic flows through my own site, which gives a limited view of the links between snippets.&lt;/p&gt;
+&lt;p&gt;The second mechanism I can use to see what links to a snippet is Google Search&amp;rsquo;s exact match feature. Searching for a 
+&lt;a href=&#34;https://www.google.com/search?q=%22https://davidbieber.com/snippets/%22&amp;#43;-site:https://davidbieber.com/snippets/&amp;amp;filter=0&amp;amp;biw=1648&amp;amp;bih=946&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;complete URL in quotes, optionally with &amp;ldquo;-site:urlgoeshereagain&amp;rdquo; in the query to remove links from the same domain,&lt;/a&gt; will show you what websites link to the page of interest. For example, the query 
+&lt;a href=&#34;https://www.google.com/search?q=%22davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/%22&amp;#43;-site:davidbieber.com&amp;amp;filter=0&amp;amp;biw=1648&amp;amp;bih=946&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/&amp;rdquo; -site:davidbieber.com&lt;/a&gt; shows links to 
+&lt;a href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/&#34;&gt;my Track Your Life in a Spreadsheet blog post&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I was toying with the idea of adding some curated backlinks to snippets. Each snippet would show what other snippets reference it, as well as selected pages from around the web that reference it. Of course, there aren&amp;rsquo;t really pages around the web that reference my snippets, so this idea is moot at the moment.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Find yourself typing t-ENTER often?</title>
