@@ -1,8 +1,7 @@
 +++
 title = "Sensible units -- Per capita isn't enough (incomplete)"
 date = 2021-04-22T00:00:00
-tags = []
-keywords = []
+incomplete = "/snippets/2021-04-25-sensible-units"
 +++
 
 _This is an [**incomplete** snippet](/snippets/2021-04-23-incomplete-snippets/). If I complete it, I'll add a link to the completed snippet here._
@@ -12,7 +11,7 @@ _This is an [**incomplete** snippet](/snippets/2021-04-23-incomplete-snippets/).
 - Global oil production is about 100 million barrels per day.
 - The US federal budget for the 2020 fiscal year was set at $4.79 trillion USD.
 
-In this snippet we'll take these statements, complete with their large and unwieldy numbers, and turn them into something a big more tangible. A common (and very good strategy) for making large numbers tangible is to look at their per capita interpretation. Take the number, divide by the relevant population, and you start to get a better picture of what the number means. As we'll see with our first example, this strategy isn't always enough.
+In this snippet we'll take these statements, complete with their large and unwieldy numbers, and turn them into something a bit more tangible. A common (and very good strategy) for making large numbers tangible is to look at their per capita interpretation. Take the number, divide by the relevant population, and you start to get a better picture of what the number means. As we'll see with our first example, this strategy isn't always enough.
 
 How do we make 7.7 billion people more tangible?
 Dividing by the world population here would be silly. The population is 1 person per capita. That's not a useful statistic.

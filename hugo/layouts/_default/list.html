@@ -9,6 +9,18 @@
 
   {{ $paginator := .Paginate .Data.Pages }}
   {{ range $paginator.Pages }}
+  {{ if .Params.incomplete }}
+  <div class="stream-item snippet-item">
+    <h3 class="mb-0 mt-0">
+    <a href="{{ .RelPermalink }}">
+      <strike>
+        <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
+      {{ .Title }}
+      </strike>
+    </a>
+    </h3>
+  </div>
+  {{ else }}
   <div class="stream-item snippet-item">
     <h3 class="mb-0 mt-0">
     <a href="{{ .RelPermalink }}">
@@ -17,6 +29,7 @@
     </a>
     </h3>
   </div>
+  {{ end }}
   {{ end }}
 
   {{ partial "pagination" . }}
