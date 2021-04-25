@@ -13,6 +13,97 @@
     </image>
     
     <item>
+      <title>Sensible units -- Per capita isn&#39;t enough</title>
+      <link>https://davidbieber.com/snippets/2021-04-25-sensible-units/</link>
+      <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-04-25-sensible-units/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;The world population is about 7.9 billion people.&lt;/li&gt;
+&lt;li&gt;The global GDP is about 90 trillion USD.&lt;/li&gt;
+&lt;li&gt;Global oil production is about 100 million barrels per day.&lt;/li&gt;
+&lt;li&gt;The US federal budget for the 2020 fiscal year was set at $4.79 trillion USD.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this snippet we&amp;rsquo;ll take these statements, complete with their large and unwieldy numbers, and turn them into something a bit more tangible. A common (and very good strategy) for making large numbers tangible is to look at their per capita interpretation. Take the number, divide by the relevant population, and you start to get a better picture of what the number means. As we&amp;rsquo;ll see with our first example, this strategy isn&amp;rsquo;t always enough.&lt;/p&gt;
+&lt;p&gt;How do we make the idea of 7.9 billion people more tangible?
+Dividing by the world population here would be silly. The population is 1 person per capita. That&amp;rsquo;s not a useful statistic.&lt;/p&gt;
+&lt;p&gt;Instead, we can use space and time to make it more tangible.&lt;/p&gt;
+&lt;h2 id=&#34;population-per-unit-space&#34;&gt;Population per Unit Space&lt;/h2&gt;
+&lt;p&gt;Here are some numbers we may find useful (too big to make immediate sense of for now, but we can deal with that momentarily):
+The surface area of Earth is 196.9 million mi².
+Of that, 57.51 million mi² is land area, and only about 24.64 million mi² of that is habitable.&lt;/p&gt;
+&lt;p&gt;This gives us a global population density of 312 people per habitable square mile. Still not the most intuitive for two reasons: 1) a square mile is a pretty large area (Manhattan is 23 mi²; San Francisco is 47 mi²) and imagining 312 people scattered across it can be challenging, 2) the population density varies wildly across different regions (population density in Manhattan is 69,468 people per square mile; in San Francisco its 17,246 people per square mile).&lt;/p&gt;
+&lt;p&gt;We can deal with reason (1) pretty simply. 312 people per habitable square mile is 89353 square feet per person. The Manhattan population density equals merely 401 square feet per person. The San Francisco population density equals 1616 square feet per person.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s tempting to compare these &amp;ldquo;square feet per person&amp;rdquo; figures to typical apartment sizes in these regions. &amp;ldquo;Four hundred square feet per person,&amp;rdquo; we might be tempted to remark, &amp;ldquo;no wonder apartments in the city are so small!&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Before we do that though, we have to remember two things: First, Manhattan&amp;rsquo;s 23 mi² isn&amp;rsquo;t all apartment space; it also includes public infrastructure like roads and parks, and commercial spaces like stores and offices. Only a fraction of the space is available for living.&lt;/p&gt;
+&lt;p&gt;Second, redeemingly, Manhattan is built &lt;em&gt;up&lt;/em&gt; considerably. For every 10-story building built on 400 square feet of habitable land, we get nearly 4000 square feet of potential living space, not a mere 400.&lt;/p&gt;
+&lt;p&gt;We can turn to 
+&lt;a href=&#34;http://www.nyc.gov/html/housing/assets/downloads/pdf/housing_plan.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;New York&amp;rsquo;s 2014 ten-year housing plan&lt;/a&gt; to add more color to these numbers. There were 3.4 million units across New York City in 2014.&lt;/p&gt;
+&lt;p&gt;A bit of Googling suggests the average apartment size in New York City is 700 square feet. Of course this is going to vary considerably by location and apartment type, and I don&amp;rsquo;t know how much we can trust this estimate. Still, let&amp;rsquo;s work with the number. Using the overall NYC population density of 27,000 people per square mile gives 1032 square feet per person. Meanwhile 3.4 million units × 700 ft²/unit at a population of 8.419 million people gives an apartment-population density of just 276 ft²/person. Dense!&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t know offhand all the factors I&amp;rsquo;m misrepresenting here. The 3.4 million figure is all housing units, not just apartments. However, the 700 square feet figure is (A) just for apartments, and (B) probably not an average across the whole city.&lt;/p&gt;
+&lt;p&gt;Two main messages to take away from this analysis. (1) New York City is population dense and housing is scarce. (2) You can use space to give a clearer picture of population counts.&lt;/p&gt;
+&lt;h2 id=&#34;population-per-unit-time&#34;&gt;Population per Unit Time&lt;/h2&gt;
+&lt;p&gt;The global population growth rate is about 1.05% per year. That&amp;rsquo;s interesting, but what does it mean? How does that compare with 1.5% or 2%?&lt;/p&gt;
+&lt;p&gt;Our approach to this statement will be to look at the effect of such a growth rate on a more modest size population.
+In a city of 100,000 (like Mountain View, or New Haven), a growth rate of 1.05% means the population rises by 1050 people each year (about 1850 births and 700 deaths). That means about 5 babies are born in such a city each day!&lt;/p&gt;
+&lt;p&gt;If the growth rate were double (2.1% instead of 1.05%, like it was at its peak in 1962), there would be 10 babies born in a 100,000 person city per day.&lt;/p&gt;
+&lt;h2 id=&#34;global-gdp-and-the-us-federal-budget&#34;&gt;Global GDP and the US Federal Budget&lt;/h2&gt;
+&lt;p&gt;The global GDP is $90 trillion USD. Dividing by the global population, we see the global GDP is $11,500 USD per capita.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s a lot to unpack there that&amp;rsquo;s out of scope for this snippet. For now it suffices that this new figure is a lot more tangible than the original.&lt;/p&gt;
+&lt;p&gt;Performing the same division for the US budget: $4.79 trillion / 328 million people gives a per capita budget of $14,600 USD. Again, there&amp;rsquo;s lots to unpack about this figure out of scope of the snippet, but it immediately makes thinking about budgets a little easier compared with the original figure. Now you can start asking questions like &amp;ldquo;how much should the government be spending on {social security, health care, defense} for &lt;em&gt;me&lt;/em&gt; individually, and for the average US citizen?&amp;rdquo; Collective budgeting is a weird problem, perhaps something to learn more about for a future snippet.&lt;/p&gt;
+&lt;h2 id=&#34;oil-production&#34;&gt;Oil Production&lt;/h2&gt;
+&lt;p&gt;One final example from my recent time spent learning about oil pricing. Global oil production is about 100 million barrels per day. US oil production is about 10 million barrels per day. How do we make sense of these numbers?&lt;/p&gt;
+&lt;p&gt;Per capita figures aren&amp;rsquo;t enough.
+I think the useful unit for these figures is &amp;ldquo;gallons per person per month&amp;rdquo;. This allows you to think about how much gas your car holds, and how often you have to fill it up. You can compare that with oil production in your country to get a rough sense of the scale of oil production.&lt;/p&gt;
+&lt;p&gt;Globally oil production comes in at 1 barrel per person per 2.6 months. In the US, oil production comes in at 1 barrel per person per month. What&amp;rsquo;s your personal gas consumption rate? How does it compare with the US oil production rate? Are these rates useful to compare?&lt;/p&gt;
+&lt;h2 id=&#34;recapping-the-original-statements&#34;&gt;Recapping the original statements&lt;/h2&gt;
+&lt;p&gt;Here we take each of the original statements the way you might find it in a fact book,
+and we restate them in more tangible terms.&lt;/p&gt;
+&lt;p&gt;Original:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The world population is about 7.9 billion people.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Restated:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There are 90000 square feet of habitable land per person globally (1000 ft²/person in NYC, and 14000 ft²/person in a typical suburb.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Original:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The global population growth rate is about 1.05% per year.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Restated:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In a city of 100,000 (like Mountain View, or New Haven), the population rises by about 1050 people each year (1850 births, 700 deaths).&lt;/li&gt;
+&lt;li&gt;That&amp;rsquo;s 5 new babies a day in this city on average!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Original:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The global GDP is about $90 trillion USD.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Restated:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The global GDP is $11,500 USD per capita.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Original:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Global oil production is about 100 million barrels per day.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Restated:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Global oil production comes is 1 barrel per person per 2.6 months.&lt;/li&gt;
+&lt;li&gt;In the US, oil production is 1 barrel per person per month.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Original:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The US federal budget for the 2020 fiscal year was set at $4.79 trillion USD.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Restated:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The US federal budget per capita was $14,600 USD in 2020.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>What links here?</title>
       <link>https://davidbieber.com/snippets/2021-04-24-backlinks/</link>
       <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
@@ -62,7 +153,7 @@
 &lt;li&gt;Global oil production is about 100 million barrels per day.&lt;/li&gt;
 &lt;li&gt;The US federal budget for the 2020 fiscal year was set at $4.79 trillion USD.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;In this snippet we&amp;rsquo;ll take these statements, complete with their large and unwieldy numbers, and turn them into something a big more tangible. A common (and very good strategy) for making large numbers tangible is to look at their per capita interpretation. Take the number, divide by the relevant population, and you start to get a better picture of what the number means. As we&amp;rsquo;ll see with our first example, this strategy isn&amp;rsquo;t always enough.&lt;/p&gt;
+&lt;p&gt;In this snippet we&amp;rsquo;ll take these statements, complete with their large and unwieldy numbers, and turn them into something a bit more tangible. A common (and very good strategy) for making large numbers tangible is to look at their per capita interpretation. Take the number, divide by the relevant population, and you start to get a better picture of what the number means. As we&amp;rsquo;ll see with our first example, this strategy isn&amp;rsquo;t always enough.&lt;/p&gt;
 &lt;p&gt;How do we make 7.7 billion people more tangible?
 Dividing by the world population here would be silly. The population is 1 person per capita. That&amp;rsquo;s not a useful statistic.&lt;/p&gt;
 &lt;p&gt;Instead, we can use space and time to make it more tangible.&lt;/p&gt;

@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot.">
+  <meta name="description" content="The world population is about 7.9 billion people. The global GDP is about 90 trillion USD. Global oil production is about 100 million barrels per day. The US federal budget for the 2020 fiscal year was set at $4.79 trillion USD.  In this snippet we&rsquo;ll take these statements, complete with their large and unwieldy numbers, and turn them into something a bit more tangible. A common (and very good strategy) for making large numbers tangible is to look at their per capita interpretation.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/tags/esperanto/">
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-04-25-sensible-units/">
 
   
 
@@ -246,14 +246,12 @@
 
 
   
-  <link rel="alternate" href="/tags/esperanto/index.xml" type="application/rss+xml" title="David Bieber">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
 
-  <link rel="canonical" href="https://davidbieber.com/tags/esperanto/">
+  <link rel="canonical" href="https://davidbieber.com/snippets/2021-04-25-sensible-units/">
 
   
   
@@ -270,29 +268,34 @@
   <meta property="twitter:creator" content="@Bieber">
   
   <meta property="og:site_name" content="David Bieber">
-  <meta property="og:url" content="https://davidbieber.com/tags/esperanto/">
-  <meta property="og:title" content="Esperanto | David Bieber">
-  <meta property="og:description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2021-04-25-sensible-units/">
+  <meta property="og:title" content="Sensible units -- Per capita isn&#39;t enough | David Bieber">
+  <meta property="og:description" content="The world population is about 7.9 billion people. The global GDP is about 90 trillion USD. Global oil production is about 100 million barrels per day. The US federal budget for the 2020 fiscal year was set at $4.79 trillion USD.  In this snippet we&rsquo;ll take these statements, complete with their large and unwieldy numbers, and turn them into something a bit more tangible. A common (and very good strategy) for making large numbers tangible is to look at their per capita interpretation."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2015-07-01T00:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2021-04-25T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-04-25T00:00:00&#43;00:00">
   
 
   
 
 
 
-
   
 
 
   
 
 
+  
 
 
 
-  <title>Esperanto | David Bieber</title>
+
+
+  <title>Sensible units -- Per capita isn&#39;t enough | David Bieber</title>
 
 </head>
 
@@ -455,6 +458,173 @@
 </nav>
 
 
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Sensible units -- Per capita isn&#39;t enough</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" id="article-content">
+      <ul>
+<li>The world population is about 7.9 billion people.</li>
+<li>The global GDP is about 90 trillion USD.</li>
+<li>Global oil production is about 100 million barrels per day.</li>
+<li>The US federal budget for the 2020 fiscal year was set at $4.79 trillion USD.</li>
+</ul>
+<p>In this snippet we&rsquo;ll take these statements, complete with their large and unwieldy numbers, and turn them into something a bit more tangible. A common (and very good strategy) for making large numbers tangible is to look at their per capita interpretation. Take the number, divide by the relevant population, and you start to get a better picture of what the number means. As we&rsquo;ll see with our first example, this strategy isn&rsquo;t always enough.</p>
+<p>How do we make the idea of 7.9 billion people more tangible?
+Dividing by the world population here would be silly. The population is 1 person per capita. That&rsquo;s not a useful statistic.</p>
+<p>Instead, we can use space and time to make it more tangible.</p>
+<h2 id="population-per-unit-space">Population per Unit Space</h2>
+<p>Here are some numbers we may find useful (too big to make immediate sense of for now, but we can deal with that momentarily):
+The surface area of Earth is 196.9 million mi².
+Of that, 57.51 million mi² is land area, and only about 24.64 million mi² of that is habitable.</p>
+<p>This gives us a global population density of 312 people per habitable square mile. Still not the most intuitive for two reasons: 1) a square mile is a pretty large area (Manhattan is 23 mi²; San Francisco is 47 mi²) and imagining 312 people scattered across it can be challenging, 2) the population density varies wildly across different regions (population density in Manhattan is 69,468 people per square mile; in San Francisco its 17,246 people per square mile).</p>
+<p>We can deal with reason (1) pretty simply. 312 people per habitable square mile is 89353 square feet per person. The Manhattan population density equals merely 401 square feet per person. The San Francisco population density equals 1616 square feet per person.</p>
+<p>It&rsquo;s tempting to compare these &ldquo;square feet per person&rdquo; figures to typical apartment sizes in these regions. &ldquo;Four hundred square feet per person,&rdquo; we might be tempted to remark, &ldquo;no wonder apartments in the city are so small!&rdquo;</p>
+<p>Before we do that though, we have to remember two things: First, Manhattan&rsquo;s 23 mi² isn&rsquo;t all apartment space; it also includes public infrastructure like roads and parks, and commercial spaces like stores and offices. Only a fraction of the space is available for living.</p>
+<p>Second, redeemingly, Manhattan is built <em>up</em> considerably. For every 10-story building built on 400 square feet of habitable land, we get nearly 4000 square feet of potential living space, not a mere 400.</p>
+<p>We can turn to 
+<a href="http://www.nyc.gov/html/housing/assets/downloads/pdf/housing_plan.pdf" target="_blank" rel="noopener">New York&rsquo;s 2014 ten-year housing plan</a> to add more color to these numbers. There were 3.4 million units across New York City in 2014.</p>
+<p>A bit of Googling suggests the average apartment size in New York City is 700 square feet. Of course this is going to vary considerably by location and apartment type, and I don&rsquo;t know how much we can trust this estimate. Still, let&rsquo;s work with the number. Using the overall NYC population density of 27,000 people per square mile gives 1032 square feet per person. Meanwhile 3.4 million units × 700 ft²/unit at a population of 8.419 million people gives an apartment-population density of just 276 ft²/person. Dense!</p>
+<p>I don&rsquo;t know offhand all the factors I&rsquo;m misrepresenting here. The 3.4 million figure is all housing units, not just apartments. However, the 700 square feet figure is (A) just for apartments, and (B) probably not an average across the whole city.</p>
+<p>Two main messages to take away from this analysis. (1) New York City is population dense and housing is scarce. (2) You can use space to give a clearer picture of population counts.</p>
+<h2 id="population-per-unit-time">Population per Unit Time</h2>
+<p>The global population growth rate is about 1.05% per year. That&rsquo;s interesting, but what does it mean? How does that compare with 1.5% or 2%?</p>
+<p>Our approach to this statement will be to look at the effect of such a growth rate on a more modest size population.
+In a city of 100,000 (like Mountain View, or New Haven), a growth rate of 1.05% means the population rises by 1050 people each year (about 1850 births and 700 deaths). That means about 5 babies are born in such a city each day!</p>
+<p>If the growth rate were double (2.1% instead of 1.05%, like it was at its peak in 1962), there would be 10 babies born in a 100,000 person city per day.</p>
+<h2 id="global-gdp-and-the-us-federal-budget">Global GDP and the US Federal Budget</h2>
+<p>The global GDP is $90 trillion USD. Dividing by the global population, we see the global GDP is $11,500 USD per capita.</p>
+<p>There&rsquo;s a lot to unpack there that&rsquo;s out of scope for this snippet. For now it suffices that this new figure is a lot more tangible than the original.</p>
+<p>Performing the same division for the US budget: $4.79 trillion / 328 million people gives a per capita budget of $14,600 USD. Again, there&rsquo;s lots to unpack about this figure out of scope of the snippet, but it immediately makes thinking about budgets a little easier compared with the original figure. Now you can start asking questions like &ldquo;how much should the government be spending on {social security, health care, defense} for <em>me</em> individually, and for the average US citizen?&rdquo; Collective budgeting is a weird problem, perhaps something to learn more about for a future snippet.</p>
+<h2 id="oil-production">Oil Production</h2>
+<p>One final example from my recent time spent learning about oil pricing. Global oil production is about 100 million barrels per day. US oil production is about 10 million barrels per day. How do we make sense of these numbers?</p>
+<p>Per capita figures aren&rsquo;t enough.
+I think the useful unit for these figures is &ldquo;gallons per person per month&rdquo;. This allows you to think about how much gas your car holds, and how often you have to fill it up. You can compare that with oil production in your country to get a rough sense of the scale of oil production.</p>
+<p>Globally oil production comes in at 1 barrel per person per 2.6 months. In the US, oil production comes in at 1 barrel per person per month. What&rsquo;s your personal gas consumption rate? How does it compare with the US oil production rate? Are these rates useful to compare?</p>
+<h2 id="recapping-the-original-statements">Recapping the original statements</h2>
+<p>Here we take each of the original statements the way you might find it in a fact book,
+and we restate them in more tangible terms.</p>
+<p>Original:</p>
+<ul>
+<li>The world population is about 7.9 billion people.</li>
+</ul>
+<p>Restated:</p>
+<ul>
+<li>There are 90000 square feet of habitable land per person globally (1000 ft²/person in NYC, and 14000 ft²/person in a typical suburb.)</li>
+</ul>
+<p>Original:</p>
+<ul>
+<li>The global population growth rate is about 1.05% per year.</li>
+</ul>
+<p>Restated:</p>
+<ul>
+<li>In a city of 100,000 (like Mountain View, or New Haven), the population rises by about 1050 people each year (1850 births, 700 deaths).</li>
+<li>That&rsquo;s 5 new babies a day in this city on average!</li>
+</ul>
+<p>Original:</p>
+<ul>
+<li>The global GDP is about $90 trillion USD.</li>
+</ul>
+<p>Restated:</p>
+<ul>
+<li>The global GDP is $11,500 USD per capita.</li>
+</ul>
+<p>Original:</p>
+<ul>
+<li>Global oil production is about 100 million barrels per day.</li>
+</ul>
+<p>Restated:</p>
+<ul>
+<li>Global oil production comes is 1 barrel per person per 2.6 months.</li>
+<li>In the US, oil production is 1 barrel per person per month.</li>
+</ul>
+<p>Original:</p>
+<ul>
+<li>The US federal budget for the 2020 fiscal year was set at $4.79 trillion USD.</li>
+</ul>
+<p>Restated:</p>
+<ul>
+<li>The US federal budget per capita was $14,600 USD in 2020.</li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   
 
 
@@ -469,42 +639,42 @@
 
 
   
+  
+
+
+
+
 
   
   
   
     
   
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">Esperanto</h1>
-
-  
-
-  
-</div>
-
-
-
-<div class="universal-wrapper">
-  
-
   
   
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://davidbieber.com/">David Bieber</a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
   
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/post/2015-07-01-estas-mia-patrino/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      Ĉu Vi Estas Mia Patrino?
-    </a>
-    </h3>
+</ul>
+
+    </div>
   </div>
-  
-  
 
-  
 
-</div>
+
+
+
+
+
+
+  </div>
+</article>
 
       
 
