@@ -4,7 +4,7 @@ date = 2021-04-22T00:00:00
 incomplete = "/snippets/2021-04-25-sensible-units"
 +++
 
-_This is an [**incomplete** snippet](/snippets/2021-04-23-incomplete-snippets/). If I complete it, I'll add a link to the completed snippet here._
+_This is an [**incomplete** snippet](/snippets/2021-04-23-incomplete-snippets/). If I complete it, I'll add a link to the completed snippet here. Update: [Here's the finished version.](/snippets/2021-04-25-sensible-units)_
 
 - The world population is about 7.9 billion people.
 - The global GDP is about 90 trillion USD.
