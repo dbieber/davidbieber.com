@@ -2,7 +2,7 @@
 title = "Virtual table tennis coaching"
 date = 2021-04-18T00:00:00
 uid = "4ZZsyeeLa"
-tags = []
+tags = ["table tennis", "virtual reality"]
 keywords = ["table tennis", "virtual reality"]
 +++
 

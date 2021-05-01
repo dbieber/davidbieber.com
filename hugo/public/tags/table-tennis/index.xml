@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>table tennis | David Bieber</title>
+    <link>https://davidbieber.com/tags/table-tennis/</link>
+      <atom:link href="https://davidbieber.com/tags/table-tennis/index.xml" rel="self" type="application/rss+xml" />
+    <description>table tennis</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
+      <title>table tennis</title>
+      <link>https://davidbieber.com/tags/table-tennis/</link>
+    </image>
+    
+    <item>
+      <title>Making a BrowserFlow flow for Eleven Table Tennis VR</title>
+      <link>https://davidbieber.com/snippets/2021-05-01-table-tennis-flow/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-05-01-table-tennis-flow/</guid>
+      <description>&lt;p&gt;In this snippet I chronicle making a Cloud flow that tracks my progress in Eleven Table Tennis VR, a virtual reality table tennis game I&amp;rsquo;ve been playing a bunch over the last month.&lt;/p&gt;
+&lt;p&gt;I took a first pass at making the flow earlier in the week, and ran into two hiccups I&amp;rsquo;ll need to work around: (1) The css selectors for my ELO, Rank, etc change between visits to the website. How am I going to extract this data in the flow? (2) Some games have three rounds others have two, and the css selectors differ depending on which game we&amp;rsquo;re looking at.&lt;/p&gt;
+&lt;h2 id=&#34;challenge-1-stable-css-selectors-across-page-loads&#34;&gt;Challenge 1: Stable CSS Selectors Across Page Loads&lt;/h2&gt;
+&lt;p&gt;Browserflow&amp;rsquo;s default CSS selector for the ELO rate on 
+&lt;a href=&#34;https://www.elevenvr.net/eleven/413682&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;my Eleven TT page&lt;/a&gt; is &lt;code&gt;div:nth-of-type(1) &amp;gt; .jss87 &amp;gt; .MuiTypography-root&lt;/code&gt;. The trouble with this is that the class .jss87 isn&amp;rsquo;t always there. Sometimes when I load the page, the class .jss70 is there instead. I don&amp;rsquo;t know how this class is determined, but it isn&amp;rsquo;t stable enough to use for my flow.&lt;/p&gt;
+&lt;p&gt;With a bit of poking around, I was able to use an 
+&lt;a href=&#34;https://css-tricks.com/almanac/selectors/n/nth-child/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;nth-child&lt;/code&gt; rule&lt;/a&gt; to write a more stable selector. Here&amp;rsquo;s what I came up with: &lt;code&gt;div.MuiGrid-container &amp;gt; .MuiPaper-root:nth-child(1) .MuiTypography-root&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;With this new strategy in place, I can easily complete the first half of the flow (which I&amp;rsquo;ll probably actually split into two flows): regularly logging my Eleven Elo, Rank, Win and Loss count, and Win rate into a spreadsheet automatically.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what the completed flow looks like:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/snippets/2021-05-01-table-tennis-flow.png&#34; alt=&#34;Complete table tennis ranking tracker flow&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;challenge-2-varying-css-selectors-across-rows&#34;&gt;Challenge 2: Varying CSS Selectors Across Rows&lt;/h2&gt;
+&lt;p&gt;Next up I have the challenge of selecting game data from the 
+&lt;a href=&#34;https://www.elevenvr.net/eleven/413682&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;same page&lt;/a&gt;. Browserflow makes it easy to loop over the match data with its Loop Elements command. The trouble is that some matches have three rounds while others have just two.&lt;/p&gt;
+&lt;p&gt;The default CSS selects for the game data are e.g. &lt;code&gt;$match tr:nth-of-type(1) &amp;gt; td:nth-of-type(3)&lt;/code&gt; for the Match Score. Two of the columns: &amp;ldquo;ELO +-&amp;rdquo; and &amp;ldquo;Round 3&amp;rdquo; only show up in certain matches. &amp;ldquo;ELO +-&amp;rdquo; only shows up for ranked matches, and &amp;ldquo;Round 3&amp;rdquo; only shows up if the first two matches are split between the players.&lt;/p&gt;
+&lt;p&gt;I expect that in rare cases there are matches with only 1 round (e.g. because a player leaves early), and that in the future there might be matches with additional rounds too.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; elements themselves don&amp;rsquo;t contain any additional information indicating what column they belong to. I might have to take this slightly painstaking approach:&lt;/p&gt;
+&lt;p&gt;First, I&amp;rsquo;ll use &lt;code&gt;Get Element Text&lt;/code&gt; to get the text of the first six column headers, and I&amp;rsquo;ll have it use blank text if there are fewer than six headers. In some cases these will be USERNAME, ELO +-, MATCH SCORE, ROUND 1, ROUND 2, ROUND 3. In other cases it will just be a subset of this information.&lt;/p&gt;
+&lt;p&gt;Then, for each player I&amp;rsquo;ll get the first six entries in their row. I&amp;rsquo;ll use the headers to determine what these entries describe.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Brief programming interlude&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve done it. Here&amp;rsquo;s the completed flow. It works like a charm.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/snippets/2021-05-01-table-tennis-spreadsheet.png&#34; alt=&#34;Complete table tennis games flow with collected data&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I had to make 19 &lt;code&gt;Get Element Text&lt;/code&gt; actions and a &lt;code&gt;Run Script&lt;/code&gt;, even though I only needed data from 13 different elements. Collecting tabular data is a pretty common task, so there&amp;rsquo;s room to make this simpler for future flows.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the script I ended up writing for populating fields based on the header data, just for reference:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let $player1 = $row1field1;
+let $player2 = $row2field1;
+
+let $elo1 = &amp;quot;&amp;quot;;
+let $elo2 = &amp;quot;&amp;quot;;
+let $elo1change = &amp;quot;&amp;quot;;
+let $elo2change = &amp;quot;&amp;quot;;
+let score_index = 1;
+
+if ($header2 == &amp;quot;ELO +-&amp;quot;) {
+  let elo1 = $row1field2;
+  let elo2 = $row2field2;
+  $elo1 = elo1.split(&amp;quot; &amp;quot;)[0];
+  $elo2 = elo2.split(&amp;quot; &amp;quot;)[0];
+  let elo1change = elo1.split(&amp;quot; &amp;quot;)[1];
+  let elo2change = elo2.split(&amp;quot; &amp;quot;)[1];
+  // Remove the parentheses (+16) -&amp;gt; +16.
+  $elo1change = elo1change.substring(1, elo1change.length - 1);
+  $elo2change = elo2change.substring(1, elo2change.length - 1);
+  score_index = 2;
+}
+
+var row1fields = [
+  $row1field1,
+  $row1field2,
+  $row1field3,
+  $row1field4,
+  $row1field5,
+  $row1field6,
+];
+var row2fields = [
+  $row2field1,
+  $row2field2,
+  $row2field3,
+  $row2field4,
+  $row2field5,
+  $row2field6,
+];
+
+var $matchscore1 = row1fields[score_index];
+var $matchscore2 = row2fields[score_index];
+var $round1player1 = row1fields[score_index + 1];
+var $round1player2 = row2fields[score_index + 1];
+var $round2player1 = row1fields[score_index + 2];
+var $round2player2 = row2fields[score_index + 2];
+var $round3player1 = row1fields[score_index + 3];
+var $round3player2 = row2fields[score_index + 3];
+
+var gameidanddate_parts = $gameidanddate.split(&amp;quot; : &amp;quot;, 2);
+let $gameid = gameidanddate_parts[0];
+// TODO(dbieber): Parse timestamp.
+let $timestamp = gameidanddate_parts[1];
+
+// formatDate definition elided.
+let $today = formatDate(new Date());
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;future-challenge-record-every-game-exactly-once&#34;&gt;Future Challenge: Record every game exactly once&lt;/h2&gt;
+&lt;p&gt;The current instance of the flow just collects all the games on page 1 into the spreadsheet. What I&amp;rsquo;d really like the flow to do is collect every game once.
+My flow will run once a day.&lt;/p&gt;
+&lt;p&gt;I could do this by parsing the dates, and having the flow collect all the flows less than one day old each time it runs. This wouldn&amp;rsquo;t be robust to missing a day though.&lt;/p&gt;
+&lt;p&gt;Another approach would be to have the flow look in the spreadsheet for the last game collected, and then keep collecting games until that most recently collected game is reached. I&amp;rsquo;ll discuss these options with DK before proceeding. For now, it&amp;rsquo;ll just collect a subset of my games, or collect some games twice if I play fewer than 10 on some day.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;You can find the flows 
+&lt;a href=&#34;https://browserflow.app/shared/4a8c4303-ad21-420e-8414-5de57e0692d4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; and 
+&lt;a href=&#34;https://browserflow.app/shared/4e3fd160-6665-46b7-ad2b-0a6be9121649&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; if you have Browserflow.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Virtual table tennis coaching</title>
+      <link>https://davidbieber.com/snippets/2021-04-18-virtual-table-tennis-coaching/</link>
+      <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-04-18-virtual-table-tennis-coaching/</guid>
+      <description>&lt;p&gt;For the last few weeks I&amp;rsquo;ve been playing virtual reality table tennis quite a lot. It&amp;rsquo;s competitive; some highly ranked real-life table tennis players from around the world play this game. My ranking has been going up: my ELO recently reached 2000+, bringing me (at least temporarily) into the top 1500 ranked players online (out of upwards of 440,000 players total.)&lt;/p&gt;
+&lt;p&gt;Naturally, I&amp;rsquo;d like to make my number go up. So I practice. I play ranked and unranked games against people around the world. I practice against AI opponents. I use the virtual  ball machine. And I watch YouTube videos on how to hit the strokes appropriately.&lt;/p&gt;
+&lt;p&gt;One thing I haven&amp;rsquo;t done though is get a coach.&lt;/p&gt;
+&lt;p&gt;A few people have started offering in game virtual reality table tennis coaching. I think this is incredible. The coach and player play at the table simultaneously. They can stand on the same side of the table or opposite each other. They can use a ball machine together or hit with one another. They can discuss table tennis and do exercises together all in game.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m interested in giving virtual lessons a try. I&amp;rsquo;m not sure how good I&amp;rsquo;d be at receiving coaching though, and this is something I&amp;rsquo;d like to improve at. What makes for a good coach/player relationship? Players need psychological safety. Coaches need to be observant and knowledgeable. Players need to want to improve and ask good questions. Players need to be receptive to the suggestions of the coach. Players need to trust that the coach is focusing on the important aspects of play, so they can focus on the drill at hand. Coaches need to establish this trust. Players have to put in the time to improve.&lt;/p&gt;
+&lt;p&gt;The table tennis quest game is still under active development, and the features that make coaching possible are still young. As I understand it, there aren&amp;rsquo;t special coaching features &amp;ndash; there&amp;rsquo;s just the capability for two people to use around a table optionally with a ball machine.&lt;/p&gt;
+&lt;p&gt;Suppose the game developers were to add features to improve the coaching experience. What features would be essential? (1) Record and replay hits from a game or practice (2) Track stats during practice (3) Coach multiple people simultaneously across multiple tables (4) Mix and match replays&lt;/p&gt;
+&lt;h3 id=&#34;record-and-replay&#34;&gt;Record and Replay&lt;/h3&gt;
+&lt;p&gt;There are two reasons to want to record and replay hits from a game or practice. One is to learn to defend against them. Say you play against an opponent with a powerful serve or forehand smash. By recording and replaying their attack you can practice defending against it.&lt;/p&gt;
+&lt;p&gt;The second reason to record and replay is to mimic or correct a shot. Let&amp;rsquo;s say you tend to hit your backhand loops into the net. It would be useful to replay the hit as a &amp;ldquo;ghost&amp;rdquo; that you can overlay your real paddle against. In this way you can make subtle adjustments in order to improve this shot. Similarly, you can take the powerful serve or forehand smash from the previous example and learn to mimic it by replaying it repeatedly and following along the motions with your own paddle.&lt;/p&gt;
+&lt;h3 id=&#34;track-stats-during-practice&#34;&gt;Track stats during practice&lt;/h3&gt;
+&lt;p&gt;An essential tool for self improvement is numbers that go up: ELO ratings, win counts, balls returned, etc. Giving the ball machine the capability of tracking how many balls you return successfully (where &amp;ldquo;success&amp;rdquo; is something you can define, such as hitting a certain region of the table, perhaps with a certain minimum speed or spin) and how many you miss creates a new metric to improve. And once there&amp;rsquo;s a metric to improve, putting in the time to improve it becomes all the more satisfying.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d love if the game could track a metric like this over time. This feature would pair especially well with the next one, allowing a coach to coach multiple people simultaneously, because it would give the coach quick visibility into the progress of the players towards their goals.&lt;/p&gt;
+&lt;h3 id=&#34;coaching-multiple-people-across-multiple-tables&#34;&gt;Coaching multiple people across multiple tables&lt;/h3&gt;
+&lt;p&gt;Currently coaching is a one on one affair. This is virtual reality though, so the potential for tools for coaching go way beyond what&amp;rsquo;s possible in the real world. A simple place to start is allowing the coach to simultaneously coach multiple people. The coach would do this by having all their students at various tables. The coach could have a multi-table view, where they can monitor all tables at once. Then, through VR magic the coach can quickly teleport to any of the tables to provide individual instruction. The coach can speak with players one on one, or to the whole group simultaneously. Similarly, the coach can set the ball machine settings for individual players or for the whole group. And the coach can pair off players to hit together or play matches or do exercises as they deem appropriate.&lt;/p&gt;
+&lt;p&gt;The ball replay feature is of course also essential in this setting. If the coach observes a particularly good shot on any of the tables, they can capture this and replay it for all the players. Everyone can practice returning this one shot, whether it&amp;rsquo;s a smash, loop, or lob, to improve their table tennis game together.&lt;/p&gt;
+&lt;h3 id=&#34;mixing-and-matching-replays&#34;&gt;Mixing and matching replays&lt;/h3&gt;
+&lt;p&gt;The record and replay feature is going to be essential to the future of practice. Replaying a single ball over and over is useful, but it doesn&amp;rsquo;t capture the dynamic nature of table tennis. So, one useful feature to pair with replaying a shot is the ability to add variance to the shot. In the original recording, the smash has X speed and Y spin and hits precisely position Z. In the replays, all these values can be perturbed slightly to practice variations on the theme. Also, being able to build sequences of replay shots, much in the way you can turn on multiple ball machine settings today, would be a welcome addition for practicing in game situations.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t know which of these the game developers have planned. And of those that they have planned (they seem to have &lt;strong&gt;everything&lt;/strong&gt; planned), I wonder which are planned first. Once I&amp;rsquo;ve had my first coaching session, I&amp;rsquo;m sure my feature requests will only grow. Looking forward to it all. 🏓&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Eleven: Table Tennis VR</title>
+      <link>https://davidbieber.com/snippets/2021-04-16-table-tennis-vr/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-04-16-table-tennis-vr/</guid>
+      <description>&lt;p&gt;Adriana and I recently acquired a VR headset (an Oculus Quest 2), and I bought the game &amp;ldquo;Eleven: Table Tennis VR&amp;rdquo;.
+My mind is blown. It&amp;rsquo;s like having a ping pong table that fits in your hands. You can bring it anywhere; it travels well. And if you do, you not only have everything you need to play ping pong (a table, paddles, $\infty$ balls, etc.) you also have thousands of people of every possible skill level always ready and eager to play.&lt;/p&gt;
+&lt;p&gt;When you enter the game, it&amp;rsquo;s like standing at a ping pong table. Toss the ball from one hand, hit it with the paddle in the other. Simple. The physics is realistic. Lag, when present, is handled pretty well. When you hit the ball into the net, you don&amp;rsquo;t have to reach over and pick it up. When you hit the ball out, you don&amp;rsquo;t need to walk over and pick it up. You have infinity balls, and can play against AI opponents with infinity patience. You can play against real people too.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m beyond excited by this game. Being able to play ping pong with anyone around the world from the comfort of my own home is a science fiction future turned reality I didn&amp;rsquo;t realize I was missing. If you have the game &amp;ndash; it works on all sorts of different VR systems with cross-system play handled just fine &amp;ndash; do let me know. I would love to say hi over a game of table tennis.&lt;/p&gt;
+&lt;p&gt;I expect multiple future snippets will contain musings about directions the game could go in, and I very much looking forward to seeing the game develop. 🏓&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

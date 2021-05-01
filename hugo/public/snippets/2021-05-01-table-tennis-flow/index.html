@@ -28,12 +28,11 @@
   
     
   
-  <meta name="description" content="Using the Roam JavaScript primitives I wrote yesterday it was extremely easy (less than 10 minutes, I think) to create a robust Browserflow flow for saving URLs to Roam Research.
-Now when I&rsquo;m browsing the web, I can press cmd-J (Browserflow&rsquo;s keyboard shortcut) and choose &ldquo;Roam: Save URL&rdquo; from the typeahead to save the current URL to my Roam Daily Notes page.
-If there&rsquo;s not already a &ldquo;Saved URLs:&rdquo; block on daily notes, it makes it.">
+  <meta name="description" content="In this snippet I chronicle making a Cloud flow that tracks my progress in Eleven Table Tennis VR, a virtual reality table tennis game I&rsquo;ve been playing a bunch over the last month.
+I took a first pass at making the flow earlier in the week, and ran into two hiccups I&rsquo;ll need to work around: (1) The css selectors for my ELO, Rank, etc change between visits to the website.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/">
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-05-01-table-tennis-flow/">
 
   
 
@@ -253,7 +252,7 @@ If there&rsquo;s not already a &ldquo;Saved URLs:&rdquo; block on daily notes, i
   <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
 
-  <link rel="canonical" href="https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/">
+  <link rel="canonical" href="https://davidbieber.com/snippets/2021-05-01-table-tennis-flow/">
 
   
   
@@ -270,17 +269,16 @@ If there&rsquo;s not already a &ldquo;Saved URLs:&rdquo; block on daily notes, i
   <meta property="twitter:creator" content="@Bieber">
   
   <meta property="og:site_name" content="David Bieber">
-  <meta property="og:url" content="https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/">
-  <meta property="og:title" content="Saving URLs to Roam with Browserflow | David Bieber">
-  <meta property="og:description" content="Using the Roam JavaScript primitives I wrote yesterday it was extremely easy (less than 10 minutes, I think) to create a robust Browserflow flow for saving URLs to Roam Research.
-Now when I&rsquo;m browsing the web, I can press cmd-J (Browserflow&rsquo;s keyboard shortcut) and choose &ldquo;Roam: Save URL&rdquo; from the typeahead to save the current URL to my Roam Daily Notes page.
-If there&rsquo;s not already a &ldquo;Saved URLs:&rdquo; block on daily notes, it makes it."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2021-05-01-table-tennis-flow/">
+  <meta property="og:title" content="Making a BrowserFlow flow for Eleven Table Tennis VR | David Bieber">
+  <meta property="og:description" content="In this snippet I chronicle making a Cloud flow that tracks my progress in Eleven Table Tennis VR, a virtual reality table tennis game I&rsquo;ve been playing a bunch over the last month.
+I took a first pass at making the flow earlier in the week, and ran into two hiccups I&rsquo;ll need to work around: (1) The css selectors for my ELO, Rank, etc change between visits to the website."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2021-02-13T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2021-05-01T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2021-02-13T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2021-05-01T00:00:00&#43;00:00">
   
 
   
@@ -299,7 +297,7 @@ If there&rsquo;s not already a &ldquo;Saved URLs:&rdquo; block on daily notes, i
 
 
 
-  <title>Saving URLs to Roam with Browserflow | David Bieber</title>
+  <title>Making a BrowserFlow flow for Eleven Table Tennis VR | David Bieber</title>
 
 </head>
 
@@ -483,7 +481,7 @@ If there&rsquo;s not already a &ldquo;Saved URLs:&rdquo; block on daily notes, i
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Saving URLs to Roam with Browserflow</h1>
+  <h1 itemprop="name">Making a BrowserFlow flow for Eleven Table Tennis VR</h1>
 
   
 
@@ -527,19 +525,94 @@ If there&rsquo;s not already a &ldquo;Saved URLs:&rdquo; block on daily notes, i
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>Using the 
-<a href="/snippets/2021-02-12-javascript-functions-for-inserting-blocks-in-roam/">Roam JavaScript primitives I wrote yesterday</a> it was extremely easy (less than 10 minutes, I think) to create a robust Browserflow flow for saving URLs to Roam Research.</p>
-<p>Now when I&rsquo;m browsing the web, I can press cmd-J (Browserflow&rsquo;s keyboard shortcut) and choose &ldquo;Roam: Save URL&rdquo; from the typeahead to save the current URL to my Roam Daily Notes page.</p>
-<p>If there&rsquo;s not already a &ldquo;Saved URLs:&rdquo; block on daily notes, it makes it. Then it nests the URL beneath.</p>
-<p>Here&rsquo;s what the flow looks like in action:</p>
-<iframe width="640" height="360" src="https://www.youtube.com/embed/ORpBuE4UYSA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>Here&rsquo;s what the flow itself looks like:</p>
-<img src="save-urls-flow.png"/>
-<p>Notice there are really only two meaningful lines of code:</p>
-<pre><code class="language-javascript">let urls = await getOrCreateBlockOnPage($page, 'Saved URLs:', -1);
-await createChildBlock(urls, $url)
+      <p>In this snippet I chronicle making a Cloud flow that tracks my progress in Eleven Table Tennis VR, a virtual reality table tennis game I&rsquo;ve been playing a bunch over the last month.</p>
+<p>I took a first pass at making the flow earlier in the week, and ran into two hiccups I&rsquo;ll need to work around: (1) The css selectors for my ELO, Rank, etc change between visits to the website. How am I going to extract this data in the flow? (2) Some games have three rounds others have two, and the css selectors differ depending on which game we&rsquo;re looking at.</p>
+<h2 id="challenge-1-stable-css-selectors-across-page-loads">Challenge 1: Stable CSS Selectors Across Page Loads</h2>
+<p>Browserflow&rsquo;s default CSS selector for the ELO rate on 
+<a href="https://www.elevenvr.net/eleven/413682" target="_blank" rel="noopener">my Eleven TT page</a> is <code>div:nth-of-type(1) &gt; .jss87 &gt; .MuiTypography-root</code>. The trouble with this is that the class .jss87 isn&rsquo;t always there. Sometimes when I load the page, the class .jss70 is there instead. I don&rsquo;t know how this class is determined, but it isn&rsquo;t stable enough to use for my flow.</p>
+<p>With a bit of poking around, I was able to use an 
+<a href="https://css-tricks.com/almanac/selectors/n/nth-child/" target="_blank" rel="noopener"><code>nth-child</code> rule</a> to write a more stable selector. Here&rsquo;s what I came up with: <code>div.MuiGrid-container &gt; .MuiPaper-root:nth-child(1) .MuiTypography-root</code>.</p>
+<p>With this new strategy in place, I can easily complete the first half of the flow (which I&rsquo;ll probably actually split into two flows): regularly logging my Eleven Elo, Rank, Win and Loss count, and Win rate into a spreadsheet automatically.</p>
+<p>Here&rsquo;s what the completed flow looks like:</p>
+<p><img src="/snippets/2021-05-01-table-tennis-flow.png" alt="Complete table tennis ranking tracker flow"></p>
+<h2 id="challenge-2-varying-css-selectors-across-rows">Challenge 2: Varying CSS Selectors Across Rows</h2>
+<p>Next up I have the challenge of selecting game data from the 
+<a href="https://www.elevenvr.net/eleven/413682" target="_blank" rel="noopener">same page</a>. Browserflow makes it easy to loop over the match data with its Loop Elements command. The trouble is that some matches have three rounds while others have just two.</p>
+<p>The default CSS selects for the game data are e.g. <code>$match tr:nth-of-type(1) &gt; td:nth-of-type(3)</code> for the Match Score. Two of the columns: &ldquo;ELO +-&rdquo; and &ldquo;Round 3&rdquo; only show up in certain matches. &ldquo;ELO +-&rdquo; only shows up for ranked matches, and &ldquo;Round 3&rdquo; only shows up if the first two matches are split between the players.</p>
+<p>I expect that in rare cases there are matches with only 1 round (e.g. because a player leaves early), and that in the future there might be matches with additional rounds too.</p>
+<p>The <code>&lt;td&gt;</code> elements themselves don&rsquo;t contain any additional information indicating what column they belong to. I might have to take this slightly painstaking approach:</p>
+<p>First, I&rsquo;ll use <code>Get Element Text</code> to get the text of the first six column headers, and I&rsquo;ll have it use blank text if there are fewer than six headers. In some cases these will be USERNAME, ELO +-, MATCH SCORE, ROUND 1, ROUND 2, ROUND 3. In other cases it will just be a subset of this information.</p>
+<p>Then, for each player I&rsquo;ll get the first six entries in their row. I&rsquo;ll use the headers to determine what these entries describe.</p>
+<p><em>Brief programming interlude</em></p>
+<p>I&rsquo;ve done it. Here&rsquo;s the completed flow. It works like a charm.</p>
+<p><img src="/snippets/2021-05-01-table-tennis-spreadsheet.png" alt="Complete table tennis games flow with collected data"></p>
+<p>I had to make 19 <code>Get Element Text</code> actions and a <code>Run Script</code>, even though I only needed data from 13 different elements. Collecting tabular data is a pretty common task, so there&rsquo;s room to make this simpler for future flows.</p>
+<p>Here&rsquo;s the script I ended up writing for populating fields based on the header data, just for reference:</p>
+<pre><code class="language-javascript">let $player1 = $row1field1;
+let $player2 = $row2field1;
+
+let $elo1 = &quot;&quot;;
+let $elo2 = &quot;&quot;;
+let $elo1change = &quot;&quot;;
+let $elo2change = &quot;&quot;;
+let score_index = 1;
+
+if ($header2 == &quot;ELO +-&quot;) {
+  let elo1 = $row1field2;
+  let elo2 = $row2field2;
+  $elo1 = elo1.split(&quot; &quot;)[0];
+  $elo2 = elo2.split(&quot; &quot;)[0];
+  let elo1change = elo1.split(&quot; &quot;)[1];
+  let elo2change = elo2.split(&quot; &quot;)[1];
+  // Remove the parentheses (+16) -&gt; +16.
+  $elo1change = elo1change.substring(1, elo1change.length - 1);
+  $elo2change = elo2change.substring(1, elo2change.length - 1);
+  score_index = 2;
+}
+
+var row1fields = [
+  $row1field1,
+  $row1field2,
+  $row1field3,
+  $row1field4,
+  $row1field5,
+  $row1field6,
+];
+var row2fields = [
+  $row2field1,
+  $row2field2,
+  $row2field3,
+  $row2field4,
+  $row2field5,
+  $row2field6,
+];
+
+var $matchscore1 = row1fields[score_index];
+var $matchscore2 = row2fields[score_index];
+var $round1player1 = row1fields[score_index + 1];
+var $round1player2 = row2fields[score_index + 1];
+var $round2player1 = row1fields[score_index + 2];
+var $round2player2 = row2fields[score_index + 2];
+var $round3player1 = row1fields[score_index + 3];
+var $round3player2 = row2fields[score_index + 3];
+
+var gameidanddate_parts = $gameidanddate.split(&quot; : &quot;, 2);
+let $gameid = gameidanddate_parts[0];
+// TODO(dbieber): Parse timestamp.
+let $timestamp = gameidanddate_parts[1];
+
+// formatDate definition elided.
+let $today = formatDate(new Date());
 </code></pre>
-<p>The first line creates the &ldquo;Saved URLs:&rdquo; block, but only if it doesn&rsquo;t already exist. It returns the uid of that block. The second line saves the url. Nothing else to it!</p>
+<h2 id="future-challenge-record-every-game-exactly-once">Future Challenge: Record every game exactly once</h2>
+<p>The current instance of the flow just collects all the games on page 1 into the spreadsheet. What I&rsquo;d really like the flow to do is collect every game once.
+My flow will run once a day.</p>
+<p>I could do this by parsing the dates, and having the flow collect all the flows less than one day old each time it runs. This wouldn&rsquo;t be robust to missing a day though.</p>
+<p>Another approach would be to have the flow look in the spreadsheet for the last game collected, and then keep collecting games until that most recently collected game is reached. I&rsquo;ll discuss these options with DK before proceeding. For now, it&rsquo;ll just collect a subset of my games, or collect some games twice if I play fewer than 10 on some day.</p>
+<hr>
+<p>You can find the flows 
+<a href="https://browserflow.app/shared/4a8c4303-ad21-420e-8414-5de57e0692d4" target="_blank" rel="noopener">here</a> and 
+<a href="https://browserflow.app/shared/4e3fd160-6665-46b7-ad2b-0a6be9121649" target="_blank" rel="noopener">here</a> if you have Browserflow.</p>
 
     </div>
 
@@ -551,7 +624,7 @@ await createChildBlock(urls, $url)
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tags/roam-research/">roam-research</a>
+  <a class="badge badge-light" href="/tags/table-tennis/">table tennis</a>
   
   <a class="badge badge-light" href="/tags/browserflow/">browserflow</a>
   
@@ -572,13 +645,13 @@ await createChildBlock(urls, $url)
     <h3>Related</h3>
     <ul>
       
+      <li><a href="/snippets/2021-04-18-virtual-table-tennis-coaching/">Virtual table tennis coaching</a></li>
+      
+      <li><a href="/snippets/2021-04-16-table-tennis-vr/">Eleven: Table Tennis VR</a></li>
+      
       <li><a href="/snippets/2021-02-13-flows-for-roam-research/">Two more Browserflow flows for Roam Research</a></li>
       
-      <li><a href="/snippets/2021-01-02-spaced-repetition-in-roam-research/">Spaced Repetition in Roam Research</a></li>
-      
-      <li><a href="/snippets/2021-05-01-table-tennis-flow/">Making a BrowserFlow flow for Eleven Table Tennis VR</a></li>
-      
-      <li><a href="/snippets/2021-04-24-backlinks/">What links here?</a></li>
+      <li><a href="/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/">Saving URLs to Roam with Browserflow</a></li>
       
     </ul>
   </div>

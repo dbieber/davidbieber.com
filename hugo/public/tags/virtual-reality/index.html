@@ -28,12 +28,10 @@
   
     
   
-  <meta name="description" content="Using the Roam JavaScript primitives I wrote yesterday it was extremely easy (less than 10 minutes, I think) to create a robust Browserflow flow for saving URLs to Roam Research.
-Now when I&rsquo;m browsing the web, I can press cmd-J (Browserflow&rsquo;s keyboard shortcut) and choose &ldquo;Roam: Save URL&rdquo; from the typeahead to save the current URL to my Roam Daily Notes page.
-If there&rsquo;s not already a &ldquo;Saved URLs:&rdquo; block on daily notes, it makes it.">
+  <meta name="description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/">
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/tags/virtual-reality/">
 
   
 
@@ -248,12 +246,14 @@ If there&rsquo;s not already a &ldquo;Saved URLs:&rdquo; block on daily notes, i
 
 
   
+  <link rel="alternate" href="/tags/virtual-reality/index.xml" type="application/rss+xml" title="David Bieber">
+  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
 
-  <link rel="canonical" href="https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/">
+  <link rel="canonical" href="https://davidbieber.com/tags/virtual-reality/">
 
   
   
@@ -270,24 +270,17 @@ If there&rsquo;s not already a &ldquo;Saved URLs:&rdquo; block on daily notes, i
   <meta property="twitter:creator" content="@Bieber">
   
   <meta property="og:site_name" content="David Bieber">
-  <meta property="og:url" content="https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/">
-  <meta property="og:title" content="Saving URLs to Roam with Browserflow | David Bieber">
-  <meta property="og:description" content="Using the Roam JavaScript primitives I wrote yesterday it was extremely easy (less than 10 minutes, I think) to create a robust Browserflow flow for saving URLs to Roam Research.
-Now when I&rsquo;m browsing the web, I can press cmd-J (Browserflow&rsquo;s keyboard shortcut) and choose &ldquo;Roam: Save URL&rdquo; from the typeahead to save the current URL to my Roam Daily Notes page.
-If there&rsquo;s not already a &ldquo;Saved URLs:&rdquo; block on daily notes, it makes it."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="og:url" content="https://davidbieber.com/tags/virtual-reality/">
+  <meta property="og:title" content="virtual reality | David Bieber">
+  <meta property="og:description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
-    
-      <meta property="article:published_time" content="2021-02-13T00:00:00&#43;00:00">
-    
-    <meta property="article:modified_time" content="2021-02-13T00:00:00&#43;00:00">
+    <meta property="og:updated_time" content="2021-04-29T00:00:00&#43;00:00">
   
 
   
 
 
-
-  
 
 
   
@@ -299,7 +292,7 @@ If there&rsquo;s not already a &ldquo;Saved URLs:&rdquo; block on daily notes, i
 
 
 
-  <title>Saving URLs to Roam with Browserflow | David Bieber</title>
+  <title>virtual reality | David Bieber</title>
 
 </head>
 
@@ -462,8 +455,6 @@ If there&rsquo;s not already a &ldquo;Saved URLs:&rdquo; block on daily notes, i
 </nav>
 
 
-  <article class="article">
-
   
 
 
@@ -481,157 +472,61 @@ If there&rsquo;s not already a &ldquo;Saved URLs:&rdquo; block on daily notes, i
 
   
   
-  
-<div class="article-container pt-3">
-  <h1 itemprop="name">Saving URLs to Roam with Browserflow</h1>
-
-  
-
   
     
-
-
-<div class="article-metadata">
-
   
-  
+<div class="universal-wrapper pt-3">
+  <h1 itemprop="name">virtual reality</h1>
 
   
-  <span class="article-date">
-    
-    
-      
-    
-    
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-
-  
-  
-
-</div>
 
   
 </div>
 
 
 
-  <div class="article-container">
-
-    <div class="article-style" id="article-content">
-      <p>Using the 
-<a href="/snippets/2021-02-12-javascript-functions-for-inserting-blocks-in-roam/">Roam JavaScript primitives I wrote yesterday</a> it was extremely easy (less than 10 minutes, I think) to create a robust Browserflow flow for saving URLs to Roam Research.</p>
-<p>Now when I&rsquo;m browsing the web, I can press cmd-J (Browserflow&rsquo;s keyboard shortcut) and choose &ldquo;Roam: Save URL&rdquo; from the typeahead to save the current URL to my Roam Daily Notes page.</p>
-<p>If there&rsquo;s not already a &ldquo;Saved URLs:&rdquo; block on daily notes, it makes it. Then it nests the URL beneath.</p>
-<p>Here&rsquo;s what the flow looks like in action:</p>
-<iframe width="640" height="360" src="https://www.youtube.com/embed/ORpBuE4UYSA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>Here&rsquo;s what the flow itself looks like:</p>
-<img src="save-urls-flow.png"/>
-<p>Notice there are really only two meaningful lines of code:</p>
-<pre><code class="language-javascript">let urls = await getOrCreateBlockOnPage($page, 'Saved URLs:', -1);
-await createChildBlock(urls, $url)
-</code></pre>
-<p>The first line creates the &ldquo;Saved URLs:&rdquo; block, but only if it doesn&rsquo;t already exist. It returns the uid of that block. The second line saves the url. Nothing else to it!</p>
-
-    </div>
-
-    
-
-
-
-
-
-<div class="article-tags">
+<div class="universal-wrapper">
   
-  <a class="badge badge-light" href="/tags/roam-research/">roam-research</a>
+
   
-  <a class="badge badge-light" href="/tags/browserflow/">browserflow</a>
   
+  
+  <div class="stream-item snippet-item">
+    <h3 class="mb-0 mt-0">
+    <a href="/snippets/2021-04-29-recording-in-vr/">
+      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
+      Recording in virtual reality (incomplete)
+    </a>
+    </h3>
+  </div>
+  
+  
+  
+  <div class="stream-item snippet-item">
+    <h3 class="mb-0 mt-0">
+    <a href="/snippets/2021-04-18-virtual-table-tennis-coaching/">
+      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
+      Virtual table tennis coaching
+    </a>
+    </h3>
+  </div>
+  
+  
+  
+  <div class="stream-item snippet-item">
+    <h3 class="mb-0 mt-0">
+    <a href="/snippets/2021-04-16-table-tennis-vr/">
+      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
+      Eleven: Table Tennis VR
+    </a>
+    </h3>
+  </div>
+  
+  
+
+  
+
 </div>
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <div class="article-widget content-widget-hr">
-    <h3>Related</h3>
-    <ul>
-      
-      <li><a href="/snippets/2021-02-13-flows-for-roam-research/">Two more Browserflow flows for Roam Research</a></li>
-      
-      <li><a href="/snippets/2021-01-02-spaced-repetition-in-roam-research/">Spaced Repetition in Roam Research</a></li>
-      
-      <li><a href="/snippets/2021-05-01-table-tennis-flow/">Making a BrowserFlow flow for Eleven Table Tennis VR</a></li>
-      
-      <li><a href="/snippets/2021-04-24-backlinks/">What links here?</a></li>
-      
-    </ul>
-  </div>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  <div class="media author-card content-widget-hr">
-    
-
-    <div class="media-body">
-      <h5 class="card-title"><a href="https://davidbieber.com/">David Bieber</a></h5>
-      
-      
-      <ul class="network-icon" aria-hidden="true">
-  
-</ul>
-
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-  </div>
-</article>
 
       
 

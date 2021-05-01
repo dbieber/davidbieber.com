@@ -5,12 +5,108 @@
     <link>https://davidbieber.com/tags/browserflow/</link>
       <atom:link href="https://davidbieber.com/tags/browserflow/index.xml" rel="self" type="application/rss+xml" />
     <description>browserflow</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 13 Feb 2021 01:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>browserflow</title>
       <link>https://davidbieber.com/tags/browserflow/</link>
     </image>
+    
+    <item>
+      <title>Making a BrowserFlow flow for Eleven Table Tennis VR</title>
+      <link>https://davidbieber.com/snippets/2021-05-01-table-tennis-flow/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-05-01-table-tennis-flow/</guid>
+      <description>&lt;p&gt;In this snippet I chronicle making a Cloud flow that tracks my progress in Eleven Table Tennis VR, a virtual reality table tennis game I&amp;rsquo;ve been playing a bunch over the last month.&lt;/p&gt;
+&lt;p&gt;I took a first pass at making the flow earlier in the week, and ran into two hiccups I&amp;rsquo;ll need to work around: (1) The css selectors for my ELO, Rank, etc change between visits to the website. How am I going to extract this data in the flow? (2) Some games have three rounds others have two, and the css selectors differ depending on which game we&amp;rsquo;re looking at.&lt;/p&gt;
+&lt;h2 id=&#34;challenge-1-stable-css-selectors-across-page-loads&#34;&gt;Challenge 1: Stable CSS Selectors Across Page Loads&lt;/h2&gt;
+&lt;p&gt;Browserflow&amp;rsquo;s default CSS selector for the ELO rate on 
+&lt;a href=&#34;https://www.elevenvr.net/eleven/413682&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;my Eleven TT page&lt;/a&gt; is &lt;code&gt;div:nth-of-type(1) &amp;gt; .jss87 &amp;gt; .MuiTypography-root&lt;/code&gt;. The trouble with this is that the class .jss87 isn&amp;rsquo;t always there. Sometimes when I load the page, the class .jss70 is there instead. I don&amp;rsquo;t know how this class is determined, but it isn&amp;rsquo;t stable enough to use for my flow.&lt;/p&gt;
+&lt;p&gt;With a bit of poking around, I was able to use an 
+&lt;a href=&#34;https://css-tricks.com/almanac/selectors/n/nth-child/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;nth-child&lt;/code&gt; rule&lt;/a&gt; to write a more stable selector. Here&amp;rsquo;s what I came up with: &lt;code&gt;div.MuiGrid-container &amp;gt; .MuiPaper-root:nth-child(1) .MuiTypography-root&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;With this new strategy in place, I can easily complete the first half of the flow (which I&amp;rsquo;ll probably actually split into two flows): regularly logging my Eleven Elo, Rank, Win and Loss count, and Win rate into a spreadsheet automatically.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what the completed flow looks like:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/snippets/2021-05-01-table-tennis-flow.png&#34; alt=&#34;Complete table tennis ranking tracker flow&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;challenge-2-varying-css-selectors-across-rows&#34;&gt;Challenge 2: Varying CSS Selectors Across Rows&lt;/h2&gt;
+&lt;p&gt;Next up I have the challenge of selecting game data from the 
+&lt;a href=&#34;https://www.elevenvr.net/eleven/413682&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;same page&lt;/a&gt;. Browserflow makes it easy to loop over the match data with its Loop Elements command. The trouble is that some matches have three rounds while others have just two.&lt;/p&gt;
+&lt;p&gt;The default CSS selects for the game data are e.g. &lt;code&gt;$match tr:nth-of-type(1) &amp;gt; td:nth-of-type(3)&lt;/code&gt; for the Match Score. Two of the columns: &amp;ldquo;ELO +-&amp;rdquo; and &amp;ldquo;Round 3&amp;rdquo; only show up in certain matches. &amp;ldquo;ELO +-&amp;rdquo; only shows up for ranked matches, and &amp;ldquo;Round 3&amp;rdquo; only shows up if the first two matches are split between the players.&lt;/p&gt;
+&lt;p&gt;I expect that in rare cases there are matches with only 1 round (e.g. because a player leaves early), and that in the future there might be matches with additional rounds too.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; elements themselves don&amp;rsquo;t contain any additional information indicating what column they belong to. I might have to take this slightly painstaking approach:&lt;/p&gt;
+&lt;p&gt;First, I&amp;rsquo;ll use &lt;code&gt;Get Element Text&lt;/code&gt; to get the text of the first six column headers, and I&amp;rsquo;ll have it use blank text if there are fewer than six headers. In some cases these will be USERNAME, ELO +-, MATCH SCORE, ROUND 1, ROUND 2, ROUND 3. In other cases it will just be a subset of this information.&lt;/p&gt;
+&lt;p&gt;Then, for each player I&amp;rsquo;ll get the first six entries in their row. I&amp;rsquo;ll use the headers to determine what these entries describe.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Brief programming interlude&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve done it. Here&amp;rsquo;s the completed flow. It works like a charm.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/snippets/2021-05-01-table-tennis-spreadsheet.png&#34; alt=&#34;Complete table tennis games flow with collected data&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I had to make 19 &lt;code&gt;Get Element Text&lt;/code&gt; actions and a &lt;code&gt;Run Script&lt;/code&gt;, even though I only needed data from 13 different elements. Collecting tabular data is a pretty common task, so there&amp;rsquo;s room to make this simpler for future flows.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the script I ended up writing for populating fields based on the header data, just for reference:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let $player1 = $row1field1;
+let $player2 = $row2field1;
+
+let $elo1 = &amp;quot;&amp;quot;;
+let $elo2 = &amp;quot;&amp;quot;;
+let $elo1change = &amp;quot;&amp;quot;;
+let $elo2change = &amp;quot;&amp;quot;;
+let score_index = 1;
+
+if ($header2 == &amp;quot;ELO +-&amp;quot;) {
+  let elo1 = $row1field2;
+  let elo2 = $row2field2;
+  $elo1 = elo1.split(&amp;quot; &amp;quot;)[0];
+  $elo2 = elo2.split(&amp;quot; &amp;quot;)[0];
+  let elo1change = elo1.split(&amp;quot; &amp;quot;)[1];
+  let elo2change = elo2.split(&amp;quot; &amp;quot;)[1];
+  // Remove the parentheses (+16) -&amp;gt; +16.
+  $elo1change = elo1change.substring(1, elo1change.length - 1);
+  $elo2change = elo2change.substring(1, elo2change.length - 1);
+  score_index = 2;
+}
+
+var row1fields = [
+  $row1field1,
+  $row1field2,
+  $row1field3,
+  $row1field4,
+  $row1field5,
+  $row1field6,
+];
+var row2fields = [
+  $row2field1,
+  $row2field2,
+  $row2field3,
+  $row2field4,
+  $row2field5,
+  $row2field6,
+];
+
+var $matchscore1 = row1fields[score_index];
+var $matchscore2 = row2fields[score_index];
+var $round1player1 = row1fields[score_index + 1];
+var $round1player2 = row2fields[score_index + 1];
+var $round2player1 = row1fields[score_index + 2];
+var $round2player2 = row2fields[score_index + 2];
+var $round3player1 = row1fields[score_index + 3];
+var $round3player2 = row2fields[score_index + 3];
+
+var gameidanddate_parts = $gameidanddate.split(&amp;quot; : &amp;quot;, 2);
+let $gameid = gameidanddate_parts[0];
+// TODO(dbieber): Parse timestamp.
+let $timestamp = gameidanddate_parts[1];
+
+// formatDate definition elided.
+let $today = formatDate(new Date());
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;future-challenge-record-every-game-exactly-once&#34;&gt;Future Challenge: Record every game exactly once&lt;/h2&gt;
+&lt;p&gt;The current instance of the flow just collects all the games on page 1 into the spreadsheet. What I&amp;rsquo;d really like the flow to do is collect every game once.
+My flow will run once a day.&lt;/p&gt;
+&lt;p&gt;I could do this by parsing the dates, and having the flow collect all the flows less than one day old each time it runs. This wouldn&amp;rsquo;t be robust to missing a day though.&lt;/p&gt;
+&lt;p&gt;Another approach would be to have the flow look in the spreadsheet for the last game collected, and then keep collecting games until that most recently collected game is reached. I&amp;rsquo;ll discuss these options with DK before proceeding. For now, it&amp;rsquo;ll just collect a subset of my games, or collect some games twice if I play fewer than 10 on some day.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;You can find the flows 
+&lt;a href=&#34;https://browserflow.app/shared/4a8c4303-ad21-420e-8414-5de57e0692d4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; and 
+&lt;a href=&#34;https://browserflow.app/shared/4e3fd160-6665-46b7-ad2b-0a6be9121649&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; if you have Browserflow.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Two more Browserflow flows for Roam Research</title>

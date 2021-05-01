@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>virtual reality | David Bieber</title>
+    <link>https://davidbieber.com/tags/virtual-reality/</link>
+      <atom:link href="https://davidbieber.com/tags/virtual-reality/index.xml" rel="self" type="application/rss+xml" />
+    <description>virtual reality</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
+      <title>virtual reality</title>
+      <link>https://davidbieber.com/tags/virtual-reality/</link>
+    </image>
+    
+    <item>
+      <title>Recording in virtual reality (incomplete)</title>
+      <link>https://davidbieber.com/snippets/2021-04-29-recording-in-vr/</link>
+      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-04-29-recording-in-vr/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This is an 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-04-23-incomplete-snippets/&#34;&gt;&lt;strong&gt;incomplete&lt;/strong&gt; snippet&lt;/a&gt;. If I complete it, I&amp;rsquo;ll add a link to the completed snippet here.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The default format for recording in virtual reality is a first-person perspective&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Often this is placed side-by-side with a third-person perspective of the person in real life&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. I would like to see the same perspective of the player in VR and real life&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Recording the same perspective of the player both in-game and in real life makes it easier to mentally translate between the real life movements of the player and their in-game effects. It also enables overlaying the two views for a smooth transition between the two domains. For example, you can split the screen in the middle of the player&amp;rsquo;s body, showing half in the VR domain and half in the real domain.&lt;/p&gt;
+&lt;p&gt;This opens up the potential for low friction, minimal fuss streaming controls for streamers to use mid-game. It only takes one button or D-stick dedicated to controlling the camera to let a player toggle between streaming a fully VR perspective, a fully real life perspective, and something in between.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;First-person perspective in VR. &lt;img src=&#34;https://davidbieber.com/snippets/2021-04-29-recording-in-vr-001.png&#34; alt=&#34;First-person perspective.&#34;&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;TODO(dbieber): Add an image of a third-person perspective in real life of someone using VR. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;TODO(dbieber): Add an image showing the same perspective in VR and real life. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Virtual table tennis coaching</title>
+      <link>https://davidbieber.com/snippets/2021-04-18-virtual-table-tennis-coaching/</link>
+      <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-04-18-virtual-table-tennis-coaching/</guid>
+      <description>&lt;p&gt;For the last few weeks I&amp;rsquo;ve been playing virtual reality table tennis quite a lot. It&amp;rsquo;s competitive; some highly ranked real-life table tennis players from around the world play this game. My ranking has been going up: my ELO recently reached 2000+, bringing me (at least temporarily) into the top 1500 ranked players online (out of upwards of 440,000 players total.)&lt;/p&gt;
+&lt;p&gt;Naturally, I&amp;rsquo;d like to make my number go up. So I practice. I play ranked and unranked games against people around the world. I practice against AI opponents. I use the virtual  ball machine. And I watch YouTube videos on how to hit the strokes appropriately.&lt;/p&gt;
+&lt;p&gt;One thing I haven&amp;rsquo;t done though is get a coach.&lt;/p&gt;
+&lt;p&gt;A few people have started offering in game virtual reality table tennis coaching. I think this is incredible. The coach and player play at the table simultaneously. They can stand on the same side of the table or opposite each other. They can use a ball machine together or hit with one another. They can discuss table tennis and do exercises together all in game.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m interested in giving virtual lessons a try. I&amp;rsquo;m not sure how good I&amp;rsquo;d be at receiving coaching though, and this is something I&amp;rsquo;d like to improve at. What makes for a good coach/player relationship? Players need psychological safety. Coaches need to be observant and knowledgeable. Players need to want to improve and ask good questions. Players need to be receptive to the suggestions of the coach. Players need to trust that the coach is focusing on the important aspects of play, so they can focus on the drill at hand. Coaches need to establish this trust. Players have to put in the time to improve.&lt;/p&gt;
+&lt;p&gt;The table tennis quest game is still under active development, and the features that make coaching possible are still young. As I understand it, there aren&amp;rsquo;t special coaching features &amp;ndash; there&amp;rsquo;s just the capability for two people to use around a table optionally with a ball machine.&lt;/p&gt;
+&lt;p&gt;Suppose the game developers were to add features to improve the coaching experience. What features would be essential? (1) Record and replay hits from a game or practice (2) Track stats during practice (3) Coach multiple people simultaneously across multiple tables (4) Mix and match replays&lt;/p&gt;
+&lt;h3 id=&#34;record-and-replay&#34;&gt;Record and Replay&lt;/h3&gt;
+&lt;p&gt;There are two reasons to want to record and replay hits from a game or practice. One is to learn to defend against them. Say you play against an opponent with a powerful serve or forehand smash. By recording and replaying their attack you can practice defending against it.&lt;/p&gt;
+&lt;p&gt;The second reason to record and replay is to mimic or correct a shot. Let&amp;rsquo;s say you tend to hit your backhand loops into the net. It would be useful to replay the hit as a &amp;ldquo;ghost&amp;rdquo; that you can overlay your real paddle against. In this way you can make subtle adjustments in order to improve this shot. Similarly, you can take the powerful serve or forehand smash from the previous example and learn to mimic it by replaying it repeatedly and following along the motions with your own paddle.&lt;/p&gt;
+&lt;h3 id=&#34;track-stats-during-practice&#34;&gt;Track stats during practice&lt;/h3&gt;
+&lt;p&gt;An essential tool for self improvement is numbers that go up: ELO ratings, win counts, balls returned, etc. Giving the ball machine the capability of tracking how many balls you return successfully (where &amp;ldquo;success&amp;rdquo; is something you can define, such as hitting a certain region of the table, perhaps with a certain minimum speed or spin) and how many you miss creates a new metric to improve. And once there&amp;rsquo;s a metric to improve, putting in the time to improve it becomes all the more satisfying.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d love if the game could track a metric like this over time. This feature would pair especially well with the next one, allowing a coach to coach multiple people simultaneously, because it would give the coach quick visibility into the progress of the players towards their goals.&lt;/p&gt;
+&lt;h3 id=&#34;coaching-multiple-people-across-multiple-tables&#34;&gt;Coaching multiple people across multiple tables&lt;/h3&gt;
+&lt;p&gt;Currently coaching is a one on one affair. This is virtual reality though, so the potential for tools for coaching go way beyond what&amp;rsquo;s possible in the real world. A simple place to start is allowing the coach to simultaneously coach multiple people. The coach would do this by having all their students at various tables. The coach could have a multi-table view, where they can monitor all tables at once. Then, through VR magic the coach can quickly teleport to any of the tables to provide individual instruction. The coach can speak with players one on one, or to the whole group simultaneously. Similarly, the coach can set the ball machine settings for individual players or for the whole group. And the coach can pair off players to hit together or play matches or do exercises as they deem appropriate.&lt;/p&gt;
+&lt;p&gt;The ball replay feature is of course also essential in this setting. If the coach observes a particularly good shot on any of the tables, they can capture this and replay it for all the players. Everyone can practice returning this one shot, whether it&amp;rsquo;s a smash, loop, or lob, to improve their table tennis game together.&lt;/p&gt;
+&lt;h3 id=&#34;mixing-and-matching-replays&#34;&gt;Mixing and matching replays&lt;/h3&gt;
+&lt;p&gt;The record and replay feature is going to be essential to the future of practice. Replaying a single ball over and over is useful, but it doesn&amp;rsquo;t capture the dynamic nature of table tennis. So, one useful feature to pair with replaying a shot is the ability to add variance to the shot. In the original recording, the smash has X speed and Y spin and hits precisely position Z. In the replays, all these values can be perturbed slightly to practice variations on the theme. Also, being able to build sequences of replay shots, much in the way you can turn on multiple ball machine settings today, would be a welcome addition for practicing in game situations.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t know which of these the game developers have planned. And of those that they have planned (they seem to have &lt;strong&gt;everything&lt;/strong&gt; planned), I wonder which are planned first. Once I&amp;rsquo;ve had my first coaching session, I&amp;rsquo;m sure my feature requests will only grow. Looking forward to it all. 🏓&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Eleven: Table Tennis VR</title>
+      <link>https://davidbieber.com/snippets/2021-04-16-table-tennis-vr/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-04-16-table-tennis-vr/</guid>
+      <description>&lt;p&gt;Adriana and I recently acquired a VR headset (an Oculus Quest 2), and I bought the game &amp;ldquo;Eleven: Table Tennis VR&amp;rdquo;.
+My mind is blown. It&amp;rsquo;s like having a ping pong table that fits in your hands. You can bring it anywhere; it travels well. And if you do, you not only have everything you need to play ping pong (a table, paddles, $\infty$ balls, etc.) you also have thousands of people of every possible skill level always ready and eager to play.&lt;/p&gt;
+&lt;p&gt;When you enter the game, it&amp;rsquo;s like standing at a ping pong table. Toss the ball from one hand, hit it with the paddle in the other. Simple. The physics is realistic. Lag, when present, is handled pretty well. When you hit the ball into the net, you don&amp;rsquo;t have to reach over and pick it up. When you hit the ball out, you don&amp;rsquo;t need to walk over and pick it up. You have infinity balls, and can play against AI opponents with infinity patience. You can play against real people too.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m beyond excited by this game. Being able to play ping pong with anyone around the world from the comfort of my own home is a science fiction future turned reality I didn&amp;rsquo;t realize I was missing. If you have the game &amp;ndash; it works on all sorts of different VR systems with cross-system play handled just fine &amp;ndash; do let me know. I would love to say hi over a game of table tennis.&lt;/p&gt;
+&lt;p&gt;I expect multiple future snippets will contain musings about directions the game could go in, and I very much looking forward to seeing the game develop. 🏓&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
