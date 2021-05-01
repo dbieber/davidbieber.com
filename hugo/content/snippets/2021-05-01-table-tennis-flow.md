@@ -1,8 +1,8 @@
 +++
 title = "Making a BrowserFlow flow for Eleven Table Tennis VR"
 date = 2021-05-01T00:00:00
-tags = []
-keywords = []
+tags = ["table tennis", "browserflow"]
+keywords = ["table tennis", "virtual reality"]
 +++
 
 In this snippet I chronicle making a Cloud flow that tracks my progress in Eleven Table Tennis VR, a virtual reality table tennis game I've been playing a bunch over the last month.

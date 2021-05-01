@@ -1,7 +1,7 @@
 +++
 title = "Recording in virtual reality (incomplete)"
 date = 2021-04-29T00:00:00
-tags = []
+tags = ["virtual reality", "automatic-video-editing"]
 keywords = []
 plugins_js = ["margin-notes"]
 +++
