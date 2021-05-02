@@ -5,12 +5,89 @@
     <link>https://davidbieber.com/tags/snippets/</link>
       <atom:link href="https://davidbieber.com/tags/snippets/index.xml" rel="self" type="application/rss+xml" />
     <description>snippets</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 24 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 02 May 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>snippets</title>
       <link>https://davidbieber.com/tags/snippets/</link>
     </image>
+    
+    <item>
+      <title>Tags on Snippets</title>
+      <link>https://davidbieber.com/snippets/2021-05-02-snippet-tags/</link>
+      <pubDate>Sun, 02 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-05-02-snippet-tags/</guid>
+      <description>&lt;p&gt;Recently I added tags to my snippets. Today, I updated the 
+&lt;a href=&#34;https://davidbieber.com/tags/&#34;&gt;tags page&lt;/a&gt; to display the number of snippets containing the tag. Now I can easily see what topics I write about the most, and which I&amp;rsquo;ve written about only a little. Here&amp;rsquo;s where the counts stand today:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/browserflow/&#34;&gt;browserflow (7)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/table-tennis/&#34;&gt;table tennis (3)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/automatic-video-editing/&#34;&gt;automatic-video-editing (7)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/virtual-reality/&#34;&gt;virtual reality (3)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/roam-research/&#34;&gt;roam-research (19)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/snippets/&#34;&gt;snippets (20)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/tech-tips/&#34;&gt;tech-tips (6)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/python/&#34;&gt;python (16)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/aspirational-intent/&#34;&gt;aspirational-intent (2)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/goals/&#34;&gt;goals (6)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/peer-learning-group/&#34;&gt;peer-learning-group (7)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/attention/&#34;&gt;attention (21)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/taking-silly-ideas-seriously/&#34;&gt;taking-silly-ideas-seriously (23)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/python-fire/&#34;&gt;Python Fire (4)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/javascript/&#34;&gt;javascript (5)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/sql/&#34;&gt;sql (10)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/wisdom/&#34;&gt;wisdom (2)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/browser-history/&#34;&gt;browser-history (10)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/thought-experiments/&#34;&gt;thought-experiments (6)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/spaced-repetition/&#34;&gt;spaced-repetition (3)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/math/&#34;&gt;math (5)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/ask-me-anywhere/&#34;&gt;ask-me-anywhere (2)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/google-apps-script/&#34;&gt;Google Apps Script (3)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/automation/&#34;&gt;Automation (3)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/just-for-fun/&#34;&gt;Just for Fun (3)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/productivity/&#34;&gt;Productivity (4)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/software/&#34;&gt;Software (6)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/hardware/&#34;&gt;Hardware (2)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/puzzle/&#34;&gt;Puzzle (2)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/education/&#34;&gt;Education (6)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/esperanto/&#34;&gt;Esperanto (1)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/princeton-acm/&#34;&gt;Princeton ACM (2)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Looking this over, I think I&amp;rsquo;d like to normalize the format of the tags. The ones with capital letters at the end date from before I started snippets; those are the tags I used to categorize the projects on my website. I also see I&amp;rsquo;ve only written about puzzles twice. Perhaps I&amp;rsquo;ll write about puzzles more.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>What links here?</title>

@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 02 May 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>David Bieber</title>
@@ -302,6 +302,83 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tags on Snippets</title>
+      <link>https://davidbieber.com/snippets/2021-05-02-snippet-tags/</link>
+      <pubDate>Sun, 02 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-05-02-snippet-tags/</guid>
+      <description>&lt;p&gt;Recently I added tags to my snippets. Today, I updated the 
+&lt;a href=&#34;https://davidbieber.com/tags/&#34;&gt;tags page&lt;/a&gt; to display the number of snippets containing the tag. Now I can easily see what topics I write about the most, and which I&amp;rsquo;ve written about only a little. Here&amp;rsquo;s where the counts stand today:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/browserflow/&#34;&gt;browserflow (7)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/table-tennis/&#34;&gt;table tennis (3)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/automatic-video-editing/&#34;&gt;automatic-video-editing (7)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/virtual-reality/&#34;&gt;virtual reality (3)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/roam-research/&#34;&gt;roam-research (19)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/snippets/&#34;&gt;snippets (20)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/tech-tips/&#34;&gt;tech-tips (6)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/python/&#34;&gt;python (16)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/aspirational-intent/&#34;&gt;aspirational-intent (2)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/goals/&#34;&gt;goals (6)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/peer-learning-group/&#34;&gt;peer-learning-group (7)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/attention/&#34;&gt;attention (21)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/taking-silly-ideas-seriously/&#34;&gt;taking-silly-ideas-seriously (23)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/python-fire/&#34;&gt;Python Fire (4)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/javascript/&#34;&gt;javascript (5)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/sql/&#34;&gt;sql (10)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/wisdom/&#34;&gt;wisdom (2)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/browser-history/&#34;&gt;browser-history (10)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/thought-experiments/&#34;&gt;thought-experiments (6)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/spaced-repetition/&#34;&gt;spaced-repetition (3)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/math/&#34;&gt;math (5)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/ask-me-anywhere/&#34;&gt;ask-me-anywhere (2)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/google-apps-script/&#34;&gt;Google Apps Script (3)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/automation/&#34;&gt;Automation (3)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/just-for-fun/&#34;&gt;Just for Fun (3)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/productivity/&#34;&gt;Productivity (4)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/software/&#34;&gt;Software (6)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/hardware/&#34;&gt;Hardware (2)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/puzzle/&#34;&gt;Puzzle (2)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/education/&#34;&gt;Education (6)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/esperanto/&#34;&gt;Esperanto (1)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/princeton-acm/&#34;&gt;Princeton ACM (2)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Looking this over, I think I&amp;rsquo;d like to normalize the format of the tags. The ones with capital letters at the end date from before I started snippets; those are the tags I used to categorize the projects on my website. I also see I&amp;rsquo;ve only written about puzzles twice. Perhaps I&amp;rsquo;ll write about puzzles more.&lt;/p&gt;
 </description>
     </item>
     
@@ -5136,8 +5213,8 @@ I&amp;rsquo;m in a remote meeting and we&amp;rsquo;re having a discussion. By de
 &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot&#34;&gt;Bieber Bot&lt;/a&gt; interact with more Slack workspaces, I will write up my renewed understanding of OAuth2 in the hope that next time I have to set up OAuth2, it&amp;rsquo;s a little easier.&lt;/p&gt;
 &lt;h2 id=&#34;overview-of-the-oauth2-flow&#34;&gt;Overview of the OAuth2 Flow&lt;/h2&gt;
 &lt;p&gt;How does the OAuth2 flow go? Like this:&lt;/p&gt;
-&lt;p&gt;The user wants to add Bieber Bot to a Slack channel. So, they&amp;rsquo;re on my website (
-&lt;a href=&#34;https://davidbieber.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;davidbieber.com&lt;/a&gt;) and they click the &lt;em&gt;Add to Slack&lt;/em&gt; button. This takes them to Slack, with GET parameters that indicate they want to add Bieber Bot to some Slack workspace. The workspace id can be part of the URL of the Add to Slack button, but even if it&amp;rsquo;s not, Slack will do the right thing and just ask the user to choose one of their workspaces. If the user isn&amp;rsquo;t already logged in to Slack, they&amp;rsquo;ll be prompted to do so at this point.&lt;/p&gt;
+&lt;p&gt;The user wants to add Bieber Bot to a Slack channel. So, they&amp;rsquo;re on my website 
+&lt;a href=&#34;https://davidbieber.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;(davidbieber.com)&lt;/a&gt; and they click the &lt;em&gt;Add to Slack&lt;/em&gt; button. This takes them to Slack, with GET parameters that indicate they want to add Bieber Bot to some Slack workspace. The workspace id can be part of the URL of the Add to Slack button, but even if it&amp;rsquo;s not, Slack will do the right thing and just ask the user to choose one of their workspaces. If the user isn&amp;rsquo;t already logged in to Slack, they&amp;rsquo;ll be prompted to do so at this point.&lt;/p&gt;
 &lt;p&gt;After the user clicks the &lt;em&gt;Add to Slack&lt;/em&gt; button they are taken to Slack, where they are shown the list of OAuth2 scopes that Bieber Bot is requesting. If they approve giving Bieber Bot the permissions listed in the scopes, they are taken to a &lt;em&gt;redirect url&lt;/em&gt; that I, the developer of Bieber Bot, have specified. I have both pre-informed Slack of the redirect URLs I might use, and I have included a specific redirect URL in the link on the &lt;em&gt;Add to Slack&lt;/em&gt; button. When the user is redirected to this redirect url, two GET parameters are included. The first is a &lt;code&gt;code&lt;/code&gt;, which my server can use to get an Access Token / Bearer Token. The second is a &lt;code&gt;state&lt;/code&gt; which is something that I, the developer, can include on the original link from the &lt;em&gt;Add to Slack&lt;/em&gt; button in order to make sure the request I&amp;rsquo;m getting at the redirect URL is genuine.&lt;/p&gt;
 &lt;p&gt;When the redirect URL is accessed with a &lt;code&gt;code&lt;/code&gt; GET parameter, it then turns around and uses that &lt;code&gt;code&lt;/code&gt; to request an Access Token from Slack. Once it has that Access Token, it tucks it away. It can use that access token in order to perform any of the permissions granted by the user during the access flow.&lt;/p&gt;
 &lt;p&gt;Usually using the Access Token takes the form of issuing post requests to Slack with the Access Token as a parameter.&lt;/p&gt;
