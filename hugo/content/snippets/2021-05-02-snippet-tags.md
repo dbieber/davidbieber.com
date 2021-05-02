@@ -39,4 +39,4 @@ Recently I added tags to my snippets. Today, I updated the [tags page](/tags/) t
 - [Esperanto (1)](/tags/esperanto/)
 - [Princeton ACM (2)](/tags/princeton-acm/)
 
-Looking this over, I think I'd like to normalize the format of the tags. The ones with capital letters at the end date from before I started snippets; those are the tags I used to categorize the projects on my website. I also see I've only written about puzzles twice. Perhaps I'll write about puzzles more.
+Looking this over, I think I'd like to normalize the format of the tags. The ones with capital letters at the end date from before I started snippets; those are the tags I used to categorize the projects on my website. I also see I've only written about puzzles twice. Perhaps I'll write about puzzles more. Also, why is there no tag to find all snippets about Bieber Bot? I'll have to fix this.
