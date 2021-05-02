@@ -6,7 +6,7 @@ weight = -20180101
 date = 2018-01-01T00:00:00
 
 summary = "My faithful robot companion."
-tags = ["Software", "Productivity", "Robot", "Just for Fun"]
+tags = ["Software", "Productivity", "Just for Fun", "google apps script"]
 
 external_link = ""
 
