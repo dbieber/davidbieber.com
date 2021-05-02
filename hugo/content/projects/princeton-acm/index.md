@@ -6,7 +6,7 @@ weight = -20140301
 date = 2014-03-01T00:00:00
 
 summary = "The Princeton University student chapter of ACM."
-tags = ["Education"]
+tags = ["Education", "Princeton ACM"]
 
 external_link = "https://princetonacm.com"
 [image]

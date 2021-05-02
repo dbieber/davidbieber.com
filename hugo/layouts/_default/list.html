@@ -7,6 +7,7 @@
   <div class="article-style">{{ . }}</div>
   {{ end }}
 
+  {{ $pageScope := . }}
   {{ $paginator := .Paginate .Data.Pages }}
   {{ range $paginator.Pages }}
   {{ if .Params.incomplete }}
@@ -26,6 +27,9 @@
     <a href="{{ .RelPermalink }}">
       <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
       {{ .Title }}
+      {{ if eq $pageScope.Title "Tags" }}
+      ({{ len .RegularPages }})
+      {{ end}}
     </a>
     </h3>
   </div>

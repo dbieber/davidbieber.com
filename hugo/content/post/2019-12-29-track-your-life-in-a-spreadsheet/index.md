@@ -6,6 +6,8 @@ draft = false
 
 summary = "I use a daily activity log to track my habits and plan future activities."
 
+tags = ["google apps script"]
+
 [image]
   caption = ""
   focal_point = ""

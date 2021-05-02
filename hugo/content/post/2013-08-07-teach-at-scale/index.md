@@ -7,7 +7,7 @@ lastmod = 2013-08-07T01:00:00
 draft = false
 authors = ["admin"]
 
-tags = ["Education"]
+tags = ["Education", "Hardware"]
 summary = ""
 
 [image]
