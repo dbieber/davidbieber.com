@@ -1,5 +1,5 @@
 +++
-title = "Making a BrowserFlow flow for Eleven Table Tennis VR"
+title = "Making a Browserflow Flow for Eleven Table Tennis VR"
 date = 2021-05-01T00:00:00
 tags = ["table tennis", "browserflow"]
 keywords = ["table tennis", "virtual reality"]
