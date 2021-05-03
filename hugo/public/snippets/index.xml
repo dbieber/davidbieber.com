@@ -13,6 +13,16 @@
     </image>
     
     <item>
+      <title>Lighthouse (Incomplete)</title>
+      <link>https://davidbieber.com/snippets/2021-05-03-lighthouse/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-05-03-lighthouse/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://web.dev/measure/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;web.dev&lt;/a&gt; is a tool for measuring your website&amp;rsquo;s performance and getting tips for how to improve it. I&amp;rsquo;m in the process of following some of it&amp;rsquo;s suggestions right now.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Tags on Snippets</title>
       <link>https://davidbieber.com/snippets/2021-05-02-snippet-tags/</link>
       <pubDate>Sun, 02 May 2021 00:00:00 +0000</pubDate>
