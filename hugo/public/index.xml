@@ -306,12 +306,19 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
     </item>
     
     <item>
-      <title>Lighthouse (Incomplete)</title>
+      <title>Lighthouse</title>
       <link>https://davidbieber.com/snippets/2021-05-03-lighthouse/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2021-05-03-lighthouse/</guid>
       <description>&lt;p&gt;
-&lt;a href=&#34;https://web.dev/measure/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;web.dev&lt;/a&gt; is a tool for measuring your website&amp;rsquo;s performance and getting tips for how to improve it. I&amp;rsquo;m in the process of following some of it&amp;rsquo;s suggestions right now.&lt;/p&gt;
+&lt;a href=&#34;https://web.dev/measure/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;web.dev&lt;/a&gt; (former known as Lighthouse) is a tool for measuring your website&amp;rsquo;s performance and getting tips for how to improve it. I&amp;rsquo;m in the process of following some of it&amp;rsquo;s suggestions right now.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Working session&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;One of web.dev&amp;rsquo;s suggestions was to enable gzip compression of the pages on my website.&lt;/p&gt;
+&lt;p&gt;Tornado supports this, but only starting at version 4.0 and newer. I&amp;rsquo;m on an older version.&lt;/p&gt;
+&lt;p&gt;I cannot seem to pip install a newer version.&lt;/p&gt;
+&lt;p&gt;I cannot update pip.&lt;/p&gt;
+&lt;p&gt;I cannot install Python 3.&lt;/p&gt;
+&lt;p&gt;Why?&lt;/p&gt;
 </description>
     </item>
     
