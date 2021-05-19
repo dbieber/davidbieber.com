@@ -5,12 +5,38 @@
     <link>https://davidbieber.com/tags/tech-tips/</link>
       <atom:link href="https://davidbieber.com/tags/tech-tips/index.xml" rel="self" type="application/rss+xml" />
     <description>tech-tips</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 24 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 19 May 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>tech-tips</title>
       <link>https://davidbieber.com/tags/tech-tips/</link>
     </image>
+    
+    <item>
+      <title>You Have 30 Days to Request a Review</title>
+      <link>https://davidbieber.com/snippets/2021-05-19-thirty-days-to-request-a-review/</link>
+      <pubDate>Wed, 19 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-05-19-thirty-days-to-request-a-review/</guid>
+      <description>&lt;p&gt;Today I received an unexpected email from Facebook. Subject: &amp;ldquo;Action needed on your Facebook account&amp;rdquo;. It starts: &amp;ldquo;You Have 30 Days to Request a Review&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;The email read:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Hi David,
+Your Facebook account has been disabled. This is because your account, or activity on it, doesn&#39;t follow our Community Standards.
+
+If you think we disabled your account by mistake, we can take you through a few steps to request a review. You&#39;ll need to complete these steps within 30 days to avoid your account being permanently disabled.
+
+You can learn more about why we sometimes disable accounts by visiting the Community Standards.
+ 
+Thanks,
+The Facebook Security Team
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There was a large blue button &amp;ldquo;Request Review&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;I have no idea why my account was disabled. There was no indication in the email. I don&amp;rsquo;t really use Facebook proper much &amp;ndash; do the Community Standards require that I use Facebook more? No, that would be absurd. I do use Messenger quite a bit. I have a Messenger bot, Bieber Bot. Did Bieber Bot violate some Bot guidelines? I don&amp;rsquo;t think so. Outside of Messenger my only Facebook activity is coordinating table tennis matches with strangers.&lt;/p&gt;
+&lt;p&gt;I clicked &amp;ldquo;Request Review&amp;rdquo;. The system says it wants to confirm my identity. There&amp;rsquo;s a grayed out &amp;ldquo;Continue&amp;rdquo; button but no way to click it. After a few minutes of trying to figure out how to click the button, I switch to Firefox. In Firefox the screen looks a bit different: there&amp;rsquo;s a &amp;ldquo;Prove your not a robot&amp;rdquo; checkbox for me to click. I couldn&amp;rsquo;t see it when I was in Chrome, but now that I&amp;rsquo;m in Firefox the checkbox is visible.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d never quite understood how a single checkbox can prove I&amp;rsquo;m not a robot. It didn&amp;rsquo;t make sense. A robot can check a box just as well as anyone, or so I thought. Maybe Google looks at timing data or the location of your mouse, or other properties of your browser, and predicts if you&amp;rsquo;re a robot from that. Now I understand &amp;ndash; I couldn&amp;rsquo;t see the checkbox when I was in Chrome. &lt;em&gt;I&lt;/em&gt; was the robot! Robots simply can&amp;rsquo;t see that checkbox. By switching to Firefox I restored my humanity. I checked the box and proceeded.&lt;/p&gt;
+&lt;p&gt;The review lasted all of 100ms. After proving my humanity and initiating the review of my account for satisfaction of the Community Standards, my account was immediately restored. I&amp;rsquo;m grateful for this, since I rely on Bieber Bot and Messenger quite heavily.&lt;/p&gt;
+&lt;p&gt;Glad I thought to try Firefox. I didn&amp;rsquo;t see any way to move forward otherwise. With my account restored, I can now resume my day.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>What links here?</title>

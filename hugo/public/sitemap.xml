@@ -49,7 +49,22 @@
   
   <url>
     <loc>https://davidbieber.com/</loc>
-    <lastmod>2021-05-16T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidbieber.com/tags/</loc>
+    <lastmod>2021-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidbieber.com/tags/tech-tips/</loc>
+    <lastmod>2021-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidbieber.com/snippets/2021-05-19-thirty-days-to-request-a-review/</loc>
+    <lastmod>2021-05-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -64,11 +79,6 @@
   
   <url>
     <loc>https://davidbieber.com/tags/snippets/</loc>
-    <lastmod>2021-05-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://davidbieber.com/tags/</loc>
     <lastmod>2021-05-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -119,11 +129,6 @@
   
   <url>
     <loc>https://davidbieber.com/tags/roam-research/</loc>
-    <lastmod>2021-04-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://davidbieber.com/tags/tech-tips/</loc>
     <lastmod>2021-04-24T00:00:00+00:00</lastmod>
   </url>
   
