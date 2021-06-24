@@ -1,6 +1,6 @@
 +++
 title = "Backhand flicks, drives, loops, and pushes"
-date = 2021-06-18T00:00:00
+date = 2021-06-21T00:00:00
 tags = ["table tennis"]
 +++
 

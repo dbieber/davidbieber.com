@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 18 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 21 Jun 2021 01:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>David Bieber</title>
@@ -306,10 +306,25 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
     </item>
     
     <item>
+      <title>Responding to side-spin</title>
+      <link>https://davidbieber.com/snippets/2021-06-21-responding-to-side-spin/</link>
+      <pubDate>Mon, 21 Jun 2021 01:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-06-21-responding-to-side-spin/</guid>
+      <description>&lt;p&gt;If the server moves their paddle from your left top right across the ball, then add the ball cones toward you its trajectory will bend to your left. You&amp;rsquo;ll want to hit it further left, otherwise it will bounce off your racket to the right and go out.&lt;/p&gt;
+&lt;p&gt;How best to think about this?
+The ball is spinning to your left; that&amp;rsquo;s why the trajectory bends to your left. By &amp;ldquo;spinning to your left&amp;rdquo;, I refer to the direction the part of the ball leading the trajectory is moving in. Since the ball&amp;rsquo;s coming toward you, it&amp;rsquo;s the part of the ball closest to you that is moving left; the part furthest from you is moving to your right. The Magnus effect cause the trajectory to bend in the direction that leading edge of the ball is traveling in.&lt;/p&gt;
+&lt;p&gt;This is why topspin balls fall faster and backspin balls float.
+When you hit a topspin ball, the leading part of the ball (furthest from you) is moving down. In a backspin shot the leading part of the ball is moving up.&lt;/p&gt;
+&lt;p&gt;When the side-spin ball bounces on the table, it can bounce to the left. When it bounces off your racket, however, it will move to the right. The same spin that&amp;rsquo;s left-spin when coming toward you is right-spin when moving away from you. It isn&amp;rsquo;t that the spin reversed. The spin stayed the same; just the ball&amp;rsquo;s direction reversed. The leading edge is now the one furthest from you. The part of the ball that contacted the paddle was moving left, so it pushed the paddle left and itself right. Now as it moves away it has right-spin on it and the leading edge of the ball in its new trajectory is moving to the right.&lt;/p&gt;
+&lt;p&gt;This suggests a difficult but powerful attack. Send a fast left-spin ball (by moving your paddle to the right) down the right side of the table. When your opponent goes to return it, the default behavior will be for it to bounce to your right, their left, further off the right edge of the table.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Backhand flicks, drives, loops, and pushes</title>
-      <link>https://davidbieber.com/snippets/2021-06-18-backhand-flicks-drives-loops-and-pushes/</link>
-      <pubDate>Fri, 18 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://davidbieber.com/snippets/2021-06-18-backhand-flicks-drives-loops-and-pushes/</guid>
+      <link>https://davidbieber.com/snippets/2021-06-21-backhand-flicks-drives-loops-and-pushes/</link>
+      <pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-06-21-backhand-flicks-drives-loops-and-pushes/</guid>
       <description>&lt;p&gt;&lt;em&gt;Note for potential reader: I&amp;rsquo;m new to this sport, and my commentary might not be correct or good advice :).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;What&amp;rsquo;s the difference between backhand flicks, drives, loops, and pushes?&lt;/p&gt;
 &lt;p&gt;Flicks, drives, and loops all impart topspin on the ball. The backhand push typically imparts backspin.&lt;/p&gt;
