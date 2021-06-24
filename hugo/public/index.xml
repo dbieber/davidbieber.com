@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 19 May 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 17 Jun 2021 04:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>David Bieber</title>
@@ -302,6 +302,100 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Can I put a spreadsheet into Ferdi?</title>
+      <link>https://davidbieber.com/snippets/2021-06-17-spreadsheet-in-ferdi/</link>
+      <pubDate>Thu, 17 Jun 2021 04:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-06-17-spreadsheet-in-ferdi/</guid>
+      <description>&lt;p&gt;Can I put a spreadsheet into Ferdi? I don&amp;rsquo;t see why not. I think if it works well I would want to put my After Work Activities and Automatic Transaction Log spreadsheets into Ferdi so they&amp;rsquo;re always available at my fingertips.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s silly that Chrome doesn&amp;rsquo;t offer tab freezing. Maybe it does. Ferdi&amp;rsquo;s hibernation seems less memory hungry than having extra tabs open in Chrome, but perhaps this is wrong. Chrome doesn&amp;rsquo;t really handle special keyboard-shortcut bound tabs organization super well anyway though. The new cmd-option-a search tabs feature is nice though. Maybe that can let me move some tabs to chrome instead of Ferdi.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A torrent of snippets!</title>
+      <link>https://davidbieber.com/snippets/2021-06-17-a-torrent-of-snippets/</link>
+      <pubDate>Thu, 17 Jun 2021 03:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-06-17-a-torrent-of-snippets/</guid>
+      <description>&lt;p&gt;A torrent of snippets!&lt;/p&gt;
+&lt;p&gt;The reason I&amp;rsquo;m putting out four snippets all at once is I have time to relax on this plane to Austin. The reason I haven&amp;rsquo;t been writing snippets in the month leading up to this&amp;hellip; I think I was shaken from the habit by the NeurIPS deadline, and then didn&amp;rsquo;t take the habit back up after the deadline passed.&lt;/p&gt;
+&lt;p&gt;I find this pattern recurring, and I remember I was already aware of it at least as far back as 2013. The pattern is: I develop a habit, I am diligent at keeping that habit until it&amp;rsquo;s broken by some event (usually travel), and then I&amp;rsquo;m slow to take the habit back up if I do at all after the perturbation has subsided. In this case, travel is actually the thing leading me to pick the snippets habit back up, rather than the thing to break the habit (although perhaps my snippets-stopping did correspond to a travel time; I&amp;rsquo;d need to look at a calendar to double check.)&lt;/p&gt;
+&lt;p&gt;Anyhow, noticing this pattern suggests a way to combat it, to keep habits through these perturbations. It will require some diligence, but I think the trick is to anticipate the perturbation and make a plan to reignite the habit after its conclusion. For example, if I&amp;rsquo;m traveling for a weekend, I could schedule an email to myself saying &amp;ldquo;resume habit X&amp;rdquo; to be delivered a couple days after I get back from my travels, when I expect the perturbation to have fully passed.&lt;/p&gt;
+&lt;p&gt;I think I&amp;rsquo;ll leave a message for my future self here and now, for next Wednesday:
+David, on Wednesday June 23, resume the &amp;ldquo;Snippets&amp;rdquo; and the &amp;ldquo;After Work Activities&amp;rdquo; habits.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Areas of table tennis to improve at</title>
+      <link>https://davidbieber.com/snippets/2021-06-17-areas-of-table-tennis-to-improve-at/</link>
+      <pubDate>Thu, 17 Jun 2021 02:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-06-17-areas-of-table-tennis-to-improve-at/</guid>
+      <description>&lt;p&gt;Right now the biggest area to work on is having the confidence (and skill) to attack in a match setting.&lt;/p&gt;
+&lt;p&gt;I have this confidence in Eleven Table Tennis (ETT), usually, but in the real world its harder to demonstrate.
+I guess I become conservative in the real world because you have to be responsible for your balls.
+In ETT you can try an aggressive shot and if it goes into the stands or out the window, no big deal. In practice starting aggressive doesn&amp;rsquo;t go so wildly. Still, in ETT you can feed dozens of balls quickly in order to develop the proper feel.&lt;/p&gt;
+&lt;p&gt;I think that&amp;rsquo;s a solid idea to bring into the real world. I&amp;rsquo;ll buy 50+ practice balls and then I can serve a bunch real quickly or multi ball with a partner in order to develop that feel more quickly in the real world.&lt;/p&gt;
+&lt;p&gt;The main areas I want to get good feel for quickly in the real world are backhand flicks and forehand topspin drives.&lt;/p&gt;
+&lt;p&gt;Some of the tips I&amp;rsquo;ve picked up in my month of playing for the backhand flicks are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Follow the ball with your core&lt;/li&gt;
+&lt;li&gt;You don&amp;rsquo;t want to be reaching too much for the ball; you want to reuse the same stroke as much as possible each time.&lt;/li&gt;
+&lt;li&gt;Use shoulder, wrist, and a little torso, I think in that order. A basic shot would be mostly shoulder. For a more attacking show, a proper flick, add in a lot of wrist. Finally for max power, add a tiny bit of torso. And you should use leg power too.&lt;/li&gt;
+&lt;li&gt;Left foot beyond the edge of the table, closer to the table than the right foot&lt;/li&gt;
+&lt;li&gt;Relaxed wrist&lt;/li&gt;
+&lt;li&gt;Watch the ball all the way in&lt;/li&gt;
+&lt;li&gt;Hit the top of the ball, say 2/3 of the way up&lt;/li&gt;
+&lt;li&gt;Practice! Have a plan when starting the point. Always be ready to third ball attack when serving.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;How about tips for the forehand drive?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Move early into position&lt;/li&gt;
+&lt;li&gt;Again the goal is to use the same stroke each time&lt;/li&gt;
+&lt;li&gt;As before shoulder, wrist, and torso are key.
+Wow, despite looking so different the tips are remarkably similar to the backhand flick&lt;/li&gt;
+&lt;li&gt;Watch the ball all the way in&lt;/li&gt;
+&lt;li&gt;Brush up the ball&lt;/li&gt;
+&lt;li&gt;Your stroke ends in front of your face&lt;/li&gt;
+&lt;li&gt;And your wrist points forward from your forearm, not up&lt;/li&gt;
+&lt;li&gt;And I think the squat is perhaps a bit reduced compared with the backhand flick&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Browserflow is live!</title>
+      <link>https://davidbieber.com/snippets/2021-06-17-browserflow-is-live/</link>
+      <pubDate>Thu, 17 Jun 2021 01:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-06-17-browserflow-is-live/</guid>
+      <description>&lt;p&gt;Browserflow is live! Beyond exciting!&lt;/p&gt;
+&lt;p&gt;Congratulations to DK on the launch. For those not familiar, Browserflow is a simple low/no-code browser automation chrome extension that DK&amp;rsquo;s been diligently working on for over a year (read his journey over at 
+&lt;a href=&#34;https://roadtoramen.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;roadtoramen.com&lt;/a&gt;; he&amp;rsquo;s an excellent writer!). You can automate anything in the browser with it, and it comes with a nice typeahead for launching flows from anywhere, as well as a Browserflow Cloud service that lets you schedule your flows to run in the cloud.&lt;/p&gt;
+&lt;p&gt;My favorite use cases for Browserflow are note-taking. Run a flow and then everything you highlight gets copied into Roam. Change the flow a little, and you can use keyboard shortcuts to control how the notes get organized.&lt;/p&gt;
+&lt;p&gt;Other people use flows for scraping info off Twitter, or lead generation, or monitoring stock prices. It&amp;rsquo;s a super general purpose tool. There are so many things you can do with it; it really has so much potential.&lt;/p&gt;
+&lt;p&gt;Web scraping and browser automation aren&amp;rsquo;t new of course, so what makes Browserflow special? It&amp;rsquo;s got craftsmanship. Browserflow is super easy to use, and it feels good to use all the while. DK has really paid close attention to the details to make it work well.&lt;/p&gt;
+&lt;p&gt;Take scraping Twitter, for example. In Browserflow, writing a for loop over all the Tweets on a timeline is trivial. If you were to attempt that with an alternative like Tampermonkey or Selenium, it would be considerably more difficult. You&amp;rsquo;d need to think about how the DOM is changing as you scroll, and which tweets you&amp;rsquo;ve already considered. Browserflow takes care of the details for you so you can focus on writing the logic that matters to you.&lt;/p&gt;
+&lt;p&gt;Give it a try today at 
+&lt;a href=&#34;https://browserflow.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;browserflow.app&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to qualify for the US Olympic table tennis team</title>
+      <link>https://davidbieber.com/snippets/2021-06-17-table-tennis-olympic-qualifiers/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-06-17-table-tennis-olympic-qualifiers/</guid>
+      <description>&lt;p&gt;How to qualify for the US Olympic table tennis team.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Become the best singles table tennis player in the country, preferably by a significant margin&lt;/li&gt;
+&lt;li&gt;Enter the qualifiers&lt;/li&gt;
+&lt;li&gt;Win the qualifiers&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This is far more straightforward than I would have expected. Obviously step 1 presents a significant challenge, and step 2 probably involves some paperwork. Still, it came as a shock to me that a single tournament, open to any USATT player as far as I can tell, which only gets 50 entrants, is all that stands between an aspirational table tennis player and such a significant event as the Olympics.&lt;/p&gt;
+&lt;p&gt;On to step 1!&lt;/p&gt;
 </description>
     </item>
     
