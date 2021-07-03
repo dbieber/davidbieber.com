@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 23 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 03 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>David Bieber</title>
@@ -302,6 +302,30 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reconstructing RL table tennis points in VR</title>
+      <link>https://davidbieber.com/snippets/2021-07-03-reconstructing-rl-tt-in-vr/</link>
+      <pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-07-03-reconstructing-rl-tt-in-vr/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://alexttbarcelona.wixsite.com/home&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Alex TT Barcelona&amp;rdquo;&lt;/a&gt; makes table tennis drills for Eleven Table Tennis.
+In a recently released batch of drills, he took a point played by table tennis pro Mima Ito and reconstructed it in VR. The ball machine would &amp;ndash; endlessly in a loop &amp;ndash; play the role of Mima Ito&amp;rsquo;s opponent. It would launch ping pong balls from the same location and with the same trajectory that Mima Ito&amp;rsquo;s opponent hit the ball during the point.&lt;/p&gt;
+&lt;p&gt;The reconstruction is a great experience; it really demonstrates the level of play, showcasing how fast and wide the ball goes during professional matches. It also highlights the potential of Eleven Table Tennis as a practice tool for real table tennis. You can reconstruct points from your own real-life table tennis matches in virtual reality, and practice them as many times as you like.&lt;/p&gt;
+&lt;p&gt;Today, the process of reconstructing a point from real life in VR is a bit slow and specialized. The way to do it is to open Eleven Table Tennis on a PC (which I don&amp;rsquo;t currently have, making this difficult), and to adjust the ball machine settings on your computer in order to replicate each of your opponent&amp;rsquo;s ball trajectories consecutively.
+Once a full point is done, you can play against the ball machine in VR to practice.&lt;/p&gt;
+&lt;p&gt;At my last table tennis tournament, I took some footage of myself playing (and losing) a real table tennis match.
+I haven&amp;rsquo;t yet tried transcribing it to VR, in part because I don&amp;rsquo;t have a PC. Soon though I hope to transcribe some points so I can practice the shots I&amp;rsquo;m weakest against.&lt;/p&gt;
+&lt;p&gt;I estimate that reconstructing a single shot, once you&amp;rsquo;re practiced in the art of table tennis point transcription, takes about a minute. This means that transcribing a full 5-game match, which might have as many as 300-500 individual shots, could take 5-8 hours.&lt;/p&gt;
+&lt;p&gt;There are several ways to bring this time down. First, and simplest, is to merely transcribe a subset of the points. Only transcribing shots by your opponent immediately cuts the time in half, and you probably only will want to replay perhaps 10 points total anyway, further cutting down the reconstruction time drastically. Outsourcing the reconstruction to e.g. Fiverr seems plausible, but that doesn&amp;rsquo;t save time overall, it merely pushes the time cost onto someone else.&lt;/p&gt;
+&lt;p&gt;Perhaps there&amp;rsquo;s a way to automate the transcription process. 
+&lt;a href=&#34;https://stupaanalytics.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stupa Analytics&lt;/a&gt; uses AI to analyze table tennis matches to provide coaching to players. It seems likely that they model the trajectory of table tennis balls as part of this analysis. Their software works using video from a single phone camera, which is ideal if it works. Perhaps we can build on top of their existing vision systems. I&amp;rsquo;ve reached out to them to inquire, but have not heard back. I&amp;rsquo;ve also tried to use their software, which promised me analysis within 72 hours, but a week later it has still not delivered.&lt;/p&gt;
+&lt;p&gt;Some projects on GitHub also show promise for enabling automated transcription. 
+&lt;a href=&#34;https://github.com/ckjellson/tt_tracker&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ckjellson/tt_tracker&lt;/a&gt; uses OpenCV to track table tennis balls using two camera inputs. 
+&lt;a href=&#34;https://github.com/vmarquet/table-tennis-computer-vision&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;vmarquet/table-tennis-computer-vision&lt;/a&gt; also offers ball tracking for table tennis using OpenCV, though may require specialized sensors (not clear yet). 
+&lt;a href=&#34;https://github.com/maudzung/TTNet-Real-time-Analysis-System-for-Table-Tennis-Pytorch&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;maudzung/TTNet-Real-time-Analysis-System-for-Table-Tennis-Pytorch&lt;/a&gt; uses machine learning to analyze table tennis footage, including ball tracking. These three seem the most promising. Though I don&amp;rsquo;t have any two camera input data currently, I look forward to trying out these projects and seeing if I can repurpose one for RL-to-VR point reconstruction.&lt;/p&gt;
 </description>
     </item>
     
