@@ -4480,7 +4480,8 @@ For making additions to a Roam database automatically, I expect the extension wo
       <guid>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</guid>
       <description>&lt;p&gt;If you run this snippet of Python code, it will submit this 
 &lt;a href=&#34;https://davidbieber.com/snippets/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Snippet&amp;rdquo;&lt;/a&gt; (the one you&amp;rsquo;re currently reading) to Hacker News.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import getpass
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from html.parser import HTMLParser
+import getpass
 import requests
 import time
 

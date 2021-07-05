@@ -8,6 +8,7 @@ keywords = ["hacker news", "messager"]
 If you run this snippet of Python code, it will submit this ["Snippet"](https://davidbieber.com/snippets/) (the one you're currently reading) to Hacker News.
 
 ```python
+from html.parser import HTMLParser
 import getpass
 import requests
 import time
