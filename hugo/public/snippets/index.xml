@@ -3921,6 +3921,7 @@ For making additions to a Roam database automatically, I expect the extension wo
 &lt;a href=&#34;https://davidbieber.com/snippets/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Snippet&amp;rdquo;&lt;/a&gt; (the one you&amp;rsquo;re currently reading) to Hacker News.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import getpass
 import requests
+import time
 
 USERNAME = (
     &#39;&#39;  # Put your Hacker News username here.
@@ -3932,22 +3933,38 @@ PASSWORD = (
 )
 # You can reconfigure the title and url to submit here.
 TITLE_TO_SUBMIT = &#39;Posting to Hacker News Programmatically&#39;
-URL_TO_SUBMIT = &#39;davidbieber.com/snippets/2020-05-02-hackernews-submit/&#39;
+URL_TO_SUBMIT = &#39;https://davidbieber.com/snippets/2020-05-02-hackernews-submit/&#39;
 
+# Login
 session = requests.Session()
 session.post(
     &#39;https://news.ycombinator.com/login&#39;,
     data={
         &#39;acct&#39;: USERNAME,
         &#39;pw&#39;: PASSWORD,
-    }
+    },
 )
+
+# Get the CSRF token (&amp;quot;FNID&amp;quot;)
+time.sleep(1)
+class FNIDExtractor(HTMLParser):
+  fnid = None
+  def handle_starttag(self, tag, attrs):
+    if tag.lower() == &#39;input&#39; and (&#39;name&#39;, &#39;fnid&#39;) in attrs:
+      self.fnid = dict(attrs)[&#39;value&#39;]
+f = FNIDExtractor()
+submit_response = session.get(&#39;https://news.ycombinator.com/submit&#39;)
+f.feed(submit_response.text)
+
+# Submit
+time.sleep(2)
 session.post(
-    &#39;https://news.ycombinator.com/submit&#39;,
+    &#39;https://news.ycombinator.com/r&#39;,
     data={
         &#39;title&#39;: TITLE_TO_SUBMIT,
         &#39;url&#39;: URL_TO_SUBMIT,
-    }
+        &#39;fnid&#39;: f.fnid,
+    },
 )
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You can change the title and URL before running this to make a new submission, or run it as is to submit this snippet.&lt;/p&gt;

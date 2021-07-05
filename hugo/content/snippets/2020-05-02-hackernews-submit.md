@@ -10,6 +10,7 @@ If you run this snippet of Python code, it will submit this ["Snippet"](https://
 ```python
 import getpass
 import requests
+import time
 
 USERNAME = (
     ''  # Put your Hacker News username here.
@@ -21,22 +22,38 @@ PASSWORD = (
 )
 # You can reconfigure the title and url to submit here.
 TITLE_TO_SUBMIT = 'Posting to Hacker News Programmatically'
-URL_TO_SUBMIT = 'davidbieber.com/snippets/2020-05-02-hackernews-submit/'
+URL_TO_SUBMIT = 'https://davidbieber.com/snippets/2020-05-02-hackernews-submit/'
 
+# Login
 session = requests.Session()
 session.post(
     'https://news.ycombinator.com/login',
     data={
         'acct': USERNAME,
         'pw': PASSWORD,
-    }
+    },
 )
+
+# Get the CSRF token ("FNID")
+time.sleep(1)
+class FNIDExtractor(HTMLParser):
+  fnid = None
+  def handle_starttag(self, tag, attrs):
+    if tag.lower() == 'input' and ('name', 'fnid') in attrs:
+      self.fnid = dict(attrs)['value']
+f = FNIDExtractor()
+submit_response = session.get('https://news.ycombinator.com/submit')
+f.feed(submit_response.text)
+
+# Submit
+time.sleep(2)
 session.post(
-    'https://news.ycombinator.com/submit',
+    'https://news.ycombinator.com/r',
     data={
         'title': TITLE_TO_SUBMIT,
         'url': URL_TO_SUBMIT,
-    }
+        'fnid': f.fnid,
+    },
 )
 ```
 

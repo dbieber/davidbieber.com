@@ -29,7 +29,7 @@
     
   
   <meta name="description" content="If you run this snippet of Python code, it will submit this &ldquo;Snippet&rdquo; (the one you&rsquo;re currently reading) to Hacker News.
-import getpass import requests USERNAME = ( &#39;&#39; # Put your Hacker News username here. or getpass.getuser() # (But if you don&#39;t, we&#39;ll try a sensible default.) ) PASSWORD = ( &#39;&#39; # We&#39;ll prompt you for your password, or you can enter it here. or getpass.getpass() ) # You can reconfigure the title and url to submit here.">
+import getpass import requests import time USERNAME = ( &#39;&#39; # Put your Hacker News username here. or getpass.getuser() # (But if you don&#39;t, we&#39;ll try a sensible default.) ) PASSWORD = ( &#39;&#39; # We&#39;ll prompt you for your password, or you can enter it here. or getpass.getpass() ) # You can reconfigure the title and url to submit here.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-05-02-hackernews-submit/">
@@ -272,7 +272,7 @@ import getpass import requests USERNAME = ( &#39;&#39; # Put your Hacker News us
   <meta property="og:url" content="https://davidbieber.com/snippets/2020-05-02-hackernews-submit/">
   <meta property="og:title" content="Posting to Hacker News Programmatically | David Bieber">
   <meta property="og:description" content="If you run this snippet of Python code, it will submit this &ldquo;Snippet&rdquo; (the one you&rsquo;re currently reading) to Hacker News.
-import getpass import requests USERNAME = ( &#39;&#39; # Put your Hacker News username here. or getpass.getuser() # (But if you don&#39;t, we&#39;ll try a sensible default.) ) PASSWORD = ( &#39;&#39; # We&#39;ll prompt you for your password, or you can enter it here. or getpass.getpass() ) # You can reconfigure the title and url to submit here."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+import getpass import requests import time USERNAME = ( &#39;&#39; # Put your Hacker News username here. or getpass.getuser() # (But if you don&#39;t, we&#39;ll try a sensible default.) ) PASSWORD = ( &#39;&#39; # We&#39;ll prompt you for your password, or you can enter it here. or getpass.getpass() ) # You can reconfigure the title and url to submit here."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
@@ -529,6 +529,7 @@ import getpass import requests USERNAME = ( &#39;&#39; # Put your Hacker News us
 <a href="https://davidbieber.com/snippets/" target="_blank" rel="noopener">&ldquo;Snippet&rdquo;</a> (the one you&rsquo;re currently reading) to Hacker News.</p>
 <pre><code class="language-python">import getpass
 import requests
+import time
 
 USERNAME = (
     ''  # Put your Hacker News username here.
@@ -540,22 +541,38 @@ PASSWORD = (
 )
 # You can reconfigure the title and url to submit here.
 TITLE_TO_SUBMIT = 'Posting to Hacker News Programmatically'
-URL_TO_SUBMIT = 'davidbieber.com/snippets/2020-05-02-hackernews-submit/'
+URL_TO_SUBMIT = 'https://davidbieber.com/snippets/2020-05-02-hackernews-submit/'
 
+# Login
 session = requests.Session()
 session.post(
     'https://news.ycombinator.com/login',
     data={
         'acct': USERNAME,
         'pw': PASSWORD,
-    }
+    },
 )
+
+# Get the CSRF token (&quot;FNID&quot;)
+time.sleep(1)
+class FNIDExtractor(HTMLParser):
+  fnid = None
+  def handle_starttag(self, tag, attrs):
+    if tag.lower() == 'input' and ('name', 'fnid') in attrs:
+      self.fnid = dict(attrs)['value']
+f = FNIDExtractor()
+submit_response = session.get('https://news.ycombinator.com/submit')
+f.feed(submit_response.text)
+
+# Submit
+time.sleep(2)
 session.post(
-    'https://news.ycombinator.com/submit',
+    'https://news.ycombinator.com/r',
     data={
         'title': TITLE_TO_SUBMIT,
         'url': URL_TO_SUBMIT,
-    }
+        'fnid': f.fnid,
+    },
 )
 </code></pre>
 <p>You can change the title and URL before running this to make a new submission, or run it as is to submit this snippet.</p>
