@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 03 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 06 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>David Bieber</title>
@@ -302,6 +302,24 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assorted Laptop Price Comparisons</title>
+      <link>https://davidbieber.com/snippets/2021-07-06-laptop-prices/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-07-06-laptop-prices/</guid>
+      <description>&lt;p&gt;A 16 GB 13‑inch MacBook Pro costs $1400.&lt;/p&gt;
+&lt;p&gt;A 4 GB ASUS Chromebook costs $300.&lt;/p&gt;
+&lt;p&gt;An 8 GB 14-inch ThinkPad T14 costs $1300.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;For a 16 GB Chromebook, the Google Pixelbook Go costs $1000.&lt;/p&gt;
+&lt;p&gt;For a 16 GB ThinkPad, Lenovo charges $1600.&lt;/p&gt;
+&lt;p&gt;For a 64 GB 16-inch MacBook Pro, Apple charges $3000.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Just a little snapshot of the laptop world&amp;rsquo;s prices these days.
+Soon we&amp;rsquo;ll see what tomorrow brings.&lt;/p&gt;
 </description>
     </item>
     
