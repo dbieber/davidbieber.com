@@ -311,9 +311,9 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2021-07-11-setting-up-computer/</guid>
       <description>&lt;h3 id=&#34;1-configuring-chrome&#34;&gt;1. Configuring Chrome&lt;/h3&gt;
-&lt;p&gt;Logged into my personal account and my corp account. Chrome extensions synced automatically. A few of them prompted me to log in. No hassle here.&lt;/p&gt;
+&lt;p&gt;Log into my personal account and my corp account. Chrome extensions sync automatically. A few of them prompt me to log in. No hassle here.&lt;/p&gt;
 &lt;h3 id=&#34;2-downloading-staple-software&#34;&gt;2. Downloading Staple Software&lt;/h3&gt;
-&lt;p&gt;Downloaded Sublime Text. Downloaded Spectacle. Remap modifier keys. Configure Spectacle.&lt;/p&gt;
+&lt;p&gt;Download Sublime Text. Download Spectacle. Remap modifier keys. Configure Spectacle.&lt;/p&gt;
 &lt;h3 id=&#34;3-set-up-terminal&#34;&gt;3. Set up Terminal&lt;/h3&gt;
 &lt;p&gt;Set theme. Copy in bashrc. Install Brew. Install pyenv. Add ssh key to GitHub. Clone website.
 Install emacs. Configure git. Commit this snippet.
