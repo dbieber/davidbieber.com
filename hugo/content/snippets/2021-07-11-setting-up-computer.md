@@ -6,11 +6,11 @@ tags = ["tech-tips"]
 
 ### 1. Configuring Chrome
 
-Logged into my personal account and my corp account. Chrome extensions synced automatically. A few of them prompted me to log in. No hassle here.
+Log into my personal account and my corp account. Chrome extensions sync automatically. A few of them prompt me to log in. No hassle here.
 
 ### 2. Downloading Staple Software
 
-Downloaded Sublime Text. Downloaded Spectacle. Remap modifier keys. Configure Spectacle.
+Download Sublime Text. Download Spectacle. Remap modifier keys. Configure Spectacle.
 
 ### 3. Set up Terminal
 
