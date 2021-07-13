@@ -13,6 +13,38 @@
     </image>
     
     <item>
+      <title>Notes from setting up a new computer</title>
+      <link>https://davidbieber.com/snippets/2021-07-11-setting-up-computer/</link>
+      <pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-07-11-setting-up-computer/</guid>
+      <description>&lt;h3 id=&#34;1-configuring-chrome&#34;&gt;1. Configuring Chrome&lt;/h3&gt;
+&lt;p&gt;Logged into my personal account and my corp account. Chrome extensions synced automatically. A few of them prompted me to log in. No hassle here.&lt;/p&gt;
+&lt;h3 id=&#34;2-downloading-staple-software&#34;&gt;2. Downloading Staple Software&lt;/h3&gt;
+&lt;p&gt;Downloaded Sublime Text. Downloaded Spectacle. Remap modifier keys. Configure Spectacle.&lt;/p&gt;
+&lt;h3 id=&#34;3-set-up-terminal&#34;&gt;3. Set up Terminal&lt;/h3&gt;
+&lt;p&gt;Set theme. Copy in bashrc. Install Brew. Install pyenv. Add ssh key to GitHub. Clone website.
+Install emacs. Configure git. Commit this snippet.
+Set up virtualenvwrapper.
+Clone supervisor config. Sublime Package Manager. INI syntax highlighting.
+Map shift-delete, option-delete, and ctrl-delete in Terminal to \027, \027, \033\177 respectively.&lt;/p&gt;
+&lt;h3 id=&#34;4-personal-projects&#34;&gt;4. Personal projects&lt;/h3&gt;
+&lt;p&gt;Install supervisor. Clone personal projects (snippet-publisher, messager, fb-chat-spreadsheet-updater, cloudbrowser, distraction_detection, kangaroo-auto-responder, private-bieber-twitter, screencapture, local-python-libraries). Install requirements. Install jupyter.&lt;/p&gt;
+&lt;p&gt;Note: brew install leveldb before pip install plyvel. brew install redis. Download Hugo. brew install node.
+npm install &amp;ndash;save-dev babel-cli. npm install -g parcel-bundler. npm audit fix. Hugo assets may need permission changes. pip install psycopg2-binary. Run python setup.py develop in messenger/, local-python-libraries/.
+Copy messager settings.
+
+&lt;a href=&#34;https://github.com/fbchat-dev/fbchat/issues/615&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Modify fbchat source&lt;/a&gt;.
+Log into messager.
+Install Docker.&lt;/p&gt;
+&lt;p&gt;Start supervisor.&lt;/p&gt;
+&lt;h3 id=&#34;5-it-continues&#34;&gt;5. It continues&lt;/h3&gt;
+&lt;p&gt;Arrange displays. Install gcloud (brew install &amp;ndash;cask google-cloud-sdk). Install Browserflow.
+Set up Ferdi.&lt;/p&gt;
+&lt;p&gt;LGTM.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Why do table tennis strokes end at the forehead?</title>
       <link>https://davidbieber.com/snippets/2021-07-10-forehand-to-forehead/</link>
       <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
