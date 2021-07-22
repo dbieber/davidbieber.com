@@ -39,7 +39,7 @@ Install Docker.&lt;/p&gt;
 &lt;p&gt;Start supervisor.&lt;/p&gt;
 &lt;h3 id=&#34;5-it-continues&#34;&gt;5. It continues&lt;/h3&gt;
 &lt;p&gt;Arrange displays. Install gcloud (brew install &amp;ndash;cask google-cloud-sdk). Install Browserflow.
-Set up Ferdi.&lt;/p&gt;
+Set up Ferdi. Set screenshot directory.&lt;/p&gt;
 &lt;p&gt;LGTM.&lt;/p&gt;
 </description>
     </item>
