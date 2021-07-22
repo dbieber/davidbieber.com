@@ -36,6 +36,6 @@ Start supervisor.
 ### 5. It continues
 
 Arrange displays. Install gcloud (brew install --cask google-cloud-sdk). Install Browserflow.
-Set up Ferdi.
+Set up Ferdi. Set screenshot directory.
 
 LGTM.
