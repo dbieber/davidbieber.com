@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 22 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 29 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>David Bieber</title>
@@ -306,6 +306,47 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
     </item>
     
     <item>
+      <title>Browserflow Note-taking Flow</title>
+      <link>https://davidbieber.com/snippets/2021-07-29-note-taking-flow/</link>
+      <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-07-29-note-taking-flow/</guid>
+      <description>&lt;p&gt;Quick update on the note-taking Browserflow flow I&amp;rsquo;ve been building (&lt;a href=&#34;https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7):&#34;&gt;https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7):&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;how-it-works&#34;&gt;How it works&lt;/h2&gt;
+&lt;p&gt;When you run it, it injects some js into the page you&amp;rsquo;re viewing enabling a handful of keyboard shortcuts to enable clipping text into Roam from anywhere on the web.&lt;/p&gt;
+&lt;p&gt;If you navigate to a new page, it will run that js on the new page. So it keeps the keyboard shortcuts active even if you follow links.&lt;/p&gt;
+&lt;p&gt;It also removes the status overlay, so you can interact with the page more easily.&lt;/p&gt;
+&lt;h2 id=&#34;the-keyboard-shortcuts-currently-are&#34;&gt;The keyboard shortcuts currently are:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[enter]: saves the current selection as a note to Roam&lt;/li&gt;
+&lt;li&gt;q, !, @, *, &amp;gt;: saves the current selection as a note to Roam tagged as a {question, &amp;ldquo;Wow&amp;rdquo;, Share, key idea, or block quote} (I don&amp;rsquo;t really use these)&lt;/li&gt;
+&lt;li&gt;p: saves the paragraph containing the selection to Roam, with the selection highlighted&lt;/li&gt;
+&lt;li&gt;s: Asks for an element in browserflow. Saves a screenshot of the element to Roam. Doesn&amp;rsquo;t work. (hmm&amp;hellip; why not?)&lt;/li&gt;
+&lt;li&gt;h: saves the sentence containing the selection to Roam, with the selection highlighted&lt;/li&gt;
+&lt;li&gt;c: saves the sentence containing the selection to Roam as a &amp;ldquo;cloze&amp;rdquo; (fill-in-the-blank) task for spaced repetition, with the selection as the fill-in-the-blank&lt;/li&gt;
+&lt;li&gt;b: (big cloze) saves the paragraph containing the selection to Roam as a &amp;ldquo;cloze&amp;rdquo; (fill-in-the-blank) task for spaced repetition, with the selection as the fill-in-the-blank&lt;/li&gt;
+&lt;li&gt;.: quit (I use this to reenable keyboard shortcuts for tab switching)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;some-feature-requests--debug-things&#34;&gt;Some feature requests / debug things&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Would be nice to keep some status indicator, just in the corner or page title instead of blocking the full page.&lt;/li&gt;
+&lt;li&gt;It depends on a couple other flows. Would be nice to be able to share just a single link.&lt;/li&gt;
+&lt;li&gt;It switches to the roamresearch.com tab and back whenever you save a note. Would be nice if this worked even if roam were in a different window. The user shouldn&amp;rsquo;t have to care about exactly where roam is open.&lt;/li&gt;
+&lt;li&gt;Why doesn&amp;rsquo;t the element screenshotting work?&lt;/li&gt;
+&lt;li&gt;Would be nice to allow tab switching in a flow without having to quit the flow.&lt;/li&gt;
+&lt;li&gt;For a note-taking flow like this, it can easily be running for hours. Doesn&amp;rsquo;t mix super well with the free tier of billing.&lt;/li&gt;
+&lt;li&gt;A few of these could be solved with an &amp;ldquo;Enable interaction with page&amp;rdquo; action&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;the-dependency-flows-needed-to-check-it-out-are&#34;&gt;The dependency flows needed to check it out are:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&#34;&gt;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&#34;&gt;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&#34;&gt;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To try out the flow, you&amp;rsquo;ll need Browserflow, an open Roam tab, and all four flows linked in this snippet. Run the first flow (&amp;ldquo;Roam: Highlights&amp;rdquo;) on a web page (with Roam open in a different tab in the same window). Highlight some text, (say, the words &amp;ldquo;some text&amp;rdquo; in this sentence), and hit enter. You can try any of the shortcuts listed above. Notice as the flow copies your selection into your daily notes organized by time and website.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Why table tennis strokes end at the forehead</title>
       <link>https://davidbieber.com/snippets/2021-07-22-forehead-is-forward/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
@@ -324,6 +365,26 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
 &lt;p&gt;This is a bit counterintuitive since my forehead is up and right, not forward, relative to where my stroke used to end. Still, by focusing on hitting more forward, it seems I cannot cut the stroke short and I don&amp;rsquo;t move as much to the left. This should reduce side spin, maybe increase top spin, and definitely increase power on my strokes.&lt;/p&gt;
 &lt;p&gt;Now, I&amp;rsquo;ve only had the opportunity to play a small amount since making this realization. It&amp;rsquo;s still going to take lots of practice to incorporate this more fully into my game. It feels good though, the strokes are strong and natural. It doesn&amp;rsquo;t feel rote, but it does feel mostly intuitive, which is a good place to start from. Contrast this with when I was trying to land the stroke at my forehead. For those attempts, the stroke felt unnatural and I would usually miss.&lt;/p&gt;
 &lt;p&gt;Looking forward to drilling my new stroke extensively tonight.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Weak and Strong Law of Large Numbers</title>
+      <link>https://davidbieber.com/snippets/2021-07-18-laws-of-large-numbers/</link>
+      <pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-07-18-laws-of-large-numbers/</guid>
+      <description>&lt;p&gt;$X_i$s are i.i.d random variables with finite expected value.&lt;/p&gt;
+&lt;p&gt;$S_n$ is the sum of first $n$ random variables (the sample mean).&lt;br/&gt;
+$\mu$ is the true mean (the population mean).&lt;/p&gt;
+&lt;p&gt;Both the &lt;em&gt;Weak Law of Large Numbers&lt;/em&gt; and the &lt;em&gt;Strong Law of Large Numbers&lt;/em&gt; say that sample mean likely converges to the population mean as sample size increases.&lt;/p&gt;
+&lt;p&gt;The Weak law guarantees &lt;em&gt;convergence in probability&lt;/em&gt;.&lt;br/&gt;
+The Strong law guarantees &lt;em&gt;almost sure convergence&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Weak law: $\lim\limits_{n \to \infty} \text{Pr}\left(|S_n - \mu| &amp;lt; \epsilon\right) = 1$&lt;br/&gt;
+Strong law: $\text{Pr}\left(\lim\limits_{n \to \infty} S_n = \mu\right) = 1$&lt;/p&gt;
+&lt;p&gt;Neither occurence of &amp;ldquo;$=1$&amp;rdquo; means that any event is guaranteed. There&amp;rsquo;s simply infinitesimal probability that an event does not occur.&lt;/p&gt;
+&lt;p&gt;The weak law says that for any threshold distance from the true mean $\epsilon$ that you select, as the number of samples increases, the probability that the sample mean is within $\epsilon$ from the true mean approaches one. Even as the number of samples increases there is still the possibility of the sample mean being further than $\epsilon$ from the true mean; that possibility simply approaches being infinitesimal as the number of samples increases.&lt;/p&gt;
+&lt;p&gt;The strong law similarly doesn&amp;rsquo;t guarantee that the sample mean must ever equal the true mean. It says that with probability 1 (aka &amp;ldquo;almost surely&amp;rdquo;) the limit of the sample mean equals the true mean.
+The reason we call probability 1 &amp;ldquo;almost surely&amp;rdquo; rather than &amp;ldquo;surely&amp;rdquo; is that there are still valid sequences of samples where the sample mean doesn&amp;rsquo;t approach the true mean; these sample outcomes are simply an infinitesimal fraction of the total sample space.&lt;/p&gt;
 </description>
     </item>
     
