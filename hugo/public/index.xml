@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 29 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>David Bieber</title>
@@ -302,6 +302,50 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CRISPR Gardening</title>
+      <link>https://davidbieber.com/snippets/2021-08-09-crispr-gardening/</link>
+      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-08-09-crispr-gardening/</guid>
+      <description>&lt;p&gt;Everyone likes their veggies crisp, so who wouldn&amp;rsquo;t want CRISPR veggies?
+After reading The Code Breaker, I&amp;rsquo;ve become progressively more excited about the possibilities that gene editing will bring in the coming decades.&lt;/p&gt;
+&lt;p&gt;Or sooner? The technology has matured remarkably quickly and is developing incredibly fast.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t have a full grasp of where things stand today, but this is just a snippet, so I won&amp;rsquo;t let that stop me from speculating about where we&amp;rsquo;re heading. Take everything here with a grain of salt.&lt;/p&gt;
+&lt;p&gt;Today, we can perform germline gene editing somewhat reliably. It&amp;rsquo;s been done on human beings; the scientist who performed this first, I believe has gone to jail for the ethics violations involved in doing so. Our interest in this snippet, however, doesn&amp;rsquo;t have the full set of ethical qualms that applying gene editing to humans has. We&amp;rsquo;re interested in applying gene editing to plants.&lt;/p&gt;
+&lt;p&gt;GMOs aren&amp;rsquo;t knew, but they&amp;rsquo;re (at least in the big picture) in their infancy. Today, particular seeds have been patented, leading to monopolistic anti-competitive practices by, for example, Monsanto. This doesn&amp;rsquo;t have to be the way gene-editing looks in the future. There&amp;rsquo;s a chance it&amp;rsquo;s more widely accessible and commonly used in ordinary people&amp;rsquo;s homes in the future. Not just through people purchasing GMO seeds (already modified) from a store and planting them, but rather by modifying the genome of a seed in their own home and then planting it in their own garden.&lt;/p&gt;
+&lt;p&gt;In a very hand-wavy sort of way, here&amp;rsquo;s a bit of what this future history looks like.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;COVID makes in-home PCR more affordable more common. Since there&amp;rsquo;s demand for in-home viral testing, the components and skills involved in bioengineering start becoming more commonplace. This is already happening.&lt;/li&gt;
+&lt;li&gt;Our understanding of the genome is increasing every week. This is already happening.&lt;/li&gt;
+&lt;li&gt;People will be able to modify the genome of plants using a library of known edits. E.g. take the basil genome, replace GAAT at positive 1004 with TAAG, and you&amp;rsquo;ll get freeze-resistant basil.&lt;/li&gt;
+&lt;li&gt;Eventually people will be able to use software to create genomes using higher-level constructs than directly writing the base-pairs in the desired DNS.&lt;/li&gt;
+&lt;li&gt;First this will mean listing out proteins instead of individual base-pairs.&lt;/li&gt;
+&lt;li&gt;Later it will involve listing out multi-protein mechanisms, or higher level traits.&lt;/li&gt;
+&lt;li&gt;Eventually it will shift from being &amp;ldquo;like programming&amp;rdquo; to a no-code process, where even children will be able to design plants. They&amp;rsquo;ll sketch the desired leaf shapes, choose the yummiest flavor profiles, select the environment in which the plant should thrive, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The advantages of CRISPR gardening over traditional gardening include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You can customize plants that are tailor made for your diet&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;hellip; for your climate&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;hellip; for your aesthetic&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;hellip; to express your creativity&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can easily share a custom genome on the internet. Sharing the diff from a known genome takes less bandwidth, but even sharing a full genome is easy. This is far easier and more scalable than sharing physical seeds.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In order to get to this point, it would be useful to have &amp;ldquo;factories&amp;rdquo; / robot-biotech-gardens systematically mutating plant genomes, growing the resultant plants in various ways, and recording the effects. The individual components of this vision are already underway. Companies like IronOx use robots to grow vegetables in warehouses without human intervention. Other companies provide robot-performanced wetlab experiments. Now what we need is to bring these players together, so that we can most efficiently more toward fully understanding plant genomes and the CRISPR gardening era that awaits.&lt;/p&gt;
+&lt;p&gt;One day, when I have my own house and CRISPR garden, I&amp;rsquo;m going to have garden gnomes &amp;ndash; or g-gnomes for short.&lt;/p&gt;
 </description>
     </item>
     

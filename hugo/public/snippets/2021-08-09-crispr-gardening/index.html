@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="David Bieber">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Everyone likes their veggies crisp, so who wouldn&rsquo;t want CRISPR veggies? After reading The Code Breaker, I&rsquo;ve become progressively more excited about the possibilities that gene editing will bring in the coming decades.
+Or sooner? The technology has matured remarkably quickly and is developing incredibly fast.
+I don&rsquo;t have a full grasp of where things stand today, but this is just a snippet, so I won&rsquo;t let that stop me from speculating about where we&rsquo;re heading.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-08-09-crispr-gardening/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34570499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-34570499-2', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+
+  <link rel="canonical" href="https://davidbieber.com/snippets/2021-08-09-crispr-gardening/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@Bieber">
+  <meta property="twitter:creator" content="@Bieber">
+  
+  <meta property="og:site_name" content="David Bieber">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2021-08-09-crispr-gardening/">
+  <meta property="og:title" content="CRISPR Gardening | David Bieber">
+  <meta property="og:description" content="Everyone likes their veggies crisp, so who wouldn&rsquo;t want CRISPR veggies? After reading The Code Breaker, I&rsquo;ve become progressively more excited about the possibilities that gene editing will bring in the coming decades.
+Or sooner? The technology has matured remarkably quickly and is developing incredibly fast.
+I don&rsquo;t have a full grasp of where things stand today, but this is just a snippet, so I won&rsquo;t let that stop me from speculating about where we&rsquo;re heading."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-08-09T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-08-09T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>CRISPR Gardening | David Bieber</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">David Bieber</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">David Bieber</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/posts"><span>Writing</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">CRISPR Gardening</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" id="article-content">
+      <p>Everyone likes their veggies crisp, so who wouldn&rsquo;t want CRISPR veggies?
+After reading The Code Breaker, I&rsquo;ve become progressively more excited about the possibilities that gene editing will bring in the coming decades.</p>
+<p>Or sooner? The technology has matured remarkably quickly and is developing incredibly fast.</p>
+<p>I don&rsquo;t have a full grasp of where things stand today, but this is just a snippet, so I won&rsquo;t let that stop me from speculating about where we&rsquo;re heading. Take everything here with a grain of salt.</p>
+<p>Today, we can perform germline gene editing somewhat reliably. It&rsquo;s been done on human beings; the scientist who performed this first, I believe has gone to jail for the ethics violations involved in doing so. Our interest in this snippet, however, doesn&rsquo;t have the full set of ethical qualms that applying gene editing to humans has. We&rsquo;re interested in applying gene editing to plants.</p>
+<p>GMOs aren&rsquo;t knew, but they&rsquo;re (at least in the big picture) in their infancy. Today, particular seeds have been patented, leading to monopolistic anti-competitive practices by, for example, Monsanto. This doesn&rsquo;t have to be the way gene-editing looks in the future. There&rsquo;s a chance it&rsquo;s more widely accessible and commonly used in ordinary people&rsquo;s homes in the future. Not just through people purchasing GMO seeds (already modified) from a store and planting them, but rather by modifying the genome of a seed in their own home and then planting it in their own garden.</p>
+<p>In a very hand-wavy sort of way, here&rsquo;s a bit of what this future history looks like.</p>
+<ul>
+<li>COVID makes in-home PCR more affordable more common. Since there&rsquo;s demand for in-home viral testing, the components and skills involved in bioengineering start becoming more commonplace. This is already happening.</li>
+<li>Our understanding of the genome is increasing every week. This is already happening.</li>
+<li>People will be able to modify the genome of plants using a library of known edits. E.g. take the basil genome, replace GAAT at positive 1004 with TAAG, and you&rsquo;ll get freeze-resistant basil.</li>
+<li>Eventually people will be able to use software to create genomes using higher-level constructs than directly writing the base-pairs in the desired DNS.</li>
+<li>First this will mean listing out proteins instead of individual base-pairs.</li>
+<li>Later it will involve listing out multi-protein mechanisms, or higher level traits.</li>
+<li>Eventually it will shift from being &ldquo;like programming&rdquo; to a no-code process, where even children will be able to design plants. They&rsquo;ll sketch the desired leaf shapes, choose the yummiest flavor profiles, select the environment in which the plant should thrive, etc.</li>
+</ul>
+<p>The advantages of CRISPR gardening over traditional gardening include:</p>
+<ul>
+<li>
+<p>You can customize plants that are tailor made for your diet</p>
+</li>
+<li>
+<p>&hellip; for your climate</p>
+</li>
+<li>
+<p>&hellip; for your aesthetic</p>
+</li>
+<li>
+<p>&hellip; to express your creativity</p>
+</li>
+<li>
+<p>You can easily share a custom genome on the internet. Sharing the diff from a known genome takes less bandwidth, but even sharing a full genome is easy. This is far easier and more scalable than sharing physical seeds.</p>
+</li>
+</ul>
+<p>In order to get to this point, it would be useful to have &ldquo;factories&rdquo; / robot-biotech-gardens systematically mutating plant genomes, growing the resultant plants in various ways, and recording the effects. The individual components of this vision are already underway. Companies like IronOx use robots to grow vegetables in warehouses without human intervention. Other companies provide robot-performanced wetlab experiments. Now what we need is to bring these players together, so that we can most efficiently more toward fully understanding plant genomes and the CRISPR gardening era that awaits.</p>
+<p>One day, when I have my own house and CRISPR garden, I&rsquo;m going to have garden gnomes &ndash; or g-gnomes for short.</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/taking-silly-ideas-seriously/">taking-silly-ideas-seriously</a>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/snippets/2021-03-08-healthy-games-inter-company-compact/">Healthy Games Inter-company Compact</a></li>
+      
+      <li><a href="/snippets/2021-03-04-the-efficient-minds-hypothesis/">The Efficient Minds Hypothesis</a></li>
+      
+      <li><a href="/snippets/2021-02-24-brainstorming-roam-terminal/">Brainstorming: Roam Terminal</a></li>
+      
+      <li><a href="/snippets/2021-02-17-python-magic-functions/">Magic Functions in Python</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://davidbieber.com/">David Bieber</a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+
+    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+
+
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZSDKaAmz-UUyaL1IZMi4QO_q4Jouko2c",
+    authDomain: "ask-me-anywhere.firebaseapp.com",
+    databaseURL: "https://ask-me-anywhere.firebaseio.com",
+    projectId: "ask-me-anywhere",
+    storageBucket: "ask-me-anywhere.appspot.com",
+    messagingSenderId: "123038093749",
+    appId: "1:123038093749:web:e8ce89651fcf1371d109fc",
+    measurementId: "G-JLDGL73R1B"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
