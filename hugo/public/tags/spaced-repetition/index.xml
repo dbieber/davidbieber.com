@@ -5,12 +5,28 @@
     <link>https://davidbieber.com/tags/spaced-repetition/</link>
       <atom:link href="https://davidbieber.com/tags/spaced-repetition/index.xml" rel="self" type="application/rss+xml" />
     <description>spaced-repetition</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 02 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 15 Aug 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>spaced-repetition</title>
       <link>https://davidbieber.com/tags/spaced-repetition/</link>
     </image>
+    
+    <item>
+      <title>Spaced Repetition at a Community Scale</title>
+      <link>https://davidbieber.com/snippets/2021-08-15-community-spaced-repetition/</link>
+      <pubDate>Sun, 15 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-08-15-community-spaced-repetition/</guid>
+      <description>&lt;p&gt;Spaced repetition is great for individual learners, but can we apply it to the preservation of institutional knowledge?&lt;/p&gt;
+&lt;p&gt;What would that look like? Maybe it means dedicating some fraction of some employee time to revisiting old documentation and bringing it up to date.
+Maybe it involves periodic runthroughs of playbooks to ensure they&amp;rsquo;re still working.&lt;/p&gt;
+&lt;p&gt;Is there a reason to want the exponential backoff property of individual spaced repetition when applying it to institutions?&lt;/p&gt;
+&lt;p&gt;How many people need to be familiar with an idea to adequately ensure that idea will be &amp;ldquo;cross-pollinated&amp;rdquo; with other ideas it pairs well with?
+Are there old but important ideas that have fallen out of favor, that a global &amp;ldquo;spaced repetition&amp;rdquo; employed by the whole scientific community would have pointed us to, leading to useful connections otherwise unseen?&lt;/p&gt;
+&lt;p&gt;In such a multiplayer system, how is it decided what ideas are worth revisiting, and how often? Is it an automated system based on citations, or based on committees? Is it decentralized, with each participant in control of their own SRS and its algorithm, or is a central governing body required. I expect a decentralized system requiring little to no trust could be devised.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d like to revisit this idea and consider it a little more deeply &amp;ndash; after some delay, of course &amp;ndash; in the future.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Spaced Repetition in Roam Research</title>
