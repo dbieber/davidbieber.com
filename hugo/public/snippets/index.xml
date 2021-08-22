@@ -13,6 +13,70 @@
     </image>
     
     <item>
+      <title>Phone in the kitchen evaluation</title>
+      <link>https://davidbieber.com/snippets/2021-08-22-phone-in-kitchen-eval/</link>
+      <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-08-22-phone-in-kitchen-eval/</guid>
+      <description>&lt;p&gt;Last month I decided to start keeping my phone in the kitchen while I&amp;rsquo;m in the house. I said I&amp;rsquo;d evaluate the decision after 6 weeks and decide whether to recommit. It&amp;rsquo;s been six weeks, and I think it was an excellent decision. I will absolutely continue doing this going forward.&lt;/p&gt;
+&lt;p&gt;I find I get more time in the mornings, because scrolling in bed or on the toilet isn&amp;rsquo;t really an option. Similarly in the evenings, scrolling in bed before going to sleep isn&amp;rsquo;t something I can do by accident. I do find I spend more time in the kitchen, in order to use my phone. So, I haven&amp;rsquo;t eliminated mindless scrolling altogether. My phone usage has decreased considerably overall though.&lt;/p&gt;
+&lt;p&gt;The oddest thing about it is that I don&amp;rsquo;t always have a way of knowing the itme when I wake up. I may want to put a non-phone clock in the bedroom to compensate for this.&lt;/p&gt;
+&lt;p&gt;Sometimes over the last six months I would find I accidentally would bring my phone with me to my desk. Usually this would happen after going out of the house for lunch (taking my phone with me). When I would return to the house, I would have my phone in my pocket, and I wouldn&amp;rsquo;t always remember to put it in the kitchen. Once the phone reached my desk, sometimes I would then inadvertently scroll! Whenever I notice that I&amp;rsquo;ve brought my phone somewhere in the house outside the kitchen, it&amp;rsquo;s clear the right thing for me to do under this silly system I&amp;rsquo;ve chosen for myself, is to bring it back to the kitchen.&lt;/p&gt;
+&lt;p&gt;It can be tempting to make only small violations to the rule, but I&amp;rsquo;ve realized it&amp;rsquo;s best not to fall for such temptations. There&amp;rsquo;s a bathroom just outside the kitchen, and I am tempted often to take the phone with me from the kitchen to the bathroom. I stop at the threshold to the kitchen, and do not cross if I&amp;rsquo;m holding my phone. Perhaps I stand in the threshold for a few minutes, finishing my phone usage before leaving. I put the phone down before exiting.&lt;/p&gt;
+&lt;p&gt;If I were to take the phone to the bathroom, I know what would happen. I would think, going in, that I will just use the phone for one particular purpose. However, as soon as I turn the screen on I would notice something that would put a different purpose into my mind. Maybe it&amp;rsquo;s a text message, or an app icon, or a notification. I think, switching tasks, that it&amp;rsquo;s a small diversion and I will momentarily return to the original purpose. However, moments later while completing the secondary task, my mental stack will erode, and the primary task will no longer be at the forefront of my brain. I&amp;rsquo;ll no longer be thinking about the one-and-done approach to phone usage, and now the potential for mindless scrolling has emerged.&lt;/p&gt;
+&lt;p&gt;So, the phone stays in the kitchen. I will keep this rule for myself, at least as long as I live here in this house.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Codex as a Programming Language</title>
+      <link>https://davidbieber.com/snippets/2021-08-16-codex-pl/</link>
+      <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-08-16-codex-pl/</guid>
+      <description>&lt;p&gt;In the 
+&lt;a href=&#34;https://www.youtube.com/watch?v=SGUCcjHTmGY&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;impressive demo of OpenAI&amp;rsquo;s &lt;em&gt;Codex&lt;/em&gt; programming system&lt;/a&gt;,
+the presenters suggest that Codex enables natural language to be used as a new kind of programming language.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s how that might look, followed by one problem with the suggestion.&lt;/p&gt;
+&lt;p&gt;A natural-language programmer writes natural language prompts, and Codex transforms them into source code.
+The Codex model is made deterministic, such that rerunning the model on the prompts always produces the same source code.
+The user can make further modifications to the source code that the model produces.
+The result is two parallel streams of text: (1) the natural language, and (2) the final source code.
+These parallel streams can be saved in version control, shared, modified, remixed, and run.&lt;/p&gt;
+&lt;p&gt;A non-programmer might still be able to make modifications, simply by modifying the natural language text, without making modifications to the source code at all.
+This could be a way to learn a bit about programming for the curious non-programmer too, as they can observe the changes to the source code
+that result from changing the natural language text.&lt;/p&gt;
+&lt;p&gt;It is tempting to think that only the diff between the source code produced by the model and the final source code need be stored.
+However, this doesn&amp;rsquo;t hold up. The prompt when generating source code includes all earlier source code in the file. So if a programmer wants to modify
+a natural language prompt or piece of code earlier in a file, it could invalidate all the generated code later in the file. Rerunning the model on the new state of the program wouldn&amp;rsquo;t reproduce the source code verbatim, even with the model made deterministic.&lt;/p&gt;
+&lt;p&gt;The editor showing the program might be modified to reflect this. I envision it showing two columns, the left column with natural language text and the right column, aligned with the left, showing the source code. A block of text and code shows with a green background if the model, when run on the text, produces exactly the source code on the right. It shows with yellow if the source code produced by the model differs slightly from the actual code in the block (and the diff is highlighted). And it shows in red if no simple diff distinguishes the model&amp;rsquo;s output from the actual code in the block.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Decentralized Global Spaced Repetition (incomplete)</title>
+      <link>https://davidbieber.com/snippets/2021-08-16-dgsrs/</link>
+      <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-08-16-dgsrs/</guid>
+      <description>&lt;p&gt;I envision a decentralized global spaced repetition system (DGSRS).
+Anyone in the world can participate, submitting entries that they&amp;rsquo;d like the world to remember.
+To participate, you both need to review entries that others want reviewed, and submit an occasional entry yourself.&lt;/p&gt;
+&lt;p&gt;There are two main benefits to the individual participating in the DGSRS:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You can ensure that the idea you care about is never forgotten.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can be exposed to interesting new ideas&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Roughly, the system acts like this:&lt;/p&gt;
+&lt;p&gt;Each participant can submit entries. When an entry is submitted, provided the submitter is in good standing and the entry doesn&amp;rsquo;t get flagged as being inappropriate or out of scope (too hard for a single entry, nonsense, etc), the system guarantees the entry will be remembered forever.&lt;/p&gt;
+&lt;p&gt;This is appealing to countries trying to preserve a language, to researchers who think they have a good idea that the world isn&amp;rsquo;t latching on to,
+to conlang enthusiasts trying to bring a new language into existance, to first-time authors, and to creatives.&lt;/p&gt;
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Spaced Repetition at a Community Scale</title>
       <link>https://davidbieber.com/snippets/2021-08-15-community-spaced-repetition/</link>
       <pubDate>Sun, 15 Aug 2021 00:00:00 +0000</pubDate>

@@ -5,12 +5,37 @@
     <link>https://davidbieber.com/tags/taking-silly-ideas-seriously/</link>
       <atom:link href="https://davidbieber.com/tags/taking-silly-ideas-seriously/index.xml" rel="self" type="application/rss+xml" />
     <description>taking-silly-ideas-seriously</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 16 Aug 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>taking-silly-ideas-seriously</title>
       <link>https://davidbieber.com/tags/taking-silly-ideas-seriously/</link>
     </image>
+    
+    <item>
+      <title>Decentralized Global Spaced Repetition (incomplete)</title>
+      <link>https://davidbieber.com/snippets/2021-08-16-dgsrs/</link>
+      <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-08-16-dgsrs/</guid>
+      <description>&lt;p&gt;I envision a decentralized global spaced repetition system (DGSRS).
+Anyone in the world can participate, submitting entries that they&amp;rsquo;d like the world to remember.
+To participate, you both need to review entries that others want reviewed, and submit an occasional entry yourself.&lt;/p&gt;
+&lt;p&gt;There are two main benefits to the individual participating in the DGSRS:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You can ensure that the idea you care about is never forgotten.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can be exposed to interesting new ideas&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Roughly, the system acts like this:&lt;/p&gt;
+&lt;p&gt;Each participant can submit entries. When an entry is submitted, provided the submitter is in good standing and the entry doesn&amp;rsquo;t get flagged as being inappropriate or out of scope (too hard for a single entry, nonsense, etc), the system guarantees the entry will be remembered forever.&lt;/p&gt;
+&lt;p&gt;This is appealing to countries trying to preserve a language, to researchers who think they have a good idea that the world isn&amp;rsquo;t latching on to,
+to conlang enthusiasts trying to bring a new language into existance, to first-time authors, and to creatives.&lt;/p&gt;
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>CRISPR Gardening</title>
