@@ -434,7 +434,8 @@ After reading The Code Breaker, I&amp;rsquo;ve become progressively more excited
       <link>https://davidbieber.com/snippets/2021-07-29-note-taking-flow/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2021-07-29-note-taking-flow/</guid>
-      <description>&lt;p&gt;Quick update on the note-taking Browserflow flow I&amp;rsquo;ve been building (&lt;a href=&#34;https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7):&#34;&gt;https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7):&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Quick update on the note-taking Browserflow flow I&amp;rsquo;ve been building: 
+&lt;a href=&#34;https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7&lt;/a&gt;:&lt;/p&gt;
 &lt;h2 id=&#34;how-it-works&#34;&gt;How it works&lt;/h2&gt;
 &lt;p&gt;When you run it, it injects some js into the page you&amp;rsquo;re viewing enabling a handful of keyboard shortcuts to enable clipping text into Roam from anywhere on the web.&lt;/p&gt;
 &lt;p&gt;If you navigate to a new page, it will run that js on the new page. So it keeps the keyboard shortcuts active even if you follow links.&lt;/p&gt;
