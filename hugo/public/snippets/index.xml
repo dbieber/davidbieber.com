@@ -13,6 +13,25 @@
     </image>
     
     <item>
+      <title>GPT-3 for Spaced Repetition</title>
+      <link>https://davidbieber.com/snippets/2021-09-08-gpt-3-for-spaced-repetition/</link>
+      <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-09-08-gpt-3-for-spaced-repetition/</guid>
+      <description>&lt;p&gt;Lately I&amp;rsquo;ve been using Browserflow to create spaced repetition flashcards quickly while browsing the internet.&lt;/p&gt;
+&lt;p&gt;To create a card, I highlight a bit of text and press &amp;ldquo;c&amp;rdquo;. This copies the sentence containing the highlight into the card, with the part I highlighted masked out.
+It&amp;rsquo;s a cloze task, as in a masked language model.
+If instead I push &amp;ldquo;b&amp;rdquo;, it copies the full paragraph containing the highlight, again with the highlight masked out.&lt;/p&gt;
+&lt;p&gt;Usually this is a great way to quickly create my flashcards. However, sometimes I get sentences where the subject is unclear without context, e.g. &amp;ldquo;this&amp;rdquo; in &amp;ldquo;Usually this is a great way to quickly create the flashcards.&amp;rdquo; For these, it would be great to automatically rewrite the sentence with the subject pulled in from the surrounding context.&lt;/p&gt;
+&lt;p&gt;For example, &amp;ldquo;Usually this is a great way to quickly create the flashcards&amp;rdquo; could be rewritten as &amp;ldquo;Usually &lt;mark&gt;using &amp;ldquo;b&amp;rdquo; and &amp;ldquo;c&amp;rdquo; with Browserflow&lt;/mark&gt; is a great way to quickly create the flashcards.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;As a second example, consider this 
+&lt;a href=&#34;http://hyperphysics.phy-astr.gsu.edu/hbase/Solar/meteor.html#c3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HyperPhysics page on the Murchison Meteorite&lt;/a&gt;. Speaking about the Murchison Meteorite, the page says &amp;ldquo;Seventy four amino acids were found in it, compared to the 20 which are characteristic of life.&amp;rdquo; I&amp;rsquo;d love to make a card saying &amp;ldquo;Seventy four &lt;mark&gt;amino acids&lt;/mark&gt; were found in the Murchison Meteorite, compared to the 20 which are characteristic of life.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;However, if I highlight &lt;mark&gt;amino acids&lt;/mark&gt; and press &amp;ldquo;c&amp;rdquo;, the generated card instead reads: &amp;ldquo;Seventy four &lt;mark&gt;amino acids&lt;/mark&gt; were found in &lt;em&gt;it&lt;/em&gt;, compared to the 20 which are characteristic of life.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;So, the challenge I present you with is: write a program that takes a sentence, and it&amp;rsquo;s surrounding context, and rewrites the sentence so that it is clear even out of context.&lt;/p&gt;
+&lt;p&gt;Having played with GPT-3 and Codex recently, this seems well within the scope of large pretrained language models. I expect that with some careful prompting, a large language model could excel at this task without even any fine-tuning, just taking advantage of few shot learning. Is this the best or simplest approach? Likely it isn&amp;rsquo;t, but it may be the approach that minimizes development time and is easiest to repurpose for other similar (or dissimilar) projects in the future.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Phone in the kitchen evaluation</title>
       <link>https://davidbieber.com/snippets/2021-08-22-phone-in-kitchen-eval/</link>
       <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
