@@ -86,6 +86,8 @@ Go Note Go supports audio notes and audio commands, whereas shh shell only suppo
 
 Go Note Go works offline and without a laptop nearby. To use shh shell, your keyboard needs to be connected wirelessly to a nearby computer running the shh shell software. Go Note Go's keyboard _is_ a computer, and it can be powered by battery pack, from a laptop, from an outlet, or from the car. Your notes will be uploaded to your main note-taking system as soon as internet connectivity becomes available.
 
+No need for "focused" and "focus lost". Anyone who sleeps near you will be pleased to hear Go Note Go is always in focus. So it doesn't need to announce "focused" and "focus lost" for you to know if it's OK to type. LED status indicators are also available for you to confirm it's working (or you can run the ":status" command to get an auditory "ok".)
+
 Go Note Go integrates with external note-taking systems. I use Dropbox to store the audio clips, and Roam Research to store the notes and display the audio. This allows Go Note Go to directly contribute to my Spaced Repetition system, my notes on other projects, my notes on life, etc, and for my Go Note Go notes to be accessible anywhere, even on the go!
 
 Go Note Go still supports all the old capabilities of shh shell. All the old commands still work, but now they work everywhere. Entering notes by text still works, but now it's easier to search through them and return to them later. You can still use Go Note Go as you drift off to sleep, and you can still use Go Note Go when you shower, but now you can also use it as you drive or when you camp.
