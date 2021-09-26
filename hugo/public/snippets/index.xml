@@ -13,6 +13,20 @@
     </image>
     
     <item>
+      <title>Go Note Go is public</title>
+      <link>https://davidbieber.com/snippets/2021-09-26-go-note-go/</link>
+      <pubDate>Sun, 26 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-09-26-go-note-go/</guid>
+      <description>&lt;p&gt;Go Note Go is public! I&amp;rsquo;ve been working on this for two weeks now, and today I made it public!&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/projects/go-note-go&#34;&gt;Read all about it here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;What is it? Go Note Go is a note-taking system for when you’re on the go, with a focus on driving and camping.&lt;/p&gt;
+&lt;p&gt;In short, it&amp;rsquo;s a portable keyboard with a microphone and speakers and a beautiful handheld button that you can use to take notes anywhere at all. Driving? Push the button and speak your notes. Camping? Type on the keyboard, powered by a battery pack. The battery lasts all day, and the notes will be uploaded to your central note-taking system as soon as internet becomes available.&lt;/p&gt;
+&lt;p&gt;Have a look. Let me know what you think! I&amp;rsquo;ve been using it as I develop it over the last two weeks and I &lt;em&gt;really love&lt;/em&gt; it. I keep it by my computer during the work day. I took it with me to my table tennis tournament yesterday. I&amp;rsquo;ve brought it to the beach. There&amp;rsquo;s no cognitive overhead. There&amp;rsquo;s no latency to slow down your thinking. Just speak, or type, and it works.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Embedded Roam Research</title>
       <link>https://davidbieber.com/snippets/2021-09-12-embedded-roam-research/</link>
       <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
