@@ -82,7 +82,7 @@ No additional setup is required. Run the ":status" command to verify everything 
 
 ### Improvements over Shh Shell
 
-Go Note Go supports audio notes and audio commands, whereas shh shell only supported text entry. If you're trying to fall asleep, text is less likely to wake up your mind, but if you're driving, text is incredibly dangerous.
+Go Note Go supports audio notes and audio commands, whereas shh shell only supported text entry. If you're trying to fall asleep, text is less likely to wake up your mind, but if you're driving, typing is incredibly dangerous.
 
 Go Note Go works offline and without a laptop nearby. To use shh shell, your keyboard needs to be connected wirelessly to a nearby computer running the shh shell software. Go Note Go's keyboard _is_ a computer, and it can be powered by battery pack, from a laptop, from an outlet, or from the car. Your notes will be uploaded to your main note-taking system as soon as internet connectivity becomes available.
 
