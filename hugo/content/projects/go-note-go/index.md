@@ -144,3 +144,8 @@ Go Note Go also supports voice and text commands. You can add your own commands 
 ### Why need to push a button instead of a wake word?
 
 I don't want to feel like I'm always being listened to. I also don't want it recording conversations. I only want it to record when I tell it to, and the physical switch is quite satisfying.
+
+
+### How can I try it out?
+
+The hardware components used are listed on the [GitHub page](https://github.com/dbieber/GoNoteGo). There's no getting started guide yet, so if you are trying it out, don't hesitate to reach out for guidance around the rough edges.
