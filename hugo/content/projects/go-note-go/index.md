@@ -77,7 +77,7 @@ For an improved experience, also acquire a waterproof Bluetooth speaker for your
 
 Now, your Pi simply has to be in range of your shower for you to use Go Note Go when generating your most groundbreaking insights.
 
-No additional setup is required.
+No additional setup is required. Run the ":status" command to verify everything is working before typing a note to ensure it doesn't get lost.
 
 
 ### Improvements over Shh Shell
