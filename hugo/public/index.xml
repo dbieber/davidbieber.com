@@ -86,6 +86,9 @@
 &lt;p&gt;Go Note Go also supports voice and text commands. You can add your own commands as well!&lt;/p&gt;
 &lt;h3 id=&#34;why-need-to-push-a-button-instead-of-a-wake-word&#34;&gt;Why need to push a button instead of a wake word?&lt;/h3&gt;
 &lt;p&gt;I don&amp;rsquo;t want to feel like I&amp;rsquo;m always being listened to. I also don&amp;rsquo;t want it recording conversations. I only want it to record when I tell it to, and the physical switch is quite satisfying.&lt;/p&gt;
+&lt;h3 id=&#34;how-can-i-try-it-out&#34;&gt;How can I try it out?&lt;/h3&gt;
+&lt;p&gt;The hardware components used are listed on the 
+&lt;a href=&#34;https://github.com/dbieber/GoNoteGo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub page&lt;/a&gt;. There&amp;rsquo;s no getting started guide yet, so if you are trying it out, don&amp;rsquo;t hesitate to reach out for guidance around the rough edges.&lt;/p&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
@@ -386,6 +389,17 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Embedded Roam Research</title>
+      <link>https://davidbieber.com/snippets/2021-09-12-embedded-roam-research/</link>
+      <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-09-12-embedded-roam-research/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;d like to be able to embed a Roam Research page on my website so that other people can make spaced repetition cards for me.&lt;/p&gt;
+&lt;iframe src=&#34;https://roamresearch.com/#/app/commons-db/page/xftkxraPw&#34; width=&#34;100%&#34; height=&#34;400&#34; frameborder=&#34;0&#34; style=&#34;border:0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;No luck, though.&lt;/p&gt;
 </description>
     </item>
     

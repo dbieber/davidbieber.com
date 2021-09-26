@@ -13,6 +13,17 @@
     </image>
     
     <item>
+      <title>Embedded Roam Research</title>
+      <link>https://davidbieber.com/snippets/2021-09-12-embedded-roam-research/</link>
+      <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-09-12-embedded-roam-research/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;d like to be able to embed a Roam Research page on my website so that other people can make spaced repetition cards for me.&lt;/p&gt;
+&lt;iframe src=&#34;https://roamresearch.com/#/app/commons-db/page/xftkxraPw&#34; width=&#34;100%&#34; height=&#34;400&#34; frameborder=&#34;0&#34; style=&#34;border:0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;No luck, though.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>GPT-3 for Spaced Repetition</title>
       <link>https://davidbieber.com/snippets/2021-09-08-gpt-3-for-spaced-repetition/</link>
       <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>

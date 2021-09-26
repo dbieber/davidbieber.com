@@ -86,6 +86,9 @@
 &lt;p&gt;Go Note Go also supports voice and text commands. You can add your own commands as well!&lt;/p&gt;
 &lt;h3 id=&#34;why-need-to-push-a-button-instead-of-a-wake-word&#34;&gt;Why need to push a button instead of a wake word?&lt;/h3&gt;
 &lt;p&gt;I don&amp;rsquo;t want to feel like I&amp;rsquo;m always being listened to. I also don&amp;rsquo;t want it recording conversations. I only want it to record when I tell it to, and the physical switch is quite satisfying.&lt;/p&gt;
+&lt;h3 id=&#34;how-can-i-try-it-out&#34;&gt;How can I try it out?&lt;/h3&gt;
+&lt;p&gt;The hardware components used are listed on the 
+&lt;a href=&#34;https://github.com/dbieber/GoNoteGo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub page&lt;/a&gt;. There&amp;rsquo;s no getting started guide yet, so if you are trying it out, don&amp;rsquo;t hesitate to reach out for guidance around the rough edges.&lt;/p&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
