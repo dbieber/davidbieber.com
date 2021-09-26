@@ -231,8 +231,7 @@ $ python gcdfire.py 34 90
       <link>https://davidbieber.com/projects/shh-shell/</link>
       <pubDate>Sun, 03 Aug 2014 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/projects/shh-shell/</guid>
-      <description>&lt;h1 id=&#34;the-shh-shell&#34;&gt;The shh shell&lt;/h1&gt;
-&lt;p&gt;The shh shell is a simple shell you can use while you drift off to sleep.&lt;/p&gt;
+      <description>&lt;p&gt;The shh shell is a simple shell you can use while you drift off to sleep.&lt;/p&gt;
 &lt;p&gt;Notably, you can keep your eyes closed while you use it.&lt;/p&gt;
 &lt;p&gt;The shell is controlled by typing and the only output is audio; there are no visual components of shh. It is designed to minimize the mental energy required for use, to avoid disturbing your attempt at sleep as much as possible.&lt;/p&gt;
 &lt;h3 id=&#34;why-is-it-called-shh-shell&#34;&gt;Why is it called shh shell?&lt;/h3&gt;
