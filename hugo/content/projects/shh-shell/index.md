@@ -2,24 +2,15 @@
 active = false
 weight = -20140803
 
-# Project title.
 title = "shh Shell"
-
-# Date this page was created.
 date = 2014-08-03T00:00:00
-
-# Project summary to display on homepage.
 summary = "The soothing shell for while you sleep."
-
-# Tags: can be used for filtering projects.
 tags = ["Software", "Productivity"]
 
 [image]
   caption = ""
   focal_point = ""
 +++
-
-# The shh shell
 
 The shh shell is a simple shell you can use while you drift off to sleep.
 
