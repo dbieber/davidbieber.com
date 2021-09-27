@@ -120,7 +120,7 @@ Go Note Go is not implemented in Go.
 
 ### Why not just take notes on your computer or phone, or with a voice recorder?
 
-Go Note Go is great at reducing friction. It's really nice to not having to switch to a note-taking app. You don't have to switch tabs or windows. You don't have to wait for anything to load. If the keyboard is there and on, you can type on it and know your notes are being recorded (there are LED status indicators for peace of mind.) No latency means minimal cognitive load.
+Go Note Go is great at reducing friction. It's really nice not having to switch to a note-taking app. You don't have to switch tabs or windows. You don't have to wait for anything to load. If the keyboard is there and on, you can type on it and know your notes are being recorded (there are LED status indicators for peace of mind.) No latency means minimal cognitive load.
 
 It's also of course nice not having to do any manual uploading or transcription that other approaches might require. And being integrated with your central note-taking system is a big plus over some alternate app approaches.
 
