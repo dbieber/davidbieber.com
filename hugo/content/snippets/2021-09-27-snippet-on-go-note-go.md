@@ -35,7 +35,7 @@ Maybe it's already super useful for people, but there's just no way for those pe
 So I want to put this out there a little bit. I'd like to share it with Conor of Roam, and with Andy Matuschak, and with folks at IdeaFlow and with Notion users, and with Obsidian folks, etc.
 
 One thing I'd like to get out of sharing with these groups is contributors to the extensible uploader side of Go Note Go.
-I think it would be so cool if each supported note−taking system had a n uploader contributed by someone working at that note−taking system's company. Conor or Bardia could make a contribution to the Roam uploader. Jacob or Linus could write the IdeaFlow uploader. Someone from Obsidian and Notion could provide uploaders for each of those. Now that the GitHub for the project is public, this is easier to start working toward.
+I think it would be so cool if each supported note−taking system had an uploader contributed by someone working at that note−taking system's company. Conor or Bardia could make a contribution to the Roam uploader. Jacob or Linus could write the IdeaFlow uploader. Someone from Obsidian and Notion could provide uploaders for each of those. Now that the GitHub for the project is public, this is easier to start working toward.
 
 Also, the more I think about the getting started guide, the easier it seems to write. There are only a few steps you really need to follow to get set up. Roughly, it looks like this:
 
