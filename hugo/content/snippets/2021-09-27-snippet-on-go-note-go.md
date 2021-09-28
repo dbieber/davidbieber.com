@@ -39,7 +39,7 @@ I think it would be so cool if each supported note−taking system had an upload
 
 Also, the more I think about the getting started guide, the easier it seems to write. There are only a few steps you really need to follow to get set up. Roughly, it looks like this:
 
-1. Acquire the parts (Raspberry Pi, MicroSD card, optional battery pack, USB cords, a speaker and microphone compatible with the Pi (a Voice Bonnet is one option, but any will do.)
+1. Acquire the parts (Raspberry Pi, MicroSD card, optional battery pack, USB cords, a speaker and microphone compatible with the Pi (a Voice Bonnet is one option, but any will do.))
 2. Clone Go Note Go
 3. Edit config
 4. Install dependencies
