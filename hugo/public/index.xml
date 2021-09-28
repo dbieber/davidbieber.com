@@ -542,6 +542,45 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
     </item>
     
     <item>
+      <title>Writing a Snippet with Go Note Go</title>
+      <link>https://davidbieber.com/snippets/2021-09-27-snippet-on-go-note-go/</link>
+      <pubDate>Mon, 27 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-09-27-snippet-on-go-note-go/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been developing and concurrently using Go Note Go for two weeks now, and in that time I have come to love the frictionless way it allows me to dump thoughts into the machine. I don&amp;rsquo;t have a chance to reread what I&amp;rsquo;ve written. There&amp;rsquo;s no going back and rewording something. And more than that, there&amp;rsquo;s no waiting for the characters to show up, or switching tabs, or spell checking or anything like that.&lt;/p&gt;
+&lt;p&gt;This is the first time I&amp;rsquo;m writing a snippet using Go Note Go.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve thought about writing a snippet about Go Note Go over the last two weeks, but I decided not to until yesterday when I finally stopped keeping Go Note Go to myself.
+I thought maybe there would be value in getting Go Note Go polished, e.g. writing a getting started guide or even a sales page, and &lt;em&gt;then&lt;/em&gt; publishing it once people can actually use it themselves.
+But I decided against that.&lt;/p&gt;
+&lt;p&gt;Done is better than perfect.&lt;/p&gt;
+&lt;p&gt;I might not find a good way to package Go Note Go so that people can start using it with relative ease.
+Certainly I can do better than I have so far − there&amp;rsquo;s little help at all for someone to put together their own system.
+That said, a motivated individual could in principle piece together their own Go Note Go from what I&amp;rsquo;ve published now.
+And I&amp;rsquo;d be happy to help them do it.&lt;/p&gt;
+&lt;p&gt;And even if someone had to ask too many questions or can&amp;rsquo;t reproduce the full setup, maybe they&amp;rsquo;ll take the concept in a new direction.
+&amp;ldquo;Headless note−taking&amp;rdquo; is a broad idea and I&amp;rsquo;ve just scratched the surface.
+We can see from shh shell and Go Note Go alone that there are diverse approaches one can take to this broad concept.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d like to take it further myself, but more than that I think it&amp;rsquo;s important to start the conversation about headless note−taking since it might be able to help a much broader set of people than it&amp;rsquo;s helping right now.&lt;/p&gt;
+&lt;p&gt;Maybe it would be great in classrooms to avoid distractions.
+Maybe there are headless audio−only applications for writers, for programmers, for producers, for lawyers and doctors and publicists and influencers and so forth that are just waiting to be developed.
+Different keyboard shortcuts could be specialized for different domains. The addition of foot peddles might help some users. Whatever is needed to make this maximally useful for different applications and different people&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Maybe it&amp;rsquo;s already super useful for people, but there&amp;rsquo;s just no way for those people to know right now because they can&amp;rsquo;t easily try it, or haven&amp;rsquo;t heard of it and thought about it. This is wishful thinking of course; it might be an esoteric toy that is only useful or fun for a small group, but I&amp;rsquo;m confident that group is larger than just myself.&lt;/p&gt;
+&lt;p&gt;So I want to put this out there a little bit. I&amp;rsquo;d like to share it with Conor of Roam, and with Andy Matuschak, and with folks at IdeaFlow and with Notion users, and with Obsidian folks, etc.&lt;/p&gt;
+&lt;p&gt;One thing I&amp;rsquo;d like to get out of sharing with these groups is contributors to the extensible uploader side of Go Note Go.
+I think it would be so cool if each supported note−taking system had a n uploader contributed by someone working at that note−taking system&amp;rsquo;s company. Conor or Bardia could make a contribution to the Roam uploader. Jacob or Linus could write the IdeaFlow uploader. Someone from Obsidian and Notion could provide uploaders for each of those. Now that the GitHub for the project is public, this is easier to start working toward.&lt;/p&gt;
+&lt;p&gt;Also, the more I think about the getting started guide, the easier it seems to write. There are only a few steps you really need to follow to get set up. Roughly, it looks like this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Acquire the parts (Raspberry Pi, MicroSD card, optional battery pack, USB cords, a speaker and microphone compatible with the Pi (a Voice Bonnet is one option, but any will do.)&lt;/li&gt;
+&lt;li&gt;Clone Go Note Go&lt;/li&gt;
+&lt;li&gt;Edit config&lt;/li&gt;
+&lt;li&gt;Install dependencies&lt;/li&gt;
+&lt;li&gt;Put start script in rc.local file to start on startup&lt;/li&gt;
+&lt;li&gt;Be sure to configure your wifi wpa config file&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Wishful thinking again: I could probably write a decent guide in under an hour.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Go Note Go is public</title>
       <link>https://davidbieber.com/snippets/2021-09-26-go-note-go/</link>
       <pubDate>Sun, 26 Sep 2021 00:00:00 +0000</pubDate>
