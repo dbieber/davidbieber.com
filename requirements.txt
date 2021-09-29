@@ -1,4 +1,4 @@
-BeautifulSoup
+bs4
 dropbox>=2.1.0
 fire
 jinja2>=2.10.1
