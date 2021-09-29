@@ -1,14 +1,22 @@
 ---
 - hosts: all
-  roles:
-   - role: ansiblebit.virtualenv
-     tags: [ virtualenv ]
 
   tasks:
   - name: install git
     apt:
       name: git
       state: present
+    become: true
+
+  - name: install pip
+    apt:
+      name: python3-pip
+      state: present
+    become: true
+
+  - name: install virtualenv
+    pip:
+      name: virtualenv
     become: true
 
   - name: setup davidbieber.com
@@ -28,7 +36,7 @@
       chdir: /home/dbieber/davidbieber.com
 
   - name: start server app.py
-    shell: nohup ./virtualenv/bin/python app.py --port 443 --redirect &
+    shell: nohup ./virtualenv/bin/python -m app --port 443 --redirect &
     become: true
     args:
       chdir: /home/dbieber/davidbieber.com
