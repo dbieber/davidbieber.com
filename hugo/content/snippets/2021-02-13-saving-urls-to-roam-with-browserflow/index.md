@@ -1,7 +1,7 @@
 +++
 title = "Saving URLs to Roam with Browserflow"
 date = 2021-02-13T00:00:00
-tags = ["roam-research", "browserflow"]
+tags = ["roam-research", "browserflow", "note-taking"]
 +++
 
 Using the [Roam JavaScript primitives I wrote yesterday](/snippets/2021-02-12-javascript-functions-for-inserting-blocks-in-roam/) it was extremely easy (less than 10 minutes, I think) to create a robust Browserflow flow for saving URLs to Roam Research.

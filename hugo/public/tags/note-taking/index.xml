@@ -5,12 +5,41 @@
     <link>https://davidbieber.com/tags/note-taking/</link>
       <atom:link href="https://davidbieber.com/tags/note-taking/index.xml" rel="self" type="application/rss+xml" />
     <description>note-taking</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 26 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 09 Oct 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>note-taking</title>
       <link>https://davidbieber.com/tags/note-taking/</link>
     </image>
+    
+    <item>
+      <title>Note-taking System Interoperability</title>
+      <link>https://davidbieber.com/snippets/2021-10-09-note-taking-system-interop/</link>
+      <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-10-09-note-taking-system-interop/</guid>
+      <description>&lt;p&gt;What would be a good &lt;em&gt;standard&lt;/em&gt; for note-taking software to use to support development of system-agnostic tools like Go Note Go? In this snippet I discuss the value such a standard could provide; I expect it will be useful in future brainstorming for what exactly would go into such a standard.&lt;/p&gt;
+&lt;p&gt;I am building Go Note Go as a note-taking entry point, possibly with some basic retrieval features (e.g. &amp;ldquo;read back the last two notes I took&amp;rdquo;). I currently use Roam Research as my main note-taking system, but I&amp;rsquo;m not wedded to it forever.&lt;/p&gt;
+&lt;p&gt;So, I&amp;rsquo;m building Go Note Go to work with any note-taking system. To do so, I need a distinct uploader implementation for every note-taking system that I support. I&amp;rsquo;m reaching out to the developers at the note-taking systems to assist with this effort. It would be lovely if there was a standard, to reduce the amount of work required here.&lt;/p&gt;
+&lt;p&gt;For Go Note Go, only note &lt;em&gt;entry&lt;/em&gt; is required. If Go Note Go wanted to interact with the notes in a deeper way while continuing to support multiple note-taking systems (e.g. to support spaced repetition, or grocery lists, or reviewing a topic), then a standard would be even more important. Specialized implementations for each note-taking system would become largely untenable.&lt;/p&gt;
+&lt;p&gt;It is both common and important that hobbyists develop tools for interacting with their notes. Roam Research has 
+&lt;a href=&#34;https://roamjs.com/extensions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hundreds&lt;/a&gt; 
+&lt;a href=&#34;https://roamresearch.com/#/app/roam-depot-developers/page/8yTj7WxQi&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;of&lt;/a&gt; 
+&lt;a href=&#34;https://bjosephburch.com/ultimate-roam-tool-kit/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;extensions&lt;/a&gt; developed by the Roam community. Obsidian has hundreds of 
+&lt;a href=&#34;https://obsidian.md/plugins&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;plugins&lt;/a&gt;. This is part of what makes these tools so powerful.&lt;/p&gt;
+&lt;p&gt;To my knowledge, no one has written a tool for both Roam and Obsidian simultaneously. I want people to be able to make tools for all of Roam, Obsidian, IdeaFlow, Mem, RemNote, Notion, Logseq, Athens, Dendron, all the ones I don&amp;rsquo;t know about, and whatever comes next.&lt;/p&gt;
+&lt;p&gt;Some of these tools will live inside the note-taking editor. Others, like Go Note Go, merely have to interact with the note-taking system, but do not need to become &lt;em&gt;part&lt;/em&gt; of the note-taking system.&lt;/p&gt;
+&lt;p&gt;Some key areas where standards could provide value are: note representation, entry, navigation, editing, and search. Also valuable, but conceptually separate, would be a standard for UI extension.&lt;/p&gt;
+&lt;p&gt;Standards would make the development of system-agnostic tools easier. This includes novel note entry systems (e.g. 
+&lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;shh-shell&lt;/a&gt; and 
+&lt;a href=&#34;https://davidbieber.com/projects/go-note-go&#34;&gt;Go Note Go&lt;/a&gt;, but also note entry systems for new domains, such as for doctor&amp;rsquo;s offices or for while you&amp;rsquo;re cooking, or for use in virtual reality). It also would support advancements in spaced repetition, multiplayer note-taking, and would enable new features like note summarization and highlight extraction to become available in all the different note-taking systems at once.&lt;/p&gt;
+&lt;p&gt;In addition to all these applications, standards will make import/export/backup tools easier to build. This can reduce vendor lock in, and more importantly can reduce data loss by enabling robust backups. Today, switching my notes to another system would be a small hassle (e.g. Handling block references in the transfer might require some specialized treatment. And I&amp;rsquo;d need to do some work to set up a spaced repetition system like the one I&amp;rsquo;m currently using in Roam.)&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll say a few words about some of these ideas that would benefit from standards.&lt;/p&gt;
+&lt;p&gt;(1) &lt;strong&gt;Advancements in spaced repetition.&lt;/strong&gt; Having a spaced repetition system inside of a note-taking system is far lower friction than a separate app. Improvements to SRS that work across all note-taking systems would be warmly welcomed. I believe there are also significant advances to be made in community-scale spaced repetition, where cards and knowledge are drawn from not just your own notes, but from your community&amp;rsquo;s notes (including peers and teachers), and where your review schedule is similarly influenced not only by your own learning progress, but also by the progress of your community. This deserves a separate snippet, but I&amp;rsquo;ll note here a possibility that community-scale spaced repetition enables: it allows for community-level learning priorities, which may include diversity of topic. For example the members of a community might decide they want to ensure that all of its history is adequately studied (or any other collection of topics), not just the most interesting parts. Deciding individually, the members of the community might choose to study overly overlapping parts of its history. Using a community-scale spaced repetition algorithm, the choice of what to study can still predominantly be left up to individuals, but with small guidance from the centralized algorithm the community can ensure complete coverage of all the desired topics.&lt;/p&gt;
+&lt;p&gt;(2) &lt;strong&gt;Multiplayer Note-taking&lt;/strong&gt; Let&amp;rsquo;s say I&amp;rsquo;m doing research on a topic, and a colleague is doing research on a related topic. I might want to search through my colleague&amp;rsquo;s notes, and reference some of them from my own notes. This isn&amp;rsquo;t even possible in most note-taking systems today, but I think is either a future or work-in-progress feature of Roam, Athens, and Obsidian. Being able to do this cross-system would be so much better than only being able to do it within a system. A standard agreed upon by the different note-taking system developers would be necessary to support this.&lt;/p&gt;
+&lt;p&gt;(3) &lt;strong&gt;Summarization and highlight extraction&lt;/strong&gt; Summarization is a feature not yet present in any note-taking system, but surely one that will be added to many systems in the future. It is the ability to get a (machine generated) summary of a large chunk of notes automatically. This is marginally useful when reviewing your own notes, but is even more useful in conjunction with multiplayer features. Being able to view a summary of other people&amp;rsquo;s notes or an entire community&amp;rsquo;s notes will allow multiplayer systems to scale to larger groups of people while remaining useful. Highlight extraction is a related future feature, enabling users to quickly find the most important parts of a notebase. As with summarization, this is useful for an individuals notes, and doubly useful for a multiplayer notebase.&lt;/p&gt;
+&lt;p&gt;For each of these ideas, standards would be useful for allowing feature development to benefit users of all systems simultaneously, and for allowing users of one note-taking system to benefit from notes taken in another system. The space of possible applications is also much larger than my brainstorming above indicates. Specifically, the set of domain-specific activities one might want to perform with their notes is quite large (planning a family gathering, studying for a med school exam, writing a novel, etc.) Specialized applications could be built for each of these, and it should not matter where the relevant notes were taken. Different systems will always have their pros and cons for different types of content, but we don&amp;rsquo;t need to reinvent the wheel so frequently for use-cases that make sense in the context of all these different systems.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Go Note Go is public</title>
@@ -23,6 +52,135 @@
 &lt;p&gt;What is it? Go Note Go is a note-taking system for when you’re on the go, with a focus on driving and camping.&lt;/p&gt;
 &lt;p&gt;In short, it&amp;rsquo;s a portable keyboard with a microphone and speakers and a beautiful handheld button that you can use to take notes anywhere at all. Driving? Push the button and speak your notes. Camping? Type on the keyboard, powered by a battery pack. The battery lasts all day, and the notes will be uploaded to your central note-taking system as soon as internet becomes available.&lt;/p&gt;
 &lt;p&gt;Have a look. Let me know what you think! I&amp;rsquo;ve been using it as I develop it over the last two weeks and I &lt;em&gt;really love&lt;/em&gt; it. I keep it by my computer during the work day. I took it with me to my table tennis tournament yesterday. I&amp;rsquo;ve brought it to the beach. There&amp;rsquo;s no cognitive overhead. There&amp;rsquo;s no latency to slow down your thinking. Just speak, or type, and it works.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Browserflow Note-taking Flow</title>
+      <link>https://davidbieber.com/snippets/2021-07-29-note-taking-flow/</link>
+      <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-07-29-note-taking-flow/</guid>
+      <description>&lt;p&gt;Quick update on the note-taking Browserflow flow I&amp;rsquo;ve been building: 
+&lt;a href=&#34;https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7&lt;/a&gt;:&lt;/p&gt;
+&lt;h2 id=&#34;how-it-works&#34;&gt;How it works&lt;/h2&gt;
+&lt;p&gt;When you run it, it injects some js into the page you&amp;rsquo;re viewing enabling a handful of keyboard shortcuts to enable clipping text into Roam from anywhere on the web.&lt;/p&gt;
+&lt;p&gt;If you navigate to a new page, it will run that js on the new page. So it keeps the keyboard shortcuts active even if you follow links.&lt;/p&gt;
+&lt;p&gt;It also removes the status overlay, so you can interact with the page more easily.&lt;/p&gt;
+&lt;h2 id=&#34;the-keyboard-shortcuts-currently-are&#34;&gt;The keyboard shortcuts currently are:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[enter]: saves the current selection as a note to Roam&lt;/li&gt;
+&lt;li&gt;q, !, @, *, &amp;gt;: saves the current selection as a note to Roam tagged as a {question, &amp;ldquo;Wow&amp;rdquo;, Share, key idea, or block quote} (I don&amp;rsquo;t really use these)&lt;/li&gt;
+&lt;li&gt;p: saves the paragraph containing the selection to Roam, with the selection highlighted&lt;/li&gt;
+&lt;li&gt;s: Asks for an element in browserflow. Saves a screenshot of the element to Roam. Doesn&amp;rsquo;t work. (hmm&amp;hellip; why not?)&lt;/li&gt;
+&lt;li&gt;h: saves the sentence containing the selection to Roam, with the selection highlighted&lt;/li&gt;
+&lt;li&gt;c: saves the sentence containing the selection to Roam as a &amp;ldquo;cloze&amp;rdquo; (fill-in-the-blank) task for spaced repetition, with the selection as the fill-in-the-blank&lt;/li&gt;
+&lt;li&gt;b: (big cloze) saves the paragraph containing the selection to Roam as a &amp;ldquo;cloze&amp;rdquo; (fill-in-the-blank) task for spaced repetition, with the selection as the fill-in-the-blank&lt;/li&gt;
+&lt;li&gt;.: quit (I use this to reenable keyboard shortcuts for tab switching)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;some-feature-requests--debug-things&#34;&gt;Some feature requests / debug things&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Would be nice to keep some status indicator, just in the corner or page title instead of blocking the full page.&lt;/li&gt;
+&lt;li&gt;It depends on a couple other flows. Would be nice to be able to share just a single link.&lt;/li&gt;
+&lt;li&gt;It switches to the roamresearch.com tab and back whenever you save a note. Would be nice if this worked even if roam were in a different window. The user shouldn&amp;rsquo;t have to care about exactly where roam is open.&lt;/li&gt;
+&lt;li&gt;Why doesn&amp;rsquo;t the element screenshotting work?&lt;/li&gt;
+&lt;li&gt;Would be nice to allow tab switching in a flow without having to quit the flow.&lt;/li&gt;
+&lt;li&gt;For a note-taking flow like this, it can easily be running for hours. Doesn&amp;rsquo;t mix super well with the free tier of billing.&lt;/li&gt;
+&lt;li&gt;A few of these could be solved with an &amp;ldquo;Enable interaction with page&amp;rdquo; action&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;the-dependency-flows-needed-to-check-it-out-are&#34;&gt;The dependency flows needed to check it out are:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&#34;&gt;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&#34;&gt;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&#34;&gt;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To try out the flow, you&amp;rsquo;ll need Browserflow, an open Roam tab, and all four flows linked in this snippet. Run the first flow (&amp;ldquo;Roam: Highlights&amp;rdquo;) on a web page (with Roam open in a different tab in the same window). Highlight some text, (say, the words &amp;ldquo;some text&amp;rdquo; in this sentence), and hit enter. You can try any of the shortcuts listed above. Notice as the flow copies your selection into your daily notes organized by time and website.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Two more Browserflow flows for Roam Research</title>
+      <link>https://davidbieber.com/snippets/2021-02-13-flows-for-roam-research/</link>
+      <pubDate>Sat, 13 Feb 2021 01:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-02-13-flows-for-roam-research/</guid>
+      <description>&lt;p&gt;I wrote three Browserflow flows for Roam Research today. None of them took me more than 20-30 minutes to write. The first one was for saving the current webpage to Roam. I 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/&#34;&gt;wrote about that flow here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The next flow I wrote is for saving any link you click on to Roam. The idea behind this flow is to prevent doing depth first exploration of the web. Better to look at a bunch of links and then later choose the most interesting, than to dive head first into the first link you click on.&lt;/p&gt;
+&lt;p&gt;Video of that flow here:&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/KMxnws2Laww&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;And then I also wrote a flow for saving highlights from any web page to Roam. You can see that flow in action here:&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/MaV0GP4sZoM&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;In this flow, whenever I press enter the text I&amp;rsquo;ve highlighted is saved to my Roam Research Daily Notes page.&lt;/p&gt;
+&lt;p&gt;Links to all the flows are in the video descriptions. Browserflow is currently in private beta. Looks like in the short-term DK will likely ask 
+&lt;a href=&#34;https://www.notion.so/dkthehuman/Day-404-Choosing-My-Users-2a6b2c9cfc194fd3b561c370a62c60d5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;$20&lt;/a&gt; for access to the private beta. You can join the waitlist at 
+&lt;a href=&#34;https://browserflow.app&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;browserflow.app&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Saving URLs to Roam with Browserflow</title>
+      <link>https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/</guid>
+      <description>&lt;p&gt;Using the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-02-12-javascript-functions-for-inserting-blocks-in-roam/&#34;&gt;Roam JavaScript primitives I wrote yesterday&lt;/a&gt; it was extremely easy (less than 10 minutes, I think) to create a robust Browserflow flow for saving URLs to Roam Research.&lt;/p&gt;
+&lt;p&gt;Now when I&amp;rsquo;m browsing the web, I can press cmd-J (Browserflow&amp;rsquo;s keyboard shortcut) and choose &amp;ldquo;Roam: Save URL&amp;rdquo; from the typeahead to save the current URL to my Roam Daily Notes page.&lt;/p&gt;
+&lt;p&gt;If there&amp;rsquo;s not already a &amp;ldquo;Saved URLs:&amp;rdquo; block on daily notes, it makes it. Then it nests the URL beneath.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what the flow looks like in action:&lt;/p&gt;
+&lt;iframe width=&#34;640&#34; height=&#34;360&#34; src=&#34;https://www.youtube.com/embed/ORpBuE4UYSA&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;Here&amp;rsquo;s what the flow itself looks like:&lt;/p&gt;
+&lt;img src=&#34;save-urls-flow.png&#34;/&gt;
+&lt;p&gt;Notice there are really only two meaningful lines of code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;let urls = await getOrCreateBlockOnPage($page, &#39;Saved URLs:&#39;, -1);
+await createChildBlock(urls, $url)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The first line creates the &amp;ldquo;Saved URLs:&amp;rdquo; block, but only if it doesn&amp;rsquo;t already exist. It returns the uid of that block. The second line saves the url. Nothing else to it!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Taking Notes While Browsing the Web: An Idea for a Roam Research Plugin</title>
+      <link>https://davidbieber.com/snippets/2020-05-15-roaming-the-web/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-05-15-roaming-the-web/</guid>
+      <description>&lt;p&gt;As I&amp;rsquo;m browsing the web, I&amp;rsquo;d like to be able to take notes in 
+&lt;a href=&#34;https://roamresearch.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research&lt;/a&gt;. In this post, I share an idea I have for a plugin or browser extension that I think would improve the experience of taking notes in Roam while browsing the web.&lt;/p&gt;
+&lt;p&gt;The plugin would do two main things automatically:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;It would automatically insert some browsing history information into your Roam database while you browse the internet.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;As you navigate the web, it would automatically bring you to the Roam page that corresponds to the web page you&amp;rsquo;re reading.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;mind-the-details&#34;&gt;Mind the Details&lt;/h2&gt;
+&lt;p&gt;Of course, the implementation details matter! You don&amp;rsquo;t want to be whisked away from the notes you&amp;rsquo;re taking just because you&amp;rsquo;ve clicked a link in a different window.&lt;/p&gt;
+&lt;p&gt;So, here I&amp;rsquo;ll explain a few of the details I think would make this a good note taking experience.&lt;/p&gt;
+&lt;p&gt;As I&amp;rsquo;m browsing the internet, all the websites I visit will get added to a page &amp;ldquo;{Date} Browsing History&amp;rdquo;. A new Roam page will be created for each new website visited. And there will be a Roam window that always stays open to the Roam page for the current website I have open in my browser.&lt;/p&gt;
+&lt;p&gt;What qualifies as a website?&lt;/p&gt;
+&lt;p&gt;By default there would be one Roam page per &lt;em&gt;domain&lt;/em&gt; visited. However, there are several exceptions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For &lt;strong&gt;Wikipedia&lt;/strong&gt; it would be one Roam page per Wikipedia entry&lt;/li&gt;
+&lt;li&gt;For websites reached from &lt;strong&gt;HackerNews&lt;/strong&gt;, &lt;strong&gt;Twitter&lt;/strong&gt;, and &lt;strong&gt;Reddit&lt;/strong&gt;, it would be one Roam page per link followed from the aggregator (but links followed within the reached website would not count as new websites)&lt;/li&gt;
+&lt;li&gt;For &lt;strong&gt;GitHub&lt;/strong&gt; it would be one Roam page per user, organization, or repo visited&lt;/li&gt;
+&lt;li&gt;For &lt;strong&gt;Arxiv&lt;/strong&gt; it would be one Roam page per paper&lt;/li&gt;
+&lt;li&gt;For &lt;strong&gt;Roam&lt;/strong&gt; it would be one Roam page per Roam database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It will be great to have a window that always stays open to the Roam page for the current website I have open in my browser. This way if I visit a website I&amp;rsquo;ve been to before, I will see my notes from that website. And the websites I visit will be linked to the day I visit them on, and also to any other pages my notes reference.&lt;/p&gt;
+&lt;p&gt;Additionally, the tool should add a little bit of metadata to the pages it&amp;rsquo;s generating. On each of the autogenerated Roam pages, it would be great to see &lt;em&gt;when&lt;/em&gt; I visited the website, and what was the referring page. For websites visited multiple times, seeing the earliest and most recent visit times, and the number of times I visited that website would be useful too. Total time spent on the website would be a nice bonus.&lt;/p&gt;
+&lt;h2 id=&#34;making-this-a-reality&#34;&gt;Making this a Reality&lt;/h2&gt;
+&lt;p&gt;In the previous section I shared the details that I think would make this work well from a user experience perspective. How about from the technical side?&lt;/p&gt;
+&lt;p&gt;I think it would make sense to implement this as a browser extension (though a 
+&lt;a href=&#34;http://www.tampermonkey.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;user script&lt;/em&gt;&lt;/a&gt; could work too).
+
+&lt;a href=&#34;http://dkthehuman.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DK the Human&lt;/a&gt;, author of the 
+&lt;a href=&#34;https://chrome.google.com/webstore/detail/intention/dladanhaondcgpahgiflodhckhoeohoe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Intention&lt;/a&gt; browser extension
+has made his 
+&lt;a href=&#34;https://github.com/dkthehuman/extension-starter-kit&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;browser extension starter kit&lt;/a&gt; freely available.
+To notice when what web page you&amp;rsquo;re browsing and determine whether it constitutes a new page, the extension would need to request permission to view your activity on all websites.
+For making additions to a Roam database automatically, I expect the extension would have to navigate to the appropriate Roam page in the background, and would then mimic the user actions to make the desired changes.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in turning this idea into a reality or want to discuss it further, don&amp;rsquo;t hesitate to 
+&lt;a href=&#34;mailto:david810&amp;#43;blog@gmail.com&#34;&gt;reach out&lt;/a&gt;! I&amp;rsquo;d be excited to try a workflow like this, but don&amp;rsquo;t anticipate building it myself in the near future.&lt;/p&gt;
 </description>
     </item>
     

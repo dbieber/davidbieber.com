@@ -5,12 +5,32 @@
     <link>https://davidbieber.com/tags/spaced-repetition/</link>
       <atom:link href="https://davidbieber.com/tags/spaced-repetition/index.xml" rel="self" type="application/rss+xml" />
     <description>spaced-repetition</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 08 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>spaced-repetition</title>
       <link>https://davidbieber.com/tags/spaced-repetition/</link>
     </image>
+    
+    <item>
+      <title>Spaced Repetition Update</title>
+      <link>https://davidbieber.com/snippets/2021-10-05-spaced-repetition-update/</link>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-10-05-spaced-repetition-update/</guid>
+      <description>&lt;p&gt;Previously I&amp;rsquo;ve written about 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/&#34;&gt;how I do spaced repetition in Roam Research&lt;/a&gt; using Leitner Boxes. I&amp;rsquo;m still doing spaced repetition daily, but my methods have changed a bit. So, let me give you the update.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m still doing spaced repetition in Roam, but I&amp;rsquo;ve moved away from the Leitner Box approach. Now instead I use 
+&lt;a href=&#34;https://github.com/aidam38/roamsr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Adam Krivka&amp;rsquo;s roam/sr&lt;/a&gt;. With this approach, each card has it&amp;rsquo;s own review schedule instead of being lumped together into a small total number of review buckets. Also, the review process is nicer looking and lower friction (especially on mobile) compared to my original Leitner Box approach.&lt;/p&gt;
+&lt;p&gt;I made the switch to roam/sr on July 5, and haven&amp;rsquo;t missed a day since. It&amp;rsquo;s been three months so far. Let&amp;rsquo;s keep it up! In that time, I&amp;rsquo;ve created 1383 cards. That&amp;rsquo;s 15 new cards a day.&lt;/p&gt;
+&lt;p&gt;The main way in which I make cards these days is with my 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-07-29-note-taking-flow/&#34;&gt;Browserflow Note-taking Flow&lt;/a&gt;. With this flow, I highlight &lt;em&gt;part&lt;/em&gt; of a sentence or paragraph and press c (for a sentence) or b (for a paragraph) to turn that sentence or paragraph  into a &amp;ldquo;cloze&amp;rdquo; task. The highlighted part becomes a fill-in-the-blank and the whole sentence/paragraph becomes a card in my spaced repetition system.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m also using Adam Krivka&amp;rsquo;s 
+&lt;a href=&#34;https://roamresearch.com/#/app/roam-depot-developers/page/fIR-UkBAL&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;image occlusion plugin&lt;/a&gt; for Roam to create visual cloze tasks. With it, I&amp;rsquo;ll mask out part of an image to create a spaced repetition card asking me to predict what&amp;rsquo;s missing in the image.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m mainly using spaced repetition to study Croatian. I also have plenty of cards relating to medicine, astrophysics, economics, science in the news, computer science and machine learning, math, and more. There&amp;rsquo;s a long tail of topics I dove into, taking notes with Browserflow, that now populate my cards.&lt;/p&gt;
+&lt;p&gt;A typical review session is about 50-80 cards, with a couple of days peaking over 100 cards. I add cards in clusters, so my &amp;ldquo;new cards&amp;rdquo; pile varies from having 0 cards to having about 100 cards. I limit myself to studying 25 new cards per day, occasionally allowing this to reach up to 50 or 75.&lt;/p&gt;
+&lt;p&gt;Spaced repetition has become a morning habit for me. Usually the first thing I do each morning is a review session, whereas I more often make new cards at night. Though I&amp;rsquo;ve kept the habit up for over 90 days consecutively (and have been doing SRS for over a year now off-and-on), I expect the real challenge to my habit will come the next time I travel extensively. Hopefully by being aware of this challenge now, I&amp;rsquo;ll be able to keep the habit through it in the future.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>GPT-3 for Spaced Repetition</title>

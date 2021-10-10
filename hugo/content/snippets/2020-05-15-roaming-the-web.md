@@ -1,7 +1,7 @@
 +++
 title = "Taking Notes While Browsing the Web: An Idea for a Roam Research Plugin"
 date = 2020-05-15T00:00:00
-tags = ["browser-history", "roam-research"]
+tags = ["browser-history", "roam-research", "note-taking"]
 +++
 
 As I'm browsing the web, I'd like to be able to take notes in [Roam Research](https://roamresearch.com/). In this post, I share an idea I have for a plugin or browser extension that I think would improve the experience of taking notes in Roam while browsing the web.
