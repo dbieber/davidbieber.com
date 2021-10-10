@@ -2,7 +2,7 @@
 title = "Rough Note-taking Interop Requirements"
 date = 2021-10-10T00:00:00
 
-tags = ["note-taking", "roam-research", "go-note-go"]
+tags = ["note-taking", "roam-research"]
 +++
 
 Yesterday I mused about [the benefits an interoperability standard could provide](/snippets/2021-10-09-note-taking-system-interop/) to note-taking systems. Today, I extract rough requirements for such a standard from that musing.
