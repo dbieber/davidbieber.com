@@ -36,7 +36,7 @@ Let's look at what a good system for drafting essays while running should look l
 
 Your hands are occupied because you're performing a task like running or cooking. You don't want to be looking at a screen too much right now, because you have to look where you're going (or at what you're cutting).
 
-You have a phone, tablet, or computer with you though, with the SpiritWriter app open, so writing an essay wont be a problem.
+You have a phone, tablet, or computer with you though, with the SpiritWriter app open, so writing an essay won't be a problem.
 
 You begin to dictate "New Section. High level motivating goal of the thing. \<beat\> If you're running, cooking, doing laundry, or otherwise have your hands occupied but your brain free..."
 

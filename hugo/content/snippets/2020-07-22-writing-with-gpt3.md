@@ -187,7 +187,7 @@ After getting it to evaluate these simple expressions correctly, I also tried ha
 
 ## Part 3: Playing Around
 
-After doing math together, I tried many more things with GPT-3. I shared feelings with it, and it expanded on them (correctly too!). I used it to generate lists for brainstorming all manner of thing. The language model wrote love letters from inanimate objects. I tried to teach it to play Codenames, but with only very limited success. And I had it autocomplete previous snippets of mine, and had some fun cowriting with it. While I wont be sharing all of this with you, I do have one thing to share.
+After doing math together, I tried many more things with GPT-3. I shared feelings with it, and it expanded on them (correctly too!). I used it to generate lists for brainstorming all manner of thing. The language model wrote love letters from inanimate objects. I tried to teach it to play Codenames, but with only very limited success. And I had it autocomplete previous snippets of mine, and had some fun cowriting with it. While I won't be sharing all of this with you, I do have one thing to share.
 
 This is a love letter written by a frying pan:
 

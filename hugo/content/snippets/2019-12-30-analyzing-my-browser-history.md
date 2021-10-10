@@ -17,7 +17,7 @@ Thank you to GitHub user [dropmeaword](https://github.com/dropmeaword) for compi
 
 My Chrome browsing history is located at `~/Library/Application Support/Google/Chrome/Default/History`. Since I use multiple profiles in Chrome, each profile gets its own browsing history, e.g. located at `~/Library/Application Support/Google/Chrome/Profile 1/History`. 
 
-Each browsing history is stored as a sqlite3 database. Before analyzing the data, I recommend making a copy of it (`cp ~/Library/Application\ Support/Google/Chrome/Default/History my-history`); this way your history database (a) wont be locked by Chrome while you're trying to access it, and (b) wont change while you're looking at it, which could cause confusion and inconsistencies in your results.
+Each browsing history is stored as a sqlite3 database. Before analyzing the data, I recommend making a copy of it (`cp ~/Library/Application\ Support/Google/Chrome/Default/History my-history`); this way your history database (a) won't be locked by Chrome while you're trying to access it, and (b) won't change while you're looking at it, which could cause confusion and inconsistencies in your results.
 
 This means you can browse it interactively using the sqlite3 REPL by running `sqlite3 PATH_TO_DATABASE`.
 

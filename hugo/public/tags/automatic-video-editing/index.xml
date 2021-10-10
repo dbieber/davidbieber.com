@@ -144,7 +144,7 @@ I&amp;rsquo;m in a remote meeting and we&amp;rsquo;re having a discussion. By de
 &lt;a href=&#34;https://gist.github.com/dbieber/98f909640773b5b0a0fe5696da369a1b&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fastbook&lt;/a&gt;. It accepts audiobooks in the form of &lt;code&gt;.wav&lt;/code&gt; files, and can apply speed adjustments to the silence and the spoken word independently, even removing silence entirely if desired.&lt;/p&gt;
 &lt;p&gt;If Aaron can already comfortably (with great focus) listen to a book at 2.5x speed, he can listen to a 10 hour book in 4 hours. If 20% of that book is actually silence, then the 10 hour book becomes an 8 hour book with silence removed, and the total listen time drops to just 3h12. I think 20% may actually be a conservative estimate for silent time, though it will vary from narrator to narrator.&lt;/p&gt;
 &lt;p&gt;Estimating 45 minutes saved per book, this tool can save over 3 days total time across 100 books. Or, alternatively, Aaron could drop the playback speed down from 2.5x to 2x without increasing his total listening time at all, but potentially helping out his comprehension substantially.&lt;/p&gt;
-&lt;p&gt;This tool wont be appropriate for all audiobook listeners. For many, the silences matter, and removing them would degrade the quality of the book. For many, listening at 2.5x would also degrade the quality of the book. So use this tool with caution.&lt;/p&gt;
+&lt;p&gt;This tool won&amp;rsquo;t be appropriate for all audiobook listeners. For many, the silences matter, and removing them would degrade the quality of the book. For many, listening at 2.5x would also degrade the quality of the book. So use this tool with caution.&lt;/p&gt;
 &lt;p&gt;For those of you who are intersted, however, here&amp;rsquo;s how to use Fastbook.&lt;/p&gt;
 &lt;h2 id=&#34;installing-fastbook&#34;&gt;Installing Fastbook&lt;/h2&gt;
 &lt;p&gt;I&amp;rsquo;ve made Fastbook available for free on GitHub. You can 
@@ -173,7 +173,7 @@ I&amp;rsquo;m in a remote meeting and we&amp;rsquo;re having a discussion. By de
 &lt;p&gt;Finally, to do the pre-work, you will likely need ffmpeg. Installation instructions are available 
 &lt;a href=&#34;https://www.ffmpeg.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;read-quick&#34;&gt;Read quick!&lt;/h2&gt;
-&lt;p&gt;I recommend for Aaron to use the default speed settings of &lt;code&gt;--loud_speed=1 --quiet_speed=5&lt;/code&gt;. This wont eliminate the silence entirely, but will reduce the audio time considerably. Then, for the remaining speed-up, I suggest using whatever media player you were already using, such as VLC which supports arbitrary speed adjustments in real time. Hpy rdng!&lt;/p&gt;
+&lt;p&gt;I recommend for Aaron to use the default speed settings of &lt;code&gt;--loud_speed=1 --quiet_speed=5&lt;/code&gt;. This won&amp;rsquo;t eliminate the silence entirely, but will reduce the audio time considerably. Then, for the remaining speed-up, I suggest using whatever media player you were already using, such as VLC which supports arbitrary speed adjustments in real time. Hpy rdng!&lt;/p&gt;
 &lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
 &lt;p&gt;This blog post, narrated slowly:&lt;/p&gt;
 &lt;p&gt;&lt;audio

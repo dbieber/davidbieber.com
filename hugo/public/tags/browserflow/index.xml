@@ -381,7 +381,7 @@ document.addEventListener(&#39;touchmove&#39;, function(event) {
 &lt;p&gt;Put the question on one bullet, and put the answer in the child bullets. Then tag the bullet with the question with &amp;ldquo;#[[Leitner Box 1]]&amp;rdquo; to add it to your spaced repetition system.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;You can use the syntax {{=: question | answer}} in Roam to create text that remains hidden until clicked. The text &amp;ldquo;answer&amp;rdquo; wont appear until you click on the text &amp;ldquo;question.&amp;rdquo; Again, tag the line with &amp;ldquo;#[[Leitner Box 1]]&amp;rdquo; to add it to your spaced repetition system.&lt;/p&gt;
+&lt;p&gt;You can use the syntax {{=: question | answer}} in Roam to create text that remains hidden until clicked. The text &amp;ldquo;answer&amp;rdquo; won&amp;rsquo;t appear until you click on the text &amp;ldquo;question.&amp;rdquo; Again, tag the line with &amp;ldquo;#[[Leitner Box 1]]&amp;rdquo; to add it to your spaced repetition system.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;I recommend you 

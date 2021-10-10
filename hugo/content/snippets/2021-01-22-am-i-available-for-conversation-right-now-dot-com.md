@@ -36,4 +36,4 @@ My ideal system for when I want to talk to someone isn't "let's pick a time to t
 
 In the absence of doors, the "is David available to talk now" page is my idea for an approximation.
 
-But I don't know yet how I would build it. The idea requires programmatically determining when I've been on the phone, in skype, in zoom, etc. I haven't looked into how approachable these services are to work with. And I likely wont. This is the sort of idea that, while fun to entertain, will likely need to morph considerably before it turns into a real project. Such is the nature of the Snippet.
+But I don't know yet how I would build it. The idea requires programmatically determining when I've been on the phone, in skype, in zoom, etc. I haven't looked into how approachable these services are to work with. And I likely won't. This is the sort of idea that, while fun to entertain, will likely need to morph considerably before it turns into a real project. Such is the nature of the Snippet.

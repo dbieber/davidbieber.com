@@ -40,7 +40,7 @@ The default template creates a page for each of the seven Leitner boxes. It also
 
 1. Put the question on one bullet, and put the answer in the child bullets. Then tag the bullet with the question with "#[[Leitner Box 1]]" to add it to your spaced repetition system.
 
-2. You can use the syntax {{=: question | answer}} in Roam to create text that remains hidden until clicked. The text "answer" wont appear until you click on the text "question." Again, tag the line with "#[[Leitner Box 1]]" to add it to your spaced repetition system.
+2. You can use the syntax {{=: question | answer}} in Roam to create text that remains hidden until clicked. The text "answer" won't appear until you click on the text "question." Again, tag the line with "#[[Leitner Box 1]]" to add it to your spaced repetition system.
 
 I recommend you [read Andy Matuschak's notes on "How to write good prompts"](https://andymatuschak.org/prompts/) for tips on how to create good flashcards. [Nicky Case's comic: "How to Remember Anything Forever-ish"](https://ncase.me/remember/) also has good suggestions for how to create good questions for spaced repetition.
 
