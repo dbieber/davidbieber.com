@@ -1,0 +1,36 @@
++++
+title = "Note-taking System Interoperability"
+date = 2021-10-09T00:00:00
+
+tags = ["note-taking", "roam-research", "go-note-go"]
++++
+
+What would be a good _standard_ for note-taking software to use to support development of system-agnostic tools like Go Note Go? In this snippet I discuss the value such a standard could provide; I expect it will be useful in future brainstorming for what exactly would go into such a standard.
+
+I am building Go Note Go as a note-taking entry point, possibly with some basic retrieval features (e.g. "read back the last two notes I took"). I currently use Roam Research as my main note-taking system, but I'm not wedded to it forever.
+
+So, I'm building Go Note Go to work with any note-taking system. To do so, I need a distinct uploader implementation for every note-taking system that I support. I'm reaching out to the developers at the note-taking systems to assist with this effort. It would be lovely if there was a standard, to reduce the amount of work required here.
+
+For Go Note Go, only note _entry_ is required. If Go Note Go wanted to interact with the notes in a deeper way while continuing to support multiple note-taking systems (e.g. to support spaced repetition, or grocery lists, or reviewing a topic), then a standard would be even more important. Specialized implementations for each note-taking system would become largely untenable.
+
+It is both common and important that hobbyists develop tools for interacting with their notes. Roam Research has [hundreds](https://roamjs.com/extensions) [of](https://roamresearch.com/#/app/roam-depot-developers/page/8yTj7WxQi) [extensions](https://bjosephburch.com/ultimate-roam-tool-kit/) developed by the Roam community. Obsidian has hundreds of [plugins](https://obsidian.md/plugins). This is part of what makes these tools so powerful.
+
+To my knowledge, no one has written a tool for both Roam and Obsidian simultaneously. I want people to be able to make tools for all of Roam, Obsidian, IdeaFlow, Mem, RemNote, Notion, Logseq, Athens, Dendron, all the ones I don't know about, and whatever comes next.
+
+Some of these tools will live inside the note-taking editor. Others, like Go Note Go, merely have to interact with the note-taking system, but do not need to become _part_ of the note-taking system.
+
+Some key areas where standards could provide value are: note representation, entry, navigation, editing, and search. Also valuable, but conceptually separate, would be a standard for UI extension.
+
+Standards would make the development of system-agnostic tools easier. This includes novel note entry systems (e.g. [shh-shell](/projects/shh-shell) and [Go Note Go](/projects/go-note-go), but also note entry systems for new domains, such as for doctor's offices or for while you're cooking, or for use in virtual reality). It also would support advancements in spaced repetition, multiplayer note-taking, and would enable new features like note summarization and highlight extraction to become available in all the different note-taking systems at once.
+
+In addition to all these applications, standards will make import/export/backup tools easier to build. This can reduce vendor lock in, and more importantly can reduce data loss by enabling robust backups. Today, switching my notes to another system would be a small hassle (e.g. Handling block references in the transfer might require some specialized treatment. And I'd need to do some work to set up a spaced repetition system like the one I'm currently using in Roam.)
+
+I'll say a few words about some of these ideas that would benefit from standards.
+
+(1) **Advancements in spaced repetition.** Having a spaced repetition system inside of a note-taking system is far lower friction than a separate app. Improvements to SRS that work across all note-taking systems would be warmly welcomed. I believe there are also significant advances to be made in community-scale spaced repetition, where cards and knowledge are drawn from not just your own notes, but from your community's notes (including peers and teachers), and where your review schedule is similarly influenced not only by your own learning progress, but also by the progress of your community. This deserves a separate snippet, but I'll note here a possibility that community-scale spaced repetition enables: it allows for community-level learning priorities, which may include diversity of topic. For example the members of a community might decide they want to ensure that all of its history is adequately studied (or any other collection of topics), not just the most interesting parts. Deciding individually, the members of the community might choose to study overly overlapping parts of its history. Using a community-scale spaced repetition algorithm, the choice of what to study can still predominantly be left up to individuals, but with small guidance from the centralized algorithm the community can ensure complete coverage of all the desired topics.
+
+(2) **Multiplayer Note-taking** Let's say I'm doing research on a topic, and a colleague is doing research on a related topic. I might want to search through my colleague's notes, and reference some of them from my own notes. This isn't even possible in most note-taking systems today, but I think is either a future or work-in-progress feature of Roam, Athens, and Obsidian. Being able to do this cross-system would be so much better than only being able to do it within a system. A standard agreed upon by the different note-taking system developers would be necessary to support this.
+
+(3) **Summarization and highlight extraction** Summarization is a feature not yet present in any note-taking system, but surely one that will be added to many systems in the future. It is the ability to get a (machine generated) summary of a large chunk of notes automatically. This is marginally useful when reviewing your own notes, but is even more useful in conjunction with multiplayer features. Being able to view a summary of other people's notes or an entire community's notes will allow multiplayer systems to scale to larger groups of people while remaining useful. Highlight extraction is a related future feature, enabling users to quickly find the most important parts of a notebase. As with summarization, this is useful for an individuals notes, and doubly useful for a multiplayer notebase.
+
+For each of these ideas, standards would be useful for allowing feature development to benefit users of all systems simultaneously, and for allowing users of one note-taking system to benefit from notes taken in another system. The space of possible applications is also much larger than my brainstorming above indicates. Specifically, the set of domain-specific activities one might want to perform with their notes is quite large (planning a family gathering, studying for a med school exam, writing a novel, etc.) Specialized applications could be built for each of these, and it should not matter where the relevant notes were taken. Different systems will always have their pros and cons for different types of content, but we don't need to reinvent the wheel so frequently for use-cases that make sense in the context of all these different systems.

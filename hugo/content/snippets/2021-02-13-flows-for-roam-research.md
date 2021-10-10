@@ -1,7 +1,7 @@
 +++
 title = "Two more Browserflow flows for Roam Research"
 date = 2021-02-13T01:00:00
-tags = ["roam-research", "browserflow"]
+tags = ["roam-research", "browserflow", "note-taking"]
 keywords = ["youtube", "highlights"]
 +++
 
