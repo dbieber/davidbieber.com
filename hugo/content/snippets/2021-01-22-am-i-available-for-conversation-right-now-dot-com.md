@@ -22,7 +22,7 @@ It says No during sleep hours.<br/>
 It says No while I'm on a phone call / skype / zoom / meet etc<br/>
 It says No if I have recently been on a call for a long time<br/>
 
-It says Yes during explicitly times (there would be a button I can press to set it to Yes for 30 minutes)
+It says Yes during explicitly set times (there would be a button I can press to set it to Yes for 30 minutes)
 
 If I'm deliberately in a public space (e.g. Gather Town, Clubhouse) AND looking for conversation (aka I've pushed the button), then it shows where to find me.
 
@@ -36,4 +36,4 @@ My ideal system for when I want to talk to someone isn't "let's pick a time to t
 
 In the absence of doors, the "is David available to talk now" page is my idea for an approximation.
 
-But I don't know yet how I would build it. The idea requires programmatically determining when I've been on the phone, in skype, in zoom, etc. I haven't looking into how approachable these services are to work with. And I likely wont. This is the sort of idea that, while fun to entertain, will likely need to morph considerably before it turns into a real project. Such is the nature of the Snippet.
+But I don't know yet how I would build it. The idea requires programmatically determining when I've been on the phone, in skype, in zoom, etc. I haven't looked into how approachable these services are to work with. And I likely wont. This is the sort of idea that, while fun to entertain, will likely need to morph considerably before it turns into a real project. Such is the nature of the Snippet.
