@@ -95,9 +95,9 @@ Go Note Go still supports all the old capabilities of shh shell. All the old com
 
 ### Supported Note-taking Systems
 
-Audio clips are uploaded to Dropbox (support for Google Drive forthcoming).
+Audio clips are uploaded to Dropbox for storage (support for Google Drive forthcoming). The audio is then embedded alongside your notes.
 
-Text notes are uploaded to whatever note-taking system you select, where the audio is also embedded; currently we support Roam Research, Notion, Ideaflow, Mem, and RemNote.
+The text notes are uploaded to whatever note-taking system you select; currently we support Roam Research, Notion, Ideaflow, Mem, and RemNote.
 
 The system is extensible to support other storage systems and note-taking systems. I aim to have Go Note Go work with all popular note-taking systems. So, if you want to add a new note-taking system, do get in touch.
 
