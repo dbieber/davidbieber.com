@@ -88,18 +88,18 @@ Go Note Go works offline and without a laptop nearby. To use shh shell, your key
 
 No need for annoying "focused" and "focus lost" announcements. Anyone who sleeps near you will be pleased to hear Go Note Go is always in focus. So it doesn't need to announce "focused" and "focus lost" for you to know if it's OK to type. LED status indicators are also available for you to confirm it's working (or you can run the ":status" command to get an auditory "ok".)
 
-Go Note Go integrates with external note-taking systems. I use Dropbox to store the audio clips, and Roam Research to store the notes and display the audio. This allows Go Note Go to directly contribute to my Spaced Repetition system, my notes on other projects, my notes on life, etc, and for my Go Note Go notes to be accessible anywhere, even on the go!
+Go Note Go integrates with external note-taking systems. I use Dropbox to store the audio clips, and Roam Research to store the notes and display the audio, and several other note-taking systems are also supported. This allows Go Note Go to directly contribute to my Spaced Repetition system, my notes on other projects, my notes on life, etc, and for my Go Note Go notes to be accessible anywhere, even on the go!
 
 Go Note Go still supports all the old capabilities of shh shell. All the old commands still work, but now they work everywhere. Entering notes by text still works, but now it's easier to search through them and return to them later. You can still use Go Note Go as you drift off to sleep, and you can still use Go Note Go when you shower, but now you can also use it as you drive or when you camp.
 
 
 ### Supported Note-taking Systems
 
-Audio clips are uploaded to Dropbox.
+Audio clips are uploaded to Dropbox (support for Google Drive forthcoming).
 
-Text notes are uploaded to Roam Research, where the audio is also embedded.
+Text notes are uploaded to whatever note-taking system you select, where the audio is also embedded; currently we support Roam Research, Notion, Ideaflow, Mem, and RemNote.
 
-The system is extensible to support other storage systems and note-taking systems. I aim to have Go Note Go work with all popular note-taking systems. If you want to add a new note-taking system, get in touch.
+The system is extensible to support other storage systems and note-taking systems. I aim to have Go Note Go work with all popular note-taking systems. So, if you want to add a new note-taking system, do get in touch.
 
 
 ### Issuing Commands
