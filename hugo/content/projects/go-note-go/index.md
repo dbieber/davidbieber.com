@@ -88,7 +88,7 @@ Go Note Go works offline and without a laptop nearby. To use shh shell, your key
 
 No need for annoying "focused" and "focus lost" announcements. Anyone who sleeps near you will be pleased to hear Go Note Go is always in focus. So it doesn't need to announce "focused" and "focus lost" for you to know if it's OK to type. LED status indicators are also available for you to confirm it's working (or you can run the ":status" command to get an auditory "ok".)
 
-Go Note Go integrates with external note-taking systems. I use Dropbox to store the audio clips, and Roam Research to store the notes and display the audio, and several other note-taking systems are also supported. This allows Go Note Go to directly contribute to my Spaced Repetition system, my notes on other projects, my notes on life, etc, and for my Go Note Go notes to be accessible anywhere, even on the go!
+Go Note Go integrates with external note-taking systems. I personally use Dropbox to store the audio clips and Roam Research to store the notes and display the audio (and now several other note-taking systems are also supported). This allows Go Note Go to directly contribute to my Spaced Repetition system, my notes on other projects, my notes on life, etc, and for my Go Note Go notes to be accessible anywhere, even on the go!
 
 Go Note Go still supports all the old capabilities of shh shell. All the old commands still work, but now they work everywhere. Entering notes by text still works, but now it's easier to search through them and return to them later. You can still use Go Note Go as you drift off to sleep, and you can still use Go Note Go when you shower, but now you can also use it as you drive or when you camp.
 
@@ -136,7 +136,7 @@ There are two ways. You can bring your own note-taking system, and you can add a
 1. Note-taking systems
 2. Commands
 
-Go Note Go can support uploading notes to any note-taking system. The first system we have support for is Roam Research, but adding new ones isn't difficult. If you want to use Go Note Go with a different note-taking system, I'd be happy to help you through the process.
+Go Note Go can support uploading notes to any note-taking system. We started with just Roam Research, and now also support Notion, RemNote, Ideaflow, and Mem. Adding new systems is easy, and if you want to use Go Note Go with a different note-taking system, I'd be happy to help you through the process.
 
 Go Note Go also supports voice and text commands. You can add your own commands as well!
 
