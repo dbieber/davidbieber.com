@@ -1,6 +1,7 @@
 +++
 title = "Health Insurance DAOs"
 date = 2021-10-20T00:00:00
+tags = ["blockchain", "healthcare"]
 +++
 
 I've recently been learning about blockchain tech including Ethereum, smart contracts, and DAOs (distributed asynchronous organizations).
