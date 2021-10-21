@@ -5,7 +5,7 @@ tags = ["blockchain", "healthcare", "taking-silly-ideas-seriously"]
 keywords = ["governance"]
 +++
 
-I've recently been learning about blockchain tech including Ethereum, smart contracts, and DAOs (distributed asynchronous organizations).
+I've recently been learning about blockchain tech including Ethereum, smart contracts, and DAOs (distributed autonomous organizations).
 With this snippet I want to explore the idea of using a DAO as a substitute for traditional health insurance.
 Brainstroming here, I'm also intrigued by the ideas of (1) bringing [democratic delegation-optional voting (DDoV)](/snippets/2021-01-11-democratic-delegation-optional-voting/) into a DAO, (2) implementing a union as a DAO for collective bargaining, and (3) using smart contracts for international agreements [to avoid climate problems like this](https://www.nytimes.com/2021/10/20/climate/fossil-fuel-drilling-pledges.html). These are ideas for future snippets.
 
