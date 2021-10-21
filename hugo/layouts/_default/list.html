@@ -26,6 +26,9 @@
     <h3 class="mb-0 mt-0">
     <a href="{{ .RelPermalink }}">
       <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
+      {{ if .Params.chip }}
+      <div class="chip">{{ .Params.chip }}</div>
+      {{ end }}
       {{ .Title }}
       {{ if eq $pageScope.Title "Tags" }}
       ({{ len .RegularPages }})
