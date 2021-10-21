@@ -3,7 +3,7 @@ title = "Democratic Delegation-optional Voting"
 date = 2021-01-11T00:00:00
 uid = "k6m4tVFrq"
 tags = ["taking-silly-ideas-seriously"]
-keywords = ["delegation", "voting"]
+keywords = ["delegation", "voting", "governance"]
 +++
 
 In this snippet I propose a novel voting system, which I call "Democratic Delegation-optional Voting". The core idea of the voting system is that anyone can choose to delegate their vote to a group or individual that they trust. They may change their delegate selection at any time and for any reason (including for a brief period after votes are cast, as we will see), or they may choose to cast a vote themselves rather than delegating their vote.
