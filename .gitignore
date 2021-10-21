@@ -12,6 +12,7 @@ Transactions.csv
 *.retry
 
 drafts/
+internal
 
 # Use hugo/assets/js-src instead.
 # Run `npx babel --watch hugo/assets/js-src/ --out-dir hugo/assets/js/ --presets react-app/prod`
