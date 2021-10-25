@@ -90,3 +90,13 @@
   {{end}}
 </div>
 {{end}}
+
+{{ if $page.Params.chip }}
+  {{ $ctnr := "article-container" }}
+  {{ if $page.IsNode }}
+    {{ $ctnr = "universal-wrapper" }}
+  {{end}}
+  <div class="{{$ctnr}} chip-notice">
+    {{ $page.Params.chip }}
+  </div>
+{{ end }}
