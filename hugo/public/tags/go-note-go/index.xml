@@ -5,12 +5,86 @@
     <link>https://davidbieber.com/tags/go-note-go/</link>
       <atom:link href="https://davidbieber.com/tags/go-note-go/index.xml" rel="self" type="application/rss+xml" />
     <description>go-note-go</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 09 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 26 Oct 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>go-note-go</title>
       <link>https://davidbieber.com/tags/go-note-go/</link>
     </image>
+    
+    <item>
+      <title>Go Note Go Hardware</title>
+      <link>https://davidbieber.com/snippets/2021-10-26-go-note-go-hardware/</link>
+      <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-10-26-go-note-go-hardware/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve put together a hardware guide so you can build your own Go Note Go. I&amp;rsquo;ll keep a version of this in the 
+&lt;a href=&#34;https://github.com/dbieber/GoNoteGo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Go Note Go GitHub repo&lt;/a&gt; too. This one will likely fall out of date, but I&amp;rsquo;ll try to keep the one in the GitHub repo updated.&lt;/p&gt;
+&lt;h3 id=&#34;raspberry-pi-400&#34;&gt;Raspberry Pi 400&lt;/h3&gt;
+&lt;p&gt;Link: &lt;a href=&#34;https://www.raspberrypi.com/products/raspberry-pi-400-unit/&#34;&gt;https://www.raspberrypi.com/products/raspberry-pi-400-unit/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Details: I use the US keyboard. You can purchase from e.g. PiShop. I recommend ordering the following as a bundle:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Raspberry Pi 400 unit ($70)&lt;/li&gt;
+&lt;li&gt;Class 10 microSD Card With Raspbian - 16GB&lt;/li&gt;
+&lt;li&gt;USB-C Power Supply, 5.1V 3.0A, Black, UL Listed&lt;/li&gt;
+&lt;li&gt;Micro-HDMI to HDMI cable for Pi 4, 3ft, Black&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cost: $91&lt;/p&gt;
+&lt;h3 id=&#34;voice-bonnet&#34;&gt;Voice bonnet&lt;/h3&gt;
+&lt;p&gt;Link: &lt;a href=&#34;https://www.adafruit.com/product/4757&#34;&gt;https://www.adafruit.com/product/4757&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Notes: I&amp;rsquo;ve actually had some issues with these. The microphone records a high pitched noise and the audio output is quiet and muffled. I will suggest an (untested) alternative speaker and mic below.&lt;/p&gt;
+&lt;p&gt;Cost: $20&lt;/p&gt;
+&lt;h3 id=&#34;2x20-connector&#34;&gt;2x20 Connector&lt;/h3&gt;
+&lt;p&gt;Link: &lt;a href=&#34;https://www.adafruit.com/product/4079&#34;&gt;https://www.adafruit.com/product/4079&lt;/a&gt; OR &lt;a href=&#34;https://www.adafruit.com/product/2223&#34;&gt;https://www.adafruit.com/product/2223&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Recommendation: Get the 
+&lt;a href=&#34;https://www.adafruit.com/product/2223&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;long pins one&lt;/a&gt;. The 
+&lt;a href=&#34;https://www.adafruit.com/product/4079&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;short pins one&lt;/a&gt; is sleeker but the long pins might become necessary for connecting the button. TBD.&lt;/p&gt;
+&lt;p&gt;Notes: Use this to attach the voice bonnet to the Pi.&lt;/p&gt;
+&lt;p&gt;Cost: $3&lt;/p&gt;
+&lt;h3 id=&#34;10000-mah-battery&#34;&gt;10000 mAh battery&lt;/h3&gt;
+&lt;p&gt;Link: &lt;a href=&#34;https://www.amazon.com/gp/product/B07JYYRT7T&#34;&gt;https://www.amazon.com/gp/product/B07JYYRT7T&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Notes: There are lots of options for the battery. This one works just fine. Could choose one with more storage for longer battery life if desired, but might get clunky.&lt;/p&gt;
+&lt;p&gt;Cost: $19 (currently $14)&lt;/p&gt;
+&lt;h3 id=&#34;velcro&#34;&gt;Velcro&lt;/h3&gt;
+&lt;p&gt;Link: &lt;a href=&#34;https://www.amazon.com/gp/product/B08P3MXLLD&#34;&gt;https://www.amazon.com/gp/product/B08P3MXLLD&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Notes: I use this Velcro to mount the keyboard to the passenger side of the car, and to mount the battery to the back of the keyboard. When applying the sticky side to a car dashboard, allow to dry overnight.&lt;/p&gt;
+&lt;p&gt;Cost: $7&lt;/p&gt;
+&lt;h3 id=&#34;usb-cables&#34;&gt;USB Cables&lt;/h3&gt;
+&lt;p&gt;Links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3 ft USB - USB C cable: &lt;a href=&#34;https://www.amazon.com/gp/product/B089DM4KDW&#34;&gt;https://www.amazon.com/gp/product/B089DM4KDW&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;6 in USB - USB C cable: &lt;a href=&#34;https://www.amazon.com/gp/product/B012V56D2A&#34;&gt;https://www.amazon.com/gp/product/B012V56D2A&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cost: $13 ($6.99 for 3 ft and $5.99 for 6 in)&lt;/p&gt;
+&lt;h3 id=&#34;the-beautiful-red-button&#34;&gt;The Beautiful Red Button&lt;/h3&gt;
+&lt;p&gt;Link: &lt;a href=&#34;https://www.amazon.com/gp/product/B00T6RCGNC&#34;&gt;https://www.amazon.com/gp/product/B00T6RCGNC&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cost: $9&lt;/p&gt;
+&lt;h3 id=&#34;alternative-mic-and-speaker&#34;&gt;Alternative Mic and Speaker&lt;/h3&gt;
+&lt;p&gt;Links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Microphone: &lt;a href=&#34;https://www.adafruit.com/product/3367&#34;&gt;https://www.adafruit.com/product/3367&lt;/a&gt; ($6)&lt;/li&gt;
+&lt;li&gt;Speaker: &lt;a href=&#34;https://www.adafruit.com/product/3369&#34;&gt;https://www.adafruit.com/product/3369&lt;/a&gt; ($13)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Notes: I haven&amp;rsquo;t gotten these set up with Go Note Go yet, but am considering them as an alternative to the Adafruit Voice Bonnet. I really like the LEDs on the voice bonnet though, so TBD.&lt;/p&gt;
+&lt;p&gt;Cost: $19&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;other-tools&#34;&gt;Other tools:&lt;/h2&gt;
+&lt;h3 id=&#34;external-monitor-and-a-usb-mouse&#34;&gt;External monitor and a USB Mouse.&lt;/h3&gt;
+&lt;p&gt;These will be useful for configuring and debugging Go Note Go, e.g. setting up WiFi and configuring your note-taking system.&lt;/p&gt;
+&lt;h3 id=&#34;wire-wire-stripper&#34;&gt;Wire, Wire Stripper&lt;/h3&gt;
+&lt;p&gt;If you use The Beautiful Red Button you&amp;rsquo;ll need wire and wire strippers. For wire I used 18 gauge lamp wire I got from Home Depot.&lt;/p&gt;
+&lt;p&gt;Possible link: &lt;a href=&#34;https://www.lowes.com/pd/Southwire-25-Ft-18-2-Black-Stranded-Lamp-Cord/5001050863&#34;&gt;https://www.lowes.com/pd/Southwire-25-Ft-18-2-Black-Stranded-Lamp-Cord/5001050863&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Wire stripper link: &lt;a href=&#34;https://www.amazon.com/Mr-Stripper-Stripping-Crimping-Electrical/dp/B086V5M1B4&#34;&gt;https://www.amazon.com/Mr-Stripper-Stripping-Crimping-Electrical/dp/B086V5M1B4&lt;/a&gt; (Chose this one arbitrarily; I got mine at Home Depot)&lt;/p&gt;
+&lt;p&gt;Notes: I don&amp;rsquo;t know if this is the best choice for wire; a higher gauge might be better.&lt;/p&gt;
+&lt;h3 id=&#34;solder-soldering-iron&#34;&gt;Solder? Soldering iron?&lt;/h3&gt;
+&lt;p&gt;I haven&amp;rsquo;t had to use solder yet, but might need to for hooking up the button.&lt;/p&gt;
+&lt;p&gt;Hot glue or heat shrink and a heat gun might be nice-to-haves too to ensure solid stable connections.&lt;/p&gt;
+&lt;h3 id=&#34;possible-other-parts-for-button&#34;&gt;Possible other parts for button&lt;/h3&gt;
+&lt;p&gt;These might be useful for connecting the button to the GPIO pins on the Pi:
+&lt;a href=&#34;https://www.amazon.com/dp/B0774NMT1S&#34;&gt;https://www.amazon.com/dp/B0774NMT1S&lt;/a&gt;
+I don&amp;rsquo;t know. In my experience these were too loose to fit nicely on the GPIO pins.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m going to try these next: GenBasic 40 Piece Female to Female Jumper Wires (4 Inch) &lt;a href=&#34;https://www.amazon.com/dp/B077N58HFK&#34;&gt;https://www.amazon.com/dp/B077N58HFK&lt;/a&gt; ($5)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Note-taking System Interoperability</title>
