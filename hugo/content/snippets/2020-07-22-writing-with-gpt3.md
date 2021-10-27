@@ -83,7 +83,7 @@ I taught it how to evaluate simple expressions and take derivatives.
 
 Here's the first prompt I used:
 
-```
+```md
 Question: f(x) = x*x. Compute f(3).
 f(3) = 3*3
 f(3) = 9
@@ -106,20 +106,20 @@ Answer: 21
 
 I could then ask it any of the following, and it would correctly show its work.
 
-```
+```md
 Question: f(x) = tan(x) + 1. Compute f(0).
 Question: f(x) = sqrt(x) + 1. Compute f(16).
 ```
 
 When I tried to give it
-```
+```md
 Question: f(x) = x/2 + 2. Compute f(f(16)).
 ```
 it treated it as just `Compute f(16)` rather than `f(f(16))`.
 
 Interestingly this works:
 
-```
+```md
 Question: f(x) = x*x. Compute f(3).
 f(3) = 3*3
 f(3) = 9
@@ -152,7 +152,7 @@ Question: f(x) = x*3 - 1. Compute f(f(5)).
 
 Whereas this does not:
 
-```
+```md
 Question: f(x) = x*x. Compute f(3).
 f(3) = 3*3
 f(3) = 9

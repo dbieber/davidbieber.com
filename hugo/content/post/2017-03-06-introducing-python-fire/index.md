@@ -42,7 +42,7 @@ if __name__ == '__main__':
 
 When the Fire function is run, our command will be executed. Just by calling Fire, we can now use the Example class as if it were a command line utility.
 
-```
+```bash
 $ ./example.py hello
 Hello world!
 $ ./example.py hello David
