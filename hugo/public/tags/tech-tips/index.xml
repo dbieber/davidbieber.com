@@ -71,7 +71,7 @@ Set up Ferdi. Set screenshot directory.&lt;/p&gt;
       <guid>https://davidbieber.com/snippets/2021-05-19-thirty-days-to-request-a-review/</guid>
       <description>&lt;p&gt;Today I received an unexpected email from Facebook. Subject: &amp;ldquo;Action needed on your Facebook account&amp;rdquo;. It starts: &amp;ldquo;You Have 30 Days to Request a Review&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;The email read:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Hi David,
+&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;Hi David,
 Your Facebook account has been disabled. This is because your account, or activity on it, doesn&#39;t follow our Community Standards.
 
 If you think we disabled your account by mistake, we can take you through a few steps to request a review. You&#39;ll need to complete these steps within 30 days to avoid your account being permanently disabled.

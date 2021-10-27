@@ -4,6 +4,7 @@ date = 2019-12-26T00:00:00
 
 summary = "2020 Goal: Learn to communicate publicly"
 tags = ["snippets", "goals"]
+message = "My goal for 2020 was to learn to communicate better with the world. Still a goal for me."
 +++
 
 My goal for 2020 is to learn to communicate better with the world. I work in a research group at Google, and our main job function is performing research in program synthesis. But research is only as valuable as how well it is communicated. So in 2020 I'd like to get better at communicating publicly.

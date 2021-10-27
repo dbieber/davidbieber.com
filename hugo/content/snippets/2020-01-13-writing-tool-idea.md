@@ -1,9 +1,8 @@
 +++
 title = "Writing Assistant Tool Idea"
 date = 2020-01-13T00:00:00
-
-summary = "A structured question-asking tool may be useful for writing effectively."
 tags = ["attention", "taking-silly-ideas-seriously"]
+message = "A structured question-asking tool may be useful for writing effectively."
 +++
 
 ### Background: Writing is Hard

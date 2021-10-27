@@ -1374,7 +1374,7 @@ Wow, despite looking so different the tips are remarkably similar to the backhan
       <guid>https://davidbieber.com/snippets/2021-05-19-thirty-days-to-request-a-review/</guid>
       <description>&lt;p&gt;Today I received an unexpected email from Facebook. Subject: &amp;ldquo;Action needed on your Facebook account&amp;rdquo;. It starts: &amp;ldquo;You Have 30 Days to Request a Review&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;The email read:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Hi David,
+&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;Hi David,
 Your Facebook account has been disabled. This is because your account, or activity on it, doesn&#39;t follow our Community Standards.
 
 If you think we disabled your account by mistake, we can take you through a few steps to request a review. You&#39;ll need to complete these steps within 30 days to avoid your account being permanently disabled.
@@ -6638,11 +6638,11 @@ For example, it provides no way to do multiple takes and stitch together the goo
     </item>
     
     <item>
-      <title>The Future-Predicting Gameshow Host</title>
+      <title>The Future-Predicting Game Show Host</title>
       <link>https://davidbieber.com/snippets/2020-02-08-future-gameshow-host/</link>
       <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://davidbieber.com/snippets/2020-02-08-future-gameshow-host/</guid>
-      <description>&lt;p&gt;A gameshow host reveals 2 boxes, box A and box B. In box A is either $1 million or 0, in box B there is $1000.&lt;/p&gt;
+      <description>&lt;p&gt;A game show host reveals 2 boxes, box A and box B. In box A is either $1 million or $0, in box B there is $1000.&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;re told, choose either just box A or both A and B.&lt;/p&gt;
 &lt;p&gt;You keep the contents of the boxes you choose.
 Also, the host knows what box you will choose, and has placed $1 million in A if you will choose only A, and $0 in A if you will choose both A and B.&lt;/p&gt;
@@ -6665,7 +6665,7 @@ How can we reconcile these two true but contradictory statements?&lt;/p&gt;
 &lt;li&gt;Since the host is able know your choice ahead of time, that must mean it&amp;rsquo;s predetermined, right?&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;However, none of these reasons are entirely valid.&lt;/p&gt;
-&lt;p&gt;First, it&amp;rsquo;s true that at the time the money is placed, you didn&amp;rsquo;t necessarily know you had a choice to make. You hadn&amp;rsquo;t yet been informed that you would later be on this gameshow. However, it&amp;rsquo;s possible you considered the situation as a hypothetical anyway (maybe while reading a blog post, for instance). It isn&amp;rsquo;t necessary that you considered precisely the situation that you would later find yourself in, only that you&amp;rsquo;ve given conscious deliberate thought to the way you make choices. By thinking this through, you can decide now whether you have a brain that would later choose box A or one that would later choose both A and B, should the gameshow situation ever arise.&lt;/p&gt;
+&lt;p&gt;First, it&amp;rsquo;s true that at the time the money is placed, you didn&amp;rsquo;t necessarily know you had a choice to make. You hadn&amp;rsquo;t yet been informed that you would later be on this game show. However, it&amp;rsquo;s possible you considered the situation as a hypothetical anyway (maybe while reading a blog post, for instance). It isn&amp;rsquo;t necessary that you considered precisely the situation that you would later find yourself in, only that you&amp;rsquo;ve given conscious deliberate thought to the way you make choices. By thinking this through, you can decide now whether you have a brain that would later choose box A or one that would later choose both A and B, should the game show situation ever arise.&lt;/p&gt;
 &lt;p&gt;Next, you absolutely do get to make choices about how your brain works. You can choose when to sleep, when to study, what substances to ingest, and most importantly, what to focus your attention on. All of these levers are yours to pull, and they all affect how your brain will operate in the future.&lt;/p&gt;
 &lt;p&gt;At the time you choose the boxes, it&amp;rsquo;s still your decision as to which box(es) to choose. (In the sense that it&amp;rsquo;s your brain that produces the decision.)
 But you must have been predictable, at least to the host, for them to have predicted what choice you would later make.
@@ -6674,12 +6674,12 @@ But you must have been predictable, at least to the host, for them to have predi
 One extreme way you may have been predictable is if the host knows exactly how events will play out, right down to the thoughts you will have and the choices you will make.&lt;/p&gt;
 &lt;p&gt;It doesn&amp;rsquo;t have to be &lt;em&gt;quite&lt;/em&gt; so extreme though. The host only claimed to have roughly one bit of information about you and the future: what binary choice you would make when confronted with the box dilemma. That doesn&amp;rsquo;t require omniscience. The host may have no idea what the weather is going to be the next day, as long as they&amp;rsquo;re able to predict whether or not you&amp;rsquo;re taking box B.&lt;/p&gt;
 &lt;p&gt;So maybe they know a little about how your mind works, or they&amp;rsquo;ve read something you&amp;rsquo;ve posted online that lets them conclude how you will handle the box situation.&lt;/p&gt;
-&lt;p&gt;You must consider that whatever they know, they knew it at the time that they chose how to fill the boxes. (They likely also knew it at the time they chose to host the gameshow in the first place.)&lt;/p&gt;
+&lt;p&gt;You must consider that whatever they know, they knew it at the time that they chose how to fill the boxes. (They likely also knew it at the time they chose to host the game show in the first place.)&lt;/p&gt;
 &lt;p&gt;What I think is most likely is that this host does know precisely how you think about this choice. They do this by understanding to a very high degree of precision how your brain is going to cope with the decision of which boxes to choose. Think of the host as a very skilled poker player, that can read you like a book. Instead of just knowing whether you&amp;rsquo;re bluffing or not, they know what you&amp;rsquo;re going to think 
 &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/6640273&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;before you even think it&lt;/a&gt;. It&amp;rsquo;s like weather forecasting, but instead of understanding the atmosphere, they&amp;rsquo;re understanding you.&lt;/p&gt;
 &lt;p&gt;And like with weather forecasting, their model is imperfect. It&amp;rsquo;s good enough to know what box you&amp;rsquo;ll choose, with certainty, but only because that only requires forecasting a small window (a week, let&amp;rsquo;s say) into the future. Like the atmospheric conditions that determine the weather, your brain is a chaotic system. Any imperfection in the model, however small, will eventually blow up and lead to large errors in the model in the future. So our host can&amp;rsquo;t model your every thought a year into the future, let alone e.g. the whole population&amp;rsquo;s behaviors.&lt;/p&gt;
 &lt;p&gt;So what boxes should you choose?&lt;/p&gt;
-&lt;p&gt;You should choose to open just box A. By reaching this conclusion (and more importantly, by adopting the strategy for reasoning that leads to this conclusion), you guarantee yourself $1 million the next time you encounter a wealthy generous time travelling gameshow host interested in philosophy and mathematics.&lt;/p&gt;
+&lt;p&gt;You should choose to open just box A. By reaching this conclusion (and more importantly, by adopting the strategy for reasoning that leads to this conclusion), you guarantee yourself $1 million the next time you encounter a wealthy generous time traveling game show host interested in philosophy and mathematics.&lt;/p&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
@@ -8012,7 +8012,7 @@ An English translation of this paper, originally published in Russian, is
 &lt;p&gt;A &lt;em&gt;mail merge&lt;/em&gt; is a program that sends an email to many recipients, automatically filling in the contents of the email according to a template. It&amp;rsquo;s like a form letter. Each recipient receives a personalized copy of the email.&lt;/p&gt;
 &lt;p&gt;In this section we use Google Apps Script to create a mail merge that sends personalized &amp;ldquo;Happy Birthday&amp;rdquo; messages to a group of our friends. This will involve writing a template email, creating a spreadsheet, and writing a small amount of JavaScript code. With practice, you can perform tasks like this in well under an hour.&lt;/p&gt;
 &lt;p&gt;First, we draft the email in Gmail. We&amp;rsquo;ll use angle brackets for the parts of the message we want to replace with data from our spreadsheet.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Subject:
+&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;Subject:
   Happiest Birthday!
 
 Body:
@@ -8027,7 +8027,7 @@ Body:
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Next, we create a Google Spreadsheet (
 &lt;a href=&#34;https://sheets.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sheets.google.com&lt;/a&gt;) with three columns like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Name  Email  Age  
+&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;Name  Email  Age  
 ...   ...    ...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;(To add yourself to my spreadsheet and actually receive a happy birthday email on your alleged birthday, just 
@@ -8108,7 +8108,7 @@ To see your logs (the inputs to the Logger.log function calls), choose &amp;ldqu
 &lt;p&gt;That&amp;rsquo;s it. When you run performMailMerge, the emails will be sent with the values from the spreadsheet substituted for the &amp;ldquo;&lt;name&gt;&amp;rdquo; and &amp;ldquo;&lt;age&gt;&amp;rdquo; placeholders in the draft. Once you&amp;rsquo;ve got the hang of this, let&amp;rsquo;s add a few finishing touches before moving on to scheduling emails to be sent in the future.&lt;/p&gt;
 &lt;h3 id=&#34;finishing-touches&#34;&gt;Finishing Touches&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;Finishing touch 1:&lt;/em&gt; Adding a &amp;ldquo;Status&amp;rdquo; column to avoid emailing people twice.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Name  Email  Age  Status
+&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;Name  Email  Age  Status
 ...   ...    ...  ...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Let&amp;rsquo;s add some finishing touches. Add to your spreadsheet a new column &amp;ldquo;Status&amp;rdquo;. When an email sends successfully, we&amp;rsquo;ll set the status of the row to &amp;ldquo;Done&amp;rdquo;. If the status of a row is already &amp;ldquo;Done&amp;rdquo;, we&amp;rsquo;ll skip that row. The updated code is shown here:&lt;/p&gt;
@@ -8154,7 +8154,7 @@ In order to update the row, we modify the &lt;code&gt;row&lt;/code&gt; array and
 &lt;h2 id=&#34;part-2-scheduling-emails-for-the-future&#34;&gt;Part 2: Scheduling Emails for the Future&lt;/h2&gt;
 &lt;p&gt;In Part 1 we wrote a mail merge function that emails our friends &amp;ldquo;personalized&amp;rdquo; Happy Birthday messages when we run performMailMerge. But why would we want to say happy birthday to all our friends at once? That&amp;rsquo;s silly, it makes much more sense to send them a happy birthday message &lt;em&gt;on their birthday&lt;/em&gt;. In this section, we&amp;rsquo;ll modify our mail merge to send emails only on the birthday of the recipient.&lt;/p&gt;
 &lt;p&gt;To start, let&amp;rsquo;s add a new &amp;ldquo;Birthday&amp;rdquo; column to our spreadsheet.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Name  Email  Age   Birthday  Status
+&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;Name  Email  Age   Birthday  Status
 ...   ...    ...   ...       ...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;We&amp;rsquo;re going to use the moment.js library for working with dates. Create a new file (&lt;em&gt;File &amp;gt; New &amp;gt; Script File&lt;/em&gt;) in your Apps Script project. Call it moment.gs, or anything else, and paste in the contents of the moment.js library. You can copy and paste moment.js from 

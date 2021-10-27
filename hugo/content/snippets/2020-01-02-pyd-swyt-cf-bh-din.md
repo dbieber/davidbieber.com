@@ -1,9 +1,8 @@
 +++
 title = "pyd-swyt; cf-bh-din"
 date = 2020-01-02T02:00:00
-
-summary = "This is my life motto."
 tags = ["wisdom"]
+message = "This is my life motto."
 +++
 
 ### pyd-swyt; cf-bh-din

@@ -628,7 +628,7 @@
 <p>A <em>mail merge</em> is a program that sends an email to many recipients, automatically filling in the contents of the email according to a template. It&rsquo;s like a form letter. Each recipient receives a personalized copy of the email.</p>
 <p>In this section we use Google Apps Script to create a mail merge that sends personalized &ldquo;Happy Birthday&rdquo; messages to a group of our friends. This will involve writing a template email, creating a spreadsheet, and writing a small amount of JavaScript code. With practice, you can perform tasks like this in well under an hour.</p>
 <p>First, we draft the email in Gmail. We&rsquo;ll use angle brackets for the parts of the message we want to replace with data from our spreadsheet.</p>
-<pre><code>Subject:
+<pre><code class="language-md">Subject:
   Happiest Birthday!
 
 Body:
@@ -643,7 +643,7 @@ Body:
 </code></pre>
 <p>Next, we create a Google Spreadsheet (
 <a href="https://sheets.google.com" target="_blank" rel="noopener">sheets.google.com</a>) with three columns like this:</p>
-<pre><code>Name  Email  Age  
+<pre><code class="language-md">Name  Email  Age  
 ...   ...    ...
 </code></pre>
 <p>(To add yourself to my spreadsheet and actually receive a happy birthday email on your alleged birthday, just 
@@ -724,7 +724,7 @@ To see your logs (the inputs to the Logger.log function calls), choose &ldquo;Vi
 <p>That&rsquo;s it. When you run performMailMerge, the emails will be sent with the values from the spreadsheet substituted for the &ldquo;<name>&rdquo; and &ldquo;<age>&rdquo; placeholders in the draft. Once you&rsquo;ve got the hang of this, let&rsquo;s add a few finishing touches before moving on to scheduling emails to be sent in the future.</p>
 <h3 id="finishing-touches">Finishing Touches</h3>
 <p><em>Finishing touch 1:</em> Adding a &ldquo;Status&rdquo; column to avoid emailing people twice.</p>
-<pre><code>Name  Email  Age  Status
+<pre><code class="language-md">Name  Email  Age  Status
 ...   ...    ...  ...
 </code></pre>
 <p>Let&rsquo;s add some finishing touches. Add to your spreadsheet a new column &ldquo;Status&rdquo;. When an email sends successfully, we&rsquo;ll set the status of the row to &ldquo;Done&rdquo;. If the status of a row is already &ldquo;Done&rdquo;, we&rsquo;ll skip that row. The updated code is shown here:</p>
@@ -770,7 +770,7 @@ In order to update the row, we modify the <code>row</code> array and return it a
 <h2 id="part-2-scheduling-emails-for-the-future">Part 2: Scheduling Emails for the Future</h2>
 <p>In Part 1 we wrote a mail merge function that emails our friends &ldquo;personalized&rdquo; Happy Birthday messages when we run performMailMerge. But why would we want to say happy birthday to all our friends at once? That&rsquo;s silly, it makes much more sense to send them a happy birthday message <em>on their birthday</em>. In this section, we&rsquo;ll modify our mail merge to send emails only on the birthday of the recipient.</p>
 <p>To start, let&rsquo;s add a new &ldquo;Birthday&rdquo; column to our spreadsheet.</p>
-<pre><code>Name  Email  Age   Birthday  Status
+<pre><code class="language-md">Name  Email  Age   Birthday  Status
 ...   ...    ...   ...       ...
 </code></pre>
 <p>We&rsquo;re going to use the moment.js library for working with dates. Create a new file (<em>File &gt; New &gt; Script File</em>) in your Apps Script project. Call it moment.gs, or anything else, and paste in the contents of the moment.js library. You can copy and paste moment.js from 

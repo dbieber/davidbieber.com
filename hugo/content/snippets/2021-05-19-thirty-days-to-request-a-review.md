@@ -9,7 +9,7 @@ Today I received an unexpected email from Facebook. Subject: "Action needed on y
 
 The email read:
 
-```
+```md
 Hi David,
 Your Facebook account has been disabled. This is because your account, or activity on it, doesn't follow our Community Standards.
 

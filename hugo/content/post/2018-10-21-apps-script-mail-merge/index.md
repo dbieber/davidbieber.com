@@ -27,7 +27,7 @@ In this section we use Google Apps Script to create a mail merge that sends pers
 
 First, we draft the email in Gmail. We'll use angle brackets for the parts of the message we want to replace with data from our spreadsheet.
 
-```
+```md
 Subject:
   Happiest Birthday!
 
@@ -44,7 +44,7 @@ Body:
 
 Next, we create a Google Spreadsheet ([sheets.google.com](https://sheets.google.com)) with three columns like this:
 
-```
+```md
 Name  Email  Age  
 ...   ...    ...
 ```
@@ -154,7 +154,7 @@ That's it. When you run performMailMerge, the emails will be sent with the value
 
 *Finishing touch 1:* Adding a "Status" column to avoid emailing people twice.
 
-```
+```md
 Name  Email  Age  Status
 ...   ...    ...  ...
 ```
@@ -219,7 +219,7 @@ In Part 1 we wrote a mail merge function that emails our friends "personalized" 
 
 To start, let's add a new "Birthday" column to our spreadsheet.
 
-```
+```md
 Name  Email  Age   Birthday  Status
 ...   ...    ...   ...       ...
 ```

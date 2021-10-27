@@ -3,6 +3,7 @@ title = "Detecting My Sleeping Hours from Data"
 date = 2020-04-30T00:00:00
 tags = ["browser-history", "sql", "taking-silly-ideas-seriously"]
 keywords = ["sleep"]
+message = "In this snippet I share a SQL query that estimates how much I sleep each night using only data collected from Facebook Messenger. It's not great."
 +++
 
 Between my [Chrome browsing history](/snippets/2020-04-20-browser-history-date-queries/) and my [Facebook Messenger message logs](/snippets/2020-04-12-fb-messenger-sql/), I should be able to get a good estimate of when I'm awake and asleep.

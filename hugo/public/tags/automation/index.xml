@@ -22,7 +22,7 @@
 &lt;p&gt;A &lt;em&gt;mail merge&lt;/em&gt; is a program that sends an email to many recipients, automatically filling in the contents of the email according to a template. It&amp;rsquo;s like a form letter. Each recipient receives a personalized copy of the email.&lt;/p&gt;
 &lt;p&gt;In this section we use Google Apps Script to create a mail merge that sends personalized &amp;ldquo;Happy Birthday&amp;rdquo; messages to a group of our friends. This will involve writing a template email, creating a spreadsheet, and writing a small amount of JavaScript code. With practice, you can perform tasks like this in well under an hour.&lt;/p&gt;
 &lt;p&gt;First, we draft the email in Gmail. We&amp;rsquo;ll use angle brackets for the parts of the message we want to replace with data from our spreadsheet.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Subject:
+&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;Subject:
   Happiest Birthday!
 
 Body:
@@ -37,7 +37,7 @@ Body:
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Next, we create a Google Spreadsheet (
 &lt;a href=&#34;https://sheets.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sheets.google.com&lt;/a&gt;) with three columns like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Name  Email  Age  
+&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;Name  Email  Age  
 ...   ...    ...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;(To add yourself to my spreadsheet and actually receive a happy birthday email on your alleged birthday, just 
@@ -118,7 +118,7 @@ To see your logs (the inputs to the Logger.log function calls), choose &amp;ldqu
 &lt;p&gt;That&amp;rsquo;s it. When you run performMailMerge, the emails will be sent with the values from the spreadsheet substituted for the &amp;ldquo;&lt;name&gt;&amp;rdquo; and &amp;ldquo;&lt;age&gt;&amp;rdquo; placeholders in the draft. Once you&amp;rsquo;ve got the hang of this, let&amp;rsquo;s add a few finishing touches before moving on to scheduling emails to be sent in the future.&lt;/p&gt;
 &lt;h3 id=&#34;finishing-touches&#34;&gt;Finishing Touches&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;Finishing touch 1:&lt;/em&gt; Adding a &amp;ldquo;Status&amp;rdquo; column to avoid emailing people twice.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Name  Email  Age  Status
+&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;Name  Email  Age  Status
 ...   ...    ...  ...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Let&amp;rsquo;s add some finishing touches. Add to your spreadsheet a new column &amp;ldquo;Status&amp;rdquo;. When an email sends successfully, we&amp;rsquo;ll set the status of the row to &amp;ldquo;Done&amp;rdquo;. If the status of a row is already &amp;ldquo;Done&amp;rdquo;, we&amp;rsquo;ll skip that row. The updated code is shown here:&lt;/p&gt;
@@ -164,7 +164,7 @@ In order to update the row, we modify the &lt;code&gt;row&lt;/code&gt; array and
 &lt;h2 id=&#34;part-2-scheduling-emails-for-the-future&#34;&gt;Part 2: Scheduling Emails for the Future&lt;/h2&gt;
 &lt;p&gt;In Part 1 we wrote a mail merge function that emails our friends &amp;ldquo;personalized&amp;rdquo; Happy Birthday messages when we run performMailMerge. But why would we want to say happy birthday to all our friends at once? That&amp;rsquo;s silly, it makes much more sense to send them a happy birthday message &lt;em&gt;on their birthday&lt;/em&gt;. In this section, we&amp;rsquo;ll modify our mail merge to send emails only on the birthday of the recipient.&lt;/p&gt;
 &lt;p&gt;To start, let&amp;rsquo;s add a new &amp;ldquo;Birthday&amp;rdquo; column to our spreadsheet.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Name  Email  Age   Birthday  Status
+&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;Name  Email  Age   Birthday  Status
 ...   ...    ...   ...       ...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;We&amp;rsquo;re going to use the moment.js library for working with dates. Create a new file (&lt;em&gt;File &amp;gt; New &amp;gt; Script File&lt;/em&gt;) in your Apps Script project. Call it moment.gs, or anything else, and paste in the contents of the moment.js library. You can copy and paste moment.js from 
