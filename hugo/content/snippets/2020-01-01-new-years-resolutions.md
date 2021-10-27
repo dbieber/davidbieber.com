@@ -1,9 +1,8 @@
 +++
 title = "2020 Resolutions"
 date = 2019-12-30T01:00:00
-
-summary = ""
 tags = ["goals"]
+message = "In which I set concrete resolution for 2020."
 +++
 
 I've set New Year's Resolutions most years for the last several years. Let's review:

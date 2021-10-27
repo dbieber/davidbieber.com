@@ -2,6 +2,7 @@
 title = "Video Tooling Progress"
 date = 2020-02-26T00:00:00
 tags = ["automatic-video-editing", "python"]
+message = "Progress on automatic video editing, including 'Auto Auto-Jumpcutter', 'Auto-Commit', and Keyboard Shortcuts."
 +++
 
 Over the last week and a half I've been making screen recordings of myself programming. Mostly what I've been programming is tooling to help myself make better screen recordings. Here's an overview of what I've put together so far.

@@ -2,7 +2,7 @@
 title = "How much time has humanity spent on different areas of science?"
 date = 2020-01-24T00:00:00
 tags = ["taking-silly-ideas-seriously", "thought-experiments"]
-summary = ""
+summary = "In which I muse about how much time humanity has spent on different areas of science"
 +++
 
 How much time has humanity, collectively, spent researching physics?

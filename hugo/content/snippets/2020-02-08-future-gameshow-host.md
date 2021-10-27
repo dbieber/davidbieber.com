@@ -1,11 +1,12 @@
 +++
-title = "The Future-Predicting Gameshow Host"
+title = "The Future-Predicting Game Show Host"
 date = 2020-02-08T00:00:00
 tags = ["thought-experiments", "math"]
 plugins_js = ["ask-me-anywhere"]
+message = "A game show host reveals 2 boxes. In box A is either $1 million or $0, in box B there is $1000. You won't believe what's inside Box A!"
 +++
 
-A gameshow host reveals 2 boxes, box A and box B. In box A is either $1 million or 0, in box B there is $1000.
+A game show host reveals 2 boxes, box A and box B. In box A is either $1 million or $0, in box B there is $1000.
 
 You're told, choose either just box A or both A and B.
 
@@ -37,7 +38,7 @@ It may seem like _no_, for a few reasons:
 
 However, none of these reasons are entirely valid.
 
-First, it's true that at the time the money is placed, you didn't necessarily know you had a choice to make. You hadn't yet been informed that you would later be on this gameshow. However, it's possible you considered the situation as a hypothetical anyway (maybe while reading a blog post, for instance). It isn't necessary that you considered precisely the situation that you would later find yourself in, only that you've given conscious deliberate thought to the way you make choices. By thinking this through, you can decide now whether you have a brain that would later choose box A or one that would later choose both A and B, should the gameshow situation ever arise.
+First, it's true that at the time the money is placed, you didn't necessarily know you had a choice to make. You hadn't yet been informed that you would later be on this game show. However, it's possible you considered the situation as a hypothetical anyway (maybe while reading a blog post, for instance). It isn't necessary that you considered precisely the situation that you would later find yourself in, only that you've given conscious deliberate thought to the way you make choices. By thinking this through, you can decide now whether you have a brain that would later choose box A or one that would later choose both A and B, should the game show situation ever arise.
 
 Next, you absolutely do get to make choices about how your brain works. You can choose when to sleep, when to study, what substances to ingest, and most importantly, what to focus your attention on. All of these levers are yours to pull, and they all affect how your brain will operate in the future.
 
@@ -52,7 +53,7 @@ It doesn't have to be _quite_ so extreme though. The host only claimed to have r
 
 So maybe they know a little about how your mind works, or they've read something you've posted online that lets them conclude how you will handle the box situation.
 
-You must consider that whatever they know, they knew it at the time that they chose how to fill the boxes. (They likely also knew it at the time they chose to host the gameshow in the first place.)
+You must consider that whatever they know, they knew it at the time that they chose how to fill the boxes. (They likely also knew it at the time they chose to host the game show in the first place.)
 
 What I think is most likely is that this host does know precisely how you think about this choice. They do this by understanding to a very high degree of precision how your brain is going to cope with the decision of which boxes to choose. Think of the host as a very skilled poker player, that can read you like a book. Instead of just knowing whether you're bluffing or not, they know what you're going to think [before you even think it](https://www.ncbi.nlm.nih.gov/pubmed/6640273). It's like weather forecasting, but instead of understanding the atmosphere, they're understanding you.
 
@@ -60,4 +61,4 @@ And like with weather forecasting, their model is imperfect. It's good enough to
 
 So what boxes should you choose?
 
-You should choose to open just box A. By reaching this conclusion (and more importantly, by adopting the strategy for reasoning that leads to this conclusion), you guarantee yourself $1 million the next time you encounter a wealthy generous time travelling gameshow host interested in philosophy and mathematics.
+You should choose to open just box A. By reaching this conclusion (and more importantly, by adopting the strategy for reasoning that leads to this conclusion), you guarantee yourself $1 million the next time you encounter a wealthy generous time traveling game show host interested in philosophy and mathematics.

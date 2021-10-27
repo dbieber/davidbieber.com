@@ -1,10 +1,9 @@
 +++
 title = "What's Next for Ask Me Anywhere?"
 date = 2020-01-26T10:00:00
-
-summary = "Next steps for Ask Me Anywhere"
 plugins_js = ["collapsible", "ask-me-anywhere"]
 tags = ["ask-me-anywhere"]
+message = "My next steps for Ask Me Anywhere."
 +++
 
 Yesterday I put up an early version of [Ask Me Anywhere](/snippets/2020-01-25-ask-me-anywhere/). You'll notice it's in the snippets section of the website, rather than part of the main blog. This gives me the freedom to post it even though I know it's not as polished as it could be.

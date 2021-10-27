@@ -1,8 +1,9 @@
 +++
 title = "Learning by Teaching in Online Education"
 date = 2020-01-09T00:00:00
-
-summary = "One of the best ways to learn is to teach."
+tags = ["education", "automatic-video-editing"]
+keywords = ["teaching", "khan academy"]
+message = "One of the best ways to learn is to teach."
 +++
 
 

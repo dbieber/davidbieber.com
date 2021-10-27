@@ -1,9 +1,8 @@
 +++
 title = "What To Do in Moments of Internet Addiction"
 date = 2020-01-02T01:00:00
-
-summary = "A brainstorming of potential activities to help combat mild internet addiction"
 tags = ["attention"]
+message = "A brainstorming of potential activities to help combat mild internet addiction."
 +++
 
 I often feel addicted to YouTube, TV shows, browsing HackerNews, or social media.
