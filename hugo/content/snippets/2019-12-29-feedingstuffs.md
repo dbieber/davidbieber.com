@@ -8,7 +8,7 @@ message = "That was when I learned the word 'feedingstuffs'."
 
 Today I learned the word ["feedingstuffs"](https://en.wiktionary.org/wiki/feedingstuff#English).
 
-```
+```md
 feedingstuff (countable and uncountable, plural feedingstuffs)
 
   Any foodstuff used to feed livestock.

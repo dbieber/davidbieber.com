@@ -160,7 +160,7 @@ if __name__ == &#39;__main__&#39;:
   fire.Fire(gcd)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Saving this file as &lt;code&gt;gcdfire.py&lt;/code&gt;, we can run at the command line:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ python gcdfire.py 45 50
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ python gcdfire.py 45 50
 5
 $ python gcdfire.py 34 90
 2

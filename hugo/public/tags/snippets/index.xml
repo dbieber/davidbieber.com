@@ -540,7 +540,7 @@ As I&amp;rsquo;ve stated before, the purpose of the snippets section of my websi
 Being able to post a snippet from my phone would help in this respect.&lt;/p&gt;
 &lt;p&gt;This doesn&amp;rsquo;t seem so hard to set up, especially now that Bieber Bot runs continuously on my laptop.
 I could have Bieber Bot listen for a message like:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Snippet!
+&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;Snippet!
 Posting Snippets from My Phone
 I&#39;d like to be able to post...
 &lt;/code&gt;&lt;/pre&gt;

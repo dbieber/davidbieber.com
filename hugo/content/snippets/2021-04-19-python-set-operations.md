@@ -15,7 +15,7 @@ Python has a few primitive collection types: tuples, lists, dictionaries (aka di
 
 Once you've constructed a set, the following operations allow you to perform set operations on it with clean concise syntax.
 
-```
+```md
 | for union.
 & for intersection.
 – for difference

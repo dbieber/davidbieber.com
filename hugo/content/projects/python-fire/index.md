@@ -43,7 +43,7 @@ if __name__ == '__main__':
 
 Saving this file as `gcdfire.py`, we can run at the command line:
 
-```
+```bash
 $ python gcdfire.py 45 50
 5
 $ python gcdfire.py 34 90

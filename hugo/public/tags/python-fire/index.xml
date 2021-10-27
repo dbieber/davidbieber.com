@@ -132,7 +132,7 @@ if __name__ == &#39;__main__&#39;:
   main()
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;When the Fire function is run, our command will be executed. Just by calling Fire, we can now use the Example class as if it were a command line utility.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ ./example.py hello
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ ./example.py hello
 Hello world!
 $ ./example.py hello David
 Hello David!

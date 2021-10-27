@@ -596,7 +596,7 @@ Part 1: Brainstorming The first thing I did when I got access to GPT-3 is use it
 <p>Once I&rsquo;d gotten GPT-3 to do some brainstorming, I realized I&rsquo;d need to test its capabilities before trying its suggestions out in earnest.</p>
 <p>I taught it how to evaluate simple expressions and take derivatives.</p>
 <p>Here&rsquo;s the first prompt I used:</p>
-<pre><code>Question: f(x) = x*x. Compute f(3).
+<pre><code class="language-md">Question: f(x) = x*x. Compute f(3).
 f(3) = 3*3
 f(3) = 9
 Answer: 9
@@ -616,15 +616,15 @@ Answer: 21
 
 </code></pre>
 <p>I could then ask it any of the following, and it would correctly show its work.</p>
-<pre><code>Question: f(x) = tan(x) + 1. Compute f(0).
+<pre><code class="language-md">Question: f(x) = tan(x) + 1. Compute f(0).
 Question: f(x) = sqrt(x) + 1. Compute f(16).
 </code></pre>
 <p>When I tried to give it</p>
-<pre><code>Question: f(x) = x/2 + 2. Compute f(f(16)).
+<pre><code class="language-md">Question: f(x) = x/2 + 2. Compute f(f(16)).
 </code></pre>
 <p>it treated it as just <code>Compute f(16)</code> rather than <code>f(f(16))</code>.</p>
 <p>Interestingly this works:</p>
-<pre><code>Question: f(x) = x*x. Compute f(3).
+<pre><code class="language-md">Question: f(x) = x*x. Compute f(3).
 f(3) = 3*3
 f(3) = 9
 Answer: 9
@@ -654,7 +654,7 @@ Answer: 21
 Question: f(x) = x*3 - 1. Compute f(f(5)).
 </code></pre>
 <p>Whereas this does not:</p>
-<pre><code>Question: f(x) = x*x. Compute f(3).
+<pre><code class="language-md">Question: f(x) = x*x. Compute f(3).
 f(3) = 3*3
 f(3) = 9
 Answer: 9

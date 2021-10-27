@@ -22,7 +22,7 @@
 &lt;p&gt;Python has a few primitive collection types: tuples, lists, dictionaries (aka dicts), and sets. Use parenthesis to create a tuple &lt;code&gt;(1, 2, 3)&lt;/code&gt;, square brackets to create a list &lt;code&gt;[4, 5, 6]&lt;/code&gt;, and squirrelly brackets to create a dict or set: &lt;code&gt;{7: 8, 9: 10}&lt;/code&gt; makes a dict and &lt;code&gt;{11, 12, 13}&lt;/code&gt; makes a set. Just like a set in mathematics, a set in Python is an &lt;strong&gt;unordered&lt;/strong&gt; collection of &lt;strong&gt;distinct&lt;/strong&gt; elements.&lt;/p&gt;
 &lt;h2 id=&#34;convenient-syntax&#34;&gt;Convenient Syntax&lt;/h2&gt;
 &lt;p&gt;Once you&amp;rsquo;ve constructed a set, the following operations allow you to perform set operations on it with clean concise syntax.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;| for union.
+&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;| for union.
 &amp;amp; for intersection.
 – for difference
 ^ for symmetric difference

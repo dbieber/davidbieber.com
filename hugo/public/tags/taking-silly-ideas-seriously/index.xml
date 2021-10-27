@@ -918,7 +918,7 @@ db.close()
 &lt;p&gt;Once I&amp;rsquo;d gotten GPT-3 to do some brainstorming, I realized I&amp;rsquo;d need to test its capabilities before trying its suggestions out in earnest.&lt;/p&gt;
 &lt;p&gt;I taught it how to evaluate simple expressions and take derivatives.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s the first prompt I used:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Question: f(x) = x*x. Compute f(3).
+&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;Question: f(x) = x*x. Compute f(3).
 f(3) = 3*3
 f(3) = 9
 Answer: 9
@@ -938,15 +938,15 @@ Answer: 21
 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;I could then ask it any of the following, and it would correctly show its work.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Question: f(x) = tan(x) + 1. Compute f(0).
+&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;Question: f(x) = tan(x) + 1. Compute f(0).
 Question: f(x) = sqrt(x) + 1. Compute f(16).
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;When I tried to give it&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Question: f(x) = x/2 + 2. Compute f(f(16)).
+&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;Question: f(x) = x/2 + 2. Compute f(f(16)).
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;it treated it as just &lt;code&gt;Compute f(16)&lt;/code&gt; rather than &lt;code&gt;f(f(16))&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Interestingly this works:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Question: f(x) = x*x. Compute f(3).
+&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;Question: f(x) = x*x. Compute f(3).
 f(3) = 3*3
 f(3) = 9
 Answer: 9
@@ -976,7 +976,7 @@ Answer: 21
 Question: f(x) = x*3 - 1. Compute f(f(5)).
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Whereas this does not:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Question: f(x) = x*x. Compute f(3).
+&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;Question: f(x) = x*x. Compute f(3).
 f(3) = 3*3
 f(3) = 9
 Answer: 9
