@@ -28,13 +28,11 @@
   
     
   
-  <meta name="description" content="You can read the 2017 paper &ldquo;Deep Variational Information Bottleneck&rdquo; on Arxiv here, and its reviews are visible on OpenReview here. The authors are my coworkers: Alex Alemi, Ian Fischer, Joshua Dillon, and Kevin Murphy.
-I&rsquo;ve taken notes on the paper, and will use this snippet to present them.
-Notation We consider the problem of supervised learning for classification with the following notation:
- $X$: An example input. $Z$: The output of an intermediate layer of a neural network.">
+  <meta name="description" content="Let&rsquo;s consider machine learning first, and then automation. For each we brainstorm the potential value for note-taking.
+The Value of Machine Learning for Note-Taking  Automatic transcription of audio notes Automatic categorization of notes Automatic categorization of spaced repetition flash cards Automatic context-filling of spaced repetition flash cards  e.g. highlight a phrase to create a flash card; the necessary context is pulled in from surrounding paragraphs to make a coherent standalone flash card.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-07-21-deep-variational-informational-bottleneck/">
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-10-28-ml-and-automation-for-note-taking/">
 
   
 
@@ -46,9 +44,6 @@ Notation We consider the problem of supervised learning for classification with 
   
 
   
-  
-  
-  <script src="/js/mathjax-config.js"></script>
   
 
   
@@ -178,9 +173,9 @@ Notation We consider the problem of supervised learning for classification with 
 
       
       
-
+        
       
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+
       
     
       
@@ -257,7 +252,7 @@ Notation We consider the problem of supervised learning for classification with 
   <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
 
-  <link rel="canonical" href="https://davidbieber.com/snippets/2020-07-21-deep-variational-informational-bottleneck/">
+  <link rel="canonical" href="https://davidbieber.com/snippets/2021-10-28-ml-and-automation-for-note-taking/">
 
   
   
@@ -274,18 +269,16 @@ Notation We consider the problem of supervised learning for classification with 
   <meta property="twitter:creator" content="@Bieber">
   
   <meta property="og:site_name" content="David Bieber">
-  <meta property="og:url" content="https://davidbieber.com/snippets/2020-07-21-deep-variational-informational-bottleneck/">
-  <meta property="og:title" content="Deep Variational Information Bottleneck | David Bieber">
-  <meta property="og:description" content="You can read the 2017 paper &ldquo;Deep Variational Information Bottleneck&rdquo; on Arxiv here, and its reviews are visible on OpenReview here. The authors are my coworkers: Alex Alemi, Ian Fischer, Joshua Dillon, and Kevin Murphy.
-I&rsquo;ve taken notes on the paper, and will use this snippet to present them.
-Notation We consider the problem of supervised learning for classification with the following notation:
- $X$: An example input. $Z$: The output of an intermediate layer of a neural network."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2021-10-28-ml-and-automation-for-note-taking/">
+  <meta property="og:title" content="The potential of Machine Learning and Automation for Note-taking | David Bieber">
+  <meta property="og:description" content="Let&rsquo;s consider machine learning first, and then automation. For each we brainstorm the potential value for note-taking.
+The Value of Machine Learning for Note-Taking  Automatic transcription of audio notes Automatic categorization of notes Automatic categorization of spaced repetition flash cards Automatic context-filling of spaced repetition flash cards  e.g. highlight a phrase to create a flash card; the necessary context is pulled in from surrounding paragraphs to make a coherent standalone flash card."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-07-21T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2021-10-28T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-07-21T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2021-10-28T00:00:00&#43;00:00">
   
 
   
@@ -304,7 +297,7 @@ Notation We consider the problem of supervised learning for classification with 
 
 
 
-  <title>Deep Variational Information Bottleneck | David Bieber</title>
+  <title>The potential of Machine Learning and Automation for Note-taking | David Bieber</title>
 
 </head>
 
@@ -488,7 +481,7 @@ Notation We consider the problem of supervised learning for classification with 
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Deep Variational Information Bottleneck</h1>
+  <h1 itemprop="name">The potential of Machine Learning and Automation for Note-taking</h1>
 
   
 
@@ -533,91 +526,74 @@ Notation We consider the problem of supervised learning for classification with 
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>You can read the 2017 paper &ldquo;Deep Variational Information Bottleneck&rdquo; 
-<a href="https://arxiv.org/pdf/1612.00410.pdf" target="_blank" rel="noopener">on Arxiv here</a>, and its reviews are visible 
-<a href="https://openreview.net/forum?id=HyxQzBceg" target="_blank" rel="noopener">on OpenReview here</a>. The authors are my coworkers: Alex Alemi, Ian Fischer, Joshua Dillon, and Kevin Murphy.</p>
-<p>I&rsquo;ve taken notes on the paper, and will use this snippet to present them.</p>
-<h2 id="notation">Notation</h2>
-<p>We consider the problem of supervised learning for classification with the following notation:</p>
+      <p>Let&rsquo;s consider machine learning first, and then automation. For each we brainstorm the potential value for note-taking.</p>
+<h3 id="the-value-of-markmachine-learningmark-for-note-taking">The Value of <mark>Machine Learning</mark> for Note-Taking</h3>
 <ul>
-<li>$X$: An example input.</li>
-<li>$Z$: The output of an intermediate layer of a neural network.
+<li>Automatic <strong>transcription</strong> of audio notes</li>
+<li>Automatic <strong>categorization</strong> of notes</li>
+<li>Automatic <strong>categorization of spaced repetition</strong> flash cards</li>
+<li>Automatic <strong>context-filling</strong> of spaced repetition flash cards
 <ul>
-<li>We view this as a stochastic encoding of $X$.</li>
-<li>It is the output of a parametric encoder $p(\textbf{z} | \textbf{x}; \theta)$</li>
-<li>$\theta$ are the parameters of the neural network used to encode $X$ that we wish to learn.</li>
+<li>e.g. highlight a phrase to create a flash card; the necessary context is pulled in from surrounding paragraphs to make a coherent standalone flash card.</li>
 </ul>
 </li>
-<li>$Y$: The example&rsquo;s target class.</li>
-</ul>
-<h2 id="goal">Goal</h2>
-<p>The approach of the paper aims first and foremost to learn an encoding $Z$ of $X$ that is maximally informative about $Y$.
-This is measured via mutual information between $Z$ and $Y$: $I(Z, Y; \theta)$.</p>
-<p>$$I(Z, Y; \theta) = \int dx~dy~p(z, y|\theta) \log \frac{p(z, y)}{p(z)p(y)}$$</p>
-<p>It&rsquo;s not enough to maximize $I(Z, Y; \theta)$ though; this can be done by simply letting $Z = X$, which isn&rsquo;t useful.</p>
-<p>So, we also want to limit $I(Z, X)$. We do this by enforcing an information constraint: $I(X, Z) &lt; I_c$.</p>
-<p>Our goal is to maximize $I(Z, Y; \theta)$ subject to $I(X, Z) &lt; I_c$.</p>
-<p>Rewriting this using Lagrange multiplier $\beta$ brings us to the information bottleneck (IB) objective, which we write as follows:</p>
-<p>$$R_{IB}(\theta) = I(Z,Y) - \beta I(Z, X).$$</p>
-<p>The goal of the paper is to maximize $R_{IB}$.</p>
-<h2 id="intuition-behind-goal">Intuition Behind Goal</h2>
-<p>Why maximize $I(Z, Y)$? This is what allows the model to make correct predictions.</p>
-<p>Why not just maximize $I(Z, Y)$? Letting $Z = X$ fully maximizes $I(Z, Y)$, but isn&rsquo;t helpful because the representation of $Z$ is what you started with, so its hard to make good classifications.</p>
-<p>Why minimize $\beta I(Z, X)$? We want a representation $Z$ that is maximally compressive of the input $X$.</p>
-<p>That&rsquo;s the intuition given in the paper for why we seek to minimize $\beta I(Z, X)$, but it isn&rsquo;t clear the degree to which compression is useful. Yes, a compressive representation of $X$ can lead to better generalization, but it&rsquo;s a trade off. Greater compression may mean lower $I(Z, Y)$ and hence lower potential accuracy. Balancing this trade off (choosing an appropriate $\beta$) will be important.</p>
-<h2 id="why-is-it-difficult">Why is it difficult?</h2>
-<p>Mutual information is in general intractable. So we can&rsquo;t directly optimize the object $R_{IB}(\theta)$ as stated in the goal. Instead, the paper takes the following approach to get around mutual information&rsquo;s intractability.</p>
-<h2 id="the-approach">The Approach</h2>
-<ol>
-<li>
-<p>Use variational inference to construct a lower bound on the IB objective.</p>
-</li>
-<li>
-<p>Use the &ldquo;reparameterization trick&rdquo; and Monte Carlo sampling to get unbiased estimate of gradient.</p>
-</li>
-<li>
-<p>Parameterize our distributions with neural networks, and optimize with SGD.</p>
-</li>
-</ol>
-<p>We&rsquo;ll go into more detail in just a minute.</p>
-<h2 id="benefits">Benefits</h2>
-<p>This approach provides some robustness to overfitting because model ignores as much of $X$ as possible.</p>
-<p>It also provides some robustness to adversarial examples because the model maps $X$ to a distribution over $Z$s rather than a single $Z$, so its harder for a single unusual value to influence a final class prediction.</p>
-<h2 id="execution">Execution</h2>
-<h3 id="part-1-variational-inference">Part 1: Variational Inference</h3>
-<p>You can follow the math in the paper (Section 3), but the first main result is to define</p>
-<p>$$L = \int dx~dy~dz~ p(x) p(y|x) p(z|x) \log q(y|z) - \beta \int dx~dz~ p(x) p(z|x) \log \frac{p(z|x)}{r(z)}$$</p>
-<p>and show that
-$$R_{IB}(\theta) = I(Z,Y) - \beta I(Z, X) \ge L.$$</p>
-<p>To achieve this, we&rsquo;ve introduced $q(y|z)$ as an approximation of $p(y|z)$, and $r(z)$ as an approximation of $p(z)$.</p>
-<p>$L$ serves as a lower bound for the objective we care about. $p$, $q$, and $r$ are all parameterized by $\theta$.</p>
-<p>We can approximate $L$ as</p>
-<p>$$L \approx \frac{1}{N}\sum_{n=1}^N \left[\int dz~ p(z|x_n) \log q(y_n|z) - \beta~ p(z|x_n) \log \frac{p(z|x_n)}{r(z)} \right].$$</p>
-<h3 id="part-2-reparameterization-trick">Part 2: Reparameterization trick</h3>
-<p>Suppose $p(z|x)$ is $N(z|f_e^\mu(x), f_e^\Sigma(x))$, with $f_e$ a neural network that outputs the mean and covariance matrix for the Gaussian.</p>
-<p>Then the &ldquo;reparameterization trick&rdquo; is to write $p(z|x)dz = p(\epsilon)d\epsilon$, where $z = f(x, \epsilon)$ is a deterministic function and $\epsilon$ is a Gaussian random variable. Using this, we can rewrite $L$ as follows.</p>
-<p>$$J_{IB} = \frac{1}{N} \sum\limits_{n=1}^N E_{\epsilon \sim p(\epsilon)} \left[-\log q(y_n|f(x_n,\epsilon))\right] + \beta KL[p(Z|x_n), r(Z)]$$</p>
-<p>As long as $q$ is differentiable and $KL[p(Z|x_n), r(Z)]$ is tractable, this is an objective we can optimize with e.g. gradient descent.</p>
-<h2 id="implementation">Implementation</h2>
-<p>A concise demo implementation is available on GitHub at <a href="https://github.com/alexalemi/vib_demo/blob/master/MNISTVIB.ipynb">https://github.com/alexalemi/vib_demo/blob/master/MNISTVIB.ipynb</a>.</p>
-<p>I&rsquo;ve describe here the correspondence between the notation used in the source code and the notation used in the paper.
-Terms from the paper are in $\LaTeX$, and terms from the source code are in <code>code blocks</code>.</p>
+<li>Automatic <strong>connections</strong> and graph construction:
 <ul>
-<li><code>class_loss</code>: $-\log q(y_n | f(x_n, \epsilon))$ (comes from the $I(Z, Y)$ term)
+<li>Textual elements:
 <ul>
-<li>Recall $z = f(x, \epsilon)$; this is <code>encoding.sample()</code> in the code base.</li>
-<li>$q$ is <code>decoder</code> with softmax applied, and $q(y | f(x_n, \epsilon))$ is softmax(<code>logits</code>)</li>
-<li><code>class_loss = tf.losses.softmax_cross_entropy( logits=logits, onehot_labels=one_hot_labels) / math.log(2)</code> is $-\log q(y_n | f(x_n, \epsilon))$
-<ul>
-<li>$f$ is <code>encoder</code>, and $f(x, \cdot)$ is <code>encoding</code></li>
+<li>Entity extraction from notes (&ldquo;implicit nodes&rdquo;, e.g. &ldquo;Bank of America&rdquo;)</li>
+<li>Attribute extraction from notes (e.g. &ldquo;incredible presentation by Pierre-Antoine&rdquo; gets tagged as incredible or wow (the canonical form).)</li>
+<li>Relationship extraction (e.g. &ldquo;Diamond Age by Neal Stephenson&rdquo; -&gt; creates an &ldquo;author of&rdquo; relationship)</li>
 </ul>
 </li>
-<li>$p(Z|x_n)$ is also <code>encoding</code></li>
-<li>$f$ is the deterministic encoder used by the reparameterization trick, whereas $p$ is the stochastic encoder</li>
+<li>Background knowledge elements:
+<ul>
+<li>e.g. knowing that Diamond Age is a book</li>
 </ul>
 </li>
-<li>$KL[p(Z|x_n), r(Z)]$ is <code>info_loss</code></li>
-<li><code>prior</code> is $r(z)$ (which approximates $p(z)$).</li>
+</ul>
+</li>
+<li>Writing prompt generator / <strong>Writing assistant</strong></li>
+<li><strong>Overlap detection</strong> between people&rsquo;s graphs
+<ul>
+<li>The Go Note Go &ldquo;clink&rdquo; scenario</li>
+</ul>
+</li>
+<li><strong>Autocomplete</strong> (e.g. gmail tab completion)</li>
+<li>Improved <strong>spaced repetition algorithms</strong></li>
+<li>Mistake detection / <strong>fact checking</strong></li>
+<li><strong>Summarization</strong> of notes</li>
+<li><strong>Highlight extraction</strong> from notes</li>
+<li>Suggesting <strong>new ideas</strong></li>
+<li>Suggesting <strong>new online resources</strong> to read / explore
+<ul>
+<li>Incl. articles, papers, YouTube videos, Suggesting <strong>people to reach out to</strong> (e.g. because of their blog or Twitter or other things they&rsquo;re written)</li>
+</ul>
+</li>
+<li>Suggesting <strong>people to reach out to</strong> (e.g. because of their blog or Twitter or other things they&rsquo;re written</li>
+<li><strong>Semantic search</strong></li>
+<li><strong>Conversational chat bots</strong> for exploring the knowledge in a notebase</li>
+</ul>
+<h3 id="the-value-of-markautomationmark-for-note-taking">The Value of <mark>Automation</mark> for Note-Taking</h3>
+<ul>
+<li><strong>Share notes</strong> with people via their preferred messaging platform</li>
+<li><strong>Snooze notes</strong> and ideas so you review them later</li>
+<li>Set pomodoros, alarms, and reminders to <strong>stay focused</strong> and <strong>stay on task</strong></li>
+<li>Note-taking <strong>via highlights</strong> (e.g. with Browserflow)</li>
+<li>Note-taking <strong>via screenshots</strong> (e.g. from YouTube)</li>
+<li>Automatic creation of <strong>spaced repetition from highlights</strong></li>
+<li><strong>Bulk refactors</strong> of note-taking</li>
+<li><strong>Pulling in context</strong> from other sources (e.g. Warmly pulls LinkedIn info into Calendar, notes could pull info from wikipedia)</li>
+<li><strong>Sync notes</strong> between other sources and your notebase
+<ul>
+<li>Other people&rsquo;s notes</li>
+<li>Your email client, calendar, TODO app, spaced repetition app, GitHub issues, other messaging services, etc</li>
+</ul>
+</li>
+<li><strong>Publishing</strong> of notes to a webpage (either publicly or privately), or to social media</li>
+<li>New <strong>data entry</strong> mechanisms: <strong>Go Note Go</strong>, terminal, email, text, browsing history, location history, terminal history, IoT devices, etc</li>
+<li><strong>Spaced repetition</strong> for studying</li>
+<li><strong>Inactivity reminders</strong> (e.g. &ldquo;it&rsquo;s been three months since you&rsquo;ve done a music activity&rdquo;, or &ldquo;it&rsquo;s been over 6 months since you&rsquo;ve spoken with David Dohan&rdquo;, or &ldquo;it&rsquo;s been over a year since you&rsquo;ve written about microbiology.&quot;)</li>
 </ul>
 
     </div>
@@ -627,6 +603,14 @@ Terms from the paper are in $\LaTeX$, and terms from the source code are in <cod
 
 
 
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/note-taking/">note-taking</a>
+  
+  <a class="badge badge-light" href="/tags/automation/">automation</a>
+  
+</div>
 
 
 
@@ -643,13 +627,13 @@ Terms from the paper are in $\LaTeX$, and terms from the source code are in <cod
     <h3>Related</h3>
     <ul>
       
-      <li><a href="/snippets/2020-12-12-derivative-of-softmax-and-the-softmax-cross-entropy-loss/">Derivative of Softmax and the Softmax Cross Entropy Loss</a></li>
+      <li><a href="/snippets/2021-10-10-note-taking-interop-requirements/">Rough Note-taking Interop Requirements</a></li>
       
-      <li><a href="/snippets/2020-06-28-oeis-download/">Downloading the Online Encylopedia of Integer Sequences</a></li>
+      <li><a href="/snippets/2021-10-09-note-taking-system-interop/">Note-taking System Interoperability</a></li>
       
-      <li><a href="/snippets/2021-10-28-ml-and-automation-for-note-taking/">The potential of Machine Learning and Automation for Note-taking</a></li>
+      <li><a href="/snippets/2021-09-26-go-note-go/">Go Note Go is public</a></li>
       
-      <li><a href="/snippets/2021-01-06-brains-dont-do-solomonoff-induction/">Brains Don&#39;t Do Solomonoff Induction</a></li>
+      <li><a href="/snippets/2021-07-29-note-taking-flow/">Browserflow Note-taking Flow</a></li>
       
     </ul>
   </div>

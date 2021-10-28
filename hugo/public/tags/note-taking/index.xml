@@ -5,12 +5,89 @@
     <link>https://davidbieber.com/tags/note-taking/</link>
       <atom:link href="https://davidbieber.com/tags/note-taking/index.xml" rel="self" type="application/rss+xml" />
     <description>note-taking</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 10 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 28 Oct 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>note-taking</title>
       <link>https://davidbieber.com/tags/note-taking/</link>
     </image>
+    
+    <item>
+      <title>The potential of Machine Learning and Automation for Note-taking</title>
+      <link>https://davidbieber.com/snippets/2021-10-28-ml-and-automation-for-note-taking/</link>
+      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-10-28-ml-and-automation-for-note-taking/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s consider machine learning first, and then automation. For each we brainstorm the potential value for note-taking.&lt;/p&gt;
+&lt;h3 id=&#34;the-value-of-markmachine-learningmark-for-note-taking&#34;&gt;The Value of &lt;mark&gt;Machine Learning&lt;/mark&gt; for Note-Taking&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Automatic &lt;strong&gt;transcription&lt;/strong&gt; of audio notes&lt;/li&gt;
+&lt;li&gt;Automatic &lt;strong&gt;categorization&lt;/strong&gt; of notes&lt;/li&gt;
+&lt;li&gt;Automatic &lt;strong&gt;categorization of spaced repetition&lt;/strong&gt; flash cards&lt;/li&gt;
+&lt;li&gt;Automatic &lt;strong&gt;context-filling&lt;/strong&gt; of spaced repetition flash cards
+&lt;ul&gt;
+&lt;li&gt;e.g. highlight a phrase to create a flash card; the necessary context is pulled in from surrounding paragraphs to make a coherent standalone flash card.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Automatic &lt;strong&gt;connections&lt;/strong&gt; and graph construction:
+&lt;ul&gt;
+&lt;li&gt;Textual elements:
+&lt;ul&gt;
+&lt;li&gt;Entity extraction from notes (&amp;ldquo;implicit nodes&amp;rdquo;, e.g. &amp;ldquo;Bank of America&amp;rdquo;)&lt;/li&gt;
+&lt;li&gt;Attribute extraction from notes (e.g. &amp;ldquo;incredible presentation by Pierre-Antoine&amp;rdquo; gets tagged as incredible or wow (the canonical form).)&lt;/li&gt;
+&lt;li&gt;Relationship extraction (e.g. &amp;ldquo;Diamond Age by Neal Stephenson&amp;rdquo; -&amp;gt; creates an &amp;ldquo;author of&amp;rdquo; relationship)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Background knowledge elements:
+&lt;ul&gt;
+&lt;li&gt;e.g. knowing that Diamond Age is a book&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Writing prompt generator / &lt;strong&gt;Writing assistant&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Overlap detection&lt;/strong&gt; between people&amp;rsquo;s graphs
+&lt;ul&gt;
+&lt;li&gt;The Go Note Go &amp;ldquo;clink&amp;rdquo; scenario&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Autocomplete&lt;/strong&gt; (e.g. gmail tab completion)&lt;/li&gt;
+&lt;li&gt;Improved &lt;strong&gt;spaced repetition algorithms&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Mistake detection / &lt;strong&gt;fact checking&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Summarization&lt;/strong&gt; of notes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Highlight extraction&lt;/strong&gt; from notes&lt;/li&gt;
+&lt;li&gt;Suggesting &lt;strong&gt;new ideas&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Suggesting &lt;strong&gt;new online resources&lt;/strong&gt; to read / explore
+&lt;ul&gt;
+&lt;li&gt;Incl. articles, papers, YouTube videos, Suggesting &lt;strong&gt;people to reach out to&lt;/strong&gt; (e.g. because of their blog or Twitter or other things they&amp;rsquo;re written)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Suggesting &lt;strong&gt;people to reach out to&lt;/strong&gt; (e.g. because of their blog or Twitter or other things they&amp;rsquo;re written&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Semantic search&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conversational chat bots&lt;/strong&gt; for exploring the knowledge in a notebase&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;the-value-of-markautomationmark-for-note-taking&#34;&gt;The Value of &lt;mark&gt;Automation&lt;/mark&gt; for Note-Taking&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Share notes&lt;/strong&gt; with people via their preferred messaging platform&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Snooze notes&lt;/strong&gt; and ideas so you review them later&lt;/li&gt;
+&lt;li&gt;Set pomodoros, alarms, and reminders to &lt;strong&gt;stay focused&lt;/strong&gt; and &lt;strong&gt;stay on task&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Note-taking &lt;strong&gt;via highlights&lt;/strong&gt; (e.g. with Browserflow)&lt;/li&gt;
+&lt;li&gt;Note-taking &lt;strong&gt;via screenshots&lt;/strong&gt; (e.g. from YouTube)&lt;/li&gt;
+&lt;li&gt;Automatic creation of &lt;strong&gt;spaced repetition from highlights&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bulk refactors&lt;/strong&gt; of note-taking&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pulling in context&lt;/strong&gt; from other sources (e.g. Warmly pulls LinkedIn info into Calendar, notes could pull info from wikipedia)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sync notes&lt;/strong&gt; between other sources and your notebase
+&lt;ul&gt;
+&lt;li&gt;Other people&amp;rsquo;s notes&lt;/li&gt;
+&lt;li&gt;Your email client, calendar, TODO app, spaced repetition app, GitHub issues, other messaging services, etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Publishing&lt;/strong&gt; of notes to a webpage (either publicly or privately), or to social media&lt;/li&gt;
+&lt;li&gt;New &lt;strong&gt;data entry&lt;/strong&gt; mechanisms: &lt;strong&gt;Go Note Go&lt;/strong&gt;, terminal, email, text, browsing history, location history, terminal history, IoT devices, etc&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Spaced repetition&lt;/strong&gt; for studying&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inactivity reminders&lt;/strong&gt; (e.g. &amp;ldquo;it&amp;rsquo;s been three months since you&amp;rsquo;ve done a music activity&amp;rdquo;, or &amp;ldquo;it&amp;rsquo;s been over 6 months since you&amp;rsquo;ve spoken with David Dohan&amp;rdquo;, or &amp;ldquo;it&amp;rsquo;s been over a year since you&amp;rsquo;ve written about microbiology.&amp;quot;)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Rough Note-taking Interop Requirements</title>
