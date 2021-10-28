@@ -19,7 +19,7 @@ In a very hand-wavy sort of way, here's a bit of what this future history looks 
 
 - COVID makes in-home PCR more affordable more common. Since there's demand for in-home viral testing, the components and skills involved in bioengineering start becoming more commonplace. This is already happening.
 - Our understanding of the genome is increasing every week. This is already happening.
-- People will be able to modify the genome of plants using a library of known edits. E.g. take the basil genome, replace GAAT at positive 1004 with TAAG, and you'll get freeze-resistant basil.
+- People will be able to modify the genome of plants using a library of known edits. E.g. take the basil genome, replace GAAT at position 1004 with TAAG, and you'll get freeze-resistant basil.
 - Eventually people will be able to use software to create genomes using higher-level constructs than directly writing the base-pairs in the desired DNS.
 - First this will mean listing out proteins instead of individual base-pairs.
 - Later it will involve listing out multi-protein mechanisms, or higher level traits.
