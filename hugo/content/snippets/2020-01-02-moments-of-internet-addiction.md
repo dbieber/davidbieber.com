@@ -1,5 +1,5 @@
 +++
-title = "What To Do in Moments of Internet Addiction"
+title = "What to do in Moments of Internet Addiction"
 date = 2020-01-02T01:00:00
 tags = ["attention"]
 message = "A brainstorming of potential activities to help combat mild internet addiction."
