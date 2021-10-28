@@ -32,7 +32,6 @@ Let's consider machine learning first, and then automation. For each we brainsto
 - Suggesting **new ideas**
 - Suggesting **new online resources** to read / explore
     - Incl. articles, papers, YouTube videos, Suggesting **people to reach out to** (e.g. because of their blog or Twitter or other things they're written)
-- Suggesting **people to reach out to** (e.g. because of their blog or Twitter or other things they're written
 - **Semantic search**
 - **Conversational chat bots** for exploring the knowledge in a notebase
 
