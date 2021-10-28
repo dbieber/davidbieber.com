@@ -549,7 +549,12 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <description>&lt;p&gt;Let&amp;rsquo;s consider machine learning first, and then automation. For each we brainstorm the potential value for note-taking.&lt;/p&gt;
 &lt;h3 id=&#34;the-value-of-markmachine-learningmark-for-note-taking&#34;&gt;The Value of &lt;mark&gt;Machine Learning&lt;/mark&gt; for Note-Taking&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Automatic &lt;strong&gt;transcription&lt;/strong&gt; of audio notes&lt;/li&gt;
+&lt;li&gt;Automatic &lt;strong&gt;transcription&lt;/strong&gt; of audio notes
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Speaker identification&lt;/strong&gt; during meetings or conversations&lt;/li&gt;
+&lt;li&gt;Resurfacing of action items, surfacing relevant information, and performing actions (e.g running a google search or sending a message) in response to audio cues during meetings or conversations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Automatic &lt;strong&gt;categorization&lt;/strong&gt; of notes&lt;/li&gt;
 &lt;li&gt;Automatic &lt;strong&gt;categorization of spaced repetition&lt;/strong&gt; flash cards&lt;/li&gt;
 &lt;li&gt;Automatic &lt;strong&gt;context-filling&lt;/strong&gt; of spaced repetition flash cards

@@ -10,6 +10,8 @@ Let's consider machine learning first, and then automation. For each we brainsto
 ### The Value of <mark>Machine Learning</mark> for Note-Taking
 
 - Automatic **transcription** of audio notes
+    - **Speaker identification** during meetings or conversations
+    - Resurfacing of action items, surfacing relevant information, and performing actions (e.g running a google search or sending a message) in response to audio cues during meetings or conversations
 - Automatic **categorization** of notes
 - Automatic **categorization of spaced repetition** flash cards
 - Automatic **context-filling** of spaced repetition flash cards
