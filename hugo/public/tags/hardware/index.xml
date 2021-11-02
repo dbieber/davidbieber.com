@@ -69,7 +69,7 @@
 &lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;shh shell write up&lt;/a&gt; for more on text commands.&lt;/p&gt;
 &lt;p&gt;Go Note Go supports voice commands too. I use the keyword &amp;ldquo;go go&amp;rdquo; to issue an audio command. &amp;ldquo;go go time&amp;rdquo; will cause the system to read the time aloud. And &amp;ldquo;go go read back&amp;rdquo; will have the system read back your last typed note.&lt;/p&gt;
 &lt;h3 id=&#34;why-is-it-called-go-note-go&#34;&gt;Why is it called Go Note Go?&lt;/h3&gt;
-&lt;p&gt;It&amp;rsquo;s a note-taking system for when you&amp;rsquo;re on the go. Like any good note-taking system, it can help you make decisions. This includes but is not limited to go/go-no decisions.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a note-taking system for when you&amp;rsquo;re on the go. Like any good note-taking system, it can help you make decisions. This includes but is not limited to go/no-go decisions.&lt;/p&gt;
 &lt;p&gt;Go Note Go is not implemented in Go.&lt;/p&gt;
 &lt;h3 id=&#34;why-not-just-take-notes-on-your-computer-or-phone-or-with-a-voice-recorder&#34;&gt;Why not just take notes on your computer or phone, or with a voice recorder?&lt;/h3&gt;
 &lt;p&gt;Go Note Go is great at reducing friction. It&amp;rsquo;s really nice not having to switch to a note-taking app. You don&amp;rsquo;t have to switch tabs or windows. You don&amp;rsquo;t have to wait for anything to load. If the keyboard is there and on, you can type on it and know your notes are being recorded (there are LED status indicators for peace of mind.) No latency means minimal cognitive load.&lt;/p&gt;

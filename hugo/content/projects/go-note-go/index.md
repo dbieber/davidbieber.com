@@ -113,7 +113,7 @@ Go Note Go supports voice commands too. I use the keyword "go go" to issue an au
 
 ### Why is it called Go Note Go?
 
-It's a note-taking system for when you're on the go. Like any good note-taking system, it can help you make decisions. This includes but is not limited to go/go-no decisions.
+It's a note-taking system for when you're on the go. Like any good note-taking system, it can help you make decisions. This includes but is not limited to go/no-go decisions.
 
 Go Note Go is not implemented in Go.
 
