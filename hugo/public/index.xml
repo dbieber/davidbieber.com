@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 28 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 02 Nov 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>David Bieber</title>
@@ -538,6 +538,49 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DDoV for DAOs</title>
+      <link>https://davidbieber.com/snippets/2021-11-02-ddov-for-daos/</link>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-11-02-ddov-for-daos/</guid>
+      <description>&lt;p&gt;I wrote up the idea for 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-11-democratic-delegation-optional-voting/&#34;&gt;Democratic Delegation-optional Voting (DDoV)&lt;/a&gt; back in January. This was before I learned about DAOs (decentralized autonomous organizations). I think the idea is even more relevant in the context of DAOs than it was originally, and I&amp;rsquo;m intrigued to revisit it now that I am learning about DAOs.&lt;/p&gt;
+&lt;p&gt;The core of the idea is a governance structure that supports ad hoc delegation of votes. Since there are potentially many things to vote on, but not everybody is invested enough or has enough time to learn about and vote on all of them, delegation is important. Without it, there are some problems&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;In DDoV, there&amp;rsquo;s no &lt;em&gt;need&lt;/em&gt; to delegate your vote; you can always cast your vote yourself. Anyone can delegate their vote(s), and anyone who wants to act as a delegate can have votes delegated to them. This setup admits much more flexibility that traditional elected representatives, while still preserving many of the benefits of elected representatives.&lt;/p&gt;
+&lt;p&gt;The flexibility arises because any individual or group can, hopefully without stigma or repercussion, redelegate their votes at any time, or even reclaim them and cast them manually. A benefit that is preserved is the possibility of centralized decision making. A small number of people &lt;em&gt;can&lt;/em&gt;, at the behest of the stakeholders, hold majority voting power for particular issues. In these scenarios, a concentrated number of voices can discuss issues and reach compromises. If any compromise is objectionable to the stakeholders, they are at liberty to redelegate their votes, but the possibility for mental offloading to representatives remains.&lt;/p&gt;
+&lt;p&gt;What is being offloaded to representatives? It&amp;rsquo;s the hard work of understanding the issues being voted on, deciding on the best course of action, convincing others of their opinions, and casting their votes.&lt;/p&gt;
+&lt;p&gt;Searching around a bit for existing DAOs, I see that voting delegation has been proposed and tried now. I haven&amp;rsquo;t seen any DAO fully implement the DDoV proposal though, allowing for delegating and redelegating. Specifically, here is what I would want to see minimally in an implementation:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;For each election, every member of an organization receives tokens that represent their voting power. For each token you hold, you can place a vote.&lt;/li&gt;
+&lt;li&gt;Any member can mark themselves as a delegate; this means they can receive tokens from other members.&lt;/li&gt;
+&lt;li&gt;Any member can give a token they hold to a delegate. This includes delegates forwarding tokens they receive to other delegates.&lt;/li&gt;
+&lt;li&gt;A member can recall their tokens back from whoever holds them at any time.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;On top of these basic primitives, the following would make the system more useful:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Members can set up rules to automatically give out tokens conditioned on the particular issue being voted on. For example, for all education issues, I might automatically send my voting tokens to someone I trust on education.&lt;/li&gt;
+&lt;li&gt;Votes by delegates are made public and locked in before the voting period ends. After this lock-in point, members can still recall their own tokens and modify their own votes. Only delegate-votes cannot be changed (but they can be recalled by the original owner of the voting token.)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Point 1 here allows for effective representatives to emerge, even if in practice they are ephemeral and can have their power revoked by the people at any time.
+Point 2 here allows the members to hole ultimate control over their own votes if for some reason their representative behaves in a way contrary to their own views.&lt;/p&gt;
+&lt;p&gt;I am not yet caught up to date with the implementations that DAOs have tried in practice. This is something I&amp;rsquo;m interested to learn more about, and then perhaps DDoV (or some future version of it) will be an effective voting strategy for a future DAO.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;What are the problems that arise with naive voting?
+&lt;br/&gt;
+(1) You can only hold votes on a small number of things before overwhelming the governing body. If you have too many things to vote on, people will be unable to adequately inform themselves about all items.
+&lt;br/&gt;
+(2) Everybody needs to learn about and vote on every item.
+&lt;br/&gt;
+(3) If only a small fraction of voters are voting on typical items, a small number of people could easily sneak a vote past the majority that the majority would disagree with. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 </description>
     </item>
     
