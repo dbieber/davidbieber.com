@@ -2,7 +2,7 @@
 title = "DDoV for DAOs"
 date = 2021-11-02T00:00:00
 tags = ["blockchain"]
-keywords = ["governance"]
+keywords = ["governance", "delegation", "voting"]
 +++
 
 I wrote up the idea for [Democratic Delegation-optional Voting (DDoV)](/snippets/2021-01-11-democratic-delegation-optional-voting/) back in January. This was before I learned about DAOs (decentralized autonomous organizations). I think the idea is even more relevant in the context of DAOs than it was originally, and I'm intrigued to revisit it now that I am learning about DAOs.
