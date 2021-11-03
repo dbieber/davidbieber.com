@@ -49,54 +49,56 @@ It's also important that users know what makes a good card. For this, they can r
 
 A common habit of experienced spaced repetition users is to remove cards that take too long from their deck. The most popular spaced repetition tools allow users to do this, but they should go further. They should proactively encourage users to eject bad cards.
 
-In fact, I think these system should go further. They should eject detected bad cards by default, giving users an opportunity to preserve these cards only if they explicitly choose to do so.
+In fact, I think these system should go even further than that. They should eject detected bad cards by default, giving users an opportunity to preserve these cards only if they explicitly choose to do so.
 
-How can a spaced repetition system detect bad cards? The main way is by looking at the time spent reviewing it. Other clues come from the length of the answer, and other properties of the answer. Getting this exactly right is a challenging problem, but I'm confident that we have the tool set (e.g. natural language processing, Quizlet user data) to make significant progress on this. Even a rough heuristic approach to detecting bad cards, couple with active encouragement for people to eject bad cards, I think would go a long way.
+How can a spaced repetition system detect bad cards? The main way is by looking at the time spent reviewing it. Other clues come from the length of the answer, and other properties of the answer. Getting this exactly right is a challenging problem, but I'm confident that we have the tool set (e.g. natural language processing, Quizlet user data) to make significant progress on this. Even a rough heuristic approach to detecting bad cards, coupled with active encouragement for people to eject bad cards, I think would go a long way.
 
 #### 4. Schedule flexibility: Allow people to study more
 
 This and the next item go hand in hand; spaced repetition scheduling algorithms need to admit significantly greater flexibility than they do today. There isn't a single best time to review some item. There is usually a wide and fuzzy range of good times to review something. And extra review, while it might mess with the scheduling, is almost always a good thing.
 
-If someone is motivated to study extra, spaced repetition system should encourage it. The scheduling algorithm should adapt.
+If someone is motivated to study extra, spaced repetition systems should encourage it. The scheduling algorithm should adapt.
 
 This is especially important because people's levels of motivations change from day to day. And most people can't do review sessions everyday anyway (see next item, studying less). We should build tools that work for people, not ones that constrain people. In the context of spaced repetition, this means we want to amplify people's motivations.
 
-If someone is really into a particular topic on a particular day, their spaced repetition system should help them study that topic to their hearts content. In today's spaced repetition systems that might just mean studying the cards related to that topic over and over. In tomorrow's spaced repetition system, this might be giving them new related content to learn (but, while fun and futuristic, that's a less pressing enhancement to make than the six I've listed here).
+If someone is really into a particular topic on a particular day, their spaced repetition system should help them study that topic to their heart's content. In today's spaced repetition systems that might just mean studying the cards related to that topic over and over. In tomorrow's spaced repetition system, this might be giving them new related content to learn (but, while fun and futuristic, that's a less pressing enhancement to make than the six I've listed here).
 
 #### 5. Schedule flexibility: Allow people to study less
 
 As mentioned, people's motivations and availability to study fluctuates. Spaced repetition systems should never make their users feel bad about not studying. This demands both UI changes and algorithmic changes.
 
-First, missing a single day of studying should not feel like a giant impenetrable wall of a backlog has been erected. Most of the cards you missed can be smoothed out over several days or weeks anyway, with minimal degradation to your memory quality. The UI should not make you feel like you've built up a full day's backlog when you miss a single day of review.
+First, missing a single day of studying should not feel like a giant impenetrable wall of a backlog has been erected. The reviews for most of the cards you missed can be smoothed out over several days or weeks anyway, with minimal degradation to your memory quality. The UI should not make you feel like you've built up a full day's backlog when you miss a single day of review.
 
-And this shouldn't just be a cosmetic change either; missing review sessions should be a normal thing. Week-long or month-long (or longer!) vacations should be a normal thing. Obviously, the more time you spend studying the more you can learn and the better you can remember things, but daily studying is not a strict requirement for getting the benefits of spaced repetition. Those benefits scale gracefully up or down with the amount of time you're willing to put in, and the software that implements spaced repetition should expose this smooth scaling property.
+And this shouldn't just be a cosmetic change either; missing review sessions should be a normal thing. Week-long or month-long (or longer!) vacations should be a normal scenario. Obviously, the more time you spend studying the more you can learn and the better you can remember things, but daily studying is not a strict requirement for getting the benefits of spaced repetition. Those benefits scale gracefully up or down with the amount of time you're willing to put in, and the software that implements spaced repetition should expose this smooth scaling property.
 
-Spaced repetition systems should handle people taking vacations gracefully. One way to achieve this is by using ranges rather than specific dates when scheduling card reviews.
+Spaced repetition systems should handle people taking vacations gracefully. One way to achieve this is by using ranges rather than specific dates when scheduling card reviews. The acceptable range of times for studying a card should grow considerably as you become more familiar with that card.
 
 If a user does choose to study less that is needed to learn all the material they want to learn, then another possible response is to thin out the material. With the user's input, remove some material such that the amount of material being studied is in line with the amount of study time being put in. This relates directly to idea 7., which I believe can increase the study material to study time ratio significantly for existing spaced repetition users.
 
 #### 6. Review friction: Bring the reviews to the users
 
-The final significant way we can reduce the friction to using spaced repetition systems is to move the review system to the person's primary inbox. That might be their email, or their text messages, or somwhere else -- wherever it is they maintain inbox zero.
+The final significant way we can reduce the friction to using spaced repetition systems is to move the review system to the person's primary inbox. That might be their email, or their text messages, or somwehere else -- wherever it is they maintain inbox zero.
 
 This is the same philosophy I use with Bieber Bot -- if Bieber Bot sent me messages to a system I never checked, or one with hundreds of backlogged messages, it wouldn't be useful to me. Instead, he sends messages to FB Messenger where I already read every message. So I don't miss messages from Bieber Bot and his messages have continued to be useful for years.
 
-When people have to switch apps to e.g. Anki, it is easier for them to fall out of the habit of doing spaced repetition. If instead, spaced repetition were built directly into an app they're already using constantly and already responding to all notifications for, it would be easy to develop into a habit.
+When people have to switch apps to e.g. Anki, it is easier for them to fall out of the habit of doing spaced repetition. If instead, spaced repetition were built directly into an app they were already using constantly and already responding to all notifications for, it would be easy to develop into a habit.
 
-For me, this is Roam Research. I take notes in Roam throughout the day, and so it's natural for me to do a review session in Roam. No extra app needed.
+For me, this place is Roam Research. I take notes in Roam throughout the day, and so it's natural for me to do a review session in Roam. No extra app needed.
 
-For most people, I think baking spaced repetition directly into an email client probably makes the most sense. Who knows though, maybe TikTok spaced repetition is even better.
+For most people, I think baking spaced repetition directly into an email client probably makes the most sense. Who knows though? Maybe TikTok spaced repetition is even better :).
 
 ---
 
 Together these six issues can move the needle significantly in reducing friction to using spaced repetition. I expect just solving these six could for many people bring spaced repetition across the chasm from "not practical" to "practical".
 
-There are still further major improvements that can be made to spaced repetition beyond these though. Here is the one I think is most important, which could potential save a significant amount of time or increase people capacity to review material substantially:
+There are still further major improvements that can be made to spaced repetition beyond these though. Here is the one I think is most important, which could potentially save a significant amount of time or increase people's capacity to review material substantially:
 
 #### 7. SRS that understands card connections
 
 We need a smarter scheduling algorithm that understands the connections between cards. If you review many related cards over many years, those cards start to become related in your head. Reviewing one will also jog your memory about others. However, today's spaced repetition systems schedule each card independently. Getting one card right should push back the schedule not only for that card, but also for related cards.
 
-Consider a flashcard about conjugating a verb. This card tests two things: do you know the vocab, and do you know how to do the conjugation. Other cards might test the same vocab in a different want, and still other cards might test the same conjugation rule but on a different verb. Getting the card right is (weak) evidence that you will also get other cards testing the same underlying skills correct. We need a spaced repetition scheduling algorithm that can take advantage of these connections.
+Consider a flashcard about conjugating a verb. This card tests two things: (1) do you know the vocab, and (2) do you know how to do the conjugation. Other cards might test the same vocab in a different way, and still other cards might test the same conjugation rule but on a different verb. Getting the card right is (partial) evidence that you will also get other cards testing the same underlying skills correct. We need a spaced repetition scheduling algorithm that can take advantage of these connections.
 
-With such an algorithm, I believe that overall reviews can be made less frequent than today's algorithms allow for. This can free up time for spaced repetition users to either study less (time) or study more (content).
+Another example is learning 2-digit addition. When you're first learning the skill, you might have hundreds of distinct cards with 2-digit addition questions. Years later, it might be good to occasionally review 2-digit addition to make sure you've still got the skill, but you only need to do a small number of cards to convince yourself and the system that you've still mastered the skill. The other cards can get pushed back each time you demonstrate their review isn't going to be helpful to you since you've retained mastery of the skill.
+
+With a scheduling algorithm that understands these connections between cards, I believe that overall reviews can be made less frequent than today's algorithms allow for. Over the long term, the total review time for vocabulary and conjugation cards might be reduced by a substantial factor. The total review time for mathematical skill cards might be reduced even more. This can free up time for spaced repetition users to either study for less time, or to study more material. This would be a significant win for the technique.
