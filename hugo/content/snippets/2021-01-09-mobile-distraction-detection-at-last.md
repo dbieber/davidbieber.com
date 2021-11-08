@@ -3,7 +3,6 @@ title = "Mobile Distraction Detection, at last"
 date = 2021-01-09T00:00:00
 uid = "yZgMHS8UV"
 tags = ["attention", "browser-history", "taking-silly-ideas-seriously"]
-
 +++
 
 I have implemented a minimal working version of mobile _distraction detection_, complete with a simple intervention for when I visit distracting websites on my phone.

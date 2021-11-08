@@ -1,7 +1,7 @@
 +++
 title = "Browserflow Note-taking Flow"
 date = 2021-07-29T00:00:00
-tags = ["browserflow", "note-taking", "roam-research"]
+tags = ["browserflow", "note-taking", "roam-research", "spaced-repetition"]
 +++
 
 Quick update on the note-taking Browserflow flow I've been building: [https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7](https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7):
@@ -15,14 +15,14 @@ If you navigate to a new page, it will run that js on the new page. So it keeps 
 It also removes the status overlay, so you can interact with the page more easily.
 
 ## The keyboard shortcuts currently are:
-- [enter]: saves the current selection as a note to Roam
-- q, !, @, *, >: saves the current selection as a note to Roam tagged as a {question, "Wow", Share, key idea, or block quote} (I don't really use these)
-- p: saves the paragraph containing the selection to Roam, with the selection highlighted
-- s: Asks for an element in browserflow. Saves a screenshot of the element to Roam. Doesn't work. (hmm... why not?)
-- h: saves the sentence containing the selection to Roam, with the selection highlighted
-- c: saves the sentence containing the selection to Roam as a "cloze" (fill-in-the-blank) task for spaced repetition, with the selection as the fill-in-the-blank
-- b: (big cloze) saves the paragraph containing the selection to Roam as a "cloze" (fill-in-the-blank) task for spaced repetition, with the selection as the fill-in-the-blank
-- .: quit (I use this to reenable keyboard shortcuts for tab switching)
+- `enter`: saves the current selection as a note to Roam
+- `q, !, @, *, >`: saves the current selection as a note to Roam tagged as a {question, "Wow", Share, key idea, or block quote} (I don't really use these)
+- `p`: saves the paragraph containing the selection to Roam, with the selection highlighted
+- `s`: Asks for an element in browserflow. Saves a screenshot of the element to Roam. Doesn't work. (hmm... why not?)
+- `h`: saves the sentence containing the selection to Roam, with the selection highlighted
+- `c`: saves the sentence containing the selection to Roam as a "cloze" (fill-in-the-blank) task for spaced repetition, with the selection as the fill-in-the-blank
+- `b`: (big cloze) saves the paragraph containing the selection to Roam as a "cloze" (fill-in-the-blank) task for spaced repetition, with the selection as the fill-in-the-blank
+- `.`: quit (I use this to reenable keyboard shortcuts for tab switching)
 
 ## Some feature requests / debug things
 - Would be nice to keep some status indicator, just in the corner or page title instead of blocking the full page.
