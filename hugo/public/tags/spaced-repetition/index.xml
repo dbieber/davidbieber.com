@@ -162,6 +162,48 @@ Are there old but important ideas that have fallen out of favor, that a global &
     </item>
     
     <item>
+      <title>Browserflow Note-taking Flow</title>
+      <link>https://davidbieber.com/snippets/2021-07-29-note-taking-flow/</link>
+      <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-07-29-note-taking-flow/</guid>
+      <description>&lt;p&gt;Quick update on the note-taking Browserflow flow I&amp;rsquo;ve been building: 
+&lt;a href=&#34;https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7&lt;/a&gt;:&lt;/p&gt;
+&lt;h2 id=&#34;how-it-works&#34;&gt;How it works&lt;/h2&gt;
+&lt;p&gt;When you run it, it injects some js into the page you&amp;rsquo;re viewing enabling a handful of keyboard shortcuts to enable clipping text into Roam from anywhere on the web.&lt;/p&gt;
+&lt;p&gt;If you navigate to a new page, it will run that js on the new page. So it keeps the keyboard shortcuts active even if you follow links.&lt;/p&gt;
+&lt;p&gt;It also removes the status overlay, so you can interact with the page more easily.&lt;/p&gt;
+&lt;h2 id=&#34;the-keyboard-shortcuts-currently-are&#34;&gt;The keyboard shortcuts currently are:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;enter&lt;/code&gt;: saves the current selection as a note to Roam&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;q, !, @, *, &amp;gt;&lt;/code&gt;: saves the current selection as a note to Roam tagged as a {question, &amp;ldquo;Wow&amp;rdquo;, Share, key idea, or block quote} (I don&amp;rsquo;t really use these)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;p&lt;/code&gt;: saves the paragraph containing the selection to Roam, with the selection highlighted&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s&lt;/code&gt;: Asks for an element in browserflow. Saves a screenshot of the element to Roam. Doesn&amp;rsquo;t work. (hmm&amp;hellip; why not?)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;h&lt;/code&gt;: saves the sentence containing the selection to Roam, with the selection highlighted&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c&lt;/code&gt;: saves the sentence containing the selection to Roam as a &amp;ldquo;cloze&amp;rdquo; (fill-in-the-blank) task for spaced repetition, with the selection as the fill-in-the-blank&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;b&lt;/code&gt;: (big cloze) saves the paragraph containing the selection to Roam as a &amp;ldquo;cloze&amp;rdquo; (fill-in-the-blank) task for spaced repetition, with the selection as the fill-in-the-blank&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.&lt;/code&gt;: quit (I use this to reenable keyboard shortcuts for tab switching)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;some-feature-requests--debug-things&#34;&gt;Some feature requests / debug things&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Would be nice to keep some status indicator, just in the corner or page title instead of blocking the full page.&lt;/li&gt;
+&lt;li&gt;It depends on a couple other flows. Would be nice to be able to share just a single link.&lt;/li&gt;
+&lt;li&gt;It switches to the roamresearch.com tab and back whenever you save a note. Would be nice if this worked even if roam were in a different window. The user shouldn&amp;rsquo;t have to care about exactly where roam is open.&lt;/li&gt;
+&lt;li&gt;Why doesn&amp;rsquo;t the element screenshotting work?&lt;/li&gt;
+&lt;li&gt;Would be nice to allow tab switching in a flow without having to quit the flow.&lt;/li&gt;
+&lt;li&gt;For a note-taking flow like this, it can easily be running for hours. Doesn&amp;rsquo;t mix super well with the free tier of billing.&lt;/li&gt;
+&lt;li&gt;A few of these could be solved with an &amp;ldquo;Enable interaction with page&amp;rdquo; action&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;the-dependency-flows-needed-to-check-it-out-are&#34;&gt;The dependency flows needed to check it out are:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&#34;&gt;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&#34;&gt;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&#34;&gt;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To try out the flow, you&amp;rsquo;ll need Browserflow, an open Roam tab, and all four flows linked in this snippet. Run the first flow (&amp;ldquo;Roam: Highlights&amp;rdquo;) on a web page (with Roam open in a different tab in the same window). Highlight some text, (say, the words &amp;ldquo;some text&amp;rdquo; in this sentence), and hit enter. You can try any of the shortcuts listed above. Notice as the flow copies your selection into your daily notes organized by time and website.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Spaced Repetition in Roam Research</title>
       <link>https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/</link>
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
