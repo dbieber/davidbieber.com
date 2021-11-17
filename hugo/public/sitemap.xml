@@ -59,16 +59,26 @@
   
   <url>
     <loc>https://davidbieber.com/</loc>
-    <lastmod>2021-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://davidbieber.com/snippets/2021-11-05-hypothesis-arxiv/</loc>
-    <lastmod>2021-11-05T00:00:00+00:00</lastmod>
+    <loc>https://davidbieber.com/tags/snippets/</loc>
+    <lastmod>2021-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidbieber.com/snippets/2021-11-16-other-languages/</loc>
+    <lastmod>2021-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://davidbieber.com/tags/</loc>
+    <lastmod>2021-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidbieber.com/snippets/2021-11-05-hypothesis-arxiv/</loc>
     <lastmod>2021-11-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -164,11 +174,6 @@
   
   <url>
     <loc>https://davidbieber.com/documents/</loc>
-    <lastmod>2021-09-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://davidbieber.com/tags/snippets/</loc>
     <lastmod>2021-09-27T00:00:00+00:00</lastmod>
   </url>
   
