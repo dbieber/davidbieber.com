@@ -5,12 +5,75 @@
     <link>https://davidbieber.com/tags/python/</link>
       <atom:link href="https://davidbieber.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <description>python</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 19 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 20 Nov 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>python</title>
       <link>https://davidbieber.com/tags/python/</link>
     </image>
+    
+    <item>
+      <title>Organizing a Twitter Discussion: Gathering Twitter Replies</title>
+      <link>https://davidbieber.com/snippets/2021-11-20-twitter-replies/</link>
+      <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-11-20-twitter-replies/</guid>
+      <description>&lt;p&gt;I 
+&lt;a href=&#34;https://twitter.com/Bieber/status/1461128201485402112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tweeted&lt;/a&gt; about spaced repetition earlier this week, sharing and summarizing 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-11-02-improvements-to-spaced-repetition/&#34;&gt;my latest snippet on the subject&lt;/a&gt;. A bunch of people left thoughtful replies, and I was quite pleased with the discussion. Now I want to look over the discussion holistically, but I don&amp;rsquo;t see a great way to do this. I don&amp;rsquo;t even see a way to look at all the replies to my thread in one place. I want to see not just this, but also replies to replies. TweetDeck might be able to help, but I don&amp;rsquo;t see how.&lt;/p&gt;
+&lt;p&gt;I think what I&amp;rsquo;d like to do is write a little script that takes a tweet as input, and outputs links to all the replies and replies to replies in a little tree that I can put into Roam.
+Then I can make notes on the full thread, and even link together different parts of the conversation.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s give this a try.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import twython
+from messager import settings
+
+client = twython.Twython(
+        settings.TWITTER_CONSUMER_KEY,
+        settings.TWITTER_CONSUMER_SECRET,
+        settings.TWITTER_ACCESS_TOKEN,
+        settings.TWITTER_ACCESS_TOKEN_SECRET)
+
+def get_replies(status_id):
+  status = client.lookup_status(id=status_id)[0]
+  return get_replies_to_status(status)
+
+def get_replies_to_status(status):
+  status_id = status[&#39;id&#39;]
+  screen_name = status[&#39;user&#39;][&#39;screen_name&#39;]
+  results = client.search(
+      q=f&#39;to:{screen_name}&#39;, sinceId=status_id, count=128)
+  candidates = results[&#39;statuses&#39;]
+  replies = []
+  for candidate in candidates:
+    if candidate[&#39;in_reply_to_status_id&#39;] == status_id:
+      replies.append(candidate)
+  return replies
+
+def get_recursive_replies(status_id):
+  status = client.lookup_status(id=status_id)[0]
+  all_replies = []
+  to_search = [status]
+  searched = set()
+  while to_search:
+    status = to_search.pop()
+    if status[&#39;id&#39;] not in searched:
+      replies = get_replies_to_status(status)
+      all_replies.extend(replies)
+      to_search.extend(replies)
+      searched.add(status[&#39;id&#39;])
+  return all_replies
+
+status_id = 1461128201485402112
+replies = get_recursive_replies(status_id)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Aside: I would love for this file (the markdown file I&amp;rsquo;m writing this snippet in) to double as a Python file.
+When I run it, just the Python code block(s) would get run.&lt;/p&gt;
+&lt;p&gt;To my surprise the Twitter API did not make it easy to query for replies to a tweet. So, I&amp;rsquo;m using the workaround on display above.
+To get all replies to a tweet, I query for all tweets to the tweet author, and then filter for those that are actually replies.
+Since the number of search results is limited, this might not always work; it depends on what order Twitter decides to sort tweets by. If Twitter returns the oldest tweets first, this method will work consistently.&lt;/p&gt;
+&lt;p&gt;It does seem to be working for now, fortunately. There are 60 recursive replies to my tweet, and with this method I was able to lay them all out in a row. Pasting the urls into Roam, I find the default rendering of each tweet in Roam takes up a bit too much space though and provides too much context. So, I may need to modify the display a bit more.&lt;/p&gt;
+&lt;p&gt;My hope is that I can lay out the entire conversation compactly, and then start marking it up with my own notes, e.g. tagging replies that express similar ideas so I can reply to them together rather than individually.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Python set operations</title>
