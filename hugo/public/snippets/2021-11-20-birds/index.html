@@ -28,10 +28,12 @@
   
     
   
-  <meta name="description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot.">
+  <meta name="description" content="The culmination of my thinking on note-taking interoperability so far is that we need BIRDS. 🐦. Allow me to explain.
+We want an &ldquo;intermediate representation&rdquo; for note-taking systems, to allow them to interoperate.
+Here an &ldquo;intermediate representation&rdquo; means an in-process representation of notes that can do bidirectional real-time incremental syncs with any of the popular note-taking systems (any system with a connector written for it). The main reason we want this is it allows application developers to write applications once for the IR, and have their application work for users using any note-taking system.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/tags/">
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-11-20-birds/">
 
   
 
@@ -246,14 +248,12 @@
 
 
   
-  <link rel="alternate" href="/tags/index.xml" type="application/rss+xml" title="David Bieber">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
 
-  <link rel="canonical" href="https://davidbieber.com/tags/">
+  <link rel="canonical" href="https://davidbieber.com/snippets/2021-11-20-birds/">
 
   
   
@@ -270,29 +270,36 @@
   <meta property="twitter:creator" content="@Bieber">
   
   <meta property="og:site_name" content="David Bieber">
-  <meta property="og:url" content="https://davidbieber.com/tags/">
-  <meta property="og:title" content="Tags | David Bieber">
-  <meta property="og:description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2021-11-20-birds/">
+  <meta property="og:title" content="BIRDS: Bidirectional incremental real-time data synchronizers | David Bieber">
+  <meta property="og:description" content="The culmination of my thinking on note-taking interoperability so far is that we need BIRDS. 🐦. Allow me to explain.
+We want an &ldquo;intermediate representation&rdquo; for note-taking systems, to allow them to interoperate.
+Here an &ldquo;intermediate representation&rdquo; means an in-process representation of notes that can do bidirectional real-time incremental syncs with any of the popular note-taking systems (any system with a connector written for it). The main reason we want this is it allows application developers to write applications once for the IR, and have their application work for users using any note-taking system."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2021-11-20T02:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2021-11-20T02:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-11-20T02:00:00&#43;00:00">
   
 
   
 
 
 
-
   
 
 
   
 
 
+  
 
 
 
-  <title>Tags | David Bieber</title>
+
+
+  <title>BIRDS: Bidirectional incremental real-time data synchronizers | David Bieber</title>
 
 </head>
 
@@ -455,6 +462,129 @@
 </nav>
 
 
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">BIRDS: Bidirectional incremental real-time data synchronizers</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+</div>
+
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" id="article-content">
+      <p>The culmination of my thinking on note-taking interoperability so far is that we need <strong>BIRDS</strong>. 🐦. Allow me to explain.</p>
+<p>We want an &ldquo;intermediate representation&rdquo; for note-taking systems, to allow them to interoperate.</p>
+<p>Here an &ldquo;intermediate representation&rdquo; means an <strong>in-process</strong> representation of notes that can do <strong>bidirectional real-time incremental</strong> syncs with any of the popular note-taking systems (any system with a connector written for it).
+The main reason we want this is it allows application developers to write applications once for the IR, and have their application work for users using any note-taking system.
+A second reason this is desirable is it allows introducing data into your notes from multiple sources, like your email, news feeds, messages, and social media accounts.</p>
+<p>To bridge a note-taking system with the IR, a connector should be written between the system and the intermediate representation. These connectors, we shall call <strong>birds</strong>, 🦤, short for &ldquo;bidirectional incremental real-time data synchronizer&rdquo;. Each bird 🐔 is a bridge that either pushes, pulls, or pushes-and-pulls data between the &ldquo;intermediate representation&rdquo; notebase and some data source or storage system.</p>
+<p>Birds 🦚 are bidirectional because they allow pushing or pulling data in either direction.
+They are incremental because they are aware of what data is on the other end of the connection, and only transmit changes.
+They are real-time, because these changes are transmitted quickly and automatically.
+These properties are similar to those of Dropbox or Google Drive, but rather than there being files on either end of the connection, there are notes.</p>
+<p>What are the birds 🦜 that I would use for my current setup?</p>
+<p>I would use a bidirectional bird 🦃 with Roam Research, since that&rsquo;s my core note-taking location at the moment.
+I would use a bird 🐤 to connect my email to my notes. Ideally I would also have birds 🦉 for each of the messaging and social media platforms that I use too.
+I would use a bird 🐧 to write my full notebase to disk locally.</p>
+<p>If later I switch away from Roam, I would use a new bird 🐓 to import my data into whatever new better system I switch to.</p>
+<p>Remarkably, I was able to put a bird 🦢 emoji next to every use of the word bird 🕊️ in this snippet, and still not run out of bird 🦆 emojis.</p>
+<p>🦅</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/note-taking/">note-taking</a>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/snippets/2021-11-20-save-my-spot/">Save my spot! Finer-grained bookmarks for incremental reading</a></li>
+      
+      <li><a href="/snippets/2021-11-20-twitter-replies/">Organizing a Twitter Discussion: Gathering Twitter Replies</a></li>
+      
+      <li><a href="/snippets/2021-10-28-ml-and-automation-for-note-taking/">Machine Learning and Automation Ideas for Note-taking</a></li>
+      
+      <li><a href="/snippets/2021-10-10-note-taking-interop-requirements/">Rough Note-taking Interop Requirements</a></li>
+      
+    </ul>
+  </div>
   
 
 
@@ -469,588 +599,42 @@
 
 
   
+  
+
+
+
+
 
   
   
   
     
   
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">Tags</h1>
+  
+  
+  <div class="media author-card content-widget-hr">
+    
 
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://davidbieber.com/">David Bieber</a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
   
+</ul>
 
-  
-</div>
+    </div>
+  </div>
 
 
 
 
-<div class="universal-wrapper">
-  
 
-  
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/note-taking/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      note-taking
-      
-      (11)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/browserflow/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      browserflow
-      
-      (11)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/python/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      python
-      
-      (17)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/twitter/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      twitter
-      
-      (1)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/snippets/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      snippets
-      
-      (24)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/taking-silly-ideas-seriously/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      taking-silly-ideas-seriously
-      
-      (27)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/spaced-repetition/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      spaced-repetition
-      
-      (9)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/blockchain/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      blockchain
-      
-      (2)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/automation/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      Automation
-      
-      (4)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/go-note-go/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      go-note-go
-      
-      (4)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/hardware/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      Hardware
-      
-      (4)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/healthcare/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      healthcare
-      
-      (1)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/roam-research/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      roam-research
-      
-      (23)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/productivity/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      Productivity
-      
-      (5)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/software/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      Software
-      
-      (7)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/aspirational-intent/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      aspirational-intent
-      
-      (5)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/attention/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      attention
-      
-      (23)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/table-tennis/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      table tennis
-      
-      (11)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/tech-tips/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      tech-tips
-      
-      (9)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/virtual-reality/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      virtual reality
-      
-      (4)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/automatic-video-editing/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      automatic-video-editing
-      
-      (8)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/goals/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      goals
-      
-      (6)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/peer-learning-group/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      peer-learning-group
-      
-      (7)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/python-fire/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      Python Fire
-      
-      (4)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/javascript/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      javascript
-      
-      (5)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/sql/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      sql
-      
-      (10)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/wisdom/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      wisdom
-      
-      (2)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/browser-history/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      browser-history
-      
-      (10)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/thought-experiments/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      thought-experiments
-      
-      (6)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/math/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      math
-      
-      (5)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/ask-me-anywhere/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      ask-me-anywhere
-      
-      (2)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/education/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      Education
-      
-      (7)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/google-apps-script/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      Google Apps Script
-      
-      (3)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/just-for-fun/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      Just for Fun
-      
-      (3)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/puzzle/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      Puzzle
-      
-      (2)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/esperanto/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      Esperanto
-      
-      (1)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
-  
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="/tags/princeton-acm/">
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      
-      Princeton ACM
-      
-      (2)
-      
-    </a>
-    </h3>
-  </div>
-  
-  
 
-  
 
-</div>
+
+  </div>
+</article>
 
       
 

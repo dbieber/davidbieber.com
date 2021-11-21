@@ -5,12 +5,37 @@
     <link>https://davidbieber.com/tags/note-taking/</link>
       <atom:link href="https://davidbieber.com/tags/note-taking/index.xml" rel="self" type="application/rss+xml" />
     <description>note-taking</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 20 Nov 2021 01:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 20 Nov 2021 02:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>note-taking</title>
       <link>https://davidbieber.com/tags/note-taking/</link>
     </image>
+    
+    <item>
+      <title>BIRDS: Bidirectional incremental real-time data synchronizers</title>
+      <link>https://davidbieber.com/snippets/2021-11-20-birds/</link>
+      <pubDate>Sat, 20 Nov 2021 02:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-11-20-birds/</guid>
+      <description>&lt;p&gt;The culmination of my thinking on note-taking interoperability so far is that we need &lt;strong&gt;BIRDS&lt;/strong&gt;. 🐦. Allow me to explain.&lt;/p&gt;
+&lt;p&gt;We want an &amp;ldquo;intermediate representation&amp;rdquo; for note-taking systems, to allow them to interoperate.&lt;/p&gt;
+&lt;p&gt;Here an &amp;ldquo;intermediate representation&amp;rdquo; means an &lt;strong&gt;in-process&lt;/strong&gt; representation of notes that can do &lt;strong&gt;bidirectional real-time incremental&lt;/strong&gt; syncs with any of the popular note-taking systems (any system with a connector written for it).
+The main reason we want this is it allows application developers to write applications once for the IR, and have their application work for users using any note-taking system.
+A second reason this is desirable is it allows introducing data into your notes from multiple sources, like your email, news feeds, messages, and social media accounts.&lt;/p&gt;
+&lt;p&gt;To bridge a note-taking system with the IR, a connector should be written between the system and the intermediate representation. These connectors, we shall call &lt;strong&gt;birds&lt;/strong&gt;, 🦤, short for &amp;ldquo;bidirectional incremental real-time data synchronizer&amp;rdquo;. Each bird 🐔 is a bridge that either pushes, pulls, or pushes-and-pulls data between the &amp;ldquo;intermediate representation&amp;rdquo; notebase and some data source or storage system.&lt;/p&gt;
+&lt;p&gt;Birds 🦚 are bidirectional because they allow pushing or pulling data in either direction.
+They are incremental because they are aware of what data is on the other end of the connection, and only transmit changes.
+They are real-time, because these changes are transmitted quickly and automatically.
+These properties are similar to those of Dropbox or Google Drive, but rather than there being files on either end of the connection, there are notes.&lt;/p&gt;
+&lt;p&gt;What are the birds 🦜 that I would use for my current setup?&lt;/p&gt;
+&lt;p&gt;I would use a bidirectional bird 🦃 with Roam Research, since that&amp;rsquo;s my core note-taking location at the moment.
+I would use a bird 🐤 to connect my email to my notes. Ideally I would also have birds 🦉 for each of the messaging and social media platforms that I use too.
+I would use a bird 🐧 to write my full notebase to disk locally.&lt;/p&gt;
+&lt;p&gt;If later I switch away from Roam, I would use a new bird 🐓 to import my data into whatever new better system I switch to.&lt;/p&gt;
+&lt;p&gt;Remarkably, I was able to put a bird 🦢 emoji next to every use of the word bird 🕊️ in this snippet, and still not run out of bird 🦆 emojis.&lt;/p&gt;
+&lt;p&gt;🦅&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Save my spot! Finer-grained bookmarks for incremental reading</title>
