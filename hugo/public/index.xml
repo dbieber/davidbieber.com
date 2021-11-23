@@ -563,7 +563,7 @@ The flow above will assist you in submitting flashcards to the dataset.&lt;/p&gt
 &lt;li&gt;Browse the web as normal.&lt;/li&gt;
 &lt;li&gt;Select some text you consider important.&lt;/li&gt;
 &lt;li&gt;Run the 
-&lt;a href=&#34;https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Crate Flashcard Entry flow&lt;/a&gt;; it will open the Create Flashcard Entry form and pre-populate it for you.&lt;/li&gt;
+&lt;a href=&#34;https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Create Flashcard Entry flow&lt;/a&gt;; it will open the Create Flashcard Entry form and pre-populate it for you.&lt;/li&gt;
 &lt;li&gt;Make any desired changes to the &amp;ldquo;Flashcard Front&amp;rdquo; and &amp;ldquo;Flashcard Back&amp;rdquo; fields in the Create Flashcard Entry form.&lt;/li&gt;
 &lt;li&gt;Submit the form.&lt;/li&gt;
 &lt;/ol&gt;

@@ -26,7 +26,7 @@ To submit a flashcard for the dataset:
 
 1. Browse the web as normal.
 2. Select some text you consider important.
-3. Run the [Crate Flashcard Entry flow](https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831); it will open the Create Flashcard Entry form and pre-populate it for you.
+3. Run the [Create Flashcard Entry flow](https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831); it will open the Create Flashcard Entry form and pre-populate it for you.
 4. Make any desired changes to the "Flashcard Front" and "Flashcard Back" fields in the Create Flashcard Entry form.
 5. Submit the form.
 
