@@ -5,12 +5,144 @@
     <link>https://davidbieber.com/tags/browserflow/</link>
       <atom:link href="https://davidbieber.com/tags/browserflow/index.xml" rel="self" type="application/rss+xml" />
     <description>browserflow</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 23 Nov 2021 01:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 07 Dec 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>browserflow</title>
       <link>https://davidbieber.com/tags/browserflow/</link>
     </image>
+    
+    <item>
+      <title>The Future of Automation Software</title>
+      <link>https://davidbieber.com/snippets/2021-12-07-future-automation-software/</link>
+      <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-12-07-future-automation-software/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://browserflow.app&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Browserflow&lt;/a&gt; is great.
+It&amp;rsquo;s beyond great.
+It&amp;rsquo;s one of my favorite tools, because it is so versatile and empowering.&lt;/p&gt;
+&lt;p&gt;Nevertheless, there&amp;rsquo;s more that I want from my automation tools.
+Here&amp;rsquo;s a summary of what I&amp;rsquo;d like:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;OS-level actions&lt;/li&gt;
+&lt;li&gt;Per-application actions&lt;/li&gt;
+&lt;li&gt;Per-website actions&lt;/li&gt;
+&lt;li&gt;Computer vision guided actions&lt;/li&gt;
+&lt;li&gt;Natural language action specification&lt;/li&gt;
+&lt;li&gt;Automatic action discovery&lt;/li&gt;
+&lt;li&gt;Automatic automation extraction&lt;/li&gt;
+&lt;li&gt;User-triggered, event-triggered and time-triggered automations&lt;/li&gt;
+&lt;li&gt;A great sharing experience&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;os-level-actions&#34;&gt;OS-level actions&lt;/h4&gt;
+&lt;p&gt;Browserflow is (appropriately) limited in scope.
+It allows automating the Browser, and that&amp;rsquo;s it.
+I would like to be able to use a Browserflow-like system to automate the Browser as well as everything else on my computer.
+In the idealized hypothetical future I&amp;rsquo;m constructing here, I don&amp;rsquo;t need to think about the boundaries between applications and operating system when I construct an automation.&lt;/p&gt;
+&lt;p&gt;Example OS-level actions include launching applications, switching between open windows of different applications, closing applications, switching between Desktops, and resizing windows.&lt;/p&gt;
+&lt;p&gt;Mac&amp;rsquo;s Automator software is a good example of an automation tool that supports OS-level actions, but (to my knowledge) it does not then also provide a good browser automation experience.&lt;/p&gt;
+&lt;p&gt;An example automation that takes advantage of these actions is setting up a series of windows just the way I like them (today achievable with software like 
+&lt;a href=&#34;https://manytricks.com/moom/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Moom&lt;/a&gt;).
+Combined with per-application actions (next section), these actions allow for powerful multi-application automations.&lt;/p&gt;
+&lt;h4 id=&#34;per-application-actions&#34;&gt;Per-application actions&lt;/h4&gt;
+&lt;p&gt;The range of activities people perform on computers is extremely wide.
+Each application has different actions that are possible to take in it.
+I would like for automation software to reflect this.&lt;/p&gt;
+&lt;p&gt;Photo editing applications can provide actions for photo editing,
+word processing applications should have their own domain-specific actions,
+and gaming and music applications should similarly provide their own.&lt;/p&gt;
+&lt;p&gt;This is somewhat reflected in the state of things today in Automator.
+For some software, there are actions available allowing programmatic control of the application.
+Today, these actions must be provided by the application developer.&lt;/p&gt;
+&lt;p&gt;We should go beyond this; ordinary users should be able to make actions for a piece of software and share them with other users of that software.
+The actions provided by the application developer that Automator can access today are often insufficient.
+But developing a new action does not need to be a difficult endeavor.&lt;/p&gt;
+&lt;p&gt;An action developer should be able write a parameterized action that (1) verifies the application meets any preconditions necessary for performing the action, (2) uses menu items, buttons, the mouse and keyboard, and visual indicators (3) in order to perform a sequence of sub-actions in the application to achieve the action&amp;rsquo;s overall intended behavior.
+Sharing these actions with others who might use them in broader automations should be possible on GitHub or through any other means (e.g. an actions repository or actions store, for example, either of which would allow browsing actions by application.)&lt;/p&gt;
+&lt;p&gt;Critically, I would like these OS-level and application-level actions to be available in the same software as the browser-level and website-level actions that a tool like Browserflow provides.&lt;/p&gt;
+&lt;p&gt;Much of my computer activity happens in the browser, text editor, and the terminal. If this trend away from desktop applications toward browser-usage is taking place for everyone, OS-level and application-level actions may be less important than what we discuss next: per-website actions, vision-based actions, and automatic action discovery.&lt;/p&gt;
+&lt;h4 id=&#34;per-website-actions&#34;&gt;Per-website actions&lt;/h4&gt;
+&lt;p&gt;Some applications, particularly browsers, do not have a clear fixed set of actions that make sense, because they can render many websites.
+Each website has different things you can do on it.&lt;/p&gt;
+&lt;p&gt;So, similar to the per-application actions proposed in the previous section,
+I&amp;rsquo;d also like to call for per-website actions.
+DK, consider this a Browserflow feature request.&lt;/p&gt;
+&lt;p&gt;In Browserflow, a user can define a flow and call that flow from another flow.
+This isn&amp;rsquo;t the most well-developed feature of Browserflow;
+developing and debugging flows like this requires a lot of clicking around, and it&amp;rsquo;s hard to see what you&amp;rsquo;re doing during development.
+Nevertheless, it&amp;rsquo;s a powerful feature that is the seed of per-website actions.&lt;/p&gt;
+&lt;p&gt;That you can use a flow as an action in Browserflow means you can define flows
+for individual activities you might perform on a website, and use them repeatedly in many different flows pertaining to that website.
+Browserflow also allows sharing flows, but there&amp;rsquo;s no central repository of them yet, so it is taking solid but small steps toward the dream of user-friendly discoverable per-website actions.&lt;/p&gt;
+&lt;p&gt;Since every website has different actions to perform on it, and website authors do not provide these actions,
+it is somewhat surprising that browser automation leads the automation scene in terms of its capabilities. The saving grace here is that websites conform to standards and expose structure that automation software can take advantage of, which desktop applications do not provide. Browser automation software uses CSS and XPATH selectors to take advantage of this uniformity to provide a decent automation experience.
+For desktop software, or for websites that are not built in a tool-friendly manner, we turn to our next feature-request for automation software, vision-guided actions.&lt;/p&gt;
+&lt;h4 id=&#34;computer-vision-guided-actions&#34;&gt;Computer vision guided actions&lt;/h4&gt;
+&lt;p&gt;All the actions in automation software today operate on clearly defined data structures, but there is so much more that&amp;rsquo;s possible using computer vision.
+Actions that work on websites rely on CSS or XPATH queries to find the appropriate part of the page to manipulate.
+Computer vision based actions can work in places where there is no DOM, and hence no notion of CSS or XPATH selectors.&lt;/p&gt;
+&lt;p&gt;An example of a computer vision based action is &amp;ldquo;Find the text X&amp;rdquo;. Here, X is a parameter. When run, the action identifies the location of the screen containing the text X. The beauty is that X doesn&amp;rsquo;t need to be on a webpage or in a text field. Even if X is stylized, part of a pdf, or part of an image, the action will still work. This action can be followed up with &amp;ldquo;Click&amp;rdquo; or &amp;ldquo;Screenshot&amp;rdquo; actions, that use the location found from the &amp;ldquo;Find the text X&amp;rdquo; action as a parameter.&lt;/p&gt;
+&lt;p&gt;Another example of a computer vision based action is &amp;ldquo;Find a region visually similar to X&amp;rdquo;. This action is parameterized by an image, and it finds the location of that image (or similar) on the screen. This might be useful for automating a game with a custom graphic that you have to interact with; it doesn&amp;rsquo;t matter if that game doesn&amp;rsquo;t provide any semantic elements like buttons or a DOM, the computer vision actions will still admit automation.&lt;/p&gt;
+&lt;p&gt;I found computer vision guided actions useful when building 
+&lt;a href=&#34;https://github.com/dbieber/ScrabbleBot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Scrab Blebot&lt;/a&gt;, a Scrabble-playing bot that could play Words With Friends on Facebook.
+The bot looked for regions of the screen visually similar to an image of a Scrabble tile with a letter on it in order to figure out where to click and drag.
+I had to build my own one-off actions for this project though; there was no automation software with vision-based actions available for me to use when developing this project ten (!) years ago.&lt;/p&gt;
+&lt;h4 id=&#34;natural-language-action-specification&#34;&gt;Natural language action specification&lt;/h4&gt;
+&lt;p&gt;&amp;ldquo;Click the submit button.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Copy the first paragraph.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;So far we have only spoken about allowing developers to define actions. In the next section we will move on to automatic action discovery &amp;ndash; where an action is detected and defined automatically by an algorithm, rather than being defined by a human.
+Natural language action specification fits nicely in between these two categories.
+The idea here is that we can map human natural language to an action.&lt;/p&gt;
+&lt;p&gt;If the user says &amp;ldquo;Click the submit button&amp;rdquo;, we can use machine learning to infer that this translates to a single action &amp;ldquo;Click&amp;rdquo; parameterized by the selector &amp;ldquo;.submit&amp;rdquo; (or whatever the appropriate selector is for the current page).&lt;/p&gt;
+&lt;p&gt;If the user says &amp;ldquo;Copy the first paragraph&amp;rdquo;, again machine learning can translate this into one or more actions that achieves the task.
+Large language models will be instrumental in making this feature production quality. See for example the 
+&lt;a href=&#34;https://www.youtube.com/watch?v=SGUCcjHTmGY&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Codex demo&lt;/a&gt; for a taste of the capabilities of large language models in this domain.&lt;/p&gt;
+&lt;h4 id=&#34;automatic-action-discovery&#34;&gt;Automatic action discovery&lt;/h4&gt;
+&lt;p&gt;We next move on to a research-level feature request: automatic action discovery.
+There are billions of websites and software applications, each with its own user interface and its own set of possible actions.
+It&amp;rsquo;s unreasonable to expect that a developer will construct actions for each and every one of these, but that doesn&amp;rsquo;t mean we can&amp;rsquo;t use machine learning to detect actions automatically.&lt;/p&gt;
+&lt;p&gt;There are two types of signal that are useful for automatically detecting actions: (1) similarity in user interface to known actions, and (2) observing user behavior.&lt;/p&gt;
+&lt;p&gt;(1) Though each website and application has its own UI, there are common patterns. Taking advantage of these common patterns, an algorithm might be able to discern that a website or application provides certain actions simply from its UI elements and arrangement.&lt;/p&gt;
+&lt;p&gt;(2) By observing user behavior on a website or application (and comparing it with behaviors exhibited previously), an algorithm might be able to detect actions available on that website or application even when method (1) falls short (or in combination with method (1)).&lt;/p&gt;
+&lt;p&gt;Critical to doing automatic action discovery well is figuring out how to parameterize the discovered actions.
+In many cases this is easy; when filling out a form on a website, the text typed is the parameter, while the location in the form is a core part of the action.
+In other cases, it&amp;rsquo;s less clear cut; in a shell, typing a command is part of an action, while typing an argument to the command is a parameter, but these are comprised of similar low-level actions (typing characters).
+This is an interesting research challenge to get right.&lt;/p&gt;
+&lt;h4 id=&#34;automatic-automation-extraction&#34;&gt;Automatic automation extraction&lt;/h4&gt;
+&lt;p&gt;The pièce de résistance of future automation software is automatic automation extraction.
+Software will one day automatically notice when something you&amp;rsquo;re doing can be automated, and it will offer to automate it for you.
+It might notice this because (1) you&amp;rsquo;re engaging in a repeated behavior.
+Or it might notice this because (2) you&amp;rsquo;re engaging in a behavior similar to one it&amp;rsquo;s seen before (e.g. from data collected from other users earlier).&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s important that anyone working on automatic automation extraction respect user privacy.
+The data that would be most useful for this type of project (broad computer usage data) is extremely sensitive.
+It is an interesting research direction to work toward this goal of automatic automation extraction in a way that consumes little data, and which can be deployed in a privacy preserving manner.&lt;/p&gt;
+&lt;h4 id=&#34;user-triggered-event-triggered-and-time-triggered-automations&#34;&gt;User-triggered, event-triggered and time-triggered automations&lt;/h4&gt;
+&lt;p&gt;I conclude with a more modest request than the previous two machine learning based feature requests: triggers.&lt;/p&gt;
+&lt;p&gt;As I see it, a good trigger experience is what makes or breaks the value of automation software. This is because the triggers are the largest potential source of friction for a user of automations, outside of constructing the automation to begin with.&lt;/p&gt;
+&lt;p&gt;For user-triggered automations (automations instigated by a user),
+I really liked the typeahead UI that Browserflow initially used.
+I remain hopeful that DK will bring that back.
+Keyboard shortcuts are the other clear contender for a good triggering experience.&lt;/p&gt;
+&lt;p&gt;Event-triggered automations are also extremely useful.
+In my own day-to-day, I use email triggered automations (for handling emails from banks), and chat-triggered automations for all sorts of things.
+If-this-than-that is probably an excellent source of inspiration for other events. You can also see 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-02-04-bieber-bot-capabilities/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this list of Bieber Bot&amp;rsquo;s capabilities&lt;/a&gt; which breaks the capabilities down by whether they&amp;rsquo;re timer-triggered, chat-triggered, or credit-card-swipe-triggered.&lt;/p&gt;
+&lt;p&gt;Time-triggered automations can be broken down further into one-off automations (e.g. &amp;ldquo;send this email tomorrow morning&amp;rdquo;) and recurring ones (&amp;ldquo;every morning, email me a digest with the news, weather, and a cat video to watch&amp;rdquo;).&lt;/p&gt;
+&lt;p&gt;Triggers don&amp;rsquo;t need to be provided directly by the same software that allows creating automations, but it is sensible to bundle these two things together, since automations are a common thing to want to trigger. Separate trigger software and automation software is in many ways actually desirable, but it is critical that the experience of setting up triggers for an automation be clean and user friendly.&lt;/p&gt;
+&lt;h4 id=&#34;a-great-sharing-experience&#34;&gt;A great sharing experience&lt;/h4&gt;
+&lt;p&gt;Finally, automation is a superpower, and so I want to be able to share it with others.
+If I write a note-taking automation, I want my fellow note-takers to be able to use it.
+If someone writes a Farmville automation tool, other Farmville players should be able to use it too.&lt;/p&gt;
+&lt;p&gt;However, sharing comes with concerns: you don&amp;rsquo;t want to give untrustworthy strangers unfettered access to your machine. Arbitrary code execution is dangerous.&lt;/p&gt;
+&lt;p&gt;So, my ideal sharing experience is a hybrid of &amp;ldquo;app store&amp;rdquo; and &amp;ldquo;GitHub&amp;rdquo;.
+A curated collection of automations that are audited and trustworthy, easy to search, and easy to discover would be very welcome. If automations from this collection were automatically surfaced when I was browsing on a website that had such an automation built for it, I would be delighted.&lt;/p&gt;
+&lt;p&gt;Then, for automations that haven&amp;rsquo;t gone through any vetting process, it should still be easy to share. It should be possible to host an automation on GitHub or to send an automation to a friend without ever needing a central body to vet the automation.&lt;/p&gt;
+&lt;p&gt;By supporting both of these sharing models, we can ensure a healthy ecosystem of automations
+useful both for programmers and automation builders, and for people who simply want to experience the joy of computing using the automations of others.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Interested in working on any of these aspects of automation software? Get in touch. I&amp;rsquo;m always eager to discuss.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Draft Instructions for Flashcard Collection Task</title>

@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="David Bieber">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Browserflow is great. It&rsquo;s beyond great. It&rsquo;s one of my favorite tools, because it is so versatile and empowering.
+Nevertheless, there&rsquo;s more that I want from my automation tools. Here&rsquo;s a summary of what I&rsquo;d like:
+ OS-level actions Per-application actions Per-website actions Computer vision guided actions Natural language action specification Automatic action discovery Automatic automation extraction User-triggered, event-triggered and time-triggered automations A great sharing experience  OS-level actions Browserflow is (appropriately) limited in scope.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-12-07-future-automation-software/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34570499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-34570499-2', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+
+  <link rel="canonical" href="https://davidbieber.com/snippets/2021-12-07-future-automation-software/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@Bieber">
+  <meta property="twitter:creator" content="@Bieber">
+  
+  <meta property="og:site_name" content="David Bieber">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2021-12-07-future-automation-software/">
+  <meta property="og:title" content="The Future of Automation Software | David Bieber">
+  <meta property="og:description" content="Browserflow is great. It&rsquo;s beyond great. It&rsquo;s one of my favorite tools, because it is so versatile and empowering.
+Nevertheless, there&rsquo;s more that I want from my automation tools. Here&rsquo;s a summary of what I&rsquo;d like:
+ OS-level actions Per-application actions Per-website actions Computer vision guided actions Natural language action specification Automatic action discovery Automatic automation extraction User-triggered, event-triggered and time-triggered automations A great sharing experience  OS-level actions Browserflow is (appropriately) limited in scope."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-12-07T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-12-07T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>The Future of Automation Software | David Bieber</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">David Bieber</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">David Bieber</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/posts"><span>Writing</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">The Future of Automation Software</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+</div>
+
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" id="article-content">
+      <p>
+<a href="https://browserflow.app" target="_blank" rel="noopener">Browserflow</a> is great.
+It&rsquo;s beyond great.
+It&rsquo;s one of my favorite tools, because it is so versatile and empowering.</p>
+<p>Nevertheless, there&rsquo;s more that I want from my automation tools.
+Here&rsquo;s a summary of what I&rsquo;d like:</p>
+<ol>
+<li>OS-level actions</li>
+<li>Per-application actions</li>
+<li>Per-website actions</li>
+<li>Computer vision guided actions</li>
+<li>Natural language action specification</li>
+<li>Automatic action discovery</li>
+<li>Automatic automation extraction</li>
+<li>User-triggered, event-triggered and time-triggered automations</li>
+<li>A great sharing experience</li>
+</ol>
+<h4 id="os-level-actions">OS-level actions</h4>
+<p>Browserflow is (appropriately) limited in scope.
+It allows automating the Browser, and that&rsquo;s it.
+I would like to be able to use a Browserflow-like system to automate the Browser as well as everything else on my computer.
+In the idealized hypothetical future I&rsquo;m constructing here, I don&rsquo;t need to think about the boundaries between applications and operating system when I construct an automation.</p>
+<p>Example OS-level actions include launching applications, switching between open windows of different applications, closing applications, switching between Desktops, and resizing windows.</p>
+<p>Mac&rsquo;s Automator software is a good example of an automation tool that supports OS-level actions, but (to my knowledge) it does not then also provide a good browser automation experience.</p>
+<p>An example automation that takes advantage of these actions is setting up a series of windows just the way I like them (today achievable with software like 
+<a href="https://manytricks.com/moom/" target="_blank" rel="noopener">Moom</a>).
+Combined with per-application actions (next section), these actions allow for powerful multi-application automations.</p>
+<h4 id="per-application-actions">Per-application actions</h4>
+<p>The range of activities people perform on computers is extremely wide.
+Each application has different actions that are possible to take in it.
+I would like for automation software to reflect this.</p>
+<p>Photo editing applications can provide actions for photo editing,
+word processing applications should have their own domain-specific actions,
+and gaming and music applications should similarly provide their own.</p>
+<p>This is somewhat reflected in the state of things today in Automator.
+For some software, there are actions available allowing programmatic control of the application.
+Today, these actions must be provided by the application developer.</p>
+<p>We should go beyond this; ordinary users should be able to make actions for a piece of software and share them with other users of that software.
+The actions provided by the application developer that Automator can access today are often insufficient.
+But developing a new action does not need to be a difficult endeavor.</p>
+<p>An action developer should be able write a parameterized action that (1) verifies the application meets any preconditions necessary for performing the action, (2) uses menu items, buttons, the mouse and keyboard, and visual indicators (3) in order to perform a sequence of sub-actions in the application to achieve the action&rsquo;s overall intended behavior.
+Sharing these actions with others who might use them in broader automations should be possible on GitHub or through any other means (e.g. an actions repository or actions store, for example, either of which would allow browsing actions by application.)</p>
+<p>Critically, I would like these OS-level and application-level actions to be available in the same software as the browser-level and website-level actions that a tool like Browserflow provides.</p>
+<p>Much of my computer activity happens in the browser, text editor, and the terminal. If this trend away from desktop applications toward browser-usage is taking place for everyone, OS-level and application-level actions may be less important than what we discuss next: per-website actions, vision-based actions, and automatic action discovery.</p>
+<h4 id="per-website-actions">Per-website actions</h4>
+<p>Some applications, particularly browsers, do not have a clear fixed set of actions that make sense, because they can render many websites.
+Each website has different things you can do on it.</p>
+<p>So, similar to the per-application actions proposed in the previous section,
+I&rsquo;d also like to call for per-website actions.
+DK, consider this a Browserflow feature request.</p>
+<p>In Browserflow, a user can define a flow and call that flow from another flow.
+This isn&rsquo;t the most well-developed feature of Browserflow;
+developing and debugging flows like this requires a lot of clicking around, and it&rsquo;s hard to see what you&rsquo;re doing during development.
+Nevertheless, it&rsquo;s a powerful feature that is the seed of per-website actions.</p>
+<p>That you can use a flow as an action in Browserflow means you can define flows
+for individual activities you might perform on a website, and use them repeatedly in many different flows pertaining to that website.
+Browserflow also allows sharing flows, but there&rsquo;s no central repository of them yet, so it is taking solid but small steps toward the dream of user-friendly discoverable per-website actions.</p>
+<p>Since every website has different actions to perform on it, and website authors do not provide these actions,
+it is somewhat surprising that browser automation leads the automation scene in terms of its capabilities. The saving grace here is that websites conform to standards and expose structure that automation software can take advantage of, which desktop applications do not provide. Browser automation software uses CSS and XPATH selectors to take advantage of this uniformity to provide a decent automation experience.
+For desktop software, or for websites that are not built in a tool-friendly manner, we turn to our next feature-request for automation software, vision-guided actions.</p>
+<h4 id="computer-vision-guided-actions">Computer vision guided actions</h4>
+<p>All the actions in automation software today operate on clearly defined data structures, but there is so much more that&rsquo;s possible using computer vision.
+Actions that work on websites rely on CSS or XPATH queries to find the appropriate part of the page to manipulate.
+Computer vision based actions can work in places where there is no DOM, and hence no notion of CSS or XPATH selectors.</p>
+<p>An example of a computer vision based action is &ldquo;Find the text X&rdquo;. Here, X is a parameter. When run, the action identifies the location of the screen containing the text X. The beauty is that X doesn&rsquo;t need to be on a webpage or in a text field. Even if X is stylized, part of a pdf, or part of an image, the action will still work. This action can be followed up with &ldquo;Click&rdquo; or &ldquo;Screenshot&rdquo; actions, that use the location found from the &ldquo;Find the text X&rdquo; action as a parameter.</p>
+<p>Another example of a computer vision based action is &ldquo;Find a region visually similar to X&rdquo;. This action is parameterized by an image, and it finds the location of that image (or similar) on the screen. This might be useful for automating a game with a custom graphic that you have to interact with; it doesn&rsquo;t matter if that game doesn&rsquo;t provide any semantic elements like buttons or a DOM, the computer vision actions will still admit automation.</p>
+<p>I found computer vision guided actions useful when building 
+<a href="https://github.com/dbieber/ScrabbleBot" target="_blank" rel="noopener">Scrab Blebot</a>, a Scrabble-playing bot that could play Words With Friends on Facebook.
+The bot looked for regions of the screen visually similar to an image of a Scrabble tile with a letter on it in order to figure out where to click and drag.
+I had to build my own one-off actions for this project though; there was no automation software with vision-based actions available for me to use when developing this project ten (!) years ago.</p>
+<h4 id="natural-language-action-specification">Natural language action specification</h4>
+<p>&ldquo;Click the submit button.&rdquo;</p>
+<p>&ldquo;Copy the first paragraph.&rdquo;</p>
+<p>So far we have only spoken about allowing developers to define actions. In the next section we will move on to automatic action discovery &ndash; where an action is detected and defined automatically by an algorithm, rather than being defined by a human.
+Natural language action specification fits nicely in between these two categories.
+The idea here is that we can map human natural language to an action.</p>
+<p>If the user says &ldquo;Click the submit button&rdquo;, we can use machine learning to infer that this translates to a single action &ldquo;Click&rdquo; parameterized by the selector &ldquo;.submit&rdquo; (or whatever the appropriate selector is for the current page).</p>
+<p>If the user says &ldquo;Copy the first paragraph&rdquo;, again machine learning can translate this into one or more actions that achieves the task.
+Large language models will be instrumental in making this feature production quality. See for example the 
+<a href="https://www.youtube.com/watch?v=SGUCcjHTmGY" target="_blank" rel="noopener">Codex demo</a> for a taste of the capabilities of large language models in this domain.</p>
+<h4 id="automatic-action-discovery">Automatic action discovery</h4>
+<p>We next move on to a research-level feature request: automatic action discovery.
+There are billions of websites and software applications, each with its own user interface and its own set of possible actions.
+It&rsquo;s unreasonable to expect that a developer will construct actions for each and every one of these, but that doesn&rsquo;t mean we can&rsquo;t use machine learning to detect actions automatically.</p>
+<p>There are two types of signal that are useful for automatically detecting actions: (1) similarity in user interface to known actions, and (2) observing user behavior.</p>
+<p>(1) Though each website and application has its own UI, there are common patterns. Taking advantage of these common patterns, an algorithm might be able to discern that a website or application provides certain actions simply from its UI elements and arrangement.</p>
+<p>(2) By observing user behavior on a website or application (and comparing it with behaviors exhibited previously), an algorithm might be able to detect actions available on that website or application even when method (1) falls short (or in combination with method (1)).</p>
+<p>Critical to doing automatic action discovery well is figuring out how to parameterize the discovered actions.
+In many cases this is easy; when filling out a form on a website, the text typed is the parameter, while the location in the form is a core part of the action.
+In other cases, it&rsquo;s less clear cut; in a shell, typing a command is part of an action, while typing an argument to the command is a parameter, but these are comprised of similar low-level actions (typing characters).
+This is an interesting research challenge to get right.</p>
+<h4 id="automatic-automation-extraction">Automatic automation extraction</h4>
+<p>The pièce de résistance of future automation software is automatic automation extraction.
+Software will one day automatically notice when something you&rsquo;re doing can be automated, and it will offer to automate it for you.
+It might notice this because (1) you&rsquo;re engaging in a repeated behavior.
+Or it might notice this because (2) you&rsquo;re engaging in a behavior similar to one it&rsquo;s seen before (e.g. from data collected from other users earlier).</p>
+<p>It&rsquo;s important that anyone working on automatic automation extraction respect user privacy.
+The data that would be most useful for this type of project (broad computer usage data) is extremely sensitive.
+It is an interesting research direction to work toward this goal of automatic automation extraction in a way that consumes little data, and which can be deployed in a privacy preserving manner.</p>
+<h4 id="user-triggered-event-triggered-and-time-triggered-automations">User-triggered, event-triggered and time-triggered automations</h4>
+<p>I conclude with a more modest request than the previous two machine learning based feature requests: triggers.</p>
+<p>As I see it, a good trigger experience is what makes or breaks the value of automation software. This is because the triggers are the largest potential source of friction for a user of automations, outside of constructing the automation to begin with.</p>
+<p>For user-triggered automations (automations instigated by a user),
+I really liked the typeahead UI that Browserflow initially used.
+I remain hopeful that DK will bring that back.
+Keyboard shortcuts are the other clear contender for a good triggering experience.</p>
+<p>Event-triggered automations are also extremely useful.
+In my own day-to-day, I use email triggered automations (for handling emails from banks), and chat-triggered automations for all sorts of things.
+If-this-than-that is probably an excellent source of inspiration for other events. You can also see 
+<a href="https://davidbieber.com/snippets/2020-02-04-bieber-bot-capabilities/" target="_blank" rel="noopener">this list of Bieber Bot&rsquo;s capabilities</a> which breaks the capabilities down by whether they&rsquo;re timer-triggered, chat-triggered, or credit-card-swipe-triggered.</p>
+<p>Time-triggered automations can be broken down further into one-off automations (e.g. &ldquo;send this email tomorrow morning&rdquo;) and recurring ones (&ldquo;every morning, email me a digest with the news, weather, and a cat video to watch&rdquo;).</p>
+<p>Triggers don&rsquo;t need to be provided directly by the same software that allows creating automations, but it is sensible to bundle these two things together, since automations are a common thing to want to trigger. Separate trigger software and automation software is in many ways actually desirable, but it is critical that the experience of setting up triggers for an automation be clean and user friendly.</p>
+<h4 id="a-great-sharing-experience">A great sharing experience</h4>
+<p>Finally, automation is a superpower, and so I want to be able to share it with others.
+If I write a note-taking automation, I want my fellow note-takers to be able to use it.
+If someone writes a Farmville automation tool, other Farmville players should be able to use it too.</p>
+<p>However, sharing comes with concerns: you don&rsquo;t want to give untrustworthy strangers unfettered access to your machine. Arbitrary code execution is dangerous.</p>
+<p>So, my ideal sharing experience is a hybrid of &ldquo;app store&rdquo; and &ldquo;GitHub&rdquo;.
+A curated collection of automations that are audited and trustworthy, easy to search, and easy to discover would be very welcome. If automations from this collection were automatically surfaced when I was browsing on a website that had such an automation built for it, I would be delighted.</p>
+<p>Then, for automations that haven&rsquo;t gone through any vetting process, it should still be easy to share. It should be possible to host an automation on GitHub or to send an automation to a friend without ever needing a central body to vet the automation.</p>
+<p>By supporting both of these sharing models, we can ensure a healthy ecosystem of automations
+useful both for programmers and automation builders, and for people who simply want to experience the joy of computing using the automations of others.</p>
+<hr>
+<p>Interested in working on any of these aspects of automation software? Get in touch. I&rsquo;m always eager to discuss.</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/automation/">automation</a>
+  
+  <a class="badge badge-light" href="/tags/browserflow/">browserflow</a>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/snippets/2021-11-23-flashcard-collection-task/">Draft Instructions for Flashcard Collection Task</a></li>
+      
+      <li><a href="/snippets/2021-11-20-save-my-spot/">Save my spot! Finer-grained bookmarks for incremental reading</a></li>
+      
+      <li><a href="/snippets/2021-10-28-ml-and-automation-for-note-taking/">Machine Learning and Automation Ideas for Note-taking</a></li>
+      
+      <li><a href="/snippets/2021-09-08-gpt-3-for-spaced-repetition/">GPT-3 for Spaced Repetition</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://davidbieber.com/">David Bieber</a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+
+    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+
+
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZSDKaAmz-UUyaL1IZMi4QO_q4Jouko2c",
+    authDomain: "ask-me-anywhere.firebaseapp.com",
+    databaseURL: "https://ask-me-anywhere.firebaseio.com",
+    projectId: "ask-me-anywhere",
+    storageBucket: "ask-me-anywhere.appspot.com",
+    messagingSenderId: "123038093749",
+    appId: "1:123038093749:web:e8ce89651fcf1371d109fc",
+    measurementId: "G-JLDGL73R1B"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
