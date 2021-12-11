@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="David Bieber">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="The idea is simple, it&rsquo;s silly, but I think it has surprising depth. It&rsquo;s Amazon Beans: &ldquo;only pay for what you eat&rdquo;.
+Basically, I envision a new product from Amazon (or any other retailer, but it feels like a very Amazon idea, as you&rsquo;ll soon see): a special case of cans of beans. What makes it special? You don&rsquo;t have to pay anything to receive the case. You only pay for the cans of beans that you remove from the case.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-12-09-amazon-beans/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34570499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-34570499-2', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+
+  <link rel="canonical" href="https://davidbieber.com/snippets/2021-12-09-amazon-beans/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@Bieber">
+  <meta property="twitter:creator" content="@Bieber">
+  
+  <meta property="og:site_name" content="David Bieber">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2021-12-09-amazon-beans/">
+  <meta property="og:title" content="Amazon Beans: Only Pay for What You Eat | David Bieber">
+  <meta property="og:description" content="The idea is simple, it&rsquo;s silly, but I think it has surprising depth. It&rsquo;s Amazon Beans: &ldquo;only pay for what you eat&rdquo;.
+Basically, I envision a new product from Amazon (or any other retailer, but it feels like a very Amazon idea, as you&rsquo;ll soon see): a special case of cans of beans. What makes it special? You don&rsquo;t have to pay anything to receive the case. You only pay for the cans of beans that you remove from the case."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-12-09T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-12-09T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Amazon Beans: Only Pay for What You Eat | David Bieber</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">David Bieber</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">David Bieber</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/posts"><span>Writing</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Amazon Beans: Only Pay for What You Eat</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+</div>
+
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" id="article-content">
+      <p>The idea is simple, it&rsquo;s silly, but I think it has surprising depth.
+It&rsquo;s Amazon Beans: &ldquo;only pay for what you eat&rdquo;.</p>
+<p>Basically, I envision a new product from Amazon
+(or any other retailer, but it feels like a very Amazon idea, as you&rsquo;ll soon see):
+a special case of cans of beans.
+What makes it special?
+You don&rsquo;t have to pay anything to receive the case.
+You only pay for the cans of beans that you remove from the case.</p>
+<p>So, the actual tagline would be &ldquo;only pay for what you open&rdquo;,
+but I thought &ldquo;only pay for what you <em>eat</em>&rdquo; had a better ring to it,
+and still describes the situation fairly accurately.</p>
+<h4 id="straw-man-implementation-of-amazon-beans">Straw man implementation of Amazon Beans</h4>
+<p>The implementation details are left to the retailer to determine, but I&rsquo;ll put out a straw man just to provide evidence that the Amazon Beans idea is possible to put into practice.
+Here&rsquo;s the straw man:
+The buyer must provide payment details to get the case of Amazon Beans, but they are not charged anything up front.
+The case of Amazon Beans is internet connected, with little sensors that indicate
+when cans of beans are removed.
+The purchaser of the case agrees to pay for any beans that are removed from the case. And if for some reason the case cannot phone home for a while, e.g. because it&rsquo;s thrown in a Faraday cage for a week or something like that, the purchaser will pay for the full case of beans.
+If the beans are never eaten, they are never paid for<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.
+Once they are eaten, they are considered purchased, but even then they don&rsquo;t need to be paid for immediately; further deferred payment services are available as well.</p>
+<h4 id="why-amazon-beans">Why Amazon Beans?</h4>
+<p>Possible consequences of an Amazon Beans program include:</p>
+<ul>
+<li>Ending world hunger</li>
+<li>Increasing global resilience to supply chain shocks</li>
+<li>Further cementing Amazon&rsquo;s market dominance</li>
+<li>Giving increased flexibility to people living paycheck to paycheck</li>
+</ul>
+<p>In one sense, Amazon Beans turns ordinary homes into an extended Amazon warehouse.
+Since the beans can be delivered and consumed at vastly different points in time,
+this adds flexibility to delivery logistics, acting as a shock-absorber of sorts for changes in supply chain and shipping.</p>
+<p>A family that lives paycheck to paycheck might not have sufficient funds to keep a reserve of extra food in their home if they have to pay for that food up front, but if the food is only paid for once it is eaten, this program might allow that family to maintain such a food reserve.
+If they are temporarily between jobs, the food is still available without the hassle of having to take out a loan and go into debt to acquire it (kind of&hellip; eating food you cannot afford is still like going into debt, but it ought to be a smoother experience and importantly it doesn&rsquo;t leave the family <em>without food</em> at any point).</p>
+<h4 id="more-implementation-thoughts">More implementation thoughts</h4>
+<p><strong>Internet connectivity</strong>
+When you get your first case of Amazon Beans (or when you order it),
+you need to tell it how to connect to the internet.
+You don&rsquo;t need to do this for subsequent cases of beans though.
+The internet connectivity information can be stored by Amazon and come
+preconfigured on all future Amazon Beans cases that you order.
+This way, when they arrive, you can just toss them on your shelf.</p>
+<p><strong>Stockpiling</strong>
+Customers are by default only allowed to order a single case of Amazon Beans at a time, and only when they&rsquo;ve consumed a certain fraction of that case can they order their next case.
+(And if they opt in, that next case can be ordered automatically, at no cost to the consumer, when the first case is running low.)
+This eliminates any worry Amazon might have about a single adversarial customer
+ordering a large quantity of beans and letting them all go unused and unpaid for.
+After a customer earns trust (e.g. by demonstrating they are a restaurant or that they consume beans in higher quantities), they can order a larger shipment of Amazon Beans cases.</p>
+<h4 id="what-products-make-sense">What products make sense?</h4>
+<p>Beans are a good candidate for the Amazon Beans model because they are inexpensive, ship well in bulk, have a long shelf life,
+and have a predictable repeating consumption pattern.
+Other products might make sense too.
+Other foods like pastas, rice, canned foods, tea, powdered milk, jerky, etc have similarly long shelf-lives and could make sense.
+Repeatedly consumed products like toothpaste, batteries, and toilet paper likely make sense too. These are the types of products that Amazon already encourages subscriptions for.</p>
+<h4 id="tangent-dorm-supply">Tangent: Dorm Supply</h4>
+<p>Related to Amazon Beans, but extended to a wider variety of products, we end up at the idea of a low-cost / no-money-down reseller. Instead of considering this in the context of a single household, let&rsquo;s consider the lobby of an 80-person dormitory. The dorm manager orders (at no cost to the dorm) products that the students living there are likely to use. The students are only charged if they take the product. When summer comes, unused product is returned or saved for the following year. If the product has a limited shelf-life, unconsumed product is disposable at no cost at the end of the shelf-life.</p>
+<h4 id="risks-and-risk-mitigation">Risks and Risk Mitigation</h4>
+<p>The primary risk to Amazon is that product is ordered but goes unconsumed, and therefore is never paid for.
+The anti-stockpiling measure described above takes one step to mitigate this risk.
+I don&rsquo;t actually think the risk is that large, but of course it would be necessary to model and monitor this risk if putting the Amazon Beans program into production.
+Another risk mitigation measure is that
+Amazon could charge a small nominal fee for the first case of Amazon Beans. Adding this entry fee for the program will prevent people from ordering cases of beans that they have no intention of consuming.
+This fee could even go toward the costs of the beans, so it doesn&rsquo;t even feel like a fee to the consumer.</p>
+<p>Another risk of the program is
+it comes with a feeling of spending associated with each can opened.
+This is not good for the consumer&rsquo;s mental health,
+and it discourages consumption. Feeling like you&rsquo;re spending money every time you go to eat in your own house is an uncomfortable situation.
+Feeling like your eating habits are being monitored is similarly uncomfortable.
+I don&rsquo;t have any mitigation strategies to offer for these issues at this time.</p>
+<p>Another risk comes in scaling to many products. If ordering a case of a product is truly no cost to a consumer, they would order a case of every possible product.
+That doesn&rsquo;t work as the product offerings soar to thousands of products.
+Having the nominal up-front cost mentioned above, which goes toward the cost of the first units of the product consumed, mitigate this and allow for scaling.</p>
+<p>Finally, a consumer&rsquo;s tastes may change. They may have a case of a product they don&rsquo;t want to consume ever again. Being able to return large quantities of a product is important for situations like this.</p>
+<h4 id="directions-for-future-snippets">Directions for Future Snippets</h4>
+<p>In a future snippet it would be interesting to consider the costs and benefits to Amazon and to the consumer of an Amazon Beans program.
+I expect we&rsquo;ll find that if the cost of internet connectivity is modest relative to the cost of a case of beans, this becomes a win-win for a large segment of consumers and for Amazon.
+Some costs to consider include spoilage and other lost beans, customer service, cost of beans, shipping costs, software costs, and of course the cost of the special internet-connected case.</p>
+<p>In a future snippet I&rsquo;d also like to think through whether I&rsquo;m a proponent of the idea. What are the longer term consequences? What ethical issues arise?</p>
+<p>Brainstorming fun names comes later too. Jeffrey Beanzos? I&rsquo;ll keep thinking.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>The shelf-life of beans tends to be 2-5 years, so the policy can be something like: &ldquo;If the beans remain uneaten for 5 years, you get to keep the beans for free. Dispose of them responsibly.&rdquo; <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/taking-silly-ideas-seriously/">taking-silly-ideas-seriously</a>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/snippets/2021-11-05-hypothesis-arxiv/">Machine Learning Journal of Hypotheses</a></li>
+      
+      <li><a href="/snippets/2021-10-20-health-insurance-daos/">Health Insurance DAOs</a></li>
+      
+      <li><a href="/snippets/2021-08-16-dgsrs/">Decentralized Global Spaced Repetition (incomplete)</a></li>
+      
+      <li><a href="/snippets/2021-08-09-crispr-gardening/">CRISPR Gardening</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://davidbieber.com/">David Bieber</a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+
+    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+
+
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZSDKaAmz-UUyaL1IZMi4QO_q4Jouko2c",
+    authDomain: "ask-me-anywhere.firebaseapp.com",
+    databaseURL: "https://ask-me-anywhere.firebaseio.com",
+    projectId: "ask-me-anywhere",
+    storageBucket: "ask-me-anywhere.appspot.com",
+    messagingSenderId: "123038093749",
+    appId: "1:123038093749:web:e8ce89651fcf1371d109fc",
+    measurementId: "G-JLDGL73R1B"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

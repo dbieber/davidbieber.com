@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 07 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 09 Dec 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>David Bieber</title>
@@ -538,6 +538,100 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Amazon Beans: Only Pay for What You Eat</title>
+      <link>https://davidbieber.com/snippets/2021-12-09-amazon-beans/</link>
+      <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-12-09-amazon-beans/</guid>
+      <description>&lt;p&gt;The idea is simple, it&amp;rsquo;s silly, but I think it has surprising depth.
+It&amp;rsquo;s Amazon Beans: &amp;ldquo;only pay for what you eat&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Basically, I envision a new product from Amazon
+(or any other retailer, but it feels like a very Amazon idea, as you&amp;rsquo;ll soon see):
+a special case of cans of beans.
+What makes it special?
+You don&amp;rsquo;t have to pay anything to receive the case.
+You only pay for the cans of beans that you remove from the case.&lt;/p&gt;
+&lt;p&gt;So, the actual tagline would be &amp;ldquo;only pay for what you open&amp;rdquo;,
+but I thought &amp;ldquo;only pay for what you &lt;em&gt;eat&lt;/em&gt;&amp;rdquo; had a better ring to it,
+and still describes the situation fairly accurately.&lt;/p&gt;
+&lt;h4 id=&#34;straw-man-implementation-of-amazon-beans&#34;&gt;Straw man implementation of Amazon Beans&lt;/h4&gt;
+&lt;p&gt;The implementation details are left to the retailer to determine, but I&amp;rsquo;ll put out a straw man just to provide evidence that the Amazon Beans idea is possible to put into practice.
+Here&amp;rsquo;s the straw man:
+The buyer must provide payment details to get the case of Amazon Beans, but they are not charged anything up front.
+The case of Amazon Beans is internet connected, with little sensors that indicate
+when cans of beans are removed.
+The purchaser of the case agrees to pay for any beans that are removed from the case. And if for some reason the case cannot phone home for a while, e.g. because it&amp;rsquo;s thrown in a Faraday cage for a week or something like that, the purchaser will pay for the full case of beans.
+If the beans are never eaten, they are never paid for&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+Once they are eaten, they are considered purchased, but even then they don&amp;rsquo;t need to be paid for immediately; further deferred payment services are available as well.&lt;/p&gt;
+&lt;h4 id=&#34;why-amazon-beans&#34;&gt;Why Amazon Beans?&lt;/h4&gt;
+&lt;p&gt;Possible consequences of an Amazon Beans program include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ending world hunger&lt;/li&gt;
+&lt;li&gt;Increasing global resilience to supply chain shocks&lt;/li&gt;
+&lt;li&gt;Further cementing Amazon&amp;rsquo;s market dominance&lt;/li&gt;
+&lt;li&gt;Giving increased flexibility to people living paycheck to paycheck&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In one sense, Amazon Beans turns ordinary homes into an extended Amazon warehouse.
+Since the beans can be delivered and consumed at vastly different points in time,
+this adds flexibility to delivery logistics, acting as a shock-absorber of sorts for changes in supply chain and shipping.&lt;/p&gt;
+&lt;p&gt;A family that lives paycheck to paycheck might not have sufficient funds to keep a reserve of extra food in their home if they have to pay for that food up front, but if the food is only paid for once it is eaten, this program might allow that family to maintain such a food reserve.
+If they are temporarily between jobs, the food is still available without the hassle of having to take out a loan and go into debt to acquire it (kind of&amp;hellip; eating food you cannot afford is still like going into debt, but it ought to be a smoother experience and importantly it doesn&amp;rsquo;t leave the family &lt;em&gt;without food&lt;/em&gt; at any point).&lt;/p&gt;
+&lt;h4 id=&#34;more-implementation-thoughts&#34;&gt;More implementation thoughts&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Internet connectivity&lt;/strong&gt;
+When you get your first case of Amazon Beans (or when you order it),
+you need to tell it how to connect to the internet.
+You don&amp;rsquo;t need to do this for subsequent cases of beans though.
+The internet connectivity information can be stored by Amazon and come
+preconfigured on all future Amazon Beans cases that you order.
+This way, when they arrive, you can just toss them on your shelf.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Stockpiling&lt;/strong&gt;
+Customers are by default only allowed to order a single case of Amazon Beans at a time, and only when they&amp;rsquo;ve consumed a certain fraction of that case can they order their next case.
+(And if they opt in, that next case can be ordered automatically, at no cost to the consumer, when the first case is running low.)
+This eliminates any worry Amazon might have about a single adversarial customer
+ordering a large quantity of beans and letting them all go unused and unpaid for.
+After a customer earns trust (e.g. by demonstrating they are a restaurant or that they consume beans in higher quantities), they can order a larger shipment of Amazon Beans cases.&lt;/p&gt;
+&lt;h4 id=&#34;what-products-make-sense&#34;&gt;What products make sense?&lt;/h4&gt;
+&lt;p&gt;Beans are a good candidate for the Amazon Beans model because they are inexpensive, ship well in bulk, have a long shelf life,
+and have a predictable repeating consumption pattern.
+Other products might make sense too.
+Other foods like pastas, rice, canned foods, tea, powdered milk, jerky, etc have similarly long shelf-lives and could make sense.
+Repeatedly consumed products like toothpaste, batteries, and toilet paper likely make sense too. These are the types of products that Amazon already encourages subscriptions for.&lt;/p&gt;
+&lt;h4 id=&#34;tangent-dorm-supply&#34;&gt;Tangent: Dorm Supply&lt;/h4&gt;
+&lt;p&gt;Related to Amazon Beans, but extended to a wider variety of products, we end up at the idea of a low-cost / no-money-down reseller. Instead of considering this in the context of a single household, let&amp;rsquo;s consider the lobby of an 80-person dormitory. The dorm manager orders (at no cost to the dorm) products that the students living there are likely to use. The students are only charged if they take the product. When summer comes, unused product is returned or saved for the following year. If the product has a limited shelf-life, unconsumed product is disposable at no cost at the end of the shelf-life.&lt;/p&gt;
+&lt;h4 id=&#34;risks-and-risk-mitigation&#34;&gt;Risks and Risk Mitigation&lt;/h4&gt;
+&lt;p&gt;The primary risk to Amazon is that product is ordered but goes unconsumed, and therefore is never paid for.
+The anti-stockpiling measure described above takes one step to mitigate this risk.
+I don&amp;rsquo;t actually think the risk is that large, but of course it would be necessary to model and monitor this risk if putting the Amazon Beans program into production.
+Another risk mitigation measure is that
+Amazon could charge a small nominal fee for the first case of Amazon Beans. Adding this entry fee for the program will prevent people from ordering cases of beans that they have no intention of consuming.
+This fee could even go toward the costs of the beans, so it doesn&amp;rsquo;t even feel like a fee to the consumer.&lt;/p&gt;
+&lt;p&gt;Another risk of the program is
+it comes with a feeling of spending associated with each can opened.
+This is not good for the consumer&amp;rsquo;s mental health,
+and it discourages consumption. Feeling like you&amp;rsquo;re spending money every time you go to eat in your own house is an uncomfortable situation.
+Feeling like your eating habits are being monitored is similarly uncomfortable.
+I don&amp;rsquo;t have any mitigation strategies to offer for these issues at this time.&lt;/p&gt;
+&lt;p&gt;Another risk comes in scaling to many products. If ordering a case of a product is truly no cost to a consumer, they would order a case of every possible product.
+That doesn&amp;rsquo;t work as the product offerings soar to thousands of products.
+Having the nominal up-front cost mentioned above, which goes toward the cost of the first units of the product consumed, mitigate this and allow for scaling.&lt;/p&gt;
+&lt;p&gt;Finally, a consumer&amp;rsquo;s tastes may change. They may have a case of a product they don&amp;rsquo;t want to consume ever again. Being able to return large quantities of a product is important for situations like this.&lt;/p&gt;
+&lt;h4 id=&#34;directions-for-future-snippets&#34;&gt;Directions for Future Snippets&lt;/h4&gt;
+&lt;p&gt;In a future snippet it would be interesting to consider the costs and benefits to Amazon and to the consumer of an Amazon Beans program.
+I expect we&amp;rsquo;ll find that if the cost of internet connectivity is modest relative to the cost of a case of beans, this becomes a win-win for a large segment of consumers and for Amazon.
+Some costs to consider include spoilage and other lost beans, customer service, cost of beans, shipping costs, software costs, and of course the cost of the special internet-connected case.&lt;/p&gt;
+&lt;p&gt;In a future snippet I&amp;rsquo;d also like to think through whether I&amp;rsquo;m a proponent of the idea. What are the longer term consequences? What ethical issues arise?&lt;/p&gt;
+&lt;p&gt;Brainstorming fun names comes later too. Jeffrey Beanzos? I&amp;rsquo;ll keep thinking.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;The shelf-life of beans tends to be 2-5 years, so the policy can be something like: &amp;ldquo;If the beans remain uneaten for 5 years, you get to keep the beans for free. Dispose of them responsibly.&amp;rdquo; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 </description>
     </item>
     
