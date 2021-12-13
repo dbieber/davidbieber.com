@@ -5,7 +5,7 @@
     <link>https://davidbieber.com/</link>
       <atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 09 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 12 Dec 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>David Bieber</title>
@@ -538,6 +538,49 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>We Could Use Augmented Reality to Simulate Prosopagnosia</title>
+      <link>https://davidbieber.com/snippets/2021-12-12-prosopagnosia-augmented-reality/</link>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-12-12-prosopagnosia-augmented-reality/</guid>
+      <description>&lt;p&gt;I was watching 
+&lt;a href=&#34;https://www.youtube.com/watch?v=vFZY--lgmHs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lecture 4 of Nancy Kanwisher&amp;rsquo;s class &amp;ldquo;The Human Brain&amp;rdquo;&lt;/a&gt;,
+and it occurred to me that we could use augmented reality to simulate prosopagnosia.
+Prosopagnosia, for those unfamiliar with the term, is &amp;ldquo;face blindness&amp;rdquo;.
+It affects about 2% of the population with varying degrees of severity,
+and those with prosopagnosia cannot recognize faces.&lt;/p&gt;
+&lt;p&gt;In the in-person version of the course,
+the students observe demos to show off the importance of motion in vision, and color in vision.
+Those demos aren&amp;rsquo;t available online; they only work in person.
+The color vision demo puts students in a room without colored light, thereby only permitting gray-scale vision.
+The importance of color then becomes immediately apparent, no pun intended; color is useful for distinguishing safe food from spoiled, and healthy faces from sickly ones.
+This exercise helps motivate Marr&amp;rsquo;s theory of computation: that you can reason about brain function by thinking about what the brain must compute, and why.&lt;/p&gt;
+&lt;p&gt;In a similar spirit to these demos,
+there could also be a demo for the students showing what it&amp;rsquo;s like to have prosopagnosia.
+This would help students feel more viscerally &amp;ldquo;what is computed and why&amp;rdquo; when it comes to facial recognition,
+and it could also be used for people to better understand the condition.
+Fostering empathy and understanding is always a good thing!&lt;/p&gt;
+&lt;p&gt;How would we do it? With augmented reality, it would be possible to overlay or distort faces in a way that makes them unrecognizable.
+The naive implementation would be to simply cover up all faces with a rectangle.
+To make it a closer approximation of the prosopagnosia experience,
+it would be essential to work with people with prosopagnosia.
+Perhaps applying a light distortion to a face, but critically applying a different distortion to a face every time it is observed, would be a solid way to disrupt the user&amp;rsquo;s ability to recognize faces without being too distracting.
+It&amp;rsquo;s difficult for me to know a priori whether this could create a convincing prosopagnosia experience,
+so I will leave this snippet here, merely as food for thought, rather than pursuing the idea.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Do you think this effect could be convincing, approximating the experience of someone with prosopagnosia in someone without?&lt;/p&gt;
+&lt;p&gt;In writing this snippet I Googled &amp;ldquo;prosopagnosia augmented reality&amp;rdquo; to see if anyone had tried this idea already.
+Of course what I found was not my idea, but rather the reverse: using augmented reality to help those with prosopagnosia, rather than using it to help those without. That makes a lot of sense, and I feel a bit silly for it.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Maybe it could be a good class project for someone to dive deeper into this idea though. If you do, do let me know!! &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 </description>
     </item>
     

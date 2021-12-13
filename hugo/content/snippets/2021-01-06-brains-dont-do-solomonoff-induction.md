@@ -2,7 +2,7 @@
 title = "Brains Don't Do Solomonoff Induction"
 date = 2021-01-06T00:00:00
 uid = "IaqebZa62"
-tags = ["thought-experiments"]
+tags = ["thought-experiments", "brains"]
 keywords = ["information"]
 +++
 

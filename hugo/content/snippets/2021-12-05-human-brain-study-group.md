@@ -1,7 +1,7 @@
 +++
 title = "Study Group for 9.13 The Human Brain"
 date = 2021-12-05T00:00:00
-tags = ["peer-learning-group"]
+tags = ["peer-learning-group", "brains"]
 +++
 
 Interested in casually learning a bit of neuroscience?
