@@ -3,6 +3,7 @@ title = "am I available for conversation right now dot com"
 date = 2021-01-22T00:00:00
 uid = "E5mRxhvgs"
 tags = ["attention", "taking-silly-ideas-seriously"]
+keywords = ["conversation"]
 +++
 
 I don't know if I like this idea, but I'm giving it a try; I've added a "Now" page to my website ([davidbieber.com/now](https://davidbieber.com/now/)).
