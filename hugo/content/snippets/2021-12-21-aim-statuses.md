@@ -2,6 +2,7 @@
 title = "Brainstorming How to Replicate AIM Statuses Today"
 date = 2021-12-21T00:00:00
 tags = ["taking-silly-ideas-seriously"]
+keywords = ["conversation"]
 +++
 
 How do we bring back reliable aim statuses?
