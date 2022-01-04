@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>messager | David Bieber</title>
+    <link>https://davidbieber.com/tags/messager/</link>
+      <atom:link href="https://davidbieber.com/tags/messager/index.xml" rel="self" type="application/rss+xml" />
+    <description>messager</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 02 Jan 2022 01:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
+      <title>messager</title>
+      <link>https://davidbieber.com/tags/messager/</link>
+    </image>
+    
+    <item>
+      <title>Go Note Go Messager without Pixel-Space Automation</title>
+      <link>https://davidbieber.com/snippets/2022-01-02-pixel-space-automation/</link>
+      <pubDate>Sun, 02 Jan 2022 01:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2022-01-02-pixel-space-automation/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This snippet was originally going to be about pixel-space automation. Then I found I didn&amp;rsquo;t need it for what I wanted to do: sending messages to Twitter, Facebook, Slack, and Discord from Go Note Go, Roam Research, and Bieber Bot.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Happy New Year! I&amp;rsquo;d really like to automate Mac apps that don&amp;rsquo;t expose actions to Automator
+using pixel-space navigation and clicks and typing to control the automation. This is why and how.&lt;/p&gt;
+&lt;p&gt;(Update from the end of the snippet: By the time I finished writing the snippet, I had automated everything I intended to using browser automation in Browserflow, never once needing to automate Ferdi. I still think pixel-space automation would be wonderful, but my initial motivation for it turns out to be insufficient.)&lt;/p&gt;
+&lt;h3 id=&#34;motivation-improving-messager-by-automating-ferdi&#34;&gt;Motivation: Improving Messager by Automating Ferdi&lt;/h3&gt;
+&lt;p&gt;I have a side project &amp;ldquo;Messager&amp;rdquo; that allows for programmatically sending and receiving messages
+across a wide variety of messaging services.
+I also use Ferdi for manually managing an even wider variety of messaging services.&lt;/p&gt;
+&lt;p&gt;Currently Messager supports
+Facebook Messenger (as myself and as Bieber Bot),
+Twitter (public tweets, private tweets, and DMs),
+HackerNews,
+and it has limited support for Slack and Discord.
+Ferdi, on the other hand, supports a much wider range of services, but doesn&amp;rsquo;t offer programmatic access;
+I use Ferdi with
+Facebook Messenger (as myself and as Bieber Bot),
+Twitter (public tweets, private tweets, and DMs),
+multiple Slacks,
+Discord,
+Gitter,
+WhatsApp,
+Telegram,
+as well as for non-messaging services like Roam Research,
+multiple spreadsheets,
+supervisord,
+and other adhoc use cases.&lt;/p&gt;
+&lt;p&gt;I would like to extend Messager to have wider support,
+particularly to improve support for Slack and Discord.
+To do this, &lt;mark&gt;I&amp;rsquo;d love to automate Ferdi&lt;/mark&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;motivation-go-note-go---messager-bridge&#34;&gt;Motivation: Go Note Go - Messager Bridge&lt;/h3&gt;
+&lt;p&gt;Why do I want to improve Messager &lt;em&gt;now&lt;/em&gt;? It&amp;rsquo;s because of 
+&lt;a href=&#34;https://davidbieber.com/projects/go-note-go&#34;&gt;Go Note Go&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m adding messaging support to Go Note Go. The main use case I&amp;rsquo;m targeting is this:&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m drifting off to sleep and realize I want to tell someone something.
+So I write in Go Note Go something along the lines of &amp;ldquo;Tell John Smith Hey John, I have this new idea for Go Note Go where you can send messages as your drifting off to sleep &amp;ndash; maybe I can tell you about it tomorrow&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;When I wake up the following morning, Bieber Bot has messaged me with a link to a spreadsheet.
+It has all the messages I drafted the previous night (they haven&amp;rsquo;t been sent yet).
+There, I can clean them up for any typos and &amp;ldquo;approve&amp;rdquo; them (mark them as OK to send).
+And once they&amp;rsquo;re approved, they&amp;rsquo;ll be sent automatically using Messager.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s in support of this project that I&amp;rsquo;d love for Messager to support a wider variety of services.
+Ideally the system will intelligently select the service to use to send the message based on the recipients.
+It will include the service in the spreadsheet, so that I can adjust the service if needed before approving the message.&lt;/p&gt;
+&lt;p&gt;So this is going to be a Go_Note_Go-Sheets-Messager-Bieber_Bot collab.&lt;/p&gt;
+&lt;p&gt;tl;dr Go Note Go adds draft messages to a spreadsheet. Bieber Bot uses that spreadsheet to message me about new draft messages, and to message friends on my behalf with approved messages.&lt;/p&gt;
+&lt;h3 id=&#34;motivation-going-beyond&#34;&gt;Motivation: Going beyond&lt;/h3&gt;
+&lt;p&gt;For the Messager application described so far, pixel-space automation is not necessary.
+All of the services I want to automate can be opened in the Browser,
+and so existing Browser automation techniques are sufficient.
+I would use Browserflow for this if it supported programmatic triggers, but it does not.
+(Psst&amp;hellip; DK, can you add the ability to programmatically trigger a local flow please?)&lt;/p&gt;
+&lt;p&gt;Given this, why is pixel-space automation interesting?
+It&amp;rsquo;s because it would enable
+(1) easier automation construction for the automations I&amp;rsquo;m interested in
+and (2) it enables a much larger class of automations, and empowerment is key.
+
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-12-07-future-automation-software/&#34;&gt;See here for my dreams for the future of automation.&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ferdi-actions&#34;&gt;Ferdi Actions&lt;/h3&gt;
+&lt;p&gt;The main actions I want for the Messager application are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ferdi: Navigating to different services&lt;/li&gt;
+&lt;li&gt;Discord: Choosing a server, channel, or recipient&lt;/li&gt;
+&lt;li&gt;Discord: Sending and receiving messages on that channel&lt;/li&gt;
+&lt;li&gt;Slack: Choosing a channel or recipient&lt;/li&gt;
+&lt;li&gt;Slack: Sending and receiving messages on that channel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;the-challenge&#34;&gt;The Challenge&lt;/h3&gt;
+&lt;h5 id=&#34;why-are-the-discord-and-slack-apis-not-sufficient&#34;&gt;Why are the Discord and Slack APIs not sufficient?&lt;/h5&gt;
+&lt;p&gt;Both Discord and Slack have policies against using self-bots. Their APIs don&amp;rsquo;t allow you to programmatically control your own user account. So, controlling your account as a human would, through the provided chat client, is a natural way to approach the problem.&lt;/p&gt;
+&lt;p&gt;The advantages of using Ferdi over the browser are: (1) it uses service hibernation, so you can skip loading the pages and logging in each time you start using a website, (2) maybe you can keep using the browser while Ferdi automates in the background.&lt;/p&gt;
+&lt;p&gt;Each of these actions is doable using existing browser automation tools. Navigating to different services in the browser requires authentication though, if you&amp;rsquo;re not already logged in (which I would be in Ferdi). Perhaps with Browserflow&amp;rsquo;s cookie sharing feature, I can also already be logged in at the start of a Browserflow flow even on Cloud.&lt;/p&gt;
+&lt;h3 id=&#34;current-status&#34;&gt;Current Status&lt;/h3&gt;
+&lt;p&gt;I took a break in the middle of writing this flow and now I&amp;rsquo;ve implemented sending messages via Browserflow in both Slack and Discord.
+I&amp;rsquo;ve also gone further toward the Go Note Go-Messager bridge,
+implementing a few of the other steps.
+Whenever I use &amp;ldquo;@Person&amp;rdquo; in Roam, Bieber Bot automatically copies the message into a spreadsheet.
+The spreadsheet has an &amp;ldquo;Approval&amp;rdquo; column, where I can mark messages as OK to send.
+Bieber Bot will then use Messager to send any approved messages.
+Since Go Note Go sends it&amp;rsquo;s notes to Roam, this completes the circuit.&lt;/p&gt;
+&lt;p&gt;I can now send messages from Go Note Go to any of Facebook Messenger, Twitter, Slack, and Discord.
+I&amp;rsquo;m still excited about pixel-space automation, but I&amp;rsquo;ll have to save that excitement for a future snippet; for now, Browserflow was sufficient.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Brainstorming How to Replicate AIM Statuses Today</title>
+      <link>https://davidbieber.com/snippets/2021-12-21-aim-statuses/</link>
+      <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-12-21-aim-statuses/</guid>
+      <description>&lt;p&gt;How do we bring back reliable aim statuses?&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d like for folks to know if someone is genuinely available for a conversation.&lt;/p&gt;
+&lt;p&gt;Some options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Could just ask.&lt;/li&gt;
+&lt;li&gt;Could post statuses on social media.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Neither of these really appeal to me. They feel kind of heavyweight. I guess, of the two, the former is more appealing. The latter would require rewriting social conventions a bit too much.&lt;/p&gt;
+&lt;p&gt;Maybe if the &amp;ldquo;asking&amp;rdquo; felt automated, like if there was a pre-written canned message (that explained that it was a canned message), it could feel more lightweight. For example:&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Hi, David Bieber would like to know if you&amp;rsquo;re available for a conversation now-ish. It&amp;rsquo;s not urgent. No need to respond if you&amp;rsquo;re not available. If you are available, Hi! Otherwise, you can just ignore this. -Bieber Bot&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Signing it Bieber Bot is supposed to indicate it&amp;rsquo;s a pre-written message, but I&amp;rsquo;m not sure if that comes across. Maybe adding &amp;ldquo;(This is a pre-written message.)&amp;rdquo; would be safer.&lt;/p&gt;
+&lt;p&gt;Later, when people see that message for the second/third/nth time, they won&amp;rsquo;t have to read the whole thing, just seeing the general shape of it will be enough.&lt;/p&gt;
+&lt;p&gt;But it will still contain it&amp;rsquo;s full meaning.&lt;/p&gt;
+&lt;p&gt;I guess that&amp;rsquo;s similar in spirit to the 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/&#34;&gt;kangaroo 🦘&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Sending the message for the first time though, still would feel heavy. Only the nth time would feel light.
+This seems surmountable though. Maybe I&amp;rsquo;ll give it a try.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Organizing a Twitter Discussion: Gathering Twitter Replies</title>
+      <link>https://davidbieber.com/snippets/2021-11-20-twitter-replies/</link>
+      <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2021-11-20-twitter-replies/</guid>
+      <description>&lt;p&gt;I 
+&lt;a href=&#34;https://twitter.com/Bieber/status/1461128201485402112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tweeted&lt;/a&gt; about spaced repetition earlier this week, sharing and summarizing 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-11-02-improvements-to-spaced-repetition/&#34;&gt;my latest snippet on the subject&lt;/a&gt;. A bunch of people left thoughtful replies, and I was quite pleased with the discussion. Now I want to look over the discussion holistically, but I don&amp;rsquo;t see a great way to do this. I don&amp;rsquo;t even see a way to look at all the replies to my thread in one place. I want to see not just this, but also replies to replies. TweetDeck might be able to help, but I don&amp;rsquo;t see how.&lt;/p&gt;
+&lt;p&gt;I think what I&amp;rsquo;d like to do is write a little script that takes a tweet as input, and outputs links to all the replies and replies to replies in a little tree that I can put into Roam.
+Then I can make notes on the full thread, and even link together different parts of the conversation.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s give this a try.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import twython
+from messager import settings
+
+client = twython.Twython(
+        settings.TWITTER_CONSUMER_KEY,
+        settings.TWITTER_CONSUMER_SECRET,
+        settings.TWITTER_ACCESS_TOKEN,
+        settings.TWITTER_ACCESS_TOKEN_SECRET)
+
+def get_replies(status_id):
+  status = client.lookup_status(id=status_id)[0]
+  return get_replies_to_status(status)
+
+def get_replies_to_status(status):
+  status_id = status[&#39;id&#39;]
+  screen_name = status[&#39;user&#39;][&#39;screen_name&#39;]
+  results = client.search(
+      q=f&#39;to:{screen_name}&#39;, sinceId=status_id, count=128)
+  candidates = results[&#39;statuses&#39;]
+  replies = []
+  for candidate in candidates:
+    if candidate[&#39;in_reply_to_status_id&#39;] == status_id:
+      replies.append(candidate)
+  return replies
+
+def get_recursive_replies(status_id):
+  status = client.lookup_status(id=status_id)[0]
+  all_replies = []
+  to_search = [status]
+  searched = set()
+  while to_search:
+    status = to_search.pop()
+    if status[&#39;id&#39;] not in searched:
+      replies = get_replies_to_status(status)
+      all_replies.extend(replies)
+      to_search.extend(replies)
+      searched.add(status[&#39;id&#39;])
+  return all_replies
+
+status_id = 1461128201485402112
+replies = get_recursive_replies(status_id)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Aside: I would love for this file (the markdown file I&amp;rsquo;m writing this snippet in) to double as a Python file.
+When I run it, just the Python code block(s) would get run.&lt;/p&gt;
+&lt;p&gt;To my surprise the Twitter API did not make it easy to query for replies to a tweet. So, I&amp;rsquo;m using the workaround on display above.
+To get all replies to a tweet, I query for all tweets to the tweet author, and then filter for those that are actually replies.
+Since the number of search results is limited, this might not always work; it depends on what order Twitter decides to sort tweets by. If Twitter returns the oldest tweets first, this method will work consistently.&lt;/p&gt;
+&lt;p&gt;It does seem to be working for now, fortunately. There are 60 recursive replies to my tweet, and with this method I was able to lay them all out in a row. Pasting the urls into Roam, I find the default rendering of each tweet in Roam takes up a bit too much space though and provides too much context. So, I may need to modify the display a bit more.&lt;/p&gt;
+&lt;p&gt;My hope is that I can lay out the entire conversation compactly, and then start marking it up with my own notes, e.g. tagging replies that express similar ideas so I can reply to them together rather than individually.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Accessing Your iMessages with SQL</title>
+      <link>https://davidbieber.com/snippets/2020-05-20-imessage-sql-db/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-05-20-imessage-sql-db/</guid>
+      <description>&lt;p&gt;If you use a Mac and use iMessage, you can access your iMessages programmatically. They are stored by iMessage as a sqlite database, which you can easily access.&lt;/p&gt;
+&lt;h2 id=&#34;accessing-the-database&#34;&gt;Accessing the Database&lt;/h2&gt;
+&lt;p&gt;The database is typically stored at &lt;code&gt;~/Library/Messages/chat.db&lt;/code&gt;, though that location is configurable.&lt;/p&gt;
+&lt;p&gt;If you try to access the database, however, you will likely encounter this unhelpful error message: &lt;code&gt;~/Library/Messages/chat.db: Operation not permitted&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Thankfully, OSXDaily has put together a 
+&lt;a href=&#34;https://osxdaily.com/2018/10/09/fix-operation-not-permitted-terminal-error-macos/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;helpful step by step guide to resolving this error&lt;/a&gt;, which I&amp;rsquo;ll summarize here:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to your &lt;code&gt;System Preferences &amp;gt; Security &amp;amp; Privacy &amp;gt; Privacy &amp;gt; Full Disk Access&lt;/code&gt; settings.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use the Lock and &lt;code&gt;+&lt;/code&gt; symbol to give full disk access to the Terminal App (located in &lt;code&gt;Applications &amp;gt; Utilities &amp;gt; Terminal&lt;/code&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You may need to relaunch Terminal for the change to take effect; I did not.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Once you&amp;rsquo;ve done this, you can start poking around at your iMessages programmatically.&lt;/p&gt;
+&lt;h2 id=&#34;taking-a-look-around&#34;&gt;Taking a Look Around&lt;/h2&gt;
+&lt;p&gt;I begin with making a backup:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cp ~/Library/Messages/chat.db ~/chat.db&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Now I open the database with sqlite3.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sqlite3 ~/chat.db&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I run &lt;code&gt;.tables&lt;/code&gt; to see what tables there are:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;_SqliteDatabaseProperties&lt;/td&gt;
+&lt;td&gt;kvtable&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;attachment&lt;/td&gt;
+&lt;td&gt;message&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;chat&lt;/td&gt;
+&lt;td&gt;message_attachment_join&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;chat_handle_join&lt;/td&gt;
+&lt;td&gt;message_processing_task&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;chat_message_join&lt;/td&gt;
+&lt;td&gt;sync_deleted_attachments&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;deleted_messages&lt;/td&gt;
+&lt;td&gt;sync_deleted_chats&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;handle&lt;/td&gt;
+&lt;td&gt;sync_deleted_messages&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;There are some interesting tables in there: &lt;code&gt;message&lt;/code&gt; seems most important. It looks like we&amp;rsquo;ll also be able to look up attachments using tables &lt;code&gt;attachment&lt;/code&gt; and &lt;code&gt;message_attachment_join&lt;/code&gt;. Strangely, there&amp;rsquo;s a table present for deleted messages, which suggests a sort of &amp;ldquo;trash can&amp;rdquo; where messages are not permanently deleted immediately upon deletion.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;.schema message&lt;/code&gt; is the command for viewing the schema of the message table.
+We can also jump right in with &lt;code&gt;SELECT * FROM message;&lt;/code&gt; to see what sort of data is contained within. Sure enough, human readable messages are present.&lt;/p&gt;
+&lt;p&gt;This will all be interesting to investigate further at a later date.
+One perk of understanding this mechanism for me is that I&amp;rsquo;ll be able to write events that are triggered in response to iMessages. This enables me to write custom notification criteria. For example, I can have messages that start &amp;ldquo;URGENT&amp;rdquo; notify me immediately, but I can have all other messages programatically withheld from notifying me until 9pm.&lt;/p&gt;
+&lt;p&gt;This lets me receive the messages at the time and location that I want, rather than at the time Apple chooses for me. Thanks Bieber Bot.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Posting to Hacker News Programmatically</title>
+      <link>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</guid>
+      <description>&lt;p&gt;If you run this snippet of Python code, it will submit this 
+&lt;a href=&#34;https://davidbieber.com/snippets/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Snippet&amp;rdquo;&lt;/a&gt; (the one you&amp;rsquo;re currently reading) to Hacker News.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from html.parser import HTMLParser
+import getpass
+import requests
+import time
+
+USERNAME = (
+    &#39;&#39;  # Put your Hacker News username here.
+    or getpass.getuser()  # (But if you don&#39;t, we&#39;ll try a sensible default.)
+)
+PASSWORD = (
+    &#39;&#39;  # We&#39;ll prompt you for your password, or you can enter it here.
+    or getpass.getpass()
+)
+# You can reconfigure the title and url to submit here.
+TITLE_TO_SUBMIT = &#39;Posting to Hacker News Programmatically&#39;
+URL_TO_SUBMIT = &#39;https://davidbieber.com/snippets/2020-05-02-hackernews-submit/&#39;
+
+# Login
+session = requests.Session()
+session.post(
+    &#39;https://news.ycombinator.com/login&#39;,
+    data={
+        &#39;acct&#39;: USERNAME,
+        &#39;pw&#39;: PASSWORD,
+    },
+)
+
+# Get the CSRF token (&amp;quot;FNID&amp;quot;)
+time.sleep(1)
+class FNIDExtractor(HTMLParser):
+  fnid = None
+  def handle_starttag(self, tag, attrs):
+    if tag.lower() == &#39;input&#39; and (&#39;name&#39;, &#39;fnid&#39;) in attrs:
+      self.fnid = dict(attrs)[&#39;value&#39;]
+f = FNIDExtractor()
+submit_response = session.get(&#39;https://news.ycombinator.com/submit&#39;)
+f.feed(submit_response.text)
+
+# Submit
+time.sleep(2)
+session.post(
+    &#39;https://news.ycombinator.com/r&#39;,
+    data={
+        &#39;title&#39;: TITLE_TO_SUBMIT,
+        &#39;url&#39;: URL_TO_SUBMIT,
+        &#39;fnid&#39;: f.fnid,
+    },
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can change the title and URL before running this to make a new submission, or run it as is to submit this snippet.&lt;/p&gt;
+&lt;p&gt;If you try to submit a URL that&amp;rsquo;s already been submitted recently &amp;ndash; such as this snippet &amp;ndash; it won&amp;rsquo;t submit a second time, so no harm done in running this.&lt;/p&gt;
+&lt;p&gt;To learn more about sessions and see why this works, you can read about them in the 
+&lt;a href=&#34;https://requests.readthedocs.io/en/master/user/advanced/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;requests&lt;/em&gt; documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Facebook Messenger SQL Queries</title>
+      <link>https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/</link>
+      <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/</guid>
+      <description>&lt;p&gt;Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries&#34;&gt;previous snippet&lt;/a&gt; for analyzing my browsing history, I&amp;rsquo;ll use this snippet to sketch out some useful queries for analyzing my message history.&lt;/p&gt;
+&lt;h2 id=&#34;table-schemas&#34;&gt;Table Schemas&lt;/h2&gt;
+&lt;p&gt;I have two tables of messages. &lt;code&gt;messenger_archive&lt;/code&gt; contains all messages from when I first joined Facebook in August 2008 through February 2020. &lt;code&gt;messenger&lt;/code&gt; contains messages from February 2020 through now, and is updated in real time.&lt;/p&gt;
+&lt;p&gt;Using the commands &lt;code&gt;\d messenger&lt;/code&gt; and &lt;code&gt;\d messenger_archive&lt;/code&gt;, I inspect the table schemas.&lt;/p&gt;
+&lt;h3 id=&#34;schema-messenger&#34;&gt;Schema: messenger&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;The message content&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;uid&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;A unique message id&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;author&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;The &lt;em&gt;fbid&lt;/em&gt; of the message author&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;timestamp&lt;/td&gt;
+&lt;td&gt;number&lt;/td&gt;
+&lt;td&gt;The timestamp in milliseconds&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;forwarded&lt;/td&gt;
+&lt;td&gt;boolean&lt;/td&gt;
+&lt;td&gt;Whether the message is a forwarded message&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;thread_id&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;A unique thread id&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;thread_type&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;GROUP or USER, indicating the thread type&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;schema-messenger_archive&#34;&gt;Schema: messenger_archive&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column&lt;/th&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;sender_name&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;The message author&amp;rsquo;s name&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;timestamp_ms&lt;/td&gt;
+&lt;td&gt;number&lt;/td&gt;
+&lt;td&gt;The timestamp in milliseconds&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;The message content&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;type&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;One of: Payment, Call, Share, Generic, Unsubscribe, or Subscribe&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;title&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;The thread title, often the name of the other participant&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;is_still_participant&lt;/td&gt;
+&lt;td&gt;boolean&lt;/td&gt;
+&lt;td&gt;Whether I was still in the conversation at the time of the archive (Feb 2020)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;thread_type&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;One of: RegularGroup, Regular&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;thread_path&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;A unique identifier for the thread&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;schema-caveats&#34;&gt;Schema Caveats&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;messenger_archive.thread_path&lt;/code&gt; is not the same as the &lt;code&gt;messenger.thread_id&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;messenger.author&lt;/code&gt; is an integer id, whereas the &lt;code&gt;messenger_archive.sender_name&lt;/code&gt; is a string name.&lt;/li&gt;
+&lt;li&gt;There may be a few overlapping messages between the two tables (?), and there may be a few messages not captured in either table.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;message-queries&#34;&gt;Message Queries&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s start sketching some useful queries.&lt;/p&gt;
+&lt;h3 id=&#34;finding-links&#34;&gt;Finding Links&lt;/h3&gt;
+&lt;p&gt;Listing domains from the archive:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select distinct
+substring(content from &#39;.*://([^/]*)&#39;) as domain
+from messenger_archive
+limit 1000;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Counting unique domains:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select count(*) from (select distinct
+substring(content from &#39;.*://([^/]*)&#39;) as domain
+from messenger_archive) domains;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Listing links from the archive:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select distinct
+substring(content from &#39;([a-z]*://[^/\s]*[a-zA-Z/]*)&#39;) as domain
+from messenger_archive
+limit 1000;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Counting unique links:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select count(*) from (select distinct
+substring(content from &#39;([a-z]*://[^/\s]*[a-zA-Z/]*)&#39;) as domain
+from messenger_archive) foo;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;email-addresses&#34;&gt;Email Addresses&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select distinct
+substring(content from &#39;([a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+)&#39;) as email
+from messenger_archive
+limit 100;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;looking-forward&#34;&gt;Looking Forward&lt;/h3&gt;
+&lt;p&gt;I have a number of additional queries I&amp;rsquo;d like to write.
+However, they will have to wait until a future snippet.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

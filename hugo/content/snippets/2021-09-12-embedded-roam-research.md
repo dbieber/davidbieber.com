@@ -2,7 +2,7 @@
 title = "Embedded Roam Research"
 date = 2021-09-12T00:00:00
 
-tags = []
+tags = ["roam-research"]
 +++
 
 I'd like to be able to embed a Roam Research page on my website so that other people can make spaced repetition cards for me.

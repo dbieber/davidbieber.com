@@ -1,7 +1,7 @@
 +++
 title = "Organizing a Twitter Discussion: Gathering Twitter Replies"
 date = 2021-11-20T00:00:00
-tags = ["note-taking", "twitter", "python"]
+tags = ["note-taking", "twitter", "python", "messager"]
 +++
 
 I [tweeted](https://twitter.com/Bieber/status/1461128201485402112) about spaced repetition earlier this week, sharing and summarizing [my latest snippet on the subject](/snippets/2021-11-02-improvements-to-spaced-repetition/). A bunch of people left thoughtful replies, and I was quite pleased with the discussion. Now I want to look over the discussion holistically, but I don't see a great way to do this. I don't even see a way to look at all the replies to my thread in one place. I want to see not just this, but also replies to replies. TweetDeck might be able to help, but I don't see how.

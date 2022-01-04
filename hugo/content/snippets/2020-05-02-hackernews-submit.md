@@ -1,7 +1,7 @@
 +++
 title = "Posting to Hacker News Programmatically"
 date = 2020-05-02T00:00:00
-tags = ["python", "taking-silly-ideas-seriously"]
+tags = ["python", "taking-silly-ideas-seriously", "messager"]
 keywords = ["hacker news", "messager"]
 +++
 

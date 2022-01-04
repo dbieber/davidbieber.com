@@ -5,12 +5,100 @@
     <link>https://davidbieber.com/tags/go-note-go/</link>
       <atom:link href="https://davidbieber.com/tags/go-note-go/index.xml" rel="self" type="application/rss+xml" />
     <description>go-note-go</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 26 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 02 Jan 2022 01:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>go-note-go</title>
       <link>https://davidbieber.com/tags/go-note-go/</link>
     </image>
+    
+    <item>
+      <title>Go Note Go Messager without Pixel-Space Automation</title>
+      <link>https://davidbieber.com/snippets/2022-01-02-pixel-space-automation/</link>
+      <pubDate>Sun, 02 Jan 2022 01:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2022-01-02-pixel-space-automation/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This snippet was originally going to be about pixel-space automation. Then I found I didn&amp;rsquo;t need it for what I wanted to do: sending messages to Twitter, Facebook, Slack, and Discord from Go Note Go, Roam Research, and Bieber Bot.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Happy New Year! I&amp;rsquo;d really like to automate Mac apps that don&amp;rsquo;t expose actions to Automator
+using pixel-space navigation and clicks and typing to control the automation. This is why and how.&lt;/p&gt;
+&lt;p&gt;(Update from the end of the snippet: By the time I finished writing the snippet, I had automated everything I intended to using browser automation in Browserflow, never once needing to automate Ferdi. I still think pixel-space automation would be wonderful, but my initial motivation for it turns out to be insufficient.)&lt;/p&gt;
+&lt;h3 id=&#34;motivation-improving-messager-by-automating-ferdi&#34;&gt;Motivation: Improving Messager by Automating Ferdi&lt;/h3&gt;
+&lt;p&gt;I have a side project &amp;ldquo;Messager&amp;rdquo; that allows for programmatically sending and receiving messages
+across a wide variety of messaging services.
+I also use Ferdi for manually managing an even wider variety of messaging services.&lt;/p&gt;
+&lt;p&gt;Currently Messager supports
+Facebook Messenger (as myself and as Bieber Bot),
+Twitter (public tweets, private tweets, and DMs),
+HackerNews,
+and it has limited support for Slack and Discord.
+Ferdi, on the other hand, supports a much wider range of services, but doesn&amp;rsquo;t offer programmatic access;
+I use Ferdi with
+Facebook Messenger (as myself and as Bieber Bot),
+Twitter (public tweets, private tweets, and DMs),
+multiple Slacks,
+Discord,
+Gitter,
+WhatsApp,
+Telegram,
+as well as for non-messaging services like Roam Research,
+multiple spreadsheets,
+supervisord,
+and other adhoc use cases.&lt;/p&gt;
+&lt;p&gt;I would like to extend Messager to have wider support,
+particularly to improve support for Slack and Discord.
+To do this, &lt;mark&gt;I&amp;rsquo;d love to automate Ferdi&lt;/mark&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;motivation-go-note-go---messager-bridge&#34;&gt;Motivation: Go Note Go - Messager Bridge&lt;/h3&gt;
+&lt;p&gt;Why do I want to improve Messager &lt;em&gt;now&lt;/em&gt;? It&amp;rsquo;s because of 
+&lt;a href=&#34;https://davidbieber.com/projects/go-note-go&#34;&gt;Go Note Go&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m adding messaging support to Go Note Go. The main use case I&amp;rsquo;m targeting is this:&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m drifting off to sleep and realize I want to tell someone something.
+So I write in Go Note Go something along the lines of &amp;ldquo;Tell John Smith Hey John, I have this new idea for Go Note Go where you can send messages as your drifting off to sleep &amp;ndash; maybe I can tell you about it tomorrow&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;When I wake up the following morning, Bieber Bot has messaged me with a link to a spreadsheet.
+It has all the messages I drafted the previous night (they haven&amp;rsquo;t been sent yet).
+There, I can clean them up for any typos and &amp;ldquo;approve&amp;rdquo; them (mark them as OK to send).
+And once they&amp;rsquo;re approved, they&amp;rsquo;ll be sent automatically using Messager.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s in support of this project that I&amp;rsquo;d love for Messager to support a wider variety of services.
+Ideally the system will intelligently select the service to use to send the message based on the recipients.
+It will include the service in the spreadsheet, so that I can adjust the service if needed before approving the message.&lt;/p&gt;
+&lt;p&gt;So this is going to be a Go_Note_Go-Sheets-Messager-Bieber_Bot collab.&lt;/p&gt;
+&lt;p&gt;tl;dr Go Note Go adds draft messages to a spreadsheet. Bieber Bot uses that spreadsheet to message me about new draft messages, and to message friends on my behalf with approved messages.&lt;/p&gt;
+&lt;h3 id=&#34;motivation-going-beyond&#34;&gt;Motivation: Going beyond&lt;/h3&gt;
+&lt;p&gt;For the Messager application described so far, pixel-space automation is not necessary.
+All of the services I want to automate can be opened in the Browser,
+and so existing Browser automation techniques are sufficient.
+I would use Browserflow for this if it supported programmatic triggers, but it does not.
+(Psst&amp;hellip; DK, can you add the ability to programmatically trigger a local flow please?)&lt;/p&gt;
+&lt;p&gt;Given this, why is pixel-space automation interesting?
+It&amp;rsquo;s because it would enable
+(1) easier automation construction for the automations I&amp;rsquo;m interested in
+and (2) it enables a much larger class of automations, and empowerment is key.
+
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-12-07-future-automation-software/&#34;&gt;See here for my dreams for the future of automation.&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ferdi-actions&#34;&gt;Ferdi Actions&lt;/h3&gt;
+&lt;p&gt;The main actions I want for the Messager application are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ferdi: Navigating to different services&lt;/li&gt;
+&lt;li&gt;Discord: Choosing a server, channel, or recipient&lt;/li&gt;
+&lt;li&gt;Discord: Sending and receiving messages on that channel&lt;/li&gt;
+&lt;li&gt;Slack: Choosing a channel or recipient&lt;/li&gt;
+&lt;li&gt;Slack: Sending and receiving messages on that channel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;the-challenge&#34;&gt;The Challenge&lt;/h3&gt;
+&lt;h5 id=&#34;why-are-the-discord-and-slack-apis-not-sufficient&#34;&gt;Why are the Discord and Slack APIs not sufficient?&lt;/h5&gt;
+&lt;p&gt;Both Discord and Slack have policies against using self-bots. Their APIs don&amp;rsquo;t allow you to programmatically control your own user account. So, controlling your account as a human would, through the provided chat client, is a natural way to approach the problem.&lt;/p&gt;
+&lt;p&gt;The advantages of using Ferdi over the browser are: (1) it uses service hibernation, so you can skip loading the pages and logging in each time you start using a website, (2) maybe you can keep using the browser while Ferdi automates in the background.&lt;/p&gt;
+&lt;p&gt;Each of these actions is doable using existing browser automation tools. Navigating to different services in the browser requires authentication though, if you&amp;rsquo;re not already logged in (which I would be in Ferdi). Perhaps with Browserflow&amp;rsquo;s cookie sharing feature, I can also already be logged in at the start of a Browserflow flow even on Cloud.&lt;/p&gt;
+&lt;h3 id=&#34;current-status&#34;&gt;Current Status&lt;/h3&gt;
+&lt;p&gt;I took a break in the middle of writing this flow and now I&amp;rsquo;ve implemented sending messages via Browserflow in both Slack and Discord.
+I&amp;rsquo;ve also gone further toward the Go Note Go-Messager bridge,
+implementing a few of the other steps.
+Whenever I use &amp;ldquo;@Person&amp;rdquo; in Roam, Bieber Bot automatically copies the message into a spreadsheet.
+The spreadsheet has an &amp;ldquo;Approval&amp;rdquo; column, where I can mark messages as OK to send.
+Bieber Bot will then use Messager to send any approved messages.
+Since Go Note Go sends it&amp;rsquo;s notes to Roam, this completes the circuit.&lt;/p&gt;
+&lt;p&gt;I can now send messages from Go Note Go to any of Facebook Messenger, Twitter, Slack, and Discord.
+I&amp;rsquo;m still excited about pixel-space automation, but I&amp;rsquo;ll have to save that excitement for a future snippet; for now, Browserflow was sufficient.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Go Note Go Hardware</title>

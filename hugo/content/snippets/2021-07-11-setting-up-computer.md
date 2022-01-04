@@ -24,7 +24,7 @@ Map shift-delete, option-delete, and ctrl-delete in Terminal to \027, \027, \033
 
 Install supervisor. Clone personal projects (snippet-publisher, messager, fb-chat-spreadsheet-updater, cloudbrowser, distraction_detection, kangaroo-auto-responder, private-bieber-twitter, screencapture, local-python-libraries). Install requirements. Install jupyter.
 
-Note: brew install leveldb before pip install plyvel. brew install redis. Download Hugo. brew install node.
+Note: brew install leveldb before pip install plyvel. brew install redis. Download Hugo. brew install node. brew install postgres.
 npm install --save-dev babel-cli. npm install -g parcel-bundler. npm audit fix. Hugo assets may need permission changes. pip install psycopg2-binary. Run python setup.py develop in messenger/, local-python-libraries/.
 Copy messager settings.
 [Modify fbchat source](https://github.com/fbchat-dev/fbchat/issues/615).
