@@ -1,7 +1,7 @@
 +++
 title = "Accessing Your iMessages with SQL"
 date = 2020-05-20T00:00:00
-tags = ["sql"]
+tags = ["sql", "messager"]
 keywords = ["messager"]
 +++
 

@@ -1,7 +1,7 @@
 +++
 title = "Brainstorming How to Replicate AIM Statuses Today"
 date = 2021-12-21T00:00:00
-tags = ["taking-silly-ideas-seriously"]
+tags = ["taking-silly-ideas-seriously", "messager"]
 keywords = ["conversation"]
 +++
 
