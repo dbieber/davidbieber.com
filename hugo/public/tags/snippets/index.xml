@@ -5,12 +5,42 @@
     <link>https://davidbieber.com/tags/snippets/</link>
       <atom:link href="https://davidbieber.com/tags/snippets/index.xml" rel="self" type="application/rss+xml" />
     <description>snippets</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 08 Jan 2022 01:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 08 Jan 2022 02:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>snippets</title>
       <link>https://davidbieber.com/tags/snippets/</link>
     </image>
+    
+    <item>
+      <title>Two Snippets I want to Write about GNG and Messager</title>
+      <link>https://davidbieber.com/snippets/2022-01-08-gng-messager-snippet-plans/</link>
+      <pubDate>Sat, 08 Jan 2022 02:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/snippets/2022-01-08-gng-messager-snippet-plans/</guid>
+      <description>&lt;p&gt;I have two new ideas for snippets I want to write. They&amp;rsquo;re about Go Note Go and Messager Queue, both side projects I&amp;rsquo;ve been putting a bunch of time into the last few days. The snippet ideas are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Using Go Note Go as an outliner&lt;/li&gt;
+&lt;li&gt;Adding Hacker News to Messager Queue, and then auto-queuing Twitter and HN posts for snippets.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The first is about &lt;em&gt;using Go Note Go as an outliner&lt;/em&gt;. This is a new feature I&amp;rsquo;ve added to Go Note Go just in the last day or so. Before yesterday, each note entered via Go Note Go was it&amp;rsquo;s own bullet in your note-taking system. Now (at least for Roam), you can also use tab to indent and dedent notes.
+This sounds simple, but thinking through the user experience, taking into consideration that there is no screen, was a fun experience.
+It also sounds like an only marginal improvement, but for me it&amp;rsquo;s been rewarding more than I expected. It has interesting interactions with the 
+&lt;a href=&#34;https://davidbieber.com/post/2022-01-08-new-messager-setup/&#34;&gt;new message sending feature&lt;/a&gt; &amp;ndash; making sending messages even more enjoyable.
+And it lends itself well to progressive summarization and chronologically organized notes;
+with the current implementation, each note-taking &amp;ldquo;session&amp;rdquo; has a timestamp and blank space for a summary at the top of the session. I can fill in the blank space and then collapse the notes, making it easier to skim through them later.
+Perhaps these summaries will serve as training / fine-tuning data for an autosummarizer later.&lt;/p&gt;
+&lt;p&gt;The second snippet idea is a new script I am thinking of writing that will add messages to my new Messager Queue automatically.
+I&amp;rsquo;ve toyed with the idea of sharing more of my snippets publicly in the past.
+Currently, I only share them very rarely.
+Only partially is this an active decision; it is also partially inertia and there being an activation energy and unnaturalness for me in posting publicly.
+While the active decision reasons will remain, having auto-generated messages populate my Messager Queue periodically will really dilute any inertia / activation energy / unnaturalness reasons for not sharing snippets, and those are precisely the reasons I want to eliminate.
+Doing this will require a small change to the Messager Queue to support Hacker News; this should only take a few minutes, as HN is already supported by Messager.
+Then, it will likely take a few hours to write a script that periodically adds messages about my snippets to my Messager Queue.
+One source of these messages will be the &amp;ldquo;message&amp;rdquo; field at the top of some of my snippet frontmatters.
+For others I can just make a templated message using the snippet title; the beauty of Messager Queue is I don&amp;rsquo;t need to autogenerate the perfect message, since I can tweak or rewrite it before approving the message to go out.&lt;/p&gt;
+&lt;p&gt;So, I&amp;rsquo;ve now put down all the things I wanted to say about those two snippets. Does it still make sense to write them? I don&amp;rsquo;t know; I might turn them into new snippets anyway.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>I made a new Post, but why?</title>
