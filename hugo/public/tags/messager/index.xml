@@ -5,12 +5,152 @@
     <link>https://davidbieber.com/tags/messager/</link>
       <atom:link href="https://davidbieber.com/tags/messager/index.xml" rel="self" type="application/rss+xml" />
     <description>messager</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 02 Jan 2022 01:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
       <title>messager</title>
       <link>https://davidbieber.com/tags/messager/</link>
     </image>
+    
+    <item>
+      <title>Sending messages as I drift off to sleep</title>
+      <link>https://davidbieber.com/post/2022-01-08-new-messager-setup/</link>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/post/2022-01-08-new-messager-setup/</guid>
+      <description>&lt;p&gt;In this post I describe my new Messager setup,
+and how it allows me to send messages directly from Roam Research &lt;em&gt;or&lt;/em&gt;
+from a standalone keyboard (no monitor) that I keep at my bedside as I drift off to sleep, and which I take driving and camping.&lt;/p&gt;
+&lt;p&gt;Currently my setup supports sending messages to
+Facebook Messenger, Twitter,
+Slack, Discord, and iMessage.
+I intend to add gChat and email support next, since there are still a handful of people I want to message that don&amp;rsquo;t use any of these.&lt;/p&gt;
+&lt;p&gt;Above all else, the beauty of this project to me is its usability,
+which is hard to communicate in a write-up like this.
+Some of the usability comes from the way the components integrate with my existing workflows.
+Some of the usability comes from design choices
+(like using a keyboard with no monitor for note-taking and message drafting).
+I&amp;rsquo;ll try to point out these usability elements along the way.
+Bear in mind I designed this primarily for myself
+(though I have a handful of friends along for the ride as well, trying it out and making their own contributions).&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s dive in.&lt;/p&gt;
+&lt;h3 id=&#34;go-note-go-the-headless-keyboard&#34;&gt;Go Note Go: The Headless Keyboard&lt;/h3&gt;
+&lt;p&gt;For some background, I developed Go Note Go, a headless keyboard designed for note-taking on the go.
+Go Note Go is a note-taking system for when you&amp;rsquo;re on the go, with a focus on driving and camping.
+You can 
+&lt;a href=&#34;https://davidbieber.com/projects/go-note-go&#34;&gt;read all about Go Note Go here&lt;/a&gt; and learn more on 
+&lt;a href=&#34;https://github.com/dbieber/gonotego&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;its GitHub page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Go Note Go&amp;rsquo;s main purpose is note-taking.
+Anything you type into Go Note Go or voice-record into it gets transcribed and uploaded to your notes as soon as it gets an internet connection.
+For me, Go Note Go uploads to Roam Research. It also supports RemNote, IdeaFlow, Mem, and Notion, and adding additional systems isn&amp;rsquo;t too difficult.&lt;/p&gt;
+&lt;p&gt;One of the usability perks of Go Note Go is that there is no monitor. This means you can&amp;rsquo;t get distracted browsing the internet while writing on Go Note Go. You also can&amp;rsquo;t get distracted wordsmithing your own writing. It makes writing pleasurable, even if it comes at the cost of having typos and stray thoughts in your writing; you can always clean those up later.&lt;/p&gt;
+&lt;p&gt;Go Note Go does a lot more, so I do encourage you to 
+&lt;a href=&#34;https://davidbieber.com/projects/go-note-go&#34;&gt;learn more about it&lt;/a&gt;, but it isn&amp;rsquo;t the focus of this post, which is about sending messages.
+For the purposes of this post, Go Note Go is a data entry system for Roam. And since I&amp;rsquo;ve also built a system that allows sending messages directly from Roam, this means I can now send messages directly from Go Note Go. So, I can send messages when driving, camping, and as I drift off to sleep at night.&lt;/p&gt;
+&lt;p&gt;To send a message in Go Note Go, you simply &amp;ldquo;@&amp;rdquo; the person you are writing to. To send a message to Adriana, I would write &amp;ldquo;@Adriana Message goes here&amp;rdquo;. To send a message to David Dohan (using first and last name), I could write &amp;ldquo;@David Dohan: Message goes here&amp;rdquo;. You can @ someone at any point in the message. You can also @ multiple people, and Messager will send them a group message.&lt;/p&gt;
+&lt;p&gt;Go Note Go acts as an outliner now too; this is both a big usability improvement for Go Note Go on it&amp;rsquo;s own, and doubly so for using Go Note Go as a messager. An &amp;ldquo;outliner&amp;rdquo; is a system for taking notes as a series of nested bullets. You can push tab to indent notes underneath other notes; I&amp;rsquo;ve developed a user experience that makes this moderately natural, even in the absence of a monitor or any other visual feedback. For sending messages, the outliner feature is a boon. Any notes you nest under an @&amp;rsquo;d note will also register as additional messages for the @&amp;rsquo;d recipients. This makes writing longer multiline messages a pleasure, even without a monitor.&lt;/p&gt;
+&lt;p&gt;The default behavior of my messaging system is to hold the messages for approval before sending them. So, the messages that I write as I drift off to sleep don&amp;rsquo;t send as I drift off to sleep. Instead, I see them in the morning and approve them, and only upon being approved are they sent automatically.&lt;/p&gt;
+&lt;p&gt;This delayed-approve-then-send approach is particularly well suited for Go Note Go, where I likely make typos and want to clean up the messages before they are sent, since I am writing them without a monitor. Later in the post I&amp;rsquo;ll dive into what the approval process looks like (tl;dr there&amp;rsquo;s a spreadsheet where I can mark a message as &amp;ldquo;OK&amp;rdquo; to send), but first I want to share additional benefits of being able to send messages directly from my note-taking app, which is currently Roam Research.&lt;/p&gt;
+&lt;h3 id=&#34;drafting-messages-in-roam-research&#34;&gt;Drafting Messages in Roam Research&lt;/h3&gt;
+&lt;p&gt;Anything I write on my Go Note Go appears in Roam Research, but I can also take notes directly in Roam.
+Just like on Go Note Go, the way to draft a message in Roam is to &amp;ldquo;@&amp;rdquo; the person you are writing to.
+Messager has some heuristics it uses to translate your @&amp;rsquo;s into proper recipients.
+So, the syntax for @&amp;lsquo;ing someone isn&amp;rsquo;t too strict.&lt;/p&gt;
+&lt;p&gt;Using Roam offers some possibilities beyond what I can do on Go Note Go, such as including images in messages.
+Like on Go Note Go, you can use nested bullets to create longer messages,
+and you can @ as many people as you want for a message.
+In Roam, however, you can also include images in your messages.
+Messager will intelligently send those in the native format used by the underlying messaging service,
+rather than blindly sending the markdown stored in Roam.
+I find this feature, being able to use images naturally in Roam, and then have them send naturally as messages,
+quite pleasant.&lt;/p&gt;
+&lt;p&gt;One future direction I&amp;rsquo;d like for this project is to add a &amp;ldquo;send&amp;rdquo; button in Roam next to any messages I&amp;rsquo;ve drafted there,
+as well as to display the status of the messages inline in my notes. That&amp;rsquo;s not implemented now, but would be a nice-to-have for the future.&lt;/p&gt;
+&lt;p&gt;Today, all messages are automatically added to my &amp;ldquo;messager queue&amp;rdquo; where they wait for approval before being sent.
+I like having this approve-before-sending approach as the default, since it psychologically frees me up to write things I might not otherwise write if I was instead using a send button that sent immediately.
+However, sometimes being able to send something immediately is desirable, and that&amp;rsquo;s not a clean option in the current setup.&lt;/p&gt;
+&lt;h3 id=&#34;roam-to-sheets-the-messager-queue&#34;&gt;Roam to Sheets: The Messager Queue&lt;/h3&gt;
+&lt;p&gt;Any messages in Roam (whether entered directly into Roam, or entered via Go Note Go), are automatically added to a spreadsheet, the &amp;ldquo;Messager Queue&amp;rdquo;. These are the spreadsheet&amp;rsquo;s columns:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Service&lt;/td&gt;
+&lt;td&gt;Recipient&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;td&gt;Date&lt;/td&gt;
+&lt;td&gt;Time&lt;/td&gt;
+&lt;td&gt;Approval&lt;/td&gt;
+&lt;td&gt;Status&lt;/td&gt;
+&lt;td&gt;Metadata&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The Messager Queue sheet is filtered by default to show all pending messages. For each message it shows the &lt;em&gt;Service&lt;/em&gt; on which it will be sent and well as the &lt;em&gt;Recipient&lt;/em&gt; of the message. The service can be one of FB Messenger, Twitter, iMessage, a Slack server, or Discord. The recipient can either be an individual, a list of individuals, a group, a Slack channel, or a Discord server and channel.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s also a sheet that lists aliases, so it&amp;rsquo;s easy to use a short name or informal name to refer to a longer service or recipient; e.g. I use &amp;ldquo;@Audio Tools&amp;rdquo; as a shorthand for sending to a group of 5 people on Messenger all interested in audio tools for networked thought.&lt;/p&gt;
+&lt;p&gt;The Messager Queue sheet also displays the &lt;em&gt;Text&lt;/em&gt; of the message to send, so you can easily clean up the message here for any typos or clarifications before it is sent.&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;Date&lt;/em&gt; and &lt;em&gt;Time&lt;/em&gt; columns allow for scheduling messages to be sent at any point in the future. Leave them blank and the message will be sent as soon as it is approved. Use keyboard shortcuts cmd-; (for date) and cmd-shift-; (for time) to quickly fill out these columns if desired.&lt;/p&gt;
+&lt;p&gt;Finally, the &lt;em&gt;Approval&lt;/em&gt; column is the most important. Mark a messages as OK if you want it to be sent, or as Ignored if you deside to skip it. The &lt;em&gt;Status&lt;/em&gt; column is updated automatically by Messager when the message is sent (or if it fails to send, then the error appears here). You can also mark the Status manually with whatever value you want (e.g. if you send the message manually), and the Messager system will ignore that message going forward. If you want the system to retry sending a message, simply clear out the Status column and it will try again.&lt;/p&gt;
+&lt;p&gt;I include this spreadsheet as a custom service in 
+&lt;a href=&#34;https://getferdi.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ferdi&lt;/a&gt;, so it lives alongside all the messaging apps I use. (This in itself might be the subject of a future 
+&lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;snippet&lt;/a&gt;.)&lt;/p&gt;
+&lt;h3 id=&#34;why-the-approval-system-over-immediate-messages&#34;&gt;Why the approval system over immediate messages?&lt;/h3&gt;
+&lt;p&gt;Beyond allowing me to catch a bunch of typos, it&amp;rsquo;s also a psychologically useful thing for me.
+I am more willing to write and I feel able to say more things that I might not otherwise,
+knowing I have the opportunity to cancel or change the message later.
+In that way, it&amp;rsquo;s like gmail&amp;rsquo;s undo feature. In gmail, undo not a true undo, but having those 30 seconds after clicking send to retract the message make a big difference.&lt;/p&gt;
+&lt;p&gt;Another benefit of sending the messages only after approving them is the ability to sleep at night. If I write a message at night, I know you haven&amp;rsquo;t responded yet because my messages haven&amp;rsquo;t even sent yet; they&amp;rsquo;ll go out in the morning, after I&amp;rsquo;ve had a chance to clean them up. So, I don&amp;rsquo;t spend any mental effort wondering if there&amp;rsquo;s a response from you. It also allows me to set the appropriate tone for the messages, by having them go out at a reasonable time, rather than appearing urgent by being sent in the middle of the night. And it does this without me needing to keep the message draft in my head as I sleep. So, I sleep better.&lt;/p&gt;
+&lt;p&gt;This is why, while the ability to send messages immediately would also be a good feature to add, I am inclined to leave approve-in-the-morning messages as the system&amp;rsquo;s default behavior.&lt;/p&gt;
+&lt;h3 id=&#34;notifications-from-bieber-bot&#34;&gt;Notifications from Bieber Bot&lt;/h3&gt;
+&lt;p&gt;One additional small usability feature is that Bieber Bot will message me in the morning or evening whenever there are messages in the Messager Queue awaiting my approval.&lt;/p&gt;
+&lt;p&gt;This sounds like a small convenience, and in fact has proven even more useful than it might at first sound.
+When I wake up in the morning, I sometimes don&amp;rsquo;t remember that I&amp;rsquo;ve written messages the preceding night.
+So, having Bieber Bot send me the link to the Messager Queue and gently remind me to approve the messages has been
+consistently charming and welcome. Thanks, Bieber Bot.&lt;/p&gt;
+&lt;h3 id=&#34;automatic-sending-from-sheets-with-messager&#34;&gt;Automatic Sending from Sheets with Messager&lt;/h3&gt;
+&lt;p&gt;Messager is the underlying system that sends the messages in the Messager Queue system.
+As noted previously, it supports
+Facebook Messenger, Twitter,
+Slack, Discord, and iMessage.
+It also supports Hacker News, which hasn&amp;rsquo;t been so useful for this project.
+And I am thinking I may add gChat and email support next.&lt;/p&gt;
+&lt;p&gt;I use Messager for more than just sending messages from the Messager Queue spreadsheet;
+it also backs other projects like my 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-30-sql-for-the-kangaroo-auto-responder/&#34;&gt;Kangaroo Auto-responder&lt;/a&gt; and 
+&lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;several parts of Bieber Bot&lt;/a&gt;.
+Its purpose, in the most broad sense, is to support programmatically sending and receiving messages in a uniform manner across all the messaging systems I use.&lt;/p&gt;
+&lt;p&gt;For Facebook Messager, it uses 
+&lt;a href=&#34;https://fbchat.readthedocs.io/en/stable/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fbchat&lt;/a&gt; to enable programmatically sending and receiving messages as myself. It also uses Facebook&amp;rsquo;s API to allow sending messages as Bieber Bot.&lt;/p&gt;
+&lt;p&gt;For Twitter, it uses the API to support public tweets, private tweets (using a separate account; 
+&lt;a href=&#34;https://davidbieber.com/post/2021-03-07-roam-twitter-bot-dev-guide/&#34;&gt;see here for how I use this to reclaim my attention&lt;/a&gt;), and DMs.&lt;/p&gt;
+&lt;p&gt;For iMessage, it uses AppleScript.&lt;/p&gt;
+&lt;p&gt;Slack and Discord are the most recent additions, and they currently live outside the core Messager system;
+they are implemented using Browserflow flows.
+This means that I am effectively sending Slack and Discord messages as myself, rather than using an API to do so.
+The messages are sent in a browser using clicks and keyboard presses,
+all in the same human-centric UI that I would use if I were to send the messages manually.
+I&amp;rsquo;m so grateful to Browserflow for making this possible, as Slack and Discord have been really key additions to this project.&lt;/p&gt;
+&lt;h3 id=&#34;reflections-on-the-setup&#34;&gt;Reflections on the setup&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;ve been using the setup for only a few days so far, and am continuing to actively develop it.
+So far, I absolutely love it.&lt;/p&gt;
+&lt;p&gt;The headless typing experience provided by Go Note Go makes for a great environment for drafting messages.
+So too does using Roam Research while scrolling through social media. (I&amp;rsquo;m the sort of person who doesn&amp;rsquo;t usually like replying publicly to social media posts, but does enjoy engaging with them in 1:1 or small group chat messages.)
+Drifting off to sleep has proven to be another excellent time to share thoughts with friends.
+I don&amp;rsquo;t want to start &lt;em&gt;a conversation&lt;/em&gt; with friends as I drift off to sleep, but loads of thoughts come to mind that I do want to share with people, and so adding them to my Messager Queue to send the next day has been quite satisfying.&lt;/p&gt;
+&lt;p&gt;If this interests you, feel free to get in touch.
+If you do, I&amp;rsquo;ll do my best to get back to you, likely as I&amp;rsquo;m drifting off to sleep.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Go Note Go Messager without Pixel-Space Automation</title>
