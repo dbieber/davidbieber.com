@@ -13,6 +13,94 @@
     </image>
     
     <item>
+      <title>Go Note Go</title>
+      <link>https://davidbieber.com/projects/go-note-go/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://davidbieber.com/projects/go-note-go/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Go Note Go is a note-taking system for when you&amp;rsquo;re on the go, with a focus on driving and camping.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;re driving to your campsite, listening to Tiago Forte discuss Sönke Ahrens&amp;rsquo;s &amp;ldquo;How to Take Smart Notes&amp;rdquo;, when a brilliant idea strikes you. Do you pull over, pull out your phone or moleskin, and write it down? Nay. Go Note Go to the rescue.&lt;/p&gt;
+&lt;p&gt;While driving, simply press the large handheld red push button and speak your idea aloud. It will be automatically transcribed and added to your notes once an internet connection becomes available.&lt;/p&gt;
+&lt;p&gt;Go Note Go is the latest in my line&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; of headless keyboard technologies, the successor to 
+&lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;shh shell (2014)&lt;/a&gt;. As with 
+&lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;shh shell&lt;/a&gt;, no visual components are required to operate Go Note Go. You control the system only via audio or, optionally, by typing. Unlike with shh shell, it is inadvisable to keep your eyes closed while you use it, particularly if you are driving.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s dive deeper now into what is Go Note Go, and what it brings to the note-taking space beyond shh.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-go-note-go&#34;&gt;What is Go Note Go?&lt;/h3&gt;
+&lt;p&gt;Physically, Go Note Go is a lightweight portable keyboard with a microphone and speaker, with a beautiful handheld button attached. The keyboard is a Raspberry Pi 400 &amp;ndash; so, it&amp;rsquo;s also a full computer with WiFi, Bluetooth, and a friendly Linux operating system.&lt;/p&gt;
+&lt;p&gt;It can be powered by USB-C either from a small battery pack that velcros to the back, from a port in your car, a port on your main computer, or a standard outlet.&lt;/p&gt;
+&lt;h3 id=&#34;what-does-go-note-go-do&#34;&gt;What does Go Note Go do?&lt;/h3&gt;
+&lt;p&gt;Go Note Go allows audio and text note-taking, as well as arbitrary audio and text command execution. Let&amp;rsquo;s focus on note-taking first. We&amp;rsquo;ll return to command execution later.&lt;/p&gt;
+&lt;p&gt;There are two main ways to enter notes with Go Note Go (audio and text), corresponding to the two main use cases (driving and camping). The use cases of shh shell (sleeping and showering) are both still supported.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Driving&lt;/li&gt;
+&lt;li&gt;Camping&lt;/li&gt;
+&lt;li&gt;Sleeping&lt;/li&gt;
+&lt;li&gt;Showering&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To enter notes via &lt;em&gt;audio&lt;/em&gt;, simply press the large red handheld push button. Then speak your notes. The recording will be saved. When internet connectivity becomes available, your audio will be automatically machine transcribed and included in your note-taking system of choice.&lt;/p&gt;
+&lt;p&gt;To enter notes via &lt;em&gt;text&lt;/em&gt;, type them. Press enter to commit a note. Press shift-backspace to clear the currently typed text. When internet connectivity becomes available, your notes will be uploaded to your central note-taking system.&lt;/p&gt;
+&lt;p&gt;Taking notes by audio is great for driving, or for whenever speaking better suits your way of thinking than typing. Being able to seamlessly go back and forth between speaking and typing can be liberating, allowing for alternating different kinds of thinking.&lt;/p&gt;
+&lt;p&gt;The system is compact and portable.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;gonotego-front.jpg&#34; alt=&#34;Photo of Go Note Go illustrating it is compact and portable.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It velcros to the passenger side of the car dashboard. It can be used there, or placed on a passenger’s lap during use, or even on the driver’s lap at a rest stop, waiting in line at a drive-thru, or while parked.&lt;/p&gt;
+&lt;p&gt;It can be powered by the car by USB-C, or by battery pack for use on the go (or from a laptop or outlet USB port, if that better suits your use).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;gonotego-dashboard.jpg&#34; alt=&#34;Photo of Go Note Go on the passenger side of the car dashboard.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You can lie down with it and type or talk.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;gonotego-soft.jpg&#34; alt=&#34;Photo of Go Note Go on a sofa.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Or throw it in your sports bag to take notes on the game!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;gonotego-gym-bag.jpg&#34; alt=&#34;Photo of Go Note Go in a gym bag.&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;how-do-you-use-go-note-go-in-the-shower&#34;&gt;How do you use Go Note Go in the shower?&lt;/h3&gt;
+&lt;p&gt;To use Go Note Go in the shower, acquire a waterproof Bluetooth enabled keyboard, and pair it with your Go Note Go Raspberry Pi 400. Go ahead and leave that waterproof keyboard in your shower.&lt;/p&gt;
+&lt;p&gt;For an improved experience, also acquire a waterproof Bluetooth speaker for your shower, and pair this with the Pi as well.&lt;/p&gt;
+&lt;p&gt;Now, your Pi simply has to be in range of your shower for you to use Go Note Go when generating your most groundbreaking insights.&lt;/p&gt;
+&lt;p&gt;No additional setup is required. Run the &amp;ldquo;:status&amp;rdquo; command to verify everything is working before typing a note to ensure it doesn&amp;rsquo;t get lost.&lt;/p&gt;
+&lt;h3 id=&#34;improvements-over-shh-shell&#34;&gt;Improvements over Shh Shell&lt;/h3&gt;
+&lt;p&gt;Go Note Go supports audio notes and audio commands, whereas shh shell only supported text entry. If you&amp;rsquo;re trying to fall asleep, text is less likely to wake up your mind, but if you&amp;rsquo;re driving, typing is incredibly dangerous.&lt;/p&gt;
+&lt;p&gt;Go Note Go works offline and without a laptop nearby. To use shh shell, your keyboard needs to be connected wirelessly to a nearby computer running the shh shell software. Go Note Go&amp;rsquo;s keyboard &lt;em&gt;is&lt;/em&gt; a computer, and it can be powered by battery pack, from a laptop, from an outlet, or from the car. Your notes will be uploaded to your main note-taking system as soon as internet connectivity becomes available.&lt;/p&gt;
+&lt;p&gt;No need for annoying &amp;ldquo;focused&amp;rdquo; and &amp;ldquo;focus lost&amp;rdquo; announcements. Anyone who sleeps near you will be pleased to hear Go Note Go is always in focus. So it doesn&amp;rsquo;t need to announce &amp;ldquo;focused&amp;rdquo; and &amp;ldquo;focus lost&amp;rdquo; for you to know if it&amp;rsquo;s OK to type. LED status indicators are also available for you to confirm it&amp;rsquo;s working (or you can run the &amp;ldquo;:status&amp;rdquo; command to get an auditory &amp;ldquo;ok&amp;rdquo;.)&lt;/p&gt;
+&lt;p&gt;Go Note Go integrates with external note-taking systems. I personally use Dropbox to store the audio clips and Roam Research to store the notes and display the audio (and now several other note-taking systems are also supported). This allows Go Note Go to directly contribute to my Spaced Repetition system, my notes on other projects, my notes on life, etc, and for my Go Note Go notes to be accessible anywhere, even on the go!&lt;/p&gt;
+&lt;p&gt;Go Note Go still supports all the old capabilities of shh shell. All the old commands still work, but now they work everywhere. Entering notes by text still works, but now it&amp;rsquo;s easier to search through them and return to them later. You can still use Go Note Go as you drift off to sleep, and you can still use Go Note Go when you shower, but now you can also use it as you drive or when you camp.&lt;/p&gt;
+&lt;h3 id=&#34;supported-note-taking-systems&#34;&gt;Supported Note-taking Systems&lt;/h3&gt;
+&lt;p&gt;Audio clips are uploaded to Dropbox for storage (support for Google Drive forthcoming). The audio is then embedded alongside your notes.&lt;/p&gt;
+&lt;p&gt;The text notes are uploaded to whatever note-taking system you select; currently we support Roam Research, Notion, Ideaflow, Mem, and RemNote.&lt;/p&gt;
+&lt;p&gt;The system is extensible to support other storage systems and note-taking systems. I aim to have Go Note Go work with all popular note-taking systems. So, if you want to add a new note-taking system, do get in touch.&lt;/p&gt;
+&lt;h3 id=&#34;issuing-commands&#34;&gt;Issuing Commands&lt;/h3&gt;
+&lt;p&gt;Go Note Go comes with an extensible command system. Like with shh shell, you can issue a textual command by starting a note with a colon &amp;ldquo;:&amp;rdquo;. Examples of supported commands include setting alarms with &amp;ldquo;:at 9am : alarm&amp;rdquo;, or getting the time read aloud to you with &amp;ldquo;:time&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;See the 
+&lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;shh shell write up&lt;/a&gt; for more on text commands.&lt;/p&gt;
+&lt;p&gt;Go Note Go supports voice commands too. I use the keyword &amp;ldquo;go go&amp;rdquo; to issue an audio command. &amp;ldquo;go go time&amp;rdquo; will cause the system to read the time aloud. And &amp;ldquo;go go read back&amp;rdquo; will have the system read back your last typed note.&lt;/p&gt;
+&lt;h3 id=&#34;why-is-it-called-go-note-go&#34;&gt;Why is it called Go Note Go?&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s a note-taking system for when you&amp;rsquo;re on the go. Like any good note-taking system, it can help you make decisions. This includes but is not limited to go/no-go decisions.&lt;/p&gt;
+&lt;p&gt;Go Note Go is not implemented in Go.&lt;/p&gt;
+&lt;h3 id=&#34;why-not-just-take-notes-on-your-computer-or-phone-or-with-a-voice-recorder&#34;&gt;Why not just take notes on your computer or phone, or with a voice recorder?&lt;/h3&gt;
+&lt;p&gt;Go Note Go is great at reducing friction. It&amp;rsquo;s really nice not having to switch to a note-taking app. You don&amp;rsquo;t have to switch tabs or windows. You don&amp;rsquo;t have to wait for anything to load. If the keyboard is there and on, you can type on it and know your notes are being recorded (there are LED status indicators for peace of mind.) No latency means minimal cognitive load.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also of course nice not having to do any manual uploading or transcription that other approaches might require. And being integrated with your central note-taking system is a big plus over some alternate app approaches.&lt;/p&gt;
+&lt;p&gt;Support for extensible commands (e.g. for sending messages, reading emails, whatever&amp;hellip;) is a nice plus too.&lt;/p&gt;
+&lt;p&gt;And of course my favorite feature is that there is no monitor, and so no distractions. There&amp;rsquo;s no endless scrolling on Facebook, no accidentally visiting Reddit or Twitter. Just a keyboard, a button, and your brain at peace.&lt;/p&gt;
+&lt;h3 id=&#34;how-is-go-note-go-extensible&#34;&gt;How is Go Note Go extensible?&lt;/h3&gt;
+&lt;p&gt;There are two ways. You can bring your own note-taking system, and you can add arbitrary voice and textual commands to Go Note Go.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Note-taking systems&lt;/li&gt;
+&lt;li&gt;Commands&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Go Note Go can support uploading notes to any note-taking system. We started with just Roam Research, and now also support Notion, RemNote, Ideaflow, and Mem. Adding new systems is easy, and if you want to use Go Note Go with a different note-taking system, I&amp;rsquo;d be happy to help you through the process.&lt;/p&gt;
+&lt;p&gt;Go Note Go also supports voice and text commands. You can add your own commands as well!&lt;/p&gt;
+&lt;h3 id=&#34;why-need-to-push-a-button-instead-of-a-wake-word&#34;&gt;Why need to push a button instead of a wake word?&lt;/h3&gt;
+&lt;p&gt;I don&amp;rsquo;t want to feel like I&amp;rsquo;m always being listened to. I also don&amp;rsquo;t want it recording conversations. I only want it to record when I tell it to, and the physical switch is quite satisfying.&lt;/p&gt;
+&lt;h3 id=&#34;how-can-i-try-it-out&#34;&gt;How can I try it out?&lt;/h3&gt;
+&lt;p&gt;The hardware components used are listed on the 
+&lt;a href=&#34;https://github.com/dbieber/GoNoteGo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub page&lt;/a&gt;. There&amp;rsquo;s no getting started guide yet, so if you are trying it out, don&amp;rsquo;t hesitate to reach out for guidance around the rough edges.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Two points define a line, right? &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Sending messages as I drift off to sleep</title>
       <link>https://davidbieber.com/post/2022-01-08-new-messager-setup/</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
