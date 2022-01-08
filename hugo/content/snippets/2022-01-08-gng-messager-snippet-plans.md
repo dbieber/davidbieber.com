@@ -1,5 +1,5 @@
 +++
-title = "Two Snippets I want to Write about GNG and Messager"
+title = "Two Snippets I want to write about GNG and Messager"
 date = 2022-01-08T02:00:00
 tags = ["snippets", "go-note-go", "messager"]
 +++
