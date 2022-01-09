@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts | David Bieber</title>
+    <title>Posts on David Bieber</title>
     <link>https://davidbieber.com/posts/</link>
-      <atom:link href="https://davidbieber.com/posts/index.xml" rel="self" type="application/rss+xml" />
-    <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>Posts</title>
-      <link>https://davidbieber.com/posts/</link>
-    </image>
-    
+    <description>Recent content in Posts on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sending messages as I drift off to sleep</title>
       <link>https://davidbieber.com/post/2022-01-08-new-messager-setup/</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2022-01-08-new-messager-setup/</guid>
+      
       <description>&lt;p&gt;In this post I describe my new Messager setup,
 and how it allows me to send messages directly from Roam Research &lt;em&gt;or&lt;/em&gt;
 from a standalone keyboard (no monitor) that I keep at my bedside as I drift off to sleep, and which I take driving and camping.&lt;/p&gt;
@@ -156,7 +153,9 @@ If you do, I&amp;rsquo;ll do my best to get back to you, likely as I&amp;rsquo;m
       <title>A Step-by-Step Developer Guide to Building a Personal Roam-to-Twitter Bot</title>
       <link>https://davidbieber.com/post/2021-03-07-roam-twitter-bot-dev-guide/</link>
       <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2021-03-07-roam-twitter-bot-dev-guide/</guid>
+      
       <description>&lt;p&gt;
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-02-08-repurposing-my-twitter-feed/&#34;&gt;Last month I wrote a little Twitter bot for myself&lt;/a&gt; with the goal of reclaiming my attention from Twitter. The idea is to fill my Twitter feed with things that &lt;em&gt;I&lt;/em&gt; care about, rather than letting the Twitter algorithm control my attention. By programmatically injecting cards into my Twitter feed I can repurpose the time I spend scrolling on Twitter from time lost to time well spent.&lt;/p&gt;
 &lt;p&gt;This post explains, step-by-step, how you can build your own private Twitter bot so you too can repurpose the time you spend doom-scrolling.&lt;/p&gt;
@@ -381,7 +380,9 @@ directory=/Users/dbieber/code/playground/private-bieber-twitter
       <title>Where are all the posts from 2020?</title>
       <link>https://davidbieber.com/post/2021-01-08-where-are-all-the-posts-from-2020/</link>
       <pubDate>Fri, 08 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2021-01-08-where-are-all-the-posts-from-2020/</guid>
+      
       <description>&lt;p&gt;You&amp;rsquo;ll notice I have no 
 &lt;a href=&#34;https://davidbieber.com/posts/&#34;&gt;blog posts&lt;/a&gt; from 2020, but this is not because I stopped writing. Instead, I have been writing &amp;ldquo;snippets,&amp;rdquo; which 
 &lt;a href=&#34;https://davidbieber.com/snippets/&#34;&gt;you can read here&lt;/a&gt;.&lt;/p&gt;
@@ -407,7 +408,9 @@ First, you&amp;rsquo;re welcome here. It&amp;rsquo;s not voyeurism. These aren&a
       <title>Keeping Track of My Life in a Spreadsheet</title>
       <link>https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/</link>
       <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/</guid>
+      
       <description>&lt;p&gt;As many of my friends know, I keep track of much of my life in spreadsheets. There are several pieces to this system, but fortunately it&amp;rsquo;s the kind of system that you can adopt (and discard) incrementally. So, rather than explaining the whole thing in one go, I will explain one core piece in this post.&lt;/p&gt;
 &lt;p&gt;In this post, I will detail how I use a spreadsheet as a &lt;em&gt;daily activity log&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;My spreadsheet lets me keep a record of all the things I&amp;rsquo;ve done.
@@ -751,7 +754,9 @@ And if I don&amp;rsquo;t have any activity planned for a particular day, BieberB
       <title>The Weisfeiler-Lehman Isomorphism Test</title>
       <link>https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/</link>
       <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/</guid>
+      
       <description>&lt;h3 id=&#34;graph-isomorphism&#34;&gt;Graph Isomorphism&lt;/h3&gt;
 &lt;p&gt;Two graphs are considered isomorphic if there is a mapping between the nodes of the graphs that preserves node adjacencies.
 That is, a pair of nodes may be connected by an edge in the first graph if and only if the corresponding pair of nodes in the second graph is also connected by an edge in the same way.
@@ -868,7 +873,9 @@ An English translation of this paper, originally published in Russian, is
       <title>Writing a Mail Merge in Google Apps Script</title>
       <link>https://davidbieber.com/post/2018-10-21-apps-script-mail-merge/</link>
       <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2018-10-21-apps-script-mail-merge/</guid>
+      
       <description>&lt;p&gt;Google Apps Script is endlessly useful; in this post you will learn how to write a mail merge with Google Apps Script. It&amp;rsquo;s less than 30 lines of code! You can use this technique to send personalized emails individually to many recipients. In the second part of this post, you will learn how to schedule these emails to send in the future.&lt;/p&gt;
 &lt;h2 id=&#34;part-1-writing-a-mail-merge&#34;&gt;Part 1: Writing a Mail Merge&lt;/h2&gt;
 &lt;p&gt;A &lt;em&gt;mail merge&lt;/em&gt; is a program that sends an email to many recipients, automatically filling in the contents of the email according to a template. It&amp;rsquo;s like a form letter. Each recipient receives a personalized copy of the email.&lt;/p&gt;
@@ -1090,7 +1097,9 @@ function getDraftMessageBySubject(subject) {
       <title>Introducing Python Fire</title>
       <link>https://davidbieber.com/post/2017-03-06-introducing-python-fire/</link>
       <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2017-03-06-introducing-python-fire/</guid>
+      
       <description>&lt;p&gt;&lt;em&gt;Originally posted on the Google Open Source Blog&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Today we are pleased to announce the open-sourcing of 
 &lt;a href=&#34;https://github.com/google/python-fire&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python Fire&lt;/a&gt;. Python Fire generates command line interfaces (CLIs) from any Python code. Simply call the Fire function in any Python program to automatically turn that program into a CLI. The library is available from 
@@ -1136,7 +1145,9 @@ Hello Google!
       <title>Ĉu Vi Estas Mia Patrino?</title>
       <link>https://davidbieber.com/post/2015-07-01-estas-mia-patrino/</link>
       <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2015-07-01-estas-mia-patrino/</guid>
+      
       <description>&lt;p&gt;&lt;em&gt;This is my translation of P.D. Eastman&amp;rsquo;s children&amp;rsquo;s book &amp;ldquo;Are You My Mother?&amp;rdquo; into Esperanto. Enjoy. -David&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;ĉu-vi-estas-mia-patrino&#34;&gt;Ĉu Vi Estas Mia Patrino?&lt;/h2&gt;
 &lt;p&gt;By P.D. Eastman&lt;/p&gt;
@@ -1193,7 +1204,9 @@ Vi estas birdo, kaj vi estas mia patrino!&amp;rdquo;&lt;/p&gt;
       <title>Running Firefox in the Cloud</title>
       <link>https://davidbieber.com/post/2014-11-08-firefox-in-the-cloud/</link>
       <pubDate>Sat, 08 Nov 2014 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2014-11-08-firefox-in-the-cloud/</guid>
+      
       <description>&lt;p&gt;I found running Firefox in the cloud difficult, but with enough digging around I was able to get it working. Now I&amp;rsquo;m able to drive a headless version of Firefox with Selenium using Python. This lets me do things like have my 
 &lt;a href=&#34;https://github.com/dbieber/ScrabbleBot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Scrabble Bot&lt;/a&gt; play Words with Friends autonomously on Facebook.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;What am I going to show you how to do?&lt;/strong&gt;&lt;/p&gt;
@@ -1254,7 +1267,9 @@ Edit the file &lt;code&gt;/etc/apt/sources.list&lt;/code&gt; and add the line &l
       <title>Why a Code@Night is not a Hackathon</title>
       <link>https://davidbieber.com/post/2013-09-06-code-at-night-vs-hackathon/</link>
       <pubDate>Fri, 06 Sep 2013 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2013-09-06-code-at-night-vs-hackathon/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve written in the past about 
 &lt;a href=&#34;http://blog.davidbieber.com/post/31367374857/code-at-night&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;what a Code@Night is&lt;/a&gt;. And they&amp;rsquo;re wonderful. One of my favorite topics, really. People come to these things and they just code all night. Great experience. Tons of fun. Fruit. PacMan. Yadda, yadda, yadda.&lt;/p&gt;
 &lt;p&gt;I tell people this all the time, and a pretty common response is &amp;ldquo;so, it&amp;rsquo;s like a hackathon?&amp;rdquo;&lt;/p&gt;
@@ -1282,7 +1297,9 @@ Edit the file &lt;code&gt;/etc/apt/sources.list&lt;/code&gt; and add the line &l
       <title>MathCounts Coach Q&#43;A</title>
       <link>https://davidbieber.com/post/2013-08-16-mathcounts-coach-q-and-a/</link>
       <pubDate>Fri, 16 Aug 2013 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2013-08-16-mathcounts-coach-q-and-a/</guid>
+      
       <description>&lt;p&gt;Last week I did a Q+A for the 
 &lt;a href=&#34;http://life.khanacademy.org/post/58251244282/im-a-belieber-a-khanversation-with-sw-dev-intern&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Life at KA&lt;/a&gt; blog. The last time I did an education-centric online Q+A was more than three years earlier. Let&amp;rsquo;s take a look.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Originally posted at 
@@ -1321,7 +1338,9 @@ Have fun with it, and your students will have fun too (at least in principle, an
       <title>Life at KA: A Khanversation with David Bieber</title>
       <link>https://davidbieber.com/post/2013-08-14-khanversation/</link>
       <pubDate>Wed, 14 Aug 2013 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2013-08-14-khanversation/</guid>
+      
       <description>&lt;p&gt;
 &lt;a href=&#34;http://life.khanacademy.org/post/58251244282/im-a-belieber-a-khanversation-with-sw-dev-intern&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Originally posted at life.khanacademy.org&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ll dive straight into the questions for our latest Khan Academy Khanversation, this time featuring rising Princeton senior David Bieber.&lt;/p&gt;
@@ -1361,7 +1380,9 @@ Have fun with it, and your students will have fun too (at least in principle, an
       <title>ssh Passwordlessly</title>
       <link>https://davidbieber.com/post/2013-08-14-ssh-passwordlessly/</link>
       <pubDate>Wed, 14 Aug 2013 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2013-08-14-ssh-passwordlessly/</guid>
+      
       <description>&lt;p&gt;You&amp;rsquo;re used to ssh-ing into machine &lt;strong&gt;B&lt;/strong&gt; from machine &lt;strong&gt;A&lt;/strong&gt; by typing:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ssh username@B.com&lt;/code&gt;&lt;br&gt;
 &lt;code&gt;password&lt;/code&gt;&lt;/p&gt;
@@ -1400,7 +1421,9 @@ Have fun with it, and your students will have fun too (at least in principle, an
       <title>Teach at Scale</title>
       <link>https://davidbieber.com/post/2013-08-07-teach-at-scale/</link>
       <pubDate>Wed, 07 Aug 2013 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2013-08-07-teach-at-scale/</guid>
+      
       <description>&lt;p&gt;The best way to learn is to teach. It&amp;rsquo;s also, most of the time, the most fun way to learn. And as an added bonus, the person you&amp;rsquo;re teaching learns too.&lt;/p&gt;
 &lt;p&gt;I strongly believe that you, as someone who has found themselves reading strange blogs on the internet, have a lot to offer the world in the way of teaching. So I want you to teach at scale. Yes, I&amp;rsquo;m looking at you Mom and Dad, former Facebook and Twitter interns, my fellow interns here at Khan Academy. I&amp;rsquo;m looking at you, my Princeton and Nisky friends, and my former MathCounts students. Yes, even you, HackerNews readers and Google searchers and friends of friends. I want you to give teaching at scale a try.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s hard. Don&amp;rsquo;t mislead yourself into thinking this is an easy task that I&amp;rsquo;ve laid out for you. It takes courage and confidence. When you teach at scale, you make yourself vulnerable. You have to be ready for people to catch your mistakes and challenge your teachings. People will out-think you, and you should be ready to embrace that.&lt;/p&gt;
@@ -1422,7 +1445,9 @@ Have fun with it, and your students will have fun too (at least in principle, an
       <title>Automate Your Life: Sending Emails</title>
       <link>https://davidbieber.com/post/2013-03-13-automate-your-life-sending-emails/</link>
       <pubDate>Wed, 13 Mar 2013 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2013-03-13-automate-your-life-sending-emails/</guid>
+      
       <description>&lt;p&gt;&lt;em&gt;In a hurry? Scroll down and skip to the code. That&amp;rsquo;s the good part anyway.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;One of the beauties of programming is the elimination of redundant aspects of life that you find yourself doing over and over again. When you find yourself calling home every weekend, logging hours at your job daily, or getting your hair cut every month, it&amp;rsquo;s time to learn to program. Write a short script to do these repetitive behaviors for you. Just kidding. Don&amp;rsquo;t.&lt;/p&gt;
 &lt;p&gt;These are joke examples &amp;ndash; I strongly advise against automating discussions with your mother &amp;ndash; but they aren&amp;rsquo;t so farfetched. Automating processes - shopping, shipping, server maintenance - save countless hours and dollars. Here, we&amp;rsquo;ll do a thought experiment: imagine a team of people running Amazon.com without automation. As a crude estimate, let&amp;rsquo;s suppose they sell a mere billion books each year. Let&amp;rsquo;s imagine they only handle 1% of all Internet traffic. And let&amp;rsquo;s pretend they only store 1 trillion objects in their S3 storage system. Then with their team of about ninety thousand, each Amazon employee would have to be selling and shipping 30 books a day on top of processing and transmitting over 100 gigabytes of Internet traffic daily, all while handling requests for a hundred thousand S3 objects that they&amp;rsquo;ve had to memorize. Maybe &lt;a href=&#34;http://en.wikipedia.org/wiki/Jeff_Bezos&#34;&gt;Jeff Bezos&lt;/a&gt; could pull it off. But you&amp;rsquo;re not Jeff Bezos, so I&amp;rsquo;d say it&amp;rsquo;s worth your time to learn to automate.&lt;/p&gt;
@@ -1441,7 +1466,9 @@ Have fun with it, and your students will have fun too (at least in principle, an
       <title>Lorenz Attractors and Chess</title>
       <link>https://davidbieber.com/post/2013-03-13-lorenz-attractor-pawns/</link>
       <pubDate>Wed, 13 Mar 2013 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2013-03-13-lorenz-attractor-pawns/</guid>
+      
       <description>&lt;p&gt;Every pawn is an inverted Lorenz attractor. Not every Lorenz attractor is an inverted pawn.&lt;/p&gt;
 &lt;img src=&#34;lorenz-pawns.png&#34;/&gt;</description>
     </item>
@@ -1450,7 +1477,9 @@ Have fun with it, and your students will have fun too (at least in principle, an
       <title>Blokus Life Lessons</title>
       <link>https://davidbieber.com/post/2013-01-31-blokus-life-lessons/</link>
       <pubDate>Thu, 31 Jan 2013 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2013-01-31-blokus-life-lessons/</guid>
+      
       <description>&lt;p&gt;&lt;i&gt;In this post, clicking the bold word &lt;strong&gt;&lt;span class=&#34;blokus&#34;&gt;Life&lt;/span&gt;&lt;/strong&gt; will replace it with the bold word &lt;strong&gt;&lt;span class=&#34;blokus&#34;&gt;Blokus&lt;/span&gt;&lt;/strong&gt;.&lt;/i&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;span class=&#34;blokus&#34;&gt;Life&lt;/span&gt;&lt;/strong&gt; is simple. It gets more complex over time, but nothing insurmountable. In the beginning, your path is pretty much laid out. You have some control over what directions you go, and these are important decisions. They&amp;rsquo;ll shape your future. They&amp;rsquo;ll change what opportunities you have down the road. But as important as they are, there are relatively few wrong decisions. Sure, you can screw up at any point, including early on. And sometimes the damage is irreparable. As my dad always says, &amp;ldquo;avoid the big mistakes.&amp;rdquo; Aim high, and lay a foundation for yourself to grow. Act with a focus on making your situation the best it can be, always with an eye toward the future. It&amp;rsquo;s the most important thing you can focus on with so much still ahead of you, with so much still unseen.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;span class=&#34;blokus&#34;&gt;Life&lt;/span&gt;&lt;/strong&gt; is all about people. It&amp;rsquo;s about interactions. It&amp;rsquo;s important to realize this, that what you decide to make of a situation has a wide impact, bigger than yourself. When you change the world, you change it for everyone. And when you think to yourself, &amp;ldquo;what should I do now?&amp;rdquo; you also have to think about how others will respond. How will things be different down the road? How will things be different just a few minutes from now? The person sitting across from you: she has her own mind, her own motives. Your intentions and hers- sometimes they align nicely, fitting together perfectly and making both of you better off. But often they don&amp;rsquo;t mesh and they get in each other&amp;rsquo;s way. One must always be wary of this.&lt;/p&gt;
@@ -1475,7 +1504,9 @@ Have fun with it, and your students will have fun too (at least in principle, an
       <title>Get your new Django based web app live with AppFog in minutes</title>
       <link>https://davidbieber.com/post/2012-12-25-django-appfog/</link>
       <pubDate>Tue, 25 Dec 2012 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2012-12-25-django-appfog/</guid>
+      
       <description>&lt;p&gt;You&amp;rsquo;ll have your Django web app up and running live on the internet with AppFog in a matter of minutes.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s what you have to do.&lt;/p&gt;
 &lt;ol&gt;
@@ -1538,7 +1569,9 @@ Have fun with it, and your students will have fun too (at least in principle, an
       <title>CRM&#39;s: Not Just for Sales Folk</title>
       <link>https://davidbieber.com/post/2012-11-29-crms-not-just-for-sales-folk/</link>
       <pubDate>Thu, 29 Nov 2012 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2012-11-29-crms-not-just-for-sales-folk/</guid>
+      
       <description>&lt;p&gt;In this blog post I recommend &lt;a href=&#34;http://streak.com&#34;&gt;Streak&lt;/a&gt;, a customer relationship management (CRM) tool that lives inside Gmail.&lt;/p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://news.ycombinator.com/item?id=4847437&#34;&gt;Discuss on Hacker News.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;What do you use email for? I’m curious, so feel free to &lt;a href=&#34;https://docs.google.com/spreadsheet/viewform?formkey=dFU1WjZ4eDh2TktzSjBlel83cDFwM3c6MQ&#34;&gt;let me know&lt;/a&gt; before reading further (&lt;a href=&#34;https://docs.google.com/spreadsheet/viewform?formkey=dFU1WjZ4eDh2TktzSjBlel83cDFwM3c6MQ&#34;&gt;Google form&lt;/a&gt;).&lt;/p&gt;
@@ -1560,7 +1593,9 @@ Have fun with it, and your students will have fun too (at least in principle, an
       <title>Thoughts on Education</title>
       <link>https://davidbieber.com/post/2012-10-30-thoughts-on-education/</link>
       <pubDate>Tue, 30 Oct 2012 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2012-10-30-thoughts-on-education/</guid>
+      
       <description>&lt;p&gt;That concludes day one of the 
 &lt;a href=&#34;https://svtigertrek.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TigerTrek&lt;/a&gt;. I flew out of Princeton yesterday with a group of 20 to spend the week visiting technology companies, startups and venture capitalists in Silicon Valley. We&amp;rsquo;re going company to company hearing founder&amp;rsquo;s stories, discussing entrepreneurship, and as we do this I am forced to introspect. What do I want to do with my life? How can I make a difference?&lt;/p&gt;
 &lt;p&gt;My passion is education. I was fortunate enough to have some amazing mentors growing up, and to learn in a lot of diverse ways most people never have a chance to experience. I tried out gifted programs, nerd camps, one-on-one classes, online self paced learning, the works. I got involved in math circles, I took summer classes, I really was blessed to have every educational opportunity one could hope for. This, and the diversity of amazing teachers I&amp;rsquo;ve had has gotten me thinking about how people learn best, and how I learn best. Complementing this interest well, I&amp;rsquo;ve found I really love teaching- particularly math and computer science to younger students. It&amp;rsquo;s always a joy helping someone to tackle the Bessie the Cow problem or 
@@ -1590,7 +1625,9 @@ One of Khan Academy&amp;rsquo;s ambitions is to, when someone comes to the site 
       <title>Do you take online courses?</title>
       <link>https://davidbieber.com/post/2012-09-19-do-you-take-online-courses/</link>
       <pubDate>Wed, 19 Sep 2012 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2012-09-19-do-you-take-online-courses/</guid>
+      
       <description>&lt;p&gt;If you&amp;rsquo;ve taken any online classes, read on! Online education is growing rapidly, and I want to make the online education experience the best it can be. To that end, I would really appreciate your insight regarding online courses such as those offered at Coursera, Udacity, edX, Khan Academy, and MIT&amp;rsquo;s OpenCourseWare.&lt;/p&gt;
 &lt;p&gt;Please help me by 
 &lt;a href=&#34;https://docs.google.com/spreadsheet/viewform?formkey=dEFYRE1OVmFaQ1doTEoyZV9teG13eGc6MQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;filling out this short 4 question form&lt;/a&gt; regarding your online education experiences:&lt;/p&gt;
@@ -1603,7 +1640,9 @@ One of Khan Academy&amp;rsquo;s ambitions is to, when someone comes to the site 
       <title>What&#39;s a Code@Night?</title>
       <link>https://davidbieber.com/post/2012-09-18-whats-a-code-at-night/</link>
       <pubDate>Tue, 18 Sep 2012 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2012-09-18-whats-a-code-at-night/</guid>
+      
       <description>&lt;p&gt;&lt;a href=&#34;http://www.youtube.com/watch?v=7l_yY4_-QPM&#34;&gt;Check out this video showing what Code@Nights are all about!&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
 &lt;p&gt;Since you’re reading my blog, you should know a little bit about myself. I’m a big fan of Scrabble. I love math, puzzles, and playing tennis. I spend a lot of my would-be-free time on &lt;a href=&#34;https://www.coursera.org/&#34;&gt;Coursera&lt;/a&gt;. And I’m &lt;strike&gt;vice&lt;/strike&gt; chair of &lt;a href=&#34;http://princetonacm.com/&#34;&gt;Princeton’s ACM Group&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;ACM stands for Association for Computing Machinery, but that’s not important. I think that name is silly.&lt;/p&gt;
@@ -1626,7 +1665,9 @@ One of Khan Academy&amp;rsquo;s ambitions is to, when someone comes to the site 
       <title>Collapsible Blog Posts</title>
       <link>https://davidbieber.com/post/2012-09-04-collapsible-blog-posts/</link>
       <pubDate>Tue, 04 Sep 2012 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2012-09-04-collapsible-blog-posts/</guid>
+      
       <description>&lt;p id=&#34;cbp_hello&#34;&gt;This is my Hello World blog post of sorts. It&#39;s my introduction to the world of blogging, the blog post likely only read by my family and a few techie friends. It&#39;s the post in which I make an unrealistic commitment to blog frequently, which I later fail to live up to. And it&#39;s the post in which I introduce a new form of blogging, &lt;u&gt;Collapsible Blogging&lt;/u&gt;. Here&#39;s the tl;dr.&lt;/p&gt;
 &lt;p id=&#34;_cbp_hello&#34;&gt;Hello World!&lt;/p&gt;
 &lt;p id=&#34;cbp_tldr&#34;&gt;&lt;b&gt;Click any part of this post to see it in condensed form.&lt;/b&gt;&lt;br&gt;

@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>wisdom | David Bieber</title>
+    <title>wisdom on David Bieber</title>
     <link>https://davidbieber.com/tags/wisdom/</link>
-      <atom:link href="https://davidbieber.com/tags/wisdom/index.xml" rel="self" type="application/rss+xml" />
-    <description>wisdom</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 17 Jan 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>wisdom</title>
-      <link>https://davidbieber.com/tags/wisdom/</link>
-    </image>
-    
+    <description>Recent content in wisdom on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/wisdom/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Refrigerator insight</title>
       <link>https://davidbieber.com/snippets/2021-01-17-refrigerator-insight/</link>
       <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-17-refrigerator-insight/</guid>
+      
       <description>&lt;p&gt;When looking through the food in your refrigerator, ask not &amp;ldquo;is this what I want to eat right now?&amp;rdquo;, ask &amp;ldquo;when do I want to eat this?&amp;rdquo;&lt;/p&gt;
 </description>
     </item>
@@ -25,7 +22,11 @@
       <title>pyd-swyt; cf-bh-din</title>
       <link>https://davidbieber.com/snippets/2020-01-02-pyd-swyt-cf-bh-din/</link>
       <pubDate>Thu, 02 Jan 2020 02:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-01-02-pyd-swyt-cf-bh-din/</guid>
+      
+        <message>This is my life motto.</message>
+      
       <description>&lt;h3 id=&#34;pyd-swyt-cf-bh-din&#34;&gt;pyd-swyt; cf-bh-din&lt;/h3&gt;
 &lt;p&gt;It&amp;rsquo;s pronounced just like it&amp;rsquo;s spelled (&amp;ldquo;pied, swite, cuff, buh-din&amp;rdquo;). It&amp;rsquo;s my life motto.
 And I think these are good principles to live by. Here they are:&lt;/p&gt;

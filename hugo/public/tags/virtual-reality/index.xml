@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>virtual reality | David Bieber</title>
+    <title>virtual reality on David Bieber</title>
     <link>https://davidbieber.com/tags/virtual-reality/</link>
-      <atom:link href="https://davidbieber.com/tags/virtual-reality/index.xml" rel="self" type="application/rss+xml" />
-    <description>virtual reality</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 12 Dec 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>virtual reality</title>
-      <link>https://davidbieber.com/tags/virtual-reality/</link>
-    </image>
-    
+    <description>Recent content in virtual reality on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/virtual-reality/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>We Could Use Augmented Reality to Simulate Prosopagnosia</title>
       <link>https://davidbieber.com/snippets/2021-12-12-prosopagnosia-augmented-reality/</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-12-12-prosopagnosia-augmented-reality/</guid>
+      
       <description>&lt;p&gt;I was watching 
 &lt;a href=&#34;https://www.youtube.com/watch?v=vFZY--lgmHs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lecture 4 of Nancy Kanwisher&amp;rsquo;s class &amp;ldquo;The Human Brain&amp;rdquo;&lt;/a&gt;,
 and it occurred to me that we could use augmented reality to simulate prosopagnosia.
@@ -59,7 +56,9 @@ Of course what I found was not my idea, but rather the reverse: using augmented 
       <title>Reconstructing RL table tennis points in VR</title>
       <link>https://davidbieber.com/snippets/2021-07-03-reconstructing-rl-tt-in-vr/</link>
       <pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-07-03-reconstructing-rl-tt-in-vr/</guid>
+      
       <description>&lt;p&gt;
 &lt;a href=&#34;https://alexttbarcelona.wixsite.com/home&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Alex TT Barcelona&amp;rdquo;&lt;/a&gt; makes table tennis drills for Eleven Table Tennis.
 In a recently released batch of drills, he took a point played by table tennis pro Mima Ito and reconstructed it in VR. The ball machine would &amp;ndash; endlessly in a loop &amp;ndash; play the role of Mima Ito&amp;rsquo;s opponent. It would launch ping pong balls from the same location and with the same trajectory that Mima Ito&amp;rsquo;s opponent hit the ball during the point.&lt;/p&gt;
@@ -83,7 +82,9 @@ I haven&amp;rsquo;t yet tried transcribing it to VR, in part because I don&amp;r
       <title>Recording in virtual reality (incomplete)</title>
       <link>https://davidbieber.com/snippets/2021-04-29-recording-in-vr/</link>
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-04-29-recording-in-vr/</guid>
+      
       <description>&lt;p&gt;&lt;em&gt;This is an 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-04-23-incomplete-snippets/&#34;&gt;&lt;strong&gt;incomplete&lt;/strong&gt; snippet&lt;/a&gt;. If I complete it, I&amp;rsquo;ll add a link to the completed snippet here.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The default format for recording in virtual reality is a first-person perspective&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Often this is placed side-by-side with a third-person perspective of the person in real life&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. I would like to see the same perspective of the player in VR and real life&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
@@ -110,7 +111,9 @@ I haven&amp;rsquo;t yet tried transcribing it to VR, in part because I don&amp;r
       <title>Virtual table tennis coaching</title>
       <link>https://davidbieber.com/snippets/2021-04-18-virtual-table-tennis-coaching/</link>
       <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-04-18-virtual-table-tennis-coaching/</guid>
+      
       <description>&lt;p&gt;For the last few weeks I&amp;rsquo;ve been playing virtual reality table tennis quite a lot. It&amp;rsquo;s competitive; some highly ranked real-life table tennis players from around the world play this game. My ranking has been going up: my ELO recently reached 2000+, bringing me (at least temporarily) into the top 1500 ranked players online (out of upwards of 440,000 players total.)&lt;/p&gt;
 &lt;p&gt;Naturally, I&amp;rsquo;d like to make my number go up. So I practice. I play ranked and unranked games against people around the world. I practice against AI opponents. I use the virtual  ball machine. And I watch YouTube videos on how to hit the strokes appropriately.&lt;/p&gt;
 &lt;p&gt;One thing I haven&amp;rsquo;t done though is get a coach.&lt;/p&gt;
@@ -137,7 +140,9 @@ I haven&amp;rsquo;t yet tried transcribing it to VR, in part because I don&amp;r
       <title>Eleven: Table Tennis VR</title>
       <link>https://davidbieber.com/snippets/2021-04-16-table-tennis-vr/</link>
       <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-04-16-table-tennis-vr/</guid>
+      
       <description>&lt;p&gt;Adriana and I recently acquired a VR headset (an Oculus Quest 2), and I bought the game &amp;ldquo;Eleven: Table Tennis VR&amp;rdquo;.
 My mind is blown. It&amp;rsquo;s like having a ping pong table that fits in your hands. You can bring it anywhere; it travels well. And if you do, you not only have everything you need to play ping pong (a table, paddles, $\infty$ balls, etc.) you also have thousands of people of every possible skill level always ready and eager to play.&lt;/p&gt;
 &lt;p&gt;When you enter the game, it&amp;rsquo;s like standing at a ping pong table. Toss the ball from one hand, hit it with the paddle in the other. Simple. The physics is realistic. Lag, when present, is handled pretty well. When you hit the ball into the net, you don&amp;rsquo;t have to reach over and pick it up. When you hit the ball out, you don&amp;rsquo;t need to walk over and pick it up. You have infinity balls, and can play against AI opponents with infinity patience. You can play against real people too.&lt;/p&gt;

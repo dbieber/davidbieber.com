@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hardware | David Bieber</title>
+    <title>Hardware on David Bieber</title>
     <link>https://davidbieber.com/tags/hardware/</link>
-      <atom:link href="https://davidbieber.com/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
-    <description>Hardware</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 26 Oct 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>Hardware</title>
-      <link>https://davidbieber.com/tags/hardware/</link>
-    </image>
-    
+    <description>Recent content in Hardware on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go Note Go</title>
       <link>https://davidbieber.com/projects/go-note-go/</link>
       <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/go-note-go/</guid>
+      
       <description>&lt;p&gt;&lt;em&gt;Go Note Go is a note-taking system for when you&amp;rsquo;re on the go, with a focus on driving and camping.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;re driving to your campsite, listening to Tiago Forte discuss Sönke Ahrens&amp;rsquo;s &amp;ldquo;How to Take Smart Notes&amp;rdquo;, when a brilliant idea strikes you. Do you pull over, pull out your phone or moleskin, and write it down? Nay. Go Note Go to the rescue.&lt;/p&gt;
 &lt;p&gt;While driving, simply press the large handheld red push button and speak your idea aloud. It will be automatically transcribed and added to your notes once an internet connection becomes available.&lt;/p&gt;
@@ -104,7 +101,9 @@
       <title>Escape Castle Heterodyne</title>
       <link>https://davidbieber.com/projects/escape-castle-heterodyne/</link>
       <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/escape-castle-heterodyne/</guid>
+      
       <description>&lt;p&gt;We built an Escape Room!&lt;/p&gt;
 &lt;p&gt;Serious props to Bianca Homberg and her amazing talented group of friends for making this happen.
 I was just a small piece of this epic endeavor. Bianca was the organizer and driving force for a really impressive piece of puzzle craftsmanship.&lt;/p&gt;
@@ -136,7 +135,9 @@ I was just a small piece of this epic endeavor. Bianca was the organizer and dri
       <title>Go Note Go Hardware</title>
       <link>https://davidbieber.com/snippets/2021-10-26-go-note-go-hardware/</link>
       <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-10-26-go-note-go-hardware/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve put together a hardware guide so you can build your own Go Note Go. I&amp;rsquo;ll keep a version of this in the 
 &lt;a href=&#34;https://github.com/dbieber/GoNoteGo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Go Note Go GitHub repo&lt;/a&gt; too. This one will likely fall out of date, but I&amp;rsquo;ll try to keep the one in the GitHub repo updated.&lt;/p&gt;
 &lt;h3 id=&#34;raspberry-pi-400&#34;&gt;Raspberry Pi 400&lt;/h3&gt;
@@ -210,7 +211,9 @@ I don&amp;rsquo;t know. In my experience these were too loose to fit nicely on t
       <title>Teach at Scale</title>
       <link>https://davidbieber.com/post/2013-08-07-teach-at-scale/</link>
       <pubDate>Wed, 07 Aug 2013 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2013-08-07-teach-at-scale/</guid>
+      
       <description>&lt;p&gt;The best way to learn is to teach. It&amp;rsquo;s also, most of the time, the most fun way to learn. And as an added bonus, the person you&amp;rsquo;re teaching learns too.&lt;/p&gt;
 &lt;p&gt;I strongly believe that you, as someone who has found themselves reading strange blogs on the internet, have a lot to offer the world in the way of teaching. So I want you to teach at scale. Yes, I&amp;rsquo;m looking at you Mom and Dad, former Facebook and Twitter interns, my fellow interns here at Khan Academy. I&amp;rsquo;m looking at you, my Princeton and Nisky friends, and my former MathCounts students. Yes, even you, HackerNews readers and Google searchers and friends of friends. I want you to give teaching at scale a try.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s hard. Don&amp;rsquo;t mislead yourself into thinking this is an easy task that I&amp;rsquo;ve laid out for you. It takes courage and confidence. When you teach at scale, you make yourself vulnerable. You have to be ready for people to catch your mistakes and challenge your teachings. People will out-think you, and you should be ready to embrace that.&lt;/p&gt;

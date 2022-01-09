@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>healthcare | David Bieber</title>
+    <title>healthcare on David Bieber</title>
     <link>https://davidbieber.com/tags/healthcare/</link>
-      <atom:link href="https://davidbieber.com/tags/healthcare/index.xml" rel="self" type="application/rss+xml" />
-    <description>healthcare</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 20 Oct 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>healthcare</title>
-      <link>https://davidbieber.com/tags/healthcare/</link>
-    </image>
-    
+    <description>Recent content in healthcare on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/healthcare/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Health Insurance DAOs</title>
       <link>https://davidbieber.com/snippets/2021-10-20-health-insurance-daos/</link>
       <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-10-20-health-insurance-daos/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve recently been learning about blockchain tech including Ethereum, smart contracts, and DAOs (distributed autonomous organizations).
 With this snippet I want to explore the idea of using a DAO as a substitute for traditional health insurance.
 Brainstroming here, I&amp;rsquo;m also intrigued by the ideas of (1) bringing 

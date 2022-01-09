@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tech-tips | David Bieber</title>
+    <title>tech-tips on David Bieber</title>
     <link>https://davidbieber.com/tags/tech-tips/</link>
-      <atom:link href="https://davidbieber.com/tags/tech-tips/index.xml" rel="self" type="application/rss+xml" />
-    <description>tech-tips</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 18 Jul 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>tech-tips</title>
-      <link>https://davidbieber.com/tags/tech-tips/</link>
-    </image>
-    
+    <description>Recent content in tech-tips on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/tech-tips/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Weak and Strong Law of Large Numbers</title>
       <link>https://davidbieber.com/snippets/2021-07-18-laws-of-large-numbers/</link>
       <pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-07-18-laws-of-large-numbers/</guid>
+      
       <description>&lt;p&gt;$X_i$s are i.i.d random variables with finite expected value.&lt;/p&gt;
 &lt;p&gt;$S_n$ is the sum of first $n$ random variables (the sample mean).&lt;br/&gt;
 $\mu$ is the true mean (the population mean).&lt;/p&gt;
@@ -36,7 +33,9 @@ The reason we call probability 1 &amp;ldquo;almost surely&amp;rdquo; rather than
       <title>Notes from setting up a new computer</title>
       <link>https://davidbieber.com/snippets/2021-07-11-setting-up-computer/</link>
       <pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-07-11-setting-up-computer/</guid>
+      
       <description>&lt;h3 id=&#34;1-configuring-chrome&#34;&gt;1. Configuring Chrome&lt;/h3&gt;
 &lt;p&gt;Log into my personal account and my corp account. Chrome extensions sync automatically. A few of them prompt me to log in. No hassle here.&lt;/p&gt;
 &lt;h3 id=&#34;2-downloading-staple-software&#34;&gt;2. Downloading Staple Software&lt;/h3&gt;
@@ -68,7 +67,9 @@ Set up Ferdi. Set screenshot directory.&lt;/p&gt;
       <title>You Have 30 Days to Request a Review</title>
       <link>https://davidbieber.com/snippets/2021-05-19-thirty-days-to-request-a-review/</link>
       <pubDate>Wed, 19 May 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-05-19-thirty-days-to-request-a-review/</guid>
+      
       <description>&lt;p&gt;Today I received an unexpected email from Facebook. Subject: &amp;ldquo;Action needed on your Facebook account&amp;rdquo;. It starts: &amp;ldquo;You Have 30 Days to Request a Review&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;The email read:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;Hi David,
@@ -94,7 +95,9 @@ The Facebook Security Team
       <title>What links here?</title>
       <link>https://davidbieber.com/snippets/2021-04-24-backlinks/</link>
       <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-04-24-backlinks/</guid>
+      
       <description>&lt;p&gt;I wanted to write about backlinks today but didn&amp;rsquo;t get a chance (except you&amp;rsquo;re reading it, so of course I &lt;em&gt;did&lt;/em&gt; get a chance in the end).&lt;/p&gt;
 &lt;p&gt;Quick outline of what I was hoping to write about:&lt;/p&gt;
 &lt;ul&gt;
@@ -116,7 +119,9 @@ The Facebook Security Team
       <title>Find yourself typing t-ENTER often?</title>
       <link>https://davidbieber.com/snippets/2021-02-10-find-yourself-typing-t-enter-often/</link>
       <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-10-find-yourself-typing-t-enter-often/</guid>
+      
       <description>&lt;p&gt;A common attention pitfall is to mindless type cmd-t t ENTER. cmd-t creates a new tab. &amp;ldquo;t&amp;rdquo; autocompletes to twitter.com. ENTER. Four keystrokes and you&amp;rsquo;re scrolling. &amp;ldquo;r&amp;rdquo; for reddit. &amp;ldquo;f&amp;rdquo; for facebook. etc.&lt;/p&gt;
 &lt;p&gt;Less than a second of mindless activity, leading to hundreds of seconds (minutes? hours?) of scrolling that you didn&amp;rsquo;t intend to do.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s the solution. &lt;strong&gt;Delete websites from your browser&amp;rsquo;s autocomplete.&lt;/strong&gt;&lt;/p&gt;
@@ -131,7 +136,9 @@ The Facebook Security Team
       <title>Supervisord</title>
       <link>https://davidbieber.com/snippets/2020-12-02-supervisord/</link>
       <pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-12-02-supervisord/</guid>
+      
       <description>&lt;p&gt;Supervisord has been the single best quality-of-life improvement for software development for me in 2020.&lt;/p&gt;
 &lt;p&gt;Many thanks to 
 &lt;a href=&#34;https://vikb.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vik Bhandari&lt;/a&gt; for suggesting that I use it.&lt;/p&gt;
@@ -151,7 +158,9 @@ The Facebook Security Team
       <title>Checking Your Fan Speed and CPU Temperature on Mac OS (2020)</title>
       <link>https://davidbieber.com/snippets/2020-10-03-checking-your-fan-speed-and-cpu-temperature-on-mac-os/</link>
       <pubDate>Sat, 03 Oct 2020 15:46:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-10-03-checking-your-fan-speed-and-cpu-temperature-on-mac-os/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve seen people monitor their CPU temperature and today my laptop was running hot, so I wanted to do so myself. Googling &amp;ldquo;check laptop temperature mac&amp;rdquo; gives projects you can download. I didn&amp;rsquo;t want to have to trust someone else&amp;rsquo;s tool or mess around with someone else&amp;rsquo;s code, and I knew there must be a system call that gives me sensor stats, so I kept looking.&lt;/p&gt;
 &lt;p&gt;Indeed, there&amp;rsquo;s a command you can run to get your processor temperatures and fan speeds.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;sudo powermetrics --samplers smc&lt;/code&gt;&lt;/p&gt;
@@ -172,7 +181,9 @@ sudo powermetrics --samplers smc | grep &amp;quot;GPU die temperature:&amp;quot;
       <title>Tips for Effective OBS</title>
       <link>https://davidbieber.com/snippets/2020-04-11-tips-for-obs/</link>
       <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-04-11-tips-for-obs/</guid>
+      
       <description>&lt;p&gt;As a newcomer to OBS, I&amp;rsquo;ve been regularly discovering new features that make my OBS experience better. Here are a handful of things I&amp;rsquo;ve found useful, that perhaps weren&amp;rsquo;t immediately obvious to me, from my early experiences with OBS.&lt;/p&gt;
 &lt;h2 id=&#34;using-media-sources&#34;&gt;Using Media Sources&lt;/h2&gt;
 &lt;p&gt;&amp;ldquo;Media Source&amp;rdquo; video sources are essential when showing prerecorded video, or using a replay buffer. However, it wasn&amp;rsquo;t obvious to me how to get media sources to play their audio.&lt;/p&gt;
@@ -196,7 +207,9 @@ sudo powermetrics --samplers smc | grep &amp;quot;GPU die temperature:&amp;quot;
       <title>Understanding OAuth2</title>
       <link>https://davidbieber.com/snippets/2020-03-20-understanding-oauth2/</link>
       <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-03-20-understanding-oauth2/</guid>
+      
       <description>&lt;p&gt;
 &lt;a href=&#34;https://oauth.net/2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OAuth2&lt;/a&gt; is confusing. I&amp;rsquo;ve set it up several times before, and each time I encounter it it&amp;rsquo;s a bit of a mental mess to wrap my mind around it again.&lt;/p&gt;
 &lt;p&gt;So, this time, as I set up OAuth2 to let 

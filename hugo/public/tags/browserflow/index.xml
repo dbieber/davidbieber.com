@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>browserflow | David Bieber</title>
+    <title>browserflow on David Bieber</title>
     <link>https://davidbieber.com/tags/browserflow/</link>
-      <atom:link href="https://davidbieber.com/tags/browserflow/index.xml" rel="self" type="application/rss+xml" />
-    <description>browserflow</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>browserflow</title>
-      <link>https://davidbieber.com/tags/browserflow/</link>
-    </image>
-    
+    <description>Recent content in browserflow on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/browserflow/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sending messages as I drift off to sleep</title>
       <link>https://davidbieber.com/post/2022-01-08-new-messager-setup/</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2022-01-08-new-messager-setup/</guid>
+      
       <description>&lt;p&gt;In this post I describe my new Messager setup,
 and how it allows me to send messages directly from Roam Research &lt;em&gt;or&lt;/em&gt;
 from a standalone keyboard (no monitor) that I keep at my bedside as I drift off to sleep, and which I take driving and camping.&lt;/p&gt;
@@ -156,7 +153,9 @@ If you do, I&amp;rsquo;ll do my best to get back to you, likely as I&amp;rsquo;m
       <title>Go Note Go Messager without Pixel-Space Automation</title>
       <link>https://davidbieber.com/snippets/2022-01-02-pixel-space-automation/</link>
       <pubDate>Sun, 02 Jan 2022 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2022-01-02-pixel-space-automation/</guid>
+      
       <description>&lt;p&gt;&lt;em&gt;This snippet was originally going to be about pixel-space automation. Then I found I didn&amp;rsquo;t need it for what I wanted to do: sending messages to Twitter, Facebook, Slack, and Discord from Go Note Go, Roam Research, and Bieber Bot.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Happy New Year! I&amp;rsquo;d really like to automate Mac apps that don&amp;rsquo;t expose actions to Automator
 using pixel-space navigation and clicks and typing to control the automation. This is why and how.&lt;/p&gt;
@@ -244,7 +243,9 @@ I&amp;rsquo;m still excited about pixel-space automation, but I&amp;rsquo;ll hav
       <title>The Future of Automation Software</title>
       <link>https://davidbieber.com/snippets/2021-12-07-future-automation-software/</link>
       <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-12-07-future-automation-software/</guid>
+      
       <description>&lt;p&gt;
 &lt;a href=&#34;https://browserflow.app&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Browserflow&lt;/a&gt; is great.
 It&amp;rsquo;s beyond great.
@@ -376,7 +377,9 @@ useful both for programmers and automation builders, and for people who simply w
       <title>Draft Instructions for Flashcard Collection Task</title>
       <link>https://davidbieber.com/snippets/2021-11-23-flashcard-collection-task/</link>
       <pubDate>Tue, 23 Nov 2021 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-11-23-flashcard-collection-task/</guid>
+      
       <description>&lt;p&gt;Hello! This is a draft of instructions I intend to send out to volunteers for the contextual flashcard dataset collection project.
 I would love your feedback on the instructions before I send them out more widely.&lt;/p&gt;
 &lt;hr&gt;
@@ -417,7 +420,9 @@ Private information about close friends is not.&lt;/p&gt;
       <title>Save my spot! Finer-grained bookmarks for incremental reading</title>
       <link>https://davidbieber.com/snippets/2021-11-20-save-my-spot/</link>
       <pubDate>Sat, 20 Nov 2021 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-11-20-save-my-spot/</guid>
+      
       <description>&lt;p&gt;When I find articles on the web, often I only read a small portion of an article before browsing away.
 Instead of giving up on the article, I would like to leave a little visual marker on the page indicating the part of the page that I reached.
 I&amp;rsquo;d then also like to automatically add a link to this marker to my notes.
@@ -438,7 +443,9 @@ and a second flow to restore to that spot on the page from the link in my notes.
       <title>GPT-3 for Spaced Repetition</title>
       <link>https://davidbieber.com/snippets/2021-09-08-gpt-3-for-spaced-repetition/</link>
       <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-09-08-gpt-3-for-spaced-repetition/</guid>
+      
       <description>&lt;p&gt;Lately I&amp;rsquo;ve been using Browserflow to create spaced repetition flashcards quickly while browsing the internet.&lt;/p&gt;
 &lt;p&gt;To create a card, I highlight a bit of text and press &amp;ldquo;c&amp;rdquo;. This copies the sentence containing the highlight into the card, with the part I highlighted masked out.
 It&amp;rsquo;s a cloze task, as in a masked language model.
@@ -457,7 +464,9 @@ If instead I push &amp;ldquo;b&amp;rdquo;, it copies the full paragraph containi
       <title>Browserflow Note-taking Flow</title>
       <link>https://davidbieber.com/snippets/2021-07-29-note-taking-flow/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-07-29-note-taking-flow/</guid>
+      
       <description>&lt;p&gt;Quick update on the note-taking Browserflow flow I&amp;rsquo;ve been building: 
 &lt;a href=&#34;https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7&lt;/a&gt;:&lt;/p&gt;
 &lt;h2 id=&#34;how-it-works&#34;&gt;How it works&lt;/h2&gt;
@@ -499,7 +508,9 @@ If instead I push &amp;ldquo;b&amp;rdquo;, it copies the full paragraph containi
       <title>Browserflow is live!</title>
       <link>https://davidbieber.com/snippets/2021-06-17-browserflow-is-live/</link>
       <pubDate>Thu, 17 Jun 2021 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-06-17-browserflow-is-live/</guid>
+      
       <description>&lt;p&gt;Browserflow is live! Beyond exciting!&lt;/p&gt;
 &lt;p&gt;Congratulations to DK on the launch. For those not familiar, Browserflow is a simple low/no-code browser automation chrome extension that DK&amp;rsquo;s been diligently working on for over a year (read his journey over at 
 &lt;a href=&#34;https://roadtoramen.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;roadtoramen.com&lt;/a&gt;; he&amp;rsquo;s an excellent writer!). You can automate anything in the browser with it, and it comes with a nice typeahead for launching flows from anywhere, as well as a Browserflow Cloud service that lets you schedule your flows to run in the cloud.&lt;/p&gt;
@@ -516,7 +527,9 @@ If instead I push &amp;ldquo;b&amp;rdquo;, it copies the full paragraph containi
       <title>Making a Browserflow Flow for Eleven Table Tennis VR</title>
       <link>https://davidbieber.com/snippets/2021-05-01-table-tennis-flow/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-05-01-table-tennis-flow/</guid>
+      
       <description>&lt;p&gt;In this snippet I chronicle making a Cloud flow that tracks my progress in Eleven Table Tennis VR, a virtual reality table tennis game I&amp;rsquo;ve been playing a bunch over the last month.&lt;/p&gt;
 &lt;p&gt;I took a first pass at making the flow earlier in the week, and ran into two hiccups I&amp;rsquo;ll need to work around: (1) The css selectors for my ELO, Rank, etc change between visits to the website. How am I going to extract this data in the flow? (2) Some games have three rounds others have two, and the css selectors differ depending on which game we&amp;rsquo;re looking at.&lt;/p&gt;
 &lt;h2 id=&#34;challenge-1-stable-css-selectors-across-page-loads&#34;&gt;Challenge 1: Stable CSS Selectors Across Page Loads&lt;/h2&gt;
@@ -612,7 +625,9 @@ My flow will run once a day.&lt;/p&gt;
       <title>Two more Browserflow flows for Roam Research</title>
       <link>https://davidbieber.com/snippets/2021-02-13-flows-for-roam-research/</link>
       <pubDate>Sat, 13 Feb 2021 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-13-flows-for-roam-research/</guid>
+      
       <description>&lt;p&gt;I wrote three Browserflow flows for Roam Research today. None of them took me more than 20-30 minutes to write. The first one was for saving the current webpage to Roam. I 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/&#34;&gt;wrote about that flow here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The next flow I wrote is for saving any link you click on to Roam. The idea behind this flow is to prevent doing depth first exploration of the web. Better to look at a bunch of links and then later choose the most interesting, than to dive head first into the first link you click on.&lt;/p&gt;
@@ -631,7 +646,9 @@ My flow will run once a day.&lt;/p&gt;
       <title>Saving URLs to Roam with Browserflow</title>
       <link>https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/</link>
       <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/</guid>
+      
       <description>&lt;p&gt;Using the 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-02-12-javascript-functions-for-inserting-blocks-in-roam/&#34;&gt;Roam JavaScript primitives I wrote yesterday&lt;/a&gt; it was extremely easy (less than 10 minutes, I think) to create a robust Browserflow flow for saving URLs to Roam Research.&lt;/p&gt;
 &lt;p&gt;Now when I&amp;rsquo;m browsing the web, I can press cmd-J (Browserflow&amp;rsquo;s keyboard shortcut) and choose &amp;ldquo;Roam: Save URL&amp;rdquo; from the typeahead to save the current URL to my Roam Daily Notes page.&lt;/p&gt;
@@ -652,7 +669,9 @@ await createChildBlock(urls, $url)
       <title>What does Browserflow do beyond what Tampermonkey does?</title>
       <link>https://davidbieber.com/snippets/2021-02-09-what-does-browserflow-do-beyond-what-tampermonkey-does/</link>
       <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-09-what-does-browserflow-do-beyond-what-tampermonkey-does/</guid>
+      
       <description>&lt;p&gt;Someone recently asked me what 
 &lt;a href=&#34;https://dkthehuman.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DK&lt;/a&gt;&amp;rsquo;s 
 &lt;a href=&#34;http://browserflow.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Browserflow&lt;/a&gt; does beyond what e.g. 
@@ -692,7 +711,9 @@ await createChildBlock(urls, $url)
       <title>A Flow for Focused Reading</title>
       <link>https://davidbieber.com/snippets/2021-02-05-focused-reading/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-05-focused-reading/</guid>
+      
       <description>&lt;p&gt;As you can see from the snippet you&amp;rsquo;re currently reading, I&amp;rsquo;ve implemented a simple tool to help with focused reading. (It&amp;rsquo;s 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-02-02-focused-reading-browserflow-flow-idea/&#34;&gt;the idea from the previous snippet&lt;/a&gt;). The majority of the page is dimmed, except for a few lines above and below your mouse cursor. As you move your mouse, the focused region follows. Give it a try; move your mouse (or touch) over the next paragraph, and watch as the light region follows.&lt;/p&gt;
 &lt;p&gt;This is useful for staying focused when reading. If your eyes or mind wander while reading, it&amp;rsquo;s easy to quickly bring your attention back to exactly where you left off.&lt;/p&gt;
@@ -760,7 +781,9 @@ document.addEventListener(&#39;touchmove&#39;, function(event) {
       <title>Focused Reading Browserflow Flow Idea</title>
       <link>https://davidbieber.com/snippets/2021-02-02-focused-reading-browserflow-flow-idea/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-02-focused-reading-browserflow-flow-idea/</guid>
+      
       <description>&lt;p&gt;This idea for an assistive technology for focused reading comes from 
 &lt;a href=&#34;https://accessibe.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;accessiBe&lt;/a&gt;. I stumbled upon it on 
 &lt;a href=&#34;https://www.tasteofhome.com/recipes/homemade-potato-chips/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tasteofhome.com&lt;/a&gt;. The idea is to make the web more accessible to folks with ADHD by dimming the part of the screen they&amp;rsquo;re not actively looking at.&lt;/p&gt;
@@ -778,7 +801,9 @@ document.addEventListener(&#39;touchmove&#39;, function(event) {
       <title>Spaced Repetition in Roam Research</title>
       <link>https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/</link>
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/</guid>
+      
       <description>&lt;p&gt;There are many ways to do spaced repetition in Roam Research. This post describes mine. I was inspired to start this two months ago by reading 
 &lt;a href=&#34;https://ncase.me/remember/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nicky Case&amp;rsquo;s comic on spaced repetition&lt;/a&gt;, and I highly recommend the read.&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Spaced repetition&amp;rdquo; just means studying flashcards, studying the cards you know best less often, and study the cards you struggle with more often. It&amp;rsquo;s a powerful technique for learning and remembering material, whether you&amp;rsquo;re a student or a lifelong learner.&lt;/p&gt;

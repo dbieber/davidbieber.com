@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Google Apps Script | David Bieber</title>
+    <title>Google Apps Script on David Bieber</title>
     <link>https://davidbieber.com/tags/google-apps-script/</link>
-      <atom:link href="https://davidbieber.com/tags/google-apps-script/index.xml" rel="self" type="application/rss+xml" />
-    <description>Google Apps Script</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 29 Dec 2019 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>Google Apps Script</title>
-      <link>https://davidbieber.com/tags/google-apps-script/</link>
-    </image>
-    
+    <description>Recent content in Google Apps Script on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/google-apps-script/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bieber Bot</title>
       <link>https://davidbieber.com/projects/bieber-bot/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/bieber-bot/</guid>
+      
       <description>&lt;p&gt;Bieber Bot is a highly motivated robot that assists me with my financials, 
 &lt;a href=&#34;https://twitter.com/Bieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tweets&lt;/a&gt; on my behalf, and keeps me productive when my brain feels otherwise.&lt;/p&gt;
 &lt;h2 id=&#34;is-bieber-bot-related-to-justin-bieber&#34;&gt;Is Bieber Bot related to Justin Bieber?&lt;/h2&gt;
@@ -50,7 +47,9 @@
       <title>Keeping Track of My Life in a Spreadsheet</title>
       <link>https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/</link>
       <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/</guid>
+      
       <description>&lt;p&gt;As many of my friends know, I keep track of much of my life in spreadsheets. There are several pieces to this system, but fortunately it&amp;rsquo;s the kind of system that you can adopt (and discard) incrementally. So, rather than explaining the whole thing in one go, I will explain one core piece in this post.&lt;/p&gt;
 &lt;p&gt;In this post, I will detail how I use a spreadsheet as a &lt;em&gt;daily activity log&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;My spreadsheet lets me keep a record of all the things I&amp;rsquo;ve done.
@@ -394,7 +393,9 @@ And if I don&amp;rsquo;t have any activity planned for a particular day, BieberB
       <title>Writing a Mail Merge in Google Apps Script</title>
       <link>https://davidbieber.com/post/2018-10-21-apps-script-mail-merge/</link>
       <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2018-10-21-apps-script-mail-merge/</guid>
+      
       <description>&lt;p&gt;Google Apps Script is endlessly useful; in this post you will learn how to write a mail merge with Google Apps Script. It&amp;rsquo;s less than 30 lines of code! You can use this technique to send personalized emails individually to many recipients. In the second part of this post, you will learn how to schedule these emails to send in the future.&lt;/p&gt;
 &lt;h2 id=&#34;part-1-writing-a-mail-merge&#34;&gt;Part 1: Writing a Mail Merge&lt;/h2&gt;
 &lt;p&gt;A &lt;em&gt;mail merge&lt;/em&gt; is a program that sends an email to many recipients, automatically filling in the contents of the email according to a template. It&amp;rsquo;s like a form letter. Each recipient receives a personalized copy of the email.&lt;/p&gt;

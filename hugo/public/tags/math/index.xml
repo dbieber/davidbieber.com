@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>math | David Bieber</title>
+    <title>math on David Bieber</title>
     <link>https://davidbieber.com/tags/math/</link>
-      <atom:link href="https://davidbieber.com/tags/math/index.xml" rel="self" type="application/rss+xml" />
-    <description>math</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>math</title>
-      <link>https://davidbieber.com/tags/math/</link>
-    </image>
-    
+    <description>Recent content in math on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/math/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Derivative of Softmax and the Softmax Cross Entropy Loss</title>
       <link>https://davidbieber.com/snippets/2020-12-12-derivative-of-softmax-and-the-softmax-cross-entropy-loss/</link>
       <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-12-12-derivative-of-softmax-and-the-softmax-cross-entropy-loss/</guid>
+      
       <description>&lt;p&gt;Write $y_i = \text{softmax}(\textbf{x})_i = \frac{e^{x_i}}{\sum e^{x_d}}$.&lt;/p&gt;
 &lt;p&gt;That is, $\textbf{y}$ is the softmax of $\textbf{x}$. Softmax computes a normalized exponential of its input vector.&lt;/p&gt;
 &lt;p&gt;Next write $L = -\sum t_i \ln(y_i)$. This is the softmax cross entropy loss. $t_i$ is a 0/1 target representing whether the correct class is class $i$. We will compute the derivative of $L$ with respect to the inputs to the softmax function $\textbf{x}$.&lt;/p&gt;
@@ -45,7 +42,9 @@
       <title>4.2e-8 of All of Human Experience</title>
       <link>https://davidbieber.com/snippets/2020-12-03-4.2e-8-of-all-of-human-experience/</link>
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-12-03-4.2e-8-of-all-of-human-experience/</guid>
+      
       <description>&lt;p&gt;About 107 billion people have &lt;em&gt;ever&lt;/em&gt; lived.&lt;/p&gt;
 &lt;p&gt;Across all time, the average life expectancy of a person is just under 30 years.&lt;/p&gt;
 &lt;p&gt;So, there have only been 3.21 trillion person-years experienced. Total.&lt;/p&gt;
@@ -69,7 +68,9 @@
       <title>Downloading the Online Encylopedia of Integer Sequences</title>
       <link>https://davidbieber.com/snippets/2020-06-28-oeis-download/</link>
       <pubDate>Sun, 28 Jun 2020 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-06-28-oeis-download/</guid>
+      
       <description>&lt;p&gt;If you&amp;rsquo;re looking for a way to download the entire 
 &lt;a href=&#34;https://oeis.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Online Encylopedia of Integer Sequences&lt;/a&gt;, you may come across advice for scraping the site, one sequence at a time. Instead of collecting the sequences one at a time, it might be sufficient to download one of their already collected archives. 
 &lt;a href=&#34;https://oeis.org/stripped.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This file&lt;/a&gt; contains the integer sequences and their A-numbers, and 
@@ -83,7 +84,11 @@
       <title>The Future-Predicting Game Show Host</title>
       <link>https://davidbieber.com/snippets/2020-02-08-future-gameshow-host/</link>
       <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-02-08-future-gameshow-host/</guid>
+      
+        <message>A game show host reveals 2 boxes. In box A is either $1 million or $0, in box B there is $1000. You won&#39;t believe what&#39;s inside Box A!</message>
+      
       <description>&lt;p&gt;A game show host reveals 2 boxes, box A and box B. In box A is either $1 million or $0, in box B there is $1000.&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;re told, choose either just box A or both A and B.&lt;/p&gt;
 &lt;p&gt;You keep the contents of the boxes you choose.
@@ -137,7 +142,11 @@ One extreme way you may have been predictable is if the host knows exactly how e
       <title>What does &#34;Ordinary&#34; mean in Ordinary Least Squares?</title>
       <link>https://davidbieber.com/snippets/2020-01-08-ordinary-least-squares/</link>
       <pubDate>Wed, 08 Jan 2020 02:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-01-08-ordinary-least-squares/</guid>
+      
+        <message>It means the standard method. Nothing fancy.</message>
+      
       <description>&lt;p&gt;&amp;ldquo;Ordinary Least Squares&amp;rdquo; regression, or OLS for short, is a method for finding a best-fit line, given a set of data points. When people refer to linear regression without additional context or qualifiers, they&amp;rsquo;re probably referring to ordinary least squares regression.&lt;/p&gt;
 &lt;p&gt;So, what does &amp;ldquo;ordinary&amp;rdquo; mean in this context? Is it a mathematical term with a precise technical meaning?&lt;/p&gt;
 &lt;p&gt;Well, no. In this case &amp;ldquo;ordinary&amp;rdquo; means exactly what you might expect: standard, vanilla, lacking any bells and whistles. Since least squares regression is so common, there are lots of variants. Weighted Least Squares (in which each data point is given its own weight) is a such a variant. So, in OLS, the O for ordinary simply means we&amp;rsquo;re not referring to one of these variants.&lt;/p&gt;

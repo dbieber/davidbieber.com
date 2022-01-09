@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Documents | David Bieber</title>
+    <title>Documents on David Bieber</title>
     <link>https://davidbieber.com/documents/</link>
-      <atom:link href="https://davidbieber.com/documents/index.xml" rel="self" type="application/rss+xml" />
-    <description>Documents</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 27 Sep 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>Documents</title>
-      <link>https://davidbieber.com/documents/</link>
-    </image>
-    
+    <description>Recent content in Documents on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/documents/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bieber Bot Privacy Policy</title>
       <link>https://davidbieber.com/documents/bieber-bot-privacy/</link>
       <pubDate>Mon, 27 Sep 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/documents/bieber-bot-privacy/</guid>
+      
       <description>&lt;p&gt;Last updated: September 27, 2021&lt;/p&gt;
 &lt;p&gt;This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.&lt;/p&gt;
 &lt;p&gt;We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.&lt;/p&gt;

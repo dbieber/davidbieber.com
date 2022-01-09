@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>spaced-repetition | David Bieber</title>
+    <title>spaced-repetition on David Bieber</title>
     <link>https://davidbieber.com/tags/spaced-repetition/</link>
-      <atom:link href="https://davidbieber.com/tags/spaced-repetition/index.xml" rel="self" type="application/rss+xml" />
-    <description>spaced-repetition</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 23 Nov 2021 01:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>spaced-repetition</title>
-      <link>https://davidbieber.com/tags/spaced-repetition/</link>
-    </image>
-    
+    <description>Recent content in spaced-repetition on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Nov 2021 01:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/spaced-repetition/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Draft Instructions for Flashcard Collection Task</title>
       <link>https://davidbieber.com/snippets/2021-11-23-flashcard-collection-task/</link>
       <pubDate>Tue, 23 Nov 2021 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-11-23-flashcard-collection-task/</guid>
+      
       <description>&lt;p&gt;Hello! This is a draft of instructions I intend to send out to volunteers for the contextual flashcard dataset collection project.
 I would love your feedback on the instructions before I send them out more widely.&lt;/p&gt;
 &lt;hr&gt;
@@ -57,7 +54,9 @@ Private information about close friends is not.&lt;/p&gt;
       <title>Potential Improvements to Spaced Repetition</title>
       <link>https://davidbieber.com/snippets/2021-11-02-improvements-to-spaced-repetition/</link>
       <pubDate>Tue, 02 Nov 2021 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-11-02-improvements-to-spaced-repetition/</guid>
+      
       <description>&lt;p&gt;Spaced repetition is not super widespread. It&amp;rsquo;s popular among med school students and language learners, but frequently people find the benefits outweighed by the costs, the friction too high, and they stop.&lt;/p&gt;
 &lt;p&gt;I believe the following are the most pressing issues to solve for spaced repetition to allow for wider adoption:&lt;/p&gt;
 &lt;ol&gt;
@@ -126,7 +125,9 @@ Private information about close friends is not.&lt;/p&gt;
       <title>Spaced Repetition Update</title>
       <link>https://davidbieber.com/snippets/2021-10-05-spaced-repetition-update/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-10-05-spaced-repetition-update/</guid>
+      
       <description>&lt;p&gt;Previously I&amp;rsquo;ve written about 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/&#34;&gt;how I do spaced repetition in Roam Research&lt;/a&gt; using Leitner Boxes. I&amp;rsquo;m still doing spaced repetition daily, but my methods have changed a bit. So, let me give you the update.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m still doing spaced repetition in Roam, but I&amp;rsquo;ve moved away from the Leitner Box approach. Now instead I use 
@@ -146,7 +147,9 @@ Private information about close friends is not.&lt;/p&gt;
       <title>GPT-3 for Spaced Repetition</title>
       <link>https://davidbieber.com/snippets/2021-09-08-gpt-3-for-spaced-repetition/</link>
       <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-09-08-gpt-3-for-spaced-repetition/</guid>
+      
       <description>&lt;p&gt;Lately I&amp;rsquo;ve been using Browserflow to create spaced repetition flashcards quickly while browsing the internet.&lt;/p&gt;
 &lt;p&gt;To create a card, I highlight a bit of text and press &amp;ldquo;c&amp;rdquo;. This copies the sentence containing the highlight into the card, with the part I highlighted masked out.
 It&amp;rsquo;s a cloze task, as in a masked language model.
@@ -165,7 +168,9 @@ If instead I push &amp;ldquo;b&amp;rdquo;, it copies the full paragraph containi
       <title>Decentralized Global Spaced Repetition (incomplete)</title>
       <link>https://davidbieber.com/snippets/2021-08-16-dgsrs/</link>
       <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-08-16-dgsrs/</guid>
+      
       <description>&lt;p&gt;I envision a decentralized global spaced repetition system (DGSRS).
 Anyone in the world can participate, submitting entries that they&amp;rsquo;d like the world to remember.
 To participate, you both need to review entries that others want reviewed, and submit an occasional entry yourself.&lt;/p&gt;
@@ -190,7 +195,9 @@ to conlang enthusiasts trying to bring a new language into existance, to first-t
       <title>Spaced Repetition at a Community Scale</title>
       <link>https://davidbieber.com/snippets/2021-08-15-community-spaced-repetition/</link>
       <pubDate>Sun, 15 Aug 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-08-15-community-spaced-repetition/</guid>
+      
       <description>&lt;p&gt;Spaced repetition is great for individual learners, but can we apply it to the preservation of institutional knowledge?&lt;/p&gt;
 &lt;p&gt;What would that look like? Maybe it means dedicating some fraction of some employee time to revisiting old documentation and bringing it up to date.
 Maybe it involves periodic runthroughs of playbooks to ensure they&amp;rsquo;re still working.&lt;/p&gt;
@@ -206,7 +213,9 @@ Are there old but important ideas that have fallen out of favor, that a global &
       <title>Browserflow Note-taking Flow</title>
       <link>https://davidbieber.com/snippets/2021-07-29-note-taking-flow/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-07-29-note-taking-flow/</guid>
+      
       <description>&lt;p&gt;Quick update on the note-taking Browserflow flow I&amp;rsquo;ve been building: 
 &lt;a href=&#34;https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7&lt;/a&gt;:&lt;/p&gt;
 &lt;h2 id=&#34;how-it-works&#34;&gt;How it works&lt;/h2&gt;
@@ -248,7 +257,9 @@ Are there old but important ideas that have fallen out of favor, that a global &
       <title>Spaced Repetition in Roam Research</title>
       <link>https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/</link>
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/</guid>
+      
       <description>&lt;p&gt;There are many ways to do spaced repetition in Roam Research. This post describes mine. I was inspired to start this two months ago by reading 
 &lt;a href=&#34;https://ncase.me/remember/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nicky Case&amp;rsquo;s comic on spaced repetition&lt;/a&gt;, and I highly recommend the read.&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Spaced repetition&amp;rdquo; just means studying flashcards, studying the cards you know best less often, and study the cards you struggle with more often. It&amp;rsquo;s a powerful technique for learning and remembering material, whether you&amp;rsquo;re a student or a lifelong learner.&lt;/p&gt;
@@ -339,7 +350,9 @@ Are there old but important ideas that have fallen out of favor, that a global &
       <title>Letting Adriana put things in my Leitner Box</title>
       <link>https://davidbieber.com/snippets/2020-11-07-letting-adriana-put-things-in-my-leitner-box/</link>
       <pubDate>Sat, 07 Nov 2020 08:14:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-11-07-letting-adriana-put-things-in-my-leitner-box/</guid>
+      
       <description>&lt;p&gt;I’ve been using spaced repetition for 2-3 weeks now. I’m not using Anki or any of the prebuilt systems that track your queue of items for you. Instead, I’m keeping the things I want to study in Roam Research and using a make-shift system of tags and Browserflow Flows to make the spaced repetition system relatively frictionless.&lt;/p&gt;
 &lt;p&gt;I’ll save the details of the system for another snippet. Today, I just want to jot down the idea of allowing Adriana (through the use of Bieber Bot) to add items to my spaced repetition system.&lt;/p&gt;
 &lt;p&gt;The idea is relatively simple, but it does involve one new component that may be tricky to implement robustly. Under this idea, Adriana would be able to send Bieber Bot a message saying e.g. “help David to learn the names of the planets” and a card would be added to my spaced repetition system saying “learn the names of the planets. -Adriana”. I could then split this card into multiple cards as I usually do when I encounter a card with too much content simultaneously, or Adriana could have Bieber Bot add smaller cards one at a time.&lt;/p&gt;
@@ -352,7 +365,9 @@ Are there old but important ideas that have fallen out of favor, that a global &
       <title>Principles of Pico</title>
       <link>https://davidbieber.com/snippets/2020-03-14-principles-of-pico/</link>
       <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-03-14-principles-of-pico/</guid>
+      
       <description>&lt;p&gt;Here&amp;rsquo;s an attempt at capturing and organizing my thoughts on Pico, from our conversation about it March.&lt;/p&gt;
 &lt;p&gt;First, an attempt at an overview of the Pico system.&lt;/p&gt;
 &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;

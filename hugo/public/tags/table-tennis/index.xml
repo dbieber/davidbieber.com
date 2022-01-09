@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>table tennis | David Bieber</title>
+    <title>table tennis on David Bieber</title>
     <link>https://davidbieber.com/tags/table-tennis/</link>
-      <atom:link href="https://davidbieber.com/tags/table-tennis/index.xml" rel="self" type="application/rss+xml" />
-    <description>table tennis</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 22 Jul 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>table tennis</title>
-      <link>https://davidbieber.com/tags/table-tennis/</link>
-    </image>
-    
+    <description>Recent content in table tennis on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/table-tennis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why table tennis strokes end at the forehead</title>
       <link>https://davidbieber.com/snippets/2021-07-22-forehead-is-forward/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-07-22-forehead-is-forward/</guid>
+      
       <description>&lt;p&gt;It makes sense now! It was really a Eureka! moment on Tuesday when I figured it out. The stroke ends at the forehead because the stroke is much more &lt;em&gt;forward&lt;/em&gt; than I was making it.&lt;/p&gt;
 &lt;p&gt;Recap: All the much better players&#39; forehands end at their foreheads. Mine ends across my chest on the left side of my body. When I try to end my forehand by my forehead, I mess it up terribly. Until now.&lt;/p&gt;
 &lt;p&gt;
@@ -38,7 +35,9 @@
       <title>Why do table tennis strokes end at the forehead?</title>
       <link>https://davidbieber.com/snippets/2021-07-10-forehand-to-forehead/</link>
       <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-07-10-forehand-to-forehead/</guid>
+      
       <description>&lt;p&gt;In a table tennis forehand, the stroke typically ends at the forehead. The full stroke is a bit like this:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Stance&lt;/li&gt;
@@ -99,7 +98,9 @@ I guess it works out that moving from the stroke earlier shorts the stroke and e
       <title>Reconstructing RL table tennis points in VR</title>
       <link>https://davidbieber.com/snippets/2021-07-03-reconstructing-rl-tt-in-vr/</link>
       <pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-07-03-reconstructing-rl-tt-in-vr/</guid>
+      
       <description>&lt;p&gt;
 &lt;a href=&#34;https://alexttbarcelona.wixsite.com/home&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Alex TT Barcelona&amp;rdquo;&lt;/a&gt; makes table tennis drills for Eleven Table Tennis.
 In a recently released batch of drills, he took a point played by table tennis pro Mima Ito and reconstructed it in VR. The ball machine would &amp;ndash; endlessly in a loop &amp;ndash; play the role of Mima Ito&amp;rsquo;s opponent. It would launch ping pong balls from the same location and with the same trajectory that Mima Ito&amp;rsquo;s opponent hit the ball during the point.&lt;/p&gt;
@@ -123,7 +124,9 @@ I haven&amp;rsquo;t yet tried transcribing it to VR, in part because I don&amp;r
       <title>Serving in table tennis</title>
       <link>https://davidbieber.com/snippets/2021-06-21-serving-in-table-tennis/</link>
       <pubDate>Mon, 21 Jun 2021 02:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-06-21-serving-in-table-tennis/</guid>
+      
       <description>&lt;p&gt;We have a couple serves:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The forehand backspin serve&lt;/li&gt;
@@ -149,7 +152,9 @@ The high toss means you contact the ball with high downward velocity, and greate
       <title>Responding to side-spin</title>
       <link>https://davidbieber.com/snippets/2021-06-21-responding-to-side-spin/</link>
       <pubDate>Mon, 21 Jun 2021 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-06-21-responding-to-side-spin/</guid>
+      
       <description>&lt;p&gt;If the server moves their paddle from your left top right across the ball, then add the ball cones toward you its trajectory will bend to your left. You&amp;rsquo;ll want to hit it further left, otherwise it will bounce off your racket to the right and go out.&lt;/p&gt;
 &lt;p&gt;How best to think about this?
 The ball is spinning to your left; that&amp;rsquo;s why the trajectory bends to your left. By &amp;ldquo;spinning to your left&amp;rdquo;, I refer to the direction the part of the ball leading the trajectory is moving in. Since the ball&amp;rsquo;s coming toward you, it&amp;rsquo;s the part of the ball closest to you that is moving left; the part furthest from you is moving to your right. The Magnus effect cause the trajectory to bend in the direction that leading edge of the ball is traveling in.&lt;/p&gt;
@@ -164,7 +169,9 @@ When you hit a topspin ball, the leading part of the ball (furthest from you) is
       <title>Backhand flicks, drives, loops, and pushes</title>
       <link>https://davidbieber.com/snippets/2021-06-21-backhand-flicks-drives-loops-and-pushes/</link>
       <pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-06-21-backhand-flicks-drives-loops-and-pushes/</guid>
+      
       <description>&lt;p&gt;&lt;em&gt;Note for potential reader: I&amp;rsquo;m new to this sport, and my commentary might not be correct or good advice :).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;What&amp;rsquo;s the difference between backhand flicks, drives, loops, and pushes?&lt;/p&gt;
 &lt;p&gt;Flicks, drives, and loops all impart topspin on the ball. The backhand push typically imparts backspin.&lt;/p&gt;
@@ -190,7 +197,9 @@ Is this right?&lt;/p&gt;
       <title>Areas of table tennis to improve at</title>
       <link>https://davidbieber.com/snippets/2021-06-17-areas-of-table-tennis-to-improve-at/</link>
       <pubDate>Thu, 17 Jun 2021 02:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-06-17-areas-of-table-tennis-to-improve-at/</guid>
+      
       <description>&lt;p&gt;Right now the biggest area to work on is having the confidence (and skill) to attack in a match setting.&lt;/p&gt;
 &lt;p&gt;I have this confidence in Eleven Table Tennis (ETT), usually, but in the real world its harder to demonstrate.
 I guess I become conservative in the real world because you have to be responsible for your balls.
@@ -227,7 +236,9 @@ Wow, despite looking so different the tips are remarkably similar to the backhan
       <title>How to qualify for the US Olympic table tennis team</title>
       <link>https://davidbieber.com/snippets/2021-06-17-table-tennis-olympic-qualifiers/</link>
       <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-06-17-table-tennis-olympic-qualifiers/</guid>
+      
       <description>&lt;p&gt;How to qualify for the US Olympic table tennis team.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Become the best singles table tennis player in the country, preferably by a significant margin&lt;/li&gt;
@@ -243,7 +254,9 @@ Wow, despite looking so different the tips are remarkably similar to the backhan
       <title>Making a Browserflow Flow for Eleven Table Tennis VR</title>
       <link>https://davidbieber.com/snippets/2021-05-01-table-tennis-flow/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-05-01-table-tennis-flow/</guid>
+      
       <description>&lt;p&gt;In this snippet I chronicle making a Cloud flow that tracks my progress in Eleven Table Tennis VR, a virtual reality table tennis game I&amp;rsquo;ve been playing a bunch over the last month.&lt;/p&gt;
 &lt;p&gt;I took a first pass at making the flow earlier in the week, and ran into two hiccups I&amp;rsquo;ll need to work around: (1) The css selectors for my ELO, Rank, etc change between visits to the website. How am I going to extract this data in the flow? (2) Some games have three rounds others have two, and the css selectors differ depending on which game we&amp;rsquo;re looking at.&lt;/p&gt;
 &lt;h2 id=&#34;challenge-1-stable-css-selectors-across-page-loads&#34;&gt;Challenge 1: Stable CSS Selectors Across Page Loads&lt;/h2&gt;
@@ -339,7 +352,9 @@ My flow will run once a day.&lt;/p&gt;
       <title>Virtual table tennis coaching</title>
       <link>https://davidbieber.com/snippets/2021-04-18-virtual-table-tennis-coaching/</link>
       <pubDate>Sun, 18 Apr 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-04-18-virtual-table-tennis-coaching/</guid>
+      
       <description>&lt;p&gt;For the last few weeks I&amp;rsquo;ve been playing virtual reality table tennis quite a lot. It&amp;rsquo;s competitive; some highly ranked real-life table tennis players from around the world play this game. My ranking has been going up: my ELO recently reached 2000+, bringing me (at least temporarily) into the top 1500 ranked players online (out of upwards of 440,000 players total.)&lt;/p&gt;
 &lt;p&gt;Naturally, I&amp;rsquo;d like to make my number go up. So I practice. I play ranked and unranked games against people around the world. I practice against AI opponents. I use the virtual  ball machine. And I watch YouTube videos on how to hit the strokes appropriately.&lt;/p&gt;
 &lt;p&gt;One thing I haven&amp;rsquo;t done though is get a coach.&lt;/p&gt;
@@ -366,7 +381,9 @@ My flow will run once a day.&lt;/p&gt;
       <title>Eleven: Table Tennis VR</title>
       <link>https://davidbieber.com/snippets/2021-04-16-table-tennis-vr/</link>
       <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-04-16-table-tennis-vr/</guid>
+      
       <description>&lt;p&gt;Adriana and I recently acquired a VR headset (an Oculus Quest 2), and I bought the game &amp;ldquo;Eleven: Table Tennis VR&amp;rdquo;.
 My mind is blown. It&amp;rsquo;s like having a ping pong table that fits in your hands. You can bring it anywhere; it travels well. And if you do, you not only have everything you need to play ping pong (a table, paddles, $\infty$ balls, etc.) you also have thousands of people of every possible skill level always ready and eager to play.&lt;/p&gt;
 &lt;p&gt;When you enter the game, it&amp;rsquo;s like standing at a ping pong table. Toss the ball from one hand, hit it with the paddle in the other. Simple. The physics is realistic. Lag, when present, is handled pretty well. When you hit the ball into the net, you don&amp;rsquo;t have to reach over and pick it up. When you hit the ball out, you don&amp;rsquo;t need to walk over and pick it up. You have infinity balls, and can play against AI opponents with infinity patience. You can play against real people too.&lt;/p&gt;

@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>thought-experiments | David Bieber</title>
+    <title>thought-experiments on David Bieber</title>
     <link>https://davidbieber.com/tags/thought-experiments/</link>
-      <atom:link href="https://davidbieber.com/tags/thought-experiments/index.xml" rel="self" type="application/rss+xml" />
-    <description>thought-experiments</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>thought-experiments</title>
-      <link>https://davidbieber.com/tags/thought-experiments/</link>
-    </image>
-    
+    <description>Recent content in thought-experiments on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/thought-experiments/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A social network for slow long-form discussions</title>
       <link>https://davidbieber.com/snippets/2021-01-07-a-social-network-for-slow-long-form-discussions/</link>
       <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-07-a-social-network-for-slow-long-form-discussions/</guid>
+      
       <description>&lt;p&gt;A social network&amp;rsquo;s design influences the conversations that people will have on it. Can we design a social network that will facilitate healthy debate and discussion, while avoiding toxic discourse?&lt;/p&gt;
 &lt;p&gt;Consider this: a variant of Twitter where instead of a 140 character maximum, there&amp;rsquo;s a 1400 word maximum. (We could also impose a 140 character minimum?) And you&amp;rsquo;re limited to just 3 posts per day.&lt;/p&gt;
 &lt;p&gt;The real twist though? All posts are posted at the same time: at 8am, 2pm, 8pm, and 2am. We choose times scatter across the day so your timezone doesn&amp;rsquo;t matter.&lt;/p&gt;
@@ -30,7 +27,9 @@
       <title>Brains Don&#39;t Do Solomonoff Induction</title>
       <link>https://davidbieber.com/snippets/2021-01-06-brains-dont-do-solomonoff-induction/</link>
       <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-06-brains-dont-do-solomonoff-induction/</guid>
+      
       <description>&lt;p&gt;
 &lt;a href=&#34;http://zhat.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dan Abolafia&lt;/a&gt; asked me some thought provoking questions about Solomonoff Induction and intelligence. This snippet comes from my answers.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -101,7 +100,9 @@
       <title>Where do thoughts come from? A thought experiment.</title>
       <link>https://davidbieber.com/snippets/2020-12-29-where-do-thoughts-come-from-a-thought-experiment/</link>
       <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-12-29-where-do-thoughts-come-from-a-thought-experiment/</guid>
+      
       <description>&lt;p&gt;This snippet details a thought experiment I&amp;rsquo;ve been encouraging people to do for years. It&amp;rsquo;s simple, and should only take a few minutes of your time. The purpose of the thought experiment is to better understand where your thoughts come from.&lt;/p&gt;
 &lt;p&gt;There are just four steps in the experiment: (1) think thoughts, (2) remember those thoughts and write them down, (3) determine their causes, (4) categorize those causes.&lt;/p&gt;
 &lt;p&gt;Let me explain in more detail.&lt;/p&gt;
@@ -120,7 +121,9 @@
       <title>4.2e-8 of All of Human Experience</title>
       <link>https://davidbieber.com/snippets/2020-12-03-4.2e-8-of-all-of-human-experience/</link>
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-12-03-4.2e-8-of-all-of-human-experience/</guid>
+      
       <description>&lt;p&gt;About 107 billion people have &lt;em&gt;ever&lt;/em&gt; lived.&lt;/p&gt;
 &lt;p&gt;Across all time, the average life expectancy of a person is just under 30 years.&lt;/p&gt;
 &lt;p&gt;So, there have only been 3.21 trillion person-years experienced. Total.&lt;/p&gt;
@@ -144,7 +147,11 @@
       <title>The Future-Predicting Game Show Host</title>
       <link>https://davidbieber.com/snippets/2020-02-08-future-gameshow-host/</link>
       <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-02-08-future-gameshow-host/</guid>
+      
+        <message>A game show host reveals 2 boxes. In box A is either $1 million or $0, in box B there is $1000. You won&#39;t believe what&#39;s inside Box A!</message>
+      
       <description>&lt;p&gt;A game show host reveals 2 boxes, box A and box B. In box A is either $1 million or $0, in box B there is $1000.&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;re told, choose either just box A or both A and B.&lt;/p&gt;
 &lt;p&gt;You keep the contents of the boxes you choose.
@@ -198,7 +205,9 @@ One extreme way you may have been predictable is if the host knows exactly how e
       <title>How much time has humanity spent on different areas of science?</title>
       <link>https://davidbieber.com/snippets/2020-01-24-time-spent-on-science/</link>
       <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-01-24-time-spent-on-science/</guid>
+      
       <description>&lt;p&gt;How much time has humanity, collectively, spent researching physics?&lt;/p&gt;
 &lt;p&gt;What about chemistry? Neuroscience? Algorithms? (etc&amp;hellip;)&lt;/p&gt;
 &lt;p&gt;How has this rate of study changed over time?

@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>messager | David Bieber</title>
+    <title>messager on David Bieber</title>
     <link>https://davidbieber.com/tags/messager/</link>
-      <atom:link href="https://davidbieber.com/tags/messager/index.xml" rel="self" type="application/rss+xml" />
-    <description>messager</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 08 Jan 2022 02:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>messager</title>
-      <link>https://davidbieber.com/tags/messager/</link>
-    </image>
-    
+    <description>Recent content in messager on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Jan 2022 02:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/messager/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Two Snippets I want to write about GNG and Messager</title>
       <link>https://davidbieber.com/snippets/2022-01-08-gng-messager-snippet-plans/</link>
       <pubDate>Sat, 08 Jan 2022 02:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2022-01-08-gng-messager-snippet-plans/</guid>
+      
       <description>&lt;p&gt;I have two new ideas for snippets I want to write. They&amp;rsquo;re about Go Note Go and Messager Queue, both side projects I&amp;rsquo;ve been putting a bunch of time into the last few days. The snippet ideas are:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Using Go Note Go as an outliner&lt;/li&gt;
@@ -46,7 +43,9 @@ For others I can just make a templated message using the snippet title; the beau
       <title>Sending messages as I drift off to sleep</title>
       <link>https://davidbieber.com/post/2022-01-08-new-messager-setup/</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2022-01-08-new-messager-setup/</guid>
+      
       <description>&lt;p&gt;In this post I describe my new Messager setup,
 and how it allows me to send messages directly from Roam Research &lt;em&gt;or&lt;/em&gt;
 from a standalone keyboard (no monitor) that I keep at my bedside as I drift off to sleep, and which I take driving and camping.&lt;/p&gt;
@@ -186,7 +185,9 @@ If you do, I&amp;rsquo;ll do my best to get back to you, likely as I&amp;rsquo;m
       <title>Go Note Go Messager without Pixel-Space Automation</title>
       <link>https://davidbieber.com/snippets/2022-01-02-pixel-space-automation/</link>
       <pubDate>Sun, 02 Jan 2022 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2022-01-02-pixel-space-automation/</guid>
+      
       <description>&lt;p&gt;&lt;em&gt;This snippet was originally going to be about pixel-space automation. Then I found I didn&amp;rsquo;t need it for what I wanted to do: sending messages to Twitter, Facebook, Slack, and Discord from Go Note Go, Roam Research, and Bieber Bot.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Happy New Year! I&amp;rsquo;d really like to automate Mac apps that don&amp;rsquo;t expose actions to Automator
 using pixel-space navigation and clicks and typing to control the automation. This is why and how.&lt;/p&gt;
@@ -274,7 +275,9 @@ I&amp;rsquo;m still excited about pixel-space automation, but I&amp;rsquo;ll hav
       <title>Brainstorming How to Replicate AIM Statuses Today</title>
       <link>https://davidbieber.com/snippets/2021-12-21-aim-statuses/</link>
       <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-12-21-aim-statuses/</guid>
+      
       <description>&lt;p&gt;How do we bring back reliable aim statuses?&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;d like for folks to know if someone is genuinely available for a conversation.&lt;/p&gt;
 &lt;p&gt;Some options:&lt;/p&gt;
@@ -299,7 +302,9 @@ This seems surmountable though. Maybe I&amp;rsquo;ll give it a try.&lt;/p&gt;
       <title>Organizing a Twitter Discussion: Gathering Twitter Replies</title>
       <link>https://davidbieber.com/snippets/2021-11-20-twitter-replies/</link>
       <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-11-20-twitter-replies/</guid>
+      
       <description>&lt;p&gt;I 
 &lt;a href=&#34;https://twitter.com/Bieber/status/1461128201485402112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tweeted&lt;/a&gt; about spaced repetition earlier this week, sharing and summarizing 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-11-02-improvements-to-spaced-repetition/&#34;&gt;my latest snippet on the subject&lt;/a&gt;. A bunch of people left thoughtful replies, and I was quite pleased with the discussion. Now I want to look over the discussion holistically, but I don&amp;rsquo;t see a great way to do this. I don&amp;rsquo;t even see a way to look at all the replies to my thread in one place. I want to see not just this, but also replies to replies. TweetDeck might be able to help, but I don&amp;rsquo;t see how.&lt;/p&gt;
@@ -362,7 +367,9 @@ Since the number of search results is limited, this might not always work; it de
       <title>Accessing Your iMessages with SQL</title>
       <link>https://davidbieber.com/snippets/2020-05-20-imessage-sql-db/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-05-20-imessage-sql-db/</guid>
+      
       <description>&lt;p&gt;If you use a Mac and use iMessage, you can access your iMessages programmatically. They are stored by iMessage as a sqlite database, which you can easily access.&lt;/p&gt;
 &lt;h2 id=&#34;accessing-the-database&#34;&gt;Accessing the Database&lt;/h2&gt;
 &lt;p&gt;The database is typically stored at &lt;code&gt;~/Library/Messages/chat.db&lt;/code&gt;, though that location is configurable.&lt;/p&gt;
@@ -438,7 +445,9 @@ One perk of understanding this mechanism for me is that I&amp;rsquo;ll be able t
       <title>Posting to Hacker News Programmatically</title>
       <link>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</guid>
+      
       <description>&lt;p&gt;If you run this snippet of Python code, it will submit this 
 &lt;a href=&#34;https://davidbieber.com/snippets/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Snippet&amp;rdquo;&lt;/a&gt; (the one you&amp;rsquo;re currently reading) to Hacker News.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from html.parser import HTMLParser
@@ -501,7 +510,9 @@ session.post(
       <title>Facebook Messenger SQL Queries</title>
       <link>https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/</link>
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/</guid>
+      
       <description>&lt;p&gt;Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries&#34;&gt;previous snippet&lt;/a&gt; for analyzing my browsing history, I&amp;rsquo;ll use this snippet to sketch out some useful queries for analyzing my message history.&lt;/p&gt;
 &lt;h2 id=&#34;table-schemas&#34;&gt;Table Schemas&lt;/h2&gt;

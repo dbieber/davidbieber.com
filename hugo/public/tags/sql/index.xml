@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>sql | David Bieber</title>
+    <title>sql on David Bieber</title>
     <link>https://davidbieber.com/tags/sql/</link>
-      <atom:link href="https://davidbieber.com/tags/sql/index.xml" rel="self" type="application/rss+xml" />
-    <description>sql</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 30 Jan 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>sql</title>
-      <link>https://davidbieber.com/tags/sql/</link>
-    </image>
-    
+    <description>Recent content in sql on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SQL for the Kangaroo Auto-responder</title>
       <link>https://davidbieber.com/snippets/2021-01-30-sql-for-the-kangaroo-auto-responder/</link>
       <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-30-sql-for-the-kangaroo-auto-responder/</guid>
+      
       <description>&lt;p&gt;I turned on the 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/&#34;&gt;Kangaroo Auto-responder&lt;/a&gt; this morning. The rules for when to send a kangaroo 🦘 are as follows:&lt;/p&gt;
 &lt;p&gt;You get a kangaroo if the &lt;strong&gt;most-recent&lt;/strong&gt; message in our chat (ignoring trivial messages from you) is &lt;strong&gt;non-trivial&lt;/strong&gt;, &lt;strong&gt;read-by-me&lt;/strong&gt;, &lt;strong&gt;written-by-you&lt;/strong&gt;, &lt;strong&gt;not a response&lt;/strong&gt;, and &lt;strong&gt;eight-hours old&lt;/strong&gt;.&lt;/p&gt;
@@ -125,7 +122,9 @@ ORDER BY messenger.timestamp desc;
       <title>Accessing Your iMessages with SQL</title>
       <link>https://davidbieber.com/snippets/2020-05-20-imessage-sql-db/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-05-20-imessage-sql-db/</guid>
+      
       <description>&lt;p&gt;If you use a Mac and use iMessage, you can access your iMessages programmatically. They are stored by iMessage as a sqlite database, which you can easily access.&lt;/p&gt;
 &lt;h2 id=&#34;accessing-the-database&#34;&gt;Accessing the Database&lt;/h2&gt;
 &lt;p&gt;The database is typically stored at &lt;code&gt;~/Library/Messages/chat.db&lt;/code&gt;, though that location is configurable.&lt;/p&gt;
@@ -201,7 +200,11 @@ One perk of understanding this mechanism for me is that I&amp;rsquo;ll be able t
       <title>Detecting My Sleeping Hours from Data</title>
       <link>https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/</link>
       <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/</guid>
+      
+        <message>In this snippet I share a SQL query that estimates how much I sleep each night using only data collected from Facebook Messenger. It&#39;s not great.</message>
+      
       <description>&lt;p&gt;Between my 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;Chrome browsing history&lt;/a&gt; and my 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/&#34;&gt;Facebook Messenger message logs&lt;/a&gt;, I should be able to get a good estimate of when I&amp;rsquo;m awake and asleep.&lt;/p&gt;
@@ -220,7 +223,9 @@ I&amp;rsquo;ll have to introduce additional sources of data if I want to infer g
       <title>Daily Summaries of Browsing History</title>
       <link>https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/</guid>
+      
       <description>&lt;p&gt;Over the 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&#34;&gt;course&lt;/a&gt; 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;of&lt;/a&gt; 
@@ -322,7 +327,9 @@ if __name__ == &#39;__main__&#39;:
       <title>Date and Time Browser History Queries</title>
       <link>https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/</guid>
+      
       <description>&lt;p&gt;I wrote a 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;number of SQL queries&lt;/a&gt; for browsing my browsing history. In this snippet, I show how to amend them to filter the results by date. Google Chrome selects a slightly non-standard time storage format (microseconds since January 1, 1601 UTC), hence the need for this query stanza.&lt;/p&gt;
 &lt;p&gt;To run these queries, first make a copy of your browser history and open it in sqlite3.&lt;/p&gt;
@@ -393,7 +400,9 @@ limit 50;
       <title>Simplifying SQL Queries with &#34;WITH&#34;</title>
       <link>https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/</link>
       <pubDate>Sun, 12 Apr 2020 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/</guid>
+      
       <description>&lt;p&gt;In the 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;&amp;ldquo;More Browser History Queries&amp;rdquo; snippet&lt;/a&gt; one of the SQL queries I wrote was particularly nasty.&lt;/p&gt;
 &lt;p&gt;Since I didn&amp;rsquo;t know how to introduce intermediate variables, I had to replicate subqueries multiple times throughout the query. The result was a mess of a query. Using &lt;code&gt;WITH&lt;/code&gt; clauses, the query becomes considerably more readable and maintainable.&lt;/p&gt;
@@ -499,7 +508,9 @@ limit 50;
       <title>Facebook Messenger SQL Queries</title>
       <link>https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/</link>
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/</guid>
+      
       <description>&lt;p&gt;Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries&#34;&gt;previous snippet&lt;/a&gt; for analyzing my browsing history, I&amp;rsquo;ll use this snippet to sketch out some useful queries for analyzing my message history.&lt;/p&gt;
 &lt;h2 id=&#34;table-schemas&#34;&gt;Table Schemas&lt;/h2&gt;
@@ -651,7 +662,9 @@ However, they will have to wait until a future snippet.&lt;/p&gt;
       <title>More Browser History Queries</title>
       <link>https://davidbieber.com/snippets/2020-04-11-browser-history-queries/</link>
       <pubDate>Sat, 11 Apr 2020 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-04-11-browser-history-queries/</guid>
+      
       <description>&lt;p&gt;
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history&#34;&gt;Previously&lt;/a&gt; I listed out a few queries for poking at my browser history. Here are some more!&lt;/p&gt;
 &lt;p&gt;As before, I begin by making a copy of my browsing history and opening sqlite3:&lt;/p&gt;
@@ -888,7 +901,9 @@ I wouldn&amp;rsquo;t try modifying this query, though. It would be much better t
       <title>A Bit of Browser History Analysis</title>
       <link>https://davidbieber.com/snippets/2020-03-19-browsing-history/</link>
       <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-03-19-browsing-history/</guid>
+      
       <description>&lt;p&gt;In a 
 &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history&#34;&gt;previous snippet&lt;/a&gt; I started looking into how to analyze my browser history. Revisiting that idea tonight, I began looking into whether I might be able to infer topics of interest from my browsing history.&lt;/p&gt;
 &lt;p&gt;Using my previous post as reference, I first made a copy of my browsing history:&lt;/p&gt;
@@ -924,7 +939,11 @@ limit 50;
       <title>Planning to Analyze My Browsing History</title>
       <link>https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/</guid>
+      
+        <message>I started a plan to analyze my browser history. This was my plan.</message>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve learned recently that programmatically accessing your browsing history is rather straightforward. Really exciting! This is rich data, from which I think I&amp;rsquo;ll be able to learn a lot and hopefully combat unwanted distractions.&lt;/p&gt;
 &lt;p&gt;First let me describe what information is available, and how you can access it. Then, let&amp;rsquo;s discuss what you can do with this data. As I&amp;rsquo;ve written about previously 
 &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;[1]&lt;/a&gt; 

@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>note-taking | David Bieber</title>
+    <title>note-taking on David Bieber</title>
     <link>https://davidbieber.com/tags/note-taking/</link>
-      <atom:link href="https://davidbieber.com/tags/note-taking/index.xml" rel="self" type="application/rss+xml" />
-    <description>note-taking</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>note-taking</title>
-      <link>https://davidbieber.com/tags/note-taking/</link>
-    </image>
-    
+    <description>Recent content in note-taking on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/note-taking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sending messages as I drift off to sleep</title>
       <link>https://davidbieber.com/post/2022-01-08-new-messager-setup/</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2022-01-08-new-messager-setup/</guid>
+      
       <description>&lt;p&gt;In this post I describe my new Messager setup,
 and how it allows me to send messages directly from Roam Research &lt;em&gt;or&lt;/em&gt;
 from a standalone keyboard (no monitor) that I keep at my bedside as I drift off to sleep, and which I take driving and camping.&lt;/p&gt;
@@ -156,7 +153,9 @@ If you do, I&amp;rsquo;ll do my best to get back to you, likely as I&amp;rsquo;m
       <title>Draft Instructions for Flashcard Collection Task</title>
       <link>https://davidbieber.com/snippets/2021-11-23-flashcard-collection-task/</link>
       <pubDate>Tue, 23 Nov 2021 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-11-23-flashcard-collection-task/</guid>
+      
       <description>&lt;p&gt;Hello! This is a draft of instructions I intend to send out to volunteers for the contextual flashcard dataset collection project.
 I would love your feedback on the instructions before I send them out more widely.&lt;/p&gt;
 &lt;hr&gt;
@@ -197,7 +196,9 @@ Private information about close friends is not.&lt;/p&gt;
       <title>BIRDS: Bidirectional incremental real-time data synchronizers</title>
       <link>https://davidbieber.com/snippets/2021-11-20-birds/</link>
       <pubDate>Sat, 20 Nov 2021 02:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-11-20-birds/</guid>
+      
       <description>&lt;p&gt;The culmination of my thinking on note-taking interoperability so far is that we need &lt;strong&gt;BIRDS&lt;/strong&gt;. 🐦. Allow me to explain.&lt;/p&gt;
 &lt;p&gt;We want an &amp;ldquo;intermediate representation&amp;rdquo; for note-taking systems, to allow them to interoperate.&lt;/p&gt;
 &lt;p&gt;Here an &amp;ldquo;intermediate representation&amp;rdquo; means an &lt;strong&gt;in-process&lt;/strong&gt; representation of notes that can do &lt;strong&gt;bidirectional real-time incremental&lt;/strong&gt; syncs with any of the popular note-taking systems (any system with a connector written for it).
@@ -222,7 +223,9 @@ I would use a bird 🐧 to write my full notebase to disk locally.&lt;/p&gt;
       <title>Save my spot! Finer-grained bookmarks for incremental reading</title>
       <link>https://davidbieber.com/snippets/2021-11-20-save-my-spot/</link>
       <pubDate>Sat, 20 Nov 2021 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-11-20-save-my-spot/</guid>
+      
       <description>&lt;p&gt;When I find articles on the web, often I only read a small portion of an article before browsing away.
 Instead of giving up on the article, I would like to leave a little visual marker on the page indicating the part of the page that I reached.
 I&amp;rsquo;d then also like to automatically add a link to this marker to my notes.
@@ -243,7 +246,9 @@ and a second flow to restore to that spot on the page from the link in my notes.
       <title>Organizing a Twitter Discussion: Gathering Twitter Replies</title>
       <link>https://davidbieber.com/snippets/2021-11-20-twitter-replies/</link>
       <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-11-20-twitter-replies/</guid>
+      
       <description>&lt;p&gt;I 
 &lt;a href=&#34;https://twitter.com/Bieber/status/1461128201485402112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tweeted&lt;/a&gt; about spaced repetition earlier this week, sharing and summarizing 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-11-02-improvements-to-spaced-repetition/&#34;&gt;my latest snippet on the subject&lt;/a&gt;. A bunch of people left thoughtful replies, and I was quite pleased with the discussion. Now I want to look over the discussion holistically, but I don&amp;rsquo;t see a great way to do this. I don&amp;rsquo;t even see a way to look at all the replies to my thread in one place. I want to see not just this, but also replies to replies. TweetDeck might be able to help, but I don&amp;rsquo;t see how.&lt;/p&gt;
@@ -306,7 +311,9 @@ Since the number of search results is limited, this might not always work; it de
       <title>Machine Learning and Automation Ideas for Note-taking</title>
       <link>https://davidbieber.com/snippets/2021-10-28-ml-and-automation-for-note-taking/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-10-28-ml-and-automation-for-note-taking/</guid>
+      
       <description>&lt;p&gt;Let&amp;rsquo;s consider machine learning first, and then automation. For each we brainstorm the potential value for note-taking.&lt;/p&gt;
 &lt;h3 id=&#34;the-value-of-markmachine-learningmark-for-note-taking&#34;&gt;The Value of &lt;mark&gt;Machine Learning&lt;/mark&gt; for Note-Taking&lt;/h3&gt;
 &lt;ul&gt;
@@ -387,7 +394,9 @@ Since the number of search results is limited, this might not always work; it de
       <title>Rough Note-taking Interop Requirements</title>
       <link>https://davidbieber.com/snippets/2021-10-10-note-taking-interop-requirements/</link>
       <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-10-10-note-taking-interop-requirements/</guid>
+      
       <description>&lt;p&gt;Yesterday I mused about 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-10-09-note-taking-system-interop/&#34;&gt;the benefits an interoperability standard could provide&lt;/a&gt; to note-taking systems. Today, I extract rough requirements for such a standard from that musing.&lt;/p&gt;
 &lt;ol&gt;
@@ -431,7 +440,9 @@ if the user likes the summary, they accept it. When accepted, the feature insert
       <title>Note-taking System Interoperability</title>
       <link>https://davidbieber.com/snippets/2021-10-09-note-taking-system-interop/</link>
       <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-10-09-note-taking-system-interop/</guid>
+      
       <description>&lt;p&gt;What would be a good &lt;em&gt;standard&lt;/em&gt; for note-taking software to use to support development of system-agnostic tools like Go Note Go? In this snippet I discuss the value such a standard could provide; I expect it will be useful in future brainstorming for what exactly would go into such a standard.&lt;/p&gt;
 &lt;p&gt;I am building Go Note Go as a note-taking entry point, possibly with some basic retrieval features (e.g. &amp;ldquo;read back the last two notes I took&amp;rdquo;). I currently use Roam Research as my main note-taking system, but I&amp;rsquo;m not wedded to it forever.&lt;/p&gt;
 &lt;p&gt;So, I&amp;rsquo;m building Go Note Go to work with any note-taking system. To do so, I need a distinct uploader implementation for every note-taking system that I support. I&amp;rsquo;m reaching out to the developers at the note-taking systems to assist with this effort. It would be lovely if there was a standard, to reduce the amount of work required here.&lt;/p&gt;
@@ -460,7 +471,9 @@ if the user likes the summary, they accept it. When accepted, the feature insert
       <title>Go Note Go is public</title>
       <link>https://davidbieber.com/snippets/2021-09-26-go-note-go/</link>
       <pubDate>Sun, 26 Sep 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-09-26-go-note-go/</guid>
+      
       <description>&lt;p&gt;Go Note Go is public! I&amp;rsquo;ve been working on this for two weeks now, and today I made it public!&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://davidbieber.com/projects/go-note-go&#34;&gt;Read all about it here.&lt;/a&gt;&lt;/p&gt;
@@ -474,7 +487,9 @@ if the user likes the summary, they accept it. When accepted, the feature insert
       <title>Browserflow Note-taking Flow</title>
       <link>https://davidbieber.com/snippets/2021-07-29-note-taking-flow/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-07-29-note-taking-flow/</guid>
+      
       <description>&lt;p&gt;Quick update on the note-taking Browserflow flow I&amp;rsquo;ve been building: 
 &lt;a href=&#34;https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7&lt;/a&gt;:&lt;/p&gt;
 &lt;h2 id=&#34;how-it-works&#34;&gt;How it works&lt;/h2&gt;
@@ -516,7 +531,9 @@ if the user likes the summary, they accept it. When accepted, the feature insert
       <title>Two more Browserflow flows for Roam Research</title>
       <link>https://davidbieber.com/snippets/2021-02-13-flows-for-roam-research/</link>
       <pubDate>Sat, 13 Feb 2021 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-13-flows-for-roam-research/</guid>
+      
       <description>&lt;p&gt;I wrote three Browserflow flows for Roam Research today. None of them took me more than 20-30 minutes to write. The first one was for saving the current webpage to Roam. I 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/&#34;&gt;wrote about that flow here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The next flow I wrote is for saving any link you click on to Roam. The idea behind this flow is to prevent doing depth first exploration of the web. Better to look at a bunch of links and then later choose the most interesting, than to dive head first into the first link you click on.&lt;/p&gt;
@@ -535,7 +552,9 @@ if the user likes the summary, they accept it. When accepted, the feature insert
       <title>Saving URLs to Roam with Browserflow</title>
       <link>https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/</link>
       <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/</guid>
+      
       <description>&lt;p&gt;Using the 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-02-12-javascript-functions-for-inserting-blocks-in-roam/&#34;&gt;Roam JavaScript primitives I wrote yesterday&lt;/a&gt; it was extremely easy (less than 10 minutes, I think) to create a robust Browserflow flow for saving URLs to Roam Research.&lt;/p&gt;
 &lt;p&gt;Now when I&amp;rsquo;m browsing the web, I can press cmd-J (Browserflow&amp;rsquo;s keyboard shortcut) and choose &amp;ldquo;Roam: Save URL&amp;rdquo; from the typeahead to save the current URL to my Roam Daily Notes page.&lt;/p&gt;
@@ -556,7 +575,9 @@ await createChildBlock(urls, $url)
       <title>Taking Notes While Browsing the Web: An Idea for a Roam Research Plugin</title>
       <link>https://davidbieber.com/snippets/2020-05-15-roaming-the-web/</link>
       <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-05-15-roaming-the-web/</guid>
+      
       <description>&lt;p&gt;As I&amp;rsquo;m browsing the web, I&amp;rsquo;d like to be able to take notes in 
 &lt;a href=&#34;https://roamresearch.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research&lt;/a&gt;. In this post, I share an idea I have for a plugin or browser extension that I think would improve the experience of taking notes in Roam while browsing the web.&lt;/p&gt;
 &lt;p&gt;The plugin would do two main things automatically:&lt;/p&gt;

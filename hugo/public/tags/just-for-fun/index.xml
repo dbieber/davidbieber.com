@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Just for Fun | David Bieber</title>
+    <title>Just for Fun on David Bieber</title>
     <link>https://davidbieber.com/tags/just-for-fun/</link>
-      <atom:link href="https://davidbieber.com/tags/just-for-fun/index.xml" rel="self" type="application/rss+xml" />
-    <description>Just for Fun</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>Just for Fun</title>
-      <link>https://davidbieber.com/tags/just-for-fun/</link>
-    </image>
-    
+    <description>Recent content in Just for Fun on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/just-for-fun/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bieber Bot</title>
       <link>https://davidbieber.com/projects/bieber-bot/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/bieber-bot/</guid>
+      
       <description>&lt;p&gt;Bieber Bot is a highly motivated robot that assists me with my financials, 
 &lt;a href=&#34;https://twitter.com/Bieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tweets&lt;/a&gt; on my behalf, and keeps me productive when my brain feels otherwise.&lt;/p&gt;
 &lt;h2 id=&#34;is-bieber-bot-related-to-justin-bieber&#34;&gt;Is Bieber Bot related to Justin Bieber?&lt;/h2&gt;
@@ -50,7 +47,9 @@
       <title>Escape Castle Heterodyne</title>
       <link>https://davidbieber.com/projects/escape-castle-heterodyne/</link>
       <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/escape-castle-heterodyne/</guid>
+      
       <description>&lt;p&gt;We built an Escape Room!&lt;/p&gt;
 &lt;p&gt;Serious props to Bianca Homberg and her amazing talented group of friends for making this happen.
 I was just a small piece of this epic endeavor. Bianca was the organizer and driving force for a really impressive piece of puzzle craftsmanship.&lt;/p&gt;
@@ -82,7 +81,9 @@ I was just a small piece of this epic endeavor. Bianca was the organizer and dri
       <title>Scrabble Bot</title>
       <link>https://davidbieber.com/projects/scrabble-bot/</link>
       <pubDate>Fri, 06 Jun 2014 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/scrabble-bot/</guid>
+      
       <description>&lt;p&gt;Scrabble Bot loves Scrabble and social media! Check out Scrab&amp;rsquo;s 
 &lt;a href=&#34;http://scrabblebot.tumblr.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tumblr page&lt;/a&gt; full of Scrabble games it&amp;rsquo;s played against itself.&lt;/p&gt;
 &lt;p&gt;Scrabble Bot is also privacy conscious, and so uses Facebook under a pseudonym, &amp;ldquo;Scrab Blebot&amp;rdquo;. Scrab believes their identity is secure.&lt;/p&gt;

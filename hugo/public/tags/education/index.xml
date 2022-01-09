@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Education | David Bieber</title>
+    <title>Education on David Bieber</title>
     <link>https://davidbieber.com/tags/education/</link>
-      <atom:link href="https://davidbieber.com/tags/education/index.xml" rel="self" type="application/rss+xml" />
-    <description>Education</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 09 Jan 2020 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>Education</title>
-      <link>https://davidbieber.com/tags/education/</link>
-    </image>
-    
+    <description>Recent content in Education on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 09 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/education/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tech Day</title>
       <link>https://davidbieber.com/projects/tech-day/</link>
       <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/tech-day/</guid>
+      
       <description>&lt;p&gt;Tech Day is an educational program run by Googlers for high school students interested in technology and computer science.&lt;/p&gt;
 &lt;p&gt;The Tech Day website is available at 
 &lt;a href=&#34;https://techday.withgoogle.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;techday.withgoogle.com&lt;/a&gt;. Information about upcoming Tech Day events will be posted there as it becomes available.&lt;/p&gt;
@@ -27,7 +24,9 @@
       <title>Teach Everyone</title>
       <link>https://davidbieber.com/projects/teach-everyone/</link>
       <pubDate>Fri, 06 Jun 2014 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/teach-everyone/</guid>
+      
       <description>&lt;p&gt;The Teach Everyone website is available at 
 &lt;a href=&#34;http://teacheveryone.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;teacheveryone.org&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Note: The &lt;strong&gt;Save Video&lt;/strong&gt; functionality is not currently exposed on the website.&lt;/p&gt;
@@ -38,7 +37,9 @@
       <title>Princeton ACM</title>
       <link>https://davidbieber.com/projects/princeton-acm/</link>
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
+      
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -48,7 +49,11 @@
       <title>Learning by Teaching in Online Education</title>
       <link>https://davidbieber.com/snippets/2020-01-09-learning-by-teaching/</link>
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-01-09-learning-by-teaching/</guid>
+      
+        <message>One of the best ways to learn is to teach.</message>
+      
       <description>&lt;p&gt;Long ago (2013) I spent a summer interning at Khan Academy.
 Also long ago (2014) 
 &lt;a href=&#34;https://twitter.com/harvest_zhang&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Harvest&lt;/a&gt; and I built a tool for creating educational videos online, in the browser (
@@ -93,7 +98,9 @@ In minutes, you&amp;rsquo;re able to assemble a video teaching the material you&
       <title>MathCounts Coach Q&#43;A</title>
       <link>https://davidbieber.com/post/2013-08-16-mathcounts-coach-q-and-a/</link>
       <pubDate>Fri, 16 Aug 2013 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2013-08-16-mathcounts-coach-q-and-a/</guid>
+      
       <description>&lt;p&gt;Last week I did a Q+A for the 
 &lt;a href=&#34;http://life.khanacademy.org/post/58251244282/im-a-belieber-a-khanversation-with-sw-dev-intern&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Life at KA&lt;/a&gt; blog. The last time I did an education-centric online Q+A was more than three years earlier. Let&amp;rsquo;s take a look.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Originally posted at 
@@ -132,7 +139,9 @@ Have fun with it, and your students will have fun too (at least in principle, an
       <title>Life at KA: A Khanversation with David Bieber</title>
       <link>https://davidbieber.com/post/2013-08-14-khanversation/</link>
       <pubDate>Wed, 14 Aug 2013 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2013-08-14-khanversation/</guid>
+      
       <description>&lt;p&gt;
 &lt;a href=&#34;http://life.khanacademy.org/post/58251244282/im-a-belieber-a-khanversation-with-sw-dev-intern&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Originally posted at life.khanacademy.org&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ll dive straight into the questions for our latest Khan Academy Khanversation, this time featuring rising Princeton senior David Bieber.&lt;/p&gt;
@@ -172,7 +181,9 @@ Have fun with it, and your students will have fun too (at least in principle, an
       <title>Teach at Scale</title>
       <link>https://davidbieber.com/post/2013-08-07-teach-at-scale/</link>
       <pubDate>Wed, 07 Aug 2013 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2013-08-07-teach-at-scale/</guid>
+      
       <description>&lt;p&gt;The best way to learn is to teach. It&amp;rsquo;s also, most of the time, the most fun way to learn. And as an added bonus, the person you&amp;rsquo;re teaching learns too.&lt;/p&gt;
 &lt;p&gt;I strongly believe that you, as someone who has found themselves reading strange blogs on the internet, have a lot to offer the world in the way of teaching. So I want you to teach at scale. Yes, I&amp;rsquo;m looking at you Mom and Dad, former Facebook and Twitter interns, my fellow interns here at Khan Academy. I&amp;rsquo;m looking at you, my Princeton and Nisky friends, and my former MathCounts students. Yes, even you, HackerNews readers and Google searchers and friends of friends. I want you to give teaching at scale a try.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s hard. Don&amp;rsquo;t mislead yourself into thinking this is an easy task that I&amp;rsquo;ve laid out for you. It takes courage and confidence. When you teach at scale, you make yourself vulnerable. You have to be ready for people to catch your mistakes and challenge your teachings. People will out-think you, and you should be ready to embrace that.&lt;/p&gt;

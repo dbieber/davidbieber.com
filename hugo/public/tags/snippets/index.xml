@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>snippets | David Bieber</title>
+    <title>snippets on David Bieber</title>
     <link>https://davidbieber.com/tags/snippets/</link>
-      <atom:link href="https://davidbieber.com/tags/snippets/index.xml" rel="self" type="application/rss+xml" />
-    <description>snippets</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 08 Jan 2022 02:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>snippets</title>
-      <link>https://davidbieber.com/tags/snippets/</link>
-    </image>
-    
+    <description>Recent content in snippets on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Jan 2022 02:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/snippets/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Two Snippets I want to write about GNG and Messager</title>
       <link>https://davidbieber.com/snippets/2022-01-08-gng-messager-snippet-plans/</link>
       <pubDate>Sat, 08 Jan 2022 02:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2022-01-08-gng-messager-snippet-plans/</guid>
+      
       <description>&lt;p&gt;I have two new ideas for snippets I want to write. They&amp;rsquo;re about Go Note Go and Messager Queue, both side projects I&amp;rsquo;ve been putting a bunch of time into the last few days. The snippet ideas are:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Using Go Note Go as an outliner&lt;/li&gt;
@@ -46,7 +43,9 @@ For others I can just make a templated message using the snippet title; the beau
       <title>I made a new Post, but why?</title>
       <link>https://davidbieber.com/snippets/2022-01-08-new-post-why/</link>
       <pubDate>Sat, 08 Jan 2022 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2022-01-08-new-post-why/</guid>
+      
       <description>&lt;p&gt;The last two years I&amp;rsquo;ve mostly been writing snippets, but today I wrote 
 &lt;a href=&#34;https://davidbieber.com/post/2022-01-08-new-messager-setup&#34;&gt;a new post&lt;/a&gt;. Why?&lt;/p&gt;
 &lt;p&gt;I initially wrote it as a snippet.
@@ -69,7 +68,9 @@ It is, in part, me conceding to that piece though.&lt;/p&gt;
       <title>Snippets in Other Languages</title>
       <link>https://davidbieber.com/snippets/2021-11-16-other-languages/</link>
       <pubDate>Tue, 16 Nov 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-11-16-other-languages/</guid>
+      
       <description>&lt;p&gt;Bonjour, hello.&lt;/p&gt;
 &lt;p&gt;Puedo escribir en otras linguas. No necessito escribir todos mis snippetos en Inglés. Como se dice &amp;ldquo;snippets&amp;rdquo; en Español? Parece que la palabra es fragmentos, pero la sección es mía, y puedo llamarlo lo que quiero. Por ahora, los llamaré &amp;ldquo;snippetos&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;En particular&amp;hellip; želim pisati na hrvatski. Svaki dan učim hrvatski, ali sam još uvijek beginner. Čitam easy-croatian.com za učenje. Radim flashcards i radim spaced repetition, ali ja sum na Chapter 17, a ima 100 Chapters.&lt;/p&gt;
@@ -85,7 +86,9 @@ It is, in part, me conceding to that piece though.&lt;/p&gt;
       <title>Writing a Snippet with Go Note Go</title>
       <link>https://davidbieber.com/snippets/2021-09-27-snippet-on-go-note-go/</link>
       <pubDate>Mon, 27 Sep 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-09-27-snippet-on-go-note-go/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve been developing and concurrently using Go Note Go for two weeks now, and in that time I have come to love the frictionless way it allows me to dump thoughts into the machine. I don&amp;rsquo;t have a chance to reread what I&amp;rsquo;ve written. There&amp;rsquo;s no going back and rewording something. And more than that, there&amp;rsquo;s no waiting for the characters to show up, or switching tabs, or spell checking or anything like that.&lt;/p&gt;
 &lt;p&gt;This is the first time I&amp;rsquo;m writing a snippet using Go Note Go.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve thought about writing a snippet about Go Note Go over the last two weeks, but I decided not to until yesterday when I finally stopped keeping Go Note Go to myself.
@@ -124,7 +127,9 @@ I think it would be so cool if each supported note−taking system had an upload
       <title>A torrent of snippets!</title>
       <link>https://davidbieber.com/snippets/2021-06-17-a-torrent-of-snippets/</link>
       <pubDate>Thu, 17 Jun 2021 03:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-06-17-a-torrent-of-snippets/</guid>
+      
       <description>&lt;p&gt;A torrent of snippets!&lt;/p&gt;
 &lt;p&gt;The reason I&amp;rsquo;m putting out four snippets all at once is I have time to relax on this plane to Austin. The reason I haven&amp;rsquo;t been writing snippets in the month leading up to this&amp;hellip; I think I was shaken from the habit by the NeurIPS deadline, and then didn&amp;rsquo;t take the habit back up after the deadline passed.&lt;/p&gt;
 &lt;p&gt;I find this pattern recurring, and I remember I was already aware of it at least as far back as 2013. The pattern is: I develop a habit, I am diligent at keeping that habit until it&amp;rsquo;s broken by some event (usually travel), and then I&amp;rsquo;m slow to take the habit back up if I do at all after the perturbation has subsided. In this case, travel is actually the thing leading me to pick the snippets habit back up, rather than the thing to break the habit (although perhaps my snippets-stopping did correspond to a travel time; I&amp;rsquo;d need to look at a calendar to double check.)&lt;/p&gt;
@@ -138,7 +143,9 @@ David, on Wednesday June 23, resume the &amp;ldquo;Snippets&amp;rdquo; and the &
       <title>Tags on Snippets</title>
       <link>https://davidbieber.com/snippets/2021-05-02-snippet-tags/</link>
       <pubDate>Sun, 02 May 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-05-02-snippet-tags/</guid>
+      
       <description>&lt;p&gt;Recently I added tags to my snippets. Today, I updated the 
 &lt;a href=&#34;https://davidbieber.com/tags/&#34;&gt;tags page&lt;/a&gt; to display the number of snippets containing the tag. Now I can easily see what topics I write about the most, and which I&amp;rsquo;ve written about only a little. Here&amp;rsquo;s where the counts stand today:&lt;/p&gt;
 &lt;ul&gt;
@@ -215,7 +222,9 @@ David, on Wednesday June 23, resume the &amp;ldquo;Snippets&amp;rdquo; and the &
       <title>What links here?</title>
       <link>https://davidbieber.com/snippets/2021-04-24-backlinks/</link>
       <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-04-24-backlinks/</guid>
+      
       <description>&lt;p&gt;I wanted to write about backlinks today but didn&amp;rsquo;t get a chance (except you&amp;rsquo;re reading it, so of course I &lt;em&gt;did&lt;/em&gt; get a chance in the end).&lt;/p&gt;
 &lt;p&gt;Quick outline of what I was hoping to write about:&lt;/p&gt;
 &lt;ul&gt;
@@ -237,7 +246,9 @@ David, on Wednesday June 23, resume the &amp;ldquo;Snippets&amp;rdquo; and the &
       <title>Incomplete snippets</title>
       <link>https://davidbieber.com/snippets/2021-04-23-incomplete-snippets/</link>
       <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-04-23-incomplete-snippets/</guid>
+      
       <description>&lt;p&gt;Yesterday and two days ago I started writing 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-04-22-sensible-units&#34;&gt;a snippet called &amp;ldquo;sensible units &amp;ndash; per capita isn&amp;rsquo;t enough&amp;rdquo;&lt;/a&gt;. In this snippet I take statements with big numbers and rewrite them to make them more intuitive. For example &amp;ldquo;The global population growth rate is about 1.05% per year.&amp;rdquo; becomes &amp;ldquo;In a city of 100,000 (like Mountain View, or New Haven), the population rises by about 1050 people each year (1850 births, 700 deaths). That&amp;rsquo;s 5 new babies a day in this city on average!&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;I didn&amp;rsquo;t finish the snippet though. While I hope to finish the snippet and publish it this weekend, this experience also made me think about how to publish incomplete snippets.&lt;/p&gt;
@@ -252,7 +263,9 @@ David, on Wednesday June 23, resume the &amp;ldquo;Snippets&amp;rdquo; and the &
       <title>Resuming snippet writing?</title>
       <link>https://davidbieber.com/snippets/2021-04-17-resuming-snippet-writing/</link>
       <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-04-17-resuming-snippet-writing/</guid>
+      
       <description>&lt;p&gt;About two month ago I encountered a 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-02-21-snippets-dry-spell/&#34;&gt;snippets dry spell&lt;/a&gt;. At the time I didn&amp;rsquo;t foresee writing snippets at the same rate I had been leading up to that point. Sure enough, over the two months that followed I only wrote a handful of snippets. March saw two simultaneous Peer Learning Groups, and April lead into a period of intense virtual ping pong playing and lots of real-life hiking.&lt;/p&gt;
 &lt;p&gt;We wrapped up the Peer Learning Groups, a largely asynchronous low-commitment activity, with a virtual synchronous meet-up and coworking session. During these I produced these two snippets about what I learned for my PLG sessions: one on 
@@ -281,7 +294,9 @@ David, on Wednesday June 23, resume the &amp;ldquo;Snippets&amp;rdquo; and the &
       <title>Margin notes</title>
       <link>https://davidbieber.com/snippets/2021-01-23-margin-notes/</link>
       <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-23-margin-notes/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;d like to add margin notes to my website.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
 I&amp;rsquo;d also like to learn how to use Fiverr.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
 So, I&amp;rsquo;m going to hire someone on Fiverr to add margin notes on my website.&lt;/p&gt;
@@ -311,7 +326,9 @@ So, I&amp;rsquo;m going to hire someone on Fiverr to add margin notes on my webs
       <title>Will it be harder to write snippets now?</title>
       <link>https://davidbieber.com/snippets/2021-01-09-will-it-be-harder-to-write-snippets-now/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-09-will-it-be-harder-to-write-snippets-now/</guid>
+      
       <description>&lt;p&gt;Now that I&amp;rsquo;ve 
 &lt;a href=&#34;https://davidbieber.com/post/2021-01-08-where-are-all-the-posts-from-2020/&#34;&gt;linked to the snippets section from my main website&lt;/a&gt;, will it be harder to write snippets? I hope not. I&amp;rsquo;ll have to make an even more concerted effort to lower the quality bar though.&lt;/p&gt;
 &lt;p&gt;The goal, as always, is for the snippets section to avoid any inhibitions. Writing here should be as easy as thinking aloud. A tiny post like this ought to help in this regard.&lt;/p&gt;
@@ -322,7 +339,9 @@ So, I&amp;rsquo;m going to hire someone on Fiverr to add margin notes on my webs
       <title>Publishing Blog Posts from Roam Research Quickly and Automatically</title>
       <link>https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/</link>
       <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/</guid>
+      
       <description>&lt;p&gt;I thought today I would attempt a proper treatment of my latest automatic &amp;ldquo;
 &lt;a href=&#34;https://davidbieber.com/snippets/&#34;&gt;snippet&lt;/a&gt;&amp;rdquo; publishing system. It uses JavaScript embedded directly in Roam Research to publish snippets to my website with low latency as I write them.&lt;/p&gt;
 &lt;h2 id=&#34;prior-methods&#34;&gt;Prior methods&lt;/h2&gt;
@@ -426,7 +445,9 @@ const publishSnippet = debounce(publishSnippetRaw, 15000, true);
       <title>Even Faster Snippet Publishing from Roam</title>
       <link>https://davidbieber.com/snippets/2020-12-27-even-faster-snippet-publishing-from-roam/</link>
       <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-12-27-even-faster-snippet-publishing-from-roam/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve set up a GitHub action to enable even faster automatic publishing of snippets from Roam. This is a test-snippet I&amp;rsquo;m using while writing the auto-publisher.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s see how it behaves if I&amp;rsquo;m editing an existing snippet routinely for a while.&lt;/p&gt;
 &lt;p&gt;If it works as intended, the snippet will update itself on GitHub after I stop typing for several seconds. I&amp;rsquo;ve now stopped typing, we&amp;rsquo;ll see what happens.&lt;/p&gt;
@@ -441,7 +462,9 @@ const publishSnippet = debounce(publishSnippetRaw, 15000, true);
       <title>Improving Roam Snippet Publishing Speeds</title>
       <link>https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/</link>
       <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/</guid>
+      
       <description>&lt;p&gt;Hey folks, I have a 
 &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;workflow&lt;/a&gt; for automatically publishing &amp;ldquo;
 &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;snippets&lt;/a&gt;&amp;rdquo; to my website from Roam. Currently there&amp;rsquo;s a multi-hour latency between writing a snippet and when it appears on my website. In this snippet I&amp;rsquo;m going to muse about / ask questions about how to use &lt;strong&gt;puppeteer&lt;/strong&gt; to bring this latency down considerably. This&amp;rsquo;ll be my first time using puppeteer, so help appreciated. Read on!&lt;/p&gt;
@@ -483,7 +506,9 @@ const publishSnippet = debounce(publishSnippetRaw, 15000, true);
       <title>Looking back on my browsing history snippets</title>
       <link>https://davidbieber.com/snippets/2020-12-20-looking-back-on-my-browsing-history-snippets/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-12-20-looking-back-on-my-browsing-history-snippets/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve now written several snippets about my analyzing my browsing history programmatically. I figured I&amp;rsquo;d collect them all in one place here.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&#34;&gt;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history/&#34;&gt;https://davidbieber.com/snippets/2020-03-19-browsing-history/&lt;/a&gt;&lt;/p&gt;
@@ -507,7 +532,9 @@ const publishSnippet = debounce(publishSnippetRaw, 15000, true);
       <title>Publishing Through Roam Research</title>
       <link>https://davidbieber.com/snippets/2020-11-24-publishing-through-roam-research/</link>
       <pubDate>Tue, 24 Nov 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-11-24-publishing-through-roam-research/</guid>
+      
       <description>&lt;p&gt;With this snippet I&amp;rsquo;m testing out a new snippet publishing system: publishing snippets directly from Roam Research. Using the system is simple: I simply tag any bullet with &amp;ldquo;ok-to-publish&amp;rdquo; and Bieber Bot publishes it and its children as a snippet.&lt;/p&gt;
 &lt;p&gt;Why another way of writing snippets? I&amp;rsquo;ve been writing quite a bit in Roam lately but I haven&amp;rsquo;t been publishing snippets lately. In truth, this new publishing mechanism is more a novelty than something practically useful. It would be easy enough to copy a snippet out of Roam into a text editor or to Bieber Bot in Facebook Messenger to publish it.&lt;/p&gt;
 &lt;p&gt;It certainly is appealing to be able to publish directly in Roam where I spend a lot of my time writing though. I think being able to publish directly from Roam may appeal to many other people as well.&lt;/p&gt;
@@ -520,7 +547,9 @@ const publishSnippet = debounce(publishSnippetRaw, 15000, true);
       <title>Extracting Snippets from Roam Research</title>
       <link>https://davidbieber.com/snippets/2020-11-03-extracting-snippets-from-roam-research/</link>
       <pubDate>Tue, 03 Nov 2020 15:22:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-11-03-extracting-snippets-from-roam-research/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve been writing a lot these days inside of Roam Research. I wonder if there&amp;rsquo;s a good way to identify snippet-quality items from within my Roam database.&lt;/p&gt;
 &lt;p&gt;One option would be to pick out decent-sized sections of continuous text.
 If I&amp;rsquo;m taking notes in a bunch of different areas, that&amp;rsquo;s probably not well suited for publishing as a snippet unless I were to clean it up first.
@@ -536,7 +565,9 @@ Perhaps if I look at the diff between head and two commits back, I can avoid mis
       <title>Introducing the Snippet Queue</title>
       <link>https://davidbieber.com/snippets/2020-10-06-introducing-the-snippet-queue/</link>
       <pubDate>Tue, 06 Oct 2020 22:16:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-10-06-introducing-the-snippet-queue/</guid>
+      
       <description>&lt;p&gt;This is my first snippet published using my 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-10-06-further-reducing-the-publication-barrier-with-queuing/&#34;&gt;snippet queue idea&lt;/a&gt;. If all goes well, it will be (read: was) published tomorrow evening (October 7, 2020).&lt;/p&gt;
 &lt;p&gt;The system works like this. I store a queue of snippets in Redis. Each snippet has the title, content, and date associated with it, as well as an id number. I can have Bieber Bot enqueue a new snippet by messaging him with &amp;ldquo;Queue snippet!&amp;rdquo; and the snippet details. He also responds to queries to update, view, or remove an existing snippet, or to view the current queue of snippets.&lt;/p&gt;
@@ -548,7 +579,9 @@ Perhaps if I look at the diff between head and two commits back, I can avoid mis
       <title>Further Reducing the Publication Barrier with Queuing</title>
       <link>https://davidbieber.com/snippets/2020-10-06-further-reducing-the-publication-barrier-with-queuing/</link>
       <pubDate>Tue, 06 Oct 2020 13:29:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-10-06-further-reducing-the-publication-barrier-with-queuing/</guid>
+      
       <description>&lt;p&gt;What is the barrier to publication? It&amp;rsquo;s first and foremost a mental barrier. Sure, the act of writing presents its own challenges, but for me the mental hurdle of clicking send can be significant. Snippets lowers the barrier substantially compared with social media, messaging individuals, or even traditional blogging. Still, there&amp;rsquo;s room to lower the barrier even more; e.g. private journaling and &lt;em&gt;thinking&lt;/em&gt; itself have much lower barriers than Snippets does.&lt;/p&gt;
 &lt;p&gt;The idea today for lowering the barrier is a publication queue. In this idea, I write a snippet, send it to Bieber Bot, and he holds on to it for a bit. Then, after a day or so, he lets me know that he&amp;rsquo;s going to publish it soon. He gives me an opportunity to tell him not to publish it, but after some time has passed, he goes ahead and publishes it in my Snippets section on my behalf.&lt;/p&gt;
 &lt;p&gt;During that waiting period, I can send Bieber Bot revised versions of the Snippet, which will supersede the original. This way, when I send Bieber Bot the original snippet, I do so knowing that it will only be published as is if 1) I don&amp;rsquo;t come up with a way to improve it and 2) I don&amp;rsquo;t decide not to publish it. This takes a bit of the decision making burden off of present-David, and gives it to future-David. Between the two of them, they should be able to handle the publication no problem.&lt;/p&gt;
@@ -563,7 +596,9 @@ Perhaps if I look at the diff between head and two commits back, I can avoid mis
       <title>The Snippets I Don&#39;t Publish</title>
       <link>https://davidbieber.com/snippets/2020-10-06-the-snippets-i-dont-publish/</link>
       <pubDate>Tue, 06 Oct 2020 12:33:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-10-06-the-snippets-i-dont-publish/</guid>
+      
       <description>&lt;p&gt;The goal of Snippets is to minimize the barrier to writing as much as possible. To this end, it has been very effective. Still, there are several snippets that I write and do not publish, despite my self-insistence that the barrier to publication be minimal.&lt;/p&gt;
 &lt;p&gt;What don&amp;rsquo;t I publish, and why? Looking over my recent unpublished snippets, some themes appear. Here&amp;rsquo;s what I don&amp;rsquo;t tend to publish:&lt;/p&gt;
 &lt;ul&gt;
@@ -592,7 +627,9 @@ Perhaps if I look at the diff between head and two commits back, I can avoid mis
       <title>Why Phone Snippets (A Test Phone Snippet)</title>
       <link>https://davidbieber.com/snippets/2020-09-27-why-phone-snippets-a-test-phone-snippet/</link>
       <pubDate>Sun, 27 Sep 2020 16:49:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-09-27-why-phone-snippets-a-test-phone-snippet/</guid>
+      
       <description>&lt;p&gt;Why do I want to be able to post snippets from my phone?
 I enjoy hiking or biking somewhere pleasant, bringing a pocket-sized Bluetooth keyboard, and writing on my phone.&lt;/p&gt;
 &lt;p&gt;If you’re seeing this snippet (which you are), that means not only does posting snippets through Bieber Bot work, editing them though Bieber Bot does too.&lt;/p&gt;
@@ -603,7 +640,9 @@ I enjoy hiking or biking somewhere pleasant, bringing a pocket-sized Bluetooth k
       <title>Posting Snippets from My Phone</title>
       <link>https://davidbieber.com/snippets/2020-09-27-posting-snippets-from-my-phone/</link>
       <pubDate>Sun, 27 Sep 2020 16:32:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-09-27-posting-snippets-from-my-phone/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;d like to be able to post snippets from my phone.
 As I&amp;rsquo;ve stated before, the purpose of the snippets section of my website is to lower the barrier to me publishing as much as possible.
 Being able to post a snippet from my phone would help in this respect.&lt;/p&gt;
@@ -628,7 +667,11 @@ I&#39;d like to be able to post...
       <title>Ask Me Anywhere</title>
       <link>https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere/</link>
       <pubDate>Sat, 25 Jan 2020 10:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere/</guid>
+      
+        <message>In this post you can ask a question at _any_ point.</message>
+      
       <description>&lt;p&gt;With this post, I&amp;rsquo;m demoing a new work-in-progress feature for my blog called &amp;ldquo;Ask Me Anywhere&amp;rdquo;.
 The feature lets you leave a comment or ask a question at &lt;em&gt;any&lt;/em&gt; point while reading my writing.
 The goal is to encourage readers to respond to my writing, because I&amp;rsquo;m interested in having a conversation and hearing what you have to say.&lt;/p&gt;
@@ -650,7 +693,11 @@ The goal is to encourage readers to respond to my writing, because I&amp;rsquo;m
       <title>Writing for No Audience</title>
       <link>https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/</link>
       <pubDate>Mon, 30 Dec 2019 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/</guid>
+      
+        <message>Writing for no one is so much easier than writing for someone.</message>
+      
       <description>&lt;p&gt;I started this 
 &lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;&amp;ldquo;snippets&amp;rdquo;&lt;/a&gt; section of my website just a few days ago with the intention of being able to write without needing to put polish on a piece before publishing it.&lt;/p&gt;
 &lt;p&gt;My thinking was that I would be able to put small notes there, and half-baked ideas, and not have to worry about diluting the quality of the content of my 
@@ -719,7 +766,11 @@ The goal is to encourage readers to respond to my writing, because I&amp;rsquo;m
       <title>Learning to Communicate</title>
       <link>https://davidbieber.com/snippets/2019-12-26-learning-to-communicate/</link>
       <pubDate>Thu, 26 Dec 2019 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2019-12-26-learning-to-communicate/</guid>
+      
+        <message>My goal for 2020 was to learn to communicate better with the world. Still a goal for me.</message>
+      
       <description>&lt;p&gt;My goal for 2020 is to learn to communicate better with the world. I work in a research group at Google, and our main job function is performing research in program synthesis. But research is only as valuable as how well it is communicated. So in 2020 I&amp;rsquo;d like to get better at communicating publicly.&lt;/p&gt;
 &lt;p&gt;There are a few options for doing this. The first is writing blog posts. This may be too large an undertaking to do frequently. I&amp;rsquo;d really like something that&amp;rsquo;s lower barrier to do, and with a lower quality bar, so that I can do this more often. The natural alternative with these properties is academic Twitter. However, I want to avoid the addictive nature of Twitter. I also want to write more than 280 characters at a time, and I don&amp;rsquo;t want to put every little thing I write in front of people&amp;rsquo;s faces with equal importance. Twitter seems a good place for announcing a new paper or a Python Fire update, but not for sharing a musing like this one.&lt;/p&gt;
 &lt;p&gt;So instead I think I&amp;rsquo;m going to start by silently posting my writings to my website, but in a 
@@ -768,7 +819,11 @@ The goal is to encourage readers to respond to my writing, because I&amp;rsquo;m
       <title>Snippets for davidbieber.com</title>
       <link>https://davidbieber.com/snippets/2019-12-25-introducing-snippets/</link>
       <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2019-12-25-introducing-snippets/</guid>
+      
+        <message>Back in 2019 I introduced the &#39;snippets&#39; section to my website. This was my first snippet.</message>
+      
       <description>&lt;p&gt;Today I&amp;rsquo;m introducing the &amp;ldquo;snippets&amp;rdquo; section of my website. The goal is to give myself a place to post content online that&amp;rsquo;s extremely easy to post to, but isn&amp;rsquo;t featured prominently anywhere on the site. This way I can post things without them needing polish or production value, but still link to them and share them as I see fit.&lt;/p&gt;
 </description>
     </item>

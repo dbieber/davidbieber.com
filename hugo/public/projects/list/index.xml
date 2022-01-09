@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>David Bieber</title>
     <link>https://davidbieber.com/projects/list/</link>
-      <atom:link href="https://davidbieber.com/projects/list/index.xml" rel="self" type="application/rss+xml" />
-    <description>David Bieber</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 15 Sep 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>David Bieber</title>
-      <link>https://davidbieber.com/projects/list/</link>
-    </image>
-    
+    <description>Recent content on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/projects/list/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go Note Go</title>
       <link>https://davidbieber.com/projects/go-note-go/</link>
       <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/go-note-go/</guid>
+      
       <description>&lt;p&gt;&lt;em&gt;Go Note Go is a note-taking system for when you&amp;rsquo;re on the go, with a focus on driving and camping.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;re driving to your campsite, listening to Tiago Forte discuss Sönke Ahrens&amp;rsquo;s &amp;ldquo;How to Take Smart Notes&amp;rdquo;, when a brilliant idea strikes you. Do you pull over, pull out your phone or moleskin, and write it down? Nay. Go Note Go to the rescue.&lt;/p&gt;
 &lt;p&gt;While driving, simply press the large handheld red push button and speak your idea aloud. It will be automatically transcribed and added to your notes once an internet connection becomes available.&lt;/p&gt;
@@ -104,7 +101,9 @@
       <title>Bieber Bot</title>
       <link>https://davidbieber.com/projects/bieber-bot/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/bieber-bot/</guid>
+      
       <description>&lt;p&gt;Bieber Bot is a highly motivated robot that assists me with my financials, 
 &lt;a href=&#34;https://twitter.com/Bieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tweets&lt;/a&gt; on my behalf, and keeps me productive when my brain feels otherwise.&lt;/p&gt;
 &lt;h2 id=&#34;is-bieber-bot-related-to-justin-bieber&#34;&gt;Is Bieber Bot related to Justin Bieber?&lt;/h2&gt;
@@ -138,7 +137,9 @@
       <title>Escape Castle Heterodyne</title>
       <link>https://davidbieber.com/projects/escape-castle-heterodyne/</link>
       <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/escape-castle-heterodyne/</guid>
+      
       <description>&lt;p&gt;We built an Escape Room!&lt;/p&gt;
 &lt;p&gt;Serious props to Bianca Homberg and her amazing talented group of friends for making this happen.
 I was just a small piece of this epic endeavor. Bianca was the organizer and driving force for a really impressive piece of puzzle craftsmanship.&lt;/p&gt;
@@ -170,7 +171,9 @@ I was just a small piece of this epic endeavor. Bianca was the organizer and dri
       <title>Python Fire</title>
       <link>https://davidbieber.com/projects/python-fire/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/python-fire/</guid>
+      
       <description>&lt;p&gt;Python Fire is a Python library for automatically creating command line interfaces (CLIs) from absolutely any Python object.&lt;/p&gt;
 &lt;p&gt;Check it out at &lt;a href=&#34;https://github.com/google/python-fire&#34;&gt;https://github.com/google/python-fire&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I originally wrote Python Fire after joining Google Brain in 2016. In March 2017 we open sourced the project, and I proud and delighted by the growth and reception it has seen since.&lt;/p&gt;
@@ -207,7 +210,9 @@ $ python gcdfire.py 34 90
       <title>Tech Day</title>
       <link>https://davidbieber.com/projects/tech-day/</link>
       <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/tech-day/</guid>
+      
       <description>&lt;p&gt;Tech Day is an educational program run by Googlers for high school students interested in technology and computer science.&lt;/p&gt;
 &lt;p&gt;The Tech Day website is available at 
 &lt;a href=&#34;https://techday.withgoogle.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;techday.withgoogle.com&lt;/a&gt;. Information about upcoming Tech Day events will be posted there as it becomes available.&lt;/p&gt;
@@ -218,7 +223,9 @@ $ python gcdfire.py 34 90
       <title>at Scheduler</title>
       <link>https://davidbieber.com/projects/at-scheduler/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/at-scheduler/</guid>
+      
       <description>&lt;p&gt;The at-scheduler is a simple command line scheduler.&lt;/p&gt;
 &lt;p&gt;For installation instructions, see the 
 &lt;a href=&#34;https://github.com/dbieber/at-scheduler/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;README&lt;/a&gt; on GitHub.&lt;/p&gt;
@@ -234,7 +241,9 @@ $ python gcdfire.py 34 90
       <title>shh Shell</title>
       <link>https://davidbieber.com/projects/shh-shell/</link>
       <pubDate>Sun, 03 Aug 2014 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/shh-shell/</guid>
+      
       <description>&lt;p&gt;The shh shell is a simple shell you can use while you drift off to sleep.&lt;/p&gt;
 &lt;p&gt;Notably, you can keep your eyes closed while you use it.&lt;/p&gt;
 &lt;p&gt;The shell is controlled by typing and the only output is audio; there are no visual components of shh. It is designed to minimize the mental energy required for use, to avoid disturbing your attempt at sleep as much as possible.&lt;/p&gt;
@@ -362,7 +371,9 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <title>Scrabble Bot</title>
       <link>https://davidbieber.com/projects/scrabble-bot/</link>
       <pubDate>Fri, 06 Jun 2014 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/scrabble-bot/</guid>
+      
       <description>&lt;p&gt;Scrabble Bot loves Scrabble and social media! Check out Scrab&amp;rsquo;s 
 &lt;a href=&#34;http://scrabblebot.tumblr.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tumblr page&lt;/a&gt; full of Scrabble games it&amp;rsquo;s played against itself.&lt;/p&gt;
 &lt;p&gt;Scrabble Bot is also privacy conscious, and so uses Facebook under a pseudonym, &amp;ldquo;Scrab Blebot&amp;rdquo;. Scrab believes their identity is secure.&lt;/p&gt;
@@ -375,7 +386,9 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <title>Teach Everyone</title>
       <link>https://davidbieber.com/projects/teach-everyone/</link>
       <pubDate>Fri, 06 Jun 2014 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/teach-everyone/</guid>
+      
       <description>&lt;p&gt;The Teach Everyone website is available at 
 &lt;a href=&#34;http://teacheveryone.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;teacheveryone.org&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Note: The &lt;strong&gt;Save Video&lt;/strong&gt; functionality is not currently exposed on the website.&lt;/p&gt;
@@ -386,7 +399,9 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       <title>Princeton ACM</title>
       <link>https://davidbieber.com/projects/princeton-acm/</link>
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
+      
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
 </description>

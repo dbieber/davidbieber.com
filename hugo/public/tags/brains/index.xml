@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>brains | David Bieber</title>
+    <title>brains on David Bieber</title>
     <link>https://davidbieber.com/tags/brains/</link>
-      <atom:link href="https://davidbieber.com/tags/brains/index.xml" rel="self" type="application/rss+xml" />
-    <description>brains</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 12 Dec 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>brains</title>
-      <link>https://davidbieber.com/tags/brains/</link>
-    </image>
-    
+    <description>Recent content in brains on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/brains/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>We Could Use Augmented Reality to Simulate Prosopagnosia</title>
       <link>https://davidbieber.com/snippets/2021-12-12-prosopagnosia-augmented-reality/</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-12-12-prosopagnosia-augmented-reality/</guid>
+      
       <description>&lt;p&gt;I was watching 
 &lt;a href=&#34;https://www.youtube.com/watch?v=vFZY--lgmHs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lecture 4 of Nancy Kanwisher&amp;rsquo;s class &amp;ldquo;The Human Brain&amp;rdquo;&lt;/a&gt;,
 and it occurred to me that we could use augmented reality to simulate prosopagnosia.
@@ -59,7 +56,9 @@ Of course what I found was not my idea, but rather the reverse: using augmented 
       <title>Study Group for 9.13 The Human Brain</title>
       <link>https://davidbieber.com/snippets/2021-12-05-human-brain-study-group/</link>
       <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-12-05-human-brain-study-group/</guid>
+      
       <description>&lt;p&gt;Interested in casually learning a bit of neuroscience?
 I’m gathering a group to watch / discuss 
 &lt;a href=&#34;https://www.youtube.com/playlist?list=PLUl4u3cNGP60IKRN_pFptIBxeiMc0MCJP&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these lectures (MIT 9.13 The Human Brain, Spring 2019)&lt;/a&gt;.&lt;/p&gt;
@@ -88,7 +87,9 @@ You&amp;rsquo;re welcome to do the same, or to approach the material in a differ
       <title>Brains Don&#39;t Do Solomonoff Induction</title>
       <link>https://davidbieber.com/snippets/2021-01-06-brains-dont-do-solomonoff-induction/</link>
       <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-06-brains-dont-do-solomonoff-induction/</guid>
+      
       <description>&lt;p&gt;
 &lt;a href=&#34;http://zhat.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dan Abolafia&lt;/a&gt; asked me some thought provoking questions about Solomonoff Induction and intelligence. This snippet comes from my answers.&lt;/p&gt;
 &lt;blockquote&gt;

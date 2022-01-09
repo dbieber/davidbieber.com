@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>taking-silly-ideas-seriously | David Bieber</title>
+    <title>taking-silly-ideas-seriously on David Bieber</title>
     <link>https://davidbieber.com/tags/taking-silly-ideas-seriously/</link>
-      <atom:link href="https://davidbieber.com/tags/taking-silly-ideas-seriously/index.xml" rel="self" type="application/rss+xml" />
-    <description>taking-silly-ideas-seriously</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 21 Dec 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>taking-silly-ideas-seriously</title>
-      <link>https://davidbieber.com/tags/taking-silly-ideas-seriously/</link>
-    </image>
-    
+    <description>Recent content in taking-silly-ideas-seriously on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/taking-silly-ideas-seriously/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Brainstorming How to Replicate AIM Statuses Today</title>
       <link>https://davidbieber.com/snippets/2021-12-21-aim-statuses/</link>
       <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-12-21-aim-statuses/</guid>
+      
       <description>&lt;p&gt;How do we bring back reliable aim statuses?&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;d like for folks to know if someone is genuinely available for a conversation.&lt;/p&gt;
 &lt;p&gt;Some options:&lt;/p&gt;
@@ -41,7 +38,9 @@ This seems surmountable though. Maybe I&amp;rsquo;ll give it a try.&lt;/p&gt;
       <title>Amazon Cloud Kitchen</title>
       <link>https://davidbieber.com/snippets/2021-12-20-amazon-cloud-kitchen/</link>
       <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-12-20-amazon-cloud-kitchen/</guid>
+      
       <description>&lt;p&gt;This snippet is about a fake future service that Amazon could offer one day called Amazon Cloud Kitchen. It&amp;rsquo;s the food analog of Amazon&amp;rsquo;s existing (real) Amazon Cloud Services offerings.&lt;/p&gt;
 &lt;p&gt;The core idea with Amazon Cloud Kitchen is that users can submit recipes programmatically to the Cloud Kitchen, where a nearby warehouse of robotic chefs will automatically prepare the recipe. Once prepared it will be delivered in less than two hours, still warm, to your residence or restaurant.&lt;/p&gt;
 &lt;p&gt;When you picture robotic chefs, you may be imagining a metallic biped with a chef&amp;rsquo;s hat. That&amp;rsquo;s not what&amp;rsquo;s is happening behind the scenes in Amazon&amp;rsquo;s Cloud Kitchen.
@@ -108,7 +107,9 @@ implicit variables. In recipes, there is usually only ever a single object of a 
       <title>Amazon Beans: Only Pay for What You Eat</title>
       <link>https://davidbieber.com/snippets/2021-12-09-amazon-beans/</link>
       <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-12-09-amazon-beans/</guid>
+      
       <description>&lt;p&gt;The idea is simple, it&amp;rsquo;s silly, but I think it has surprising depth.
 It&amp;rsquo;s Amazon Beans: &amp;ldquo;only pay for what you eat&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Basically, I envision a new product from Amazon
@@ -202,7 +203,9 @@ Some costs to consider include spoilage and other lost beans, customer service, 
       <title>Machine Learning Journal of Hypotheses</title>
       <link>https://davidbieber.com/snippets/2021-11-05-hypothesis-arxiv/</link>
       <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-11-05-hypothesis-arxiv/</guid>
+      
       <description>&lt;p&gt;This snippet is about an idea for a new venue for publishing research hypotheses before any experiments have been carried out.
 We can think of the idea as a &amp;ldquo;Hypothesis Journal&amp;rdquo; or &amp;ldquo;Hypothesis Arxiv&amp;rdquo;. Similar to how arxiv.org hosts pre-prints for scholarly articles, the Hypothesis Arxiv would be a venue for researchers to submit their research hypotheses for the research community to see and evaluate. As I&amp;rsquo;m interested in having this venue serve as a place for the community to not only submit, but also discuss and evaluate the hypotheses, &amp;ldquo;Hypothesis OpenReview&amp;rdquo; might be an even more fitting title.&lt;/p&gt;
 &lt;p&gt;To narrow the scope of discussion, let&amp;rsquo;s confine ourselves to thinking about machine learning research for the time being. My hope is that such a venue would allow the machine learning community to more thoughtfully select the set of hypotheses it focuses on from year to year.&lt;/p&gt;
@@ -339,7 +342,9 @@ For many researchers, even publishing the hypotheses that they are actively work
       <title>Health Insurance DAOs</title>
       <link>https://davidbieber.com/snippets/2021-10-20-health-insurance-daos/</link>
       <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-10-20-health-insurance-daos/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve recently been learning about blockchain tech including Ethereum, smart contracts, and DAOs (distributed autonomous organizations).
 With this snippet I want to explore the idea of using a DAO as a substitute for traditional health insurance.
 Brainstroming here, I&amp;rsquo;m also intrigued by the ideas of (1) bringing 
@@ -374,7 +379,9 @@ When the adjudicators approve a claim, the HIDAO&amp;rsquo;s smart contract auto
       <title>Decentralized Global Spaced Repetition (incomplete)</title>
       <link>https://davidbieber.com/snippets/2021-08-16-dgsrs/</link>
       <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-08-16-dgsrs/</guid>
+      
       <description>&lt;p&gt;I envision a decentralized global spaced repetition system (DGSRS).
 Anyone in the world can participate, submitting entries that they&amp;rsquo;d like the world to remember.
 To participate, you both need to review entries that others want reviewed, and submit an occasional entry yourself.&lt;/p&gt;
@@ -399,7 +406,9 @@ to conlang enthusiasts trying to bring a new language into existance, to first-t
       <title>CRISPR Gardening</title>
       <link>https://davidbieber.com/snippets/2021-08-09-crispr-gardening/</link>
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-08-09-crispr-gardening/</guid>
+      
       <description>&lt;p&gt;Everyone likes their veggies crisp, so who wouldn&amp;rsquo;t want CRISPR veggies?
 After reading The Code Breaker, I&amp;rsquo;ve become progressively more excited about the possibilities that gene editing will bring in the coming decades.&lt;/p&gt;
 &lt;p&gt;Or sooner? The technology has matured remarkably quickly and is developing incredibly fast.&lt;/p&gt;
@@ -443,7 +452,9 @@ After reading The Code Breaker, I&amp;rsquo;ve become progressively more excited
       <title>Healthy Games Inter-company Compact</title>
       <link>https://davidbieber.com/snippets/2021-03-08-healthy-games-inter-company-compact/</link>
       <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-03-08-healthy-games-inter-company-compact/</guid>
+      
       <description>&lt;p&gt;This snippet is a silly, currently unworkable, but in my opinion still worthwhile idea to improve the healthiness of video games. Mobile games today are in an arms race. Make your game more addicting, and your game becomes more profitable. More addicting is not the same as more fun. They may be correlated, but the incentives of video game companies are not wholly aligned with the incentives of the players.&lt;/p&gt;
 &lt;p&gt;Why is it an &amp;ldquo;arms race&amp;rdquo;? There&amp;rsquo;s limited mindshare. Making your game addicting claims more of this mindshare. More engaging games are more profitable. And there&amp;rsquo;s no easy way for a game company to disentangle unhealthy addictive engagement from increased engagement due to increased quality of the game (is this true? will ponder&amp;hellip;)&lt;/p&gt;
 &lt;p&gt;Developers of these games will A/B test mechanisms and designs and select those that maximize engagement. This isn&amp;rsquo;t unique to video games; it applies to social media and advertising as well, but we&amp;rsquo;ll focus on video games for this snippet.&lt;/p&gt;
@@ -472,7 +483,9 @@ After reading The Code Breaker, I&amp;rsquo;ve become progressively more excited
       <title>The Efficient Minds Hypothesis</title>
       <link>https://davidbieber.com/snippets/2021-03-04-the-efficient-minds-hypothesis/</link>
       <pubDate>Thu, 04 Mar 2021 13:36:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-03-04-the-efficient-minds-hypothesis/</guid>
+      
       <description>&lt;p&gt;The &amp;ldquo;Efficient Minds Hypothesis&amp;rdquo; states that a person is able to reach whatever conclusions they are able to reach in a small finite amount of time. Unless new information is presented, after that small duration no new conclusions will be reached. Stated more succinctly, the Efficient Minds Hypothesis states that &amp;ldquo;thinking is near-instantaneous.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;This is of course, preposterous. However, when it is not named and stated so explicitly, believing the EMH is an easy trap to fall into.&lt;/p&gt;
 &lt;p&gt;There are negative consequences to believing the EMH, even implicitly or subconsciously. It can lead to asking fewer questions. It can lead to scheduling less time for planning and Great Thoughts, and spending too large a proportion of your time on building and chasing short-term goals. It can lead to too much self-reliance, and a reluctance to delegate or share the burden of a project with others.&lt;/p&gt;
@@ -504,7 +517,9 @@ A quick look at any complex task, say chess or a hard math problem, makes it app
       <title>Brainstorming: Roam Terminal</title>
       <link>https://davidbieber.com/snippets/2021-02-24-brainstorming-roam-terminal/</link>
       <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-24-brainstorming-roam-terminal/</guid>
+      
       <description>&lt;p&gt;In Roam Research, I&amp;rsquo;d like to be able to type &amp;ldquo;/terminal&amp;rdquo; to insert a shell into my current block. Each command issued in the shell will become a block hidden behind the terminal (nested but collapsed). The output of each command will become a block as well.&lt;/p&gt;
 &lt;p&gt;What sorts of commands do you want to be able to issue from within Roam? Deploying snippets. Querying the Roam graph. sshing into another machine and using it natively. Treating Roam like a file system.&lt;/p&gt;
 &lt;p&gt;Of course I&amp;rsquo;d like all the basic shell features (history, basic unix commands sed/grep/ls/cd/awk/&amp;hellip;, piping).&lt;/p&gt;
@@ -532,7 +547,9 @@ A quick look at any complex task, say chess or a hard math problem, makes it app
       <title>Magic Functions in Python</title>
       <link>https://davidbieber.com/snippets/2021-02-17-python-magic-functions/</link>
       <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-17-python-magic-functions/</guid>
+      
       <description>&lt;p&gt;In this snippet I introduce and implement, but do not condone, Python &amp;ldquo;Magic functions&amp;rdquo;.
 Magic functions are interesting to think about and to study, but I discourage their use in anything but the most experimental of code. You&amp;rsquo;ll soon see why.&lt;/p&gt;
 &lt;p&gt;A &lt;strong&gt;magic function&lt;/strong&gt; is a function where the arguments and return values are both implicit, handled through the magic of Python&amp;rsquo;s powerful stack introspection.&lt;/p&gt;
@@ -606,7 +623,9 @@ I must stress that I do not recommend this approach.&lt;/p&gt;
       <title>Repurposing my Twitter Feed</title>
       <link>https://davidbieber.com/snippets/2021-02-08-repurposing-my-twitter-feed/</link>
       <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-08-repurposing-my-twitter-feed/</guid>
+      
       <description>&lt;p&gt;Twitter&amp;rsquo;s addicting. It&amp;rsquo;s not a good use of my time, but I scroll there anyway. If I&amp;rsquo;m going to be scrolling there anyway, might as well make it worthwhile. So, I&amp;rsquo;ve decided to repurpose my Twitter timeline and inject things I actually care about into it.&lt;/p&gt;
 &lt;p&gt;How? You might think to do this with a Chrome extension, injecting content in between the existing tweets. There&amp;rsquo;s an easier way though. I&amp;rsquo;ve made a new, private Twitter account, and I programmatically&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; tweet as that.&lt;/p&gt;
 &lt;p&gt;My personal Twitter account is @Bieber, and I use a picture of myself for the profile. The new account goes by &amp;ldquo;Private Bieber&amp;rdquo;, and uses a deep dream-ified version of my profile picture.&lt;/p&gt;
@@ -633,7 +652,9 @@ I must stress that I do not recommend this approach.&lt;/p&gt;
       <title>SQL for the Kangaroo Auto-responder</title>
       <link>https://davidbieber.com/snippets/2021-01-30-sql-for-the-kangaroo-auto-responder/</link>
       <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-30-sql-for-the-kangaroo-auto-responder/</guid>
+      
       <description>&lt;p&gt;I turned on the 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/&#34;&gt;Kangaroo Auto-responder&lt;/a&gt; this morning. The rules for when to send a kangaroo 🦘 are as follows:&lt;/p&gt;
 &lt;p&gt;You get a kangaroo if the &lt;strong&gt;most-recent&lt;/strong&gt; message in our chat (ignoring trivial messages from you) is &lt;strong&gt;non-trivial&lt;/strong&gt;, &lt;strong&gt;read-by-me&lt;/strong&gt;, &lt;strong&gt;written-by-you&lt;/strong&gt;, &lt;strong&gt;not a response&lt;/strong&gt;, and &lt;strong&gt;eight-hours old&lt;/strong&gt;.&lt;/p&gt;
@@ -742,7 +763,9 @@ ORDER BY messenger.timestamp desc;
       <title>Kangaroo Auto-responder</title>
       <link>https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/</link>
       <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/</guid>
+      
       <description>&lt;p&gt;The purpose of the Kangaroo Auto-responder is to:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Avoid people expecting a response from me when I don&amp;rsquo;t realize they&amp;rsquo;re expecting a response, e.g. because I&amp;rsquo;ve forgotten about their message&lt;/li&gt;
@@ -773,7 +796,9 @@ ORDER BY messenger.timestamp desc;
       <title>am I available for conversation right now dot com</title>
       <link>https://davidbieber.com/snippets/2021-01-22-am-i-available-for-conversation-right-now-dot-com/</link>
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-22-am-i-available-for-conversation-right-now-dot-com/</guid>
+      
       <description>&lt;p&gt;I don&amp;rsquo;t know if I like this idea, but I&amp;rsquo;m giving it a try; I&amp;rsquo;ve added a &amp;ldquo;Now&amp;rdquo; page to my website (
 &lt;a href=&#34;https://davidbieber.com/now/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;davidbieber.com/now&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;The idea for now pages is described at &lt;a href=&#34;https://nownownow.com/about&#34;&gt;https://nownownow.com/about&lt;/a&gt;.&lt;/p&gt;
@@ -800,7 +825,9 @@ It says No if I have recently been on a call for a long time&lt;br/&gt;&lt;/p&gt
       <title>Clubhouse feature request: save last 60 seconds</title>
       <link>https://davidbieber.com/snippets/2021-01-20-clubhouse-feature-request-save-last-60-seconds/</link>
       <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-20-clubhouse-feature-request-save-last-60-seconds/</guid>
+      
       <description>&lt;p&gt;I have a feature request for Clubhouse. Zoom, Meet, Skype, if you&amp;rsquo;re listening, this is a feature request for you all too. The request is a button to save the &lt;em&gt;previous&lt;/em&gt; 60 seconds of audio. Maybe you&amp;rsquo;re interested because people will share the clips on social media and drive more traffic back to CH 📈🤷‍♂️. I just want the feature for note-taking 📝. Details follow.&lt;/p&gt;
 &lt;h2 id=&#34;the-button&#34;&gt;The button&lt;/h2&gt;
 &lt;p&gt;A little floppy disk save icon. 💾. Non intrusive. When clicked, it triggers a save.&lt;/p&gt;
@@ -825,7 +852,9 @@ It says No if I have recently been on a call for a long time&lt;br/&gt;&lt;/p&gt
       <title>Python hoist: immediate locals only</title>
       <link>https://davidbieber.com/snippets/2021-01-18-python-hoist-locals-only/</link>
       <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-18-python-hoist-locals-only/</guid>
+      
       <description>&lt;p&gt;The implementation of &lt;code&gt;hoist&lt;/code&gt; in my 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-01-16-python-hoist/&#34;&gt;earlier snippet&lt;/a&gt; returned the values of local variables of all functions called by the hoisted function. This new version only returns the locals of the hoisted function.&lt;/p&gt;
 &lt;p&gt;As before, you can use it like this:&lt;/p&gt;
@@ -903,7 +932,9 @@ def hoist(f):
       <title>Python hoist()</title>
       <link>https://davidbieber.com/snippets/2021-01-16-python-hoist/</link>
       <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-16-python-hoist/</guid>
+      
       <description>&lt;p&gt;I wrote a little decorator function called &lt;code&gt;hoist&lt;/code&gt;. Calling &lt;code&gt;hoist(f)&lt;/code&gt; transforms &lt;code&gt;f&lt;/code&gt;, such that instead of returning the return value of &lt;code&gt;f&lt;/code&gt;, it returns the values of all local variables in addition to the return value of &lt;code&gt;f&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;You can use it like this:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def f(x):
@@ -985,7 +1016,9 @@ Make it so that &lt;code&gt;hoist(f)(x)[&#39;value.3&#39;]&lt;/code&gt; returns 
       <title>Democratic Delegation-optional Voting</title>
       <link>https://davidbieber.com/snippets/2021-01-11-democratic-delegation-optional-voting/</link>
       <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-11-democratic-delegation-optional-voting/</guid>
+      
       <description>&lt;p&gt;In this snippet I propose a novel voting system, which I call &amp;ldquo;Democratic Delegation-optional Voting&amp;rdquo;. The core idea of the voting system is that anyone can choose to delegate their vote to a group or individual that they trust. They may change their delegate selection at any time and for any reason (including for a brief period after votes are cast, as we will see), or they may choose to cast a vote themselves rather than delegating their vote.&lt;/p&gt;
 &lt;h2 id=&#34;what-problem-does-this-voting-system-solve&#34;&gt;What problem does this voting system solve?&lt;/h2&gt;
 &lt;p&gt;Individual voters don&amp;rsquo;t have enough time or energy to research every issue up for vote. So, delegation is crucial. At the same time, voters shouldn&amp;rsquo;t yield their power to delegates entirely. If a voter feels passionately about an issue, they should not have to hope their representative&amp;rsquo;s views align with theirs.&lt;/p&gt;
@@ -1033,7 +1066,9 @@ Make it so that &lt;code&gt;hoist(f)(x)[&#39;value.3&#39;]&lt;/code&gt; returns 
       <title>A filesystem for social media</title>
       <link>https://davidbieber.com/snippets/2021-01-10-a-filesystem-for-social-media/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-10-a-filesystem-for-social-media/</guid>
+      
       <description>&lt;p&gt;
 &lt;a href=&#34;https://omar.website/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Omar Riswan&lt;/a&gt; has an excellent project called 
 &lt;a href=&#34;https://omar.website/tabfs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TabFS&lt;/a&gt; that takes your browser tabs and exposes them to you as a filesystem. When you run &lt;code&gt;ls&lt;/code&gt;, you see a list of all your open tabs. &lt;code&gt;rm&lt;/code&gt; on a tab directory closes the tab. Inspecting the tab with standard tools (&lt;code&gt;ls&lt;/code&gt;, &lt;code&gt;cat&lt;/code&gt;, &lt;code&gt;rm&lt;/code&gt;, etc) allow you to do things like reading the title or contents of the tab (yes, the whole tab&amp;rsquo;s contents!), closing the tab, or running javascript in the tab. The whole thing is quite clever.&lt;/p&gt;
@@ -1054,7 +1089,9 @@ Make it so that &lt;code&gt;hoist(f)(x)[&#39;value.3&#39;]&lt;/code&gt; returns 
       <title>Mobile Distraction Detection, at last</title>
       <link>https://davidbieber.com/snippets/2021-01-09-mobile-distraction-detection-at-last/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-09-mobile-distraction-detection-at-last/</guid>
+      
       <description>&lt;p&gt;I have implemented a minimal working version of mobile &lt;em&gt;distraction detection&lt;/em&gt;, complete with a simple intervention for when I visit distracting websites on my phone.&lt;/p&gt;
 &lt;h2 id=&#34;what-does-distraction-detection-do&#34;&gt;What does &amp;ldquo;distraction detection&amp;rdquo; do?&lt;/h2&gt;
 &lt;p&gt;It runs on my laptop and monitors my &lt;em&gt;phone&lt;/em&gt; for when I visit distracting websites. I give it a list of distracting websites for it to keep an eye out for. My list is: twitter, facebook, hacker news, google news, reddit, and youtube.&lt;/p&gt;
@@ -1099,7 +1136,9 @@ db.close()
       <title>4.2e-8 of All of Human Experience</title>
       <link>https://davidbieber.com/snippets/2020-12-03-4.2e-8-of-all-of-human-experience/</link>
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-12-03-4.2e-8-of-all-of-human-experience/</guid>
+      
       <description>&lt;p&gt;About 107 billion people have &lt;em&gt;ever&lt;/em&gt; lived.&lt;/p&gt;
 &lt;p&gt;Across all time, the average life expectancy of a person is just under 30 years.&lt;/p&gt;
 &lt;p&gt;So, there have only been 3.21 trillion person-years experienced. Total.&lt;/p&gt;
@@ -1123,7 +1162,9 @@ db.close()
       <title>Updating Google Slides through Roam Research</title>
       <link>https://davidbieber.com/snippets/2020-11-30-updating-google-slides-through-roam-research/</link>
       <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-11-30-updating-google-slides-through-roam-research/</guid>
+      
       <description>&lt;p&gt;Check out this &amp;ldquo;demo video&amp;rdquo; I made! It shows me making a presentation using Roam Research references. When I update the block in Roam that I&amp;rsquo;m referencing, the presentation gets updated automatically.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -1145,7 +1186,9 @@ db.close()
       <title>Letting Adriana put things in my Leitner Box</title>
       <link>https://davidbieber.com/snippets/2020-11-07-letting-adriana-put-things-in-my-leitner-box/</link>
       <pubDate>Sat, 07 Nov 2020 08:14:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-11-07-letting-adriana-put-things-in-my-leitner-box/</guid>
+      
       <description>&lt;p&gt;I’ve been using spaced repetition for 2-3 weeks now. I’m not using Anki or any of the prebuilt systems that track your queue of items for you. Instead, I’m keeping the things I want to study in Roam Research and using a make-shift system of tags and Browserflow Flows to make the spaced repetition system relatively frictionless.&lt;/p&gt;
 &lt;p&gt;I’ll save the details of the system for another snippet. Today, I just want to jot down the idea of allowing Adriana (through the use of Bieber Bot) to add items to my spaced repetition system.&lt;/p&gt;
 &lt;p&gt;The idea is relatively simple, but it does involve one new component that may be tricky to implement robustly. Under this idea, Adriana would be able to send Bieber Bot a message saying e.g. “help David to learn the names of the planets” and a card would be added to my spaced repetition system saying “learn the names of the planets. -Adriana”. I could then split this card into multiple cards as I usually do when I encounter a card with too much content simultaneously, or Adriana could have Bieber Bot add smaller cards one at a time.&lt;/p&gt;
@@ -1158,7 +1201,9 @@ db.close()
       <title>Introducing the Snippet Queue</title>
       <link>https://davidbieber.com/snippets/2020-10-06-introducing-the-snippet-queue/</link>
       <pubDate>Tue, 06 Oct 2020 22:16:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-10-06-introducing-the-snippet-queue/</guid>
+      
       <description>&lt;p&gt;This is my first snippet published using my 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-10-06-further-reducing-the-publication-barrier-with-queuing/&#34;&gt;snippet queue idea&lt;/a&gt;. If all goes well, it will be (read: was) published tomorrow evening (October 7, 2020).&lt;/p&gt;
 &lt;p&gt;The system works like this. I store a queue of snippets in Redis. Each snippet has the title, content, and date associated with it, as well as an id number. I can have Bieber Bot enqueue a new snippet by messaging him with &amp;ldquo;Queue snippet!&amp;rdquo; and the snippet details. He also responds to queries to update, view, or remove an existing snippet, or to view the current queue of snippets.&lt;/p&gt;
@@ -1170,7 +1215,9 @@ db.close()
       <title>Writing with GPT-3</title>
       <link>https://davidbieber.com/snippets/2020-07-22-writing-with-gpt3/</link>
       <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-07-22-writing-with-gpt3/</guid>
+      
       <description>&lt;p&gt;GPT-3 is a language model developed at Open AI, and I&amp;rsquo;ve been having a lot of fun playing with it. In fact, I&amp;rsquo;ve written this post in collaboration with GPT-3. See if you can spot which parts are written by me and which parts come from GPT-3.&lt;/p&gt;
 &lt;h2 id=&#34;part-1-brainstorming&#34;&gt;Part 1: Brainstorming&lt;/h2&gt;
 &lt;p&gt;The first thing I did when I got access to GPT-3 is use it to brainstorm uses for GPT-3. I gave it these 5 ideas:&lt;/p&gt;
@@ -1382,7 +1429,9 @@ And it doesn&amp;rsquo;t seem capable of unscrambling words (I did try this, and
       <title>Posting to Hacker News Programmatically</title>
       <link>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</guid>
+      
       <description>&lt;p&gt;If you run this snippet of Python code, it will submit this 
 &lt;a href=&#34;https://davidbieber.com/snippets/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Snippet&amp;rdquo;&lt;/a&gt; (the one you&amp;rsquo;re currently reading) to Hacker News.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from html.parser import HTMLParser
@@ -1445,7 +1494,11 @@ session.post(
       <title>Detecting My Sleeping Hours from Data</title>
       <link>https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/</link>
       <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/</guid>
+      
+        <message>In this snippet I share a SQL query that estimates how much I sleep each night using only data collected from Facebook Messenger. It&#39;s not great.</message>
+      
       <description>&lt;p&gt;Between my 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;Chrome browsing history&lt;/a&gt; and my 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/&#34;&gt;Facebook Messenger message logs&lt;/a&gt;, I should be able to get a good estimate of when I&amp;rsquo;m awake and asleep.&lt;/p&gt;
@@ -1464,7 +1517,9 @@ I&amp;rsquo;ll have to introduce additional sources of data if I want to infer g
       <title>How much time has humanity spent on different areas of science?</title>
       <link>https://davidbieber.com/snippets/2020-01-24-time-spent-on-science/</link>
       <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-01-24-time-spent-on-science/</guid>
+      
       <description>&lt;p&gt;How much time has humanity, collectively, spent researching physics?&lt;/p&gt;
 &lt;p&gt;What about chemistry? Neuroscience? Algorithms? (etc&amp;hellip;)&lt;/p&gt;
 &lt;p&gt;How has this rate of study changed over time?
@@ -1496,7 +1551,11 @@ How much of it is duplicate work (e.g. two nations or organizations independentl
       <title>Writing Assistant Tool Idea</title>
       <link>https://davidbieber.com/snippets/2020-01-13-writing-tool-idea/</link>
       <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-01-13-writing-tool-idea/</guid>
+      
+        <message>A structured question-asking tool may be useful for writing effectively.</message>
+      
       <description>&lt;h3 id=&#34;background-writing-is-hard&#34;&gt;Background: Writing is Hard&lt;/h3&gt;
 &lt;p&gt;Sometimes I find writing feels easy &amp;ndash; e.g. when 
 &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34;&gt;writing for no audience&lt;/a&gt;, when writing something you&amp;rsquo;ve already thought extensively about, when telling a story in a logical order that you&amp;rsquo;re deeply familiar with. Other times, I find writing very difficult.&lt;/p&gt;

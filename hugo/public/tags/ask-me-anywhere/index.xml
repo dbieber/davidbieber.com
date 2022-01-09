@@ -1,22 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ask-me-anywhere | David Bieber</title>
+    <title>ask-me-anywhere on David Bieber</title>
     <link>https://davidbieber.com/tags/ask-me-anywhere/</link>
-      <atom:link href="https://davidbieber.com/tags/ask-me-anywhere/index.xml" rel="self" type="application/rss+xml" />
-    <description>ask-me-anywhere</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 26 Jan 2020 10:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>ask-me-anywhere</title>
-      <link>https://davidbieber.com/tags/ask-me-anywhere/</link>
-    </image>
-    
+    <description>Recent content in ask-me-anywhere on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Jan 2020 10:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/ask-me-anywhere/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What&#39;s Next for Ask Me Anywhere?</title>
       <link>https://davidbieber.com/snippets/2020-01-26-next-steps-for-ama/</link>
       <pubDate>Sun, 26 Jan 2020 10:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-01-26-next-steps-for-ama/</guid>
+      
+        <message>My next steps for Ask Me Anywhere.</message>
+      
       <description>&lt;p&gt;Yesterday I put up an early version of 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere/&#34;&gt;Ask Me Anywhere&lt;/a&gt;. You&amp;rsquo;ll notice it&amp;rsquo;s in the snippets section of the website, rather than part of the main blog. This gives me the freedom to post it even though I know it&amp;rsquo;s not as polished as it could be.&lt;/p&gt;
 &lt;p&gt;Now that this first pass is published, it&amp;rsquo;s time to start thinking about where to go next with Ask Me Anywhere.&lt;/p&gt;
@@ -52,7 +51,11 @@ I hope you do this, as I&amp;rsquo;d love to hear any thoughts you may have.&lt;
       <title>Ask Me Anywhere</title>
       <link>https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere/</link>
       <pubDate>Sat, 25 Jan 2020 10:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere/</guid>
+      
+        <message>In this post you can ask a question at _any_ point.</message>
+      
       <description>&lt;p&gt;With this post, I&amp;rsquo;m demoing a new work-in-progress feature for my blog called &amp;ldquo;Ask Me Anywhere&amp;rdquo;.
 The feature lets you leave a comment or ask a question at &lt;em&gt;any&lt;/em&gt; point while reading my writing.
 The goal is to encourage readers to respond to my writing, because I&amp;rsquo;m interested in having a conversation and hearing what you have to say.&lt;/p&gt;

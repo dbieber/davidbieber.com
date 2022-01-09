@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>browser-history | David Bieber</title>
+    <title>browser-history on David Bieber</title>
     <link>https://davidbieber.com/tags/browser-history/</link>
-      <atom:link href="https://davidbieber.com/tags/browser-history/index.xml" rel="self" type="application/rss+xml" />
-    <description>browser-history</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 09 Jan 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>browser-history</title>
-      <link>https://davidbieber.com/tags/browser-history/</link>
-    </image>
-    
+    <description>Recent content in browser-history on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/browser-history/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mobile Distraction Detection, at last</title>
       <link>https://davidbieber.com/snippets/2021-01-09-mobile-distraction-detection-at-last/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-09-mobile-distraction-detection-at-last/</guid>
+      
       <description>&lt;p&gt;I have implemented a minimal working version of mobile &lt;em&gt;distraction detection&lt;/em&gt;, complete with a simple intervention for when I visit distracting websites on my phone.&lt;/p&gt;
 &lt;h2 id=&#34;what-does-distraction-detection-do&#34;&gt;What does &amp;ldquo;distraction detection&amp;rdquo; do?&lt;/h2&gt;
 &lt;p&gt;It runs on my laptop and monitors my &lt;em&gt;phone&lt;/em&gt; for when I visit distracting websites. I give it a list of distracting websites for it to keep an eye out for. My list is: twitter, facebook, hacker news, google news, reddit, and youtube.&lt;/p&gt;
@@ -61,7 +58,9 @@ db.close()
       <title>Looking back on my browsing history snippets</title>
       <link>https://davidbieber.com/snippets/2020-12-20-looking-back-on-my-browsing-history-snippets/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-12-20-looking-back-on-my-browsing-history-snippets/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve now written several snippets about my analyzing my browsing history programmatically. I figured I&amp;rsquo;d collect them all in one place here.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&#34;&gt;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history/&#34;&gt;https://davidbieber.com/snippets/2020-03-19-browsing-history/&lt;/a&gt;&lt;/p&gt;
@@ -85,7 +84,9 @@ db.close()
       <title>Taking Notes While Browsing the Web: An Idea for a Roam Research Plugin</title>
       <link>https://davidbieber.com/snippets/2020-05-15-roaming-the-web/</link>
       <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-05-15-roaming-the-web/</guid>
+      
       <description>&lt;p&gt;As I&amp;rsquo;m browsing the web, I&amp;rsquo;d like to be able to take notes in 
 &lt;a href=&#34;https://roamresearch.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research&lt;/a&gt;. In this post, I share an idea I have for a plugin or browser extension that I think would improve the experience of taking notes in Roam while browsing the web.&lt;/p&gt;
 &lt;p&gt;The plugin would do two main things automatically:&lt;/p&gt;
@@ -132,7 +133,11 @@ For making additions to a Roam database automatically, I expect the extension wo
       <title>Detecting My Sleeping Hours from Data</title>
       <link>https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/</link>
       <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/</guid>
+      
+        <message>In this snippet I share a SQL query that estimates how much I sleep each night using only data collected from Facebook Messenger. It&#39;s not great.</message>
+      
       <description>&lt;p&gt;Between my 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;Chrome browsing history&lt;/a&gt; and my 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/&#34;&gt;Facebook Messenger message logs&lt;/a&gt;, I should be able to get a good estimate of when I&amp;rsquo;m awake and asleep.&lt;/p&gt;
@@ -151,7 +156,9 @@ I&amp;rsquo;ll have to introduce additional sources of data if I want to infer g
       <title>Daily Summaries of Browsing History</title>
       <link>https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/</guid>
+      
       <description>&lt;p&gt;Over the 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&#34;&gt;course&lt;/a&gt; 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;of&lt;/a&gt; 
@@ -253,7 +260,9 @@ if __name__ == &#39;__main__&#39;:
       <title>Date and Time Browser History Queries</title>
       <link>https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/</guid>
+      
       <description>&lt;p&gt;I wrote a 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;number of SQL queries&lt;/a&gt; for browsing my browsing history. In this snippet, I show how to amend them to filter the results by date. Google Chrome selects a slightly non-standard time storage format (microseconds since January 1, 1601 UTC), hence the need for this query stanza.&lt;/p&gt;
 &lt;p&gt;To run these queries, first make a copy of your browser history and open it in sqlite3.&lt;/p&gt;
@@ -324,7 +333,9 @@ limit 50;
       <title>Simplifying SQL Queries with &#34;WITH&#34;</title>
       <link>https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/</link>
       <pubDate>Sun, 12 Apr 2020 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/</guid>
+      
       <description>&lt;p&gt;In the 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;&amp;ldquo;More Browser History Queries&amp;rdquo; snippet&lt;/a&gt; one of the SQL queries I wrote was particularly nasty.&lt;/p&gt;
 &lt;p&gt;Since I didn&amp;rsquo;t know how to introduce intermediate variables, I had to replicate subqueries multiple times throughout the query. The result was a mess of a query. Using &lt;code&gt;WITH&lt;/code&gt; clauses, the query becomes considerably more readable and maintainable.&lt;/p&gt;
@@ -430,7 +441,9 @@ limit 50;
       <title>More Browser History Queries</title>
       <link>https://davidbieber.com/snippets/2020-04-11-browser-history-queries/</link>
       <pubDate>Sat, 11 Apr 2020 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-04-11-browser-history-queries/</guid>
+      
       <description>&lt;p&gt;
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history&#34;&gt;Previously&lt;/a&gt; I listed out a few queries for poking at my browser history. Here are some more!&lt;/p&gt;
 &lt;p&gt;As before, I begin by making a copy of my browsing history and opening sqlite3:&lt;/p&gt;
@@ -667,7 +680,9 @@ I wouldn&amp;rsquo;t try modifying this query, though. It would be much better t
       <title>A Bit of Browser History Analysis</title>
       <link>https://davidbieber.com/snippets/2020-03-19-browsing-history/</link>
       <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-03-19-browsing-history/</guid>
+      
       <description>&lt;p&gt;In a 
 &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history&#34;&gt;previous snippet&lt;/a&gt; I started looking into how to analyze my browser history. Revisiting that idea tonight, I began looking into whether I might be able to infer topics of interest from my browsing history.&lt;/p&gt;
 &lt;p&gt;Using my previous post as reference, I first made a copy of my browsing history:&lt;/p&gt;
@@ -703,7 +718,11 @@ limit 50;
       <title>Planning to Analyze My Browsing History</title>
       <link>https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/</guid>
+      
+        <message>I started a plan to analyze my browser history. This was my plan.</message>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve learned recently that programmatically accessing your browsing history is rather straightforward. Really exciting! This is rich data, from which I think I&amp;rsquo;ll be able to learn a lot and hopefully combat unwanted distractions.&lt;/p&gt;
 &lt;p&gt;First let me describe what information is available, and how you can access it. Then, let&amp;rsquo;s discuss what you can do with this data. As I&amp;rsquo;ve written about previously 
 &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;[1]&lt;/a&gt; 

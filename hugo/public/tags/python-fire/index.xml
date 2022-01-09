@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python Fire | David Bieber</title>
+    <title>Python Fire on David Bieber</title>
     <link>https://davidbieber.com/tags/python-fire/</link>
-      <atom:link href="https://davidbieber.com/tags/python-fire/index.xml" rel="self" type="application/rss+xml" />
-    <description>Python Fire</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 14 Feb 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>Python Fire</title>
-      <link>https://davidbieber.com/tags/python-fire/</link>
-    </image>
-    
+    <description>Recent content in Python Fire on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/python-fire/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Python Fire shebang</title>
       <link>https://davidbieber.com/snippets/2021-02-14-the-python-fire-shebang/</link>
       <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-14-the-python-fire-shebang/</guid>
+      
       <description>&lt;p&gt;Happy valentine&amp;rsquo;s day! Today&amp;rsquo;s snippet is about a feature of 
 &lt;a href=&#34;https://github.com/google/python-fire&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python Fire&lt;/a&gt;, new in v0.4.0, and how you can use it to create Python Fire executables just by adding a shebang to an existing Python file. This idea is courtesy of 
 &lt;a href=&#34;https://github.com/c6401&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;c6401&lt;/a&gt; in GitHub issue 
@@ -38,7 +35,9 @@ Hello David!
       <title>Questions to Answer About Python Fire</title>
       <link>https://davidbieber.com/snippets/2020-10-22-questions-to-answer-about-python-fire/</link>
       <pubDate>Thu, 22 Oct 2020 20:31:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-10-22-questions-to-answer-about-python-fire/</guid>
+      
       <description>&lt;p&gt;Tomorrow I&amp;rsquo;m giving a talk to Women Who Code on Python Fire. Python Fire is a Python library I wrote back in 2017 that makes command line interfaces automatically out of any Python object you give it.&lt;/p&gt;
 &lt;p&gt;I have my talk planned but there are a few pieces of the story I haven&amp;rsquo;t included in my talk yet. They are 1) Why did I build Python Fire? 2) How are people using Python Fire in the real world? 3) What&amp;rsquo;s it like maintaining an open source project?&lt;/p&gt;
 &lt;p&gt;To the first question, I should explain how we used Boom at Nest. Boom was the proto-version of Fire that inspired Fire&amp;rsquo;s development. At Nest we had an ETL pipeline consisting of several distributed systems. For example data would pass through SQS, Kafka, Storm, and Pentaho while it was being ingested. We wanted to write tests for this complex series of systems. And we also wanted to be able to manually operate the systems. So we wrote Python functions for controlling each part of the system.&lt;/p&gt;
@@ -54,7 +53,11 @@ Hello David!
       <title>Jump-Cut Programming: Take 1</title>
       <link>https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/</link>
       <pubDate>Fri, 21 Feb 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/</guid>
+      
+        <message>Inspired by @realCarykh, I jump-cut into the world of automatic video editing.</message>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve been toying around with recording myself programming. Here&amp;rsquo;s a clip.&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/OxsuHWVtMSM&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;In this clip I use 
@@ -109,7 +112,9 @@ Hello David!
       <title>Introducing Python Fire</title>
       <link>https://davidbieber.com/post/2017-03-06-introducing-python-fire/</link>
       <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2017-03-06-introducing-python-fire/</guid>
+      
       <description>&lt;p&gt;&lt;em&gt;Originally posted on the Google Open Source Blog&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Today we are pleased to announce the open-sourcing of 
 &lt;a href=&#34;https://github.com/google/python-fire&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python Fire&lt;/a&gt;. Python Fire generates command line interfaces (CLIs) from any Python code. Simply call the Fire function in any Python program to automatically turn that program into a CLI. The library is available from 

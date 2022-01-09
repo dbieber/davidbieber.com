@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>peer-learning-group | David Bieber</title>
+    <title>peer-learning-group on David Bieber</title>
     <link>https://davidbieber.com/tags/peer-learning-group/</link>
-      <atom:link href="https://davidbieber.com/tags/peer-learning-group/index.xml" rel="self" type="application/rss+xml" />
-    <description>peer-learning-group</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 05 Dec 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>peer-learning-group</title>
-      <link>https://davidbieber.com/tags/peer-learning-group/</link>
-    </image>
-    
+    <description>Recent content in peer-learning-group on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/peer-learning-group/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Study Group for 9.13 The Human Brain</title>
       <link>https://davidbieber.com/snippets/2021-12-05-human-brain-study-group/</link>
       <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-12-05-human-brain-study-group/</guid>
+      
       <description>&lt;p&gt;Interested in casually learning a bit of neuroscience?
 I’m gathering a group to watch / discuss 
 &lt;a href=&#34;https://www.youtube.com/playlist?list=PLUl4u3cNGP60IKRN_pFptIBxeiMc0MCJP&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these lectures (MIT 9.13 The Human Brain, Spring 2019)&lt;/a&gt;.&lt;/p&gt;
@@ -45,7 +42,9 @@ You&amp;rsquo;re welcome to do the same, or to approach the material in a differ
       <title>Learning about Oil Pricing</title>
       <link>https://davidbieber.com/snippets/2021-04-15-oil-pricing/</link>
       <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-04-15-oil-pricing/</guid>
+      
       <description>&lt;p&gt;For the March 2021 Climate Change Peer Learning Group, I spent a couple of hours learning about Oil Pricing. This proved far too large a topic to cover in the allotted time, far more so than for any of the other topics I&amp;rsquo;ve studied in a PLG before. Here&amp;rsquo;s what I learned.&lt;/p&gt;
 &lt;h2 id=&#34;learning-trajectory&#34;&gt;Learning Trajectory&lt;/h2&gt;
 &lt;p&gt;I started with Wikipedia and some assorted Googling to get the basics of crude oil, shale, natural gas, to get an idea for their rough production levels around the world, and to learn a bit of history about OPEC. Eventually, I landed on 
@@ -87,7 +86,9 @@ In 1973: an unwarranted energy scare leads to the Arab oil embargo. The Middle E
       <title>Learning about LASIK</title>
       <link>https://davidbieber.com/snippets/2021-04-08-laser-eye-surgery/</link>
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-04-08-laser-eye-surgery/</guid>
+      
       <description>&lt;p&gt;My topic for the 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-03-11-peer-learning-group-topics/&#34;&gt;March 2021 Peer Learning Group&lt;/a&gt; was &amp;ldquo;Laser Eye Surgery.&amp;rdquo; So, I spent an hour learning about LASIK. Here&amp;rsquo;s what I learned.&lt;/p&gt;
 &lt;h2 id=&#34;the-name-lasik&#34;&gt;The name &amp;ldquo;LASIK&amp;rdquo;&lt;/h2&gt;
@@ -166,7 +167,9 @@ It&amp;rsquo;s a special knife though, designed to create the micron-thin slip i
       <title>March 2021 Peer Learning Group Topics</title>
       <link>https://davidbieber.com/snippets/2021-03-11-peer-learning-group-topics/</link>
       <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-03-11-peer-learning-group-topics/</guid>
+      
       <description>&lt;p&gt;We have two simultaneous Peer Learning Groups running this month, one on all manner of miscellaneous topics, and one specifically on climate change. Here are the topics we&amp;rsquo;re learning about in each.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Misc topics:&lt;/strong&gt;&lt;br&gt;
 March 2: Laser eye surgery&lt;br&gt;
@@ -192,7 +195,9 @@ March 22: Synthetic meat&lt;br&gt;&lt;/p&gt;
       <title>Peer Learning Group Sign Up</title>
       <link>https://davidbieber.com/snippets/2021-02-07-peer-learning-group-sign-up/</link>
       <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-07-peer-learning-group-sign-up/</guid>
+      
       <description>&lt;p&gt;Peer Learning Group is an experiment for learning new things and meeting new people. I&amp;rsquo;d love for you to join.
 The experiment will last for four weeks, and requires only a small time commitment during this period (just a few hours total).
 During these four weeks, you will learn about several topics, and you will also teach the group about one or two topics yourself.
@@ -217,7 +222,9 @@ Additional details about &amp;ldquo;how it works&amp;rdquo; below the fold. We&a
       <title>Ways to improve Peer Learning Group</title>
       <link>https://davidbieber.com/snippets/2021-02-07-ways-to-improve-peer-learning-group/</link>
       <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-07-ways-to-improve-peer-learning-group/</guid>
+      
       <description>&lt;p&gt;In this snippet I list out things I plan to do to improve Peer Learning Group for a future iteration.&lt;/p&gt;
 &lt;h3 id=&#34;1-fewer-topics-per-day&#34;&gt;1. Fewer topics per day&lt;/h3&gt;
 &lt;p&gt;In the first round of Peer Learning Group, we had a topic almost every single day, with just two days off in the middle.&lt;/p&gt;
@@ -250,7 +257,9 @@ Additional details about &amp;ldquo;how it works&amp;rdquo; below the fold. We&a
       <title>Peer Learning Group Feedback</title>
       <link>https://davidbieber.com/snippets/2021-01-24-peer-learning-group-feedback/</link>
       <pubDate>Sun, 24 Jan 2021 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-24-peer-learning-group-feedback/</guid>
+      
       <description>&lt;p&gt;You can use this form to submit feedback about the January 25, 2021 - February 7, 2021 Peer Learning Group. Make sure to leave your name or email if you want a response, otherwise its anonymous. You can also 
 &lt;a href=&#34;https://messenger.com/t/dbieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;message me directly&lt;/a&gt;.&lt;/p&gt;
 &lt;iframe src=&#34;https://docs.google.com/forms/d/e/1FAIpQLSe3kh5uq6OFLakI4Uf7GEMn0POuDqfMUwumKactjHaixfdEAQ/viewform?embedded=true&#34; width=&#34;640&#34; height=&#34;545&#34; frameborder=&#34;0&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34;&gt;Loading…&lt;/iframe&gt;
@@ -261,7 +270,9 @@ Additional details about &amp;ldquo;how it works&amp;rdquo; below the fold. We&a
       <title>Introducing Peer Learning Group</title>
       <link>https://davidbieber.com/snippets/2021-01-14-peer-learning-group/</link>
       <pubDate>Thu, 14 Jan 2021 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-14-peer-learning-group/</guid>
+      
       <description>&lt;p&gt;&lt;em&gt;Alright. I&amp;rsquo;ve been toying with this idea for months now. Perfection is the enemy of the good. It&amp;rsquo;s time to launch a peer learning experiment. Here we go.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Hello!
 Peer Learning Group is an experiment for learning new things and meeting new people. And I&amp;rsquo;d love for you to join.

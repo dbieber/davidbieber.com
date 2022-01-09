@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>attention | David Bieber</title>
+    <title>attention on David Bieber</title>
     <link>https://davidbieber.com/tags/attention/</link>
-      <atom:link href="https://davidbieber.com/tags/attention/index.xml" rel="self" type="application/rss+xml" />
-    <description>attention</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 07 Jan 2022 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>attention</title>
-      <link>https://davidbieber.com/tags/attention/</link>
-    </image>
-    
+    <description>Recent content in attention on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/attention/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Efficient Minds Fallacy</title>
       <link>https://davidbieber.com/snippets/2022-01-07-efficient-minds-fallacy/</link>
       <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2022-01-07-efficient-minds-fallacy/</guid>
+      
       <description>&lt;p&gt;&lt;em&gt;This snippet is similar to these related snippets from March 2021. [
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-03-04-the-efficient-minds-hypothesis/&#34;&gt;1&lt;/a&gt;][
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-03-10-efficient-minds-hypothesis-failing&#34;&gt;2&lt;/a&gt;]&lt;/em&gt;&lt;/p&gt;
@@ -49,7 +46,9 @@
       <title>Phone in the kitchen evaluation</title>
       <link>https://davidbieber.com/snippets/2021-08-22-phone-in-kitchen-eval/</link>
       <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-08-22-phone-in-kitchen-eval/</guid>
+      
       <description>&lt;p&gt;Last month I decided to start keeping my phone in the kitchen while I&amp;rsquo;m in the house. I said I&amp;rsquo;d evaluate the decision after 6 weeks and decide whether to recommit. It&amp;rsquo;s been six weeks, and I think it was an excellent decision. I will absolutely continue doing this going forward.&lt;/p&gt;
 &lt;p&gt;I find I get more time in the mornings, because scrolling in bed or on the toilet isn&amp;rsquo;t really an option. Similarly in the evenings, scrolling in bed before going to sleep isn&amp;rsquo;t something I can do by accident. I do find I spend more time in the kitchen, in order to use my phone. So, I haven&amp;rsquo;t eliminated mindless scrolling altogether. My phone usage has decreased considerably overall though.&lt;/p&gt;
 &lt;p&gt;The oddest thing about it is that I don&amp;rsquo;t always have a way of knowing the itme when I wake up. I may want to put a non-phone clock in the bedroom to compensate for this.&lt;/p&gt;
@@ -64,7 +63,9 @@
       <title>Keeping my phone in the kitchen</title>
       <link>https://davidbieber.com/snippets/2021-07-08-phone-in-kitchen/</link>
       <pubDate>Thu, 08 Jul 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-07-08-phone-in-kitchen/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve decided to keep my phone in the kitchen while I&amp;rsquo;m in the house.
 The goal is to reduce scrolling in the morning and evening, and prevent distractions more generally.
 By keeping the phone in the kitchen, I&amp;rsquo;ll be unable to scroll mindlessly when I first wake up (unless of course I go to the kitchen to do so).&lt;/p&gt;
@@ -77,7 +78,9 @@ By keeping the phone in the kitchen, I&amp;rsquo;ll be unable to scroll mindless
       <title>Simplest Possible Case of the Efficient Minds Hypothesis Failing</title>
       <link>https://davidbieber.com/snippets/2021-03-10-efficient-minds-hypothesis-failing/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-03-10-efficient-minds-hypothesis-failing/</guid>
+      
       <description>&lt;p&gt;Suppose you know $A$, and you know $A \to B$. Conventional wisdom suggests you also know $B$. However, this is not necessarily true. Conventional wisdom has incorrectly assumed the 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-03-04-the-efficient-minds-hypothesis/&#34;&gt;Efficient Minds Hypothesis&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Why isn&amp;rsquo;t this true? Isn&amp;rsquo;t it the first thing you&amp;rsquo;re taught in an Introductory Logic course? The reason is that it takes time and attention to conclude $B$ given that you know (1) $A$ and (2) $A \to B$. Whether or not you&amp;rsquo;ve noticed that you know both (1) and (2) and made the connection between them isn&amp;rsquo;t specified, so we can&amp;rsquo;t conclude that you&amp;rsquo;ve reached the conclusion $B$.&lt;/p&gt;
@@ -92,7 +95,9 @@ By keeping the phone in the kitchen, I&amp;rsquo;ll be unable to scroll mindless
       <title>Healthy Games Inter-company Compact</title>
       <link>https://davidbieber.com/snippets/2021-03-08-healthy-games-inter-company-compact/</link>
       <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-03-08-healthy-games-inter-company-compact/</guid>
+      
       <description>&lt;p&gt;This snippet is a silly, currently unworkable, but in my opinion still worthwhile idea to improve the healthiness of video games. Mobile games today are in an arms race. Make your game more addicting, and your game becomes more profitable. More addicting is not the same as more fun. They may be correlated, but the incentives of video game companies are not wholly aligned with the incentives of the players.&lt;/p&gt;
 &lt;p&gt;Why is it an &amp;ldquo;arms race&amp;rdquo;? There&amp;rsquo;s limited mindshare. Making your game addicting claims more of this mindshare. More engaging games are more profitable. And there&amp;rsquo;s no easy way for a game company to disentangle unhealthy addictive engagement from increased engagement due to increased quality of the game (is this true? will ponder&amp;hellip;)&lt;/p&gt;
 &lt;p&gt;Developers of these games will A/B test mechanisms and designs and select those that maximize engagement. This isn&amp;rsquo;t unique to video games; it applies to social media and advertising as well, but we&amp;rsquo;ll focus on video games for this snippet.&lt;/p&gt;
@@ -121,7 +126,9 @@ By keeping the phone in the kitchen, I&amp;rsquo;ll be unable to scroll mindless
       <title>The Efficient Minds Hypothesis</title>
       <link>https://davidbieber.com/snippets/2021-03-04-the-efficient-minds-hypothesis/</link>
       <pubDate>Thu, 04 Mar 2021 13:36:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-03-04-the-efficient-minds-hypothesis/</guid>
+      
       <description>&lt;p&gt;The &amp;ldquo;Efficient Minds Hypothesis&amp;rdquo; states that a person is able to reach whatever conclusions they are able to reach in a small finite amount of time. Unless new information is presented, after that small duration no new conclusions will be reached. Stated more succinctly, the Efficient Minds Hypothesis states that &amp;ldquo;thinking is near-instantaneous.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;This is of course, preposterous. However, when it is not named and stated so explicitly, believing the EMH is an easy trap to fall into.&lt;/p&gt;
 &lt;p&gt;There are negative consequences to believing the EMH, even implicitly or subconsciously. It can lead to asking fewer questions. It can lead to scheduling less time for planning and Great Thoughts, and spending too large a proportion of your time on building and chasing short-term goals. It can lead to too much self-reliance, and a reluctance to delegate or share the burden of a project with others.&lt;/p&gt;
@@ -153,7 +160,9 @@ A quick look at any complex task, say chess or a hard math problem, makes it app
       <title>Find yourself typing t-ENTER often?</title>
       <link>https://davidbieber.com/snippets/2021-02-10-find-yourself-typing-t-enter-often/</link>
       <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-10-find-yourself-typing-t-enter-often/</guid>
+      
       <description>&lt;p&gt;A common attention pitfall is to mindless type cmd-t t ENTER. cmd-t creates a new tab. &amp;ldquo;t&amp;rdquo; autocompletes to twitter.com. ENTER. Four keystrokes and you&amp;rsquo;re scrolling. &amp;ldquo;r&amp;rdquo; for reddit. &amp;ldquo;f&amp;rdquo; for facebook. etc.&lt;/p&gt;
 &lt;p&gt;Less than a second of mindless activity, leading to hundreds of seconds (minutes? hours?) of scrolling that you didn&amp;rsquo;t intend to do.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s the solution. &lt;strong&gt;Delete websites from your browser&amp;rsquo;s autocomplete.&lt;/strong&gt;&lt;/p&gt;
@@ -168,7 +177,9 @@ A quick look at any complex task, say chess or a hard math problem, makes it app
       <title>Repurposing my Twitter Feed</title>
       <link>https://davidbieber.com/snippets/2021-02-08-repurposing-my-twitter-feed/</link>
       <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-08-repurposing-my-twitter-feed/</guid>
+      
       <description>&lt;p&gt;Twitter&amp;rsquo;s addicting. It&amp;rsquo;s not a good use of my time, but I scroll there anyway. If I&amp;rsquo;m going to be scrolling there anyway, might as well make it worthwhile. So, I&amp;rsquo;ve decided to repurpose my Twitter timeline and inject things I actually care about into it.&lt;/p&gt;
 &lt;p&gt;How? You might think to do this with a Chrome extension, injecting content in between the existing tweets. There&amp;rsquo;s an easier way though. I&amp;rsquo;ve made a new, private Twitter account, and I programmatically&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; tweet as that.&lt;/p&gt;
 &lt;p&gt;My personal Twitter account is @Bieber, and I use a picture of myself for the profile. The new account goes by &amp;ldquo;Private Bieber&amp;rdquo;, and uses a deep dream-ified version of my profile picture.&lt;/p&gt;
@@ -195,7 +206,9 @@ A quick look at any complex task, say chess or a hard math problem, makes it app
       <title>A Flow for Focused Reading</title>
       <link>https://davidbieber.com/snippets/2021-02-05-focused-reading/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-05-focused-reading/</guid>
+      
       <description>&lt;p&gt;As you can see from the snippet you&amp;rsquo;re currently reading, I&amp;rsquo;ve implemented a simple tool to help with focused reading. (It&amp;rsquo;s 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-02-02-focused-reading-browserflow-flow-idea/&#34;&gt;the idea from the previous snippet&lt;/a&gt;). The majority of the page is dimmed, except for a few lines above and below your mouse cursor. As you move your mouse, the focused region follows. Give it a try; move your mouse (or touch) over the next paragraph, and watch as the light region follows.&lt;/p&gt;
 &lt;p&gt;This is useful for staying focused when reading. If your eyes or mind wander while reading, it&amp;rsquo;s easy to quickly bring your attention back to exactly where you left off.&lt;/p&gt;
@@ -263,7 +276,9 @@ document.addEventListener(&#39;touchmove&#39;, function(event) {
       <title>Focused Reading Browserflow Flow Idea</title>
       <link>https://davidbieber.com/snippets/2021-02-02-focused-reading-browserflow-flow-idea/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-02-focused-reading-browserflow-flow-idea/</guid>
+      
       <description>&lt;p&gt;This idea for an assistive technology for focused reading comes from 
 &lt;a href=&#34;https://accessibe.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;accessiBe&lt;/a&gt;. I stumbled upon it on 
 &lt;a href=&#34;https://www.tasteofhome.com/recipes/homemade-potato-chips/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tasteofhome.com&lt;/a&gt;. The idea is to make the web more accessible to folks with ADHD by dimming the part of the screen they&amp;rsquo;re not actively looking at.&lt;/p&gt;
@@ -281,7 +296,9 @@ document.addEventListener(&#39;touchmove&#39;, function(event) {
       <title>Kangaroo Auto-responder</title>
       <link>https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/</link>
       <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/</guid>
+      
       <description>&lt;p&gt;The purpose of the Kangaroo Auto-responder is to:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Avoid people expecting a response from me when I don&amp;rsquo;t realize they&amp;rsquo;re expecting a response, e.g. because I&amp;rsquo;ve forgotten about their message&lt;/li&gt;
@@ -312,7 +329,9 @@ document.addEventListener(&#39;touchmove&#39;, function(event) {
       <title>Notifications in Roam Research</title>
       <link>https://davidbieber.com/snippets/2021-01-25-notifications-in-roam-research/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-25-notifications-in-roam-research/</guid>
+      
       <description>&lt;p&gt;
 &lt;a href=&#34;https://twitter.com/hashtag/RoamGames&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#RoamGames&lt;/a&gt; are upon us! The challenge: &lt;em&gt;project management&lt;/em&gt; in Roam.&lt;/p&gt;
 &lt;p&gt;So, let&amp;rsquo;s talk notifications. They&amp;rsquo;re going to be essential for any multiplayer Roam scenario. They&amp;rsquo;re also ruthless attention vampires that kill productivity. We&amp;rsquo;ve got to get this right.&lt;/p&gt;
@@ -437,7 +456,9 @@ notify(&amp;quot;You&#39;ve got mail.&amp;quot;);
       <title>am I available for conversation right now dot com</title>
       <link>https://davidbieber.com/snippets/2021-01-22-am-i-available-for-conversation-right-now-dot-com/</link>
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-22-am-i-available-for-conversation-right-now-dot-com/</guid>
+      
       <description>&lt;p&gt;I don&amp;rsquo;t know if I like this idea, but I&amp;rsquo;m giving it a try; I&amp;rsquo;ve added a &amp;ldquo;Now&amp;rdquo; page to my website (
 &lt;a href=&#34;https://davidbieber.com/now/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;davidbieber.com/now&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;The idea for now pages is described at &lt;a href=&#34;https://nownownow.com/about&#34;&gt;https://nownownow.com/about&lt;/a&gt;.&lt;/p&gt;
@@ -464,7 +485,9 @@ It says No if I have recently been on a call for a long time&lt;br/&gt;&lt;/p&gt
       <title>Plugged directly into the internet</title>
       <link>https://davidbieber.com/snippets/2021-01-13-plugged-directly-into-the-internet/</link>
       <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-13-plugged-directly-into-the-internet/</guid>
+      
       <description>&lt;p&gt;I don&amp;rsquo;t do a lot of social media, and so over the holidays when I became active on several online discussion platforms simultaneously, I was a bit overwhelmed. I felt like I&amp;rsquo;d been plugged directly into the internet.&lt;/p&gt;
 &lt;p&gt;On the one hand, I enjoyed the conversation. I liked that there was always conversation happening. It skipped right over the step of &lt;em&gt;initiating&lt;/em&gt; a conversation, which requires an activation energy to cross. And it eliminated any need for &lt;em&gt;planning&lt;/em&gt; a conversation, which contributes to that activation energy requirement.&lt;/p&gt;
 &lt;p&gt;However, it was like drinking from a firehose.&lt;/p&gt;
@@ -483,7 +506,9 @@ It says No if I have recently been on a call for a long time&lt;br/&gt;&lt;/p&gt
       <title>Mobile Distraction Detection, at last</title>
       <link>https://davidbieber.com/snippets/2021-01-09-mobile-distraction-detection-at-last/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-09-mobile-distraction-detection-at-last/</guid>
+      
       <description>&lt;p&gt;I have implemented a minimal working version of mobile &lt;em&gt;distraction detection&lt;/em&gt;, complete with a simple intervention for when I visit distracting websites on my phone.&lt;/p&gt;
 &lt;h2 id=&#34;what-does-distraction-detection-do&#34;&gt;What does &amp;ldquo;distraction detection&amp;rdquo; do?&lt;/h2&gt;
 &lt;p&gt;It runs on my laptop and monitors my &lt;em&gt;phone&lt;/em&gt; for when I visit distracting websites. I give it a list of distracting websites for it to keep an eye out for. My list is: twitter, facebook, hacker news, google news, reddit, and youtube.&lt;/p&gt;
@@ -528,7 +553,9 @@ db.close()
       <title>Distraction detection: Proto acquired!</title>
       <link>https://davidbieber.com/snippets/2021-01-08-distraction-detection-proto-acquired/</link>
       <pubDate>Fri, 08 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-08-distraction-detection-proto-acquired/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;m &lt;strong&gt;inching&lt;/strong&gt; my way toward writing a distraction detector that will allow Bieber Bot to notice when I&amp;rsquo;m distracted on my phone and stage an intervention. (Wow!, I first pitched this idea (to myself) 
 &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&#34;&gt;in one of my very first snippets&lt;/a&gt;, back in 2019.)&lt;/p&gt;
 &lt;p&gt;Most recently 
@@ -545,7 +572,9 @@ db.close()
       <title>Spaced Repetition in Roam Research</title>
       <link>https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/</link>
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/</guid>
+      
       <description>&lt;p&gt;There are many ways to do spaced repetition in Roam Research. This post describes mine. I was inspired to start this two months ago by reading 
 &lt;a href=&#34;https://ncase.me/remember/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nicky Case&amp;rsquo;s comic on spaced repetition&lt;/a&gt;, and I highly recommend the read.&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Spaced repetition&amp;rdquo; just means studying flashcards, studying the cards you know best less often, and study the cards you struggle with more often. It&amp;rsquo;s a powerful technique for learning and remembering material, whether you&amp;rsquo;re a student or a lifelong learner.&lt;/p&gt;
@@ -636,7 +665,9 @@ db.close()
       <title>Programmatically Accessing Chrome&#39;s “Tabs from other devices” Data</title>
       <link>https://davidbieber.com/snippets/2021-01-01-programmatically-accessing-chromes-tabs-from-other-devices-data/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-01-programmatically-accessing-chromes-tabs-from-other-devices-data/</guid>
+      
       <description>&lt;p&gt;I use Google Chrome on my Mac laptop and on my iPhone, and I&amp;rsquo;m logged in to my Google account in both places with syncing turned on. If I go to &amp;ldquo;chrome://history/syncedTabs&amp;rdquo; on my computer I can see what tabs I have open on my phone. Now, I&amp;rsquo;d like to access this data programatically.&lt;/p&gt;
 &lt;p&gt;With the help of &lt;code&gt;grep&lt;/code&gt;, I&amp;rsquo;ve figured out that this data is stored in &lt;code&gt;~/Library/Application Support/Google/Chrome/Profile 1/Sync Data/LevelDB/&lt;/code&gt; (Probably for most people the path would be &lt;code&gt;~/Library/Application Support/Google/Chrome/Default/Sync Data/LevelDB/&lt;/code&gt;). Be careful to escape the spaces in the file path!&lt;/p&gt;
 &lt;p&gt;To read from a LevelDB database, I first installed leveldb with &lt;code&gt;brew install leveldb&lt;/code&gt;, and then I installed a Python LevelDB client: &lt;code&gt;pip install plyvel&lt;/code&gt;.&lt;/p&gt;
@@ -666,7 +697,9 @@ for key, value in db.iterator():
       <title>Infinite Distractions and Getting a Good Sear</title>
       <link>https://davidbieber.com/snippets/2020-10-01-infinite-distractions-and-getting-a-good-sear/</link>
       <pubDate>Thu, 01 Oct 2020 10:54:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-10-01-infinite-distractions-and-getting-a-good-sear/</guid>
+      
       <description>&lt;p&gt;These days I have six &amp;ldquo;infinite distractions&amp;rdquo; — things I do mindlessly that are roughly limitless in content. They are: YouTube, YCombinator News, Google News, Reddit, Facebook, and Twitter.&lt;/p&gt;
 &lt;p&gt;Some of these are new additions to my repertoire, added I expect in response to my efforts to suppress viewing the others.
 I&amp;rsquo;m going to try a strategy of writing down the distraction rather than attending to it whenever I am drawn to it. Additionally, when my brain craves something like this, I&amp;rsquo;m going to make an effort to do one of the following instead: reaching out to to a friend, or going down the rabbit hole on a particular topic.&lt;/p&gt;
@@ -679,7 +712,9 @@ I&amp;rsquo;m going to try a strategy of writing down the distraction rather tha
       <title>Facebook Mobile Website: News Feed in Chronological Order</title>
       <link>https://davidbieber.com/snippets/2020-06-28-facebook-chronological-order/</link>
       <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-06-28-facebook-chronological-order/</guid>
+      
       <description>&lt;p&gt;On your phone, you can navigate to 
 &lt;a href=&#34;https://www.facebook.com/home.php?sk=h_chr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.facebook.com/home.php?sk=h_chr&lt;/a&gt; to view your News Feed on the Facebook website in chronological order.&lt;/p&gt;
 &lt;p&gt;There are also excellent apps for hiding your Facebook News Feed if you find it draining on your attention, but unfortunately they don&amp;rsquo;t work on mobile:&lt;/p&gt;
@@ -703,7 +738,9 @@ I&amp;rsquo;m going to try a strategy of writing down the distraction rather tha
       <title>Principles of Pico</title>
       <link>https://davidbieber.com/snippets/2020-03-14-principles-of-pico/</link>
       <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-03-14-principles-of-pico/</guid>
+      
       <description>&lt;p&gt;Here&amp;rsquo;s an attempt at capturing and organizing my thoughts on Pico, from our conversation about it March.&lt;/p&gt;
 &lt;p&gt;First, an attempt at an overview of the Pico system.&lt;/p&gt;
 &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
@@ -771,7 +808,11 @@ If a card represents an idea from my notes, I&amp;rsquo;d like to be able to rea
       <title>Writing Assistant Tool Idea</title>
       <link>https://davidbieber.com/snippets/2020-01-13-writing-tool-idea/</link>
       <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-01-13-writing-tool-idea/</guid>
+      
+        <message>A structured question-asking tool may be useful for writing effectively.</message>
+      
       <description>&lt;h3 id=&#34;background-writing-is-hard&#34;&gt;Background: Writing is Hard&lt;/h3&gt;
 &lt;p&gt;Sometimes I find writing feels easy &amp;ndash; e.g. when 
 &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34;&gt;writing for no audience&lt;/a&gt;, when writing something you&amp;rsquo;ve already thought extensively about, when telling a story in a logical order that you&amp;rsquo;re deeply familiar with. Other times, I find writing very difficult.&lt;/p&gt;
@@ -822,7 +863,11 @@ However, the disadvantage of this is that it makes the keystroke logging feature
       <title>What to do in Moments of Internet Addiction</title>
       <link>https://davidbieber.com/snippets/2020-01-02-moments-of-internet-addiction/</link>
       <pubDate>Thu, 02 Jan 2020 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-01-02-moments-of-internet-addiction/</guid>
+      
+        <message>A brainstorming of potential activities to help combat mild internet addiction.</message>
+      
       <description>&lt;p&gt;I often feel addicted to YouTube, TV shows, browsing HackerNews, or social media.
 When I do, I&amp;rsquo;m tempted to just keep scrolling or watching, and I can waste hours on the internet.
 Afterward, and even during, I may feel an inclination to stop, but I continue consuming content anyway.
@@ -852,7 +897,11 @@ For some reason, I do it anyway though, and so I think of this habit like an add
       <title>Planning to Analyze My Browsing History</title>
       <link>https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/</guid>
+      
+        <message>I started a plan to analyze my browser history. This was my plan.</message>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve learned recently that programmatically accessing your browsing history is rather straightforward. Really exciting! This is rich data, from which I think I&amp;rsquo;ll be able to learn a lot and hopefully combat unwanted distractions.&lt;/p&gt;
 &lt;p&gt;First let me describe what information is available, and how you can access it. Then, let&amp;rsquo;s discuss what you can do with this data. As I&amp;rsquo;ve written about previously 
 &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;[1]&lt;/a&gt; 

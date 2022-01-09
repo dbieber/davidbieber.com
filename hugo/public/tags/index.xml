@@ -1,16 +1,401 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags | David Bieber</title>
+    <title>Tags on David Bieber</title>
     <link>https://davidbieber.com/tags/</link>
-      <atom:link href="https://davidbieber.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 08 Jan 2022 02:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>Tags</title>
-      <link>https://davidbieber.com/tags/</link>
-    </image>
+    <description>Recent content in Tags on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Jan 2022 02:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>go-note-go</title>
+      <link>https://davidbieber.com/tags/go-note-go/</link>
+      <pubDate>Sat, 08 Jan 2022 02:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/go-note-go/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>messager</title>
+      <link>https://davidbieber.com/tags/messager/</link>
+      <pubDate>Sat, 08 Jan 2022 02:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/messager/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>snippets</title>
+      <link>https://davidbieber.com/tags/snippets/</link>
+      <pubDate>Sat, 08 Jan 2022 02:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/snippets/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automation</title>
+      <link>https://davidbieber.com/tags/automation/</link>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/automation/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>browserflow</title>
+      <link>https://davidbieber.com/tags/browserflow/</link>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/browserflow/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>note-taking</title>
+      <link>https://davidbieber.com/tags/note-taking/</link>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/note-taking/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>roam-research</title>
+      <link>https://davidbieber.com/tags/roam-research/</link>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/roam-research/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>attention</title>
+      <link>https://davidbieber.com/tags/attention/</link>
+      <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/attention/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>taking-silly-ideas-seriously</title>
+      <link>https://davidbieber.com/tags/taking-silly-ideas-seriously/</link>
+      <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/taking-silly-ideas-seriously/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>brains</title>
+      <link>https://davidbieber.com/tags/brains/</link>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/brains/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>virtual reality</title>
+      <link>https://davidbieber.com/tags/virtual-reality/</link>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/virtual-reality/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>peer-learning-group</title>
+      <link>https://davidbieber.com/tags/peer-learning-group/</link>
+      <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/peer-learning-group/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spaced-repetition</title>
+      <link>https://davidbieber.com/tags/spaced-repetition/</link>
+      <pubDate>Tue, 23 Nov 2021 01:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/spaced-repetition/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://davidbieber.com/tags/python/</link>
+      <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/python/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>twitter</title>
+      <link>https://davidbieber.com/tags/twitter/</link>
+      <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/twitter/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blockchain</title>
+      <link>https://davidbieber.com/tags/blockchain/</link>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/blockchain/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>https://davidbieber.com/tags/hardware/</link>
+      <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/hardware/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>healthcare</title>
+      <link>https://davidbieber.com/tags/healthcare/</link>
+      <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/healthcare/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://davidbieber.com/tags/productivity/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/productivity/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>https://davidbieber.com/tags/software/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/software/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aspirational-intent</title>
+      <link>https://davidbieber.com/tags/aspirational-intent/</link>
+      <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/aspirational-intent/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>table tennis</title>
+      <link>https://davidbieber.com/tags/table-tennis/</link>
+      <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/table-tennis/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tech-tips</title>
+      <link>https://davidbieber.com/tags/tech-tips/</link>
+      <pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/tech-tips/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>automatic-video-editing</title>
+      <link>https://davidbieber.com/tags/automatic-video-editing/</link>
+      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/automatic-video-editing/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>goals</title>
+      <link>https://davidbieber.com/tags/goals/</link>
+      <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/goals/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python Fire</title>
+      <link>https://davidbieber.com/tags/python-fire/</link>
+      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/python-fire/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://davidbieber.com/tags/javascript/</link>
+      <pubDate>Fri, 12 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/javascript/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sql</title>
+      <link>https://davidbieber.com/tags/sql/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/sql/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wisdom</title>
+      <link>https://davidbieber.com/tags/wisdom/</link>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/wisdom/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>browser-history</title>
+      <link>https://davidbieber.com/tags/browser-history/</link>
+      <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/browser-history/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thought-experiments</title>
+      <link>https://davidbieber.com/tags/thought-experiments/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/thought-experiments/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>https://davidbieber.com/tags/math/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/math/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ask-me-anywhere</title>
+      <link>https://davidbieber.com/tags/ask-me-anywhere/</link>
+      <pubDate>Sun, 26 Jan 2020 10:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/ask-me-anywhere/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Education</title>
+      <link>https://davidbieber.com/tags/education/</link>
+      <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/education/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Apps Script</title>
+      <link>https://davidbieber.com/tags/google-apps-script/</link>
+      <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/google-apps-script/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Just for Fun</title>
+      <link>https://davidbieber.com/tags/just-for-fun/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/just-for-fun/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Puzzle</title>
+      <link>https://davidbieber.com/tags/puzzle/</link>
+      <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/puzzle/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Esperanto</title>
+      <link>https://davidbieber.com/tags/esperanto/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/esperanto/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Princeton ACM</title>
+      <link>https://davidbieber.com/tags/princeton-acm/</link>
+      <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/princeton-acm/</guid>
+      
+      <description></description>
+    </item>
     
   </channel>
 </rss>

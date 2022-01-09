@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Automation | David Bieber</title>
+    <title>Automation on David Bieber</title>
     <link>https://davidbieber.com/tags/automation/</link>
-      <atom:link href="https://davidbieber.com/tags/automation/index.xml" rel="self" type="application/rss+xml" />
-    <description>Automation</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>Automation</title>
-      <link>https://davidbieber.com/tags/automation/</link>
-    </image>
-    
+    <description>Recent content in Automation on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sending messages as I drift off to sleep</title>
       <link>https://davidbieber.com/post/2022-01-08-new-messager-setup/</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2022-01-08-new-messager-setup/</guid>
+      
       <description>&lt;p&gt;In this post I describe my new Messager setup,
 and how it allows me to send messages directly from Roam Research &lt;em&gt;or&lt;/em&gt;
 from a standalone keyboard (no monitor) that I keep at my bedside as I drift off to sleep, and which I take driving and camping.&lt;/p&gt;
@@ -156,7 +153,9 @@ If you do, I&amp;rsquo;ll do my best to get back to you, likely as I&amp;rsquo;m
       <title>Go Note Go Messager without Pixel-Space Automation</title>
       <link>https://davidbieber.com/snippets/2022-01-02-pixel-space-automation/</link>
       <pubDate>Sun, 02 Jan 2022 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2022-01-02-pixel-space-automation/</guid>
+      
       <description>&lt;p&gt;&lt;em&gt;This snippet was originally going to be about pixel-space automation. Then I found I didn&amp;rsquo;t need it for what I wanted to do: sending messages to Twitter, Facebook, Slack, and Discord from Go Note Go, Roam Research, and Bieber Bot.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Happy New Year! I&amp;rsquo;d really like to automate Mac apps that don&amp;rsquo;t expose actions to Automator
 using pixel-space navigation and clicks and typing to control the automation. This is why and how.&lt;/p&gt;
@@ -244,7 +243,9 @@ I&amp;rsquo;m still excited about pixel-space automation, but I&amp;rsquo;ll hav
       <title>The Future of Automation Software</title>
       <link>https://davidbieber.com/snippets/2021-12-07-future-automation-software/</link>
       <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-12-07-future-automation-software/</guid>
+      
       <description>&lt;p&gt;
 &lt;a href=&#34;https://browserflow.app&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Browserflow&lt;/a&gt; is great.
 It&amp;rsquo;s beyond great.
@@ -376,7 +377,9 @@ useful both for programmers and automation builders, and for people who simply w
       <title>Machine Learning and Automation Ideas for Note-taking</title>
       <link>https://davidbieber.com/snippets/2021-10-28-ml-and-automation-for-note-taking/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-10-28-ml-and-automation-for-note-taking/</guid>
+      
       <description>&lt;p&gt;Let&amp;rsquo;s consider machine learning first, and then automation. For each we brainstorm the potential value for note-taking.&lt;/p&gt;
 &lt;h3 id=&#34;the-value-of-markmachine-learningmark-for-note-taking&#34;&gt;The Value of &lt;mark&gt;Machine Learning&lt;/mark&gt; for Note-Taking&lt;/h3&gt;
 &lt;ul&gt;
@@ -457,7 +460,9 @@ useful both for programmers and automation builders, and for people who simply w
       <title>Writing a Mail Merge in Google Apps Script</title>
       <link>https://davidbieber.com/post/2018-10-21-apps-script-mail-merge/</link>
       <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2018-10-21-apps-script-mail-merge/</guid>
+      
       <description>&lt;p&gt;Google Apps Script is endlessly useful; in this post you will learn how to write a mail merge with Google Apps Script. It&amp;rsquo;s less than 30 lines of code! You can use this technique to send personalized emails individually to many recipients. In the second part of this post, you will learn how to schedule these emails to send in the future.&lt;/p&gt;
 &lt;h2 id=&#34;part-1-writing-a-mail-merge&#34;&gt;Part 1: Writing a Mail Merge&lt;/h2&gt;
 &lt;p&gt;A &lt;em&gt;mail merge&lt;/em&gt; is a program that sends an email to many recipients, automatically filling in the contents of the email according to a template. It&amp;rsquo;s like a form letter. Each recipient receives a personalized copy of the email.&lt;/p&gt;
@@ -679,7 +684,9 @@ function getDraftMessageBySubject(subject) {
       <title>Running Firefox in the Cloud</title>
       <link>https://davidbieber.com/post/2014-11-08-firefox-in-the-cloud/</link>
       <pubDate>Sat, 08 Nov 2014 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2014-11-08-firefox-in-the-cloud/</guid>
+      
       <description>&lt;p&gt;I found running Firefox in the cloud difficult, but with enough digging around I was able to get it working. Now I&amp;rsquo;m able to drive a headless version of Firefox with Selenium using Python. This lets me do things like have my 
 &lt;a href=&#34;https://github.com/dbieber/ScrabbleBot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Scrabble Bot&lt;/a&gt; play Words with Friends autonomously on Facebook.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;What am I going to show you how to do?&lt;/strong&gt;&lt;/p&gt;
@@ -740,7 +747,9 @@ Edit the file &lt;code&gt;/etc/apt/sources.list&lt;/code&gt; and add the line &l
       <title>Automate Your Life: Sending Emails</title>
       <link>https://davidbieber.com/post/2013-03-13-automate-your-life-sending-emails/</link>
       <pubDate>Wed, 13 Mar 2013 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2013-03-13-automate-your-life-sending-emails/</guid>
+      
       <description>&lt;p&gt;&lt;em&gt;In a hurry? Scroll down and skip to the code. That&amp;rsquo;s the good part anyway.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;One of the beauties of programming is the elimination of redundant aspects of life that you find yourself doing over and over again. When you find yourself calling home every weekend, logging hours at your job daily, or getting your hair cut every month, it&amp;rsquo;s time to learn to program. Write a short script to do these repetitive behaviors for you. Just kidding. Don&amp;rsquo;t.&lt;/p&gt;
 &lt;p&gt;These are joke examples &amp;ndash; I strongly advise against automating discussions with your mother &amp;ndash; but they aren&amp;rsquo;t so farfetched. Automating processes - shopping, shipping, server maintenance - save countless hours and dollars. Here, we&amp;rsquo;ll do a thought experiment: imagine a team of people running Amazon.com without automation. As a crude estimate, let&amp;rsquo;s suppose they sell a mere billion books each year. Let&amp;rsquo;s imagine they only handle 1% of all Internet traffic. And let&amp;rsquo;s pretend they only store 1 trillion objects in their S3 storage system. Then with their team of about ninety thousand, each Amazon employee would have to be selling and shipping 30 books a day on top of processing and transmitting over 100 gigabytes of Internet traffic daily, all while handling requests for a hundred thousand S3 objects that they&amp;rsquo;ve had to memorize. Maybe &lt;a href=&#34;http://en.wikipedia.org/wiki/Jeff_Bezos&#34;&gt;Jeff Bezos&lt;/a&gt; could pull it off. But you&amp;rsquo;re not Jeff Bezos, so I&amp;rsquo;d say it&amp;rsquo;s worth your time to learn to automate.&lt;/p&gt;

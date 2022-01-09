@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>go-note-go | David Bieber</title>
+    <title>go-note-go on David Bieber</title>
     <link>https://davidbieber.com/tags/go-note-go/</link>
-      <atom:link href="https://davidbieber.com/tags/go-note-go/index.xml" rel="self" type="application/rss+xml" />
-    <description>go-note-go</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 08 Jan 2022 02:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>go-note-go</title>
-      <link>https://davidbieber.com/tags/go-note-go/</link>
-    </image>
-    
+    <description>Recent content in go-note-go on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Jan 2022 02:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/go-note-go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go Note Go</title>
       <link>https://davidbieber.com/projects/go-note-go/</link>
       <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/go-note-go/</guid>
+      
       <description>&lt;p&gt;&lt;em&gt;Go Note Go is a note-taking system for when you&amp;rsquo;re on the go, with a focus on driving and camping.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;re driving to your campsite, listening to Tiago Forte discuss Sönke Ahrens&amp;rsquo;s &amp;ldquo;How to Take Smart Notes&amp;rdquo;, when a brilliant idea strikes you. Do you pull over, pull out your phone or moleskin, and write it down? Nay. Go Note Go to the rescue.&lt;/p&gt;
 &lt;p&gt;While driving, simply press the large handheld red push button and speak your idea aloud. It will be automatically transcribed and added to your notes once an internet connection becomes available.&lt;/p&gt;
@@ -104,7 +101,9 @@
       <title>Two Snippets I want to write about GNG and Messager</title>
       <link>https://davidbieber.com/snippets/2022-01-08-gng-messager-snippet-plans/</link>
       <pubDate>Sat, 08 Jan 2022 02:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2022-01-08-gng-messager-snippet-plans/</guid>
+      
       <description>&lt;p&gt;I have two new ideas for snippets I want to write. They&amp;rsquo;re about Go Note Go and Messager Queue, both side projects I&amp;rsquo;ve been putting a bunch of time into the last few days. The snippet ideas are:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Using Go Note Go as an outliner&lt;/li&gt;
@@ -134,7 +133,9 @@ For others I can just make a templated message using the snippet title; the beau
       <title>Sending messages as I drift off to sleep</title>
       <link>https://davidbieber.com/post/2022-01-08-new-messager-setup/</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2022-01-08-new-messager-setup/</guid>
+      
       <description>&lt;p&gt;In this post I describe my new Messager setup,
 and how it allows me to send messages directly from Roam Research &lt;em&gt;or&lt;/em&gt;
 from a standalone keyboard (no monitor) that I keep at my bedside as I drift off to sleep, and which I take driving and camping.&lt;/p&gt;
@@ -274,7 +275,9 @@ If you do, I&amp;rsquo;ll do my best to get back to you, likely as I&amp;rsquo;m
       <title>Go Note Go Messager without Pixel-Space Automation</title>
       <link>https://davidbieber.com/snippets/2022-01-02-pixel-space-automation/</link>
       <pubDate>Sun, 02 Jan 2022 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2022-01-02-pixel-space-automation/</guid>
+      
       <description>&lt;p&gt;&lt;em&gt;This snippet was originally going to be about pixel-space automation. Then I found I didn&amp;rsquo;t need it for what I wanted to do: sending messages to Twitter, Facebook, Slack, and Discord from Go Note Go, Roam Research, and Bieber Bot.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Happy New Year! I&amp;rsquo;d really like to automate Mac apps that don&amp;rsquo;t expose actions to Automator
 using pixel-space navigation and clicks and typing to control the automation. This is why and how.&lt;/p&gt;
@@ -362,7 +365,9 @@ I&amp;rsquo;m still excited about pixel-space automation, but I&amp;rsquo;ll hav
       <title>Go Note Go Hardware</title>
       <link>https://davidbieber.com/snippets/2021-10-26-go-note-go-hardware/</link>
       <pubDate>Tue, 26 Oct 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-10-26-go-note-go-hardware/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve put together a hardware guide so you can build your own Go Note Go. I&amp;rsquo;ll keep a version of this in the 
 &lt;a href=&#34;https://github.com/dbieber/GoNoteGo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Go Note Go GitHub repo&lt;/a&gt; too. This one will likely fall out of date, but I&amp;rsquo;ll try to keep the one in the GitHub repo updated.&lt;/p&gt;
 &lt;h3 id=&#34;raspberry-pi-400&#34;&gt;Raspberry Pi 400&lt;/h3&gt;
@@ -436,7 +441,9 @@ I don&amp;rsquo;t know. In my experience these were too loose to fit nicely on t
       <title>Note-taking System Interoperability</title>
       <link>https://davidbieber.com/snippets/2021-10-09-note-taking-system-interop/</link>
       <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-10-09-note-taking-system-interop/</guid>
+      
       <description>&lt;p&gt;What would be a good &lt;em&gt;standard&lt;/em&gt; for note-taking software to use to support development of system-agnostic tools like Go Note Go? In this snippet I discuss the value such a standard could provide; I expect it will be useful in future brainstorming for what exactly would go into such a standard.&lt;/p&gt;
 &lt;p&gt;I am building Go Note Go as a note-taking entry point, possibly with some basic retrieval features (e.g. &amp;ldquo;read back the last two notes I took&amp;rdquo;). I currently use Roam Research as my main note-taking system, but I&amp;rsquo;m not wedded to it forever.&lt;/p&gt;
 &lt;p&gt;So, I&amp;rsquo;m building Go Note Go to work with any note-taking system. To do so, I need a distinct uploader implementation for every note-taking system that I support. I&amp;rsquo;m reaching out to the developers at the note-taking systems to assist with this effort. It would be lovely if there was a standard, to reduce the amount of work required here.&lt;/p&gt;
@@ -465,7 +472,9 @@ I don&amp;rsquo;t know. In my experience these were too loose to fit nicely on t
       <title>Writing a Snippet with Go Note Go</title>
       <link>https://davidbieber.com/snippets/2021-09-27-snippet-on-go-note-go/</link>
       <pubDate>Mon, 27 Sep 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-09-27-snippet-on-go-note-go/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve been developing and concurrently using Go Note Go for two weeks now, and in that time I have come to love the frictionless way it allows me to dump thoughts into the machine. I don&amp;rsquo;t have a chance to reread what I&amp;rsquo;ve written. There&amp;rsquo;s no going back and rewording something. And more than that, there&amp;rsquo;s no waiting for the characters to show up, or switching tabs, or spell checking or anything like that.&lt;/p&gt;
 &lt;p&gt;This is the first time I&amp;rsquo;m writing a snippet using Go Note Go.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve thought about writing a snippet about Go Note Go over the last two weeks, but I decided not to until yesterday when I finally stopped keeping Go Note Go to myself.
@@ -504,7 +513,9 @@ I think it would be so cool if each supported note−taking system had an upload
       <title>Go Note Go is public</title>
       <link>https://davidbieber.com/snippets/2021-09-26-go-note-go/</link>
       <pubDate>Sun, 26 Sep 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-09-26-go-note-go/</guid>
+      
       <description>&lt;p&gt;Go Note Go is public! I&amp;rsquo;ve been working on this for two weeks now, and today I made it public!&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://davidbieber.com/projects/go-note-go&#34;&gt;Read all about it here.&lt;/a&gt;&lt;/p&gt;

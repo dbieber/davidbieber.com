@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>automatic-video-editing | David Bieber</title>
+    <title>automatic-video-editing on David Bieber</title>
     <link>https://davidbieber.com/tags/automatic-video-editing/</link>
-      <atom:link href="https://davidbieber.com/tags/automatic-video-editing/index.xml" rel="self" type="application/rss+xml" />
-    <description>automatic-video-editing</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>automatic-video-editing</title>
-      <link>https://davidbieber.com/tags/automatic-video-editing/</link>
-    </image>
-    
+    <description>Recent content in automatic-video-editing on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/automatic-video-editing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Recording in virtual reality (incomplete)</title>
       <link>https://davidbieber.com/snippets/2021-04-29-recording-in-vr/</link>
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-04-29-recording-in-vr/</guid>
+      
       <description>&lt;p&gt;&lt;em&gt;This is an 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-04-23-incomplete-snippets/&#34;&gt;&lt;strong&gt;incomplete&lt;/strong&gt; snippet&lt;/a&gt;. If I complete it, I&amp;rsquo;ll add a link to the completed snippet here.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The default format for recording in virtual reality is a first-person perspective&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Often this is placed side-by-side with a third-person perspective of the person in real life&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. I would like to see the same perspective of the player in VR and real life&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
@@ -43,7 +40,9 @@
       <title>ffmpeg aspirations</title>
       <link>https://davidbieber.com/snippets/2021-01-05-ffmpeg-aspirations/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-05-ffmpeg-aspirations/</guid>
+      
       <description>&lt;ul&gt;
 &lt;li&gt;turn a collection of photos into a slide show&lt;/li&gt;
 &lt;li&gt;set it to music&lt;/li&gt;
@@ -70,7 +69,9 @@
       <title>Tips for Effective OBS</title>
       <link>https://davidbieber.com/snippets/2020-04-11-tips-for-obs/</link>
       <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-04-11-tips-for-obs/</guid>
+      
       <description>&lt;p&gt;As a newcomer to OBS, I&amp;rsquo;ve been regularly discovering new features that make my OBS experience better. Here are a handful of things I&amp;rsquo;ve found useful, that perhaps weren&amp;rsquo;t immediately obvious to me, from my early experiences with OBS.&lt;/p&gt;
 &lt;h2 id=&#34;using-media-sources&#34;&gt;Using Media Sources&lt;/h2&gt;
 &lt;p&gt;&amp;ldquo;Media Source&amp;rdquo; video sources are essential when showing prerecorded video, or using a replay buffer. However, it wasn&amp;rsquo;t obvious to me how to get media sources to play their audio.&lt;/p&gt;
@@ -94,7 +95,9 @@
       <title>Exploring OBS and Virtual Cameras</title>
       <link>https://davidbieber.com/snippets/2020-04-09-exploring-obs/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-04-09-exploring-obs/</guid>
+      
       <description>&lt;p&gt;This week I&amp;rsquo;ve been exploring 
 &lt;a href=&#34;https://obsproject.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Open Broadcasting Software&lt;/em&gt; (OBS)&lt;/a&gt; and toying with using it as a virtual camera. I use a Mac, and historically there hasn&amp;rsquo;t been a good way to use OBS as a virtual camera. With 
 &lt;a href=&#34;https://twitter.com/tobi&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@tobi&lt;/a&gt;&amp;rsquo;s recent 
@@ -133,7 +136,9 @@ I&amp;rsquo;m in a remote meeting and we&amp;rsquo;re having a discussion. By de
       <title>Fastbook: Listen to Audiobooks Faster</title>
       <link>https://davidbieber.com/snippets/2020-03-02-fastbook/</link>
       <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-03-02-fastbook/</guid>
+      
       <description>&lt;p&gt;Aaron Mayer 
 &lt;a href=&#34;https://medium.com/100audiobooks/the-100-audiobook-challenge-terms-and-conditions-455c7e9409aa&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;aims to listen to 100 audiobooks in a single month&lt;/a&gt;. He intends to listen to these audiobooks at 2x - 3x speed. Intense!&lt;/p&gt;
 &lt;p&gt;For the last few weeks, I&amp;rsquo;ve been working on 
@@ -194,7 +199,11 @@ Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
       <title>Video Tooling Progress</title>
       <link>https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/</link>
       <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/</guid>
+      
+        <message>Progress on automatic video editing, including &#39;Auto Auto-Jumpcutter&#39;, &#39;Auto-Commit&#39;, and Keyboard Shortcuts.</message>
+      
       <description>&lt;p&gt;Over the last week and a half I&amp;rsquo;ve been making screen recordings of myself programming. Mostly what I&amp;rsquo;ve been programming is tooling to help myself make better screen recordings. Here&amp;rsquo;s an overview of what I&amp;rsquo;ve put together so far.&lt;/p&gt;
 &lt;h2 id=&#34;auto-auto-jumpcutter&#34;&gt;Auto Auto-Jumpcutter&lt;/h2&gt;
 &lt;p&gt;This springboards directly from carykh&amp;rsquo;s 
@@ -215,7 +224,11 @@ For example, it provides no way to do multiple takes and stitch together the goo
       <title>Jump-Cut Programming: Take 1</title>
       <link>https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/</link>
       <pubDate>Fri, 21 Feb 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/</guid>
+      
+        <message>Inspired by @realCarykh, I jump-cut into the world of automatic video editing.</message>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve been toying around with recording myself programming. Here&amp;rsquo;s a clip.&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/OxsuHWVtMSM&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;In this clip I use 
@@ -270,7 +283,11 @@ For example, it provides no way to do multiple takes and stitch together the goo
       <title>Learning by Teaching in Online Education</title>
       <link>https://davidbieber.com/snippets/2020-01-09-learning-by-teaching/</link>
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-01-09-learning-by-teaching/</guid>
+      
+        <message>One of the best ways to learn is to teach.</message>
+      
       <description>&lt;p&gt;Long ago (2013) I spent a summer interning at Khan Academy.
 Also long ago (2014) 
 &lt;a href=&#34;https://twitter.com/harvest_zhang&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Harvest&lt;/a&gt; and I built a tool for creating educational videos online, in the browser (

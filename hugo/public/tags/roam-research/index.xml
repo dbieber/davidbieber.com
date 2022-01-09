@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>roam-research | David Bieber</title>
+    <title>roam-research on David Bieber</title>
     <link>https://davidbieber.com/tags/roam-research/</link>
-      <atom:link href="https://davidbieber.com/tags/roam-research/index.xml" rel="self" type="application/rss+xml" />
-    <description>roam-research</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>roam-research</title>
-      <link>https://davidbieber.com/tags/roam-research/</link>
-    </image>
-    
+    <description>Recent content in roam-research on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/roam-research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sending messages as I drift off to sleep</title>
       <link>https://davidbieber.com/post/2022-01-08-new-messager-setup/</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2022-01-08-new-messager-setup/</guid>
+      
       <description>&lt;p&gt;In this post I describe my new Messager setup,
 and how it allows me to send messages directly from Roam Research &lt;em&gt;or&lt;/em&gt;
 from a standalone keyboard (no monitor) that I keep at my bedside as I drift off to sleep, and which I take driving and camping.&lt;/p&gt;
@@ -156,7 +153,9 @@ If you do, I&amp;rsquo;ll do my best to get back to you, likely as I&amp;rsquo;m
       <title>Go Note Go Messager without Pixel-Space Automation</title>
       <link>https://davidbieber.com/snippets/2022-01-02-pixel-space-automation/</link>
       <pubDate>Sun, 02 Jan 2022 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2022-01-02-pixel-space-automation/</guid>
+      
       <description>&lt;p&gt;&lt;em&gt;This snippet was originally going to be about pixel-space automation. Then I found I didn&amp;rsquo;t need it for what I wanted to do: sending messages to Twitter, Facebook, Slack, and Discord from Go Note Go, Roam Research, and Bieber Bot.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Happy New Year! I&amp;rsquo;d really like to automate Mac apps that don&amp;rsquo;t expose actions to Automator
 using pixel-space navigation and clicks and typing to control the automation. This is why and how.&lt;/p&gt;
@@ -244,7 +243,9 @@ I&amp;rsquo;m still excited about pixel-space automation, but I&amp;rsquo;ll hav
       <title>Rough Note-taking Interop Requirements</title>
       <link>https://davidbieber.com/snippets/2021-10-10-note-taking-interop-requirements/</link>
       <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-10-10-note-taking-interop-requirements/</guid>
+      
       <description>&lt;p&gt;Yesterday I mused about 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-10-09-note-taking-system-interop/&#34;&gt;the benefits an interoperability standard could provide&lt;/a&gt; to note-taking systems. Today, I extract rough requirements for such a standard from that musing.&lt;/p&gt;
 &lt;ol&gt;
@@ -288,7 +289,9 @@ if the user likes the summary, they accept it. When accepted, the feature insert
       <title>Note-taking System Interoperability</title>
       <link>https://davidbieber.com/snippets/2021-10-09-note-taking-system-interop/</link>
       <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-10-09-note-taking-system-interop/</guid>
+      
       <description>&lt;p&gt;What would be a good &lt;em&gt;standard&lt;/em&gt; for note-taking software to use to support development of system-agnostic tools like Go Note Go? In this snippet I discuss the value such a standard could provide; I expect it will be useful in future brainstorming for what exactly would go into such a standard.&lt;/p&gt;
 &lt;p&gt;I am building Go Note Go as a note-taking entry point, possibly with some basic retrieval features (e.g. &amp;ldquo;read back the last two notes I took&amp;rdquo;). I currently use Roam Research as my main note-taking system, but I&amp;rsquo;m not wedded to it forever.&lt;/p&gt;
 &lt;p&gt;So, I&amp;rsquo;m building Go Note Go to work with any note-taking system. To do so, I need a distinct uploader implementation for every note-taking system that I support. I&amp;rsquo;m reaching out to the developers at the note-taking systems to assist with this effort. It would be lovely if there was a standard, to reduce the amount of work required here.&lt;/p&gt;
@@ -317,7 +320,9 @@ if the user likes the summary, they accept it. When accepted, the feature insert
       <title>Spaced Repetition Update</title>
       <link>https://davidbieber.com/snippets/2021-10-05-spaced-repetition-update/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-10-05-spaced-repetition-update/</guid>
+      
       <description>&lt;p&gt;Previously I&amp;rsquo;ve written about 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/&#34;&gt;how I do spaced repetition in Roam Research&lt;/a&gt; using Leitner Boxes. I&amp;rsquo;m still doing spaced repetition daily, but my methods have changed a bit. So, let me give you the update.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m still doing spaced repetition in Roam, but I&amp;rsquo;ve moved away from the Leitner Box approach. Now instead I use 
@@ -337,7 +342,9 @@ if the user likes the summary, they accept it. When accepted, the feature insert
       <title>Embedded Roam Research</title>
       <link>https://davidbieber.com/snippets/2021-09-12-embedded-roam-research/</link>
       <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-09-12-embedded-roam-research/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;d like to be able to embed a Roam Research page on my website so that other people can make spaced repetition cards for me.&lt;/p&gt;
 &lt;iframe src=&#34;https://roamresearch.com/#/app/commons-db/page/xftkxraPw&#34; width=&#34;100%&#34; height=&#34;400&#34; frameborder=&#34;0&#34; style=&#34;border:0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;No luck, though.&lt;/p&gt;
@@ -348,7 +355,9 @@ if the user likes the summary, they accept it. When accepted, the feature insert
       <title>Browserflow Note-taking Flow</title>
       <link>https://davidbieber.com/snippets/2021-07-29-note-taking-flow/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-07-29-note-taking-flow/</guid>
+      
       <description>&lt;p&gt;Quick update on the note-taking Browserflow flow I&amp;rsquo;ve been building: 
 &lt;a href=&#34;https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7&lt;/a&gt;:&lt;/p&gt;
 &lt;h2 id=&#34;how-it-works&#34;&gt;How it works&lt;/h2&gt;
@@ -390,7 +399,9 @@ if the user likes the summary, they accept it. When accepted, the feature insert
       <title>What links here?</title>
       <link>https://davidbieber.com/snippets/2021-04-24-backlinks/</link>
       <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-04-24-backlinks/</guid>
+      
       <description>&lt;p&gt;I wanted to write about backlinks today but didn&amp;rsquo;t get a chance (except you&amp;rsquo;re reading it, so of course I &lt;em&gt;did&lt;/em&gt; get a chance in the end).&lt;/p&gt;
 &lt;p&gt;Quick outline of what I was hoping to write about:&lt;/p&gt;
 &lt;ul&gt;
@@ -412,7 +423,9 @@ if the user likes the summary, they accept it. When accepted, the feature insert
       <title>Brainstorming: Roam Terminal</title>
       <link>https://davidbieber.com/snippets/2021-02-24-brainstorming-roam-terminal/</link>
       <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-24-brainstorming-roam-terminal/</guid>
+      
       <description>&lt;p&gt;In Roam Research, I&amp;rsquo;d like to be able to type &amp;ldquo;/terminal&amp;rdquo; to insert a shell into my current block. Each command issued in the shell will become a block hidden behind the terminal (nested but collapsed). The output of each command will become a block as well.&lt;/p&gt;
 &lt;p&gt;What sorts of commands do you want to be able to issue from within Roam? Deploying snippets. Querying the Roam graph. sshing into another machine and using it natively. Treating Roam like a file system.&lt;/p&gt;
 &lt;p&gt;Of course I&amp;rsquo;d like all the basic shell features (history, basic unix commands sed/grep/ls/cd/awk/&amp;hellip;, piping).&lt;/p&gt;
@@ -440,7 +453,9 @@ if the user likes the summary, they accept it. When accepted, the feature insert
       <title>Two more Browserflow flows for Roam Research</title>
       <link>https://davidbieber.com/snippets/2021-02-13-flows-for-roam-research/</link>
       <pubDate>Sat, 13 Feb 2021 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-13-flows-for-roam-research/</guid>
+      
       <description>&lt;p&gt;I wrote three Browserflow flows for Roam Research today. None of them took me more than 20-30 minutes to write. The first one was for saving the current webpage to Roam. I 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/&#34;&gt;wrote about that flow here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The next flow I wrote is for saving any link you click on to Roam. The idea behind this flow is to prevent doing depth first exploration of the web. Better to look at a bunch of links and then later choose the most interesting, than to dive head first into the first link you click on.&lt;/p&gt;
@@ -459,7 +474,9 @@ if the user likes the summary, they accept it. When accepted, the feature insert
       <title>Saving URLs to Roam with Browserflow</title>
       <link>https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/</link>
       <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/</guid>
+      
       <description>&lt;p&gt;Using the 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-02-12-javascript-functions-for-inserting-blocks-in-roam/&#34;&gt;Roam JavaScript primitives I wrote yesterday&lt;/a&gt; it was extremely easy (less than 10 minutes, I think) to create a robust Browserflow flow for saving URLs to Roam Research.&lt;/p&gt;
 &lt;p&gt;Now when I&amp;rsquo;m browsing the web, I can press cmd-J (Browserflow&amp;rsquo;s keyboard shortcut) and choose &amp;ldquo;Roam: Save URL&amp;rdquo; from the typeahead to save the current URL to my Roam Daily Notes page.&lt;/p&gt;
@@ -480,7 +497,9 @@ await createChildBlock(urls, $url)
       <title>JavaScript Functions for Inserting Blocks in Roam</title>
       <link>https://davidbieber.com/snippets/2021-02-12-javascript-functions-for-inserting-blocks-in-roam/</link>
       <pubDate>Fri, 12 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-12-javascript-functions-for-inserting-blocks-in-roam/</guid>
+      
       <description>&lt;p&gt;At the end of this snippet I include some helpful javascript functions for accessing and inserting pages and blocks in Roam Research. Hope you find these useful!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;getPage(page):&lt;/strong&gt; returns the uid of a specific page in your graph. &lt;em&gt;page&lt;/em&gt;: the title of the page.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;getOrCreatePage(page):&lt;/strong&gt; returns the uid of a specific page in your graph, creating it first if it does not already exist. &lt;em&gt;page&lt;/em&gt;: the title of the page.&lt;/p&gt;
@@ -505,7 +524,9 @@ await createChildBlock(urls, $url)
       <title>Repurposing my Twitter Feed</title>
       <link>https://davidbieber.com/snippets/2021-02-08-repurposing-my-twitter-feed/</link>
       <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-08-repurposing-my-twitter-feed/</guid>
+      
       <description>&lt;p&gt;Twitter&amp;rsquo;s addicting. It&amp;rsquo;s not a good use of my time, but I scroll there anyway. If I&amp;rsquo;m going to be scrolling there anyway, might as well make it worthwhile. So, I&amp;rsquo;ve decided to repurpose my Twitter timeline and inject things I actually care about into it.&lt;/p&gt;
 &lt;p&gt;How? You might think to do this with a Chrome extension, injecting content in between the existing tweets. There&amp;rsquo;s an easier way though. I&amp;rsquo;ve made a new, private Twitter account, and I programmatically&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; tweet as that.&lt;/p&gt;
 &lt;p&gt;My personal Twitter account is @Bieber, and I use a picture of myself for the profile. The new account goes by &amp;ldquo;Private Bieber&amp;rdquo;, and uses a deep dream-ified version of my profile picture.&lt;/p&gt;
@@ -532,7 +553,9 @@ await createChildBlock(urls, $url)
       <title>Notifications in Roam Research</title>
       <link>https://davidbieber.com/snippets/2021-01-25-notifications-in-roam-research/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-25-notifications-in-roam-research/</guid>
+      
       <description>&lt;p&gt;
 &lt;a href=&#34;https://twitter.com/hashtag/RoamGames&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#RoamGames&lt;/a&gt; are upon us! The challenge: &lt;em&gt;project management&lt;/em&gt; in Roam.&lt;/p&gt;
 &lt;p&gt;So, let&amp;rsquo;s talk notifications. They&amp;rsquo;re going to be essential for any multiplayer Roam scenario. They&amp;rsquo;re also ruthless attention vampires that kill productivity. We&amp;rsquo;ve got to get this right.&lt;/p&gt;
@@ -657,7 +680,9 @@ notify(&amp;quot;You&#39;ve got mail.&amp;quot;);
       <title>More Datalog Queries for Roam</title>
       <link>https://davidbieber.com/snippets/2021-01-04-more-datalog-queries-for-roam/</link>
       <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-04-more-datalog-queries-for-roam/</guid>
+      
       <description>&lt;p&gt;In this snippet I share datalog queries for Roam Research. For more such queries (and to see how to run these queries), 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/&#34;&gt;see this earlier snippet on the subject&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;pages-tagged-with-x-not-listed-on-page-y&#34;&gt;Pages tagged with &amp;ldquo;X&amp;rdquo; not listed on page &amp;ldquo;Y&amp;rdquo;&lt;/h2&gt;
@@ -785,7 +810,9 @@ block_info.forEach(
       <title>Spaced Repetition in Roam Research</title>
       <link>https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/</link>
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/</guid>
+      
       <description>&lt;p&gt;There are many ways to do spaced repetition in Roam Research. This post describes mine. I was inspired to start this two months ago by reading 
 &lt;a href=&#34;https://ncase.me/remember/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nicky Case&amp;rsquo;s comic on spaced repetition&lt;/a&gt;, and I highly recommend the read.&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Spaced repetition&amp;rdquo; just means studying flashcards, studying the cards you know best less often, and study the cards you struggle with more often. It&amp;rsquo;s a powerful technique for learning and remembering material, whether you&amp;rsquo;re a student or a lifelong learner.&lt;/p&gt;
@@ -876,7 +903,9 @@ block_info.forEach(
       <title>Publishing Blog Posts from Roam Research Quickly and Automatically</title>
       <link>https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/</link>
       <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/</guid>
+      
       <description>&lt;p&gt;I thought today I would attempt a proper treatment of my latest automatic &amp;ldquo;
 &lt;a href=&#34;https://davidbieber.com/snippets/&#34;&gt;snippet&lt;/a&gt;&amp;rdquo; publishing system. It uses JavaScript embedded directly in Roam Research to publish snippets to my website with low latency as I write them.&lt;/p&gt;
 &lt;h2 id=&#34;prior-methods&#34;&gt;Prior methods&lt;/h2&gt;
@@ -980,7 +1009,9 @@ const publishSnippet = debounce(publishSnippetRaw, 15000, true);
       <title>Even Faster Snippet Publishing from Roam</title>
       <link>https://davidbieber.com/snippets/2020-12-27-even-faster-snippet-publishing-from-roam/</link>
       <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-12-27-even-faster-snippet-publishing-from-roam/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve set up a GitHub action to enable even faster automatic publishing of snippets from Roam. This is a test-snippet I&amp;rsquo;m using while writing the auto-publisher.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s see how it behaves if I&amp;rsquo;m editing an existing snippet routinely for a while.&lt;/p&gt;
 &lt;p&gt;If it works as intended, the snippet will update itself on GitHub after I stop typing for several seconds. I&amp;rsquo;ve now stopped typing, we&amp;rsquo;ll see what happens.&lt;/p&gt;
@@ -995,7 +1026,9 @@ const publishSnippet = debounce(publishSnippetRaw, 15000, true);
       <title>Improving Roam Snippet Publishing Speeds</title>
       <link>https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/</link>
       <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/</guid>
+      
       <description>&lt;p&gt;Hey folks, I have a 
 &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;workflow&lt;/a&gt; for automatically publishing &amp;ldquo;
 &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;snippets&lt;/a&gt;&amp;rdquo; to my website from Roam. Currently there&amp;rsquo;s a multi-hour latency between writing a snippet and when it appears on my website. In this snippet I&amp;rsquo;m going to muse about / ask questions about how to use &lt;strong&gt;puppeteer&lt;/strong&gt; to bring this latency down considerably. This&amp;rsquo;ll be my first time using puppeteer, so help appreciated. Read on!&lt;/p&gt;
@@ -1037,7 +1070,9 @@ const publishSnippet = debounce(publishSnippetRaw, 15000, true);
       <title>Datalog Queries for Roam Research</title>
       <link>https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/</link>
       <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/</guid>
+      
       <description>&lt;p&gt;
 &lt;a href=&#34;https://roamresearch.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research&lt;/a&gt; is an excellent note taking tool. One of its core features is &amp;ldquo;back links&amp;rdquo; &amp;ndash; any of your notes can easily references any of your other notes, and so all your notes end up linked together in an intricate graph structure. You can quickly see all the references to a note, hence the term &amp;ldquo;back link&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Roam exposes all of the information in your graph through a &lt;strong&gt;datalog API&lt;/strong&gt;. Datalog is a declarative programming language that lets you make queries about your graph.&lt;/p&gt;
@@ -1146,7 +1181,9 @@ results.map((data, index) =&amp;gt; {return `((${data[1]})) (${data[2]})`}).join
       <title>Updating Google Slides through Roam Research</title>
       <link>https://davidbieber.com/snippets/2020-11-30-updating-google-slides-through-roam-research/</link>
       <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-11-30-updating-google-slides-through-roam-research/</guid>
+      
       <description>&lt;p&gt;Check out this &amp;ldquo;demo video&amp;rdquo; I made! It shows me making a presentation using Roam Research references. When I update the block in Roam that I&amp;rsquo;m referencing, the presentation gets updated automatically.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -1168,7 +1205,9 @@ results.map((data, index) =&amp;gt; {return `((${data[1]})) (${data[2]})`}).join
       <title>Publishing Through Roam Research</title>
       <link>https://davidbieber.com/snippets/2020-11-24-publishing-through-roam-research/</link>
       <pubDate>Tue, 24 Nov 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-11-24-publishing-through-roam-research/</guid>
+      
       <description>&lt;p&gt;With this snippet I&amp;rsquo;m testing out a new snippet publishing system: publishing snippets directly from Roam Research. Using the system is simple: I simply tag any bullet with &amp;ldquo;ok-to-publish&amp;rdquo; and Bieber Bot publishes it and its children as a snippet.&lt;/p&gt;
 &lt;p&gt;Why another way of writing snippets? I&amp;rsquo;ve been writing quite a bit in Roam lately but I haven&amp;rsquo;t been publishing snippets lately. In truth, this new publishing mechanism is more a novelty than something practically useful. It would be easy enough to copy a snippet out of Roam into a text editor or to Bieber Bot in Facebook Messenger to publish it.&lt;/p&gt;
 &lt;p&gt;It certainly is appealing to be able to publish directly in Roam where I spend a lot of my time writing though. I think being able to publish directly from Roam may appeal to many other people as well.&lt;/p&gt;
@@ -1181,7 +1220,9 @@ results.map((data, index) =&amp;gt; {return `((${data[1]})) (${data[2]})`}).join
       <title>Letting Adriana put things in my Leitner Box</title>
       <link>https://davidbieber.com/snippets/2020-11-07-letting-adriana-put-things-in-my-leitner-box/</link>
       <pubDate>Sat, 07 Nov 2020 08:14:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-11-07-letting-adriana-put-things-in-my-leitner-box/</guid>
+      
       <description>&lt;p&gt;I’ve been using spaced repetition for 2-3 weeks now. I’m not using Anki or any of the prebuilt systems that track your queue of items for you. Instead, I’m keeping the things I want to study in Roam Research and using a make-shift system of tags and Browserflow Flows to make the spaced repetition system relatively frictionless.&lt;/p&gt;
 &lt;p&gt;I’ll save the details of the system for another snippet. Today, I just want to jot down the idea of allowing Adriana (through the use of Bieber Bot) to add items to my spaced repetition system.&lt;/p&gt;
 &lt;p&gt;The idea is relatively simple, but it does involve one new component that may be tricky to implement robustly. Under this idea, Adriana would be able to send Bieber Bot a message saying e.g. “help David to learn the names of the planets” and a card would be added to my spaced repetition system saying “learn the names of the planets. -Adriana”. I could then split this card into multiple cards as I usually do when I encounter a card with too much content simultaneously, or Adriana could have Bieber Bot add smaller cards one at a time.&lt;/p&gt;
@@ -1194,7 +1235,9 @@ results.map((data, index) =&amp;gt; {return `((${data[1]})) (${data[2]})`}).join
       <title>Extracting Snippets from Roam Research</title>
       <link>https://davidbieber.com/snippets/2020-11-03-extracting-snippets-from-roam-research/</link>
       <pubDate>Tue, 03 Nov 2020 15:22:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-11-03-extracting-snippets-from-roam-research/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve been writing a lot these days inside of Roam Research. I wonder if there&amp;rsquo;s a good way to identify snippet-quality items from within my Roam database.&lt;/p&gt;
 &lt;p&gt;One option would be to pick out decent-sized sections of continuous text.
 If I&amp;rsquo;m taking notes in a bunch of different areas, that&amp;rsquo;s probably not well suited for publishing as a snippet unless I were to clean it up first.
@@ -1210,7 +1253,9 @@ Perhaps if I look at the diff between head and two commits back, I can avoid mis
       <title>Taking Notes While Browsing the Web: An Idea for a Roam Research Plugin</title>
       <link>https://davidbieber.com/snippets/2020-05-15-roaming-the-web/</link>
       <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-05-15-roaming-the-web/</guid>
+      
       <description>&lt;p&gt;As I&amp;rsquo;m browsing the web, I&amp;rsquo;d like to be able to take notes in 
 &lt;a href=&#34;https://roamresearch.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research&lt;/a&gt;. In this post, I share an idea I have for a plugin or browser extension that I think would improve the experience of taking notes in Roam while browsing the web.&lt;/p&gt;
 &lt;p&gt;The plugin would do two main things automatically:&lt;/p&gt;
@@ -1257,7 +1302,9 @@ For making additions to a Roam database automatically, I expect the extension wo
       <title>Roam Research&#39;s JSON Export Format</title>
       <link>https://davidbieber.com/snippets/2020-04-25-roam-json-export/</link>
       <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-04-25-roam-json-export/</guid>
+      
       <description>&lt;p&gt;
 &lt;a href=&#34;https://roamresearch.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research&lt;/a&gt; is a note taking tool that makes it really low-friction to take deeply interwoven notes.
 One of its core features is that you can effortlessly add links between pages in your notes, just by surrounding a name with square brackets, e.g. 

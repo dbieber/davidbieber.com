@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Esperanto | David Bieber</title>
+    <title>Esperanto on David Bieber</title>
     <link>https://davidbieber.com/tags/esperanto/</link>
-      <atom:link href="https://davidbieber.com/tags/esperanto/index.xml" rel="self" type="application/rss+xml" />
-    <description>Esperanto</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jul 2015 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>Esperanto</title>
-      <link>https://davidbieber.com/tags/esperanto/</link>
-    </image>
-    
+    <description>Recent content in Esperanto on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jul 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/esperanto/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ĉu Vi Estas Mia Patrino?</title>
       <link>https://davidbieber.com/post/2015-07-01-estas-mia-patrino/</link>
       <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2015-07-01-estas-mia-patrino/</guid>
+      
       <description>&lt;p&gt;&lt;em&gt;This is my translation of P.D. Eastman&amp;rsquo;s children&amp;rsquo;s book &amp;ldquo;Are You My Mother?&amp;rdquo; into Esperanto. Enjoy. -David&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;ĉu-vi-estas-mia-patrino&#34;&gt;Ĉu Vi Estas Mia Patrino?&lt;/h2&gt;
 &lt;p&gt;By P.D. Eastman&lt;/p&gt;

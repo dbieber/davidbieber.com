@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>python | David Bieber</title>
+    <title>python on David Bieber</title>
     <link>https://davidbieber.com/tags/python/</link>
-      <atom:link href="https://davidbieber.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
-    <description>python</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 20 Nov 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>python</title>
-      <link>https://davidbieber.com/tags/python/</link>
-    </image>
-    
+    <description>Recent content in python on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Organizing a Twitter Discussion: Gathering Twitter Replies</title>
       <link>https://davidbieber.com/snippets/2021-11-20-twitter-replies/</link>
       <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-11-20-twitter-replies/</guid>
+      
       <description>&lt;p&gt;I 
 &lt;a href=&#34;https://twitter.com/Bieber/status/1461128201485402112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tweeted&lt;/a&gt; about spaced repetition earlier this week, sharing and summarizing 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-11-02-improvements-to-spaced-repetition/&#34;&gt;my latest snippet on the subject&lt;/a&gt;. A bunch of people left thoughtful replies, and I was quite pleased with the discussion. Now I want to look over the discussion holistically, but I don&amp;rsquo;t see a great way to do this. I don&amp;rsquo;t even see a way to look at all the replies to my thread in one place. I want to see not just this, but also replies to replies. TweetDeck might be able to help, but I don&amp;rsquo;t see how.&lt;/p&gt;
@@ -79,7 +76,9 @@ Since the number of search results is limited, this might not always work; it de
       <title>Python set operations</title>
       <link>https://davidbieber.com/snippets/2021-04-19-python-set-operations/</link>
       <pubDate>Mon, 19 Apr 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-04-19-python-set-operations/</guid>
+      
       <description>&lt;p&gt;If you Google &amp;ldquo;Python set intersection&amp;rdquo;, you get a number of results about the &lt;code&gt;set.intersection&lt;/code&gt; function. It isn&amp;rsquo;t until the fourth result that you reach a page mentioning Python&amp;rsquo;s convenient syntax for performing set operations. This was surprising to me, hence this snippet.&lt;/p&gt;
 &lt;h2 id=&#34;background-collections-in-python&#34;&gt;Background: Collections in Python&lt;/h2&gt;
 &lt;p&gt;Python has a few primitive collection types: tuples, lists, dictionaries (aka dicts), and sets. Use parenthesis to create a tuple &lt;code&gt;(1, 2, 3)&lt;/code&gt;, square brackets to create a list &lt;code&gt;[4, 5, 6]&lt;/code&gt;, and squirrelly brackets to create a dict or set: &lt;code&gt;{7: 8, 9: 10}&lt;/code&gt; makes a dict and &lt;code&gt;{11, 12, 13}&lt;/code&gt; makes a set. Just like a set in mathematics, a set in Python is an &lt;strong&gt;unordered&lt;/strong&gt; collection of &lt;strong&gt;distinct&lt;/strong&gt; elements.&lt;/p&gt;
@@ -130,7 +129,9 @@ print(x)  # {4, 6, 7, 8}
       <title>Magic Functions in Python</title>
       <link>https://davidbieber.com/snippets/2021-02-17-python-magic-functions/</link>
       <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-02-17-python-magic-functions/</guid>
+      
       <description>&lt;p&gt;In this snippet I introduce and implement, but do not condone, Python &amp;ldquo;Magic functions&amp;rdquo;.
 Magic functions are interesting to think about and to study, but I discourage their use in anything but the most experimental of code. You&amp;rsquo;ll soon see why.&lt;/p&gt;
 &lt;p&gt;A &lt;strong&gt;magic function&lt;/strong&gt; is a function where the arguments and return values are both implicit, handled through the magic of Python&amp;rsquo;s powerful stack introspection.&lt;/p&gt;
@@ -204,7 +205,9 @@ I must stress that I do not recommend this approach.&lt;/p&gt;
       <title>SQL for the Kangaroo Auto-responder</title>
       <link>https://davidbieber.com/snippets/2021-01-30-sql-for-the-kangaroo-auto-responder/</link>
       <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-30-sql-for-the-kangaroo-auto-responder/</guid>
+      
       <description>&lt;p&gt;I turned on the 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/&#34;&gt;Kangaroo Auto-responder&lt;/a&gt; this morning. The rules for when to send a kangaroo 🦘 are as follows:&lt;/p&gt;
 &lt;p&gt;You get a kangaroo if the &lt;strong&gt;most-recent&lt;/strong&gt; message in our chat (ignoring trivial messages from you) is &lt;strong&gt;non-trivial&lt;/strong&gt;, &lt;strong&gt;read-by-me&lt;/strong&gt;, &lt;strong&gt;written-by-you&lt;/strong&gt;, &lt;strong&gt;not a response&lt;/strong&gt;, and &lt;strong&gt;eight-hours old&lt;/strong&gt;.&lt;/p&gt;
@@ -313,7 +316,9 @@ ORDER BY messenger.timestamp desc;
       <title>Kangaroo Auto-responder</title>
       <link>https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/</link>
       <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/</guid>
+      
       <description>&lt;p&gt;The purpose of the Kangaroo Auto-responder is to:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Avoid people expecting a response from me when I don&amp;rsquo;t realize they&amp;rsquo;re expecting a response, e.g. because I&amp;rsquo;ve forgotten about their message&lt;/li&gt;
@@ -344,7 +349,9 @@ ORDER BY messenger.timestamp desc;
       <title>Python hoist: immediate locals only</title>
       <link>https://davidbieber.com/snippets/2021-01-18-python-hoist-locals-only/</link>
       <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-18-python-hoist-locals-only/</guid>
+      
       <description>&lt;p&gt;The implementation of &lt;code&gt;hoist&lt;/code&gt; in my 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-01-16-python-hoist/&#34;&gt;earlier snippet&lt;/a&gt; returned the values of local variables of all functions called by the hoisted function. This new version only returns the locals of the hoisted function.&lt;/p&gt;
 &lt;p&gt;As before, you can use it like this:&lt;/p&gt;
@@ -422,7 +429,9 @@ def hoist(f):
       <title>Python hoist()</title>
       <link>https://davidbieber.com/snippets/2021-01-16-python-hoist/</link>
       <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-16-python-hoist/</guid>
+      
       <description>&lt;p&gt;I wrote a little decorator function called &lt;code&gt;hoist&lt;/code&gt;. Calling &lt;code&gt;hoist(f)&lt;/code&gt; transforms &lt;code&gt;f&lt;/code&gt;, such that instead of returning the return value of &lt;code&gt;f&lt;/code&gt;, it returns the values of all local variables in addition to the return value of &lt;code&gt;f&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;You can use it like this:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def f(x):
@@ -504,7 +513,9 @@ Make it so that &lt;code&gt;hoist(f)(x)[&#39;value.3&#39;]&lt;/code&gt; returns 
       <title>Python&#39;s strip, lstrip, and rstrip in JavaScript</title>
       <link>https://davidbieber.com/snippets/2020-12-26-pythons-strip-lstrip-and-rstrip-in-javascript/</link>
       <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-12-26-pythons-strip-lstrip-and-rstrip-in-javascript/</guid>
+      
       <description>&lt;p&gt;Python provides some convenient functions for manipulating strings: &lt;code&gt;strip&lt;/code&gt;, &lt;code&gt;lstrip&lt;/code&gt;, and &lt;code&gt;rstrip&lt;/code&gt;. Recently I was writing some JavaScript and wanted to use &lt;code&gt;rstrip&lt;/code&gt;. So, I&amp;rsquo;ve implemented all three. Here they are:&lt;/p&gt;
 &lt;h2 id=&#34;the-python-strip-method-in-javascript&#34;&gt;The Python strip method in JavaScript&lt;/h2&gt;
 &lt;p&gt;In Python, &lt;code&gt;strip&lt;/code&gt; removes whitespace from the beginning or end of a string. This is commonly called &amp;ldquo;trim&amp;rdquo; in JavaScript, and is provided as a builtin in most modern browsers. You may need to implement it yourself if you want to support older browsers though. Here&amp;rsquo;s one possible implementation, 
@@ -582,7 +593,9 @@ rtrim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;Bu&#39;;
       <title>Improving Roam Snippet Publishing Speeds</title>
       <link>https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/</link>
       <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/</guid>
+      
       <description>&lt;p&gt;Hey folks, I have a 
 &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;workflow&lt;/a&gt; for automatically publishing &amp;ldquo;
 &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;snippets&lt;/a&gt;&amp;rdquo; to my website from Roam. Currently there&amp;rsquo;s a multi-hour latency between writing a snippet and when it appears on my website. In this snippet I&amp;rsquo;m going to muse about / ask questions about how to use &lt;strong&gt;puppeteer&lt;/strong&gt; to bring this latency down considerably. This&amp;rsquo;ll be my first time using puppeteer, so help appreciated. Read on!&lt;/p&gt;
@@ -624,7 +637,9 @@ rtrim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;Bu&#39;;
       <title>Questions to Answer About Python Fire</title>
       <link>https://davidbieber.com/snippets/2020-10-22-questions-to-answer-about-python-fire/</link>
       <pubDate>Thu, 22 Oct 2020 20:31:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-10-22-questions-to-answer-about-python-fire/</guid>
+      
       <description>&lt;p&gt;Tomorrow I&amp;rsquo;m giving a talk to Women Who Code on Python Fire. Python Fire is a Python library I wrote back in 2017 that makes command line interfaces automatically out of any Python object you give it.&lt;/p&gt;
 &lt;p&gt;I have my talk planned but there are a few pieces of the story I haven&amp;rsquo;t included in my talk yet. They are 1) Why did I build Python Fire? 2) How are people using Python Fire in the real world? 3) What&amp;rsquo;s it like maintaining an open source project?&lt;/p&gt;
 &lt;p&gt;To the first question, I should explain how we used Boom at Nest. Boom was the proto-version of Fire that inspired Fire&amp;rsquo;s development. At Nest we had an ETL pipeline consisting of several distributed systems. For example data would pass through SQS, Kafka, Storm, and Pentaho while it was being ingested. We wanted to write tests for this complex series of systems. And we also wanted to be able to manually operate the systems. So we wrote Python functions for controlling each part of the system.&lt;/p&gt;
@@ -640,7 +655,9 @@ rtrim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;Bu&#39;;
       <title>Posting to Hacker News Programmatically</title>
       <link>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</guid>
+      
       <description>&lt;p&gt;If you run this snippet of Python code, it will submit this 
 &lt;a href=&#34;https://davidbieber.com/snippets/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Snippet&amp;rdquo;&lt;/a&gt; (the one you&amp;rsquo;re currently reading) to Hacker News.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from html.parser import HTMLParser
@@ -703,7 +720,9 @@ session.post(
       <title>Daily Summaries of Browsing History</title>
       <link>https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/</link>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/</guid>
+      
       <description>&lt;p&gt;Over the 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&#34;&gt;course&lt;/a&gt; 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;of&lt;/a&gt; 
@@ -805,7 +824,9 @@ if __name__ == &#39;__main__&#39;:
       <title>Roam Research&#39;s JSON Export Format</title>
       <link>https://davidbieber.com/snippets/2020-04-25-roam-json-export/</link>
       <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-04-25-roam-json-export/</guid>
+      
       <description>&lt;p&gt;
 &lt;a href=&#34;https://roamresearch.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research&lt;/a&gt; is a note taking tool that makes it really low-friction to take deeply interwoven notes.
 One of its core features is that you can effortlessly add links between pages in your notes, just by surrounding a name with square brackets, e.g. 
@@ -1005,7 +1026,9 @@ while blocks:
       <title>Fastbook: Listen to Audiobooks Faster</title>
       <link>https://davidbieber.com/snippets/2020-03-02-fastbook/</link>
       <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-03-02-fastbook/</guid>
+      
       <description>&lt;p&gt;Aaron Mayer 
 &lt;a href=&#34;https://medium.com/100audiobooks/the-100-audiobook-challenge-terms-and-conditions-455c7e9409aa&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;aims to listen to 100 audiobooks in a single month&lt;/a&gt;. He intends to listen to these audiobooks at 2x - 3x speed. Intense!&lt;/p&gt;
 &lt;p&gt;For the last few weeks, I&amp;rsquo;ve been working on 
@@ -1066,7 +1089,11 @@ Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
       <title>Video Tooling Progress</title>
       <link>https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/</link>
       <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/</guid>
+      
+        <message>Progress on automatic video editing, including &#39;Auto Auto-Jumpcutter&#39;, &#39;Auto-Commit&#39;, and Keyboard Shortcuts.</message>
+      
       <description>&lt;p&gt;Over the last week and a half I&amp;rsquo;ve been making screen recordings of myself programming. Mostly what I&amp;rsquo;ve been programming is tooling to help myself make better screen recordings. Here&amp;rsquo;s an overview of what I&amp;rsquo;ve put together so far.&lt;/p&gt;
 &lt;h2 id=&#34;auto-auto-jumpcutter&#34;&gt;Auto Auto-Jumpcutter&lt;/h2&gt;
 &lt;p&gt;This springboards directly from carykh&amp;rsquo;s 
@@ -1087,7 +1114,11 @@ For example, it provides no way to do multiple takes and stitch together the goo
       <title>Jump-Cut Programming: Take 1</title>
       <link>https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/</link>
       <pubDate>Fri, 21 Feb 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/</guid>
+      
+        <message>Inspired by @realCarykh, I jump-cut into the world of automatic video editing.</message>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve been toying around with recording myself programming. Here&amp;rsquo;s a clip.&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/OxsuHWVtMSM&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;In this clip I use 
@@ -1142,7 +1173,11 @@ For example, it provides no way to do multiple takes and stitch together the goo
       <title>Planning to Analyze My Browsing History</title>
       <link>https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/</guid>
+      
+        <message>I started a plan to analyze my browser history. This was my plan.</message>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve learned recently that programmatically accessing your browsing history is rather straightforward. Really exciting! This is rich data, from which I think I&amp;rsquo;ll be able to learn a lot and hopefully combat unwanted distractions.&lt;/p&gt;
 &lt;p&gt;First let me describe what information is available, and how you can access it. Then, let&amp;rsquo;s discuss what you can do with this data. As I&amp;rsquo;ve written about previously 
 &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34;&gt;[1]&lt;/a&gt; 

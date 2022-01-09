@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>goals | David Bieber</title>
+    <title>goals on David Bieber</title>
     <link>https://davidbieber.com/tags/goals/</link>
-      <atom:link href="https://davidbieber.com/tags/goals/index.xml" rel="self" type="application/rss+xml" />
-    <description>goals</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 17 Apr 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>goals</title>
-      <link>https://davidbieber.com/tags/goals/</link>
-    </image>
-    
+    <description>Recent content in goals on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/goals/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Resuming snippet writing?</title>
       <link>https://davidbieber.com/snippets/2021-04-17-resuming-snippet-writing/</link>
       <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-04-17-resuming-snippet-writing/</guid>
+      
       <description>&lt;p&gt;About two month ago I encountered a 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-02-21-snippets-dry-spell/&#34;&gt;snippets dry spell&lt;/a&gt;. At the time I didn&amp;rsquo;t foresee writing snippets at the same rate I had been leading up to that point. Sure enough, over the two months that followed I only wrote a handful of snippets. March saw two simultaneous Peer Learning Groups, and April lead into a period of intense virtual ping pong playing and lots of real-life hiking.&lt;/p&gt;
 &lt;p&gt;We wrapped up the Peer Learning Groups, a largely asynchronous low-commitment activity, with a virtual synchronous meet-up and coworking session. During these I produced these two snippets about what I learned for my PLG sessions: one on 
@@ -45,7 +42,9 @@
       <title>2020 Resolution Check-in</title>
       <link>https://davidbieber.com/snippets/2021-01-03-2020-resolution-check-in/</link>
       <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2021-01-03-2020-resolution-check-in/</guid>
+      
       <description>&lt;p&gt;At the start of 2020 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-01-01-new-years-resolutions/&#34;&gt;I resolved to communicate publicly 100 times&lt;/a&gt;. How did I do? I got about 80% of the way there.&lt;/p&gt;
 &lt;p&gt;By the numbers, this is approximately 62 snippets, 8 tech talks, 4 published papers, 1 thesis proposal, 2 videos, and a handful of discussions in public on various Slack-like groups.&lt;/p&gt;
@@ -99,7 +98,9 @@
       <title>An Update on my 2020 Resolution</title>
       <link>https://davidbieber.com/snippets/2020-10-09-an-update-on-my-2020-resolution/</link>
       <pubDate>Fri, 09 Oct 2020 22:55:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-10-09-an-update-on-my-2020-resolution/</guid>
+      
       <description>&lt;p&gt;My goal for this year was to get good at communicating publicly. I decided to measure progress in terms of the number of times I communicated publicly. 100 public communications was the goal. Where am I today?&lt;/p&gt;
 &lt;p&gt;This is my 42nd snippet for the year. I&amp;rsquo;m giving a talk on Python Fire publicly next week. I published 4 papers (
 &lt;a href=&#34;https://arxiv.org/abs/2010.12621&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IPA-GNN&lt;/a&gt;, 
@@ -114,7 +115,9 @@
       <title>Biking in the Morning</title>
       <link>https://davidbieber.com/snippets/2020-10-08-biking-in-the-morning/</link>
       <pubDate>Thu, 08 Oct 2020 22:04:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-10-08-biking-in-the-morning/</guid>
+      
       <description>&lt;p&gt;Some of the 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-10-06-the-snippets-i-dont-publish/&#34;&gt;snippets I did not publish&lt;/a&gt; were about my plans for biking in the morning. For the last several days I&amp;rsquo;ve been biking to East Rock each morning, doing so before starting work on work days. I bring my pocket-sized keyboard and my phone, and when I&amp;rsquo;m at the top of the Rock I use my friend Jacob Cole&amp;rsquo;s app, ThoughtStream, to write about whatever&amp;rsquo;s on my mind. Sometimes this is a potential snippet, and sometimes it&amp;rsquo;s just planning for the day.&lt;/p&gt;
 &lt;p&gt;I really like this routine but I&amp;rsquo;m not confident that I&amp;rsquo;ll continue it. Consistently getting up early for an extended period of time can be challenging, and I&amp;rsquo;m not inclined to set an alarm to help. Also, the weather is getting cooler.&lt;/p&gt;
@@ -127,7 +130,11 @@
       <title>2020 Resolutions</title>
       <link>https://davidbieber.com/snippets/2020-01-01-new-years-resolutions/</link>
       <pubDate>Mon, 30 Dec 2019 01:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2020-01-01-new-years-resolutions/</guid>
+      
+        <message>In which I set concrete resolution for 2020.</message>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve set New Year&amp;rsquo;s Resolutions most years for the last several years. Let&amp;rsquo;s review:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -252,7 +259,11 @@
       <title>Learning to Communicate</title>
       <link>https://davidbieber.com/snippets/2019-12-26-learning-to-communicate/</link>
       <pubDate>Thu, 26 Dec 2019 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/snippets/2019-12-26-learning-to-communicate/</guid>
+      
+        <message>My goal for 2020 was to learn to communicate better with the world. Still a goal for me.</message>
+      
       <description>&lt;p&gt;My goal for 2020 is to learn to communicate better with the world. I work in a research group at Google, and our main job function is performing research in program synthesis. But research is only as valuable as how well it is communicated. So in 2020 I&amp;rsquo;d like to get better at communicating publicly.&lt;/p&gt;
 &lt;p&gt;There are a few options for doing this. The first is writing blog posts. This may be too large an undertaking to do frequently. I&amp;rsquo;d really like something that&amp;rsquo;s lower barrier to do, and with a lower quality bar, so that I can do this more often. The natural alternative with these properties is academic Twitter. However, I want to avoid the addictive nature of Twitter. I also want to write more than 280 characters at a time, and I don&amp;rsquo;t want to put every little thing I write in front of people&amp;rsquo;s faces with equal importance. Twitter seems a good place for announcing a new paper or a Python Fire update, but not for sharing a musing like this one.&lt;/p&gt;
 &lt;p&gt;So instead I think I&amp;rsquo;m going to start by silently posting my writings to my website, but in a 

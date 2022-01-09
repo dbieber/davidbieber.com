@@ -1,22 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Princeton ACM | David Bieber</title>
+    <title>Princeton ACM on David Bieber</title>
     <link>https://davidbieber.com/tags/princeton-acm/</link>
-      <atom:link href="https://davidbieber.com/tags/princeton-acm/index.xml" rel="self" type="application/rss+xml" />
-    <description>Princeton ACM</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Mar 2014 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=true) shape:circle]</url>
-      <title>Princeton ACM</title>
-      <link>https://davidbieber.com/tags/princeton-acm/</link>
-    </image>
-    
+    <description>Recent content in Princeton ACM on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Mar 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/princeton-acm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Princeton ACM</title>
       <link>https://davidbieber.com/projects/princeton-acm/</link>
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/projects/princeton-acm/</guid>
+      
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -26,7 +23,9 @@
       <title>Why a Code@Night is not a Hackathon</title>
       <link>https://davidbieber.com/post/2013-09-06-code-at-night-vs-hackathon/</link>
       <pubDate>Fri, 06 Sep 2013 00:00:00 +0000</pubDate>
+      
       <guid>https://davidbieber.com/post/2013-09-06-code-at-night-vs-hackathon/</guid>
+      
       <description>&lt;p&gt;I&amp;rsquo;ve written in the past about 
 &lt;a href=&#34;http://blog.davidbieber.com/post/31367374857/code-at-night&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;what a Code@Night is&lt;/a&gt;. And they&amp;rsquo;re wonderful. One of my favorite topics, really. People come to these things and they just code all night. Great experience. Tons of fun. Fruit. PacMan. Yadda, yadda, yadda.&lt;/p&gt;
 &lt;p&gt;I tell people this all the time, and a pretty common response is &amp;ldquo;so, it&amp;rsquo;s like a hackathon?&amp;rdquo;&lt;/p&gt;
