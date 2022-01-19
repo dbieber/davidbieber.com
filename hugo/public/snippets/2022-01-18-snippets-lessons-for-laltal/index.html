@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="David Bieber">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="LaLTal &ndash; short for &ldquo;learn a little, teach a little&rdquo; is a novel learning app from John Cumbers built on the extraordinary power of learning by teaching. I tried it out tonight, and I had a great time learning a bit about blockchain and synthetic biology. I really appreciated the opportunity to practice explaining the concepts that came up in the questions. Coming up with these explanations on the spot felt like exercising an underutilized muscle.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2022-01-18-snippets-lessons-for-laltal/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34570499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-34570499-2', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+
+  <link rel="canonical" href="https://davidbieber.com/snippets/2022-01-18-snippets-lessons-for-laltal/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@Bieber">
+  <meta property="twitter:creator" content="@Bieber">
+  
+  <meta property="og:site_name" content="David Bieber">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2022-01-18-snippets-lessons-for-laltal/">
+  <meta property="og:title" content="Applying Lessons from Snippets to LaLTaL | David Bieber">
+  <meta property="og:description" content="LaLTal &ndash; short for &ldquo;learn a little, teach a little&rdquo; is a novel learning app from John Cumbers built on the extraordinary power of learning by teaching. I tried it out tonight, and I had a great time learning a bit about blockchain and synthetic biology. I really appreciated the opportunity to practice explaining the concepts that came up in the questions. Coming up with these explanations on the spot felt like exercising an underutilized muscle."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2022-01-18T01:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2022-01-18T01:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Applying Lessons from Snippets to LaLTaL | David Bieber</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">David Bieber</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">David Bieber</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/posts"><span>Writing</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Applying Lessons from Snippets to LaLTaL</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+</div>
+
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" id="article-content">
+      <p>
+<a href="https://www.laltal.com/" target="_blank" rel="noopener">LaLTal &ndash; short for &ldquo;learn a little, teach a little&rdquo;</a>
+is a novel learning app from John Cumbers
+built on the extraordinary power of learning by teaching.
+I tried it out tonight, and I had a great time learning a bit about blockchain and synthetic biology.
+I really appreciated the opportunity to practice explaining the concepts that came up in the questions. Coming up with these explanations on the spot felt like exercising an underutilized muscle. I think I&rsquo;ll be doing more of this.</p>
+<p>One thing I think could really improve the experience further though
+would be if recording was decoupled from production.
+The simplest way of doing this would be a &ldquo;draft record&rdquo; button,
+and a more interesting way would be a more sophisticated but still simple audio editor, an idea I&rsquo;ll detail later on in this snippet.
+The core of my suggestion isn&rsquo;t about the difference in <em>functionality</em> between a potential &ldquo;draft record&rdquo; feature and the current &ldquo;record&rdquo; feature.
+Instead, it&rsquo;s about the mindset that the UI induces.</p>
+<p>Consider 
+<a href="/snippets/">snippets</a>.
+When I write these snippets, 
+<a href="/snippets/2019-12-30-writing-for-no-audience/">I write them for no audience</a>.
+I don&rsquo;t expect to share them, or for people to read them,
+and that makes them easier to write.</p>
+<p>This snippet is an exception; I fully expect to share it with a few people once it&rsquo;s written. Maybe. There&rsquo;s still a piece of my mind that knows that it might just be an ordinary snippet, never shared. And certainly it won&rsquo;t share widely or automatically when it&rsquo;s published. I can put it on my website without anyone ever seeing it, at which point deciding to share it becomes a much lighter weight action than a single decision to both <em>write and share it</em> would have been.</p>
+<p>The lesson I&rsquo;ve learned from writing snippets is that it&rsquo;s easier to produce content when you&rsquo;re not doing it for anyone, or with any intention to share it.
+Of course, I don&rsquo;t know how true this is for everyone, but I suspect that since it is true for me, it applies to some reasonably sized portion of the population.</p>
+<p>This lesson from writing snippets can be applied to LaLTaL too.
+If the app put people in a mindset where they felt like they weren&rsquo;t recording a final explanation to be shared,
+but rather were trying on the words for size,
+I think people could reach a point where they understand the material better and are more capable of sharing it.
+They might even produce something they want to share even if they didn&rsquo;t start the recording intending for it to be the version for sharing; I know that&rsquo;s happened to me in writing snippets loads of times.</p>
+<p>Listening to other people&rsquo;s explanations in the app
+left me with a couple of observations &ndash; possible shortcomings in people&rsquo;s answers that I think setting the right mindset or environment might be able to overcome.</p>
+<ol>
+<li>
+<p>People move quickly over complicated parts to keep their explanation short.</p>
+<p>I saw this multiple times in people&rsquo;s explanations of blockchain-related concepts.
+When people got to the part of the explanation about cryptographic hash functions,
+instead of recognizing the limitation in either their explanation or their understanding, they swept it under the rug in order to keep the explanation fluid and &ldquo;appropriate&rdquo; in length. I think the current record-once setup leaves people averse to grappling with complexity.</p>
+<p>If people felt like a long pause to think right in the middle of their explanation were OK, they maybe they wouldn&rsquo;t exhibit this sweeping-under-the-rug behavior.</p>
+</li>
+<li>
+<p>People speak slowly to buy themselves time to think, rather than pausing to think or thinking ahead of time.</p>
+<p>It reminds me a bit of 
+<a href="https://www.youtube.com/watch?v=0cA9j2EpAHE" target="_blank" rel="noopener">Charlie Brown&rsquo;s &ldquo;The Book Report&rdquo;</a>.</p>
+<blockquote>
+<p>The name of the book about which,
+this book report is about is,
+Peter Rabbit which is about this&hellip;
+Rabbit.</p>
+</blockquote>
+<p>Now, as someone answering the questions, there&rsquo;s nothing wrong with this!
+It&rsquo;s a great way to feel your way toward a good answer. During the slow explanation, your brain is hard at work piecing together what you&rsquo;ll say next.
+Still, I think it&rsquo;s important to recognize that this is happening and that there might be a UX that leads to a better experience for both answerer and listener.</p>
+<p>If people felt like they could record in multiple pieces, pause as long as they like to think, and throw out individual pieces,
+perhaps they would produce even better explanations.</p>
+</li>
+<li>
+<p>People trail off with uncertainty and apprehension</p>
+<p>This happened in several of the explanations I listened to.
+The speaker is explaining something, it&rsquo;s going well, and then they realize they&rsquo;re either about to repeat themself or have nothing more to add.
+So, they trail off, their voice weakens a little, and they remark that they&rsquo;re done.</p>
+<p>If instead people were recording for themselves,
+hearing themselves think through the various aspects of their answer,
+and then at the end piecing together the parts of their own musings that they like,
+it would avoid these tenuous endings.</p>
+</li>
+</ol>
+<hr>
+<p>All of this leads me to brainstorm possible user interface ideas.
+Know that the purpose of this snippet is not to advocate for any single idea,
+but rather simply to share my thinking.
+My aim is for these ideas to inspire further ones, not for these ideas to win out.</p>
+<h5 id="version-1-multiple-recordings">Version 1: Multiple recordings</h5>
+<p>(This is simpler to implement, but I imagine less effective, than Version 2.)
+The idea here is you can record multiple recordings &ndash; as many as you like &ndash; and then you can rearrange them or delete them.
+With this UX, already an answerer can comfortably pause their recording if they feel they&rsquo;ve reached a part of the explanation that their stumbling over. They can gather their thoughts, then proceed.</p>
+<h5 id="version-2-a-single-multi-piece-recording">Version 2: A single multi-piece recording.</h5>
+<p>(This UX could be simpler for the user, but is more technically ambitious.)
+When you start recording,
+the screen begins filling up with your recording.
+Each time you pause speaking for more than two seconds,
+a boundary appears in your recording.
+The boundaries effectively divide time into distinct clips.
+Silence is stripped from the beginning and end of each clip automatically.
+As in Version 1 of the idea, the answerer has the opportunity to rearrange or delete clips by tapping and dragging them.</p>
+<hr>
+<p>There&rsquo;s a tension between these UX ideas and another important aspect of getting people to publish, that must be carefully balanced.
+If people have opportunities to critique their own work, and polish it, they may be reluctant to publish because the mental quality bar they set for themselves could be too high.
+This has been another critical lesson from snippets &ndash; making the quality bar to publication as low as possible has been essential for me feeling comfortable writing and publishing my snippets.
+Editing tools push the quality bar higher, and so the UX ideas I present above might have opposite the desired effect.</p>
+<p>With this in mind, I present a third version of the UX, one that balances the desire to let people pause and think with the goal of keeping people feeling comfortable publishing rather than falling into a perfection-trap.</p>
+<hr>
+<h5 id="version-3-one-recording-with-a-pause-feature">Version 3: One recording with a &ldquo;Pause&rdquo; feature</h5>
+<p>In this final variant of the idea, the user pushes to record,
+but they can pause and resume their recording at any time.
+Simply by letting people pause, perhaps we can give people the freedom to think before they speak when they encounter a tough concept unexpectedly during their explanation.
+At the same time, this keeps the recording UX simple, so hopefully it avoids the potential pitfall of having people avoid clicking submit because they have reached the perfect recording yet.</p>
+<p>Hopefully the result is explanations that are both cogent, fun to produce, and plentiful.</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/snippets/">snippets</a>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/snippets/2022-01-08-gng-messager-snippet-plans/">Two Snippets I want to write about GNG and Messager</a></li>
+      
+      <li><a href="/snippets/2022-01-08-new-post-why/">I made a new Post, but why?</a></li>
+      
+      <li><a href="/snippets/2021-11-16-other-languages/">Snippets in Other Languages</a></li>
+      
+      <li><a href="/snippets/2021-09-27-snippet-on-go-note-go/">Writing a Snippet with Go Note Go</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://davidbieber.com/">David Bieber</a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+
+    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+
+
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZSDKaAmz-UUyaL1IZMi4QO_q4Jouko2c",
+    authDomain: "ask-me-anywhere.firebaseapp.com",
+    databaseURL: "https://ask-me-anywhere.firebaseio.com",
+    projectId: "ask-me-anywhere",
+    storageBucket: "ask-me-anywhere.appspot.com",
+    messagingSenderId: "123038093749",
+    appId: "1:123038093749:web:e8ce89651fcf1371d109fc",
+    measurementId: "G-JLDGL73R1B"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
