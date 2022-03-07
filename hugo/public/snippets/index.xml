@@ -8,6 +8,73 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/snippets/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>The Go Note Go / Snippets Divide</title>
+      <link>https://davidbieber.com/snippets/2022-03-06-gng-snippets-divide/</link>
+      <pubDate>Sun, 06 Mar 2022 01:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2022-03-06-gng-snippets-divide/</guid>
+      
+      <description>&lt;p&gt;I love using Go Note Go. Sitting down with no screen, just a keyboard, feels really good.
+It clears my head, and straightens out my thoughts. I imagine meditation feels similar to some people.&lt;/p&gt;
+&lt;p&gt;In some ways, Go Note Go is fulfilling some of the early objectives of snippets.
+It allows me to &lt;em&gt;write&lt;/em&gt; without hesitation or uncertainty.
+However, that was not precisely my goal with snippets.
+My goal with snippets was to be able to &lt;em&gt;write publicly&lt;/em&gt; without hesitation or uncertainty.&lt;/p&gt;
+&lt;p&gt;Coming back to write this snippet, having written so much in Go Note Go lately,
+snippet-writing feels a little heavier than it used to.
+It feels a little more like I&amp;rsquo;m writing something public, whereas for so long
+snippet-writing had felt like I was writing for no audience.&lt;/p&gt;
+&lt;p&gt;Fortunately, this heaviness faded quickly. Even four paragraphs into this snippet, having now spent a full minute or more reminding myself of my rules and efforts for keeping the barrier to publication low, this feels easy to write again.&lt;/p&gt;
+&lt;p&gt;Still, there is a tension between Go Note Go writing and snippet writing that this minute of thinking does not resolve.
+The tension is this:
+I write so much in Go Note Go, including dozens of ideas that would be great to publish for snippets,
+but as a result of writing them in Go Note Go, I am less inclined to make snippets of them.&lt;/p&gt;
+&lt;p&gt;Why is this? Is it because I have a limited amount of snippet-quality writing time in me, and I&amp;rsquo;ve repurposed it for Go Note Go writing? Is it because writing something I&amp;rsquo;ve already written about is less enjoyable than writing something new? I think it&amp;rsquo;s a combination of these things, more the latter than the former.&lt;/p&gt;
+&lt;p&gt;When I write in Go Note Go, the quality bar is &lt;em&gt;even lower&lt;/em&gt; than for snippets (hard to imagine, I know).
+The Go Note Go writing is full of typos and repetitions. The typos are there because I cannot see when I&amp;rsquo;m writing; I do not go back to correct anything because there&amp;rsquo;s no mechanism for it.
+Also because Go Note Go is not published anywhere, I can drop inhibitions even further than I do for snippet writing.&lt;/p&gt;
+&lt;p&gt;Once I&amp;rsquo;ve put a snippet idea into Go Note Go, in principle it should be easier to turn into a snippet.
+It&amp;rsquo;s just a matter of cleaning up the text from Go Note Go to make it snippet-worthy.
+Snippet-worthy is a much lower bar than story-worthy.
+However, cleaning up text from Go Note Go to produce a snippet doesn&amp;rsquo;t seem as rewarding as writing a snippet from scratch. Snippet-writing is like thinking; Go Note Go-cleaning is another type of activity altogether.&lt;/p&gt;
+&lt;p&gt;Still, there are ideas in my Go Note Go writing that I do want to publish. So, my proposed strategy is this: I&amp;rsquo;ll write snippets about those ideas from scratch, when it feels appropriate to do so. I already review my Go Note Go notes periodically, so now when I do so I&amp;rsquo;ll keep an eye out for snippet-worthy ideas. By doing so, I think there&amp;rsquo;s a good chance some of them will turn themselves into snippets simply by virtue of being sufficiently interesting to me.&lt;/p&gt;
+&lt;p&gt;The biggest such idea that comes to mind is &amp;ldquo;Keyboards, keyboards, everywhere, and not a spot to think.&amp;rdquo;
+This is a blog post idea I&amp;rsquo;ve written multiple parts of in different places, but which I haven&amp;rsquo;t pulled together into its complete form yet. It&amp;rsquo;s a post about the promise of technology, how attention-seeking tech has prevented us from delivering on that promise, and how headless keyboards like Go Note Go provide a path toward reclaiming our attention and allowing us to reach out fullest potential as users of modern tech.&lt;/p&gt;
+&lt;p&gt;A blog post isn&amp;rsquo;t a snippet, but I&amp;rsquo;ve decided (after initial hesitation) that it would be totally fine to produce snippets using content that will ideally eventually make it into a blog post.
+This is similar to my decision to allow myself to publish incomplete snippets.
+It trades off some novelty when the blog post is finally published in return for keeping the bar to publishing snippets extraordinarily low. I value that goal more than I value preserving any kind of surprisal when I publish a blog post, rare as that is.
+So, I&amp;rsquo;m likely to write about the &amp;ldquo;Keyboards, keyboards, everywhere, and not a spot to think&amp;rdquo; idea in snippets well before producing the blog post I aspire for it.&lt;/p&gt;
+&lt;p&gt;In writing this snippet, I trawled through some of my Go Note Go writing. It&amp;rsquo;s fun for me to look through. It&amp;rsquo;s a distraction from finishing this snippet though. I look forward to writing snippets about some of the ideas I encounter in these Go Note Go expeditions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Go Note Go Writing Volume</title>
+      <link>https://davidbieber.com/snippets/2022-02-14-go-note-go-writing-volume/</link>
+      <pubDate>Mon, 14 Feb 2022 01:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2022-02-14-go-note-go-writing-volume/</guid>
+      
+      <description>&lt;p&gt;Lately I&amp;rsquo;ve been writing a lot, but not putting up any new snippets.
+Where has all the writing gone? Into 
+&lt;a href=&#34;https://davidbieber.com/projects/go-note-go&#34;&gt;Go Note Go&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It has been 150 days since I started Go Note Go.
+I have written on Go Note Go on 91 of those days, producing 54,000 words.
+I&amp;rsquo;ve spent a little over 24 hours total doing so, making my writing speed a bit shy of 40 wpm.&lt;/p&gt;
+&lt;p&gt;I review more of my Go Note Go writing than I might expect, given its volume and that none of it has translated into published snippets.
+Since 
+&lt;a href=&#34;https://davidbieber.com/snippets/2022-01-08-gng-messager-snippet-plans/&#34;&gt;turning Go Note Go into an outliner&lt;/a&gt;,
+the experience of reviewing my writing has been much more comfortable than it was previously.&lt;/p&gt;
+&lt;p&gt;When I write in Go Note Go using the &amp;ldquo;Roam Research&amp;rdquo; uploader, my writing is divided into &amp;ldquo;sessions&amp;rdquo;.
+Each session starts with a line containing only the time. The rest of the writing is nested beneath.
+&lt;img src=&#34;session.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When I review my writing in Go Note Go, I do so session by session, putting a summary of the session in that top line of the session, and then collapsing the session. Often the top line is a block-reference to one or more of the lines from the session. For example,
+&lt;img src=&#34;session-collapsed.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This compresses the 600 words I might write on a given day and presents them in a series of often 10 or fewer individual lines.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Applying Lessons from Snippets to LaLTaL</title>
       <link>https://davidbieber.com/snippets/2022-01-18-snippets-lessons-for-laltal/</link>
       <pubDate>Tue, 18 Jan 2022 01:00:00 +0000</pubDate>

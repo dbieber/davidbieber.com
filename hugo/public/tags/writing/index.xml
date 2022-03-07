@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>writing on David Bieber</title>
+    <link>https://davidbieber.com/tags/writing/</link>
+    <description>Recent content in writing on David Bieber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Feb 2022 01:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go Note Go Writing Volume</title>
+      <link>https://davidbieber.com/snippets/2022-02-14-go-note-go-writing-volume/</link>
+      <pubDate>Mon, 14 Feb 2022 01:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2022-02-14-go-note-go-writing-volume/</guid>
+      
+      <description>&lt;p&gt;Lately I&amp;rsquo;ve been writing a lot, but not putting up any new snippets.
+Where has all the writing gone? Into 
+&lt;a href=&#34;https://davidbieber.com/projects/go-note-go&#34;&gt;Go Note Go&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It has been 150 days since I started Go Note Go.
+I have written on Go Note Go on 91 of those days, producing 54,000 words.
+I&amp;rsquo;ve spent a little over 24 hours total doing so, making my writing speed a bit shy of 40 wpm.&lt;/p&gt;
+&lt;p&gt;I review more of my Go Note Go writing than I might expect, given its volume and that none of it has translated into published snippets.
+Since 
+&lt;a href=&#34;https://davidbieber.com/snippets/2022-01-08-gng-messager-snippet-plans/&#34;&gt;turning Go Note Go into an outliner&lt;/a&gt;,
+the experience of reviewing my writing has been much more comfortable than it was previously.&lt;/p&gt;
+&lt;p&gt;When I write in Go Note Go using the &amp;ldquo;Roam Research&amp;rdquo; uploader, my writing is divided into &amp;ldquo;sessions&amp;rdquo;.
+Each session starts with a line containing only the time. The rest of the writing is nested beneath.
+&lt;img src=&#34;session.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When I review my writing in Go Note Go, I do so session by session, putting a summary of the session in that top line of the session, and then collapsing the session. Often the top line is a block-reference to one or more of the lines from the session. For example,
+&lt;img src=&#34;session-collapsed.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This compresses the 600 words I might write on a given day and presents them in a series of often 10 or fewer individual lines.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
