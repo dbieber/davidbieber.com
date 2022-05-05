@@ -327,7 +327,7 @@ I was just a small piece of this epic endeavor. Bianca was the organizer and dri
       
       <description>&lt;p&gt;Python Fire is a Python library for automatically creating command line interfaces (CLIs) from absolutely any Python object.&lt;/p&gt;
 &lt;p&gt;Check it out at &lt;a href=&#34;https://github.com/google/python-fire&#34;&gt;https://github.com/google/python-fire&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I originally wrote Python Fire after joining Google Brain in 2016. In March 2017 we open sourced the project, and I proud and delighted by the growth and reception it has seen since.&lt;/p&gt;
+&lt;p&gt;I originally wrote Python Fire after joining Google Brain in 2016. In March 2017 we open sourced the project, and I am proud and delighted by the growth and reception it has seen since.&lt;/p&gt;
 &lt;p&gt;To give it a try, simply &lt;code&gt;pip install fire&lt;/code&gt;, and then call &lt;code&gt;fire.Fire()&lt;/code&gt; as the main of any Python program.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s a simple example to pique your interest, and then if you want to learn more, you should read the 
 &lt;a href=&#34;http://google.github.io/python-fire&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python Fire Guide&lt;/a&gt;.&lt;/p&gt;
@@ -617,7 +617,7 @@ Useful for coordinating going out for lunch taking breaks etc.&lt;/li&gt;
 &lt;hr&gt;
 &lt;p&gt;I&amp;rsquo;m not sold these are &lt;em&gt;all&lt;/em&gt; good ideas
 (e.g. pomodoro timers can be disruptive, and I considered putting &lt;em&gt;light music&lt;/em&gt; on the list but decided against it),
-but I think that by implementing several of these idea I can make my working sessions a little more welcoming and enjoyable for all involved.&lt;/p&gt;
+but I think that by implementing several of these ideas I can make my working sessions a little more welcoming and enjoyable for all involved.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Additional ideas:&lt;/p&gt;
 &lt;ul&gt;

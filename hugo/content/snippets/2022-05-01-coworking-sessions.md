@@ -57,7 +57,7 @@ Some are about making people comfortable:
 
 I'm not sold these are _all_ good ideas
 (e.g. pomodoro timers can be disruptive, and I considered putting _light music_ on the list but decided against it),
-but I think that by implementing several of these idea I can make my working sessions a little more welcoming and enjoyable for all involved.
+but I think that by implementing several of these ideas I can make my working sessions a little more welcoming and enjoyable for all involved.
 
 ---
 
