@@ -19,7 +19,7 @@ Python Fire is a Python library for automatically creating command line interfac
 
 Check it out at https://github.com/google/python-fire.
 
-I originally wrote Python Fire after joining Google Brain in 2016. In March 2017 we open sourced the project, and I proud and delighted by the growth and reception it has seen since.
+I originally wrote Python Fire after joining Google Brain in 2016. In March 2017 we open sourced the project, and I am proud and delighted by the growth and reception it has seen since.
 
 To give it a try, simply `pip install fire`, and then call `fire.Fire()` as the main of any Python program.
 
