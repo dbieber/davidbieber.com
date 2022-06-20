@@ -41,7 +41,9 @@
 
   {{ partial "pagination" . }}
 
-  {{ if ne $pageScope.Title "Tags" }}
+  {{ if or (eq $pageScope.Title "Tags") (eq $pageScope.Title "Snippets") }}
+    {{ partial "discussion" "snippets" }}
+  {{ else }}
     {{ partial "discussion" .Title }}
   {{ end }}
 </div>
