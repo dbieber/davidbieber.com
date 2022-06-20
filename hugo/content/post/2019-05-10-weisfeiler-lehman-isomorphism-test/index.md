@@ -8,7 +8,7 @@ draft = false
 authors = ["admin"]
 math = true
 
-tags = []
+tags = ["math"]
 summary = "Explains the Weisfeiler-Lehman Graph Isomorphism Test"
 
 [image]

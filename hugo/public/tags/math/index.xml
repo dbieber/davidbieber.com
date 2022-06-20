@@ -156,5 +156,124 @@ One extreme way you may have been predictable is if the host knows exactly how e
 </description>
     </item>
     
+    <item>
+      <title>The Weisfeiler-Lehman Isomorphism Test</title>
+      <link>https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/</guid>
+      
+      <description>&lt;h3 id=&#34;graph-isomorphism&#34;&gt;Graph Isomorphism&lt;/h3&gt;
+&lt;p&gt;Two graphs are considered isomorphic if there is a mapping between the nodes of the graphs that preserves node adjacencies.
+That is, a pair of nodes may be connected by an edge in the first graph if and only if the corresponding pair of nodes in the second graph is also connected by an edge in the same way.
+An example of two isomorphic graphs is shown here.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;graph-isomorphism.png&#34; alt=&#34;Example of isomorphic graphs&#34; title=&#34;Two isomorphic graphs are shown.&#34;&gt;
+&lt;em&gt;Figure: Graph 1 and Graph 2 are isomorphic.
+The correspondance between nodes is illustrated by the node colors and numbers.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In general, determining whether two graphs are isomorphic when the correspondance is not provided is a challenging problem; precisely how hard this problem is remains an open question in computer science.
+It isn&amp;rsquo;t known whether there is a polynomial time algorithm for determining whether graphs are isomorphic, and it also isn&amp;rsquo;t known whether the problem is $\text{NP-complete}.$
+The graph isomorphism problem may even be an example of an 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/NP-intermediate&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;$\text{NP-intermediate}$&lt;/a&gt; problem, but this would only be possible if $\text{P} \ne \text{NP}.$&lt;/p&gt;
+&lt;h3 id=&#34;the-weisfeiler-lehman-isomorphism-test&#34;&gt;The Weisfeiler-Lehman Isomorphism Test&lt;/h3&gt;
+&lt;p&gt;Here is the algorithm for the Weisfeiler-Lehman Isomorphism Test.
+It produces for each graph a canonical form.
+If the canonical forms of two graphs are not equivalent, then the graphs are definitively not isomorphic.
+However, it is possible for two non-isomorphic graphs to share a canonical form, so this test alone cannot provide conclusive evidence that two graphs are isomorphic.&lt;/p&gt;
+&lt;p&gt;The Algorithm:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For iteration $i$ of the algorithm we will be assigning to each node a tuple $L_{i,n}$ containing the node&amp;rsquo;s old compressed label and a multiset of the node&amp;rsquo;s neighbors&#39; compressed labels.
+A multiset is a set (a collection of elements where order is not important) where elements may appear multiple times.&lt;/li&gt;
+&lt;li&gt;At each iteration we will additionally be assigning to each node $n$ a new &amp;ldquo;compressed&amp;rdquo; label $C_{i,n}$ for that node&amp;rsquo;s set of labels.
+Any two nodes with the same $L_{i,n}$ will get the same compressed label.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;To begin, we initialize $C_{0,n} = 1$ for all nodes $n$.&lt;/li&gt;
+&lt;li&gt;At iteration $i$ of the algorithm (beginning with $i=1$), for each node $n$, we set $L_{i,n}$ to be a tuple containing the node&amp;rsquo;s old label $C_{i-1,n}$ and the multiset of compressed node labels $C_{i-1,m}$ from all nodes $m$ neighboring $n$ from the previous iteration $(i-1)$.&lt;/li&gt;
+&lt;li&gt;We then complete iteration $i$ by setting $C_{i,n}$ to be a new &amp;ldquo;compressed&amp;rdquo; label, such as a hash of $L_{i,n}$.
+Any two nodes with the same labels $L_{i,n}$ must get the same compressed label $C_{i,n}$.&lt;/li&gt;
+&lt;li&gt;Partition the nodes in the graph by their compressed label.
+Repeat 2 + 3 for up to $N$ (the number of nodes) iterations, or until there is no change in the partition of nodes by compressed label from one iteration to the next.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When using this method to determine graph isomorphism, it may be applied in parallel to the two graphs.
+The algorithm may be terminated early after iteration $i$ if the sizes of partitions of nodes partitioned by compressed labels diverges between the two graphs; if this is the case, the graphs are not isomorphic.&lt;/p&gt;
+&lt;h3 id=&#34;example-of-the-weisfeiler-lehman-isomorphism-test&#34;&gt;Example of the Weisfeiler-Lehman Isomorphism Test&lt;/h3&gt;
+&lt;p&gt;We demonstrate here the Weisfeiler-Lehman isomorphism test using the example graphs from above.
+The graphs are shown again here for completeness.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;graph-isomorphism-000.png&#34; alt=&#34;Two isomorphic graphs are shown.&#34; title=&#34;Two isomorphic graphs are shown.&#34;&gt;
+&lt;em&gt;Figure: Graph 1 and Graph 2 are isomorphic.
+We will apply the Weisfeiler-Lehman isomorphism test to these graphs as a means of illustrating the test.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;To initialize the algorithm (Step 1), we set $C_{0,n} = 1$ for all nodes $n$.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;graph-isomorphism-001.png&#34; alt=&#34;Initialization: $C\_{0,n} = 1$ for all nodes $n$&#34; title=&#34;We initialize $C_{0,n} = 1$ for all nodes.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;For iteration 1, Step 2, we compute $L_{1,n}$.
+The first part of a node&amp;rsquo;s $L$ is the node&amp;rsquo;s old compressed label; the second part of a node&amp;rsquo;s $L$ is the multiset of the neighboring nodes&#39; compressed labels.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;graph-isomorphism-002.png&#34; alt=&#34;Iteration 1, Step 2: $L\_{1,n}$&#34; title=&#34;Iteration 1, Step 2: $L_{1,n}$&#34;&gt;&lt;/p&gt;
+&lt;p&gt;For iteration 1, Step 3, we introduce &amp;ldquo;compressed&amp;rdquo; labels $C_{1,n}$ for the nodes:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;graph-isomorphism-003.png&#34; alt=&#34;Iteration 1, Step 3: $C\_{1,n}$&#34; title=&#34;Iteration 1, Step 3: $C_{1,n}$&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We now begin iteration 2.
+In iteration 2, Step 2, we compute $L_{2,n}$:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;graph-isomorphism-004.png&#34; alt=&#34;Iteration 2, Step 2: $L\_{2,n}$&#34; title=&#34;Iteration 2, Step 2: $L_{2,n}$&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In iteration 2, Step 3, we compute $C_{2,n}$:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;graph-isomorphism-005.png&#34; alt=&#34;Iteration 2, Step 3: $C\_{2,n}$&#34; title=&#34;Iteration 2, Step 3: $C_{2,n}$&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In iteration 3, Step 2, we compute $L_{3,n}$:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;graph-isomorphism-006.png&#34; alt=&#34;Iteration 3, Step 2: $L\_{3,n}$&#34; title=&#34;Iteration 3, Step 2: $L_{3,n}$&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In iteration 3, Step 3, we compute $C_{3,n}$:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;graph-isomorphism-007.png&#34; alt=&#34;Iteration 3, Step 3: $C\_{3,n}$&#34; title=&#34;Iteration 3, Step 3: $C_{3,n}$&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Since the partition of nodes by compressed label has not changed from $C_{2,n}$ to $C_{3,n}$, we may terminate the algorithm here.&lt;/p&gt;
+&lt;p&gt;Concretely, the partition of nodes by compressed label may be represented as the number of nodes with each compressed label.
+That is: &lt;strong&gt;&amp;ldquo;2 7s, 1 8, and 2 9s&amp;rdquo;&lt;/strong&gt;.
+This is the canonical form of our graph.
+Since both Graph 1 and Graph 2 have this same canonical form, we cannot rule out the possibility that they are isomorphic (they &lt;em&gt;are&lt;/em&gt; in fact isomorphic, but the algorithm doesn&amp;rsquo;t allow us to conclude this definitively.)&lt;/p&gt;
+&lt;h3 id=&#34;implementation-considerations&#34;&gt;Implementation Considerations&lt;/h3&gt;
+&lt;p&gt;One detail omitted is that the algorithm requires canonical forms of the multisets for comparison.
+Placing the elements of the multiset in sorted order provides one way of doing this.&lt;/p&gt;
+&lt;p&gt;Additionally, for the representation of the graph that the algorithm emits to be deterministic, we need to establish a convention for creating compressed labels.
+One possible convention is to use increasing integers starting from 1, and to assign compressed labels to nodes in lexicographical order of their non-compressed labels.
+Another possible convention is to use the hash of the multiset to create the compressed label.&lt;/p&gt;
+&lt;p&gt;When comparing the partition of the nodes by compressed label from one iteration to the next to see whether to proceed to another iteration, it is sufficient to compare which nodes are in each partition.
+If the partitions change, we proceed to the next iteration.
+If no partition changes, the algorithm can terminate early.
+When comparing the partitions of the nodes across graphs to see if graphs are isomorphic, we use the canonical form as described above in the algorithm.&lt;/p&gt;
+&lt;h3 id=&#34;finding-the-correspondance-between-isomorphic-graphs&#34;&gt;Finding the Correspondance Between Isomorphic Graphs&lt;/h3&gt;
+&lt;p&gt;The core idea of the Weisfeiler-Lehman isomorphism test is to find for each node in each graph a signature based on the neighborhood around the node.
+These signatures can then be used to find the correspondance between nodes in the two graphs, which can be used to check for isomorphism.&lt;/p&gt;
+&lt;p&gt;In the algorithm descibed above, the &amp;ldquo;compressed labels&amp;rdquo; serve as the signatures.
+Since multiple nodes may have the same compressed label, there are multiple possible correspondances suggested by a Weisfeiler-Lehman labeling.
+The Weisfeiler-Lehman isomorphism test itself does not provide a way of narrowing down the possible correspondances further.&lt;/p&gt;
+&lt;h3 id=&#34;the-disappearance-of-boris-weisfeiler&#34;&gt;The Disappearance of Boris Weisfeiler&lt;/h3&gt;
+&lt;p&gt;Boris Weisfeiler &amp;ndash; one of the two mathematicians responsible for the Weisfeiler-Lehman isomorphism test &amp;ndash; was a professor at Penn State University until he disappeared mysteriously in Chile in 1985.
+His disappearance in the 80s is unsettling, and I would encourage you to visit 
+&lt;a href=&#34;http://www.boris.weisfeiler.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;boris.weisfeiler.com&lt;/a&gt; to learn more about the search for Weisfeiler and the ongoing (2018) judicial proceedings surrounding his disappearance.&lt;/p&gt;
+&lt;p&gt;Steven List produced an award winning short film called &lt;em&gt;The Colony&lt;/em&gt; based on the disappearance of Boris Weisfeiler, available 
+&lt;a href=&#34;https://vimeo.com/60220290&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;on Vimeo here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After a brief internet search, I have been unable to find any information about Weisfeiler&amp;rsquo;s colleague and coauthor A. Lehman, not even a first name.
+(Update Aug. 2020: A reader pointed me to 
+&lt;a href=&#34;https://towardsdatascience.com/a-forgotten-story-of-soviet-ai-4af5daaf9cdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this recent story&lt;/a&gt; about &lt;em&gt;Andrey&lt;/em&gt; Leman. Thank you!)&lt;/p&gt;
+&lt;h3 id=&#34;np-intermediate-problems&#34;&gt;NP-Intermediate Problems&lt;/h3&gt;
+&lt;p&gt;As mentioned in the introduction, it is not known whether the graph isomorphism problem is in $\text{P}$ or $\text{NP-complete}$.
+In fact, it is not even known whether graph isomorphism falls in either of these categories, or whether this problem is $\text{NP-intermediate}$.
+The problem of factoring integers is another problem like this, where it is unknown whether the problem is in $\text{P}$, $\text{NP-complete}$, or is $\text{NP-intermediate}$.
+Bear in mind that $\text{NP-intermediate}$ problems can only exist if $\text{P} \ne \text{NP}$.
+So if anyone were to show conclusively that factoring or graph isomorphism were $\text{NP-intermediate}$ they would also have shown $\text{P} \ne \text{NP}$ and won the 
+&lt;a href=&#34;https://www.claymath.org/millennium-problems/p-vs-np-problem&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Clay Institute P vs NP Millenium Problem&lt;/a&gt;&amp;rsquo;s million dollar prize.&lt;/p&gt;
+&lt;h3 id=&#34;applications-of-graph-isomorphisms&#34;&gt;Applications of Graph Isomorphisms&lt;/h3&gt;
+&lt;p&gt;Now that you&amp;rsquo;re familiar with the Weisfeiler-Lehman test for graph isomorphisms, what is the graph isomorphism problem good for?&lt;/p&gt;
+&lt;p&gt;There are applications of the graph isomorphism problem in, for example, computational chemistry and in circuit design.&lt;/p&gt;
+&lt;p&gt;In chemistry, it is common to represent a molecule as a graph, with the atoms in the molecule being the nodes of the graph and the bonds between molecules being the edges.
+Here, the graph isomorphism problem can be used to determine if two chemical structures are in fact the same structure.
+This is important for 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Drug_discovery&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;drug discovery&lt;/a&gt;, where scientists are working to create molecular structures that will be useful in order to fight diseases.&lt;/p&gt;
+&lt;p&gt;A circuit is commonly represented as a graph as well.
+The components in the circuit form the nodes of the graph, and the connections between components form the edges.
+The graph isomorphism problem is useful here for determining whether two circuits that are laid out different are in fact identical.&lt;/p&gt;
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+&lt;p&gt;Weisfeiler and Lehman first proposed this method in their paper &lt;em&gt;A reduction of a graph to a canonical form and an algebra arising during this reduction&lt;/em&gt; in 1968.
+An English translation of this paper, originally published in Russian, is 
+&lt;a href=&#34;https://www.iti.zcu.cz/wl2018/pdf/wl_paper_translation.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More recently the method is also described succinctly in 
+&lt;a href=&#34;http://www.jmlr.org/papers/volume12/shervashidze11a/shervashidze11a.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Weisfeiler-Lehman Graph Kernels (Shervashidze 2011)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now go forth and detect graph isomorphisms!&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
