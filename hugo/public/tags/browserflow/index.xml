@@ -6,7 +6,94 @@
     <description>Recent content in browserflow on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/browserflow/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/browserflow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chat by Tag</title>
+      <link>https://davidbieber.com/snippets/2022-06-20-chat-by-tag/</link>
+      <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2022-06-20-chat-by-tag/</guid>
+      
+      <description>&lt;p&gt;I don&amp;rsquo;t have a comments section on my website, but I do like when people reach out to me by email.
+I am thinking about an idea for adding chat to my website, but the experience I have in mind is different from any chat or comments section that I&amp;rsquo;ve seen before.
+Here&amp;rsquo;s what I&amp;rsquo;m thinking about and why &amp;ndash; please do let me know if it exists.&lt;/p&gt;
+&lt;p&gt;At the end of each snippet there would be a badge for each tag associated with that snippet, as there already is today.
+Each badge would indicate that there is a chat thread available for that tag.
+E.g. it would show the number of active users and amount of recent activity in the chatroom.
+Clicking the badge would take you to the tag&amp;rsquo;s page, which would list all the snippets having that tag.
+The tag page would now also house the tag&amp;rsquo;s chat thread.&lt;/p&gt;
+&lt;p&gt;On the tag page you could engage in real time chat, and your messages would stay up for a week (or until I take them down, in the case of spam).&lt;/p&gt;
+&lt;p&gt;My website is not particularly heavily trafficked, but enough people email me about the things I write that this features interests me.
+I don&amp;rsquo;t envision any of the chats having any content the majority of the time.
+I would set the lifetime of a message to just one week.
+Between the low traffic and ephemerality of the messages, most of the chats would be empty most of the time.
+I would set up email notifications for myself though, so that I know if someone does post a message.
+So at the very least, I could reply, even if few others see the messages.&lt;/p&gt;
+&lt;p&gt;As often happens when writing a snippet about an idea I&amp;rsquo;ve had, I start looking into how to implement it concurrently with writing it.
+I&amp;rsquo;ve looked at Rocket.Chat, Slack, and Discord, and am currently investigating whether using widgetbot.io to provide access to a Discord server might be a solid solution here.
+What follows is my initial attempt at including Discord directly in this snippet.&lt;/p&gt;
+&lt;details id=&#34;chat-details-inline&#34;&gt;
+  &lt;summary markdown=&#34;span&#34;&gt;Expand this to see the embedded chat.&lt;/summary&gt;
+  &lt;widgetbot
+    server=&#34;695290335823265862&#34;
+    channel=&#34;988521423603654686&#34;
+    width=&#34;100%&#34;
+    height=&#34;600&#34;&gt;
+  &lt;/widgetbot&gt;
+&lt;/details&gt;&lt;br/&gt;
+&lt;p&gt;It seems to be working quite well.&lt;/p&gt;
+&lt;p&gt;So, given that this tool is readily available, I will compromise on my original vision some.
+I think what I&amp;rsquo;ll do now is (1) find a way to lazily load the chat so people who don&amp;rsquo;t want to deal with it aren&amp;rsquo;t bothered by it,
+and then (2) I&amp;rsquo;ll add it (behind an expandable section) to every snippet and every tags page.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll set up a Discord server with one channel per tag. On the tag pages, the chat will default open to that tag&amp;rsquo;s channel.
+On the individual snippets, the chat will default open to the first tag present on the page.
+Users can easily switch to other channels if they so desire.&lt;/p&gt;
+&lt;p&gt;So, how to lazy load? This turned out to be simple enough to implement quite quickly. I added some JavaScript to the page that loads the widgetbot JavaScript only when the collapsed chat is expanded. It looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;script&amp;gt;
+let chatLoaded = false;
+const details = document.querySelector(&#39;#chat-details&#39;);
+details.addEventListener(&amp;quot;toggle&amp;quot;, event =&amp;gt; {
+  if (details.open &amp;amp;&amp;amp; !chatLoaded) {
+    const script = document.createElement(&#39;script&#39;);
+    script.src = &amp;quot;https://cdn.jsdelivr.net/npm/@widgetbot/html-embed&amp;quot;;
+    document.head.appendChild(script);
+    chatLoaded = true;
+  }
+});
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;(Why am I showing this code? It is not germane to the story. A: This is a snippet, and so I guess I do not curate the content like I would if the goal were a proper story. It&amp;rsquo;s meant for future me as much as for anyone else.)&lt;/p&gt;
+&lt;script&gt;
+let chatLoadedInline = false;
+const detailsInline = document.querySelector(&#39;#chat-details-inline&#39;);
+detailsInline.addEventListener(&#34;toggle&#34;, event =&gt; {
+  if (detailsInline.open &amp;&amp; !chatLoadedInline) {
+    const script = document.createElement(&#39;script&#39;);
+    script.src = &#34;https://cdn.jsdelivr.net/npm/@widgetbot/html-embed&#34;;
+    document.head.appendChild(script);
+    chatLoadedInline = true;
+  }
+});
+&lt;/script&gt;
+&lt;p&gt;Having set up the lazy loading, the next step was to create channels for each of the tags on my site.
+There are a lot of tags, so I used Browserflow to do this quickly. A joy as always.&lt;/p&gt;
+&lt;p&gt;Finally, I&amp;rsquo;ll have to update my website so that the appropriate chat gets added to the appropriate page. (I&amp;rsquo;m back, and that&amp;rsquo;s done now :).)&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve tagged this post with &amp;ldquo;Ask Me Anywhere&amp;rdquo; because, like my original Ask Me Anywhere ideas, this is about allowing for more direct engagement between me and people on the site. I&amp;rsquo;ve also tagged this &amp;ldquo;Snippets&amp;rdquo;, because it&amp;rsquo;s primarily about a change to the snippets section of my website, and &amp;ldquo;Browserflow&amp;rdquo; because Browserflow was a joy to use for setting up this new system.&lt;/p&gt;
+&lt;p&gt;At this point, I&amp;rsquo;m concluding the snippet. The system is up and running. That was certainly not my expectation when I started writing this, but I&amp;rsquo;m delighted by the progress I made.&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;As an aside, David, expand this for a reminder of how to add a new tag.&lt;/summary&gt;
+There will be some maintenance work necessary whenever I add a snippet with a new tag. Let me summarize the maintenance for myself here for easy reference:
+&lt;ol&gt;
+&lt;li&gt;Create a new channel in the Discord.&lt;/li&gt;
+&lt;li&gt;Add the tag name and channel id to the map at the top of the 
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/discussion.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;discussion.html partial&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The site won&amp;rsquo;t fail to build if you forget to do this; it will just have a broken chat section.&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;That should be it. See you in the chats!&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Sending messages as I drift off to sleep</title>
       <link>https://davidbieber.com/post/2022-01-08-new-messager-setup/</link>

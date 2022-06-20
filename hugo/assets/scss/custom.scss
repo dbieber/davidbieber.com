@@ -139,3 +139,7 @@ a.footnote-backref::before {
   border-radius: 25px;
   background-color: #f2c5c5;
 }
+
+details summary > * {
+  display: inline;
+}

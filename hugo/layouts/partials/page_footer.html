@@ -10,6 +10,13 @@
 {{ end }}
 
 {{ if ne .Type "page" }}
+  {{ $tags := .Params.tags }}
+  {{ $tags := default (slice "snippets") $tags }}
+  {{ $tag := index ($tags) 0 }}
+  {{ partial "discussion" $tag }}
+{{ end }}
+
+{{ if ne .Type "page" }}
   {{ $related := site.RegularPages.Related . | first 4 }}
   {{ with $related }}
   <div class="article-widget content-widget-hr">

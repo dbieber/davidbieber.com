@@ -495,6 +495,19 @@
   
   <div class="stream-item snippet-item">
     <h3 class="mb-0 mt-0">
+    <a href="/snippets/2022-06-20-chat-by-tag/">
+      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
+      
+      Chat by Tag
+      
+    </a>
+    </h3>
+  </div>
+  
+  
+  
+  <div class="stream-item snippet-item">
+    <h3 class="mb-0 mt-0">
     <a href="/snippets/2022-05-01-coworking-sessions/">
       <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
       
@@ -2874,6 +2887,37 @@
 
   
 
+
+  
+    
+
+<div class="article-widget content-widget-hr">
+  <details id="chat-details">
+    <summary><h3>Discussion 💬</h3></summary>
+    
+    <widgetbot
+      server="695290335823265862"
+      channel=
+      width="100%"
+      height="600">
+    </widgetbot>
+  </details>
+</div>
+
+<script>
+let chatLoaded = false;
+const details = document.querySelector('#chat-details');
+details.addEventListener("toggle", event => {
+  if (details.open && !chatLoaded) {
+    const script = document.createElement('script');
+    script.src = "https://cdn.jsdelivr.net/npm/@widgetbot/html-embed";
+    document.head.appendChild(script);
+    chatLoaded = true;
+  }
+});
+</script>
+
+  
 </div>
 
       

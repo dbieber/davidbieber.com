@@ -642,6 +642,40 @@ My flow will run once a day.</p>
 
   
   
+  
+  
+
+<div class="article-widget content-widget-hr">
+  <details id="chat-details">
+    <summary><h3>Discussion 💬</h3></summary>
+    
+    <widgetbot
+      server="695290335823265862"
+      channel=
+      width="100%"
+      height="600">
+    </widgetbot>
+  </details>
+</div>
+
+<script>
+let chatLoaded = false;
+const details = document.querySelector('#chat-details');
+details.addEventListener("toggle", event => {
+  if (details.open && !chatLoaded) {
+    const script = document.createElement('script');
+    script.src = "https://cdn.jsdelivr.net/npm/@widgetbot/html-embed";
+    document.head.appendChild(script);
+    chatLoaded = true;
+  }
+});
+</script>
+
+
+
+
+  
+  
   <div class="article-widget content-widget-hr">
     <h3>Related</h3>
     <ul>

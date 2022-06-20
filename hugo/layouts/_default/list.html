@@ -32,7 +32,7 @@
       {{ .Title }}
       {{ if eq $pageScope.Title "Tags" }}
       ({{ len .RegularPages }})
-      {{ end}}
+      {{ end }}
     </a>
     </h3>
   </div>
@@ -40,6 +40,11 @@
   {{ end }}
 
   {{ partial "pagination" . }}
+
+  {{ if ne $pageScope.Title "Tags" }}
+    {{ partial "discussion" .Title }}
+  {{ end }}
 </div>
+
 
 {{- end -}}
