@@ -7,7 +7,7 @@ lastmod = 2012-12-25T00:00:00
 draft = false
 authors = ["admin"]
 
-tags = []
+tags = ["tech-tips", "python"]
 summary = ""
 
 [image]

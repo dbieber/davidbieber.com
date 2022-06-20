@@ -250,5 +250,135 @@ sudo powermetrics --samplers smc | grep &amp;quot;GPU die temperature:&amp;quot;
 </description>
     </item>
     
+    <item>
+      <title>ssh Passwordlessly</title>
+      <link>https://davidbieber.com/post/2013-08-14-ssh-passwordlessly/</link>
+      <pubDate>Wed, 14 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2013-08-14-ssh-passwordlessly/</guid>
+      
+      <description>&lt;p&gt;You&amp;rsquo;re used to ssh-ing into machine &lt;strong&gt;B&lt;/strong&gt; from machine &lt;strong&gt;A&lt;/strong&gt; by typing:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ssh username@B.com&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;password&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Now you wish to ssh from machine &lt;strong&gt;A&lt;/strong&gt; into machine &lt;strong&gt;B&lt;/strong&gt; without having to enter your password. Just follow these steps.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create a public/private &lt;a href=&#34;http://en.wikipedia.org/wiki/RSA_(algorithm)&#34;&gt;RSA&lt;/a&gt; key pair by issuing the unix command &lt;code&gt;ssh-keygen&lt;/code&gt;. Do not enter a passphrase.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Put the private key on machine &lt;strong&gt;A&lt;/strong&gt; (the machine you wish to ssh from). Usually the best place to put it is in &lt;code&gt;~/.ssh&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On machine &lt;strong&gt;B&lt;/strong&gt;, create the file &lt;code&gt;~/.ssh/authorized_keys&lt;/code&gt;. Add the public key as a line to this new file. You can do this with the command &lt;code&gt;cat public_key &amp;gt;&amp;gt; authorized_keys&lt;/code&gt; or by copy/pasting.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On machine &lt;strong&gt;A&lt;/strong&gt;, create the file &lt;code&gt;~/.ssh/config&lt;/code&gt;. Add the following to this file.
+&lt;code&gt;Host anyname&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;HostName B.com&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;User username&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;IdentityFile ~/.ssh/private_key&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That&amp;rsquo;s it. You can now passwordlessly ssh into machine &lt;strong&gt;B&lt;/strong&gt; from machine &lt;strong&gt;A&lt;/strong&gt; just by typing:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ssh anyname&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;And as a bonus, you can now &lt;a href=&#34;http://en.wikipedia.org/wiki/Secure_copy&#34;&gt;&lt;code&gt;scp&lt;/code&gt;&lt;/a&gt; to and from machine &lt;strong&gt;B&lt;/strong&gt; passwordlessly as well.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s 
+&lt;a href=&#34;http://nerderati.com/2011/03/simplify-your-life-with-an-ssh-config-file/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;loads&lt;/a&gt; 
+&lt;a href=&#34;http://linux.die.net/man/5/ssh_config&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;more&lt;/a&gt; that you can do with an ssh config file. So have a Google, and see what you can see.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;I&amp;rsquo;m posting this online because it&amp;rsquo;s something I wish I had known sooner. Hopefully you can benefit from it.&lt;/p&gt;
+&lt;p&gt;This post isn&amp;rsquo;t the whole story though! Using an ssh key without a passphrase (a la step 1) is dangerous; if anyone gains access to your private key then they&amp;rsquo;ll be able to ssh into machine B as you. The solution is to (back in step 1) create a passphrase for your private key, and then &lt;a href=&#34;http://en.wikipedia.org/wiki/Ssh-agent&#34;&gt;ssh-agent&lt;/a&gt; will remember your decrypted private key so that you don&amp;rsquo;t need to enter your password too often.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Get your new Django based web app live with AppFog in minutes</title>
+      <link>https://davidbieber.com/post/2012-12-25-django-appfog/</link>
+      <pubDate>Tue, 25 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2012-12-25-django-appfog/</guid>
+      
+      <description>&lt;p&gt;You&amp;rsquo;ll have your Django web app up and running live on the internet with AppFog in a matter of minutes.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what you have to do.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&#34;#setting-up-appfog&#34;&gt;Start a project on AppFog.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#cloning-this-repository&#34;&gt;Clone the django-appfog-helloworld repository.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#pushing-to-appfog&#34;&gt;Push to AppFog.&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The repository is available at 
+&lt;a href=&#34;https://github.com/dbieber/django-appfog-helloworld&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/dbieber/django-appfog-helloworld&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what comes with this repo.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a Django project that works out of the box (just download it and &lt;code&gt;python manage.py runserver&lt;/code&gt;. If you have Django installed, it&amp;rsquo;ll work!). It&amp;rsquo;s already setup to serve static files. It&amp;rsquo;s all ready to use MySQL or sqlite3. It ships with Bootstrap and jQuery. Django&amp;rsquo;s admin app is enabled and ready to go. It has templates for 404 and 500 errors so you can quickly see how to get error handling working. And it has one app, named &lt;code&gt;app_name&lt;/code&gt;, that demonstrates the core functionality of Django: models, views, templating, and forms, by collecting email address of early users to your site. It&amp;rsquo;s a rudimentary version of LaunchRock.&lt;/p&gt;
+&lt;p&gt;My hope is that it will work well both as start code and as reference code for how to get Django working quickly.&lt;/p&gt;
+&lt;h5 id=&#34;this-template-is-great-for-quick-and-dirty-websites-its-perfect-for-a-hackathon-or-for-prototyping-an-idea-with-friends-and-its-a-great-template-for-getting-started-with-djangohttpswwwdjangoprojectcom-bootstraphttptwittergithubcombootstrap-and-jqueryhttpjquerycom-but-its-not-production-quality-in-two-key-respects-security-and-scalability-keep-that-in-mind-as-you-start-building&#34;&gt;This template is great for quick and dirty websites. It&amp;rsquo;s perfect for a hackathon or for prototyping an idea with friends. And it&amp;rsquo;s a great template for getting started with 
+&lt;a href=&#34;https://www.djangoproject.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Django&lt;/a&gt;, 
+&lt;a href=&#34;http://twitter.github.com/bootstrap/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bootstrap&lt;/a&gt;, and 
+&lt;a href=&#34;http://jquery.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jQuery&lt;/a&gt;. But it&amp;rsquo;s not production quality in two key respects, security and scalability. Keep that in mind as you start building.&lt;/h5&gt;
+&lt;p&gt;Now, let&amp;rsquo;s dive deeper into getting your Django app running.&lt;/p&gt;
+&lt;h4 id=&#34;setting-up-appfog&#34;&gt;Setting up AppFog&lt;/h4&gt;
+&lt;p&gt;Register for an account at 
+&lt;a href=&#34;http://appfog.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AppFog.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Create a new &amp;ldquo;Django Python&amp;rdquo; app. Host it on AWS. And give it a name. I called mine &amp;ldquo;helloworld-django&amp;rdquo;. Let&amp;rsquo;s say you call yours &lt;code&gt;name_of_app&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll want to set up the &lt;code&gt;af&lt;/code&gt; command line utility to make deploying your site easier later. On Mac or Unix this is as simple as &lt;code&gt;gem install af&lt;/code&gt;. Windows instructions are simple too, and are available in the &amp;ldquo;Update Source Code&amp;rdquo; tab of your app on AppFog.&lt;/p&gt;
+&lt;p&gt;(Optional) Make sure you have a MySQL database service provisioned. To do this, log in to AppFog, choose your app, and choose the &amp;ldquo;Services&amp;rdquo; tab. You can either bind an existing MySQL database service to your app or create a new one. If you don&amp;rsquo;t have a MySQL database provisioned, the app we deploy in a moment will use sqlite3 as a fallback and should work just fine.&lt;/p&gt;
+&lt;h4 id=&#34;cloning-this-repository&#34;&gt;Cloning this repository&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git clone https://github.com/dbieber/django-appfog-helloworld.git&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The web app is already all ready to be pushed to AppFog.&lt;/p&gt;
+&lt;p&gt;Before you go and push this website live, there are a few things you should do, all marked with &lt;code&gt;TODO&lt;/code&gt; in the source code you just downloaded. These are the most important:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Set your &lt;code&gt;SECRET_KEY&lt;/code&gt; in &lt;code&gt;settings.py&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Set up the &lt;code&gt;ADMINS&lt;/code&gt; variable in &lt;code&gt;settings.py&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Set default admin account credentials in &lt;code&gt;views.py&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Always be aware of whether &lt;code&gt;DEBUG = True&lt;/code&gt; or &lt;code&gt;DEBUG = False&lt;/code&gt; in &lt;code&gt;settings.py&lt;/code&gt;. This changes how errors are handled and you definitely want &lt;code&gt;DEBUG&lt;/code&gt; set to false when your site is public.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now you&amp;rsquo;re ready to go live!&lt;/p&gt;
+&lt;h4 id=&#34;pushing-to-appfog&#34;&gt;Pushing to AppFog&lt;/h4&gt;
+&lt;p&gt;Be sure to either run &lt;code&gt;python manage.py collectstatic&lt;/code&gt; or place all your static files your &lt;code&gt;static&lt;/code&gt; directory before pushing.&lt;/p&gt;
+&lt;p&gt;Log in to AppFog with the command &lt;code&gt;af login&lt;/code&gt;. (Find instructions for setting up the command line tool in the &amp;ldquo;Update Source Code&amp;rdquo; tab of your app on 
+&lt;a href=&#34;http://appfog.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AppFog.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;From inside the &lt;code&gt;django-appfog-helloworld&lt;/code&gt; directory (which, by the way, you are free to rename) run &lt;code&gt;af update name_of_app&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s it. Your site is live! You&amp;rsquo;re already collecting email address of beta-testers. Huzzah!&lt;/p&gt;
+&lt;h3 id=&#34;testing-locally&#34;&gt;Testing Locally&lt;/h3&gt;
+&lt;p&gt;To test locally, you&amp;rsquo;ll need to 
+&lt;a href=&#34;https://docs.djangoproject.com/en/dev/topics/install/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install Django&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To test your app locally, navigate to the &lt;code&gt;django-appfog-helloworld&lt;/code&gt; directory containing &lt;code&gt;manage.py&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python manage.py runserver&lt;/code&gt; runs your app locally. View it at &lt;code&gt;localhost:8000&lt;/code&gt;. &lt;br&gt;
+&lt;code&gt;python manage.py syncdb&lt;/code&gt; sets up your local database by default in a file called &lt;code&gt;dev.db&lt;/code&gt;. &lt;br&gt;
+&lt;code&gt;python manage.py collectstatic&lt;/code&gt; copies all your static files into your static files directory. &lt;br&gt;
+&lt;code&gt;python manage.py help&lt;/code&gt; for more.&lt;/p&gt;
+&lt;p&gt;Django is a Python based web framework with excellent documentation and tutorials. To learn more about Django, visit 
+&lt;a href=&#34;https://www.djangoproject.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;www.djangoproject.com&lt;/a&gt;. Happy hacking!&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://news.ycombinator.com/item?id=4965184&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Comments? Head over to HackerNews.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CRM&#39;s: Not Just for Sales Folk</title>
+      <link>https://davidbieber.com/post/2012-11-29-crms-not-just-for-sales-folk/</link>
+      <pubDate>Thu, 29 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2012-11-29-crms-not-just-for-sales-folk/</guid>
+      
+      <description>&lt;p&gt;In this blog post I recommend &lt;a href=&#34;http://streak.com&#34;&gt;Streak&lt;/a&gt;, a customer relationship management (CRM) tool that lives inside Gmail.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://news.ycombinator.com/item?id=4847437&#34;&gt;Discuss on Hacker News.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;What do you use email for? I’m curious, so feel free to &lt;a href=&#34;https://docs.google.com/spreadsheet/viewform?formkey=dFU1WjZ4eDh2TktzSjBlel83cDFwM3c6MQ&#34;&gt;let me know&lt;/a&gt; before reading further (&lt;a href=&#34;https://docs.google.com/spreadsheet/viewform?formkey=dFU1WjZ4eDh2TktzSjBlel83cDFwM3c6MQ&#34;&gt;Google form&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Personally, there are a just a handful of use cases that make up the vast majority of my email usage. Let’s list them.&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Organizing talks and events for ACM and Splash!&lt;/li&gt;
+&lt;li&gt;Applications for summer internships&lt;/li&gt;
+&lt;li&gt;Read-only-ish mail (Mailing lists announcing talks and events, class related announcements, discussions I minimally partake in, spam, etc.)&lt;/li&gt;
+&lt;li&gt;Talking with friends&lt;/li&gt;
+&lt;/ol&gt;&lt;p&gt;For about three months now, I’ve been thinking that email is woefully insufficient for managing my communication needs, particularly use cases 1 and 2. When I’m organizing a &lt;a href=&#34;http://david-bieber.tumblr.com/post/31367374857/code-at-night&#34;&gt;Code@Night&lt;/a&gt; I’ll often have 3 or more email threads related to the event. In one I’ll be discussing logistics with a company sponsor. In another I’ll be coordinating with other ACM officers. In still another I’ll announce the event to groups around campus. Often even more form when people start replying about how awesome it is that there will be fruit at the event or asking how they can contribute to making the world a better place.&lt;/p&gt;
+&lt;p&gt;I thought about how I could improve email so that managing all these communications could be better. Better ways of grouping conversations, by person or by event, would be nice. Having an indicator of what still had to be done and who I still needed to contact would be nice. I realized I could do all of this with Gmail already, combining labels and searches in clever ways. But that would be clunky, and so I was pleasantly surprised when I stumbled upon Streak.&lt;/p&gt;
+&lt;p&gt;Streak seems to be targeting sales and recruiting folks, and I think that’s the wrong audience for them. Their product was clearly designed with the sales-recruiting person in mind, but I think it’s equally well suited for the hacker, and not just for tracking bugs. To demonstrate this, I’ll write a bit about what the product does and how I’m using it.&lt;/p&gt;
+&lt;p&gt;I have two use cases for Streak so far, corresponding to email uses 1 and 2 in the list above. I use Streak for organizing events and for managing my applications for summer internships. I don’t know that either of these are use cases intended by the folks over at Streak. For organizing events (primarily tech talks and Code@Nights), I have a “Pipeline” in Streak called ACM Events. Into a Pipeline go boxes, one box per event. And a box contains all the emails, documents, comments, and other information pertaining to the event. It’s simple to add an email thread to a box, so I’m always able to keep everything relevant to a particular event in one easily accessible place in the Gmail web client. As the event goes from being just an idea to a complete plan to being successfully executed, its box moves through the pipeline. In this way I can quickly get at all events in a particular part of the planning process or event lifecycle, and I have a convenient archive of all past events.&lt;/p&gt;
+&lt;p&gt;For managing my summer internship applications, Streak has also proved useful. I have a box for each company to which I’m applying. And I put all the emails and documents for that company’s application into the appropriate box. On the company’s end, I’m probably being moved through a hiring pipeline in a similar CRM tool, and now the company is moving through my CRM’s pipeline in parallel.&lt;/p&gt;
+&lt;p&gt;The box and pipeline model took me a bit of tinkering with to really grok. It’s a paradigm shift that takes some getting used to. The email primitive is no longer the conversation, but instead is the thing you are trying to accomplish through the conversation. Say I need to reply to a Facebook recruiter about planning a tech talk here at Princeton. Now rather than using Gmail search to look for a particular email thread I vaguely recall having (perhaps by guessing at words that were in the thread or by scrolling through my email to the date I remember the email having been sent), I simply go to the box I created for the event, and all of the relevant emails are right there. This sounds a lot like labels, but has the distinct advantage that boxes are much more light weight than labels. Once you have more than a dozen labels or so, they become clunky and start cluttering up the Gmail navigation bar.&lt;/p&gt;
+&lt;p&gt;Don’t just take my word for it. &lt;a href=&#34;http://streak.com&#34;&gt;Give Streak a try.&lt;/a&gt;</description>
+    </item>
+    
   </channel>
 </rss>

@@ -1390,5 +1390,70 @@ Then I would be able to view my &amp;ldquo;saved for later&amp;rdquo; links when
 </description>
     </item>
     
+    <item>
+      <title>Get your new Django based web app live with AppFog in minutes</title>
+      <link>https://davidbieber.com/post/2012-12-25-django-appfog/</link>
+      <pubDate>Tue, 25 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2012-12-25-django-appfog/</guid>
+      
+      <description>&lt;p&gt;You&amp;rsquo;ll have your Django web app up and running live on the internet with AppFog in a matter of minutes.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what you have to do.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&#34;#setting-up-appfog&#34;&gt;Start a project on AppFog.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#cloning-this-repository&#34;&gt;Clone the django-appfog-helloworld repository.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#pushing-to-appfog&#34;&gt;Push to AppFog.&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The repository is available at 
+&lt;a href=&#34;https://github.com/dbieber/django-appfog-helloworld&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/dbieber/django-appfog-helloworld&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what comes with this repo.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a Django project that works out of the box (just download it and &lt;code&gt;python manage.py runserver&lt;/code&gt;. If you have Django installed, it&amp;rsquo;ll work!). It&amp;rsquo;s already setup to serve static files. It&amp;rsquo;s all ready to use MySQL or sqlite3. It ships with Bootstrap and jQuery. Django&amp;rsquo;s admin app is enabled and ready to go. It has templates for 404 and 500 errors so you can quickly see how to get error handling working. And it has one app, named &lt;code&gt;app_name&lt;/code&gt;, that demonstrates the core functionality of Django: models, views, templating, and forms, by collecting email address of early users to your site. It&amp;rsquo;s a rudimentary version of LaunchRock.&lt;/p&gt;
+&lt;p&gt;My hope is that it will work well both as start code and as reference code for how to get Django working quickly.&lt;/p&gt;
+&lt;h5 id=&#34;this-template-is-great-for-quick-and-dirty-websites-its-perfect-for-a-hackathon-or-for-prototyping-an-idea-with-friends-and-its-a-great-template-for-getting-started-with-djangohttpswwwdjangoprojectcom-bootstraphttptwittergithubcombootstrap-and-jqueryhttpjquerycom-but-its-not-production-quality-in-two-key-respects-security-and-scalability-keep-that-in-mind-as-you-start-building&#34;&gt;This template is great for quick and dirty websites. It&amp;rsquo;s perfect for a hackathon or for prototyping an idea with friends. And it&amp;rsquo;s a great template for getting started with 
+&lt;a href=&#34;https://www.djangoproject.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Django&lt;/a&gt;, 
+&lt;a href=&#34;http://twitter.github.com/bootstrap/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bootstrap&lt;/a&gt;, and 
+&lt;a href=&#34;http://jquery.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jQuery&lt;/a&gt;. But it&amp;rsquo;s not production quality in two key respects, security and scalability. Keep that in mind as you start building.&lt;/h5&gt;
+&lt;p&gt;Now, let&amp;rsquo;s dive deeper into getting your Django app running.&lt;/p&gt;
+&lt;h4 id=&#34;setting-up-appfog&#34;&gt;Setting up AppFog&lt;/h4&gt;
+&lt;p&gt;Register for an account at 
+&lt;a href=&#34;http://appfog.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AppFog.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Create a new &amp;ldquo;Django Python&amp;rdquo; app. Host it on AWS. And give it a name. I called mine &amp;ldquo;helloworld-django&amp;rdquo;. Let&amp;rsquo;s say you call yours &lt;code&gt;name_of_app&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll want to set up the &lt;code&gt;af&lt;/code&gt; command line utility to make deploying your site easier later. On Mac or Unix this is as simple as &lt;code&gt;gem install af&lt;/code&gt;. Windows instructions are simple too, and are available in the &amp;ldquo;Update Source Code&amp;rdquo; tab of your app on AppFog.&lt;/p&gt;
+&lt;p&gt;(Optional) Make sure you have a MySQL database service provisioned. To do this, log in to AppFog, choose your app, and choose the &amp;ldquo;Services&amp;rdquo; tab. You can either bind an existing MySQL database service to your app or create a new one. If you don&amp;rsquo;t have a MySQL database provisioned, the app we deploy in a moment will use sqlite3 as a fallback and should work just fine.&lt;/p&gt;
+&lt;h4 id=&#34;cloning-this-repository&#34;&gt;Cloning this repository&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git clone https://github.com/dbieber/django-appfog-helloworld.git&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The web app is already all ready to be pushed to AppFog.&lt;/p&gt;
+&lt;p&gt;Before you go and push this website live, there are a few things you should do, all marked with &lt;code&gt;TODO&lt;/code&gt; in the source code you just downloaded. These are the most important:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Set your &lt;code&gt;SECRET_KEY&lt;/code&gt; in &lt;code&gt;settings.py&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Set up the &lt;code&gt;ADMINS&lt;/code&gt; variable in &lt;code&gt;settings.py&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Set default admin account credentials in &lt;code&gt;views.py&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Always be aware of whether &lt;code&gt;DEBUG = True&lt;/code&gt; or &lt;code&gt;DEBUG = False&lt;/code&gt; in &lt;code&gt;settings.py&lt;/code&gt;. This changes how errors are handled and you definitely want &lt;code&gt;DEBUG&lt;/code&gt; set to false when your site is public.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now you&amp;rsquo;re ready to go live!&lt;/p&gt;
+&lt;h4 id=&#34;pushing-to-appfog&#34;&gt;Pushing to AppFog&lt;/h4&gt;
+&lt;p&gt;Be sure to either run &lt;code&gt;python manage.py collectstatic&lt;/code&gt; or place all your static files your &lt;code&gt;static&lt;/code&gt; directory before pushing.&lt;/p&gt;
+&lt;p&gt;Log in to AppFog with the command &lt;code&gt;af login&lt;/code&gt;. (Find instructions for setting up the command line tool in the &amp;ldquo;Update Source Code&amp;rdquo; tab of your app on 
+&lt;a href=&#34;http://appfog.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AppFog.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;From inside the &lt;code&gt;django-appfog-helloworld&lt;/code&gt; directory (which, by the way, you are free to rename) run &lt;code&gt;af update name_of_app&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s it. Your site is live! You&amp;rsquo;re already collecting email address of beta-testers. Huzzah!&lt;/p&gt;
+&lt;h3 id=&#34;testing-locally&#34;&gt;Testing Locally&lt;/h3&gt;
+&lt;p&gt;To test locally, you&amp;rsquo;ll need to 
+&lt;a href=&#34;https://docs.djangoproject.com/en/dev/topics/install/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install Django&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To test your app locally, navigate to the &lt;code&gt;django-appfog-helloworld&lt;/code&gt; directory containing &lt;code&gt;manage.py&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python manage.py runserver&lt;/code&gt; runs your app locally. View it at &lt;code&gt;localhost:8000&lt;/code&gt;. &lt;br&gt;
+&lt;code&gt;python manage.py syncdb&lt;/code&gt; sets up your local database by default in a file called &lt;code&gt;dev.db&lt;/code&gt;. &lt;br&gt;
+&lt;code&gt;python manage.py collectstatic&lt;/code&gt; copies all your static files into your static files directory. &lt;br&gt;
+&lt;code&gt;python manage.py help&lt;/code&gt; for more.&lt;/p&gt;
+&lt;p&gt;Django is a Python based web framework with excellent documentation and tutorials. To learn more about Django, visit 
+&lt;a href=&#34;https://www.djangoproject.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;www.djangoproject.com&lt;/a&gt;. Happy hacking!&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://news.ycombinator.com/item?id=4965184&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Comments? Head over to HackerNews.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

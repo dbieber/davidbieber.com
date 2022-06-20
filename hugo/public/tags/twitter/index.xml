@@ -72,5 +72,232 @@ Since the number of search results is limited, this might not always work; it de
 </description>
     </item>
     
+    <item>
+      <title>A Step-by-Step Developer Guide to Building a Personal Roam-to-Twitter Bot</title>
+      <link>https://davidbieber.com/post/2021-03-07-roam-twitter-bot-dev-guide/</link>
+      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2021-03-07-roam-twitter-bot-dev-guide/</guid>
+      
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-02-08-repurposing-my-twitter-feed/&#34;&gt;Last month I wrote a little Twitter bot for myself&lt;/a&gt; with the goal of reclaiming my attention from Twitter. The idea is to fill my Twitter feed with things that &lt;em&gt;I&lt;/em&gt; care about, rather than letting the Twitter algorithm control my attention. By programmatically injecting cards into my Twitter feed I can repurpose the time I spend scrolling on Twitter from time lost to time well spent.&lt;/p&gt;
+&lt;p&gt;This post explains, step-by-step, how you can build your own private Twitter bot so you too can repurpose the time you spend doom-scrolling.&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;In this guide you&amp;rsquo;ll see how to set up a private personal Twitter bot that only you can follow. We&amp;rsquo;ll use this to inject content directly into your own feed. In order to choose what to Tweet, we&amp;rsquo;ll extract content from our Roam Research database. Here are the six steps we&amp;rsquo;ll follow.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Set up a private Twitter account&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Get your developer API keys&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use the twython library to post as your new Twitter account&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Write the tweet generator; I pull my tweets from Roam Research&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use the schedule library to periodically tweet&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(Bonus) Use supervisord to keep your Twitter bot running&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;step-1-set-up-a-private-twitter-account&#34;&gt;Step 1: Set up a private Twitter account&lt;/h2&gt;
+&lt;p&gt;Go ahead and register a new Twitter account. I called mine &amp;ldquo;@PrivateBieber6&amp;rdquo; since my main account is just @Bieber. You can call yours whatever you like!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FiWU9fP2Eji.png?alt=media&amp;amp;token=25592447-c25f-4027-a68b-7a70d0275bd9&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll have to provide a phone number or email address while registering. If you reuse a phone number from an existing account, it will work, but you&amp;rsquo;ll lose the ability to use SMS commands and receive SMS notifications on your main account. Only the account most recently linked to this phone number will have these features.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pro-tip:&lt;/strong&gt; you can add a plus (&amp;quot;+&amp;quot;) string to your email address to turn in into a new email address that still gets delivered to your inbox. E.g. mail to &lt;a href=&#34;mailto:david810+hello@gmail.com&#34;&gt;david810+hello@gmail.com&lt;/a&gt; still gets delivered to &lt;a href=&#34;mailto:david810@gmail.com&#34;&gt;david810@gmail.com&lt;/a&gt; (feel free to say hello).&lt;/p&gt;
+&lt;p&gt;Once you&amp;rsquo;ve created your new account, two important things to do:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Follow it from your main account!&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Set it to protected.&lt;/strong&gt; To do this, go to your settings (
+&lt;a href=&#34;https://twitter.com/settings/account&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://twitter.com/settings/account&lt;/a&gt;), choose &amp;ldquo;Privacy and safety&amp;rdquo; &amp;gt; &amp;ldquo;Audience and tagging&amp;rdquo; &amp;gt; Protect your Tweets.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;With this enabled, you&amp;rsquo;ll be the only one able to see the tweets from this account.&lt;/p&gt;
+&lt;h2 id=&#34;step-2-get-your-developer-api-keys&#34;&gt;Step 2: Get your developer API keys&lt;/h2&gt;
+&lt;p&gt;First you need to apply for a developer account. This just takes a minute. Go to &lt;a href=&#34;https://developer.twitter.com/en/apply-for-access&#34;&gt;https://developer.twitter.com/en/apply-for-access&lt;/a&gt; to apply for a developer account. Answer the questions honestly. Ping me on Twitter if any of the questions are unclear.&lt;/p&gt;
+&lt;p&gt;Once you have a developer account, create a new project and app. I called mine &amp;ldquo;Attention Playground.&amp;rdquo; Get creative! Choose a fun name.&lt;/p&gt;
+&lt;p&gt;Navigate to your newly created app, and Edit the &amp;ldquo;App permissions&amp;rdquo;. Set the app permissions to &amp;ldquo;Read and Write&amp;rdquo;. This will enable your bot to post tweets.&lt;/p&gt;
+&lt;p&gt;Next navigate to the project you created, and click the key icon next to your App.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FzZPsa9Ywas.png?alt=media&amp;amp;token=134c8176-ca99-4837-89b7-8ef994cef9b2&#34; alt=&#34;Click the key icon.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Write down your API key and API secret key. Generate an Access token and secret and write those down too. Your access token &amp;amp; secret should say &amp;ldquo;Created with &lt;strong&gt;Read and Write&lt;/strong&gt; permissions&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;These four tokens will be essential in the next steps.&lt;/p&gt;
+&lt;h2 id=&#34;step-3-use-twython-to-tweet-as-your-new-account&#34;&gt;Step 3: Use twython to tweet as your new account&lt;/h2&gt;
+&lt;p&gt;Now things get a bit technical. Install the twython Python library by running &lt;code&gt;pip install twython&lt;/code&gt; from your shell. If you&amp;rsquo;re not familiar with installing Python packages, you can 
+&lt;a href=&#34;https://packaging.python.org/tutorials/installing-packages/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;learn how to do this here&lt;/a&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s send a practice tweet. Create a new file called &lt;code&gt;hellotweet.py&lt;/code&gt; with the following code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import twython
+
+client = twython.Twython(
+  &amp;quot;YOUR_API_KEY&amp;quot;,
+  &amp;quot;YOUR_API_SECRET_KEY&amp;quot;,
+  &amp;quot;YOUR_ACCESS_TOKEN&amp;quot;,
+  &amp;quot;YOUR_ACCESS_TOKEN_SECRET&amp;quot;)
+
+def sendTweet(text):
+  return client.update_status(status=text)
+
+sendTweet(&amp;quot;Hello world!&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On lines 4-7, place the keys you got from Step 2 in stead of the placeholders I&amp;rsquo;ve included above.&lt;/p&gt;
+&lt;p&gt;Now, run your program! &lt;code&gt;python hellotweet.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If everything&amp;rsquo;s worked, you&amp;rsquo;ll have a new tweet from your private account saying &amp;ldquo;Hello world!&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Don&amp;rsquo;t move on to the next steps until you get this working.&lt;/p&gt;
+&lt;h2 id=&#34;step-4-write-the-tweet-generator-i-pull-my-tweets-from-roam-research&#34;&gt;Step 4: Write the tweet generator; I pull my tweets from Roam Research&lt;/h2&gt;
+&lt;p&gt;The simplest possible tweet generator looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import random
+
+def choose_message():
+  messages = [&amp;quot;Tweet 1: Make spaghetti&amp;quot;,
+              &amp;quot;Tweet 2: Learn about salmon&amp;quot;,
+              &amp;quot;Tweet 3: Call Mom&amp;quot;]
+  return random.choice(messages)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We&amp;rsquo;re going to write a more interesting tweet generator that pulls tweets out of a Roam Research database.&lt;/p&gt;
+&lt;p&gt;To do this, first set up a recurring json backup of your Roam Research database. You can use the project 
+&lt;a href=&#34;https://github.com/everruler12/roam2github-demo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;roam2github&lt;/a&gt; to set up the backup. There are detailed instructions on its github page for how to do this. You also have the option of using Roam&amp;rsquo;s built-in automatic backups, which you access from the command palette (cmd-P).&lt;/p&gt;
+&lt;p&gt;Use git to clone your backup locally. If your github repo is &amp;ldquo;&lt;a href=&#34;https://github.com/user/roam-backup%22,&#34;&gt;https://github.com/user/roam-backup&amp;quot;,&lt;/a&gt; then the command to clone the repo is &lt;code&gt;git clone https://github.com/dbieber/roam-backup&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Create roam.py. You can 
+&lt;a href=&#34;https://gist.github.com/dbieber/7722280c7fa10d1fdfa507612427001d&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;copy the contents of roam.py from here&lt;/a&gt;. This will allow us to pull the latest backup of our Roam database from GitHub programmatically. (1) Set the ROAMRESEARCH_DBPATH variable in roam.py to the location of json backup in your roam-backup directory. For me, this is &amp;lsquo;/Users/dbieber/code/github/dbieber/roam-backup/json/playground.json&amp;rsquo;. (2) Set the roam_dir variable in the update function to the path to your roam-backup directory. For me, this is &amp;lsquo;/Users/dbieber/code/github/dbieber/roam-backup&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;Using the new roam module we just created, it&amp;rsquo;s time to write a function that extracts potential tweets from your Roam database. Here&amp;rsquo;s the function I use:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def choose_message():
+  all_children = roam.get_children()
+  messages = []
+  for child in all_children:
+    if (&#39;Fleeting TODOs&#39; in child[&#39;string&#39;]
+        or &#39;Distraction TODOs&#39; in child[&#39;string&#39;]):
+      children = child.get(&#39;children&#39;, [])
+      for c in children:
+        if (c[&#39;string&#39;]
+            and &#39;DONE&#39; not in c[&#39;string&#39;]
+            and len(c[&#39;string&#39;]) &amp;lt;= 280):
+          messages.append(c[&#39;string&#39;])
+  return random.choice(messages)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;get_children&lt;/code&gt; function gets all the blocks from your Roam graph backup.  The for loop looks through all these blocks for ones that say &amp;ldquo;Fleeting TODOs&amp;rdquo; or &amp;ldquo;Distraction TODOs&amp;rdquo;. It takes the children of &lt;em&gt;those&lt;/em&gt; blocks (except those that are too long or say &amp;ldquo;DONE&amp;rdquo;) as potential tweets. One of those is selected randomly each time choose_messages is called.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s our whole tweet generator. In the next step, we&amp;rsquo;ll pull the Roam backup from GitHub periodically automatically so it&amp;rsquo;s always somewhat up to date, and we&amp;rsquo;ll schedule the bot to tweet every ten minutes.&lt;/p&gt;
+&lt;h2 id=&#34;step-5-use-the-schedule-library-to-periodically-tweet&#34;&gt;Step 5: Use the schedule library to periodically tweet&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;schedule&lt;/code&gt; library is a useful Python library for scheduling tasks to run at a particular time or on a recurring basis.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a simple demonstration of how to use &lt;code&gt;schedule&lt;/code&gt; to print &amp;ldquo;Hello world!&amp;rdquo; every 15 minutes:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import schedule
+
+def print_hello_world():
+  print(&#39;Hello world!&#39;)
+
+schedule.every(15).minutes.do(print_hello_world)
+while True:
+  schedule.run_pending()
+  time.sleep(30)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We don&amp;rsquo;t want to print hello world though; we want to tweet!&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re going to use &lt;code&gt;schedule&lt;/code&gt; to schedule two recurring tasks: (1) every 6 hours we&amp;rsquo;ll pull the latest Roam backup from GitHub, (2) every 10 minutes we&amp;rsquo;ll have our Bot pick a random block using the logic from the previous step and tweet it to twitter.&lt;/p&gt;
+&lt;p&gt;The code for that looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def tweet():
+  message = choose_message()
+  sendTweet(message)
+
+
+def main():
+  schedule.every(10).minutes.do(tweet)
+  schedule.every(360).minutes.do(roam.update)
+
+  while True:
+    schedule.run_pending()
+    time.sleep(30)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Putting it all together, our complete code now looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;quot;&amp;quot;&amp;quot;Every 10 minutes selects a topic from my Roam database and tweets it
+from a private Twitter account.
+&amp;quot;&amp;quot;&amp;quot;
+
+import random
+import time
+
+import schedule
+import roam
+
+import twython
+
+
+client = twython.Twython(
+  &amp;quot;YOUR_API_KEY&amp;quot;,
+  &amp;quot;YOUR_API_SECRET_KEY&amp;quot;,
+  &amp;quot;YOUR_ACCESS_TOKEN&amp;quot;,
+  &amp;quot;YOUR_ACCESS_TOKEN_SECRET&amp;quot;)
+
+
+def sendTweet(text):
+  return client.update_status(status=text)
+
+
+def choose_message():
+  all_children = roam.get_children()
+  messages = []
+  for child in all_children:
+    if (&#39;Fleeting TODOs&#39; in child[&#39;string&#39;]
+        or &#39;Distraction TODOs&#39; in child[&#39;string&#39;]):
+      children = child.get(&#39;children&#39;, [])
+      for c in children:
+        if (c[&#39;string&#39;]
+            and &#39;DONE&#39; not in c[&#39;string&#39;]
+            and len(c[&#39;string&#39;]) &amp;lt;= 280):
+          messages.append(c[&#39;string&#39;])
+  return random.choice(messages)
+
+
+def tweet():
+  message = choose_message()
+  sendTweet(message)
+
+
+def main():
+  schedule.every(10).minutes.do(tweet)
+  schedule.every(360).minutes.do(roam.update)
+
+  while True:
+    schedule.run_pending()
+    time.sleep(30)
+
+
+if __name__ == &#39;__main__&#39;:
+  main()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Make sure that both the &amp;ldquo;tweet&amp;rdquo; function and &amp;ldquo;roam.update&amp;rdquo; run successfully.&lt;/p&gt;
+&lt;p&gt;Save this as roam-tweeter.py. You can now run it with &lt;code&gt;python roam-tweeter.py&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;And that&amp;rsquo;s it! While this is running, your Twitter bot will post a new tweet to twitter every ten minutes. Using this, you can flood your Twitter timeline with things &lt;em&gt;you&lt;/em&gt; care about, whether that&amp;rsquo;s your TODOs, spaced repetition, or old ideas you want to revisit.&lt;/p&gt;
+&lt;h2 id=&#34;step-6-bonus-use-supervisord-to-keep-your-twitter-bot-running&#34;&gt;Step 6 (Bonus): Use supervisord to keep your Twitter bot running&lt;/h2&gt;
+&lt;p&gt;This is an optional step, but highly worthwhile! Supervisord is a utility you can use to monitor processes and automatically restart them if they die. If you plan on using your computer for long-running processes like a Twitter bot, this can save you lots of headaches.&lt;/p&gt;
+&lt;p&gt;Follow the instructions at 
+&lt;a href=&#34;http://supervisord.org/installing.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;supervisord.org&lt;/a&gt; to get set up. The key steps are:&lt;/p&gt;
+&lt;p&gt;To install supervisord, use &lt;code&gt;pip install supervisord&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Add a config for running your Twitter bot. Mine looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;[program:private-bieber-twitter]
+command=/Users/dbieber/.virtualenvs/_3/bin/python roam-tweeter.py
+directory=/Users/dbieber/code/playground/private-bieber-twitter
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Notice that I&amp;rsquo;ve included the full Path to python in the command.&lt;/p&gt;
+&lt;p&gt;Finally, start supervisord with &lt;code&gt;sudo&lt;/code&gt; indicating the path to the config. (e.g. for me the command is &lt;code&gt;sudo /Users/dbieber/.virtualenvs/_3/bin/supervisord -c ~/path/to/supervisord.conf&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;With supervisord set up, you&amp;rsquo;re bot is now bullet-proof! (Not bug-proof though.) Even if it encounters an error, it will automatically restart.&lt;/p&gt;
+&lt;h2 id=&#34;wrap-up&#34;&gt;Wrap-up&lt;/h2&gt;
+&lt;p&gt;Hopefully this guide makes it clear how you can use a private Twitter bot to reclaim your attention. The main contribution of this guide is its emphasis on using a private Twitter bot to design your own personal Twitter feed. We selected Roam Research backups as the source of tweets for our bot, but of course you can substitute Roam with any tweet generator that you please.&lt;/p&gt;
+&lt;p&gt;You can use a bot like this for revisiting old ideas, for surfacing your TODOs when you&amp;rsquo;re distracted, for sending yourself messages, or anything else you come up with.&lt;/p&gt;
+&lt;p&gt;Since making myself a private Twitter bot one month ago, I&amp;rsquo;ve been delighted to find that its tweets are often among the highest quality on my timeline. I hope you find the same.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;When it says that using a virtual environment is optional, know that it&amp;rsquo;s definitely worthwhile! &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
