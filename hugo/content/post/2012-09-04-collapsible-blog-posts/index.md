@@ -8,7 +8,7 @@ lastmod = 2012-09-04T00:00:00
 draft = false
 authors = ["admin"]
 
-tags = []
+tags = ["writing", "taking-silly-ideas-seriously"]
 summary = "This is my Hello World blog post of sorts."
 plugins_js = ["collapsible"]
 
