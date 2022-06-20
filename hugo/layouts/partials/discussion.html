@@ -3,7 +3,7 @@
 <div class="article-widget content-widget-hr">
   <details id="chat-details">
     <summary><h3>{{ i18n "discussion" }} 💬</h3></summary>
-    {{ $channel := index $channels . }}
+    {{ $channel := index $channels (replace (lower .) " " "-") }}
     <widgetbot
       server="695290335823265862"
       channel={{ $channel }}

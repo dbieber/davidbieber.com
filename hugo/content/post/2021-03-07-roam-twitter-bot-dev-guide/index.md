@@ -5,6 +5,7 @@ type = "post"
 uid = "mo0zBj4Up"
 plugins_js = ["margin-notes"]
 summary = "Use this guide to build a Roam Research Twitter bot that only you can see, to reclaim your attention when scrolling."
+tags = ["twitter", "roam-research", "software"]
 +++
 
 [Last month I wrote a little Twitter bot for myself](/snippets/2021-02-08-repurposing-my-twitter-feed/) with the goal of reclaiming my attention from Twitter. The idea is to fill my Twitter feed with things that _I_ care about, rather than letting the Twitter algorithm control my attention. By programmatically injecting cards into my Twitter feed I can repurpose the time I spend scrolling on Twitter from time lost to time well spent.

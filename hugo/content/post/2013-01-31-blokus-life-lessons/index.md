@@ -7,7 +7,7 @@ lastmod = 2013-01-31T00:00:00
 draft = false
 authors = ["admin"]
 
-tags = []
+tags = ["wisdom", "taking-silly-ideas-seriously"]
 summary = ""
 plugins_js = ["blokus"]
 
