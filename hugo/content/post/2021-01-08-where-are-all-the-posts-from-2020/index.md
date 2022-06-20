@@ -3,6 +3,7 @@ title = "Where are all the posts from 2020?"
 date = 2021-01-08T00:00:00
 type = "post"
 draft = false
+tags = ["snippets", "writing"]
 
 summary = "I've taken to writing \"snippets\", which are like blog posts, but without an audience or quality bar. Read them here."
 
