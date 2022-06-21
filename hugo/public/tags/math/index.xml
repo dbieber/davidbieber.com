@@ -6,7 +6,29 @@
     <description>Recent content in math on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weak and Strong Law of Large Numbers</title>
+      <link>https://davidbieber.com/snippets/2021-07-18-laws-of-large-numbers/</link>
+      <pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2021-07-18-laws-of-large-numbers/</guid>
+      
+      <description>&lt;p&gt;$X_i$s are i.i.d random variables with finite expected value.&lt;/p&gt;
+&lt;p&gt;$S_n$ is the sum of first $n$ random variables (the sample mean).&lt;br/&gt;
+$\mu$ is the true mean (the population mean).&lt;/p&gt;
+&lt;p&gt;Both the &lt;em&gt;Weak Law of Large Numbers&lt;/em&gt; and the &lt;em&gt;Strong Law of Large Numbers&lt;/em&gt; say that sample mean likely converges to the population mean as sample size increases.&lt;/p&gt;
+&lt;p&gt;The Weak law guarantees &lt;em&gt;convergence in probability&lt;/em&gt;.&lt;br/&gt;
+The Strong law guarantees &lt;em&gt;almost sure convergence&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Weak law: $\lim\limits_{n \to \infty} \text{Pr}\left(|S_n - \mu| &amp;lt; \epsilon\right) = 1$&lt;br/&gt;
+Strong law: $\text{Pr}\left(\lim\limits_{n \to \infty} S_n = \mu\right) = 1$&lt;/p&gt;
+&lt;p&gt;Neither occurence of &amp;ldquo;$=1$&amp;rdquo; means that any event is guaranteed. There&amp;rsquo;s simply infinitesimal probability that an event does not occur.&lt;/p&gt;
+&lt;p&gt;The weak law says that for any threshold distance from the true mean $\epsilon$ that you select, as the number of samples increases, the probability that the sample mean is within $\epsilon$ from the true mean approaches one. Even as the number of samples increases there is still the possibility of the sample mean being further than $\epsilon$ from the true mean; that possibility simply approaches being infinitesimal as the number of samples increases.&lt;/p&gt;
+&lt;p&gt;The strong law similarly doesn&amp;rsquo;t guarantee that the sample mean must ever equal the true mean. It says that with probability 1 (aka &amp;ldquo;almost surely&amp;rdquo;) the limit of the sample mean equals the true mean.
+The reason we call probability 1 &amp;ldquo;almost surely&amp;rdquo; rather than &amp;ldquo;surely&amp;rdquo; is that there are still valid sequences of samples where the sample mean doesn&amp;rsquo;t approach the true mean; these sample outcomes are simply an infinitesimal fraction of the total sample space.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Derivative of Softmax and the Softmax Cross Entropy Loss</title>
       <link>https://davidbieber.com/snippets/2020-12-12-derivative-of-softmax-and-the-softmax-cross-entropy-loss/</link>
