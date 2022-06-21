@@ -1,7 +1,7 @@
 +++
 title = "Weak and Strong Law of Large Numbers"
 date = 2021-07-18T00:00:00
-tags = ["tech-tips"]
+tags = ["math"]
 math = true
 +++
 
