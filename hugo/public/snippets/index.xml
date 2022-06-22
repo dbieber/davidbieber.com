@@ -8,6 +8,35 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/snippets/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Using Discord for my website&#39;s comments section</title>
+      <link>https://davidbieber.com/snippets/2022-06-21-using-discord/</link>
+      <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2022-06-21-using-discord/</guid>
+      
+      <description>&lt;p&gt;Yesterday I added &amp;ldquo;Discussion&amp;rdquo; sections to all the snippets and posts on my website.
+I wrote 
+&lt;a href=&#34;https://davidbieber.com/snippets/2022-06-20-chat-by-tag&#34;&gt;a snippet about it&lt;/a&gt; as I was doing it.
+The project morphed considerably during the writing of that snippet.
+So, today, I&amp;rsquo;m putting together a shorter snippet that says what I actually did.&lt;/p&gt;
+&lt;p&gt;I created a Discord server for this website (I invite you to 
+&lt;a href=&#34;https://discord.gg/NJ7ufFuEMa&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;join the Discord here&lt;/a&gt;.)
+Then, I used widgetbot.io to embed the Discord server all throughout my website.
+Every snippet, every post, every tags page, and the 
+&lt;a href=&#34;https://davidbieber.com/snippets/&#34;&gt;overall snippets&lt;/a&gt; and 
+&lt;a href=&#34;https://davidbieber.com/tags/&#34;&gt;overall tags&lt;/a&gt; pages all got Discussion sections.&lt;/p&gt;
+&lt;p&gt;On the Discord server, I made one channel per &lt;em&gt;tag&lt;/em&gt; on my website.
+The Discussion section for a given page shows the channel for the first tag on that page.
+This makes it more likely that you&amp;rsquo;ll encounter a bit of conversation compared with their being a single comments section per page on the site, given the modest level of traffic we&amp;rsquo;re seeing here.&lt;/p&gt;
+&lt;p&gt;Go ahead and expand the Discussion section below.
+Say hi.
+There&amp;rsquo;s no need to log in; you can be completely anonymous if desired, or use your real name.
+Please just be respectful of the space and of others.&lt;/p&gt;
+&lt;p&gt;See you in the chat.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Chat by Tag</title>
       <link>https://davidbieber.com/snippets/2022-06-20-chat-by-tag/</link>
       <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
