@@ -6,13 +6,13 @@ tags = ["attention"]
 keywords = ["hypothesis", "thought", "attention"]
 +++
 
-_This snippet is similar to these related snippets from March 2021. [[1](/snippets/2021-03-04-the-efficient-minds-hypothesis/)][[2](/snippets/2021-03-10-efficient-minds-hypothesis-failing)]_
+_This snippet is similar to these related snippets from March 2021: [#1](/snippets/2021-03-04-the-efficient-minds-hypothesis/) [#2](/snippets/2021-03-10-efficient-minds-hypothesis-failing)_
 
 I've been thinking about the Efficient Minds Fallacy lately, and so I read this as it relates to the EMF.
 
 The Efficient Minds Fallacy occurs when someone incorrectly believes in the [Efficient Minds Hypothesis](/snippets/2021-03-10-efficient-minds-hypothesis-failing) or one of it's consequences. The Efficient Minds Hypothesis is only slightly more silly than it's namesake, the Efficient Market Hypothesis.
 
-The Efficient __Minds__ Hypothesis (EMH) says that if you know $$A$$ and you know $$A \rightarrow B$$, then you also know $$B$$. On the surface this sounds reasonable, but it is demonstrably false and has pernicious consequences if believed.
+The Efficient __Minds__ Hypothesis (EMH) says that if you know $A$ and you know $A \rightarrow B$, then you also know $B$. On the surface this sounds reasonable, but it is demonstrably false and has pernicious consequences if believed.
 
 To put it in plain English: the EMH states that given the information available to you, you know all the conclusions that can be deduced from that information.
 
