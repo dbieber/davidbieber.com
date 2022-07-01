@@ -1,7 +1,7 @@
 +++
 title = "GPT-3 for Spaced Repetition"
 date = 2021-09-08T00:00:00
-tags = ["browserflow", "spaced-repetition"]
+tags = ["spaced-repetition", "machine-learning", "browserflow"]
 +++
 
 Lately I've been using Browserflow to create spaced repetition flashcards quickly while browsing the internet.

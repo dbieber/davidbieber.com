@@ -1,7 +1,7 @@
 +++
 title = "Machine Learning Journal of Hypotheses"
 date = 2021-11-05T00:00:00
-tags = ["taking-silly-ideas-seriously"]
+tags = ["machine-learning", "taking-silly-ideas-seriously"]
 +++
 
 This snippet is about an idea for a new venue for publishing research hypotheses before any experiments have been carried out.

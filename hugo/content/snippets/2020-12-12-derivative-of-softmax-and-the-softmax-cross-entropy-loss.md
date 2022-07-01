@@ -2,7 +2,7 @@
 title = "Derivative of Softmax and the Softmax Cross Entropy Loss"
 date = 2020-12-12T00:00:00
 math = true
-tags = ["math"]
+tags = ["math", "machine-learning"]
 keywords = ["math", "machine learning"]
 +++
 
