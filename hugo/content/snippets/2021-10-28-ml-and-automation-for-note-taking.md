@@ -1,7 +1,7 @@
 +++
 title = "Machine Learning and Automation Ideas for Note-taking"
 date = 2021-10-28T00:00:00
-tags = ["note-taking", "automation"]
+tags = ["note-taking", "machine-learning", "automation"]
 keywords = ["machine learning"]
 +++
 
