@@ -6,7 +6,7 @@ title = "Go Note Go"
 date = 2021-09-15T00:00:00
 
 summary = "A note-taking system for when you’re on the go, with a focus on driving and camping."
-tags = ["Software", "Hardware", "Productivity", "go-note-go"]
+tags = ["go-note-go", "Productivity", "Hardware", "Software"]
 
 [image]
   caption = ""
