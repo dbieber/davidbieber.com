@@ -6,7 +6,7 @@ tags = ["messager", "machine-learning", "note-taking"]
 
 Sometimes -- usually because of Alex K Chen -- I am added to a giant group chat (GGC).
 Today it was a 200+ person highly active chat with folks talking about AI programming tools, aging, and movies.
-I love being added to such a chat. It makes me feel thought-of, and my opinions respected. So, do keep adding me to GGCs.
+I love being added to such a chat. It makes me feel thought of, and my opinions respected. So, do keep adding me to GGCs.
 However, with being added to a GGC comes some struggles. I haven't fully figured out how to handle a GGC just yet.
 
 I think some people handle these situations in a more natural way than myself. Here's what I imagine. They're doing something else on the computer, messages are open in the background or in a side window. If they have a conversation-adjacent thought, they share it. If they see a message that looks interesting, they read it. Otherwise, they do their other activities and get on with their life.
