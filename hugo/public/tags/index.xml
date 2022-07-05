@@ -6,7 +6,37 @@
     <description>Recent content in Tags on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>machine-learning</title>
+      <link>https://davidbieber.com/tags/machine-learning/</link>
+      <pubDate>Tue, 05 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/machine-learning/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>messager</title>
+      <link>https://davidbieber.com/tags/messager/</link>
+      <pubDate>Tue, 05 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/messager/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>note-taking</title>
+      <link>https://davidbieber.com/tags/note-taking/</link>
+      <pubDate>Tue, 05 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/note-taking/</guid>
+      
+      <description></description>
+    </item>
+    
     <item>
       <title>ask-me-anywhere</title>
       <link>https://davidbieber.com/tags/ask-me-anywhere/</link>
@@ -98,31 +128,11 @@
     </item>
     
     <item>
-      <title>messager</title>
-      <link>https://davidbieber.com/tags/messager/</link>
-      <pubDate>Sat, 08 Jan 2022 02:00:00 +0000</pubDate>
-      
-      <guid>https://davidbieber.com/tags/messager/</guid>
-      
-      <description></description>
-    </item>
-    
-    <item>
       <title>Automation</title>
       <link>https://davidbieber.com/tags/automation/</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/tags/automation/</guid>
-      
-      <description></description>
-    </item>
-    
-    <item>
-      <title>note-taking</title>
-      <link>https://davidbieber.com/tags/note-taking/</link>
-      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidbieber.com/tags/note-taking/</guid>
       
       <description></description>
     </item>
@@ -183,16 +193,6 @@
       <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/tags/twitter/</guid>
-      
-      <description></description>
-    </item>
-    
-    <item>
-      <title>machine-learning</title>
-      <link>https://davidbieber.com/tags/machine-learning/</link>
-      <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidbieber.com/tags/machine-learning/</guid>
       
       <description></description>
     </item>
