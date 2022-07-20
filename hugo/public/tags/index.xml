@@ -6,7 +6,17 @@
     <description>Recent content in Tags on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>math</title>
+      <link>https://davidbieber.com/tags/math/</link>
+      <pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/math/</guid>
+      
+      <description></description>
+    </item>
+    
     <item>
       <title>machine-learning</title>
       <link>https://davidbieber.com/tags/machine-learning/</link>
@@ -263,16 +273,6 @@
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/tags/table-tennis/</guid>
-      
-      <description></description>
-    </item>
-    
-    <item>
-      <title>math</title>
-      <link>https://davidbieber.com/tags/math/</link>
-      <pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidbieber.com/tags/math/</guid>
       
       <description></description>
     </item>

@@ -8,6 +8,58 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/snippets/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>The Medical Test Paradox Paradox</title>
+      <link>https://davidbieber.com/snippets/2022-07-12-medical-test-paradox-paradox/</link>
+      <pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2022-07-12-medical-test-paradox-paradox/</guid>
+      
+      <description>&lt;p&gt;In this snippet we&amp;rsquo;re going to introduce the Medical Test Paradox &lt;em&gt;Paradox&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;First, you may already be familiar with the 
+&lt;a href=&#34;https://www.youtube.com/watch?v=lG4VkPoG3ko&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Medical Test Paradox&lt;/a&gt;. It&amp;rsquo;s a popular recreational math problem that teaches Bayes&#39; theorem and the importance of base rates. It goes like this.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Suppose 1 in 10000 people have a certain disease, and there is a medical test that is 99% accurate. This means that if you do have the disease, the test comes back positive with 99% probability, and if you do not have the disease, the test comes back negative with 99% probability. It is wrong 1% of the time.&lt;/p&gt;
+&lt;p&gt;If your test result comes back positive, what&amp;rsquo;s the probability that you have the disease?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;details&gt;
+  &lt;summary&gt;Spoiler: Expand this to see the solution.&lt;/summary&gt;
+&lt;p&gt;The classic solution proceeds as follows.&lt;/p&gt;
+&lt;p&gt;Let $D=\text{yes}$ be the event where you have the disease.
+Let $T=\text{positive}$ be the event where the test comes back positive.&lt;/p&gt;
+&lt;p&gt;Using this notation, we want to find $P(D=\text{yes} | T=\text{positive})$.
+We proceed by Bayes&#39; theorem.&lt;/p&gt;
+&lt;p&gt;$P(D=\text{yes} | T=\text{positive}) = \frac{P(T=\text{positive} | D = \text{yes})P(D = \text{yes})}{P(T = \text{positive})}$
+$$= \frac{P(T=\text{positive} | D = \text{yes})P(D = \text{yes})}{P(T=\text{positive} | D = \text{yes})P(D = \text{yes}) + P(T=\text{positive} | D = \text{no})P(D = \text{no})}$$
+$$= \frac{0.99 \cdot \frac{1}{10000}}{0.99 \cdot \frac{1}{10000} + 0.01 \cdot \frac{9999}{10000}}$$
+$$= 0.009803 \approx \fbox{1%}$$&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;It&amp;rsquo;s a &amp;ldquo;paradox&amp;rdquo; only because the answer is surprisingly low. If you haven&amp;rsquo;t solved it or peeked at the solution yet, have a guess at the rough answer before you look at the true one.&lt;/p&gt;
+&lt;p&gt;Now, on to the Medical Test Paradox Paradox. The Medical Test Paradox Paradox asks: given that tests for &lt;em&gt;actual&lt;/em&gt; diseases are generally much &lt;em&gt;less&lt;/em&gt; than 99% accurate, and given that prevalences for &lt;em&gt;actual&lt;/em&gt; diseases are 
+&lt;a href=&#34;https://www.medicalhomeportal.org/diagnoses-and-conditions/diagnosis-prevalence-list&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;frequently&lt;/a&gt; &lt;em&gt;less&lt;/em&gt; than 1 in 10000, &lt;em&gt;how is it that doctors use tests to diagnose people with these diseases, frequently literally saving their lives, &lt;strong&gt;all the time&lt;/strong&gt;?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This is meant to be treated as a serious question, a puzzle if you will. So take a minute and think about it, and attempt to provide a serious answer.&lt;/p&gt;
+&lt;p&gt;Like the Medical Test Paradox, the Medical Test Paradox &lt;em&gt;Paradox&lt;/em&gt; is of course not a true paradox. There is a simple explanation that accounts for an apparently paradoxical discrepancy. First, why does it look like a paradox at all?&lt;/p&gt;
+&lt;p&gt;Take any real disease with prevalence roughly 1 in 10000 (e.g. 
+&lt;a href=&#34;[frequently]%28https://www.medicalhomeportal.org/diagnoses-and-conditions/diagnosis-prevalence-list%29&#34;&gt;from this list&lt;/a&gt;). These are real diseases affecting real people. The best tests for that disease likely has less than 99% accuracy.
+So even if you test positive for the disease, Bayes&#39; theorem suggests the probability you have the disease remains less than 1%. How are people then getting diagnosed with the disease at all? It seems as if doctors would have no way to conclude with greater than 1% certainty that you have the disease, even if your test comes back positive. You don&amp;rsquo;t want to give someone a treatment with side effects if there&amp;rsquo;s only a one percent chance they&amp;rsquo;re actually afflicted with the disease in question.&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;Expand to see the rest of the snippet. We discuss resolutions to the paradox.&lt;/summary&gt;
+&lt;p&gt;The Medical Test Paradox assumes that prior to taking the medical test, the probability that you have the disease is given by the disease&amp;rsquo;s prevalence, i.e. 1 in 10000. This is true if the medical test is being administered to random members of the population.
+However, usually there is a &lt;em&gt;reason&lt;/em&gt; for administering a medical test.
+Common reasons you might take a medical test include (a) you are showing symptoms or (b) exposure to a pathogen.
+In these scenarios, the prior probability that you have the disease is higher than the disease&amp;rsquo;s prevalence.&lt;/p&gt;
+&lt;p&gt;Doctors aren&amp;rsquo;t just administering random tests to random people.
+They are administering tests as part of a differential where the test is likely to distinguish between a small number of reasonable alternative hypotheses that could explain your symptoms, generally each with a prior far exceeding 1 in 10000 (I&amp;rsquo;d estimate values between 1 in 10 and 1 in 3 are more common, but of course it varies according to the specifics of the situation).
+The priors are higher than the candidate diseases&#39; prevalence because your symptoms already indicate that you have &lt;em&gt;something&lt;/em&gt;, even though they don&amp;rsquo;t fully narrow down what it is you have.&lt;/p&gt;
+&lt;p&gt;This &lt;em&gt;reason for administering the test&lt;/em&gt; resolves the Medical Test Paradox Paradox.&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;Does this change how we think about the original Medical Test Paradox?&lt;/summary&gt;
+&lt;p&gt;I think it does. Now, when asked &amp;ldquo;If your test result comes back positive, what&amp;rsquo;s the probability that you have the disease?&amp;rdquo;, I no longer think the appropriate answer is 1%. Instead, the appropriate response is &amp;ldquo;Why did I take the test? Was I exposed? Do I have symptoms? Or was I participating in an experimental trial?&amp;rdquo; Only if there was no reason for taking the test is the answer 1% appropriate. If there was a good reason, the probability is likely much higher than 1%.&lt;/p&gt;
+&lt;/details&gt;
+&lt;/details&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Dealing with Giant Group Chats</title>
       <link>https://davidbieber.com/snippets/2022-07-05-giant-group-chats/</link>
       <pubDate>Tue, 05 Jul 2022 00:00:00 +0000</pubDate>
