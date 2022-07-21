@@ -4,7 +4,7 @@ date = 2022-01-11T00:00:00
 keywords = ['pyd-swyt; cf-bh-din']
 +++
 
-[pyd-swyt; cf-bh-din](/snippets/2020-01-02-pyd-swyt-cf-bh-din/). Today, we focus on pyd.
+[pyd-swyt; cf-bh-din](/snippets/2020-01-02-pyd-swyt-cf-bh-din/). Today, we focus on pyd. Or maybe bh.
 
 **Musings on pursuing your dreams.**
 Pursuing your dreams is easier when you know what they are.
