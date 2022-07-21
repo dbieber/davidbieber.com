@@ -28,10 +28,12 @@
   
     
   
-  <meta name="description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot.">
+  <meta name="description" content="This is a note-to-self about how the code base for this website, davidbieber.com, is organized. There are several &ldquo;layouts&rdquo; files that live in the hugo/layouts directories. This is what each of them does:
+hugo/layouts/_default/list.html  list.html defines how /snippets, /tags, and each of the individual /tags/ pages are rendered. Each of these pages holds a list of links, as well as a Discussion section.
+hugo/layouts/_default/rss.xml Defines the rss feeds for snippets and for posts.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/">
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2022-07-20-hugo-layouts/">
 
   
 
@@ -246,14 +248,12 @@
 
 
   
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="David Bieber">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
 
-  <link rel="canonical" href="https://davidbieber.com/">
+  <link rel="canonical" href="https://davidbieber.com/snippets/2022-07-20-hugo-layouts/">
 
   
   
@@ -270,28 +270,21 @@
   <meta property="twitter:creator" content="@Bieber">
   
   <meta property="og:site_name" content="David Bieber">
-  <meta property="og:url" content="https://davidbieber.com/">
-  <meta property="og:title" content="David Bieber">
-  <meta property="og:description" content="davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2022-07-20-hugo-layouts/">
+  <meta property="og:title" content="Hugo Layouts for this Website | David Bieber">
+  <meta property="og:description" content="This is a note-to-self about how the code base for this website, davidbieber.com, is organized. There are several &ldquo;layouts&rdquo; files that live in the hugo/layouts directories. This is what each of them does:
+hugo/layouts/_default/list.html  list.html defines how /snippets, /tags, and each of the individual /tags/ pages are rendered. Each of these pages holds a list of links, as well as a Discussion section.
+hugo/layouts/_default/rss.xml Defines the rss feeds for snippets and for posts."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2022-07-20T01:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2022-07-20T01:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2022-07-20T01:00:00&#43;00:00">
   
 
   
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://davidbieber.com/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  },
-  "url": "https://davidbieber.com/"
-}
-</script>
 
 
   
@@ -306,11 +299,11 @@
 
 
 
-  <title>David Bieber</title>
+  <title>Hugo Layouts for this Website | David Bieber</title>
 
 </head>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -396,7 +389,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link  active" href="/" data-target="[]"><span>Home</span></a>
+          <a class="nav-link  active" href="/"><span>Home</span></a>
         </li>
 
         
@@ -469,69 +462,7 @@
 </nav>
 
 
-  
-
-
-
-
-
-
-
-
-
-<span class="js-widget-page d-none"></span>
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="posts" class="home-section wg-pages   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
+  <article class="article">
 
   
 
@@ -546,80 +477,18 @@
 
 
 
+  
 
-
-
-
-
-
-
-
-
-
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Hugo Layouts for this Website</h1>
 
   
 
-
-
-
-
   
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Writing</h1>
     
-    
-    <div class="view-all">
-      <a href="/posts/">
-        More Posts
-        <i class="fas fa-angle-double-right"></i>
-      </a>
-    </div>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-
-    
-      
-        
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2022-01-08-new-messager-setup/" >Sending messages as I drift off to sleep</a>
-    </h3>
-
-    
-    <div class="article-style">
-      My new Messager setup, allows me to send messages directly from Roam Research <em>or</em> from a standalone keyboard (with no monitor) that I keep at my bedside as I drift off to sleep.
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
@@ -633,7 +502,7 @@
     
       
     
-    January 2022
+    
   </span>
   
 
@@ -650,657 +519,163 @@
 
 </div>
 
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/post/2022-01-08-new-messager-setup/" >
-      <img src="/post/2022-01-08-new-messager-setup/featured_hub73037561040d73a6a8d8f3bedc43021_332276_150x0_resize_q75_box.jpg" alt="">
-    </a>
-    
-  </div>
+  
 </div>
 
-      
-    
-      
-        
 
 
 
+  <div class="article-container">
 
+    <div class="article-style" id="article-content">
+      <p>This is a note-to-self about how the code base for this website, davidbieber.com, is organized. There are several &ldquo;layouts&rdquo; files that live in the 
+<a href="https://github.com/dbieber/davidbieber.com/tree/master/hugo/layouts" target="_blank" rel="noopener">hugo/layouts</a> directories. This is what each of them does:</p>
+<h4 id="hugolayouts_defaultlisthtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayouts_defaultlisthtml">
+<a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/_default/list.html" target="_blank" rel="noopener">hugo/layouts/_default/list.html</a></h4>
+<p>
+<a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/_default/list.html" target="_blank" rel="noopener">list.html</a> defines how 
+<a href="/snippets">/snippets</a>, 
+<a href="/tags">/tags</a>, and each of the individual /tags/<tag> pages are rendered. Each of these pages holds a list of links, as well as a Discussion section.</p>
+<h4 id="hugolayouts_defaultrssxmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayouts_defaultrssxml">
+<a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/_default/rss.xml" target="_blank" rel="noopener">hugo/layouts/_default/rss.xml</a></h4>
+<p>Defines the rss feeds for 
+<a href="/snippets/index.xml">snippets</a> and for 
+<a href="/posts/index.xml">posts</a>.</p>
+<h4 id="hugolayoutspartialswidgetspageshtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialswidgetspageshtml">
+<a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/widgets/pages.html" target="_blank" rel="noopener">hugo/layouts/partials/widgets/pages.html</a></h4>
+<p>Used to render the 
+<a href="/posts">/posts</a> page.</p>
+<h4 id="hugolayoutspartialswidgetsportfoliohtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialswidgetsportfoliohtml">
+<a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/widgets/portfolio.html" target="_blank" rel="noopener">hugo/layouts/partials/widgets/portfolio.html</a></h4>
+<p>Used to render the 
+<a href="/projects">/projects</a> page.</p>
+<h4 id="hugolayoutspartialscustom_jshtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialscustom_jshtml">
+<a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/custom_js.html" target="_blank" rel="noopener">hugo/layouts/partials/custom_js.html</a></h4>
+<p>Embeds Firebase, Tumblr Embed Gist, JQuery, and React. Just the staples that appear on every page.</p>
+<h4 id="hugolayoutspartialscustom_js_extrahtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialscustom_js_extrahtml">
+<a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/custom_js_extra.html" target="_blank" rel="noopener">hugo/layouts/partials/custom_js_extra.html</a></h4>
+<p>Embeds page-specific JS bundles, e.g. Ask-Me-Anywhere, or margin-notes.js. The source for the custom JS bundles lives in 
+<a href="https://github.com/dbieber/davidbieber.com/tree/master/hugo/assets/js-src" target="_blank" rel="noopener">assets/js-src</a>.</p>
+<h4 id="hugolayoutspartialsdiscussionhtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialsdiscussionhtml">
+<a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/discussion.html" target="_blank" rel="noopener">hugo/layouts/partials/discussion.html</a></h4>
+<p>Embeds Discord on the page.</p>
+<h4 id="hugolayoutspartialspage_headerhtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialspage_headerhtml">
+<a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/page_header.html" target="_blank" rel="noopener">hugo/layouts/partials/page_header.html</a></h4>
+<p>Renders post header data, such as a chip if appropriate, the header image, and title and subtitle headers.</p>
+<h4 id="hugolayoutspartialspage_footerhtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialspage_footerhtml">
+<a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/page_footer.html" target="_blank" rel="noopener">hugo/layouts/partials/page_footer.html</a></h4>
+<p>Shows tags.
+Includes the Discord discussion partial.
+Includes 4 related pages in the footer.
+Shows the author.</p>
+<h4 id="hugolayoutspartialspage_metadata_authorshtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialspage_metadata_authorshtml">
+<a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/page_metadata_authors.html" target="_blank" rel="noopener">hugo/layouts/partials/page_metadata_authors.html</a></h4>
+<p>Empty. Overwrites the equivalent file from the Academic theme preventing author metadata from rendering.</p>
+<hr>
+<p>Future self, hope you find that useful!</p>
 
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2021-03-07-roam-twitter-bot-dev-guide/" >A Step-by-Step Developer Guide to Building a Personal Roam-to-Twitter Bot</a>
-    </h3>
-
-    
-    <div class="article-style">
-      Use this guide to build a Roam Research Twitter bot that only you can see, to reclaim your attention when scrolling.
     </div>
+
     
 
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
-<div class="article-metadata">
+
+
+
+
+
+
+
+
+
+
 
   
   
-
   
-  <span class="article-date">
+  
+
+<div class="article-widget content-widget-hr">
+  <details id="chat-details">
+    <summary><h3>Discussion 💬</h3></summary>
     
-    
-      
-    
-    March 2021
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-
-  
-  
-
+    <widgetbot
+      server="695290335823265862"
+      channel=988521423603654686
+      width="100%"
+      height="600">
+    </widgetbot>
+  </details>
 </div>
 
+<script>
+let chatLoaded = false;
+const details = document.querySelector('#chat-details');
+details.addEventListener("toggle", event => {
+  if (details.open && !chatLoaded) {
+    const script = document.createElement('script');
+    script.src = "https://cdn.jsdelivr.net/npm/@widgetbot/html-embed";
+    document.head.appendChild(script);
+    chatLoaded = true;
+  }
+});
+</script>
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://davidbieber.com/">David Bieber</a></h5>
       
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
     </div>
-
-    
-
   </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-      
-    
-      
-        
 
 
 
 
 
 
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2021-01-08-where-are-all-the-posts-from-2020/" >Where are all the posts from 2020?</a>
-    </h3>
-
-    
-    <div class="article-style">
-      I&rsquo;ve taken to writing &ldquo;snippets&rdquo;, which are like blog posts, but without an audience or quality bar. Read them here.
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    January 2021
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/post/2021-01-08-where-are-all-the-posts-from-2020/" >
-      <img src="/post/2021-01-08-where-are-all-the-posts-from-2020/featured_hu146b801c57d5298c619ebbd9fab0d44c_454904_150x0_resize_box_2.png" alt="">
-    </a>
-    
-  </div>
-</div>
-
-      
-    
 
 
   </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="projects" class="home-section wg-portfolio   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-
-    <h1>Projects</h1>
-    
-    
-    <div class="view-all">
-      <a href="/projects">
-        More Projects
-        <i class="fas fa-angle-double-right"></i>
-      </a>
-    </div>
-    
-
-  </div>
-  <div class="col-12 col-lg-8">
-
-
-
-    
-
-    
-
-    <div class="isotope projects-container js-layout-masonry ">
-      
-
-        
-        
-        
-
-        
-          
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-<div class="project-card project-item isotope-item js-id-go-note-go js-id-Productivity js-id-Hardware js-id-Software">
-  <div class="card">
-    
-    
-    <a href="/projects/go-note-go/"  class="card-image hover-overlay">
-      <img src="/projects/go-note-go/featured_huc8263732fef3f655b0f56c4983b0d06e_1384418_550x0_resize_q90_box.jpg" alt="" class="img-responsive">
-    </a>
-    
-    <div class="card-text">
-      <h4><a href="/projects/go-note-go/" >Go Note Go</a></h4>
-      
-      <div class="article-style">
-        <p>A note-taking system for when you’re on the go, with a focus on driving and camping.</p>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-        
-
-      
-
-        
-        
-        
-
-        
-          
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-<div class="project-card project-item isotope-item js-id-Software js-id-Productivity js-id-Just-for-Fun js-id-google-apps-script">
-  <div class="card">
-    
-    
-    <a href="/projects/bieber-bot/"  class="card-image hover-overlay">
-      <img src="/projects/bieber-bot/featured_hucfc6299f315b67f5e2f12feaaae25703_103190_550x0_resize_q90_box_2.png" alt="" class="img-responsive">
-    </a>
-    
-    <div class="card-text">
-      <h4><a href="/projects/bieber-bot/" >Bieber Bot</a></h4>
-      
-      <div class="article-style">
-        <p>My faithful robot companion.</p>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-        
-
-      
-
-        
-        
-        
-
-        
-          
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-<div class="project-card project-item isotope-item js-id-Hardware js-id-Just-for-Fun js-id-Puzzle">
-  <div class="card">
-    
-    
-    <a href="/projects/escape-castle-heterodyne/"  class="card-image hover-overlay">
-      <img src="/projects/escape-castle-heterodyne/featured_huc1759788997dc45a956d993bc020a2c9_1358881_550x0_resize_q90_box.jpg" alt="" class="img-responsive">
-    </a>
-    
-    <div class="card-text">
-      <h4><a href="/projects/escape-castle-heterodyne/" >Escape Castle Heterodyne</a></h4>
-      
-      <div class="article-style">
-        <p>We built an escape room!</p>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-        
-
-      
-
-        
-        
-        
-          
-          
-        
-
-        
-          
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-<div class="project-card project-item isotope-item js-id-Software js-id-Productivity">
-  <div class="card">
-    
-    
-    <a href="https://github.com/google/python-fire" target="_blank" rel="noopener" class="card-image hover-overlay">
-      <img src="/projects/python-fire/featured_hu595fb01dc4b252c53d8a9c1a49152f3e_180245_550x0_resize_q90_box_2.png" alt="" class="img-responsive">
-    </a>
-    
-    <div class="card-text">
-      <h4><a href="https://github.com/google/python-fire" target="_blank" rel="noopener">Python Fire</a></h4>
-      
-      <div class="article-style">
-        <p>Automatically generate CLIs from Python objects.</p>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-        
-
-      
-
-        
-        
-        
-          
-          
-        
-
-        
-          
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-<div class="project-card project-item isotope-item js-id-Education">
-  <div class="card">
-    
-    
-    <a href="https://techday.withgoogle.com/" target="_blank" rel="noopener" class="card-image hover-overlay">
-      <img src="/projects/tech-day/featured_huc6793629b8712171fa1b80552890ef93_1672131_550x0_resize_q90_box_2.png" alt="" class="img-responsive">
-    </a>
-    
-    <div class="card-text">
-      <h4><a href="https://techday.withgoogle.com/" target="_blank" rel="noopener">Tech Day</a></h4>
-      
-      <div class="article-style">
-        <p>Tech Day at Google is an educational day of STEM classes offered at Google for high school students around the bay area.</p>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-        
-
-      
-
-        
-        
-        
-          
-          
-        
-
-        
-          
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-<div class="project-card project-item isotope-item js-id-Software js-id-Productivity">
-  <div class="card">
-    
-    
-    <a href="https://github.com/dbieber/at-scheduler/" target="_blank" rel="noopener" class="card-image hover-overlay">
-      <img src="/projects/at-scheduler/featured_huce5d1ab78aa604de589b6cc3d599794b_109108_550x0_resize_q90_box_2.png" alt="" class="img-responsive">
-    </a>
-    
-    <div class="card-text">
-      <h4><a href="https://github.com/dbieber/at-scheduler/" target="_blank" rel="noopener">at Scheduler</a></h4>
-      
-      <div class="article-style">
-        <p>A minimal command line task scheduler.</p>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-        
-
-      
-    </div>
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="contact" class="home-section wg-contact   "  >
-    <div class="container">
-      
-
-
-
-
-
-<div class="row contact-widget">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Contact</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-
-    
-    
-      
-      
-    
-
-    <div class="mb-3">
-      <form name="contact" method="POST" action="https://formspree.io/dbieber@google.com">
-        <div class="form-group form-inline">
-          <label class="sr-only" for="inputName">Name</label>
-          <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" required>
-        </div>
-        <div class="form-group form-inline">
-          <label class="sr-only" for="inputEmail">Email</label>
-          <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Email" required>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" for="inputMessage">Message</label>
-          <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-outline-primary px-3 py-2">Send</button>
-      </form>
-    </div>
-    
-
-    <ul class="fa-ul">
-
-      
-
-      
-
-      
-      
-
-      
-
-      
-
-      
-
-      
-      
-
-    </ul>
-
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-
+</article>
 
       
 

@@ -6,7 +6,7 @@
     <description>Recent content on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jul 2022 01:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bieber Bot Privacy Policy</title>
       <link>https://davidbieber.com/documents/bieber-bot-privacy/</link>
@@ -555,6 +555,61 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hugo Layouts for this Website</title>
+      <link>https://davidbieber.com/snippets/2022-07-20-hugo-layouts/</link>
+      <pubDate>Wed, 20 Jul 2022 01:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2022-07-20-hugo-layouts/</guid>
+      
+      <description>&lt;p&gt;This is a note-to-self about how the code base for this website, davidbieber.com, is organized. There are several &amp;ldquo;layouts&amp;rdquo; files that live in the 
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/tree/master/hugo/layouts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts&lt;/a&gt; directories. This is what each of them does:&lt;/p&gt;
+&lt;h4 id=&#34;hugolayouts_defaultlisthtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayouts_defaultlisthtml&#34;&gt;
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/_default/list.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/_default/list.html&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/_default/list.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;list.html&lt;/a&gt; defines how 
+&lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;/snippets&lt;/a&gt;, 
+&lt;a href=&#34;https://davidbieber.com/tags&#34;&gt;/tags&lt;/a&gt;, and each of the individual /tags/&lt;tag&gt; pages are rendered. Each of these pages holds a list of links, as well as a Discussion section.&lt;/p&gt;
+&lt;h4 id=&#34;hugolayouts_defaultrssxmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayouts_defaultrssxml&#34;&gt;
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/_default/rss.xml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/_default/rss.xml&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Defines the rss feeds for 
+&lt;a href=&#34;https://davidbieber.com/snippets/index.xml&#34;&gt;snippets&lt;/a&gt; and for 
+&lt;a href=&#34;https://davidbieber.com/posts/index.xml&#34;&gt;posts&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;hugolayoutspartialswidgetspageshtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialswidgetspageshtml&#34;&gt;
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/widgets/pages.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/partials/widgets/pages.html&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Used to render the 
+&lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;/posts&lt;/a&gt; page.&lt;/p&gt;
+&lt;h4 id=&#34;hugolayoutspartialswidgetsportfoliohtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialswidgetsportfoliohtml&#34;&gt;
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/widgets/portfolio.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/partials/widgets/portfolio.html&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Used to render the 
+&lt;a href=&#34;https://davidbieber.com/projects&#34;&gt;/projects&lt;/a&gt; page.&lt;/p&gt;
+&lt;h4 id=&#34;hugolayoutspartialscustom_jshtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialscustom_jshtml&#34;&gt;
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/custom_js.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/partials/custom_js.html&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Embeds Firebase, Tumblr Embed Gist, JQuery, and React. Just the staples that appear on every page.&lt;/p&gt;
+&lt;h4 id=&#34;hugolayoutspartialscustom_js_extrahtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialscustom_js_extrahtml&#34;&gt;
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/custom_js_extra.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/partials/custom_js_extra.html&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Embeds page-specific JS bundles, e.g. Ask-Me-Anywhere, or margin-notes.js. The source for the custom JS bundles lives in 
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/tree/master/hugo/assets/js-src&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;assets/js-src&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;hugolayoutspartialsdiscussionhtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialsdiscussionhtml&#34;&gt;
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/discussion.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/partials/discussion.html&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Embeds Discord on the page.&lt;/p&gt;
+&lt;h4 id=&#34;hugolayoutspartialspage_headerhtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialspage_headerhtml&#34;&gt;
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/page_header.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/partials/page_header.html&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Renders post header data, such as a chip if appropriate, the header image, and title and subtitle headers.&lt;/p&gt;
+&lt;h4 id=&#34;hugolayoutspartialspage_footerhtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialspage_footerhtml&#34;&gt;
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/page_footer.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/partials/page_footer.html&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Shows tags.
+Includes the Discord discussion partial.
+Includes 4 related pages in the footer.
+Shows the author.&lt;/p&gt;
+&lt;h4 id=&#34;hugolayoutspartialspage_metadata_authorshtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialspage_metadata_authorshtml&#34;&gt;
+&lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/page_metadata_authors.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/partials/page_metadata_authors.html&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Empty. Overwrites the equivalent file from the Academic theme preventing author metadata from rendering.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Future self, hope you find that useful!&lt;/p&gt;
 </description>
     </item>
     
