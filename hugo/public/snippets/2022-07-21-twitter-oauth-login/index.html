@@ -28,12 +28,12 @@
   
     
   
-  <meta name="description" content="Today I received an unexpected email from Facebook. Subject: &ldquo;Action needed on your Facebook account&rdquo;. It starts: &ldquo;You Have 30 Days to Request a Review&rdquo;.
-The email read:
-Hi David, Your Facebook account has been disabled. This is because your account, or activity on it, doesn&#39;t follow our Community Standards. If you think we disabled your account by mistake, we can take you through a few steps to request a review.">
+  <meta name="description" content="You can log into a Twitter app with OAuth using Twython. First, make sure you have twython pip installed (pip install twython). Then, get the APP_KEY and APP_SECRET from the developer. This is labeled &ldquo;API Key and Secret&rdquo; on the app page at https://developer.twitter.com/en/portal/apps/.
+Next, run the following Python code:
+import twython client = twython.Twython(APP_KEY, APP_SECRET) auth = client.get_authentication_tokens(callback_url=&#39;oob&#39;) oauth_token = auth[&#39;oauth_token&#39;] oauth_token_secret = auth[&#39;oauth_token_secret&#39;] auth_url = auth[&#39;auth_url&#39;] print(auth_url)  Navigate to the printed URL.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-05-19-thirty-days-to-request-a-review/">
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2022-07-21-twitter-oauth-login/">
 
   
 
@@ -253,7 +253,7 @@ Hi David, Your Facebook account has been disabled. This is because your account,
   <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
 
-  <link rel="canonical" href="https://davidbieber.com/snippets/2021-05-19-thirty-days-to-request-a-review/">
+  <link rel="canonical" href="https://davidbieber.com/snippets/2022-07-21-twitter-oauth-login/">
 
   
   
@@ -270,17 +270,17 @@ Hi David, Your Facebook account has been disabled. This is because your account,
   <meta property="twitter:creator" content="@Bieber">
   
   <meta property="og:site_name" content="David Bieber">
-  <meta property="og:url" content="https://davidbieber.com/snippets/2021-05-19-thirty-days-to-request-a-review/">
-  <meta property="og:title" content="You Have 30 Days to Request a Review | David Bieber">
-  <meta property="og:description" content="Today I received an unexpected email from Facebook. Subject: &ldquo;Action needed on your Facebook account&rdquo;. It starts: &ldquo;You Have 30 Days to Request a Review&rdquo;.
-The email read:
-Hi David, Your Facebook account has been disabled. This is because your account, or activity on it, doesn&#39;t follow our Community Standards. If you think we disabled your account by mistake, we can take you through a few steps to request a review."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2022-07-21-twitter-oauth-login/">
+  <meta property="og:title" content="Logging into a Twitter App with OAuth | David Bieber">
+  <meta property="og:description" content="You can log into a Twitter app with OAuth using Twython. First, make sure you have twython pip installed (pip install twython). Then, get the APP_KEY and APP_SECRET from the developer. This is labeled &ldquo;API Key and Secret&rdquo; on the app page at https://developer.twitter.com/en/portal/apps/.
+Next, run the following Python code:
+import twython client = twython.Twython(APP_KEY, APP_SECRET) auth = client.get_authentication_tokens(callback_url=&#39;oob&#39;) oauth_token = auth[&#39;oauth_token&#39;] oauth_token_secret = auth[&#39;oauth_token_secret&#39;] auth_url = auth[&#39;auth_url&#39;] print(auth_url)  Navigate to the printed URL."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2021-05-19T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2022-07-21T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2021-05-19T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2022-07-21T00:00:00&#43;00:00">
   
 
   
@@ -299,7 +299,7 @@ Hi David, Your Facebook account has been disabled. This is because your account,
 
 
 
-  <title>You Have 30 Days to Request a Review | David Bieber</title>
+  <title>Logging into a Twitter App with OAuth | David Bieber</title>
 
 </head>
 
@@ -483,7 +483,7 @@ Hi David, Your Facebook account has been disabled. This is because your account,
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">You Have 30 Days to Request a Review</h1>
+  <h1 itemprop="name">Logging into a Twitter App with OAuth</h1>
 
   
 
@@ -528,24 +528,39 @@ Hi David, Your Facebook account has been disabled. This is because your account,
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>Today I received an unexpected email from Facebook. Subject: &ldquo;Action needed on your Facebook account&rdquo;. It starts: &ldquo;You Have 30 Days to Request a Review&rdquo;.</p>
-<p>The email read:</p>
-<pre><code class="language-md">Hi David,
-Your Facebook account has been disabled. This is because your account, or activity on it, doesn't follow our Community Standards.
+      <p>You can log into a Twitter app with OAuth using Twython. First, make sure you have twython pip installed (<code>pip install twython</code>). Then, get the APP_KEY and APP_SECRET from the developer. This is labeled &ldquo;API Key and Secret&rdquo; on the app page at <a href="https://developer.twitter.com/en/portal/apps/">https://developer.twitter.com/en/portal/apps/</a>.</p>
+<p>Next, run the following Python code:</p>
+<pre><code class="language-python">import twython
 
-If you think we disabled your account by mistake, we can take you through a few steps to request a review. You'll need to complete these steps within 30 days to avoid your account being permanently disabled.
+client = twython.Twython(APP_KEY, APP_SECRET)
+auth = client.get_authentication_tokens(callback_url='oob')
 
-You can learn more about why we sometimes disable accounts by visiting the Community Standards.
- 
-Thanks,
-The Facebook Security Team
+oauth_token = auth['oauth_token']
+oauth_token_secret = auth['oauth_token_secret']
+auth_url = auth['auth_url']
+
+print(auth_url)
 </code></pre>
-<p>There was a large blue button &ldquo;Request Review&rdquo;.</p>
-<p>I have no idea why my account was disabled. There was no indication in the email. I don&rsquo;t really use Facebook proper much &ndash; do the Community Standards require that I use Facebook more? No, that would be absurd. I do use Messenger quite a bit. I have a Messenger bot, Bieber Bot. Did Bieber Bot violate some Bot guidelines? I don&rsquo;t think so. Outside of Messenger my only Facebook activity is coordinating table tennis matches with strangers.</p>
-<p>I clicked &ldquo;Request Review&rdquo;. The system says it wants to confirm my identity. There&rsquo;s a grayed out &ldquo;Continue&rdquo; button but no way to click it. After a few minutes of trying to figure out how to click the button, I switch to Firefox. In Firefox the screen looks a bit different: there&rsquo;s a &ldquo;Prove your not a robot&rdquo; checkbox for me to click. I couldn&rsquo;t see it when I was in Chrome, but now that I&rsquo;m in Firefox the checkbox is visible.</p>
-<p>I&rsquo;d never quite understood how a single checkbox can prove I&rsquo;m not a robot. It didn&rsquo;t make sense. A robot can check a box just as well as anyone, or so I thought. Maybe Google looks at timing data or the location of your mouse, or other properties of your browser, and predicts if you&rsquo;re a robot from that. Now I understand &ndash; I couldn&rsquo;t see the checkbox when I was in Chrome. <em>I</em> was the robot! Robots simply can&rsquo;t see that checkbox. By switching to Firefox I restored my humanity. I checked the box and proceeded.</p>
-<p>The review lasted all of 100ms. After proving my humanity and initiating the review of my account for satisfaction of the Community Standards, my account was immediately restored. I&rsquo;m grateful for this, since I rely on Bieber Bot and Messenger quite heavily.</p>
-<p>Glad I thought to try Firefox. I didn&rsquo;t see any way to move forward otherwise. With my account restored, I can now resume my day.</p>
+<p>Navigate to the printed URL. Copy the pin.</p>
+<p>Then run:</p>
+<pre><code class="language-python">pin = 'YOUR_COPIED_PIN'
+client_full = twython.Twython(
+    APP_KEY, APP_SECRET, oauth_token, oauth_token_secret)
+
+auth = client_full.get_authorized_tokens(pin)
+
+oauth_token = auth['oauth_token']
+oauth_token_secret = auth['oauth_token_secret']
+user_id = auth['user_id']
+screen_name = auth['screen_name']
+</code></pre>
+<p>Voila! oauth_token and oauth_token_secret hold the credentials for the logged in account.
+The app is now authorized for your account using these credentials.
+If the &ldquo;app&rdquo; is actually just you using Twython, construct a client with these credentials via:</p>
+<pre><code class="language-python">client = twython.Twython(APP_KEY, APP_SECRET, oauth_token, oauth_token_secret)
+</code></pre>
+<p>See also: past-me explains OAuth2 to myself 
+<a href="/snippets/2020-03-20-understanding-oauth2/">in more detail here</a>. It gets easier every time.</p>
 
     </div>
 
@@ -556,6 +571,8 @@ The Facebook Security Team
 
 
 <div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/twitter/">twitter</a>
   
   <a class="badge badge-light" href="/tags/tech-tips/">tech-tips</a>
   
@@ -581,7 +598,7 @@ The Facebook Security Team
     
     <widgetbot
       server="695290335823265862"
-      channel=988521648015687762
+      channel=988521493640151150
       width="100%"
       height="600">
     </widgetbot>
@@ -610,13 +627,13 @@ details.addEventListener("toggle", event => {
     <h3>Related</h3>
     <ul>
       
+      <li><a href="/snippets/2021-11-20-twitter-replies/">Organizing a Twitter Discussion: Gathering Twitter Replies</a></li>
+      
       <li><a href="/snippets/2021-07-11-setting-up-computer/">Notes from setting up a new computer</a></li>
       
+      <li><a href="/snippets/2021-05-19-thirty-days-to-request-a-review/">You Have 30 Days to Request a Review</a></li>
+      
       <li><a href="/snippets/2021-04-24-backlinks/">What links here?</a></li>
-      
-      <li><a href="/snippets/2021-02-10-find-yourself-typing-t-enter-often/">Find yourself typing t-ENTER often?</a></li>
-      
-      <li><a href="/snippets/2022-07-21-twitter-oauth-login/">Logging into a Twitter App with OAuth</a></li>
       
     </ul>
   </div>

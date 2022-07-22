@@ -6,7 +6,50 @@
     <description>Recent content in tech-tips on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/tech-tips/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/tech-tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Logging into a Twitter App with OAuth</title>
+      <link>https://davidbieber.com/snippets/2022-07-21-twitter-oauth-login/</link>
+      <pubDate>Thu, 21 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2022-07-21-twitter-oauth-login/</guid>
+      
+      <description>&lt;p&gt;You can log into a Twitter app with OAuth using Twython. First, make sure you have twython pip installed (&lt;code&gt;pip install twython&lt;/code&gt;). Then, get the APP_KEY and APP_SECRET from the developer. This is labeled &amp;ldquo;API Key and Secret&amp;rdquo; on the app page at &lt;a href=&#34;https://developer.twitter.com/en/portal/apps/&#34;&gt;https://developer.twitter.com/en/portal/apps/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Next, run the following Python code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import twython
+
+client = twython.Twython(APP_KEY, APP_SECRET)
+auth = client.get_authentication_tokens(callback_url=&#39;oob&#39;)
+
+oauth_token = auth[&#39;oauth_token&#39;]
+oauth_token_secret = auth[&#39;oauth_token_secret&#39;]
+auth_url = auth[&#39;auth_url&#39;]
+
+print(auth_url)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Navigate to the printed URL. Copy the pin.&lt;/p&gt;
+&lt;p&gt;Then run:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;pin = &#39;YOUR_COPIED_PIN&#39;
+client_full = twython.Twython(
+    APP_KEY, APP_SECRET, oauth_token, oauth_token_secret)
+
+auth = client_full.get_authorized_tokens(pin)
+
+oauth_token = auth[&#39;oauth_token&#39;]
+oauth_token_secret = auth[&#39;oauth_token_secret&#39;]
+user_id = auth[&#39;user_id&#39;]
+screen_name = auth[&#39;screen_name&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Voila! oauth_token and oauth_token_secret hold the credentials for the logged in account.
+The app is now authorized for your account using these credentials.
+If the &amp;ldquo;app&amp;rdquo; is actually just you using Twython, construct a client with these credentials via:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;client = twython.Twython(APP_KEY, APP_SECRET, oauth_token, oauth_token_secret)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;See also: past-me explains OAuth2 to myself 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-03-20-understanding-oauth2/&#34;&gt;in more detail here&lt;/a&gt;. It gets easier every time.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Notes from setting up a new computer</title>
       <link>https://davidbieber.com/snippets/2021-07-11-setting-up-computer/</link>

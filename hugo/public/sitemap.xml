@@ -59,7 +59,27 @@
   
   <url>
     <loc>https://davidbieber.com/</loc>
-    <lastmod>2022-07-20T01:00:00+00:00</lastmod>
+    <lastmod>2022-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidbieber.com/snippets/2022-07-21-twitter-oauth-login/</loc>
+    <lastmod>2022-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidbieber.com/tags/</loc>
+    <lastmod>2022-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidbieber.com/tags/tech-tips/</loc>
+    <lastmod>2022-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://davidbieber.com/tags/twitter/</loc>
+    <lastmod>2022-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -69,11 +89,6 @@
   
   <url>
     <loc>https://davidbieber.com/tags/math/</loc>
-    <lastmod>2022-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://davidbieber.com/tags/</loc>
     <lastmod>2022-07-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -298,11 +313,6 @@
   </url>
   
   <url>
-    <loc>https://davidbieber.com/tags/twitter/</loc>
-    <lastmod>2021-11-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://davidbieber.com/snippets/2021-11-16-other-languages/</loc>
     <lastmod>2021-11-16T00:00:00+00:00</lastmod>
   </url>
@@ -464,11 +474,6 @@
   
   <url>
     <loc>https://davidbieber.com/snippets/2021-07-11-setting-up-computer/</loc>
-    <lastmod>2021-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://davidbieber.com/tags/tech-tips/</loc>
     <lastmod>2021-07-11T00:00:00+00:00</lastmod>
   </url>
   
