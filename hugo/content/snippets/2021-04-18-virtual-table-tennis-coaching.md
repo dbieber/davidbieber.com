@@ -16,7 +16,7 @@ A few people have started offering in game virtual reality table tennis coaching
 
 I'm interested in giving virtual lessons a try. I'm not sure how good I'd be at receiving coaching though, and this is something I'd like to improve at. What makes for a good coach/player relationship? Players need psychological safety. Coaches need to be observant and knowledgeable. Players need to want to improve and ask good questions. Players need to be receptive to the suggestions of the coach. Players need to trust that the coach is focusing on the important aspects of play, so they can focus on the drill at hand. Coaches need to establish this trust. Players have to put in the time to improve.
 
-The table tennis quest game is still under active development, and the features that make coaching possible are still young. As I understand it, there aren't special coaching features -- there's just the capability for two people to use around a table optionally with a ball machine.
+The table tennis quest game is still under active development, and the features that make coaching possible are still young. As I understand it, there aren't special coaching features -- there's just the capability for two people to stand around a shared table, optionally with a ball machine.
 
 Suppose the game developers were to add features to improve the coaching experience. What features would be essential? (1) Record and replay hits from a game or practice (2) Track stats during practice (3) Coach multiple people simultaneously across multiple tables (4) Mix and match replays
 
