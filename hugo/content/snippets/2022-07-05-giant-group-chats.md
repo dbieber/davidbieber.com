@@ -24,10 +24,11 @@ This part is Struggle #2.
 ### Struggle #1: Sharing thoughts casually in a 200+ person setting
 
 Why is this a struggle? I think slowly. I edit. I rethink relevance as the conversation moves away.
-The hypothetical person who handles GCCs as described above just types and hits enter.
+The hypothetical person who handles GCCs as described above "just" types and hits enter, relatively unencumbered.
 I think about the permanence of putting something on the internet.
 I think about confidentiality of work-adjacent stuff.
 I think about whether what I'm saying is true, and about how true it is.
+This kind of thought can make participation a challenge.
 
 ### Struggle #2: Staying abreast of 200 messages per hour
 
