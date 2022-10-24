@@ -6,7 +6,7 @@
     <description>Recent content in go-note-go on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Mar 2022 01:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/go-note-go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/go-note-go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go Note Go</title>
       <link>https://davidbieber.com/projects/go-note-go/</link>
@@ -94,6 +94,98 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Keyboards, keyboards, everywhere, and not a spot to think</title>
+      <link>https://davidbieber.com/snippets/2022-07-20-keyboards-everywhere/</link>
+      <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2022-07-20-keyboards-everywhere/</guid>
+      
+      <description>&lt;p&gt;Keyboards, keyboards, everywhere, and not a spot to think.
+This is take fourteen; I&amp;rsquo;ve tried to write this piece more times than I can count,
+but I struggle to merge the various attempts into a coherent whole.
+This is relevant, because its representative of an inability to focus on a large abstract piece of thought.&lt;/p&gt;
+&lt;p&gt;This is the result of the state of our technology,
+our collective technology,
+how it strips us of our attention with notifications,
+algorithms designed to keep us captive,
+always coming back for more content,
+personalized content, personalized content mixed with personalized ads.&lt;/p&gt;
+&lt;p&gt;We all have smart phones and our eyes are glued to them.
+We have computers in our pockets &amp;ndash; except they&amp;rsquo;re not in our pockets, they&amp;rsquo;re in our hands &amp;ndash; each with more compute than the Apollo mission computer.&lt;/p&gt;
+&lt;p&gt;Where did it all go wrong?
+There was such a great potential.
+Computers &amp;ndash; personal computers &amp;ndash; had the potential to revolutionize the way that humanity thinks.
+The potential looked a bit like this:&lt;/p&gt;
+&lt;p&gt;Before, without computers, thinking was a slow process.
+Computers can help.
+They can allow us to think bigger, more elaborate, more complex thoughts than we could ever possibly have thought before.
+With all the world&amp;rsquo;s information at our finger tips, we can dream truly grand dreams.
+Individuals can realize visions that would have taken armies to even conceive of, let alone build, just decades earlier.
+Computers, in short, were going to let us Think BIG.&lt;/p&gt;
+&lt;p&gt;Where did it all go wrong? And what can we do to set it right?
+Today, computers don&amp;rsquo;t let us think big thoughts. Instead, they inhibit thinking.
+It takes time to think big thoughts.
+But when your brain has been rewired to seek a dopamine hit each time its been without for more than sixteen seconds,
+you don&amp;rsquo;t get the continuous uninterrupted time that&amp;rsquo;s required for proper big-thought thinking.&lt;/p&gt;
+&lt;p&gt;Instead, you scroll a bit more on Facebook, you swipe on TikTok or Instagram or wherever.
+You refresh the news.
+The big idea your head is working on gets pushed back into the depths of the mind for a little longer.
+Maybe it will poke its head out when you take a shower, or the next time you go on a nature hike.
+(I shouldn&amp;rsquo;t have to include the word nature before hike in that sentence, yet here we are. Maybe the thought, the big thought, will come out in your next &lt;em&gt;nature&lt;/em&gt; hike.)&lt;/p&gt;
+&lt;p&gt;I built something.
+That&amp;rsquo;s part of why &amp;rsquo;m writing this piece. I want to show off the thing I built.
+It&amp;rsquo;s meant to help with the sort of problem I&amp;rsquo;m describing &amp;ndash; the inability to think big thoughts, because of the incessant attraction of the internet&amp;rsquo;s many distractions.&lt;/p&gt;
+&lt;p&gt;The thing I built, it&amp;rsquo;s called Go Note Go, and it&amp;rsquo;s just a keyboard, with no monitor attached.
+You can type on it &amp;ndash; that&amp;rsquo;s what I&amp;rsquo;m doing now &amp;ndash; or you can talk to it.
+And whatever you type or say, once the keyboard gets in range of wifi, will be uploaded to wherever you keep your notes and writings.&lt;/p&gt;
+&lt;p&gt;The beauty of this keyboard of course is the absence of the screen.
+There are no distractions when typing on this keyboard.
+You&amp;rsquo;re just alone with your thoughts.&lt;/p&gt;
+&lt;p&gt;You can&amp;rsquo;t even see what you&amp;rsquo;re typing.
+For many people this is a turn off &amp;ndash; how can you type if you can&amp;rsquo;t see what you&amp;rsquo;re typing?&lt;/p&gt;
+&lt;p&gt;Well, you know what you&amp;rsquo;re typing. You get used to not seeing it pretty quickly.
+Sure, you make more typos than you would if you had a screen.
+But at the same time, you are freed from having to avoid typos.
+You are freed from thinking about revising, wordsmithing, editing of any kind, because you can&amp;rsquo;t go back and you can&amp;rsquo;t change what you&amp;rsquo;ve done.
+And so you press on, adding new content, thinking new thoughts.&lt;/p&gt;
+&lt;p&gt;The Go Note Go keyboard works in the wilderness; it works if you&amp;rsquo;re camping or hiking, certainly.
+You can also bring it with you to bed, and type as you drift off to sleep.
+You can even take a waterproof version into the shower with you, and capture your shower thoughts.&lt;/p&gt;
+&lt;p&gt;Does this idea live dangerously at the edge of allowing you to free your mind to think, and glorifying productivity at the expense of even being free while you sleep and shower? Yes, it sits precisely on that knife edge. It is not a panacea.&lt;/p&gt;
+&lt;p&gt;You can make this keyboard more distracting than Reddit itself, if you allow yourself too.
+You can spend hours typing when you could be sleeping, or showering when you could be moving on to breakfast or reading the news, because the keyboard lets you pontificate productively rather than wash your hair and be done.&lt;/p&gt;
+&lt;p&gt;So, Go Note Go with caution, and then reap the rewards: a place to think.
+A place to think, unencumbered by ads, or messages from friends, or the possibility of an update or an article to read.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve placed these Go Note Go keyboards all throughout my apartment.
+I have one at each place where I might work, so that I can type thoughts without needing to switch to a text editor on my computer.
+I simply turn to the Go Note Go and type.
+I have one in my bed, and one in my car, which I can talk to as I drive.
+If I go camping, one goes into the tent with me.&lt;/p&gt;
+&lt;p&gt;Now I have spaces to think everywhere.&lt;/p&gt;
+&lt;p&gt;The title of this post is a play on the classic verse from The Rime of the Ancient Mariner.&lt;/p&gt;
+&lt;p&gt;Keyboards, keyboards, everywhere, and not a space to think.&lt;/p&gt;
+&lt;p&gt;This line tells us of the failed promise of computers.
+They promised us a place to think:
+a great tool to allow us to think greater, bigger thoughts than before.
+And computers proliferated, both because of the good they do, as well as their siren song.&lt;/p&gt;
+&lt;p&gt;So the world we live in lives up to that line now.
+There are keyboards everywhere, but they are all attached to monitors, attached to the internet, attached to our pockets and our hands and our minds.
+And they leave us with no place to think.
+They are water, and we are at sea.&lt;/p&gt;
+&lt;p&gt;So, I present Go Note Go.
+It does not fight the tide.
+It adds more keyboards, not fewer.
+But, in doing so, so long as we proceed with caution,
+it reclaims a little bit of our space to think.&lt;/p&gt;
+&lt;p&gt;Instructions for how to make your own Go Note Go are available 
+&lt;a href=&#34;https://github.com/dbieber/GoNoteGo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.
+To learn more about what it does, it&amp;rsquo;s features and all that, to help you think, 
+&lt;a href=&#34;https://davidbieber.com/projects/go-note-go/&#34;&gt;click here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now, go forth into nature, keyboard or no, and think a little. You&amp;rsquo;ll be thankful that you did.&lt;/p&gt;
 </description>
     </item>
     
