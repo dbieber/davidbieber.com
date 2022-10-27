@@ -53,7 +53,7 @@ Maybe it will poke its head out when you take a shower, or the next time you go 
 (I shouldn't have to include the word nature before hike in that sentence, yet here we are. Maybe the thought, the big thought, will come out in your next _nature_ hike.)
 
 I built something.
-That's part of why 'm writing this piece. I want to show off the thing I built.
+That's part of why I'm writing this piece. I want to show off the thing I built.
 It's meant to help with the sort of problem I'm describing -- the inability to think big thoughts, because of the incessant attraction of the internet's many distractions.
 
 The thing I built, it's called Go Note Go, and it's just a keyboard, with no monitor attached.
@@ -116,4 +116,4 @@ it reclaims a little bit of our space to think.
 Instructions for how to make your own Go Note Go are available [here](https://github.com/dbieber/GoNoteGo).
 To learn more about what it does, it's features and all that, to help you think, [click here](/projects/go-note-go/).
 
-Now, go forth into nature, keyboard or no, and think a little. You'll be thankful that you did.
+Now, go forth into nature, keyboard or no, and think a little.
