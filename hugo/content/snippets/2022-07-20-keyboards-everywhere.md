@@ -5,6 +5,14 @@ tags = ["go-note-go", "attention"]
 math = true
 +++
 
+_You can also listen to this post._
+
+<audio
+    controls
+    src="/audio/keyboards-everywhere.m4a">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
 Keyboards, keyboards, everywhere, and not a spot to think.
 This is take fourteen; I've tried to write this piece more times than I can count,
 but I struggle to merge the various attempts into a coherent whole.

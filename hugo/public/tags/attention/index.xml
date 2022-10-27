@@ -41,7 +41,13 @@ Better even than that experience would be something like what the latest Adept A
       
       <guid>https://davidbieber.com/snippets/2022-07-20-keyboards-everywhere/</guid>
       
-      <description>&lt;p&gt;Keyboards, keyboards, everywhere, and not a spot to think.
+      <description>&lt;p&gt;&lt;em&gt;You can also listen to this post.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;audio
+controls
+src=&#34;https://davidbieber.com/audio/keyboards-everywhere.m4a&#34;&gt;
+Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
+&lt;/audio&gt;&lt;/p&gt;
+&lt;p&gt;Keyboards, keyboards, everywhere, and not a spot to think.
 This is take fourteen; I&amp;rsquo;ve tried to write this piece more times than I can count,
 but I struggle to merge the various attempts into a coherent whole.
 This is relevant, because its representative of an inability to focus on a large abstract piece of thought.&lt;/p&gt;
