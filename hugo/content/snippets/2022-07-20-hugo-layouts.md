@@ -16,7 +16,11 @@ Defines the rss feeds for [snippets](/snippets/index.xml) and for [posts](/posts
 
 #### [hugo/layouts/partials/widgets/pages.html](https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/widgets/pages.html)
 
-Used to render the [/posts](/posts) page.
+Used to render the posts widget on the home page.
+
+#### [/hugo/themes/academic/layouts/section/post.html](/Users/dbieber/code/github/dbieber/davidbieber.com/hugo/themes/academic/layouts/section/post.html)
+
+Used to render the [/posts](/posts) page. (Part of the theme.)
 
 #### [hugo/layouts/partials/widgets/portfolio.html](https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/widgets/portfolio.html)
 
