@@ -730,8 +730,11 @@ If the &amp;ldquo;app&amp;rdquo; is actually just you using Twython, construct a
 &lt;a href=&#34;https://davidbieber.com/posts/index.xml&#34;&gt;posts&lt;/a&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;hugolayoutspartialswidgetspageshtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialswidgetspageshtml&#34;&gt;
 &lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/widgets/pages.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/partials/widgets/pages.html&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Used to render the posts widget on the home page.&lt;/p&gt;
+&lt;h4 id=&#34;hugothemesacademiclayoutssectionposthtmlusersdbiebercodegithubdbieberdavidbiebercomhugothemesacademiclayoutssectionposthtml&#34;&gt;
+&lt;a href=&#34;https://davidbieber.com/Users/dbieber/code/github/dbieber/davidbieber.com/hugo/themes/academic/layouts/section/post.html&#34;&gt;/hugo/themes/academic/layouts/section/post.html&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Used to render the 
-&lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;/posts&lt;/a&gt; page.&lt;/p&gt;
+&lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;/posts&lt;/a&gt; page. (Part of the theme.)&lt;/p&gt;
 &lt;h4 id=&#34;hugolayoutspartialswidgetsportfoliohtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialswidgetsportfoliohtml&#34;&gt;
 &lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/widgets/portfolio.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/partials/widgets/portfolio.html&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Used to render the 
