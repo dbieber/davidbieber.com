@@ -6,3 +6,5 @@ aliases = [
     "/post/"
 ]
 +++
+
+For additional writing beyond these posts, check out [my snippets for some less polished musings.](/snippets)
