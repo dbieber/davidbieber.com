@@ -2,6 +2,7 @@
 title = "Focus on the Task of Focusing on the Task (Incomplete)"
 date = 2022-07-13T00:00:00
 tags = []
+incomplete = true
 +++
 
 Focus on the task of focusing on the task.
