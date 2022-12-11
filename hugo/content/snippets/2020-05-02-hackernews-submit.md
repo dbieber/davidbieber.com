@@ -3,6 +3,7 @@ title = "Posting to Hacker News Programmatically"
 date = 2020-05-02T00:00:00
 tags = ["python", "taking-silly-ideas-seriously", "messager"]
 keywords = ["hacker news", "messager"]
+icon = "star"
 +++
 
 If you run this snippet of Python code, it will submit this ["Snippet"](https://davidbieber.com/snippets/) (the one you're currently reading) to Hacker News.

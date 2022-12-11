@@ -3,6 +3,7 @@ title = "Jump-Cut Programming: Take 1"
 date = 2020-02-21T00:00:00
 tags = ["automatic-video-editing", "python-fire", "python"]
 message = "Inspired by @realCarykh, I jump-cut into the world of automatic video editing."
+icon = "star"
 +++
 
 I've been toying around with recording myself programming. Here's a clip.

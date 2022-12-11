@@ -2,6 +2,7 @@
 title = "Using Discord for my website's comments section"
 date = 2022-06-21T00:00:00
 tags = ["ask-me-anywhere"]
+icon = "star"
 +++
 
 Yesterday I added "Discussion" sections to all the snippets and posts on my website.

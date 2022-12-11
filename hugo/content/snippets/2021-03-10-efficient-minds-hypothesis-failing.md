@@ -5,7 +5,6 @@ uid = "iYEeqAFFk"
 math = true
 tags = ["attention"]
 keywords = ["hypothesis", "thought", "attention"]
-
 +++
 
 Suppose you know $A$, and you know $A \to B$. Conventional wisdom suggests you also know $B$. However, this is not necessarily true. Conventional wisdom has incorrectly assumed the [Efficient Minds Hypothesis](/snippets/2021-03-04-the-efficient-minds-hypothesis/).

@@ -2,6 +2,7 @@
 title = "Updating Google Slides through Roam Research"
 date = 2020-11-30T00:00:00
 tags = ["roam-research", "taking-silly-ideas-seriously"]
+icon = "star"
 +++
 
 Check out this "demo video" I made! It shows me making a presentation using Roam Research references. When I update the block in Roam that I'm referencing, the presentation gets updated automatically.

@@ -2,6 +2,7 @@
 title = "Browserflow Note-taking Flow"
 date = 2021-07-29T00:00:00
 tags = ["browserflow", "note-taking", "roam-research", "spaced-repetition"]
+icon = "star"
 +++
 
 Quick update on the note-taking Browserflow flow I've been building: [https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7](https://browserflow.app/shared/51b5b7af-3124-4989-9771-36e9f236e1e7):

@@ -2,7 +2,7 @@
 title = "Keyboards, keyboards, everywhere, and not a spot to think"
 date = 2022-07-20T00:00:00
 tags = ["go-note-go", "attention"]
-math = true
+icon = "star"
 +++
 
 _You can also listen to this post._

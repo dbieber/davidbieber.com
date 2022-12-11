@@ -2,6 +2,7 @@
 title = "Amazon Cloud Kitchen"
 date = 2021-12-20T00:00:00
 tags = ["taking-silly-ideas-seriously"]
+icon = "star"
 +++
 
 This snippet is about a fake future service that Amazon could offer one day called Amazon Cloud Kitchen. It's the food analog of Amazon's existing (real) Amazon Cloud Services offerings.
