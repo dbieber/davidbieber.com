@@ -69,6 +69,4 @@ Using the element of salt can add humor, wit, and charm to your conversations, m
 
 By mastering the use of these elements, you can improve the quality of your conversations and make your interactions with others more enjoyable and fulfilling. So the next time you have a conversation, think about how you can use salt, acid, fat, and heat to craft a delicious and well-balanced interaction.
 
-Finally, I must note that this snippet was created with the assistance of a [large language model](https://chat.openai.com), which helped to generate the majority of the text. The final version of the text was curated and edited by a human to ensure that it was clear and coherent. Did the model's text provide sufficient salt, acid, fat, and heat to keep you interested and engaged?
-
 Finally, I must note that this snippet was created with the assistance of a [large language model](https://chat.openai.com), which helped to generate the majority of the text. The final version of the text was curated and edited by a human to ensure that it was clear and coherent. The idea of using "salt, acid, fat, and heat" as a metaphor for conversation came from a conversation with my partner Adriana, and the model did the rest. Did the model's text provide sufficient salt, acid, fat, and heat to keep you interested and engaged?
