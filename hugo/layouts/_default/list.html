@@ -10,33 +10,28 @@
   {{ $pageScope := . }}
   {{ $paginator := .Paginate .Data.Pages }}
   {{ range $paginator.Pages }}
-  {{ if .Params.incomplete }}
   <div class="stream-item snippet-item">
     <h3 class="mb-0 mt-0">
     <a href="{{ .RelPermalink }}">
-      <strike>
-        <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-      {{ .Title }}
-      </strike>
-    </a>
-    </h3>
-  </div>
-  {{ else }}
-  <div class="stream-item snippet-item">
-    <h3 class="mb-0 mt-0">
-    <a href="{{ .RelPermalink }}">
+      {{ if eq .Params.icon "star" }}
+      <i class="far fa-star pub-icon" aria-hidden="true"></i>
+      {{ else if .Params.icon}}
+      <i class="{{ .Params.icon }} pub-icon" aria-hidden="true"></i>
+      {{ else }}
       <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
+      {{ end }}
       {{ if .Params.chip }}
       <div class="chip">{{ .Params.chip }}</div>
       {{ end }}
+      {{ if .Params.incomplete }}<strike>{{ end }}
       {{ .Title }}
+      {{ if .Params.incomplete }}</strike>{{ end }}
       {{ if eq $pageScope.Title "Tags" }}
       ({{ len .RegularPages }})
       {{ end }}
     </a>
     </h3>
   </div>
-  {{ end }}
   {{ end }}
 
   {{ partial "pagination" . }}

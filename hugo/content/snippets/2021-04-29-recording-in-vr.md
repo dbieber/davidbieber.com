@@ -4,6 +4,7 @@ date = 2021-04-29T00:00:00
 tags = ["virtual reality", "automatic-video-editing"]
 keywords = []
 plugins_js = ["margin-notes"]
+incomplete = true
 +++
 
 _This is an [**incomplete** snippet](/snippets/2021-04-23-incomplete-snippets/). If I complete it, I'll add a link to the completed snippet here._

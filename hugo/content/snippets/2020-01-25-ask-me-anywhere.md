@@ -4,6 +4,7 @@ date = 2020-01-25T10:00:00
 plugins_js = ["ask-me-anywhere"]
 tags = ["ask-me-anywhere", "snippets", "javascript"]
 message = "In this post you can ask a question at _any_ point."
+icon = "star"
 +++
 
 With this post, I'm demoing a new work-in-progress feature for my blog called "Ask Me Anywhere".

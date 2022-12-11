@@ -2,6 +2,7 @@
 title = "Potential Improvements to Spaced Repetition"
 date = 2021-11-02T01:00:00
 tags = ["spaced-repetition"]
+icon = "star"
 +++
 
 Spaced repetition is not super widespread. It's popular among med school students and language learners, but frequently people find the benefits outweighed by the costs, the friction too high, and they stop.

@@ -5,6 +5,7 @@ uid = "uTT1gaOcQ"
 plugins_js = ["margin-notes"]
 tags = ["attention", "python", "taking-silly-ideas-seriously"]
 keywords = ["kangaroo", "auto-responder"]
+icon = "star"
 +++
 
 The purpose of the Kangaroo Auto-responder is to:

@@ -3,6 +3,7 @@ title = "pyd-swyt; cf-bh-din"
 date = 2020-01-02T02:00:00
 tags = ["wisdom"]
 message = "This is my life motto."
+icon = "star"
 +++
 
 ### pyd-swyt; cf-bh-din

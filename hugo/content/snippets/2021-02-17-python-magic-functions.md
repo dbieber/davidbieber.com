@@ -3,6 +3,7 @@ title = "Magic Functions in Python"
 date = 2021-02-17T00:00:00
 tags = ["python", "taking-silly-ideas-seriously"]
 keywords = "magic functions"
+icon = "star"
 +++
 
 In this snippet I introduce and implement, but do not condone, Python "Magic functions".

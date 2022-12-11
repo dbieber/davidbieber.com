@@ -4,6 +4,7 @@ date = 2022-01-07T00:00:00
 math = true
 tags = ["attention"]
 keywords = ["hypothesis", "thought", "attention"]
+icon = "star"
 +++
 
 _This snippet is similar to these related snippets from March 2021: [#1](/snippets/2021-03-04-the-efficient-minds-hypothesis/) [#2](/snippets/2021-03-10-efficient-minds-hypothesis-failing)_
