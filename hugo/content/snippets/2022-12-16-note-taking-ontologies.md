@@ -114,4 +114,4 @@ The first was during querying for domain-specific experiences. There we saw the 
 
 The second was for templating/auto-complete, one of the main values of an ontology. Using LLMs we can provide the appearance of there being an ontology without the note-base actually being backed by an explicit ontology.
 
-All of this relies on some amount of speculation about where our LLM[^4] technology is going and what it's coming capabilities will be. I'm happy to stand by this speculation, and happy to discuss.
+All of this relies on some amount of speculation about where our LLM[^4] technology is going and what its coming capabilities will be. I'm happy to stand by this speculation, and happy to discuss.
