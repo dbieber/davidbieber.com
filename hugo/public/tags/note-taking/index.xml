@@ -58,7 +58,7 @@ Does my dentist like table tennis?
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h4 id=&#34;integration-with-specialized-systems&#34;&gt;Integration with Specialized Systems&lt;/h4&gt;
 &lt;p&gt;One of the key reasons ontologies are useful is they allow for specialized systems to access the information stored in the ontology/notes, in order to provide a quality domain-specific experience using the data from the notes.&lt;/p&gt;
-&lt;p&gt;This could take the form of a specialized contacts view of the contacts data found in your notes. It could be a specialized calendar view of time-annotated data in your notes. It could be the shopping experience I described in a footnote, which uses your contacts interests to surface gift suggestions. The possibilities are numerous.&lt;/p&gt;
+&lt;p&gt;This could take the form of a specialized contacts view of the contacts data found in your notes. It could be a specialized calendar view of time-annotated data in your notes. It could be the shopping experience I described in a footnote, which uses your contacts&#39; interests to surface gift suggestions. The possibilities are numerous.&lt;/p&gt;
 &lt;p&gt;If search is robust (and it&amp;rsquo;s not totally clear that LLM search is going to be robust enough, but I suspect that it will be), then the data access requirements for these specialized integrations could be satisfied by the search described in the preceding section.&lt;/p&gt;
 &lt;p&gt;Two ways to think about this:
 (1) The specialized system issues queries &amp;ndash; possibly even natural language queries &amp;ndash; about the notebase. It gets structured results back. It uses the structured results to render the specialized domain-specific experience.
