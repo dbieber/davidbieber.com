@@ -3,7 +3,6 @@ title = "Explicit Ontologies in a World Without"
 date = 2022-12-16T00:00:00
 tags = ["note-taking"]
 plugins_js = ["margin-notes"]
-incomplete = true
 +++
 
 ## Background: Ontologies in Note-taking
