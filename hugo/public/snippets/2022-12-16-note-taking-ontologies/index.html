@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="David Bieber">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Background: Ontologies in Note-taking I&rsquo;ll do my best to get the context for this thought down quickly, but I don&rsquo;t think I&rsquo;ll do a good job. Feel free to ask me if you&rsquo;d like to understand the context better.
+In a note-taking system like C. or Tana, objects exist in an ontology1. This means that an object can have a type. That type definition can have properties. For example my notes might be full of people.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2022-12-16-note-taking-ontologies/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34570499-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-34570499-2', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+
+  <link rel="canonical" href="https://davidbieber.com/snippets/2022-12-16-note-taking-ontologies/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@Bieber">
+  <meta property="twitter:creator" content="@Bieber">
+  
+  <meta property="og:site_name" content="David Bieber">
+  <meta property="og:url" content="https://davidbieber.com/snippets/2022-12-16-note-taking-ontologies/">
+  <meta property="og:title" content="Explicit Ontologies in a World Without | David Bieber">
+  <meta property="og:description" content="Background: Ontologies in Note-taking I&rsquo;ll do my best to get the context for this thought down quickly, but I don&rsquo;t think I&rsquo;ll do a good job. Feel free to ask me if you&rsquo;d like to understand the context better.
+In a note-taking system like C. or Tana, objects exist in an ontology1. This means that an object can have a type. That type definition can have properties. For example my notes might be full of people."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2022-12-16T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2022-12-16T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Explicit Ontologies in a World Without | David Bieber</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">David Bieber</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">David Bieber</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/posts"><span>Writing</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Explicit Ontologies in a World Without</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+</div>
+
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" id="article-content">
+      <h2 id="background-ontologies-in-note-taking">Background: Ontologies in Note-taking</h2>
+<p>I&rsquo;ll do my best to get the context for this thought down quickly, but I don&rsquo;t think I&rsquo;ll do a good job. Feel free to ask me if you&rsquo;d like to understand the context better.</p>
+<p>In a note-taking system like C. or Tana, objects exist in an ontology<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. This means that an object can have a type. That type definition can have properties. For example my notes might be full of people. Each person might have a birthday and contact info and a height and a handedness.</p>
+<p>Having ontologies be explicit can provide a lot of value in a note-taking system.
+In particular: (1) This can enable powerful auto-complete / templating features. (2) This can enable powerful search functionality. (3) This can enable integrations with other specialized features (like a calendar, a contacts view, a shopping experience<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>, whatever) or external software.</p>
+<h2 id="agenda-three-key-points">Agenda: Three Key Points</h2>
+<p>Next I want to make a series of points that interact a bit:</p>
+<ul>
+<li>Ontologies take time to maintain, and are difficult to design well.</li>
+<li>Large language models may be able to provide all three value propositions without actually needing the explicit ontology.</li>
+<li>Even if the above two points are right, there&rsquo;s still value to explicit ontologies in a world where we don&rsquo;t spend much time being explicit about our ontologies.</li>
+</ul>
+<p>It&rsquo;s this third and final point, which I realize I haven&rsquo;t made clear just yet, that is the main thought I wanted to share in this snippet. Before we get there though, let&rsquo;s expand on the first two points.</p>
+<h2 id="doing-ontologies-manually-is-hard">Doing Ontologies Manually is Hard</h2>
+<p>Coming up with useful ontologies is hard. Take the Person example from above.
+Is it important that every person has an Interests field? Almost certainly not; you might not care to write down the interests of your dentist, for example. If you don&rsquo;t like that example, consider an Education field. You probably don&rsquo;t care to write down the educational history of everyone that shows up in your notes.</p>
+<p>But if you&rsquo;re building a gift recommender, then an interests field might be critical. And if you&rsquo;re building a job recommender, an education field might be critical.</p>
+<p>A risk you might run having an ontology in your notes is that it might discourage you from putting something in your notes because it doesn&rsquo;t fit the ontology.
+Suppose you avoid this risk, though, and manage to freely add information to your notes undeterred by the ontology&rsquo;s constraints.
+A second possible risk you run is that your ontology winds up being extremely sparse.
+You add fields as you need them, but lots of fields only apply to a single instance, rather than to the majority of instances of a type. Is your ontology still useful at that point?</p>
+<p>A third potential risk, which extends the second, is that as your ontology grows&hellip; you might end up with a type having two very similar fields. E.g. Person could end up with both a &ldquo;Likes&rdquo; field <em>and</em> an &ldquo;Interests&rdquo; field. Why might this happen? Two reasons come to mind: One is that you simply have a bunch of fields, and so you accidentally use a new name (&ldquo;Likes&rdquo;) when referring to an existing attribute (&ldquo;Interests&rdquo;). The second is that &ldquo;Likes&rdquo; and &ldquo;Interests&rdquo; might mean slightly different things to you. That&rsquo;s fine, if you want to track them separately. But these are highly correlated! And now you&rsquo;re left with a dilemma (&ldquo;Risk 4&rdquo;, let&rsquo;s call it): do you put the information in both the &ldquo;Likes&rdquo; and the &ldquo;Interests&rdquo; field? That would increase the maintenance burden of your note-base substantially (if you care about completeness/having the info you enter be maximally useful, which you might, in order to get the benefits of ontologies listed above). Or do you only put the information in one of the two fields? If you do that, then you risk your use of the ontology failing when you search for &ldquo;Person with Interest in Table Tennis&rdquo; only to find that half your table-tennis friends &ldquo;Like&rdquo; Table Tennis while the other half have an &ldquo;Interest&rdquo; in it.</p>
+<p>Finally, building ontologies takes time. Let&rsquo;s turn our attention<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> to large language models, because you might not need to spend your time on ontologies in the near future.</p>
+<h2 id="llms-reduce-the-need-for-explicit-ontologies">LLMs reduce the need for explicit ontologies</h2>
+<p>Large language models<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> may be able to provide many of the benefits of ontologies without the need for explicit ontologies. These models can understand and extract relevant concepts and relationships from unstructured text, allowing one to search and retrieve information without the need to pre-define an ontology.</p>
+<p>Recall the three benefits of ontologies that we&rsquo;re interested in: auto-complete/templates, search, and integration with specialized systems.</p>
+<h4 id="search">Search</h4>
+<p>It&rsquo;s easiest to imagine how large language models are going to be useful for search first.
+Imagine that instead of having ontologies in your note-base, you simply have free-form text.
+You still might say that David is interested in table tennis, but there would be no formal &ldquo;Interests&rdquo; attribute linking David and Table Tennis.
+If a large language model understands that text, then it will still be able to handle queries like &ldquo;what is David interested in?&rdquo; and &ldquo;contacts who like table tennis?&rdquo;</p>
+<p>You can even try this on a small scale today in 
+<a href="https://chat.openai.com/" target="_blank" rel="noopener">ChatGPT</a>. Paste the following text into ChatGPT and it answers the questions correctly. I wont argue the case here, but I fully expect this to work on the scale of a full note-base in the coming months-years.</p>
+<pre><code class="language-text">Mary likes hockey, collects coins, and reads sci-fi.
+Glenn plays table tennis, collects rocks, and reads fantasy.
+My dentist recommends the book &quot;Jaws&quot;. Next apt is March 6.
+Peter plays scrabble and enjoys table tennis. Hanging out next Tuesday (Dec 20)
+
+Who likes table tennis?
+What are my dentist's interests?
+Does my dentist like table tennis?
+</code></pre>
+<h4 id="integration-with-specialized-systems">Integration with Specialized Systems</h4>
+<p>One of the key reasons ontologies are useful is they allow for specialized systems to access the information stored in the ontology/notes, in order to provide a quality domain-specific experience using the data from the notes.</p>
+<p>This could take the form of a specialized contacts view of the contacts data found in your notes. It could be a specialized calendar view of time-annotated data in your notes. It could be the shopping experience I described in a footnote, which uses your contacts interests to surface gift suggestions. The possibilities are numerous.</p>
+<p>If search is robust (and it&rsquo;s not totally clear that LLM search is going to be robust enough, but I suspect that it will be), then the data access requirements for these specialized integrations could be satisfied by the search described in the preceding section.</p>
+<p>Two ways to think about this:
+(1) The specialized system issues queries &ndash; possibly even natural language queries &ndash; about the notebase. It gets structured results back. It uses the structured results to render the specialized domain-specific experience.
+(2) The raw text in <mark>the note-base is being projected onto a temporary domain-specific ontology just for the specialized system</mark>. E.g. the shopping experience might require an ontology where each Person has interests, while a separate job matching system might require an ontology where each Person has an educational background. Using the magic of LLMs, the raw text data is projected into the structured ontology needed by each system. But there&rsquo;s no &ldquo;one&rdquo; ontology living in the note-base that the note-taker needs to maintain.</p>
+<p>Maybe these two ways are actually the same. 🤷</p>
+<p>At this point we&rsquo;ve seen the first place where ontologies are useful even in this raw-text focused LLM-centric world. I&rsquo;ve <mark>highlighted</mark> it. We&rsquo;ll come back to it shortly.</p>
+<h4 id="auto-complete--templating">Auto-complete / Templating</h4>
+<p>We come now to one of the main value-adds of an ontology: having a nice template to fill in about an object. Do we lose this in a raw-text LLM-centric world? By default, yes. But we can (very likely) use LLM-ish tech to implement an auto-complete / templating feature, arguably one that&rsquo;s (in some ways) better than we get in an ontology-centric world.</p>
+<p>How? We can <mark>use the LLM-ish to suggest fields for an entity when we create it</mark>. For example, when we mention a person, we can have our system insert fields (with blanks to be filled in) for the attributes that seem relevant to the person in the given context.
+If we&rsquo;re writing about how we met someone at a dinner party, it might provide an Interests field. Whereas if we&rsquo;re writing about people we met at a career fair, it might provide an Education field.</p>
+<p>In this setting, the fields aren&rsquo;t there to enable datalog search queries or populate a database; rather, the fields are there for human purposes: to prompt us to write the things we would want to write, and relieve us a bit of typing and a bit of cognitive load.
+The search and integrations are going to work just fine whether the field is called &ldquo;Interests&rdquo; or &ldquo;Likes&rdquo; because the LLM understands that these are (in most contexts) synonyms.</p>
+<p>We&rsquo;ve now introduced the second place where ontologies are useful even in a raw-text focused LLM-centric world, again <mark>highlighted</mark>.</p>
+<p>In what ways is this proposed hypothetical templating feature better than an ontology-based templating feature? Recall the risks we discussed earlier: ontology maintenance runs the risk of there being lots of little-used fields in an ontology. In a naive ontology-based templating system, all these extra fields would clutter the interface, whereas in our proposed hypothetical templating feature, only a relevant subset of the fields show up by default.</p>
+<p>In what ways is this proposed hypothetical templating feature worse? Well, it loses the explicit association between objects of the same type. If later you decide you want all people to have a &ldquo;Formal Name&rdquo; attribute, there&rsquo;s no clear source-of-truth place to add this attribute to all people. You could query for a list of all people, and then add to your notes &ldquo;X&rsquo;s formal name is Y&rdquo; for each of the people. Just brainstorming; maybe this isn&rsquo;t a drawback after all; I&rsquo;ll have to keep thinking on this one.</p>
+<h2 id="explicit-ontologies-in-a-world-without">Explicit Ontologies in a World Without</h2>
+<p>Looking back over the <mark>highlighted</mark> text, we can see that there are at least two places where explicit ontologies remain useful even in a raw-text focused LLM-centric world (that is, in a note-base full of raw text, not backed by an explicit ontology).</p>
+<p>The first was during querying for domain-specific experiences. There we saw the value of having the raw text in he note-base projected onto a temporary domain-specific ontology just for a specialized system.</p>
+<p>The second was for templating/auto-complete, one of the main values of an ontology. Using LLMs we can provide the appearance of there being an ontology without the note-base actually being backed by an explicit ontology.</p>
+<p>All of this relies on some amount of speculation about where our LLM<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> technology is going and what it&rsquo;s coming capabilities will be. I&rsquo;m happy to stand by this speculation, and happy to discuss.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Bear in mind I&rsquo;ve used neither of these systems! Take my thoughts with grains of salt. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>I just chose a random example. But anyway, the idea is that you might build a shopping widget that uses the data about your contacts' preferences to surface gift ideas for them while you&rsquo;re shopping. The ontology way to do this is for each Person in your notes to have a Likes or Interests field, which the shopping experience can access. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>I was planning on squeezing a reference to &ldquo;Factory factories&rdquo; into this section, but then it didn&rsquo;t fit in, so just sticking this in a footnote. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>I&rsquo;m using the term large language model here in a loose sense. I basically mean tech largely dependent on deep learning, including advances expected to come in the next few years. It&rsquo;s easier to just say LLM though, even though that oversimplifies. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/note-taking/">note-taking</a>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+<div class="article-widget content-widget-hr">
+  <details id="chat-details">
+    <summary><h3>Discussion 💬</h3></summary>
+    
+    <widgetbot
+      server="695290335823265862"
+      channel=988521453764874310
+      width="100%"
+      height="600">
+    </widgetbot>
+  </details>
+</div>
+
+<script>
+let chatLoaded = false;
+const details = document.querySelector('#chat-details');
+details.addEventListener("toggle", event => {
+  if (details.open && !chatLoaded) {
+    const script = document.createElement('script');
+    script.src = "https://cdn.jsdelivr.net/npm/@widgetbot/html-embed";
+    document.head.appendChild(script);
+    chatLoaded = true;
+  }
+});
+</script>
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/snippets/2022-07-05-giant-group-chats/">Dealing with Giant Group Chats</a></li>
+      
+      <li><a href="/post/2022-01-08-new-messager-setup/">Sending messages as I drift off to sleep</a></li>
+      
+      <li><a href="/snippets/2021-11-23-flashcard-collection-task/">Draft Instructions for Flashcard Collection Task</a></li>
+      
+      <li><a href="/snippets/2021-11-20-birds/">BIRDS: Bidirectional incremental real-time data synchronizers</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://davidbieber.com/">David Bieber</a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+
+    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+
+
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+<script src="//www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZSDKaAmz-UUyaL1IZMi4QO_q4Jouko2c",
+    authDomain: "ask-me-anywhere.firebaseapp.com",
+    databaseURL: "https://ask-me-anywhere.firebaseio.com",
+    projectId: "ask-me-anywhere",
+    storageBucket: "ask-me-anywhere.appspot.com",
+    messagingSenderId: "123038093749",
+    appId: "1:123038093749:web:e8ce89651fcf1371d109fc",
+    measurementId: "G-JLDGL73R1B"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/page-explicit-ontologies-in-a-world-without.a10547fe4c2aba7220a0186b305bb311.js"></script>
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

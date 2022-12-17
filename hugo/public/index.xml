@@ -6,7 +6,7 @@
     <description>Recent content on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bieber Bot Privacy Policy</title>
       <link>https://davidbieber.com/documents/bieber-bot-privacy/</link>
@@ -555,6 +555,98 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Explicit Ontologies in a World Without</title>
+      <link>https://davidbieber.com/snippets/2022-12-16-note-taking-ontologies/</link>
+      <pubDate>Fri, 16 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2022-12-16-note-taking-ontologies/</guid>
+      
+      <description>&lt;h2 id=&#34;background-ontologies-in-note-taking&#34;&gt;Background: Ontologies in Note-taking&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ll do my best to get the context for this thought down quickly, but I don&amp;rsquo;t think I&amp;rsquo;ll do a good job. Feel free to ask me if you&amp;rsquo;d like to understand the context better.&lt;/p&gt;
+&lt;p&gt;In a note-taking system like C. or Tana, objects exist in an ontology&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. This means that an object can have a type. That type definition can have properties. For example my notes might be full of people. Each person might have a birthday and contact info and a height and a handedness.&lt;/p&gt;
+&lt;p&gt;Having ontologies be explicit can provide a lot of value in a note-taking system.
+In particular: (1) This can enable powerful auto-complete / templating features. (2) This can enable powerful search functionality. (3) This can enable integrations with other specialized features (like a calendar, a contacts view, a shopping experience&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, whatever) or external software.&lt;/p&gt;
+&lt;h2 id=&#34;agenda-three-key-points&#34;&gt;Agenda: Three Key Points&lt;/h2&gt;
+&lt;p&gt;Next I want to make a series of points that interact a bit:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ontologies take time to maintain, and are difficult to design well.&lt;/li&gt;
+&lt;li&gt;Large language models may be able to provide all three value propositions without actually needing the explicit ontology.&lt;/li&gt;
+&lt;li&gt;Even if the above two points are right, there&amp;rsquo;s still value to explicit ontologies in a world where we don&amp;rsquo;t spend much time being explicit about our ontologies.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It&amp;rsquo;s this third and final point, which I realize I haven&amp;rsquo;t made clear just yet, that is the main thought I wanted to share in this snippet. Before we get there though, let&amp;rsquo;s expand on the first two points.&lt;/p&gt;
+&lt;h2 id=&#34;doing-ontologies-manually-is-hard&#34;&gt;Doing Ontologies Manually is Hard&lt;/h2&gt;
+&lt;p&gt;Coming up with useful ontologies is hard. Take the Person example from above.
+Is it important that every person has an Interests field? Almost certainly not; you might not care to write down the interests of your dentist, for example. If you don&amp;rsquo;t like that example, consider an Education field. You probably don&amp;rsquo;t care to write down the educational history of everyone that shows up in your notes.&lt;/p&gt;
+&lt;p&gt;But if you&amp;rsquo;re building a gift recommender, then an interests field might be critical. And if you&amp;rsquo;re building a job recommender, an education field might be critical.&lt;/p&gt;
+&lt;p&gt;A risk you might run having an ontology in your notes is that it might discourage you from putting something in your notes because it doesn&amp;rsquo;t fit the ontology.
+Suppose you avoid this risk, though, and manage to freely add information to your notes undeterred by the ontology&amp;rsquo;s constraints.
+A second possible risk you run is that your ontology winds up being extremely sparse.
+You add fields as you need them, but lots of fields only apply to a single instance, rather than to the majority of instances of a type. Is your ontology still useful at that point?&lt;/p&gt;
+&lt;p&gt;A third potential risk, which extends the second, is that as your ontology grows&amp;hellip; you might end up with a type having two very similar fields. E.g. Person could end up with both a &amp;ldquo;Likes&amp;rdquo; field &lt;em&gt;and&lt;/em&gt; an &amp;ldquo;Interests&amp;rdquo; field. Why might this happen? Two reasons come to mind: One is that you simply have a bunch of fields, and so you accidentally use a new name (&amp;ldquo;Likes&amp;rdquo;) when referring to an existing attribute (&amp;ldquo;Interests&amp;rdquo;). The second is that &amp;ldquo;Likes&amp;rdquo; and &amp;ldquo;Interests&amp;rdquo; might mean slightly different things to you. That&amp;rsquo;s fine, if you want to track them separately. But these are highly correlated! And now you&amp;rsquo;re left with a dilemma (&amp;ldquo;Risk 4&amp;rdquo;, let&amp;rsquo;s call it): do you put the information in both the &amp;ldquo;Likes&amp;rdquo; and the &amp;ldquo;Interests&amp;rdquo; field? That would increase the maintenance burden of your note-base substantially (if you care about completeness/having the info you enter be maximally useful, which you might, in order to get the benefits of ontologies listed above). Or do you only put the information in one of the two fields? If you do that, then you risk your use of the ontology failing when you search for &amp;ldquo;Person with Interest in Table Tennis&amp;rdquo; only to find that half your table-tennis friends &amp;ldquo;Like&amp;rdquo; Table Tennis while the other half have an &amp;ldquo;Interest&amp;rdquo; in it.&lt;/p&gt;
+&lt;p&gt;Finally, building ontologies takes time. Let&amp;rsquo;s turn our attention&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; to large language models, because you might not need to spend your time on ontologies in the near future.&lt;/p&gt;
+&lt;h2 id=&#34;llms-reduce-the-need-for-explicit-ontologies&#34;&gt;LLMs reduce the need for explicit ontologies&lt;/h2&gt;
+&lt;p&gt;Large language models&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; may be able to provide many of the benefits of ontologies without the need for explicit ontologies. These models can understand and extract relevant concepts and relationships from unstructured text, allowing one to search and retrieve information without the need to pre-define an ontology.&lt;/p&gt;
+&lt;p&gt;Recall the three benefits of ontologies that we&amp;rsquo;re interested in: auto-complete/templates, search, and integration with specialized systems.&lt;/p&gt;
+&lt;h4 id=&#34;search&#34;&gt;Search&lt;/h4&gt;
+&lt;p&gt;It&amp;rsquo;s easiest to imagine how large language models are going to be useful for search first.
+Imagine that instead of having ontologies in your note-base, you simply have free-form text.
+You still might say that David is interested in table tennis, but there would be no formal &amp;ldquo;Interests&amp;rdquo; attribute linking David and Table Tennis.
+If a large language model understands that text, then it will still be able to handle queries like &amp;ldquo;what is David interested in?&amp;rdquo; and &amp;ldquo;contacts who like table tennis?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;You can even try this on a small scale today in 
+&lt;a href=&#34;https://chat.openai.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ChatGPT&lt;/a&gt;. Paste the following text into ChatGPT and it answers the questions correctly. I wont argue the case here, but I fully expect this to work on the scale of a full note-base in the coming months-years.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;Mary likes hockey, collects coins, and reads sci-fi.
+Glenn plays table tennis, collects rocks, and reads fantasy.
+My dentist recommends the book &amp;quot;Jaws&amp;quot;. Next apt is March 6.
+Peter plays scrabble and enjoys table tennis. Hanging out next Tuesday (Dec 20)
+
+Who likes table tennis?
+What are my dentist&#39;s interests?
+Does my dentist like table tennis?
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;integration-with-specialized-systems&#34;&gt;Integration with Specialized Systems&lt;/h4&gt;
+&lt;p&gt;One of the key reasons ontologies are useful is they allow for specialized systems to access the information stored in the ontology/notes, in order to provide a quality domain-specific experience using the data from the notes.&lt;/p&gt;
+&lt;p&gt;This could take the form of a specialized contacts view of the contacts data found in your notes. It could be a specialized calendar view of time-annotated data in your notes. It could be the shopping experience I described in a footnote, which uses your contacts interests to surface gift suggestions. The possibilities are numerous.&lt;/p&gt;
+&lt;p&gt;If search is robust (and it&amp;rsquo;s not totally clear that LLM search is going to be robust enough, but I suspect that it will be), then the data access requirements for these specialized integrations could be satisfied by the search described in the preceding section.&lt;/p&gt;
+&lt;p&gt;Two ways to think about this:
+(1) The specialized system issues queries &amp;ndash; possibly even natural language queries &amp;ndash; about the notebase. It gets structured results back. It uses the structured results to render the specialized domain-specific experience.
+(2) The raw text in &lt;mark&gt;the note-base is being projected onto a temporary domain-specific ontology just for the specialized system&lt;/mark&gt;. E.g. the shopping experience might require an ontology where each Person has interests, while a separate job matching system might require an ontology where each Person has an educational background. Using the magic of LLMs, the raw text data is projected into the structured ontology needed by each system. But there&amp;rsquo;s no &amp;ldquo;one&amp;rdquo; ontology living in the note-base that the note-taker needs to maintain.&lt;/p&gt;
+&lt;p&gt;Maybe these two ways are actually the same. 🤷&lt;/p&gt;
+&lt;p&gt;At this point we&amp;rsquo;ve seen the first place where ontologies are useful even in this raw-text focused LLM-centric world. I&amp;rsquo;ve &lt;mark&gt;highlighted&lt;/mark&gt; it. We&amp;rsquo;ll come back to it shortly.&lt;/p&gt;
+&lt;h4 id=&#34;auto-complete--templating&#34;&gt;Auto-complete / Templating&lt;/h4&gt;
+&lt;p&gt;We come now to one of the main value-adds of an ontology: having a nice template to fill in about an object. Do we lose this in a raw-text LLM-centric world? By default, yes. But we can (very likely) use LLM-ish tech to implement an auto-complete / templating feature, arguably one that&amp;rsquo;s (in some ways) better than we get in an ontology-centric world.&lt;/p&gt;
+&lt;p&gt;How? We can &lt;mark&gt;use the LLM-ish to suggest fields for an entity when we create it&lt;/mark&gt;. For example, when we mention a person, we can have our system insert fields (with blanks to be filled in) for the attributes that seem relevant to the person in the given context.
+If we&amp;rsquo;re writing about how we met someone at a dinner party, it might provide an Interests field. Whereas if we&amp;rsquo;re writing about people we met at a career fair, it might provide an Education field.&lt;/p&gt;
+&lt;p&gt;In this setting, the fields aren&amp;rsquo;t there to enable datalog search queries or populate a database; rather, the fields are there for human purposes: to prompt us to write the things we would want to write, and relieve us a bit of typing and a bit of cognitive load.
+The search and integrations are going to work just fine whether the field is called &amp;ldquo;Interests&amp;rdquo; or &amp;ldquo;Likes&amp;rdquo; because the LLM understands that these are (in most contexts) synonyms.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve now introduced the second place where ontologies are useful even in a raw-text focused LLM-centric world, again &lt;mark&gt;highlighted&lt;/mark&gt;.&lt;/p&gt;
+&lt;p&gt;In what ways is this proposed hypothetical templating feature better than an ontology-based templating feature? Recall the risks we discussed earlier: ontology maintenance runs the risk of there being lots of little-used fields in an ontology. In a naive ontology-based templating system, all these extra fields would clutter the interface, whereas in our proposed hypothetical templating feature, only a relevant subset of the fields show up by default.&lt;/p&gt;
+&lt;p&gt;In what ways is this proposed hypothetical templating feature worse? Well, it loses the explicit association between objects of the same type. If later you decide you want all people to have a &amp;ldquo;Formal Name&amp;rdquo; attribute, there&amp;rsquo;s no clear source-of-truth place to add this attribute to all people. You could query for a list of all people, and then add to your notes &amp;ldquo;X&amp;rsquo;s formal name is Y&amp;rdquo; for each of the people. Just brainstorming; maybe this isn&amp;rsquo;t a drawback after all; I&amp;rsquo;ll have to keep thinking on this one.&lt;/p&gt;
+&lt;h2 id=&#34;explicit-ontologies-in-a-world-without&#34;&gt;Explicit Ontologies in a World Without&lt;/h2&gt;
+&lt;p&gt;Looking back over the &lt;mark&gt;highlighted&lt;/mark&gt; text, we can see that there are at least two places where explicit ontologies remain useful even in a raw-text focused LLM-centric world (that is, in a note-base full of raw text, not backed by an explicit ontology).&lt;/p&gt;
+&lt;p&gt;The first was during querying for domain-specific experiences. There we saw the value of having the raw text in he note-base projected onto a temporary domain-specific ontology just for a specialized system.&lt;/p&gt;
+&lt;p&gt;The second was for templating/auto-complete, one of the main values of an ontology. Using LLMs we can provide the appearance of there being an ontology without the note-base actually being backed by an explicit ontology.&lt;/p&gt;
+&lt;p&gt;All of this relies on some amount of speculation about where our LLM&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; technology is going and what it&amp;rsquo;s coming capabilities will be. I&amp;rsquo;m happy to stand by this speculation, and happy to discuss.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Bear in mind I&amp;rsquo;ve used neither of these systems! Take my thoughts with grains of salt. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;I just chose a random example. But anyway, the idea is that you might build a shopping widget that uses the data about your contacts&#39; preferences to surface gift ideas for them while you&amp;rsquo;re shopping. The ontology way to do this is for each Person in your notes to have a Likes or Interests field, which the shopping experience can access. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;I was planning on squeezing a reference to &amp;ldquo;Factory factories&amp;rdquo; into this section, but then it didn&amp;rsquo;t fit in, so just sticking this in a footnote. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;I&amp;rsquo;m using the term large language model here in a loose sense. I basically mean tech largely dependent on deep learning, including advances expected to come in the next few years. It&amp;rsquo;s easier to just say LLM though, even though that oversimplifies. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 </description>
     </item>
     
