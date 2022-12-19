@@ -110,7 +110,7 @@ In what ways is this proposed hypothetical templating feature worse? Well, it lo
 
 Looking back over the <mark>highlighted</mark> text, we can see that there are at least two places where explicit ontologies remain useful even in a raw-text focused LLM-centric world (that is, in a note-base full of raw text, not backed by an explicit ontology).
 
-The first was during querying for domain-specific experiences. There we saw the value of having the raw text in he note-base projected onto a temporary domain-specific ontology just for a specialized system.
+The first was during querying for domain-specific experiences. There we saw the value of having the raw text in the note-base projected onto a temporary domain-specific ontology just for a specialized system.
 
 The second was for templating/auto-complete, one of the main values of an ontology. Using LLMs we can provide the appearance of there being an ontology without the note-base actually being backed by an explicit ontology.
 
