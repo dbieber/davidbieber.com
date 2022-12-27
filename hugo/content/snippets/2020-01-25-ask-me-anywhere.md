@@ -1,7 +1,7 @@
 +++
 title = "Ask Me Anywhere"
 date = 2020-01-25T10:00:00
-plugins_js = ["ask-me-anywhere"]
+plugins_js = ["ask-me-anywhere", "margin-notes"]
 tags = ["ask-me-anywhere", "snippets", "javascript"]
 message = "In this post you can ask a question at _any_ point."
 icon = "star"
@@ -15,7 +15,9 @@ You can try it right now. Either **double click** (double-tap on mobile) on any 
 
 You're welcome to enter your email address, name, Twitter handle, Facebook ID, or any other form of contact info if you'd like me to respond. And if you do, there is high likelihood that I will respond. If you don't, you're anonymous, and you certainly won't receive a private response.
 
-Comments and questions that you submit are not posted publicly anywhere. This isn't a comments section for public discussion. If you want to discuss my posts publicly, submit them on Hacker News or Reddit, or head to Twitter to engage. While this website isn't the place for public discussions, I am curious to know about such a discussion if it's happening. So, feel free to let me know about such a discussion via "AMA" if you're starting one.
+Comments and questions that you submit are not posted publicly anywhere. This isn't a comments section for public discussion. If you want to discuss my posts publicly, submit them on Hacker News or Reddit, or head to Twitter to engage. While this website isn't the place for public discussions[^1], I am curious to know about such a discussion if it's happening. So, feel free to let me know about such a discussion via "AMA" if you're starting one.
+
+[^1]: Update (Dec 2022): You can now also use the Discussion feature! Ever since [this snippet](/snippets/2022-06-21-using-discord/) there are now public discussions directly on my website. Give it a try today!
 
 What happens when you leave a comment? This part's still a work in progress, but ideally my digital personal assistant [Bieber Bot](/projects/bieber-bot) will notify me of the new comment at the next convenient time. If there are many comments coming in, Bieber Bot will try to be smart about batching the notifications together, and so the notification may be delayed, but I'll soon read your message.
 
