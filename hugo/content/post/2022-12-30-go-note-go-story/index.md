@@ -52,12 +52,12 @@ I'm listening to an audiobook and I feel an old yearning, the desire to write so
 It's been a few years since I've used Shh Shell. I didn't use it much after the move east, but I know exactly what I need. I need to write down my thoughts about the audiobook that I'm listening to.
 
 As I get to the campground, the thoughts about the book have evaporated.
-I set up my tent, and it's here that Go Not Go was born.
+I set up my tent, and it's here that Go Note Go was born.
 A new, improved version of Shell that supports driving and camping, as well, of course, as sleeping and showering.
 
 I design Go Note Go right there in the woods.
 
-It'll be like Shell, but with a host of improvements. You won't need a laptop for it to work.
+It'll be like Shh Shell, but with a host of improvements. You won't need a laptop for it to work.
 It's just a standalone keyboard.
 It supports audio with a beautiful red button you can use to record while driving.
 And it works offline. Perfect for camping.
@@ -67,14 +67,14 @@ I am so excited to build this. I order the parts right then and there from the f
 
 I don't even wait for the parts to arrive. As soon as I get home, I write [the software](https://github.com/dbieber/GoNoteGo).
 
-I configure mine to upload to [Roam](https://roamresearch.com/#/app/commons-db). But a month later when [David](http://ddohan.com/), Aria, Sam, and [Aaron](https://twitter.com/aaronmayer108) are building their own, they set theirs to upload to Notion or RemNote or Ideaflow. It works with any note-taking app at all.
+I configure mine to upload to [Roam](https://roamresearch.com/#/app/commons-db/page/9W2EycBcG). But a month later when [David](http://ddohan.com/), Aria, Sam, and [Aaron](https://twitter.com/aaronmayer108) are building their own, they set theirs to upload to Notion or RemNote or Ideaflow. It works with any note-taking app at all.
 
 David Dohan has connected me with this wonderful group of people after I built the first version.
 And I give them a live demo, taking my fully assembled Go Note Go out into a tent for the first time, this time to go camping in my own backyard.
 
 I show Go Note Go to Aaron and the whole group. How it handles audio, how as I drift off to sleep I tend to switch from talking to typing the more tired I get, how you can still issue commands like asking it for the time without waking yourself up, just like you could with Shh Shell.
 
-I feel like when I built Shell for the first time.
+I feel like when I built Shh Shell for the first time.
 I love it.
 
 And now I have a group of people who love it as well, each building their own.
