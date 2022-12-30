@@ -2,6 +2,7 @@
 title = "The Go Note Go Story"
 date = 2022-12-30T00:00:00
 tags = ["go-note-go"]
+summary = "A personal account of how I came to build Go Note Go, a headless keyboard (no monitor) note-taking device for when you're on the go. It begins with a castle."
 +++
 
 <audio
