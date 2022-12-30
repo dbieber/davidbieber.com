@@ -5,6 +5,8 @@ tags = ["go-note-go"]
 summary = "A personal account of how I came to build Go Note Go, a headless keyboard (no monitor) note-taking device for when you're on the go. It begins with a castle."
 +++
 
+<small>_This story is meant to be listened to. You can also read along below._</small>
+
 <audio
     controls
     src="/audio/go-note-go-story.m4a">
