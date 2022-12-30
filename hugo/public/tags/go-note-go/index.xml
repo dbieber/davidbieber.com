@@ -6,7 +6,7 @@
     <description>Recent content in go-note-go on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/go-note-go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/go-note-go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go Note Go</title>
       <link>https://davidbieber.com/projects/go-note-go/</link>
@@ -94,6 +94,74 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Go Note Go Story</title>
+      <link>https://davidbieber.com/post/2022-12-30-go-note-go-story/</link>
+      <pubDate>Fri, 30 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/post/2022-12-30-go-note-go-story/</guid>
+      
+      <description>&lt;p&gt;&lt;audio
+controls
+src=&#34;https://davidbieber.com/audio/go-note-go-story.m4a&#34;&gt;
+Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
+&lt;/audio&gt;&lt;/p&gt;
+&lt;p&gt;Hi everyone. I&amp;rsquo;m David Bieber and I&amp;rsquo;m going to tell you the story of 
+&lt;a href=&#34;https://davidbieber.com/projects/go-note-go&#34;&gt;Go Note Go&lt;/a&gt;, which you can see on the screen.&lt;/p&gt;
+&lt;p&gt;And to do this, I need to bring you back with me to 2014. It&amp;rsquo;s my senior year of college.
+I&amp;rsquo;m in my dorm, which is a beautiful stone building, like a castle.
+I&amp;rsquo;m lying awake at the bottom bunk of a bed late at night.&lt;/p&gt;
+&lt;p&gt;My thoughts are racing. I can&amp;rsquo;t sleep. There&amp;rsquo;s this girl. Does she like me? Do I like her?
+What will I say to her tomorrow?&lt;/p&gt;
+&lt;p&gt;Every time I finish a thought, I have a new thought, just subtle variations on the thoughts I&amp;rsquo;ve already had. And they won&amp;rsquo;t stop.
+It&amp;rsquo;s getting even later and I need to fall asleep.&lt;/p&gt;
+&lt;p&gt;Fortunately, I find a trick that works for me.
+If I write down what I&amp;rsquo;m thinking, then there&amp;rsquo;s just one canonical version of the thought, not two hundred.
+And it&amp;rsquo;s on paper, not in my head, and I can sleep.&lt;/p&gt;
+&lt;p&gt;The only trouble is, I&amp;rsquo;m in a bunk bed; there&amp;rsquo;s a roommate six feet above me and I can&amp;rsquo;t just turn on the lights to write something down.
+And I wouldn&amp;rsquo;t want to anyway. It would wake me up.
+Writing in the dark is no good. Can&amp;rsquo;t read my handwriting that way.
+And typing on my phone or computer is out too, because the lights are too bright and they would wake me up.&lt;/p&gt;
+&lt;p&gt;So, I settle on typing on my laptop in the dark with the monitor turned completely off.&lt;/p&gt;
+&lt;p&gt;I study computer science, so I write some software to make this even better.
+And 
+&lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;Shh Shell&lt;/a&gt; is born.
+I don&amp;rsquo;t have to worry about typing and falling asleep on the delete key, or typing and having the window not being in focus.
+The name Shh Shell is a pun on SSH and sleeping, and it&amp;rsquo;s amusing to me.&lt;/p&gt;
+&lt;p&gt;And I pile on the bells and whistles. Shh Shell lets me set alarms, send text messages, hear the time, the works, all without ever opening my eyes.
+And I love it. I use it for years.&lt;/p&gt;
+&lt;p&gt;I take it with me when I move out to California to work for Google.
+I set it up in my shower so I can capture shower thoughts in addition to sleep thoughts.
+Shh Shell quickly becomes my personal journal, a place I can put my most personal thoughts and then get a good night&amp;rsquo;s sleep.&lt;/p&gt;
+&lt;p&gt;Fast forward five years. This is two months ago now. I&amp;rsquo;m driving in a car that I recently purchased from New Haven, Connecticut, where I live, to a campground in New Jersey to go camping.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m listening to an audiobook and I feel an old yearning, the desire to write something down, something important, just to get it out of my head.
+It&amp;rsquo;s been a few years since I&amp;rsquo;ve used Shh Shell. I didn&amp;rsquo;t use it much after the move east, but I know exactly what I need. I need to write down my thoughts about the audiobook that I&amp;rsquo;m listening to.&lt;/p&gt;
+&lt;p&gt;As I get to the campground, the thoughts about the book have evaporated.
+I set up my tent, and it&amp;rsquo;s here that Go Not Go was born.
+A new, improved version of Shell that supports driving and camping, as well, of course, as sleeping and showering.&lt;/p&gt;
+&lt;p&gt;I design Go Note Go right there in the woods.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;ll be like Shell, but with a host of improvements. You won&amp;rsquo;t need a laptop for it to work.
+It&amp;rsquo;s just a standalone keyboard.
+It supports audio with a beautiful red button you can use to record while driving.
+And it works offline. Perfect for camping.
+It will transcribe your notes and upload everything as soon as it gets an internet connection.&lt;/p&gt;
+&lt;p&gt;I am so excited to build this. I order the parts right then and there from the floor of my tent in the middle of the woods.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t even wait for the parts to arrive. As soon as I get home, I write 
+&lt;a href=&#34;https://github.com/dbieber/GoNoteGo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the software&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I configure mine to upload to 
+&lt;a href=&#34;https://roamresearch.com/#/app/commons-db&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam&lt;/a&gt;. But a month later when 
+&lt;a href=&#34;http://ddohan.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;David&lt;/a&gt;, Aria, Sam, and 
+&lt;a href=&#34;https://twitter.com/aaronmayer108&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Aaron&lt;/a&gt; are building their own, they set theirs to upload to Notion or RemNote or Ideaflow. It works with any note-taking app at all.&lt;/p&gt;
+&lt;p&gt;David Dohan has connected me with this wonderful group of people after I built the first version.
+And I give them a live demo, taking my fully assembled Go Note Go out into a tent for the first time, this time to go camping in my own backyard.&lt;/p&gt;
+&lt;p&gt;I show Go Note Go to Aaron and the whole group. How it handles audio, how as I drift off to sleep I tend to switch from talking to typing the more tired I get, how you can still issue commands like asking it for the time without waking yourself up, just like you could with Shh Shell.&lt;/p&gt;
+&lt;p&gt;I feel like when I built Shell for the first time.
+I love it.&lt;/p&gt;
+&lt;p&gt;And now I have a group of people who love it as well, each building their own.&lt;/p&gt;
+&lt;p&gt;I finish camping in my backyard here in New Haven and I come inside. Last night, I found myself in a situation like the one from years ago. Getting ready to present today, my thoughts again were swirling. This time, though, I knew immediately what to do. I took the dozens of versions of this story that were racing through my mind, and I used Go Note Go, through a combination of typing and speaking, to put just a single version of the story down on the page. My mind was settled, and I slept.&lt;/p&gt;
 </description>
     </item>
     
