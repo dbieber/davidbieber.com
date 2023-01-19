@@ -2,6 +2,21 @@
 
 {{ partial "page_header.html" . }}
 
+<style>
+  .title-link:hover .article-metadata {
+    display: inline;
+  }
+  .article-metadata {
+    display: none;
+  }
+  .article-date {
+    white-space: nowrap;
+  }
+  .snippet-item a {
+    text-decoration: none;
+  }
+</style>
+
 <div class="universal-wrapper">
   {{ with .Content }}
   <div class="article-style">{{ . }}</div>
@@ -12,22 +27,25 @@
   {{ range $paginator.Pages }}
   <div class="stream-item snippet-item">
     <h3 class="mb-0 mt-0">
-    <a href="{{ .RelPermalink }}">
+      {{ $icon := "far fa-newspaper pub-icon" }}
       {{ if eq .Params.icon "star" }}
-      <i class="far fa-star pub-icon" aria-hidden="true"></i>
-      {{ else if .Params.icon}}
-      <i class="{{ .Params.icon }} pub-icon" aria-hidden="true"></i>
-      {{ else }}
-      <i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
+        {{ $icon = "far fa-star pub-icon" }}
+      {{ else if .Params.icon }}
+        {{ $icon = printf "%s%s" .Params.icon " pub-icon" }}
       {{ end }}
+      <a href="{{ .RelPermalink }}"><i class="{{ $icon }}" aria-hidden="true"></i></a>
       {{ if .Params.chip }}
-      <div class="chip">{{ .Params.chip }}</div>
+      <a href="{{ .RelPermalink }}"><div class="chip">{{ .Params.chip }}</div></a>
       {{ end }}
-      {{ if .Params.incomplete }}<strike>{{ end }}
-      {{ .Title }}
-      {{ if .Params.incomplete }}</strike>{{ end }}
+    <a href="{{ .RelPermalink }}" class="title-link">
+      {{ if .Params.incomplete }}<strike>{{ end }}{{ .Title }}{{ if .Params.incomplete }}</strike>{{ end }}
       {{ if eq $pageScope.Title "Tags" }}
       ({{ len .RegularPages }})
+      {{ end }}
+      {{ if .Params.date }}
+        <span class="article-metadata">
+          <span class="article-date">{{ .Params.date.Format "January 2, 2006" }}</span>
+        </span>
       {{ end }}
     </a>
     </h3>
