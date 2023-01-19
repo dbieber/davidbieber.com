@@ -3,7 +3,7 @@ title = "Sending messages as I drift off to sleep"
 date = 2022-01-08T00:00:00
 tags = ["go-note-go", "roam-research", "note-taking", "messager", "browserflow", "automation"]
 keywords = ["communication"]
-summary = "My new Messager setup, allows me to send messages directly from Roam Research _or_ from a standalone keyboard (with no monitor) that I keep at my bedside as I drift off to sleep."
+summary = "My new Messager setup allows me to send messages directly from Roam Research _or_ from a standalone keyboard (with no monitor) that I keep at my bedside as I drift off to sleep."
 +++
 
 In this post I describe my new Messager setup,
