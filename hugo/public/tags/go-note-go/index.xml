@@ -6,7 +6,7 @@
     <description>Recent content in go-note-go on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/go-note-go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/go-note-go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go Note Go</title>
       <link>https://davidbieber.com/projects/go-note-go/</link>
@@ -91,6 +91,701 @@
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;Two points define a line, right? &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Complete and Concise List of Go Note Go&#39;s Features</title>
+      <link>https://davidbieber.com/snippets/2023-01-16-go-note-go-features/</link>
+      <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2023-01-16-go-note-go-features/</guid>
+      
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/projects/go-note-go&#34;&gt;Go Note Go&lt;/a&gt; is a computer keyboard with no screen that I use to capture ideas anywhere, even as I drift off to sleep.
+This is a complete list of Go Note Go&amp;rsquo;s features as of January 2023. Expand any of the features for more information about it.
+The main use cases for Go Note Go are capturing thoughts while sleeping, driving, camping, and showering.&lt;/p&gt;
+&lt;p&gt;&lt;button id=&#34;expand-button&#34; onclick=&#34;expandCollapseAll()&#34;&gt;Expand All&lt;/button&gt;&lt;/p&gt;
+&lt;style&gt;
+details details {
+  margin-left: 2em;
+}
+&lt;/style&gt;
+&lt;h2 id=&#34;main-features-just-the-useful-ones&#34;&gt;Main features (Just the useful ones)&lt;/h2&gt;
+&lt;details&gt;&lt;summary&gt;Capture typed notes&lt;/summary&gt;
+&lt;p&gt;This is the main feature of Go Note Go. Anything you type on it will show up in your notes.&lt;/p&gt;
+&lt;p&gt;You don&amp;rsquo;t need to worry about whether you have your note-taking app open, or whether your computer is running slowly.
+One of the challenges I face with jotting things down when I&amp;rsquo;m at a computer is quickly getting to the place where I can jot things down.
+Switching to my notes app can be slow!&lt;/p&gt;
+&lt;p&gt;Even with a keyboard shortcut or a hot corner for taking notes, this requires switching focus on your computer.
+You need to wait until the text field shows up. Once the text field has focus, then you can type, but if for some reason your computer is running slowly, your mind will run slowly too. By this, I mean that when letters show up slowly on a screen, it slows down the speed at which you think.
+When typing with a screen, people naturally wait for the screen to catch up before continuing typing a thought.&lt;/p&gt;
+&lt;p&gt;On Go Note Go, there&amp;rsquo;s no screen to see your notes. You don&amp;rsquo;t spend time waiting for the computer to catch up to you.
+You don&amp;rsquo;t have to switch windows or click in a textbox before you can start typing.
+You simply turn to the Go Note Go keyboard, and everything you type will show up in your notes once the Go Note Go gets an internet connection.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Capture spoken notes&lt;/summary&gt;
+&lt;p&gt;Go Note Go can also capture spoken notes.
+Press the capture key (escape, by default; you can also use a large handheld red button if preferred) and Go Note Go will start recording.
+Press the capture key again to stop recording.
+The recording will be transcribed and added to your notes once Go Note Go has internet.
+The raw audio is also included in your notes alongside the transcription.&lt;/p&gt;
+&lt;p&gt;Capturing spoken notes is especially useful for capturing ideas while driving.
+Obviously I&amp;rsquo;m not typing on the keyboard while I&amp;rsquo;m driving; that would be unsafe. (The passenger can type though!)&lt;/p&gt;
+&lt;p&gt;Being able to take spoken notes can also occasionally come in handy as I drift off to sleep.
+Usually, I prefer typing, even as I drift off to sleep. It seems to wake me up less.
+But when I&amp;rsquo;m especially tired, speaking can feel like the lower effort method and wake me up less than typing does.&lt;/p&gt;
+&lt;p&gt;The audio notes are not always transcribed perfectly, and are annotated with &amp;ldquo;unverified transcription&amp;rdquo; by default.
+You can verify the transcription is correct, cleaning up any transcription mistakes, and can quickly mark the transcription as verified to help you keep track of which transcriptions have and have not been reviewed.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;No screen&lt;/summary&gt;
+&lt;p&gt;Not having a screen is one of Go Note Go&amp;rsquo;s major selling points for me, and it comes with a host of benefits.&lt;/p&gt;
+&lt;p&gt;First and foremost it means that there are no distractions while writing.
+As a result my head feels so much clearer when I sit down to write at a Go Note Go compared to writing at a computer.
+When writing on a computer, the internet is there with all its 
+&lt;a href=&#34;https://davidbieber.com/2020-10-01-infinite-distractions-and-getting-a-good-sear/&#34;&gt;infinite distractions&lt;/a&gt;, which can make staying focused a challenge.
+None of those scroll-inducing websites exist on Go Note Go, making it easier to think and stick to my intentions.&lt;/p&gt;
+&lt;p&gt;The absence of a screen also helps me to write more effectively.
+For me, some of the main challenges in writing are losing time to repeatedly rereading what I&amp;rsquo;ve written, and wordsmithing it with relatively inconsequential edits that would be better to hold off until revisions.
+Since you can&amp;rsquo;t see typos while working on Go Note Go, you learn to accept them, and you save small amounts of time in significant quantities by not fixing little errors as you write. All of that can be cleaned up in post.&lt;/p&gt;
+&lt;p&gt;Finally, the main 
+&lt;a href=&#34;https://davidbieber.com/post/2022-12-30-go-note-go-story/&#34;&gt;initial motivation&lt;/a&gt; for not having a screen is that it lets me capture thoughts even as I drift off to sleep, without waking me up very much.
+Alternatives to capturing thoughts like turning on the lights to write on paper, taking out my phone or computer, or speaking into a voice recorder all wake me (or my partner) up more than just typing on a keyboard in the dark.&lt;/p&gt;
+&lt;p&gt;I actually find Go Note Go helpful for getting to sleep, since it lets me get thoughts out of my head.
+Without it, sometimes an anxious thought will swirl around in my head, showing up repeatedly in dozens of different forms.
+Using Go Note Go, I can get a single version of the thought into my notes, and somehow that minimizes the thought swirling.
+It&amp;rsquo;s as if by finding a canonical version of the thought and preserving it in Go Note Go, my brain is relieved of its duty to hold onto the thought.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Works offline&lt;/summary&gt;
+&lt;p&gt;Go Note Go works offline. You can bring it into the woods with you if you want to go camping, for example.
+Normally, I leave Go Note Go plugged into a standard outlet, but I also have a battery pack I take with me for using Go Note Go on the go.&lt;/p&gt;
+&lt;p&gt;The notes you enter into Go Note Go are uploaded to your notes as soon as internet becomes available.
+It&amp;rsquo;s OK if the battery dies before then; the notes are stored on a MicroSD card and will be uploaded later.&lt;/p&gt;
+&lt;p&gt;Similarly, Go Note Go transcribes your notes once internet becomes available.
+Voice notes don&amp;rsquo;t get transcribed on device; we currently use Google Transcription as our transcription provider, which requires an internet connection.
+So, voice notes taken in the forest are transcribed and uploaded once you get back to civilization and Go Note Go connects to the internet.&lt;/p&gt;
+&lt;p&gt;Working offline is particularly useful for using Go Note Go while driving and camping.
+It also makes Go Note Go a good candidate for writing in parks or coffee shops.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Act as an outliner&lt;/summary&gt;
+&lt;p&gt;Using tab to indent and shift-tab to dedent, you can use Go Note Go as a proper outliner.
+This allows you to take properly nested notes, despite not being able to see them while you take them.&lt;/p&gt;
+&lt;p&gt;Here is the full list of outliner controls:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tab to indent&lt;/li&gt;
+&lt;li&gt;Shift-Tab to dedent&lt;/li&gt;
+&lt;li&gt;Shift-Delete to clear the current note&lt;/li&gt;
+&lt;li&gt;Enter on an empty note dedents&lt;/li&gt;
+&lt;li&gt;Shift-Delete on an empty note dedents the maximum amount&lt;/li&gt;
+&lt;li&gt;Shift-Enter starts a new session (a separate section of notes)&lt;/li&gt;
+&lt;li&gt;3 minutes of inactivity also starts a new session&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hitting enter on an empty line also causes a dedent.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Run commands&lt;/summary&gt;
+&lt;p&gt;On Go Note Go, any note that starts with a colon is interpreted as a command. There are loads of commands, generally they produce audio output (like reading the time aloud). I&amp;rsquo;ve listed the main commands here, and adding new commands with Python is 
+&lt;a href=&#34;https://github.com/dbieber/GoNoteGo/blob/main/gonotego/command_center/commands.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;easy&lt;/a&gt; too.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:t&lt;/code&gt; or &lt;code&gt;:time&lt;/code&gt; Read the time out loud.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:r&lt;/code&gt; or &lt;code&gt;:read&lt;/code&gt; Read the last note out loud.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:q TEXT&lt;/code&gt; or &lt;code&gt;:ask TEXT&lt;/code&gt; Ask a question of the AI assistant.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:ai&lt;/code&gt; Send the current session of notes to the AI assistant.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:at TIME:DO&lt;/code&gt; Schedule command DO to run at time TIME. TIME can be a natural language time like &amp;ldquo;in 5 minutes&amp;rdquo; or &amp;ldquo;8am&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:ok&lt;/code&gt; or &lt;code&gt;:status&lt;/code&gt; Say &amp;ldquo;ok&amp;rdquo; out loud; useful for verifying your hands are in the right place and that Go Note Go is on and functioning.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Commands can also be activated via voice. Press the capture button (escape by default) and say &amp;ldquo;go go&amp;rdquo; followed by the command to trigger its execution.&lt;/p&gt;
+&lt;p&gt;There are additional commands for configuring Go Note Go, as well as more technical commands less useful during common usage.&lt;/p&gt;
+  &lt;details&gt;&lt;summary&gt;Expand this for the full list of commands.&lt;/summary&gt;
+&lt;h3 id=&#34;system-commands&#34;&gt;System commands&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:whoami&lt;/code&gt; or &lt;code&gt;:who am i&lt;/code&gt; Read aloud the current user and currently selected note-taking system.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:t&lt;/code&gt; or &lt;code&gt;:time&lt;/code&gt; Read the time out loud.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:at TIME:DO&lt;/code&gt; Schedule command DO to run at time TIME. TIME can be a natural language time like &amp;ldquo;in 5 minutes&amp;rdquo; or &amp;ldquo;8am&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:status&lt;/code&gt; or &lt;code&gt;ok&lt;/code&gt; Say &amp;ldquo;ok&amp;rdquo; out loud; useful for verifying your hands are in the right place and that Go Note Go is on and functioning.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:say TEXT&lt;/code&gt; Say TEXT out loud.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:shell CMD&lt;/code&gt; Run command CMD in a shell.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:flush&lt;/code&gt; Flush the logs; this is useful for debugging.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:update&lt;/code&gt; Download updates to your Go Note Go; :restart for them to take effect.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:restart&lt;/code&gt; Restart all Go Note Go processes on the device.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:reboot&lt;/code&gt; Reboot the device.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:env&lt;/code&gt; Log the environment variables and their values.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:ip&lt;/code&gt; Read the IP address of the Go Note Go out loud.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:i&lt;/code&gt; or &lt;code&gt;:internet&lt;/code&gt; Say Yes or No out loud, indicating whether Go Note Go has internet access.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:wifi SSID PSK&lt;/code&gt; or &lt;code&gt;:wpa SSID PSK&lt;/code&gt; Configure Go Note Go to connect to the wifi with ssid SSID using passkey PSK.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;settings-commands&#34;&gt;Settings Commands&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:get KEY&lt;/code&gt; Read out loud the value associated with setting KEY.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:set KEY VALUE&lt;/code&gt; Set the setting KEY to VALUE.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:clear KEY&lt;/code&gt; Clear setting KEY, reverting its value back to that found in your settings.py file.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:clear&lt;/code&gt; Clear all settings entered via the :set command, reverting their values back to those found in your settings.py file.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:leds ON/OFF/LOW&lt;/code&gt; Set the brightness of the LEDs. Only relevant if you&amp;rsquo;re using the Adafruit Voice Bonnet.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:v ON/OFF&lt;/code&gt; or &lt;code&gt;:volume ON/OFF&lt;/code&gt; Turn the audio volume on or off.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:get status KEY&lt;/code&gt; Get status indicator given by KEY. The status indicators are 
+&lt;a href=&#34;https://github.com/dbieber/GoNoteGo/blob/main/gonotego/common/status.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;listed here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The possible settings are 
+&lt;a href=&#34;https://github.com/dbieber/GoNoteGo/blob/main/gonotego/settings/secure_settings_template.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;listed here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;note-commands-unnecessary&#34;&gt;Note commands (Unnecessary!)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:note TEXT&lt;/code&gt; Add TEXT as a note. (Just type TEXT! No need to use this command.)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:subnote TEXT&lt;/code&gt; Add TEXT as an indented note. (Just indent and type TEXT! No need to use this command.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;twitter-commands&#34;&gt;Twitter Commands&lt;/h3&gt;
+&lt;p&gt;Twitter is not a common use case for Go Note Go, so it&amp;rsquo;s a bit funny that it has it&amp;rsquo;s own section. These commands are predominantly for configuring Go Note Go to use your Twitter account.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:twitter user&lt;/code&gt; Read the current Twitter use out loud.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:twitter user USER&lt;/code&gt; Set the current Twitter user to USER.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:twitter auth&lt;/code&gt; Start the Twitter auth flow for Go Note Go developers (requires ssh and implementation-details to complete).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:twitter auth EMAIL&lt;/code&gt; Start the Twitter auth flow; instructions for completing the flow will be emailed to EMAIL.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:twitter pin PIN&lt;/code&gt; Use this command to complete the auth flow; enter the pin you received in the email from the previous command as PIN.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:twitter&lt;/code&gt; Switch the current note-taking system to be Twitter. Now all notes will be posted directly to Twitter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To log into Twitter, run &lt;code&gt;:twitter&lt;/code&gt;, &lt;code&gt;:twitter user USER&lt;/code&gt;, &lt;code&gt;:twitter auth EMAIL&lt;/code&gt;, and finally &lt;code&gt;:twitter pin PIN&lt;/code&gt; entering the pin you receive in the email.&lt;/p&gt;
+&lt;h3 id=&#34;email-commands&#34;&gt;Email Commands&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:email TO SUBJECT: TEXT&lt;/code&gt; Send an email to TO with subject SUBJECT and body TEXT.&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/details&gt;
+&lt;p&gt;Adding new commands is always a pleasure, but it&amp;rsquo;s good to keep the capabilities of Go Note Go limited, to prevent potential distractions from creeping onto the device.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Audio-only clock&lt;/summary&gt;
+&lt;p&gt;Go Note Go sports loads of commands (see above), but the one I use most is having Go Note Go read the time out loud. I prefer this to looking at a clock or my phone because I can keep my eyes closed as I use it, so it doesn&amp;rsquo;t wake me up as much.&lt;/p&gt;
+&lt;p&gt;To trigger this feature, I type &lt;code&gt;:t&lt;/code&gt;.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;AI assistant&lt;/summary&gt;
+&lt;p&gt;The AI assistant is a feature I only added recently to Go Note Go, and I have a 
+&lt;a href=&#34;https://davidbieber.com/snippets/2023-01-04-sleeping-with-gpt/&#34;&gt;whole snippet&lt;/a&gt; dedicated to my experience with it. It&amp;rsquo;s amazing.&lt;/p&gt;
+&lt;p&gt;There are two ways of interacting with the assistant today.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;:q TEXT&lt;/code&gt; or &lt;code&gt;:ask TEXT&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If I just want to ask a single question of the assistant, I use this command. The assistant&amp;rsquo;s response is read out loud. This is the more private approach as only TEXT is sent to the AI, not any additional notes.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;code&gt;:ai&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If I want to have an extended conversation or interaction with the AI assistant, I use this command. I can either run &lt;code&gt;:ai&lt;/code&gt; after typing my message to the AI, or I can prefix my message with &lt;code&gt;:ai&lt;/code&gt;. Both work. This command sends the entire session of notes to the AI assistant. The AI assistant&amp;rsquo;s response is read out loud, and is included in the session of notes.&lt;/p&gt;
+&lt;p&gt;In both cases, the AI&amp;rsquo;s responses are included in the notes and are marked as being AI responses.&lt;/p&gt;
+&lt;p&gt;You can 
+&lt;a href=&#34;https://davidbieber.com/snippets/2023-01-04-sleeping-with-gpt/&#34;&gt;read more about my experience talking to the AI assistant as I drift off to sleep here&lt;/a&gt;.&lt;/p&gt;
+&lt;/details&gt;
+&lt;h2 id=&#34;but-wait-theres-more&#34;&gt;But wait, there&amp;rsquo;s more&lt;/h2&gt;
+&lt;details&gt;&lt;summary&gt;Use your favorite note-taking system: Roam Research, RemNote, Mem, IdeaFlow, Notion, or even Twitter or Email&lt;/summary&gt;
+&lt;p&gt;The supported note-taking systems are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Roam Research&lt;/li&gt;
+&lt;li&gt;RemNote&lt;/li&gt;
+&lt;li&gt;Mem&lt;/li&gt;
+&lt;li&gt;IdeaFlow&lt;/li&gt;
+&lt;li&gt;Notion&lt;/li&gt;
+&lt;li&gt;Twitter&lt;/li&gt;
+&lt;li&gt;Email&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Roam Research is the one I use daily.&lt;/p&gt;
+&lt;p&gt;Why are Twitter and Email on this list?&lt;/p&gt;
+&lt;p&gt;If you set your note-taking system to Twitter, every note you take on your Go Note Go will be posted to Twitter. This is an unconventional choice! Perhaps you like thinking in public though. Perhaps you live in a community house and want a place to share quirky quotes that come up. You do you.&lt;/p&gt;
+&lt;p&gt;Email is a nice fallback system for people that don&amp;rsquo;t already use one of the others. When I give Go Note Gos as gifts, I generally configure them to use email so. This lets the Go Note Go work out-of-the-box without the recipient needing to configure it with their account credentials.&lt;/p&gt;
+&lt;p&gt;You can also switch between note-taking systems at any point with a single command. I recommend making your Go Note Go a single-purpose device with just a single target note-taking system, but you should still note that this is an option. The command to switch note-taking systems is &lt;code&gt;:set uploader NOTE_TAKING_SYSTEM&lt;/code&gt;, where &lt;code&gt;NOTE_TAKING_SYSTEM&lt;/code&gt; is one of &lt;code&gt;email&lt;/code&gt;, &lt;code&gt;ideaflow&lt;/code&gt;, &lt;code&gt;remnote&lt;/code&gt;, &lt;code&gt;roam&lt;/code&gt;, &lt;code&gt;mem&lt;/code&gt;, &lt;code&gt;notion&lt;/code&gt;, or &lt;code&gt;twitter&lt;/code&gt;.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Never miss a note&lt;/summary&gt;
+&lt;p&gt;If you walk away from Go Note Go without hitting enter, your note will be submitted after 3 minutes of inactivity.&lt;/p&gt;
+&lt;p&gt;Go Note Go boots in about 15 seconds, after which point it is always ready to receive inputs.&lt;/p&gt;
+&lt;p&gt;The fact that it&amp;rsquo;s always ready &amp;ndash; there&amp;rsquo;s no tab switching or waiting required before you can start typing &amp;ndash; is a big deal to me.
+Compared with writing notes on a computer, writing on Go Note Go feels smoother and more natural.
+On a computer, I need to switch tabs to give focus to my note-taking app before I can start typing.
+That context switch may sound small, but it is meaningful, and I&amp;rsquo;m glad to have done away with it.&lt;/p&gt;
+&lt;p&gt;There is also the option to pause note-taking on your Go Note Go. This is not recommended. To enable this, set the PAUSE_HOTKEY setting.
+This creates a trigger for pausing and unpausing note-taking.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Send people messages&lt;/summary&gt;
+&lt;p&gt;Sending people messages is actually not a core feature of Go Note Go, but it is something that I built for myself on top of Go Note Go.
+If I include text like &amp;ldquo;@Person&amp;rdquo; in my notes, then my Messager project will pick up the note and queue up a message to Person.
+Notes nested underneath the @-tagged note are also included in the message.&lt;/p&gt;
+&lt;p&gt;I have 
+&lt;a href=&#34;https://davidbieber.com/post/2022-01-08-new-messager-setup/&#34;&gt;a whole post dedicated to this feature&lt;/a&gt; if you&amp;rsquo;d like to learn more.&lt;/p&gt;
+&lt;p&gt;The supported messaging systems in the Messager project are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Facebook Messenger&lt;/li&gt;
+&lt;li&gt;Twitter (both public and private tweets, as well as DMs)&lt;/li&gt;
+&lt;li&gt;Mastodon&lt;/li&gt;
+&lt;li&gt;Hacker News submissions&lt;/li&gt;
+&lt;li&gt;Email&lt;/li&gt;
+&lt;li&gt;iMessage&lt;/li&gt;
+&lt;li&gt;Slack&lt;/li&gt;
+&lt;li&gt;Discord - this one unfortunately is not in a working state at this time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It supports aliases, so that I can set short-names for people to send messages to their preferred communications platform.&lt;/p&gt;
+&lt;p&gt;Once a message is in the queue, I can clean it up and approve it. I can also specify a time for it to send, with the default being to send now.
+Once approved, it sends automatically at the desired time.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Mounts on the passenger side of the dashboard&lt;/summary&gt;
+&lt;p&gt;I put Velcro on the bottom of one of my Go Note Gos, and on the passenger side of my car dashboard.
+This way I can mount the Go Note Go in the car.
+Using the capture button (e.g. a large handheld red button), you can capture audio recordings while driving.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve largely switched away from using Go Note Go while driving in favor of calling by AI assistant on the phone (implemented via Twilio).&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;It&#39;s open source&lt;/summary&gt;
+&lt;p&gt;The code and set up instructions for Go Note Go are 
+&lt;a href=&#34;https://github.com/dbieber/GoNoteGo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;all freely available on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The total cost of parts is about $100. I encourage you to make your own! Please 
+&lt;a href=&#34;mailto:david810&amp;#43;go-note-go@gmail.com&#34;&gt;email me if you do&lt;/a&gt;!&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;The right amount of customizability&lt;/summary&gt;
+&lt;p&gt;The main thing you can configure is which note-taking system you&amp;rsquo;d like to upload your notes to.&lt;/p&gt;
+&lt;p&gt;This can be any of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Roam Research&lt;/li&gt;
+&lt;li&gt;RemNote&lt;/li&gt;
+&lt;li&gt;Mem&lt;/li&gt;
+&lt;li&gt;IdeaFlow&lt;/li&gt;
+&lt;li&gt;Notion&lt;/li&gt;
+&lt;li&gt;Twitter&lt;/li&gt;
+&lt;li&gt;Email&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Raw audio files are uploaded to Dropbox and included in your notes.&lt;/p&gt;
+&lt;p&gt;The two other areas Go Note Go can be configured are adding new commands, and adding new note-taking systems.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Your notes are easy to review&lt;/summary&gt;
+&lt;p&gt;As you take notes on Go Note Go, they are divided into sessions.
+Each time you sit down at a Go Note Go after a period of inactivity, a new session is created.
+You can also start a new session at any time by hitting Shift-Enter.&lt;/p&gt;
+&lt;p&gt;In your notes, sessions are timestamped and organized chronologically. All the notes in a session are nested underneath the timestamped session header.
+When I review my notes, I like to place a one-line summary of a session in the timestamped session header. I can then collapse the session.
+This makes it easy to quickly scan through my notes, looking only at the session headers. I can expand a session to see it&amp;rsquo;s contents for more detail.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://roamresearch.com/#/app/commons-db/page/01-17-2023&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Take a look at some example Go Note Go notes here&lt;/a&gt; to see what this looks like.&lt;/p&gt;
+&lt;/details&gt;
+&lt;h2 id=&#34;emergent-benefits&#34;&gt;Emergent benefits&lt;/h2&gt;
+&lt;details&gt;&lt;summary&gt;Focus and Relief&lt;/summary&gt;
+&lt;p&gt;I like how Go Note Go is a single-purpose device.
+The absence of a screen and the absence of any distractions on Go Note Go make for a soothing experience.&lt;/p&gt;
+&lt;p&gt;I have a desk at home with just a Go Note Go on it.
+Sitting down at my Go Note Go desk fills me with an immediate sense of relief.
+When writing at a computer, by comparison, I notice a tension in my body.
+Go Note Go relieves this tension and clears my head.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Avoid distracting others (incl. w/ Bluetooth headphones)&lt;/summary&gt;
+&lt;p&gt;Raspberry Pi 400s have Bluetooth support. So, you can connect Bluetooth headphones to Go Note Go.&lt;/p&gt;
+&lt;p&gt;At work, I use Go Note Go with my AirPods. When I put the AirPods in, Go Note Go automatically connects.
+I can then ask the AI assistant questions on the Go Note Go and get the answers piped directly to my ears,
+so my coworkers are not distracted.
+If I take the headphones out, Go Note Go outputs to the attached speaker.
+So, I can show colleagues Go Note Go without them needing to put headphones in.&lt;/p&gt;
+&lt;p&gt;Also consider capturing ideas as you drift off to sleep.
+Compared with other options for capturing these ideas, Go Note Go is comparatively non-disruptive.
+It doesn&amp;rsquo;t require any bright lights or loud sounds.
+It&amp;rsquo;s not perfectly quiet either though, so there&amp;rsquo;s room for improvement here.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Check the time without fully waking up&lt;/summary&gt;
+&lt;p&gt;Go Note Go&amp;rsquo;s commands all work without you ever having to open your eyes.
+If you&amp;rsquo;re drifting off to sleep, this is ideal. You can get the time without activating your brain too much, making it easier to continue drifting off to sleep.
+Compare this with looking at your phone or at a clock. These options require opening your eyes, possibly subjecting them to bright lights.
+No thank you. I prefer Go Note Go&amp;rsquo;s &lt;code&gt;:t&lt;/code&gt; command for getting the time.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Take it camping&lt;/summary&gt;
+&lt;p&gt;Go Note Go lasts for about twelve hours on this 
+&lt;a href=&#34;https://www.amazon.com/gp/product/B07JYYRT7T?th=1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;3A 10400mAh power bank&lt;/a&gt;.
+It&amp;rsquo;s small and lightweight, easy to toss in the car and take camping.
+There are 
+&lt;a href=&#34;https://www.adafruit.com/product/5292&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cases&lt;/a&gt; you can purchase to make Go Note Go more portable for this kind of use case.&lt;/p&gt;
+&lt;p&gt;Camping was one of the original use cases for Go Note Go, and in fact I designed the system and ordered the first batch of parts while camping.&lt;/p&gt;
+&lt;p&gt;The core attributes of Go Note Go that make it great for camping are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It works offline, so you can use it anywhere; it will upload your notes as soon as you get an internet connection.&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s portable and can run on battery for a decent length of time.&lt;/li&gt;
+&lt;li&gt;There&amp;rsquo;s no screen or bright lights to annoy other campers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Capture thoughts while drifting off to sleep&lt;/summary&gt;
+&lt;p&gt;The main culmination of the features is that Go Note Go is great for capturing thoughts while you&amp;rsquo;re drifting off to sleep.
+This was the primary motivation for Go Note Go&amp;rsquo;s predecessor, 
+&lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;Shh Shell&lt;/a&gt;.
+I had some thoughts that were keeping me awake (this is back in 2014!), and I wanted to write them down.
+I found that by writing them down, I could get them out of my head, and fall asleep.
+However, conventional methods of writing them down would wake me or my roommate up. So, I built Shh Shell to solve that problem.
+Today, it has evolved into Go Note Go.&lt;/p&gt;
+&lt;p&gt;The core attributes of Go Note Go that make it great for capturing sleep thoughts are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There&amp;rsquo;s no screen or bright lights to wake you up&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s always ready to capture notes; there&amp;rsquo;s no fiddling with getting into notes mode in the middle of the night&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That it acts as an audio-only clock as well is just a bonus.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Use Go Note Go while driving&lt;/summary&gt;
+&lt;p&gt;I came up with the idea for Go Note Go while driving to a campground.
+When I initially built Go Note Go, I included a large handheld red button you could push to trigger audio recording.
+This button made Go Note Go useful while driving.
+For example, if I was listening to an audio book and wanted to capture a thought, I could simply push the trigger and speak my thoughts aloud.
+Then, when I arrive at the campground, I could take the Go Note Go off the dashboard and toss it in the tent.&lt;/p&gt;
+&lt;p&gt;The core attributes of Go Note Go that make it great for capturing thoughts while driving are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It works offline, so you can use it anywhere.&lt;/li&gt;
+&lt;li&gt;There&amp;rsquo;s no visual, so you can keep your attention on the road.&lt;/li&gt;
+&lt;li&gt;The large red button is easy to push even when you&amp;rsquo;re driving.&lt;/li&gt;
+&lt;li&gt;It captures audio notes and transcribes them.&lt;/li&gt;
+&lt;li&gt;It mounts nicely to the passenger side of the car dashboard.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Avoid carsickness&lt;/summary&gt;
+As a passenger in a car, it can be tempting to use your phone. Especially if you&#39;re taking an Uber and not engaging with the driver, this temptation can be quite strong; phones are little dopamine boxes, and will happily consume your attention endlessly. In a car, this can leave you feeling carsick.
+&lt;p&gt;Go Note Go doesn&amp;rsquo;t have this issue. Using Go Note Go in a case, it is truly easy to take on the go. The battery sits in the case and the Go Note Go rests flat on your lap while you use it. The best part? Using Go Note Go doesn&amp;rsquo;t make you carsick, because you&amp;rsquo;re not watching the device as you use it. You&amp;rsquo;re eyes are free to look forward (or wherever) the whole time. Such relief!&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Great for long flights&lt;/summary&gt;
+Using Go Note Go with a case makes it so easy to take on the go. And since it works offline, it&#39;s ideal for use on a long flight. The battery I use lasts 12 hours, so this works even if your flight doesn&#39;t have an outlet. If there is an outlet, 5V is sufficient.
+&lt;p&gt;I find I much prefer writing on Go Note Go on a flight compared with hours of back to back movie watching. Not everyone has this predilection; to each their own.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Capture shower thoughts&lt;/summary&gt;
+&lt;p&gt;Outside of driving, camping, and sleeping, where else are the best ideas generated? That&amp;rsquo;s right, in the shower.&lt;/p&gt;
+&lt;p&gt;You can connect a waterproof Bluetooth keyboard to your Go Note Go and bring it into the shower with you to capture these critical insights.
+You can also use a Bluetooth shower speaker for audio output.
+I have not yet seen a shower microphone suitable for capturing audio thoughts in the shower.&lt;/p&gt;
+&lt;p&gt;Here is a photo from 2015 of 
+&lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;Shh Shell (Go Note Go&amp;rsquo;s predecessor)&lt;/a&gt; set up in my shower in California.
+The keyboard is on the ledge to the right of the shower speaker.
+&lt;img src=&#34;shower-keyboard.jpeg&#34; alt=&#34;A picture of my shower in California from 2015. The Shh Shell keyboard sits on the windowsill next to a Bluetooth speaker. There&amp;rsquo;s a 3D printed shaving cream holder mounted to the soap dish below.&#34;&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;script&gt;
+  var expandButton = document.getElementById(&#39;expand-button&#39;);
+  var isExpanded = false;
+
+  function expandCollapseAll() {
+    var detailsElements = document.getElementsByTagName(&#39;details&#39;);
+    for (var i = 0; i &lt; detailsElements.length; i++) {
+      detailsElements[i].open = !isExpanded;
+    }
+    isExpanded = !isExpanded;
+    expandButton.textContent = isExpanded ? &#39;Close All&#39; : &#39;Expand All&#39;;
+  }
+&lt;/script&gt;
+&lt;h2 id=&#34;personal-go-note-go-usage&#34;&gt;Personal Go Note Go usage&lt;/h2&gt;
+&lt;p&gt;I have Go Note Gos everywhere! There&amp;rsquo;s one in my kitchen, one in each bed in my home, and one on each of my desks at home and at work.
+Unfortunately there&amp;rsquo;s a backlog on Raspberry Pis (with US keyboard layouts), or else I&amp;rsquo;d have even more!&lt;/p&gt;
+&lt;details&gt;&lt;summary&gt;Total writing volume&lt;/summary&gt;
+&lt;p&gt;I&amp;rsquo;ve written 150,000 words on Go Note Go in the last 16 months. By way of comparison, my notes in Roam Research from the last four years (counting both Go Note Go and other note-taking) total 507,000 words. My 
+&lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;snippets&lt;/a&gt; total 123,000 words over two years. My 
+&lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;posts&lt;/a&gt; total 26,000 words over 10 years.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Giving Go Note Go as gifts&lt;/summary&gt;
+&lt;p&gt;I want other people to experience the joys of Go Note Go. So I have on a few occasions given them as gifts.
+There are about ten Go Note Gos out there to the best of my knowledge.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d love to put one in a public park one day (connected to Twitter) and see what people type on it.&lt;/p&gt;
+&lt;p&gt;You can also build your own Go Note Go. It&amp;rsquo;s completely open source. The code and set up instructions for Go Note Go are 
+&lt;a href=&#34;https://github.com/dbieber/GoNoteGo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;all freely available on GitHub&lt;/a&gt;, and the total cost of parts is about $100.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Typing vs talking&lt;/summary&gt;
+&lt;p&gt;The vast majority of my Go Note Go notes I enter by typing, rather than by speaking.
+Even when I&amp;rsquo;m fairly tired, I find that typing wakes me up less than speaking does.
+There does reach a point for me where this switches though; when I&amp;rsquo;m extremely tired, I will sometimes prefer to speak than to type. In those moments, speaking feels lower effort and like it will wake me up less.
+It&amp;rsquo;s nice that Go Note Go supports both.&lt;/p&gt;
+&lt;p&gt;I also have a phone number I can call where my AI assistant picks up, though that project is still early stages.
+I use that more than Go Note Go while driving these days, and also prefer that approach when I&amp;rsquo;m just walking around.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Capturing dreams&lt;/summary&gt;
+&lt;p&gt;When I first started this night typing practice, I wasn&amp;rsquo;t yet comfortable typing without looking, and so my fingers were not positioned correctly on the keyboard. I woke up and saw I had collected a full paragraph of gibberish, ending with the phrase &amp;ldquo;I hope the FBI doesn&amp;rsquo;t find out about this&amp;rdquo;.
+I didn&amp;rsquo;t remember having written anything at all the night before.&lt;/p&gt;
+&lt;p&gt;One letter at a time I decoded the gibberish. Roughly, each letter had to be shifted by one on a QWERTY keyboard layout; it was a bit of a puzzle to decode. To my amazement and delight, as I decoded the text my memory of writing it came flooding back to me. I can describe it in no other way than that; it was like a missing piece of my brain had been unlocked, truly a rewarding feeling. I had woken up from a dream the night before, typed the dream into the keyboard, and promptly fallen asleep. I didn&amp;rsquo;t remember the dream or that I had typed it until I was decoding the text.
+What a relief to find out I wasn&amp;rsquo;t actually hiding anything from the FBI!&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Thinking differently at night&lt;/summary&gt;
+&lt;p&gt;I find my brain produces different thoughts while I&amp;rsquo;m drifting off to sleep as compared with during the day.
+(My AI assistant calls this phenomenon either &amp;ldquo;hypnagogia&amp;rdquo; or &amp;ldquo;procrastination&amp;rdquo;. I prefer the former.)&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a period of calm and reflection, where I am alone with my thoughts.
+My brain can process topics that it didn&amp;rsquo;t have a chance to get to throughout the day.&lt;/p&gt;
+&lt;p&gt;Rather than going against the grain of my brain and trying to induce these thoughts while I&amp;rsquo;m still awake, I use Go Note Go to capture these thoughts without overly interrupting my bed time routine.&lt;/p&gt;
+&lt;p&gt;For example, I might think of reaching out to someone while lying awake in bed. Without Go Note Go, I might forget about this in the morning. With Go Note Go, I can write a quick message to them in the moment, and review and send it when I wake up.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Example notes&lt;/summary&gt;
+&lt;p&gt;So that you can get a better picture of what these Go Note Go notes look like, I&amp;rsquo;ve copied 
+&lt;a href=&#34;https://roamresearch.com/#/app/commons-db/page/01-17-2023&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a short section of my Go Note Go notes here&lt;/a&gt;. This will give you a brief taste of what the notes look like when I go to review them. You can see how they&amp;rsquo;re divided into time-stamped sessions, how the AI assistant&amp;rsquo;s responses are indented beneath the preceding note, and how I put summaries at the top of some of the sessions. Feel free to take your own notes in that public note-base too!&lt;/p&gt;
+&lt;/details&gt;
+&lt;h2 id=&#34;concluding-remarks&#34;&gt;Concluding remarks&lt;/h2&gt;
+&lt;p&gt;Overall, building and using Go Note Go these last two years has been a joy. I&amp;rsquo;ve met lots of wonderful people through Go Note Go, as there&amp;rsquo;s a lovely community of folks interested in tools for networked thought and audio note-taking. If these topics interest you, definitely 
+&lt;a href=&#34;mailto:david810&amp;#43;go-note-go@gmail.com&#34;&gt;don&amp;rsquo;t hesitate to get in touch&lt;/a&gt;, even if just to say you&amp;rsquo;re interested. And finally for the hackers among you, I encourage you to 
+&lt;a href=&#34;https://github.com/dbieber/GoNoteGo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;try out Go Note Go yourself&lt;/a&gt;. I hope that headless computing becomes more prominent in the years to come, and that you can be a part of that. Let&amp;rsquo;s take away our screens, take back our attention, and live with intention.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sleeping with GPT</title>
+      <link>https://davidbieber.com/snippets/2023-01-04-sleeping-with-gpt/</link>
+      <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2023-01-04-sleeping-with-gpt/</guid>
+      
+      <description>&lt;p&gt;The last few nights I have been sleeping with GPT, and oh, it has been a joy.&lt;/p&gt;
+&lt;h3 id=&#34;background-capturing-my-thoughts-as-i-drift-off-to-sleep&#34;&gt;Background: Capturing my thoughts as I drift off to sleep&lt;/h3&gt;
+&lt;p&gt;I use a note-taking device that I call 
+&lt;a href=&#34;https://davidbieber.com/projects/go-note-go&#34;&gt;Go Note Go&lt;/a&gt;.
+It&amp;rsquo;s a computer keyboard without a screen that I type on to capture my thoughts everywhere, even as I drift off to sleep.
+I have one in my bed, and I also keep them on my desk at work and in various spots around my apartment; anywhere an idea strikes, I have a Go Note Go keyboard ready to capture that idea.
+Go Note Go&amp;rsquo;s main purpose is to let me quickly jot down these ideas so I can remember them later, e.g. after getting a good night&amp;rsquo;s sleep&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+It also 
+&lt;a href=&#34;https://davidbieber.com/snippets/2023-01-16-go-note-go-features/&#34;&gt;does other things (click for a concise primer on Go Note Go)&lt;/a&gt; like speaking the time aloud or 
+&lt;a href=&#34;https://davidbieber.com/post/2022-01-08-new-messager-setup/&#34;&gt;letting me send messages to other people&lt;/a&gt;.
+Most recently, I&amp;rsquo;ve added an AI assistant to Go Note Go, and have begun conversing with it as I drift off to sleep.&lt;/p&gt;
+&lt;p&gt;Even before adding the AI assistant, Go Note Go had become a staple in my life.
+Go Note Go&amp;rsquo;s main capability &amp;ndash; capturing my thoughts &amp;ndash; helps me fall asleep more effectively.
+If I have an anxious thought swirling in my brain, I can simply type it into Go Note Go.
+Instead of dozens of versions of the thought popping up in my head all night, I have just a single canonical version of the thought stored on the device, and I can fall asleep.&lt;/p&gt;
+&lt;p&gt;Go Note Go also supports commands, like reading the time out loud.
+Entering a line that starts with a colon (&#39;:&#39;) issues a command.
+Typing :r has it read back the last thing I wrote.
+Typing :t will have it read the time to me.
+I like this because it lets me know the time without having to open my eyes, so getting the time doesn&amp;rsquo;t require being alert&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;All of this lets me drift off to sleep more effectively. I can get ideas out of my head while avoiding things that would wake me up, like looking at my phone or turning on the lights to write down an idea.
+Compared with writing on my phone, or a computer, or on paper, writing on Go Note Go is relaxing and doesn&amp;rsquo;t wake me up very much.
+So, Go Note Go has become an essential tool in my daily routine, helping me capture and organize my thoughts, and allowing me to relax and fall asleep more easily.&lt;/p&gt;
+&lt;h3 id=&#34;adding-an-ai-assistant-to-go-note-go&#34;&gt;Adding an AI assistant to Go Note Go&lt;/h3&gt;
+&lt;p&gt;Most recently, I added an AI assistant to Go Note Go and I absolutely love it.&lt;/p&gt;
+&lt;p&gt;By default when I type on the keyboard the text just shows up in my notes,
+but now I have the option of sending the text off to an AI assistant as well.
+Since there&amp;rsquo;s no screen on Go Note Go, the assistant&amp;rsquo;s responses are read out loud.
+They&amp;rsquo;re also inserted into my notes for future reference, which I can browse later at a computer or on my phone.&lt;/p&gt;
+&lt;p&gt;Most of my Go Note Go usage remains unchanged, but one aspect now feels very different: drifting off to sleep.
+This is when having the AI assistant feels most rewarding.&lt;/p&gt;
+&lt;h3 id=&#34;sleeping-with-gpt-what-do-we-discuss&#34;&gt;Sleeping with GPT: What do we discuss?&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;m lying there in the bed, but I&amp;rsquo;m not really trying to go to sleep.
+I&amp;rsquo;m excited that I have this new AI with me which I can ask anything at all.
+I&amp;rsquo;ve been meaning to learn organic chemistry but haven&amp;rsquo;t found the time; this seems a perfect opportunity to get started.
+On the first night I drift off to sleep peppering the AI with questions about organic chemistry and battery technology.
+On subsequent nights I probe new topics, trying to get a deeper understanding of the superficial things I learned the night before, and also introducing new topics to our discussions.
+I continue peppering the AI with questions about chemistry and history as I drift off to sleep.
+Quickly realizing that this could inhibit my ability to get a good night&amp;rsquo;s sleep, I also ask for advice in that regard, and it obliges.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s clear from the outset that I&amp;rsquo;m going to want to write about this, so I&amp;rsquo;m jotting down notes for this very post. I ask my assistant to turn my notes into an outline. That outline is read out loud, and it&amp;rsquo;s also sitting there for me the next day when I go to start writing in earnest.&lt;/p&gt;
+&lt;p&gt;In the morning, when I wake up, I ask for strategies for a morning routine. It makes good suggestions.
+Though the response is nothing that you wouldn&amp;rsquo;t find from a quick Google search for morning routine ideas, the proximity to those ideas as I&amp;rsquo;m just waking up, casually typing to my keyboard, makes them more actionable. The suggestions are things like making my bed right away, drinking a glass of lemon water, and doing some exercise to get my blood flowing. It feels inspiring and healthy.&lt;/p&gt;
+&lt;p&gt;One night I asked the AI assistant to read me a bedtime story. I gave it some details about my own life first and it used them to construct a story that was personal and meaningful to me, albeit a bit silly.&lt;/p&gt;
+&lt;!-- Other benefits of the assistant: reading back capturing notes and answering questions about them. --&gt;
+&lt;h3 id=&#34;trust-and-confidence&#34;&gt;Trust and Confidence&lt;/h3&gt;
+&lt;p&gt;An invitation into one&amp;rsquo;s bed requires a certain level of trust.&lt;/p&gt;
+&lt;p&gt;However, a common criticism of GPT and language models more broadly is that they are often factually inaccurate. What&amp;rsquo;s worse is that when they are wrong, they often are wrong with confidence.&lt;/p&gt;
+&lt;p&gt;This makes learning about new topics like battery technology and organic chemistry a challenge.
+I don&amp;rsquo;t know if the things that I have learned these last few nights are true or not.
+In fact, I know that some of them are definitely not true, because GPT will sometimes flatly contradict itself.&lt;/p&gt;
+&lt;p&gt;In spite of this, I&amp;rsquo;ve had the distinct feeling that I have been learning a lot from these night time question peppering sessions.
+Is this feeling valid, or have I been duped by the AI?&lt;/p&gt;
+&lt;p&gt;To suss out truth from fiction, my first line of defense is my intuition.
+Using my own limited knowledge of the topic we are discussing, I can sometimes tell if the model is fibbing.
+If what the model says fits nicely into my world model, I might trust it and move on.
+When things don&amp;rsquo;t make sense to me, I can ask for explanations or ask pointed questions to dive into the details.
+These will quickly seem inconsistent, either with each other or with what I already know, if in fact the model has made up inaccurate information.
+(This observation should motivate new, fully automated, methods for discovering truth in these models as well. For example the line of reasoning that 
+&lt;a href=&#34;https://arxiv.org/abs/2205.11822&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Maieutic Prompting&lt;/a&gt; pursues proceeds along these lines.)&lt;/p&gt;
+&lt;p&gt;This ability to dive deep into the details, sometimes asking extremely basic questions that I would be embarrassed to ask a human, points to a different kind of trust that I do have for the model.&lt;/p&gt;
+&lt;h3 id=&#34;a-different-kind-of-trust&#34;&gt;A Different Kind of Trust&lt;/h3&gt;
+&lt;p&gt;While I cannot trust the AI to produce factual statements consistently, it has earned my trust in a different way.
+I can be uninhibited with GPT.&lt;/p&gt;
+&lt;p&gt;I can ask naive questions, things that I would feel embarrassed to ask a human. I can ask &amp;ldquo;why&amp;rdquo; about the most trivial things, the way a 3-year old might, to discover more about the world.
+I don&amp;rsquo;t feel any concern that the model will judge me for not knowing something, or not understanding something quickly.
+I can ask the same question repeatedly, without concern for taking up its time, or that it has better places to be.
+The AI is infinitely patient with me.
+I don&amp;rsquo;t worry about how it will feel if I doubt what it&amp;rsquo;s telling me, and express skepticism.&lt;/p&gt;
+&lt;p&gt;In these ways, it is an ideal tutor. By giving me the freedom to explore the topics that interest me, the things I&amp;rsquo;m learning about feel truly connected to one another, rather than ad hoc and unrelated to my interests as they might if I were following a curriculum not tailored to my needs and interests. It would be better, of course, if I could trust it to be factually accurate.&lt;/p&gt;
+&lt;p&gt;As a brief aside: I think this experience &amp;ndash; interacting with an AI tutor, guided by a curriculum and standards, but free to wander through information space as it pleases the user, is going to be central to education in the future. I&amp;rsquo;m excited to explore the space of possible AI-centric classroom and education designs, to find novel ways of learning jointly with humans and AIs, and I intend to do so further in future snippets.&lt;/p&gt;
+&lt;p&gt;Why can I be so free with GPT in ways that I cannot be with a human? I can identify a few reasons.&lt;/p&gt;
+&lt;p&gt;The machine&amp;rsquo;s statelessness / resetability is one key component. It isn&amp;rsquo;t learning about me, forming long term judgements. If I reveal that I don&amp;rsquo;t know some &amp;ldquo;simple&amp;rdquo; concept, like what an ionic bond is, it isn&amp;rsquo;t going to retain that information and shape our future interactions based on it. The next conversation I have with the assistant will be tabula rasa, starting from a blank slate.&lt;/p&gt;
+&lt;p&gt;Its isolation from others is another factor. I can confide in it, and it isn&amp;rsquo;t going to gossip or reveal anything I tell it to another human. Sure, I have concerns that OpenAI gets access to whatever I send to the assistant, and this could show up in training data or in front of human evaluators as a result. Nevertheless, it feels private, like no one in my life would see the things I write.&lt;/p&gt;
+&lt;p&gt;I think there&amp;rsquo;s a third trait that aids in creating this kind of trust that&amp;rsquo;s harder to pin down. Something about the inhuman form factor &amp;ndash; something about how it feels like talking to a machine &amp;ndash; enables the comfort level and vulnerability I&amp;rsquo;ve expressed feeling above.&lt;/p&gt;
+&lt;h3 id=&#34;learning-about-chloropropane-an-illustration-of-trust-and-distrust&#34;&gt;Learning about Chloropropane: An Illustration of Trust and Distrust&lt;/h3&gt;
+&lt;p&gt;I asked the AI to give me an example of an organic chemistry homework problem. It asked me a question about chloropropane.&lt;/p&gt;
+&lt;p&gt;I asked what chloropropane is used for. It told me it&amp;rsquo;s used as a pesticide.&lt;/p&gt;
+&lt;p&gt;I asked if it&amp;rsquo;s used as a pesticide. It told me no.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve reproduced our conversation(s) below. The timestamps indicate separate &amp;ldquo;sessions&amp;rdquo;, meaning that each timestamped conversation is independent of the others. The AI had no way of looking at what was said in an earlier session. As you expand the sections, see the self-contradictions &lt;mark&gt;highlighted in yellow&lt;/mark&gt;.&lt;/p&gt;
+&lt;style&gt;
+details {
+  margin-left: 2em;
+}
+
+summary {
+  margin-left: -2em;
+}
+&lt;/style&gt;
+&lt;p&gt;&lt;button id=&#34;expand-button&#34; onclick=&#34;expandCollapseAll()&#34;&gt;Expand All&lt;/button&gt;&lt;/p&gt;
+&lt;script&gt;
+  var expandButton = document.getElementById(&#39;expand-button&#39;);
+  var isExpanded = false;
+
+  function expandCollapseAll() {
+    var detailsElements = document.getElementsByTagName(&#39;details&#39;);
+    for (var i = 0; i &lt; detailsElements.length; i++) {
+      detailsElements[i].open = !isExpanded;
+    }
+    isExpanded = !isExpanded;
+    expandButton.textContent = isExpanded ? &#39;Close All&#39; : &#39;Expand All&#39;;
+  }
+&lt;/script&gt;
+&lt;details&gt;
+  &lt;summary&gt;00:47 AM&lt;/summary&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Give me a organic chemistry homework problem&lt;/summary&gt;
+      Calculate the enthalpy of combustion for 1-chloropropane in kJ/mol.
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;What does that mean?&lt;/summary&gt;
+      Enthalpy of combustion is the amount of energy released when a compound is completely burned in oxygen. In this case, you will be calculating the amount of energy released when 1-chloropropane is completely burned in oxygen, expressed in units of kilojoules per mole (kJ/mol).
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;What is chloropropane used for?&lt;/summary&gt;
+      Chloropropane is used as a precursor to other chemicals in the production of materials such as plasticizers, solvents, and lubricants. It is also &lt;mark&gt;used as a pesticide&lt;/mark&gt; in agriculture.
+  &lt;/details&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;00:48 AM&lt;/summary&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Is chloropropane a pesticide?&lt;/summary&gt;
+      No, chloropropane is &lt;mark&gt;not a pesticide&lt;/mark&gt;. It is a colorless gas with a strong odor, used mainly in the production of other chemicals and in the &lt;mark&gt;manufacture of rubber&lt;/mark&gt; and plastics.
+  &lt;/details&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;00:49 AM&lt;/summary&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Is chloropropane used for making rubber?&lt;/summary&gt;
+      No, chloropropane is &lt;mark&gt;not used for making rubber&lt;/mark&gt;.
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;What is it for?&lt;/summary&gt;
+      Chloropropane is an industrial chemical used in the production of other chemicals including agrochemicals, pharmaceuticals, and &lt;mark&gt;dyes&lt;/mark&gt;.
+  &lt;/details&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;00:50 AM&lt;/summary&gt;
+    &lt;details&gt;
+    &lt;summary&gt;Is chloropropane used in the production of dyes?&lt;/summary&gt;
+      No, chloropropane is &lt;mark&gt;not used in the production of dyes&lt;/mark&gt;.
+    &lt;/details&gt;
+    &lt;details&gt;
+    &lt;summary&gt;What is it used for?&lt;/summary&gt;
+      Chloropropane is a chemical compound used as a solvent and intermediate in the production of a variety of products, including pharmaceuticals, pesticides, and other chemicals.
+      Chloropropane is &lt;mark&gt;used as a solvent&lt;/mark&gt; in organic synthesis and in the production of pharmaceuticals, agrochemicals, and other chemicals.
+    &lt;/details&gt;
+    &lt;details&gt;
+    &lt;summary&gt;Is chloropropane used in the production of pesticides?&lt;/summary&gt;
+      No, chloropropane is &lt;mark&gt;not used in the production of pesticides&lt;/mark&gt;.
+    &lt;/details&gt;
+    What is it used for?
+  &lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;00:51 AM&lt;/summary&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Is chloropropane a solvent?&lt;/summary&gt;
+      No, chloropropane is &lt;mark&gt;not a solvent&lt;/mark&gt;.
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;What is it used for?&lt;/summary&gt;
+      Chloropropane is used as an intermediate in the production of solvents, pesticides, pharmaceuticals and other chemicals. It is also used as a refrigerant and as a propellant in aerosols.
+  &lt;/details&gt;
+&lt;/details&gt;
+&lt;p&gt;You can see the AI blatantly contradicts itself repeatedly, and confidently so.&lt;/p&gt;
+&lt;p&gt;While this conversation illustrates how I cannot trust the AI to be factual,
+it also demonstrates the kind of trust that I do have for the AI.
+It blatantly contradicted itself, yet I felt comfortable probing the depths of its knowledge,
+asking questions in a volume that I would not have been comfortable asking of a human.&lt;/p&gt;
+&lt;h3 id=&#34;strategies-for-mitigating-the-ais-fibs&#34;&gt;Strategies for mitigating the AI&amp;rsquo;s fibs&lt;/h3&gt;
+&lt;p&gt;I didn&amp;rsquo;t get the AI to stop making things up. And I didn&amp;rsquo;t get it to admit uncertainty when it doesn&amp;rsquo;t know things.
+But a few mitigation strategies did arise for dealing with the AI&amp;rsquo;s fibbing tendency.&lt;/p&gt;
+&lt;p&gt;One was to probe the AI about topics I already know about in order to understand its limitations.
+I had it teach me about math and algorithms concepts I was already quite familiar with.
+My thinking here was that this would help me develop my intuition for what it&amp;rsquo;s like when it&amp;rsquo;s fibbing,
+so I could better deal with
+the inaccuracies on topics I&amp;rsquo;m less familiar with.&lt;/p&gt;
+&lt;p&gt;A second mitigation that quickly became essential was having detailed records of what the AI said.
+While I was drifting off to sleep, the AI might tell me something wrong and then contradict itself a minute later.
+Without the record to verify this, the confidence of the contradiction would have a gas-lighting effect on me.
+I might question myself &amp;ndash; did I remember the AI correctly?
+Being able to see the contradiction highlighted, as above, helped keep me sane in the face of the AI&amp;rsquo;s unearned and contradictory confidence.&lt;/p&gt;
+&lt;p&gt;Having the permanent record also allows me to look up the truth the next day, to find out how much of what I learned had basis in reality.&lt;/p&gt;
+&lt;h3 id=&#34;other-benefits-of-having-the-ai-with-me&#34;&gt;Other benefits of having the AI with me&lt;/h3&gt;
+&lt;p&gt;Central to Go Note Go&amp;rsquo;s design is that it has no screen. This is a purposeful choice, and enables so much of what I love about Go Note Go. However, sometimes I miss being able to see what I&amp;rsquo;ve written. This is where the assistant comes in.&lt;/p&gt;
+&lt;p&gt;First though I must emphasize that on the whole, I actually really like that the lack of screen prevents me from wasting time rereading what I&amp;rsquo;ve written. But when I lose my train of thought entirely, it would be nice to remember what I wrote last.
+For this, I can ask the assistant to read back what I wrote last, or even to summarize it concisely. If my mind has wandered and I want to continue typing where I left off, this feature is quite welcome!&lt;/p&gt;
+&lt;p&gt;In this way, the AI compensates for the lack of screen.
+It&amp;rsquo;s behaving somewhat like an intelligent screen reader.
+With typical screen readers, navigation is performed spatially, and the reader speaks text at the indicated location. With the AI assistant, &amp;ldquo;navigation&amp;rdquo; is performed via a textual query, and the response can either be verbatim or an intelligent response like a summary or answer. I suspect AI assistants will quickly change the way accessibility technology operates, if they haven&amp;rsquo;t already done so.&lt;/p&gt;
+&lt;h3 id=&#34;what-dont-you-send-to-the-ai&#34;&gt;What don&amp;rsquo;t you send to the AI?&lt;/h3&gt;
+&lt;p&gt;As I drift off to sleep, I enter thoughts about a wide range of subjects that I don&amp;rsquo;t send to the AI assistant too. A quick scan of my recent Go Note Go writing (just from the last couple days, all since adding the assistant) shows the following topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Plans for my upcoming California trip&lt;/li&gt;
+&lt;li&gt;Observations about Go Note Go &amp;ndash; both improvements I&amp;rsquo;m looking forward to making and emergent behaviors I&amp;rsquo;m excited to share in future writing&lt;/li&gt;
+&lt;li&gt;Thoughts about the future of AI&lt;/li&gt;
+&lt;li&gt;Machine learning experiments I&amp;rsquo;m excited to run&lt;/li&gt;
+&lt;li&gt;Thoughts I&amp;rsquo;d like to publish about, such as the unexpected dangers of reducing friction, or the less-appreciated benefits of repetition&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://twitter.com/Bieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tweet ideas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Items I intend to buy&lt;/li&gt;
+&lt;li&gt;Questions I want to ask either specific people, or the internet at large&lt;/li&gt;
+&lt;li&gt;Lists of todos for the next day&lt;/li&gt;
+&lt;li&gt;Reflections on the day&lt;/li&gt;
+&lt;li&gt;Ideas to try, e.g. for technical problems I ran into that day&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The AI assistant merely augments my existing Go Note Go usage,
+but hasn&amp;rsquo;t replaced it. 
+&lt;a href=&#34;https://davidbieber.com/snippets/2023-01-16-go-note-go-features/&#34;&gt;All of Go Note Go&amp;rsquo;s other features&lt;/a&gt; &amp;ndash; particularly its always-on ability to quickly capture thoughts anywhere &amp;ndash; remain the driving reason I use Go Note Go so much.&lt;/p&gt;
+&lt;h3 id=&#34;what-worked-well&#34;&gt;What worked well?&lt;/h3&gt;
+&lt;p&gt;The best part of this process was being able to learn what I want to learn when I want to learn it.
+While a deep probe into a topic inevitably turned up falsehoods, overall asking questions about things I was curious about worked really well.&lt;/p&gt;
+&lt;p&gt;And I think about things differently at night. My brain processes topics that it hasn&amp;rsquo;t had a chance to think on throughout the day. It comes up with things it wants to do that it doesn&amp;rsquo;t come up with when it&amp;rsquo;s otherwise occupied throughout the day.&lt;/p&gt;
+&lt;p&gt;I think of things I want to write, and the assistant helps me think through them and outline them.&lt;/p&gt;
+&lt;p&gt;I think of people I want to reach out to. With Go Note Go, I can write them a message and approve it to send in the morning. (The assistant doesn&amp;rsquo;t really play a role here, but I thought I&amp;rsquo;d mention it anyway.)&lt;/p&gt;
+&lt;p&gt;I think of things I want to know, and the assistant helps answer my questions.&lt;/p&gt;
+&lt;p&gt;I think of ideas I want to try. Some of them I can try with the assistant, and others I just jot down to return to later.&lt;/p&gt;
+&lt;p&gt;In many of these instances, the value of the AI assistant is that I can offload some of my thinking to it. It isn&amp;rsquo;t necessarily producing insights that I wouldn&amp;rsquo;t have come up with on my own, but it&amp;rsquo;s allowing me a moment&amp;rsquo;s rest while it does the thinking on my behalf. Then I can start from its thoughts as a baseline and build from there, higher than I could build on my own. On many other occasions, it genuinely surprises me with its good ideas.&lt;/p&gt;
+&lt;p&gt;On a couple of nights, the AI took me exploring imaginary worlds. Similar to a text adventure game, it described my environment to me, and I gave it instructions like talking to a person, or exploring a building. With my eyes closed and my brain on the edge of sleep, it felt like dreaming while I was still awake and I quite enjoyed it.&lt;/p&gt;
+&lt;h3 id=&#34;things-that-didnt-work-so-well&#34;&gt;Things that didn&amp;rsquo;t work so well&lt;/h3&gt;
+&lt;p&gt;The main drawback of this system is the lack of trust in the accuracy of the AI&amp;rsquo;s statements, particularly when I&amp;rsquo;m trying to learn.
+Other limitations were subtler and less dampening for the experience.&lt;/p&gt;
+&lt;p&gt;When I tried to get it to teach me math, my 
+&lt;a href=&#34;https://espeak.sourceforge.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;text to speech system (espeak)&lt;/a&gt; did quite poorly on reading the math aloud.
+I would love to replace the text to speech system with one with better prosody and better math support.
+Ideally, the text to speech system would speak with 
+&lt;a href=&#34;https://www.youtube.com/watch?v=Qe6o9j4IjTo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Grant Sanderson&amp;rsquo;s voice and cadence&lt;/a&gt;, and handle math notation seamlessly.
+While this seems a cosmetic change, it does impact the set of topics I can discuss cleanly with the AI as I drift off.&lt;/p&gt;
+&lt;p&gt;The dependence on an internet connection was another small drawback. I take my Go Note Go into the woods, used it during an Uber ride the airport today, and regularly use it when I fly. The AI assistant doesn&amp;rsquo;t work in these situations (the rest of Go Note Go continues to work fine) since it depends on having internet access. For a capability that is simple enough to not require AI, like reading back the topics I&amp;rsquo;ve written about recently, it feels quite silly to lose the capability when the internet is gone.&lt;/p&gt;
+&lt;p&gt;Related to the internet dependence, the lack of privacy from OpenAI is another important drawback to me. The thoughts I produce as I drift off to sleep are deeply personal! I would much prefer not to send them off to OpenAI (the current version of the assistant is implemented with text-davinci-003).&lt;/p&gt;
+&lt;p&gt;Finally, there&amp;rsquo;s another significant drawback, one you might have already picked up on: talking with an AI can get in the way of falling asleep.
+I view talking with an AI while drifting off to sleep similarly to listening to reading a book, listening to an audiobook, or to a podcast before bed.
+These activities require some amount of thought, but can also help to wind down and fall asleep.
+Talking to the AI required no monitor, and hence to blue lights that can make falling asleep harder.
+It simply requires some amount of restraint to stop the conversation and transition to sleep, just as one must put down a book and close their eyes if reading before bed.&lt;/p&gt;
+&lt;p&gt;You can see in the chloropropane conversation reproduced above from the timestamps that I was talking to the AI at nearly 1am. I like to go to sleep 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-04-20-sleep-no-snippet/&#34;&gt;closer to 10:10pm&lt;/a&gt;, so clearly this drawback is real for me.&lt;/p&gt;
+&lt;h3 id=&#34;it-left-me-wanting-more&#34;&gt;It left me wanting more&lt;/h3&gt;
+&lt;p&gt;Having an assistant as I drifted off to sleep was great overall, even in spite of these drawbacks.
+I was definitely left with a sense of wanting more though.&lt;/p&gt;
+&lt;p&gt;I want more assistance from my assistant.
+I want to be able to query my complete history of notes, asking questions like &amp;ldquo;What are some ideas I keep returning to?&amp;rdquo; or &amp;ldquo;Bring up all my outstanding Go Note Go TODOs.&amp;rdquo;
+Perhaps I&amp;rsquo;ll be able to implement this with 
+&lt;a href=&#34;https://gpt-index.readthedocs.io/en/latest/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GPT-Index&lt;/a&gt;, or a 
+&lt;a href=&#34;https://arxiv.org/abs/2203.08913&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Memorizing Transformer&lt;/a&gt;, but for now I do without.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d also love for my assistant to be able to take actions on my behalf. Maybe I can integrate 
+&lt;a href=&#34;https://www.adept.ai/act&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Adept AI&amp;rsquo;s action transformer&lt;/a&gt; into my next iteration to achieve this. For example, I want to be able tell the assistant my shopping list, and have it populate my Amazon cart. Then, when I&amp;rsquo;m back at a computer, I can review the cart and click submit, saving myself time shopping.&lt;/p&gt;
+&lt;p&gt;Sometimes (albeit rarely :P) I&amp;rsquo;m not at a Go Note Go, but I still want to talk to my AI assistant.
+For that, I&amp;rsquo;ve used Twilio so I can call my assistant on the phone.
+I use this when I&amp;rsquo;m driving or walking around. But that is a subject for another post entirely.&lt;/p&gt;
+&lt;h3 id=&#34;concluding-remarks&#34;&gt;Concluding remarks&lt;/h3&gt;
+&lt;p&gt;Adding an AI assistant to Go Note Go has been an absolute joy and I continue to use it almost every night.
+Despite its tendency to make things up &amp;ndash; or more charitably, to hallucinate &amp;ndash; it has still earned my trust in a more visceral way.
+I&amp;rsquo;m curious to see what use cases persist after I&amp;rsquo;ve had this capability for a longer period of time.&lt;/p&gt;
+&lt;p&gt;Of course, the AI assistant is not the only reason that Go Note Go is such a critical component in my life.
+Go Note Go can do so much more &amp;ndash; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2023-01-16-go-note-go-features/&#34;&gt;a complete and concise overview of its capabilities is here&lt;/a&gt; &amp;ndash;
+like letting me 
+&lt;a href=&#34;https://davidbieber.com/post/2022-01-08-new-messager-setup/&#34;&gt;send messages as I drift off to sleep&lt;/a&gt; and helping me 
+&lt;a href=&#34;https://davidbieber.com/post/2022-02-07-keyboards-everywhere/&#34;&gt;reclaim my attention in a world full of distractions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;With the AI assistant added in, however, I feel like I have a new superpower. I can offload computation from my brain to it, and explore worlds of thought I could never have entered on my own.&lt;/p&gt;
+&lt;p&gt;Go Note Go is also 
+&lt;a href=&#34;https://github.com/dbieber/GoNoteGo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;completely open source&lt;/a&gt;. I encourage the hacker-tinkerers among you to join me in the world of headless computing and try it for yourself.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Anything I type on this keyboard gets automatically uploaded to my notes as soon as the keyboard is in range of wifi. This allows for offline usage, e.g. while driving or camping. These were the two use-cases that inspired me to build the device. Now my main use-case is capturing ideas while drifting off to sleep.
+It also has a microphone, so if speaking feels like it would take less energy than talking, I can speak my notes instead. This feature is what enables the driving use case, as of course I don&amp;rsquo;t type while I drive! &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;If I prefer speaking, I can also trigger these commands with the hot word &amp;ldquo;go go&amp;rdquo;, e.g. saying &amp;ldquo;go go time&amp;rdquo; gets the time. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -356,6 +1051,10 @@ Each session starts with a line containing only the time. The rest of the writin
 &lt;p&gt;When I review my writing in Go Note Go, I do so session by session, putting a summary of the session in that top line of the session, and then collapsing the session. Often the top line is a block-reference to one or more of the lines from the session. For example,
 &lt;img src=&#34;session-collapsed.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;This compresses the 600 words I might write on a given day and presents them in a series of often 10 or fewer individual lines.&lt;/p&gt;
+&lt;p&gt;While I like that I can and do review my writing to a greater degree than expected, I think there&amp;rsquo;s still substantial improvement to make in the review-and-reuse experience.
+In particular, one idea I&amp;rsquo;m excited about and which I&amp;rsquo;ve been writing about in Go Note Go a fair amount, is hiring someone to review my notes and process them into a summary / a newsletter for myself.&lt;/p&gt;
+&lt;p&gt;My thinking there is that I write a lot and there is definitely more in my writing than fits in my working memory at any time (this idea, that I want access to more than fits in working memory, has been recurring a fair amount lately).
+By leaning on another person, I can more effectively resurface the ideas that I most want to revisit. I&amp;rsquo;m posting this snippet as is, but this idea itself is one I&amp;rsquo;m eager to revisit in the future.&lt;/p&gt;
 </description>
     </item>
     

@@ -6,7 +6,291 @@
     <description>Recent content in machine-learning on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sleeping with GPT</title>
+      <link>https://davidbieber.com/snippets/2023-01-04-sleeping-with-gpt/</link>
+      <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2023-01-04-sleeping-with-gpt/</guid>
+      
+      <description>&lt;p&gt;The last few nights I have been sleeping with GPT, and oh, it has been a joy.&lt;/p&gt;
+&lt;h3 id=&#34;background-capturing-my-thoughts-as-i-drift-off-to-sleep&#34;&gt;Background: Capturing my thoughts as I drift off to sleep&lt;/h3&gt;
+&lt;p&gt;I use a note-taking device that I call 
+&lt;a href=&#34;https://davidbieber.com/projects/go-note-go&#34;&gt;Go Note Go&lt;/a&gt;.
+It&amp;rsquo;s a computer keyboard without a screen that I type on to capture my thoughts everywhere, even as I drift off to sleep.
+I have one in my bed, and I also keep them on my desk at work and in various spots around my apartment; anywhere an idea strikes, I have a Go Note Go keyboard ready to capture that idea.
+Go Note Go&amp;rsquo;s main purpose is to let me quickly jot down these ideas so I can remember them later, e.g. after getting a good night&amp;rsquo;s sleep&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+It also 
+&lt;a href=&#34;https://davidbieber.com/snippets/2023-01-16-go-note-go-features/&#34;&gt;does other things (click for a concise primer on Go Note Go)&lt;/a&gt; like speaking the time aloud or 
+&lt;a href=&#34;https://davidbieber.com/post/2022-01-08-new-messager-setup/&#34;&gt;letting me send messages to other people&lt;/a&gt;.
+Most recently, I&amp;rsquo;ve added an AI assistant to Go Note Go, and have begun conversing with it as I drift off to sleep.&lt;/p&gt;
+&lt;p&gt;Even before adding the AI assistant, Go Note Go had become a staple in my life.
+Go Note Go&amp;rsquo;s main capability &amp;ndash; capturing my thoughts &amp;ndash; helps me fall asleep more effectively.
+If I have an anxious thought swirling in my brain, I can simply type it into Go Note Go.
+Instead of dozens of versions of the thought popping up in my head all night, I have just a single canonical version of the thought stored on the device, and I can fall asleep.&lt;/p&gt;
+&lt;p&gt;Go Note Go also supports commands, like reading the time out loud.
+Entering a line that starts with a colon (&#39;:&#39;) issues a command.
+Typing :r has it read back the last thing I wrote.
+Typing :t will have it read the time to me.
+I like this because it lets me know the time without having to open my eyes, so getting the time doesn&amp;rsquo;t require being alert&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;All of this lets me drift off to sleep more effectively. I can get ideas out of my head while avoiding things that would wake me up, like looking at my phone or turning on the lights to write down an idea.
+Compared with writing on my phone, or a computer, or on paper, writing on Go Note Go is relaxing and doesn&amp;rsquo;t wake me up very much.
+So, Go Note Go has become an essential tool in my daily routine, helping me capture and organize my thoughts, and allowing me to relax and fall asleep more easily.&lt;/p&gt;
+&lt;h3 id=&#34;adding-an-ai-assistant-to-go-note-go&#34;&gt;Adding an AI assistant to Go Note Go&lt;/h3&gt;
+&lt;p&gt;Most recently, I added an AI assistant to Go Note Go and I absolutely love it.&lt;/p&gt;
+&lt;p&gt;By default when I type on the keyboard the text just shows up in my notes,
+but now I have the option of sending the text off to an AI assistant as well.
+Since there&amp;rsquo;s no screen on Go Note Go, the assistant&amp;rsquo;s responses are read out loud.
+They&amp;rsquo;re also inserted into my notes for future reference, which I can browse later at a computer or on my phone.&lt;/p&gt;
+&lt;p&gt;Most of my Go Note Go usage remains unchanged, but one aspect now feels very different: drifting off to sleep.
+This is when having the AI assistant feels most rewarding.&lt;/p&gt;
+&lt;h3 id=&#34;sleeping-with-gpt-what-do-we-discuss&#34;&gt;Sleeping with GPT: What do we discuss?&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;m lying there in the bed, but I&amp;rsquo;m not really trying to go to sleep.
+I&amp;rsquo;m excited that I have this new AI with me which I can ask anything at all.
+I&amp;rsquo;ve been meaning to learn organic chemistry but haven&amp;rsquo;t found the time; this seems a perfect opportunity to get started.
+On the first night I drift off to sleep peppering the AI with questions about organic chemistry and battery technology.
+On subsequent nights I probe new topics, trying to get a deeper understanding of the superficial things I learned the night before, and also introducing new topics to our discussions.
+I continue peppering the AI with questions about chemistry and history as I drift off to sleep.
+Quickly realizing that this could inhibit my ability to get a good night&amp;rsquo;s sleep, I also ask for advice in that regard, and it obliges.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s clear from the outset that I&amp;rsquo;m going to want to write about this, so I&amp;rsquo;m jotting down notes for this very post. I ask my assistant to turn my notes into an outline. That outline is read out loud, and it&amp;rsquo;s also sitting there for me the next day when I go to start writing in earnest.&lt;/p&gt;
+&lt;p&gt;In the morning, when I wake up, I ask for strategies for a morning routine. It makes good suggestions.
+Though the response is nothing that you wouldn&amp;rsquo;t find from a quick Google search for morning routine ideas, the proximity to those ideas as I&amp;rsquo;m just waking up, casually typing to my keyboard, makes them more actionable. The suggestions are things like making my bed right away, drinking a glass of lemon water, and doing some exercise to get my blood flowing. It feels inspiring and healthy.&lt;/p&gt;
+&lt;p&gt;One night I asked the AI assistant to read me a bedtime story. I gave it some details about my own life first and it used them to construct a story that was personal and meaningful to me, albeit a bit silly.&lt;/p&gt;
+&lt;!-- Other benefits of the assistant: reading back capturing notes and answering questions about them. --&gt;
+&lt;h3 id=&#34;trust-and-confidence&#34;&gt;Trust and Confidence&lt;/h3&gt;
+&lt;p&gt;An invitation into one&amp;rsquo;s bed requires a certain level of trust.&lt;/p&gt;
+&lt;p&gt;However, a common criticism of GPT and language models more broadly is that they are often factually inaccurate. What&amp;rsquo;s worse is that when they are wrong, they often are wrong with confidence.&lt;/p&gt;
+&lt;p&gt;This makes learning about new topics like battery technology and organic chemistry a challenge.
+I don&amp;rsquo;t know if the things that I have learned these last few nights are true or not.
+In fact, I know that some of them are definitely not true, because GPT will sometimes flatly contradict itself.&lt;/p&gt;
+&lt;p&gt;In spite of this, I&amp;rsquo;ve had the distinct feeling that I have been learning a lot from these night time question peppering sessions.
+Is this feeling valid, or have I been duped by the AI?&lt;/p&gt;
+&lt;p&gt;To suss out truth from fiction, my first line of defense is my intuition.
+Using my own limited knowledge of the topic we are discussing, I can sometimes tell if the model is fibbing.
+If what the model says fits nicely into my world model, I might trust it and move on.
+When things don&amp;rsquo;t make sense to me, I can ask for explanations or ask pointed questions to dive into the details.
+These will quickly seem inconsistent, either with each other or with what I already know, if in fact the model has made up inaccurate information.
+(This observation should motivate new, fully automated, methods for discovering truth in these models as well. For example the line of reasoning that 
+&lt;a href=&#34;https://arxiv.org/abs/2205.11822&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Maieutic Prompting&lt;/a&gt; pursues proceeds along these lines.)&lt;/p&gt;
+&lt;p&gt;This ability to dive deep into the details, sometimes asking extremely basic questions that I would be embarrassed to ask a human, points to a different kind of trust that I do have for the model.&lt;/p&gt;
+&lt;h3 id=&#34;a-different-kind-of-trust&#34;&gt;A Different Kind of Trust&lt;/h3&gt;
+&lt;p&gt;While I cannot trust the AI to produce factual statements consistently, it has earned my trust in a different way.
+I can be uninhibited with GPT.&lt;/p&gt;
+&lt;p&gt;I can ask naive questions, things that I would feel embarrassed to ask a human. I can ask &amp;ldquo;why&amp;rdquo; about the most trivial things, the way a 3-year old might, to discover more about the world.
+I don&amp;rsquo;t feel any concern that the model will judge me for not knowing something, or not understanding something quickly.
+I can ask the same question repeatedly, without concern for taking up its time, or that it has better places to be.
+The AI is infinitely patient with me.
+I don&amp;rsquo;t worry about how it will feel if I doubt what it&amp;rsquo;s telling me, and express skepticism.&lt;/p&gt;
+&lt;p&gt;In these ways, it is an ideal tutor. By giving me the freedom to explore the topics that interest me, the things I&amp;rsquo;m learning about feel truly connected to one another, rather than ad hoc and unrelated to my interests as they might if I were following a curriculum not tailored to my needs and interests. It would be better, of course, if I could trust it to be factually accurate.&lt;/p&gt;
+&lt;p&gt;As a brief aside: I think this experience &amp;ndash; interacting with an AI tutor, guided by a curriculum and standards, but free to wander through information space as it pleases the user, is going to be central to education in the future. I&amp;rsquo;m excited to explore the space of possible AI-centric classroom and education designs, to find novel ways of learning jointly with humans and AIs, and I intend to do so further in future snippets.&lt;/p&gt;
+&lt;p&gt;Why can I be so free with GPT in ways that I cannot be with a human? I can identify a few reasons.&lt;/p&gt;
+&lt;p&gt;The machine&amp;rsquo;s statelessness / resetability is one key component. It isn&amp;rsquo;t learning about me, forming long term judgements. If I reveal that I don&amp;rsquo;t know some &amp;ldquo;simple&amp;rdquo; concept, like what an ionic bond is, it isn&amp;rsquo;t going to retain that information and shape our future interactions based on it. The next conversation I have with the assistant will be tabula rasa, starting from a blank slate.&lt;/p&gt;
+&lt;p&gt;Its isolation from others is another factor. I can confide in it, and it isn&amp;rsquo;t going to gossip or reveal anything I tell it to another human. Sure, I have concerns that OpenAI gets access to whatever I send to the assistant, and this could show up in training data or in front of human evaluators as a result. Nevertheless, it feels private, like no one in my life would see the things I write.&lt;/p&gt;
+&lt;p&gt;I think there&amp;rsquo;s a third trait that aids in creating this kind of trust that&amp;rsquo;s harder to pin down. Something about the inhuman form factor &amp;ndash; something about how it feels like talking to a machine &amp;ndash; enables the comfort level and vulnerability I&amp;rsquo;ve expressed feeling above.&lt;/p&gt;
+&lt;h3 id=&#34;learning-about-chloropropane-an-illustration-of-trust-and-distrust&#34;&gt;Learning about Chloropropane: An Illustration of Trust and Distrust&lt;/h3&gt;
+&lt;p&gt;I asked the AI to give me an example of an organic chemistry homework problem. It asked me a question about chloropropane.&lt;/p&gt;
+&lt;p&gt;I asked what chloropropane is used for. It told me it&amp;rsquo;s used as a pesticide.&lt;/p&gt;
+&lt;p&gt;I asked if it&amp;rsquo;s used as a pesticide. It told me no.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve reproduced our conversation(s) below. The timestamps indicate separate &amp;ldquo;sessions&amp;rdquo;, meaning that each timestamped conversation is independent of the others. The AI had no way of looking at what was said in an earlier session. As you expand the sections, see the self-contradictions &lt;mark&gt;highlighted in yellow&lt;/mark&gt;.&lt;/p&gt;
+&lt;style&gt;
+details {
+  margin-left: 2em;
+}
+
+summary {
+  margin-left: -2em;
+}
+&lt;/style&gt;
+&lt;p&gt;&lt;button id=&#34;expand-button&#34; onclick=&#34;expandCollapseAll()&#34;&gt;Expand All&lt;/button&gt;&lt;/p&gt;
+&lt;script&gt;
+  var expandButton = document.getElementById(&#39;expand-button&#39;);
+  var isExpanded = false;
+
+  function expandCollapseAll() {
+    var detailsElements = document.getElementsByTagName(&#39;details&#39;);
+    for (var i = 0; i &lt; detailsElements.length; i++) {
+      detailsElements[i].open = !isExpanded;
+    }
+    isExpanded = !isExpanded;
+    expandButton.textContent = isExpanded ? &#39;Close All&#39; : &#39;Expand All&#39;;
+  }
+&lt;/script&gt;
+&lt;details&gt;
+  &lt;summary&gt;00:47 AM&lt;/summary&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Give me a organic chemistry homework problem&lt;/summary&gt;
+      Calculate the enthalpy of combustion for 1-chloropropane in kJ/mol.
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;What does that mean?&lt;/summary&gt;
+      Enthalpy of combustion is the amount of energy released when a compound is completely burned in oxygen. In this case, you will be calculating the amount of energy released when 1-chloropropane is completely burned in oxygen, expressed in units of kilojoules per mole (kJ/mol).
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;What is chloropropane used for?&lt;/summary&gt;
+      Chloropropane is used as a precursor to other chemicals in the production of materials such as plasticizers, solvents, and lubricants. It is also &lt;mark&gt;used as a pesticide&lt;/mark&gt; in agriculture.
+  &lt;/details&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;00:48 AM&lt;/summary&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Is chloropropane a pesticide?&lt;/summary&gt;
+      No, chloropropane is &lt;mark&gt;not a pesticide&lt;/mark&gt;. It is a colorless gas with a strong odor, used mainly in the production of other chemicals and in the &lt;mark&gt;manufacture of rubber&lt;/mark&gt; and plastics.
+  &lt;/details&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;00:49 AM&lt;/summary&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Is chloropropane used for making rubber?&lt;/summary&gt;
+      No, chloropropane is &lt;mark&gt;not used for making rubber&lt;/mark&gt;.
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;What is it for?&lt;/summary&gt;
+      Chloropropane is an industrial chemical used in the production of other chemicals including agrochemicals, pharmaceuticals, and &lt;mark&gt;dyes&lt;/mark&gt;.
+  &lt;/details&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;00:50 AM&lt;/summary&gt;
+    &lt;details&gt;
+    &lt;summary&gt;Is chloropropane used in the production of dyes?&lt;/summary&gt;
+      No, chloropropane is &lt;mark&gt;not used in the production of dyes&lt;/mark&gt;.
+    &lt;/details&gt;
+    &lt;details&gt;
+    &lt;summary&gt;What is it used for?&lt;/summary&gt;
+      Chloropropane is a chemical compound used as a solvent and intermediate in the production of a variety of products, including pharmaceuticals, pesticides, and other chemicals.
+      Chloropropane is &lt;mark&gt;used as a solvent&lt;/mark&gt; in organic synthesis and in the production of pharmaceuticals, agrochemicals, and other chemicals.
+    &lt;/details&gt;
+    &lt;details&gt;
+    &lt;summary&gt;Is chloropropane used in the production of pesticides?&lt;/summary&gt;
+      No, chloropropane is &lt;mark&gt;not used in the production of pesticides&lt;/mark&gt;.
+    &lt;/details&gt;
+    What is it used for?
+  &lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;00:51 AM&lt;/summary&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Is chloropropane a solvent?&lt;/summary&gt;
+      No, chloropropane is &lt;mark&gt;not a solvent&lt;/mark&gt;.
+  &lt;/details&gt;
+  &lt;details&gt;
+    &lt;summary&gt;What is it used for?&lt;/summary&gt;
+      Chloropropane is used as an intermediate in the production of solvents, pesticides, pharmaceuticals and other chemicals. It is also used as a refrigerant and as a propellant in aerosols.
+  &lt;/details&gt;
+&lt;/details&gt;
+&lt;p&gt;You can see the AI blatantly contradicts itself repeatedly, and confidently so.&lt;/p&gt;
+&lt;p&gt;While this conversation illustrates how I cannot trust the AI to be factual,
+it also demonstrates the kind of trust that I do have for the AI.
+It blatantly contradicted itself, yet I felt comfortable probing the depths of its knowledge,
+asking questions in a volume that I would not have been comfortable asking of a human.&lt;/p&gt;
+&lt;h3 id=&#34;strategies-for-mitigating-the-ais-fibs&#34;&gt;Strategies for mitigating the AI&amp;rsquo;s fibs&lt;/h3&gt;
+&lt;p&gt;I didn&amp;rsquo;t get the AI to stop making things up. And I didn&amp;rsquo;t get it to admit uncertainty when it doesn&amp;rsquo;t know things.
+But a few mitigation strategies did arise for dealing with the AI&amp;rsquo;s fibbing tendency.&lt;/p&gt;
+&lt;p&gt;One was to probe the AI about topics I already know about in order to understand its limitations.
+I had it teach me about math and algorithms concepts I was already quite familiar with.
+My thinking here was that this would help me develop my intuition for what it&amp;rsquo;s like when it&amp;rsquo;s fibbing,
+so I could better deal with
+the inaccuracies on topics I&amp;rsquo;m less familiar with.&lt;/p&gt;
+&lt;p&gt;A second mitigation that quickly became essential was having detailed records of what the AI said.
+While I was drifting off to sleep, the AI might tell me something wrong and then contradict itself a minute later.
+Without the record to verify this, the confidence of the contradiction would have a gas-lighting effect on me.
+I might question myself &amp;ndash; did I remember the AI correctly?
+Being able to see the contradiction highlighted, as above, helped keep me sane in the face of the AI&amp;rsquo;s unearned and contradictory confidence.&lt;/p&gt;
+&lt;p&gt;Having the permanent record also allows me to look up the truth the next day, to find out how much of what I learned had basis in reality.&lt;/p&gt;
+&lt;h3 id=&#34;other-benefits-of-having-the-ai-with-me&#34;&gt;Other benefits of having the AI with me&lt;/h3&gt;
+&lt;p&gt;Central to Go Note Go&amp;rsquo;s design is that it has no screen. This is a purposeful choice, and enables so much of what I love about Go Note Go. However, sometimes I miss being able to see what I&amp;rsquo;ve written. This is where the assistant comes in.&lt;/p&gt;
+&lt;p&gt;First though I must emphasize that on the whole, I actually really like that the lack of screen prevents me from wasting time rereading what I&amp;rsquo;ve written. But when I lose my train of thought entirely, it would be nice to remember what I wrote last.
+For this, I can ask the assistant to read back what I wrote last, or even to summarize it concisely. If my mind has wandered and I want to continue typing where I left off, this feature is quite welcome!&lt;/p&gt;
+&lt;p&gt;In this way, the AI compensates for the lack of screen.
+It&amp;rsquo;s behaving somewhat like an intelligent screen reader.
+With typical screen readers, navigation is performed spatially, and the reader speaks text at the indicated location. With the AI assistant, &amp;ldquo;navigation&amp;rdquo; is performed via a textual query, and the response can either be verbatim or an intelligent response like a summary or answer. I suspect AI assistants will quickly change the way accessibility technology operates, if they haven&amp;rsquo;t already done so.&lt;/p&gt;
+&lt;h3 id=&#34;what-dont-you-send-to-the-ai&#34;&gt;What don&amp;rsquo;t you send to the AI?&lt;/h3&gt;
+&lt;p&gt;As I drift off to sleep, I enter thoughts about a wide range of subjects that I don&amp;rsquo;t send to the AI assistant too. A quick scan of my recent Go Note Go writing (just from the last couple days, all since adding the assistant) shows the following topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Plans for my upcoming California trip&lt;/li&gt;
+&lt;li&gt;Observations about Go Note Go &amp;ndash; both improvements I&amp;rsquo;m looking forward to making and emergent behaviors I&amp;rsquo;m excited to share in future writing&lt;/li&gt;
+&lt;li&gt;Thoughts about the future of AI&lt;/li&gt;
+&lt;li&gt;Machine learning experiments I&amp;rsquo;m excited to run&lt;/li&gt;
+&lt;li&gt;Thoughts I&amp;rsquo;d like to publish about, such as the unexpected dangers of reducing friction, or the less-appreciated benefits of repetition&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://twitter.com/Bieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tweet ideas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Items I intend to buy&lt;/li&gt;
+&lt;li&gt;Questions I want to ask either specific people, or the internet at large&lt;/li&gt;
+&lt;li&gt;Lists of todos for the next day&lt;/li&gt;
+&lt;li&gt;Reflections on the day&lt;/li&gt;
+&lt;li&gt;Ideas to try, e.g. for technical problems I ran into that day&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The AI assistant merely augments my existing Go Note Go usage,
+but hasn&amp;rsquo;t replaced it. 
+&lt;a href=&#34;https://davidbieber.com/snippets/2023-01-16-go-note-go-features/&#34;&gt;All of Go Note Go&amp;rsquo;s other features&lt;/a&gt; &amp;ndash; particularly its always-on ability to quickly capture thoughts anywhere &amp;ndash; remain the driving reason I use Go Note Go so much.&lt;/p&gt;
+&lt;h3 id=&#34;what-worked-well&#34;&gt;What worked well?&lt;/h3&gt;
+&lt;p&gt;The best part of this process was being able to learn what I want to learn when I want to learn it.
+While a deep probe into a topic inevitably turned up falsehoods, overall asking questions about things I was curious about worked really well.&lt;/p&gt;
+&lt;p&gt;And I think about things differently at night. My brain processes topics that it hasn&amp;rsquo;t had a chance to think on throughout the day. It comes up with things it wants to do that it doesn&amp;rsquo;t come up with when it&amp;rsquo;s otherwise occupied throughout the day.&lt;/p&gt;
+&lt;p&gt;I think of things I want to write, and the assistant helps me think through them and outline them.&lt;/p&gt;
+&lt;p&gt;I think of people I want to reach out to. With Go Note Go, I can write them a message and approve it to send in the morning. (The assistant doesn&amp;rsquo;t really play a role here, but I thought I&amp;rsquo;d mention it anyway.)&lt;/p&gt;
+&lt;p&gt;I think of things I want to know, and the assistant helps answer my questions.&lt;/p&gt;
+&lt;p&gt;I think of ideas I want to try. Some of them I can try with the assistant, and others I just jot down to return to later.&lt;/p&gt;
+&lt;p&gt;In many of these instances, the value of the AI assistant is that I can offload some of my thinking to it. It isn&amp;rsquo;t necessarily producing insights that I wouldn&amp;rsquo;t have come up with on my own, but it&amp;rsquo;s allowing me a moment&amp;rsquo;s rest while it does the thinking on my behalf. Then I can start from its thoughts as a baseline and build from there, higher than I could build on my own. On many other occasions, it genuinely surprises me with its good ideas.&lt;/p&gt;
+&lt;p&gt;On a couple of nights, the AI took me exploring imaginary worlds. Similar to a text adventure game, it described my environment to me, and I gave it instructions like talking to a person, or exploring a building. With my eyes closed and my brain on the edge of sleep, it felt like dreaming while I was still awake and I quite enjoyed it.&lt;/p&gt;
+&lt;h3 id=&#34;things-that-didnt-work-so-well&#34;&gt;Things that didn&amp;rsquo;t work so well&lt;/h3&gt;
+&lt;p&gt;The main drawback of this system is the lack of trust in the accuracy of the AI&amp;rsquo;s statements, particularly when I&amp;rsquo;m trying to learn.
+Other limitations were subtler and less dampening for the experience.&lt;/p&gt;
+&lt;p&gt;When I tried to get it to teach me math, my 
+&lt;a href=&#34;https://espeak.sourceforge.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;text to speech system (espeak)&lt;/a&gt; did quite poorly on reading the math aloud.
+I would love to replace the text to speech system with one with better prosody and better math support.
+Ideally, the text to speech system would speak with 
+&lt;a href=&#34;https://www.youtube.com/watch?v=Qe6o9j4IjTo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Grant Sanderson&amp;rsquo;s voice and cadence&lt;/a&gt;, and handle math notation seamlessly.
+While this seems a cosmetic change, it does impact the set of topics I can discuss cleanly with the AI as I drift off.&lt;/p&gt;
+&lt;p&gt;The dependence on an internet connection was another small drawback. I take my Go Note Go into the woods, used it during an Uber ride the airport today, and regularly use it when I fly. The AI assistant doesn&amp;rsquo;t work in these situations (the rest of Go Note Go continues to work fine) since it depends on having internet access. For a capability that is simple enough to not require AI, like reading back the topics I&amp;rsquo;ve written about recently, it feels quite silly to lose the capability when the internet is gone.&lt;/p&gt;
+&lt;p&gt;Related to the internet dependence, the lack of privacy from OpenAI is another important drawback to me. The thoughts I produce as I drift off to sleep are deeply personal! I would much prefer not to send them off to OpenAI (the current version of the assistant is implemented with text-davinci-003).&lt;/p&gt;
+&lt;p&gt;Finally, there&amp;rsquo;s another significant drawback, one you might have already picked up on: talking with an AI can get in the way of falling asleep.
+I view talking with an AI while drifting off to sleep similarly to listening to reading a book, listening to an audiobook, or to a podcast before bed.
+These activities require some amount of thought, but can also help to wind down and fall asleep.
+Talking to the AI required no monitor, and hence to blue lights that can make falling asleep harder.
+It simply requires some amount of restraint to stop the conversation and transition to sleep, just as one must put down a book and close their eyes if reading before bed.&lt;/p&gt;
+&lt;p&gt;You can see in the chloropropane conversation reproduced above from the timestamps that I was talking to the AI at nearly 1am. I like to go to sleep 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-04-20-sleep-no-snippet/&#34;&gt;closer to 10:10pm&lt;/a&gt;, so clearly this drawback is real for me.&lt;/p&gt;
+&lt;h3 id=&#34;it-left-me-wanting-more&#34;&gt;It left me wanting more&lt;/h3&gt;
+&lt;p&gt;Having an assistant as I drifted off to sleep was great overall, even in spite of these drawbacks.
+I was definitely left with a sense of wanting more though.&lt;/p&gt;
+&lt;p&gt;I want more assistance from my assistant.
+I want to be able to query my complete history of notes, asking questions like &amp;ldquo;What are some ideas I keep returning to?&amp;rdquo; or &amp;ldquo;Bring up all my outstanding Go Note Go TODOs.&amp;rdquo;
+Perhaps I&amp;rsquo;ll be able to implement this with 
+&lt;a href=&#34;https://gpt-index.readthedocs.io/en/latest/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GPT-Index&lt;/a&gt;, or a 
+&lt;a href=&#34;https://arxiv.org/abs/2203.08913&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Memorizing Transformer&lt;/a&gt;, but for now I do without.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d also love for my assistant to be able to take actions on my behalf. Maybe I can integrate 
+&lt;a href=&#34;https://www.adept.ai/act&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Adept AI&amp;rsquo;s action transformer&lt;/a&gt; into my next iteration to achieve this. For example, I want to be able tell the assistant my shopping list, and have it populate my Amazon cart. Then, when I&amp;rsquo;m back at a computer, I can review the cart and click submit, saving myself time shopping.&lt;/p&gt;
+&lt;p&gt;Sometimes (albeit rarely :P) I&amp;rsquo;m not at a Go Note Go, but I still want to talk to my AI assistant.
+For that, I&amp;rsquo;ve used Twilio so I can call my assistant on the phone.
+I use this when I&amp;rsquo;m driving or walking around. But that is a subject for another post entirely.&lt;/p&gt;
+&lt;h3 id=&#34;concluding-remarks&#34;&gt;Concluding remarks&lt;/h3&gt;
+&lt;p&gt;Adding an AI assistant to Go Note Go has been an absolute joy and I continue to use it almost every night.
+Despite its tendency to make things up &amp;ndash; or more charitably, to hallucinate &amp;ndash; it has still earned my trust in a more visceral way.
+I&amp;rsquo;m curious to see what use cases persist after I&amp;rsquo;ve had this capability for a longer period of time.&lt;/p&gt;
+&lt;p&gt;Of course, the AI assistant is not the only reason that Go Note Go is such a critical component in my life.
+Go Note Go can do so much more &amp;ndash; 
+&lt;a href=&#34;https://davidbieber.com/snippets/2023-01-16-go-note-go-features/&#34;&gt;a complete and concise overview of its capabilities is here&lt;/a&gt; &amp;ndash;
+like letting me 
+&lt;a href=&#34;https://davidbieber.com/post/2022-01-08-new-messager-setup/&#34;&gt;send messages as I drift off to sleep&lt;/a&gt; and helping me 
+&lt;a href=&#34;https://davidbieber.com/post/2022-02-07-keyboards-everywhere/&#34;&gt;reclaim my attention in a world full of distractions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;With the AI assistant added in, however, I feel like I have a new superpower. I can offload computation from my brain to it, and explore worlds of thought I could never have entered on my own.&lt;/p&gt;
+&lt;p&gt;Go Note Go is also 
+&lt;a href=&#34;https://github.com/dbieber/GoNoteGo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;completely open source&lt;/a&gt;. I encourage the hacker-tinkerers among you to join me in the world of headless computing and try it for yourself.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Anything I type on this keyboard gets automatically uploaded to my notes as soon as the keyboard is in range of wifi. This allows for offline usage, e.g. while driving or camping. These were the two use-cases that inspired me to build the device. Now my main use-case is capturing ideas while drifting off to sleep.
+It also has a microphone, so if speaking feels like it would take less energy than talking, I can speak my notes instead. This feature is what enables the driving use case, as of course I don&amp;rsquo;t type while I drive! &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;If I prefer speaking, I can also trigger these commands with the hot word &amp;ldquo;go go&amp;rdquo;, e.g. saying &amp;ldquo;go go time&amp;rdquo; gets the time. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
     <item>
       <title>Thoughts on ChatGPT</title>
       <link>https://davidbieber.com/snippets/2022-12-08-thoughts-on-chatgpt/</link>
@@ -31,13 +315,13 @@
 &lt;h2 id=&#34;building-products-with-chatgpt&#34;&gt;Building Products with ChatGPT&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Voice assistant:&lt;/strong&gt; Tonight I prototyped a voice conversational assistant with Twilio using GPT-3.5 (davinci-text-003). I&amp;rsquo;m excited to try it out with ChatGPT as well. Being able to place a phone call to use the power of a conversational assistant is convenient, especially when driving. There, a phone call is easy but a text based app is not safe.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Medical robo-intake:&lt;/strong&gt; At the doctor&amp;rsquo;s office, you typical fill out an intake form which is impersonal. Then, if the doctor is busy, you may not get to tell them all the details that could be relevant to your case. Using a conversational assistant to perform the medical intake could be quite valuable. We wouldn&amp;rsquo;t be relying on the AI to have robust medical knowledge or make any diagnosis; it would simply ask relevant questions to try to elicit any details that might be pertinent for the doctor to know. The doctor could still see the full conversation, as well as a robo-summary with the highlights.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Personal tutor:&lt;/strong&gt; One drawback of the current ChatGPT system is it isn&amp;rsquo;t always factual, making it challenging to use for learning unfamiliar subject matter. I envision a system in which a human tutor can view their student&amp;rsquo;s conversations with an AI-tutor, and can jump in with corrections and suggestions when needed. Another important aspect of an AI personal tutor will be curriculum setting (involving push messages, but just reactive messages), and goal setting, but the most important aspect is just that you can go down whatever rabbit-hole tangents catch your eye while progressing through the guided lessons.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Personal tutor:&lt;/strong&gt; One drawback of the current ChatGPT system is it isn&amp;rsquo;t always factual, making it challenging to use for learning unfamiliar subject matter. I envision a system in which a human tutor can view their student&amp;rsquo;s conversations with an AI-tutor, and can jump in with corrections and suggestions when needed. Another important aspect of an AI personal tutor will be curriculum setting (involving push messages, not just reactive messages), and goal setting, but the most important aspect is just that you can go down whatever rabbit-hole tangents catch your eye while progressing through the guided lessons.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Teddy Bear Programmer:&lt;/strong&gt; ChatGPT already provides a great developer experience, where you can ask it technical questions or to perform code-writing tasks. To improve this experience, we can build a system where it always has visibility into the context of your development efforts. E.g. it can see your recent terminal usage or your current editor window. So when you ask it questions, it knows why you&amp;rsquo;re asking.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The &amp;ldquo;Clink&amp;rdquo; Feature for Go Note Go:&lt;/strong&gt; The idea here is that when you take notes on Go Note Go, and someone else also has taken notes, you should be able to &amp;ldquo;clink&amp;rdquo; your two note-bases in order to find points of commonality between you. Then you can hit it off and discuss your common interests! The ChatGPT tech makes implementing this easier.&lt;/p&gt;
 &lt;h2 id=&#34;my-own-uses-of-chatgpt-so-far&#34;&gt;My Own Uses of ChatGPT so Far&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Writing a legal document&lt;/strong&gt; for a car sharing agreement for my partner.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Writing a blog post&lt;/strong&gt; on 
-&lt;a href=&#34;https://davidbieber.com/snippets/2022-12-03-spicy-conversations/&#34;&gt;the salt, acid, fat heat metaphor&lt;/a&gt;. Revising the post was done with the help of ChatGPT as well.&lt;/p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2022-12-03-spicy-conversations/&#34;&gt;the salt, fat, acid, heat metaphor&lt;/a&gt;. Revising the post was done with the help of ChatGPT as well.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Learning&lt;/strong&gt; about variational autoencoders, about music theory, violin and guitar, and about Rust and building Chrome Extensions, and about topics in medicine, history, and science.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Programming&lt;/strong&gt; in languages I&amp;rsquo;m less familiar with and using APIs I&amp;rsquo;m unfamiliar with.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Reading papers&lt;/strong&gt; and having ChatGPT summarize sections as I read them. Similarly, having ChatGPT summarize websites and blog posts as I browse the internet.&lt;/p&gt;
