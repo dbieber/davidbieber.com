@@ -23,3 +23,9 @@ When I review my writing in Go Note Go, I do so session by session, putting a su
 ![](session-collapsed.png)
 
 This compresses the 600 words I might write on a given day and presents them in a series of often 10 or fewer individual lines.
+
+While I like that I can and do review my writing to a greater degree than expected, I think there's still substantial improvement to make in the review-and-reuse experience.
+In particular, one idea I'm excited about and which I've been writing about in Go Note Go a fair amount, is hiring someone to review my notes and process them into a summary / a newsletter for myself.
+
+My thinking there is that I write a lot and there is definitely more in my writing than fits in my working memory at any time (this idea, that I want access to more than fits in working memory, has been recurring a fair amount lately).
+By leaning on another person, I can more effectively resurface the ideas that I most want to revisit. I'm posting this snippet as is, but this idea itself is one I'm eager to revisit in the future.
