@@ -261,7 +261,7 @@ As I drift off to sleep, I enter thoughts about a wide range of subjects that I 
 * Observations about Go Note Go -- both improvements I'm looking forward to making and emergent behaviors I'm excited to share in future writing
 * Thoughts about the future of AI
 * Machine learning experiments I'm excited to run
-* Thoughts I'd like to publish about, such as the unexpected dangers of reducing friction, or the value of repetition
+* Thoughts I'd like to publish about, such as the unexpected dangers of reducing friction, or the less-appreciated benefits of repetition
 * [Tweet ideas](https://twitter.com/Bieber)
 * Items I intend to buy
 * Questions I want to ask either specific people, or the internet at large
