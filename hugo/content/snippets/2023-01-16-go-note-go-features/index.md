@@ -411,6 +411,18 @@ The core attributes of Go Note Go that make it great for capturing thoughts whil
 * It mounts nicely to the passenger side of the car dashboard.
 </details>
 
+<details><summary>Avoid carsickness</summary>
+As a passenger in a car, it can be tempting to use your phone. Especially if you're taking an Uber and not engaging with the driver, this temptation can be quite strong; phones are little dopamine boxes, and will happily consume your attention endlessly. In a car, this can leave you feeling carsick.
+
+Go Note Go doesn't have this issue. Using Go Note Go in a case, it is truly easy to take on the go. The battery sits in the case and the Go Note Go rests flat on your lap while you use it. The best part? Using Go Note Go doesn't make you carsick, because you're not watching the device as you use it. You're eyes are free to look forward (or wherever) the whole time. Such relief!
+</details>
+
+<details><summary>Great for long flights</summary>
+Using Go Note Go with a case makes it so easy to take on the go. And since it works offline, it's ideal for use on a long flight. The battery I use lasts 12 hours, so this works even if your flight doesn't have an outlet. If there is an outlet, 5V is sufficient.
+
+I find I much prefer writing on Go Note Go on a flight compared with hours of back to back movie watching. Not everyone has this predilection; to each their own.
+</details>
+
 <details><summary>Capture shower thoughts</summary>
 
 Outside of driving, camping, and sleeping, where else are the best ideas generated? That's right, in the shower.
