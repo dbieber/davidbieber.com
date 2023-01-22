@@ -24,7 +24,7 @@ This metaphor lends itself to a few consequences. What happens if you find out t
 If one of our beliefs at the top of the tower is wrong, we can easily replace it with a new belief.
 We can swap out one brick for another.
 However, if a brick at the base of the tower is removed, our whole tower can come crumbling down.
-This is what happens when people question basic assumptions, like a formerly devout individual questioning their belief in God.
+This is what happens when people question basic assumptions, perhaps like a formerly devout individual questioning their belief in God.
 
 ### Forgetting: Castles in the Clouds
 
