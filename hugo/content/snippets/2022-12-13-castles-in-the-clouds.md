@@ -1,5 +1,5 @@
 +++
-title = "Castles in the Clouds: Why we believe what we believe (Incomplete)"
+title = "Castles in the Clouds: Why we believe what we believe"
 date = 2022-12-13T00:00:00
 tags = ["taking-silly-ideas-seriously"]
 +++
