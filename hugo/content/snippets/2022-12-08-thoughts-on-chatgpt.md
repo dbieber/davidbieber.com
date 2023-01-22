@@ -32,7 +32,7 @@ I use [Go Note Go](/projects/go-note-go) to jot down miscellaneous thoughts. The
 
 **Medical robo-intake:** At the doctor's office, you typical fill out an intake form which is impersonal. Then, if the doctor is busy, you may not get to tell them all the details that could be relevant to your case. Using a conversational assistant to perform the medical intake could be quite valuable. We wouldn't be relying on the AI to have robust medical knowledge or make any diagnosis; it would simply ask relevant questions to try to elicit any details that might be pertinent for the doctor to know. The doctor could still see the full conversation, as well as a robo-summary with the highlights.
 
-**Personal tutor:** One drawback of the current ChatGPT system is it isn't always factual, making it challenging to use for learning unfamiliar subject matter. I envision a system in which a human tutor can view their student's conversations with an AI-tutor, and can jump in with corrections and suggestions when needed. Another important aspect of an AI personal tutor will be curriculum setting (involving push messages, but just reactive messages), and goal setting, but the most important aspect is just that you can go down whatever rabbit-hole tangents catch your eye while progressing through the guided lessons.
+**Personal tutor:** One drawback of the current ChatGPT system is it isn't always factual, making it challenging to use for learning unfamiliar subject matter. I envision a system in which a human tutor can view their student's conversations with an AI-tutor, and can jump in with corrections and suggestions when needed. Another important aspect of an AI personal tutor will be curriculum setting (involving push messages, not just reactive messages), and goal setting, but the most important aspect is just that you can go down whatever rabbit-hole tangents catch your eye while progressing through the guided lessons.
 
 **Teddy Bear Programmer:** ChatGPT already provides a great developer experience, where you can ask it technical questions or to perform code-writing tasks. To improve this experience, we can build a system where it always has visibility into the context of your development efforts. E.g. it can see your recent terminal usage or your current editor window. So when you ask it questions, it knows why you're asking.
 
@@ -42,7 +42,7 @@ I use [Go Note Go](/projects/go-note-go) to jot down miscellaneous thoughts. The
 
 **Writing a legal document** for a car sharing agreement for my partner.
 
-**Writing a blog post** on [the salt, acid, fat heat metaphor](/snippets/2022-12-03-spicy-conversations/). Revising the post was done with the help of ChatGPT as well.
+**Writing a blog post** on [the salt, fat, acid, heat metaphor](/snippets/2022-12-03-spicy-conversations/). Revising the post was done with the help of ChatGPT as well.
 
 **Learning** about variational autoencoders, about music theory, violin and guitar, and about Rust and building Chrome Extensions, and about topics in medicine, history, and science.
 
