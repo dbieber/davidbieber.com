@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: www
 
   tasks:
   - name: install git
