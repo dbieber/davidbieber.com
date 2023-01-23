@@ -421,6 +421,8 @@ Go Note Go doesn't have this issue. Using Go Note Go in a case, it is truly easy
 Using Go Note Go with a case makes it so easy to take on the go. And since it works offline, it's ideal for use on a long flight. The battery I use lasts 12 hours, so this works even if your flight doesn't have an outlet. If there is an outlet, 5V is sufficient.
 
 I find I much prefer writing on Go Note Go on a flight compared with hours of back to back movie watching. Not everyone has this predilection; to each their own.
+
+Using a regular computer on a flight can lead to neck strain. Not so with Go Note Go!
 </details>
 
 <details><summary>Capture shower thoughts</summary>
