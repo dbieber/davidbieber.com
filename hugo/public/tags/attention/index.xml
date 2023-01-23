@@ -6,7 +6,39 @@
     <description>Recent content in attention on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Sep 2022 01:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/attention/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/attention/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Things you can do on the computer to get you off the computer</title>
+      <link>https://davidbieber.com/snippets/2023-01-22-bootstrapping-motivation/</link>
+      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2023-01-22-bootstrapping-motivation/</guid>
+      
+      <description>&lt;p&gt;What are some things you can do on the computer to help yourself get off the computer?&lt;/p&gt;
+&lt;p&gt;i.e. How can you &amp;ldquo;bootstrap&amp;rdquo; your own motivation? This question is key not just for breaking away from internet distractions, but also for getting up in the morning and doing other things you&amp;rsquo;d like to do but have trouble finding motivation for in the moment.&lt;/p&gt;
+&lt;p&gt;One thing you can do is set an alarm.&lt;/p&gt;
+&lt;p&gt;Or put on a motivational video, such as a yoga video or other fitness video.&lt;/p&gt;
+&lt;p&gt;The reason these activities may be easy to do is they fit in the addicted groove.&lt;/p&gt;
+&lt;p&gt;What&amp;rsquo;s the &lt;em&gt;&amp;ldquo;addicted groove&amp;rdquo;&lt;/em&gt;? It&amp;rsquo;s the set of things that my body and brain are naturally inclined to do, not because I want to do them, but because of my internet addiction (for lack of a better term). They&amp;rsquo;re the muscle memory components of my addiction. 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-10-01-infinite-distractions-and-getting-a-good-sear/&#34;&gt;Things like opening YouTube or Twitter or Facebook&lt;/a&gt;. 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-02-10-find-yourself-typing-t-enter-often.md&#34;&gt;cmd+t f enter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Putting on a YouTube video is super easy because it uses these same actions that I accidentally do mindlessly.&lt;/p&gt;
+&lt;p&gt;So if I can take advantage of these automatic actions to get myself doing something I want to be doing, like exercising, getting ready for work, reading a book, going to sleep, doing a math problem, etc&amp;hellip; then that&amp;rsquo;s a win.&lt;/p&gt;
+&lt;p&gt;Putting on videos is one approach.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2023-01-04-sleeping-with-gpt/&#34;&gt;Talking with an AI&lt;/a&gt; (or another human, but that might be higher activation energy) could be another approach. In both of these cases we&amp;rsquo;re injecting entropy, but that&amp;rsquo;s also the case for just mindlessly scrolling on twitter/facebook etc, so the entropy isn&amp;rsquo;t the key ingredient.&lt;/p&gt;
+&lt;p&gt;We want to inject deliberately useful information, just not information I already possessed. Although&amp;hellip; writing is a good approach too, and that is clearly producing information I already possessed, but I am &lt;strong&gt;disentangling&lt;/strong&gt; it in the process of writing.&lt;/p&gt;
+&lt;p&gt;I wish I had a better mathematical understanding of what that disentangling really was. It&amp;rsquo;s a critical component to understanding neural networks. That is a topic for another snippet though.&lt;/p&gt;
+&lt;p&gt;Summarizing here, the ideas we found so far are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Leverage the addicted grove (e.g. play a YouTube video that will wake you up or inspire you to stop playing YouTube Videos)&lt;/li&gt;
+&lt;li&gt;Use small/easier actions to start (e.g. putting on one sock can soon turn into getting dressed / starting an alarm can lead to a helpful trigger later on)&lt;/li&gt;
+&lt;li&gt;Set up triggers (e.g. an alarm or text message can jolt you into action)&lt;/li&gt;
+&lt;li&gt;Inject entropy (talking to an AI or human can be a good source of entropy)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>The Dream of Just One Inbox</title>
       <link>https://davidbieber.com/snippets/2022-09-26-just-one-inbox/</link>
@@ -400,13 +432,13 @@ A quick look at any complex task, say chess or a hard math problem, makes it app
     </item>
     
     <item>
-      <title>Find yourself typing t-ENTER often?</title>
+      <title>Find yourself typing cmd-t t ENTER often?</title>
       <link>https://davidbieber.com/snippets/2021-02-10-find-yourself-typing-t-enter-often/</link>
       <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/snippets/2021-02-10-find-yourself-typing-t-enter-often/</guid>
       
-      <description>&lt;p&gt;A common attention pitfall is to mindless type cmd-t t ENTER. cmd-t creates a new tab. &amp;ldquo;t&amp;rdquo; autocompletes to twitter.com. ENTER. Four keystrokes and you&amp;rsquo;re scrolling. &amp;ldquo;r&amp;rdquo; for reddit. &amp;ldquo;f&amp;rdquo; for facebook. etc.&lt;/p&gt;
+      <description>&lt;p&gt;A common attention pitfall is to mindlessly type cmd-t t ENTER. cmd-t creates a new tab. &amp;ldquo;t&amp;rdquo; autocompletes to twitter.com. ENTER. Four keystrokes and you&amp;rsquo;re scrolling. &amp;ldquo;r&amp;rdquo; for reddit. &amp;ldquo;f&amp;rdquo; for facebook. etc.&lt;/p&gt;
 &lt;p&gt;Less than a second of mindless activity, leading to hundreds of seconds (minutes? hours?) of scrolling that you didn&amp;rsquo;t intend to do.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s the solution. &lt;strong&gt;Delete websites from your browser&amp;rsquo;s autocomplete.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s easy to do. On Mac, it&amp;rsquo;s &lt;strong&gt;fn-shift-delete&lt;/strong&gt;. On Windows, just shift-delete.&lt;/p&gt;

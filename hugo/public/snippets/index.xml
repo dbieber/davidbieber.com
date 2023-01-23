@@ -8,6 +8,154 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/snippets/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>On why writing is hard</title>
+      <link>https://davidbieber.com/snippets/2023-01-22-writing-is-hard/</link>
+      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2023-01-22-writing-is-hard/</guid>
+      
+      <description>&lt;p&gt;Writing can be challenging. It can feel slow at times. For me, my 
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34;&gt;snippets systems&lt;/a&gt; goes a long way toward mitigating this. In this particular snippet, I present a taxonomy of why writing is hard.&lt;/p&gt;
+&lt;h3 id=&#34;difficulty-1-rereading&#34;&gt;Difficulty 1: Rereading&lt;/h3&gt;
+&lt;details&gt;&lt;summary&gt;Rereading slows me down.&lt;/summary&gt;
+&lt;p&gt;It can consume significant time, for little benefit compared with writing unwritten sections of the piece.&lt;/p&gt;
+&lt;p&gt;I include here going back and making changes or insertions earlier in the writing.&lt;/p&gt;
+&lt;p&gt;This isn&amp;rsquo;t meant to diminish the value of revisions or editing. There is a time and place for those. That time and place generally isn&amp;rsquo;t while you&amp;rsquo;re writing your piece though.&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;difficulty-2-minor-in-comparison-to-1-local-wordsmithing-typo-cleanup-etc&#34;&gt;Difficulty 2 (minor in comparison to #1): Local wordsmithing, typo cleanup, etc&lt;/h3&gt;
+&lt;details&gt;&lt;summary&gt;As I write, I make mistakes. Fixing them as I make them slows me down.&lt;/summary&gt;
+&lt;p&gt;From my experience with 
+&lt;a href=&#34;https://davidbieber.com/projects/go-note-go/&#34;&gt;Go Note Go&lt;/a&gt;, I know the volume of these mistakes when uncorrected is enormous. Some of the mistakes themselves are hilariously large, like typing 
+&lt;a href=&#34;https://davidbieber.com/snippets/2023-01-21-repetition/&#34;&gt;&amp;ldquo;nubdsgare&amp;rdquo; instead of &amp;ldquo;mindshare&amp;rdquo;&lt;/a&gt; because my hands weren&amp;rsquo;t lined up properly on the keyboard.&lt;/p&gt;
+&lt;p&gt;Fixing this kind of mistake while you&amp;rsquo;re writing is extremely common. I recommend against it though! This of course is extremely difficult (and possibly bad) advice to follow if you&amp;rsquo;re writing with a monitor, because all those typos will distract you. They&amp;rsquo;ll tug hard at you to fix them.&lt;/p&gt;
+&lt;p&gt;If, however, you are writing without a monitor, e.g. on Go Note Go, then it is much easier to ignore fixing these local mistakes until later. This can accelerate your first-draft writing significantly.&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;difficulty-3-task-switching&#34;&gt;Difficulty 3: Task switching&lt;/h3&gt;
+&lt;details&gt;&lt;summary&gt;That is, &lt;b&gt;getting distracted&lt;/b&gt;. Of course getting distracted slows me down.&lt;/summary&gt;
+&lt;p&gt;This could be by either internal or 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-10-01-infinite-distractions-and-getting-a-good-sear/&#34;&gt;external distractions&lt;/a&gt;. Both can be harmful toward effective writing.&lt;/p&gt;
+&lt;p&gt;Understanding 
+&lt;a href=&#34;https://davidbieber.com/tags/attention/&#34;&gt;the nature of distractions&lt;/a&gt; can be helpful.
+Often it can be that a decision point is reached and it&amp;rsquo;s hard to decide (Difficulty #4).
+It could be that making progress requires putting yourself out there, e.g. writing something that someone else will read and possibly judge, or clicking send (Difficulty #8).&lt;/p&gt;
+&lt;p&gt;Maybe it&amp;rsquo;s as simple as not knowing how to spell someone&amp;rsquo;s name. &amp;ldquo;Does Marisa have one S or two? I&amp;rsquo;ll come back to writing this text later.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Maybe it&amp;rsquo;s needing to choose a name for an event. Or choosing who to invite.&lt;/p&gt;
+&lt;p&gt;Maybe it&amp;rsquo;s the more common cause of distractions: something shiny and more appealing than writing catches your eye.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Let&#39;s list the mitigations for this difficulty.&lt;/summary&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation 1:&lt;/strong&gt; Have a clear goal, which when achieved, allows for task switching.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation 2:&lt;/strong&gt; Use Go Note Go (thereby 
+&lt;a href=&#34;https://davidbieber.com/snippets/2023-01-16-go-note-go-features/&#34;&gt;removing the possibility of editing, rereading, or task switching&lt;/a&gt;). This helps with Difficulties #1, #2, and #3 so far!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation idea 3:&lt;/strong&gt; As a (more challenging) alternative to Go Note Go, 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-01-13-writing-tool-idea/&#34;&gt;implement rules for yourself&lt;/a&gt; that disallow editing, rereading, and task switching.&lt;/p&gt;
+&lt;/details&gt;&lt;br/&gt;
+&lt;p&gt;For me, these first three difficulties capture much of why writing emails, for example, can be challenging.&lt;/p&gt;
+&lt;h3 id=&#34;difficulty-4-reaching-a-decision-that-you-dont-want-to-make&#34;&gt;Difficulty 4: Reaching a decision that you don&amp;rsquo;t want to make&lt;/h3&gt;
+&lt;details&gt;&lt;summary&gt;Decision-making can fatigue or even end a writing session.&lt;/summary&gt;
+&lt;p&gt;This is worth separating this from Difficulty 3 (Task switching) because it precedes task switching, and can generate difficulty even if it doesn&amp;rsquo;t spur task switching.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also worth breaking down further, since not all decision making difficulty is the same.&lt;/p&gt;
+&lt;/details&gt;
+&lt;h4 id=&#34;four-types-of-decision-making-difficulty&#34;&gt;Four types of decision making difficulty:&lt;/h4&gt;
+&lt;details&gt;&lt;summary&gt;1. Decision appears to reveal inner preference&lt;/summary&gt;
+&lt;p&gt;Resistance to making a decision can form if the decision would reveal (or appear to reveal) an inner preference that you don&amp;rsquo;t want to reveal.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; Choosing a name or a gender for a character when you want to tell the story first, and then choose their name or gender or race (or whatever characteristics are going to get implied by the name selection) later&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;/strong&gt; Just pick a name! You can always change it later.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;/strong&gt; Use a placeholder. This isn&amp;rsquo;t as good as just picking a name.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;/strong&gt; Add a note-to-self that you&amp;rsquo;ll strip on publication if that makes you feel more comfortable.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;2. Decision requires communication / external stakeholders&lt;/summary&gt;
+&lt;p&gt;Decisions often require additional information not yet available, possibly requiring additional communication or back-and-forths with other people in order to obtain. This can become a blocker toward writing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; Picking a place to meet, or a date and time&lt;/p&gt;
+&lt;p&gt;Why is this challenging? It&amp;rsquo;s because it relies on having information that might not be available. Gathering the information might require a challenging coordination problem, possibly with chicken-and-the-egg difficulties.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;/strong&gt; Be verbose, and provide both a default suggestion as well as information about the level of flexibility in the suggestion.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;/strong&gt; Reach out to the people who can provide the information you need immediately, but be clear that you won&amp;rsquo;t necessarily wait for their response to proceed with the original task.&lt;/p&gt;
+&lt;p&gt;You can then include in the original writing that you&amp;rsquo;ve reached out to gather the missing information and will follow-up soon.
+In general, 
+&lt;a href=&#34;https://davidbieber.com/post/2022-01-08-new-messager-setup/&#34;&gt;sending messages earlier&lt;/a&gt; indicating that you&amp;rsquo;ve received and are processing someone else&amp;rsquo;s message is a good idea. You can always write more later.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;General strategy:&lt;/strong&gt; Respond to emails immediately acknowledging receipt even if you haven&amp;rsquo;t taken the time to thoughtfully respond yet.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;3. Options are hard to choose between, because they are roughly equal in expected value&lt;/summary&gt;
+&lt;p&gt;Sometimes 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-02-08-future-gameshow-host/&#34;&gt;a choice&lt;/a&gt; is just hard. Sometimes the hardest choices are hard because the expected outcomes are important, but not clearly better one way or the other.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; Choosing between job offers, or between pieces of art to buy.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;/strong&gt; Use the penguin approach. Then pick one as the default, and proceed to ask if each subsequent possible choice is better; if it is, update the default (aka &amp;ldquo;the penguin&amp;rdquo;) to that choice. When it comes time to finally choose, select the penguin.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;4. A decision could be difficult for another reason: because the negative consequences of the best choice are hard to stomach&lt;/summary&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; A break up or a layoff, or other form of giving someone bad news.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;/strong&gt; Be empathetic. There&amp;rsquo;s no good way to deliver bad news, but there are worse ways. Be human, and supportive.&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;difficulty-5-deciding-what-to-say&#34;&gt;Difficulty 5: Deciding what to say&lt;/h3&gt;
+&lt;details&gt;&lt;summary&gt;This can appear to be a difficulty when in actuality the difficulty is in Difficulty 1: Rereading.&lt;/summary&gt;
+&lt;p&gt;For example, you might finish an idea and have to decide what to write next, so you reread what you&amp;rsquo;ve written to refresh your idea. This is already slowing you down.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;/strong&gt; Make an outline.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;/strong&gt; Instead of choosing what to write (if there are two options even with your outline) as if its a final choice, realize that you can write both options and keep whichever or both that you like later, during editing.&lt;/p&gt;
+&lt;p&gt;Deciding what to say can, of course, also be a difficulty in and of itself, too.&lt;/p&gt;
+&lt;/details&gt;&lt;br/&gt;
+&lt;p&gt;For completeness, I list three additional difficulties here without additional comment:&lt;/p&gt;
+&lt;h3 id=&#34;difficulty-6-editing&#34;&gt;Difficulty 6: Editing&lt;/h3&gt;
+&lt;h3 id=&#34;difficulty-7-finding-draft-readers&#34;&gt;Difficulty 7: Finding draft readers&lt;/h3&gt;
+&lt;h3 id=&#34;difficulty-8-clicking-submit&#34;&gt;Difficulty 8: Clicking submit&lt;/h3&gt;
+&lt;p&gt;Want to practice writing and clicking submit? 
+&lt;a href=&#34;mailto:david810&amp;#43;writing-is-hard@gmail.com&#34;&gt;Say hi! Send me an email.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Things you can do on the computer to get you off the computer</title>
+      <link>https://davidbieber.com/snippets/2023-01-22-bootstrapping-motivation/</link>
+      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2023-01-22-bootstrapping-motivation/</guid>
+      
+      <description>&lt;p&gt;What are some things you can do on the computer to help yourself get off the computer?&lt;/p&gt;
+&lt;p&gt;i.e. How can you &amp;ldquo;bootstrap&amp;rdquo; your own motivation? This question is key not just for breaking away from internet distractions, but also for getting up in the morning and doing other things you&amp;rsquo;d like to do but have trouble finding motivation for in the moment.&lt;/p&gt;
+&lt;p&gt;One thing you can do is set an alarm.&lt;/p&gt;
+&lt;p&gt;Or put on a motivational video, such as a yoga video or other fitness video.&lt;/p&gt;
+&lt;p&gt;The reason these activities may be easy to do is they fit in the addicted groove.&lt;/p&gt;
+&lt;p&gt;What&amp;rsquo;s the &lt;em&gt;&amp;ldquo;addicted groove&amp;rdquo;&lt;/em&gt;? It&amp;rsquo;s the set of things that my body and brain are naturally inclined to do, not because I want to do them, but because of my internet addiction (for lack of a better term). They&amp;rsquo;re the muscle memory components of my addiction. 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-10-01-infinite-distractions-and-getting-a-good-sear/&#34;&gt;Things like opening YouTube or Twitter or Facebook&lt;/a&gt;. 
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-02-10-find-yourself-typing-t-enter-often.md&#34;&gt;cmd+t f enter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Putting on a YouTube video is super easy because it uses these same actions that I accidentally do mindlessly.&lt;/p&gt;
+&lt;p&gt;So if I can take advantage of these automatic actions to get myself doing something I want to be doing, like exercising, getting ready for work, reading a book, going to sleep, doing a math problem, etc&amp;hellip; then that&amp;rsquo;s a win.&lt;/p&gt;
+&lt;p&gt;Putting on videos is one approach.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2023-01-04-sleeping-with-gpt/&#34;&gt;Talking with an AI&lt;/a&gt; (or another human, but that might be higher activation energy) could be another approach. In both of these cases we&amp;rsquo;re injecting entropy, but that&amp;rsquo;s also the case for just mindlessly scrolling on twitter/facebook etc, so the entropy isn&amp;rsquo;t the key ingredient.&lt;/p&gt;
+&lt;p&gt;We want to inject deliberately useful information, just not information I already possessed. Although&amp;hellip; writing is a good approach too, and that is clearly producing information I already possessed, but I am &lt;strong&gt;disentangling&lt;/strong&gt; it in the process of writing.&lt;/p&gt;
+&lt;p&gt;I wish I had a better mathematical understanding of what that disentangling really was. It&amp;rsquo;s a critical component to understanding neural networks. That is a topic for another snippet though.&lt;/p&gt;
+&lt;p&gt;Summarizing here, the ideas we found so far are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Leverage the addicted grove (e.g. play a YouTube video that will wake you up or inspire you to stop playing YouTube Videos)&lt;/li&gt;
+&lt;li&gt;Use small/easier actions to start (e.g. putting on one sock can soon turn into getting dressed / starting an alarm can lead to a helpful trigger later on)&lt;/li&gt;
+&lt;li&gt;Set up triggers (e.g. an alarm or text message can jolt you into action)&lt;/li&gt;
+&lt;li&gt;Inject entropy (talking to an AI or human can be a good source of entropy)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>On the value of repetition</title>
+      <link>https://davidbieber.com/snippets/2023-01-21-repetition/</link>
+      <pubDate>Sat, 21 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2023-01-21-repetition/</guid>
+      
+      <description>&lt;p&gt;Stop me if you&amp;rsquo;ve heard this one before. Actually, don&amp;rsquo;t. There&amp;rsquo;s value in repetition, and more than I think most people realize.&lt;/p&gt;
+&lt;p&gt;This isn&amp;rsquo;t about the benefits of active recall or 
+&lt;a href=&#34;https://davidbieber.com/tags/spaced-repetition&#34;&gt;spaced repetition&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s about how hearing things shapes your attention.&lt;/p&gt;
+&lt;p&gt;When someone tells you something that you already know,
+you aren&amp;rsquo;t learning something new.&lt;/p&gt;
+&lt;p&gt;But you are devoting mindshare to thinking about the thing.&lt;/p&gt;
+&lt;p&gt;And they&amp;rsquo;re telling you about the thing for a reason.
+So, spending a little mindshare on it is good.&lt;/p&gt;
+&lt;p&gt;You also get the opportunity to spend a large amount of mindshare on it, if you want to.&lt;/p&gt;
+&lt;p&gt;Sometimes, you don&amp;rsquo;t get a choice. The really good ideas don&amp;rsquo;t give us a choice.&lt;/p&gt;
+&lt;p&gt;Sometimes lesser ideas don&amp;rsquo;t give us a choice too, even though we&amp;rsquo;d like one. These can be our anxious thoughts.&lt;/p&gt;
+&lt;p&gt;This won&amp;rsquo;t be the last time I write a snippet about these ideas.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>A Complete and Concise List of Go Note Go&#39;s Features</title>
       <link>https://davidbieber.com/snippets/2023-01-16-go-note-go-features/</link>
       <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
@@ -346,6 +494,7 @@ As a passenger in a car, it can be tempting to use your phone. Especially if you
 &lt;details&gt;&lt;summary&gt;Great for long flights&lt;/summary&gt;
 Using Go Note Go with a case makes it so easy to take on the go. And since it works offline, it&#39;s ideal for use on a long flight. The battery I use lasts 12 hours, so this works even if your flight doesn&#39;t have an outlet. If there is an outlet, 5V is sufficient.
 &lt;p&gt;I find I much prefer writing on Go Note Go on a flight compared with hours of back to back movie watching. Not everyone has this predilection; to each their own.&lt;/p&gt;
+&lt;p&gt;Using a regular computer on a flight can lead to neck strain. Not so with Go Note Go!&lt;/p&gt;
 &lt;/details&gt;
 &lt;details&gt;&lt;summary&gt;Capture shower thoughts&lt;/summary&gt;
 &lt;p&gt;Outside of driving, camping, and sleeping, where else are the best ideas generated? That&amp;rsquo;s right, in the shower.&lt;/p&gt;
@@ -4971,13 +5120,13 @@ await createChildBlock(urls, $url)
     </item>
     
     <item>
-      <title>Find yourself typing t-ENTER often?</title>
+      <title>Find yourself typing cmd-t t ENTER often?</title>
       <link>https://davidbieber.com/snippets/2021-02-10-find-yourself-typing-t-enter-often/</link>
       <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/snippets/2021-02-10-find-yourself-typing-t-enter-often/</guid>
       
-      <description>&lt;p&gt;A common attention pitfall is to mindless type cmd-t t ENTER. cmd-t creates a new tab. &amp;ldquo;t&amp;rdquo; autocompletes to twitter.com. ENTER. Four keystrokes and you&amp;rsquo;re scrolling. &amp;ldquo;r&amp;rdquo; for reddit. &amp;ldquo;f&amp;rdquo; for facebook. etc.&lt;/p&gt;
+      <description>&lt;p&gt;A common attention pitfall is to mindlessly type cmd-t t ENTER. cmd-t creates a new tab. &amp;ldquo;t&amp;rdquo; autocompletes to twitter.com. ENTER. Four keystrokes and you&amp;rsquo;re scrolling. &amp;ldquo;r&amp;rdquo; for reddit. &amp;ldquo;f&amp;rdquo; for facebook. etc.&lt;/p&gt;
 &lt;p&gt;Less than a second of mindless activity, leading to hundreds of seconds (minutes? hours?) of scrolling that you didn&amp;rsquo;t intend to do.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s the solution. &lt;strong&gt;Delete websites from your browser&amp;rsquo;s autocomplete.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s easy to do. On Mac, it&amp;rsquo;s &lt;strong&gt;fn-shift-delete&lt;/strong&gt;. On Windows, just shift-delete.&lt;/p&gt;

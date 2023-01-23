@@ -6,7 +6,100 @@
     <description>Recent content in writing on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Feb 2022 01:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On why writing is hard</title>
+      <link>https://davidbieber.com/snippets/2023-01-22-writing-is-hard/</link>
+      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2023-01-22-writing-is-hard/</guid>
+      
+      <description>&lt;p&gt;Writing can be challenging. It can feel slow at times. For me, my 
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34;&gt;snippets systems&lt;/a&gt; goes a long way toward mitigating this. In this particular snippet, I present a taxonomy of why writing is hard.&lt;/p&gt;
+&lt;h3 id=&#34;difficulty-1-rereading&#34;&gt;Difficulty 1: Rereading&lt;/h3&gt;
+&lt;details&gt;&lt;summary&gt;Rereading slows me down.&lt;/summary&gt;
+&lt;p&gt;It can consume significant time, for little benefit compared with writing unwritten sections of the piece.&lt;/p&gt;
+&lt;p&gt;I include here going back and making changes or insertions earlier in the writing.&lt;/p&gt;
+&lt;p&gt;This isn&amp;rsquo;t meant to diminish the value of revisions or editing. There is a time and place for those. That time and place generally isn&amp;rsquo;t while you&amp;rsquo;re writing your piece though.&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;difficulty-2-minor-in-comparison-to-1-local-wordsmithing-typo-cleanup-etc&#34;&gt;Difficulty 2 (minor in comparison to #1): Local wordsmithing, typo cleanup, etc&lt;/h3&gt;
+&lt;details&gt;&lt;summary&gt;As I write, I make mistakes. Fixing them as I make them slows me down.&lt;/summary&gt;
+&lt;p&gt;From my experience with 
+&lt;a href=&#34;https://davidbieber.com/projects/go-note-go/&#34;&gt;Go Note Go&lt;/a&gt;, I know the volume of these mistakes when uncorrected is enormous. Some of the mistakes themselves are hilariously large, like typing 
+&lt;a href=&#34;https://davidbieber.com/snippets/2023-01-21-repetition/&#34;&gt;&amp;ldquo;nubdsgare&amp;rdquo; instead of &amp;ldquo;mindshare&amp;rdquo;&lt;/a&gt; because my hands weren&amp;rsquo;t lined up properly on the keyboard.&lt;/p&gt;
+&lt;p&gt;Fixing this kind of mistake while you&amp;rsquo;re writing is extremely common. I recommend against it though! This of course is extremely difficult (and possibly bad) advice to follow if you&amp;rsquo;re writing with a monitor, because all those typos will distract you. They&amp;rsquo;ll tug hard at you to fix them.&lt;/p&gt;
+&lt;p&gt;If, however, you are writing without a monitor, e.g. on Go Note Go, then it is much easier to ignore fixing these local mistakes until later. This can accelerate your first-draft writing significantly.&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;difficulty-3-task-switching&#34;&gt;Difficulty 3: Task switching&lt;/h3&gt;
+&lt;details&gt;&lt;summary&gt;That is, &lt;b&gt;getting distracted&lt;/b&gt;. Of course getting distracted slows me down.&lt;/summary&gt;
+&lt;p&gt;This could be by either internal or 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-10-01-infinite-distractions-and-getting-a-good-sear/&#34;&gt;external distractions&lt;/a&gt;. Both can be harmful toward effective writing.&lt;/p&gt;
+&lt;p&gt;Understanding 
+&lt;a href=&#34;https://davidbieber.com/tags/attention/&#34;&gt;the nature of distractions&lt;/a&gt; can be helpful.
+Often it can be that a decision point is reached and it&amp;rsquo;s hard to decide (Difficulty #4).
+It could be that making progress requires putting yourself out there, e.g. writing something that someone else will read and possibly judge, or clicking send (Difficulty #8).&lt;/p&gt;
+&lt;p&gt;Maybe it&amp;rsquo;s as simple as not knowing how to spell someone&amp;rsquo;s name. &amp;ldquo;Does Marisa have one S or two? I&amp;rsquo;ll come back to writing this text later.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Maybe it&amp;rsquo;s needing to choose a name for an event. Or choosing who to invite.&lt;/p&gt;
+&lt;p&gt;Maybe it&amp;rsquo;s the more common cause of distractions: something shiny and more appealing than writing catches your eye.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Let&#39;s list the mitigations for this difficulty.&lt;/summary&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation 1:&lt;/strong&gt; Have a clear goal, which when achieved, allows for task switching.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation 2:&lt;/strong&gt; Use Go Note Go (thereby 
+&lt;a href=&#34;https://davidbieber.com/snippets/2023-01-16-go-note-go-features/&#34;&gt;removing the possibility of editing, rereading, or task switching&lt;/a&gt;). This helps with Difficulties #1, #2, and #3 so far!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation idea 3:&lt;/strong&gt; As a (more challenging) alternative to Go Note Go, 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-01-13-writing-tool-idea/&#34;&gt;implement rules for yourself&lt;/a&gt; that disallow editing, rereading, and task switching.&lt;/p&gt;
+&lt;/details&gt;&lt;br/&gt;
+&lt;p&gt;For me, these first three difficulties capture much of why writing emails, for example, can be challenging.&lt;/p&gt;
+&lt;h3 id=&#34;difficulty-4-reaching-a-decision-that-you-dont-want-to-make&#34;&gt;Difficulty 4: Reaching a decision that you don&amp;rsquo;t want to make&lt;/h3&gt;
+&lt;details&gt;&lt;summary&gt;Decision-making can fatigue or even end a writing session.&lt;/summary&gt;
+&lt;p&gt;This is worth separating this from Difficulty 3 (Task switching) because it precedes task switching, and can generate difficulty even if it doesn&amp;rsquo;t spur task switching.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also worth breaking down further, since not all decision making difficulty is the same.&lt;/p&gt;
+&lt;/details&gt;
+&lt;h4 id=&#34;four-types-of-decision-making-difficulty&#34;&gt;Four types of decision making difficulty:&lt;/h4&gt;
+&lt;details&gt;&lt;summary&gt;1. Decision appears to reveal inner preference&lt;/summary&gt;
+&lt;p&gt;Resistance to making a decision can form if the decision would reveal (or appear to reveal) an inner preference that you don&amp;rsquo;t want to reveal.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; Choosing a name or a gender for a character when you want to tell the story first, and then choose their name or gender or race (or whatever characteristics are going to get implied by the name selection) later&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;/strong&gt; Just pick a name! You can always change it later.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;/strong&gt; Use a placeholder. This isn&amp;rsquo;t as good as just picking a name.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;/strong&gt; Add a note-to-self that you&amp;rsquo;ll strip on publication if that makes you feel more comfortable.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;2. Decision requires communication / external stakeholders&lt;/summary&gt;
+&lt;p&gt;Decisions often require additional information not yet available, possibly requiring additional communication or back-and-forths with other people in order to obtain. This can become a blocker toward writing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; Picking a place to meet, or a date and time&lt;/p&gt;
+&lt;p&gt;Why is this challenging? It&amp;rsquo;s because it relies on having information that might not be available. Gathering the information might require a challenging coordination problem, possibly with chicken-and-the-egg difficulties.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;/strong&gt; Be verbose, and provide both a default suggestion as well as information about the level of flexibility in the suggestion.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;/strong&gt; Reach out to the people who can provide the information you need immediately, but be clear that you won&amp;rsquo;t necessarily wait for their response to proceed with the original task.&lt;/p&gt;
+&lt;p&gt;You can then include in the original writing that you&amp;rsquo;ve reached out to gather the missing information and will follow-up soon.
+In general, 
+&lt;a href=&#34;https://davidbieber.com/post/2022-01-08-new-messager-setup/&#34;&gt;sending messages earlier&lt;/a&gt; indicating that you&amp;rsquo;ve received and are processing someone else&amp;rsquo;s message is a good idea. You can always write more later.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;General strategy:&lt;/strong&gt; Respond to emails immediately acknowledging receipt even if you haven&amp;rsquo;t taken the time to thoughtfully respond yet.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;3. Options are hard to choose between, because they are roughly equal in expected value&lt;/summary&gt;
+&lt;p&gt;Sometimes 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-02-08-future-gameshow-host/&#34;&gt;a choice&lt;/a&gt; is just hard. Sometimes the hardest choices are hard because the expected outcomes are important, but not clearly better one way or the other.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; Choosing between job offers, or between pieces of art to buy.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;/strong&gt; Use the penguin approach. Then pick one as the default, and proceed to ask if each subsequent possible choice is better; if it is, update the default (aka &amp;ldquo;the penguin&amp;rdquo;) to that choice. When it comes time to finally choose, select the penguin.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;4. A decision could be difficult for another reason: because the negative consequences of the best choice are hard to stomach&lt;/summary&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; A break up or a layoff, or other form of giving someone bad news.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;/strong&gt; Be empathetic. There&amp;rsquo;s no good way to deliver bad news, but there are worse ways. Be human, and supportive.&lt;/p&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;difficulty-5-deciding-what-to-say&#34;&gt;Difficulty 5: Deciding what to say&lt;/h3&gt;
+&lt;details&gt;&lt;summary&gt;This can appear to be a difficulty when in actuality the difficulty is in Difficulty 1: Rereading.&lt;/summary&gt;
+&lt;p&gt;For example, you might finish an idea and have to decide what to write next, so you reread what you&amp;rsquo;ve written to refresh your idea. This is already slowing you down.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;/strong&gt; Make an outline.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mitigation:&lt;/strong&gt; Instead of choosing what to write (if there are two options even with your outline) as if its a final choice, realize that you can write both options and keep whichever or both that you like later, during editing.&lt;/p&gt;
+&lt;p&gt;Deciding what to say can, of course, also be a difficulty in and of itself, too.&lt;/p&gt;
+&lt;/details&gt;&lt;br/&gt;
+&lt;p&gt;For completeness, I list three additional difficulties here without additional comment:&lt;/p&gt;
+&lt;h3 id=&#34;difficulty-6-editing&#34;&gt;Difficulty 6: Editing&lt;/h3&gt;
+&lt;h3 id=&#34;difficulty-7-finding-draft-readers&#34;&gt;Difficulty 7: Finding draft readers&lt;/h3&gt;
+&lt;h3 id=&#34;difficulty-8-clicking-submit&#34;&gt;Difficulty 8: Clicking submit&lt;/h3&gt;
+&lt;p&gt;Want to practice writing and clicking submit? 
+&lt;a href=&#34;mailto:david810&amp;#43;writing-is-hard@gmail.com&#34;&gt;Say hi! Send me an email.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Go Note Go Writing Volume</title>
       <link>https://davidbieber.com/snippets/2022-02-14-go-note-go-writing-volume/</link>
