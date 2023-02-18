@@ -169,12 +169,12 @@ I&amp;rsquo;m in a remote meeting and we&amp;rsquo;re having a discussion. By de
 --loud_speed=1 \
 --quiet_speed=5
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;--audio_path&lt;/code&gt; should point to an existing wav file that you downloaded or generated in the pre-work section. &lt;code&gt;--output_path&lt;/code&gt; is the path to the file that Fastbook will generate. Finally, &lt;code&gt;--loud_speed&lt;/code&gt; is how much to speed up the normal spoke text of the book by, and &lt;code&gt;--quiet_speed&lt;/code&gt; is how much to speed up the silence in the book by. You can remove silence by setting &lt;code&gt;--quiet_speed=99999&lt;/code&gt; or any other similiarly large number.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;--audio_path&lt;/code&gt; should point to an existing wav file that you downloaded or generated in the pre-work section. &lt;code&gt;--output_path&lt;/code&gt; is the path to the file that Fastbook will generate. Finally, &lt;code&gt;--loud_speed&lt;/code&gt; is how much to speed up the normal spoken text of the book by, and &lt;code&gt;--quiet_speed&lt;/code&gt; is how much to speed up the silence in the book by. You can remove silence by setting &lt;code&gt;--quiet_speed=99999&lt;/code&gt; or any other similarly large number.&lt;/p&gt;
 &lt;h3 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h3&gt;
 &lt;p&gt;Here are the dependencies you need to use Fastbook.&lt;/p&gt;
 &lt;p&gt;First, you need &lt;strong&gt;Python 3&lt;/strong&gt;. You can follow 
 &lt;a href=&#34;https://realpython.com/installing-python/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these instructions&lt;/a&gt; to set up Python 3 if you don&amp;rsquo;t already have it installed.&lt;/p&gt;
-&lt;p&gt;Then, you need these Python depenencies: &lt;em&gt;fire&lt;/em&gt;, &lt;em&gt;scipy&lt;/em&gt;, &lt;em&gt;tqdm&lt;/em&gt;, &lt;em&gt;numpy&lt;/em&gt;, and &lt;em&gt;audiotsm&lt;/em&gt;. Install these with &lt;code&gt;pip install fire scipy tqdm numpy audiotsm&lt;/code&gt; or use your favorite Python package manager.&lt;/p&gt;
+&lt;p&gt;Then, you need these Python dependencies: &lt;em&gt;fire&lt;/em&gt;, &lt;em&gt;scipy&lt;/em&gt;, &lt;em&gt;tqdm&lt;/em&gt;, &lt;em&gt;numpy&lt;/em&gt;, and &lt;em&gt;audiotsm&lt;/em&gt;. Install these with &lt;code&gt;pip install fire scipy tqdm numpy audiotsm&lt;/code&gt; or use your favorite Python package manager.&lt;/p&gt;
 &lt;p&gt;Finally, to do the pre-work, you will likely need ffmpeg. Installation instructions are available 
 &lt;a href=&#34;https://www.ffmpeg.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;read-quick&#34;&gt;Read quick!&lt;/h2&gt;
