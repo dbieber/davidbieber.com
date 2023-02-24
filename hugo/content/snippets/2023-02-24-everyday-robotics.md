@@ -40,7 +40,7 @@ Can you write a letter?<br/>
 Can you write a letter in my handwriting??<br/>
 
 Put on this motion capture device, we're going to calibrate you.<br/>
-Bring me my own motion capture device -- I want to collect some practice demonstrations for you<br/>
+Bring me my own motion capture device -- I want to collect some practice demonstrations for you.<br/>
 I seem to have left my motion capture device in New Haven, so watch carefully -- I'm going to show you how I clean the mirror.<br/>
 
 First I pick up this bottle, and I make sure the spray mozzzle is set to the on position. It says "On" here.<br/>
