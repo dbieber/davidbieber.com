@@ -1,5 +1,5 @@
 +++
-title = "Everyday Robotics"
+title = "Everyday Robots"
 date = 2023-02-24
 tags = []
 +++
