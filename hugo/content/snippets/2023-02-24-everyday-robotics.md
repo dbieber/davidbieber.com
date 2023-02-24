@@ -43,7 +43,7 @@ Put on this motion capture device, we're going to calibrate you.<br/>
 Bring me my own motion capture device -- I want to collect some practice demonstrations for you.<br/>
 I seem to have left my motion capture device in New Haven, so watch carefully -- I'm going to show you how I clean the mirror.<br/>
 
-First I pick up this bottle, and I make sure the spray mozzzle is set to the on position. It says "On" here.<br/>
+First I pick up this bottle, and I make sure the spray nozzle is set to the on position. It says "On" here.<br/>
 Then I point the bottle at the mirror and spray like this, pulling the trigger to spray.<br/>
 I wipe the wet off the mirror to remove any dirt that built up.<br/>
 Now you try.<br/>
