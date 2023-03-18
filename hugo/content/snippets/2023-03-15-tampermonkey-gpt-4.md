@@ -1,7 +1,7 @@
 +++
 title = "Writing a Tampermonkey Script with GPT-4"
 date = 2023-03-15
-tags = []
+tags = ["note-taking", "ai", "javascript"]
 +++
 
 Today I used [GPT-4](https://openai.com/research/gpt-4) to implement my first ever [Tampermonkey](https://www.tampermonkey.net/) script. It took well under half an hour, which is likely many times faster than it would have taken me alone. I am blown away by GPT-4's programming capabilities.
