@@ -1,7 +1,7 @@
 +++
 title = "Thoughts on ChatGPT"
 date = 2022-12-08T00:00:00
-tags = ["machine-learning"]
+tags = ["machine-learning", "ai"]
 +++
 
 This blog post was entirely written by me, David Bieber, a human being. I did not consult with ChatGPT or Bieber Bot or any other assistants or conversational agents in the writing of this post. It is likely this will now be a rare occurrence, and that subsequent posts will generally be written with an assistant at my side.
