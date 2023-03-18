@@ -1,7 +1,7 @@
 +++
 title = "Ugh Task Night"
 date = 2022-10-24T00:00:00
-tags = ["taking-silly-ideas-seriously", "productivity"]
+tags = ["taking-silly-ideas-seriously", "productivity", "coworking"]
 +++
 
 Boo! 👻 Ugh Task Night is coming!
