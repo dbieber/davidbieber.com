@@ -895,7 +895,7 @@ With the rate of advancement happening today, and the wide range of possibilitie
             content: text,
         }
     ];
-    const apiKey = &#39;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&#39;;
+    const apiKey = apiKeyInput.value;
     const response = await fetch(&#39;https://api.openai.com/v1/chat/completions&#39;, {
         method: &#39;POST&#39;,
         headers: {
@@ -913,13 +913,6 @@ With the rate of advancement happening today, and the wide range of possibilitie
   }
 
   async function addTechToTechTree(tech) {
-    const url = &#34;https://api.openai.com/v1/engines/text-davinci-003/completions&#34;;
-    const apiKey = apiKeyInput.value;
-    const headers = {
-      &#39;Content-Type&#39;: &#39;application/json&#39;,
-      &#39;Authorization&#39;: `Bearer ${apiKey}`,
-    };
-
     // Get description of the technology
     const descriptionPrompt = `Give a one-line description of the technology: ${tech}`;
     const description = await chatCompletion(descriptionPrompt);
