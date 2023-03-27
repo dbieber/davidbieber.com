@@ -6,7 +6,7 @@
     <description>Recent content on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bieber Bot Privacy Policy</title>
       <link>https://davidbieber.com/documents/bieber-bot-privacy/</link>
@@ -555,6 +555,445 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lower Bound Tech Tree (Incomplete)</title>
+      <link>https://davidbieber.com/snippets/2023-03-25-tech-tree/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2023-03-25-tech-tree/</guid>
+      
+      <description>&lt;h2 id=&#34;trying-to-reason-about-the-future&#34;&gt;Trying to reason about the future&lt;/h2&gt;
+&lt;p&gt;With all the advances in artificial intelligence, I am trying to wrap my head around where technology is going.
+(I finally feel comfortable saying I work in AI now, not just machine learning!)
+I want to think clearly about what the world will look like in a month, a year, a decade.
+With the rate of advancement happening today, and the wide range of possibilities for where we&amp;rsquo;re headed, coming up with good projections requires careful thinking.&lt;/p&gt;
+&lt;h2 id=&#34;defining-a-lower-bound-tech-tree&#34;&gt;Defining a lower bound tech tree&lt;/h2&gt;
+&lt;p&gt;To help organize my thinking, my idea is to build what I am terming a &lt;strong&gt;lower bound tech tree&lt;/strong&gt;. I&amp;rsquo;ve asked GPT-4 to build such a tree, which you can play with below.&lt;/p&gt;
+&lt;p&gt;A lower bound tech tree is a tool to help you make estimates of the upper bound for how long it will take to reach some minimal (aka lower bound) level of technology (or better!).&lt;/p&gt;
+&lt;p&gt;Take household robots as an example. When will we have robots that can perform a range of domestic activities, like folding laundry, washing and putting away dishes, and cleaning irregular surfaces? For any particular vision of what such a robot might look like, one can come up with an estimate for how long will be before we can realize this vision. E.g. one might imagine a bipedal robot with stereo vision and a 6 DOF arm, and estimate it will be six years before this becomes available for general consumers. However, we might be able to achieve the same purpose (automating domestic activities) sooner via a different vision. Hence, the six year estimate is an estimate of the upper bound on how long it will take to get the level of technology we&amp;rsquo;re interested in, and the capabilities listed constitute a lower bound on the quality of the technology we estimate will be available in that time.&lt;/p&gt;
+&lt;p&gt;One metric that I&amp;rsquo;m interested in is: What fraction of the GitHub issues available on January 1, 2023 can be solved by an automated system? Over time, the issues people open on GitHub will increase in complexity, so to make the metric meaningful, we hold the set of issues that we&amp;rsquo;re interested in fixed, even as the capabilities of our programming tools increases.&lt;/p&gt;
+&lt;p&gt;A technology we might envision is a programming tool where directly in the editor, you can type with natural language text, and it will write the code for you. Another we might envision is being able to open a GitHub issue and have an AI agent open a PR. These are things we can do at one level of quality today, and will be able to do at a much higher level of quality tomorrow. But by the time the quality reaches the point where we will have &amp;ldquo;achieved&amp;rdquo; this technology, will we still need it? I don&amp;rsquo;t have the answer to that question, but that is the line of thinking that leads me to call this a lower bound tech tree.&lt;/p&gt;
+&lt;p&gt;Here, you can play with the Tech Tree that GPT-4 put together. It didn&amp;rsquo;t get too much guidance, so give it a break on its choices of technologies and timelines.&lt;/p&gt;
+&lt;p&gt;The main purpose of this snippet is to post the work-in-progress tech tree visualization that follows that was largely assembled via GPT-4. You can ask it to add additional technologies to the visualization if you first paste in your OpenAI API key (it&amp;rsquo;s never sent to my server, just used locally).&lt;/p&gt;
+&lt;style&gt;
+  #techTreeContainer {
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+    overflow: auto;
+  }
+
+  #techTreeCanvas {
+    display: block;
+  }
+
+  .tech {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    fill: white;
+  }
+
+  .tech rect {
+    fill: #1a8cff;
+  }
+
+  .yearLabel {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    fill: black;
+  }
+
+  #techInput {
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 60%;
+    margin-top: 10px;
+  }
+
+  #submitBtn {
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #1a8cff;
+    background-color: #1a8cff;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  label {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  #apiKeyInput {
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+&lt;/style&gt;
+&lt;div id=&#34;techTreeContainer&#34;&gt;
+  &lt;canvas id=&#34;techTreeCanvas&#34; width=&#34;1000&#34; height=&#34;800&#34;&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;input type=&#34;text&#34; id=&#34;techInput&#34; placeholder=&#34;Enter technology name&#34; /&gt;
+  &lt;button id=&#34;submitBtn&#34;&gt;Submit&lt;/button&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;label for=&#34;apiKeyInput&#34;&gt;OpenAI API Key:&lt;/label&gt;
+  &lt;input type=&#34;text&#34; id=&#34;apiKeyInput&#34; placeholder=&#34;Enter your OpenAI API Key&#34; /&gt;
+&lt;/div&gt;
+&lt;script&gt;
+  const canvas = document.getElementById(&#39;techTreeCanvas&#39;);
+  const ctx = canvas.getContext(&#39;2d&#39;);
+
+  const techTree = [
+    [
+      { id: 4, title: &#39;Deep Q-Networks&#39;, desc: &#39;A combination of deep neural networks and Q-learning, used to solve complex reinforcement learning problems&#39;, x: 100, y: 50 },
+      { id: 5, title: &#39;Policy Gradient Methods&#39;, desc: &#39;A class of reinforcement learning algorithms that optimize the policy directly by computing the gradient of the expected return&#39;, x: 100, y: 150 },
+      { id: 6, title: &#39;Actor-Critic Methods&#39;, desc: &#39;A class of reinforcement learning algorithms that combine both value-based and policy-based methods&#39;, x: 100, y: 250 },
+      { id: 7, title: &#39;Transformers&#39;, desc: &#39;A type of neural network architecture designed for sequence-to-sequence tasks, such as language translation and text summarization&#39;, x: 100, y: 350 },
+      { id: 8, title: &#39;BERT&#39;, desc: &#39;Bidirectional Encoder Representations from Transformers, a pre-trained language model used for various NLP tasks&#39;, x: 100, y: 450 },
+      { id: 9, title: &#39;GPT&#39;, desc: &#39;Generative Pre-trained Transformer, a large-scale language model used for natural language understanding and generation&#39;, x: 100, y: 550 },
+      { id: 10, title: &#39;Convolutional Neural Networks&#39;, desc: &#39;A type of neural network architecture that is particularly effective at processing grid-like input data, such as images&#39;, x: 100, y: 650 },
+      { id: 11, title: &#39;Object Detection&#39;, desc: &#39;A computer vision task that involves identifying and localizing objects within an image or a video&#39;, x: 100, y: 750 },
+      { id: 12, title: &#39;Semantic Segmentation&#39;, desc: &#39;A computer vision task that involves classifying each pixel in an image according to the object or region it belongs to&#39;, x: 100, y: 850 }
+    ],
+    [
+      { id: 1, title: &#39;Reinforcement Learning&#39;, desc: &#39;An area of machine learning that focuses on training models to make decisions by learning from interactions with an environment&#39;, x: 300, y: 100, dependencies: [{id: 4, time: &#39;6 months&#39;}, {id: 5, time: &#39;9 months&#39;}, {id: 6, time: &#39;12 months&#39;}] },
+      { id: 2, title: &#39;Natural Language Processing&#39;, desc: &#39;A subfield of AI that focuses on enabling computers to understand, interpret, and generate human language&#39;, x: 300, y: 300, dependencies: [{id: 7, time: &#39;6 months&#39;}, {id: 8, time: &#39;9 months&#39;}, {id: 9, time: &#39;12 months&#39;}] },
+      { id: 3, title: &#39;Computer Vision&#39;, desc: &#39;A field of AI that enables computers to interpret and understand visual information from the world&#39;, x: 300, y: 600, dependencies: [{id: 10, time: &#39;6 months&#39;}, {id: 11, time: &#39;9 months&#39;}, {id: 12, time: &#39;12 months&#39;}] }
+    ],
+    [
+      { id: 13, title: &#39;Artificial General Intelligence&#39;, desc: &#39;A form of AI that has the ability to understand, learn, and apply knowledge across a wide range of tasks, similar to human intelligence&#39;, x: 500, y: 350, dependencies: [{id: 1, time: &#39;6 months&#39;}, {id: 2, time: &#39;9 months&#39;}, {id: 3, time: &#39;12 months&#39;}] }
+    ]
+  ];
+  const rectWidth = 150;
+  const rectHeight = 50;
+
+  let selectedTech = null;
+  let selectedEdgeTime = null;
+  let offsetX = 0;
+  let offsetY = 0;
+
+  function drawRoundedRect(x, y, width, height, radius) {
+    ctx.beginPath();
+    ctx.moveTo(x + radius, y);
+    ctx.lineTo(x + width - radius, y);
+    ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+    ctx.lineTo(x + width, y + height - radius);
+    ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+    ctx.lineTo(x + radius, y + height);
+    ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+    ctx.lineTo(x, y + radius);
+    ctx.quadraticCurveTo(x, y, x + radius, y);
+    ctx.closePath();
+    ctx.fill();
+  }
+
+  function drawTech(tech) {
+    ctx.fillStyle = &#39;#1a8cff&#39;;
+    drawRoundedRect(tech.x, tech.y, rectWidth, rectHeight, 5);
+
+    ctx.fillStyle = &#39;white&#39;;
+    ctx.font = &#39;14px Arial&#39;;
+    ctx.fillText(tech.title, tech.x + 5, tech.y + 20);
+  }
+
+  function drawTooltip(x, y, text) {
+    draw();
+    const padding = 8;
+    const tooltipWidth = ctx.measureText(text).width + 2 * padding;
+    const tooltipHeight = 20 + padding;
+
+    ctx.beginPath();
+    ctx.rect(x, y, tooltipWidth, tooltipHeight);
+    ctx.fillStyle = &#39;rgba(0, 0, 0, 0.8)&#39;;
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.font = &#39;12px Arial&#39;;
+    ctx.fillStyle = &#39;white&#39;;
+    ctx.fillText(text, x + padding, y + tooltipHeight - padding);
+  }
+
+  function drawDependencies(tech) {
+    if (!tech.dependencies) return;
+
+    tech.dependencies.forEach(dependencyIdTime =&gt; {
+      const dependencyId = dependencyIdTime.id;
+      const dependency = techTree.flat().find(t =&gt; t.id === dependencyId);
+      ctx.beginPath();
+      ctx.moveTo(dependency.x + rectWidth, dependency.y + rectHeight / 2);
+      ctx.lineTo(tech.x, tech.y + rectHeight / 2);
+      ctx.stroke();
+
+      const timeLabelX = (tech.x + dependency.x + rectWidth) / 2;
+      const timeLabelY = (tech.y + dependency.y) / 2;
+
+      ctx.font = &#39;12px Arial&#39;;
+      ctx.fillStyle = &#39;black&#39;;
+      ctx.fillText(dependencyIdTime.time, timeLabelX - ctx.measureText(dependencyIdTime.time).width / 2, timeLabelY);
+      ctx.setTransform(1, 0, 0, 1, 0, 0); // Reset the transformation matrix to avoid unwanted side effects
+
+      // Attach the unique identifier as an attribute
+      ctx.canvas.setAttribute(`time-${dependencyId}-${tech.id}`, `${timeLabelX},${timeLabelY}`);
+    });
+  }
+
+  function drawYearLabels() {
+    for (let i = 0; i &lt; techTree.length; i++) {
+      const xPos = 100 + i * 200;
+      ctx.font = &#39;16px Arial&#39;;
+      ctx.fillStyle = &#39;black&#39;;
+      const yearText = (2022 + i).toString();
+      const textWidth = ctx.measureText(yearText).width;
+      ctx.fillText(yearText, xPos + rectWidth / 2 - textWidth / 2, 50);
+    }
+  }
+
+  function isPointInEdgeTimeLabel(x, y, depIdTime, tech) {
+    const dependency = techTree.flat().find(t =&gt; t.id === depIdTime.id);
+    const timeLabelX = (tech.x + dependency.x + rectWidth) / 2;
+    const timeLabelY = (tech.y + dependency.y) / 2;
+
+    ctx.font = &#39;12px Arial&#39;;
+    const timeLabelWidth = ctx.measureText(depIdTime.time).width;
+    const timeLabelHeight = parseInt(ctx.font, 10);
+
+    const left = timeLabelX - timeLabelWidth / 2;
+    const right = timeLabelX + timeLabelWidth / 2;
+    const top = timeLabelY - timeLabelHeight / 2;
+    const bottom = timeLabelY + timeLabelHeight / 2;
+
+    return x &gt;= left &amp;&amp; x &lt;= right &amp;&amp; y &gt;= top &amp;&amp; y &lt;= bottom;
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawYearLabels();
+
+    techTree.forEach(column =&gt; {
+      column.forEach(tech =&gt; {
+        drawDependencies(tech);
+        drawTech(tech);
+      });
+    });
+  }
+
+  function isPointInRect(x, y, tech) {
+    return x &gt; tech.x &amp;&amp; x &lt; tech.x + rectWidth &amp;&amp; y &gt; tech.y &amp;&amp; y &lt; tech.y + rectHeight;
+  }
+
+  let initialMouseX = 0;
+  let initialEdgeTime = 0;
+  canvas.addEventListener(&#39;mousedown&#39;, e =&gt; {
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    for (const tech of techTree.flat()) {
+      if (isPointInRect(x, y, tech)) {
+        selectedTech = tech;
+        offsetX = x - tech.x;
+        offsetY = y - tech.y;
+        tech.initialX = tech.x;
+        tech.initialY = tech.y;
+        break;
+      }
+    }
+
+    if (!selectedTech) {
+      for (const tech of techTree.flat()) {
+        if (tech.dependencies) {
+          for (const depIdTime of tech.dependencies) {
+            console.log(depIdTime, isPointInEdgeTimeLabel(x, y, depIdTime, tech))
+            if (isPointInEdgeTimeLabel(x, y, depIdTime, tech)) {
+              selectedEdgeTime = { tech, depIdTime };
+              initialMouseX = e.clientX - rect.left;
+              initialEdgeTime = parseInt(selectedEdgeTime.depIdTime.time.match(/\d+/)[0], 10);
+              console.log(initialMouseX);
+              break;
+            }
+          }
+        }
+      }
+    }
+  });
+
+  canvas.addEventListener(&#39;mousemove&#39;, e =&gt; {
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    if (selectedTech) {
+      const newX = x - offsetX;
+      const newY = y - offsetY;
+
+      selectedTech.x = Math.min(Math.max(newX, selectedTech.initialX - 150), selectedTech.initialX + 150);
+      selectedTech.y = Math.min(Math.max(newY, selectedTech.initialY - 150), selectedTech.initialY + 150);
+
+      draw();
+    }
+
+    if (selectedEdgeTime) {
+      const timeChange = Math.round((x - initialMouseX) / 10);
+
+      // Update the time amount based on the initial time value and the time change
+      const newTime = Math.max(initialEdgeTime + timeChange, 1);
+      selectedEdgeTime.depIdTime.time = newTime + &#34; months&#34;;
+      draw();
+    }
+
+    let hoveredTech = null;
+    for (const tech of techTree.flat()) {
+      if (isPointInRect(x, y, tech)) {
+        hoveredTech = tech;
+        break;
+      }
+    }
+
+    if (hoveredTech) {
+      drawTooltip(x, y, hoveredTech.desc);
+    }
+  });
+
+  canvas.addEventListener(&#39;mouseup&#39;, releaseTech);
+  canvas.addEventListener(&#39;mouseleave&#39;, releaseTech);
+
+  function releaseTech() {
+    selectedEdgeTime = null;
+
+    if (!selectedTech) return;
+
+    selectedTech.x = selectedTech.initialX;
+    selectedTech.y = selectedTech.initialY;
+
+    selectedTech = null;
+    draw();
+  }
+
+  async function chatCompletion(text) {
+    const messages = [
+        {
+            role: &#39;system&#39;,
+            content: &#39;You are a helpful assistant.&#39;,
+        },
+        {
+            role: &#39;user&#39;,
+            content: text,
+        }
+    ];
+    const apiKey = &#39;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&#39;;
+    const response = await fetch(&#39;https://api.openai.com/v1/chat/completions&#39;, {
+        method: &#39;POST&#39;,
+        headers: {
+            &#39;Content-Type&#39;: &#39;application/json&#39;,
+            &#39;Authorization&#39;: `Bearer ${apiKey}`,
+        },
+        body: JSON.stringify({
+            &#34;model&#34;: &#34;gpt-4&#34;,
+            &#34;messages&#34;: messages,
+            &#34;temperature&#34;: 0
+        })
+    });
+    const responseData = await response.json();
+    return responseData.choices[0].message.content.trim();
+  }
+
+  async function addTechToTechTree(tech) {
+    const url = &#34;https://api.openai.com/v1/engines/text-davinci-003/completions&#34;;
+    const apiKey = apiKeyInput.value;
+    const headers = {
+      &#39;Content-Type&#39;: &#39;application/json&#39;,
+      &#39;Authorization&#39;: `Bearer ${apiKey}`,
+    };
+
+    // Get description of the technology
+    const descriptionPrompt = `Give a one-line description of the technology: ${tech}`;
+    const description = await chatCompletion(descriptionPrompt);
+    console.log(description);
+
+    // List the existing technologies on the tech tree
+    const existingTechs = techTree.flat();
+    const existingTechsList = existingTechs.map((t, index) =&gt; `${index + 1}. ${t.title}`).join(&#39;\n&#39;);
+
+    // Get dependencies/enabling technologies of the technology
+    const dependenciesPrompt = `We are building a tech tree. The following technologies are already on our tech tree:
+${existingTechsList}
+
+List the dependencies or enabling technologies of ${tech}.
+Include any of the technologies from the tech tree that are enabling technologies of ${tech}, as well as any such technologies not already on the tech tree.
+
+List just one technology per line, and just the name of the technology (no descriptions, no line numbers, no bullet points, no blank lines).
+`;
+    const dependenciesText = await chatCompletion(dependenciesPrompt);
+    console.log(dependenciesText);
+    const allDependencies = dependenciesText.split(&#39;\n&#39;).map(dep =&gt; dep.trim());
+
+    // Filter dependencies based on existing technologies
+    const filteredDependencies = allDependencies.filter(dep =&gt; existingTechs.some(existingTech =&gt; existingTech.title === dep));
+
+    // Add the technology and its information to the techTree data
+    const newTech = {
+      id: techTree.flat().length + 1,
+      title: tech,
+      desc: description,
+      x: 100 + (techTree.length - 1) * 200,
+      y: 100 + (techTree[techTree.length - 1].length) * 100,
+      dependencies: filteredDependencies.map(dep =&gt; ({ id: existingTechs.find(existingTech =&gt; existingTech.title === dep).id, time: &#39;6 months&#39; })),
+    };
+    techTree[techTree.length - 1].push(newTech);
+
+    // Redraw the tech tree
+    draw();
+  }
+
+  const techInput = document.getElementById(&#39;techInput&#39;);
+  const submitBtn = document.getElementById(&#39;submitBtn&#39;);
+
+  techInput.addEventListener(&#39;keyup&#39;, (e) =&gt; {
+    if (e.key === &#39;Enter&#39;) {
+      addTechToTechTree(techInput.value);
+      techInput.value = &#39;&#39;;
+    }
+  });
+
+  submitBtn.addEventListener(&#39;click&#39;, () =&gt; {
+    addTechToTechTree(techInput.value);
+    techInput.value = &#39;&#39;;
+  });
+
+  const apiKeyInput = document.getElementById(&#39;apiKeyInput&#39;);
+
+  function saveAPIKey() {
+    localStorage.setItem(&#39;openai_api_key&#39;, apiKeyInput.value);
+  }
+
+  function loadAPIKey() {
+    const storedAPIKey = localStorage.getItem(&#39;openai_api_key&#39;);
+    if (storedAPIKey) {
+      apiKeyInput.value = storedAPIKey;
+    }
+  }
+
+  apiKeyInput.addEventListener(&#39;input&#39;, saveAPIKey);
+
+  // Load the API key from local storage when the page loads
+  loadAPIKey();
+  draw();
+&lt;/script&gt;
 </description>
     </item>
     
