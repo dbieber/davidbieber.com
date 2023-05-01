@@ -4,7 +4,7 @@ date = 2021-01-23T05:14:00
 uid = "now-page"
 +++
 
-_Last updated on 2023-04-28._
+_Last updated on 2023-05-01._
 
 Welcome to my "Now" page. This page aims to give you an idea of what I'm up to now. It's necessarily always out of date.
 
