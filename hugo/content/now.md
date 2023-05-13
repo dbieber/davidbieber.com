@@ -4,7 +4,7 @@ date = 2021-01-23T05:14:00
 uid = "now-page"
 +++
 
-_Last updated on 2023-05-01._
+_Last updated on 2023-05-13._
 
 Welcome to my "Now" page. This page aims to give you an idea of what I'm up to now. It's necessarily always out of date.
 
@@ -17,10 +17,10 @@ Highlights these days are:
 writing [snippets](/snippets),
 and exploring [tools to reduce cognitive friction](https://roamresearch.com/#/app/commons-db/page/ofrV-unjU).
 
-Thinking about AI assistants (voice and conversational) like Bieber Bot and beyond.
+I'm thinking about AI assistants (voice, conversational, and more) like Bieber Bot and beyond.
 ChatGPT and GPT-4 are the most exciting technologies I've ever had the pleasure of using.
 Since November, I routinely have waves of AI-induced anxiety.
 
-I'm reading [Pride and Prejudice](https://www.goodreads.com/book/show/1885.Pride_and_Prejudice) and [The Decipherment of Linear B](https://www.goodreads.com/hu/book/show/384070).
+I'm reading [Good Inside](https://www.goodreads.com/en/book/show/59627738), [Pride and Prejudice](https://www.goodreads.com/book/show/1885.Pride_and_Prejudice) and [The Decipherment of Linear B](https://www.goodreads.com/hu/book/show/384070).
 
-I'm also preparing to defend my PhD on May 15. Wish me luck!
+I'm also defending my PhD on May 15. Wish me luck!
