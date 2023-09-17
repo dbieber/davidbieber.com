@@ -5,7 +5,7 @@ tags = ["music", "taking-silly-ideas-seriously"]
 keywords = ["violin"]
 +++
 
-This an interactive little page. If you have a violin handy, go ahead and play a note or two, and watch the finger diagrams change. If you don't have a violin on you, you can try singing instead. Scroll down for details about what's going on here.
+This is an interactive little page. If you have a violin handy, go ahead and play a note or two, and watch the finger diagrams change. If you don't have a violin on you, you can try singing instead. Scroll down for details about what's going on here.
 
 <script defer="defer" src="/snippets/2023-09-17-violin-tuner/app/static/js/main.7306df6c.js"></script>
 <noscript>You need to enable JavaScript to run this app.</noscript>
