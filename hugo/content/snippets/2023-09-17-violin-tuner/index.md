@@ -15,6 +15,6 @@ This an interactive little page. If you have a violin handy, go ahead and play a
 
 Each diagram shows the violin finger positions for a different scale. When you play a note, the page shows the pitch you're playing as a magenta line. The closest note will be highlighted in dark blue. If the note precisely goes through the center of the circle, it's in tune.
 
-These twenty-four diagrams above show the notes accessible in first position on the violin in each of the major and minor scales. Consider each diagram in isolation. The note highlighted in light blue is the root note of the scale. The finger position of all notes in the scale are labeled.
+These twenty-four diagrams above show the notes accessible in first position on the violin in each of the major and minor scales. Consider each diagram in isolation. The note highlighted in light blue is the root note of the scale. The finger positions for all the notes in the scale are labeled.
 
 To use this page as a tuner, try to make the magenta line precisely line up with the centers of the circles. The scales I'm practicing are highlighted in blue.
