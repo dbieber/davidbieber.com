@@ -6,7 +6,27 @@
     <description>Recent content in Tags on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Sep 2023 03:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>music</title>
+      <link>https://davidbieber.com/tags/music/</link>
+      <pubDate>Sun, 17 Sep 2023 03:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/music/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>taking-silly-ideas-seriously</title>
+      <link>https://davidbieber.com/tags/taking-silly-ideas-seriously/</link>
+      <pubDate>Sun, 17 Sep 2023 03:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/taking-silly-ideas-seriously/</guid>
+      
+      <description></description>
+    </item>
+    
     <item>
       <title>aspirational-intent</title>
       <link>https://davidbieber.com/tags/aspirational-intent/</link>
@@ -23,16 +43,6 @@
       <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/tags/goals/</guid>
-      
-      <description></description>
-    </item>
-    
-    <item>
-      <title>music</title>
-      <link>https://davidbieber.com/tags/music/</link>
-      <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidbieber.com/tags/music/</guid>
       
       <description></description>
     </item>
@@ -123,16 +133,6 @@
       <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/tags/machine-learning/</guid>
-      
-      <description></description>
-    </item>
-    
-    <item>
-      <title>taking-silly-ideas-seriously</title>
-      <link>https://davidbieber.com/tags/taking-silly-ideas-seriously/</link>
-      <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidbieber.com/tags/taking-silly-ideas-seriously/</guid>
       
       <description></description>
     </item>

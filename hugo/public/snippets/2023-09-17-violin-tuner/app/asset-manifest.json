@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/snippets/2023-09-17-violin-tuner/app/static/css/main.37135e63.css",
+    "main.js": "/snippets/2023-09-17-violin-tuner/app/static/js/main.7306df6c.js",
+    "static/js/787.02f7f294.chunk.js": "/snippets/2023-09-17-violin-tuner/app/static/js/787.02f7f294.chunk.js",
+    "index.html": "/snippets/2023-09-17-violin-tuner/app/index.html",
+    "main.37135e63.css.map": "/snippets/2023-09-17-violin-tuner/app/static/css/main.37135e63.css.map",
+    "main.7306df6c.js.map": "/snippets/2023-09-17-violin-tuner/app/static/js/main.7306df6c.js.map",
+    "787.02f7f294.chunk.js.map": "/snippets/2023-09-17-violin-tuner/app/static/js/787.02f7f294.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37135e63.css",
+    "static/js/main.7306df6c.js"
+  ]
+}

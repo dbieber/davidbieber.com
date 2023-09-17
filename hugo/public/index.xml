@@ -6,7 +6,7 @@
     <description>Recent content on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Sep 2023 03:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bieber Bot Privacy Policy</title>
       <link>https://davidbieber.com/documents/bieber-bot-privacy/</link>
@@ -555,6 +555,25 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Violin Tuner Experiment</title>
+      <link>https://davidbieber.com/snippets/2023-09-17-violin-tuner/</link>
+      <pubDate>Sun, 17 Sep 2023 03:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2023-09-17-violin-tuner/</guid>
+      
+      <description>&lt;p&gt;This an interactive little page. If you have a violin handy, go ahead and play a note or two, and watch the finger diagrams change. If you don&amp;rsquo;t have a violin on you, you can try singing instead. Scroll down for details about what&amp;rsquo;s going on here.&lt;/p&gt;
+&lt;script defer=&#34;defer&#34; src=&#34;https://davidbieber.com/snippets/2023-09-17-violin-tuner/app/static/js/main.7306df6c.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;&lt;/p&gt;
+&lt;div id=&#34;root&#34;&gt;&lt;/div&gt;
+&lt;h3 id=&#34;what-is-this&#34;&gt;What is this?&lt;/h3&gt;
+&lt;p&gt;Each diagram shows the violin finger positions for a different scale. When you play a note, the page shows the pitch you&amp;rsquo;re playing as a magenta line. The closest note will be highlighted in dark blue. If the note precisely goes through the center of the circle, it&amp;rsquo;s in tune.&lt;/p&gt;
+&lt;p&gt;These twenty-four diagrams above show the notes accessible in first position on the violin in each of the major and minor scales. Consider each diagram in isolation. The note highlighted in light blue is the root note of the scale. The finger position of all notes in the scale are labeled.&lt;/p&gt;
+&lt;p&gt;When you play a note on the violin, the page shows the note you&amp;rsquo;re playing as a magenta line. To use this page as a tuner, try to make the magenta line precisely line up with the centers of the circles.&lt;/p&gt;
+&lt;p&gt;The scales I&amp;rsquo;m practicing are highlighted in blue.&lt;/p&gt;
 </description>
     </item>
     
