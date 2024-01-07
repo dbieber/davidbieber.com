@@ -6,7 +6,27 @@
     <description>Recent content in taking-silly-ideas-seriously on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Sep 2023 03:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/taking-silly-ideas-seriously/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Jan 2024 03:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/taking-silly-ideas-seriously/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Strategic Life Thinking</title>
+      <link>https://davidbieber.com/snippets/2024-01-06-strategic-life-thinking/</link>
+      <pubDate>Sat, 06 Jan 2024 03:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2024-01-06-strategic-life-thinking/</guid>
+      
+      <description>&lt;p&gt;I stumbled on this 
+&lt;a href=&#34;https://www.youtube.com/watch?v=dbiNhAZlXZk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;YouTube video&lt;/a&gt; today called &amp;ldquo;Use Strategic Thinking to Create the Life You Want&amp;rdquo; and surprised myself by enjoying the video. Among other things, it suggested plotting out sixteen different aspects of your life according to how important they are to you, and how satisfied you are with them. Once you&amp;rsquo;ve done that, you can use this plot to start thinking about any adjustments you might want to make in your behaviors.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Gee, with ChatGPT I could probably throw together a widget for this exercise in under half an hour,&amp;rdquo; I thought to myself. Its the sort of prediction you might expect to be a dramatic underestimate. Not this time though. Here&amp;rsquo;s the finished product with instructions below:&lt;/p&gt;
+&lt;link href=&#34;https://davidbieber.com/snippets/2024-01-06-strategic-life-thinking/app/static/css/main.e9bd4978.css&#34; rel=&#34;stylesheet&#34;&gt;
+&lt;script defer=&#34;defer&#34; src=&#34;https://davidbieber.com/snippets/2024-01-06-strategic-life-thinking/app/static/js/main.4f983d6d.js&#34;&gt;&lt;/script&gt;
+&lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;
+&lt;div id=&#34;root&#34;&gt;&lt;/div&gt;
+&lt;br/&gt;
+&lt;p&gt;The exercise is to rate the importance of each of these sixteen areas on a scale from 0-10, and to rate how satisfied you are with each area also on a scale from 0-10. The widget will automatically plot the areas as you&amp;rsquo;re rating them. You can also click and drag the circles around, if you&amp;rsquo;d prefer to rate the areas that way.&lt;/p&gt;
+&lt;p&gt;Want to work on community, societal engagement, or friendship? Send me a screenshot of your final plot ;).&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Violin Tuner Experiment</title>
       <link>https://davidbieber.com/snippets/2023-09-17-violin-tuner/</link>

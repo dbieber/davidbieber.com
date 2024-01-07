@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/snippets/2024-01-06-strategic-life-thinking/app/static/css/main.e9bd4978.css",
+    "main.js": "/snippets/2024-01-06-strategic-life-thinking/app/static/js/main.4f983d6d.js",
+    "static/js/787.c2208f8a.chunk.js": "/snippets/2024-01-06-strategic-life-thinking/app/static/js/787.c2208f8a.chunk.js",
+    "index.html": "/snippets/2024-01-06-strategic-life-thinking/app/index.html",
+    "main.e9bd4978.css.map": "/snippets/2024-01-06-strategic-life-thinking/app/static/css/main.e9bd4978.css.map",
+    "main.4f983d6d.js.map": "/snippets/2024-01-06-strategic-life-thinking/app/static/js/main.4f983d6d.js.map",
+    "787.c2208f8a.chunk.js.map": "/snippets/2024-01-06-strategic-life-thinking/app/static/js/787.c2208f8a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9bd4978.css",
+    "static/js/main.4f983d6d.js"
+  ]
+}
