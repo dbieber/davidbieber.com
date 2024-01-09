@@ -8,6 +8,34 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/snippets/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Less Twitter. Less Facebook. Less HackerNews.</title>
+      <link>https://davidbieber.com/snippets/2024-01-08-less-twitter/</link>
+      <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2024-01-08-less-twitter/</guid>
+      
+      <description>&lt;p&gt;Over the years I&amp;rsquo;ve accumulated 
+&lt;a href=&#34;https://davidbieber.com/snippets/2022-03-18-attention-strategies/&#34;&gt;dozens of strategies&lt;/a&gt; for managing my attention, including amazing Chrome extensions from Namu like 
+&lt;a href=&#34;https://chrome.google.com/webstore/detail/intention-stop-mindless-b/dladanhaondcgpahgiflodhckhoeohoe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Intention&lt;/a&gt; and 
+&lt;a href=&#34;https://www.hidefeed.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hide feed&lt;/a&gt;. Nevertheless, I continue to get sucked into the Internet&amp;rsquo;s 
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-10-01-infinite-distractions-and-getting-a-good-sear/&#34;&gt;six infinite distractions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So today (well, yesterday really), I&amp;rsquo;m taking matters into my own hands, and building some Chrome extensions to help me manage these distractions on my own terms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Twitter and Facebook.&lt;/strong&gt; I&amp;rsquo;ve noticed that when I&amp;rsquo;m scrolling on Twitter or Facebook, and I want to stop, I sometimes find it difficult because &lt;em&gt;&amp;ldquo;just one more post&amp;rdquo;&lt;/em&gt; or &lt;em&gt;&amp;ldquo;that looks interesting&amp;rdquo;&lt;/em&gt;. That is, I&amp;rsquo;ll see a half-visible post at the bottom of my screen, and I&amp;rsquo;ll tell myself I&amp;rsquo;ll just look at that one post, and then I&amp;rsquo;ll be done. But by the time I&amp;rsquo;ve looked at that post, a different post is now half-visible, and it&amp;rsquo;s captured my attention as well.&lt;/p&gt;
+&lt;p&gt;So, my proposal is: I&amp;rsquo;ll only make posts visible once they are fully on the screen. No more half-visible Tweets. No more half-visible Facebook posts.&lt;/p&gt;
+&lt;p&gt;Turns out making such a Chrome extension is remarkably easy, especially with language models available to assist with the boilerplate. Let me show you some before and after photos&amp;hellip; actually, just the after; I don&amp;rsquo;t want to get any practice disabling this thing!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/snippets/2024-01-08-less-twitter/less-twitter.gif&#34; alt=&#34;I am scrolling on Twitter. Posts only appear once they are fully visible in the browser&amp;rsquo;s view port.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;As you can see in the gif, I am scrolling on Twitter, and posts only appear once they are fully visible in the browser&amp;rsquo;s view port.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s not perfect; I still will scroll just to bring something closer to my eye level, which can cause additional posts to appear. But I think it&amp;rsquo;s a big improvement on the default. Only time will tell.&lt;/p&gt;
+&lt;p&gt;My hope is that by not having partially visible posts at the bottom of the screen, it will be less addicting, and easier to get off the site.&lt;/p&gt;
+&lt;p&gt;I did the same for Facebook. For HackerNews, I took a different tact.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HackerNews.&lt;/strong&gt; On HackerNews, my obvervation is that I will sometimes continue digging, 5+ pages into HackerNews, looking for something interesting. This is silly; I don&amp;rsquo;t need five pages of HackerNews content. If I don&amp;rsquo;t satisfy my itch for news in thirty articles, 120 articles isn&amp;rsquo;t likely to do any better. But I don&amp;rsquo;t want to be heavy handed; blocking the site or removing the more button might simply cause me to learn workarounds for my blocker. For a gentler touch, I&amp;rsquo;m going to change the More link to link back to the first page. My habit is to click the more link, so I&amp;rsquo;m going to tab into that habit to help break it, gently. We&amp;rsquo;ll see how this goes.&lt;/p&gt;
+&lt;p&gt;Going to post this snippet as is so I can get it out and get some sleep. But I intend on releasing the Chrome extensions too. Each one is just a small amount of JavaScript, trivial to create but hopefully significant in impact. There are three in total, called Less Twitter, Less Facebook, and Less HackerNews respectively.&lt;/p&gt;
+&lt;p&gt;Finally, I&amp;rsquo;ll also note Kudos / Gratitude to Unhook for making a YouTube-management Chrome extension that I&amp;rsquo;ve started using as well.&lt;/p&gt;
+&lt;p&gt;Good browsing and good night!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Strategic Life Thinking</title>
       <link>https://davidbieber.com/snippets/2024-01-06-strategic-life-thinking/</link>
       <pubDate>Sat, 06 Jan 2024 03:00:00 +0000</pubDate>
