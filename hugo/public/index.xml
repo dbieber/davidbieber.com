@@ -6,7 +6,7 @@
     <description>Recent content on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bieber Bot Privacy Policy</title>
       <link>https://davidbieber.com/documents/bieber-bot-privacy/</link>
@@ -555,6 +555,58 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Choosing My Own Morning Routines</title>
+      <link>https://davidbieber.com/snippets/2024-05-15-choosing-routines/</link>
+      <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2024-05-15-choosing-routines/</guid>
+      
+      <description>&lt;p&gt;For months I&amp;rsquo;ve been waking up to the sound of my printer. Brr&amp;hellip; Brbrr&amp;hellip; Br. brr&amp;hellip;
+It would print me a custom morning routine, following a randomized algorithm I put together.
+It would always start with the simple instruction &amp;ldquo;brush your teeth&amp;rdquo;, followed by a handful of activities.
+It would suggest an exercise, sometimes HIIT, sometimes yoga, sometimes running or table tennis, etc.
+It would suggest something more artistic or leisurely. Perhaps to draw, or to meditate, or to play piano.
+I never knew what was coming. I didn&amp;rsquo;t even know when the routines would come; in order to maximize their efficacy and prevent their power over me from diminishing, my printer wouldn&amp;rsquo;t give me a randomized routine every day. No, it would do so at random, on about 25% of days.&lt;/p&gt;
+&lt;p&gt;For months I loved this system. Waking up to routine felt good, and I would make a real effort to follow whatever plan it laid out for me. I loved it so much I set up a similar system for evenings, where again my printer would (some days, at random) suggest a wind-down routine for me to get ready for bed.&lt;/p&gt;
+&lt;p&gt;Two weeks ago, I stopped using this system.&lt;/p&gt;
+&lt;p&gt;My printer no longer prints routines for me in the mornings (or in the evenings). I&amp;rsquo;ve switched to selecting my morning routines myself. Now, every night before I go to sleep I set out on paper a routine that I&amp;rsquo;ll be excited to follow the morning after. I tend to follow a similar format to what I programmed into my printer (tooth brushing, exercise, shower and shave, short activity, breakfast), though I deviate from this structure more than the printer knew how to. I loved my printer system though, so why did I switch away?&lt;/p&gt;
+&lt;p&gt;I was still deriving tremendous joy from the printer-based routine system at the time I switched away. This was especially true for the evening routines; when I would hear one of those printing, it would light up my night! It felt as if I suddenly had a sense of purpose (I am embarrassed to admit). Perhaps I was scrolling mindlessly before, regretfully; now I had clear tasks to do, that past me and current me looked favorably upon. For the morning routines, I estimate I was still following 90%+ of the tasks it was choosing for me at the time I decided to switch away. I was noticing, however, that I was becoming accustomed to the routines and I felt the system&amp;rsquo;s effectiveness declining. There were an increasing number of days when I would overrule the printed routine, having something different for breakfast, or doing a different activity than the one it suggested.&lt;/p&gt;
+&lt;p&gt;My first inclination was to enhance the routine generator. Maybe I could improve the algorithm, adding more variation to my morning routines. I could have the system use a language model to present the routine to me as a koan, or poem, or story, rather than a mere numbered list. I could have the system take into account my notes from the previous day when it decides what activities to recommend I pursue in the morning.&lt;/p&gt;
+&lt;p&gt;I implemented these changes. Certainly I was amused by the resulting routines. The system started suggesting podcasts that I&amp;rsquo;d discovered the previous day, and writing poetry for me. But I didn&amp;rsquo;t end up keeping this improved routine generation algorithm; instead, just a day or two after building it, I migrated to writing my own routines: On paper. By hand. For two weeks now I&amp;rsquo;ve been choosing my morning routine the night before, writing it on paper, and then following it the next morning.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s break down the changes involved here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Printed → Hand-written&lt;/li&gt;
+&lt;li&gt;Noisy awakening (brrbrr) → Silent&lt;/li&gt;
+&lt;li&gt;Day-of → Night before&lt;/li&gt;
+&lt;li&gt;Machine-generated → Self-selected&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I think the most significant of these changes is the switch from being told what to do to self-determination.
+When I pick my routines myself, I&amp;rsquo;m practicing decision making. I&amp;rsquo;m looking inward at what activities feel right for me for the following morning, tuning in to how my body feels. Do I want intense exercise or something gentle? Do I want something cerebral? Something active or passive? How energized do I expect to feel the next day? Contrast this with the machine-generated morning routines, which were mostly random, at best learning about me from my notes, but never truly adapting to my current state of being.&lt;/p&gt;
+&lt;p&gt;I find I know myself better than chance. And by making these predictions actively &amp;ndash; &amp;ldquo;what will Tomorrow David be feeling?&amp;rdquo; &amp;ndash; I learn about myself. Each morning when I go through the routine, I cannot help but get feedback in the form of how I feel doing the routine, that helps me get to know myself even better.&lt;/p&gt;
+&lt;p&gt;The other smaller changes are interesting to note too. Deciding on the routine the night before rather than the morning of means I have something explicit to look forward to. I no longer have the surprise of waking up to find out what my routine will be, which I liked, but now I have concrete activities planned, which can build anticipation. And since I know that I selected the activities myself, well, it almost doesn&amp;rsquo;t make sense not to look forward to them (kind of; depends on what I&amp;rsquo;ve selected, I suppose). One of my goals with this new routine set up is to wake up feeling energized, excited to leap out of bed and start the day. Hopefully this setup helps me feel this more often.&lt;/p&gt;
+&lt;p&gt;Hand-writing the morning routines, rather than having them printed, is another step towards intentionality. Perhaps through the act of hand-writing, I&amp;rsquo;ll feel more ownership over the routine I come up with, and will be more likely to follow it and feel good about it. I don&amp;rsquo;t know for certain that this would be different if I were to manually type and print the routines. Perhaps one day I&amp;rsquo;ll run the experiment, but for now I&amp;rsquo;ll just try to listen to myself and try to understand the extent to which this makes a difference.&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;
+Here&#39;s an example of one of my written routines (Click the arrow to expand).
+&lt;/summary&gt;
+✅ 1. Brush teeth&lt;br/&gt;
+✅ 2. Table tennis loops (6m)&lt;br/&gt;
+✅ 3. Draft snippet (&lt;12m)&lt;br/&gt;
+✅ 4. Dynamic Chess (&lt;12m)&lt;br/&gt;
+✅ 5. Sh + Sh (Shower and shave) (&lt;12m)&lt;br/&gt;
+✅ 6. Chicken spinach scramble + cottage cheese w/ Dvořák No.9&lt;br/&gt;
+&lt;/details&gt;&lt;br/&gt;
+&lt;p&gt;Yes, I do genuinely include brushing my teeth as well as showering and shaving in my written routine every day.&lt;/p&gt;
+&lt;p&gt;There are some things I miss about the previous, fully automated system. I miss in particular the joy that would come with hearing the printer start in the &lt;em&gt;evening&lt;/em&gt;. My new system doesn&amp;rsquo;t have a good way to accommodate evening routines yet, and this is something I&amp;rsquo;d like to fix. I also miss the novelty of having a printer choose my routines. There was something thrilling about that, simply because it was different. And I do miss the element of surprise or randomness too. Something about putting the decision into someone/something else&amp;rsquo;s hands felt good. So, even though I prefer the self-determination aspects of the new system overall, there is still a part of me that really likes and misses that element of handing off control to the machine.&lt;/p&gt;
+&lt;p&gt;Putting decision making in someone else&amp;rsquo;s hands can feel really good, like having a coach or personal trainer. It lessens the burden on me, offloading some thinking and decision making onto someone else. There is a time and place for this, as well as one for owning one&amp;rsquo;s own thinking and decision making. I am confident that going through the many months of having the computer decide the morning routines has set me up to be better at making the morning routines myself. And this likely translates to other domains like exercise; having a personal trainer for months likely makes one more capable of training on their own, without the need for a personal trainer. When this happens, there are still benefits to be had from a personal trainer, but they are different from those at the start of training. The same is likely true with my automated system; I suspect I can still get a lot out of moving back to a printer-based lifestyle, but when I do, it will likely be with a different game plan for how the printer will get involved in my life.&lt;/p&gt;
+&lt;p&gt;Some aspects of the current system I&amp;rsquo;d like to improve include: the absence of evening planning, the lack of integration with my notes, and a potential to drift away if disrupted by travel. The printer used to suggest evening plans sometimes, and I would absolutely love it when it did so. This system is off now, and I miss the joy it would bring me. I don&amp;rsquo;t see a good way to migrate to a hand-written evening routine approach, since I don&amp;rsquo;t know when I would prepare the evening routines. This is a problem I&amp;rsquo;d like to return to.&lt;/p&gt;
+&lt;p&gt;To improve the notes integration, I have mounted a camera above my desk. I intend to write software that uses the overhead camera to digitize my handwritten plans and ingest them into my notes. Once there, my other personal software systems can do things like keep track of how recently I&amp;rsquo;ve played violin to remind me if I&amp;rsquo;ve fallen out of the habit. I&amp;rsquo;ll also have a more permanent record of my morning routines which I can search through or reference later in life, which is comforting somehow.&lt;/p&gt;
+&lt;p&gt;Having such an integration would also allow Bieber Bot to nudge me if I drift away from my morning routine prep habit for too long, which I think we&amp;rsquo;d both appreciate.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been doing morning routine prep in this new fashion for several weeks now (two weeks when I started writing this piece; five at the time of publication). I am still enthralled by it, and so I am reasonably confident it will persist as a new habit even with the habit-disruption of a busy summer of travel upon me. Though the possibility of disruption to the habit looms, I&amp;rsquo;ve found enough joy in it so far, and I&amp;rsquo;ve found myself drawn to keep making the routines so often, that I strongly suspect this new practice is here to stay. Time will tell, and we shall see.&lt;/p&gt;
 </description>
     </item>
     
