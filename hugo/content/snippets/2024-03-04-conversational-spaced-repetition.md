@@ -16,8 +16,8 @@ If I demonstrate an understanding of the material, then they should resurface th
 
 A few key questions arise in considering the details of this system:
 * How does an LLM determine what material it has taught you?
-* Does this system require two-sided flashcards, the same as for regular Anki-style spaced repetition, or does the conversational nature of this proposal admit a different unit of material.
-* What is the mechanism by which an LLM can surface something proactively? Or does the human user need to initiate a review system?
+* Does this system require two-sided flashcards, the same as for regular Anki-style spaced repetition, or does the conversational nature of this proposal admit a different unit of material?
+* What is the mechanism by which an LLM can surface something proactively? Or does the human user need to initiate a review session?
 * Does the spacing algorithm change as a result of the interactions being conversational, or can the older battle-tested spaced repetition algorithms be reused in this new environment?
 * Does the nature of the per-question feedback (right vs wrong; hard vs easy) change since the interactions are conversational? If so, this certainly necessitates changes to the spacing algorithm.
 * How do we deal with the untrustworthiness of today's LLMs?
@@ -35,7 +35,7 @@ If the goal is to produce traditional spaced repetition cards, then having (1) g
 
 However, the target unit of knowledge might not be traditional spaced repetition cards; it might be something new. This leads us to the next question: what is the desired unit of knowledge?
 
-**Does this system require two-sided flashcards, the same as for regular Anki-style spaced repetition, or does the conversational nature of this proposal admit a different unit of material.**
+**Does this system require two-sided flashcards, the same as for regular Anki-style spaced repetition, or does the conversational nature of this proposal admit a different unit of material?**
 
 Let's brainstorm the alternatives. (A) Traditional two-sided flashcards. (B) Statements of facts. (C) Arbitrary text, which could contain questions and answers or could just be a passage with the material. (D) A pointer into the original conversation, e.g. a document URL and a span. The reason we have so many more choices is that our use of LLMs for the system affords us great flexibility in how we represent information. LLMs are versatile and can process arbitrary text. The degree of reliability we get out of an LLM might vary according to the representation we select, but each of these four choices is reasonable and worthy of consideration.
 
@@ -49,7 +49,7 @@ Option (D) is the information-maximizing approach, assuming no maintenance of th
 
 My initial leaning is therefore toward Option (C), but I intend this piece to be more about opening the topic for discussion than arriving at particular answers or design decisions.
 
-**What is the mechanism by which an LLM can surface something proactively? Or does the human user need to initiate a review system?**
+**What is the mechanism by which an LLM can surface something proactively? Or does the human user need to initiate a review session?**
 
 The significance of this question is: how will these review sessions get started? If we're relying on the human to remember to initiate one, that's prone to their forgetting. If an LLM is proactively interrupting a user's day, that's prone to be distracting or annoying. Striking a user friendly middle ground is key! Notifications are a touchy subject, where we must ultimately give users control so they can get reminders in ways that are kind to their mind.
 
