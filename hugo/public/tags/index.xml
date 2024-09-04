@@ -6,7 +6,27 @@
     <description>Recent content in Tags on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>snippets</title>
+      <link>https://davidbieber.com/tags/snippets/</link>
+      <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/snippets/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>writing</title>
+      <link>https://davidbieber.com/tags/writing/</link>
+      <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/tags/writing/</guid>
+      
+      <description></description>
+    </item>
+    
     <item>
       <title>aspirational-intent</title>
       <link>https://davidbieber.com/tags/aspirational-intent/</link>
@@ -98,16 +118,6 @@
     </item>
     
     <item>
-      <title>writing</title>
-      <link>https://davidbieber.com/tags/writing/</link>
-      <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidbieber.com/tags/writing/</guid>
-      
-      <description></description>
-    </item>
-    
-    <item>
       <title>note-taking</title>
       <link>https://davidbieber.com/tags/note-taking/</link>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
@@ -123,16 +133,6 @@
       <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/tags/go-note-go/</guid>
-      
-      <description></description>
-    </item>
-    
-    <item>
-      <title>snippets</title>
-      <link>https://davidbieber.com/tags/snippets/</link>
-      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidbieber.com/tags/snippets/</guid>
       
       <description></description>
     </item>
