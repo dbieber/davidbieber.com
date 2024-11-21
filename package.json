@@ -18,7 +18,11 @@
   "homepage": "https://github.com/dbieber/davidbieber.com#readme",
   "dependencies": {
     "@juggle/resize-observer": "^3.2.0",
-    "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2"
-  }
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "parcel-bundler": "^1.12.5"
+  },
+  "keywords": []
 }
