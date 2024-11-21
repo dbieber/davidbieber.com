@@ -9,10 +9,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           path: davidbieber.com-main
-      - uses: actions/setup-node@v1
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # Explicitly set Node.js version
 
       - name: Install dependencies
         run: ./davidbieber.com-main/.github/scripts/install.sh
@@ -22,7 +25,7 @@ jobs:
         run: ./davidbieber.com-main/.github/scripts/build.sh
         shell: bash
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: deploy
           path: davidbieber.com-deploy

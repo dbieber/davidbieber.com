@@ -13,7 +13,13 @@
   {{ $superuser_role := "" }}
   {{ range first 1 (where (where site.Pages "Section" "authors") "Params.superuser" true) }}
     {{ $superuser_name = .Params.name }}
-    {{ $superuser_username = path.Base (path.Split .Path).Dir }}
+    {{ $path := "" }}
+    {{ with .File }}
+      {{ $path = .Path }}
+    {{ else }}
+      {{ $path = .Path }}
+    {{ end }}
+    {{ $superuser_username = path.Base (path.Split $path).Dir }}
     {{ $superuser_role = .Params.role }}
   {{ end }}
   {{ $scr.Set "superuser_username" $superuser_username }}{{/* Set superuser globally for page_author.html. */}}

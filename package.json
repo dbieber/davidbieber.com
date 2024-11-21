@@ -4,7 +4,7 @@
   "description": "This is the source for my personal website davidbieber.com.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,25 @@
   },
   "homepage": "https://github.com/dbieber/davidbieber.com#readme",
   "dependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
     "@juggle/resize-observer": "^3.2.0",
+    "babel-loader": "^9.2.1",
+    "babel-preset-react-app": "^3.1.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
     "babel-cli": "^6.26.0",
-    "babel-preset-react-app": "^3.1.2"
-  }
+    "css-loader": "^7.1.2",
+    "parcel-bundler": "^1.12.5",
+    "postcss": "^8.4.49",
+    "postcss-loader": "^8.1.1",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^3.4.15"
+  },
+  "keywords": []
 }
