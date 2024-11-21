@@ -1,90 +1,39 @@
 import React from 'react';
+import './styles.css';
 
 const JellybeanJar = () => {
-  // Generate random positions for jellybeans
   const jellybeans = Array.from({ length: 15 }, (_, i) => ({
     id: i,
-    color: ['#F87171', '#60A5FA', '#FBBF24', '#34D399', '#A78BFA', '#EC4899'][Math.floor(Math.random() * 6)],
+    color: ['bg-pink-400', 'bg-blue-400', 'bg-yellow-400', 'bg-green-400', 'bg-purple-400', 'bg-red-400'][Math.floor(Math.random() * 6)],
     left: 20 + Math.random() * 60,
     top: 40 + Math.random() * 40,
   }));
 
-  const styles = {
-    container: {
-      position: 'relative',
-      width: '192px',
-      height: '256px',
-      margin: '20px auto',
-    },
-    lid: {
-      position: 'absolute',
-      top: 0,
-      left: '50%',
-      transform: 'translateX(-50%)',
-      width: '96px',
-      height: '24px',
-      backgroundColor: '#D1D5DB',
-      borderRadius: '24px 24px 0 0',
-      zIndex: 20,
-    },
-    jarBody: {
-      position: 'absolute',
-      top: '16px',
-      left: '50%',
-      transform: 'translateX(-50%)',
-      width: '128px',
-      height: '224px',
-      backgroundColor: '#F3F4F6',
-      borderRadius: '24px',
-      overflow: 'hidden',
-    },
-    highlight: {
-      position: 'absolute',
-      top: 0,
-      left: '8px',
-      width: '8px',
-      height: '100%',
-      backgroundColor: 'white',
-      opacity: 0.3,
-      borderRadius: '9999px',
-    },
-    base: {
-      position: 'absolute',
-      bottom: 0,
-      left: '50%',
-      transform: 'translateX(-50%)',
-      width: '128px',
-      height: '8px',
-      backgroundColor: '#D1D5DB',
-      borderRadius: '9999px',
-    },
-    jellybean: (left, top) => ({
-      position: 'absolute',
-      width: '16px',
-      height: '12px',
-      borderRadius: '9999px',
-      transform: 'rotate(45deg)',
-      left: `${left}%`,
-      top: `${top}%`,
-    }),
-  };
-
   return (
-    <div style={styles.container}>
-      <div style={styles.lid} />
-      <div style={styles.jarBody}>
-        <div style={styles.highlight} />
+    <div className="relative w-48 h-64 mx-auto">
+      {/* Jar lid */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-6 bg-gray-300 rounded-t-full z-20" />
+      
+      {/* Jar body */}
+      <div className="absolute top-4 left-1/2 -translate-x-1/2 w-32 h-56 bg-gray-100 rounded-3xl overflow-hidden">
+        {/* Glass highlight */}
+        <div className="absolute top-0 left-2 w-2 h-full bg-white opacity-30 rounded-full" />
+        
+        {/* Jellybeans */}
         {jellybeans.map((bean) => (
           <div
             key={bean.id}
+            className={`absolute w-4 h-3 ${bean.color} rounded-full transform rotate-45`}
             style={{
-              ...styles.jellybean(bean.left, bean.top),
-              backgroundColor: bean.color,
+              left: `${bean.left}%`,
+              top: `${bean.top}%`,
             }}
           />
         ))}
       </div>
-      <div style={styles.base} />
+      
+      {/* Jar base */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-32 h-2 bg-gray-300 rounded-full" />
     </div>
   );
 };
