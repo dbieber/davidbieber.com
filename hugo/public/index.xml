@@ -6,7 +6,7 @@
     <description>Recent content on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Nov 2024 01:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bieber Bot Privacy Policy</title>
       <link>https://davidbieber.com/documents/bieber-bot-privacy/</link>
@@ -555,6 +555,25 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How Good are Taylor Series?</title>
+      <link>https://davidbieber.com/snippets/2024-11-20-taylor-expansion/</link>
+      <pubDate>Wed, 20 Nov 2024 01:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/snippets/2024-11-20-taylor-expansion/</guid>
+      
+      <description>&lt;p&gt;Let&amp;rsquo;s use Claude to look at how good an approximation a Taylor series expansion is for sin(x).
+After a bit of back and forth, it has produced these plots for us, and we can immediately see
+that the &amp;ldquo;good region&amp;rdquo; is growing linearly as we add additional terms to the Taylor series.
+This initially feels  surprising, like each additional term is somehow more powerful than I would expect in its ability to correct the distant errors while leaving the inner region relatively unchanged.&lt;/p&gt;
+&lt;p&gt;The increment in the size of the good region seems to be about .72, and seems quite similar (after an initial step or two) regardless of the accuracy bound we use.&lt;/p&gt;
+&lt;div id=&#34;root&#34;&gt;&lt;/div&gt;
+&lt;p&gt;Reflections on the process: This was such a delightful way to explore the Taylor series!
+It allowed me to follow my curiosity pretty freely, probing properties that came up along the way on a whim, to develop an intuition for how these mathematical objects worked. I didn&amp;rsquo;t realize the &amp;ldquo;trust region&amp;rdquo; was going to grow so smoothly like this, so it felt rewarding seeing this elegant property pop out of my explorations.
+This was also an early test of embedding Claude Artifacts on my website. It was pretty smooth!&lt;/p&gt;
 </description>
     </item>
     
