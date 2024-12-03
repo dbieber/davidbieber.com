@@ -13,7 +13,6 @@ This initially feels  surprising, like each additional term is somehow more powe
 
 The increment in the size of the good region seems to be about .72, and seems quite similar (after an initial step or two) regardless of the accuracy bound we use.
 
-
 <div id="root"></div>
 
 Reflections on the process: This was such a delightful way to explore the Taylor series!
