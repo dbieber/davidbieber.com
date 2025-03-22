@@ -16,7 +16,7 @@ are performing a carefully orchestrated and optimized series of cooking tasks to
 Each recipe declaratively defines what ingredients and instruments are needed, and how they are combined.
 Interchangeable robotic ovens, whisks, blenders, food dispensers, and arms zoom around the warehouse on rails completing the recipes, packaging the results, and sending them to shipping.
 
-As with Amazon's other "Elastic" Cloud products, Amazon Cloud Kitchen scales whether you're making a single cupcake or food to feed a football stadium. Of course, the per-unit costs decrease as the amount of food your submitting for preparation increases, same as it does when reserving compute units in AWS.
+As with Amazon's other "Elastic" Cloud products, Amazon Cloud Kitchen scales whether you're making a single cupcake or food to feed a football stadium. Of course, the per-unit costs decrease as the amount of food you're submitting for preparation increases, same as it does when reserving compute units in AWS.
 
 The true beauty of Amazon Cloud Kitchen is the versatility it offers. Any recipe can be submitted, no matter how complicated the steps, no matter what the ingredients; it doesn't matter if it's a recipe that's never been made before, that you couldn't possibly buy prepared from a store. Since Amazon Cloud Kitchen uses automation to follow your recipe step-by-step, you can make recipes that suit precisely your needs.
 
