@@ -4,22 +4,20 @@ date = 2021-01-23T05:14:00
 uid = "now-page"
 +++
 
-_Last updated on 2024-09-04._
+_Last updated on 2025-10-16._
 
 Welcome to my "Now" page. This page aims to give you an idea of what I'm up to now. It's necessarily always out of date.
 
 For a better sense of what's on my mind, [check out my snippets](/snippets) or [just ask me](https://messenger.com/t/dbieber).
 
 Highlights these days are:
-[machine learning research for code generation](https://research.google/pubs/?search=bieber&) at [Google DeepMind](https://deepmind.google/),
+[teaching Claude to program](https://www.claude.com/product/claude-code) at [Anthropic](https://www.anthropic.com/),
 [Go Note Go](/projects/go-note-go),
-[table tennis](https://elevenvr.com/) lessons,
-writing [snippets](/snippets),
-and exploring [tools to reduce cognitive friction](https://roamresearch.com/#/app/commons-db/page/ofrV-unjU).
+writing short stories, focusing on fitness, and side-projecting.
 
-I also regularly run "mini hack sessions" -- really enjoying helping foster the NYC AI hacker/tinkerer community. My recurring hack is building a [conversational spaced repetition system](/snippets/2024-03-04-conversational-spaced-repetition/) for myself.
+I'm semi-regularly running "mini hack sessions", and with the advent of Claude Code and "vibe coding" I'm building more adhoc side projects than ever before.
+One I'm particularly excited for is for Claude to start buying me books.
 
-I'm thinking about AI assistants (voice, conversational, and more) like Bieber Bot and beyond.
-I'm particularly impressed by [Dot](http://new.computer/) and [Claude 3.5 Sonnet](https://claude.ai/).
+I'm thinking about screenless programming assistants (both with voice and keyboard inputs), as the [first of my nine dreams](/snippets/2023-07-31-pursue-your-dreams/) nears reality.
 
-I'm reading [Blood in the Machine](https://www.goodreads.com/book/show/59801798-blood-in-the-machine) and [I Don't Want to Talk About It](https://www.goodreads.com/book/show/236765.I_Don_t_Want_to_Talk_About_It) (and just finished [Brave New Words](https://www.goodreads.com/book/show/196848520-brave-new-words) yesterday).
+I'm reading [What is Life?](https://www.goodreads.com/book/show/222531818-what-is-life) and most recently read [If Anyone Builds It, Everyone Dies](https://www.goodreads.com/book/show/228646231-if-anyone-builds-it-everyone-dies).
