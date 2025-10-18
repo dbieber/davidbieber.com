@@ -20,4 +20,4 @@ One I'm particularly excited for is for Claude to start buying me books.
 
 I'm thinking about screenless programming assistants (both with voice and keyboard inputs), as the [first of my nine dreams](/snippets/2023-07-31-pursue-your-dreams/) nears reality.
 
-I'm reading [What is Life?](https://www.goodreads.com/book/show/222531818-what-is-life) and most recently read [If Anyone Builds It, Everyone Dies](https://www.goodreads.com/book/show/228646231-if-anyone-builds-it-everyone-dies).
+I'm reading [What is Life?](https://www.goodreads.com/book/show/222531818-what-is-life) and [Adundance](https://www.goodreads.com/book/show/176444106-abundance), and most recently read [If Anyone Builds It, Everyone Dies](https://www.goodreads.com/book/show/228646231-if-anyone-builds-it-everyone-dies).
