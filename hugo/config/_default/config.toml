@@ -10,7 +10,10 @@ enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
-paginate = 500
+
+# Hugo 0.128+ moved the top-level `paginate` key to [pagination].pagerSize.
+# (Defined as a table at the end of this file so it doesn't capture the
+# top-level keys that follow.)
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
@@ -72,3 +75,8 @@ enableGitInfo = false
 [[related.indices]]
   name = "date"
   weight = 5
+
+# Show all snippets/posts on list pages (restores pre-0.163 behavior where
+# `paginate = 500` did this before the key was deprecated).
+[pagination]
+  pagerSize = 500
