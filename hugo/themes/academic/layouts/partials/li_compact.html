@@ -27,7 +27,11 @@
 {{ else if .Params.abstract }}
   {{ $summary = .Params.abstract | markdownify | emojify | truncate (site.Params.abstract_length | default 135) }}
 {{ else if $item.Summary }}
-  {{ $summary = $item.Summary }}
+  {{/* Hugo 0.143+ truncates auto-summaries only at block (paragraph) boundaries,
+       so a post with a long first paragraph dumps most of its body onto list
+       pages. Cap the auto-summary to restore the compact pre-0.163 list look.
+       Hugo's `truncate` is HTML-aware and won't break tags. */}}
+  {{ $summary = $item.Summary | truncate (site.Params.summary_length | default 200) }}
 {{ end }}
 
 <div class="media stream-item">

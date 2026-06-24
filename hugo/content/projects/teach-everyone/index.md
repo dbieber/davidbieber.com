@@ -1,4 +1,5 @@
 +++
+draft = true  # teacheveryone.org is down; hide from build until a placeholder exists.
 active = false
 
 title = "Teach Everyone"
