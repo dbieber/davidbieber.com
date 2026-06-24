@@ -23,6 +23,11 @@ defaultContentLanguageInSubdir = false
 # Get last modified date for content from Git?
 enableGitInfo = false
 
+# Allow raw HTML files (e.g. embedded apps/demos) to be served as content.
+# Hugo's default security policy denies text/html content as of newer releases.
+[security]
+  allowContent = ['.*']
+
 [outputs]
   home = [ "HTML", "RSS", "JSON", "WebAppManifest" ]
   section = [ "HTML", "RSS" ]
