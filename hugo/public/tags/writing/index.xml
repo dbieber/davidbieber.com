@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>writing on David Bieber</title>
+    <title>Writing on David Bieber</title>
     <link>https://davidbieber.com/tags/writing/</link>
-    <description>Recent content in writing on David Bieber</description>
+    <description>Recent content in Writing on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 04 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/writing/index.xml" rel="self" type="application/rss+xml" />
@@ -210,9 +210,9 @@ Since
 the experience of reviewing my writing has been much more comfortable than it was previously.&lt;/p&gt;
 &lt;p&gt;When I write in Go Note Go using the &amp;ldquo;Roam Research&amp;rdquo; uploader, my writing is divided into &amp;ldquo;sessions&amp;rdquo;.
 Each session starts with a line containing only the time. The rest of the writing is nested beneath.
-&lt;img src=&#34;session.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://davidbieber.com/snippets/2022-02-14-go-note-go-writing-volume/session.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;When I review my writing in Go Note Go, I do so session by session, putting a summary of the session in that top line of the session, and then collapsing the session. Often the top line is a block-reference to one or more of the lines from the session. For example,
-&lt;img src=&#34;session-collapsed.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://davidbieber.com/snippets/2022-02-14-go-note-go-writing-volume/session-collapsed.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;This compresses the 600 words I might write on a given day and presents them in a series of often 10 or fewer individual lines.&lt;/p&gt;
 &lt;p&gt;While I like that I can and do review my writing to a greater degree than expected, I think there&amp;rsquo;s still substantial improvement to make in the review-and-reuse experience.
 In particular, one idea I&amp;rsquo;m excited about and which I&amp;rsquo;ve been writing about in Go Note Go a fair amount, is hiring someone to review my notes and process them into a summary / a newsletter for myself.&lt;/p&gt;

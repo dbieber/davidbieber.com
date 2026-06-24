@@ -252,8 +252,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_3442a5ec1975e9c2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_f8848e5bff6e4686.png">
 
   <link rel="canonical" href="https://davidbieber.com/post/2021-03-07-roam-twitter-bot-dev-guide/">
 
@@ -321,7 +321,7 @@
     "name": "David Bieber",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://davidbieber.com/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png"
+      "url": "https://davidbieber.com/images/icon_hu_f8848e5bff6e4686.png"
     }
   },
   "description": "Use this guide to build a Roam Research Twitter bot that only you can see, to reclaim your attention when scrolling."
@@ -600,7 +600,9 @@
 <p>Go ahead and register a new Twitter account. I called mine &ldquo;@PrivateBieber6&rdquo; since my main account is just @Bieber. You can call yours whatever you like!</p>
 <p><img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FiWU9fP2Eji.png?alt=media&amp;token=25592447-c25f-4027-a68b-7a70d0275bd9" alt=""></p>
 <p>You&rsquo;ll have to provide a phone number or email address while registering. If you reuse a phone number from an existing account, it will work, but you&rsquo;ll lose the ability to use SMS commands and receive SMS notifications on your main account. Only the account most recently linked to this phone number will have these features.</p>
-<p><strong>Pro-tip:</strong> you can add a plus (&quot;+&quot;) string to your email address to turn in into a new email address that still gets delivered to your inbox. E.g. mail to <a href="mailto:david810+hello@gmail.com">david810+hello@gmail.com</a> still gets delivered to <a href="mailto:david810@gmail.com">david810@gmail.com</a> (feel free to say hello).</p>
+<p><strong>Pro-tip:</strong> you can add a plus (&quot;+&quot;) string to your email address to turn in into a new email address that still gets delivered to your inbox. E.g. mail to 
+<a href="mailto:david810&#43;hello@gmail.com">david810+hello@gmail.com</a> still gets delivered to 
+<a href="mailto:david810@gmail.com">david810@gmail.com</a> (feel free to say hello).</p>
 <p>Once you&rsquo;ve created your new account, two important things to do:</p>
 <ol>
 <li>
@@ -613,7 +615,8 @@
 </ol>
 <p>With this enabled, you&rsquo;ll be the only one able to see the tweets from this account.</p>
 <h2 id="step-2-get-your-developer-api-keys">Step 2: Get your developer API keys</h2>
-<p>First you need to apply for a developer account. This just takes a minute. Go to <a href="https://developer.twitter.com/en/apply-for-access">https://developer.twitter.com/en/apply-for-access</a> to apply for a developer account. Answer the questions honestly. Ping me on Twitter if any of the questions are unclear.</p>
+<p>First you need to apply for a developer account. This just takes a minute. Go to 
+<a href="https://developer.twitter.com/en/apply-for-access" target="_blank" rel="noopener">https://developer.twitter.com/en/apply-for-access</a> to apply for a developer account. Answer the questions honestly. Ping me on Twitter if any of the questions are unclear.</p>
 <p>Once you have a developer account, create a new project and app. I called mine &ldquo;Attention Playground.&rdquo; Get creative! Choose a fun name.</p>
 <p>Navigate to your newly created app, and Edit the &ldquo;App permissions&rdquo;. Set the app permissions to &ldquo;Read and Write&rdquo;. This will enable your bot to post tweets.</p>
 <p>Next navigate to the project you created, and click the key icon next to your App.</p>
@@ -654,7 +657,8 @@ def choose_message():
 <p>We&rsquo;re going to write a more interesting tweet generator that pulls tweets out of a Roam Research database.</p>
 <p>To do this, first set up a recurring json backup of your Roam Research database. You can use the project 
 <a href="https://github.com/everruler12/roam2github-demo" target="_blank" rel="noopener">roam2github</a> to set up the backup. There are detailed instructions on its github page for how to do this. You also have the option of using Roam&rsquo;s built-in automatic backups, which you access from the command palette (cmd-P).</p>
-<p>Use git to clone your backup locally. If your github repo is &ldquo;<a href="https://github.com/user/roam-backup%22,">https://github.com/user/roam-backup&quot;,</a> then the command to clone the repo is <code>git clone https://github.com/dbieber/roam-backup</code>.</p>
+<p>Use git to clone your backup locally. If your github repo is &ldquo;
+<a href="https://github.com/user/roam-backup%22" target="_blank" rel="noopener">https://github.com/user/roam-backup"</a>, then the command to clone the repo is <code>git clone https://github.com/dbieber/roam-backup</code>.</p>
 <p>Create roam.py. You can 
 <a href="https://gist.github.com/dbieber/7722280c7fa10d1fdfa507612427001d" target="_blank" rel="noopener">copy the contents of roam.py from here</a>. This will allow us to pull the latest backup of our Roam database from GitHub programmatically. (1) Set the ROAMRESEARCH_DBPATH variable in roam.py to the location of json backup in your roam-backup directory. For me, this is &lsquo;/Users/dbieber/code/github/dbieber/roam-backup/json/playground.json&rsquo;. (2) Set the roam_dir variable in the update function to the path to your roam-backup directory. For me, this is &lsquo;/Users/dbieber/code/github/dbieber/roam-backup&rsquo;.</p>
 <p>Using the new roam module we just created, it&rsquo;s time to write a function that extracts potential tweets from your Roam database. Here&rsquo;s the function I use:</p>
@@ -780,14 +784,14 @@ directory=/Users/dbieber/code/playground/private-bieber-twitter
 <p>Hopefully this guide makes it clear how you can use a private Twitter bot to reclaim your attention. The main contribution of this guide is its emphasis on using a private Twitter bot to design your own personal Twitter feed. We selected Roam Research backups as the source of tweets for our bot, but of course you can substitute Roam with any tweet generator that you please.</p>
 <p>You can use a bot like this for revisiting old ideas, for surfacing your TODOs when you&rsquo;re distracted, for sending yourself messages, or anything else you come up with.</p>
 <p>Since making myself a private Twitter bot one month ago, I&rsquo;ve been delighted to find that its tweets are often among the highest quality on my timeline. I hope you find the same.</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
-<p>When it says that using a virtual environment is optional, know that it&rsquo;s definitely worthwhile! <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:1">
+<p>When it says that using a virtual environment is optional, know that it&rsquo;s definitely worthwhile!&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 
     </div>
 
@@ -1020,7 +1024,7 @@ details.addEventListener("toggle", event => {
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+<script src="/js/academic.min.01af32edc9a00e9a188425fb55cdbd62.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>attention on David Bieber</title>
+    <title>Attention on David Bieber</title>
     <link>https://davidbieber.com/tags/attention/</link>
-    <description>Recent content in attention on David Bieber</description>
+    <description>Recent content in Attention on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 08 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/attention/index.xml" rel="self" type="application/rss+xml" />
@@ -23,7 +23,7 @@
 &lt;p&gt;&lt;strong&gt;Twitter and Facebook.&lt;/strong&gt; I&amp;rsquo;ve noticed that when I&amp;rsquo;m scrolling on Twitter or Facebook, and I want to stop, I sometimes find it difficult because &lt;em&gt;&amp;ldquo;just one more post&amp;rdquo;&lt;/em&gt; or &lt;em&gt;&amp;ldquo;that looks interesting&amp;rdquo;&lt;/em&gt;. That is, I&amp;rsquo;ll see a half-visible post at the bottom of my screen, and I&amp;rsquo;ll tell myself I&amp;rsquo;ll just look at that one post, and then I&amp;rsquo;ll be done. But by the time I&amp;rsquo;ve looked at that post, a different post is now half-visible, and it&amp;rsquo;s captured my attention as well.&lt;/p&gt;
 &lt;p&gt;So, my proposal is: I&amp;rsquo;ll only make posts visible once they are fully on the screen. No more half-visible Tweets. No more half-visible Facebook posts.&lt;/p&gt;
 &lt;p&gt;Turns out making such a Chrome extension is remarkably easy, especially with language models available to assist with the boilerplate. Let me show you some before and after photos&amp;hellip; actually, just the after; I don&amp;rsquo;t want to get any practice disabling this thing!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/snippets/2024-01-08-less-twitter/less-twitter.gif&#34; alt=&#34;I am scrolling on Twitter. Posts only appear once they are fully visible in the browser&amp;rsquo;s view port.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/snippets/2024-01-08-less-twitter/less-twitter.gif&#34; alt=&#34;I am scrolling on Twitter. Posts only appear once they are fully visible in the browser’s view port.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;As you can see in the gif, I am scrolling on Twitter, and posts only appear once they are fully visible in the browser&amp;rsquo;s view port.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s not perfect; I still will scroll just to bring something closer to my eye level, which can cause additional posts to appear. But I think it&amp;rsquo;s a big improvement on the default. Only time will tell.&lt;/p&gt;
 &lt;p&gt;My hope is that by not having partially visible posts at the bottom of the screen, it will be less addicting, and easier to get off the site.&lt;/p&gt;
@@ -413,15 +413,15 @@ By keeping the phone in the kitchen, I&amp;rsquo;ll be unable to scroll mindless
 &lt;p&gt;Third, even if all current video game companies signed the HGIC, acted in good faith, and even if there were no possibility of new entrants, there still remain the difficult questions of how to measure the reduction in unhealthy addictiveness of games. As a strawman, the HGIC could specify a metric, say play-time per player, and all companies would reduce their play-time per player by an agreed upon percent. I&amp;rsquo;ll readily acknowledge this sounds ridiculous; it could mean ruining the fun of some games, not making them healthier! As a second strawman, the HGIC could specify specific game mechanics and how to adjust them. E.g. it would specify that count-down timers need to be shortened by X% (does that even help?), non-deterministic rewards need to be made Y% more deterministic, etc. I&amp;rsquo;ll readily acknowledge this strawman is ridiculous too; there are likely too many possible game mechanics for an agreement of this form to be manageable to produce. Finding an equivalent reduction in addictiveness across all games is impossible because games are simply too varied.&lt;/p&gt;
 &lt;p&gt;Fourthly and finally, &lt;em&gt;everyone&lt;/em&gt; I&amp;rsquo;ve shared this idea with so far (three people in total) have disagreed with the premise, that the addicting nature of video games is a negative thing, and that reducing it is desirable. This is a real surprise to me. I thought it was generally accepted that the tactics employed by FarmVille, CandyCrush, Covet, and the like are deliberative exploitative and addictive, designed through experimentation to maximize engagement and profit, and that this is a negative aspect of the games. I suppose I was wrong about this (the generally accepted part, that is). Guess I need to expand my bubble.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;We now have four solid reasons that the Healthy Games Inter-company Compact could never come into effect. I&amp;rsquo;m sure there are a dozen more. It&amp;rsquo;s nevertheless nice to imagine a world in which a few companies draft and sign the compact, initially thinking it will never come into effect. And then, over time, more companies are drawn to the idea of improving the health of their addiction-prone customers, until eventually the industry enacts and broadly follows guidelines for healthy game development. I think that&amp;rsquo;s a world to aspire to, albeit unrealistic. So while the HGIC in all likelihood won&amp;rsquo;t work, perhaps there&amp;rsquo;s another path there.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;To get a glimpse of what people think outside my itsy-bitsy social bubble, you can have a look at 
-&lt;a href=&#34;https://www.commonsensemedia.org/app-reviews/candy-crush-saga/user-reviews/adult&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these mixed reviews of CandyCrush from parents and children&lt;/a&gt;. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://www.commonsensemedia.org/app-reviews/candy-crush-saga/user-reviews/adult&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these mixed reviews of CandyCrush from parents and children&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -447,15 +447,15 @@ A quick look at any complex task, say chess or a hard math problem, makes it app
 &lt;p&gt;The result is that we need to be deliberate with how we choose to spend our brainpower. And this starts with being mindful and intentional with our attention.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;As an exercise for the reader: Would the Efficient Minds Hypothesis imply the Efficient Market Hypothesis? How about the reverse?&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;&amp;ldquo;System 1&amp;rdquo; and &amp;ldquo;System 2&amp;rdquo; refer to Kahneman&amp;rsquo;s dichotomy of fast intuitive (System 1) vs slow, deliberate, planned (System 2) thought from 
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thinking, Fast and Slow&lt;/a&gt;. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thinking, Fast and Slow&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -493,15 +493,15 @@ A quick look at any complex task, say chess or a hard math problem, makes it app
 &lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FxD83QrK9_D.png?alt=media&amp;amp;token=76f275ac-62fd-4844-829c-b44cf9cf568f&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Currently the tweet selection is random, but already in this first 20 minutes I&amp;rsquo;ve been happy with the tweets it&amp;rsquo;s been writing. Perhaps in a future iteration I&amp;rsquo;ll make some adjustments to what it tweets and when. It&amp;rsquo;s nice to have this kind of control over my attention, especially in a setting like Twitter where I&amp;rsquo;m so used to mindless scrolling.&lt;/p&gt;
 &lt;p&gt;This same technique ought to work fine for taking control of my Facebook feed too, so perhaps I&amp;rsquo;ll get Private Bieber an account there next.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://gist.github.com/dbieber/47660493954e62f4607cd8d19d54cf59&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source code is here.&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://gist.github.com/dbieber/47660493954e62f4607cd8d19d54cf59&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source code is here.&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -617,14 +617,14 @@ document.addEventListener(&#39;touchmove&#39;, function(event) {
 &lt;p&gt;The details on exactly when to send kangaroos are still a work in progress. I don&amp;rsquo;t want to overwhelm anyone with kangaroos. I&amp;rsquo;m thinking about some rules: (1) only send kangaroos if there was a message of non-trivial length, e.g. more than 20 characters, (2) only send a kangaroo after I&amp;rsquo;ve read the message; if I genuinely haven&amp;rsquo;t seen the message yet, no need for a kangaroo, as the message will still appear as unread in my inbox, (3) if you send follow-up messages, that resets the timer on the 2 hours, (4) any messages you send within 5 minutes of me sending you a message are ineligible for triggering kangaroos (this way I don&amp;rsquo;t need to get the last word), and (5) obviously, don&amp;rsquo;t send a kangaroo for a message I&amp;rsquo;ve already responded too.&lt;/p&gt;
 &lt;p&gt;To summarize, the rules of kangaroos are: You get a kangaroo if the &lt;strong&gt;most-recent&lt;/strong&gt; message in our chat is &lt;strong&gt;non-trivial&lt;/strong&gt;, &lt;strong&gt;read-by-me&lt;/strong&gt;, &lt;strong&gt;written-by-you&lt;/strong&gt;, &lt;strong&gt;not an immediate reply&lt;/strong&gt;, and &lt;strong&gt;two-hours old&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Why kangaroos? They bounce 🤷‍♂️ ? This is kind of like a message bouncing&amp;hellip;&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;With a picture of a kangaroo, that is. Like this one: 🦘, or this: &lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FtBz98tV75N.png?alt=media&amp;amp;token=66762cac-d0b0-43ba-91a8-eaefa6ef7626&#34; alt=&#34;&#34;&gt; It will not send them an actual real-life kangaroo. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;With a picture of a kangaroo, that is. Like this one: 🦘, or this: &lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FtBz98tV75N.png?alt=media&amp;amp;token=66762cac-d0b0-43ba-91a8-eaefa6ef7626&#34; alt=&#34;&#34;&gt; It will not send them an actual real-life kangaroo.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -668,7 +668,7 @@ document.addEventListener(&#39;touchmove&#39;, function(event) {
 &lt;p&gt;That is, tags connect &lt;em&gt;what&lt;/em&gt; to &lt;em&gt;when&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;When you write a notification strategy, you name it. Tag a reference of a query with the name of a notification strategy to run that strategy on that reference or query.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s clarify with an example.&lt;/p&gt;
-&lt;p&gt;Say I have a query (&amp;ldquo;all Tasks with &amp;lsquo;Blockers&amp;rsquo; where all Blockers are &amp;lsquo;DONE&amp;rsquo;&amp;quot;), and a notification strategy named &amp;ldquo;Bundle on the Hour&amp;rdquo; (&amp;ldquo;bundle all incoming notifications and emit them on the hour as a single notification&amp;rdquo;). Then I can tag the query with #[[Bundle on the Hour]] to start applying that notification strategy to the results of the query.&lt;/p&gt;
+&lt;p&gt;Say I have a query (&amp;ldquo;all Tasks with &amp;lsquo;Blockers&amp;rsquo; where all Blockers are &amp;lsquo;DONE&amp;rsquo;&amp;rdquo;), and a notification strategy named &amp;ldquo;Bundle on the Hour&amp;rdquo; (&amp;ldquo;bundle all incoming notifications and emit them on the hour as a single notification&amp;rdquo;). Then I can tag the query with #[[Bundle on the Hour]] to start applying that notification strategy to the results of the query.&lt;/p&gt;
 &lt;p&gt;Once I&amp;rsquo;ve added that tag, the notification strategy will be called every time the query results change, and it will be able to start emitting notifications.&lt;/p&gt;
 &lt;p&gt;Similarly if I write [[Python Fire]] and tag it with #[[Digest at 9am]], then &lt;em&gt;that&lt;/em&gt; notification strategy will be called whenever the references to or contents of the Python Fire page change.&lt;/p&gt;
 &lt;h2 id=&#34;wherehow-actually-sending-notifications&#34;&gt;&lt;strong&gt;Where/How&lt;/strong&gt;: Actually sending notifications&lt;/h2&gt;
@@ -721,37 +721,37 @@ notify(&amp;quot;You&#39;ve got mail.&amp;quot;);
 &lt;p&gt;Want to build this with me? I&amp;rsquo;m 
 &lt;a href=&#34;https://twitter.com/Bieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Bieber&lt;/a&gt; on Twitter and active as dbieber on the 
 &lt;a href=&#34;https://roamresearch.slack.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Slack&lt;/a&gt;.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;And still provides sensible defaults and easy configs for non-power users. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;And still provides sensible defaults and easy configs for non-power users.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;This one, while a basic use case, is actually tricky to express as a query. But we can do it, I&amp;rsquo;m confident. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;This one, while a basic use case, is actually tricky to express as a query. But we can do it, I&amp;rsquo;m confident.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
 &lt;p&gt;See my 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/&#34;&gt;two&lt;/a&gt; 
-&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-04-more-datalog-queries-for-roam/&#34;&gt;snippets&lt;/a&gt; for lots of examples of what you can do with datalog queries. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-04-more-datalog-queries-for-roam/&#34;&gt;snippets&lt;/a&gt; for lots of examples of what you can do with datalog queries.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;&lt;em&gt;soni-sono&lt;/em&gt; for short. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
+&lt;p&gt;&lt;em&gt;soni-sono&lt;/em&gt; for short.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:5&#34;&gt;
 &lt;p&gt;Has anyone taken the 
-&lt;a href=&#34;https://fontmeme.com/the-home-depot-font/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Home Depot logo&lt;/a&gt; and replaced the word Home with Roam in the appropriate font yet? &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://fontmeme.com/the-home-depot-font/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Home Depot logo&lt;/a&gt; and replaced the word Home with Roam in the appropriate font yet?&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:6&#34;&gt;
 &lt;p&gt;Code courtesy of 
-&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/notification&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MDN&lt;/a&gt;. &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/notification&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MDN&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:7&#34;&gt;
 &lt;p&gt;cmd-option-i to open your browser console on Chrome on Mac. 
-&lt;a href=&#34;https://www.google.com/search?q=how&amp;#43;to&amp;#43;open&amp;#43;the&amp;#43;browser&amp;#43;console&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Look it up here&lt;/a&gt; for other browsers or operating systems. &lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://www.google.com/search?q=how&amp;#43;to&amp;#43;open&amp;#43;the&amp;#43;browser&amp;#43;console&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Look it up here&lt;/a&gt; for other browsers or operating systems.&amp;#160;&lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -764,7 +764,8 @@ notify(&amp;quot;You&#39;ve got mail.&amp;quot;);
       
       <description>&lt;p&gt;I don&amp;rsquo;t know if I like this idea, but I&amp;rsquo;m giving it a try; I&amp;rsquo;ve added a &amp;ldquo;Now&amp;rdquo; page to my website (
 &lt;a href=&#34;https://davidbieber.com/now/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;davidbieber.com/now&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;The idea for now pages is described at &lt;a href=&#34;https://nownownow.com/about&#34;&gt;https://nownownow.com/about&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The idea for now pages is described at 
+&lt;a href=&#34;https://nownownow.com/about&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://nownownow.com/about&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Basically, a now page says what&amp;rsquo;s going on in the author&amp;rsquo;s life now. Not &lt;em&gt;right now&lt;/em&gt; &amp;ndash; that would be a &amp;ldquo;right now page&amp;rdquo; &amp;ndash; but rather, now in the broader sense of &amp;ldquo;what&amp;rsquo;s are you up to these days?&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;This post isn&amp;rsquo;t about my new Now page though, which I don&amp;rsquo;t necessarily plan to keep up (if the link 404s, you know why). Rather, this post is about an idea for a kind of &amp;ldquo;right now&amp;rdquo; page that I&amp;rsquo;m toying with building.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;d like to make a page that tells the reader if I&amp;rsquo;m likely available for a conversation &lt;em&gt;right now&lt;/em&gt;. I&amp;rsquo;d call it the &amp;ldquo;is David available to talk now&amp;rdquo; page, and here&amp;rsquo;s how it might work.&lt;/p&gt;
@@ -1223,136 +1224,136 @@ For some reason, I do it anyway though, and so I think of this habit like an add
 &lt;h4 id=&#34;the-available-data&#34;&gt;The Available Data&lt;/h4&gt;
 &lt;p&gt;Running sqlite3 macro &lt;code&gt;.tables&lt;/code&gt;, we see the following tables are available.&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;downloads&lt;/td&gt;
-&lt;td&gt;meta&lt;/td&gt;
-&lt;td&gt;urls&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;downloads_slices&lt;/td&gt;
-&lt;td&gt;segment_usage&lt;/td&gt;
-&lt;td&gt;visit_source&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;downloads_url_chains&lt;/td&gt;
-&lt;td&gt;segments&lt;/td&gt;
-&lt;td&gt;visits&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;keyword_search_terms&lt;/td&gt;
-&lt;td&gt;typed_url_sync_metadata&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;downloads&lt;/td&gt;
+					&lt;td&gt;meta&lt;/td&gt;
+					&lt;td&gt;urls&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;downloads_slices&lt;/td&gt;
+					&lt;td&gt;segment_usage&lt;/td&gt;
+					&lt;td&gt;visit_source&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;downloads_url_chains&lt;/td&gt;
+					&lt;td&gt;segments&lt;/td&gt;
+					&lt;td&gt;visits&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;keyword_search_terms&lt;/td&gt;
+					&lt;td&gt;typed_url_sync_metadata&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;We&amp;rsquo;ll be most interested in the &lt;code&gt;urls&lt;/code&gt; and &lt;code&gt;visits&lt;/code&gt; tables.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;urls&lt;/code&gt; table has these columns (found with &lt;code&gt;.schema urls&lt;/code&gt;):&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Column&lt;/th&gt;
-&lt;th&gt;Type&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;id&lt;/td&gt;
-&lt;td&gt;Integer Id&lt;/td&gt;
-&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the URL in the database.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;url&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;The URL of the website.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;title&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;The title of website.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;visit_count&lt;/td&gt;
-&lt;td&gt;Integer&lt;/td&gt;
-&lt;td&gt;The number of times you&amp;rsquo;ve visited the URL.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;typed_count&lt;/td&gt;
-&lt;td&gt;Integer&lt;/td&gt;
-&lt;td&gt;The number of times you&amp;rsquo;ve visited the URL by typing in the address (as opposed to by following a link.)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;last_visit_time&lt;/td&gt;
-&lt;td&gt;Integer (microseconds since the epoch)&lt;/td&gt;
-&lt;td&gt;The time of the most recent to the URL.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;hidden&lt;/td&gt;
-&lt;td&gt;Boolean&lt;/td&gt;
-&lt;td&gt;I&amp;rsquo;m not sure what this is about.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Column&lt;/th&gt;
+					&lt;th&gt;Type&lt;/th&gt;
+					&lt;th&gt;Description&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;id&lt;/td&gt;
+					&lt;td&gt;Integer Id&lt;/td&gt;
+					&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the URL in the database.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;url&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;The URL of the website.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;title&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;The title of website.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;visit_count&lt;/td&gt;
+					&lt;td&gt;Integer&lt;/td&gt;
+					&lt;td&gt;The number of times you&amp;rsquo;ve visited the URL.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;typed_count&lt;/td&gt;
+					&lt;td&gt;Integer&lt;/td&gt;
+					&lt;td&gt;The number of times you&amp;rsquo;ve visited the URL by typing in the address (as opposed to by following a link.)&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;last_visit_time&lt;/td&gt;
+					&lt;td&gt;Integer (microseconds since the epoch)&lt;/td&gt;
+					&lt;td&gt;The time of the most recent to the URL.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;hidden&lt;/td&gt;
+					&lt;td&gt;Boolean&lt;/td&gt;
+					&lt;td&gt;I&amp;rsquo;m not sure what this is about.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;And the &lt;code&gt;visits&lt;/code&gt; table has these columns (obtained via &lt;code&gt;.schema visits&lt;/code&gt;):&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Column&lt;/th&gt;
-&lt;th&gt;Type&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;id&lt;/td&gt;
-&lt;td&gt;Integer Id&lt;/td&gt;
-&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the visit in the database.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;url&lt;/td&gt;
-&lt;td&gt;Integer Id&lt;/td&gt;
-&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the url in the &lt;code&gt;urls&lt;/code&gt; table.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;visit_time&lt;/td&gt;
-&lt;td&gt;Integer (milliseconds since the epoch)&lt;/td&gt;
-&lt;td&gt;The time of the visit.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;from_visit&lt;/td&gt;
-&lt;td&gt;Integer Id&lt;/td&gt;
-&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the visit that lead you to this one.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;transition&lt;/td&gt;
-&lt;td&gt;Bit vector&lt;/td&gt;
-&lt;td&gt;Represents the 
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Column&lt;/th&gt;
+					&lt;th&gt;Type&lt;/th&gt;
+					&lt;th&gt;Description&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;id&lt;/td&gt;
+					&lt;td&gt;Integer Id&lt;/td&gt;
+					&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the visit in the database.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;url&lt;/td&gt;
+					&lt;td&gt;Integer Id&lt;/td&gt;
+					&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the url in the &lt;code&gt;urls&lt;/code&gt; table.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;visit_time&lt;/td&gt;
+					&lt;td&gt;Integer (milliseconds since the epoch)&lt;/td&gt;
+					&lt;td&gt;The time of the visit.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;from_visit&lt;/td&gt;
+					&lt;td&gt;Integer Id&lt;/td&gt;
+					&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the visit that lead you to this one.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;transition&lt;/td&gt;
+					&lt;td&gt;Bit vector&lt;/td&gt;
+					&lt;td&gt;Represents the 
 &lt;a href=&#34;https://developer.chrome.com/extensions/history#transition_types&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;transition type&lt;/a&gt; (how you got to the URL)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;segment_id&lt;/td&gt;
-&lt;td&gt;Integer Id&lt;/td&gt;
-&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the segment in the database. I&amp;rsquo;m not quite sure what a segment is, but there is a &lt;code&gt;segments&lt;/code&gt; table you can look at.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;visit_duration&lt;/td&gt;
-&lt;td&gt;Integer (microseconds)&lt;/td&gt;
-&lt;td&gt;The amount of time spent at the website, or 0 if not available.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;incremented_omnibox_typed_score&lt;/td&gt;
-&lt;td&gt;Boolean&lt;/td&gt;
-&lt;td&gt;I do not know what this is about.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;segment_id&lt;/td&gt;
+					&lt;td&gt;Integer Id&lt;/td&gt;
+					&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the segment in the database. I&amp;rsquo;m not quite sure what a segment is, but there is a &lt;code&gt;segments&lt;/code&gt; table you can look at.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;visit_duration&lt;/td&gt;
+					&lt;td&gt;Integer (microseconds)&lt;/td&gt;
+					&lt;td&gt;The amount of time spent at the website, or 0 if not available.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;incremented_omnibox_typed_score&lt;/td&gt;
+					&lt;td&gt;Boolean&lt;/td&gt;
+					&lt;td&gt;I do not know what this is about.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;As you can see, we can access every visit to every website that we&amp;rsquo;ve made since the last time we cleared our browsing history. We can see what website we visited (&lt;code&gt;visits.url&lt;/code&gt;), when we visited it (&lt;code&gt;visits.visit_time&lt;/code&gt;), how many times we&amp;rsquo;ve visited it (&lt;code&gt;urls.visit_count&lt;/code&gt;), and how long each visit was for (&lt;code&gt;visits.visit_duration&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;We can even use &lt;code&gt;visits.from_visit&lt;/code&gt; to figure out what website linked us to each url, if that interests us.&lt;/p&gt;

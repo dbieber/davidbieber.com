@@ -32,7 +32,10 @@
   
     
   
-  <meta name="description" content="Roam Research is a note taking tool that makes it really low-friction to take deeply interwoven notes. One of its core features is that you can effortlessly add links between pages in your notes, just by surrounding a name with square brackets, e.g. [[Roam Research]].
+  <meta name="description" content="
+Roam Research is a note taking tool that makes it really low-friction to take deeply interwoven notes.
+One of its core features is that you can effortlessly add links between pages in your notes, just by surrounding a name with square brackets, e.g. 
+[[Roam Research]].
 Roam allows its users to export their Roam database as a JSON file. In this snippet, I describe the JSON format used and some of its implications.">
 
   
@@ -253,8 +256,8 @@ Roam allows its users to export their Roam database as a JSON file. In this snip
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_3442a5ec1975e9c2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_f8848e5bff6e4686.png">
 
   <link rel="canonical" href="https://davidbieber.com/snippets/2020-04-25-roam-json-export/">
 
@@ -275,7 +278,10 @@ Roam allows its users to export their Roam database as a JSON file. In this snip
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/snippets/2020-04-25-roam-json-export/">
   <meta property="og:title" content="Roam Research&#39;s JSON Export Format | David Bieber">
-  <meta property="og:description" content="Roam Research is a note taking tool that makes it really low-friction to take deeply interwoven notes. One of its core features is that you can effortlessly add links between pages in your notes, just by surrounding a name with square brackets, e.g. [[Roam Research]].
+  <meta property="og:description" content="
+Roam Research is a note taking tool that makes it really low-friction to take deeply interwoven notes.
+One of its core features is that you can effortlessly add links between pages in your notes, just by surrounding a name with square brackets, e.g. 
+[[Roam Research]].
 Roam allows its users to export their Roam database as a JSON file. In this snippet, I describe the JSON format used and some of its implications."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
@@ -543,147 +549,147 @@ One of its core features is that you can effortlessly add links between pages in
 <p>Each <code>page</code> is an object with keys: <code>title</code>, <code>children</code>, <code>create-time</code>, <code>create-email</code>, <code>edit-time</code>, <code>edit-email</code>.</p>
 <h3 id="page-schema">Page Schema</h3>
 <table>
-<thead>
-<tr>
-<th>Key</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>title</td>
-<td>Text</td>
-<td>The page title.</td>
-</tr>
-<tr>
-<td>children</td>
-<td>List[Child]</td>
-<td>The list of children of the page.</td>
-</tr>
-<tr>
-<td>create-time</td>
-<td>Integer</td>
-<td>The time (ms since epoch) when the page was created.</td>
-</tr>
-<tr>
-<td>create-email</td>
-<td>Text</td>
-<td>The email of the person to create the page.</td>
-</tr>
-<tr>
-<td>edit-time</td>
-<td>Integer</td>
-<td>The time (ms since epoch) of the last edit to the page.</td>
-</tr>
-<tr>
-<td>edit-email</td>
-<td>Text</td>
-<td>The email of the last person to edit the page.</td>
-</tr>
-</tbody>
+	<thead>
+			<tr>
+					<th>Key</th>
+					<th>Type</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>title</td>
+					<td>Text</td>
+					<td>The page title.</td>
+			</tr>
+			<tr>
+					<td>children</td>
+					<td>List[Child]</td>
+					<td>The list of children of the page.</td>
+			</tr>
+			<tr>
+					<td>create-time</td>
+					<td>Integer</td>
+					<td>The time (ms since epoch) when the page was created.</td>
+			</tr>
+			<tr>
+					<td>create-email</td>
+					<td>Text</td>
+					<td>The email of the person to create the page.</td>
+			</tr>
+			<tr>
+					<td>edit-time</td>
+					<td>Integer</td>
+					<td>The time (ms since epoch) of the last edit to the page.</td>
+			</tr>
+			<tr>
+					<td>edit-email</td>
+					<td>Text</td>
+					<td>The email of the last person to edit the page.</td>
+			</tr>
+	</tbody>
 </table>
 <p>Note that only <code>title</code>, <code>edit-time</code>, and <code>edit-email</code> appear to be required fields.
 <code>children</code>, <code>create-time</code>, and <code>create-email</code> appear to be omitted when not available.</p>
 <h3 id="child-schema">Child Schema</h3>
 <p>Each of the children in a page may have the following keys. Only the <code>uid</code>, <code>string</code>, <code>edit-time</code>, and <code>edit-email</code> keys seem universal. The rest may be omitted when not available.</p>
 <table>
-<thead>
-<tr>
-<th>Key</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>uid</td>
-<td>Text</td>
-<td>A short unique identifier for the child.</td>
-</tr>
-<tr>
-<td>string</td>
-<td>Text</td>
-<td>The string content of the child.</td>
-</tr>
-<tr>
-<td>children</td>
-<td>List[Child]</td>
-<td>The list of children of this child.</td>
-</tr>
-<tr>
-<td>create-time</td>
-<td>Integer</td>
-<td>The time (ms since epoch) when the page was created.</td>
-</tr>
-<tr>
-<td>create-email</td>
-<td>Text</td>
-<td>The email of the person to create the page.</td>
-</tr>
-<tr>
-<td>edit-time</td>
-<td>Integer</td>
-<td>The time (ms since epoch) of the last edit to the page.</td>
-</tr>
-<tr>
-<td>edit-email</td>
-<td>Text</td>
-<td>The email of the last person to edit the page.</td>
-</tr>
-</tbody>
+	<thead>
+			<tr>
+					<th>Key</th>
+					<th>Type</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>uid</td>
+					<td>Text</td>
+					<td>A short unique identifier for the child.</td>
+			</tr>
+			<tr>
+					<td>string</td>
+					<td>Text</td>
+					<td>The string content of the child.</td>
+			</tr>
+			<tr>
+					<td>children</td>
+					<td>List[Child]</td>
+					<td>The list of children of this child.</td>
+			</tr>
+			<tr>
+					<td>create-time</td>
+					<td>Integer</td>
+					<td>The time (ms since epoch) when the page was created.</td>
+			</tr>
+			<tr>
+					<td>create-email</td>
+					<td>Text</td>
+					<td>The email of the person to create the page.</td>
+			</tr>
+			<tr>
+					<td>edit-time</td>
+					<td>Integer</td>
+					<td>The time (ms since epoch) of the last edit to the page.</td>
+			</tr>
+			<tr>
+					<td>edit-email</td>
+					<td>Text</td>
+					<td>The email of the last person to edit the page.</td>
+			</tr>
+	</tbody>
 </table>
 <p>Some children may additionally have the following keys.</p>
 <table>
-<thead>
-<tr>
-<th>Key</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>heading</td>
-<td>Integer</td>
-<td>1, 2, or 3; indicates the note is an h1, h2, or h3 heading.</td>
-</tr>
-<tr>
-<td>emojis</td>
-<td>List[Emoji]</td>
-<td>A list of objects indicating who added what emojis and when.</td>
-</tr>
-<tr>
-<td>text-align</td>
-<td>Text</td>
-<td>One of &lsquo;left&rsquo;, &lsquo;right&rsquo;, &lsquo;center&rsquo;, or &lsquo;justify&rsquo; indicating the text alignment.</td>
-</tr>
-</tbody>
+	<thead>
+			<tr>
+					<th>Key</th>
+					<th>Type</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>heading</td>
+					<td>Integer</td>
+					<td>1, 2, or 3; indicates the note is an h1, h2, or h3 heading.</td>
+			</tr>
+			<tr>
+					<td>emojis</td>
+					<td>List[Emoji]</td>
+					<td>A list of objects indicating who added what emojis and when.</td>
+			</tr>
+			<tr>
+					<td>text-align</td>
+					<td>Text</td>
+					<td>One of &rsquo;left&rsquo;, &lsquo;right&rsquo;, &lsquo;center&rsquo;, or &lsquo;justify&rsquo; indicating the text alignment.</td>
+			</tr>
+	</tbody>
 </table>
 <p>Note that in Roam, children are referred to as &ldquo;blocks&rdquo;, and a child&rsquo;s ID is the ID used to reference a block.</p>
 <p>Last but not least, I include the emoji reaction schema 😂.</p>
 <h3 id="emoji-schema">Emoji Schema</h3>
 <p>Each Emoji reaction to a child is an object conforming to the following schema.</p>
 <table>
-<thead>
-<tr>
-<th>Key</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>emoji</td>
-<td>object</td>
-<td>An object with a single key <code>native</code> containing the emoji itself.</td>
-</tr>
-<tr>
-<td>users</td>
-<td>List[object]</td>
-<td>A list of objects indicating who added this emoji and when. The keys are <code>time</code> (ms since epoch) and <code>email</code> (the email of the user who added the reaction).</td>
-</tr>
-</tbody>
+	<thead>
+			<tr>
+					<th>Key</th>
+					<th>Type</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>emoji</td>
+					<td>object</td>
+					<td>An object with a single key <code>native</code> containing the emoji itself.</td>
+			</tr>
+			<tr>
+					<td>users</td>
+					<td>List[object]</td>
+					<td>A list of objects indicating who added this emoji and when. The keys are <code>time</code> (ms since epoch) and <code>email</code> (the email of the user who added the reaction).</td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="missing-information">Missing Information</h3>
 <p>Some information appears to get lost in the export. In particular, the following information appears to be dropped.</p>
@@ -954,7 +960,7 @@ details.addEventListener("toggle", event => {
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+<script src="/js/academic.min.01af32edc9a00e9a188425fb55cdbd62.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

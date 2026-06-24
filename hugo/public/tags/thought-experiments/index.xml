@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>thought-experiments on David Bieber</title>
+    <title>Thought-Experiments on David Bieber</title>
     <link>https://davidbieber.com/tags/thought-experiments/</link>
-    <description>Recent content in thought-experiments on David Bieber</description>
+    <description>Recent content in Thought-Experiments on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/thought-experiments/index.xml" rel="self" type="application/rss+xml" />
@@ -190,14 +190,14 @@ One extreme way you may have been predictable is if the host knows exactly how e
 &lt;p&gt;And like with weather forecasting, their model is imperfect. It&amp;rsquo;s good enough to know what box you&amp;rsquo;ll choose, with certainty, but only because that only requires forecasting a small window (a week, let&amp;rsquo;s say) into the future. Like the atmospheric conditions that determine the weather, your brain is a chaotic system. Any imperfection in the model, however small, will eventually blow up and lead to large errors in the model in the future. So our host can&amp;rsquo;t model your every thought a year into the future, let alone e.g. the whole population&amp;rsquo;s behaviors.&lt;/p&gt;
 &lt;p&gt;So what boxes should you choose?&lt;/p&gt;
 &lt;p&gt;You should choose to open just box A. By reaching this conclusion (and more importantly, by adopting the strategy for reasoning that leads to this conclusion), you guarantee yourself $1 million the next time you encounter a wealthy generous time traveling game show host interested in philosophy and mathematics.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;I say &amp;ldquo;brain&amp;rdquo;, but I really mean the whole of your situation and life circumstances. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;I say &amp;ldquo;brain&amp;rdquo;, but I really mean the whole of your situation and life circumstances.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     

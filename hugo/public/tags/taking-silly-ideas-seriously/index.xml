@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>taking-silly-ideas-seriously on David Bieber</title>
+    <title>Taking-Silly-Ideas-Seriously on David Bieber</title>
     <link>https://davidbieber.com/tags/taking-silly-ideas-seriously/</link>
-    <description>Recent content in taking-silly-ideas-seriously on David Bieber</description>
+    <description>Recent content in Taking-Silly-Ideas-Seriously on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Jan 2024 03:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/taking-silly-ideas-seriously/index.xml" rel="self" type="application/rss+xml" />
@@ -330,15 +330,15 @@ Residents could have their perfect customized lunch ready for them when they&amp
 &lt;p&gt;Not into the Amazon Cloud Kitchen idea?
 Consider instead a nice case of 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-12-09-amazon-beans/&#34;&gt;Amazon Beans&lt;/a&gt;.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;A related language feature for the recipe programming language:
-implicit variables. In recipes, there is usually only ever a single object of a given type (e.g. recipes rarely use two ovens). Sometimes there are multiple objects of the same type (e.g. two bowls of ingredients). If a recipe refers to an object by its type, it doesn&amp;rsquo;t need to have any additional identifying information about that object, unless there is ambiguity. So, when you make a statement about an oven in a recipe, it&amp;rsquo;s implied that your recipe now requires an oven. Future references to an oven imply the same oven; if you want to talk about a distinct oven, you can name them or indicate which oven you&amp;rsquo;re talking about by specifying additional detail (&amp;ldquo;the 400°F oven&amp;rdquo; and &amp;ldquo;the 350°F oven&amp;rdquo;). In a future snippet we can sketch out what the language would look like, including writing the programs for a handful of example recipes. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+implicit variables. In recipes, there is usually only ever a single object of a given type (e.g. recipes rarely use two ovens). Sometimes there are multiple objects of the same type (e.g. two bowls of ingredients). If a recipe refers to an object by its type, it doesn&amp;rsquo;t need to have any additional identifying information about that object, unless there is ambiguity. So, when you make a statement about an oven in a recipe, it&amp;rsquo;s implied that your recipe now requires an oven. Future references to an oven imply the same oven; if you want to talk about a distinct oven, you can name them or indicate which oven you&amp;rsquo;re talking about by specifying additional detail (&amp;ldquo;the 400°F oven&amp;rdquo; and &amp;ldquo;the 350°F oven&amp;rdquo;). In a future snippet we can sketch out what the language would look like, including writing the programs for a handful of example recipes.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -427,14 +427,14 @@ I expect we&amp;rsquo;ll find that if the cost of internet connectivity is modes
 Some costs to consider include spoilage and other lost beans, customer service, cost of beans, shipping costs, software costs, and of course the cost of the special internet-connected case.&lt;/p&gt;
 &lt;p&gt;In a future snippet I&amp;rsquo;d also like to think through whether I&amp;rsquo;m a proponent of the idea. What are the longer term consequences? What ethical issues arise?&lt;/p&gt;
 &lt;p&gt;Brainstorming fun names comes later too. Jeffrey Beanzos? I&amp;rsquo;ll keep thinking.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;The shelf-life of beans tends to be 2-5 years, so the policy can be something like: &amp;ldquo;If the beans remain uneaten for 5 years, you get to keep the beans for free. Dispose of them responsibly.&amp;rdquo; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;The shelf-life of beans tends to be 2-5 years, so the policy can be something like: &amp;ldquo;If the beans remain uneaten for 5 years, you get to keep the beans for free. Dispose of them responsibly.&amp;rdquo;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -563,17 +563,17 @@ For many researchers, even publishing the hypotheses that they are actively work
 &lt;p&gt;The next concern is about &lt;em&gt;collapsing of the idea space&lt;/em&gt;. In order for a group to come up with the best possible ideas, there needs to be space for the group&amp;rsquo;s thinking to diverge, as well as space for discussion leading to some amount of convergence on good ideas. The hypothesis journal idea increases the amount of convergence. Some might argue we actually need more divergence in our thinking. I would be interested to discuss this with you if you have this concern.&lt;/p&gt;
 &lt;p&gt;Finally, a possible concern is that hypotheses without experiments are not on their own valuable, e.g. that &amp;ldquo;ideas are a dime a dozen&amp;rdquo;. To address this concern, I think we merely need to raise the bar about what constitutes a good hypothesis. We&amp;rsquo;re not looking for just any old idea, but rather ones that will advance the science of machine learning, backed up by the evidence the machine learning community has collected, and likely to be impactful on future science. Coming up with a good hypothesis is not easy, but a popular hypothesis journal could be an effective tool for improving our collective ability to do so.&lt;/p&gt;
 &lt;p&gt;If you share these concerns of have additional ones not discussed here, please get in touch. I&amp;rsquo;d love to discuss.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;I describe the &amp;ldquo;hypothesis arxiv&amp;rdquo; idea using the language of empirical science, but in principle the idea could be applied to entirely theoretical fields as well. In that setting, the idea would be to make space for unproven conjectures to be shared more freely. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;I describe the &amp;ldquo;hypothesis arxiv&amp;rdquo; idea using the language of empirical science, but in principle the idea could be applied to entirely theoretical fields as well. In that setting, the idea would be to make space for unproven conjectures to be shared more freely.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;And if a hypothesis submitted to the hypothesis arxiv by one group is being evaluated by another group, then it would make sense to me to include the first group closely in the evaluation process. In this way, the &amp;ldquo;hypothesis arxiv&amp;rdquo; may open up LLM research even more than described in the main text. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;And if a hypothesis submitted to the hypothesis arxiv by one group is being evaluated by another group, then it would make sense to me to include the first group closely in the evaluation process. In this way, the &amp;ldquo;hypothesis arxiv&amp;rdquo; may open up LLM research even more than described in the main text.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -732,15 +732,15 @@ After reading The Code Breaker, I&amp;rsquo;ve become progressively more excited
 &lt;p&gt;Third, even if all current video game companies signed the HGIC, acted in good faith, and even if there were no possibility of new entrants, there still remain the difficult questions of how to measure the reduction in unhealthy addictiveness of games. As a strawman, the HGIC could specify a metric, say play-time per player, and all companies would reduce their play-time per player by an agreed upon percent. I&amp;rsquo;ll readily acknowledge this sounds ridiculous; it could mean ruining the fun of some games, not making them healthier! As a second strawman, the HGIC could specify specific game mechanics and how to adjust them. E.g. it would specify that count-down timers need to be shortened by X% (does that even help?), non-deterministic rewards need to be made Y% more deterministic, etc. I&amp;rsquo;ll readily acknowledge this strawman is ridiculous too; there are likely too many possible game mechanics for an agreement of this form to be manageable to produce. Finding an equivalent reduction in addictiveness across all games is impossible because games are simply too varied.&lt;/p&gt;
 &lt;p&gt;Fourthly and finally, &lt;em&gt;everyone&lt;/em&gt; I&amp;rsquo;ve shared this idea with so far (three people in total) have disagreed with the premise, that the addicting nature of video games is a negative thing, and that reducing it is desirable. This is a real surprise to me. I thought it was generally accepted that the tactics employed by FarmVille, CandyCrush, Covet, and the like are deliberative exploitative and addictive, designed through experimentation to maximize engagement and profit, and that this is a negative aspect of the games. I suppose I was wrong about this (the generally accepted part, that is). Guess I need to expand my bubble.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;We now have four solid reasons that the Healthy Games Inter-company Compact could never come into effect. I&amp;rsquo;m sure there are a dozen more. It&amp;rsquo;s nevertheless nice to imagine a world in which a few companies draft and sign the compact, initially thinking it will never come into effect. And then, over time, more companies are drawn to the idea of improving the health of their addiction-prone customers, until eventually the industry enacts and broadly follows guidelines for healthy game development. I think that&amp;rsquo;s a world to aspire to, albeit unrealistic. So while the HGIC in all likelihood won&amp;rsquo;t work, perhaps there&amp;rsquo;s another path there.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;To get a glimpse of what people think outside my itsy-bitsy social bubble, you can have a look at 
-&lt;a href=&#34;https://www.commonsensemedia.org/app-reviews/candy-crush-saga/user-reviews/adult&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these mixed reviews of CandyCrush from parents and children&lt;/a&gt;. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://www.commonsensemedia.org/app-reviews/candy-crush-saga/user-reviews/adult&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these mixed reviews of CandyCrush from parents and children&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -766,15 +766,15 @@ A quick look at any complex task, say chess or a hard math problem, makes it app
 &lt;p&gt;The result is that we need to be deliberate with how we choose to spend our brainpower. And this starts with being mindful and intentional with our attention.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;As an exercise for the reader: Would the Efficient Minds Hypothesis imply the Efficient Market Hypothesis? How about the reverse?&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;&amp;ldquo;System 1&amp;rdquo; and &amp;ldquo;System 2&amp;rdquo; refer to Kahneman&amp;rsquo;s dichotomy of fast intuitive (System 1) vs slow, deliberate, planned (System 2) thought from 
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thinking, Fast and Slow&lt;/a&gt;. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thinking, Fast and Slow&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -880,7 +880,7 @@ Nevertheless, I will explain the situation that prompted me to write this module
 &lt;p&gt;The trouble with hooks in this situation is that they require either very long argument lists, or bundling of many arguments into a single argument. If different functions need different bundles of arguments, the bundling approach can be quite cumbersome. Also, if two hooks wish to communicate with one another, that needs to be accommodated too. Magic functions provide one mechanism for dealing with this complexity. Different magic hooks can make use of different parts of the training loop&amp;rsquo;s state. A magic hook can also use state set by another hook.
 While this approach does satisfactorily address the complexity of writing a training loop library,
 I must stress that I do not recommend this approach.&lt;/p&gt;
-&lt;p&gt;As with real magic, use &lt;code&gt;magic&lt;/code&gt; at your own peril. 🧙‍♀️ 😉&lt;/p&gt;
+&lt;p&gt;As with real magic, use &lt;code&gt;magic&lt;/code&gt; at your own peril. &amp;#x1f9d9; &amp;#x1f609;&lt;/p&gt;
 </description>
     </item>
     
@@ -901,15 +901,15 @@ I must stress that I do not recommend this approach.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FxD83QrK9_D.png?alt=media&amp;amp;token=76f275ac-62fd-4844-829c-b44cf9cf568f&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Currently the tweet selection is random, but already in this first 20 minutes I&amp;rsquo;ve been happy with the tweets it&amp;rsquo;s been writing. Perhaps in a future iteration I&amp;rsquo;ll make some adjustments to what it tweets and when. It&amp;rsquo;s nice to have this kind of control over my attention, especially in a setting like Twitter where I&amp;rsquo;m so used to mindless scrolling.&lt;/p&gt;
 &lt;p&gt;This same technique ought to work fine for taking control of my Facebook feed too, so perhaps I&amp;rsquo;ll get Private Bieber an account there next.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://gist.github.com/dbieber/47660493954e62f4607cd8d19d54cf59&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source code is here.&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://gist.github.com/dbieber/47660493954e62f4607cd8d19d54cf59&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source code is here.&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -1046,14 +1046,14 @@ ORDER BY messenger.timestamp desc;
 &lt;p&gt;The details on exactly when to send kangaroos are still a work in progress. I don&amp;rsquo;t want to overwhelm anyone with kangaroos. I&amp;rsquo;m thinking about some rules: (1) only send kangaroos if there was a message of non-trivial length, e.g. more than 20 characters, (2) only send a kangaroo after I&amp;rsquo;ve read the message; if I genuinely haven&amp;rsquo;t seen the message yet, no need for a kangaroo, as the message will still appear as unread in my inbox, (3) if you send follow-up messages, that resets the timer on the 2 hours, (4) any messages you send within 5 minutes of me sending you a message are ineligible for triggering kangaroos (this way I don&amp;rsquo;t need to get the last word), and (5) obviously, don&amp;rsquo;t send a kangaroo for a message I&amp;rsquo;ve already responded too.&lt;/p&gt;
 &lt;p&gt;To summarize, the rules of kangaroos are: You get a kangaroo if the &lt;strong&gt;most-recent&lt;/strong&gt; message in our chat is &lt;strong&gt;non-trivial&lt;/strong&gt;, &lt;strong&gt;read-by-me&lt;/strong&gt;, &lt;strong&gt;written-by-you&lt;/strong&gt;, &lt;strong&gt;not an immediate reply&lt;/strong&gt;, and &lt;strong&gt;two-hours old&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Why kangaroos? They bounce 🤷‍♂️ ? This is kind of like a message bouncing&amp;hellip;&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;With a picture of a kangaroo, that is. Like this one: 🦘, or this: &lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FtBz98tV75N.png?alt=media&amp;amp;token=66762cac-d0b0-43ba-91a8-eaefa6ef7626&#34; alt=&#34;&#34;&gt; It will not send them an actual real-life kangaroo. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;With a picture of a kangaroo, that is. Like this one: 🦘, or this: &lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FtBz98tV75N.png?alt=media&amp;amp;token=66762cac-d0b0-43ba-91a8-eaefa6ef7626&#34; alt=&#34;&#34;&gt; It will not send them an actual real-life kangaroo.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -1066,7 +1066,8 @@ ORDER BY messenger.timestamp desc;
       
       <description>&lt;p&gt;I don&amp;rsquo;t know if I like this idea, but I&amp;rsquo;m giving it a try; I&amp;rsquo;ve added a &amp;ldquo;Now&amp;rdquo; page to my website (
 &lt;a href=&#34;https://davidbieber.com/now/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;davidbieber.com/now&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;The idea for now pages is described at &lt;a href=&#34;https://nownownow.com/about&#34;&gt;https://nownownow.com/about&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The idea for now pages is described at 
+&lt;a href=&#34;https://nownownow.com/about&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://nownownow.com/about&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Basically, a now page says what&amp;rsquo;s going on in the author&amp;rsquo;s life now. Not &lt;em&gt;right now&lt;/em&gt; &amp;ndash; that would be a &amp;ldquo;right now page&amp;rdquo; &amp;ndash; but rather, now in the broader sense of &amp;ldquo;what&amp;rsquo;s are you up to these days?&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;This post isn&amp;rsquo;t about my new Now page though, which I don&amp;rsquo;t necessarily plan to keep up (if the link 404s, you know why). Rather, this post is about an idea for a kind of &amp;ldquo;right now&amp;rdquo; page that I&amp;rsquo;m toying with building.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;d like to make a page that tells the reader if I&amp;rsquo;m likely available for a conversation &lt;em&gt;right now&lt;/em&gt;. I&amp;rsquo;d call it the &amp;ldquo;is David available to talk now&amp;rdquo; page, and here&amp;rsquo;s how it might work.&lt;/p&gt;
@@ -1431,10 +1432,9 @@ db.close()
       <guid>https://davidbieber.com/snippets/2020-11-30-updating-google-slides-through-roam-research/</guid>
       
       <description>&lt;p&gt;Check out this &amp;ldquo;demo video&amp;rdquo; I made! It shows me making a presentation using Roam Research references. When I update the block in Roam that I&amp;rsquo;m referencing, the presentation gets updated automatically.&lt;/p&gt;
-
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/YccjrI3fmhc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+			&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/YccjrI3fmhc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+		&lt;/div&gt;
 
 &lt;p&gt;Editing slides and docs in this way would be so useful! Being able to focus on content in Roam, and presentation in a tool that&amp;rsquo;s built for presentation (like Docs and Slides) would be such a powerful combination.&lt;/p&gt;
 &lt;p&gt;In my experience, Roam is a powerful tool for &lt;strong&gt;thinking&lt;/strong&gt; and &lt;strong&gt;note-taking&lt;/strong&gt;, but not as useful for sharing those thoughts. When you&amp;rsquo;re sharing, you want to tell a story. You want to guide the reader through your thought process, and be in control of the narrative the whole time.&lt;/p&gt;

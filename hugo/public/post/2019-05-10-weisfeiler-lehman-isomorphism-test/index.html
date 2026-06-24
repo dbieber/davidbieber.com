@@ -255,8 +255,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_3442a5ec1975e9c2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_f8848e5bff6e4686.png">
 
   <link rel="canonical" href="https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/">
 
@@ -327,7 +327,7 @@
     "name": "David Bieber",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://davidbieber.com/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png"
+      "url": "https://davidbieber.com/images/icon_hu_f8848e5bff6e4686.png"
     }
   },
   "description": "Explains the Weisfeiler-Lehman Graph Isomorphism Test"
@@ -528,7 +528,7 @@
 
 
 <div class="article-header d-xl-none">
-  <img src="/post/2019-05-10-weisfeiler-lehman-isomorphism-test/featured_hu465e8dab66275ec12977edeacd92b6fe_41473_1600x400_fill_q90_box_smart1_2.png" class="article-banner" itemprop="image" alt="">
+  <img src="/post/2019-05-10-weisfeiler-lehman-isomorphism-test/featured_hu_f7e1925620dff35.png" class="article-banner" itemprop="image" alt="">
   
 </div>
 
@@ -579,7 +579,7 @@
     </div>
     <div class="col-6">
       <div class="split-header-image">
-        <img src="/post/2019-05-10-weisfeiler-lehman-isomorphism-test/featured_hu465e8dab66275ec12977edeacd92b6fe_41473_680x500_fill_q90_box_smart1_2.png" itemprop="image" alt="">
+        <img src="/post/2019-05-10-weisfeiler-lehman-isomorphism-test/featured_hu_eb53849c399373d7.png" itemprop="image" alt="">
         
       </div>
     </div>
@@ -634,7 +634,7 @@
 <p>Two graphs are considered isomorphic if there is a mapping between the nodes of the graphs that preserves node adjacencies.
 That is, a pair of nodes may be connected by an edge in the first graph if and only if the corresponding pair of nodes in the second graph is also connected by an edge in the same way.
 An example of two isomorphic graphs is shown here.</p>
-<p><img src="graph-isomorphism.png" alt="Example of isomorphic graphs" title="Two isomorphic graphs are shown.">
+<p><img src="/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism.png" alt="Example of isomorphic graphs" title="Two isomorphic graphs are shown.">
 <em>Figure: Graph 1 and Graph 2 are isomorphic.
 The correspondance between nodes is illustrated by the node colors and numbers.</em></p>
 <p>In general, determining whether two graphs are isomorphic when the correspondance is not provided is a challenging problem; precisely how hard this problem is remains an open question in computer science.
@@ -648,7 +648,7 @@ If the canonical forms of two graphs are not equivalent, then the graphs are def
 However, it is possible for two non-isomorphic graphs to share a canonical form, so this test alone cannot provide conclusive evidence that two graphs are isomorphic.</p>
 <p>The Algorithm:</p>
 <ul>
-<li>For iteration $i$ of the algorithm we will be assigning to each node a tuple $L_{i,n}$ containing the node&rsquo;s old compressed label and a multiset of the node&rsquo;s neighbors' compressed labels.
+<li>For iteration $i$ of the algorithm we will be assigning to each node a tuple $L_{i,n}$ containing the node&rsquo;s old compressed label and a multiset of the node&rsquo;s neighbors&rsquo; compressed labels.
 A multiset is a set (a collection of elements where order is not important) where elements may appear multiple times.</li>
 <li>At each iteration we will additionally be assigning to each node $n$ a new &ldquo;compressed&rdquo; label $C_{i,n}$ for that node&rsquo;s set of labels.
 Any two nodes with the same $L_{i,n}$ will get the same compressed label.</li>
@@ -666,25 +666,25 @@ The algorithm may be terminated early after iteration $i$ if the sizes of partit
 <h3 id="example-of-the-weisfeiler-lehman-isomorphism-test">Example of the Weisfeiler-Lehman Isomorphism Test</h3>
 <p>We demonstrate here the Weisfeiler-Lehman isomorphism test using the example graphs from above.
 The graphs are shown again here for completeness.</p>
-<p><img src="graph-isomorphism-000.png" alt="Two isomorphic graphs are shown." title="Two isomorphic graphs are shown.">
+<p><img src="/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-000.png" alt="Two isomorphic graphs are shown." title="Two isomorphic graphs are shown.">
 <em>Figure: Graph 1 and Graph 2 are isomorphic.
 We will apply the Weisfeiler-Lehman isomorphism test to these graphs as a means of illustrating the test.</em></p>
 <p>To initialize the algorithm (Step 1), we set $C_{0,n} = 1$ for all nodes $n$.</p>
-<p><img src="graph-isomorphism-001.png" alt="Initialization: $C\_{0,n} = 1$ for all nodes $n$" title="We initialize $C_{0,n} = 1$ for all nodes."></p>
+<p><img src="/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-001.png" alt="Initialization: $C\_{0,n} = 1$ for all nodes $n$" title="We initialize $C\_{0,n} = 1$ for all nodes."></p>
 <p>For iteration 1, Step 2, we compute $L_{1,n}$.
-The first part of a node&rsquo;s $L$ is the node&rsquo;s old compressed label; the second part of a node&rsquo;s $L$ is the multiset of the neighboring nodes' compressed labels.</p>
-<p><img src="graph-isomorphism-002.png" alt="Iteration 1, Step 2: $L\_{1,n}$" title="Iteration 1, Step 2: $L_{1,n}$"></p>
+The first part of a node&rsquo;s $L$ is the node&rsquo;s old compressed label; the second part of a node&rsquo;s $L$ is the multiset of the neighboring nodes&rsquo; compressed labels.</p>
+<p><img src="/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-002.png" alt="Iteration 1, Step 2: $L\_{1,n}$" title="Iteration 1, Step 2: $L\_{1,n}$"></p>
 <p>For iteration 1, Step 3, we introduce &ldquo;compressed&rdquo; labels $C_{1,n}$ for the nodes:</p>
-<p><img src="graph-isomorphism-003.png" alt="Iteration 1, Step 3: $C\_{1,n}$" title="Iteration 1, Step 3: $C_{1,n}$"></p>
+<p><img src="/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-003.png" alt="Iteration 1, Step 3: $C\_{1,n}$" title="Iteration 1, Step 3: $C\_{1,n}$"></p>
 <p>We now begin iteration 2.
 In iteration 2, Step 2, we compute $L_{2,n}$:</p>
-<p><img src="graph-isomorphism-004.png" alt="Iteration 2, Step 2: $L\_{2,n}$" title="Iteration 2, Step 2: $L_{2,n}$"></p>
+<p><img src="/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-004.png" alt="Iteration 2, Step 2: $L\_{2,n}$" title="Iteration 2, Step 2: $L\_{2,n}$"></p>
 <p>In iteration 2, Step 3, we compute $C_{2,n}$:</p>
-<p><img src="graph-isomorphism-005.png" alt="Iteration 2, Step 3: $C\_{2,n}$" title="Iteration 2, Step 3: $C_{2,n}$"></p>
+<p><img src="/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-005.png" alt="Iteration 2, Step 3: $C\_{2,n}$" title="Iteration 2, Step 3: $C\_{2,n}$"></p>
 <p>In iteration 3, Step 2, we compute $L_{3,n}$:</p>
-<p><img src="graph-isomorphism-006.png" alt="Iteration 3, Step 2: $L\_{3,n}$" title="Iteration 3, Step 2: $L_{3,n}$"></p>
+<p><img src="/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-006.png" alt="Iteration 3, Step 2: $L\_{3,n}$" title="Iteration 3, Step 2: $L\_{3,n}$"></p>
 <p>In iteration 3, Step 3, we compute $C_{3,n}$:</p>
-<p><img src="graph-isomorphism-007.png" alt="Iteration 3, Step 3: $C\_{3,n}$" title="Iteration 3, Step 3: $C_{3,n}$"></p>
+<p><img src="/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-007.png" alt="Iteration 3, Step 3: $C\_{3,n}$" title="Iteration 3, Step 3: $C\_{3,n}$"></p>
 <p>Since the partition of nodes by compressed label has not changed from $C_{2,n}$ to $C_{3,n}$, we may terminate the algorithm here.</p>
 <p>Concretely, the partition of nodes by compressed label may be represented as the number of nodes with each compressed label.
 That is: <strong>&ldquo;2 7s, 1 8, and 2 9s&rdquo;</strong>.
@@ -969,7 +969,7 @@ details.addEventListener("toggle", event => {
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+<script src="/js/academic.min.01af32edc9a00e9a188425fb55cdbd62.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

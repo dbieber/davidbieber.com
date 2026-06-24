@@ -137,30 +137,30 @@ However, sometimes being able to send something immediately is desirable, and th
 &lt;h3 id=&#34;roam-to-sheets-the-messager-queue&#34;&gt;Roam to Sheets: The Messager Queue&lt;/h3&gt;
 &lt;p&gt;Any messages in Roam (whether entered directly into Roam, or entered via Go Note Go), are automatically added to a spreadsheet, the &amp;ldquo;Messager Queue&amp;rdquo;. These are the spreadsheet&amp;rsquo;s columns:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Service&lt;/td&gt;
-&lt;td&gt;Recipient&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;Date&lt;/td&gt;
-&lt;td&gt;Time&lt;/td&gt;
-&lt;td&gt;Approval&lt;/td&gt;
-&lt;td&gt;Status&lt;/td&gt;
-&lt;td&gt;Metadata&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Service&lt;/td&gt;
+					&lt;td&gt;Recipient&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;Date&lt;/td&gt;
+					&lt;td&gt;Time&lt;/td&gt;
+					&lt;td&gt;Approval&lt;/td&gt;
+					&lt;td&gt;Status&lt;/td&gt;
+					&lt;td&gt;Metadata&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;The Messager Queue sheet is filtered by default to show all pending messages. For each message it shows the &lt;em&gt;Service&lt;/em&gt; on which it will be sent and well as the &lt;em&gt;Recipient&lt;/em&gt; of the message. The service can be one of FB Messenger, Twitter, iMessage, a Slack server, or Discord. The recipient can either be an individual, a list of individuals, a group, a Slack channel, or a Discord server and channel.&lt;/p&gt;
 &lt;p&gt;There&amp;rsquo;s also a sheet that lists aliases, so it&amp;rsquo;s easy to use a short name or informal name to refer to a longer service or recipient; e.g. I use &amp;ldquo;@Audio Tools&amp;rdquo; as a shorthand for sending to a group of 5 people on Messenger all interested in audio tools for networked thought.&lt;/p&gt;
@@ -254,7 +254,9 @@ If you do, I&amp;rsquo;ll do my best to get back to you, likely as I&amp;rsquo;m
 &lt;p&gt;Go ahead and register a new Twitter account. I called mine &amp;ldquo;@PrivateBieber6&amp;rdquo; since my main account is just @Bieber. You can call yours whatever you like!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FiWU9fP2Eji.png?alt=media&amp;amp;token=25592447-c25f-4027-a68b-7a70d0275bd9&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll have to provide a phone number or email address while registering. If you reuse a phone number from an existing account, it will work, but you&amp;rsquo;ll lose the ability to use SMS commands and receive SMS notifications on your main account. Only the account most recently linked to this phone number will have these features.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Pro-tip:&lt;/strong&gt; you can add a plus (&amp;quot;+&amp;quot;) string to your email address to turn in into a new email address that still gets delivered to your inbox. E.g. mail to &lt;a href=&#34;mailto:david810+hello@gmail.com&#34;&gt;david810+hello@gmail.com&lt;/a&gt; still gets delivered to &lt;a href=&#34;mailto:david810@gmail.com&#34;&gt;david810@gmail.com&lt;/a&gt; (feel free to say hello).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pro-tip:&lt;/strong&gt; you can add a plus (&amp;quot;+&amp;quot;) string to your email address to turn in into a new email address that still gets delivered to your inbox. E.g. mail to 
+&lt;a href=&#34;mailto:david810&amp;#43;hello@gmail.com&#34;&gt;david810+hello@gmail.com&lt;/a&gt; still gets delivered to 
+&lt;a href=&#34;mailto:david810@gmail.com&#34;&gt;david810@gmail.com&lt;/a&gt; (feel free to say hello).&lt;/p&gt;
 &lt;p&gt;Once you&amp;rsquo;ve created your new account, two important things to do:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -267,7 +269,8 @@ If you do, I&amp;rsquo;ll do my best to get back to you, likely as I&amp;rsquo;m
 &lt;/ol&gt;
 &lt;p&gt;With this enabled, you&amp;rsquo;ll be the only one able to see the tweets from this account.&lt;/p&gt;
 &lt;h2 id=&#34;step-2-get-your-developer-api-keys&#34;&gt;Step 2: Get your developer API keys&lt;/h2&gt;
-&lt;p&gt;First you need to apply for a developer account. This just takes a minute. Go to &lt;a href=&#34;https://developer.twitter.com/en/apply-for-access&#34;&gt;https://developer.twitter.com/en/apply-for-access&lt;/a&gt; to apply for a developer account. Answer the questions honestly. Ping me on Twitter if any of the questions are unclear.&lt;/p&gt;
+&lt;p&gt;First you need to apply for a developer account. This just takes a minute. Go to 
+&lt;a href=&#34;https://developer.twitter.com/en/apply-for-access&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://developer.twitter.com/en/apply-for-access&lt;/a&gt; to apply for a developer account. Answer the questions honestly. Ping me on Twitter if any of the questions are unclear.&lt;/p&gt;
 &lt;p&gt;Once you have a developer account, create a new project and app. I called mine &amp;ldquo;Attention Playground.&amp;rdquo; Get creative! Choose a fun name.&lt;/p&gt;
 &lt;p&gt;Navigate to your newly created app, and Edit the &amp;ldquo;App permissions&amp;rdquo;. Set the app permissions to &amp;ldquo;Read and Write&amp;rdquo;. This will enable your bot to post tweets.&lt;/p&gt;
 &lt;p&gt;Next navigate to the project you created, and click the key icon next to your App.&lt;/p&gt;
@@ -308,7 +311,8 @@ def choose_message():
 &lt;p&gt;We&amp;rsquo;re going to write a more interesting tweet generator that pulls tweets out of a Roam Research database.&lt;/p&gt;
 &lt;p&gt;To do this, first set up a recurring json backup of your Roam Research database. You can use the project 
 &lt;a href=&#34;https://github.com/everruler12/roam2github-demo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;roam2github&lt;/a&gt; to set up the backup. There are detailed instructions on its github page for how to do this. You also have the option of using Roam&amp;rsquo;s built-in automatic backups, which you access from the command palette (cmd-P).&lt;/p&gt;
-&lt;p&gt;Use git to clone your backup locally. If your github repo is &amp;ldquo;&lt;a href=&#34;https://github.com/user/roam-backup%22,&#34;&gt;https://github.com/user/roam-backup&amp;quot;,&lt;/a&gt; then the command to clone the repo is &lt;code&gt;git clone https://github.com/dbieber/roam-backup&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Use git to clone your backup locally. If your github repo is &amp;ldquo;
+&lt;a href=&#34;https://github.com/user/roam-backup%22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/user/roam-backup&#34;&lt;/a&gt;, then the command to clone the repo is &lt;code&gt;git clone https://github.com/dbieber/roam-backup&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Create roam.py. You can 
 &lt;a href=&#34;https://gist.github.com/dbieber/7722280c7fa10d1fdfa507612427001d&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;copy the contents of roam.py from here&lt;/a&gt;. This will allow us to pull the latest backup of our Roam database from GitHub programmatically. (1) Set the ROAMRESEARCH_DBPATH variable in roam.py to the location of json backup in your roam-backup directory. For me, this is &amp;lsquo;/Users/dbieber/code/github/dbieber/roam-backup/json/playground.json&amp;rsquo;. (2) Set the roam_dir variable in the update function to the path to your roam-backup directory. For me, this is &amp;lsquo;/Users/dbieber/code/github/dbieber/roam-backup&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;Using the new roam module we just created, it&amp;rsquo;s time to write a function that extracts potential tweets from your Roam database. Here&amp;rsquo;s the function I use:&lt;/p&gt;
@@ -434,14 +438,14 @@ directory=/Users/dbieber/code/playground/private-bieber-twitter
 &lt;p&gt;Hopefully this guide makes it clear how you can use a private Twitter bot to reclaim your attention. The main contribution of this guide is its emphasis on using a private Twitter bot to design your own personal Twitter feed. We selected Roam Research backups as the source of tweets for our bot, but of course you can substitute Roam with any tweet generator that you please.&lt;/p&gt;
 &lt;p&gt;You can use a bot like this for revisiting old ideas, for surfacing your TODOs when you&amp;rsquo;re distracted, for sending yourself messages, or anything else you come up with.&lt;/p&gt;
 &lt;p&gt;Since making myself a private Twitter bot one month ago, I&amp;rsquo;ve been delighted to find that its tweets are often among the highest quality on my timeline. I hope you find the same.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;When it says that using a virtual environment is optional, know that it&amp;rsquo;s definitely worthwhile! &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;When it says that using a virtual environment is optional, know that it&amp;rsquo;s definitely worthwhile!&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -500,50 +504,50 @@ It then also rolls up this data in interesting ways that help me with reflecting
 &lt;p&gt;I&amp;rsquo;ll start by providing a brief description of each column in the spreadsheet. Then we&amp;rsquo;ll get to discuss how I use the spreadsheet, and you&amp;rsquo;ll see why they&amp;rsquo;re each important to me. We&amp;rsquo;ll then also dive into all the benefits I get from this spreadsheet and the infrastructure I&amp;rsquo;ve built up around it.&lt;/p&gt;
 &lt;h4 id=&#34;column-descriptions&#34;&gt;Column Descriptions&lt;/h4&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Column&lt;/th&gt;
-&lt;th&gt;Type&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;Evening&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;A single cell in which to put the main activity I did in the evening (e.g. after work) on that day.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;Morning&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;Optional, Text, infrequently used&lt;/td&gt;
-&lt;td&gt;The main activity I did in the morning (e.g. before work) on that day.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;Keywords&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;Optional, comma separated&lt;/td&gt;
-&lt;td&gt;Keywords describing the activities of that day.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;Weekday&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;Filled automatically&lt;/td&gt;
-&lt;td&gt;The day of the week, e.g. Thursday&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;Date&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;Filled automatically&lt;/td&gt;
-&lt;td&gt;The date&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;People&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;Names, comma separated&lt;/td&gt;
-&lt;td&gt;A list of the people I engaged with on that day&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;Notes&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;Optional, Text&lt;/td&gt;
-&lt;td&gt;A bit like a diary, this is a place to jot down additional notes about the day.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Column&lt;/th&gt;
+					&lt;th&gt;Type&lt;/th&gt;
+					&lt;th&gt;Description&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;em&gt;Evening&lt;/em&gt;&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;A single cell in which to put the main activity I did in the evening (e.g. after work) on that day.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;em&gt;Morning&lt;/em&gt;&lt;/td&gt;
+					&lt;td&gt;Optional, Text, infrequently used&lt;/td&gt;
+					&lt;td&gt;The main activity I did in the morning (e.g. before work) on that day.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;em&gt;Keywords&lt;/em&gt;&lt;/td&gt;
+					&lt;td&gt;Optional, comma separated&lt;/td&gt;
+					&lt;td&gt;Keywords describing the activities of that day.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;em&gt;Weekday&lt;/em&gt;&lt;/td&gt;
+					&lt;td&gt;Filled automatically&lt;/td&gt;
+					&lt;td&gt;The day of the week, e.g. Thursday&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;em&gt;Date&lt;/em&gt;&lt;/td&gt;
+					&lt;td&gt;Filled automatically&lt;/td&gt;
+					&lt;td&gt;The date&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;em&gt;People&lt;/em&gt;&lt;/td&gt;
+					&lt;td&gt;Names, comma separated&lt;/td&gt;
+					&lt;td&gt;A list of the people I engaged with on that day&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;em&gt;Notes&lt;/em&gt;&lt;/td&gt;
+					&lt;td&gt;Optional, Text&lt;/td&gt;
+					&lt;td&gt;A bit like a diary, this is a place to jot down additional notes about the day.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Really all of the columns are optional, but the ones that are particularly optional are marked as such.&lt;/p&gt;
 &lt;h3 id=&#34;usage&#34;&gt;Usage&lt;/h3&gt;
@@ -557,30 +561,30 @@ It then also rolls up this data in interesting ways that help me with reflecting
 &lt;p&gt;I have a second sheet that is updated automatically using data from the sheet I&amp;rsquo;ve been describing so far. This sheet has one row &lt;em&gt;per activity&lt;/em&gt; that I enjoy engaging in.&lt;/p&gt;
 &lt;p&gt;The most important columns in this sheet are:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Column&lt;/th&gt;
-&lt;th&gt;Type&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Category&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;The category of the activity (e.g. Athletic).&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Activity&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;An activity that I enjoy engaging in. (e.g. Skiing)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Last Date&lt;/td&gt;
-&lt;td&gt;Filled automatically&lt;/td&gt;
-&lt;td&gt;The most recent date on which I engaged in the activity.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Column&lt;/th&gt;
+					&lt;th&gt;Type&lt;/th&gt;
+					&lt;th&gt;Description&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Category&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;The category of the activity (e.g. Athletic).&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Activity&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;An activity that I enjoy engaging in. (e.g. Skiing)&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Last Date&lt;/td&gt;
+					&lt;td&gt;Filled automatically&lt;/td&gt;
+					&lt;td&gt;The most recent date on which I engaged in the activity.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;The &lt;code&gt;Last Date&lt;/code&gt; column is filled automatically using the data from the main sheet. The Google Sheets formula that fills in this column is a query a bit like this one:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;=IFERROR(QUERY(scheduled,
@@ -626,10 +630,10 @@ It then also rolls up this data in interesting ways that help me with reflecting
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-activities-by-category_hu2806f35bd91a07c85620e1b361834210_97421_2000x2000_fit_box_2.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-activities-by-category_hu_58e4a88a0d84194d.png&#34; &gt;
 
 
-  &lt;img data-src=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-activities-by-category_hu2806f35bd91a07c85620e1b361834210_97421_2000x2000_fit_box_2.png&#34; class=&#34;lazyload&#34; alt=&#34;A two-column spreadsheet showing how recently I&amp;#39;ve done an activity in each of the 15 activity categories.&#34; width=&#34;200px&#34; height=&#34;732&#34;&gt;
+  &lt;img data-src=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-activities-by-category_hu_58e4a88a0d84194d.png&#34; class=&#34;lazyload&#34; alt=&#34;A two-column spreadsheet showing how recently I&amp;#39;ve done an activity in each of the 15 activity categories.&#34; width=&#34;200px&#34; height=&#34;732&#34;&gt;
 &lt;/a&gt;
 
 
@@ -662,10 +666,10 @@ It then also rolls up this data in interesting ways that help me with reflecting
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-bieberbot-financial_huf983f5ecddfe8f1a3e2e0cb4f01b88c8_58408_2000x2000_fit_box_2.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-bieberbot-financial_hu_6a598b3d6aef767f.png&#34; &gt;
 
 
-  &lt;img data-src=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-bieberbot-financial_huf983f5ecddfe8f1a3e2e0cb4f01b88c8_58408_2000x2000_fit_box_2.png&#34; class=&#34;lazyload&#34; alt=&#34;A message from Bieber Bot reminding me that it&amp;#39;s been a while since I scheduled a Financial activity.&#34; width=&#34;350px&#34; height=&#34;240&#34;&gt;
+  &lt;img data-src=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-bieberbot-financial_hu_6a598b3d6aef767f.png&#34; class=&#34;lazyload&#34; alt=&#34;A message from Bieber Bot reminding me that it&amp;#39;s been a while since I scheduled a Financial activity.&#34; width=&#34;350px&#34; height=&#34;240&#34;&gt;
 &lt;/a&gt;
 
 
@@ -695,10 +699,10 @@ And if I don&amp;rsquo;t have any activity planned for a particular day, BieberB
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-bieberbot-hudson_hued59abe63d99bee46aaa05358969b28a_120266_2000x2000_fit_box_2.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-bieberbot-hudson_hu_b953055892ee7a3a.png&#34; &gt;
 
 
-  &lt;img data-src=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-bieberbot-hudson_hued59abe63d99bee46aaa05358969b28a_120266_2000x2000_fit_box_2.png&#34; class=&#34;lazyload&#34; alt=&#34;A message from Bieber Bot suggesting I take a walk along the Hudson River.&#34; width=&#34;350px&#34; height=&#34;360&#34;&gt;
+  &lt;img data-src=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-bieberbot-hudson_hu_b953055892ee7a3a.png&#34; class=&#34;lazyload&#34; alt=&#34;A message from Bieber Bot suggesting I take a walk along the Hudson River.&#34; width=&#34;350px&#34; height=&#34;360&#34;&gt;
 &lt;/a&gt;
 
 
@@ -746,40 +750,46 @@ And if I don&amp;rsquo;t have any activity planned for a particular day, BieberB
 &lt;p&gt;If this system sounds appealing to you, it&amp;rsquo;s very simple to get started.&lt;/p&gt;
 &lt;p&gt;Simply create a new Google sheet with the columns you&amp;rsquo;d like to track. I use the following:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;em&gt;Evening&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;Morning&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;Keywords&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;Weekday&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;Date&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;People&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;Notes&lt;/em&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;em&gt;Evening&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;Morning&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;Keywords&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;Weekday&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;Date&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;People&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;Notes&lt;/em&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;But for just getting started you might be satisfied with something simpler, say just these three columns:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;em&gt;Activity&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;Weekday&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;Date&lt;/em&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;em&gt;Activity&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;Weekday&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;Date&lt;/em&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;You can use the formula &lt;code&gt;=TEXT(WEEKDAY(E3), &amp;quot;dddd&amp;quot;)&lt;/code&gt; to autopopulate the &lt;code&gt;Weekday&lt;/code&gt; column, where E3 represents the date (tip: you can use cmd-; to enter today&amp;rsquo;s date into a cell).&lt;/p&gt;
 &lt;p&gt;I also create a second sheet called &lt;code&gt;Archive&lt;/code&gt; with the same columns as the main sheet, and use the 
 &lt;a href=&#34;https://gist.github.com/dbieber/42153e6a27382ba6193f108c13b84cf9&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;auto-archiving feature&lt;/a&gt; mentioned earlier to prevent the main sheet from getting cluttered.&lt;/p&gt;
 &lt;p&gt;Next create the analysis sheet with the columns:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;em&gt;Category&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;Activity&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;Last Date&lt;/em&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;em&gt;Category&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;Activity&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;Last Date&lt;/em&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;The first two columns you can fill in with whatever categories and activities you like, and you can add new categories and activities at any time. No need to fill this in too much until you start to see how you&amp;rsquo;re using the main sheet.&lt;/p&gt;
 &lt;p&gt;To autofill the &lt;code&gt;Last Date&lt;/code&gt; column, the full formula I use is:&lt;/p&gt;
@@ -830,7 +840,7 @@ And if I don&amp;rsquo;t have any activity planned for a particular day, BieberB
 &lt;p&gt;Two graphs are considered isomorphic if there is a mapping between the nodes of the graphs that preserves node adjacencies.
 That is, a pair of nodes may be connected by an edge in the first graph if and only if the corresponding pair of nodes in the second graph is also connected by an edge in the same way.
 An example of two isomorphic graphs is shown here.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism.png&#34; alt=&#34;Example of isomorphic graphs&#34; title=&#34;Two isomorphic graphs are shown.&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism.png&#34; alt=&#34;Example of isomorphic graphs&#34; title=&#34;Two isomorphic graphs are shown.&#34;&gt;
 &lt;em&gt;Figure: Graph 1 and Graph 2 are isomorphic.
 The correspondance between nodes is illustrated by the node colors and numbers.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;In general, determining whether two graphs are isomorphic when the correspondance is not provided is a challenging problem; precisely how hard this problem is remains an open question in computer science.
@@ -844,7 +854,7 @@ If the canonical forms of two graphs are not equivalent, then the graphs are def
 However, it is possible for two non-isomorphic graphs to share a canonical form, so this test alone cannot provide conclusive evidence that two graphs are isomorphic.&lt;/p&gt;
 &lt;p&gt;The Algorithm:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;For iteration $i$ of the algorithm we will be assigning to each node a tuple $L_{i,n}$ containing the node&amp;rsquo;s old compressed label and a multiset of the node&amp;rsquo;s neighbors&#39; compressed labels.
+&lt;li&gt;For iteration $i$ of the algorithm we will be assigning to each node a tuple $L_{i,n}$ containing the node&amp;rsquo;s old compressed label and a multiset of the node&amp;rsquo;s neighbors&amp;rsquo; compressed labels.
 A multiset is a set (a collection of elements where order is not important) where elements may appear multiple times.&lt;/li&gt;
 &lt;li&gt;At each iteration we will additionally be assigning to each node $n$ a new &amp;ldquo;compressed&amp;rdquo; label $C_{i,n}$ for that node&amp;rsquo;s set of labels.
 Any two nodes with the same $L_{i,n}$ will get the same compressed label.&lt;/li&gt;
@@ -862,25 +872,25 @@ The algorithm may be terminated early after iteration $i$ if the sizes of partit
 &lt;h3 id=&#34;example-of-the-weisfeiler-lehman-isomorphism-test&#34;&gt;Example of the Weisfeiler-Lehman Isomorphism Test&lt;/h3&gt;
 &lt;p&gt;We demonstrate here the Weisfeiler-Lehman isomorphism test using the example graphs from above.
 The graphs are shown again here for completeness.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-000.png&#34; alt=&#34;Two isomorphic graphs are shown.&#34; title=&#34;Two isomorphic graphs are shown.&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-000.png&#34; alt=&#34;Two isomorphic graphs are shown.&#34; title=&#34;Two isomorphic graphs are shown.&#34;&gt;
 &lt;em&gt;Figure: Graph 1 and Graph 2 are isomorphic.
 We will apply the Weisfeiler-Lehman isomorphism test to these graphs as a means of illustrating the test.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;To initialize the algorithm (Step 1), we set $C_{0,n} = 1$ for all nodes $n$.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-001.png&#34; alt=&#34;Initialization: $C\_{0,n} = 1$ for all nodes $n$&#34; title=&#34;We initialize $C_{0,n} = 1$ for all nodes.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-001.png&#34; alt=&#34;Initialization: $C\_{0,n} = 1$ for all nodes $n$&#34; title=&#34;We initialize $C\_{0,n} = 1$ for all nodes.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;For iteration 1, Step 2, we compute $L_{1,n}$.
-The first part of a node&amp;rsquo;s $L$ is the node&amp;rsquo;s old compressed label; the second part of a node&amp;rsquo;s $L$ is the multiset of the neighboring nodes&#39; compressed labels.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-002.png&#34; alt=&#34;Iteration 1, Step 2: $L\_{1,n}$&#34; title=&#34;Iteration 1, Step 2: $L_{1,n}$&#34;&gt;&lt;/p&gt;
+The first part of a node&amp;rsquo;s $L$ is the node&amp;rsquo;s old compressed label; the second part of a node&amp;rsquo;s $L$ is the multiset of the neighboring nodes&amp;rsquo; compressed labels.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-002.png&#34; alt=&#34;Iteration 1, Step 2: $L\_{1,n}$&#34; title=&#34;Iteration 1, Step 2: $L\_{1,n}$&#34;&gt;&lt;/p&gt;
 &lt;p&gt;For iteration 1, Step 3, we introduce &amp;ldquo;compressed&amp;rdquo; labels $C_{1,n}$ for the nodes:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-003.png&#34; alt=&#34;Iteration 1, Step 3: $C\_{1,n}$&#34; title=&#34;Iteration 1, Step 3: $C_{1,n}$&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-003.png&#34; alt=&#34;Iteration 1, Step 3: $C\_{1,n}$&#34; title=&#34;Iteration 1, Step 3: $C\_{1,n}$&#34;&gt;&lt;/p&gt;
 &lt;p&gt;We now begin iteration 2.
 In iteration 2, Step 2, we compute $L_{2,n}$:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-004.png&#34; alt=&#34;Iteration 2, Step 2: $L\_{2,n}$&#34; title=&#34;Iteration 2, Step 2: $L_{2,n}$&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-004.png&#34; alt=&#34;Iteration 2, Step 2: $L\_{2,n}$&#34; title=&#34;Iteration 2, Step 2: $L\_{2,n}$&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In iteration 2, Step 3, we compute $C_{2,n}$:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-005.png&#34; alt=&#34;Iteration 2, Step 3: $C\_{2,n}$&#34; title=&#34;Iteration 2, Step 3: $C_{2,n}$&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-005.png&#34; alt=&#34;Iteration 2, Step 3: $C\_{2,n}$&#34; title=&#34;Iteration 2, Step 3: $C\_{2,n}$&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In iteration 3, Step 2, we compute $L_{3,n}$:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-006.png&#34; alt=&#34;Iteration 3, Step 2: $L\_{3,n}$&#34; title=&#34;Iteration 3, Step 2: $L_{3,n}$&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-006.png&#34; alt=&#34;Iteration 3, Step 2: $L\_{3,n}$&#34; title=&#34;Iteration 3, Step 2: $L\_{3,n}$&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In iteration 3, Step 3, we compute $C_{3,n}$:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-007.png&#34; alt=&#34;Iteration 3, Step 3: $C\_{3,n}$&#34; title=&#34;Iteration 3, Step 3: $C_{3,n}$&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-007.png&#34; alt=&#34;Iteration 3, Step 3: $C\_{3,n}$&#34; title=&#34;Iteration 3, Step 3: $C\_{3,n}$&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Since the partition of nodes by compressed label has not changed from $C_{2,n}$ to $C_{3,n}$, we may terminate the algorithm here.&lt;/p&gt;
 &lt;p&gt;Concretely, the partition of nodes by compressed label may be represented as the number of nodes with each compressed label.
 That is: &lt;strong&gt;&amp;ldquo;2 7s, 1 8, and 2 9s&amp;rdquo;&lt;/strong&gt;.
@@ -1396,7 +1406,7 @@ Practice, ask questions, and develop a good sleep habit.&lt;/p&gt;
 &lt;a href=&#34;http://mathcounts.saab.org/mc.cgi&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MATHCOUNTS drills&lt;/a&gt;, 
 &lt;a href=&#34;http://www.unidata.ucar.edu/staff/russ/mathcounts/diaz.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mr. Diaz&amp;rsquo;s MATHCOUNTS Bible&lt;/a&gt;, and 
 &lt;a href=&#34;http://mathweb.scranton.edu/monks/courses/ProblemSolving/MathCountsPlaybook.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Coach Monks’s MATHCOUNTS Playbook&lt;/a&gt;. Get together with members of your team to practice outside of school. Use problems you find online or, better yet, write your own, and don&amp;rsquo;t forget to ask your parents to provide you with a snack.&lt;/p&gt;
-&lt;p&gt;If ever there are problems you don&amp;rsquo;t understand (and this should happen very often), ask about them. At practice it can be difficult to get to all of them because there is so much to do in so little time, but don&amp;rsquo;t limit your questions to your practices. Talk to or email your coach or teachers or siblings or parents or friends or friends&#39; parents. Anyone might have the knowledge or insight to answer/explore your questions.&lt;/p&gt;
+&lt;p&gt;If ever there are problems you don&amp;rsquo;t understand (and this should happen very often), ask about them. At practice it can be difficult to get to all of them because there is so much to do in so little time, but don&amp;rsquo;t limit your questions to your practices. Talk to or email your coach or teachers or siblings or parents or friends or friends&amp;rsquo; parents. Anyone might have the knowledge or insight to answer/explore your questions.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;What advice would you give to new coaches just starting a MATHCOUNTS program?&lt;/strong&gt;&lt;br&gt;
 Have fun with it, and your students will have fun too (at least in principle, anyhow). Chances are your students will know things and ask things you don&amp;rsquo;t know or can&amp;rsquo;t answer, and that&amp;rsquo;s good. Being a coach is an opportunity to learn as well as to teach.&lt;/p&gt;
 &lt;p&gt;The most important advice I can leave you with (keep in mind I have more experience as a student than as a coach) to get your MATHCOUNTS team off the ground, though, is to provide snacks. I recommend grapes, as they&amp;rsquo;re healthy, tasty, easy to distribute, and avoid the majority of allergy problems.&lt;/p&gt;
@@ -1416,13 +1426,13 @@ Have fun with it, and your students will have fun too (at least in principle, an
 &lt;p&gt;&lt;strong&gt;David, let&amp;rsquo;s begin with the question everyone is dying to hear you answer. Are you related to Justin Bieber?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s funny you should ask that. People tell me all the time &amp;ldquo;sorry about your last name&amp;rdquo; or &amp;ldquo;I hope you&amp;rsquo;re not related to &lt;em&gt;that singer&lt;/em&gt;&amp;rdquo; or &amp;ldquo;can you get me free tickets to the Bieber concert?&amp;rdquo; And because of that, I&amp;rsquo;ve started feeling a real connection to the guy. I root for his success. I feel down when people trash his music. I think we could become genuinely good friends if we weren&amp;rsquo;t both vying for the top spot on Google for the search term &amp;ldquo;Bieber.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;And no, I don&amp;rsquo;t listen to his music (much).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;david-bieber-no-beber.png&#34; alt=&#34;No Bieber!&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2013-08-14-khanversation/david-bieber-no-beber.png&#34; alt=&#34;No Bieber!&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;So, Bieber, how did you come to work at Khan Academy?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Sounds like life story time.&lt;/p&gt;
 &lt;p&gt;I had some pretty incredible teachers growing up. Lots of them. And not just the grown-up kind &amp;ndash; the peer kind too. Throughout middle and high school I was involved in this fantastic math community, the 
 &lt;a href=&#34;http://albanyareamathcircle.blogspot.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Albany Area Math Circle&lt;/a&gt;. We practiced loads of competition math, and most of what I learned, I learned from other students. Some a few years older than me, some a few years younger.&lt;/p&gt;
 &lt;p&gt;Here I got involved in coaching MathCounts, and I quickly realized that I love teaching. I ran a math camp for middle school students one summer and I had a blast doing it. Whatever I was going to do with my life, it was going to involve teaching in some capacity.&lt;/p&gt;
-&lt;p&gt;Fast forward a couple years, and I&amp;rsquo;m sitting in a dining hall in some castle in Princeton. I&amp;rsquo;m talking with some friends about startup ideas &amp;ndash; I have a lot of friends interested in entrepreneurship &amp;ndash; and I have a brilliant idea for a company. (I love getting lost in the excitement of a good idea.) &amp;ldquo;We&amp;rsquo;ll take classes, and we&amp;rsquo;ll put them online. Just Princeton classes to start &amp;ndash; it&amp;rsquo;ll be like MIT&amp;rsquo;s OpenCourseWare &amp;ndash; but we&amp;rsquo;ll make it scalable. And any student with their professor&amp;rsquo;s permission will be able to really easily get their classes&#39; lectures online.&amp;rdquo; Sounds a bit like Coursera. Or YouTube. From there on out, I gave a lot of thought to teaching at scale.&lt;/p&gt;
+&lt;p&gt;Fast forward a couple years, and I&amp;rsquo;m sitting in a dining hall in some castle in Princeton. I&amp;rsquo;m talking with some friends about startup ideas &amp;ndash; I have a lot of friends interested in entrepreneurship &amp;ndash; and I have a brilliant idea for a company. (I love getting lost in the excitement of a good idea.) &amp;ldquo;We&amp;rsquo;ll take classes, and we&amp;rsquo;ll put them online. Just Princeton classes to start &amp;ndash; it&amp;rsquo;ll be like MIT&amp;rsquo;s OpenCourseWare &amp;ndash; but we&amp;rsquo;ll make it scalable. And any student with their professor&amp;rsquo;s permission will be able to really easily get their classes&amp;rsquo; lectures online.&amp;rdquo; Sounds a bit like Coursera. Or YouTube. From there on out, I gave a lot of thought to teaching at scale.&lt;/p&gt;
 &lt;p&gt;Which brings us to Khan Academy. I&amp;rsquo;m interested in programming and technology and education, and I&amp;rsquo;m all for making the world a better place. What better way than the KA way to leverage my interests to facilitate teaching at scale?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Wait&amp;hellip; You said you were sitting in a castle?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Yeah, half the buildings on campus are castles. But that&amp;rsquo;s not the best thing about Princeton. The best thing about Princeton is Code@Night (though I&amp;rsquo;m biased &amp;ndash; I organize them). Every two to three weeks there&amp;rsquo;s a Code@Night where people gather in this beautiful non-castle building called Sherrerd to code at night. Usually a student or professor or an engineer from a sponsor company will give a tech talk or a demo. People will code all night, they&amp;rsquo;ll play PacMan and eat pizza. Sometimes they&amp;rsquo;ll write poetry. It&amp;rsquo;s really an incredible experience. There are even whiteboards all along the walls making it an ideal environment for puzzles.&lt;/p&gt;
@@ -1500,10 +1510,11 @@ Have fun with it, and your students will have fun too (at least in principle, an
 &lt;p&gt;So how should you get started? The simplest way is to blog. You can set up a blog and be started writing in minutes by signing up at 
 &lt;a href=&#34;http://www.tumblr.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tumblr.com&lt;/a&gt;. Once you&amp;rsquo;ve written something educational, share it with your friends and with online communities. Related to technology? Post it on HackerNews.&lt;/p&gt;
 &lt;p&gt;DIY method two of teaching at scale is to make YouTube videos. I gave this a try making videos teaching Item Response Theory and Bloom Filters. Here&amp;rsquo;s my setup.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;featured.jpg&#34; alt=&#34;Personal ping-pong recording studio at the Khan Academy office&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2013-08-07-teach-at-scale/featured.jpg&#34; alt=&#34;Personal ping-pong recording studio at the Khan Academy office&#34;&gt;&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s a piece of cardboard with a hole cut out of it for a camera to look through, mounted above some paper. I used my iPhone as the camera.&lt;/p&gt;
 &lt;p&gt;Here are the resulting Bloom Filter videos, mistakes and stuttering and blurriness and all. I&amp;rsquo;m pretty embarrassed by them, and I&amp;rsquo;m hoping future videos I produce will come out better.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLTFg4cPjhl-2nrkIR1z_MSTcxNeyPk4PO&#34;&gt;https://www.youtube.com/playlist?list=PLTFg4cPjhl-2nrkIR1z_MSTcxNeyPk4PO&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.youtube.com/playlist?list=PLTFg4cPjhl-2nrkIR1z_MSTcxNeyPk4PO&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.youtube.com/playlist?list=PLTFg4cPjhl-2nrkIR1z_MSTcxNeyPk4PO&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m going to continue to make videos as I learn awesome things over the years, and I hope you do the same.&lt;/p&gt;
 &lt;p&gt;How you teach at scale is up to you. Blog. Make videos. Post code. Start a math circle.&lt;/p&gt;
 &lt;p&gt;Be creative. The most effective teachers-at-scale are not always those who leverage technology to reach a wide audience. They are those who teach passionately, and in doing so infect others with a love for learning and teaching.&lt;/p&gt;
@@ -1591,7 +1602,7 @@ Have fun with it, and your students will have fun too (at least in principle, an
 &lt;p&gt;Here&amp;rsquo;s what comes with this repo.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s a Django project that works out of the box (just download it and &lt;code&gt;python manage.py runserver&lt;/code&gt;. If you have Django installed, it&amp;rsquo;ll work!). It&amp;rsquo;s already setup to serve static files. It&amp;rsquo;s all ready to use MySQL or sqlite3. It ships with Bootstrap and jQuery. Django&amp;rsquo;s admin app is enabled and ready to go. It has templates for 404 and 500 errors so you can quickly see how to get error handling working. And it has one app, named &lt;code&gt;app_name&lt;/code&gt;, that demonstrates the core functionality of Django: models, views, templating, and forms, by collecting email address of early users to your site. It&amp;rsquo;s a rudimentary version of LaunchRock.&lt;/p&gt;
 &lt;p&gt;My hope is that it will work well both as start code and as reference code for how to get Django working quickly.&lt;/p&gt;
-&lt;h5 id=&#34;this-template-is-great-for-quick-and-dirty-websites-its-perfect-for-a-hackathon-or-for-prototyping-an-idea-with-friends-and-its-a-great-template-for-getting-started-with-djangohttpswwwdjangoprojectcom-bootstraphttptwittergithubcombootstrap-and-jqueryhttpjquerycom-but-its-not-production-quality-in-two-key-respects-security-and-scalability-keep-that-in-mind-as-you-start-building&#34;&gt;This template is great for quick and dirty websites. It&amp;rsquo;s perfect for a hackathon or for prototyping an idea with friends. And it&amp;rsquo;s a great template for getting started with 
+&lt;h5 id=&#34;this-template-is-great-for-quick-and-dirty-websites-its-perfect-for-a-hackathon-or-for-prototyping-an-idea-with-friends-and-its-a-great-template-for-getting-started-with-django-bootstrap-and-jquery-but-its-not-production-quality-in-two-key-respects-security-and-scalability-keep-that-in-mind-as-you-start-building&#34;&gt;This template is great for quick and dirty websites. It&amp;rsquo;s perfect for a hackathon or for prototyping an idea with friends. And it&amp;rsquo;s a great template for getting started with 
 &lt;a href=&#34;https://www.djangoproject.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Django&lt;/a&gt;, 
 &lt;a href=&#34;http://twitter.github.com/bootstrap/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bootstrap&lt;/a&gt;, and 
 &lt;a href=&#34;http://jquery.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jQuery&lt;/a&gt;. But it&amp;rsquo;s not production quality in two key respects, security and scalability. Keep that in mind as you start building.&lt;/h5&gt;

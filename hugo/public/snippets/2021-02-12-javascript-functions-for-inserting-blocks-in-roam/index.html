@@ -254,8 +254,8 @@ getOrCreatePage(page): returns the uid of a specific page in your graph, creatin
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_3442a5ec1975e9c2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_f8848e5bff6e4686.png">
 
   <link rel="canonical" href="https://davidbieber.com/snippets/2021-02-12-javascript-functions-for-inserting-blocks-in-roam/">
 
@@ -541,7 +541,7 @@ getOrCreatePage(page): returns the uid of a specific page in your graph, creatin
 <p><strong>getChildBlock(parent_uid, block):</strong> returns the uid of a specific child block underneath a specific parent block. <em>parent_uid</em>: the uid of the parent block. <em>block</em>: the text of the child block.</p>
 <p><strong>createChildBlock(parent_uid, block, order):</strong> creates a new child block underneath a specific parent block, returning the new block&rsquo;s uid. <em>parent_uid</em>: the uid of the parent block. <em>block</em>: the text of the new block. <em>order</em>: (optional) controls where to create the block, 0 for inserting at the top, -1 for inserting at the bottom.</p>
 <p><strong>getOrCreateChildBlock(parent_uid, block, order):</strong> returns the uid of a specific child block underneath a specific parent block, creating it first if it&rsquo;s not already there. <em>parent_uid</em>: the uid of the parent block. <em>block</em>: the text of the child block. <em>order</em>: (optional) controls where to create the block, 0 for inserting at the top, -1 for inserting at the bottom.</p>
-<p>Caution ⚠️ If multiple blocks with the same text exist on the page, these functions may return the uid of the wrong block.</p>
+<p>Caution &#x26a0;&#xfe0f; If multiple blocks with the same text exist on the page, these functions may return the uid of the wrong block.</p>
 <script src="https://gist.github.com/dbieber/795cf15cad6b46cfbd6cc8213900925d.js"></script>
 <p>To use these functions in your Roam database, create a block with the string <code>{{[[roam/js]]}}</code>, create a code block by typing triple-backticks (```), paste the above JavaScript into the code block, and click &ldquo;Yes, I know what I&rsquo;m doing.&rdquo;</p>
 <p>As a reminder, you get the result of an async function with <code>await</code>, e.g.</p>
@@ -779,7 +779,7 @@ details.addEventListener("toggle", event => {
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+<script src="/js/academic.min.01af32edc9a00e9a188425fb55cdbd62.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

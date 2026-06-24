@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Google Apps Script on David Bieber</title>
+    <title>Google-Apps-Script on David Bieber</title>
     <link>https://davidbieber.com/tags/google-apps-script/</link>
-    <description>Recent content in Google Apps Script on David Bieber</description>
+    <description>Recent content in Google-Apps-Script on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/google-apps-script/index.xml" rel="self" type="application/rss+xml" />
@@ -70,50 +70,50 @@ It then also rolls up this data in interesting ways that help me with reflecting
 &lt;p&gt;I&amp;rsquo;ll start by providing a brief description of each column in the spreadsheet. Then we&amp;rsquo;ll get to discuss how I use the spreadsheet, and you&amp;rsquo;ll see why they&amp;rsquo;re each important to me. We&amp;rsquo;ll then also dive into all the benefits I get from this spreadsheet and the infrastructure I&amp;rsquo;ve built up around it.&lt;/p&gt;
 &lt;h4 id=&#34;column-descriptions&#34;&gt;Column Descriptions&lt;/h4&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Column&lt;/th&gt;
-&lt;th&gt;Type&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;Evening&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;A single cell in which to put the main activity I did in the evening (e.g. after work) on that day.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;Morning&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;Optional, Text, infrequently used&lt;/td&gt;
-&lt;td&gt;The main activity I did in the morning (e.g. before work) on that day.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;Keywords&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;Optional, comma separated&lt;/td&gt;
-&lt;td&gt;Keywords describing the activities of that day.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;Weekday&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;Filled automatically&lt;/td&gt;
-&lt;td&gt;The day of the week, e.g. Thursday&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;Date&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;Filled automatically&lt;/td&gt;
-&lt;td&gt;The date&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;People&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;Names, comma separated&lt;/td&gt;
-&lt;td&gt;A list of the people I engaged with on that day&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;Notes&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;Optional, Text&lt;/td&gt;
-&lt;td&gt;A bit like a diary, this is a place to jot down additional notes about the day.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Column&lt;/th&gt;
+					&lt;th&gt;Type&lt;/th&gt;
+					&lt;th&gt;Description&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;em&gt;Evening&lt;/em&gt;&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;A single cell in which to put the main activity I did in the evening (e.g. after work) on that day.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;em&gt;Morning&lt;/em&gt;&lt;/td&gt;
+					&lt;td&gt;Optional, Text, infrequently used&lt;/td&gt;
+					&lt;td&gt;The main activity I did in the morning (e.g. before work) on that day.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;em&gt;Keywords&lt;/em&gt;&lt;/td&gt;
+					&lt;td&gt;Optional, comma separated&lt;/td&gt;
+					&lt;td&gt;Keywords describing the activities of that day.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;em&gt;Weekday&lt;/em&gt;&lt;/td&gt;
+					&lt;td&gt;Filled automatically&lt;/td&gt;
+					&lt;td&gt;The day of the week, e.g. Thursday&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;em&gt;Date&lt;/em&gt;&lt;/td&gt;
+					&lt;td&gt;Filled automatically&lt;/td&gt;
+					&lt;td&gt;The date&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;em&gt;People&lt;/em&gt;&lt;/td&gt;
+					&lt;td&gt;Names, comma separated&lt;/td&gt;
+					&lt;td&gt;A list of the people I engaged with on that day&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;em&gt;Notes&lt;/em&gt;&lt;/td&gt;
+					&lt;td&gt;Optional, Text&lt;/td&gt;
+					&lt;td&gt;A bit like a diary, this is a place to jot down additional notes about the day.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Really all of the columns are optional, but the ones that are particularly optional are marked as such.&lt;/p&gt;
 &lt;h3 id=&#34;usage&#34;&gt;Usage&lt;/h3&gt;
@@ -127,30 +127,30 @@ It then also rolls up this data in interesting ways that help me with reflecting
 &lt;p&gt;I have a second sheet that is updated automatically using data from the sheet I&amp;rsquo;ve been describing so far. This sheet has one row &lt;em&gt;per activity&lt;/em&gt; that I enjoy engaging in.&lt;/p&gt;
 &lt;p&gt;The most important columns in this sheet are:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Column&lt;/th&gt;
-&lt;th&gt;Type&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Category&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;The category of the activity (e.g. Athletic).&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Activity&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;An activity that I enjoy engaging in. (e.g. Skiing)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Last Date&lt;/td&gt;
-&lt;td&gt;Filled automatically&lt;/td&gt;
-&lt;td&gt;The most recent date on which I engaged in the activity.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Column&lt;/th&gt;
+					&lt;th&gt;Type&lt;/th&gt;
+					&lt;th&gt;Description&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Category&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;The category of the activity (e.g. Athletic).&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Activity&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;An activity that I enjoy engaging in. (e.g. Skiing)&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Last Date&lt;/td&gt;
+					&lt;td&gt;Filled automatically&lt;/td&gt;
+					&lt;td&gt;The most recent date on which I engaged in the activity.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;The &lt;code&gt;Last Date&lt;/code&gt; column is filled automatically using the data from the main sheet. The Google Sheets formula that fills in this column is a query a bit like this one:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;=IFERROR(QUERY(scheduled,
@@ -196,10 +196,10 @@ It then also rolls up this data in interesting ways that help me with reflecting
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-activities-by-category_hu2806f35bd91a07c85620e1b361834210_97421_2000x2000_fit_box_2.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-activities-by-category_hu_58e4a88a0d84194d.png&#34; &gt;
 
 
-  &lt;img data-src=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-activities-by-category_hu2806f35bd91a07c85620e1b361834210_97421_2000x2000_fit_box_2.png&#34; class=&#34;lazyload&#34; alt=&#34;A two-column spreadsheet showing how recently I&amp;#39;ve done an activity in each of the 15 activity categories.&#34; width=&#34;200px&#34; height=&#34;732&#34;&gt;
+  &lt;img data-src=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-activities-by-category_hu_58e4a88a0d84194d.png&#34; class=&#34;lazyload&#34; alt=&#34;A two-column spreadsheet showing how recently I&amp;#39;ve done an activity in each of the 15 activity categories.&#34; width=&#34;200px&#34; height=&#34;732&#34;&gt;
 &lt;/a&gt;
 
 
@@ -232,10 +232,10 @@ It then also rolls up this data in interesting ways that help me with reflecting
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-bieberbot-financial_huf983f5ecddfe8f1a3e2e0cb4f01b88c8_58408_2000x2000_fit_box_2.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-bieberbot-financial_hu_6a598b3d6aef767f.png&#34; &gt;
 
 
-  &lt;img data-src=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-bieberbot-financial_huf983f5ecddfe8f1a3e2e0cb4f01b88c8_58408_2000x2000_fit_box_2.png&#34; class=&#34;lazyload&#34; alt=&#34;A message from Bieber Bot reminding me that it&amp;#39;s been a while since I scheduled a Financial activity.&#34; width=&#34;350px&#34; height=&#34;240&#34;&gt;
+  &lt;img data-src=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-bieberbot-financial_hu_6a598b3d6aef767f.png&#34; class=&#34;lazyload&#34; alt=&#34;A message from Bieber Bot reminding me that it&amp;#39;s been a while since I scheduled a Financial activity.&#34; width=&#34;350px&#34; height=&#34;240&#34;&gt;
 &lt;/a&gt;
 
 
@@ -265,10 +265,10 @@ And if I don&amp;rsquo;t have any activity planned for a particular day, BieberB
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-bieberbot-hudson_hued59abe63d99bee46aaa05358969b28a_120266_2000x2000_fit_box_2.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-bieberbot-hudson_hu_b953055892ee7a3a.png&#34; &gt;
 
 
-  &lt;img data-src=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-bieberbot-hudson_hued59abe63d99bee46aaa05358969b28a_120266_2000x2000_fit_box_2.png&#34; class=&#34;lazyload&#34; alt=&#34;A message from Bieber Bot suggesting I take a walk along the Hudson River.&#34; width=&#34;350px&#34; height=&#34;360&#34;&gt;
+  &lt;img data-src=&#34;https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/i-bieberbot-hudson_hu_b953055892ee7a3a.png&#34; class=&#34;lazyload&#34; alt=&#34;A message from Bieber Bot suggesting I take a walk along the Hudson River.&#34; width=&#34;350px&#34; height=&#34;360&#34;&gt;
 &lt;/a&gt;
 
 
@@ -316,40 +316,46 @@ And if I don&amp;rsquo;t have any activity planned for a particular day, BieberB
 &lt;p&gt;If this system sounds appealing to you, it&amp;rsquo;s very simple to get started.&lt;/p&gt;
 &lt;p&gt;Simply create a new Google sheet with the columns you&amp;rsquo;d like to track. I use the following:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;em&gt;Evening&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;Morning&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;Keywords&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;Weekday&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;Date&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;People&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;Notes&lt;/em&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;em&gt;Evening&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;Morning&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;Keywords&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;Weekday&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;Date&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;People&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;Notes&lt;/em&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;But for just getting started you might be satisfied with something simpler, say just these three columns:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;em&gt;Activity&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;Weekday&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;Date&lt;/em&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;em&gt;Activity&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;Weekday&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;Date&lt;/em&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;You can use the formula &lt;code&gt;=TEXT(WEEKDAY(E3), &amp;quot;dddd&amp;quot;)&lt;/code&gt; to autopopulate the &lt;code&gt;Weekday&lt;/code&gt; column, where E3 represents the date (tip: you can use cmd-; to enter today&amp;rsquo;s date into a cell).&lt;/p&gt;
 &lt;p&gt;I also create a second sheet called &lt;code&gt;Archive&lt;/code&gt; with the same columns as the main sheet, and use the 
 &lt;a href=&#34;https://gist.github.com/dbieber/42153e6a27382ba6193f108c13b84cf9&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;auto-archiving feature&lt;/a&gt; mentioned earlier to prevent the main sheet from getting cluttered.&lt;/p&gt;
 &lt;p&gt;Next create the analysis sheet with the columns:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;em&gt;Category&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;Activity&lt;/em&gt;&lt;/th&gt;
-&lt;th&gt;&lt;em&gt;Last Date&lt;/em&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;em&gt;Category&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;Activity&lt;/em&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;em&gt;Last Date&lt;/em&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;The first two columns you can fill in with whatever categories and activities you like, and you can add new categories and activities at any time. No need to fill this in too much until you start to see how you&amp;rsquo;re using the main sheet.&lt;/p&gt;
 &lt;p&gt;To autofill the &lt;code&gt;Last Date&lt;/code&gt; column, the full formula I use is:&lt;/p&gt;

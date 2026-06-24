@@ -33,7 +33,9 @@
     
   
   <meta name="description" content="I&rsquo;ve learned recently that programmatically accessing your browsing history is rather straightforward. Really exciting! This is rich data, from which I think I&rsquo;ll be able to learn a lot and hopefully combat unwanted distractions.
-First let me describe what information is available, and how you can access it. Then, let&rsquo;s discuss what you can do with this data. As I&rsquo;ve written about previously [1] [2], I already have a chat bot system in place, which will be able to take advantage of this data to e.">
+First let me describe what information is available, and how you can access it. Then, let&rsquo;s discuss what you can do with this data. As I&rsquo;ve written about previously 
+[1] 
+[2], I already have a chat bot system in place, which will be able to take advantage of this data to e.g. help me stay focused.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/">
@@ -253,8 +255,8 @@ First let me describe what information is available, and how you can access it. 
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_3442a5ec1975e9c2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_f8848e5bff6e4686.png">
 
   <link rel="canonical" href="https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/">
 
@@ -276,7 +278,9 @@ First let me describe what information is available, and how you can access it. 
   <meta property="og:url" content="https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/">
   <meta property="og:title" content="Planning to Analyze My Browsing History | David Bieber">
   <meta property="og:description" content="I&rsquo;ve learned recently that programmatically accessing your browsing history is rather straightforward. Really exciting! This is rich data, from which I think I&rsquo;ll be able to learn a lot and hopefully combat unwanted distractions.
-First let me describe what information is available, and how you can access it. Then, let&rsquo;s discuss what you can do with this data. As I&rsquo;ve written about previously [1] [2], I already have a chat bot system in place, which will be able to take advantage of this data to e."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+First let me describe what information is available, and how you can access it. Then, let&rsquo;s discuss what you can do with this data. As I&rsquo;ve written about previously 
+[1] 
+[2], I already have a chat bot system in place, which will be able to take advantage of this data to e.g. help me stay focused."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
@@ -548,136 +552,136 @@ First let me describe what information is available, and how you can access it. 
 <h4 id="the-available-data">The Available Data</h4>
 <p>Running sqlite3 macro <code>.tables</code>, we see the following tables are available.</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>downloads</td>
-<td>meta</td>
-<td>urls</td>
-</tr>
-<tr>
-<td>downloads_slices</td>
-<td>segment_usage</td>
-<td>visit_source</td>
-</tr>
-<tr>
-<td>downloads_url_chains</td>
-<td>segments</td>
-<td>visits</td>
-</tr>
-<tr>
-<td>keyword_search_terms</td>
-<td>typed_url_sync_metadata</td>
-<td></td>
-</tr>
-</tbody>
+	<thead>
+			<tr>
+					<th></th>
+					<th></th>
+					<th></th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>downloads</td>
+					<td>meta</td>
+					<td>urls</td>
+			</tr>
+			<tr>
+					<td>downloads_slices</td>
+					<td>segment_usage</td>
+					<td>visit_source</td>
+			</tr>
+			<tr>
+					<td>downloads_url_chains</td>
+					<td>segments</td>
+					<td>visits</td>
+			</tr>
+			<tr>
+					<td>keyword_search_terms</td>
+					<td>typed_url_sync_metadata</td>
+					<td></td>
+			</tr>
+	</tbody>
 </table>
 <p>We&rsquo;ll be most interested in the <code>urls</code> and <code>visits</code> tables.</p>
 <p>The <code>urls</code> table has these columns (found with <code>.schema urls</code>):</p>
 <table>
-<thead>
-<tr>
-<th>Column</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>id</td>
-<td>Integer Id</td>
-<td>The <code>id</code> of the URL in the database.</td>
-</tr>
-<tr>
-<td>url</td>
-<td>Text</td>
-<td>The URL of the website.</td>
-</tr>
-<tr>
-<td>title</td>
-<td>Text</td>
-<td>The title of website.</td>
-</tr>
-<tr>
-<td>visit_count</td>
-<td>Integer</td>
-<td>The number of times you&rsquo;ve visited the URL.</td>
-</tr>
-<tr>
-<td>typed_count</td>
-<td>Integer</td>
-<td>The number of times you&rsquo;ve visited the URL by typing in the address (as opposed to by following a link.)</td>
-</tr>
-<tr>
-<td>last_visit_time</td>
-<td>Integer (microseconds since the epoch)</td>
-<td>The time of the most recent to the URL.</td>
-</tr>
-<tr>
-<td>hidden</td>
-<td>Boolean</td>
-<td>I&rsquo;m not sure what this is about.</td>
-</tr>
-</tbody>
+	<thead>
+			<tr>
+					<th>Column</th>
+					<th>Type</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>id</td>
+					<td>Integer Id</td>
+					<td>The <code>id</code> of the URL in the database.</td>
+			</tr>
+			<tr>
+					<td>url</td>
+					<td>Text</td>
+					<td>The URL of the website.</td>
+			</tr>
+			<tr>
+					<td>title</td>
+					<td>Text</td>
+					<td>The title of website.</td>
+			</tr>
+			<tr>
+					<td>visit_count</td>
+					<td>Integer</td>
+					<td>The number of times you&rsquo;ve visited the URL.</td>
+			</tr>
+			<tr>
+					<td>typed_count</td>
+					<td>Integer</td>
+					<td>The number of times you&rsquo;ve visited the URL by typing in the address (as opposed to by following a link.)</td>
+			</tr>
+			<tr>
+					<td>last_visit_time</td>
+					<td>Integer (microseconds since the epoch)</td>
+					<td>The time of the most recent to the URL.</td>
+			</tr>
+			<tr>
+					<td>hidden</td>
+					<td>Boolean</td>
+					<td>I&rsquo;m not sure what this is about.</td>
+			</tr>
+	</tbody>
 </table>
 <p>And the <code>visits</code> table has these columns (obtained via <code>.schema visits</code>):</p>
 <table>
-<thead>
-<tr>
-<th>Column</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>id</td>
-<td>Integer Id</td>
-<td>The <code>id</code> of the visit in the database.</td>
-</tr>
-<tr>
-<td>url</td>
-<td>Integer Id</td>
-<td>The <code>id</code> of the url in the <code>urls</code> table.</td>
-</tr>
-<tr>
-<td>visit_time</td>
-<td>Integer (milliseconds since the epoch)</td>
-<td>The time of the visit.</td>
-</tr>
-<tr>
-<td>from_visit</td>
-<td>Integer Id</td>
-<td>The <code>id</code> of the visit that lead you to this one.</td>
-</tr>
-<tr>
-<td>transition</td>
-<td>Bit vector</td>
-<td>Represents the 
+	<thead>
+			<tr>
+					<th>Column</th>
+					<th>Type</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>id</td>
+					<td>Integer Id</td>
+					<td>The <code>id</code> of the visit in the database.</td>
+			</tr>
+			<tr>
+					<td>url</td>
+					<td>Integer Id</td>
+					<td>The <code>id</code> of the url in the <code>urls</code> table.</td>
+			</tr>
+			<tr>
+					<td>visit_time</td>
+					<td>Integer (milliseconds since the epoch)</td>
+					<td>The time of the visit.</td>
+			</tr>
+			<tr>
+					<td>from_visit</td>
+					<td>Integer Id</td>
+					<td>The <code>id</code> of the visit that lead you to this one.</td>
+			</tr>
+			<tr>
+					<td>transition</td>
+					<td>Bit vector</td>
+					<td>Represents the 
 <a href="https://developer.chrome.com/extensions/history#transition_types" target="_blank" rel="noopener">transition type</a> (how you got to the URL)</td>
-</tr>
-<tr>
-<td>segment_id</td>
-<td>Integer Id</td>
-<td>The <code>id</code> of the segment in the database. I&rsquo;m not quite sure what a segment is, but there is a <code>segments</code> table you can look at.</td>
-</tr>
-<tr>
-<td>visit_duration</td>
-<td>Integer (microseconds)</td>
-<td>The amount of time spent at the website, or 0 if not available.</td>
-</tr>
-<tr>
-<td>incremented_omnibox_typed_score</td>
-<td>Boolean</td>
-<td>I do not know what this is about.</td>
-</tr>
-</tbody>
+			</tr>
+			<tr>
+					<td>segment_id</td>
+					<td>Integer Id</td>
+					<td>The <code>id</code> of the segment in the database. I&rsquo;m not quite sure what a segment is, but there is a <code>segments</code> table you can look at.</td>
+			</tr>
+			<tr>
+					<td>visit_duration</td>
+					<td>Integer (microseconds)</td>
+					<td>The amount of time spent at the website, or 0 if not available.</td>
+			</tr>
+			<tr>
+					<td>incremented_omnibox_typed_score</td>
+					<td>Boolean</td>
+					<td>I do not know what this is about.</td>
+			</tr>
+	</tbody>
 </table>
 <p>As you can see, we can access every visit to every website that we&rsquo;ve made since the last time we cleared our browsing history. We can see what website we visited (<code>visits.url</code>), when we visited it (<code>visits.visit_time</code>), how many times we&rsquo;ve visited it (<code>urls.visit_count</code>), and how long each visit was for (<code>visits.visit_duration</code>).</p>
 <p>We can even use <code>visits.from_visit</code> to figure out what website linked us to each url, if that interests us.</p>
@@ -973,7 +977,7 @@ details.addEventListener("toggle", event => {
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+<script src="/js/academic.min.01af32edc9a00e9a188425fb55cdbd62.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

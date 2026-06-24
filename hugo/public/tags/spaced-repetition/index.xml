@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>spaced-repetition on David Bieber</title>
+    <title>Spaced-Repetition on David Bieber</title>
     <link>https://davidbieber.com/tags/spaced-repetition/</link>
-    <description>Recent content in spaced-repetition on David Bieber</description>
+    <description>Recent content in Spaced-Repetition on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/spaced-repetition/index.xml" rel="self" type="application/rss+xml" />
@@ -106,7 +106,8 @@ Thank you for volunteering!
 By working together, we are assembling a dataset of thousands of in-context flashcards
 to help evaluate and improve future automatic flashcard generation projects.&lt;/p&gt;
 &lt;p&gt;To get started, install the Browserflow extension and the flow:
-&lt;a href=&#34;https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831&#34;&gt;https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831&lt;/a&gt;&lt;/p&gt;
+
+&lt;a href=&#34;https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Your help is requested in creating flashcards to populate the dataset.
 Please submit between 5 and 200 flashcards that you believe would be useful or interesting to you.
 The flow above will assist you in submitting flashcards to the dataset.&lt;/p&gt;
@@ -329,9 +330,12 @@ Are there old but important ideas that have fallen out of favor, that a global &
 &lt;/ul&gt;
 &lt;h2 id=&#34;the-dependency-flows-needed-to-check-it-out-are&#34;&gt;The dependency flows needed to check it out are:&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&#34;&gt;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&#34;&gt;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&#34;&gt;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;To try out the flow, you&amp;rsquo;ll need Browserflow, an open Roam tab, and all four flows linked in this snippet. Run the first flow (&amp;ldquo;Roam: Highlights&amp;rdquo;) on a web page (with Roam open in a different tab in the same window). Highlight some text, (say, the words &amp;ldquo;some text&amp;rdquo; in this sentence), and hit enter. You can try any of the shortcuts listed above. Notice as the flow copies your selection into your daily notes organized by time and website.&lt;/p&gt;
 </description>

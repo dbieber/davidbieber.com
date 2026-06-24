@@ -276,7 +276,7 @@ One aspect that stays the same is the exponential nature of forgetting for human
 &lt;p&gt;&lt;strong&gt;Twitter and Facebook.&lt;/strong&gt; I&amp;rsquo;ve noticed that when I&amp;rsquo;m scrolling on Twitter or Facebook, and I want to stop, I sometimes find it difficult because &lt;em&gt;&amp;ldquo;just one more post&amp;rdquo;&lt;/em&gt; or &lt;em&gt;&amp;ldquo;that looks interesting&amp;rdquo;&lt;/em&gt;. That is, I&amp;rsquo;ll see a half-visible post at the bottom of my screen, and I&amp;rsquo;ll tell myself I&amp;rsquo;ll just look at that one post, and then I&amp;rsquo;ll be done. But by the time I&amp;rsquo;ve looked at that post, a different post is now half-visible, and it&amp;rsquo;s captured my attention as well.&lt;/p&gt;
 &lt;p&gt;So, my proposal is: I&amp;rsquo;ll only make posts visible once they are fully on the screen. No more half-visible Tweets. No more half-visible Facebook posts.&lt;/p&gt;
 &lt;p&gt;Turns out making such a Chrome extension is remarkably easy, especially with language models available to assist with the boilerplate. Let me show you some before and after photos&amp;hellip; actually, just the after; I don&amp;rsquo;t want to get any practice disabling this thing!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/snippets/2024-01-08-less-twitter/less-twitter.gif&#34; alt=&#34;I am scrolling on Twitter. Posts only appear once they are fully visible in the browser&amp;rsquo;s view port.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/snippets/2024-01-08-less-twitter/less-twitter.gif&#34; alt=&#34;I am scrolling on Twitter. Posts only appear once they are fully visible in the browser’s view port.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;As you can see in the gif, I am scrolling on Twitter, and posts only appear once they are fully visible in the browser&amp;rsquo;s view port.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s not perfect; I still will scroll just to bring something closer to my eye level, which can cause additional posts to appear. But I think it&amp;rsquo;s a big improvement on the default. Only time will tell.&lt;/p&gt;
 &lt;p&gt;My hope is that by not having partially visible posts at the bottom of the screen, it will be less addicting, and easier to get off the site.&lt;/p&gt;
@@ -504,7 +504,7 @@ Perhaps far better than teaching the wheels to squeak is to teach them what we c
 &lt;p&gt;&lt;strong&gt;Practice.&lt;/strong&gt; Let&amp;rsquo;s start off with a bit of a self-referential one. In combination with all the others, it ends up being quite important. Saying what I think now is key for making it easier to say what I think later. I.e. saying what I think when it is less important or less pressing (e.g. a dinner preference) might set me up well to say what I think in a hospital at some point, or in a courtroom, or a meeting with an executive etc. There are all these situations where the ability to stand up for one&amp;rsquo;s beliefs and to do so in a timely efficient manner is really important. And saying what you think &lt;em&gt;every day&lt;/em&gt; is a key step toward being able to say what you think when it really matters.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Not implicitly projecting agreement through silence.&lt;/strong&gt; I&amp;rsquo;ve had a few situations recently where someone has expressed an interest in working together, and I don&amp;rsquo;t explicitly say no, but I don&amp;rsquo;t say yes either, and while I say something indicative of hesitation, the other party seems to assume I&amp;rsquo;ve said yes. Similarly, I&amp;rsquo;ve had situations where someone expresses an idea, and I disagree, but I nod along so as to hear the rest of the idea and better understand it; this has also been mistaken for agreement as well. I&amp;rsquo;d love to project an accurate reflection of my beliefs, and this all starts with saying what I think.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Getting insights from others.&lt;/strong&gt; This can be the most satisfying one because it is by definition surprising.
-When you get others&#39; thoughts on your ideas, you obtain new information, stuff you hadn&amp;rsquo;t thought of. Perhaps ideas you didn&amp;rsquo;t even know you weren&amp;rsquo;t considering! What a beautiful gift! If you&amp;rsquo;re like me, and find yourself subconsciously falling prey to the 
+When you get others&amp;rsquo; thoughts on your ideas, you obtain new information, stuff you hadn&amp;rsquo;t thought of. Perhaps ideas you didn&amp;rsquo;t even know you weren&amp;rsquo;t considering! What a beautiful gift! If you&amp;rsquo;re like me, and find yourself subconsciously falling prey to the 
 &lt;a href=&#34;https://davidbieber.com/snippets/2022-01-07-efficient-minds-fallacy/&#34;&gt;Efficient Minds Fallacy&lt;/a&gt;, this is a key benefit to remind yourself of. (I say &amp;ldquo;you&amp;rdquo; a lot, but I&amp;rsquo;m clearly writing all this for myself&amp;hellip;)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Getting your needs met.&lt;/strong&gt; I think this is probably the most important one. The important kind of SWYTing that I want to encourage in myself is stating my boundaries clearly, expressing my emotions and opinions, and both knowing and expressing my preferences with confidence (all while remaining easy-going!). When a weakly-held (though possibly important) preference meets gentle conflict avoidance, by default the conflict avoidance can win out; this is where the SWYT mantra is critical!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Clarifying your thinking.&lt;/strong&gt; Of course saying what you think is a great way to develop your thoughts. That&amp;rsquo;s one of the reasons I write these snippets! It&amp;rsquo;s eye-opening how, while this benefit is tremendous and is a critical reason to SWYT, it feels like it pales in comparison to the previous one: getting your needs met. Perhaps that&amp;rsquo;s because using SWYT to clarify my thinking is (comparatively) easy for me; e.g. I&amp;rsquo;ve been writing these snippets for three years now. Using SWYT in the face of conflict avoidance, on the other hand, is a challenge where having the SWYT mantra is really important for me. Nevertheless, the benefits of using SWYT to clarify my thinking both myself, as well as through the feedback and insights of those I share with, is a welcome reason to practice SWYT. I hope that by practicing SWYT here, I can become more comfortable with it in the more challenging situations where it arises.&lt;/p&gt;
@@ -597,14 +597,14 @@ Primarily, the challenge arises when the SWYT principle butts heads with conflic
 &lt;li&gt;And my guitar goal was to play the chords in House of the Rising Sun.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I think these goals still seem like proper first goals. So, by putting them in a snippet, perhaps I will encourage myself to pursue them more quickly. Then I can get to my You&amp;rsquo;ve Got a Friend In Me goals sooner.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Aside: is that an instance of double sarcasm? I will have to dedicate a full snippet to double sarcasm at some point. In this instance, it&amp;rsquo;s meant to be a joke, but also might literaly be true&amp;hellip; Maybe not sarcasm but something in that vein. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Aside: is that an instance of double sarcasm? I will have to dedicate a full snippet to double sarcasm at some point. In this instance, it&amp;rsquo;s meant to be a joke, but also might literaly be true&amp;hellip; Maybe not sarcasm but something in that vein.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -629,7 +629,7 @@ Primarily, the challenge arises when the SWYT principle butts heads with conflic
 &lt;p&gt;I dream of being part of a rich community of people who are often eager to collaborate to bring our silly side projects to life. We take our silly ideas seriously.&lt;/p&gt;
 &lt;p&gt;I dream of learning meaningfully from my peers (and vice versa) all throughout my life. May there never be a shortage of known unknowns.&lt;/p&gt;
 &lt;p&gt;I dream of a thousand snowfalls and ten thousand sunrises, all around the world.&lt;/p&gt;
-&lt;p&gt;I dream that access to life&amp;rsquo;s basic needs, food, water, shelter, love and affection, internet access, a quality education, books, and friendship are so taken for granted that&amp;hellip; new levels of our hierarchy of needs become recognized as the base 🤷. I dream of a world where everyone feels truly heard.&lt;/p&gt;
+&lt;p&gt;I dream that access to life&amp;rsquo;s basic needs, food, water, shelter, love and affection, internet access, a quality education, books, and friendship are so taken for granted that&amp;hellip; new levels of our hierarchy of needs become recognized as the base &amp;#x1f937;. I dream of a world where everyone feels truly heard.&lt;/p&gt;
 &lt;p&gt;I dream of experiencing the feeling of learning to program for the first time not just once more, but over and over again (and not because I forget how to program!).&lt;/p&gt;
 &lt;p&gt;These are good. Let&amp;rsquo;s keep brainstorming. We can whittle away at them into something more pithy later. So far these dreams center around technological progress (screenless tech, longevity, meeting people&amp;rsquo;s needs), personal growth (the music one, peer learning, the feeling of learning to program), connection (longevity, growing a family, the collaborative community, everyone feeling heard), adventure (snowfalls and sunrises, growing a family). Most of the dreams are me-centric, whereas only a couple are substantially altruistic (longevity and meeting people&amp;rsquo;s needs). As I continue to ponder my dreams, I might think more along the lines of altruism; I might also think further around what skills and experiences I want, what legacy I wish to leave, or how I want to live my life.&lt;/p&gt;
 &lt;p&gt;Then, the next aspect of this I wish to write about is how to actively pursue my dreams. The first step of course is identifying them. And I&amp;rsquo;ve now begun that step. But pursuing them is required for pyd, and that is where the real adventure begins.&lt;/p&gt;
@@ -660,7 +660,7 @@ It&amp;rsquo;s not about absolute history from the world&amp;rsquo;s perspective
 &lt;p&gt;I&amp;rsquo;ve been in several situations where the questions &amp;ldquo;how was your day?&amp;rdquo; or &amp;ldquo;how was your weekend?&amp;rdquo; are greeted with silence while the questionee tries to recall the notable events from their day or weekend. These questions are implicitly requesting some memory seeking.
 By contrast, &amp;ldquo;What&amp;rsquo;s alive in you?&amp;rdquo; requires no activation of the memory. It does require some amount of introspection, but that introspection is about the present. The goal in taking the question seriously is to identify the things already present in the attention (not literally limited to the present attention; this can certainly include recent attention as well), rather than things we could have been attending to or reflecting on.&lt;/p&gt;
 &lt;h3 id=&#34;the-what-have-you-been-thinking-about-alternative&#34;&gt;The &amp;ldquo;what have you been thinking about?&amp;rdquo; alternative&lt;/h3&gt;
-&lt;p&gt;In this regard, I also like the questions &amp;ldquo;what have you been thinking about lately?&amp;quot;; this doesn&amp;rsquo;t lean on metaphor as much as &amp;ldquo;what&amp;rsquo;s alive in you?&amp;rdquo; and as a result is understood more quickly and with fewer funny looks than the &amp;ldquo;what&amp;rsquo;s alive in you?&amp;rdquo; query. Responses to &amp;ldquo;what have you been thinking about lately?&amp;rdquo; may skew a bit more academic though, whereas &amp;ldquo;what&amp;rsquo;s alive in you?&amp;rdquo; skews more personal.&lt;/p&gt;
+&lt;p&gt;In this regard, I also like the questions &amp;ldquo;what have you been thinking about lately?&amp;rdquo;; this doesn&amp;rsquo;t lean on metaphor as much as &amp;ldquo;what&amp;rsquo;s alive in you?&amp;rdquo; and as a result is understood more quickly and with fewer funny looks than the &amp;ldquo;what&amp;rsquo;s alive in you?&amp;rdquo; query. Responses to &amp;ldquo;what have you been thinking about lately?&amp;rdquo; may skew a bit more academic though, whereas &amp;ldquo;what&amp;rsquo;s alive in you?&amp;rdquo; skews more personal.&lt;/p&gt;
 &lt;h3 id=&#34;maybe-my-snippets-are-little-bits-of-whats-alive-in-me&#34;&gt;Maybe my snippets are little bits of what&amp;rsquo;s alive in me&lt;/h3&gt;
 &lt;p&gt;In some ways, my 
 &lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;snippets system&lt;/a&gt; is about answering the question &amp;ldquo;what&amp;rsquo;s alive in me?&amp;rdquo; for myself.
@@ -1801,7 +1801,7 @@ I have not yet seen a shower microphone suitable for capturing audio thoughts in
 &lt;p&gt;Here is a photo from 2015 of 
 &lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;Shh Shell (Go Note Go&amp;rsquo;s predecessor)&lt;/a&gt; set up in my shower in California.
 The keyboard is on the ledge to the right of the shower speaker.
-&lt;img src=&#34;shower-keyboard.jpeg&#34; alt=&#34;A picture of my shower in California from 2015. The Shh Shell keyboard sits on the windowsill next to a Bluetooth speaker. There&amp;rsquo;s a 3D printed shaving cream holder mounted to the soap dish below.&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://davidbieber.com/snippets/2023-01-16-go-note-go-features/shower-keyboard.jpeg&#34; alt=&#34;A picture of my shower in California from 2015. The Shh Shell keyboard sits on the windowsill next to a Bluetooth speaker. There’s a 3D printed shaving cream holder mounted to the soap dish below.&#34;&gt;&lt;/p&gt;
 &lt;/details&gt;
 &lt;script&gt;
   var expandButton = document.getElementById(&#39;expand-button&#39;);
@@ -1887,7 +1887,7 @@ Go Note Go&amp;rsquo;s main capability &amp;ndash; capturing my thoughts &amp;nd
 If I have an anxious thought swirling in my brain, I can simply type it into Go Note Go.
 Instead of dozens of versions of the thought popping up in my head all night, I have just a single canonical version of the thought stored on the device, and I can fall asleep.&lt;/p&gt;
 &lt;p&gt;Go Note Go also supports commands, like reading the time out loud.
-Entering a line that starts with a colon (&#39;:&#39;) issues a command.
+Entering a line that starts with a colon (&amp;rsquo;:&amp;rsquo;) issues a command.
 Typing :r has it read back the last thing I wrote.
 Typing :t will have it read the time to me.
 I like this because it lets me know the time without having to open my eyes, so getting the time doesn&amp;rsquo;t require being alert&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
@@ -2133,18 +2133,18 @@ like letting me
 &lt;p&gt;With the AI assistant added in, however, I feel like I have a new superpower. I can offload computation from my brain to it, and explore worlds of thought I could never have entered on my own.&lt;/p&gt;
 &lt;p&gt;Go Note Go is also 
 &lt;a href=&#34;https://github.com/dbieber/GoNoteGo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;completely open source&lt;/a&gt;. I encourage the hacker-tinkerers among you to join me in the world of headless computing and try it for yourself.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;Anything I type on this keyboard gets automatically uploaded to my notes as soon as the keyboard is in range of wifi. This allows for offline usage, e.g. while driving or camping. These were the two use-cases that inspired me to build the device. Now my main use-case is capturing ideas while drifting off to sleep.
-It also has a microphone, so if speaking feels like it would take less energy than talking, I can speak my notes instead. This feature is what enables the driving use case, as of course I don&amp;rsquo;t type while I drive! &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+It also has a microphone, so if speaking feels like it would take less energy than talking, I can speak my notes instead. This feature is what enables the driving use case, as of course I don&amp;rsquo;t type while I drive!&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;If I prefer speaking, I can also trigger these commands with the hot word &amp;ldquo;go go&amp;rdquo;, e.g. saying &amp;ldquo;go go time&amp;rdquo; gets the time. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;If I prefer speaking, I can also trigger these commands with the hot word &amp;ldquo;go go&amp;rdquo;, e.g. saying &amp;ldquo;go go time&amp;rdquo; gets the time.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -2199,12 +2199,12 @@ Does my dentist like table tennis?
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h4 id=&#34;integration-with-specialized-systems&#34;&gt;Integration with Specialized Systems&lt;/h4&gt;
 &lt;p&gt;One of the key reasons ontologies are useful is they allow for specialized systems to access the information stored in the ontology/notes, in order to provide a quality domain-specific experience using the data from the notes.&lt;/p&gt;
-&lt;p&gt;This could take the form of a specialized contacts view of the contacts data found in your notes. It could be a specialized calendar view of time-annotated data in your notes. It could be the shopping experience I described in a footnote, which uses your contacts&#39; interests to surface gift suggestions. The possibilities are numerous.&lt;/p&gt;
+&lt;p&gt;This could take the form of a specialized contacts view of the contacts data found in your notes. It could be a specialized calendar view of time-annotated data in your notes. It could be the shopping experience I described in a footnote, which uses your contacts&amp;rsquo; interests to surface gift suggestions. The possibilities are numerous.&lt;/p&gt;
 &lt;p&gt;If search is robust (and it&amp;rsquo;s not totally clear that LLM search is going to be robust enough, but I suspect that it will be), then the data access requirements for these specialized integrations could be satisfied by the search described in the preceding section.&lt;/p&gt;
 &lt;p&gt;Two ways to think about this:
 (1) The specialized system issues queries &amp;ndash; possibly even natural language queries &amp;ndash; about the notebase. It gets structured results back. It uses the structured results to render the specialized domain-specific experience.
 (2) The raw text in &lt;mark&gt;the note-base is being projected onto a temporary domain-specific ontology just for the specialized system&lt;/mark&gt;. E.g. the shopping experience might require an ontology where each Person has interests, while a separate job matching system might require an ontology where each Person has an educational background. Using the magic of LLMs, the raw text data is projected into the structured ontology needed by each system. But there&amp;rsquo;s no &amp;ldquo;one&amp;rdquo; ontology living in the note-base that the note-taker needs to maintain.&lt;/p&gt;
-&lt;p&gt;Maybe these two ways are actually the same. 🤷&lt;/p&gt;
+&lt;p&gt;Maybe these two ways are actually the same. &amp;#x1f937;&lt;/p&gt;
 &lt;p&gt;At this point we&amp;rsquo;ve seen the first place where ontologies are useful even in this raw-text focused LLM-centric world. I&amp;rsquo;ve &lt;mark&gt;highlighted&lt;/mark&gt; it. We&amp;rsquo;ll come back to it shortly.&lt;/p&gt;
 &lt;h4 id=&#34;auto-complete--templating&#34;&gt;Auto-complete / Templating&lt;/h4&gt;
 &lt;p&gt;We come now to one of the main value-adds of an ontology: having a nice template to fill in about an object. Do we lose this in a raw-text LLM-centric world? By default, yes. But we can (very likely) use LLM-ish tech to implement an auto-complete / templating feature, arguably one that&amp;rsquo;s (in some ways) better than we get in an ontology-centric world.&lt;/p&gt;
@@ -2219,24 +2219,24 @@ The search and integrations are going to work just fine whether the field is cal
 &lt;p&gt;Looking back over the &lt;mark&gt;highlighted&lt;/mark&gt; text, we can see that there are at least two places where explicit ontologies remain useful even in a raw-text focused LLM-centric world (that is, in a note-base full of raw text, not backed by an explicit ontology).&lt;/p&gt;
 &lt;p&gt;The first was during querying for domain-specific experiences. There we saw the value of having the raw text in the note-base projected onto a temporary domain-specific ontology just for a specialized system.&lt;/p&gt;
 &lt;p&gt;The second was for templating/auto-complete, one of the main values of an ontology. Using LLMs we can provide the appearance of there being an ontology without the note-base actually being backed by an explicit ontology.&lt;/p&gt;
-&lt;p&gt;All of this relies on some amount of speculation about where our LLM&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; technology is going and what its coming capabilities will be. I&amp;rsquo;m happy to stand by this speculation, and happy to discuss.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;p&gt;All of this relies on some amount of speculation about where our LLM&lt;sup id=&#34;fnref1:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; technology is going and what its coming capabilities will be. I&amp;rsquo;m happy to stand by this speculation, and happy to discuss.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Bear in mind I&amp;rsquo;ve used neither of these systems! Take my thoughts with grains of salt. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Bear in mind I&amp;rsquo;ve used neither of these systems! Take my thoughts with grains of salt.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;I just chose a random example. But anyway, the idea is that you might build a shopping widget that uses the data about your contacts&#39; preferences to surface gift ideas for them while you&amp;rsquo;re shopping. The ontology way to do this is for each Person in your notes to have a Likes or Interests field, which the shopping experience can access. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;I just chose a random example. But anyway, the idea is that you might build a shopping widget that uses the data about your contacts&amp;rsquo; preferences to surface gift ideas for them while you&amp;rsquo;re shopping. The ontology way to do this is for each Person in your notes to have a Likes or Interests field, which the shopping experience can access.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;I was planning on squeezing a reference to &amp;ldquo;Factory factories&amp;rdquo; into this section, but then it didn&amp;rsquo;t fit in, so just sticking this in a footnote. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;I was planning on squeezing a reference to &amp;ldquo;Factory factories&amp;rdquo; into this section, but then it didn&amp;rsquo;t fit in, so just sticking this in a footnote.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;I&amp;rsquo;m using the term large language model here in a loose sense. I basically mean tech largely dependent on deep learning, including advances expected to come in the next few years. It&amp;rsquo;s easier to just say LLM though, even though that oversimplifies. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
+&lt;p&gt;I&amp;rsquo;m using the term large language model here in a loose sense. I basically mean tech largely dependent on deep learning, including advances expected to come in the next few years. It&amp;rsquo;s easier to just say LLM though, even though that oversimplifies.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -2439,7 +2439,8 @@ Better even than that experience would be something like what the latest Adept A
       
       <guid>https://davidbieber.com/snippets/2022-07-21-twitter-oauth-login/</guid>
       
-      <description>&lt;p&gt;You can log into a Twitter app with OAuth using Twython. First, make sure you have twython pip installed (&lt;code&gt;pip install twython&lt;/code&gt;). Then, get the APP_KEY and APP_SECRET from the developer. This is labeled &amp;ldquo;API Key and Secret&amp;rdquo; on the app page at &lt;a href=&#34;https://developer.twitter.com/en/portal/apps/&#34;&gt;https://developer.twitter.com/en/portal/apps/&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;You can log into a Twitter app with OAuth using Twython. First, make sure you have twython pip installed (&lt;code&gt;pip install twython&lt;/code&gt;). Then, get the APP_KEY and APP_SECRET from the developer. This is labeled &amp;ldquo;API Key and Secret&amp;rdquo; on the app page at 
+&lt;a href=&#34;https://developer.twitter.com/en/portal/apps/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://developer.twitter.com/en/portal/apps/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Next, run the following Python code:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import twython
 
@@ -2484,48 +2485,48 @@ If the &amp;ldquo;app&amp;rdquo; is actually just you using Twython, construct a
       
       <description>&lt;p&gt;This is a note-to-self about how the code base for this website, davidbieber.com, is organized. There are several &amp;ldquo;layouts&amp;rdquo; files that live in the 
 &lt;a href=&#34;https://github.com/dbieber/davidbieber.com/tree/master/hugo/layouts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts&lt;/a&gt; directories. This is what each of them does:&lt;/p&gt;
-&lt;h4 id=&#34;hugolayouts_defaultlisthtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayouts_defaultlisthtml&#34;&gt;
+&lt;h4 id=&#34;hugolayouts_&#34;&gt;
 &lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/_default/list.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/_default/list.html&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/_default/list.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;list.html&lt;/a&gt; defines how 
 &lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;/snippets&lt;/a&gt;, 
 &lt;a href=&#34;https://davidbieber.com/tags&#34;&gt;/tags&lt;/a&gt;, and each of the individual /tags/&lt;tag&gt; pages are rendered. Each of these pages holds a list of links, as well as a Discussion section.&lt;/p&gt;
-&lt;h4 id=&#34;hugolayouts_defaultrssxmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayouts_defaultrssxml&#34;&gt;
+&lt;h4 id=&#34;hugolayouts_-1&#34;&gt;
 &lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/_default/rss.xml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/_default/rss.xml&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Defines the rss feeds for 
 &lt;a href=&#34;https://davidbieber.com/snippets/index.xml&#34;&gt;snippets&lt;/a&gt; and for 
 &lt;a href=&#34;https://davidbieber.com/posts/index.xml&#34;&gt;posts&lt;/a&gt;.&lt;/p&gt;
-&lt;h4 id=&#34;hugolayoutspartialswidgetspageshtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialswidgetspageshtml&#34;&gt;
+&lt;h4 id=&#34;hugolayoutspartialswidgetspageshtml&#34;&gt;
 &lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/widgets/pages.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/partials/widgets/pages.html&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Used to render the posts widget on the home page.&lt;/p&gt;
-&lt;h4 id=&#34;hugothemesacademiclayoutssectionposthtmlusersdbiebercodegithubdbieberdavidbiebercomhugothemesacademiclayoutssectionposthtml&#34;&gt;
+&lt;h4 id=&#34;hugothemesacademiclayoutssectionposthtml&#34;&gt;
 &lt;a href=&#34;https://davidbieber.com/Users/dbieber/code/github/dbieber/davidbieber.com/hugo/themes/academic/layouts/section/post.html&#34;&gt;/hugo/themes/academic/layouts/section/post.html&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Used to render the 
 &lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;/posts&lt;/a&gt; page. (Part of the theme.)&lt;/p&gt;
-&lt;h4 id=&#34;hugolayoutspartialswidgetsportfoliohtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialswidgetsportfoliohtml&#34;&gt;
+&lt;h4 id=&#34;hugolayoutspartialswidgetsportfoliohtml&#34;&gt;
 &lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/widgets/portfolio.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/partials/widgets/portfolio.html&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Used to render the 
 &lt;a href=&#34;https://davidbieber.com/projects&#34;&gt;/projects&lt;/a&gt; page.&lt;/p&gt;
-&lt;h4 id=&#34;hugolayoutspartialscustom_jshtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialscustom_jshtml&#34;&gt;
+&lt;h4 id=&#34;hugolayoutspartialscustom_&#34;&gt;
 &lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/custom_js.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/partials/custom_js.html&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Embeds Firebase, Tumblr Embed Gist, JQuery, and React. Just the staples that appear on every page.&lt;/p&gt;
-&lt;h4 id=&#34;hugolayoutspartialscustom_js_extrahtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialscustom_js_extrahtml&#34;&gt;
+&lt;h4 id=&#34;hugolayoutspartialscustom_-1&#34;&gt;
 &lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/custom_js_extra.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/partials/custom_js_extra.html&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Embeds page-specific JS bundles, e.g. Ask-Me-Anywhere, or margin-notes.js. The source for the custom JS bundles lives in 
 &lt;a href=&#34;https://github.com/dbieber/davidbieber.com/tree/master/hugo/assets/js-src&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;assets/js-src&lt;/a&gt;.&lt;/p&gt;
-&lt;h4 id=&#34;hugolayoutspartialsdiscussionhtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialsdiscussionhtml&#34;&gt;
+&lt;h4 id=&#34;hugolayoutspartialsdiscussionhtml&#34;&gt;
 &lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/discussion.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/partials/discussion.html&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Embeds Discord on the page.&lt;/p&gt;
-&lt;h4 id=&#34;hugolayoutspartialspage_headerhtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialspage_headerhtml&#34;&gt;
+&lt;h4 id=&#34;hugolayoutspartialspage_&#34;&gt;
 &lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/page_header.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/partials/page_header.html&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Renders post header data, such as a chip if appropriate, the header image, and title and subtitle headers.&lt;/p&gt;
-&lt;h4 id=&#34;hugolayoutspartialspage_footerhtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialspage_footerhtml&#34;&gt;
+&lt;h4 id=&#34;hugolayoutspartialspage_-1&#34;&gt;
 &lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/page_footer.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/partials/page_footer.html&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Shows tags.
 Includes the Discord discussion partial.
 Includes 4 related pages in the footer.
 Shows the author.&lt;/p&gt;
-&lt;h4 id=&#34;hugolayoutspartialspage_metadata_authorshtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialspage_metadata_authorshtml&#34;&gt;
+&lt;h4 id=&#34;hugolayoutspartialspage_-2&#34;&gt;
 &lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/page_metadata_authors.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo/layouts/partials/page_metadata_authors.html&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Empty. Overwrites the equivalent file from the Academic theme preventing author metadata from rendering.&lt;/p&gt;
 &lt;hr&gt;
@@ -2653,7 +2654,7 @@ It&amp;rsquo;s all the same in the end, anyway.&lt;/p&gt;
       
       <description>&lt;p&gt;In this snippet we&amp;rsquo;re going to introduce the Medical Test Paradox &lt;em&gt;Paradox&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;First, you may already be familiar with the 
-&lt;a href=&#34;https://www.youtube.com/watch?v=lG4VkPoG3ko&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Medical Test Paradox&lt;/a&gt;. It&amp;rsquo;s a popular recreational math problem that teaches Bayes&#39; theorem and the importance of base rates. It goes like this.&lt;/p&gt;
+&lt;a href=&#34;https://www.youtube.com/watch?v=lG4VkPoG3ko&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Medical Test Paradox&lt;/a&gt;. It&amp;rsquo;s a popular recreational math problem that teaches Bayes&amp;rsquo; theorem and the importance of base rates. It goes like this.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Suppose 1 in 10000 people have a certain disease, and there is a medical test that is 99% accurate. This means that if you do have the disease, the test comes back positive with 99% probability, and if you do not have the disease, the test comes back negative with 99% probability. It is wrong 1% of the time.&lt;/p&gt;
 &lt;p&gt;If your test result comes back positive, what&amp;rsquo;s the probability that you have the disease?&lt;/p&gt;
@@ -2664,7 +2665,7 @@ It&amp;rsquo;s all the same in the end, anyway.&lt;/p&gt;
 &lt;p&gt;Let $D=\text{yes}$ be the event where you have the disease.
 Let $T=\text{positive}$ be the event where the test comes back positive.&lt;/p&gt;
 &lt;p&gt;Using this notation, we want to find $P(D=\text{yes} | T=\text{positive})$.
-We proceed by Bayes&#39; theorem.&lt;/p&gt;
+We proceed by Bayes&amp;rsquo; theorem.&lt;/p&gt;
 &lt;p&gt;$P(D=\text{yes} | T=\text{positive}) = \frac{P(T=\text{positive} | D = \text{yes})P(D = \text{yes})}{P(T = \text{positive})}$
 $$= \frac{P(T=\text{positive} | D = \text{yes})P(D = \text{yes})}{P(T=\text{positive} | D = \text{yes})P(D = \text{yes}) + P(T=\text{positive} | D = \text{no})P(D = \text{no})}$$
 $$= \frac{0.99 \cdot \frac{1}{10000}}{0.99 \cdot \frac{1}{10000} + 0.01 \cdot \frac{9999}{10000}}$$
@@ -2677,7 +2678,7 @@ $$= 0.009803 \approx \fbox{1%}$$&lt;/p&gt;
 &lt;p&gt;Like the Medical Test Paradox, the Medical Test Paradox &lt;em&gt;Paradox&lt;/em&gt; is of course not a true paradox. There is a simple explanation that accounts for an apparently paradoxical discrepancy. First, why does it look like a paradox at all?&lt;/p&gt;
 &lt;p&gt;Take any real disease with prevalence roughly 1 in 10000 (e.g. 
 &lt;a href=&#34;[frequently]%28https://www.medicalhomeportal.org/diagnoses-and-conditions/diagnosis-prevalence-list%29&#34;&gt;from this list&lt;/a&gt;). These are real diseases affecting real people. The best tests for that disease likely has less than 99% accuracy.
-So even if you test positive for the disease, Bayes&#39; theorem suggests the probability you have the disease remains less than 1%. How are people then getting diagnosed with the disease at all? It seems as if doctors would have no way to conclude with greater than 1% certainty that you have the disease, even if your test comes back positive. You don&amp;rsquo;t want to give someone a treatment with side effects if there&amp;rsquo;s only a one percent chance they&amp;rsquo;re actually afflicted with the disease in question.&lt;/p&gt;
+So even if you test positive for the disease, Bayes&amp;rsquo; theorem suggests the probability you have the disease remains less than 1%. How are people then getting diagnosed with the disease at all? It seems as if doctors would have no way to conclude with greater than 1% certainty that you have the disease, even if your test comes back positive. You don&amp;rsquo;t want to give someone a treatment with side effects if there&amp;rsquo;s only a one percent chance they&amp;rsquo;re actually afflicted with the disease in question.&lt;/p&gt;
 &lt;details&gt;
   &lt;summary&gt;Expand to see the rest of the snippet. We discuss resolutions to the paradox.&lt;/summary&gt;
 &lt;p&gt;The Medical Test Paradox assumes that prior to taking the medical test, the probability that you have the disease is given by the disease&amp;rsquo;s prevalence, i.e. 1 in 10000. This is true if the medical test is being administered to random members of the population.
@@ -2686,7 +2687,7 @@ Common reasons you might take a medical test include (a) you are showing symptom
 In these scenarios, the prior probability that you have the disease is higher than the disease&amp;rsquo;s prevalence.&lt;/p&gt;
 &lt;p&gt;Doctors aren&amp;rsquo;t just administering random tests to random people.
 They are administering tests as part of a differential where the test is likely to distinguish between a small number of reasonable alternative hypotheses that could explain your symptoms, generally each with a prior far exceeding 1 in 10000 (I&amp;rsquo;d estimate values between 1 in 10 and 1 in 3 are more common, but of course it varies according to the specifics of the situation).
-The priors are higher than the candidate diseases&#39; prevalence because your symptoms already indicate that you have &lt;em&gt;something&lt;/em&gt;, even though they don&amp;rsquo;t fully narrow down what it is you have.&lt;/p&gt;
+The priors are higher than the candidate diseases&amp;rsquo; prevalence because your symptoms already indicate that you have &lt;em&gt;something&lt;/em&gt;, even though they don&amp;rsquo;t fully narrow down what it is you have.&lt;/p&gt;
 &lt;p&gt;This &lt;em&gt;reason for administering the test&lt;/em&gt; resolves the Medical Test Paradox Paradox.&lt;/p&gt;
 &lt;details&gt;
   &lt;summary&gt;Does this change how we think about the original Medical Test Paradox?&lt;/summary&gt;
@@ -2761,7 +2762,7 @@ So, having this &amp;ldquo;approve for delayed send&amp;rdquo; model for dealing
 Keeping up with 200 messages per hour isn&amp;rsquo;t even desirable. Why? It&amp;rsquo;s not that it&amp;rsquo;s a lot of noise &amp;ndash; though sometimes there is a lot of noise.
 But even when there&amp;rsquo;s a lot of high quality interesting fun messages, it&amp;rsquo;s not stuff I&amp;rsquo;m actively looking to read or learn about or people that I&amp;rsquo;m choosing to keep in touch with. Instead, it&amp;rsquo;s whatever the group collectively has steered toward.
 I&amp;rsquo;d rather be more intentional about what I read and discuss, rather than being at the whims of 200+ people, many of whom I haven&amp;rsquo;t met.
-However, there is tension between that desire for intentionality and the desire to hear folks&#39; interesting ideas and share my own.
+However, there is tension between that desire for intentionality and the desire to hear folks&amp;rsquo; interesting ideas and share my own.
 Adding to the tension further is a natural inclination toward reading messages as they come in, because they&amp;rsquo;re attention-grabbing even if they aren&amp;rsquo;t where I&amp;rsquo;d like to place my focus.&lt;/p&gt;
 &lt;p&gt;The capabilities bit:
 Even if I decided I did want to stay abreast of the conversation, there&amp;rsquo;s simply too much to reasonably process.
@@ -3077,7 +3078,7 @@ Snippet-worthy is a much lower bar than story-worthy.
 However, cleaning up text from Go Note Go to produce a snippet doesn&amp;rsquo;t seem as rewarding as writing a snippet from scratch. Snippet-writing is like thinking; Go Note Go-cleaning is another type of activity altogether.&lt;/p&gt;
 &lt;p&gt;Still, there are ideas in my Go Note Go writing that I do want to publish. So, my proposed strategy is this: I&amp;rsquo;ll write snippets about those ideas from scratch, when it feels appropriate to do so. I already review my Go Note Go notes periodically, so now when I do so I&amp;rsquo;ll keep an eye out for snippet-worthy ideas. By doing so, I think there&amp;rsquo;s a good chance some of them will turn themselves into snippets simply by virtue of being sufficiently interesting to me.&lt;/p&gt;
 &lt;p&gt;The biggest such idea that comes to mind is 
-&lt;a href=&#34;https://davidbieber.com/snippets/2022-07-20-keyboards-everywhere/&#34;&gt;&amp;ldquo;Keyboards, keyboards, everywhere, and not a spot to think.&amp;quot;&lt;/a&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2022-07-20-keyboards-everywhere/&#34;&gt;&amp;ldquo;Keyboards, keyboards, everywhere, and not a spot to think.&amp;rdquo;&lt;/a&gt;
 This is a blog post idea I&amp;rsquo;ve written multiple parts of in different places, but which I haven&amp;rsquo;t pulled together into its complete form yet. It&amp;rsquo;s a post about the promise of technology, how attention-seeking tech has prevented us from delivering on that promise, and how headless keyboards like Go Note Go provide a path toward reclaiming our attention and allowing us to reach out fullest potential as users of modern tech.&lt;/p&gt;
 &lt;p&gt;A 
 &lt;a href=&#34;https://davidbieber.com/posts/&#34;&gt;blog post&lt;/a&gt; isn&amp;rsquo;t a 
@@ -3109,9 +3110,9 @@ Since
 the experience of reviewing my writing has been much more comfortable than it was previously.&lt;/p&gt;
 &lt;p&gt;When I write in Go Note Go using the &amp;ldquo;Roam Research&amp;rdquo; uploader, my writing is divided into &amp;ldquo;sessions&amp;rdquo;.
 Each session starts with a line containing only the time. The rest of the writing is nested beneath.
-&lt;img src=&#34;session.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://davidbieber.com/snippets/2022-02-14-go-note-go-writing-volume/session.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;When I review my writing in Go Note Go, I do so session by session, putting a summary of the session in that top line of the session, and then collapsing the session. Often the top line is a block-reference to one or more of the lines from the session. For example,
-&lt;img src=&#34;session-collapsed.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://davidbieber.com/snippets/2022-02-14-go-note-go-writing-volume/session-collapsed.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;This compresses the 600 words I might write on a given day and presents them in a series of often 10 or fewer individual lines.&lt;/p&gt;
 &lt;p&gt;While I like that I can and do review my writing to a greater degree than expected, I think there&amp;rsquo;s still substantial improvement to make in the review-and-reuse experience.
 In particular, one idea I&amp;rsquo;m excited about and which I&amp;rsquo;ve been writing about in Go Note Go a fair amount, is hiring someone to review my notes and process them into a summary / a newsletter for myself.&lt;/p&gt;
@@ -3559,15 +3560,15 @@ Residents could have their perfect customized lunch ready for them when they&amp
 &lt;p&gt;Not into the Amazon Cloud Kitchen idea?
 Consider instead a nice case of 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-12-09-amazon-beans/&#34;&gt;Amazon Beans&lt;/a&gt;.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;A related language feature for the recipe programming language:
-implicit variables. In recipes, there is usually only ever a single object of a given type (e.g. recipes rarely use two ovens). Sometimes there are multiple objects of the same type (e.g. two bowls of ingredients). If a recipe refers to an object by its type, it doesn&amp;rsquo;t need to have any additional identifying information about that object, unless there is ambiguity. So, when you make a statement about an oven in a recipe, it&amp;rsquo;s implied that your recipe now requires an oven. Future references to an oven imply the same oven; if you want to talk about a distinct oven, you can name them or indicate which oven you&amp;rsquo;re talking about by specifying additional detail (&amp;ldquo;the 400°F oven&amp;rdquo; and &amp;ldquo;the 350°F oven&amp;rdquo;). In a future snippet we can sketch out what the language would look like, including writing the programs for a handful of example recipes. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+implicit variables. In recipes, there is usually only ever a single object of a given type (e.g. recipes rarely use two ovens). Sometimes there are multiple objects of the same type (e.g. two bowls of ingredients). If a recipe refers to an object by its type, it doesn&amp;rsquo;t need to have any additional identifying information about that object, unless there is ambiguity. So, when you make a statement about an oven in a recipe, it&amp;rsquo;s implied that your recipe now requires an oven. Future references to an oven imply the same oven; if you want to talk about a distinct oven, you can name them or indicate which oven you&amp;rsquo;re talking about by specifying additional detail (&amp;ldquo;the 400°F oven&amp;rdquo; and &amp;ldquo;the 350°F oven&amp;rdquo;). In a future snippet we can sketch out what the language would look like, including writing the programs for a handful of example recipes.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -3605,14 +3606,14 @@ so I will leave this snippet here, merely as food for thought, rather than pursu
 &lt;p&gt;Do you think this effect could be convincing, approximating the experience of someone with prosopagnosia in someone without?&lt;/p&gt;
 &lt;p&gt;In writing this snippet I Googled &amp;ldquo;prosopagnosia augmented reality&amp;rdquo; to see if anyone had tried this idea already.
 Of course what I found was not my idea, but rather the reverse: using augmented reality to help those with prosopagnosia, rather than using it to help those without. That makes a lot of sense, and I feel a bit silly for it.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Maybe it could be a good class project for someone to dive deeper into this idea though. If you do, do let me know!! &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Maybe it could be a good class project for someone to dive deeper into this idea though. If you do, do let me know!!&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -3701,14 +3702,14 @@ I expect we&amp;rsquo;ll find that if the cost of internet connectivity is modes
 Some costs to consider include spoilage and other lost beans, customer service, cost of beans, shipping costs, software costs, and of course the cost of the special internet-connected case.&lt;/p&gt;
 &lt;p&gt;In a future snippet I&amp;rsquo;d also like to think through whether I&amp;rsquo;m a proponent of the idea. What are the longer term consequences? What ethical issues arise?&lt;/p&gt;
 &lt;p&gt;Brainstorming fun names comes later too. Jeffrey Beanzos? I&amp;rsquo;ll keep thinking.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;The shelf-life of beans tends to be 2-5 years, so the policy can be something like: &amp;ldquo;If the beans remain uneaten for 5 years, you get to keep the beans for free. Dispose of them responsibly.&amp;rdquo; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;The shelf-life of beans tends to be 2-5 years, so the policy can be something like: &amp;ldquo;If the beans remain uneaten for 5 years, you get to keep the beans for free. Dispose of them responsibly.&amp;rdquo;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -3892,7 +3893,8 @@ Thank you for volunteering!
 By working together, we are assembling a dataset of thousands of in-context flashcards
 to help evaluate and improve future automatic flashcard generation projects.&lt;/p&gt;
 &lt;p&gt;To get started, install the Browserflow extension and the flow:
-&lt;a href=&#34;https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831&#34;&gt;https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831&lt;/a&gt;&lt;/p&gt;
+
+&lt;a href=&#34;https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Your help is requested in creating flashcards to populate the dataset.
 Please submit between 5 and 200 flashcards that you believe would be useful or interesting to you.
 The flow above will assist you in submitting flashcards to the dataset.&lt;/p&gt;
@@ -4178,17 +4180,17 @@ For many researchers, even publishing the hypotheses that they are actively work
 &lt;p&gt;The next concern is about &lt;em&gt;collapsing of the idea space&lt;/em&gt;. In order for a group to come up with the best possible ideas, there needs to be space for the group&amp;rsquo;s thinking to diverge, as well as space for discussion leading to some amount of convergence on good ideas. The hypothesis journal idea increases the amount of convergence. Some might argue we actually need more divergence in our thinking. I would be interested to discuss this with you if you have this concern.&lt;/p&gt;
 &lt;p&gt;Finally, a possible concern is that hypotheses without experiments are not on their own valuable, e.g. that &amp;ldquo;ideas are a dime a dozen&amp;rdquo;. To address this concern, I think we merely need to raise the bar about what constitutes a good hypothesis. We&amp;rsquo;re not looking for just any old idea, but rather ones that will advance the science of machine learning, backed up by the evidence the machine learning community has collected, and likely to be impactful on future science. Coming up with a good hypothesis is not easy, but a popular hypothesis journal could be an effective tool for improving our collective ability to do so.&lt;/p&gt;
 &lt;p&gt;If you share these concerns of have additional ones not discussed here, please get in touch. I&amp;rsquo;d love to discuss.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;I describe the &amp;ldquo;hypothesis arxiv&amp;rdquo; idea using the language of empirical science, but in principle the idea could be applied to entirely theoretical fields as well. In that setting, the idea would be to make space for unproven conjectures to be shared more freely. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;I describe the &amp;ldquo;hypothesis arxiv&amp;rdquo; idea using the language of empirical science, but in principle the idea could be applied to entirely theoretical fields as well. In that setting, the idea would be to make space for unproven conjectures to be shared more freely.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;And if a hypothesis submitted to the hypothesis arxiv by one group is being evaluated by another group, then it would make sense to me to include the first group closely in the evaluation process. In this way, the &amp;ldquo;hypothesis arxiv&amp;rdquo; may open up LLM research even more than described in the main text. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;And if a hypothesis submitted to the hypothesis arxiv by one group is being evaluated by another group, then it would make sense to me to include the first group closely in the evaluation process. In this way, the &amp;ldquo;hypothesis arxiv&amp;rdquo; may open up LLM research even more than described in the main text.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -4291,20 +4293,20 @@ For many researchers, even publishing the hypotheses that they are actively work
 &lt;p&gt;Point 1 here allows for effective representatives to emerge, even if in practice they are ephemeral and can have their power revoked by the people at any time.
 Point 2 here allows the members to hole ultimate control over their own votes if for some reason their representative behaves in a way contrary to their own views.&lt;/p&gt;
 &lt;p&gt;I am not yet caught up to date with the implementations that DAOs have tried in practice. This is something I&amp;rsquo;m interested to learn more about, and then perhaps DDoV (or some future version of it) will be an effective voting strategy for a future DAO.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;What are the problems that arise with naive voting?
 &lt;br/&gt;
 (1) You can only hold votes on a small number of things before overwhelming the governing body. If you have too many things to vote on, people will be unable to adequately inform themselves about all items.
 &lt;br/&gt;
 (2) Everybody needs to learn about and vote on every item.
 &lt;br/&gt;
-(3) If only a small fraction of voters are voting on typical items, a small number of people could easily sneak a vote past the majority that the majority would disagree with. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+(3) If only a small fraction of voters are voting on typical items, a small number of people could easily sneak a vote past the majority that the majority would disagree with.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -4316,7 +4318,7 @@ Point 2 here allows the members to hole ultimate control over their own votes if
       <guid>https://davidbieber.com/snippets/2021-10-28-ml-and-automation-for-note-taking/</guid>
       
       <description>&lt;p&gt;Let&amp;rsquo;s consider machine learning first, and then automation. For each we brainstorm the potential value for note-taking.&lt;/p&gt;
-&lt;h3 id=&#34;the-value-of-markmachine-learningmark-for-note-taking&#34;&gt;The Value of &lt;mark&gt;Machine Learning&lt;/mark&gt; for Note-Taking&lt;/h3&gt;
+&lt;h3 id=&#34;the-value-of-machine-learning-for-note-taking&#34;&gt;The Value of &lt;mark&gt;Machine Learning&lt;/mark&gt; for Note-Taking&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Automatic &lt;strong&gt;transcription&lt;/strong&gt; of audio notes
 &lt;ul&gt;
@@ -4367,7 +4369,7 @@ Point 2 here allows the members to hole ultimate control over their own votes if
 &lt;li&gt;&lt;strong&gt;Semantic search&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Conversational chat bots&lt;/strong&gt; for exploring the knowledge in a notebase&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;the-value-of-markautomationmark-for-note-taking&#34;&gt;The Value of &lt;mark&gt;Automation&lt;/mark&gt; for Note-Taking&lt;/h3&gt;
+&lt;h3 id=&#34;the-value-of-automation-for-note-taking&#34;&gt;The Value of &lt;mark&gt;Automation&lt;/mark&gt; for Note-Taking&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Share notes&lt;/strong&gt; with people via their preferred messaging platform&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Snooze notes&lt;/strong&gt; and ideas so you review them later&lt;/li&gt;
@@ -4386,7 +4388,7 @@ Point 2 here allows the members to hole ultimate control over their own votes if
 &lt;li&gt;&lt;strong&gt;Publishing&lt;/strong&gt; of notes to a webpage (either publicly or privately), or to social media&lt;/li&gt;
 &lt;li&gt;New &lt;strong&gt;data entry&lt;/strong&gt; mechanisms: &lt;strong&gt;Go Note Go&lt;/strong&gt;, terminal, email, text, browsing history, location history, terminal history, IoT devices, etc&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Spaced repetition&lt;/strong&gt; for studying&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Inactivity reminders&lt;/strong&gt; (e.g. &amp;ldquo;it&amp;rsquo;s been three months since you&amp;rsquo;ve done a music activity&amp;rdquo;, or &amp;ldquo;it&amp;rsquo;s been over 6 months since you&amp;rsquo;ve spoken with David Dohan&amp;rdquo;, or &amp;ldquo;it&amp;rsquo;s been over a year since you&amp;rsquo;ve written about microbiology.&amp;quot;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inactivity reminders&lt;/strong&gt; (e.g. &amp;ldquo;it&amp;rsquo;s been three months since you&amp;rsquo;ve done a music activity&amp;rdquo;, or &amp;ldquo;it&amp;rsquo;s been over 6 months since you&amp;rsquo;ve spoken with David Dohan&amp;rdquo;, or &amp;ldquo;it&amp;rsquo;s been over a year since you&amp;rsquo;ve written about microbiology.&amp;rdquo;)&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -4401,7 +4403,8 @@ Point 2 here allows the members to hole ultimate control over their own votes if
       <description>&lt;p&gt;I&amp;rsquo;ve put together a hardware guide so you can build your own Go Note Go. I&amp;rsquo;ll keep a version of this in the 
 &lt;a href=&#34;https://github.com/dbieber/GoNoteGo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Go Note Go GitHub repo&lt;/a&gt; too. This one will likely fall out of date, but I&amp;rsquo;ll try to keep the one in the GitHub repo updated.&lt;/p&gt;
 &lt;h3 id=&#34;raspberry-pi-400&#34;&gt;Raspberry Pi 400&lt;/h3&gt;
-&lt;p&gt;Link: &lt;a href=&#34;https://www.raspberrypi.com/products/raspberry-pi-400-unit/&#34;&gt;https://www.raspberrypi.com/products/raspberry-pi-400-unit/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: 
+&lt;a href=&#34;https://www.raspberrypi.com/products/raspberry-pi-400-unit/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.raspberrypi.com/products/raspberry-pi-400-unit/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Details: I use the US keyboard. You can purchase from e.g. PiShop. I recommend ordering the following as a bundle:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The Raspberry Pi 400 unit ($70)&lt;/li&gt;
@@ -4411,39 +4414,49 @@ Point 2 here allows the members to hole ultimate control over their own votes if
 &lt;/ul&gt;
 &lt;p&gt;Cost: $91&lt;/p&gt;
 &lt;h3 id=&#34;voice-bonnet&#34;&gt;Voice bonnet&lt;/h3&gt;
-&lt;p&gt;Link: &lt;a href=&#34;https://www.adafruit.com/product/4757&#34;&gt;https://www.adafruit.com/product/4757&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: 
+&lt;a href=&#34;https://www.adafruit.com/product/4757&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.adafruit.com/product/4757&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Notes: I&amp;rsquo;ve actually had some issues with these. The microphone records a high pitched noise and the audio output is quiet and muffled. I will suggest an (untested) alternative speaker and mic below.&lt;/p&gt;
 &lt;p&gt;Cost: $20&lt;/p&gt;
 &lt;h3 id=&#34;2x20-connector&#34;&gt;2x20 Connector&lt;/h3&gt;
-&lt;p&gt;Link: &lt;a href=&#34;https://www.adafruit.com/product/4079&#34;&gt;https://www.adafruit.com/product/4079&lt;/a&gt; OR &lt;a href=&#34;https://www.adafruit.com/product/2223&#34;&gt;https://www.adafruit.com/product/2223&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: 
+&lt;a href=&#34;https://www.adafruit.com/product/4079&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.adafruit.com/product/4079&lt;/a&gt; OR 
+&lt;a href=&#34;https://www.adafruit.com/product/2223&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.adafruit.com/product/2223&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Recommendation: Get the 
 &lt;a href=&#34;https://www.adafruit.com/product/2223&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;long pins one&lt;/a&gt;. The 
 &lt;a href=&#34;https://www.adafruit.com/product/4079&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;short pins one&lt;/a&gt; is sleeker but the long pins might become necessary for connecting the button. TBD.&lt;/p&gt;
 &lt;p&gt;Notes: Use this to attach the voice bonnet to the Pi.&lt;/p&gt;
 &lt;p&gt;Cost: $3&lt;/p&gt;
 &lt;h3 id=&#34;10000-mah-battery&#34;&gt;10000 mAh battery&lt;/h3&gt;
-&lt;p&gt;Link: &lt;a href=&#34;https://www.amazon.com/gp/product/B07JYYRT7T&#34;&gt;https://www.amazon.com/gp/product/B07JYYRT7T&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: 
+&lt;a href=&#34;https://www.amazon.com/gp/product/B07JYYRT7T&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.amazon.com/gp/product/B07JYYRT7T&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Notes: There are lots of options for the battery. This one works just fine. Could choose one with more storage for longer battery life if desired, but might get clunky.&lt;/p&gt;
 &lt;p&gt;Cost: $19 (currently $14)&lt;/p&gt;
 &lt;h3 id=&#34;velcro&#34;&gt;Velcro&lt;/h3&gt;
-&lt;p&gt;Link: &lt;a href=&#34;https://www.amazon.com/gp/product/B08P3MXLLD&#34;&gt;https://www.amazon.com/gp/product/B08P3MXLLD&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: 
+&lt;a href=&#34;https://www.amazon.com/gp/product/B08P3MXLLD&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.amazon.com/gp/product/B08P3MXLLD&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Notes: I use this Velcro to mount the keyboard to the passenger side of the car, and to mount the battery to the back of the keyboard. When applying the sticky side to a car dashboard, allow to dry overnight.&lt;/p&gt;
 &lt;p&gt;Cost: $7&lt;/p&gt;
 &lt;h3 id=&#34;usb-cables&#34;&gt;USB Cables&lt;/h3&gt;
 &lt;p&gt;Links:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;3 ft USB - USB C cable: &lt;a href=&#34;https://www.amazon.com/gp/product/B089DM4KDW&#34;&gt;https://www.amazon.com/gp/product/B089DM4KDW&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;6 in USB - USB C cable: &lt;a href=&#34;https://www.amazon.com/gp/product/B012V56D2A&#34;&gt;https://www.amazon.com/gp/product/B012V56D2A&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;3 ft USB - USB C cable: 
+&lt;a href=&#34;https://www.amazon.com/gp/product/B089DM4KDW&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.amazon.com/gp/product/B089DM4KDW&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;6 in USB - USB C cable: 
+&lt;a href=&#34;https://www.amazon.com/gp/product/B012V56D2A&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.amazon.com/gp/product/B012V56D2A&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Cost: $13 ($6.99 for 3 ft and $5.99 for 6 in)&lt;/p&gt;
 &lt;h3 id=&#34;the-beautiful-red-button&#34;&gt;The Beautiful Red Button&lt;/h3&gt;
-&lt;p&gt;Link: &lt;a href=&#34;https://www.amazon.com/gp/product/B00T6RCGNC&#34;&gt;https://www.amazon.com/gp/product/B00T6RCGNC&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link: 
+&lt;a href=&#34;https://www.amazon.com/gp/product/B00T6RCGNC&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.amazon.com/gp/product/B00T6RCGNC&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Cost: $9&lt;/p&gt;
 &lt;h3 id=&#34;alternative-mic-and-speaker&#34;&gt;Alternative Mic and Speaker&lt;/h3&gt;
 &lt;p&gt;Links:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Microphone: &lt;a href=&#34;https://www.adafruit.com/product/3367&#34;&gt;https://www.adafruit.com/product/3367&lt;/a&gt; ($6)&lt;/li&gt;
-&lt;li&gt;Speaker: &lt;a href=&#34;https://www.adafruit.com/product/3369&#34;&gt;https://www.adafruit.com/product/3369&lt;/a&gt; ($13)&lt;/li&gt;
+&lt;li&gt;Microphone: 
+&lt;a href=&#34;https://www.adafruit.com/product/3367&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.adafruit.com/product/3367&lt;/a&gt; ($6)&lt;/li&gt;
+&lt;li&gt;Speaker: 
+&lt;a href=&#34;https://www.adafruit.com/product/3369&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.adafruit.com/product/3369&lt;/a&gt; ($13)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Notes: I haven&amp;rsquo;t gotten these set up with Go Note Go yet, but am considering them as an alternative to the Adafruit Voice Bonnet. I really like the LEDs on the voice bonnet though, so TBD.&lt;/p&gt;
 &lt;p&gt;Cost: $19&lt;/p&gt;
@@ -4453,17 +4466,21 @@ Point 2 here allows the members to hole ultimate control over their own votes if
 &lt;p&gt;These will be useful for configuring and debugging Go Note Go, e.g. setting up WiFi and configuring your note-taking system.&lt;/p&gt;
 &lt;h3 id=&#34;wire-wire-stripper&#34;&gt;Wire, Wire Stripper&lt;/h3&gt;
 &lt;p&gt;If you use The Beautiful Red Button you&amp;rsquo;ll need wire and wire strippers. For wire I used 18 gauge lamp wire I got from Home Depot.&lt;/p&gt;
-&lt;p&gt;Possible link: &lt;a href=&#34;https://www.lowes.com/pd/Southwire-25-Ft-18-2-Black-Stranded-Lamp-Cord/5001050863&#34;&gt;https://www.lowes.com/pd/Southwire-25-Ft-18-2-Black-Stranded-Lamp-Cord/5001050863&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Wire stripper link: &lt;a href=&#34;https://www.amazon.com/Mr-Stripper-Stripping-Crimping-Electrical/dp/B086V5M1B4&#34;&gt;https://www.amazon.com/Mr-Stripper-Stripping-Crimping-Electrical/dp/B086V5M1B4&lt;/a&gt; (Chose this one arbitrarily; I got mine at Home Depot)&lt;/p&gt;
+&lt;p&gt;Possible link: 
+&lt;a href=&#34;https://www.lowes.com/pd/Southwire-25-Ft-18-2-Black-Stranded-Lamp-Cord/5001050863&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.lowes.com/pd/Southwire-25-Ft-18-2-Black-Stranded-Lamp-Cord/5001050863&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Wire stripper link: 
+&lt;a href=&#34;https://www.amazon.com/Mr-Stripper-Stripping-Crimping-Electrical/dp/B086V5M1B4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.amazon.com/Mr-Stripper-Stripping-Crimping-Electrical/dp/B086V5M1B4&lt;/a&gt; (Chose this one arbitrarily; I got mine at Home Depot)&lt;/p&gt;
 &lt;p&gt;Notes: I don&amp;rsquo;t know if this is the best choice for wire; a higher gauge might be better.&lt;/p&gt;
 &lt;h3 id=&#34;solder-soldering-iron&#34;&gt;Solder? Soldering iron?&lt;/h3&gt;
 &lt;p&gt;I haven&amp;rsquo;t had to use solder yet, but might need to for hooking up the button.&lt;/p&gt;
 &lt;p&gt;Hot glue or heat shrink and a heat gun might be nice-to-haves too to ensure solid stable connections.&lt;/p&gt;
 &lt;h3 id=&#34;possible-other-parts-for-button&#34;&gt;Possible other parts for button&lt;/h3&gt;
 &lt;p&gt;These might be useful for connecting the button to the GPIO pins on the Pi:
-&lt;a href=&#34;https://www.amazon.com/dp/B0774NMT1S&#34;&gt;https://www.amazon.com/dp/B0774NMT1S&lt;/a&gt;
+
+&lt;a href=&#34;https://www.amazon.com/dp/B0774NMT1S&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.amazon.com/dp/B0774NMT1S&lt;/a&gt;
 I don&amp;rsquo;t know. In my experience these were too loose to fit nicely on the GPIO pins.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m going to try these next: GenBasic 40 Piece Female to Female Jumper Wires (4 Inch) &lt;a href=&#34;https://www.amazon.com/dp/B077N58HFK&#34;&gt;https://www.amazon.com/dp/B077N58HFK&lt;/a&gt; ($5)&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m going to try these next: GenBasic 40 Piece Female to Female Jumper Wires (4 Inch) 
+&lt;a href=&#34;https://www.amazon.com/dp/B077N58HFK&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.amazon.com/dp/B077N58HFK&lt;/a&gt; ($5)&lt;/p&gt;
 </description>
     </item>
     
@@ -4534,7 +4551,7 @@ When the adjudicators approve a claim, the HIDAO&amp;rsquo;s smart contract auto
 &lt;p&gt;This is critical for projects like 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-07-29-note-taking-flow/&#34;&gt;my Browserflow note-taking flows&lt;/a&gt; (which only support Roam right now) and 
 &lt;a href=&#34;https://davidbieber.com/projects/go-note-go/&#34;&gt;Go Note Go&lt;/a&gt; to be multi-vendor.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&amp;ldquo;Restricted note entry&amp;rdquo;&lt;/strong&gt; allows an application like Go Note Go to insert notes into an application-specific section of the notes. In a &amp;ldquo;daily notes&amp;rdquo; oriented notebase like Roam, this is a &amp;ldquo;Go Note Go&amp;rdquo;-specific section on each daily notes page. In a page-oriented notebase, this can instead be an application specific page or namespace (e.g. &amp;ldquo;Go Note Go/*&amp;quot;) that notes can be inserted into. When using restricted note entry, an application can only insert notes into their own region of the notebase. This prevents the application from performing disruptive insertions that lower the quality of the notes outside of this region.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;ldquo;Restricted note entry&amp;rdquo;&lt;/strong&gt; allows an application like Go Note Go to insert notes into an application-specific section of the notes. In a &amp;ldquo;daily notes&amp;rdquo; oriented notebase like Roam, this is a &amp;ldquo;Go Note Go&amp;rdquo;-specific section on each daily notes page. In a page-oriented notebase, this can instead be an application specific page or namespace (e.g. &amp;ldquo;Go Note Go/*&amp;rdquo;) that notes can be inserted into. When using restricted note entry, an application can only insert notes into their own region of the notebase. This prevents the application from performing disruptive insertions that lower the quality of the notes outside of this region.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Unrestricted note entry&lt;/strong&gt; allows an application to perform a broader set of inserts, not limited to a specific region of the notes. For a note-taking entry system that also allows browsing the notes, where a user might want to insert new notes alongside an existing note they&amp;rsquo;ve pulled up, this becomes important.&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Note reading&lt;/li&gt;
@@ -4878,9 +4895,12 @@ After reading The Code Breaker, I&amp;rsquo;ve become progressively more excited
 &lt;/ul&gt;
 &lt;h2 id=&#34;the-dependency-flows-needed-to-check-it-out-are&#34;&gt;The dependency flows needed to check it out are:&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&#34;&gt;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&#34;&gt;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&#34;&gt;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;To try out the flow, you&amp;rsquo;ll need Browserflow, an open Roam tab, and all four flows linked in this snippet. Run the first flow (&amp;ldquo;Roam: Highlights&amp;rdquo;) on a web page (with Roam open in a different tab in the same window). Highlight some text, (say, the words &amp;ldquo;some text&amp;rdquo; in this sentence), and hit enter. You can try any of the shortcuts listed above. Notice as the flow copies your selection into your daily notes organized by time and website.&lt;/p&gt;
 </description>
@@ -4894,7 +4914,7 @@ After reading The Code Breaker, I&amp;rsquo;ve become progressively more excited
       <guid>https://davidbieber.com/snippets/2021-07-22-forehead-is-forward/</guid>
       
       <description>&lt;p&gt;It makes sense now! It was really a Eureka! moment on Tuesday when I figured it out. The stroke ends at the forehead because the stroke is much more &lt;em&gt;forward&lt;/em&gt; than I was making it.&lt;/p&gt;
-&lt;p&gt;Recap: All the much better players&#39; forehands end at their foreheads. Mine ends across my chest on the left side of my body. When I try to end my forehand by my forehead, I mess it up terribly. Until now.&lt;/p&gt;
+&lt;p&gt;Recap: All the much better players&amp;rsquo; forehands end at their foreheads. Mine ends across my chest on the left side of my body. When I try to end my forehand by my forehead, I mess it up terribly. Until now.&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-07-10-forehand-to-forehead&#34;&gt;Two weeks ago&lt;/a&gt; I came up with the following reasons / hypotheses for why a good stroke would end at the forehand. They were:&lt;/p&gt;
 &lt;ol&gt;
@@ -5319,9 +5339,9 @@ The Facebook Security Team
       <description>&lt;p&gt;Remember, David, you&amp;rsquo;re only writing for yourself. Not even that, actually; you&amp;rsquo;re writing for no audience. This isn&amp;rsquo;t meant to be read by anyone. So, don&amp;rsquo;t worry about your word choice, or whether to call it &amp;ldquo;word choice&amp;rdquo; or &amp;ldquo;diction&amp;rdquo;. Just get words on paper and get going.&lt;/p&gt;
 &lt;p&gt;This is a snippet about writing in the woods. I haven&amp;rsquo;t solved it. I&amp;rsquo;ll start by explaining some of the problems that come up when you (I) set out to write in the woods. They aren&amp;rsquo;t &amp;ldquo;problems&amp;rdquo; so much as ideas for quality of life improvements, but again, the word choice isn&amp;rsquo;t important.&lt;/p&gt;
 &lt;h2 id=&#34;qol-idea-1-a-surface-for-the-keyboard&#34;&gt;QOL Idea 1: A surface for the keyboard&lt;/h2&gt;
-&lt;p&gt;When I find a nice place to sit &amp;ndash; one that won&amp;rsquo;t leave my butt wet, overly dirty, or otherwise too uncomfortable &amp;ndash; there is rarely a clear place for my keyboard. (&amp;ldquo;rarely&amp;rdquo; == &amp;ldquo;If there&amp;rsquo;s a picnic table, then there is, but otherwise there is not.&amp;quot;) Most often the seat I find is a stone or a tree trunk, and the most natural places to put the keyboard are: (1) on my lap, or (2) to my side, on the trunk or stone.&lt;/p&gt;
+&lt;p&gt;When I find a nice place to sit &amp;ndash; one that won&amp;rsquo;t leave my butt wet, overly dirty, or otherwise too uncomfortable &amp;ndash; there is rarely a clear place for my keyboard. (&amp;ldquo;rarely&amp;rdquo; == &amp;ldquo;If there&amp;rsquo;s a picnic table, then there is, but otherwise there is not.&amp;rdquo;) Most often the seat I find is a stone or a tree trunk, and the most natural places to put the keyboard are: (1) on my lap, or (2) to my side, on the trunk or stone.&lt;/p&gt;
 &lt;p&gt;These methods work. I can write. I enjoy it immensely. However, neither is ideal. One leaves the keyboard unsteady and thereby slows typing, the other cranes my neck. Perhaps bringing a board to place on my lap could solve the problem. I know lap desks are a thing; I don&amp;rsquo;t know if they pack well for hiking. I don&amp;rsquo;t need something the full size of a 
-&lt;a href=&#34;https://www.amazon.com/LapGear-Essential-Lap-Desk-Charcoal/dp/B076DRYBM2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lap desk&lt;/a&gt; though; a simple 4&amp;rdquo; x 12&amp;quot; stiff piece of material would likely be sufficient to provide the keyboard some rigidity. The keyboard I use folds in half, and can buckle in the middle while I type if not on a surface that supports it. Alternatively to the stiff material, I could find a keyboard that doesn&amp;rsquo;t have this buckling issue. It would be larger than the current keyboard, but not larger than the keyboard plus stiff material. Perhaps something 
+&lt;a href=&#34;https://www.amazon.com/LapGear-Essential-Lap-Desk-Charcoal/dp/B076DRYBM2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lap desk&lt;/a&gt; though; a simple 4&amp;quot; x 12&amp;quot; stiff piece of material would likely be sufficient to provide the keyboard some rigidity. The keyboard I use folds in half, and can buckle in the middle while I type if not on a surface that supports it. Alternatively to the stiff material, I could find a keyboard that doesn&amp;rsquo;t have this buckling issue. It would be larger than the current keyboard, but not larger than the keyboard plus stiff material. Perhaps something 
 &lt;a href=&#34;https://www.amazon.com/Anker-Bluetooth-Ultra-Slim-Keyboard-Devices/dp/B0096M8VR2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;like this&lt;/a&gt;. It&amp;rsquo;s larger than 
 &lt;a href=&#34;https://www.amazon.com/gp/product/B06XSQS7ZP&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;my current foldable keyboard&lt;/a&gt; but shouldn&amp;rsquo;t have the buckling issue, and so may do well just placed in my lap.&lt;/p&gt;
 &lt;p&gt;Another advantage of my current keyboard is the case doubles as a stand for my phone, so I can see what I&amp;rsquo;m typing. I don&amp;rsquo;t &lt;em&gt;strictly&lt;/em&gt; need to see what I&amp;rsquo;m typing as I type it, but occasionally it is useful and I wouldn&amp;rsquo;t want to give that up unless it really enhanced the convenience of the setup.&lt;/p&gt;
@@ -5545,20 +5565,20 @@ My flow will run once a day.&lt;/p&gt;
 &lt;p&gt;The default format for recording in virtual reality is a first-person perspective&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Often this is placed side-by-side with a third-person perspective of the person in real life&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. I would like to see the same perspective of the player in VR and real life&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;Recording the same perspective of the player both in-game and in real life makes it easier to mentally translate between the real life movements of the player and their in-game effects. It also enables overlaying the two views for a smooth transition between the two domains. For example, you can split the screen in the middle of the player&amp;rsquo;s body, showing half in the VR domain and half in the real domain.&lt;/p&gt;
 &lt;p&gt;This opens up the potential for low friction, minimal fuss streaming controls for streamers to use mid-game. It only takes one button or D-stick dedicated to controlling the camera to let a player toggle between streaming a fully VR perspective, a fully real life perspective, and something in between.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;First-person perspective in VR. &lt;img src=&#34;https://davidbieber.com/snippets/2021-04-29-recording-in-vr-001.png&#34; alt=&#34;First-person perspective.&#34;&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;First-person perspective in VR. &lt;img src=&#34;https://davidbieber.com/snippets/2021-04-29-recording-in-vr-001.png&#34; alt=&#34;First-person perspective.&#34;&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;TODO(dbieber): Add an image of a third-person perspective in real life of someone using VR. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;TODO(dbieber): Add an image of a third-person perspective in real life of someone using VR.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;TODO(dbieber): Add an image showing the same perspective in VR and real life. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;TODO(dbieber): Add an image showing the same perspective in VR and real life.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -5911,14 +5931,14 @@ print(x)  # {4, 6, 7, 8}
 &lt;p&gt;When I set out to get better at communicating, one of my motivations was for communicating research. I&amp;rsquo;ve hardly written about my research at all! I don&amp;rsquo;t want to make a big change here; I like the type of topic I tend to select for snippets, and I like the expectation that I&amp;rsquo;ve set for myself that I can write about anything, with the bar set extremely low. That said, I will make a small mental adjustment, and add to my internal Potential Topics List writing about my published research.&lt;/p&gt;
 &lt;p&gt;So, with this snippet, I hope and intend that I am resuming somewhat more frequent writing. This is a non-promise, 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-10-08-biking-in-the-morning/&#34;&gt;a mere &amp;ldquo;aspirational intent&amp;rdquo; like the one I made about biking back in October&lt;/a&gt;. That one worked out though; I continued biking regularly well into the cold season, so I&amp;rsquo;m optimistic that this one will pan out positively as well.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Crashing Facebook Japan, The “content sharing group”, 2021 goals, The “programmer’s apprentice”, Making decisions for 10,000 people, Roam Primitives: subscribe to changes, and Castles in the clouds (as a mental model for belief systems) &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Crashing Facebook Japan, The “content sharing group”, 2021 goals, The “programmer’s apprentice”, Making decisions for 10,000 people, Roam Primitives: subscribe to changes, and Castles in the clouds (as a mental model for belief systems)&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -5966,7 +5986,7 @@ If you instead want a lighter more enjoyable exploration of the topic, check out
 In the US, that works out to about 1 barrel per person per month.
 In the Russia, production is about 2 barrels per person per month.
 And in Saudi Arabia, production is about 10 barrels per person per month.
-(The differences here come from differences in the nations&#39; populations, not from their oil production levels, which are all the same order of magnitude.)&lt;/p&gt;
+(The differences here come from differences in the nations&amp;rsquo; populations, not from their oil production levels, which are all the same order of magnitude.)&lt;/p&gt;
 &lt;p&gt;I like thinking about production in terms of barrels per person per month because you get nice tangible values that you can compare to your own oil usage. How often do you get gas for your car? How long does it take you to go through a barrel of oil yourself? Far more than a month, I&amp;rsquo;m sure.&lt;/p&gt;
 &lt;h2 id=&#34;a-wee-bit-of-history&#34;&gt;A Wee Bit of History&lt;/h2&gt;
 &lt;p&gt;There were important oil embargos in 1973 and 1979. I&amp;rsquo;ll summarize what I read about briefly here, but I recommend reading through 
@@ -6055,7 +6075,8 @@ It&amp;rsquo;s a special knife though, designed to create the micron-thin slip i
 &lt;li&gt;For myself, I would be concerned that my vision changes too quickly. Is there a way to measure this to verify or invalidate this concern?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;peer-learning-group&#34;&gt;Peer Learning Group&lt;/h2&gt;
-&lt;p&gt;I wrote up this topic at the conclusion to the March 2021 Peer Learning Group. We&amp;rsquo;re in between Peer Learning Groups right now. If you&amp;rsquo;re interested in participating in the next one, you can email me at &lt;a href=&#34;mailto:david810@gmail.com&#34;&gt;david810@gmail.com&lt;/a&gt; to be notified when sign-ups for the next Peer Learning Group session open up.&lt;/p&gt;
+&lt;p&gt;I wrote up this topic at the conclusion to the March 2021 Peer Learning Group. We&amp;rsquo;re in between Peer Learning Groups right now. If you&amp;rsquo;re interested in participating in the next one, you can email me at 
+&lt;a href=&#34;mailto:david810@gmail.com&#34;&gt;david810@gmail.com&lt;/a&gt; to be notified when sign-ups for the next Peer Learning Group session open up.&lt;/p&gt;
 &lt;p&gt;During the PLG, I took my notes on Laser Eye Surgery 
 &lt;a href=&#34;https://roamresearch.com/#/app/commons-db/page/vgNgwbZlz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;in Roam Research here&lt;/a&gt;. The notes are publicly visible (and editable), so feel free to have a look. You can also see an image preview of them below.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://roamresearch.com/#/app/commons-db/page/vgNgwbZlz&#34;&gt;&lt;img align=&#34;center&#34; src=&#34;https://davidbieber.com/snippets/2021-04-08-lasiknotes.png&#34; alt=&#34;My Roam Research notes on Laser Eye Surgery.&#34; height=&#34;400px&#34;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -6126,15 +6147,15 @@ March 22: Synthetic meat&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Third, even if all current video game companies signed the HGIC, acted in good faith, and even if there were no possibility of new entrants, there still remain the difficult questions of how to measure the reduction in unhealthy addictiveness of games. As a strawman, the HGIC could specify a metric, say play-time per player, and all companies would reduce their play-time per player by an agreed upon percent. I&amp;rsquo;ll readily acknowledge this sounds ridiculous; it could mean ruining the fun of some games, not making them healthier! As a second strawman, the HGIC could specify specific game mechanics and how to adjust them. E.g. it would specify that count-down timers need to be shortened by X% (does that even help?), non-deterministic rewards need to be made Y% more deterministic, etc. I&amp;rsquo;ll readily acknowledge this strawman is ridiculous too; there are likely too many possible game mechanics for an agreement of this form to be manageable to produce. Finding an equivalent reduction in addictiveness across all games is impossible because games are simply too varied.&lt;/p&gt;
 &lt;p&gt;Fourthly and finally, &lt;em&gt;everyone&lt;/em&gt; I&amp;rsquo;ve shared this idea with so far (three people in total) have disagreed with the premise, that the addicting nature of video games is a negative thing, and that reducing it is desirable. This is a real surprise to me. I thought it was generally accepted that the tactics employed by FarmVille, CandyCrush, Covet, and the like are deliberative exploitative and addictive, designed through experimentation to maximize engagement and profit, and that this is a negative aspect of the games. I suppose I was wrong about this (the generally accepted part, that is). Guess I need to expand my bubble.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;We now have four solid reasons that the Healthy Games Inter-company Compact could never come into effect. I&amp;rsquo;m sure there are a dozen more. It&amp;rsquo;s nevertheless nice to imagine a world in which a few companies draft and sign the compact, initially thinking it will never come into effect. And then, over time, more companies are drawn to the idea of improving the health of their addiction-prone customers, until eventually the industry enacts and broadly follows guidelines for healthy game development. I think that&amp;rsquo;s a world to aspire to, albeit unrealistic. So while the HGIC in all likelihood won&amp;rsquo;t work, perhaps there&amp;rsquo;s another path there.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;To get a glimpse of what people think outside my itsy-bitsy social bubble, you can have a look at 
-&lt;a href=&#34;https://www.commonsensemedia.org/app-reviews/candy-crush-saga/user-reviews/adult&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these mixed reviews of CandyCrush from parents and children&lt;/a&gt;. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://www.commonsensemedia.org/app-reviews/candy-crush-saga/user-reviews/adult&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these mixed reviews of CandyCrush from parents and children&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -6160,15 +6181,15 @@ A quick look at any complex task, say chess or a hard math problem, makes it app
 &lt;p&gt;The result is that we need to be deliberate with how we choose to spend our brainpower. And this starts with being mindful and intentional with our attention.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;As an exercise for the reader: Would the Efficient Minds Hypothesis imply the Efficient Market Hypothesis? How about the reverse?&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;&amp;ldquo;System 1&amp;rdquo; and &amp;ldquo;System 2&amp;rdquo; refer to Kahneman&amp;rsquo;s dichotomy of fast intuitive (System 1) vs slow, deliberate, planned (System 2) thought from 
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thinking, Fast and Slow&lt;/a&gt;. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thinking, Fast and Slow&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -6223,32 +6244,32 @@ A quick look at any complex task, say chess or a hard math problem, makes it app
 &lt;li&gt;Castles in the clouds (as a mental model for belief systems)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;As I get around to writing these, I can update this page with links to the snippets. (I don&amp;rsquo;t anticipate writing these in the short-term though.)&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-01-18-python-hoist-locals-only/&#34;&gt;hoist&lt;/a&gt; and 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-02-17-python-magic-functions/&#34;&gt;magic&lt;/a&gt; and the 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-02-14-the-python-fire-shebang/&#34;&gt;Python Fire shebang&lt;/a&gt; and the 
-&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/&#34;&gt;Kangaroo Auto-responder&lt;/a&gt;. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/&#34;&gt;Kangaroo Auto-responder&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://davidbieber.com/tags/roam-research&#34;&gt;Here (Roam)&lt;/a&gt; and 
-&lt;a href=&#34;https://davidbieber.com/tags/browserflow&#34;&gt;here (Browserflow)&lt;/a&gt; respectively. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/browserflow&#34;&gt;here (Browserflow)&lt;/a&gt; respectively.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://davidbieber.com/tags/peer-learning-group&#34;&gt;PLG snippets here.&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://davidbieber.com/tags/peer-learning-group&#34;&gt;PLG snippets here.&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
 &lt;p&gt;The latest examples are 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-01-22-am-i-available-for-conversation-right-now-dot-com/&#34;&gt;am i available for conversation right now dot com&lt;/a&gt; and my 
-&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-20-clubhouse-feature-request-save-last-60-seconds/&#34;&gt;clubhouse feature request&lt;/a&gt;. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-20-clubhouse-feature-request-save-last-60-seconds/&#34;&gt;clubhouse feature request&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -6324,7 +6345,7 @@ Nevertheless, I will explain the situation that prompted me to write this module
 &lt;p&gt;The trouble with hooks in this situation is that they require either very long argument lists, or bundling of many arguments into a single argument. If different functions need different bundles of arguments, the bundling approach can be quite cumbersome. Also, if two hooks wish to communicate with one another, that needs to be accommodated too. Magic functions provide one mechanism for dealing with this complexity. Different magic hooks can make use of different parts of the training loop&amp;rsquo;s state. A magic hook can also use state set by another hook.
 While this approach does satisfactorily address the complexity of writing a training loop library,
 I must stress that I do not recommend this approach.&lt;/p&gt;
-&lt;p&gt;As with real magic, use &lt;code&gt;magic&lt;/code&gt; at your own peril. 🧙‍♀️ 😉&lt;/p&gt;
+&lt;p&gt;As with real magic, use &lt;code&gt;magic&lt;/code&gt; at your own peril. &amp;#x1f9d9; &amp;#x1f609;&lt;/p&gt;
 </description>
     </item>
     
@@ -6412,7 +6433,7 @@ await createChildBlock(urls, $url)
 &lt;p&gt;&lt;strong&gt;getChildBlock(parent_uid, block):&lt;/strong&gt; returns the uid of a specific child block underneath a specific parent block. &lt;em&gt;parent_uid&lt;/em&gt;: the uid of the parent block. &lt;em&gt;block&lt;/em&gt;: the text of the child block.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;createChildBlock(parent_uid, block, order):&lt;/strong&gt; creates a new child block underneath a specific parent block, returning the new block&amp;rsquo;s uid. &lt;em&gt;parent_uid&lt;/em&gt;: the uid of the parent block. &lt;em&gt;block&lt;/em&gt;: the text of the new block. &lt;em&gt;order&lt;/em&gt;: (optional) controls where to create the block, 0 for inserting at the top, -1 for inserting at the bottom.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;getOrCreateChildBlock(parent_uid, block, order):&lt;/strong&gt; returns the uid of a specific child block underneath a specific parent block, creating it first if it&amp;rsquo;s not already there. &lt;em&gt;parent_uid&lt;/em&gt;: the uid of the parent block. &lt;em&gt;block&lt;/em&gt;: the text of the child block. &lt;em&gt;order&lt;/em&gt;: (optional) controls where to create the block, 0 for inserting at the top, -1 for inserting at the bottom.&lt;/p&gt;
-&lt;p&gt;Caution ⚠️ If multiple blocks with the same text exist on the page, these functions may return the uid of the wrong block.&lt;/p&gt;
+&lt;p&gt;Caution &amp;#x26a0;&amp;#xfe0f; If multiple blocks with the same text exist on the page, these functions may return the uid of the wrong block.&lt;/p&gt;
 &lt;script src=&#34;https://gist.github.com/dbieber/795cf15cad6b46cfbd6cc8213900925d.js&#34;&gt;&lt;/script&gt;
 &lt;p&gt;To use these functions in your Roam database, create a block with the string &lt;code&gt;{{[[roam/js]]}}&lt;/code&gt;, create a code block by typing triple-backticks (```), paste the above JavaScript into the code block, and click &amp;ldquo;Yes, I know what I&amp;rsquo;m doing.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;As a reminder, you get the result of an async function with &lt;code&gt;await&lt;/code&gt;, e.g.&lt;/p&gt;
@@ -6471,14 +6492,14 @@ await createChildBlock(urls, $url)
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;Really it&amp;rsquo;s (3) that sets it apart. The attention to detail in the product is impressive. Thanks DK.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;My experience with Tampermonkey is limited, so take this with some salt. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;My experience with Tampermonkey is limited, so take this with some salt.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -6499,15 +6520,15 @@ await createChildBlock(urls, $url)
 &lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FxD83QrK9_D.png?alt=media&amp;amp;token=76f275ac-62fd-4844-829c-b44cf9cf568f&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Currently the tweet selection is random, but already in this first 20 minutes I&amp;rsquo;ve been happy with the tweets it&amp;rsquo;s been writing. Perhaps in a future iteration I&amp;rsquo;ll make some adjustments to what it tweets and when. It&amp;rsquo;s nice to have this kind of control over my attention, especially in a setting like Twitter where I&amp;rsquo;m so used to mindless scrolling.&lt;/p&gt;
 &lt;p&gt;This same technique ought to work fine for taking control of my Facebook feed too, so perhaps I&amp;rsquo;ll get Private Bieber an account there next.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://gist.github.com/dbieber/47660493954e62f4607cd8d19d54cf59&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source code is here.&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://gist.github.com/dbieber/47660493954e62f4607cd8d19d54cf59&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source code is here.&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -6811,14 +6832,14 @@ ORDER BY messenger.timestamp desc;
 &lt;p&gt;The details on exactly when to send kangaroos are still a work in progress. I don&amp;rsquo;t want to overwhelm anyone with kangaroos. I&amp;rsquo;m thinking about some rules: (1) only send kangaroos if there was a message of non-trivial length, e.g. more than 20 characters, (2) only send a kangaroo after I&amp;rsquo;ve read the message; if I genuinely haven&amp;rsquo;t seen the message yet, no need for a kangaroo, as the message will still appear as unread in my inbox, (3) if you send follow-up messages, that resets the timer on the 2 hours, (4) any messages you send within 5 minutes of me sending you a message are ineligible for triggering kangaroos (this way I don&amp;rsquo;t need to get the last word), and (5) obviously, don&amp;rsquo;t send a kangaroo for a message I&amp;rsquo;ve already responded too.&lt;/p&gt;
 &lt;p&gt;To summarize, the rules of kangaroos are: You get a kangaroo if the &lt;strong&gt;most-recent&lt;/strong&gt; message in our chat is &lt;strong&gt;non-trivial&lt;/strong&gt;, &lt;strong&gt;read-by-me&lt;/strong&gt;, &lt;strong&gt;written-by-you&lt;/strong&gt;, &lt;strong&gt;not an immediate reply&lt;/strong&gt;, and &lt;strong&gt;two-hours old&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Why kangaroos? They bounce 🤷‍♂️ ? This is kind of like a message bouncing&amp;hellip;&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;With a picture of a kangaroo, that is. Like this one: 🦘, or this: &lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FtBz98tV75N.png?alt=media&amp;amp;token=66762cac-d0b0-43ba-91a8-eaefa6ef7626&#34; alt=&#34;&#34;&gt; It will not send them an actual real-life kangaroo. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;With a picture of a kangaroo, that is. Like this one: 🦘, or this: &lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FtBz98tV75N.png?alt=media&amp;amp;token=66762cac-d0b0-43ba-91a8-eaefa6ef7626&#34; alt=&#34;&#34;&gt; It will not send them an actual real-life kangaroo.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -6862,7 +6883,7 @@ ORDER BY messenger.timestamp desc;
 &lt;p&gt;That is, tags connect &lt;em&gt;what&lt;/em&gt; to &lt;em&gt;when&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;When you write a notification strategy, you name it. Tag a reference of a query with the name of a notification strategy to run that strategy on that reference or query.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s clarify with an example.&lt;/p&gt;
-&lt;p&gt;Say I have a query (&amp;ldquo;all Tasks with &amp;lsquo;Blockers&amp;rsquo; where all Blockers are &amp;lsquo;DONE&amp;rsquo;&amp;quot;), and a notification strategy named &amp;ldquo;Bundle on the Hour&amp;rdquo; (&amp;ldquo;bundle all incoming notifications and emit them on the hour as a single notification&amp;rdquo;). Then I can tag the query with #[[Bundle on the Hour]] to start applying that notification strategy to the results of the query.&lt;/p&gt;
+&lt;p&gt;Say I have a query (&amp;ldquo;all Tasks with &amp;lsquo;Blockers&amp;rsquo; where all Blockers are &amp;lsquo;DONE&amp;rsquo;&amp;rdquo;), and a notification strategy named &amp;ldquo;Bundle on the Hour&amp;rdquo; (&amp;ldquo;bundle all incoming notifications and emit them on the hour as a single notification&amp;rdquo;). Then I can tag the query with #[[Bundle on the Hour]] to start applying that notification strategy to the results of the query.&lt;/p&gt;
 &lt;p&gt;Once I&amp;rsquo;ve added that tag, the notification strategy will be called every time the query results change, and it will be able to start emitting notifications.&lt;/p&gt;
 &lt;p&gt;Similarly if I write [[Python Fire]] and tag it with #[[Digest at 9am]], then &lt;em&gt;that&lt;/em&gt; notification strategy will be called whenever the references to or contents of the Python Fire page change.&lt;/p&gt;
 &lt;h2 id=&#34;wherehow-actually-sending-notifications&#34;&gt;&lt;strong&gt;Where/How&lt;/strong&gt;: Actually sending notifications&lt;/h2&gt;
@@ -6915,37 +6936,37 @@ notify(&amp;quot;You&#39;ve got mail.&amp;quot;);
 &lt;p&gt;Want to build this with me? I&amp;rsquo;m 
 &lt;a href=&#34;https://twitter.com/Bieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Bieber&lt;/a&gt; on Twitter and active as dbieber on the 
 &lt;a href=&#34;https://roamresearch.slack.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Slack&lt;/a&gt;.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;And still provides sensible defaults and easy configs for non-power users. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;And still provides sensible defaults and easy configs for non-power users.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;This one, while a basic use case, is actually tricky to express as a query. But we can do it, I&amp;rsquo;m confident. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;This one, while a basic use case, is actually tricky to express as a query. But we can do it, I&amp;rsquo;m confident.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
 &lt;p&gt;See my 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/&#34;&gt;two&lt;/a&gt; 
-&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-04-more-datalog-queries-for-roam/&#34;&gt;snippets&lt;/a&gt; for lots of examples of what you can do with datalog queries. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2021-01-04-more-datalog-queries-for-roam/&#34;&gt;snippets&lt;/a&gt; for lots of examples of what you can do with datalog queries.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;&lt;em&gt;soni-sono&lt;/em&gt; for short. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
+&lt;p&gt;&lt;em&gt;soni-sono&lt;/em&gt; for short.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:5&#34;&gt;
 &lt;p&gt;Has anyone taken the 
-&lt;a href=&#34;https://fontmeme.com/the-home-depot-font/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Home Depot logo&lt;/a&gt; and replaced the word Home with Roam in the appropriate font yet? &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://fontmeme.com/the-home-depot-font/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Home Depot logo&lt;/a&gt; and replaced the word Home with Roam in the appropriate font yet?&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:6&#34;&gt;
 &lt;p&gt;Code courtesy of 
-&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/notification&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MDN&lt;/a&gt;. &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/notification&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MDN&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:7&#34;&gt;
 &lt;p&gt;cmd-option-i to open your browser console on Chrome on Mac. 
-&lt;a href=&#34;https://www.google.com/search?q=how&amp;#43;to&amp;#43;open&amp;#43;the&amp;#43;browser&amp;#43;console&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Look it up here&lt;/a&gt; for other browsers or operating systems. &lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://www.google.com/search?q=how&amp;#43;to&amp;#43;open&amp;#43;the&amp;#43;browser&amp;#43;console&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Look it up here&lt;/a&gt; for other browsers or operating systems.&amp;#160;&lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -6977,20 +6998,20 @@ So, I&amp;rsquo;m going to hire someone on Fiverr to add margin notes on my webs
 &lt;p&gt;After my Fiverr experience I&amp;rsquo;ll update this snippet or add a new one, ideally one full of margin notes.&lt;/p&gt;
 &lt;p&gt;Update (same day): I&amp;rsquo;m back! I didn&amp;rsquo;t use Fiverr. I used the post on capnfabs for reference and set up margin notes myself. Thank you Fabian for documenting your process.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; I&amp;rsquo;ll have to learn to use Fiverr another day.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m glad to have this working. There&amp;rsquo;s room to improve the style though. Perhaps in a future iteration I&amp;rsquo;ll move the main content left to give more space for the margin notes, or make some changes to the font and size.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;I&amp;rsquo;d like this to be a margin note. At the time of this writing, it&amp;rsquo;s a footnote. &lt;em&gt;Update&lt;/em&gt;: Now it&amp;rsquo;s a margin note! At least if your browser is wide enough&amp;hellip; otherwise it&amp;rsquo;s still a footnote. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;I&amp;rsquo;d like this to be a margin note. At the time of this writing, it&amp;rsquo;s a footnote. &lt;em&gt;Update&lt;/em&gt;: Now it&amp;rsquo;s a margin note! At least if your browser is wide enough&amp;hellip; otherwise it&amp;rsquo;s still a footnote.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;I&amp;rsquo;ve used it twice before, but I didn&amp;rsquo;t have a great experience with the one programmer I hired. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;I&amp;rsquo;ve used it twice before, but I didn&amp;rsquo;t have a great experience with the one programmer I hired.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Really, it is greatly appreciated! 🙏 &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;Really, it is greatly appreciated! 🙏&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -7003,7 +7024,8 @@ So, I&amp;rsquo;m going to hire someone on Fiverr to add margin notes on my webs
       
       <description>&lt;p&gt;I don&amp;rsquo;t know if I like this idea, but I&amp;rsquo;m giving it a try; I&amp;rsquo;ve added a &amp;ldquo;Now&amp;rdquo; page to my website (
 &lt;a href=&#34;https://davidbieber.com/now/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;davidbieber.com/now&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;The idea for now pages is described at &lt;a href=&#34;https://nownownow.com/about&#34;&gt;https://nownownow.com/about&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The idea for now pages is described at 
+&lt;a href=&#34;https://nownownow.com/about&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://nownownow.com/about&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Basically, a now page says what&amp;rsquo;s going on in the author&amp;rsquo;s life now. Not &lt;em&gt;right now&lt;/em&gt; &amp;ndash; that would be a &amp;ldquo;right now page&amp;rdquo; &amp;ndash; but rather, now in the broader sense of &amp;ldquo;what&amp;rsquo;s are you up to these days?&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;This post isn&amp;rsquo;t about my new Now page though, which I don&amp;rsquo;t necessarily plan to keep up (if the link 404s, you know why). Rather, this post is about an idea for a kind of &amp;ldquo;right now&amp;rdquo; page that I&amp;rsquo;m toying with building.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;d like to make a page that tells the reader if I&amp;rsquo;m likely available for a conversation &lt;em&gt;right now&lt;/em&gt;. I&amp;rsquo;d call it the &amp;ldquo;is David available to talk now&amp;rdquo; page, and here&amp;rsquo;s how it might work.&lt;/p&gt;
@@ -7285,7 +7307,7 @@ Additional details about &amp;ldquo;how it works&amp;rdquo; below the fold.&lt;/
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-01-11-democratic-delegation-optional-voting/&#34;&gt;yesterday&amp;rsquo;s snippet&lt;/a&gt; I introduced the idea of &lt;em&gt;democratic delegation-optional voting&lt;/em&gt;. If you haven&amp;rsquo;t yet, read that first. Today, we&amp;rsquo;re going to be looking at its strengths and limitations.&lt;/p&gt;
 &lt;h2 id=&#34;strengths&#34;&gt;Strengths&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;People can choose which issues matter most to them.&lt;/strong&gt; If an issue matters to you, you can vote on it directly. And so can all the people you convince to support your cause. You can do this even if your representatives disagree with you.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Representatives don&amp;rsquo;t need to be experts on everything.&lt;/strong&gt; If an issue is highly technical, representatives can delegate their constituents&#39; votes to someone who is a subject matter expert with similar values to the representative. If a voter doesn&amp;rsquo;t like the choice, they can make a different choice.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Representatives don&amp;rsquo;t need to be experts on everything.&lt;/strong&gt; If an issue is highly technical, representatives can delegate their constituents&amp;rsquo; votes to someone who is a subject matter expert with similar values to the representative. If a voter doesn&amp;rsquo;t like the choice, they can make a different choice.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Residents don&amp;rsquo;t need to be experts on everything.&lt;/strong&gt; For most issues, most voters will delegate their votes to a Delegate. Residents can choose how much or how little time they want to spend researching individual issues.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Residents don&amp;rsquo;t need to trust their representatives for multiple years.&lt;/strong&gt; If a resident disagrees with their representative on even a single issue, they can make their vote and their voice count for that issue. They&amp;rsquo;re not stuck with a representative that only half represents them.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Power propagates to those who are trusted.&lt;/strong&gt; If people don&amp;rsquo;t like the way you&amp;rsquo;re voting, they can delegate their votes elsewhere. So, in order for a Delegate to keep their power, they need to keep the trust of their constituents.&lt;/p&gt;
@@ -7295,7 +7317,7 @@ Additional details about &amp;ldquo;how it works&amp;rdquo; below the fold.&lt;/
 &lt;h2 id=&#34;limitations&#34;&gt;Limitations&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;DDoV requires a mechanism for Delegate&amp;rsquo;s votes to be made public.&lt;/strong&gt; This isn&amp;rsquo;t so hard to do, but it does need to be done in a timely manner in order to give people the opportunity to change their vote in the 48 hour period following the election deadline.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;A poor implementation could be prone to abuse of power by small Delegates.&lt;/strong&gt; How could this happen? If Delegates know how many ballots have been delegated to them, then a small Delegate could figure out whether or not a particular individual has delegated their votes to them. Of course, pressuring someone to delegate their vote to you is against the rules, but in many cases this would be hard to detect or enforce. To avoid this issue, a signature requirement (e.g. of 10 signatures from supporters who would use you as a default Delegate) could be required to become a Delegate. Once there&amp;rsquo;s this modest amount of public support for someone to become a Delegate, it shouldn&amp;rsquo;t be possible for a Delegate to determine if an individual is delegating votes to them or not. Alternatively, information about how many ballots each Delegate has delegated to them could be only provided in an approximate form.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Reduces the capacity for backroom deals and compromises.&lt;/strong&gt; Okay, so this might actually be a strength. Since power is more in the hands of the people, it becomes far more difficult for one party to exchange favors with another (&amp;ldquo;if you support xyz in bill A, I&amp;rsquo;ll support qrs in bill B.&amp;quot;) I think this strength and/or limitation requires further study.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reduces the capacity for backroom deals and compromises.&lt;/strong&gt; Okay, so this might actually be a strength. Since power is more in the hands of the people, it becomes far more difficult for one party to exchange favors with another (&amp;ldquo;if you support xyz in bill A, I&amp;rsquo;ll support qrs in bill B.&amp;rdquo;) I think this strength and/or limitation requires further study.&lt;/p&gt;
 </description>
     </item>
     
@@ -7710,46 +7732,46 @@ block_info.forEach(
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-01-01-new-years-resolutions/&#34;&gt;I resolved to communicate publicly 100 times&lt;/a&gt;. How did I do? I got about 80% of the way there.&lt;/p&gt;
 &lt;p&gt;By the numbers, this is approximately 62 snippets, 8 tech talks, 4 published papers, 1 thesis proposal, 2 videos, and a handful of discussions in public on various Slack-like groups.&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Year&lt;/th&gt;
-&lt;th&gt;Resolution&lt;/th&gt;
-&lt;th&gt;Status&lt;/th&gt;
-&lt;th&gt;Result&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;2020&lt;/td&gt;
-&lt;td&gt;Communicate publicly 100 times&lt;/td&gt;
-&lt;td&gt;80%&amp;rsquo;s not bad.&lt;/td&gt;
-&lt;td&gt;&lt;font color=&#34;maroon&#34;&gt;Not quite.&lt;/font&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2019&lt;/td&gt;
-&lt;td&gt;Play violin on 100 days&lt;/td&gt;
-&lt;td&gt;Played on 43 days&lt;/td&gt;
-&lt;td&gt;&lt;font color=&#34;maroon&#34;&gt;Nope&lt;/font&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2017&lt;/td&gt;
-&lt;td&gt;Longer arms&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;font color=&#34;green&#34;&gt;Yesssss!&lt;/font&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2015&lt;/td&gt;
-&lt;td&gt;Exercise 200 days&lt;br&gt; Read 200 days&lt;/td&gt;
-&lt;td&gt;Exercise: 200 days by summer&lt;br&gt; Reading: (look this up)&lt;/td&gt;
-&lt;td&gt;Yes.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2013&lt;/td&gt;
-&lt;td&gt;100 days of push ups&lt;/td&gt;
-&lt;td&gt;145 done by December&lt;/td&gt;
-&lt;td&gt;&lt;font color=&#34;green&#34;&gt;Yes!&lt;/font&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Year&lt;/th&gt;
+					&lt;th&gt;Resolution&lt;/th&gt;
+					&lt;th&gt;Status&lt;/th&gt;
+					&lt;th&gt;Result&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;2020&lt;/td&gt;
+					&lt;td&gt;Communicate publicly 100 times&lt;/td&gt;
+					&lt;td&gt;80%&amp;rsquo;s not bad.&lt;/td&gt;
+					&lt;td&gt;&lt;font color=&#34;maroon&#34;&gt;Not quite.&lt;/font&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;2019&lt;/td&gt;
+					&lt;td&gt;Play violin on 100 days&lt;/td&gt;
+					&lt;td&gt;Played on 43 days&lt;/td&gt;
+					&lt;td&gt;&lt;font color=&#34;maroon&#34;&gt;Nope&lt;/font&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;2017&lt;/td&gt;
+					&lt;td&gt;Longer arms&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;font color=&#34;green&#34;&gt;Yesssss!&lt;/font&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;2015&lt;/td&gt;
+					&lt;td&gt;Exercise 200 days&lt;br&gt; Read 200 days&lt;/td&gt;
+					&lt;td&gt;Exercise: 200 days by summer&lt;br&gt; Reading: (look this up)&lt;/td&gt;
+					&lt;td&gt;Yes.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;2013&lt;/td&gt;
+					&lt;td&gt;100 days of push ups&lt;/td&gt;
+					&lt;td&gt;145 done by December&lt;/td&gt;
+					&lt;td&gt;&lt;font color=&#34;green&#34;&gt;Yes!&lt;/font&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Here&amp;rsquo;s to 2021 🥂&lt;/p&gt;
 </description>
@@ -8114,7 +8136,7 @@ rtrim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;Bu&#39;;
       <description>&lt;p&gt;Hey folks, I have a 
 &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;workflow&lt;/a&gt; for automatically publishing &amp;ldquo;
 &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;snippets&lt;/a&gt;&amp;rdquo; to my website from Roam. Currently there&amp;rsquo;s a multi-hour latency between writing a snippet and when it appears on my website. In this snippet I&amp;rsquo;m going to muse about / ask questions about how to use &lt;strong&gt;puppeteer&lt;/strong&gt; to bring this latency down considerably. This&amp;rsquo;ll be my first time using puppeteer, so help appreciated. Read on!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-small/1f62e@2x.png&#34; alt=&#34;😮&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-small/1f62e@2x.png&#34; alt=&#34;open_mouth&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The current system relies on my git-to-roam backup, which runs every hour and fails some fraction of the time.&lt;/p&gt;
 &lt;p&gt;So, to bring the latency down, the idea is to use pyppeteer (the python puppeteer bindings) to log into Roam in a headless browser.&lt;/p&gt;
 &lt;p&gt;This will monitor Roam for new (or modified) snippets, and will publish them to my website.&lt;/p&gt;
@@ -8131,7 +8153,7 @@ rtrim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;Bu&#39;;
 &lt;li&gt;Debounce, so that if a snippet is actively changing its only deployed ~twice, not 100 times&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;And then every 10 minutes or so I&amp;rsquo;ll have it take a short breather and refresh&lt;/p&gt;
-&lt;p&gt;Abhay suggested using the alpha API for this rather than puppeteering. &lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f64f@2x.png&#34; alt=&#34;🙏&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Abhay suggested using the alpha API for this rather than puppeteering. &lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f64f@2x.png&#34; alt=&#34;pray&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I think I&amp;rsquo;ll get started on the puppeteer implementation now though anyway, even if the API ends up being a better way of doing this in the near future.&lt;/p&gt;
 &lt;p&gt;Update:&lt;/p&gt;
 &lt;p&gt;I have a first draft that handles log in and running the query to detect publishable material (blocks with the appropriate two tags).&lt;/p&gt;
@@ -8143,7 +8165,7 @@ rtrim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;Bu&#39;;
 &lt;p&gt;I could navigate to the block and look at the dom&amp;hellip; but hopefully I don&amp;rsquo;t need to do that.&lt;/p&gt;
 &lt;p&gt;Looks like there is an &amp;ldquo;order&amp;rdquo; attribute, so this will be doable. Might be messy though.&lt;/p&gt;
 &lt;p&gt;If I&amp;rsquo;m understanding right, :block/order gives the index of a block into its parents children.&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;re good! &lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f44d@2x.png&#34; alt=&#34;👍&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re good! &lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f44d@2x.png&#34; alt=&#34;thumbsup&#34;&gt;&lt;/p&gt;
 &lt;p&gt;If you&amp;rsquo;re reading this on my website, it worked!&lt;/p&gt;
 </description>
     </item>
@@ -8159,8 +8181,10 @@ rtrim(&#39;Buzzzzzz&#39;, &#39;Bz&#39;) === &#39;Bu&#39;;
 &lt;a href=&#34;https://roamresearch.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roam Research&lt;/a&gt; is an excellent note taking tool. One of its core features is &amp;ldquo;back links&amp;rdquo; &amp;ndash; any of your notes can easily references any of your other notes, and so all your notes end up linked together in an intricate graph structure. You can quickly see all the references to a note, hence the term &amp;ldquo;back link&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Roam exposes all of the information in your graph through a &lt;strong&gt;datalog API&lt;/strong&gt;. Datalog is a declarative programming language that lets you make queries about your graph.&lt;/p&gt;
 &lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
-&lt;p&gt;If you want to learn datalog, I recommend &lt;a href=&#34;http://www.learndatalogtoday.org/&#34;&gt;http://www.learndatalogtoday.org/&lt;/a&gt;. It teaches how to write datalog queries in 8 relatively short chapters chock full of examples.&lt;/p&gt;
-&lt;p&gt;If you want to see how to use datalog specifically for Roam, you can head over to &lt;a href=&#34;https://www.putyourleftfoot.in/introduction-to-the-roam-alpha-api&#34;&gt;https://www.putyourleftfoot.in/introduction-to-the-roam-alpha-api&lt;/a&gt;. Or keep reading!&lt;/p&gt;
+&lt;p&gt;If you want to learn datalog, I recommend 
+&lt;a href=&#34;http://www.learndatalogtoday.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.learndatalogtoday.org/&lt;/a&gt;. It teaches how to write datalog queries in 8 relatively short chapters chock full of examples.&lt;/p&gt;
+&lt;p&gt;If you want to see how to use datalog specifically for Roam, you can head over to 
+&lt;a href=&#34;https://www.putyourleftfoot.in/introduction-to-the-roam-alpha-api&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.putyourleftfoot.in/introduction-to-the-roam-alpha-api&lt;/a&gt;. Or keep reading!&lt;/p&gt;
 &lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
 &lt;p&gt;In this snippet I include a number of examples of useful datalog queries for Roam Research.&lt;/p&gt;
 &lt;h3 id=&#34;how-to-run-a-query&#34;&gt;How to Run a Query&lt;/h3&gt;
@@ -8267,14 +8291,22 @@ results.map((data, index) =&amp;gt; {return `((${data[1]})) (${data[2]})`}).join
       <guid>https://davidbieber.com/snippets/2020-12-20-looking-back-on-my-browsing-history-snippets/</guid>
       
       <description>&lt;p&gt;I&amp;rsquo;ve now written several snippets about my analyzing my browsing history programmatically. I figured I&amp;rsquo;d collect them all in one place here.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&#34;&gt;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history/&#34;&gt;https://davidbieber.com/snippets/2020-03-19-browsing-history/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&#34;&gt;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/&#34;&gt;https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/&#34;&gt;https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-05-15-roaming-the-web/&#34;&gt;https://davidbieber.com/snippets/2020-05-15-roaming-the-web/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://davidbieber.com/snippets/2020-03-19-browsing-history/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-05-15-roaming-the-web/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://davidbieber.com/snippets/2020-05-15-roaming-the-web/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Presumably as I write more about this, the list will go out of date. And that&amp;rsquo;s alright. This is just a snippet.&lt;/p&gt;
 &lt;p&gt;This motivates me to move all my snippets into Roam Research. I&amp;rsquo;m not going to do this just yet, but it seems a decent idea. Backlinks/tags would then allow for easily keeping an up-to-date list of all the snippets I&amp;rsquo;ve written about various topics.&lt;/p&gt;
 &lt;p&gt;Looking back on these many browsing history snippets, what themes stand out? Browser histories are rich with information about our lives. There&amp;rsquo;s a lot we can do to make our lives better using that information.&lt;/p&gt;
@@ -8330,7 +8362,8 @@ results.map((data, index) =&amp;gt; {return `((${data[1]})) (${data[2]})`}).join
 &lt;p&gt;Understanding the ways in which ideas can be combined is essential for creativity and problem solving. Not being able to see how software can make things possible is a significant setback for this. (Has positives too: constraints beget creativity. This constraint isn’t worth it though!)&lt;/p&gt;
 &lt;p&gt;The vast majority of people I interact with have this skillset. So it can be momentarily jarring when it&amp;rsquo;s absent (if it becomes relevant).&lt;/p&gt;
 &lt;h2 id=&#34;idea-understanding-other-peoples-limitations&#34;&gt;Idea: Understanding other people’s limitations&lt;/h2&gt;
-&lt;p&gt;Material: &lt;a href=&#34;https://xkcd.com/1053/&#34;&gt;https://xkcd.com/1053/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Material: 
+&lt;a href=&#34;https://xkcd.com/1053/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://xkcd.com/1053/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://imgs.xkcd.com/comics/ten_thousand.png&#34; alt=&#34;Ten Thousand&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Why?&lt;/p&gt;
 &lt;p&gt;Finding out that someone doesn&amp;rsquo;t know something you expect them to know can be jarring, but being condescending or judgemental in response doesn&amp;rsquo;t help anyone. It&amp;rsquo;s okay to let the person know you&amp;rsquo;re surprised by their lack of knowledge, but best to refrain from adding any negative valence to this surprisal.&lt;/p&gt;
@@ -8339,7 +8372,8 @@ results.map((data, index) =&amp;gt; {return `((${data[1]})) (${data[2]})`}).join
 &lt;p&gt;Plus it’s respectful.&lt;/p&gt;
 &lt;p&gt;People‘s experiences are varied. Our memories are limited. Our values are different. Let’s help each other to learn and remember, even the most “obvious” of things.&lt;/p&gt;
 &lt;h2 id=&#34;idea-super-communication&#34;&gt;Idea: Super-communication&lt;/h2&gt;
-&lt;p&gt;Material: Khan Academy blog post from Ben Kamens &lt;a href=&#34;https://bjk5.com/post/71887196490/email-transparency-at-khan-academy#_=_&#34;&gt;https://bjk5.com/post/71887196490/email-transparency-at-khan-academy#_=_&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Material: Khan Academy blog post from Ben Kamens 
+&lt;a href=&#34;https://bjk5.com/post/71887196490/email-transparency-at-khan-academy#_=&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://bjk5.com/post/71887196490/email-transparency-at-khan-academy#_=&lt;/a&gt;_&lt;/p&gt;
 &lt;p&gt;Why?&lt;/p&gt;
 &lt;p&gt;The people at Khan Academy are incredibly productive (c. 2013). Collectively this group is super talented, driven, and least expectedly: super-communicative.&lt;/p&gt;
 &lt;p&gt;The blog post linked above gives a small taste of how.&lt;/p&gt;
@@ -8370,7 +8404,8 @@ results.map((data, index) =&amp;gt; {return `((${data[1]})) (${data[2]})`}).join
 &lt;p&gt;You&amp;rsquo;ll avoid having situations where person A thought person B was working on X is person B has actively been communicating that they&amp;rsquo;re working on Y.&lt;/p&gt;
 &lt;p&gt;Super communication is hard work. I fall out of the habit quickly. But every time I’m reminded of its value and my experience at Khan Academy I’m reinforced in my belief that is worth striving for, and at least for a short time I’m better for it.&lt;/p&gt;
 &lt;h2 id=&#34;idea-communication-bubblesbonding-and-bridging&#34;&gt;Idea: Communication bubbles/bonding and bridging&lt;/h2&gt;
-&lt;p&gt;Material: Maybe start with &lt;a href=&#34;https://ncase.me/crowds/&#34;&gt;https://ncase.me/crowds/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Material: Maybe start with 
+&lt;a href=&#34;https://ncase.me/crowds/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://ncase.me/crowds/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;tl;dr: &amp;ldquo;A healthy society needs a sweet spot of bonds within groups and bridges between groups.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;Nicky Case links to more substantive material if you want to dive deeper. The idea itself is simple though; it’s being actively conscious of it that’s important and which can be challenging.&lt;/p&gt;
 &lt;h2 id=&#34;idea-castles-in-the-clouds-as-belief-systems&#34;&gt;Idea: Castles in the clouds as belief systems&lt;/h2&gt;
@@ -8437,10 +8472,9 @@ results.map((data, index) =&amp;gt; {return `((${data[1]})) (${data[2]})`}).join
       <guid>https://davidbieber.com/snippets/2020-11-30-updating-google-slides-through-roam-research/</guid>
       
       <description>&lt;p&gt;Check out this &amp;ldquo;demo video&amp;rdquo; I made! It shows me making a presentation using Roam Research references. When I update the block in Roam that I&amp;rsquo;m referencing, the presentation gets updated automatically.&lt;/p&gt;
-
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/YccjrI3fmhc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+			&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/YccjrI3fmhc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+		&lt;/div&gt;
 
 &lt;p&gt;Editing slides and docs in this way would be so useful! Being able to focus on content in Roam, and presentation in a tool that&amp;rsquo;s built for presentation (like Docs and Slides) would be such a powerful combination.&lt;/p&gt;
 &lt;p&gt;In my experience, Roam is a powerful tool for &lt;strong&gt;thinking&lt;/strong&gt; and &lt;strong&gt;note-taking&lt;/strong&gt;, but not as useful for sharing those thoughts. When you&amp;rsquo;re sharing, you want to tell a story. You want to guide the reader through your thought process, and be in control of the narrative the whole time.&lt;/p&gt;
@@ -8932,7 +8966,7 @@ And it doesn&amp;rsquo;t seem capable of unscrambling words (I did try this, and
 &lt;h2 id=&#34;goal&#34;&gt;Goal&lt;/h2&gt;
 &lt;p&gt;The approach of the paper aims first and foremost to learn an encoding $Z$ of $X$ that is maximally informative about $Y$.
 This is measured via mutual information between $Z$ and $Y$: $I(Z, Y; \theta)$.&lt;/p&gt;
-&lt;p&gt;$$I(Z, Y; \theta) = \int dx~dy~p(z, y|\theta) \log \frac{p(z, y)}{p(z)p(y)}$$&lt;/p&gt;
+&lt;p&gt;$$I(Z, Y; \theta) = \int dx&lt;del&gt;dy&lt;/del&gt;p(z, y|\theta) \log \frac{p(z, y)}{p(z)p(y)}$$&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s not enough to maximize $I(Z, Y; \theta)$ though; this can be done by simply letting $Z = X$, which isn&amp;rsquo;t useful.&lt;/p&gt;
 &lt;p&gt;So, we also want to limit $I(Z, X)$. We do this by enforcing an information constraint: $I(X, Z) &amp;lt; I_c$.&lt;/p&gt;
 &lt;p&gt;Our goal is to maximize $I(Z, Y; \theta)$ subject to $I(X, Z) &amp;lt; I_c$.&lt;/p&gt;
@@ -8965,7 +8999,7 @@ This is measured via mutual information between $Z$ and $Y$: $I(Z, Y; \theta)$.&
 &lt;h2 id=&#34;execution&#34;&gt;Execution&lt;/h2&gt;
 &lt;h3 id=&#34;part-1-variational-inference&#34;&gt;Part 1: Variational Inference&lt;/h3&gt;
 &lt;p&gt;You can follow the math in the paper (Section 3), but the first main result is to define&lt;/p&gt;
-&lt;p&gt;$$L = \int dx~dy~dz~ p(x) p(y|x) p(z|x) \log q(y|z) - \beta \int dx~dz~ p(x) p(z|x) \log \frac{p(z|x)}{r(z)}$$&lt;/p&gt;
+&lt;p&gt;$$L = \int dx&lt;del&gt;dy&lt;/del&gt;dz~ p(x) p(y|x) p(z|x) \log q(y|z) - \beta \int dx&lt;del&gt;dz&lt;/del&gt; p(x) p(z|x) \log \frac{p(z|x)}{r(z)}$$&lt;/p&gt;
 &lt;p&gt;and show that
 $$R_{IB}(\theta) = I(Z,Y) - \beta I(Z, X) \ge L.$$&lt;/p&gt;
 &lt;p&gt;To achieve this, we&amp;rsquo;ve introduced $q(y|z)$ as an approximation of $p(y|z)$, and $r(z)$ as an approximation of $p(z)$.&lt;/p&gt;
@@ -8978,7 +9012,8 @@ $$R_{IB}(\theta) = I(Z,Y) - \beta I(Z, X) \ge L.$$&lt;/p&gt;
 &lt;p&gt;$$J_{IB} = \frac{1}{N} \sum\limits_{n=1}^N E_{\epsilon \sim p(\epsilon)} \left[-\log q(y_n|f(x_n,\epsilon))\right] + \beta KL[p(Z|x_n), r(Z)]$$&lt;/p&gt;
 &lt;p&gt;As long as $q$ is differentiable and $KL[p(Z|x_n), r(Z)]$ is tractable, this is an objective we can optimize with e.g. gradient descent.&lt;/p&gt;
 &lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;
-&lt;p&gt;A concise demo implementation is available on GitHub at &lt;a href=&#34;https://github.com/alexalemi/vib_demo/blob/master/MNISTVIB.ipynb&#34;&gt;https://github.com/alexalemi/vib_demo/blob/master/MNISTVIB.ipynb&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A concise demo implementation is available on GitHub at 
+&lt;a href=&#34;https://github.com/alexalemi/vib_demo/blob/master/MNISTVIB.ipynb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/alexalemi/vib_demo/blob/master/MNISTVIB.ipynb&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve describe here the correspondence between the notation used in the source code and the notation used in the paper.
 Terms from the paper are in $\LaTeX$, and terms from the source code are in &lt;code&gt;code blocks&lt;/code&gt;.&lt;/p&gt;
 &lt;ul&gt;
@@ -9075,42 +9110,42 @@ Terms from the paper are in $\LaTeX$, and terms from the source code are in &lt;
 &lt;p&gt;&lt;code&gt;sqlite3 ~/chat.db&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;I run &lt;code&gt;.tables&lt;/code&gt; to see what tables there are:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;_SqliteDatabaseProperties&lt;/td&gt;
-&lt;td&gt;kvtable&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;attachment&lt;/td&gt;
-&lt;td&gt;message&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;chat&lt;/td&gt;
-&lt;td&gt;message_attachment_join&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;chat_handle_join&lt;/td&gt;
-&lt;td&gt;message_processing_task&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;chat_message_join&lt;/td&gt;
-&lt;td&gt;sync_deleted_attachments&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;deleted_messages&lt;/td&gt;
-&lt;td&gt;sync_deleted_chats&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;handle&lt;/td&gt;
-&lt;td&gt;sync_deleted_messages&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;_SqliteDatabaseProperties&lt;/td&gt;
+					&lt;td&gt;kvtable&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;attachment&lt;/td&gt;
+					&lt;td&gt;message&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;chat&lt;/td&gt;
+					&lt;td&gt;message_attachment_join&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;chat_handle_join&lt;/td&gt;
+					&lt;td&gt;message_processing_task&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;chat_message_join&lt;/td&gt;
+					&lt;td&gt;sync_deleted_attachments&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;deleted_messages&lt;/td&gt;
+					&lt;td&gt;sync_deleted_chats&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;handle&lt;/td&gt;
+					&lt;td&gt;sync_deleted_messages&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;There are some interesting tables in there: &lt;code&gt;message&lt;/code&gt; seems most important. It looks like we&amp;rsquo;ll also be able to look up attachments using tables &lt;code&gt;attachment&lt;/code&gt; and &lt;code&gt;message_attachment_join&lt;/code&gt;. Strangely, there&amp;rsquo;s a table present for deleted messages, which suggests a sort of &amp;ldquo;trash can&amp;rdquo; where messages are not permanently deleted immediately upon deletion.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;.schema message&lt;/code&gt; is the command for viewing the schema of the message table.
@@ -9382,147 +9417,147 @@ One of its core features is that you can effortlessly add links between pages in
 &lt;p&gt;Each &lt;code&gt;page&lt;/code&gt; is an object with keys: &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;children&lt;/code&gt;, &lt;code&gt;create-time&lt;/code&gt;, &lt;code&gt;create-email&lt;/code&gt;, &lt;code&gt;edit-time&lt;/code&gt;, &lt;code&gt;edit-email&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;page-schema&#34;&gt;Page Schema&lt;/h3&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Key&lt;/th&gt;
-&lt;th&gt;Type&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;title&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;The page title.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;children&lt;/td&gt;
-&lt;td&gt;List[Child]&lt;/td&gt;
-&lt;td&gt;The list of children of the page.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;create-time&lt;/td&gt;
-&lt;td&gt;Integer&lt;/td&gt;
-&lt;td&gt;The time (ms since epoch) when the page was created.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;create-email&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;The email of the person to create the page.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;edit-time&lt;/td&gt;
-&lt;td&gt;Integer&lt;/td&gt;
-&lt;td&gt;The time (ms since epoch) of the last edit to the page.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;edit-email&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;The email of the last person to edit the page.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Key&lt;/th&gt;
+					&lt;th&gt;Type&lt;/th&gt;
+					&lt;th&gt;Description&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;title&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;The page title.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;children&lt;/td&gt;
+					&lt;td&gt;List[Child]&lt;/td&gt;
+					&lt;td&gt;The list of children of the page.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;create-time&lt;/td&gt;
+					&lt;td&gt;Integer&lt;/td&gt;
+					&lt;td&gt;The time (ms since epoch) when the page was created.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;create-email&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;The email of the person to create the page.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;edit-time&lt;/td&gt;
+					&lt;td&gt;Integer&lt;/td&gt;
+					&lt;td&gt;The time (ms since epoch) of the last edit to the page.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;edit-email&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;The email of the last person to edit the page.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Note that only &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;edit-time&lt;/code&gt;, and &lt;code&gt;edit-email&lt;/code&gt; appear to be required fields.
 &lt;code&gt;children&lt;/code&gt;, &lt;code&gt;create-time&lt;/code&gt;, and &lt;code&gt;create-email&lt;/code&gt; appear to be omitted when not available.&lt;/p&gt;
 &lt;h3 id=&#34;child-schema&#34;&gt;Child Schema&lt;/h3&gt;
 &lt;p&gt;Each of the children in a page may have the following keys. Only the &lt;code&gt;uid&lt;/code&gt;, &lt;code&gt;string&lt;/code&gt;, &lt;code&gt;edit-time&lt;/code&gt;, and &lt;code&gt;edit-email&lt;/code&gt; keys seem universal. The rest may be omitted when not available.&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Key&lt;/th&gt;
-&lt;th&gt;Type&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;uid&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;A short unique identifier for the child.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;string&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;The string content of the child.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;children&lt;/td&gt;
-&lt;td&gt;List[Child]&lt;/td&gt;
-&lt;td&gt;The list of children of this child.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;create-time&lt;/td&gt;
-&lt;td&gt;Integer&lt;/td&gt;
-&lt;td&gt;The time (ms since epoch) when the page was created.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;create-email&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;The email of the person to create the page.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;edit-time&lt;/td&gt;
-&lt;td&gt;Integer&lt;/td&gt;
-&lt;td&gt;The time (ms since epoch) of the last edit to the page.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;edit-email&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;The email of the last person to edit the page.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Key&lt;/th&gt;
+					&lt;th&gt;Type&lt;/th&gt;
+					&lt;th&gt;Description&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;uid&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;A short unique identifier for the child.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;string&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;The string content of the child.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;children&lt;/td&gt;
+					&lt;td&gt;List[Child]&lt;/td&gt;
+					&lt;td&gt;The list of children of this child.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;create-time&lt;/td&gt;
+					&lt;td&gt;Integer&lt;/td&gt;
+					&lt;td&gt;The time (ms since epoch) when the page was created.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;create-email&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;The email of the person to create the page.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;edit-time&lt;/td&gt;
+					&lt;td&gt;Integer&lt;/td&gt;
+					&lt;td&gt;The time (ms since epoch) of the last edit to the page.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;edit-email&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;The email of the last person to edit the page.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Some children may additionally have the following keys.&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Key&lt;/th&gt;
-&lt;th&gt;Type&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;heading&lt;/td&gt;
-&lt;td&gt;Integer&lt;/td&gt;
-&lt;td&gt;1, 2, or 3; indicates the note is an h1, h2, or h3 heading.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;emojis&lt;/td&gt;
-&lt;td&gt;List[Emoji]&lt;/td&gt;
-&lt;td&gt;A list of objects indicating who added what emojis and when.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;text-align&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;One of &amp;lsquo;left&amp;rsquo;, &amp;lsquo;right&amp;rsquo;, &amp;lsquo;center&amp;rsquo;, or &amp;lsquo;justify&amp;rsquo; indicating the text alignment.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Key&lt;/th&gt;
+					&lt;th&gt;Type&lt;/th&gt;
+					&lt;th&gt;Description&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;heading&lt;/td&gt;
+					&lt;td&gt;Integer&lt;/td&gt;
+					&lt;td&gt;1, 2, or 3; indicates the note is an h1, h2, or h3 heading.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;emojis&lt;/td&gt;
+					&lt;td&gt;List[Emoji]&lt;/td&gt;
+					&lt;td&gt;A list of objects indicating who added what emojis and when.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;text-align&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;One of &amp;rsquo;left&amp;rsquo;, &amp;lsquo;right&amp;rsquo;, &amp;lsquo;center&amp;rsquo;, or &amp;lsquo;justify&amp;rsquo; indicating the text alignment.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Note that in Roam, children are referred to as &amp;ldquo;blocks&amp;rdquo;, and a child&amp;rsquo;s ID is the ID used to reference a block.&lt;/p&gt;
 &lt;p&gt;Last but not least, I include the emoji reaction schema 😂.&lt;/p&gt;
 &lt;h3 id=&#34;emoji-schema&#34;&gt;Emoji Schema&lt;/h3&gt;
 &lt;p&gt;Each Emoji reaction to a child is an object conforming to the following schema.&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Key&lt;/th&gt;
-&lt;th&gt;Type&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;emoji&lt;/td&gt;
-&lt;td&gt;object&lt;/td&gt;
-&lt;td&gt;An object with a single key &lt;code&gt;native&lt;/code&gt; containing the emoji itself.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;users&lt;/td&gt;
-&lt;td&gt;List[object]&lt;/td&gt;
-&lt;td&gt;A list of objects indicating who added this emoji and when. The keys are &lt;code&gt;time&lt;/code&gt; (ms since epoch) and &lt;code&gt;email&lt;/code&gt; (the email of the user who added the reaction).&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Key&lt;/th&gt;
+					&lt;th&gt;Type&lt;/th&gt;
+					&lt;th&gt;Description&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;emoji&lt;/td&gt;
+					&lt;td&gt;object&lt;/td&gt;
+					&lt;td&gt;An object with a single key &lt;code&gt;native&lt;/code&gt; containing the emoji itself.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;users&lt;/td&gt;
+					&lt;td&gt;List[object]&lt;/td&gt;
+					&lt;td&gt;A list of objects indicating who added this emoji and when. The keys are &lt;code&gt;time&lt;/code&gt; (ms since epoch) and &lt;code&gt;email&lt;/code&gt; (the email of the user who added the reaction).&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;missing-information&#34;&gt;Missing Information&lt;/h3&gt;
 &lt;p&gt;Some information appears to get lost in the export. In particular, the following information appears to be dropped.&lt;/p&gt;
@@ -9759,102 +9794,102 @@ limit 50;
 &lt;p&gt;Using the commands &lt;code&gt;\d messenger&lt;/code&gt; and &lt;code&gt;\d messenger_archive&lt;/code&gt;, I inspect the table schemas.&lt;/p&gt;
 &lt;h3 id=&#34;schema-messenger&#34;&gt;Schema: messenger&lt;/h3&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Column&lt;/th&gt;
-&lt;th&gt;Type&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;text&lt;/td&gt;
-&lt;td&gt;text&lt;/td&gt;
-&lt;td&gt;The message content&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;uid&lt;/td&gt;
-&lt;td&gt;text&lt;/td&gt;
-&lt;td&gt;A unique message id&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;author&lt;/td&gt;
-&lt;td&gt;text&lt;/td&gt;
-&lt;td&gt;The &lt;em&gt;fbid&lt;/em&gt; of the message author&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;timestamp&lt;/td&gt;
-&lt;td&gt;number&lt;/td&gt;
-&lt;td&gt;The timestamp in milliseconds&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;forwarded&lt;/td&gt;
-&lt;td&gt;boolean&lt;/td&gt;
-&lt;td&gt;Whether the message is a forwarded message&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;thread_id&lt;/td&gt;
-&lt;td&gt;text&lt;/td&gt;
-&lt;td&gt;A unique thread id&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;thread_type&lt;/td&gt;
-&lt;td&gt;text&lt;/td&gt;
-&lt;td&gt;GROUP or USER, indicating the thread type&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Column&lt;/th&gt;
+					&lt;th&gt;Type&lt;/th&gt;
+					&lt;th&gt;Description&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;text&lt;/td&gt;
+					&lt;td&gt;text&lt;/td&gt;
+					&lt;td&gt;The message content&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;uid&lt;/td&gt;
+					&lt;td&gt;text&lt;/td&gt;
+					&lt;td&gt;A unique message id&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;author&lt;/td&gt;
+					&lt;td&gt;text&lt;/td&gt;
+					&lt;td&gt;The &lt;em&gt;fbid&lt;/em&gt; of the message author&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;timestamp&lt;/td&gt;
+					&lt;td&gt;number&lt;/td&gt;
+					&lt;td&gt;The timestamp in milliseconds&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;forwarded&lt;/td&gt;
+					&lt;td&gt;boolean&lt;/td&gt;
+					&lt;td&gt;Whether the message is a forwarded message&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;thread_id&lt;/td&gt;
+					&lt;td&gt;text&lt;/td&gt;
+					&lt;td&gt;A unique thread id&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;thread_type&lt;/td&gt;
+					&lt;td&gt;text&lt;/td&gt;
+					&lt;td&gt;GROUP or USER, indicating the thread type&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;schema-messenger_archive&#34;&gt;Schema: messenger_archive&lt;/h3&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Column&lt;/th&gt;
-&lt;th&gt;Type&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;sender_name&lt;/td&gt;
-&lt;td&gt;text&lt;/td&gt;
-&lt;td&gt;The message author&amp;rsquo;s name&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;timestamp_ms&lt;/td&gt;
-&lt;td&gt;number&lt;/td&gt;
-&lt;td&gt;The timestamp in milliseconds&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;content&lt;/td&gt;
-&lt;td&gt;text&lt;/td&gt;
-&lt;td&gt;The message content&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;type&lt;/td&gt;
-&lt;td&gt;text&lt;/td&gt;
-&lt;td&gt;One of: Payment, Call, Share, Generic, Unsubscribe, or Subscribe&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;title&lt;/td&gt;
-&lt;td&gt;text&lt;/td&gt;
-&lt;td&gt;The thread title, often the name of the other participant&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;is_still_participant&lt;/td&gt;
-&lt;td&gt;boolean&lt;/td&gt;
-&lt;td&gt;Whether I was still in the conversation at the time of the archive (Feb 2020)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;thread_type&lt;/td&gt;
-&lt;td&gt;text&lt;/td&gt;
-&lt;td&gt;One of: RegularGroup, Regular&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;thread_path&lt;/td&gt;
-&lt;td&gt;text&lt;/td&gt;
-&lt;td&gt;A unique identifier for the thread&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Column&lt;/th&gt;
+					&lt;th&gt;Type&lt;/th&gt;
+					&lt;th&gt;Description&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;sender_name&lt;/td&gt;
+					&lt;td&gt;text&lt;/td&gt;
+					&lt;td&gt;The message author&amp;rsquo;s name&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;timestamp_ms&lt;/td&gt;
+					&lt;td&gt;number&lt;/td&gt;
+					&lt;td&gt;The timestamp in milliseconds&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;content&lt;/td&gt;
+					&lt;td&gt;text&lt;/td&gt;
+					&lt;td&gt;The message content&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;type&lt;/td&gt;
+					&lt;td&gt;text&lt;/td&gt;
+					&lt;td&gt;One of: Payment, Call, Share, Generic, Unsubscribe, or Subscribe&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;title&lt;/td&gt;
+					&lt;td&gt;text&lt;/td&gt;
+					&lt;td&gt;The thread title, often the name of the other participant&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;is_still_participant&lt;/td&gt;
+					&lt;td&gt;boolean&lt;/td&gt;
+					&lt;td&gt;Whether I was still in the conversation at the time of the archive (Feb 2020)&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;thread_type&lt;/td&gt;
+					&lt;td&gt;text&lt;/td&gt;
+					&lt;td&gt;One of: RegularGroup, Regular&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;thread_path&lt;/td&gt;
+					&lt;td&gt;text&lt;/td&gt;
+					&lt;td&gt;A unique identifier for the thread&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;schema-caveats&#34;&gt;Schema Caveats&lt;/h3&gt;
 &lt;ul&gt;
@@ -10554,14 +10589,14 @@ One extreme way you may have been predictable is if the host knows exactly how e
 &lt;p&gt;And like with weather forecasting, their model is imperfect. It&amp;rsquo;s good enough to know what box you&amp;rsquo;ll choose, with certainty, but only because that only requires forecasting a small window (a week, let&amp;rsquo;s say) into the future. Like the atmospheric conditions that determine the weather, your brain is a chaotic system. Any imperfection in the model, however small, will eventually blow up and lead to large errors in the model in the future. So our host can&amp;rsquo;t model your every thought a year into the future, let alone e.g. the whole population&amp;rsquo;s behaviors.&lt;/p&gt;
 &lt;p&gt;So what boxes should you choose?&lt;/p&gt;
 &lt;p&gt;You should choose to open just box A. By reaching this conclusion (and more importantly, by adopting the strategy for reasoning that leads to this conclusion), you guarantee yourself $1 million the next time you encounter a wealthy generous time traveling game show host interested in philosophy and mathematics.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;I say &amp;ldquo;brain&amp;rdquo;, but I really mean the whole of your situation and life circumstances. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;I say &amp;ldquo;brain&amp;rdquo;, but I really mean the whole of your situation and life circumstances.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -10615,7 +10650,7 @@ One extreme way you may have been predictable is if the host knows exactly how e
 &lt;li&gt;Add TODOs&lt;/li&gt;
 &lt;li&gt;Send or schedule Tweets&lt;/li&gt;
 &lt;li&gt;Log activities&lt;/li&gt;
-&lt;li&gt;ACK! Any ol&#39; text back to you (Great conversationalist!)&lt;/li&gt;
+&lt;li&gt;ACK! Any ol&amp;rsquo; text back to you (Great conversationalist!)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;other-capabilities&#34;&gt;Other capabilities:&lt;/h2&gt;
 &lt;ul&gt;
@@ -10688,15 +10723,15 @@ The goal is to encourage readers to respond to my writing, because I&amp;rsquo;m
 &lt;p&gt;If you&amp;rsquo;re interested in learning more about the internals, the source is 
 &lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/772b5dd87da532357a1cdf04a8caa027268bfbac/hugo/assets/js-src/ask-me-anywhere.jsx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on GitHub&lt;/a&gt;. Feel free to have a poke around.&lt;/p&gt;
 &lt;p&gt;The name of the project &amp;ndash; &amp;ldquo;Ask Me Anywhere&amp;rdquo; &amp;ndash; reflects my intention to enable readers to ask questions as they&amp;rsquo;re reading. However, I welcome all types of reactions: questions, comments, feedback, corrections, new ideas, etc. I look forward to hearing what you have to say.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;Update (Dec 2022): You can now also use the Discussion feature! Ever since 
-&lt;a href=&#34;https://davidbieber.com/snippets/2022-06-21-using-discord/&#34;&gt;this snippet&lt;/a&gt; there are now public discussions directly on my website. Give it a try today! &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2022-06-21-using-discord/&#34;&gt;this snippet&lt;/a&gt; there are now public discussions directly on my website. Give it a try today!&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -10855,7 +10890,8 @@ In minutes, you&amp;rsquo;re able to assemble a video teaching the material you&
 &lt;p&gt;My main premise is that students, young and old, should have a light-weight way to create educational videos immediately after learning something online.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve framed this discussion around a hypothetical tool for students to use on Khan Academy, but it applies equally well to educational videos on YouTube and elsewhere. 
 &lt;a href=&#34;https://davidbieber.com/projects/teach-everyone&#34;&gt;Teach Everyone&lt;/a&gt; was an early prototype showing that you can create Khan Academy style animated drawings (i.e. virtual writing on a blackboard) with accompanying audio directly in the browser. Since then, Teach Everyone has suffered some bit rot and unfortunately isn&amp;rsquo;t operational today. However, I&amp;rsquo;m hopeful that some new project will step up, and provide an even better in-browser experience for educational video creation. And then beyond that, I&amp;rsquo;m hopeful that this tool becomes common place for students to use as part of their everyday online learning routine.&lt;/p&gt;
-&lt;p&gt;If you want to discuss these ideas, don&amp;rsquo;t hesitate to get in touch: &lt;a href=&#34;mailto:david810+learning-by-teaching@gmail.com&#34;&gt;david810+learning-by-teaching@gmail.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to discuss these ideas, don&amp;rsquo;t hesitate to get in touch: 
+&lt;a href=&#34;mailto:david810&amp;#43;learning-by-teaching@gmail.com&#34;&gt;david810+learning-by-teaching@gmail.com&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -10970,78 +11006,78 @@ For some reason, I do it anyway though, and so I think of this habit like an add
       
       <description>&lt;p&gt;I&amp;rsquo;ve set New Year&amp;rsquo;s Resolutions most years for the last several years. Let&amp;rsquo;s review:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Year&lt;/th&gt;
-&lt;th&gt;Resolution&lt;/th&gt;
-&lt;th&gt;Status&lt;/th&gt;
-&lt;th&gt;Result&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;2019&lt;/td&gt;
-&lt;td&gt;Play violin on 100 days&lt;/td&gt;
-&lt;td&gt;Played on 43 days&lt;/td&gt;
-&lt;td&gt;&lt;font color=&#34;maroon&#34;&gt;Nope&lt;/font&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2018&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2017&lt;/td&gt;
-&lt;td&gt;Longer arms&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;font color=&#34;green&#34;&gt;Yesssss!&lt;/font&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2016&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2015&lt;/td&gt;
-&lt;td&gt;Exercise 200 days&lt;br&gt; Read 200 days&lt;/td&gt;
-&lt;td&gt;Exercise: 200 days by summer&lt;br&gt; Reading: (look this up)&lt;/td&gt;
-&lt;td&gt;Yes.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2014&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2013&lt;/td&gt;
-&lt;td&gt;100 days of push ups&lt;/td&gt;
-&lt;td&gt;145 done by December&lt;/td&gt;
-&lt;td&gt;&lt;font color=&#34;green&#34;&gt;Yes!&lt;/font&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Year&lt;/th&gt;
+					&lt;th&gt;Resolution&lt;/th&gt;
+					&lt;th&gt;Status&lt;/th&gt;
+					&lt;th&gt;Result&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;2019&lt;/td&gt;
+					&lt;td&gt;Play violin on 100 days&lt;/td&gt;
+					&lt;td&gt;Played on 43 days&lt;/td&gt;
+					&lt;td&gt;&lt;font color=&#34;maroon&#34;&gt;Nope&lt;/font&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;2018&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;2017&lt;/td&gt;
+					&lt;td&gt;Longer arms&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;font color=&#34;green&#34;&gt;Yesssss!&lt;/font&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;2016&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;2015&lt;/td&gt;
+					&lt;td&gt;Exercise 200 days&lt;br&gt; Read 200 days&lt;/td&gt;
+					&lt;td&gt;Exercise: 200 days by summer&lt;br&gt; Reading: (look this up)&lt;/td&gt;
+					&lt;td&gt;Yes.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;2014&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;2013&lt;/td&gt;
+					&lt;td&gt;100 days of push ups&lt;/td&gt;
+					&lt;td&gt;145 done by December&lt;/td&gt;
+					&lt;td&gt;&lt;font color=&#34;green&#34;&gt;Yes!&lt;/font&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;The missing entries I don&amp;rsquo;t recall or have readily available, but I had goals in those years too.&lt;/p&gt;
 &lt;p&gt;This year, I add a new resolution to the table:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Year&lt;/th&gt;
-&lt;th&gt;Resolution&lt;/th&gt;
-&lt;th&gt;Status&lt;/th&gt;
-&lt;th&gt;Result&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;2020&lt;/td&gt;
-&lt;td&gt;Communicate publicly 100 times&lt;/td&gt;
-&lt;td&gt;**Finger&amp;rsquo;s crossed**&lt;/td&gt;
-&lt;td&gt;TBD!&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Year&lt;/th&gt;
+					&lt;th&gt;Resolution&lt;/th&gt;
+					&lt;th&gt;Status&lt;/th&gt;
+					&lt;th&gt;Result&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;2020&lt;/td&gt;
+					&lt;td&gt;Communicate publicly 100 times&lt;/td&gt;
+					&lt;td&gt;**Finger&amp;rsquo;s crossed**&lt;/td&gt;
+					&lt;td&gt;TBD!&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;What counts as &amp;ldquo;communicating publicly&amp;rdquo;?&lt;/p&gt;
 &lt;ul&gt;
@@ -11188,136 +11224,136 @@ For some reason, I do it anyway though, and so I think of this habit like an add
 &lt;h4 id=&#34;the-available-data&#34;&gt;The Available Data&lt;/h4&gt;
 &lt;p&gt;Running sqlite3 macro &lt;code&gt;.tables&lt;/code&gt;, we see the following tables are available.&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;downloads&lt;/td&gt;
-&lt;td&gt;meta&lt;/td&gt;
-&lt;td&gt;urls&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;downloads_slices&lt;/td&gt;
-&lt;td&gt;segment_usage&lt;/td&gt;
-&lt;td&gt;visit_source&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;downloads_url_chains&lt;/td&gt;
-&lt;td&gt;segments&lt;/td&gt;
-&lt;td&gt;visits&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;keyword_search_terms&lt;/td&gt;
-&lt;td&gt;typed_url_sync_metadata&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;downloads&lt;/td&gt;
+					&lt;td&gt;meta&lt;/td&gt;
+					&lt;td&gt;urls&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;downloads_slices&lt;/td&gt;
+					&lt;td&gt;segment_usage&lt;/td&gt;
+					&lt;td&gt;visit_source&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;downloads_url_chains&lt;/td&gt;
+					&lt;td&gt;segments&lt;/td&gt;
+					&lt;td&gt;visits&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;keyword_search_terms&lt;/td&gt;
+					&lt;td&gt;typed_url_sync_metadata&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;We&amp;rsquo;ll be most interested in the &lt;code&gt;urls&lt;/code&gt; and &lt;code&gt;visits&lt;/code&gt; tables.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;urls&lt;/code&gt; table has these columns (found with &lt;code&gt;.schema urls&lt;/code&gt;):&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Column&lt;/th&gt;
-&lt;th&gt;Type&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;id&lt;/td&gt;
-&lt;td&gt;Integer Id&lt;/td&gt;
-&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the URL in the database.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;url&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;The URL of the website.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;title&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;The title of website.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;visit_count&lt;/td&gt;
-&lt;td&gt;Integer&lt;/td&gt;
-&lt;td&gt;The number of times you&amp;rsquo;ve visited the URL.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;typed_count&lt;/td&gt;
-&lt;td&gt;Integer&lt;/td&gt;
-&lt;td&gt;The number of times you&amp;rsquo;ve visited the URL by typing in the address (as opposed to by following a link.)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;last_visit_time&lt;/td&gt;
-&lt;td&gt;Integer (microseconds since the epoch)&lt;/td&gt;
-&lt;td&gt;The time of the most recent to the URL.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;hidden&lt;/td&gt;
-&lt;td&gt;Boolean&lt;/td&gt;
-&lt;td&gt;I&amp;rsquo;m not sure what this is about.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Column&lt;/th&gt;
+					&lt;th&gt;Type&lt;/th&gt;
+					&lt;th&gt;Description&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;id&lt;/td&gt;
+					&lt;td&gt;Integer Id&lt;/td&gt;
+					&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the URL in the database.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;url&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;The URL of the website.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;title&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;The title of website.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;visit_count&lt;/td&gt;
+					&lt;td&gt;Integer&lt;/td&gt;
+					&lt;td&gt;The number of times you&amp;rsquo;ve visited the URL.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;typed_count&lt;/td&gt;
+					&lt;td&gt;Integer&lt;/td&gt;
+					&lt;td&gt;The number of times you&amp;rsquo;ve visited the URL by typing in the address (as opposed to by following a link.)&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;last_visit_time&lt;/td&gt;
+					&lt;td&gt;Integer (microseconds since the epoch)&lt;/td&gt;
+					&lt;td&gt;The time of the most recent to the URL.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;hidden&lt;/td&gt;
+					&lt;td&gt;Boolean&lt;/td&gt;
+					&lt;td&gt;I&amp;rsquo;m not sure what this is about.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;And the &lt;code&gt;visits&lt;/code&gt; table has these columns (obtained via &lt;code&gt;.schema visits&lt;/code&gt;):&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Column&lt;/th&gt;
-&lt;th&gt;Type&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;id&lt;/td&gt;
-&lt;td&gt;Integer Id&lt;/td&gt;
-&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the visit in the database.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;url&lt;/td&gt;
-&lt;td&gt;Integer Id&lt;/td&gt;
-&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the url in the &lt;code&gt;urls&lt;/code&gt; table.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;visit_time&lt;/td&gt;
-&lt;td&gt;Integer (milliseconds since the epoch)&lt;/td&gt;
-&lt;td&gt;The time of the visit.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;from_visit&lt;/td&gt;
-&lt;td&gt;Integer Id&lt;/td&gt;
-&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the visit that lead you to this one.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;transition&lt;/td&gt;
-&lt;td&gt;Bit vector&lt;/td&gt;
-&lt;td&gt;Represents the 
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Column&lt;/th&gt;
+					&lt;th&gt;Type&lt;/th&gt;
+					&lt;th&gt;Description&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;id&lt;/td&gt;
+					&lt;td&gt;Integer Id&lt;/td&gt;
+					&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the visit in the database.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;url&lt;/td&gt;
+					&lt;td&gt;Integer Id&lt;/td&gt;
+					&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the url in the &lt;code&gt;urls&lt;/code&gt; table.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;visit_time&lt;/td&gt;
+					&lt;td&gt;Integer (milliseconds since the epoch)&lt;/td&gt;
+					&lt;td&gt;The time of the visit.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;from_visit&lt;/td&gt;
+					&lt;td&gt;Integer Id&lt;/td&gt;
+					&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the visit that lead you to this one.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;transition&lt;/td&gt;
+					&lt;td&gt;Bit vector&lt;/td&gt;
+					&lt;td&gt;Represents the 
 &lt;a href=&#34;https://developer.chrome.com/extensions/history#transition_types&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;transition type&lt;/a&gt; (how you got to the URL)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;segment_id&lt;/td&gt;
-&lt;td&gt;Integer Id&lt;/td&gt;
-&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the segment in the database. I&amp;rsquo;m not quite sure what a segment is, but there is a &lt;code&gt;segments&lt;/code&gt; table you can look at.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;visit_duration&lt;/td&gt;
-&lt;td&gt;Integer (microseconds)&lt;/td&gt;
-&lt;td&gt;The amount of time spent at the website, or 0 if not available.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;incremented_omnibox_typed_score&lt;/td&gt;
-&lt;td&gt;Boolean&lt;/td&gt;
-&lt;td&gt;I do not know what this is about.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;segment_id&lt;/td&gt;
+					&lt;td&gt;Integer Id&lt;/td&gt;
+					&lt;td&gt;The &lt;code&gt;id&lt;/code&gt; of the segment in the database. I&amp;rsquo;m not quite sure what a segment is, but there is a &lt;code&gt;segments&lt;/code&gt; table you can look at.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;visit_duration&lt;/td&gt;
+					&lt;td&gt;Integer (microseconds)&lt;/td&gt;
+					&lt;td&gt;The amount of time spent at the website, or 0 if not available.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;incremented_omnibox_typed_score&lt;/td&gt;
+					&lt;td&gt;Boolean&lt;/td&gt;
+					&lt;td&gt;I do not know what this is about.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;As you can see, we can access every visit to every website that we&amp;rsquo;ve made since the last time we cleared our browsing history. We can see what website we visited (&lt;code&gt;visits.url&lt;/code&gt;), when we visited it (&lt;code&gt;visits.visit_time&lt;/code&gt;), how many times we&amp;rsquo;ve visited it (&lt;code&gt;urls.visit_count&lt;/code&gt;), and how long each visit was for (&lt;code&gt;visits.visit_duration&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;We can even use &lt;code&gt;visits.from_visit&lt;/code&gt; to figure out what website linked us to each url, if that interests us.&lt;/p&gt;

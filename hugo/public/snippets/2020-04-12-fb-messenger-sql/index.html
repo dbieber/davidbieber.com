@@ -32,8 +32,10 @@
   
     
   
-  <meta name="description" content="Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a previous snippet for analyzing my browsing history, I&rsquo;ll use this snippet to sketch out some useful queries for analyzing my message history.
-Table Schemas I have two tables of messages. messenger_archive contains all messages from when I first joined Facebook in August 2008 through February 2020.">
+  <meta name="description" content="Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a 
+previous snippet for analyzing my browsing history, I&rsquo;ll use this snippet to sketch out some useful queries for analyzing my message history.
+Table Schemas
+I have two tables of messages. messenger_archive contains all messages from when I first joined Facebook in August 2008 through February 2020. messenger contains messages from February 2020 through now, and is updated in real time.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/">
@@ -253,8 +255,8 @@ Table Schemas I have two tables of messages. messenger_archive contains all mess
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_3442a5ec1975e9c2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_f8848e5bff6e4686.png">
 
   <link rel="canonical" href="https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/">
 
@@ -275,8 +277,10 @@ Table Schemas I have two tables of messages. messenger_archive contains all mess
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/">
   <meta property="og:title" content="Facebook Messenger SQL Queries | David Bieber">
-  <meta property="og:description" content="Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a previous snippet for analyzing my browsing history, I&rsquo;ll use this snippet to sketch out some useful queries for analyzing my message history.
-Table Schemas I have two tables of messages. messenger_archive contains all messages from when I first joined Facebook in August 2008 through February 2020."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="og:description" content="Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a 
+previous snippet for analyzing my browsing history, I&rsquo;ll use this snippet to sketch out some useful queries for analyzing my message history.
+Table Schemas
+I have two tables of messages. messenger_archive contains all messages from when I first joined Facebook in August 2008 through February 2020. messenger contains messages from February 2020 through now, and is updated in real time."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
@@ -537,102 +541,102 @@ Table Schemas I have two tables of messages. messenger_archive contains all mess
 <p>Using the commands <code>\d messenger</code> and <code>\d messenger_archive</code>, I inspect the table schemas.</p>
 <h3 id="schema-messenger">Schema: messenger</h3>
 <table>
-<thead>
-<tr>
-<th>Column</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>text</td>
-<td>text</td>
-<td>The message content</td>
-</tr>
-<tr>
-<td>uid</td>
-<td>text</td>
-<td>A unique message id</td>
-</tr>
-<tr>
-<td>author</td>
-<td>text</td>
-<td>The <em>fbid</em> of the message author</td>
-</tr>
-<tr>
-<td>timestamp</td>
-<td>number</td>
-<td>The timestamp in milliseconds</td>
-</tr>
-<tr>
-<td>forwarded</td>
-<td>boolean</td>
-<td>Whether the message is a forwarded message</td>
-</tr>
-<tr>
-<td>thread_id</td>
-<td>text</td>
-<td>A unique thread id</td>
-</tr>
-<tr>
-<td>thread_type</td>
-<td>text</td>
-<td>GROUP or USER, indicating the thread type</td>
-</tr>
-</tbody>
+	<thead>
+			<tr>
+					<th>Column</th>
+					<th>Type</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>text</td>
+					<td>text</td>
+					<td>The message content</td>
+			</tr>
+			<tr>
+					<td>uid</td>
+					<td>text</td>
+					<td>A unique message id</td>
+			</tr>
+			<tr>
+					<td>author</td>
+					<td>text</td>
+					<td>The <em>fbid</em> of the message author</td>
+			</tr>
+			<tr>
+					<td>timestamp</td>
+					<td>number</td>
+					<td>The timestamp in milliseconds</td>
+			</tr>
+			<tr>
+					<td>forwarded</td>
+					<td>boolean</td>
+					<td>Whether the message is a forwarded message</td>
+			</tr>
+			<tr>
+					<td>thread_id</td>
+					<td>text</td>
+					<td>A unique thread id</td>
+			</tr>
+			<tr>
+					<td>thread_type</td>
+					<td>text</td>
+					<td>GROUP or USER, indicating the thread type</td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="schema-messenger_archive">Schema: messenger_archive</h3>
 <table>
-<thead>
-<tr>
-<th>Column</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>sender_name</td>
-<td>text</td>
-<td>The message author&rsquo;s name</td>
-</tr>
-<tr>
-<td>timestamp_ms</td>
-<td>number</td>
-<td>The timestamp in milliseconds</td>
-</tr>
-<tr>
-<td>content</td>
-<td>text</td>
-<td>The message content</td>
-</tr>
-<tr>
-<td>type</td>
-<td>text</td>
-<td>One of: Payment, Call, Share, Generic, Unsubscribe, or Subscribe</td>
-</tr>
-<tr>
-<td>title</td>
-<td>text</td>
-<td>The thread title, often the name of the other participant</td>
-</tr>
-<tr>
-<td>is_still_participant</td>
-<td>boolean</td>
-<td>Whether I was still in the conversation at the time of the archive (Feb 2020)</td>
-</tr>
-<tr>
-<td>thread_type</td>
-<td>text</td>
-<td>One of: RegularGroup, Regular</td>
-</tr>
-<tr>
-<td>thread_path</td>
-<td>text</td>
-<td>A unique identifier for the thread</td>
-</tr>
-</tbody>
+	<thead>
+			<tr>
+					<th>Column</th>
+					<th>Type</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>sender_name</td>
+					<td>text</td>
+					<td>The message author&rsquo;s name</td>
+			</tr>
+			<tr>
+					<td>timestamp_ms</td>
+					<td>number</td>
+					<td>The timestamp in milliseconds</td>
+			</tr>
+			<tr>
+					<td>content</td>
+					<td>text</td>
+					<td>The message content</td>
+			</tr>
+			<tr>
+					<td>type</td>
+					<td>text</td>
+					<td>One of: Payment, Call, Share, Generic, Unsubscribe, or Subscribe</td>
+			</tr>
+			<tr>
+					<td>title</td>
+					<td>text</td>
+					<td>The thread title, often the name of the other participant</td>
+			</tr>
+			<tr>
+					<td>is_still_participant</td>
+					<td>boolean</td>
+					<td>Whether I was still in the conversation at the time of the archive (Feb 2020)</td>
+			</tr>
+			<tr>
+					<td>thread_type</td>
+					<td>text</td>
+					<td>One of: RegularGroup, Regular</td>
+			</tr>
+			<tr>
+					<td>thread_path</td>
+					<td>text</td>
+					<td>A unique identifier for the thread</td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="schema-caveats">Schema Caveats</h3>
 <ul>
@@ -904,7 +908,7 @@ details.addEventListener("toggle", event => {
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+<script src="/js/academic.min.01af32edc9a00e9a188425fb55cdbd62.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

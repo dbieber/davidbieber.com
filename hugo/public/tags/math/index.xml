@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>math on David Bieber</title>
+    <title>Math on David Bieber</title>
     <link>https://davidbieber.com/tags/math/</link>
-    <description>Recent content in math on David Bieber</description>
+    <description>Recent content in Math on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/math/index.xml" rel="self" type="application/rss+xml" />
@@ -16,7 +16,7 @@
       
       <description>&lt;p&gt;In this snippet we&amp;rsquo;re going to introduce the Medical Test Paradox &lt;em&gt;Paradox&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;First, you may already be familiar with the 
-&lt;a href=&#34;https://www.youtube.com/watch?v=lG4VkPoG3ko&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Medical Test Paradox&lt;/a&gt;. It&amp;rsquo;s a popular recreational math problem that teaches Bayes&#39; theorem and the importance of base rates. It goes like this.&lt;/p&gt;
+&lt;a href=&#34;https://www.youtube.com/watch?v=lG4VkPoG3ko&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Medical Test Paradox&lt;/a&gt;. It&amp;rsquo;s a popular recreational math problem that teaches Bayes&amp;rsquo; theorem and the importance of base rates. It goes like this.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Suppose 1 in 10000 people have a certain disease, and there is a medical test that is 99% accurate. This means that if you do have the disease, the test comes back positive with 99% probability, and if you do not have the disease, the test comes back negative with 99% probability. It is wrong 1% of the time.&lt;/p&gt;
 &lt;p&gt;If your test result comes back positive, what&amp;rsquo;s the probability that you have the disease?&lt;/p&gt;
@@ -27,7 +27,7 @@
 &lt;p&gt;Let $D=\text{yes}$ be the event where you have the disease.
 Let $T=\text{positive}$ be the event where the test comes back positive.&lt;/p&gt;
 &lt;p&gt;Using this notation, we want to find $P(D=\text{yes} | T=\text{positive})$.
-We proceed by Bayes&#39; theorem.&lt;/p&gt;
+We proceed by Bayes&amp;rsquo; theorem.&lt;/p&gt;
 &lt;p&gt;$P(D=\text{yes} | T=\text{positive}) = \frac{P(T=\text{positive} | D = \text{yes})P(D = \text{yes})}{P(T = \text{positive})}$
 $$= \frac{P(T=\text{positive} | D = \text{yes})P(D = \text{yes})}{P(T=\text{positive} | D = \text{yes})P(D = \text{yes}) + P(T=\text{positive} | D = \text{no})P(D = \text{no})}$$
 $$= \frac{0.99 \cdot \frac{1}{10000}}{0.99 \cdot \frac{1}{10000} + 0.01 \cdot \frac{9999}{10000}}$$
@@ -40,7 +40,7 @@ $$= 0.009803 \approx \fbox{1%}$$&lt;/p&gt;
 &lt;p&gt;Like the Medical Test Paradox, the Medical Test Paradox &lt;em&gt;Paradox&lt;/em&gt; is of course not a true paradox. There is a simple explanation that accounts for an apparently paradoxical discrepancy. First, why does it look like a paradox at all?&lt;/p&gt;
 &lt;p&gt;Take any real disease with prevalence roughly 1 in 10000 (e.g. 
 &lt;a href=&#34;[frequently]%28https://www.medicalhomeportal.org/diagnoses-and-conditions/diagnosis-prevalence-list%29&#34;&gt;from this list&lt;/a&gt;). These are real diseases affecting real people. The best tests for that disease likely has less than 99% accuracy.
-So even if you test positive for the disease, Bayes&#39; theorem suggests the probability you have the disease remains less than 1%. How are people then getting diagnosed with the disease at all? It seems as if doctors would have no way to conclude with greater than 1% certainty that you have the disease, even if your test comes back positive. You don&amp;rsquo;t want to give someone a treatment with side effects if there&amp;rsquo;s only a one percent chance they&amp;rsquo;re actually afflicted with the disease in question.&lt;/p&gt;
+So even if you test positive for the disease, Bayes&amp;rsquo; theorem suggests the probability you have the disease remains less than 1%. How are people then getting diagnosed with the disease at all? It seems as if doctors would have no way to conclude with greater than 1% certainty that you have the disease, even if your test comes back positive. You don&amp;rsquo;t want to give someone a treatment with side effects if there&amp;rsquo;s only a one percent chance they&amp;rsquo;re actually afflicted with the disease in question.&lt;/p&gt;
 &lt;details&gt;
   &lt;summary&gt;Expand to see the rest of the snippet. We discuss resolutions to the paradox.&lt;/summary&gt;
 &lt;p&gt;The Medical Test Paradox assumes that prior to taking the medical test, the probability that you have the disease is given by the disease&amp;rsquo;s prevalence, i.e. 1 in 10000. This is true if the medical test is being administered to random members of the population.
@@ -49,7 +49,7 @@ Common reasons you might take a medical test include (a) you are showing symptom
 In these scenarios, the prior probability that you have the disease is higher than the disease&amp;rsquo;s prevalence.&lt;/p&gt;
 &lt;p&gt;Doctors aren&amp;rsquo;t just administering random tests to random people.
 They are administering tests as part of a differential where the test is likely to distinguish between a small number of reasonable alternative hypotheses that could explain your symptoms, generally each with a prior far exceeding 1 in 10000 (I&amp;rsquo;d estimate values between 1 in 10 and 1 in 3 are more common, but of course it varies according to the specifics of the situation).
-The priors are higher than the candidate diseases&#39; prevalence because your symptoms already indicate that you have &lt;em&gt;something&lt;/em&gt;, even though they don&amp;rsquo;t fully narrow down what it is you have.&lt;/p&gt;
+The priors are higher than the candidate diseases&amp;rsquo; prevalence because your symptoms already indicate that you have &lt;em&gt;something&lt;/em&gt;, even though they don&amp;rsquo;t fully narrow down what it is you have.&lt;/p&gt;
 &lt;p&gt;This &lt;em&gt;reason for administering the test&lt;/em&gt; resolves the Medical Test Paradox Paradox.&lt;/p&gt;
 &lt;details&gt;
   &lt;summary&gt;Does this change how we think about the original Medical Test Paradox?&lt;/summary&gt;
@@ -201,14 +201,14 @@ One extreme way you may have been predictable is if the host knows exactly how e
 &lt;p&gt;And like with weather forecasting, their model is imperfect. It&amp;rsquo;s good enough to know what box you&amp;rsquo;ll choose, with certainty, but only because that only requires forecasting a small window (a week, let&amp;rsquo;s say) into the future. Like the atmospheric conditions that determine the weather, your brain is a chaotic system. Any imperfection in the model, however small, will eventually blow up and lead to large errors in the model in the future. So our host can&amp;rsquo;t model your every thought a year into the future, let alone e.g. the whole population&amp;rsquo;s behaviors.&lt;/p&gt;
 &lt;p&gt;So what boxes should you choose?&lt;/p&gt;
 &lt;p&gt;You should choose to open just box A. By reaching this conclusion (and more importantly, by adopting the strategy for reasoning that leads to this conclusion), you guarantee yourself $1 million the next time you encounter a wealthy generous time traveling game show host interested in philosophy and mathematics.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;I say &amp;ldquo;brain&amp;rdquo;, but I really mean the whole of your situation and life circumstances. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;I say &amp;ldquo;brain&amp;rdquo;, but I really mean the whole of your situation and life circumstances.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -241,7 +241,7 @@ One extreme way you may have been predictable is if the host knows exactly how e
 &lt;p&gt;Two graphs are considered isomorphic if there is a mapping between the nodes of the graphs that preserves node adjacencies.
 That is, a pair of nodes may be connected by an edge in the first graph if and only if the corresponding pair of nodes in the second graph is also connected by an edge in the same way.
 An example of two isomorphic graphs is shown here.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism.png&#34; alt=&#34;Example of isomorphic graphs&#34; title=&#34;Two isomorphic graphs are shown.&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism.png&#34; alt=&#34;Example of isomorphic graphs&#34; title=&#34;Two isomorphic graphs are shown.&#34;&gt;
 &lt;em&gt;Figure: Graph 1 and Graph 2 are isomorphic.
 The correspondance between nodes is illustrated by the node colors and numbers.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;In general, determining whether two graphs are isomorphic when the correspondance is not provided is a challenging problem; precisely how hard this problem is remains an open question in computer science.
@@ -255,7 +255,7 @@ If the canonical forms of two graphs are not equivalent, then the graphs are def
 However, it is possible for two non-isomorphic graphs to share a canonical form, so this test alone cannot provide conclusive evidence that two graphs are isomorphic.&lt;/p&gt;
 &lt;p&gt;The Algorithm:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;For iteration $i$ of the algorithm we will be assigning to each node a tuple $L_{i,n}$ containing the node&amp;rsquo;s old compressed label and a multiset of the node&amp;rsquo;s neighbors&#39; compressed labels.
+&lt;li&gt;For iteration $i$ of the algorithm we will be assigning to each node a tuple $L_{i,n}$ containing the node&amp;rsquo;s old compressed label and a multiset of the node&amp;rsquo;s neighbors&amp;rsquo; compressed labels.
 A multiset is a set (a collection of elements where order is not important) where elements may appear multiple times.&lt;/li&gt;
 &lt;li&gt;At each iteration we will additionally be assigning to each node $n$ a new &amp;ldquo;compressed&amp;rdquo; label $C_{i,n}$ for that node&amp;rsquo;s set of labels.
 Any two nodes with the same $L_{i,n}$ will get the same compressed label.&lt;/li&gt;
@@ -273,25 +273,25 @@ The algorithm may be terminated early after iteration $i$ if the sizes of partit
 &lt;h3 id=&#34;example-of-the-weisfeiler-lehman-isomorphism-test&#34;&gt;Example of the Weisfeiler-Lehman Isomorphism Test&lt;/h3&gt;
 &lt;p&gt;We demonstrate here the Weisfeiler-Lehman isomorphism test using the example graphs from above.
 The graphs are shown again here for completeness.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-000.png&#34; alt=&#34;Two isomorphic graphs are shown.&#34; title=&#34;Two isomorphic graphs are shown.&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-000.png&#34; alt=&#34;Two isomorphic graphs are shown.&#34; title=&#34;Two isomorphic graphs are shown.&#34;&gt;
 &lt;em&gt;Figure: Graph 1 and Graph 2 are isomorphic.
 We will apply the Weisfeiler-Lehman isomorphism test to these graphs as a means of illustrating the test.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;To initialize the algorithm (Step 1), we set $C_{0,n} = 1$ for all nodes $n$.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-001.png&#34; alt=&#34;Initialization: $C\_{0,n} = 1$ for all nodes $n$&#34; title=&#34;We initialize $C_{0,n} = 1$ for all nodes.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-001.png&#34; alt=&#34;Initialization: $C\_{0,n} = 1$ for all nodes $n$&#34; title=&#34;We initialize $C\_{0,n} = 1$ for all nodes.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;For iteration 1, Step 2, we compute $L_{1,n}$.
-The first part of a node&amp;rsquo;s $L$ is the node&amp;rsquo;s old compressed label; the second part of a node&amp;rsquo;s $L$ is the multiset of the neighboring nodes&#39; compressed labels.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-002.png&#34; alt=&#34;Iteration 1, Step 2: $L\_{1,n}$&#34; title=&#34;Iteration 1, Step 2: $L_{1,n}$&#34;&gt;&lt;/p&gt;
+The first part of a node&amp;rsquo;s $L$ is the node&amp;rsquo;s old compressed label; the second part of a node&amp;rsquo;s $L$ is the multiset of the neighboring nodes&amp;rsquo; compressed labels.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-002.png&#34; alt=&#34;Iteration 1, Step 2: $L\_{1,n}$&#34; title=&#34;Iteration 1, Step 2: $L\_{1,n}$&#34;&gt;&lt;/p&gt;
 &lt;p&gt;For iteration 1, Step 3, we introduce &amp;ldquo;compressed&amp;rdquo; labels $C_{1,n}$ for the nodes:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-003.png&#34; alt=&#34;Iteration 1, Step 3: $C\_{1,n}$&#34; title=&#34;Iteration 1, Step 3: $C_{1,n}$&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-003.png&#34; alt=&#34;Iteration 1, Step 3: $C\_{1,n}$&#34; title=&#34;Iteration 1, Step 3: $C\_{1,n}$&#34;&gt;&lt;/p&gt;
 &lt;p&gt;We now begin iteration 2.
 In iteration 2, Step 2, we compute $L_{2,n}$:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-004.png&#34; alt=&#34;Iteration 2, Step 2: $L\_{2,n}$&#34; title=&#34;Iteration 2, Step 2: $L_{2,n}$&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-004.png&#34; alt=&#34;Iteration 2, Step 2: $L\_{2,n}$&#34; title=&#34;Iteration 2, Step 2: $L\_{2,n}$&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In iteration 2, Step 3, we compute $C_{2,n}$:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-005.png&#34; alt=&#34;Iteration 2, Step 3: $C\_{2,n}$&#34; title=&#34;Iteration 2, Step 3: $C_{2,n}$&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-005.png&#34; alt=&#34;Iteration 2, Step 3: $C\_{2,n}$&#34; title=&#34;Iteration 2, Step 3: $C\_{2,n}$&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In iteration 3, Step 2, we compute $L_{3,n}$:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-006.png&#34; alt=&#34;Iteration 3, Step 2: $L\_{3,n}$&#34; title=&#34;Iteration 3, Step 2: $L_{3,n}$&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-006.png&#34; alt=&#34;Iteration 3, Step 2: $L\_{3,n}$&#34; title=&#34;Iteration 3, Step 2: $L\_{3,n}$&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In iteration 3, Step 3, we compute $C_{3,n}$:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;graph-isomorphism-007.png&#34; alt=&#34;Iteration 3, Step 3: $C\_{3,n}$&#34; title=&#34;Iteration 3, Step 3: $C_{3,n}$&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism-007.png&#34; alt=&#34;Iteration 3, Step 3: $C\_{3,n}$&#34; title=&#34;Iteration 3, Step 3: $C\_{3,n}$&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Since the partition of nodes by compressed label has not changed from $C_{2,n}$ to $C_{3,n}$, we may terminate the algorithm here.&lt;/p&gt;
 &lt;p&gt;Concretely, the partition of nodes by compressed label may be represented as the number of nodes with each compressed label.
 That is: &lt;strong&gt;&amp;ldquo;2 7s, 1 8, and 2 9s&amp;rdquo;&lt;/strong&gt;.

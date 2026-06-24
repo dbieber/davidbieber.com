@@ -33,9 +33,11 @@
     
   
   <meta name="description" content="If you use a Mac and use iMessage, you can access your iMessages programmatically. They are stored by iMessage as a sqlite database, which you can easily access.
-Accessing the Database The database is typically stored at ~/Library/Messages/chat.db, though that location is configurable.
+Accessing the Database
+The database is typically stored at ~/Library/Messages/chat.db, though that location is configurable.
 If you try to access the database, however, you will likely encounter this unhelpful error message: ~/Library/Messages/chat.db: Operation not permitted
-Thankfully, OSXDaily has put together a helpful step by step guide to resolving this error, which I&rsquo;ll summarize here:">
+Thankfully, OSXDaily has put together a 
+helpful step by step guide to resolving this error, which I&rsquo;ll summarize here:">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-05-20-imessage-sql-db/">
@@ -255,8 +257,8 @@ Thankfully, OSXDaily has put together a helpful step by step guide to resolving 
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_3442a5ec1975e9c2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_f8848e5bff6e4686.png">
 
   <link rel="canonical" href="https://davidbieber.com/snippets/2020-05-20-imessage-sql-db/">
 
@@ -278,9 +280,11 @@ Thankfully, OSXDaily has put together a helpful step by step guide to resolving 
   <meta property="og:url" content="https://davidbieber.com/snippets/2020-05-20-imessage-sql-db/">
   <meta property="og:title" content="Accessing Your iMessages with SQL | David Bieber">
   <meta property="og:description" content="If you use a Mac and use iMessage, you can access your iMessages programmatically. They are stored by iMessage as a sqlite database, which you can easily access.
-Accessing the Database The database is typically stored at ~/Library/Messages/chat.db, though that location is configurable.
+Accessing the Database
+The database is typically stored at ~/Library/Messages/chat.db, though that location is configurable.
 If you try to access the database, however, you will likely encounter this unhelpful error message: ~/Library/Messages/chat.db: Operation not permitted
-Thankfully, OSXDaily has put together a helpful step by step guide to resolving this error, which I&rsquo;ll summarize here:"><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+Thankfully, OSXDaily has put together a 
+helpful step by step guide to resolving this error, which I&rsquo;ll summarize here:"><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
@@ -559,42 +563,42 @@ Thankfully, OSXDaily has put together a helpful step by step guide to resolving 
 <p><code>sqlite3 ~/chat.db</code></p>
 <p>I run <code>.tables</code> to see what tables there are:</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>_SqliteDatabaseProperties</td>
-<td>kvtable</td>
-</tr>
-<tr>
-<td>attachment</td>
-<td>message</td>
-</tr>
-<tr>
-<td>chat</td>
-<td>message_attachment_join</td>
-</tr>
-<tr>
-<td>chat_handle_join</td>
-<td>message_processing_task</td>
-</tr>
-<tr>
-<td>chat_message_join</td>
-<td>sync_deleted_attachments</td>
-</tr>
-<tr>
-<td>deleted_messages</td>
-<td>sync_deleted_chats</td>
-</tr>
-<tr>
-<td>handle</td>
-<td>sync_deleted_messages</td>
-</tr>
-</tbody>
+	<thead>
+			<tr>
+					<th></th>
+					<th></th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>_SqliteDatabaseProperties</td>
+					<td>kvtable</td>
+			</tr>
+			<tr>
+					<td>attachment</td>
+					<td>message</td>
+			</tr>
+			<tr>
+					<td>chat</td>
+					<td>message_attachment_join</td>
+			</tr>
+			<tr>
+					<td>chat_handle_join</td>
+					<td>message_processing_task</td>
+			</tr>
+			<tr>
+					<td>chat_message_join</td>
+					<td>sync_deleted_attachments</td>
+			</tr>
+			<tr>
+					<td>deleted_messages</td>
+					<td>sync_deleted_chats</td>
+			</tr>
+			<tr>
+					<td>handle</td>
+					<td>sync_deleted_messages</td>
+			</tr>
+	</tbody>
 </table>
 <p>There are some interesting tables in there: <code>message</code> seems most important. It looks like we&rsquo;ll also be able to look up attachments using tables <code>attachment</code> and <code>message_attachment_join</code>. Strangely, there&rsquo;s a table present for deleted messages, which suggests a sort of &ldquo;trash can&rdquo; where messages are not permanently deleted immediately upon deletion.</p>
 <p><code>.schema message</code> is the command for viewing the schema of the message table.
@@ -832,7 +836,7 @@ details.addEventListener("toggle", event => {
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+<script src="/js/academic.min.01af32edc9a00e9a188425fb55cdbd62.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

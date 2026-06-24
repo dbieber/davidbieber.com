@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>software on David Bieber</title>
+    <title>Software on David Bieber</title>
     <link>https://davidbieber.com/tags/software/</link>
-    <description>Recent content in software on David Bieber</description>
+    <description>Recent content in Software on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
@@ -37,14 +37,14 @@
 &lt;p&gt;To enter notes via &lt;em&gt;text&lt;/em&gt;, type them. Press enter to commit a note. Press shift-backspace to clear the currently typed text. When internet connectivity becomes available, your notes will be uploaded to your central note-taking system.&lt;/p&gt;
 &lt;p&gt;Taking notes by audio is great for driving, or for whenever speaking better suits your way of thinking than typing. Being able to seamlessly go back and forth between speaking and typing can be liberating, allowing for alternating different kinds of thinking.&lt;/p&gt;
 &lt;p&gt;The system is compact and portable.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;gonotego-front.jpg&#34; alt=&#34;Photo of Go Note Go illustrating it is compact and portable.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/projects/go-note-go/gonotego-front.jpg&#34; alt=&#34;Photo of Go Note Go illustrating it is compact and portable.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;It velcros to the passenger side of the car dashboard. It can be used there, or placed on a passenger’s lap during use, or even on the driver’s lap at a rest stop, waiting in line at a drive-thru, or while parked.&lt;/p&gt;
 &lt;p&gt;It can be powered by the car by USB-C, or by battery pack for use on the go (or from a laptop or outlet USB port, if that better suits your use).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;gonotego-dashboard.jpg&#34; alt=&#34;Photo of Go Note Go on the passenger side of the car dashboard.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/projects/go-note-go/gonotego-dashboard.jpg&#34; alt=&#34;Photo of Go Note Go on the passenger side of the car dashboard.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You can lie down with it and type or talk.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;gonotego-soft.jpg&#34; alt=&#34;Photo of Go Note Go on a sofa.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/projects/go-note-go/gonotego-soft.jpg&#34; alt=&#34;Photo of Go Note Go on a sofa.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Or throw it in your sports bag to take notes on the game!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;gonotego-gym-bag.jpg&#34; alt=&#34;Photo of Go Note Go in a gym bag.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/projects/go-note-go/gonotego-gym-bag.jpg&#34; alt=&#34;Photo of Go Note Go in a gym bag.&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;how-do-you-use-go-note-go-in-the-shower&#34;&gt;How do you use Go Note Go in the shower?&lt;/h3&gt;
 &lt;p&gt;To use Go Note Go in the shower, acquire a waterproof Bluetooth enabled keyboard, and pair it with your Go Note Go Raspberry Pi 400. Go ahead and leave that waterproof keyboard in your shower.&lt;/p&gt;
 &lt;p&gt;For an improved experience, also acquire a waterproof Bluetooth speaker for your shower, and pair this with the Pi as well.&lt;/p&gt;
@@ -86,14 +86,14 @@
 &lt;h3 id=&#34;how-can-i-try-it-out&#34;&gt;How can I try it out?&lt;/h3&gt;
 &lt;p&gt;The hardware components used are listed on the 
 &lt;a href=&#34;https://github.com/dbieber/GoNoteGo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub page&lt;/a&gt;. There&amp;rsquo;s no getting started guide yet, so if you are trying it out, don&amp;rsquo;t hesitate to reach out for guidance around the rough edges.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Two points define a line, right? &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Two points define a line, right?&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -141,7 +141,8 @@
       <guid>https://davidbieber.com/projects/python-fire/</guid>
       
       <description>&lt;p&gt;Python Fire is a Python library for automatically creating command line interfaces (CLIs) from absolutely any Python object.&lt;/p&gt;
-&lt;p&gt;Check it out at &lt;a href=&#34;https://github.com/google/python-fire&#34;&gt;https://github.com/google/python-fire&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Check it out at 
+&lt;a href=&#34;https://github.com/google/python-fire&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/google/python-fire&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I originally wrote Python Fire after joining Google Brain in 2016. In March 2017 we open sourced the project, and I am proud and delighted by the growth and reception it has seen since.&lt;/p&gt;
 &lt;p&gt;To give it a try, simply &lt;code&gt;pip install fire&lt;/code&gt;, and then call &lt;code&gt;fire.Fire()&lt;/code&gt; as the main of any Python program.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s a simple example to pique your interest, and then if you want to learn more, you should read the 
@@ -201,7 +202,7 @@ $ python gcdfire.py 34 90
 &lt;p&gt;Notably, you can keep your eyes closed while you use it.&lt;/p&gt;
 &lt;p&gt;The shell is controlled by typing and the only output is audio; there are no visual components of shh. It is designed to minimize the mental energy required for use, to avoid disturbing your attempt at sleep as much as possible.&lt;/p&gt;
 &lt;h3 id=&#34;why-is-it-called-shh-shell&#34;&gt;Why is it called shh shell?&lt;/h3&gt;
-&lt;p&gt;It&amp;rsquo;s a play on &amp;ldquo;ssh&amp;rdquo;, a common unix utility that stands for &amp;ldquo;secure shell&amp;rdquo;. shh (prounced in a whisper, &amp;ldquo;shhh&amp;hellip;&amp;quot;) is a quiet shell that takes minimal mental energy to use, great for use while you&amp;rsquo;re drifting off to sleep.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a play on &amp;ldquo;ssh&amp;rdquo;, a common unix utility that stands for &amp;ldquo;secure shell&amp;rdquo;. shh (prounced in a whisper, &amp;ldquo;shhh&amp;hellip;&amp;rdquo;) is a quiet shell that takes minimal mental energy to use, great for use while you&amp;rsquo;re drifting off to sleep.&lt;/p&gt;
 &lt;h3 id=&#34;what-can-the-shh-shell-do&#34;&gt;What can the shh shell do?&lt;/h3&gt;
 &lt;p&gt;My primary use of the shh shell is leaving notes for myself. I also use shh to set peaceful YouTube music alarms for myself, and to check the time without needing to open my eyes.&lt;/p&gt;
 &lt;p&gt;Here is the full list (as of 2015-11-28) of my uses of shh shell, past and present:&lt;/p&gt;
@@ -384,7 +385,9 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
 &lt;p&gt;Go ahead and register a new Twitter account. I called mine &amp;ldquo;@PrivateBieber6&amp;rdquo; since my main account is just @Bieber. You can call yours whatever you like!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fplayground%2FiWU9fP2Eji.png?alt=media&amp;amp;token=25592447-c25f-4027-a68b-7a70d0275bd9&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll have to provide a phone number or email address while registering. If you reuse a phone number from an existing account, it will work, but you&amp;rsquo;ll lose the ability to use SMS commands and receive SMS notifications on your main account. Only the account most recently linked to this phone number will have these features.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Pro-tip:&lt;/strong&gt; you can add a plus (&amp;quot;+&amp;quot;) string to your email address to turn in into a new email address that still gets delivered to your inbox. E.g. mail to &lt;a href=&#34;mailto:david810+hello@gmail.com&#34;&gt;david810+hello@gmail.com&lt;/a&gt; still gets delivered to &lt;a href=&#34;mailto:david810@gmail.com&#34;&gt;david810@gmail.com&lt;/a&gt; (feel free to say hello).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pro-tip:&lt;/strong&gt; you can add a plus (&amp;quot;+&amp;quot;) string to your email address to turn in into a new email address that still gets delivered to your inbox. E.g. mail to 
+&lt;a href=&#34;mailto:david810&amp;#43;hello@gmail.com&#34;&gt;david810+hello@gmail.com&lt;/a&gt; still gets delivered to 
+&lt;a href=&#34;mailto:david810@gmail.com&#34;&gt;david810@gmail.com&lt;/a&gt; (feel free to say hello).&lt;/p&gt;
 &lt;p&gt;Once you&amp;rsquo;ve created your new account, two important things to do:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -397,7 +400,8 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
 &lt;/ol&gt;
 &lt;p&gt;With this enabled, you&amp;rsquo;ll be the only one able to see the tweets from this account.&lt;/p&gt;
 &lt;h2 id=&#34;step-2-get-your-developer-api-keys&#34;&gt;Step 2: Get your developer API keys&lt;/h2&gt;
-&lt;p&gt;First you need to apply for a developer account. This just takes a minute. Go to &lt;a href=&#34;https://developer.twitter.com/en/apply-for-access&#34;&gt;https://developer.twitter.com/en/apply-for-access&lt;/a&gt; to apply for a developer account. Answer the questions honestly. Ping me on Twitter if any of the questions are unclear.&lt;/p&gt;
+&lt;p&gt;First you need to apply for a developer account. This just takes a minute. Go to 
+&lt;a href=&#34;https://developer.twitter.com/en/apply-for-access&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://developer.twitter.com/en/apply-for-access&lt;/a&gt; to apply for a developer account. Answer the questions honestly. Ping me on Twitter if any of the questions are unclear.&lt;/p&gt;
 &lt;p&gt;Once you have a developer account, create a new project and app. I called mine &amp;ldquo;Attention Playground.&amp;rdquo; Get creative! Choose a fun name.&lt;/p&gt;
 &lt;p&gt;Navigate to your newly created app, and Edit the &amp;ldquo;App permissions&amp;rdquo;. Set the app permissions to &amp;ldquo;Read and Write&amp;rdquo;. This will enable your bot to post tweets.&lt;/p&gt;
 &lt;p&gt;Next navigate to the project you created, and click the key icon next to your App.&lt;/p&gt;
@@ -438,7 +442,8 @@ def choose_message():
 &lt;p&gt;We&amp;rsquo;re going to write a more interesting tweet generator that pulls tweets out of a Roam Research database.&lt;/p&gt;
 &lt;p&gt;To do this, first set up a recurring json backup of your Roam Research database. You can use the project 
 &lt;a href=&#34;https://github.com/everruler12/roam2github-demo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;roam2github&lt;/a&gt; to set up the backup. There are detailed instructions on its github page for how to do this. You also have the option of using Roam&amp;rsquo;s built-in automatic backups, which you access from the command palette (cmd-P).&lt;/p&gt;
-&lt;p&gt;Use git to clone your backup locally. If your github repo is &amp;ldquo;&lt;a href=&#34;https://github.com/user/roam-backup%22,&#34;&gt;https://github.com/user/roam-backup&amp;quot;,&lt;/a&gt; then the command to clone the repo is &lt;code&gt;git clone https://github.com/dbieber/roam-backup&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Use git to clone your backup locally. If your github repo is &amp;ldquo;
+&lt;a href=&#34;https://github.com/user/roam-backup%22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/user/roam-backup&#34;&lt;/a&gt;, then the command to clone the repo is &lt;code&gt;git clone https://github.com/dbieber/roam-backup&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Create roam.py. You can 
 &lt;a href=&#34;https://gist.github.com/dbieber/7722280c7fa10d1fdfa507612427001d&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;copy the contents of roam.py from here&lt;/a&gt;. This will allow us to pull the latest backup of our Roam database from GitHub programmatically. (1) Set the ROAMRESEARCH_DBPATH variable in roam.py to the location of json backup in your roam-backup directory. For me, this is &amp;lsquo;/Users/dbieber/code/github/dbieber/roam-backup/json/playground.json&amp;rsquo;. (2) Set the roam_dir variable in the update function to the path to your roam-backup directory. For me, this is &amp;lsquo;/Users/dbieber/code/github/dbieber/roam-backup&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;Using the new roam module we just created, it&amp;rsquo;s time to write a function that extracts potential tweets from your Roam database. Here&amp;rsquo;s the function I use:&lt;/p&gt;
@@ -564,14 +569,14 @@ directory=/Users/dbieber/code/playground/private-bieber-twitter
 &lt;p&gt;Hopefully this guide makes it clear how you can use a private Twitter bot to reclaim your attention. The main contribution of this guide is its emphasis on using a private Twitter bot to design your own personal Twitter feed. We selected Roam Research backups as the source of tweets for our bot, but of course you can substitute Roam with any tweet generator that you please.&lt;/p&gt;
 &lt;p&gt;You can use a bot like this for revisiting old ideas, for surfacing your TODOs when you&amp;rsquo;re distracted, for sending yourself messages, or anything else you come up with.&lt;/p&gt;
 &lt;p&gt;Since making myself a private Twitter bot one month ago, I&amp;rsquo;ve been delighted to find that its tweets are often among the highest quality on my timeline. I hope you find the same.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;When it says that using a virtual environment is optional, know that it&amp;rsquo;s definitely worthwhile! &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;When it says that using a virtual environment is optional, know that it&amp;rsquo;s definitely worthwhile!&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     

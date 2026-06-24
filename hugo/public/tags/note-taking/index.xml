@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>note-taking on David Bieber</title>
+    <title>Note-Taking on David Bieber</title>
     <link>https://davidbieber.com/tags/note-taking/</link>
-    <description>Recent content in note-taking on David Bieber</description>
+    <description>Recent content in Note-Taking on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/note-taking/index.xml" rel="self" type="application/rss+xml" />
@@ -423,7 +423,7 @@ I have not yet seen a shower microphone suitable for capturing audio thoughts in
 &lt;p&gt;Here is a photo from 2015 of 
 &lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;Shh Shell (Go Note Go&amp;rsquo;s predecessor)&lt;/a&gt; set up in my shower in California.
 The keyboard is on the ledge to the right of the shower speaker.
-&lt;img src=&#34;shower-keyboard.jpeg&#34; alt=&#34;A picture of my shower in California from 2015. The Shh Shell keyboard sits on the windowsill next to a Bluetooth speaker. There&amp;rsquo;s a 3D printed shaving cream holder mounted to the soap dish below.&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://davidbieber.com/snippets/2023-01-16-go-note-go-features/shower-keyboard.jpeg&#34; alt=&#34;A picture of my shower in California from 2015. The Shh Shell keyboard sits on the windowsill next to a Bluetooth speaker. There’s a 3D printed shaving cream holder mounted to the soap dish below.&#34;&gt;&lt;/p&gt;
 &lt;/details&gt;
 &lt;script&gt;
   var expandButton = document.getElementById(&#39;expand-button&#39;);
@@ -509,7 +509,7 @@ Go Note Go&amp;rsquo;s main capability &amp;ndash; capturing my thoughts &amp;nd
 If I have an anxious thought swirling in my brain, I can simply type it into Go Note Go.
 Instead of dozens of versions of the thought popping up in my head all night, I have just a single canonical version of the thought stored on the device, and I can fall asleep.&lt;/p&gt;
 &lt;p&gt;Go Note Go also supports commands, like reading the time out loud.
-Entering a line that starts with a colon (&#39;:&#39;) issues a command.
+Entering a line that starts with a colon (&amp;rsquo;:&amp;rsquo;) issues a command.
 Typing :r has it read back the last thing I wrote.
 Typing :t will have it read the time to me.
 I like this because it lets me know the time without having to open my eyes, so getting the time doesn&amp;rsquo;t require being alert&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
@@ -755,18 +755,18 @@ like letting me
 &lt;p&gt;With the AI assistant added in, however, I feel like I have a new superpower. I can offload computation from my brain to it, and explore worlds of thought I could never have entered on my own.&lt;/p&gt;
 &lt;p&gt;Go Note Go is also 
 &lt;a href=&#34;https://github.com/dbieber/GoNoteGo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;completely open source&lt;/a&gt;. I encourage the hacker-tinkerers among you to join me in the world of headless computing and try it for yourself.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;Anything I type on this keyboard gets automatically uploaded to my notes as soon as the keyboard is in range of wifi. This allows for offline usage, e.g. while driving or camping. These were the two use-cases that inspired me to build the device. Now my main use-case is capturing ideas while drifting off to sleep.
-It also has a microphone, so if speaking feels like it would take less energy than talking, I can speak my notes instead. This feature is what enables the driving use case, as of course I don&amp;rsquo;t type while I drive! &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+It also has a microphone, so if speaking feels like it would take less energy than talking, I can speak my notes instead. This feature is what enables the driving use case, as of course I don&amp;rsquo;t type while I drive!&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;If I prefer speaking, I can also trigger these commands with the hot word &amp;ldquo;go go&amp;rdquo;, e.g. saying &amp;ldquo;go go time&amp;rdquo; gets the time. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;If I prefer speaking, I can also trigger these commands with the hot word &amp;ldquo;go go&amp;rdquo;, e.g. saying &amp;ldquo;go go time&amp;rdquo; gets the time.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -821,12 +821,12 @@ Does my dentist like table tennis?
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h4 id=&#34;integration-with-specialized-systems&#34;&gt;Integration with Specialized Systems&lt;/h4&gt;
 &lt;p&gt;One of the key reasons ontologies are useful is they allow for specialized systems to access the information stored in the ontology/notes, in order to provide a quality domain-specific experience using the data from the notes.&lt;/p&gt;
-&lt;p&gt;This could take the form of a specialized contacts view of the contacts data found in your notes. It could be a specialized calendar view of time-annotated data in your notes. It could be the shopping experience I described in a footnote, which uses your contacts&#39; interests to surface gift suggestions. The possibilities are numerous.&lt;/p&gt;
+&lt;p&gt;This could take the form of a specialized contacts view of the contacts data found in your notes. It could be a specialized calendar view of time-annotated data in your notes. It could be the shopping experience I described in a footnote, which uses your contacts&amp;rsquo; interests to surface gift suggestions. The possibilities are numerous.&lt;/p&gt;
 &lt;p&gt;If search is robust (and it&amp;rsquo;s not totally clear that LLM search is going to be robust enough, but I suspect that it will be), then the data access requirements for these specialized integrations could be satisfied by the search described in the preceding section.&lt;/p&gt;
 &lt;p&gt;Two ways to think about this:
 (1) The specialized system issues queries &amp;ndash; possibly even natural language queries &amp;ndash; about the notebase. It gets structured results back. It uses the structured results to render the specialized domain-specific experience.
 (2) The raw text in &lt;mark&gt;the note-base is being projected onto a temporary domain-specific ontology just for the specialized system&lt;/mark&gt;. E.g. the shopping experience might require an ontology where each Person has interests, while a separate job matching system might require an ontology where each Person has an educational background. Using the magic of LLMs, the raw text data is projected into the structured ontology needed by each system. But there&amp;rsquo;s no &amp;ldquo;one&amp;rdquo; ontology living in the note-base that the note-taker needs to maintain.&lt;/p&gt;
-&lt;p&gt;Maybe these two ways are actually the same. 🤷&lt;/p&gt;
+&lt;p&gt;Maybe these two ways are actually the same. &amp;#x1f937;&lt;/p&gt;
 &lt;p&gt;At this point we&amp;rsquo;ve seen the first place where ontologies are useful even in this raw-text focused LLM-centric world. I&amp;rsquo;ve &lt;mark&gt;highlighted&lt;/mark&gt; it. We&amp;rsquo;ll come back to it shortly.&lt;/p&gt;
 &lt;h4 id=&#34;auto-complete--templating&#34;&gt;Auto-complete / Templating&lt;/h4&gt;
 &lt;p&gt;We come now to one of the main value-adds of an ontology: having a nice template to fill in about an object. Do we lose this in a raw-text LLM-centric world? By default, yes. But we can (very likely) use LLM-ish tech to implement an auto-complete / templating feature, arguably one that&amp;rsquo;s (in some ways) better than we get in an ontology-centric world.&lt;/p&gt;
@@ -841,24 +841,24 @@ The search and integrations are going to work just fine whether the field is cal
 &lt;p&gt;Looking back over the &lt;mark&gt;highlighted&lt;/mark&gt; text, we can see that there are at least two places where explicit ontologies remain useful even in a raw-text focused LLM-centric world (that is, in a note-base full of raw text, not backed by an explicit ontology).&lt;/p&gt;
 &lt;p&gt;The first was during querying for domain-specific experiences. There we saw the value of having the raw text in the note-base projected onto a temporary domain-specific ontology just for a specialized system.&lt;/p&gt;
 &lt;p&gt;The second was for templating/auto-complete, one of the main values of an ontology. Using LLMs we can provide the appearance of there being an ontology without the note-base actually being backed by an explicit ontology.&lt;/p&gt;
-&lt;p&gt;All of this relies on some amount of speculation about where our LLM&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; technology is going and what its coming capabilities will be. I&amp;rsquo;m happy to stand by this speculation, and happy to discuss.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;p&gt;All of this relies on some amount of speculation about where our LLM&lt;sup id=&#34;fnref1:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; technology is going and what its coming capabilities will be. I&amp;rsquo;m happy to stand by this speculation, and happy to discuss.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Bear in mind I&amp;rsquo;ve used neither of these systems! Take my thoughts with grains of salt. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Bear in mind I&amp;rsquo;ve used neither of these systems! Take my thoughts with grains of salt.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;I just chose a random example. But anyway, the idea is that you might build a shopping widget that uses the data about your contacts&#39; preferences to surface gift ideas for them while you&amp;rsquo;re shopping. The ontology way to do this is for each Person in your notes to have a Likes or Interests field, which the shopping experience can access. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;I just chose a random example. But anyway, the idea is that you might build a shopping widget that uses the data about your contacts&amp;rsquo; preferences to surface gift ideas for them while you&amp;rsquo;re shopping. The ontology way to do this is for each Person in your notes to have a Likes or Interests field, which the shopping experience can access.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;I was planning on squeezing a reference to &amp;ldquo;Factory factories&amp;rdquo; into this section, but then it didn&amp;rsquo;t fit in, so just sticking this in a footnote. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;I was planning on squeezing a reference to &amp;ldquo;Factory factories&amp;rdquo; into this section, but then it didn&amp;rsquo;t fit in, so just sticking this in a footnote.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;I&amp;rsquo;m using the term large language model here in a loose sense. I basically mean tech largely dependent on deep learning, including advances expected to come in the next few years. It&amp;rsquo;s easier to just say LLM though, even though that oversimplifies. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
+&lt;p&gt;I&amp;rsquo;m using the term large language model here in a loose sense. I basically mean tech largely dependent on deep learning, including advances expected to come in the next few years. It&amp;rsquo;s easier to just say LLM though, even though that oversimplifies.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -927,7 +927,7 @@ So, having this &amp;ldquo;approve for delayed send&amp;rdquo; model for dealing
 Keeping up with 200 messages per hour isn&amp;rsquo;t even desirable. Why? It&amp;rsquo;s not that it&amp;rsquo;s a lot of noise &amp;ndash; though sometimes there is a lot of noise.
 But even when there&amp;rsquo;s a lot of high quality interesting fun messages, it&amp;rsquo;s not stuff I&amp;rsquo;m actively looking to read or learn about or people that I&amp;rsquo;m choosing to keep in touch with. Instead, it&amp;rsquo;s whatever the group collectively has steered toward.
 I&amp;rsquo;d rather be more intentional about what I read and discuss, rather than being at the whims of 200+ people, many of whom I haven&amp;rsquo;t met.
-However, there is tension between that desire for intentionality and the desire to hear folks&#39; interesting ideas and share my own.
+However, there is tension between that desire for intentionality and the desire to hear folks&amp;rsquo; interesting ideas and share my own.
 Adding to the tension further is a natural inclination toward reading messages as they come in, because they&amp;rsquo;re attention-grabbing even if they aren&amp;rsquo;t where I&amp;rsquo;d like to place my focus.&lt;/p&gt;
 &lt;p&gt;The capabilities bit:
 Even if I decided I did want to stay abreast of the conversation, there&amp;rsquo;s simply too much to reasonably process.
@@ -1007,30 +1007,30 @@ However, sometimes being able to send something immediately is desirable, and th
 &lt;h3 id=&#34;roam-to-sheets-the-messager-queue&#34;&gt;Roam to Sheets: The Messager Queue&lt;/h3&gt;
 &lt;p&gt;Any messages in Roam (whether entered directly into Roam, or entered via Go Note Go), are automatically added to a spreadsheet, the &amp;ldquo;Messager Queue&amp;rdquo;. These are the spreadsheet&amp;rsquo;s columns:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Service&lt;/td&gt;
-&lt;td&gt;Recipient&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;Date&lt;/td&gt;
-&lt;td&gt;Time&lt;/td&gt;
-&lt;td&gt;Approval&lt;/td&gt;
-&lt;td&gt;Status&lt;/td&gt;
-&lt;td&gt;Metadata&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Service&lt;/td&gt;
+					&lt;td&gt;Recipient&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;Date&lt;/td&gt;
+					&lt;td&gt;Time&lt;/td&gt;
+					&lt;td&gt;Approval&lt;/td&gt;
+					&lt;td&gt;Status&lt;/td&gt;
+					&lt;td&gt;Metadata&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;The Messager Queue sheet is filtered by default to show all pending messages. For each message it shows the &lt;em&gt;Service&lt;/em&gt; on which it will be sent and well as the &lt;em&gt;Recipient&lt;/em&gt; of the message. The service can be one of FB Messenger, Twitter, iMessage, a Slack server, or Discord. The recipient can either be an individual, a list of individuals, a group, a Slack channel, or a Discord server and channel.&lt;/p&gt;
 &lt;p&gt;There&amp;rsquo;s also a sheet that lists aliases, so it&amp;rsquo;s easy to use a short name or informal name to refer to a longer service or recipient; e.g. I use &amp;ldquo;@Audio Tools&amp;rdquo; as a shorthand for sending to a group of 5 people on Messenger all interested in audio tools for networked thought.&lt;/p&gt;
@@ -1103,7 +1103,8 @@ Thank you for volunteering!
 By working together, we are assembling a dataset of thousands of in-context flashcards
 to help evaluate and improve future automatic flashcard generation projects.&lt;/p&gt;
 &lt;p&gt;To get started, install the Browserflow extension and the flow:
-&lt;a href=&#34;https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831&#34;&gt;https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831&lt;/a&gt;&lt;/p&gt;
+
+&lt;a href=&#34;https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Your help is requested in creating flashcards to populate the dataset.
 Please submit between 5 and 200 flashcards that you believe would be useful or interesting to you.
 The flow above will assist you in submitting flashcards to the dataset.&lt;/p&gt;
@@ -1254,7 +1255,7 @@ Since the number of search results is limited, this might not always work; it de
       <guid>https://davidbieber.com/snippets/2021-10-28-ml-and-automation-for-note-taking/</guid>
       
       <description>&lt;p&gt;Let&amp;rsquo;s consider machine learning first, and then automation. For each we brainstorm the potential value for note-taking.&lt;/p&gt;
-&lt;h3 id=&#34;the-value-of-markmachine-learningmark-for-note-taking&#34;&gt;The Value of &lt;mark&gt;Machine Learning&lt;/mark&gt; for Note-Taking&lt;/h3&gt;
+&lt;h3 id=&#34;the-value-of-machine-learning-for-note-taking&#34;&gt;The Value of &lt;mark&gt;Machine Learning&lt;/mark&gt; for Note-Taking&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Automatic &lt;strong&gt;transcription&lt;/strong&gt; of audio notes
 &lt;ul&gt;
@@ -1305,7 +1306,7 @@ Since the number of search results is limited, this might not always work; it de
 &lt;li&gt;&lt;strong&gt;Semantic search&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Conversational chat bots&lt;/strong&gt; for exploring the knowledge in a notebase&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;the-value-of-markautomationmark-for-note-taking&#34;&gt;The Value of &lt;mark&gt;Automation&lt;/mark&gt; for Note-Taking&lt;/h3&gt;
+&lt;h3 id=&#34;the-value-of-automation-for-note-taking&#34;&gt;The Value of &lt;mark&gt;Automation&lt;/mark&gt; for Note-Taking&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Share notes&lt;/strong&gt; with people via their preferred messaging platform&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Snooze notes&lt;/strong&gt; and ideas so you review them later&lt;/li&gt;
@@ -1324,7 +1325,7 @@ Since the number of search results is limited, this might not always work; it de
 &lt;li&gt;&lt;strong&gt;Publishing&lt;/strong&gt; of notes to a webpage (either publicly or privately), or to social media&lt;/li&gt;
 &lt;li&gt;New &lt;strong&gt;data entry&lt;/strong&gt; mechanisms: &lt;strong&gt;Go Note Go&lt;/strong&gt;, terminal, email, text, browsing history, location history, terminal history, IoT devices, etc&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Spaced repetition&lt;/strong&gt; for studying&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Inactivity reminders&lt;/strong&gt; (e.g. &amp;ldquo;it&amp;rsquo;s been three months since you&amp;rsquo;ve done a music activity&amp;rdquo;, or &amp;ldquo;it&amp;rsquo;s been over 6 months since you&amp;rsquo;ve spoken with David Dohan&amp;rdquo;, or &amp;ldquo;it&amp;rsquo;s been over a year since you&amp;rsquo;ve written about microbiology.&amp;quot;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inactivity reminders&lt;/strong&gt; (e.g. &amp;ldquo;it&amp;rsquo;s been three months since you&amp;rsquo;ve done a music activity&amp;rdquo;, or &amp;ldquo;it&amp;rsquo;s been over 6 months since you&amp;rsquo;ve spoken with David Dohan&amp;rdquo;, or &amp;ldquo;it&amp;rsquo;s been over a year since you&amp;rsquo;ve written about microbiology.&amp;rdquo;)&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -1345,7 +1346,7 @@ Since the number of search results is limited, this might not always work; it de
 &lt;p&gt;This is critical for projects like 
 &lt;a href=&#34;https://davidbieber.com/snippets/2021-07-29-note-taking-flow/&#34;&gt;my Browserflow note-taking flows&lt;/a&gt; (which only support Roam right now) and 
 &lt;a href=&#34;https://davidbieber.com/projects/go-note-go/&#34;&gt;Go Note Go&lt;/a&gt; to be multi-vendor.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&amp;ldquo;Restricted note entry&amp;rdquo;&lt;/strong&gt; allows an application like Go Note Go to insert notes into an application-specific section of the notes. In a &amp;ldquo;daily notes&amp;rdquo; oriented notebase like Roam, this is a &amp;ldquo;Go Note Go&amp;rdquo;-specific section on each daily notes page. In a page-oriented notebase, this can instead be an application specific page or namespace (e.g. &amp;ldquo;Go Note Go/*&amp;quot;) that notes can be inserted into. When using restricted note entry, an application can only insert notes into their own region of the notebase. This prevents the application from performing disruptive insertions that lower the quality of the notes outside of this region.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;ldquo;Restricted note entry&amp;rdquo;&lt;/strong&gt; allows an application like Go Note Go to insert notes into an application-specific section of the notes. In a &amp;ldquo;daily notes&amp;rdquo; oriented notebase like Roam, this is a &amp;ldquo;Go Note Go&amp;rdquo;-specific section on each daily notes page. In a page-oriented notebase, this can instead be an application specific page or namespace (e.g. &amp;ldquo;Go Note Go/*&amp;rdquo;) that notes can be inserted into. When using restricted note entry, an application can only insert notes into their own region of the notebase. This prevents the application from performing disruptive insertions that lower the quality of the notes outside of this region.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Unrestricted note entry&lt;/strong&gt; allows an application to perform a broader set of inserts, not limited to a specific region of the notes. For a note-taking entry system that also allows browsing the notes, where a user might want to insert new notes alongside an existing note they&amp;rsquo;ve pulled up, this becomes important.&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Note reading&lt;/li&gt;
@@ -1458,9 +1459,12 @@ if the user likes the summary, they accept it. When accepted, the feature insert
 &lt;/ul&gt;
 &lt;h2 id=&#34;the-dependency-flows-needed-to-check-it-out-are&#34;&gt;The dependency flows needed to check it out are:&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&#34;&gt;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&#34;&gt;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&#34;&gt;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;To try out the flow, you&amp;rsquo;ll need Browserflow, an open Roam tab, and all four flows linked in this snippet. Run the first flow (&amp;ldquo;Roam: Highlights&amp;rdquo;) on a web page (with Roam open in a different tab in the same window). Highlight some text, (say, the words &amp;ldquo;some text&amp;rdquo; in this sentence), and hit enter. You can try any of the shortcuts listed above. Notice as the flow copies your selection into your daily notes organized by time and website.&lt;/p&gt;
 </description>

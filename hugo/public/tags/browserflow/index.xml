@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>browserflow on David Bieber</title>
+    <title>Browserflow on David Bieber</title>
     <link>https://davidbieber.com/tags/browserflow/</link>
-    <description>Recent content in browserflow on David Bieber</description>
+    <description>Recent content in Browserflow on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/browserflow/index.xml" rel="self" type="application/rss+xml" />
@@ -155,30 +155,30 @@ However, sometimes being able to send something immediately is desirable, and th
 &lt;h3 id=&#34;roam-to-sheets-the-messager-queue&#34;&gt;Roam to Sheets: The Messager Queue&lt;/h3&gt;
 &lt;p&gt;Any messages in Roam (whether entered directly into Roam, or entered via Go Note Go), are automatically added to a spreadsheet, the &amp;ldquo;Messager Queue&amp;rdquo;. These are the spreadsheet&amp;rsquo;s columns:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Service&lt;/td&gt;
-&lt;td&gt;Recipient&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;Date&lt;/td&gt;
-&lt;td&gt;Time&lt;/td&gt;
-&lt;td&gt;Approval&lt;/td&gt;
-&lt;td&gt;Status&lt;/td&gt;
-&lt;td&gt;Metadata&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Service&lt;/td&gt;
+					&lt;td&gt;Recipient&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;Date&lt;/td&gt;
+					&lt;td&gt;Time&lt;/td&gt;
+					&lt;td&gt;Approval&lt;/td&gt;
+					&lt;td&gt;Status&lt;/td&gt;
+					&lt;td&gt;Metadata&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;The Messager Queue sheet is filtered by default to show all pending messages. For each message it shows the &lt;em&gt;Service&lt;/em&gt; on which it will be sent and well as the &lt;em&gt;Recipient&lt;/em&gt; of the message. The service can be one of FB Messenger, Twitter, iMessage, a Slack server, or Discord. The recipient can either be an individual, a list of individuals, a group, a Slack channel, or a Discord server and channel.&lt;/p&gt;
 &lt;p&gt;There&amp;rsquo;s also a sheet that lists aliases, so it&amp;rsquo;s easy to use a short name or informal name to refer to a longer service or recipient; e.g. I use &amp;ldquo;@Audio Tools&amp;rdquo; as a shorthand for sending to a group of 5 people on Messenger all interested in audio tools for networked thought.&lt;/p&gt;
@@ -475,7 +475,8 @@ Thank you for volunteering!
 By working together, we are assembling a dataset of thousands of in-context flashcards
 to help evaluate and improve future automatic flashcard generation projects.&lt;/p&gt;
 &lt;p&gt;To get started, install the Browserflow extension and the flow:
-&lt;a href=&#34;https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831&#34;&gt;https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831&lt;/a&gt;&lt;/p&gt;
+
+&lt;a href=&#34;https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/1b2b5231-5f96-4f73-87a6-006626fa3831&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Your help is requested in creating flashcards to populate the dataset.
 Please submit between 5 and 200 flashcards that you believe would be useful or interesting to you.
 The flow above will assist you in submitting flashcards to the dataset.&lt;/p&gt;
@@ -583,9 +584,12 @@ If instead I push &amp;ldquo;b&amp;rdquo;, it copies the full paragraph containi
 &lt;/ul&gt;
 &lt;h2 id=&#34;the-dependency-flows-needed-to-check-it-out-are&#34;&gt;The dependency flows needed to check it out are:&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&#34;&gt;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&#34;&gt;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&#34;&gt;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/ba6eb2f0-a3d1-4bc3-9f21-5ca18af0b247&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/486ef3eb-8d2b-48bf-8fee-22963dc74b88&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://browserflow.app/shared/8e066128-2f87-468f-842f-3f006f0a2e71&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;To try out the flow, you&amp;rsquo;ll need Browserflow, an open Roam tab, and all four flows linked in this snippet. Run the first flow (&amp;ldquo;Roam: Highlights&amp;rdquo;) on a web page (with Roam open in a different tab in the same window). Highlight some text, (say, the words &amp;ldquo;some text&amp;rdquo; in this sentence), and hit enter. You can try any of the shortcuts listed above. Notice as the flow copies your selection into your daily notes organized by time and website.&lt;/p&gt;
 </description>
@@ -783,14 +787,14 @@ await createChildBlock(urls, $url)
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;Really it&amp;rsquo;s (3) that sets it apart. The attention to detail in the product is impressive. Thanks DK.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;My experience with Tampermonkey is limited, so take this with some salt. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;My experience with Tampermonkey is limited, so take this with some salt.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     

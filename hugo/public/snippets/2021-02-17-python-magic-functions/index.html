@@ -32,9 +32,10 @@
   
     
   
-  <meta name="description" content="In this snippet I introduce and implement, but do not condone, Python &ldquo;Magic functions&rdquo;. Magic functions are interesting to think about and to study, but I discourage their use in anything but the most experimental of code. You&rsquo;ll soon see why.
+  <meta name="description" content="In this snippet I introduce and implement, but do not condone, Python &ldquo;Magic functions&rdquo;.
+Magic functions are interesting to think about and to study, but I discourage their use in anything but the most experimental of code. You&rsquo;ll soon see why.
 A magic function is a function where the arguments and return values are both implicit, handled through the magic of Python&rsquo;s powerful stack introspection.
-Consider the following example, which implements the quadratic formula.">
+Consider the following example, which implements the quadratic formula. Pay special attention to where quadratic_formula is called. No arguments are passed, and the result is not assigned to anything. Still, the program works.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-02-17-python-magic-functions/">
@@ -254,8 +255,8 @@ Consider the following example, which implements the quadratic formula.">
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_3442a5ec1975e9c2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_f8848e5bff6e4686.png">
 
   <link rel="canonical" href="https://davidbieber.com/snippets/2021-02-17-python-magic-functions/">
 
@@ -276,9 +277,10 @@ Consider the following example, which implements the quadratic formula.">
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/snippets/2021-02-17-python-magic-functions/">
   <meta property="og:title" content="Magic Functions in Python | David Bieber">
-  <meta property="og:description" content="In this snippet I introduce and implement, but do not condone, Python &ldquo;Magic functions&rdquo;. Magic functions are interesting to think about and to study, but I discourage their use in anything but the most experimental of code. You&rsquo;ll soon see why.
+  <meta property="og:description" content="In this snippet I introduce and implement, but do not condone, Python &ldquo;Magic functions&rdquo;.
+Magic functions are interesting to think about and to study, but I discourage their use in anything but the most experimental of code. You&rsquo;ll soon see why.
 A magic function is a function where the arguments and return values are both implicit, handled through the magic of Python&rsquo;s powerful stack introspection.
-Consider the following example, which implements the quadratic formula."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+Consider the following example, which implements the quadratic formula. Pay special attention to where quadratic_formula is called. No arguments are passed, and the result is not assigned to anything. Still, the program works."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
@@ -597,7 +599,7 @@ Nevertheless, I will explain the situation that prompted me to write this module
 <p>The trouble with hooks in this situation is that they require either very long argument lists, or bundling of many arguments into a single argument. If different functions need different bundles of arguments, the bundling approach can be quite cumbersome. Also, if two hooks wish to communicate with one another, that needs to be accommodated too. Magic functions provide one mechanism for dealing with this complexity. Different magic hooks can make use of different parts of the training loop&rsquo;s state. A magic hook can also use state set by another hook.
 While this approach does satisfactorily address the complexity of writing a training loop library,
 I must stress that I do not recommend this approach.</p>
-<p>As with real magic, use <code>magic</code> at your own peril. 🧙‍♀️ 😉</p>
+<p>As with real magic, use <code>magic</code> at your own peril. &#x1f9d9; &#x1f609;</p>
 
     </div>
 
@@ -828,7 +830,7 @@ details.addEventListener("toggle", event => {
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+<script src="/js/academic.min.01af32edc9a00e9a188425fb55cdbd62.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

@@ -68,30 +68,30 @@ However, sometimes being able to send something immediately is desirable, and th
 &lt;h3 id=&#34;roam-to-sheets-the-messager-queue&#34;&gt;Roam to Sheets: The Messager Queue&lt;/h3&gt;
 &lt;p&gt;Any messages in Roam (whether entered directly into Roam, or entered via Go Note Go), are automatically added to a spreadsheet, the &amp;ldquo;Messager Queue&amp;rdquo;. These are the spreadsheet&amp;rsquo;s columns:&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Service&lt;/td&gt;
-&lt;td&gt;Recipient&lt;/td&gt;
-&lt;td&gt;Text&lt;/td&gt;
-&lt;td&gt;Date&lt;/td&gt;
-&lt;td&gt;Time&lt;/td&gt;
-&lt;td&gt;Approval&lt;/td&gt;
-&lt;td&gt;Status&lt;/td&gt;
-&lt;td&gt;Metadata&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Service&lt;/td&gt;
+					&lt;td&gt;Recipient&lt;/td&gt;
+					&lt;td&gt;Text&lt;/td&gt;
+					&lt;td&gt;Date&lt;/td&gt;
+					&lt;td&gt;Time&lt;/td&gt;
+					&lt;td&gt;Approval&lt;/td&gt;
+					&lt;td&gt;Status&lt;/td&gt;
+					&lt;td&gt;Metadata&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;The Messager Queue sheet is filtered by default to show all pending messages. For each message it shows the &lt;em&gt;Service&lt;/em&gt; on which it will be sent and well as the &lt;em&gt;Recipient&lt;/em&gt; of the message. The service can be one of FB Messenger, Twitter, iMessage, a Slack server, or Discord. The recipient can either be an individual, a list of individuals, a group, a Slack channel, or a Discord server and channel.&lt;/p&gt;
 &lt;p&gt;There&amp;rsquo;s also a sheet that lists aliases, so it&amp;rsquo;s easy to use a short name or informal name to refer to a longer service or recipient; e.g. I use &amp;ldquo;@Audio Tools&amp;rdquo; as a shorthand for sending to a group of 5 people on Messenger all interested in audio tools for networked thought.&lt;/p&gt;
@@ -381,7 +381,7 @@ useful both for programmers and automation builders, and for people who simply w
       <guid>https://davidbieber.com/snippets/2021-10-28-ml-and-automation-for-note-taking/</guid>
       
       <description>&lt;p&gt;Let&amp;rsquo;s consider machine learning first, and then automation. For each we brainstorm the potential value for note-taking.&lt;/p&gt;
-&lt;h3 id=&#34;the-value-of-markmachine-learningmark-for-note-taking&#34;&gt;The Value of &lt;mark&gt;Machine Learning&lt;/mark&gt; for Note-Taking&lt;/h3&gt;
+&lt;h3 id=&#34;the-value-of-machine-learning-for-note-taking&#34;&gt;The Value of &lt;mark&gt;Machine Learning&lt;/mark&gt; for Note-Taking&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Automatic &lt;strong&gt;transcription&lt;/strong&gt; of audio notes
 &lt;ul&gt;
@@ -432,7 +432,7 @@ useful both for programmers and automation builders, and for people who simply w
 &lt;li&gt;&lt;strong&gt;Semantic search&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Conversational chat bots&lt;/strong&gt; for exploring the knowledge in a notebase&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;the-value-of-markautomationmark-for-note-taking&#34;&gt;The Value of &lt;mark&gt;Automation&lt;/mark&gt; for Note-Taking&lt;/h3&gt;
+&lt;h3 id=&#34;the-value-of-automation-for-note-taking&#34;&gt;The Value of &lt;mark&gt;Automation&lt;/mark&gt; for Note-Taking&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Share notes&lt;/strong&gt; with people via their preferred messaging platform&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Snooze notes&lt;/strong&gt; and ideas so you review them later&lt;/li&gt;
@@ -451,7 +451,7 @@ useful both for programmers and automation builders, and for people who simply w
 &lt;li&gt;&lt;strong&gt;Publishing&lt;/strong&gt; of notes to a webpage (either publicly or privately), or to social media&lt;/li&gt;
 &lt;li&gt;New &lt;strong&gt;data entry&lt;/strong&gt; mechanisms: &lt;strong&gt;Go Note Go&lt;/strong&gt;, terminal, email, text, browsing history, location history, terminal history, IoT devices, etc&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Spaced repetition&lt;/strong&gt; for studying&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Inactivity reminders&lt;/strong&gt; (e.g. &amp;ldquo;it&amp;rsquo;s been three months since you&amp;rsquo;ve done a music activity&amp;rdquo;, or &amp;ldquo;it&amp;rsquo;s been over 6 months since you&amp;rsquo;ve spoken with David Dohan&amp;rdquo;, or &amp;ldquo;it&amp;rsquo;s been over a year since you&amp;rsquo;ve written about microbiology.&amp;quot;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inactivity reminders&lt;/strong&gt; (e.g. &amp;ldquo;it&amp;rsquo;s been three months since you&amp;rsquo;ve done a music activity&amp;rdquo;, or &amp;ldquo;it&amp;rsquo;s been over 6 months since you&amp;rsquo;ve spoken with David Dohan&amp;rdquo;, or &amp;ldquo;it&amp;rsquo;s been over a year since you&amp;rsquo;ve written about microbiology.&amp;rdquo;)&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

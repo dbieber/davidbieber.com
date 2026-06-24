@@ -32,8 +32,58 @@
   
     
   
-  <meta name="description" content="If you run this snippet of Python code, it will submit this &ldquo;Snippet&rdquo; (the one you&rsquo;re currently reading) to Hacker News.
-from html.parser import HTMLParser import getpass import requests import time USERNAME = ( &#39;&#39; # Put your Hacker News username here. or getpass.getuser() # (But if you don&#39;t, we&#39;ll try a sensible default.) ) PASSWORD = ( &#39;&#39; # We&#39;ll prompt you for your password, or you can enter it here.">
+  <meta name="description" content="If you run this snippet of Python code, it will submit this 
+&ldquo;Snippet&rdquo; (the one you&rsquo;re currently reading) to Hacker News.
+from html.parser import HTMLParser
+import getpass
+import requests
+import time
+
+USERNAME = (
+    &#39;&#39;  # Put your Hacker News username here.
+    or getpass.getuser()  # (But if you don&#39;t, we&#39;ll try a sensible default.)
+)
+PASSWORD = (
+    &#39;&#39;  # We&#39;ll prompt you for your password, or you can enter it here.
+    or getpass.getpass()
+)
+# You can reconfigure the title and url to submit here.
+TITLE_TO_SUBMIT = &#39;Posting to Hacker News Programmatically&#39;
+URL_TO_SUBMIT = &#39;https://davidbieber.com/snippets/2020-05-02-hackernews-submit/&#39;
+
+# Login
+session = requests.Session()
+session.post(
+    &#39;https://news.ycombinator.com/login&#39;,
+    data={
+        &#39;acct&#39;: USERNAME,
+        &#39;pw&#39;: PASSWORD,
+    },
+)
+
+# Get the CSRF token (&quot;FNID&quot;)
+time.sleep(1)
+class FNIDExtractor(HTMLParser):
+  fnid = None
+  def handle_starttag(self, tag, attrs):
+    if tag.lower() == &#39;input&#39; and (&#39;name&#39;, &#39;fnid&#39;) in attrs:
+      self.fnid = dict(attrs)[&#39;value&#39;]
+f = FNIDExtractor()
+submit_response = session.get(&#39;https://news.ycombinator.com/submit&#39;)
+f.feed(submit_response.text)
+
+# Submit
+time.sleep(2)
+session.post(
+    &#39;https://news.ycombinator.com/r&#39;,
+    data={
+        &#39;title&#39;: TITLE_TO_SUBMIT,
+        &#39;url&#39;: URL_TO_SUBMIT,
+        &#39;fnid&#39;: f.fnid,
+    },
+)
+
+You can change the title and URL before running this to make a new submission, or run it as is to submit this snippet.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-05-02-hackernews-submit/">
@@ -253,8 +303,8 @@ from html.parser import HTMLParser import getpass import requests import time US
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_3442a5ec1975e9c2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_f8848e5bff6e4686.png">
 
   <link rel="canonical" href="https://davidbieber.com/snippets/2020-05-02-hackernews-submit/">
 
@@ -275,8 +325,58 @@ from html.parser import HTMLParser import getpass import requests import time US
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/snippets/2020-05-02-hackernews-submit/">
   <meta property="og:title" content="Posting to Hacker News Programmatically | David Bieber">
-  <meta property="og:description" content="If you run this snippet of Python code, it will submit this &ldquo;Snippet&rdquo; (the one you&rsquo;re currently reading) to Hacker News.
-from html.parser import HTMLParser import getpass import requests import time USERNAME = ( &#39;&#39; # Put your Hacker News username here. or getpass.getuser() # (But if you don&#39;t, we&#39;ll try a sensible default.) ) PASSWORD = ( &#39;&#39; # We&#39;ll prompt you for your password, or you can enter it here."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="og:description" content="If you run this snippet of Python code, it will submit this 
+&ldquo;Snippet&rdquo; (the one you&rsquo;re currently reading) to Hacker News.
+from html.parser import HTMLParser
+import getpass
+import requests
+import time
+
+USERNAME = (
+    &#39;&#39;  # Put your Hacker News username here.
+    or getpass.getuser()  # (But if you don&#39;t, we&#39;ll try a sensible default.)
+)
+PASSWORD = (
+    &#39;&#39;  # We&#39;ll prompt you for your password, or you can enter it here.
+    or getpass.getpass()
+)
+# You can reconfigure the title and url to submit here.
+TITLE_TO_SUBMIT = &#39;Posting to Hacker News Programmatically&#39;
+URL_TO_SUBMIT = &#39;https://davidbieber.com/snippets/2020-05-02-hackernews-submit/&#39;
+
+# Login
+session = requests.Session()
+session.post(
+    &#39;https://news.ycombinator.com/login&#39;,
+    data={
+        &#39;acct&#39;: USERNAME,
+        &#39;pw&#39;: PASSWORD,
+    },
+)
+
+# Get the CSRF token (&quot;FNID&quot;)
+time.sleep(1)
+class FNIDExtractor(HTMLParser):
+  fnid = None
+  def handle_starttag(self, tag, attrs):
+    if tag.lower() == &#39;input&#39; and (&#39;name&#39;, &#39;fnid&#39;) in attrs:
+      self.fnid = dict(attrs)[&#39;value&#39;]
+f = FNIDExtractor()
+submit_response = session.get(&#39;https://news.ycombinator.com/submit&#39;)
+f.feed(submit_response.text)
+
+# Submit
+time.sleep(2)
+session.post(
+    &#39;https://news.ycombinator.com/r&#39;,
+    data={
+        &#39;title&#39;: TITLE_TO_SUBMIT,
+        &#39;url&#39;: URL_TO_SUBMIT,
+        &#39;fnid&#39;: f.fnid,
+    },
+)
+
+You can change the title and URL before running this to make a new submission, or run it as is to submit this snippet."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
@@ -817,7 +917,7 @@ details.addEventListener("toggle", event => {
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+<script src="/js/academic.min.01af32edc9a00e9a188425fb55cdbd62.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

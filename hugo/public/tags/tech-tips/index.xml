@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tech-tips on David Bieber</title>
+    <title>Tech-Tips on David Bieber</title>
     <link>https://davidbieber.com/tags/tech-tips/</link>
-    <description>Recent content in tech-tips on David Bieber</description>
+    <description>Recent content in Tech-Tips on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 21 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/tech-tips/index.xml" rel="self" type="application/rss+xml" />
@@ -14,7 +14,8 @@
       
       <guid>https://davidbieber.com/snippets/2022-07-21-twitter-oauth-login/</guid>
       
-      <description>&lt;p&gt;You can log into a Twitter app with OAuth using Twython. First, make sure you have twython pip installed (&lt;code&gt;pip install twython&lt;/code&gt;). Then, get the APP_KEY and APP_SECRET from the developer. This is labeled &amp;ldquo;API Key and Secret&amp;rdquo; on the app page at &lt;a href=&#34;https://developer.twitter.com/en/portal/apps/&#34;&gt;https://developer.twitter.com/en/portal/apps/&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;You can log into a Twitter app with OAuth using Twython. First, make sure you have twython pip installed (&lt;code&gt;pip install twython&lt;/code&gt;). Then, get the APP_KEY and APP_SECRET from the developer. This is labeled &amp;ldquo;API Key and Secret&amp;rdquo; on the app page at 
+&lt;a href=&#34;https://developer.twitter.com/en/portal/apps/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://developer.twitter.com/en/portal/apps/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Next, run the following Python code:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import twython
 
@@ -334,7 +335,7 @@ sudo powermetrics --samplers smc | grep &amp;quot;GPU die temperature:&amp;quot;
 &lt;p&gt;Here&amp;rsquo;s what comes with this repo.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s a Django project that works out of the box (just download it and &lt;code&gt;python manage.py runserver&lt;/code&gt;. If you have Django installed, it&amp;rsquo;ll work!). It&amp;rsquo;s already setup to serve static files. It&amp;rsquo;s all ready to use MySQL or sqlite3. It ships with Bootstrap and jQuery. Django&amp;rsquo;s admin app is enabled and ready to go. It has templates for 404 and 500 errors so you can quickly see how to get error handling working. And it has one app, named &lt;code&gt;app_name&lt;/code&gt;, that demonstrates the core functionality of Django: models, views, templating, and forms, by collecting email address of early users to your site. It&amp;rsquo;s a rudimentary version of LaunchRock.&lt;/p&gt;
 &lt;p&gt;My hope is that it will work well both as start code and as reference code for how to get Django working quickly.&lt;/p&gt;
-&lt;h5 id=&#34;this-template-is-great-for-quick-and-dirty-websites-its-perfect-for-a-hackathon-or-for-prototyping-an-idea-with-friends-and-its-a-great-template-for-getting-started-with-djangohttpswwwdjangoprojectcom-bootstraphttptwittergithubcombootstrap-and-jqueryhttpjquerycom-but-its-not-production-quality-in-two-key-respects-security-and-scalability-keep-that-in-mind-as-you-start-building&#34;&gt;This template is great for quick and dirty websites. It&amp;rsquo;s perfect for a hackathon or for prototyping an idea with friends. And it&amp;rsquo;s a great template for getting started with 
+&lt;h5 id=&#34;this-template-is-great-for-quick-and-dirty-websites-its-perfect-for-a-hackathon-or-for-prototyping-an-idea-with-friends-and-its-a-great-template-for-getting-started-with-django-bootstrap-and-jquery-but-its-not-production-quality-in-two-key-respects-security-and-scalability-keep-that-in-mind-as-you-start-building&#34;&gt;This template is great for quick and dirty websites. It&amp;rsquo;s perfect for a hackathon or for prototyping an idea with friends. And it&amp;rsquo;s a great template for getting started with 
 &lt;a href=&#34;https://www.djangoproject.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Django&lt;/a&gt;, 
 &lt;a href=&#34;http://twitter.github.com/bootstrap/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bootstrap&lt;/a&gt;, and 
 &lt;a href=&#34;http://jquery.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jQuery&lt;/a&gt;. But it&amp;rsquo;s not production quality in two key respects, security and scalability. Keep that in mind as you start building.&lt;/h5&gt;

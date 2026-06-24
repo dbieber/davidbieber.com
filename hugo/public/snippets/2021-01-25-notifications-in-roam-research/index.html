@@ -32,7 +32,8 @@
   
     
   
-  <meta name="description" content="#RoamGames are upon us! The challenge: project management in Roam.
+  <meta name="description" content="
+#RoamGames are upon us! The challenge: project management in Roam.
 So, let&rsquo;s talk notifications. They&rsquo;re going to be essential for any multiplayer Roam scenario. They&rsquo;re also ruthless attention vampires that kill productivity. We&rsquo;ve got to get this right.
 Let&rsquo;s disentangle what you get notified about, when you get notified about it, and where/how you&rsquo;re notified. This leads us to a vision where users can define notification strategies and take control of their attention1.">
 
@@ -254,8 +255,8 @@ Let&rsquo;s disentangle what you get notified about, when you get notified about
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_3442a5ec1975e9c2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_f8848e5bff6e4686.png">
 
   <link rel="canonical" href="https://davidbieber.com/snippets/2021-01-25-notifications-in-roam-research/">
 
@@ -276,7 +277,8 @@ Let&rsquo;s disentangle what you get notified about, when you get notified about
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/snippets/2021-01-25-notifications-in-roam-research/">
   <meta property="og:title" content="Notifications in Roam Research | David Bieber">
-  <meta property="og:description" content="#RoamGames are upon us! The challenge: project management in Roam.
+  <meta property="og:description" content="
+#RoamGames are upon us! The challenge: project management in Roam.
 So, let&rsquo;s talk notifications. They&rsquo;re going to be essential for any multiplayer Roam scenario. They&rsquo;re also ruthless attention vampires that kill productivity. We&rsquo;ve got to get this right.
 Let&rsquo;s disentangle what you get notified about, when you get notified about it, and where/how you&rsquo;re notified. This leads us to a vision where users can define notification strategies and take control of their attention1."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
@@ -565,7 +567,7 @@ Let&rsquo;s disentangle what you get notified about, when you get notified about
 <p>That is, tags connect <em>what</em> to <em>when</em>.</p>
 <p>When you write a notification strategy, you name it. Tag a reference of a query with the name of a notification strategy to run that strategy on that reference or query.</p>
 <p>Let&rsquo;s clarify with an example.</p>
-<p>Say I have a query (&ldquo;all Tasks with &lsquo;Blockers&rsquo; where all Blockers are &lsquo;DONE&rsquo;&quot;), and a notification strategy named &ldquo;Bundle on the Hour&rdquo; (&ldquo;bundle all incoming notifications and emit them on the hour as a single notification&rdquo;). Then I can tag the query with #[[Bundle on the Hour]] to start applying that notification strategy to the results of the query.</p>
+<p>Say I have a query (&ldquo;all Tasks with &lsquo;Blockers&rsquo; where all Blockers are &lsquo;DONE&rsquo;&rdquo;), and a notification strategy named &ldquo;Bundle on the Hour&rdquo; (&ldquo;bundle all incoming notifications and emit them on the hour as a single notification&rdquo;). Then I can tag the query with #[[Bundle on the Hour]] to start applying that notification strategy to the results of the query.</p>
 <p>Once I&rsquo;ve added that tag, the notification strategy will be called every time the query results change, and it will be able to start emitting notifications.</p>
 <p>Similarly if I write [[Python Fire]] and tag it with #[[Digest at 9am]], then <em>that</em> notification strategy will be called whenever the references to or contents of the Python Fire page change.</p>
 <h2 id="wherehow-actually-sending-notifications"><strong>Where/How</strong>: Actually sending notifications</h2>
@@ -618,37 +620,37 @@ notify(&quot;You've got mail.&quot;);
 <p>Want to build this with me? I&rsquo;m 
 <a href="https://twitter.com/Bieber" target="_blank" rel="noopener">@Bieber</a> on Twitter and active as dbieber on the 
 <a href="https://roamresearch.slack.com" target="_blank" rel="noopener">Roam Slack</a>.</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
-<p>And still provides sensible defaults and easy configs for non-power users. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:1">
+<p>And still provides sensible defaults and easy configs for non-power users.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
-<p>This one, while a basic use case, is actually tricky to express as a query. But we can do it, I&rsquo;m confident. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:2">
+<p>This one, while a basic use case, is actually tricky to express as a query. But we can do it, I&rsquo;m confident.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p>See my 
 <a href="/snippets/2020-12-22-datalog-queries-for-roam-research/">two</a> 
-<a href="/snippets/2021-01-04-more-datalog-queries-for-roam/">snippets</a> for lots of examples of what you can do with datalog queries. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<a href="/snippets/2021-01-04-more-datalog-queries-for-roam/">snippets</a> for lots of examples of what you can do with datalog queries.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
-<p><em>soni-sono</em> for short. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:4">
+<p><em>soni-sono</em> for short.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:5" role="doc-endnote">
+<li id="fn:5">
 <p>Has anyone taken the 
-<a href="https://fontmeme.com/the-home-depot-font/" target="_blank" rel="noopener">Home Depot logo</a> and replaced the word Home with Roam in the appropriate font yet? <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<a href="https://fontmeme.com/the-home-depot-font/" target="_blank" rel="noopener">Home Depot logo</a> and replaced the word Home with Roam in the appropriate font yet?&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:6" role="doc-endnote">
+<li id="fn:6">
 <p>Code courtesy of 
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/notification" target="_blank" rel="noopener">MDN</a>. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/notification" target="_blank" rel="noopener">MDN</a>.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:7" role="doc-endnote">
+<li id="fn:7">
 <p>cmd-option-i to open your browser console on Chrome on Mac. 
-<a href="https://www.google.com/search?q=how&#43;to&#43;open&#43;the&#43;browser&#43;console" target="_blank" rel="noopener">Look it up here</a> for other browsers or operating systems. <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<a href="https://www.google.com/search?q=how&#43;to&#43;open&#43;the&#43;browser&#43;console" target="_blank" rel="noopener">Look it up here</a> for other browsers or operating systems.&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 
     </div>
 
@@ -879,7 +881,7 @@ details.addEventListener("toggle", event => {
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+<script src="/js/academic.min.01af32edc9a00e9a188425fb55cdbd62.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

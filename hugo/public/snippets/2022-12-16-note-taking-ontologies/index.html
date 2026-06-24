@@ -32,8 +32,9 @@
   
     
   
-  <meta name="description" content="Background: Ontologies in Note-taking I&rsquo;ll do my best to get the context for this thought down quickly, but I don&rsquo;t think I&rsquo;ll do a good job. Feel free to ask me if you&rsquo;d like to understand the context better.
-In a note-taking system like C. or Tana, objects exist in an ontology1. This means that an object can have a type. That type definition can have properties. For example my notes might be full of people.">
+  <meta name="description" content="Background: Ontologies in Note-taking
+I&rsquo;ll do my best to get the context for this thought down quickly, but I don&rsquo;t think I&rsquo;ll do a good job. Feel free to ask me if you&rsquo;d like to understand the context better.
+In a note-taking system like C. or Tana, objects exist in an ontology1. This means that an object can have a type. That type definition can have properties. For example my notes might be full of people. Each person might have a birthday and contact info and a height and a handedness.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2022-12-16-note-taking-ontologies/">
@@ -253,8 +254,8 @@ In a note-taking system like C. or Tana, objects exist in an ontology1. This mea
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_3442a5ec1975e9c2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_f8848e5bff6e4686.png">
 
   <link rel="canonical" href="https://davidbieber.com/snippets/2022-12-16-note-taking-ontologies/">
 
@@ -275,8 +276,9 @@ In a note-taking system like C. or Tana, objects exist in an ontology1. This mea
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/snippets/2022-12-16-note-taking-ontologies/">
   <meta property="og:title" content="Explicit Ontologies in a World Without | David Bieber">
-  <meta property="og:description" content="Background: Ontologies in Note-taking I&rsquo;ll do my best to get the context for this thought down quickly, but I don&rsquo;t think I&rsquo;ll do a good job. Feel free to ask me if you&rsquo;d like to understand the context better.
-In a note-taking system like C. or Tana, objects exist in an ontology1. This means that an object can have a type. That type definition can have properties. For example my notes might be full of people."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="og:description" content="Background: Ontologies in Note-taking
+I&rsquo;ll do my best to get the context for this thought down quickly, but I don&rsquo;t think I&rsquo;ll do a good job. Feel free to ask me if you&rsquo;d like to understand the context better.
+In a note-taking system like C. or Tana, objects exist in an ontology1. This means that an object can have a type. That type definition can have properties. For example my notes might be full of people. Each person might have a birthday and contact info and a height and a handedness."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
@@ -574,12 +576,12 @@ Does my dentist like table tennis?
 </code></pre>
 <h4 id="integration-with-specialized-systems">Integration with Specialized Systems</h4>
 <p>One of the key reasons ontologies are useful is they allow for specialized systems to access the information stored in the ontology/notes, in order to provide a quality domain-specific experience using the data from the notes.</p>
-<p>This could take the form of a specialized contacts view of the contacts data found in your notes. It could be a specialized calendar view of time-annotated data in your notes. It could be the shopping experience I described in a footnote, which uses your contacts' interests to surface gift suggestions. The possibilities are numerous.</p>
+<p>This could take the form of a specialized contacts view of the contacts data found in your notes. It could be a specialized calendar view of time-annotated data in your notes. It could be the shopping experience I described in a footnote, which uses your contacts&rsquo; interests to surface gift suggestions. The possibilities are numerous.</p>
 <p>If search is robust (and it&rsquo;s not totally clear that LLM search is going to be robust enough, but I suspect that it will be), then the data access requirements for these specialized integrations could be satisfied by the search described in the preceding section.</p>
 <p>Two ways to think about this:
 (1) The specialized system issues queries &ndash; possibly even natural language queries &ndash; about the notebase. It gets structured results back. It uses the structured results to render the specialized domain-specific experience.
 (2) The raw text in <mark>the note-base is being projected onto a temporary domain-specific ontology just for the specialized system</mark>. E.g. the shopping experience might require an ontology where each Person has interests, while a separate job matching system might require an ontology where each Person has an educational background. Using the magic of LLMs, the raw text data is projected into the structured ontology needed by each system. But there&rsquo;s no &ldquo;one&rdquo; ontology living in the note-base that the note-taker needs to maintain.</p>
-<p>Maybe these two ways are actually the same. 🤷</p>
+<p>Maybe these two ways are actually the same. &#x1f937;</p>
 <p>At this point we&rsquo;ve seen the first place where ontologies are useful even in this raw-text focused LLM-centric world. I&rsquo;ve <mark>highlighted</mark> it. We&rsquo;ll come back to it shortly.</p>
 <h4 id="auto-complete--templating">Auto-complete / Templating</h4>
 <p>We come now to one of the main value-adds of an ontology: having a nice template to fill in about an object. Do we lose this in a raw-text LLM-centric world? By default, yes. But we can (very likely) use LLM-ish tech to implement an auto-complete / templating feature, arguably one that&rsquo;s (in some ways) better than we get in an ontology-centric world.</p>
@@ -594,24 +596,24 @@ The search and integrations are going to work just fine whether the field is cal
 <p>Looking back over the <mark>highlighted</mark> text, we can see that there are at least two places where explicit ontologies remain useful even in a raw-text focused LLM-centric world (that is, in a note-base full of raw text, not backed by an explicit ontology).</p>
 <p>The first was during querying for domain-specific experiences. There we saw the value of having the raw text in the note-base projected onto a temporary domain-specific ontology just for a specialized system.</p>
 <p>The second was for templating/auto-complete, one of the main values of an ontology. Using LLMs we can provide the appearance of there being an ontology without the note-base actually being backed by an explicit ontology.</p>
-<p>All of this relies on some amount of speculation about where our LLM<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> technology is going and what its coming capabilities will be. I&rsquo;m happy to stand by this speculation, and happy to discuss.</p>
-<section class="footnotes" role="doc-endnotes">
+<p>All of this relies on some amount of speculation about where our LLM<sup id="fnref1:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> technology is going and what its coming capabilities will be. I&rsquo;m happy to stand by this speculation, and happy to discuss.</p>
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
-<p>Bear in mind I&rsquo;ve used neither of these systems! Take my thoughts with grains of salt. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:1">
+<p>Bear in mind I&rsquo;ve used neither of these systems! Take my thoughts with grains of salt.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
-<p>I just chose a random example. But anyway, the idea is that you might build a shopping widget that uses the data about your contacts' preferences to surface gift ideas for them while you&rsquo;re shopping. The ontology way to do this is for each Person in your notes to have a Likes or Interests field, which the shopping experience can access. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:2">
+<p>I just chose a random example. But anyway, the idea is that you might build a shopping widget that uses the data about your contacts&rsquo; preferences to surface gift ideas for them while you&rsquo;re shopping. The ontology way to do this is for each Person in your notes to have a Likes or Interests field, which the shopping experience can access.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
-<p>I was planning on squeezing a reference to &ldquo;Factory factories&rdquo; into this section, but then it didn&rsquo;t fit in, so just sticking this in a footnote. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:3">
+<p>I was planning on squeezing a reference to &ldquo;Factory factories&rdquo; into this section, but then it didn&rsquo;t fit in, so just sticking this in a footnote.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
-<p>I&rsquo;m using the term large language model here in a loose sense. I basically mean tech largely dependent on deep learning, including advances expected to come in the next few years. It&rsquo;s easier to just say LLM though, even though that oversimplifies. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:4">
+<p>I&rsquo;m using the term large language model here in a loose sense. I basically mean tech largely dependent on deep learning, including advances expected to come in the next few years. It&rsquo;s easier to just say LLM though, even though that oversimplifies.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 
     </div>
 
@@ -840,7 +842,7 @@ details.addEventListener("toggle", event => {
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+<script src="/js/academic.min.01af32edc9a00e9a188425fb55cdbd62.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

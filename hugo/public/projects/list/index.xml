@@ -37,14 +37,14 @@
 &lt;p&gt;To enter notes via &lt;em&gt;text&lt;/em&gt;, type them. Press enter to commit a note. Press shift-backspace to clear the currently typed text. When internet connectivity becomes available, your notes will be uploaded to your central note-taking system.&lt;/p&gt;
 &lt;p&gt;Taking notes by audio is great for driving, or for whenever speaking better suits your way of thinking than typing. Being able to seamlessly go back and forth between speaking and typing can be liberating, allowing for alternating different kinds of thinking.&lt;/p&gt;
 &lt;p&gt;The system is compact and portable.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;gonotego-front.jpg&#34; alt=&#34;Photo of Go Note Go illustrating it is compact and portable.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/projects/go-note-go/gonotego-front.jpg&#34; alt=&#34;Photo of Go Note Go illustrating it is compact and portable.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;It velcros to the passenger side of the car dashboard. It can be used there, or placed on a passenger’s lap during use, or even on the driver’s lap at a rest stop, waiting in line at a drive-thru, or while parked.&lt;/p&gt;
 &lt;p&gt;It can be powered by the car by USB-C, or by battery pack for use on the go (or from a laptop or outlet USB port, if that better suits your use).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;gonotego-dashboard.jpg&#34; alt=&#34;Photo of Go Note Go on the passenger side of the car dashboard.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/projects/go-note-go/gonotego-dashboard.jpg&#34; alt=&#34;Photo of Go Note Go on the passenger side of the car dashboard.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You can lie down with it and type or talk.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;gonotego-soft.jpg&#34; alt=&#34;Photo of Go Note Go on a sofa.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/projects/go-note-go/gonotego-soft.jpg&#34; alt=&#34;Photo of Go Note Go on a sofa.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Or throw it in your sports bag to take notes on the game!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;gonotego-gym-bag.jpg&#34; alt=&#34;Photo of Go Note Go in a gym bag.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/projects/go-note-go/gonotego-gym-bag.jpg&#34; alt=&#34;Photo of Go Note Go in a gym bag.&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;how-do-you-use-go-note-go-in-the-shower&#34;&gt;How do you use Go Note Go in the shower?&lt;/h3&gt;
 &lt;p&gt;To use Go Note Go in the shower, acquire a waterproof Bluetooth enabled keyboard, and pair it with your Go Note Go Raspberry Pi 400. Go ahead and leave that waterproof keyboard in your shower.&lt;/p&gt;
 &lt;p&gt;For an improved experience, also acquire a waterproof Bluetooth speaker for your shower, and pair this with the Pi as well.&lt;/p&gt;
@@ -86,14 +86,14 @@
 &lt;h3 id=&#34;how-can-i-try-it-out&#34;&gt;How can I try it out?&lt;/h3&gt;
 &lt;p&gt;The hardware components used are listed on the 
 &lt;a href=&#34;https://github.com/dbieber/GoNoteGo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub page&lt;/a&gt;. There&amp;rsquo;s no getting started guide yet, so if you are trying it out, don&amp;rsquo;t hesitate to reach out for guidance around the rough edges.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Two points define a line, right? &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Two points define a line, right?&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -154,7 +154,7 @@ I was just a small piece of this epic endeavor. Bianca was the organizer and dri
 &lt;p&gt;Your challenge: get the lights up and running again.&lt;/p&gt;
 &lt;p&gt;You do this by first locating a blacklight flashlight on the table in the room. You use this blacklight flashlight to read clues written in invisible ink on colored paper hidden around the room. These clues in turn allow you to figure out which of the nearly 50 switches you need to flip in order to turn all the lights on without overheating any of them.&lt;/p&gt;
 &lt;p&gt;This is what the puzzle looks like partial solved:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;engine-room-front.jpg&#34; alt=&#34;The Engine Room: Lights Out Puzzle&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidbieber.com/projects/escape-castle-heterodyne/engine-room-front.jpg&#34; alt=&#34;The Engine Room: Lights Out Puzzle&#34;&gt;&lt;/p&gt;
 &lt;p&gt;While the physical puzzle is no longer operational, you can have a go at the software-only version of the puzzle: &lt;strong&gt;
 &lt;a href=&#34;https://davidbieber.com/engine-room-demo&#34;&gt;Click here to try the puzzle&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;storage-closet&#34;&gt;Storage Closet&lt;/h3&gt;
@@ -175,7 +175,8 @@ I was just a small piece of this epic endeavor. Bianca was the organizer and dri
       <guid>https://davidbieber.com/projects/python-fire/</guid>
       
       <description>&lt;p&gt;Python Fire is a Python library for automatically creating command line interfaces (CLIs) from absolutely any Python object.&lt;/p&gt;
-&lt;p&gt;Check it out at &lt;a href=&#34;https://github.com/google/python-fire&#34;&gt;https://github.com/google/python-fire&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Check it out at 
+&lt;a href=&#34;https://github.com/google/python-fire&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/google/python-fire&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I originally wrote Python Fire after joining Google Brain in 2016. In March 2017 we open sourced the project, and I am proud and delighted by the growth and reception it has seen since.&lt;/p&gt;
 &lt;p&gt;To give it a try, simply &lt;code&gt;pip install fire&lt;/code&gt;, and then call &lt;code&gt;fire.Fire()&lt;/code&gt; as the main of any Python program.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s a simple example to pique your interest, and then if you want to learn more, you should read the 
@@ -248,7 +249,7 @@ $ python gcdfire.py 34 90
 &lt;p&gt;Notably, you can keep your eyes closed while you use it.&lt;/p&gt;
 &lt;p&gt;The shell is controlled by typing and the only output is audio; there are no visual components of shh. It is designed to minimize the mental energy required for use, to avoid disturbing your attempt at sleep as much as possible.&lt;/p&gt;
 &lt;h3 id=&#34;why-is-it-called-shh-shell&#34;&gt;Why is it called shh shell?&lt;/h3&gt;
-&lt;p&gt;It&amp;rsquo;s a play on &amp;ldquo;ssh&amp;rdquo;, a common unix utility that stands for &amp;ldquo;secure shell&amp;rdquo;. shh (prounced in a whisper, &amp;ldquo;shhh&amp;hellip;&amp;quot;) is a quiet shell that takes minimal mental energy to use, great for use while you&amp;rsquo;re drifting off to sleep.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a play on &amp;ldquo;ssh&amp;rdquo;, a common unix utility that stands for &amp;ldquo;secure shell&amp;rdquo;. shh (prounced in a whisper, &amp;ldquo;shhh&amp;hellip;&amp;rdquo;) is a quiet shell that takes minimal mental energy to use, great for use while you&amp;rsquo;re drifting off to sleep.&lt;/p&gt;
 &lt;h3 id=&#34;what-can-the-shh-shell-do&#34;&gt;What can the shh shell do?&lt;/h3&gt;
 &lt;p&gt;My primary use of the shh shell is leaving notes for myself. I also use shh to set peaceful YouTube music alarms for myself, and to check the time without needing to open my eyes.&lt;/p&gt;
 &lt;p&gt;Here is the full list (as of 2015-11-28) of my uses of shh shell, past and present:&lt;/p&gt;

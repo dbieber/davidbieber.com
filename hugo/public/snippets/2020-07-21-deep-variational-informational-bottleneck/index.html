@@ -32,10 +32,26 @@
   
     
   
-  <meta name="description" content="You can read the 2017 paper &ldquo;Deep Variational Information Bottleneck&rdquo; on Arxiv here, and its reviews are visible on OpenReview here. The authors are my coworkers: Alex Alemi, Ian Fischer, Joshua Dillon, and Kevin Murphy.
+  <meta name="description" content="You can read the 2017 paper &ldquo;Deep Variational Information Bottleneck&rdquo; 
+on Arxiv here, and its reviews are visible 
+on OpenReview here. The authors are my coworkers: Alex Alemi, Ian Fischer, Joshua Dillon, and Kevin Murphy.
 I&rsquo;ve taken notes on the paper, and will use this snippet to present them.
-Notation We consider the problem of supervised learning for classification with the following notation:
- $X$: An example input. $Z$: The output of an intermediate layer of a neural network.">
+Notation
+We consider the problem of supervised learning for classification with the following notation:
+
+$X$: An example input.
+$Z$: The output of an intermediate layer of a neural network.
+
+We view this as a stochastic encoding of $X$.
+It is the output of a parametric encoder $p(\textbf{z} | \textbf{x}; \theta)$
+$\theta$ are the parameters of the neural network used to encode $X$ that we wish to learn.
+
+
+$Y$: The example&rsquo;s target class.
+
+Goal
+The approach of the paper aims first and foremost to learn an encoding $Z$ of $X$ that is maximally informative about $Y$.
+This is measured via mutual information between $Z$ and $Y$: $I(Z, Y; \theta)$.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-07-21-deep-variational-informational-bottleneck/">
@@ -258,8 +274,8 @@ Notation We consider the problem of supervised learning for classification with 
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_3442a5ec1975e9c2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_f8848e5bff6e4686.png">
 
   <link rel="canonical" href="https://davidbieber.com/snippets/2020-07-21-deep-variational-informational-bottleneck/">
 
@@ -280,10 +296,26 @@ Notation We consider the problem of supervised learning for classification with 
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/snippets/2020-07-21-deep-variational-informational-bottleneck/">
   <meta property="og:title" content="Deep Variational Information Bottleneck | David Bieber">
-  <meta property="og:description" content="You can read the 2017 paper &ldquo;Deep Variational Information Bottleneck&rdquo; on Arxiv here, and its reviews are visible on OpenReview here. The authors are my coworkers: Alex Alemi, Ian Fischer, Joshua Dillon, and Kevin Murphy.
+  <meta property="og:description" content="You can read the 2017 paper &ldquo;Deep Variational Information Bottleneck&rdquo; 
+on Arxiv here, and its reviews are visible 
+on OpenReview here. The authors are my coworkers: Alex Alemi, Ian Fischer, Joshua Dillon, and Kevin Murphy.
 I&rsquo;ve taken notes on the paper, and will use this snippet to present them.
-Notation We consider the problem of supervised learning for classification with the following notation:
- $X$: An example input. $Z$: The output of an intermediate layer of a neural network."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+Notation
+We consider the problem of supervised learning for classification with the following notation:
+
+$X$: An example input.
+$Z$: The output of an intermediate layer of a neural network.
+
+We view this as a stochastic encoding of $X$.
+It is the output of a parametric encoder $p(\textbf{z} | \textbf{x}; \theta)$
+$\theta$ are the parameters of the neural network used to encode $X$ that we wish to learn.
+
+
+$Y$: The example&rsquo;s target class.
+
+Goal
+The approach of the paper aims first and foremost to learn an encoding $Z$ of $X$ that is maximally informative about $Y$.
+This is measured via mutual information between $Z$ and $Y$: $I(Z, Y; \theta)$."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
@@ -557,7 +589,7 @@ Notation We consider the problem of supervised learning for classification with 
 <h2 id="goal">Goal</h2>
 <p>The approach of the paper aims first and foremost to learn an encoding $Z$ of $X$ that is maximally informative about $Y$.
 This is measured via mutual information between $Z$ and $Y$: $I(Z, Y; \theta)$.</p>
-<p>$$I(Z, Y; \theta) = \int dx~dy~p(z, y|\theta) \log \frac{p(z, y)}{p(z)p(y)}$$</p>
+<p>$$I(Z, Y; \theta) = \int dx<del>dy</del>p(z, y|\theta) \log \frac{p(z, y)}{p(z)p(y)}$$</p>
 <p>It&rsquo;s not enough to maximize $I(Z, Y; \theta)$ though; this can be done by simply letting $Z = X$, which isn&rsquo;t useful.</p>
 <p>So, we also want to limit $I(Z, X)$. We do this by enforcing an information constraint: $I(X, Z) &lt; I_c$.</p>
 <p>Our goal is to maximize $I(Z, Y; \theta)$ subject to $I(X, Z) &lt; I_c$.</p>
@@ -590,7 +622,7 @@ This is measured via mutual information between $Z$ and $Y$: $I(Z, Y; \theta)$.<
 <h2 id="execution">Execution</h2>
 <h3 id="part-1-variational-inference">Part 1: Variational Inference</h3>
 <p>You can follow the math in the paper (Section 3), but the first main result is to define</p>
-<p>$$L = \int dx~dy~dz~ p(x) p(y|x) p(z|x) \log q(y|z) - \beta \int dx~dz~ p(x) p(z|x) \log \frac{p(z|x)}{r(z)}$$</p>
+<p>$$L = \int dx<del>dy</del>dz~ p(x) p(y|x) p(z|x) \log q(y|z) - \beta \int dx<del>dz</del> p(x) p(z|x) \log \frac{p(z|x)}{r(z)}$$</p>
 <p>and show that
 $$R_{IB}(\theta) = I(Z,Y) - \beta I(Z, X) \ge L.$$</p>
 <p>To achieve this, we&rsquo;ve introduced $q(y|z)$ as an approximation of $p(y|z)$, and $r(z)$ as an approximation of $p(z)$.</p>
@@ -603,7 +635,8 @@ $$R_{IB}(\theta) = I(Z,Y) - \beta I(Z, X) \ge L.$$</p>
 <p>$$J_{IB} = \frac{1}{N} \sum\limits_{n=1}^N E_{\epsilon \sim p(\epsilon)} \left[-\log q(y_n|f(x_n,\epsilon))\right] + \beta KL[p(Z|x_n), r(Z)]$$</p>
 <p>As long as $q$ is differentiable and $KL[p(Z|x_n), r(Z)]$ is tractable, this is an objective we can optimize with e.g. gradient descent.</p>
 <h2 id="implementation">Implementation</h2>
-<p>A concise demo implementation is available on GitHub at <a href="https://github.com/alexalemi/vib_demo/blob/master/MNISTVIB.ipynb">https://github.com/alexalemi/vib_demo/blob/master/MNISTVIB.ipynb</a>.</p>
+<p>A concise demo implementation is available on GitHub at 
+<a href="https://github.com/alexalemi/vib_demo/blob/master/MNISTVIB.ipynb" target="_blank" rel="noopener">https://github.com/alexalemi/vib_demo/blob/master/MNISTVIB.ipynb</a>.</p>
 <p>I&rsquo;ve describe here the correspondence between the notation used in the source code and the notation used in the paper.
 Terms from the paper are in $\LaTeX$, and terms from the source code are in <code>code blocks</code>.</p>
 <ul>
@@ -845,7 +878,7 @@ details.addEventListener("toggle", event => {
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+<script src="/js/academic.min.01af32edc9a00e9a188425fb55cdbd62.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

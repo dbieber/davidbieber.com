@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>snippets on David Bieber</title>
+    <title>Snippets on David Bieber</title>
     <link>https://davidbieber.com/tags/snippets/</link>
-    <description>Recent content in snippets on David Bieber</description>
+    <description>Recent content in Snippets on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 04 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/snippets/index.xml" rel="self" type="application/rss+xml" />
@@ -289,7 +289,7 @@ Snippet-worthy is a much lower bar than story-worthy.
 However, cleaning up text from Go Note Go to produce a snippet doesn&amp;rsquo;t seem as rewarding as writing a snippet from scratch. Snippet-writing is like thinking; Go Note Go-cleaning is another type of activity altogether.&lt;/p&gt;
 &lt;p&gt;Still, there are ideas in my Go Note Go writing that I do want to publish. So, my proposed strategy is this: I&amp;rsquo;ll write snippets about those ideas from scratch, when it feels appropriate to do so. I already review my Go Note Go notes periodically, so now when I do so I&amp;rsquo;ll keep an eye out for snippet-worthy ideas. By doing so, I think there&amp;rsquo;s a good chance some of them will turn themselves into snippets simply by virtue of being sufficiently interesting to me.&lt;/p&gt;
 &lt;p&gt;The biggest such idea that comes to mind is 
-&lt;a href=&#34;https://davidbieber.com/snippets/2022-07-20-keyboards-everywhere/&#34;&gt;&amp;ldquo;Keyboards, keyboards, everywhere, and not a spot to think.&amp;quot;&lt;/a&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2022-07-20-keyboards-everywhere/&#34;&gt;&amp;ldquo;Keyboards, keyboards, everywhere, and not a spot to think.&amp;rdquo;&lt;/a&gt;
 This is a blog post idea I&amp;rsquo;ve written multiple parts of in different places, but which I haven&amp;rsquo;t pulled together into its complete form yet. It&amp;rsquo;s a post about the promise of technology, how attention-seeking tech has prevented us from delivering on that promise, and how headless keyboards like Go Note Go provide a path toward reclaiming our attention and allowing us to reach out fullest potential as users of modern tech.&lt;/p&gt;
 &lt;p&gt;A 
 &lt;a href=&#34;https://davidbieber.com/posts/&#34;&gt;blog post&lt;/a&gt; isn&amp;rsquo;t a 
@@ -678,14 +678,14 @@ David, on Wednesday June 23, resume the &amp;ldquo;Snippets&amp;rdquo; and the &
 &lt;p&gt;When I set out to get better at communicating, one of my motivations was for communicating research. I&amp;rsquo;ve hardly written about my research at all! I don&amp;rsquo;t want to make a big change here; I like the type of topic I tend to select for snippets, and I like the expectation that I&amp;rsquo;ve set for myself that I can write about anything, with the bar set extremely low. That said, I will make a small mental adjustment, and add to my internal Potential Topics List writing about my published research.&lt;/p&gt;
 &lt;p&gt;So, with this snippet, I hope and intend that I am resuming somewhat more frequent writing. This is a non-promise, 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-10-08-biking-in-the-morning/&#34;&gt;a mere &amp;ldquo;aspirational intent&amp;rdquo; like the one I made about biking back in October&lt;/a&gt;. That one worked out though; I continued biking regularly well into the cold season, so I&amp;rsquo;m optimistic that this one will pan out positively as well.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Crashing Facebook Japan, The “content sharing group”, 2021 goals, The “programmer’s apprentice”, Making decisions for 10,000 people, Roam Primitives: subscribe to changes, and Castles in the clouds (as a mental model for belief systems) &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Crashing Facebook Japan, The “content sharing group”, 2021 goals, The “programmer’s apprentice”, Making decisions for 10,000 people, Roam Primitives: subscribe to changes, and Castles in the clouds (as a mental model for belief systems)&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -704,20 +704,20 @@ So, I&amp;rsquo;m going to hire someone on Fiverr to add margin notes on my webs
 &lt;p&gt;After my Fiverr experience I&amp;rsquo;ll update this snippet or add a new one, ideally one full of margin notes.&lt;/p&gt;
 &lt;p&gt;Update (same day): I&amp;rsquo;m back! I didn&amp;rsquo;t use Fiverr. I used the post on capnfabs for reference and set up margin notes myself. Thank you Fabian for documenting your process.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; I&amp;rsquo;ll have to learn to use Fiverr another day.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m glad to have this working. There&amp;rsquo;s room to improve the style though. Perhaps in a future iteration I&amp;rsquo;ll move the main content left to give more space for the margin notes, or make some changes to the font and size.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;I&amp;rsquo;d like this to be a margin note. At the time of this writing, it&amp;rsquo;s a footnote. &lt;em&gt;Update&lt;/em&gt;: Now it&amp;rsquo;s a margin note! At least if your browser is wide enough&amp;hellip; otherwise it&amp;rsquo;s still a footnote. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;I&amp;rsquo;d like this to be a margin note. At the time of this writing, it&amp;rsquo;s a footnote. &lt;em&gt;Update&lt;/em&gt;: Now it&amp;rsquo;s a margin note! At least if your browser is wide enough&amp;hellip; otherwise it&amp;rsquo;s still a footnote.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;I&amp;rsquo;ve used it twice before, but I didn&amp;rsquo;t have a great experience with the one programmer I hired. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;I&amp;rsquo;ve used it twice before, but I didn&amp;rsquo;t have a great experience with the one programmer I hired.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Really, it is greatly appreciated! 🙏 &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;Really, it is greatly appreciated! 🙏&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -895,7 +895,7 @@ const publishSnippet = debounce(publishSnippetRaw, 15000, true);
       <description>&lt;p&gt;Hey folks, I have a 
 &lt;a href=&#34;https://davidbieber.com/projects/bieber-bot/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;workflow&lt;/a&gt; for automatically publishing &amp;ldquo;
 &lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;snippets&lt;/a&gt;&amp;rdquo; to my website from Roam. Currently there&amp;rsquo;s a multi-hour latency between writing a snippet and when it appears on my website. In this snippet I&amp;rsquo;m going to muse about / ask questions about how to use &lt;strong&gt;puppeteer&lt;/strong&gt; to bring this latency down considerably. This&amp;rsquo;ll be my first time using puppeteer, so help appreciated. Read on!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-small/1f62e@2x.png&#34; alt=&#34;😮&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-small/1f62e@2x.png&#34; alt=&#34;open_mouth&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The current system relies on my git-to-roam backup, which runs every hour and fails some fraction of the time.&lt;/p&gt;
 &lt;p&gt;So, to bring the latency down, the idea is to use pyppeteer (the python puppeteer bindings) to log into Roam in a headless browser.&lt;/p&gt;
 &lt;p&gt;This will monitor Roam for new (or modified) snippets, and will publish them to my website.&lt;/p&gt;
@@ -912,7 +912,7 @@ const publishSnippet = debounce(publishSnippetRaw, 15000, true);
 &lt;li&gt;Debounce, so that if a snippet is actively changing its only deployed ~twice, not 100 times&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;And then every 10 minutes or so I&amp;rsquo;ll have it take a short breather and refresh&lt;/p&gt;
-&lt;p&gt;Abhay suggested using the alpha API for this rather than puppeteering. &lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f64f@2x.png&#34; alt=&#34;🙏&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Abhay suggested using the alpha API for this rather than puppeteering. &lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f64f@2x.png&#34; alt=&#34;pray&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I think I&amp;rsquo;ll get started on the puppeteer implementation now though anyway, even if the API ends up being a better way of doing this in the near future.&lt;/p&gt;
 &lt;p&gt;Update:&lt;/p&gt;
 &lt;p&gt;I have a first draft that handles log in and running the query to detect publishable material (blocks with the appropriate two tags).&lt;/p&gt;
@@ -924,7 +924,7 @@ const publishSnippet = debounce(publishSnippetRaw, 15000, true);
 &lt;p&gt;I could navigate to the block and look at the dom&amp;hellip; but hopefully I don&amp;rsquo;t need to do that.&lt;/p&gt;
 &lt;p&gt;Looks like there is an &amp;ldquo;order&amp;rdquo; attribute, so this will be doable. Might be messy though.&lt;/p&gt;
 &lt;p&gt;If I&amp;rsquo;m understanding right, :block/order gives the index of a block into its parents children.&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;re good! &lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f44d@2x.png&#34; alt=&#34;👍&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re good! &lt;img src=&#34;https://a.slack-edge.com/production-standard-emoji-assets/10.2/apple-medium/1f44d@2x.png&#34; alt=&#34;thumbsup&#34;&gt;&lt;/p&gt;
 &lt;p&gt;If you&amp;rsquo;re reading this on my website, it worked!&lt;/p&gt;
 </description>
     </item>
@@ -937,14 +937,22 @@ const publishSnippet = debounce(publishSnippetRaw, 15000, true);
       <guid>https://davidbieber.com/snippets/2020-12-20-looking-back-on-my-browsing-history-snippets/</guid>
       
       <description>&lt;p&gt;I&amp;rsquo;ve now written several snippets about my analyzing my browsing history programmatically. I figured I&amp;rsquo;d collect them all in one place here.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&#34;&gt;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history/&#34;&gt;https://davidbieber.com/snippets/2020-03-19-browsing-history/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34;&gt;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&#34;&gt;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34;&gt;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/&#34;&gt;https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/&#34;&gt;https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://davidbieber.com/snippets/2020-05-15-roaming-the-web/&#34;&gt;https://davidbieber.com/snippets/2020-05-15-roaming-the-web/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-03-19-browsing-history/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://davidbieber.com/snippets/2020-03-19-browsing-history/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://davidbieber.com/snippets/2020-04-11-browser-history-queries/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2020-05-15-roaming-the-web/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://davidbieber.com/snippets/2020-05-15-roaming-the-web/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Presumably as I write more about this, the list will go out of date. And that&amp;rsquo;s alright. This is just a snippet.&lt;/p&gt;
 &lt;p&gt;This motivates me to move all my snippets into Roam Research. I&amp;rsquo;m not going to do this just yet, but it seems a decent idea. Backlinks/tags would then allow for easily keeping an up-to-date list of all the snippets I&amp;rsquo;ve written about various topics.&lt;/p&gt;
 &lt;p&gt;Looking back on these many browsing history snippets, what themes stand out? Browser histories are rich with information about our lives. There&amp;rsquo;s a lot we can do to make our lives better using that information.&lt;/p&gt;
@@ -1113,15 +1121,15 @@ The goal is to encourage readers to respond to my writing, because I&amp;rsquo;m
 &lt;p&gt;If you&amp;rsquo;re interested in learning more about the internals, the source is 
 &lt;a href=&#34;https://github.com/dbieber/davidbieber.com/blob/772b5dd87da532357a1cdf04a8caa027268bfbac/hugo/assets/js-src/ask-me-anywhere.jsx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;available on GitHub&lt;/a&gt;. Feel free to have a poke around.&lt;/p&gt;
 &lt;p&gt;The name of the project &amp;ndash; &amp;ldquo;Ask Me Anywhere&amp;rdquo; &amp;ndash; reflects my intention to enable readers to ask questions as they&amp;rsquo;re reading. However, I welcome all types of reactions: questions, comments, feedback, corrections, new ideas, etc. I look forward to hearing what you have to say.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;Update (Dec 2022): You can now also use the Discussion feature! Ever since 
-&lt;a href=&#34;https://davidbieber.com/snippets/2022-06-21-using-discord/&#34;&gt;this snippet&lt;/a&gt; there are now public discussions directly on my website. Give it a try today! &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2022-06-21-using-discord/&#34;&gt;this snippet&lt;/a&gt; there are now public discussions directly on my website. Give it a try today!&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     

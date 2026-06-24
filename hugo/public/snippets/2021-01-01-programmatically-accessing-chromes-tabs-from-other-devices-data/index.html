@@ -33,7 +33,7 @@
     
   
   <meta name="description" content="I use Google Chrome on my Mac laptop and on my iPhone, and I&rsquo;m logged in to my Google account in both places with syncing turned on. If I go to &ldquo;chrome://history/syncedTabs&rdquo; on my computer I can see what tabs I have open on my phone. Now, I&rsquo;d like to access this data programatically.
-With the help of grep, I&rsquo;ve figured out that this data is stored in ~/Library/Application Support/Google/Chrome/Profile 1/Sync Data/LevelDB/ (Probably for most people the path would be ~/Library/Application Support/Google/Chrome/Default/Sync Data/LevelDB/).">
+With the help of grep, I&rsquo;ve figured out that this data is stored in ~/Library/Application Support/Google/Chrome/Profile 1/Sync Data/LevelDB/ (Probably for most people the path would be ~/Library/Application Support/Google/Chrome/Default/Sync Data/LevelDB/). Be careful to escape the spaces in the file path!">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2021-01-01-programmatically-accessing-chromes-tabs-from-other-devices-data/">
@@ -253,8 +253,8 @@ With the help of grep, I&rsquo;ve figured out that this data is stored in ~/Libr
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_3442a5ec1975e9c2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_f8848e5bff6e4686.png">
 
   <link rel="canonical" href="https://davidbieber.com/snippets/2021-01-01-programmatically-accessing-chromes-tabs-from-other-devices-data/">
 
@@ -276,7 +276,7 @@ With the help of grep, I&rsquo;ve figured out that this data is stored in ~/Libr
   <meta property="og:url" content="https://davidbieber.com/snippets/2021-01-01-programmatically-accessing-chromes-tabs-from-other-devices-data/">
   <meta property="og:title" content="Programmatically Accessing Chrome&#39;s “Tabs from other devices” Data | David Bieber">
   <meta property="og:description" content="I use Google Chrome on my Mac laptop and on my iPhone, and I&rsquo;m logged in to my Google account in both places with syncing turned on. If I go to &ldquo;chrome://history/syncedTabs&rdquo; on my computer I can see what tabs I have open on my phone. Now, I&rsquo;d like to access this data programatically.
-With the help of grep, I&rsquo;ve figured out that this data is stored in ~/Library/Application Support/Google/Chrome/Profile 1/Sync Data/LevelDB/ (Probably for most people the path would be ~/Library/Application Support/Google/Chrome/Default/Sync Data/LevelDB/)."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+With the help of grep, I&rsquo;ve figured out that this data is stored in ~/Library/Application Support/Google/Chrome/Profile 1/Sync Data/LevelDB/ (Probably for most people the path would be ~/Library/Application Support/Google/Chrome/Default/Sync Data/LevelDB/). Be careful to escape the spaces in the file path!"><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
@@ -780,7 +780,7 @@ details.addEventListener("toggle", event => {
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+<script src="/js/academic.min.01af32edc9a00e9a188425fb55cdbd62.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

@@ -1,1558 +1,938 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://davidbieber.com/documents/bieber-bot-privacy/</loc>
     <lastmod>2021-09-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/projects/go-note-go/</loc>
     <lastmod>2021-09-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/projects/bieber-bot/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/projects/escape-castle-heterodyne/</loc>
     <lastmod>2017-10-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/projects/python-fire/</loc>
     <lastmod>2017-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/projects/tech-day/</loc>
     <lastmod>2016-11-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/projects/at-scheduler/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/projects/shh-shell/</loc>
     <lastmod>2014-08-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/projects/scrabble-bot/</loc>
     <lastmod>2014-06-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/projects/teach-everyone/</loc>
     <lastmod>2014-06-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/projects/princeton-acm/</loc>
     <lastmod>2014-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/</loc>
     <lastmod>2024-11-20T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2024-11-20-taylor-expansion/</loc>
     <lastmod>2024-11-20T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/</loc>
     <lastmod>2024-11-20T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2024-11-20-claude-artifacts/</loc>
     <lastmod>2024-11-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/snippets/</loc>
     <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/</loc>
     <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2024-09-04-taking-stock-of-writing/</loc>
     <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/writing/</loc>
     <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2024-06-19-travel-and-habits/</loc>
     <lastmod>2024-06-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2024-05-15-choosing-routines/</loc>
     <lastmod>2024-05-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/aspirational-intent/</loc>
     <lastmod>2024-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2024-03-29-new-bedtime/</loc>
     <lastmod>2024-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2024-03-04-conversational-spaced-repetition/</loc>
     <lastmod>2024-03-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/spaced-repetition/</loc>
     <lastmod>2024-03-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/attention/</loc>
     <lastmod>2024-01-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/javascript/</loc>
     <lastmod>2024-01-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2024-01-08-less-twitter/</loc>
     <lastmod>2024-01-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2024-01-06-strategic-life-thinking/</loc>
     <lastmod>2024-01-06T03:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/taking-silly-ideas-seriously/</loc>
     <lastmod>2024-01-06T03:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/goals/</loc>
     <lastmod>2023-12-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2023-12-02-say-what-you-think/</loc>
     <lastmod>2023-12-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/wisdom/</loc>
     <lastmod>2023-12-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2023-09-17-food-preferences/</loc>
     <lastmod>2023-09-17T20:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/music/</loc>
     <lastmod>2023-09-17T03:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2023-09-17-violin-tuner/</loc>
     <lastmod>2023-09-17T03:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2023-09-17-musical-aspirations/</loc>
     <lastmod>2023-09-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2023-07-31-pursue-your-dreams/</loc>
     <lastmod>2023-07-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2023-07-02-alive-in-you/</loc>
     <lastmod>2023-07-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2023-03-25-tech-tree/</loc>
     <lastmod>2023-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/ai/</loc>
     <lastmod>2023-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2023-03-18-personal-newsletter/</loc>
     <lastmod>2023-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/note-taking/</loc>
     <lastmod>2023-03-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2023-03-15-tampermonkey-gpt-4/</loc>
     <lastmod>2023-03-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2023-02-24-everyday-robots/</loc>
     <lastmod>2023-02-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/go-note-go/</loc>
     <lastmod>2023-01-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2023-01-22-writing-is-hard/</loc>
     <lastmod>2023-01-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2023-01-22-bootstrapping-motivation/</loc>
     <lastmod>2023-01-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2023-01-21-repetition/</loc>
     <lastmod>2023-01-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2023-01-16-go-note-go-features/</loc>
     <lastmod>2023-01-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/machine-learning/</loc>
     <lastmod>2023-01-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2023-01-04-sleeping-with-gpt/</loc>
     <lastmod>2023-01-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2022-12-30-go-note-go-story/</loc>
     <lastmod>2022-12-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-12-16-note-taking-ontologies/</loc>
     <lastmod>2022-12-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-12-13-castles-in-the-clouds/</loc>
     <lastmod>2022-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-12-08-thoughts-on-chatgpt/</loc>
     <lastmod>2022-12-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-12-03-spicy-conversations/</loc>
     <lastmod>2022-12-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/coworking/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/productivity/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-10-24-ugh-task-night/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/messager/</loc>
     <lastmod>2022-09-26T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-09-26-just-one-inbox/</loc>
     <lastmod>2022-09-26T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-07-21-twitter-oauth-login/</loc>
     <lastmod>2022-07-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/tech-tips/</loc>
     <lastmod>2022-07-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/twitter/</loc>
     <lastmod>2022-07-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-07-20-hugo-layouts/</loc>
     <lastmod>2022-07-20T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-07-20-keyboards-everywhere/</loc>
     <lastmod>2022-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-07-13-focus-on-the-task/</loc>
     <lastmod>2022-07-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/math/</loc>
     <lastmod>2022-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-07-12-medical-test-paradox-paradox/</loc>
     <lastmod>2022-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-07-05-giant-group-chats/</loc>
     <lastmod>2022-07-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/ask-me-anywhere/</loc>
     <lastmod>2022-06-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-06-21-using-discord/</loc>
     <lastmod>2022-06-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/browserflow/</loc>
     <lastmod>2022-06-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-06-20-chat-by-tag/</loc>
     <lastmod>2022-06-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-05-01-coworking-sessions/</loc>
     <lastmod>2022-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-03-18-attention-strategies/</loc>
     <lastmod>2022-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-03-07-snippets-on-gng-ii/</loc>
     <lastmod>2022-03-07T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-03-06-gng-snippets-divide/</loc>
     <lastmod>2022-03-06T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-02-14-go-note-go-writing-volume/</loc>
     <lastmod>2022-02-14T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/roam-research/</loc>
     <lastmod>2022-02-14T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-01-18-snippets-lessons-for-laltal/</loc>
     <lastmod>2022-01-18T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-01-11-pursuing-your-dreams/</loc>
     <lastmod>2022-01-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-01-08-gng-messager-snippet-plans/</loc>
     <lastmod>2022-01-08T02:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-01-08-new-post-why/</loc>
     <lastmod>2022-01-08T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/automation/</loc>
     <lastmod>2022-01-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2022-01-08-new-messager-setup/</loc>
     <lastmod>2022-01-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-01-07-efficient-minds-fallacy/</loc>
     <lastmod>2022-01-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2022-01-02-pixel-space-automation/</loc>
     <lastmod>2022-01-02T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-12-21-aim-statuses/</loc>
     <lastmod>2021-12-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-12-20-amazon-cloud-kitchen/</loc>
     <lastmod>2021-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/brains/</loc>
     <lastmod>2021-12-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/virtual-reality/</loc>
     <lastmod>2021-12-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-12-12-prosopagnosia-augmented-reality/</loc>
     <lastmod>2021-12-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-12-09-amazon-beans/</loc>
     <lastmod>2021-12-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-12-07-future-automation-software/</loc>
     <lastmod>2021-12-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/peer-learning-group/</loc>
     <lastmod>2021-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-12-05-human-brain-study-group/</loc>
     <lastmod>2021-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-11-23-flashcard-collection-task/</loc>
     <lastmod>2021-11-23T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-11-20-birds/</loc>
     <lastmod>2021-11-20T02:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-11-20-save-my-spot/</loc>
     <lastmod>2021-11-20T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-11-20-twitter-replies/</loc>
     <lastmod>2021-11-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/python/</loc>
     <lastmod>2021-11-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-11-16-other-languages/</loc>
     <lastmod>2021-11-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-11-05-hypothesis-arxiv/</loc>
     <lastmod>2021-11-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-11-02-improvements-to-spaced-repetition/</loc>
     <lastmod>2021-11-02T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/blockchain/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-11-02-ddov-for-daos/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-10-28-ml-and-automation-for-note-taking/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-10-26-go-note-go-hardware/</loc>
     <lastmod>2021-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/hardware/</loc>
     <lastmod>2021-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-10-20-health-insurance-daos/</loc>
     <lastmod>2021-10-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/healthcare/</loc>
     <lastmod>2021-10-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-10-11-snapshot-of-tags/</loc>
     <lastmod>2021-10-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-10-10-note-taking-interop-requirements/</loc>
     <lastmod>2021-10-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-10-09-note-taking-system-interop/</loc>
     <lastmod>2021-10-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-10-05-spaced-repetition-update/</loc>
     <lastmod>2021-10-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/documents/</loc>
     <lastmod>2021-09-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-09-27-snippet-on-go-note-go/</loc>
     <lastmod>2021-09-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-09-26-go-note-go/</loc>
     <lastmod>2021-09-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/projects/list/</loc>
     <lastmod>2021-09-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/software/</loc>
     <lastmod>2021-09-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-09-12-embedded-roam-research/</loc>
     <lastmod>2021-09-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-09-08-gpt-3-for-spaced-repetition/</loc>
     <lastmod>2021-09-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-08-22-phone-in-kitchen-eval/</loc>
     <lastmod>2021-08-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-08-16-codex-pl/</loc>
     <lastmod>2021-08-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-08-16-dgsrs/</loc>
     <lastmod>2021-08-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-08-15-community-spaced-repetition/</loc>
     <lastmod>2021-08-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-08-09-crispr-gardening/</loc>
     <lastmod>2021-08-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-07-29-note-taking-flow/</loc>
     <lastmod>2021-07-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/table-tennis/</loc>
     <lastmod>2021-07-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-07-22-forehead-is-forward/</loc>
     <lastmod>2021-07-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-07-18-laws-of-large-numbers/</loc>
     <lastmod>2021-07-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-07-11-setting-up-computer/</loc>
     <lastmod>2021-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-07-10-forehand-to-forehead/</loc>
     <lastmod>2021-07-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-07-08-phone-in-kitchen/</loc>
     <lastmod>2021-07-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-07-06-laptop-prices/</loc>
     <lastmod>2021-07-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-07-03-reconstructing-rl-tt-in-vr/</loc>
     <lastmod>2021-07-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-06-23-resuming-habits/</loc>
     <lastmod>2021-06-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-06-21-serving-in-table-tennis/</loc>
     <lastmod>2021-06-21T02:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-06-21-responding-to-side-spin/</loc>
     <lastmod>2021-06-21T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-06-21-backhand-flicks-drives-loops-and-pushes/</loc>
     <lastmod>2021-06-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-06-17-spreadsheet-in-ferdi/</loc>
     <lastmod>2021-06-17T04:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-06-17-a-torrent-of-snippets/</loc>
     <lastmod>2021-06-17T03:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-06-17-areas-of-table-tennis-to-improve-at/</loc>
     <lastmod>2021-06-17T02:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-06-17-browserflow-is-live/</loc>
     <lastmod>2021-06-17T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-06-17-table-tennis-olympic-qualifiers/</loc>
     <lastmod>2021-06-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-05-19-thirty-days-to-request-a-review/</loc>
     <lastmod>2021-05-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-05-16-writing-in-the-woods/</loc>
     <lastmod>2021-05-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-05-03-lighthouse/</loc>
     <lastmod>2021-05-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-05-02-snippet-tags/</loc>
     <lastmod>2021-05-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-05-01-table-tennis-flow/</loc>
     <lastmod>2021-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/automatic-video-editing/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-04-29-recording-in-vr/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-04-27-getsoils/</loc>
     <lastmod>2021-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-04-25-sensible-units/</loc>
     <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-04-24-backlinks/</loc>
     <lastmod>2021-04-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-04-23-incomplete-snippets/</loc>
     <lastmod>2021-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-04-22-sensible-units/</loc>
     <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-04-20-sleep-no-snippet/</loc>
     <lastmod>2021-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-04-19-python-set-operations/</loc>
     <lastmod>2021-04-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-04-18-virtual-table-tennis-coaching/</loc>
     <lastmod>2021-04-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-04-17-resuming-snippet-writing/</loc>
     <lastmod>2021-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-04-16-table-tennis-vr/</loc>
     <lastmod>2021-04-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-04-15-oil-pricing/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-04-08-laser-eye-surgery/</loc>
     <lastmod>2021-04-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-03-11-peer-learning-group-topics/</loc>
     <lastmod>2021-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-03-10-efficient-minds-hypothesis-failing/</loc>
     <lastmod>2021-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-03-08-healthy-games-inter-company-compact/</loc>
     <lastmod>2021-03-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2021-03-07-roam-twitter-bot-dev-guide/</loc>
     <lastmod>2021-03-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-03-04-the-efficient-minds-hypothesis/</loc>
     <lastmod>2021-03-04T13:36:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-02-24-brainstorming-roam-terminal/</loc>
     <lastmod>2021-02-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-02-21-snippets-dry-spell/</loc>
     <lastmod>2021-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-02-17-python-magic-functions/</loc>
     <lastmod>2021-02-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/python-fire/</loc>
     <lastmod>2021-02-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-02-14-the-python-fire-shebang/</loc>
     <lastmod>2021-02-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-02-13-flows-for-roam-research/</loc>
     <lastmod>2021-02-13T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-02-13-saving-urls-to-roam-with-browserflow/</loc>
     <lastmod>2021-02-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-02-12-javascript-functions-for-inserting-blocks-in-roam/</loc>
     <lastmod>2021-02-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-02-10-find-yourself-typing-t-enter-often/</loc>
     <lastmod>2021-02-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-02-09-what-does-browserflow-do-beyond-what-tampermonkey-does/</loc>
     <lastmod>2021-02-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-02-08-repurposing-my-twitter-feed/</loc>
     <lastmod>2021-02-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-02-07-peer-learning-group-sign-up/</loc>
     <lastmod>2021-02-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-02-07-ways-to-improve-peer-learning-group/</loc>
     <lastmod>2021-02-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-02-05-focused-reading/</loc>
     <lastmod>2021-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-02-02-focused-reading-browserflow-flow-idea/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-31-asking-for-upvotes/</loc>
     <lastmod>2021-01-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/sql/</loc>
     <lastmod>2021-01-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-30-sql-for-the-kangaroo-auto-responder/</loc>
     <lastmod>2021-01-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-29-kangaroo-auto-responder/</loc>
     <lastmod>2021-01-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-25-notifications-in-roam-research/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-24-peer-learning-group-feedback/</loc>
     <lastmod>2021-01-24T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/now/</loc>
     <lastmod>2021-01-23T05:14:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-23-margin-notes/</loc>
     <lastmod>2021-01-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-22-am-i-available-for-conversation-right-now-dot-com/</loc>
     <lastmod>2021-01-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-20-clubhouse-feature-request-save-last-60-seconds/</loc>
     <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-18-python-hoist-locals-only/</loc>
     <lastmod>2021-01-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-17-refrigerator-insight/</loc>
     <lastmod>2021-01-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-16-python-hoist/</loc>
     <lastmod>2021-01-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-14-peer-learning-group/</loc>
     <lastmod>2021-01-14T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-13-plugged-directly-into-the-internet/</loc>
     <lastmod>2021-01-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-12-limitations-of-democratic-delegation-optional-voting/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-11-democratic-delegation-optional-voting/</loc>
     <lastmod>2021-01-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-10-a-filesystem-for-social-media/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/browser-history/</loc>
     <lastmod>2021-01-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-09-mobile-distraction-detection-at-last/</loc>
     <lastmod>2021-01-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-09-will-it-be-harder-to-write-snippets-now/</loc>
     <lastmod>2021-01-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-08-distraction-detection-proto-acquired/</loc>
     <lastmod>2021-01-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2021-01-08-where-are-all-the-posts-from-2020/</loc>
     <lastmod>2021-01-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-07-a-social-network-for-slow-long-form-discussions/</loc>
     <lastmod>2021-01-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/thought-experiments/</loc>
     <lastmod>2021-01-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-06-brains-dont-do-solomonoff-induction/</loc>
     <lastmod>2021-01-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-05-ffmpeg-aspirations/</loc>
     <lastmod>2021-01-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-04-more-datalog-queries-for-roam/</loc>
     <lastmod>2021-01-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-03-2020-resolution-check-in/</loc>
     <lastmod>2021-01-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-02-spaced-repetition-in-roam-research/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2021-01-01-programmatically-accessing-chromes-tabs-from-other-devices-data/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-12-29-where-do-thoughts-come-from-a-thought-experiment/</loc>
     <lastmod>2020-12-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-12-28-publishing-blog-posts-from-roam-research-quickly-and-automatically/</loc>
     <lastmod>2020-12-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-12-27-even-faster-snippet-publishing-from-roam/</loc>
     <lastmod>2020-12-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-12-26-pythons-strip-lstrip-and-rstrip-in-javascript/</loc>
     <lastmod>2020-12-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-12-23-improving-roam-snippet-publishing-speeds/</loc>
     <lastmod>2020-12-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/</loc>
     <lastmod>2020-12-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-12-20-looking-back-on-my-browsing-history-snippets/</loc>
     <lastmod>2020-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-12-12-derivative-of-softmax-and-the-softmax-cross-entropy-loss/</loc>
     <lastmod>2020-12-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-12-06-brainstorming-mandatory-reading-for-dodam/</loc>
     <lastmod>2020-12-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-12-03-4.2e-8-of-all-of-human-experience/</loc>
     <lastmod>2020-12-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-12-02-supervisord/</loc>
     <lastmod>2020-12-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-11-30-updating-google-slides-through-roam-research/</loc>
     <lastmod>2020-11-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-11-24-publishing-through-roam-research/</loc>
     <lastmod>2020-11-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-11-07-letting-adriana-put-things-in-my-leitner-box/</loc>
     <lastmod>2020-11-07T08:14:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-11-03-extracting-snippets-from-roam-research/</loc>
     <lastmod>2020-11-03T15:22:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-10-22-questions-to-answer-about-python-fire/</loc>
     <lastmod>2020-10-22T20:31:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-10-09-an-update-on-my-2020-resolution/</loc>
     <lastmod>2020-10-09T22:55:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-10-08-biking-in-the-morning/</loc>
     <lastmod>2020-10-08T22:04:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-10-06-introducing-the-snippet-queue/</loc>
     <lastmod>2020-10-06T22:16:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-10-06-further-reducing-the-publication-barrier-with-queuing/</loc>
     <lastmod>2020-10-06T13:29:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-10-06-the-snippets-i-dont-publish/</loc>
     <lastmod>2020-10-06T12:33:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-10-03-checking-your-fan-speed-and-cpu-temperature-on-mac-os/</loc>
     <lastmod>2020-10-03T15:46:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-10-01-infinite-distractions-and-getting-a-good-sear/</loc>
     <lastmod>2020-10-01T10:54:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-09-27-why-phone-snippets-a-test-phone-snippet/</loc>
     <lastmod>2020-09-27T16:49:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-09-27-posting-snippets-from-my-phone/</loc>
     <lastmod>2020-09-27T16:32:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-07-22-writing-with-gpt3/</loc>
     <lastmod>2020-07-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-07-21-deep-variational-informational-bottleneck/</loc>
     <lastmod>2020-07-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-06-28-oeis-download/</loc>
     <lastmod>2020-06-28T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-06-28-facebook-chronological-order/</loc>
     <lastmod>2020-06-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-05-20-imessage-sql-db/</loc>
     <lastmod>2020-05-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-05-15-roaming-the-web/</loc>
     <lastmod>2020-05-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-05-02-hackernews-submit/</loc>
     <lastmod>2020-05-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-04-30-detecting-sleeping-hours/</loc>
     <lastmod>2020-04-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-04-26-daily-browser-history-summaries/</loc>
     <lastmod>2020-04-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-04-25-roam-json-export/</loc>
     <lastmod>2020-04-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-04-20-browser-history-date-queries/</loc>
     <lastmod>2020-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-04-12-simplifying-sql-with-with/</loc>
     <lastmod>2020-04-12T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/</loc>
     <lastmod>2020-04-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-04-11-browser-history-queries/</loc>
     <lastmod>2020-04-11T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-04-11-tips-for-obs/</loc>
     <lastmod>2020-04-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-04-09-exploring-obs/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-03-20-understanding-oauth2/</loc>
     <lastmod>2020-03-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-03-19-browsing-history/</loc>
     <lastmod>2020-03-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-03-14-principles-of-pico/</loc>
     <lastmod>2020-03-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-03-02-fastbook/</loc>
     <lastmod>2020-03-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-02-26-video-tooling-progress/</loc>
     <lastmod>2020-02-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-02-21-jump-cut-programming/</loc>
     <lastmod>2020-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-02-08-future-gameshow-host/</loc>
     <lastmod>2020-02-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-02-04-bieber-bot-capabilities/</loc>
     <lastmod>2020-02-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-01-26-next-steps-for-ama/</loc>
     <lastmod>2020-01-26T10:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-01-25-ask-me-anywhere/</loc>
     <lastmod>2020-01-25T10:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-01-24-time-spent-on-science/</loc>
     <lastmod>2020-01-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-01-14-say-one-thing-well/</loc>
     <lastmod>2020-01-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-01-13-writing-tool-idea/</loc>
     <lastmod>2020-01-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/education/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-01-09-learning-by-teaching/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-01-08-ordinary-least-squares/</loc>
     <lastmod>2020-01-08T02:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-01-02-pyd-swyt-cf-bh-din/</loc>
     <lastmod>2020-01-02T02:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-01-02-moments-of-internet-addiction/</loc>
     <lastmod>2020-01-02T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2020-01-01-new-years-resolutions/</loc>
     <lastmod>2019-12-30T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2019-12-30-writing-for-no-audience/</loc>
     <lastmod>2019-12-30T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2019-12-30-analyzing-my-browser-history/</loc>
     <lastmod>2019-12-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/google-apps-script/</loc>
     <lastmod>2019-12-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2019-12-29-track-your-life-in-a-spreadsheet/</loc>
     <lastmod>2019-12-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2019-12-29-feedingstuffs/</loc>
     <lastmod>2019-12-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2019-12-26-learning-to-communicate/</loc>
     <lastmod>2019-12-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/snippets/2019-12-25-introducing-snippets/</loc>
     <lastmod>2019-12-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/</loc>
     <lastmod>2019-05-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/posts/</loc>
     <lastmod>2018-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/projects/</loc>
     <lastmod>2018-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2018-10-21-apps-script-mail-merge/</loc>
     <lastmod>2018-10-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/just-for-fun/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/puzzle/</loc>
     <lastmod>2017-10-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2017-03-06-introducing-python-fire/</loc>
     <lastmod>2017-03-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://davidbieber.com/tags/esperanto/</loc>
-    <lastmod>2015-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2015-07-01-estas-mia-patrino/</loc>
     <lastmod>2015-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://davidbieber.com/tags/esperanto/</loc>
+    <lastmod>2015-07-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://davidbieber.com/post/2014-11-08-firefox-in-the-cloud/</loc>
     <lastmod>2014-11-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/tags/princeton-acm/</loc>
     <lastmod>2014-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2013-09-06-code-at-night-vs-hackathon/</loc>
     <lastmod>2013-09-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2013-08-16-mathcounts-coach-q-and-a/</loc>
     <lastmod>2013-08-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2013-08-14-khanversation/</loc>
     <lastmod>2013-08-14T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2013-08-14-ssh-passwordlessly/</loc>
     <lastmod>2013-08-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2013-08-07-teach-at-scale/</loc>
     <lastmod>2013-08-07T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2013-03-13-automate-your-life-sending-emails/</loc>
     <lastmod>2013-03-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2013-03-13-lorenz-attractor-pawns/</loc>
     <lastmod>2013-03-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2013-01-31-blokus-life-lessons/</loc>
     <lastmod>2013-01-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2012-12-25-django-appfog/</loc>
     <lastmod>2012-12-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2012-11-29-crms-not-just-for-sales-folk/</loc>
     <lastmod>2012-11-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2012-10-30-thoughts-on-education/</loc>
     <lastmod>2012-10-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2012-09-19-do-you-take-online-courses/</loc>
     <lastmod>2012-09-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2012-09-18-whats-a-code-at-night/</loc>
     <lastmod>2012-09-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/post/2012-09-04-collapsible-blog-posts/</loc>
     <lastmod>2012-09-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://davidbieber.com/authors/admin/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://davidbieber.com/engine-room-demo/</loc>
+  </url><url>
     <loc>https://davidbieber.com/authors/</loc>
   </url>
-  
 </urlset>

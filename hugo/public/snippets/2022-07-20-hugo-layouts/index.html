@@ -32,9 +32,22 @@
   
     
   
-  <meta name="description" content="This is a note-to-self about how the code base for this website, davidbieber.com, is organized. There are several &ldquo;layouts&rdquo; files that live in the hugo/layouts directories. This is what each of them does:
-hugo/layouts/_default/list.html  list.html defines how /snippets, /tags, and each of the individual /tags/ pages are rendered. Each of these pages holds a list of links, as well as a Discussion section.
-hugo/layouts/_default/rss.xml Defines the rss feeds for snippets and for posts.">
+  <meta name="description" content="This is a note-to-self about how the code base for this website, davidbieber.com, is organized. There are several &ldquo;layouts&rdquo; files that live in the 
+hugo/layouts directories. This is what each of them does:
+
+hugo/layouts/_default/list.html
+
+list.html defines how 
+/snippets, 
+/tags, and each of the individual /tags/ pages are rendered. Each of these pages holds a list of links, as well as a Discussion section.
+
+hugo/layouts/_default/rss.xml
+Defines the rss feeds for 
+snippets and for 
+posts.
+
+hugo/layouts/partials/widgets/pages.html
+Used to render the posts widget on the home page.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2022-07-20-hugo-layouts/">
@@ -254,8 +267,8 @@ hugo/layouts/_default/rss.xml Defines the rss feeds for snippets and for posts."
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_3442a5ec1975e9c2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_f8848e5bff6e4686.png">
 
   <link rel="canonical" href="https://davidbieber.com/snippets/2022-07-20-hugo-layouts/">
 
@@ -276,9 +289,22 @@ hugo/layouts/_default/rss.xml Defines the rss feeds for snippets and for posts."
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/snippets/2022-07-20-hugo-layouts/">
   <meta property="og:title" content="Hugo Layouts for this Website | David Bieber">
-  <meta property="og:description" content="This is a note-to-self about how the code base for this website, davidbieber.com, is organized. There are several &ldquo;layouts&rdquo; files that live in the hugo/layouts directories. This is what each of them does:
-hugo/layouts/_default/list.html  list.html defines how /snippets, /tags, and each of the individual /tags/ pages are rendered. Each of these pages holds a list of links, as well as a Discussion section.
-hugo/layouts/_default/rss.xml Defines the rss feeds for snippets and for posts."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+  <meta property="og:description" content="This is a note-to-self about how the code base for this website, davidbieber.com, is organized. There are several &ldquo;layouts&rdquo; files that live in the 
+hugo/layouts directories. This is what each of them does:
+
+hugo/layouts/_default/list.html
+
+list.html defines how 
+/snippets, 
+/tags, and each of the individual /tags/ pages are rendered. Each of these pages holds a list of links, as well as a Discussion section.
+
+hugo/layouts/_default/rss.xml
+Defines the rss feeds for 
+snippets and for 
+posts.
+
+hugo/layouts/partials/widgets/pages.html
+Used to render the posts widget on the home page."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
@@ -534,48 +560,48 @@ hugo/layouts/_default/rss.xml Defines the rss feeds for snippets and for posts."
     <div class="article-style" id="article-content">
       <p>This is a note-to-self about how the code base for this website, davidbieber.com, is organized. There are several &ldquo;layouts&rdquo; files that live in the 
 <a href="https://github.com/dbieber/davidbieber.com/tree/master/hugo/layouts" target="_blank" rel="noopener">hugo/layouts</a> directories. This is what each of them does:</p>
-<h4 id="hugolayouts_defaultlisthtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayouts_defaultlisthtml">
+<h4 id="hugolayouts_">
 <a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/_default/list.html" target="_blank" rel="noopener">hugo/layouts/_default/list.html</a></h4>
 <p>
 <a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/_default/list.html" target="_blank" rel="noopener">list.html</a> defines how 
 <a href="/snippets">/snippets</a>, 
 <a href="/tags">/tags</a>, and each of the individual /tags/<tag> pages are rendered. Each of these pages holds a list of links, as well as a Discussion section.</p>
-<h4 id="hugolayouts_defaultrssxmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayouts_defaultrssxml">
+<h4 id="hugolayouts_-1">
 <a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/_default/rss.xml" target="_blank" rel="noopener">hugo/layouts/_default/rss.xml</a></h4>
 <p>Defines the rss feeds for 
 <a href="/snippets/index.xml">snippets</a> and for 
 <a href="/posts/index.xml">posts</a>.</p>
-<h4 id="hugolayoutspartialswidgetspageshtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialswidgetspageshtml">
+<h4 id="hugolayoutspartialswidgetspageshtml">
 <a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/widgets/pages.html" target="_blank" rel="noopener">hugo/layouts/partials/widgets/pages.html</a></h4>
 <p>Used to render the posts widget on the home page.</p>
-<h4 id="hugothemesacademiclayoutssectionposthtmlusersdbiebercodegithubdbieberdavidbiebercomhugothemesacademiclayoutssectionposthtml">
+<h4 id="hugothemesacademiclayoutssectionposthtml">
 <a href="/Users/dbieber/code/github/dbieber/davidbieber.com/hugo/themes/academic/layouts/section/post.html">/hugo/themes/academic/layouts/section/post.html</a></h4>
 <p>Used to render the 
 <a href="/posts">/posts</a> page. (Part of the theme.)</p>
-<h4 id="hugolayoutspartialswidgetsportfoliohtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialswidgetsportfoliohtml">
+<h4 id="hugolayoutspartialswidgetsportfoliohtml">
 <a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/widgets/portfolio.html" target="_blank" rel="noopener">hugo/layouts/partials/widgets/portfolio.html</a></h4>
 <p>Used to render the 
 <a href="/projects">/projects</a> page.</p>
-<h4 id="hugolayoutspartialscustom_jshtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialscustom_jshtml">
+<h4 id="hugolayoutspartialscustom_">
 <a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/custom_js.html" target="_blank" rel="noopener">hugo/layouts/partials/custom_js.html</a></h4>
 <p>Embeds Firebase, Tumblr Embed Gist, JQuery, and React. Just the staples that appear on every page.</p>
-<h4 id="hugolayoutspartialscustom_js_extrahtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialscustom_js_extrahtml">
+<h4 id="hugolayoutspartialscustom_-1">
 <a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/custom_js_extra.html" target="_blank" rel="noopener">hugo/layouts/partials/custom_js_extra.html</a></h4>
 <p>Embeds page-specific JS bundles, e.g. Ask-Me-Anywhere, or margin-notes.js. The source for the custom JS bundles lives in 
 <a href="https://github.com/dbieber/davidbieber.com/tree/master/hugo/assets/js-src" target="_blank" rel="noopener">assets/js-src</a>.</p>
-<h4 id="hugolayoutspartialsdiscussionhtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialsdiscussionhtml">
+<h4 id="hugolayoutspartialsdiscussionhtml">
 <a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/discussion.html" target="_blank" rel="noopener">hugo/layouts/partials/discussion.html</a></h4>
 <p>Embeds Discord on the page.</p>
-<h4 id="hugolayoutspartialspage_headerhtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialspage_headerhtml">
+<h4 id="hugolayoutspartialspage_">
 <a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/page_header.html" target="_blank" rel="noopener">hugo/layouts/partials/page_header.html</a></h4>
 <p>Renders post header data, such as a chip if appropriate, the header image, and title and subtitle headers.</p>
-<h4 id="hugolayoutspartialspage_footerhtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialspage_footerhtml">
+<h4 id="hugolayoutspartialspage_-1">
 <a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/page_footer.html" target="_blank" rel="noopener">hugo/layouts/partials/page_footer.html</a></h4>
 <p>Shows tags.
 Includes the Discord discussion partial.
 Includes 4 related pages in the footer.
 Shows the author.</p>
-<h4 id="hugolayoutspartialspage_metadata_authorshtmlhttpsgithubcomdbieberdavidbiebercomblobmasterhugolayoutspartialspage_metadata_authorshtml">
+<h4 id="hugolayoutspartialspage_-2">
 <a href="https://github.com/dbieber/davidbieber.com/blob/master/hugo/layouts/partials/page_metadata_authors.html" target="_blank" rel="noopener">hugo/layouts/partials/page_metadata_authors.html</a></h4>
 <p>Empty. Overwrites the equivalent file from the Academic theme preventing author metadata from rendering.</p>
 <hr>
@@ -787,7 +813,7 @@ details.addEventListener("toggle", event => {
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+<script src="/js/academic.min.01af32edc9a00e9a188425fb55cdbd62.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>

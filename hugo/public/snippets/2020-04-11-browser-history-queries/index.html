@@ -32,10 +32,56 @@
   
     
   
-  <meta name="description" content="Previously I listed out a few queries for poking at my browser history. Here are some more!
+  <meta name="description" content="
+Previously I listed out a few queries for poking at my browser history. Here are some more!
 As before, I begin by making a copy of my browsing history and opening sqlite3:
-cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sqlite3 ~/my-history  Once that&rsquo;s done, we can start running the queries.
-YouTube Videos Watched select DISTINCT REPLACE(urls.title, &quot; - YouTube&quot;, &quot;&quot;), urls.url from urls where urls.url like &quot;%www.youtube.com/watch%&quot; limit 50;  YouTube Search Queries select DISTINCT REPLACE(urls.">
+cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history
+sqlite3 ~/my-history
+
+Once that&rsquo;s done, we can start running the queries.
+YouTube Videos Watched
+select DISTINCT REPLACE(urls.title, &quot; - YouTube&quot;, &quot;&quot;), urls.url
+from urls
+where urls.url like &quot;%www.youtube.com/watch%&quot;
+limit 50;
+
+YouTube Search Queries
+select DISTINCT REPLACE(urls.title, &quot; - YouTube&quot;, &quot;&quot;)
+from urls
+where urls.url like &quot;%www.youtube.com/results?search_query%&quot;
+limit 50;
+
+Google Search Queries
+select DISTINCT REPLACE(urls.title, &quot; - Google Search&quot;, &quot;&quot;)
+from urls
+where urls.url like &quot;%www.google.com/search%&quot; 
+limit 50;
+
+Google Maps Usage
+select DISTINCT REPLACE(urls.title, &quot; - Google Maps&quot;, &quot;&quot;)
+from urls
+where urls.url like &quot;%www.google.com/maps%&quot; 
+and urls.title != &quot;Google Maps&quot;
+limit 50;
+
+Wikipedia Browsing History
+select DISTINCT REPLACE(urls.title, &quot; - Wikipedia&quot;, &quot;&quot;)
+from urls
+where urls.url like &quot;%wikipedia.org/wiki/%&quot;
+limit 50;
+
+GitHub Users and Orgs
+select DISTINCT
+SUBSTR(
+  urls.url,
+  LENGTH(&quot;https://github.com/&quot;) &#43; 1,
+  INSTR(SUBSTR(urls.url, LENGTH(&quot;https://github.com/&quot;) &#43; 1), &quot;/&quot;) - 1
+) as user
+from urls
+where urls.url like &quot;https://github.com/%&quot;
+limit 50;
+
+The rest of the GitHub queries ended up being quite messy, so I&rsquo;ve placed them at the end of the document.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://davidbieber.com/snippets/2020-04-11-browser-history-queries/">
@@ -255,8 +301,8 @@ YouTube Videos Watched select DISTINCT REPLACE(urls.title, &quot; - YouTube&quot
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_32x32_fill_box_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu6034018d2bd3ec10a6270f0656007019_39811_192x192_fill_box_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu_3442a5ec1975e9c2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu_f8848e5bff6e4686.png">
 
   <link rel="canonical" href="https://davidbieber.com/snippets/2020-04-11-browser-history-queries/">
 
@@ -277,10 +323,56 @@ YouTube Videos Watched select DISTINCT REPLACE(urls.title, &quot; - YouTube&quot
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/snippets/2020-04-11-browser-history-queries/">
   <meta property="og:title" content="More Browser History Queries | David Bieber">
-  <meta property="og:description" content="Previously I listed out a few queries for poking at my browser history. Here are some more!
+  <meta property="og:description" content="
+Previously I listed out a few queries for poking at my browser history. Here are some more!
 As before, I begin by making a copy of my browsing history and opening sqlite3:
-cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history sqlite3 ~/my-history  Once that&rsquo;s done, we can start running the queries.
-YouTube Videos Watched select DISTINCT REPLACE(urls.title, &quot; - YouTube&quot;, &quot;&quot;), urls.url from urls where urls.url like &quot;%www.youtube.com/watch%&quot; limit 50;  YouTube Search Queries select DISTINCT REPLACE(urls."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
+cp ~/Library/Application\ Support/Google/Chrome/Default/History ~/my-history
+sqlite3 ~/my-history
+
+Once that&rsquo;s done, we can start running the queries.
+YouTube Videos Watched
+select DISTINCT REPLACE(urls.title, &quot; - YouTube&quot;, &quot;&quot;), urls.url
+from urls
+where urls.url like &quot;%www.youtube.com/watch%&quot;
+limit 50;
+
+YouTube Search Queries
+select DISTINCT REPLACE(urls.title, &quot; - YouTube&quot;, &quot;&quot;)
+from urls
+where urls.url like &quot;%www.youtube.com/results?search_query%&quot;
+limit 50;
+
+Google Search Queries
+select DISTINCT REPLACE(urls.title, &quot; - Google Search&quot;, &quot;&quot;)
+from urls
+where urls.url like &quot;%www.google.com/search%&quot; 
+limit 50;
+
+Google Maps Usage
+select DISTINCT REPLACE(urls.title, &quot; - Google Maps&quot;, &quot;&quot;)
+from urls
+where urls.url like &quot;%www.google.com/maps%&quot; 
+and urls.title != &quot;Google Maps&quot;
+limit 50;
+
+Wikipedia Browsing History
+select DISTINCT REPLACE(urls.title, &quot; - Wikipedia&quot;, &quot;&quot;)
+from urls
+where urls.url like &quot;%wikipedia.org/wiki/%&quot;
+limit 50;
+
+GitHub Users and Orgs
+select DISTINCT
+SUBSTR(
+  urls.url,
+  LENGTH(&quot;https://github.com/&quot;) &#43; 1,
+  INSTR(SUBSTR(urls.url, LENGTH(&quot;https://github.com/&quot;) &#43; 1), &quot;/&quot;) - 1
+) as user
+from urls
+where urls.url like &quot;https://github.com/%&quot;
+limit 50;
+
+The rest of the GitHub queries ended up being quite messy, so I&rsquo;ve placed them at the end of the document."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
   
     
@@ -993,7 +1085,7 @@ details.addEventListener("toggle", event => {
     <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
-<script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+<script src="/js/academic.min.01af32edc9a00e9a188425fb55cdbd62.js"></script>
 
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
