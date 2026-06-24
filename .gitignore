@@ -6,6 +6,7 @@ secure_settings.py
 .DS_store
 __pycache__
 virtualenv
+node_modules
 
 Transactions.csv
 
@@ -18,3 +19,8 @@ internal
 # Run `npx babel --watch hugo/assets/js-src/ --out-dir hugo/assets/js/ --presets react-app/prod`
 # to generate hugo/assets/js.
 hugo/assets/js
+
+# Transient Hugo build lock (created during local `hugo`/`hugo server` runs).
+hugo/.hugo_build.lock
+# Downloaded Hugo install packages (fetched by .github/scripts/install.sh).
+*.deb

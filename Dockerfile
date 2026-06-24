@@ -8,7 +8,15 @@ RUN npm install babel-cli@6 babel-preset-react-app@3
 # Transform jsx to js.
 RUN npx babel assets/js-src/ --out-dir assets/js/ --presets react-app/prod
 
-FROM peaceiris/hugo:v0.62.1 as hugo
+# Install Hugo Extended (same version/source as .github/scripts/install.sh).
+FROM debian:bookworm-slim as hugo
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends curl ca-certificates \
+    && curl -LO https://github.com/gohugoio/hugo/releases/download/v0.163.3/hugo_extended_0.163.3_linux-amd64.deb \
+    && dpkg -i hugo_extended_0.163.3_linux-amd64.deb \
+    && rm hugo_extended_0.163.3_linux-amd64.deb \
+    && apt-get purge -y --auto-remove curl \
+    && rm -rf /var/lib/apt/lists/*
 COPY --from=node /app/hugo /app/hugo
 
 WORKDIR /app/hugo
