@@ -30,7 +30,16 @@
     become: true
 
   - name: get files ready to serve
-    shell: cp -r hugo/public/* default/
+    # `cp -r` is additive: pages removed from a Hugo build (e.g. drafted content
+    # or paginated pages that no longer exist) used to linger in default/ as stale
+    # orphans served forever. The legacy site assets in default/ (cv.pdf, /games/,
+    # galleria, etc.) are git-tracked and restored by the `setup davidbieber.com`
+    # task above (force=true), whereas copied Hugo output is untracked. So
+    # `git clean` removes only the previous build's output, then we copy the fresh
+    # build on top.
+    shell: |
+      git clean -fd default/
+      cp -r hugo/public/* default/
     become: true
     args:
       chdir: /home/dbieber/davidbieber.com
