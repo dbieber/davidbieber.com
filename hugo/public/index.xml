@@ -13295,33 +13295,31 @@ function getDraftMessageBySubject(subject) {
       <description>&lt;p&gt;&lt;em&gt;Last updated: July 12, 2026.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;This Privacy Policy describes how David Bieber, operating as a sole proprietor,
 handles information in connection with a personal AI assistant (&amp;ldquo;Fable&amp;rdquo;) and its
-text-messaging (SMS) service.&lt;/p&gt;
+text-messaging (SMS) service. This policy is publicly accessible and is not
+behind any login.&lt;/p&gt;
 &lt;h2 id=&#34;who-this-covers&#34;&gt;Who this covers&lt;/h2&gt;
 &lt;p&gt;The SMS service is a private, personal tool. The only recipient of
 assistant-initiated text messages is the account owner, David Bieber, himself.
 It is not a marketing program and does not send messages to the general public.&lt;/p&gt;
 &lt;h2 id=&#34;information-collected&#34;&gt;Information collected&lt;/h2&gt;
-&lt;p&gt;In connection with the SMS service, the following may be processed:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The account owner&amp;rsquo;s mobile phone number.&lt;/li&gt;
-&lt;li&gt;The content of text messages exchanged with the assistant (for example,
-reminders, notifications, questions, and replies).&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;In connection with the SMS service, the following may be processed: the account
+owner&amp;rsquo;s mobile phone number, and the content of text messages exchanged with the
+assistant (for example, reminders, notifications, questions, and replies).&lt;/p&gt;
 &lt;h2 id=&#34;how-information-is-used&#34;&gt;How information is used&lt;/h2&gt;
-&lt;p&gt;Message content and the mobile number are used solely to operate the personal
+&lt;p&gt;The mobile number and message content are used solely to operate the personal
 assistant — to deliver reminders and notifications, to understand and respond to
-the account owner&amp;rsquo;s requests, and to maintain the service. Messages may be
-processed by service providers strictly to operate the assistant, including
-Twilio (for message delivery) and AI model providers (to generate responses).&lt;/p&gt;
-&lt;h2 id=&#34;information-sharing&#34;&gt;Information sharing&lt;/h2&gt;
-&lt;p&gt;No mobile information is sold. &lt;strong&gt;No mobile information will be shared with third
-parties or affiliates for marketing or promotional purposes.&lt;/strong&gt; Text-messaging
-opt-in data and consent are not shared with any third parties. Information is
-disclosed only to the service providers described above for the sole purpose of
-operating the assistant, or where required by law.&lt;/p&gt;
-&lt;h2 id=&#34;opt-out-and-help&#34;&gt;Opt-out and help&lt;/h2&gt;
-&lt;p&gt;Reply &lt;strong&gt;STOP&lt;/strong&gt; at any time to opt out of messages; reply &lt;strong&gt;START&lt;/strong&gt; to opt back
-in; reply &lt;strong&gt;HELP&lt;/strong&gt; for help. Message and data rates may apply.&lt;/p&gt;
+the account owner&amp;rsquo;s requests, and to maintain the service.&lt;/p&gt;
+&lt;h2 id=&#34;no-sharing-with-third-parties&#34;&gt;No sharing with third parties&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;We do not sell, rent, lease, or share your mobile phone number, your SMS or
+text-messaging consent, or your SMS opt-in information with any third parties or
+affiliates for any purpose, including marketing or promotional purposes.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Messages are delivered through a messaging infrastructure provider (our SMS
+carrier) that processes message data solely on our behalf to transmit the
+messages; this is not a sale or a sharing of your information with a third party.&lt;/p&gt;
+&lt;h2 id=&#34;messaging-disclosures&#34;&gt;Messaging disclosures&lt;/h2&gt;
+&lt;p&gt;Message frequency varies. &lt;strong&gt;Message and data rates may apply.&lt;/strong&gt; Reply &lt;strong&gt;STOP&lt;/strong&gt; at
+any time to opt out of messages; reply &lt;strong&gt;START&lt;/strong&gt; to opt back in; reply &lt;strong&gt;HELP&lt;/strong&gt;
+for help.&lt;/p&gt;
 &lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;
 &lt;p&gt;Questions about this policy: 
 &lt;a href=&#34;mailto:david810@gmail.com&#34;&gt;david810@gmail.com&lt;/a&gt;.&lt;/p&gt;
