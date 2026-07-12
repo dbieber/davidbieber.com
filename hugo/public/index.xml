@@ -6,7 +6,7 @@
     <description>Recent content on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Nov 2024 01:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bieber Bot Privacy Policy</title>
       <link>https://davidbieber.com/documents/bieber-bot-privacy/</link>
@@ -543,6 +543,35 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       
       <description>&lt;p&gt;Princeton ACM is the Princeton University student chapter of the Association for Computing Machinery. Please find the Princeton ACM website at 
 &lt;a href=&#34;https://princetonacm.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;princetonacm.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terms of Service</title>
+      <link>https://davidbieber.com/terms/</link>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/terms/</guid>
+      
+      <description>&lt;p&gt;&lt;em&gt;Last updated: July 12, 2026.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;These terms describe the text-messaging (SMS) service of a personal AI assistant
+(&amp;ldquo;Fable&amp;rdquo;) operated by David Bieber as a sole proprietor.&lt;/p&gt;
+&lt;h2 id=&#34;the-service&#34;&gt;The service&lt;/h2&gt;
+&lt;p&gt;Fable is a private, personal assistant. Its SMS service sends the account owner
+(David Bieber) reminders, notifications, and conversational replies, and receives
+his replies. The only recipient is the account owner himself. This is not a
+marketing or promotional program.&lt;/p&gt;
+&lt;h2 id=&#34;message-frequency-and-rates&#34;&gt;Message frequency and rates&lt;/h2&gt;
+&lt;p&gt;Message frequency varies and is conversational — messages are sent in response to
+the account owner&amp;rsquo;s activity and requests. &lt;strong&gt;Message and data rates may apply.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;opt-out-and-help&#34;&gt;Opt-out and help&lt;/h2&gt;
+&lt;p&gt;Reply &lt;strong&gt;STOP&lt;/strong&gt; at any time to stop receiving messages; reply &lt;strong&gt;START&lt;/strong&gt; to opt back
+in; reply &lt;strong&gt;HELP&lt;/strong&gt; for help.&lt;/p&gt;
+&lt;h2 id=&#34;no-carrier-liability&#34;&gt;No carrier liability&lt;/h2&gt;
+&lt;p&gt;Mobile carriers are not liable for delayed or undelivered messages.&lt;/p&gt;
+&lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;
+&lt;p&gt;Questions about these terms: 
+&lt;a href=&#34;mailto:david810@gmail.com&#34;&gt;david810@gmail.com&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -13253,6 +13282,49 @@ function getDraftMessageBySubject(subject) {
 &lt;p&gt;You&amp;rsquo;ve now learned how to program a mail merge function that uses a spreadsheet as input. You can use a template to send multiple recipients personalized emails. You can schedule these emails to send in the future.&lt;/p&gt;
 &lt;p&gt;You now have a great power, and with it comes great responsibility. Don&amp;rsquo;t use this for spam. Be kind and courteous to your fellow citizens of the internet. If you find this useful, do let me know what you use it for (I&amp;rsquo;m 
 &lt;a href=&#34;https://twitter.com/Bieber&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Bieber&lt;/a&gt; on Twitter). I&amp;rsquo;m using Google Apps Script for a variety of things these days and I am always interested to hear how others are using the same tools.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://davidbieber.com/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidbieber.com/privacy/</guid>
+      
+      <description>&lt;p&gt;&lt;em&gt;Last updated: July 12, 2026.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This Privacy Policy describes how David Bieber, operating as a sole proprietor,
+handles information in connection with a personal AI assistant (&amp;ldquo;Fable&amp;rdquo;) and its
+text-messaging (SMS) service.&lt;/p&gt;
+&lt;h2 id=&#34;who-this-covers&#34;&gt;Who this covers&lt;/h2&gt;
+&lt;p&gt;The SMS service is a private, personal tool. The only recipient of
+assistant-initiated text messages is the account owner, David Bieber, himself.
+It is not a marketing program and does not send messages to the general public.&lt;/p&gt;
+&lt;h2 id=&#34;information-collected&#34;&gt;Information collected&lt;/h2&gt;
+&lt;p&gt;In connection with the SMS service, the following may be processed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The account owner&amp;rsquo;s mobile phone number.&lt;/li&gt;
+&lt;li&gt;The content of text messages exchanged with the assistant (for example,
+reminders, notifications, questions, and replies).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;how-information-is-used&#34;&gt;How information is used&lt;/h2&gt;
+&lt;p&gt;Message content and the mobile number are used solely to operate the personal
+assistant — to deliver reminders and notifications, to understand and respond to
+the account owner&amp;rsquo;s requests, and to maintain the service. Messages may be
+processed by service providers strictly to operate the assistant, including
+Twilio (for message delivery) and AI model providers (to generate responses).&lt;/p&gt;
+&lt;h2 id=&#34;information-sharing&#34;&gt;Information sharing&lt;/h2&gt;
+&lt;p&gt;No mobile information is sold. &lt;strong&gt;No mobile information will be shared with third
+parties or affiliates for marketing or promotional purposes.&lt;/strong&gt; Text-messaging
+opt-in data and consent are not shared with any third parties. Information is
+disclosed only to the service providers described above for the sole purpose of
+operating the assistant, or where required by law.&lt;/p&gt;
+&lt;h2 id=&#34;opt-out-and-help&#34;&gt;Opt-out and help&lt;/h2&gt;
+&lt;p&gt;Reply &lt;strong&gt;STOP&lt;/strong&gt; at any time to opt out of messages; reply &lt;strong&gt;START&lt;/strong&gt; to opt back
+in; reply &lt;strong&gt;HELP&lt;/strong&gt; for help. Message and data rates may apply.&lt;/p&gt;
+&lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;
+&lt;p&gt;Questions about this policy: 
+&lt;a href=&#34;mailto:david810@gmail.com&#34;&gt;david810@gmail.com&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
