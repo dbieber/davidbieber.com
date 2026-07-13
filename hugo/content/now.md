@@ -17,4 +17,4 @@ When I'm not on the go (and sometimes when I am), I've been doing a bunch of yog
 
 I've given Claude a capped spend credit card and Claude has started buying me books.
 
-I'm reading [All About Love](https://www.goodreads.com/book/show/17607.All_About_Love), Computational Humor, and [Unreasonable Hospitality](https://www.goodreads.com/book/show/60152726-unreasonable-hospitality).
+I'm reading [All About Love](https://www.goodreads.com/book/show/17607.All_About_Love), Computational Humor, and [Unreasonable Hospitality](https://www.goodreads.com/book/show/60018618-unreasonable-hospitality).
