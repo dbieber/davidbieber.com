@@ -553,19 +553,28 @@ Only the final line of the text was readable: &amp;ldquo;I hope the FBI doesn&am
       
       <guid>https://davidbieber.com/sms/</guid>
       
-      <description>&lt;p&gt;&lt;em&gt;Last updated: July 26, 2026.&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;em&gt;Last updated: July 31, 2026.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;This page is the public opt-in disclosure (call to action) for the text-messaging
-(SMS) program of Fable, a personal AI assistant operated by David Bieber as a sole
-proprietor.&lt;/p&gt;
+(SMS) program of Fable, a personal AI assistant application operated by David
+Bieber as a sole proprietor.&lt;/p&gt;
 &lt;h2 id=&#34;what-the-program-is&#34;&gt;What the program is&lt;/h2&gt;
-&lt;p&gt;Fable sends personal productivity messages: calendar reminders, task alerts, and
-replies to the account owner&amp;rsquo;s own requests. The only recipient of these messages
-is the account owner, David Bieber, at his own verified mobile number. This is not
-a marketing program and it does not message the general public.&lt;/p&gt;
+&lt;p&gt;Fable is a software application that sends automated, personalized messages to
+people who have opted in: calendar reminders, task alerts, notifications, and
+conversational responses to a recipient&amp;rsquo;s own requests, including messages sent
+at the request of the account owner. Messages are generated programmatically by
+the application. This is not a marketing program: it never sends promotional
+content, and it only messages individuals who have given consent.&lt;/p&gt;
 &lt;h2 id=&#34;how-to-opt-in&#34;&gt;How to opt in&lt;/h2&gt;
-&lt;p&gt;Opt-in happens by text message: the user texts &lt;strong&gt;START&lt;/strong&gt; to the program&amp;rsquo;s number
-to begin receiving messages. Consent is collected only from the account owner&amp;rsquo;s
-own mobile number, which he controls.&lt;/p&gt;
+&lt;p&gt;Opt-in is collected individually from each recipient, in one of two ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;By text message:&lt;/strong&gt; text &lt;strong&gt;START&lt;/strong&gt; to the program&amp;rsquo;s number to begin
+receiving messages.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;By direct consent:&lt;/strong&gt; a recipient personally known to the account owner
+agrees to receive messages from the program, and confirms by replying to a
+one-time confirmation message before any further messages are sent.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;No one is messaged without their consent, and no contact lists are imported,
+purchased, or shared.&lt;/p&gt;
 &lt;h2 id=&#34;how-to-opt-out-and-get-help&#34;&gt;How to opt out and get help&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Reply &lt;strong&gt;STOP&lt;/strong&gt; at any time to stop receiving messages.&lt;/li&gt;
@@ -573,8 +582,9 @@ own mobile number, which he controls.&lt;/p&gt;
 &lt;li&gt;Reply &lt;strong&gt;HELP&lt;/strong&gt; for help.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;message-frequency-and-rates&#34;&gt;Message frequency and rates&lt;/h2&gt;
-&lt;p&gt;Message frequency varies with the account owner&amp;rsquo;s activity, typically a few
-messages per day. Message and data rates may apply.&lt;/p&gt;
+&lt;p&gt;Message frequency varies by recipient, typically a few messages per day for the
+account owner and occasional messages for other opted-in recipients. Message and
+data rates may apply.&lt;/p&gt;
 &lt;h2 id=&#34;privacy&#34;&gt;Privacy&lt;/h2&gt;
 &lt;p&gt;Mobile numbers, text-messaging consent, and opt-in information are never sold,
 rented, leased, or shared with third parties or affiliates for marketing or
