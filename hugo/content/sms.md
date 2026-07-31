@@ -1,28 +1,37 @@
 +++
 title = "SMS Program: Fable Personal Assistant"
 date = 2026-07-26T00:00:00
-lastmod = 2026-07-26T00:00:00
+lastmod = 2026-07-31T00:00:00
 draft = false
 +++
 
-_Last updated: July 26, 2026._
+_Last updated: July 31, 2026._
 
 This page is the public opt-in disclosure (call to action) for the text-messaging
-(SMS) program of Fable, a personal AI assistant operated by David Bieber as a sole
-proprietor.
+(SMS) program of Fable, a personal AI assistant application operated by David
+Bieber as a sole proprietor.
 
 ## What the program is
 
-Fable sends personal productivity messages: calendar reminders, task alerts, and
-replies to the account owner's own requests. The only recipient of these messages
-is the account owner, David Bieber, at his own verified mobile number. This is not
-a marketing program and it does not message the general public.
+Fable is a software application that sends automated, personalized messages to
+people who have opted in: calendar reminders, task alerts, notifications, and
+conversational responses to a recipient's own requests, including messages sent
+at the request of the account owner. Messages are generated programmatically by
+the application. This is not a marketing program: it never sends promotional
+content, and it only messages individuals who have given consent.
 
 ## How to opt in
 
-Opt-in happens by text message: the user texts **START** to the program's number
-to begin receiving messages. Consent is collected only from the account owner's
-own mobile number, which he controls.
+Opt-in is collected individually from each recipient, in one of two ways:
+
+- **By text message:** text **START** to the program's number to begin
+  receiving messages.
+- **By direct consent:** a recipient personally known to the account owner
+  agrees to receive messages from the program, and confirms by replying to a
+  one-time confirmation message before any further messages are sent.
+
+No one is messaged without their consent, and no contact lists are imported,
+purchased, or shared.
 
 ## How to opt out and get help
 
@@ -32,8 +41,9 @@ own mobile number, which he controls.
 
 ## Message frequency and rates
 
-Message frequency varies with the account owner's activity, typically a few
-messages per day. Message and data rates may apply.
+Message frequency varies by recipient, typically a few messages per day for the
+account owner and occasional messages for other opted-in recipients. Message and
+data rates may apply.
 
 ## Privacy
 
