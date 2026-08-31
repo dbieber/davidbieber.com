@@ -119,7 +119,7 @@ contact_links = [
   zoom = 15
 
 [marketing]
-  google_analytics = "UA-34570499-2"
+  google_analytics = ""
   google_tag_manager = ""
 
 [avatar]
