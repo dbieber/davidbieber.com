@@ -1,0 +1,7 @@
+self inductance of a toroid
+N turns
+[B.dl = 4pi/c Itotal
+B(r)*2pir = 4pi/c NI
+C(r) = 2NI/rc
+flux = [B.da = [B(r).hdr = 2NIh/c lnb/a
+L = Nflux/cI = 2N^2h/c^2ln(b/a)  a>>(b-a)-->back to L for solenoid

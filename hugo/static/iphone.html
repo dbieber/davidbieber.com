@@ -1,0 +1,121 @@
+<html>
+<head>
+    <title>iPhone Photography</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="//code.jquery.com/jquery-latest.pack.js"></script>
+    <style>
+    * {
+        font-family: Gill Sans, Segoe UI, sans-serif;
+    }
+    html, body {
+        padding: 0;
+        margin: 0;
+    }
+    .hidden {
+        display: none;
+    }
+    h1, h2, h3, h4, h5, h6, P {
+        padding: 0px;
+        margin: 0px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    a {
+        text-decoration: underline;
+    }
+    .container {
+    }
+    div.header {
+        background:#f8f8f8;
+        border-bottom:1px solid #eee;
+        height: 100px;
+    }
+    .header a {
+        position: absolute;
+    }
+    .header img {
+        border-width: 1px;
+        border-style: solid;
+        border-color: lightgray;
+        margin-bottom: 6px;
+        margin-right: 6px;
+    }
+    div.name {
+        position: relative;
+        margin-left: 110px;
+        width: auto;
+    }
+    div#name_1 {
+        top: 50px;
+    }
+    @media screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+        div#name_2 {
+            top: 6px;
+        }
+        .iPhone {
+            display: none;
+        }
+    }
+    .container>div {
+        padding: 10px;
+    }
+    .galleria{ width: 100%; height: 640px; background: #000 }
+    </style>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34570499-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+    </script>
+    <script type="text/javascript" src="galleria.js"></script>
+    <script type="text/javascript">
+        Galleria.loadTheme('galleriaTheme/galleria.classic.js');
+        Galleria.run();
+    </script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <!-- <a href="davidb.jpg"><img src="davidb.jpg" width="100px" /></a> -->
+            <div id="name_1" class="name">
+                <h1><span class="iPhone">iPhone </span>Photography</h1>
+                <h2>Look! Photos!</h2>
+            </div>
+        </div>
+
+        <div class="hello">
+            <div class="galleria" id="galleria">
+                <img src="iPhonePhotos/cherry.jpg"/>
+                <img src="iPhonePhotos/cherry2.jpg"/>
+                <img src="iPhonePhotos/duckbutterfly.jpg"/>
+                <img src="iPhonePhotos/duckbutterfly2.jpg"/>
+                <img src="iPhonePhotos/giants.jpg"/>
+                <img src="iPhonePhotos/jumpshot.jpg"/>
+                <img src="iPhonePhotos/jumpshot2.jpg"/>
+                <img src="iPhonePhotos/mantis.jpg"/>
+                <img src="iPhonePhotos/mantis2.jpg"/>
+                <img src="iPhonePhotos/starfish.jpg"/>
+                <img src="iPhonePhotos/starfish2.jpg"/>
+                <img src="iPhonePhotos/waterfalls.jpg"/>
+                <img src="iPhonePhotos/waterfalls2.jpg"/>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
