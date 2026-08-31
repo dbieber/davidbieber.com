@@ -214,44 +214,6 @@ We find ourselves in a castle in the clouds.">
 
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34570499-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-34570499-2', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
   
 
 
@@ -269,10 +231,9 @@ We find ourselves in a castle in the clouds.">
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
   <meta property="twitter:site" content="@Bieber">
   <meta property="twitter:creator" content="@Bieber">
@@ -286,8 +247,8 @@ When we are young, we gather bricks. Each of our experiences is a brick. Each th
 Whenever we learn something new, it is supported by things we already know.
 The new blocks are laid to rest atop the old ones.
 Over our long lives, we construct beautiful tall towers using thousands of bricks, representing everything we know. These towers take us to great heights.
-We find ourselves in a castle in the clouds."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
-  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
+We find ourselves in a castle in the clouds."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2022-12-13T00:00:00&#43;00:00">

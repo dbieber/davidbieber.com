@@ -216,44 +216,6 @@ Go Note Go to be multi-vendor.">
 
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34570499-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-34570499-2', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
   
 
 
@@ -271,10 +233,9 @@ Go Note Go to be multi-vendor.">
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
   <meta property="twitter:site" content="@Bieber">
   <meta property="twitter:creator" content="@Bieber">
@@ -290,8 +251,8 @@ Note entry
 Note entry projects need to be able to insert notes into a notebase regardless of which note-taking system is storing the notebase.
 This is critical for projects like 
 my Browserflow note-taking flows (which only support Roam right now) and 
-Go Note Go to be multi-vendor."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
-  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
+Go Note Go to be multi-vendor."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2021-10-10T00:00:00&#43;00:00">

@@ -211,44 +211,6 @@ Let&rsquo;s disentangle what you get notified about, when you get notified about
 
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34570499-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-34570499-2', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
   
 
 
@@ -266,10 +228,9 @@ Let&rsquo;s disentangle what you get notified about, when you get notified about
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
   <meta property="twitter:site" content="@Bieber">
   <meta property="twitter:creator" content="@Bieber">
@@ -280,8 +241,8 @@ Let&rsquo;s disentangle what you get notified about, when you get notified about
   <meta property="og:description" content="
 #RoamGames are upon us! The challenge: project management in Roam.
 So, let&rsquo;s talk notifications. They&rsquo;re going to be essential for any multiplayer Roam scenario. They&rsquo;re also ruthless attention vampires that kill productivity. We&rsquo;ve got to get this right.
-Let&rsquo;s disentangle what you get notified about, when you get notified about it, and where/how you&rsquo;re notified. This leads us to a vision where users can define notification strategies and take control of their attention1."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
-  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
+Let&rsquo;s disentangle what you get notified about, when you get notified about it, and where/how you&rsquo;re notified. This leads us to a vision where users can define notification strategies and take control of their attention1."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2021-01-25T00:00:00&#43;00:00">

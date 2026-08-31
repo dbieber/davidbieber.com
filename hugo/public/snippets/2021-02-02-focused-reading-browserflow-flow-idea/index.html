@@ -213,44 +213,6 @@ As you can see, the screen is dimmed everywhere except on the lines surrounding 
 
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34570499-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-34570499-2', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
   
 
 
@@ -268,10 +230,9 @@ As you can see, the screen is dimmed everywhere except on the lines surrounding 
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
   <meta property="twitter:site" content="@Bieber">
   <meta property="twitter:creator" content="@Bieber">
@@ -284,8 +245,8 @@ accessiBe. I stumbled upon it on
 tasteofhome.com. The idea is to make the web more accessible to folks with ADHD by dimming the part of the screen they&rsquo;re not actively looking at.
 Here&rsquo;s a video of the accessiBe implementation in action on the tasteofhome.com website.
 
-As you can see, the screen is dimmed everywhere except on the lines surrounding the mouse pointer. This helps me to regain focus more quickly if my attention is drawn away from the text I was reading."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
-  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
+As you can see, the screen is dimmed everywhere except on the lines surrounding the mouse pointer. This helps me to regain focus more quickly if my attention is drawn away from the text I was reading."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2021-02-02T00:00:00&#43;00:00">

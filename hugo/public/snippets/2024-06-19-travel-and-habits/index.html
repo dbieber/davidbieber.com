@@ -209,44 +209,6 @@ as in my last snippet. These go hand in hand of course; travel is the opposite o
 
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34570499-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-34570499-2', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
   
 
 
@@ -264,10 +226,9 @@ as in my last snippet. These go hand in hand of course; travel is the opposite o
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
   <meta property="twitter:site" content="@Bieber">
   <meta property="twitter:creator" content="@Bieber">
@@ -276,8 +237,8 @@ as in my last snippet. These go hand in hand of course; travel is the opposite o
   <meta property="og:url" content="https://davidbieber.com/snippets/2024-06-19-travel-and-habits/">
   <meta property="og:title" content="Travel can be disruptive to habits | David Bieber">
   <meta property="og:description" content="I remember I used to write short snippets just to get something out there. I think that&rsquo;s what this is going to be. A free-write, with no goal at the outset other than to quickly get a snippet up on my website. I&rsquo;ll mention there are a handful of ideas I have been thinking about. Travel is one. What a busy summer it&rsquo;s been. Routines are another, 
-as in my last snippet. These go hand in hand of course; travel is the opposite of a routine. At home, in those rare moments of normalcy, routine is a rhythmic structure. Travel disrupts this, creating space for new experiences, but possibly risking losing habits that took time to form."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
-  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
+as in my last snippet. These go hand in hand of course; travel is the opposite of a routine. At home, in those rare moments of normalcy, routine is a rhythmic structure. Travel disrupts this, creating space for new experiences, but possibly risking losing habits that took time to form."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2024-06-19T00:00:00&#43;00:00">

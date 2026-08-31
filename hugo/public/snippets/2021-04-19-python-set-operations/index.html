@@ -210,44 +210,6 @@ Python has a few primitive collection types: tuples, lists, dictionaries (aka di
 
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34570499-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-34570499-2', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
   
 
 
@@ -265,10 +227,9 @@ Python has a few primitive collection types: tuples, lists, dictionaries (aka di
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
   <meta property="twitter:site" content="@Bieber">
   <meta property="twitter:creator" content="@Bieber">
@@ -278,8 +239,8 @@ Python has a few primitive collection types: tuples, lists, dictionaries (aka di
   <meta property="og:title" content="Python set operations | David Bieber">
   <meta property="og:description" content="If you Google &ldquo;Python set intersection&rdquo;, you get a number of results about the set.intersection function. It isn&rsquo;t until the fourth result that you reach a page mentioning Python&rsquo;s convenient syntax for performing set operations. This was surprising to me, hence this snippet.
 Background: Collections in Python
-Python has a few primitive collection types: tuples, lists, dictionaries (aka dicts), and sets. Use parenthesis to create a tuple (1, 2, 3), square brackets to create a list [4, 5, 6], and squirrelly brackets to create a dict or set: {7: 8, 9: 10} makes a dict and {11, 12, 13} makes a set. Just like a set in mathematics, a set in Python is an unordered collection of distinct elements."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
-  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
+Python has a few primitive collection types: tuples, lists, dictionaries (aka dicts), and sets. Use parenthesis to create a tuple (1, 2, 3), square brackets to create a list [4, 5, 6], and squirrelly brackets to create a dict or set: {7: 8, 9: 10} makes a dict and {11, 12, 13} makes a set. Just like a set in mathematics, a set in Python is an unordered collection of distinct elements."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2021-04-19T00:00:00&#43;00:00">

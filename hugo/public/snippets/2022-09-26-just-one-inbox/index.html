@@ -209,44 +209,6 @@ In fact, I have so many that I forget about some of them, and they fade away. Es
 
 
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34570499-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-34570499-2', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
   
 
 
@@ -264,10 +226,9 @@ In fact, I have so many that I forget about some of them, and they fade away. Es
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
   <meta property="twitter:site" content="@Bieber">
   <meta property="twitter:creator" content="@Bieber">
@@ -276,8 +237,8 @@ In fact, I have so many that I forget about some of them, and they fade away. Es
   <meta property="og:url" content="https://davidbieber.com/snippets/2022-09-26-just-one-inbox/">
   <meta property="og:title" content="The Dream of Just One Inbox | David Bieber">
   <meta property="og:description" content="Ideally I&rsquo;d have just a single inbox, but in practice I have several.
-In fact, I have so many that I forget about some of them, and they fade away. Especially if we count all the different Slacks I&rsquo;m part of, there&rsquo;s no way I could keep up with all my inboxes. Here&rsquo;s a quick list of the inboxes I&rsquo;m currently trying to stay on top of: Personal email, Work email, Texts and Voicemail, a Twitter DMs, Facebook Messenger. In addition to these, there are more inboxes that I check but don&rsquo;t really try to stay on top of: a shared Roam graph, some Slacks, and some Discords, and various social medias and news websites. Beyond these are the inboxes that I simply don&rsquo;t think about these days: various forums, other Slacks and Discords, old game message boards. I&rsquo;m blanking on the names of some of these, that&rsquo;s how much they&rsquo;ve faded."><meta property="og:image" content="img/map[gravatar:%!s(bool=true) shape:circle]">
-  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=true) shape:circle]"><meta property="og:locale" content="en-us">
+In fact, I have so many that I forget about some of them, and they fade away. Especially if we count all the different Slacks I&rsquo;m part of, there&rsquo;s no way I could keep up with all my inboxes. Here&rsquo;s a quick list of the inboxes I&rsquo;m currently trying to stay on top of: Personal email, Work email, Texts and Voicemail, a Twitter DMs, Facebook Messenger. In addition to these, there are more inboxes that I check but don&rsquo;t really try to stay on top of: a shared Roam graph, some Slacks, and some Discords, and various social medias and news websites. Beyond these are the inboxes that I simply don&rsquo;t think about these days: various forums, other Slacks and Discords, old game message boards. I&rsquo;m blanking on the names of some of these, that&rsquo;s how much they&rsquo;ve faded."><meta property="og:image" content="https://davidbieber.com/img/portrait.jpg">
+  <meta property="twitter:image" content="https://davidbieber.com/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2022-09-26T01:00:00&#43;00:00">
