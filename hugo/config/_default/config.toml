@@ -41,6 +41,10 @@ enableGitInfo = false
 [outputFormats.WebAppManifest]
   mediaType = "application/manifest+json"
   rel = "manifest"
+  # Hugo 0.146+ ships a built-in WebAppManifest format whose baseName is
+  # "manifest"; the theme's site_head.html links /index.webmanifest, so pin
+  # the baseName back to "index" to keep the URL every page points at.
+  baseName = "index"
 
 [markup]
   defaultMarkdownHandler = "goldmark"
