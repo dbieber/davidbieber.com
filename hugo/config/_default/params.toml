@@ -29,7 +29,7 @@ plugins_js = []
 description = "davidbieber.com hosts the writing and projects of Google Brain software engineer David Bieber, including Bieber Bot, the at-scheduler, Teach Everyone, and Scrabble Bot."
 
 # Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
-sharing_image = ""
+sharing_image = "portrait.jpg"
 
 # Twitter username (without @). Used when a vistor shares your site on Twitter.
 twitter = "Bieber"
