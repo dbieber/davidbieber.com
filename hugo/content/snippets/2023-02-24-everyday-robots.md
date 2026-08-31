@@ -2,6 +2,7 @@
 title = "Everyday Robots"
 date = 2023-02-24
 tags = ["ai"]
+aliases = ["/snippets/2023-02-24-everyday-robotics/"]
 +++
 
 Whoa! Hello there! Can't wait to learn what you can do!<br/>
