@@ -609,7 +609,7 @@ That&amp;rsquo;s all you have to do &amp;ndash; it will know how to use the key 
 &lt;p&gt;Tip: If Claude builds you a web app and you save it to your iOS home screen, it feels like a native app (and can even support notifications and work offline, if you ask for it).&lt;/p&gt;
 &lt;p&gt;A few of my favorites:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;A &amp;ldquo;Subway Lessons&amp;rdquo; app that works offline and helps me towards my learning goals&lt;/li&gt;
+&lt;li&gt;A &amp;ldquo;Subway Lessons&amp;rdquo; app that works offline and helps me towards my learning goals while I&amp;rsquo;m on the subway&lt;/li&gt;
 &lt;li&gt;&amp;ldquo;Trail Talk&amp;rdquo;: for capturing audio screen free during dedicated hackpacking sessions (more on this in a future post, perhaps)&lt;/li&gt;
 &lt;li&gt;A 
 &lt;a href=&#34;https://strudel.cc/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Strudel DJ&amp;rdquo;&lt;/a&gt; app for making music on the go&lt;/li&gt;
@@ -619,7 +619,7 @@ That&amp;rsquo;s all you have to do &amp;ndash; it will know how to use the key 
 &lt;/ul&gt;
 &lt;div style=&#34;clear: both;&#34;&gt;&lt;/div&gt;
 &lt;p&gt;(4) Prioritize offline support&lt;/p&gt;
-&lt;p&gt;When you have Claude build you an app, ask it to make it work offline. It&amp;rsquo;ll just work! Make your iOS shortcut work offline too: see 
+&lt;p&gt;When you have Claude build you an app, ask it to make it work offline. It&amp;rsquo;ll just work! Make your iOS shortcut work offline too; see 
 &lt;a href=&#34;#making-your-setup-robust&#34;&gt;Making your setup robust&lt;/a&gt; below.&lt;/p&gt;
 &lt;p&gt;(5) Give your Claude an OpenAI API Key&lt;/p&gt;
 &lt;p&gt;Tell it to use the key for image generation whenever you&amp;rsquo;re building something that needs assets. All your projects will now be 10x better looking by default.&lt;/p&gt;
@@ -635,7 +635,7 @@ That&amp;rsquo;s all you have to do &amp;ndash; it will know how to use the key 
 &lt;p&gt;But only if it sparks joy. I find this helpful because I auto-forward certain receipts to Claude for processing (but don&amp;rsquo;t want to give it blanket access to my email), and because this way it can receive the book order confirmations without me accidentally seeing them and spoiling the surprise!&lt;/p&gt;
 &lt;p&gt;(4) Connect your Go Note Gos to your Claude&lt;/p&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://davidbieber.com/projects/go-note-go/&#34;&gt;Go Note Go&lt;/a&gt; is a screenless keyboard I designed for capturing my thoughts as I drift off to sleep (among other situations). I have a bunch of these around my apartment. You probably don&amp;rsquo;t. But if you do, set up a trigger word where your Claude is directed to read your notes.&lt;/p&gt;
+&lt;a href=&#34;https://davidbieber.com/projects/go-note-go/&#34;&gt;Go Note Go&lt;/a&gt; is a screenless keyboard I designed for capturing my thoughts as I drift off to sleep (among other situations). I have a bunch of these around my apartment. You probably don&amp;rsquo;t. But if you do, set up a trigger word by which your Claude is directed to read your notes.&lt;/p&gt;
 &lt;p&gt;(5) Give your Claude access to your photos&lt;/p&gt;
 &lt;p&gt;I use PhotoSync to automatically back my photos up to a Google Cloud Storage bucket, and I give my Claude access to the bucket. This lets me reference any photos I&amp;rsquo;ve taken in my voice notes to Claude.&lt;/p&gt;
 &lt;p&gt;(6) Give your Claude access to your printer&lt;/p&gt;
@@ -650,13 +650,13 @@ That&amp;rsquo;s all you have to do &amp;ndash; it will know how to use the key 
 &lt;p&gt;(2) Turn on swap space on your machine&lt;/p&gt;
 &lt;p&gt;Especially important if you use a low RAM machine. Just ask your Claude to do this for you.&lt;/p&gt;
 &lt;p&gt;(3) Make your iOS Shortcut work offline&lt;/p&gt;
-&lt;p&gt;To make your iOS Shortcut work offline, use the &amp;ldquo;Mail&amp;rdquo; app to send Claude your voice recordings or save to iCloud Storage. Saving to Dropbox doesn&amp;rsquo;t work offline. Saving to Google Cloud Storage from an iOS shortcut doesn&amp;rsquo;t seem to work at all.&lt;/p&gt;
+&lt;p&gt;To make your iOS Shortcut work offline, have it use the &amp;ldquo;Mail&amp;rdquo; app to send Claude your voice recordings or save to iCloud Storage. Saving to Dropbox doesn&amp;rsquo;t work offline. Saving to Google Cloud Storage from an iOS shortcut doesn&amp;rsquo;t seem to work at all. Be careful that with Mail, sometimes messages get stuck in the Outbox and need to be released manually.&lt;/p&gt;
 &lt;p&gt;(4) Prefer Action Button over Triple Tap if available&lt;/p&gt;
 &lt;p&gt;Newer iPhones (15 Pro and newer) offer the Action Button that I so love. Older iPhones support triggering an iOS shortcut with either 2 or 3 taps on the back of the phone. The Action Button is more robust than Triple Tap.&lt;/p&gt;
 &lt;p&gt;(5) Use Termius for Troubleshooting&lt;/p&gt;
-&lt;p&gt;If ever your setup does fall over, Termius lets you ssh into your VM from your phone so you can repair your setup without needing to wait until you&amp;rsquo;re at a computer again.&lt;/p&gt;
+&lt;p&gt;If ever your setup does fall over, Termius lets you ssh into your VM from your phone so you can repair your setup without needing to wait until you&amp;rsquo;re at a computer again. I haven&amp;rsquo;t had to do this in months, but it was common while I was still getting set up.&lt;/p&gt;
 &lt;p&gt;(6) Enable &amp;ldquo;remote control&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;Then you can see the Claude Code session in the Claude app. Sometimes &amp;ndash; especially early on in getting set up &amp;ndash; Claude will require you to give explicit approval, and it won&amp;rsquo;t take your audio or Slack word as a sufficient approval. Give these approvals in the app.&lt;/p&gt;
+&lt;p&gt;Then you can see your Claude Code session in the Claude app. Sometimes &amp;ndash; especially early on in getting set up &amp;ndash; Claude will require you to give explicit approvals, and it won&amp;rsquo;t take your audio or Slack word as a sufficient approval. Give these approvals in the app.&lt;/p&gt;
 &lt;h2 id=&#34;going-hackpacking&#34;&gt;Going Hackpacking&lt;/h2&gt;
 &lt;p&gt;I love my hackpacking setup. I&amp;rsquo;ll walk around Central Park dictating ideas to Claude as they come to me. On the subway &amp;ndash; even without internet access &amp;ndash; I&amp;rsquo;ll share ideas, knowing Claude will get to work as soon as my internet connection is restored. This dream I&amp;rsquo;ve had for years &amp;ndash; of being able to build software truly screen free &amp;ndash; has now arrived.&lt;/p&gt;
 &lt;p&gt;Because of hackpacking, I now have a custom suite of apps that suit my quirks, and I build new ones on a whim on my commute. Just this past week I thought &amp;ldquo;how fun it would be to have an Ezra Klein simulator&amp;rdquo;, where I can pretend I&amp;rsquo;m a guest on his podcast. By the time I got home the simulator was ready.&lt;/p&gt;
