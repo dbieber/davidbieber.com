@@ -494,19 +494,20 @@
 <h2 id="hackpackings-twin-dreams">Hackpacking&rsquo;s twin dreams</h2>
 <p>I have two dreams with hackpacking.</p>
 <p>(1) <strong>No screens at work.</strong> I want to be able to do a full day&rsquo;s work without having to look at a screen. I write software for a living, and if I could do this without needing to look at a screen, it would unchain me from my desk. For this goal, eight consecutive hours would be enough; yes, maybe I have to look at a screen the next day, but at least one full day&rsquo;s work, screen-free, encompassing all the complexity of my real job. That&rsquo;s the dream. Ideally I could get away from the desk, take a walk, be outside, be in nature, and still be as productive as I was before.</p>
-<p>(2) <strong>Getting ideas out of my head.</strong> Let&rsquo;s say I&rsquo;m hiking and an idea for a side project comes to me. Without looking at a screen, I want to be able to tell my AI assistant the idea. By the time I&rsquo;m back at a computer, perhaps the idea is already implemented and I can try it out. When I&rsquo;m in nature is often when I&rsquo;m most inspired. So it&rsquo;s only opportunistically that I want to delegate things to my AI assistant.</p>
-<p>Dream one is about doing work deliberately, but being able to be out in nature while I do it (i.e. a dedicated continuous hackpacking session). Dream two is about being deliberately out in nature, and opportunistically being able to push on a project should the impulse strike. Why do I want these things? Well, it feels really good to be out in nature. The cool air on your skin, it&rsquo;s relaxing. Being at a desk all day is an unfortunate trade-off that we have to make because computers work best when you&rsquo;re seated and you can use a keyboard and you can look at a screen. That&rsquo;s where you&rsquo;re able to be productive and run a business or build software. But this is changing; now that speech to text works, and now that AI works, the desk and screen are not necessary anymore. We have an opportunity to rethink the workplace.</p>
+<p>(2) <strong>Getting ideas out of my head.</strong> Let&rsquo;s say I&rsquo;m hiking and an idea for a side project comes to me. Without looking at a screen, I want to be able to tell my AI assistant the idea. By the time I&rsquo;m back at a computer, perhaps the idea is already implemented and I can try it out. On such a hike, I may want to stay present with nature. It may be only opportunistically that I want to delegate things to my AI assistant.</p>
+<p>Dream one is about doing work deliberately, but being able to be active outdoors while I do it (i.e. a dedicated continuous hackpacking session). Dream two is about being deliberately out in nature, and opportunistically being able to push on a project should the impulse strike. Why do I want these things? Well, it feels really good to be out in nature. The cool air on your skin, it&rsquo;s relaxing. Being at a desk all day is an unfortunate trade-off that we have to make because computers work best when you&rsquo;re seated and you can use a keyboard and you can look at a screen. That&rsquo;s where you&rsquo;re able to be productive and run a business or build software. But this is changing; now that speech to text works, and now that AI works, the desk and screen are not necessary. We have an opportunity to rethink the workplace.</p>
 <p>Why do I want to work on side projects while I&rsquo;m hiking or backpacking? I love working on side projects. I find them fulfilling. I love doing them with other people. And I love being outdoors. Hackpacking brings these things together. Being outdoors – just going for a walk, allowing your mind to wander – can also be inspiring; that&rsquo;s where the best ideas come from. So being able to capture those best ideas and get an AI assistant working on them for you is rewarding.</p>
-<p>This second dream is not without risks though! If you interrupt your hike to talk to an AI, it does take you out of the moment. If you&rsquo;ve stopped to capture an idea, it interrupts your mind-wandering. You must be wary of this going in. Hackpacking is not for every hike. It is not for everybody. But it is something I really enjoy and I think others will too. Those trade-offs are not lost on me though, and I certainly won&rsquo;t advocate for turning every hike into a hackpacking one.</p>
+<p>This second dream is not without risks though! If you interrupt your hike to talk to an AI, it takes you out of the moment. If you&rsquo;ve stopped to capture an idea, it interrupts your mind-wandering. You must be wary of this going in. Hackpacking is not for every hike. It is not for everybody. But it is something I really enjoy and I think others will too. Those trade-offs are not lost on me though, and I certainly won&rsquo;t advocate for turning every hike into a hackpacking one.</p>
 <h2 id="hackpacking-essentials">Hackpacking Essentials</h2>
 <p>You know what I want out of hackpacking. Now, how do we actually get away from the desk? How do we take our hacking and make it genuinely screen free?</p>
 <p>For me, the core of the answer is: (a) an iOS Shortcut and (b) a remote Claude Code instance.</p>
 <p>A persistent Claude Code on a cloud VM serves as my AI programming assistant, and a simple iOS shortcut lets me send my Claude audio just by pushing my phone&rsquo;s Action Button.</p>
-<p>My setup has other bells and whistles – we do comms in Slack, it has a credit card, an OpenAI API key for image-gen, and so much more – but those two alone define the core of the experience. In subsequent posts I intend to go through the parts of my stack that I think will be most useful to others (as well as some of the fun quirky bits that might be unique to me), but for now I&rsquo;ll just quickly cover these two essentials.</p>
+<p>My setup has other bells and whistles – we do comms in Slack, it has a credit card, an OpenAI API key for image-gen, and so much more – but those two alone define the core of the experience. Later in the post I go through the parts of my stack that I think will be most useful to others (as well as some of the fun quirky bits that might be unique to me), but first I&rsquo;ll quickly cover these two essentials.</p>
 <p>What it looks like:</p>
 <ul>
 <li>Push Action Button</li>
 <li>Tell Claude what to do</li>
+<li>Enjoy the sun on your skin</li>
 </ul>
 <!-- TODO: video demonstrations -->
 <details><summary>Setting it up</summary>
@@ -514,8 +515,8 @@ First, get yourself a VM. I use Hetzner. It costs me a few dollars per month.
 <p>On the VM, install Claude Code. Launch it with <code>claude</code>. This will be your persistent Claude instance.</p>
 <p>Explain its role to it. For example: &ldquo;Hi Claude, I&rsquo;d like for you to act as my persistent chief of staff. I will send you audio clips by saving them to Dropbox in the folder &ldquo;Voice Memos for Claude&rdquo;. Whenever a voice memo appears, transcribe it and process it. If it&rsquo;s a task for you to do, please do it with expedience. Looking forward to working together!&rdquo;</p>
 <p>Claude will have no trouble writing a 
-<a href="https://code.claude.com/docs/en/tools-reference#monitor-tool" target="_blank" rel="noopener">monitor</a> so that it wakes when new files appear.</p>
-<p>Then, so you can actually send those audio clips, set up an iOS shortcut that:</p>
+<a href="https://code.claude.com/docs/en/tools-reference#monitor-tool" target="_blank" rel="noopener">monitor</a> so that it wakes when new audio files appear.</p>
+<p>Then, so you can actually send those audio clips, make an iOS shortcut that:</p>
 <ol>
 <li>Starts recording audio</li>
 <li>Saves the audio to Dropbox</li>
@@ -525,7 +526,8 @@ First, get yourself a VM. I use Hetzner. It costs me a few dollars per month.
 Your two main options are emailing the audio to Claude or saving to some form of cloud storage.</p>
 <p>In practice, having your Shortcut using the Mail app to email Claude the audio tends to work best if you&rsquo;re interested in offline usage &ndash; and offline usage is a big part of the hackpacking experience!</p>
 <hr/>
-</details><br/>
+</details>
+(You can click to read the setup instructions, or you can just give your favorite AI the URL of this post and have it walk you through the setup, or even do it for you.)<br/><br/>
 <p>These two elements alone make building with AI on the go an absolute joy for me.
 When I send an audio note, there&rsquo;s no reply &ndash; but I know it&rsquo;s being acted on.
 If I have a follow-up thought, I just push the Action Button again &ndash; there&rsquo;s no friction to doing so. The persistent Claude Code handles the messages gracefully, regardless of whether I&rsquo;m working on one project or twenty.</p>
@@ -537,24 +539,24 @@ If I have a follow-up thought, I just push the Action Button again &ndash; there
 How to set it up? Just ask your Claude &ndash; it&rsquo;ll walk you through it and it only takes a few minutes. Put it on your Claude&rsquo;s VM, your phone, and your computer.</p>
 <p>(2) Use Slack for Comms (Or whatever your favorite messaging app is.)</p>
 <p>Make a private Slack just for yourself. Create a bot and tell your Claude the key.
-That&rsquo;s all you have to do &ndash; it will know how to use the key to communicate with you in your Slack (or Whatsapp or Signal or &hellip;).</p>
+That&rsquo;s all you have to do &ndash; it will know how to use the key to communicate with you in your Slack (or Whatsapp or Signal etc).</p>
 <p>(3) Build little apps for yourself!</p>
+<img src="/snippets/2026-10-19-hackpacking-home-screen.png" alt="My Hackpacking folder on my iPhone home screen" style="float: right; width: 180px; max-width: 40%; margin: 0 0 1em 1.5em;">
 <p>Tip: If Claude builds you a web app and you save it to your iOS home screen, it feels like a native app (and can even support notifications and work offline, if you ask for it).</p>
 <p>A few of my favorites:</p>
 <ul>
-<li>A &ldquo;subway lessons&rdquo; app that works offline and helps me towards my learning goals</li>
-<li>A custom app for capturing audio screen free during dedicated hackpacking sessions (more on this in a future post!)</li>
+<li>A &ldquo;Subway Lessons&rdquo; app that works offline and helps me towards my learning goals</li>
+<li>&ldquo;Trail Talk&rdquo;: for capturing audio screen free during dedicated hackpacking sessions (more on this in a future post, perhaps)</li>
 <li>A 
 <a href="https://strudel.cc/" target="_blank" rel="noopener">&ldquo;Strudel DJ&rdquo;</a> app for making music on the go</li>
 <li>My &ldquo;Dreams Tracker&rdquo; &ndash; for tracking my dreams, 
 <a href="/snippets/2023-07-31-pursue-your-dreams/">big</a> and 
 <a href="/snippets/2022-01-11-pursuing-your-dreams/">small</a></li>
 </ul>
-<!-- TODO: screenshot of my iOS home screen with all my lil apps -->
+<div style="clear: both;"></div>
 <p>(4) Prioritize offline support</p>
-<p>When you have Claude build you an app, ask it to make it work offline. It&rsquo;ll just work!</p>
-<p>Make your iOS shortcut work offline too: see 
-<a href="#making-your-setup-robust">&ldquo;Making your setup robust&rdquo;</a> below.</p>
+<p>When you have Claude build you an app, ask it to make it work offline. It&rsquo;ll just work! Make your iOS shortcut work offline too: see 
+<a href="#making-your-setup-robust">Making your setup robust</a> below.</p>
 <p>(5) Give your Claude an OpenAI API Key</p>
 <p>Tell it to use the key for image generation whenever you&rsquo;re building something that needs assets. All your projects will now be 10x better looking by default.</p>
 <p>(6) Use subagents to prioritize &ldquo;availability&rdquo;</p>
@@ -570,22 +572,26 @@ That&rsquo;s all you have to do &ndash; it will know how to use the key to commu
 <p>(4) Connect your Go Note Gos to your Claude</p>
 <p>
 <a href="/projects/go-note-go/">Go Note Go</a> is a screenless keyboard I designed for capturing my thoughts as I drift off to sleep (among other situations). I have a bunch of these around my apartment. You probably don&rsquo;t. But if you do, set up a trigger word where your Claude is directed to read your notes.</p>
+<p>(5) Give your Claude access to your photos</p>
+<p>I use PhotoSync to automatically back my photos up to a Google Cloud Storage bucket, and I give my Claude access to the bucket. This lets me reference any photos I&rsquo;ve taken in my voice notes to Claude.</p>
+<p>(6) Give your Claude access to your printer</p>
+<p>Wake up to the brrr&hellip; of Claude printing something for you &ndash; a silly comic, or a 
+<a href="/snippets/2024-05-15-choosing-routines/">morning routine</a>. 
+<a href="https://www.amazon.com/dp/B0BYSJHZJT" target="_blank" rel="noopener">Sticker printers ($33)</a> and 
+<a href="https://www.amazon.com/dp/B09KZR533K" target="_blank" rel="noopener">receipt printers ($11)</a> are fun too.</p>
 <h2 id="making-your-setup-robust">Making your setup robust</h2>
-<p>These recommendations are a bit more in the weeds, and will help you make your hackpacking setup more robust if you&rsquo;re setting it up in fall 2026.</p>
-<p>(1) Have your Claude Code rotate its session every few days</p>
-<p>Have each Claude instance hand off its state to the next.
-This might no longer be necessary but was when I started this setup some months ago.</p>
-<p>(2) Use a watchdog process to restart your Claude if it ever falls over</p>
+<p>These next recommendations are a bit more in the weeds, and will help you make your hackpacking setup more robust if you&rsquo;re setting it up in fall 2026.</p>
+<p>(1) Use a watchdog process to restart your Claude if it ever falls over</p>
 <p>Just ask your Claude to set this up for you. Have the watchdog message you when this happens so you&rsquo;re not in the dark when things go wrong.</p>
-<p>(3) Turn on swap space on your machine</p>
+<p>(2) Turn on swap space on your machine</p>
 <p>Especially important if you use a low RAM machine. Just ask your Claude to do this for you.</p>
-<p>(4) Make your iOS Shortcut work offline</p>
-<p>To make your iOS Shortcut work offline, use the &ldquo;Mail&rdquo; app to send Claude your voice recordings or save to iCloud Storage. Saving to Dropbox doesn&rsquo;t work offline. Saving to Google Cloud Storage doesn&rsquo;t seem to work at all.</p>
-<p>(5) Prefer Action Button over Triple Tap if available</p>
+<p>(3) Make your iOS Shortcut work offline</p>
+<p>To make your iOS Shortcut work offline, use the &ldquo;Mail&rdquo; app to send Claude your voice recordings or save to iCloud Storage. Saving to Dropbox doesn&rsquo;t work offline. Saving to Google Cloud Storage from an iOS shortcut doesn&rsquo;t seem to work at all.</p>
+<p>(4) Prefer Action Button over Triple Tap if available</p>
 <p>Newer iPhones (15 Pro and newer) offer the Action Button that I so love. Older iPhones support triggering an iOS shortcut with either 2 or 3 taps on the back of the phone. The Action Button is more robust than Triple Tap.</p>
-<p>(6) Use Termius for Troubleshooting</p>
+<p>(5) Use Termius for Troubleshooting</p>
 <p>If ever your setup does fall over, Termius lets you ssh into your VM from your phone so you can repair your setup without needing to wait until you&rsquo;re at a computer again.</p>
-<p>(7) Enable &ldquo;remote control&rdquo;</p>
+<p>(6) Enable &ldquo;remote control&rdquo;</p>
 <p>Then you can see the Claude Code session in the Claude app. Sometimes &ndash; especially early on in getting set up &ndash; Claude will require you to give explicit approval, and it won&rsquo;t take your audio or Slack word as a sufficient approval. Give these approvals in the app.</p>
 <h2 id="going-hackpacking">Going Hackpacking</h2>
 <p>I love my hackpacking setup. I&rsquo;ll walk around Central Park dictating ideas to Claude as they come to me. On the subway &ndash; even without internet access &ndash; I&rsquo;ll share ideas, knowing Claude will get to work as soon as my internet connection is restored. This dream I&rsquo;ve had for years &ndash; of being able to build software truly screen free &ndash; has now arrived.</p>
