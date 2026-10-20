@@ -24,9 +24,9 @@ An example of two isomorphic graphs is shown here.
 
 ![Example of isomorphic graphs](graph-isomorphism.png "Two isomorphic graphs are shown.")
 *Figure: Graph 1 and Graph 2 are isomorphic.
-The correspondance between nodes is illustrated by the node colors and numbers.*
+The correspondence between nodes is illustrated by the node colors and numbers.*
 
-In general, determining whether two graphs are isomorphic when the correspondance is not provided is a challenging problem; precisely how hard this problem is remains an open question in computer science.
+In general, determining whether two graphs are isomorphic when the correspondence is not provided is a challenging problem; precisely how hard this problem is remains an open question in computer science.
 It isn't known whether there is a polynomial time algorithm for determining whether graphs are isomorphic, and it also isn't known whether the problem is $\text{NP-complete}.$
 The graph isomorphism problem may even be an example of an [$\text{NP-intermediate}$](https://en.wikipedia.org/wiki/NP-intermediate) problem, but this would only be possible if $\text{P} \ne \text{NP}.$
 
@@ -114,14 +114,14 @@ If the partitions change, we proceed to the next iteration.
 If no partition changes, the algorithm can terminate early.
 When comparing the partitions of the nodes across graphs to see if graphs are isomorphic, we use the canonical form as described above in the algorithm.
 
-### Finding the Correspondance Between Isomorphic Graphs
+### Finding the Correspondence Between Isomorphic Graphs
 
 The core idea of the Weisfeiler-Lehman isomorphism test is to find for each node in each graph a signature based on the neighborhood around the node.
-These signatures can then be used to find the correspondance between nodes in the two graphs, which can be used to check for isomorphism.
+These signatures can then be used to find the correspondence between nodes in the two graphs, which can be used to check for isomorphism.
 
-In the algorithm descibed above, the "compressed labels" serve as the signatures.
-Since multiple nodes may have the same compressed label, there are multiple possible correspondances suggested by a Weisfeiler-Lehman labeling.
-The Weisfeiler-Lehman isomorphism test itself does not provide a way of narrowing down the possible correspondances further.
+In the algorithm described above, the "compressed labels" serve as the signatures.
+Since multiple nodes may have the same compressed label, there are multiple possible correspondences suggested by a Weisfeiler-Lehman labeling.
+The Weisfeiler-Lehman isomorphism test itself does not provide a way of narrowing down the possible correspondences further.
 
 ### The Disappearance of Boris Weisfeiler
 
@@ -139,7 +139,7 @@ As mentioned in the introduction, it is not known whether the graph isomorphism 
 In fact, it is not even known whether graph isomorphism falls in either of these categories, or whether this problem is $\text{NP-intermediate}$.
 The problem of factoring integers is another problem like this, where it is unknown whether the problem is in $\text{P}$, $\text{NP-complete}$, or is $\text{NP-intermediate}$.
 Bear in mind that $\text{NP-intermediate}$ problems can only exist if $\text{P} \ne \text{NP}$.
-So if anyone were to show conclusively that factoring or graph isomorphism were $\text{NP-intermediate}$ they would also have shown $\text{P} \ne \text{NP}$ and won the [Clay Institute P vs NP Millenium Problem](https://www.claymath.org/millennium-problems/p-vs-np-problem)'s million dollar prize.
+So if anyone were to show conclusively that factoring or graph isomorphism were $\text{NP-intermediate}$ they would also have shown $\text{P} \ne \text{NP}$ and won the [Clay Institute P vs NP Millennium Problem](https://www.claymath.org/millennium-problems/p-vs-np-problem)'s million dollar prize.
 
 ### Applications of Graph Isomorphisms
 

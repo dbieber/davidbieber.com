@@ -33,7 +33,7 @@ I will answer all of the following questions in this post:
 
 I have a single spreadsheet with columns *Evening*, *Morning*, *Keywords*, *Weekday*, *Date*, *People*, *Notes*. In this sheet, I have a single row _per day_.
 
-The essense of the system is to jot down (1) what I do, and optionally (2) who I engage with each day.
+The essence of the system is to jot down (1) what I do, and optionally (2) who I engage with each day.
 
 I don't update the spreadsheet every day, usually just once a week or so I'll fill in the activity from all of the missing days.
 
@@ -146,7 +146,7 @@ And if I don't have any activity planned for a particular day, BieberBot may tak
 
 Finally BieberBot will also remind me if I haven't been entering activities into the spreadsheet in a while, so I don't fall too far behind on the logging system.
 
-Setting up these notifcations is a bit outside the scope of this post, but if it interests you how BieberBot works, you can subscribe for future posts here:
+Setting up these notifications is a bit outside the scope of this post, but if it interests you how BieberBot works, you can subscribe for future posts here:
 
 {{<mailchimp>}}
 

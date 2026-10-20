@@ -91,7 +91,7 @@ The Messager Queue sheet also displays the *Text* of the message to send, so you
 
 The *Date* and *Time* columns allow for scheduling messages to be sent at any point in the future. Leave them blank and the message will be sent as soon as it is approved. Use keyboard shortcuts cmd-; (for date) and cmd-shift-; (for time) to quickly fill out these columns if desired.
 
-Finally, the *Approval* column is the most important. Mark a messages as OK if you want it to be sent, or as Ignored if you deside to skip it. The *Status* column is updated automatically by Messager when the message is sent (or if it fails to send, then the error appears here). You can also mark the Status manually with whatever value you want (e.g. if you send the message manually), and the Messager system will ignore that message going forward. If you want the system to retry sending a message, simply clear out the Status column and it will try again.
+Finally, the *Approval* column is the most important. Mark a messages as OK if you want it to be sent, or as Ignored if you decide to skip it. The *Status* column is updated automatically by Messager when the message is sent (or if it fails to send, then the error appears here). You can also mark the Status manually with whatever value you want (e.g. if you send the message manually), and the Messager system will ignore that message going forward. If you want the system to retry sending a message, simply clear out the Status column and it will try again.
 
 I include this spreadsheet as a custom service in [Ferdi](https://getferdi.com/), so it lives alongside all the messaging apps I use. (This in itself might be the subject of a future [snippet](/snippets).)
 
