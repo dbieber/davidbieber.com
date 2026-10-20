@@ -4,6 +4,8 @@ date = 2022-12-03T00:00:00
 tags = ["taking-silly-ideas-seriously"]
 +++
 
+_AI disclosure (Oct 2026): This post was written substantially using AI. At the time of its writing (Dec 2022), that was novel, and so the disclosure came at the end as a fun surprise twist. It is no longer novel or a "fun twist", so I'm adding this disclosure at the top of the post._
+
 Good conversation is an essential part of human interaction. It allows us to connect with others, share our thoughts and ideas, and learn from one another. But in a world where we are constantly bombarded with [information and distractions](/snippets/2022-07-20-keyboards-everywhere/), it can be difficult to hold someone's attention and have a truly engaging conversation.
 
 One way to improve the quality of our conversations is by using the elements of "salt, acid, fat, and heat". This metaphor is based on the culinary philosophy of chef and food writer Samin Nosrat, who popularized the idea of these four elements as the foundation of good cooking in her book ["Salt, Acid, Fat, Heat: Mastering the Elements of Good Cooking"](https://www.saltfatacidheat.com/).  In this blog post, we will explore what each of these elements represents in the context of conversation, and how you can use them to improve the quality of your conversations. So grab a cup of coffee, get comfortable, and let's dive into the world of "Salt, Acid, Fat, and Heat"!
