@@ -109,7 +109,7 @@ Tell it to use the key for image generation whenever you're building something t
 
 (6) Use subagents to prioritize "availability"
 
-When I send my Claude a message, I want it to be ready to receive it right away. I don't want it to be blocked from seeing my message because its working on some other task.
+When I send my Claude a message, I want it to be ready to receive it right away. I don't want it to be blocked from seeing my message because it's working on some other task.
 
 So, I tell my Claude to delegate to subagents liberally, such that it's always available to receive my messages. I have a "weekly review" (something for a later post) that tracks total "uptime" and how long it takes Claude to receive my messages on average.
 
