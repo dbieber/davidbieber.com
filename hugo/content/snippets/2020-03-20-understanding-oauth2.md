@@ -22,7 +22,7 @@ Usually using the Access Token takes the form of issuing post requests to Slack 
 
 The user can revoke access to Bieber Bot at any time. Once they do so, the Access Token becomes invalid. If Bieber Bot tries to use the Access Token at that point, it will get an error. The user will have to give Bieber Bot permissions again, and it will get a new access token, in order for it to continue providing its services and companionship.
 
-## Summary of the the Important Bits
+## Summary of the Important Bits
 
 1. User navigates from website to service (e.g. via _Add to Slack_ button).
 2. Service shows user permissions dialog.
@@ -32,7 +32,7 @@ The user can revoke access to Bieber Bot at any time. Once they do so, the Acces
 
 ## Summary of the Less Important Bits
 
-1. The _Add to Slack_ button should include GET parameters for: a) `state` so the redirect url knows the request is genuine, b) `redirect_url` so Slack knows where to send the user after they accept the permissons, c) `scope` indicating the permissions being requested, d) `client_id` indicating the app (e.g. Bieber Bot) that you're adding to Slack.
+1. The _Add to Slack_ button should include GET parameters for: a) `state` so the redirect url knows the request is genuine, b) `redirect_url` so Slack knows where to send the user after they accept the permissions, c) `scope` indicating the permissions being requested, d) `client_id` indicating the app (e.g. Bieber Bot) that you're adding to Slack.
 
 2. The permissions that the App can request are set up by the App ahead of time. So I think the `scope` parameter is there if you only need to request a subset of that permissions for a particular user.
 

@@ -8,7 +8,7 @@ Last month I decided to start keeping my phone in the kitchen while I'm in the h
 
 I find I get more time in the mornings, because scrolling in bed or on the toilet isn't really an option. Similarly in the evenings, scrolling in bed before going to sleep isn't something I can do by accident. I do find I spend more time in the kitchen, in order to use my phone. So, I haven't eliminated mindless scrolling altogether. My phone usage has decreased considerably overall though.
 
-The oddest thing about it is that I don't always have a way of knowing the itme when I wake up. I may want to put a non-phone clock in the bedroom to compensate for this.
+The oddest thing about it is that I don't always have a way of knowing the time when I wake up. I may want to put a non-phone clock in the bedroom to compensate for this.
 
 Sometimes over the last six months I would find I accidentally would bring my phone with me to my desk. Usually this would happen after going out of the house for lunch (taking my phone with me). When I would return to the house, I would have my phone in my pocket, and I wouldn't always remember to put it in the kitchen. Once the phone reached my desk, sometimes I would then inadvertently scroll! Whenever I notice that I've brought my phone somewhere in the house outside the kitchen, it's clear the right thing for me to do under this silly system I've chosen for myself, is to bring it back to the kitchen.
 

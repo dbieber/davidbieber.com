@@ -51,6 +51,6 @@ There are some interesting tables in there: `message` seems most important. It l
 We can also jump right in with `SELECT * FROM message;` to see what sort of data is contained within. Sure enough, human readable messages are present.
 
 This will all be interesting to investigate further at a later date.
-One perk of understanding this mechanism for me is that I'll be able to write events that are triggered in response to iMessages. This enables me to write custom notification criteria. For example, I can have messages that start "URGENT" notify me immediately, but I can have all other messages programatically withheld from notifying me until 9pm.
+One perk of understanding this mechanism for me is that I'll be able to write events that are triggered in response to iMessages. This enables me to write custom notification criteria. For example, I can have messages that start "URGENT" notify me immediately, but I can have all other messages programmatically withheld from notifying me until 9pm.
 
 This lets me receive the messages at the time and location that I want, rather than at the time Apple chooses for me. Thanks Bieber Bot.

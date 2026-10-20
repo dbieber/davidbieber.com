@@ -8,7 +8,7 @@ icon = "star"
 
 I started this ["snippets"](/snippets) section of my website just a few days ago with the intention of being able to write without needing to put polish on a piece before publishing it.
 
-My thinking was that I would be able to put small notes there, and half-baked ideas, and not have to worry about diluting the quality of the content of my [main website](/posts). I could put high quality posts on the main site, and a whole range of both good and bad posts in the snippets section. This way, assuming I do a good job, readers could come to expect that any post on the main website would be high quality. Curious people looking for additional content could come here to the snippets section if they wanted to, but more often posts here would either (1) almost never get read, or (2) be linked to directly, e.g. if they were relevent in some other context.
+My thinking was that I would be able to put small notes there, and half-baked ideas, and not have to worry about diluting the quality of the content of my [main website](/posts). I could put high quality posts on the main site, and a whole range of both good and bad posts in the snippets section. This way, assuming I do a good job, readers could come to expect that any post on the main website would be high quality. Curious people looking for additional content could come here to the snippets section if they wanted to, but more often posts here would either (1) almost never get read, or (2) be linked to directly, e.g. if they were relevant in some other context.
 
 I've been surprised and delighted by the effect that having this "No Audience" section of the website has had on my writing. Writing for no one is so much easier than writing for someone.
 
@@ -34,7 +34,7 @@ The snippets section of my website is public, but with no built-in broadcasting.
 
 Now that I've discovered this practice and am quite fond of it, I think it could be a promising addition to social media.
 
-No social media platform, to my knowledge, has given people a place to write public posts with an option to publish but not share them. The absense of such a feature makes sense; social media platforms need you to share for them to succeed, so how would giving you a space to publish-but-not-share help them? The answer lies in the psychology of the many social-media lurkers. There is a significant market segment of people who perhaps consume, but do not post, on social media. An option to publish-but-not-broadcast might help to convert some of that segment into sharers.
+No social media platform, to my knowledge, has given people a place to write public posts with an option to publish but not share them. The absence of such a feature makes sense; social media platforms need you to share for them to succeed, so how would giving you a space to publish-but-not-share help them? The answer lies in the psychology of the many social-media lurkers. There is a significant market segment of people who perhaps consume, but do not post, on social media. An option to publish-but-not-broadcast might help to convert some of that segment into sharers.
 
 As a social media consumer, but infrequent producer, I can tell you I am hesitant even to Like something on Twitter, because I know Twitter often treats Likes like Retweets, and will put the content I hearted in front of my followers with my name attached, and that's not something I want.
 
