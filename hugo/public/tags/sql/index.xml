@@ -191,7 +191,7 @@ ORDER BY messenger.timestamp desc;
 &lt;p&gt;&lt;code&gt;.schema message&lt;/code&gt; is the command for viewing the schema of the message table.
 We can also jump right in with &lt;code&gt;SELECT * FROM message;&lt;/code&gt; to see what sort of data is contained within. Sure enough, human readable messages are present.&lt;/p&gt;
 &lt;p&gt;This will all be interesting to investigate further at a later date.
-One perk of understanding this mechanism for me is that I&amp;rsquo;ll be able to write events that are triggered in response to iMessages. This enables me to write custom notification criteria. For example, I can have messages that start &amp;ldquo;URGENT&amp;rdquo; notify me immediately, but I can have all other messages programatically withheld from notifying me until 9pm.&lt;/p&gt;
+One perk of understanding this mechanism for me is that I&amp;rsquo;ll be able to write events that are triggered in response to iMessages. This enables me to write custom notification criteria. For example, I can have messages that start &amp;ldquo;URGENT&amp;rdquo; notify me immediately, but I can have all other messages programmatically withheld from notifying me until 9pm.&lt;/p&gt;
 &lt;p&gt;This lets me receive the messages at the time and location that I want, rather than at the time Apple chooses for me. Thanks Bieber Bot.&lt;/p&gt;
 </description>
     </item>
@@ -511,7 +511,7 @@ limit 50;
       
       <guid>https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/</guid>
       
-      <description>&lt;p&gt;Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a 
+      <description>&lt;p&gt;Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added to the database in real time as they are sent. Like I did in a 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries&#34;&gt;previous snippet&lt;/a&gt; for analyzing my browsing history, I&amp;rsquo;ll use this snippet to sketch out some useful queries for analyzing my message history.&lt;/p&gt;
 &lt;h2 id=&#34;table-schemas&#34;&gt;Table Schemas&lt;/h2&gt;
 &lt;p&gt;I have two tables of messages. &lt;code&gt;messenger_archive&lt;/code&gt; contains all messages from when I first joined Facebook in August 2008 through February 2020. &lt;code&gt;messenger&lt;/code&gt; contains messages from February 2020 through now, and is updated in real time.&lt;/p&gt;

@@ -32,7 +32,7 @@
   
     
   
-  <meta name="description" content="I use Google Chrome on my Mac laptop and on my iPhone, and I&rsquo;m logged in to my Google account in both places with syncing turned on. If I go to &ldquo;chrome://history/syncedTabs&rdquo; on my computer I can see what tabs I have open on my phone. Now, I&rsquo;d like to access this data programatically.
+  <meta name="description" content="I use Google Chrome on my Mac laptop and on my iPhone, and I&rsquo;m logged in to my Google account in both places with syncing turned on. If I go to &ldquo;chrome://history/syncedTabs&rdquo; on my computer I can see what tabs I have open on my phone. Now, I&rsquo;d like to access this data programmatically.
 With the help of grep, I&rsquo;ve figured out that this data is stored in ~/Library/Application Support/Google/Chrome/Profile 1/Sync Data/LevelDB/ (Probably for most people the path would be ~/Library/Application Support/Google/Chrome/Default/Sync Data/LevelDB/). Be careful to escape the spaces in the file path!">
 
   
@@ -236,7 +236,7 @@ With the help of grep, I&rsquo;ve figured out that this data is stored in ~/Libr
   <meta property="og:site_name" content="David Bieber">
   <meta property="og:url" content="https://davidbieber.com/snippets/2021-01-01-programmatically-accessing-chromes-tabs-from-other-devices-data/">
   <meta property="og:title" content="Programmatically Accessing Chrome&#39;s “Tabs from other devices” Data | David Bieber">
-  <meta property="og:description" content="I use Google Chrome on my Mac laptop and on my iPhone, and I&rsquo;m logged in to my Google account in both places with syncing turned on. If I go to &ldquo;chrome://history/syncedTabs&rdquo; on my computer I can see what tabs I have open on my phone. Now, I&rsquo;d like to access this data programatically.
+  <meta property="og:description" content="I use Google Chrome on my Mac laptop and on my iPhone, and I&rsquo;m logged in to my Google account in both places with syncing turned on. If I go to &ldquo;chrome://history/syncedTabs&rdquo; on my computer I can see what tabs I have open on my phone. Now, I&rsquo;d like to access this data programmatically.
 With the help of grep, I&rsquo;ve figured out that this data is stored in ~/Library/Application Support/Google/Chrome/Profile 1/Sync Data/LevelDB/ (Probably for most people the path would be ~/Library/Application Support/Google/Chrome/Default/Sync Data/LevelDB/). Be careful to escape the spaces in the file path!"><meta property="og:image" content="https://davidbieber.com/img/share-card.png">
   <meta property="twitter:image" content="https://davidbieber.com/img/share-card.png"><meta property="og:locale" content="en-us">
   
@@ -491,7 +491,7 @@ With the help of grep, I&rsquo;ve figured out that this data is stored in ~/Libr
   <div class="article-container">
 
     <div class="article-style" id="article-content">
-      <p>I use Google Chrome on my Mac laptop and on my iPhone, and I&rsquo;m logged in to my Google account in both places with syncing turned on. If I go to &ldquo;chrome://history/syncedTabs&rdquo; on my computer I can see what tabs I have open on my phone. Now, I&rsquo;d like to access this data programatically.</p>
+      <p>I use Google Chrome on my Mac laptop and on my iPhone, and I&rsquo;m logged in to my Google account in both places with syncing turned on. If I go to &ldquo;chrome://history/syncedTabs&rdquo; on my computer I can see what tabs I have open on my phone. Now, I&rsquo;d like to access this data programmatically.</p>
 <p>With the help of <code>grep</code>, I&rsquo;ve figured out that this data is stored in <code>~/Library/Application Support/Google/Chrome/Profile 1/Sync Data/LevelDB/</code> (Probably for most people the path would be <code>~/Library/Application Support/Google/Chrome/Default/Sync Data/LevelDB/</code>). Be careful to escape the spaces in the file path!</p>
 <p>To read from a LevelDB database, I first installed leveldb with <code>brew install leveldb</code>, and then I installed a Python LevelDB client: <code>pip install plyvel</code>.</p>
 <p>I then use little Python scripts like the following to access the data, though I haven&rsquo;t quite figured out (1) how to properly parse the data; it&rsquo;s probably a protocol buffer, or (2) exactly how it&rsquo;s organized, so I don&rsquo;t know exactly which keys to look at.</p>

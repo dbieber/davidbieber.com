@@ -11,7 +11,7 @@ I've written about [pyd (pursuing your dreams)](/snippets/2022-01-11-pursuing-yo
 
 So, today, in this snippet, I will try once more to explore the idea of pursuing my dreams. What does it mean to me to pursue my dreams?
 
-Rereading [the existing pyd snippet](/snippets/2022-01-11-pursuing-your-dreams), everything in there still rings true. I think it's a fabulous description of what makes me happy. I was initially embarassed by it, but I've come to like it over time. However, my dreams go beyond my happiness. Let's explore that.
+Rereading [the existing pyd snippet](/snippets/2022-01-11-pursuing-your-dreams), everything in there still rings true. I think it's a fabulous description of what makes me happy. I was initially embarrassed by it, but I've come to like it over time. However, my dreams go beyond my happiness. Let's explore that.
 
 I dream of a future where people can do a full day's software engineer work without looking at a screen. In this future, people are more in control of their own attention.
 

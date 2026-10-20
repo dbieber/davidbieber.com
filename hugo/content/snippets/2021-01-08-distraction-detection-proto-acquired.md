@@ -12,6 +12,6 @@ Most recently [I figured out where Chrome's "Tabs from other devices" data is st
 
 Today, I heard back from someone who works on Chrome. I've acquired the proto definitions!
 
-The [proto definitions are here](https://source.chromium.org/chromium/chromium/src/+/master:components/sync/protocol/session_specifics.proto) and [the code that persists the data to disk is here](https://source.chromium.org/chromium/chromium/src/+/master:components/sync_sessions/session_store.cc). I can successfully bulid the protos (using protoc) and I can parse my session data from the leveldb database. Progress!
+The [proto definitions are here](https://source.chromium.org/chromium/chromium/src/+/master:components/sync/protocol/session_specifics.proto) and [the code that persists the data to disk is here](https://source.chromium.org/chromium/chromium/src/+/master:components/sync_sessions/session_store.cc). I can successfully build the protos (using protoc) and I can parse my session data from the leveldb database. Progress!
 
 The trouble now is my phone seems to have stopped syncing its tabs two days ago. Weird! One more mystery to solve I guess...

@@ -28,7 +28,7 @@ Help me install this sconce.<br/>
 Make the bed.<br/>
 Do the dishes.<br/>
 Clean the counter.<br/>
-Vaccuum the carpet.<br/>
+Vacuum the carpet.<br/>
 
 Can you open the blinds for me in the morning?<br/>
 Please have breakfast ready at 8am.<br/>

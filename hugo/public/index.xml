@@ -1346,7 +1346,7 @@ Primarily, the challenge arises when the SWYT principle butts heads with conflic
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34;&gt;
-&lt;p&gt;Aside: is that an instance of double sarcasm? I will have to dedicate a full snippet to double sarcasm at some point. In this instance, it&amp;rsquo;s meant to be a joke, but also might literaly be true&amp;hellip; Maybe not sarcasm but something in that vein.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Aside: is that an instance of double sarcasm? I will have to dedicate a full snippet to double sarcasm at some point. In this instance, it&amp;rsquo;s meant to be a joke, but also might literally be true&amp;hellip; Maybe not sarcasm but something in that vein.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -1366,7 +1366,7 @@ Primarily, the challenge arises when the SWYT principle butts heads with conflic
 &lt;a href=&#34;https://davidbieber.com/snippets/2022-01-11-pursuing-your-dreams&#34;&gt;pyd (pursuing your dreams)&lt;/a&gt; before. Or at least I&amp;rsquo;ve tried; I think it came out as being more about bh (being happy).&lt;/p&gt;
 &lt;p&gt;So, today, in this snippet, I will try once more to explore the idea of pursuing my dreams. What does it mean to me to pursue my dreams?&lt;/p&gt;
 &lt;p&gt;Rereading 
-&lt;a href=&#34;https://davidbieber.com/snippets/2022-01-11-pursuing-your-dreams&#34;&gt;the existing pyd snippet&lt;/a&gt;, everything in there still rings true. I think it&amp;rsquo;s a fabulous description of what makes me happy. I was initially embarassed by it, but I&amp;rsquo;ve come to like it over time. However, my dreams go beyond my happiness. Let&amp;rsquo;s explore that.&lt;/p&gt;
+&lt;a href=&#34;https://davidbieber.com/snippets/2022-01-11-pursuing-your-dreams&#34;&gt;the existing pyd snippet&lt;/a&gt;, everything in there still rings true. I think it&amp;rsquo;s a fabulous description of what makes me happy. I was initially embarrassed by it, but I&amp;rsquo;ve come to like it over time. However, my dreams go beyond my happiness. Let&amp;rsquo;s explore that.&lt;/p&gt;
 &lt;p&gt;I dream of a future where people can do a full day&amp;rsquo;s software engineer work without looking at a screen. In this future, people are more in control of their own attention.&lt;/p&gt;
 &lt;p&gt;I dream of a world where my family and friends (and theirs as well, etc!) can live healthy happy lives for a thousand years. In this world, our memories are robust and precious.&lt;/p&gt;
 &lt;p&gt;I dream that I can take the music in my head and bring it into the world. That the music in my head be sound (and that the sounds in my head be music!).&lt;/p&gt;
@@ -1393,7 +1393,7 @@ Primarily, the challenge arises when the SWYT principle butts heads with conflic
 &lt;p&gt;I have a couple of people in my life who ask this question: &amp;ldquo;what&amp;rsquo;s alive in you?&amp;rdquo;.
 Aside from the slight downside of elliciting funny looks, I think it&amp;rsquo;s a solid alternative to &amp;ldquo;how are you?&amp;rdquo; as a conversation opener when you are looking to have a meaningful conversation.
 Of course, often &amp;ldquo;how are you?&amp;rdquo; is &lt;em&gt;not&lt;/em&gt; intended to introduce a meaningful undirected conversation; it gets used as a pleasantry too, with the actual direction for the conversation to be provided shortly later (as in the opening line to this snippet).&lt;/p&gt;
-&lt;h3 id=&#34;the-abiguity-present-in-how-are-you&#34;&gt;The abiguity present in &amp;ldquo;how are you?&amp;rdquo;&lt;/h3&gt;
+&lt;h3 id=&#34;the-ambiguity-present-in-how-are-you&#34;&gt;The ambiguity present in &amp;ldquo;how are you?&amp;rdquo;&lt;/h3&gt;
 &lt;p&gt;So there&amp;rsquo;s an ambiguity in receiving the phrase &amp;ldquo;how are you?&amp;rdquo; which I think dampens its utility as a question, despite it&amp;rsquo;s popularity.
 On the one hand, you can reply to &amp;ldquo;how are you?&amp;rdquo; with a simple evaluation (e.g. &amp;ldquo;good&amp;rdquo;), for which it is even often socially acceptable to lie if the answer is less than &amp;ldquo;fine&amp;rdquo; but you don&amp;rsquo;t want to get into it. The other common way to reply is to provide a piece of evidence &amp;ndash; a thing from your life that relates to how you&amp;rsquo;re doing, whether that be a thing you did recently or a thing coming up in the future.
 Each of these replies is fine, with the later opening the conversation up a bit more or giving it a bit more direction.&lt;/p&gt;
@@ -2013,7 +2013,7 @@ Can you help me find my keys?&lt;br/&gt;&lt;/p&gt;
 Make the bed.&lt;br/&gt;
 Do the dishes.&lt;br/&gt;
 Clean the counter.&lt;br/&gt;
-Vaccuum the carpet.&lt;br/&gt;&lt;/p&gt;
+Vacuum the carpet.&lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;Can you open the blinds for me in the morning?&lt;br/&gt;
 Please have breakfast ready at 8am.&lt;br/&gt;
 Do you remember if I brushed my teeth yet?&lt;br/&gt;&lt;/p&gt;
@@ -3001,7 +3001,7 @@ Imagine that instead of having ontologies in your note-base, you simply have fre
 You still might say that David is interested in table tennis, but there would be no formal &amp;ldquo;Interests&amp;rdquo; attribute linking David and Table Tennis.
 If a large language model understands that text, then it will still be able to handle queries like &amp;ldquo;what is David interested in?&amp;rdquo; and &amp;ldquo;contacts who like table tennis?&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;You can even try this on a small scale today in 
-&lt;a href=&#34;https://chat.openai.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ChatGPT&lt;/a&gt;. Paste the following text into ChatGPT and it answers the questions correctly. I wont argue the case here, but I fully expect this to work on the scale of a full note-base in the coming months-years.&lt;/p&gt;
+&lt;a href=&#34;https://chat.openai.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ChatGPT&lt;/a&gt;. Paste the following text into ChatGPT and it answers the questions correctly. I won&amp;rsquo;t argue the case here, but I fully expect this to work on the scale of a full note-base in the coming months-years.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;Mary likes hockey, collects coins, and reads sci-fi.
 Glenn plays table tennis, collects rocks, and reads fantasy.
 My dentist recommends the book &amp;quot;Jaws&amp;quot;. Next apt is March 6.
@@ -5691,7 +5691,7 @@ If instead I push &amp;ldquo;b&amp;rdquo;, it copies the full paragraph containi
       
       <description>&lt;p&gt;Last month I decided to start keeping my phone in the kitchen while I&amp;rsquo;m in the house. I said I&amp;rsquo;d evaluate the decision after 6 weeks and decide whether to recommit. It&amp;rsquo;s been six weeks, and I think it was an excellent decision. I will absolutely continue doing this going forward.&lt;/p&gt;
 &lt;p&gt;I find I get more time in the mornings, because scrolling in bed or on the toilet isn&amp;rsquo;t really an option. Similarly in the evenings, scrolling in bed before going to sleep isn&amp;rsquo;t something I can do by accident. I do find I spend more time in the kitchen, in order to use my phone. So, I haven&amp;rsquo;t eliminated mindless scrolling altogether. My phone usage has decreased considerably overall though.&lt;/p&gt;
-&lt;p&gt;The oddest thing about it is that I don&amp;rsquo;t always have a way of knowing the itme when I wake up. I may want to put a non-phone clock in the bedroom to compensate for this.&lt;/p&gt;
+&lt;p&gt;The oddest thing about it is that I don&amp;rsquo;t always have a way of knowing the time when I wake up. I may want to put a non-phone clock in the bedroom to compensate for this.&lt;/p&gt;
 &lt;p&gt;Sometimes over the last six months I would find I accidentally would bring my phone with me to my desk. Usually this would happen after going out of the house for lunch (taking my phone with me). When I would return to the house, I would have my phone in my pocket, and I wouldn&amp;rsquo;t always remember to put it in the kitchen. Once the phone reached my desk, sometimes I would then inadvertently scroll! Whenever I notice that I&amp;rsquo;ve brought my phone somewhere in the house outside the kitchen, it&amp;rsquo;s clear the right thing for me to do under this silly system I&amp;rsquo;ve chosen for myself, is to bring it back to the kitchen.&lt;/p&gt;
 &lt;p&gt;It can be tempting to make only small violations to the rule, but I&amp;rsquo;ve realized it&amp;rsquo;s best not to fall for such temptations. There&amp;rsquo;s a bathroom just outside the kitchen, and I am tempted often to take the phone with me from the kitchen to the bathroom. I stop at the threshold to the kitchen, and do not cross if I&amp;rsquo;m holding my phone. Perhaps I stand in the threshold for a few minutes, finishing my phone usage before leaving. I put the phone down before exiting.&lt;/p&gt;
 &lt;p&gt;If I were to take the phone to the bathroom, I know what would happen. I would think, going in, that I will just use the phone for one particular purpose. However, as soon as I turn the screen on I would notice something that would put a different purpose into my mind. Maybe it&amp;rsquo;s a text message, or an app icon, or a notification. I think, switching tasks, that it&amp;rsquo;s a small diversion and I will momentarily return to the original purpose. However, moments later while completing the secondary task, my mental stack will erode, and the primary task will no longer be at the forefront of my brain. I&amp;rsquo;ll no longer be thinking about the one-and-done approach to phone usage, and now the potential for mindless scrolling has emerged.&lt;/p&gt;
@@ -5747,7 +5747,7 @@ To participate, you both need to review entries that others want reviewed, and s
 &lt;p&gt;Roughly, the system acts like this:&lt;/p&gt;
 &lt;p&gt;Each participant can submit entries. When an entry is submitted, provided the submitter is in good standing and the entry doesn&amp;rsquo;t get flagged as being inappropriate or out of scope (too hard for a single entry, nonsense, etc), the system guarantees the entry will be remembered forever.&lt;/p&gt;
 &lt;p&gt;This is appealing to countries trying to preserve a language, to researchers who think they have a good idea that the world isn&amp;rsquo;t latching on to,
-to conlang enthusiasts trying to bring a new language into existance, to first-time authors, and to creatives.&lt;/p&gt;
+to conlang enthusiasts trying to bring a new language into existence, to first-time authors, and to creatives.&lt;/p&gt;
 &lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
     </item>
@@ -5902,7 +5902,7 @@ $\mu$ is the true mean (the population mean).&lt;/p&gt;
 The Strong law guarantees &lt;em&gt;almost sure convergence&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Weak law: $\lim\limits_{n \to \infty} \text{Pr}\left(|S_n - \mu| &amp;lt; \epsilon\right) = 1$&lt;br/&gt;
 Strong law: $\text{Pr}\left(\lim\limits_{n \to \infty} S_n = \mu\right) = 1$&lt;/p&gt;
-&lt;p&gt;Neither occurence of &amp;ldquo;$=1$&amp;rdquo; means that any event is guaranteed. There&amp;rsquo;s simply infinitesimal probability that an event does not occur.&lt;/p&gt;
+&lt;p&gt;Neither occurrence of &amp;ldquo;$=1$&amp;rdquo; means that any event is guaranteed. There&amp;rsquo;s simply infinitesimal probability that an event does not occur.&lt;/p&gt;
 &lt;p&gt;The weak law says that for any threshold distance from the true mean $\epsilon$ that you select, as the number of samples increases, the probability that the sample mean is within $\epsilon$ from the true mean approaches one. Even as the number of samples increases there is still the possibility of the sample mean being further than $\epsilon$ from the true mean; that possibility simply approaches being infinitesimal as the number of samples increases.&lt;/p&gt;
 &lt;p&gt;The strong law similarly doesn&amp;rsquo;t guarantee that the sample mean must ever equal the true mean. It says that with probability 1 (aka &amp;ldquo;almost surely&amp;rdquo;) the limit of the sample mean equals the true mean.
 The reason we call probability 1 &amp;ldquo;almost surely&amp;rdquo; rather than &amp;ldquo;surely&amp;rdquo; is that there are still valid sequences of samples where the sample mean doesn&amp;rsquo;t approach the true mean; these sample outcomes are simply an infinitesimal fraction of the total sample space.&lt;/p&gt;
@@ -8681,7 +8681,7 @@ db.close()
 &lt;p&gt;Today, I heard back from someone who works on Chrome. I&amp;rsquo;ve acquired the proto definitions!&lt;/p&gt;
 &lt;p&gt;The 
 &lt;a href=&#34;https://source.chromium.org/chromium/chromium/src/&amp;#43;/master:components/sync/protocol/session_specifics.proto&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;proto definitions are here&lt;/a&gt; and 
-&lt;a href=&#34;https://source.chromium.org/chromium/chromium/src/&amp;#43;/master:components/sync_sessions/session_store.cc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the code that persists the data to disk is here&lt;/a&gt;. I can successfully bulid the protos (using protoc) and I can parse my session data from the leveldb database. Progress!&lt;/p&gt;
+&lt;a href=&#34;https://source.chromium.org/chromium/chromium/src/&amp;#43;/master:components/sync_sessions/session_store.cc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the code that persists the data to disk is here&lt;/a&gt;. I can successfully build the protos (using protoc) and I can parse my session data from the leveldb database. Progress!&lt;/p&gt;
 &lt;p&gt;The trouble now is my phone seems to have stopped syncing its tabs two days ago. Weird! One more mystery to solve I guess&amp;hellip;&lt;/p&gt;
 </description>
     </item>
@@ -9118,7 +9118,7 @@ block_info.forEach(
       
       <guid>https://davidbieber.com/snippets/2021-01-01-programmatically-accessing-chromes-tabs-from-other-devices-data/</guid>
       
-      <description>&lt;p&gt;I use Google Chrome on my Mac laptop and on my iPhone, and I&amp;rsquo;m logged in to my Google account in both places with syncing turned on. If I go to &amp;ldquo;chrome://history/syncedTabs&amp;rdquo; on my computer I can see what tabs I have open on my phone. Now, I&amp;rsquo;d like to access this data programatically.&lt;/p&gt;
+      <description>&lt;p&gt;I use Google Chrome on my Mac laptop and on my iPhone, and I&amp;rsquo;m logged in to my Google account in both places with syncing turned on. If I go to &amp;ldquo;chrome://history/syncedTabs&amp;rdquo; on my computer I can see what tabs I have open on my phone. Now, I&amp;rsquo;d like to access this data programmatically.&lt;/p&gt;
 &lt;p&gt;With the help of &lt;code&gt;grep&lt;/code&gt;, I&amp;rsquo;ve figured out that this data is stored in &lt;code&gt;~/Library/Application Support/Google/Chrome/Profile 1/Sync Data/LevelDB/&lt;/code&gt; (Probably for most people the path would be &lt;code&gt;~/Library/Application Support/Google/Chrome/Default/Sync Data/LevelDB/&lt;/code&gt;). Be careful to escape the spaces in the file path!&lt;/p&gt;
 &lt;p&gt;To read from a LevelDB database, I first installed leveldb with &lt;code&gt;brew install leveldb&lt;/code&gt;, and then I installed a Python LevelDB client: &lt;code&gt;pip install plyvel&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;I then use little Python scripts like the following to access the data, though I haven&amp;rsquo;t quite figured out (1) how to properly parse the data; it&amp;rsquo;s probably a protocol buffer, or (2) exactly how it&amp;rsquo;s organized, so I don&amp;rsquo;t know exactly which keys to look at.&lt;/p&gt;
@@ -9920,7 +9920,7 @@ sudo powermetrics --samplers smc | grep &amp;quot;GPU die temperature:&amp;quot;
       
       <description>&lt;p&gt;These days I have six &amp;ldquo;infinite distractions&amp;rdquo; — things I do mindlessly that are roughly limitless in content. They are: YouTube, YCombinator News, Google News, Reddit, Facebook, and Twitter.&lt;/p&gt;
 &lt;p&gt;Some of these are new additions to my repertoire, added I expect in response to my efforts to suppress viewing the others.
-I&amp;rsquo;m going to try a strategy of writing down the distraction rather than attending to it whenever I am drawn to it. Additionally, when my brain craves something like this, I&amp;rsquo;m going to make an effort to do one of the following instead: reaching out to to a friend, or going down the rabbit hole on a particular topic.&lt;/p&gt;
+I&amp;rsquo;m going to try a strategy of writing down the distraction rather than attending to it whenever I am drawn to it. Additionally, when my brain craves something like this, I&amp;rsquo;m going to make an effort to do one of the following instead: reaching out to a friend, or going down the rabbit hole on a particular topic.&lt;/p&gt;
 &lt;p&gt;The former is just healthy. The latter I think satisfies the same brain cravings as e.g. mindless going on YouTube. But by selecting the topic to dive into deliberately rather than letting the whims of the YouTube/Reddit/etc algorithm select the content for me, I expect a few benefits. I expect the time will feel more valuable to me after the fact, I&amp;rsquo;ll learn something I care about, and I will remember better what I learned because it will be more connected to itself and my interests, I hope.&lt;/p&gt;
 &lt;p&gt;I tried this last night and learned about how to get a good sear (in brief: dry the protein, let it cool if it just cooked, and don’t move it around while searing).&lt;/p&gt;
 </description>
@@ -10278,14 +10278,14 @@ Terms from the paper are in $\LaTeX$, and terms from the source code are in &lt;
     </item>
     
     <item>
-      <title>Downloading the Online Encylopedia of Integer Sequences</title>
+      <title>Downloading the Online Encyclopedia of Integer Sequences</title>
       <link>https://davidbieber.com/snippets/2020-06-28-oeis-download/</link>
       <pubDate>Sun, 28 Jun 2020 01:00:00 +0000</pubDate>
       
       <guid>https://davidbieber.com/snippets/2020-06-28-oeis-download/</guid>
       
       <description>&lt;p&gt;If you&amp;rsquo;re looking for a way to download the entire 
-&lt;a href=&#34;https://oeis.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Online Encylopedia of Integer Sequences&lt;/a&gt;, you may come across advice for scraping the site, one sequence at a time. Instead of collecting the sequences one at a time, it might be sufficient to download one of their already collected archives. 
+&lt;a href=&#34;https://oeis.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Online Encyclopedia of Integer Sequences&lt;/a&gt;, you may come across advice for scraping the site, one sequence at a time. Instead of collecting the sequences one at a time, it might be sufficient to download one of their already collected archives. 
 &lt;a href=&#34;https://oeis.org/stripped.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This file&lt;/a&gt; contains the integer sequences and their A-numbers, and 
 &lt;a href=&#34;https://oeis.org/names.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this file&lt;/a&gt; contains the names of the sequences. No need to stress the OEIS servers when these ready-made archives are ripe for downloading!&lt;/p&gt;
 &lt;p&gt;I found these files from 
@@ -10392,7 +10392,7 @@ Terms from the paper are in $\LaTeX$, and terms from the source code are in &lt;
 &lt;p&gt;&lt;code&gt;.schema message&lt;/code&gt; is the command for viewing the schema of the message table.
 We can also jump right in with &lt;code&gt;SELECT * FROM message;&lt;/code&gt; to see what sort of data is contained within. Sure enough, human readable messages are present.&lt;/p&gt;
 &lt;p&gt;This will all be interesting to investigate further at a later date.
-One perk of understanding this mechanism for me is that I&amp;rsquo;ll be able to write events that are triggered in response to iMessages. This enables me to write custom notification criteria. For example, I can have messages that start &amp;ldquo;URGENT&amp;rdquo; notify me immediately, but I can have all other messages programatically withheld from notifying me until 9pm.&lt;/p&gt;
+One perk of understanding this mechanism for me is that I&amp;rsquo;ll be able to write events that are triggered in response to iMessages. This enables me to write custom notification criteria. For example, I can have messages that start &amp;ldquo;URGENT&amp;rdquo; notify me immediately, but I can have all other messages programmatically withheld from notifying me until 9pm.&lt;/p&gt;
 &lt;p&gt;This lets me receive the messages at the time and location that I want, rather than at the time Apple chooses for me. Thanks Bieber Bot.&lt;/p&gt;
 </description>
     </item>
@@ -11028,7 +11028,7 @@ limit 50;
       
       <guid>https://davidbieber.com/snippets/2020-04-12-fb-messenger-sql/</guid>
       
-      <description>&lt;p&gt;Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added the the database in real time as they are sent. Like I did in a 
+      <description>&lt;p&gt;Last week I dumped all my Facebook messenger messages into a Postgres database. I have it set up so that new messages are added to the database in real time as they are sent. Like I did in a 
 &lt;a href=&#34;https://davidbieber.com/snippets/2020-04-11-browser-history-queries&#34;&gt;previous snippet&lt;/a&gt; for analyzing my browsing history, I&amp;rsquo;ll use this snippet to sketch out some useful queries for analyzing my message history.&lt;/p&gt;
 &lt;h2 id=&#34;table-schemas&#34;&gt;Table Schemas&lt;/h2&gt;
 &lt;p&gt;I have two tables of messages. &lt;code&gt;messenger_archive&lt;/code&gt; contains all messages from when I first joined Facebook in August 2008 through February 2020. &lt;code&gt;messenger&lt;/code&gt; contains messages from February 2020 through now, and is updated in real time.&lt;/p&gt;
@@ -11500,7 +11500,7 @@ I&amp;rsquo;m in a remote meeting and we&amp;rsquo;re having a discussion. By de
 &lt;p&gt;When the redirect URL is accessed with a &lt;code&gt;code&lt;/code&gt; GET parameter, it then turns around and uses that &lt;code&gt;code&lt;/code&gt; to request an Access Token from Slack. Once it has that Access Token, it tucks it away. It can use that access token in order to perform any of the permissions granted by the user during the access flow.&lt;/p&gt;
 &lt;p&gt;Usually using the Access Token takes the form of issuing post requests to Slack with the Access Token as a parameter.&lt;/p&gt;
 &lt;p&gt;The user can revoke access to Bieber Bot at any time. Once they do so, the Access Token becomes invalid. If Bieber Bot tries to use the Access Token at that point, it will get an error. The user will have to give Bieber Bot permissions again, and it will get a new access token, in order for it to continue providing its services and companionship.&lt;/p&gt;
-&lt;h2 id=&#34;summary-of-the-the-important-bits&#34;&gt;Summary of the the Important Bits&lt;/h2&gt;
+&lt;h2 id=&#34;summary-of-the-important-bits&#34;&gt;Summary of the Important Bits&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;User navigates from website to service (e.g. via &lt;em&gt;Add to Slack&lt;/em&gt; button).&lt;/li&gt;
 &lt;li&gt;Service shows user permissions dialog.&lt;/li&gt;
@@ -11511,7 +11511,7 @@ I&amp;rsquo;m in a remote meeting and we&amp;rsquo;re having a discussion. By de
 &lt;h2 id=&#34;summary-of-the-less-important-bits&#34;&gt;Summary of the Less Important Bits&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;The &lt;em&gt;Add to Slack&lt;/em&gt; button should include GET parameters for: a) &lt;code&gt;state&lt;/code&gt; so the redirect url knows the request is genuine, b) &lt;code&gt;redirect_url&lt;/code&gt; so Slack knows where to send the user after they accept the permissons, c) &lt;code&gt;scope&lt;/code&gt; indicating the permissions being requested, d) &lt;code&gt;client_id&lt;/code&gt; indicating the app (e.g. Bieber Bot) that you&amp;rsquo;re adding to Slack.&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;Add to Slack&lt;/em&gt; button should include GET parameters for: a) &lt;code&gt;state&lt;/code&gt; so the redirect url knows the request is genuine, b) &lt;code&gt;redirect_url&lt;/code&gt; so Slack knows where to send the user after they accept the permissions, c) &lt;code&gt;scope&lt;/code&gt; indicating the permissions being requested, d) &lt;code&gt;client_id&lt;/code&gt; indicating the app (e.g. Bieber Bot) that you&amp;rsquo;re adding to Slack.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;The permissions that the App can request are set up by the App ahead of time. So I think the &lt;code&gt;scope&lt;/code&gt; parameter is there if you only need to request a subset of that permissions for a particular user.&lt;/p&gt;
@@ -11654,7 +11654,7 @@ If a card represents an idea from my notes, I&amp;rsquo;d like to be able to rea
 &lt;p&gt;If Aaron can already comfortably (with great focus) listen to a book at 2.5x speed, he can listen to a 10 hour book in 4 hours. If 20% of that book is actually silence, then the 10 hour book becomes an 8 hour book with silence removed, and the total listen time drops to just 3h12. I think 20% may actually be a conservative estimate for silent time, though it will vary from narrator to narrator.&lt;/p&gt;
 &lt;p&gt;Estimating 45 minutes saved per book, this tool can save over 3 days total time across 100 books. Or, alternatively, Aaron could drop the playback speed down from 2.5x to 2x without increasing his total listening time at all, but potentially helping out his comprehension substantially.&lt;/p&gt;
 &lt;p&gt;This tool won&amp;rsquo;t be appropriate for all audiobook listeners. For many, the silences matter, and removing them would degrade the quality of the book. For many, listening at 2.5x would also degrade the quality of the book. So use this tool with caution.&lt;/p&gt;
-&lt;p&gt;For those of you who are intersted, however, here&amp;rsquo;s how to use Fastbook.&lt;/p&gt;
+&lt;p&gt;For those of you who are interested, however, here&amp;rsquo;s how to use Fastbook.&lt;/p&gt;
 &lt;h2 id=&#34;installing-fastbook&#34;&gt;Installing Fastbook&lt;/h2&gt;
 &lt;p&gt;I&amp;rsquo;ve made Fastbook available for free on GitHub. You can 
 &lt;a href=&#34;https://gist.github.com/dbieber/98f909640773b5b0a0fe5696da369a1b&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;access it here&lt;/a&gt;.&lt;/p&gt;
@@ -12005,7 +12005,7 @@ How much of it is duplicate work (e.g. two nations or organizations independentl
 &lt;p&gt;University enrollments and degrees granted tells a significant story about how many people are studying different areas. You can roughly estimate how much time a student majoring in physics puts into their studies, and if course enrollments are available that estimate can be even more precise.&lt;/p&gt;
 &lt;p&gt;Scientific fields make their mark on the world by publishing their research. Counting publications can provide an estimate of one piece of humanity&amp;rsquo;s effort studying science.&lt;/p&gt;
 &lt;p&gt;Finally, for contemporary data, and maybe even a little historical data, one could uses surveys / polling techniques to estimate where scientific mindshare is going today.&lt;/p&gt;
-&lt;p&gt;Among this data I&amp;rsquo;d be curious to see when historically there have been large swings in mindshare toward a particular topic. Right now, anecdotally, machine learning research is engaging a quickly increasing number of people, including drawing people away from other fields. I&amp;rsquo;d love to see this anecdotal evidence backed up (or refuted) by data. And I expect there are plenty of similar historical precidents that I would be quite interested in learning more about as well.&lt;/p&gt;
+&lt;p&gt;Among this data I&amp;rsquo;d be curious to see when historically there have been large swings in mindshare toward a particular topic. Right now, anecdotally, machine learning research is engaging a quickly increasing number of people, including drawing people away from other fields. I&amp;rsquo;d love to see this anecdotal evidence backed up (or refuted) by data. And I expect there are plenty of similar historical precedents that I would be quite interested in learning more about as well.&lt;/p&gt;
 &lt;p&gt;I don&amp;rsquo;t foresee collecting this data or performing these visualizations myself in the near future. This post is just an opportunity to think aloud, not a plan for my own action. But if you have data like this, or know of someone who has done a related analysis, I&amp;rsquo;d be quite interested to hear about it. Don&amp;rsquo;t hesitate to get in touch.&lt;/p&gt;
 </description>
     </item>
@@ -12377,7 +12377,7 @@ For some reason, I do it anyway though, and so I think of this habit like an add
       <description>&lt;p&gt;I started this 
 &lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;&amp;ldquo;snippets&amp;rdquo;&lt;/a&gt; section of my website just a few days ago with the intention of being able to write without needing to put polish on a piece before publishing it.&lt;/p&gt;
 &lt;p&gt;My thinking was that I would be able to put small notes there, and half-baked ideas, and not have to worry about diluting the quality of the content of my 
-&lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;main website&lt;/a&gt;. I could put high quality posts on the main site, and a whole range of both good and bad posts in the snippets section. This way, assuming I do a good job, readers could come to expect that any post on the main website would be high quality. Curious people looking for additional content could come here to the snippets section if they wanted to, but more often posts here would either (1) almost never get read, or (2) be linked to directly, e.g. if they were relevent in some other context.&lt;/p&gt;
+&lt;a href=&#34;https://davidbieber.com/posts&#34;&gt;main website&lt;/a&gt;. I could put high quality posts on the main site, and a whole range of both good and bad posts in the snippets section. This way, assuming I do a good job, readers could come to expect that any post on the main website would be high quality. Curious people looking for additional content could come here to the snippets section if they wanted to, but more often posts here would either (1) almost never get read, or (2) be linked to directly, e.g. if they were relevant in some other context.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve been surprised and delighted by the effect that having this &amp;ldquo;No Audience&amp;rdquo; section of the website has had on my writing. Writing for no one is so much easier than writing for someone.&lt;/p&gt;
 &lt;p&gt;On a few occasions (and it&amp;rsquo;s only been a few days since I started this section), I&amp;rsquo;ve started writing snippets intending for them to be brief thoughts meant for no one but myself. Then, after starting, it has felt natural to expand the post into something more substantial than I originally intended, e.g. answering questions that a hypothetical reader might have.&lt;/p&gt;
 &lt;p&gt;On one 
@@ -12394,7 +12394,7 @@ For some reason, I do it anyway though, and so I think of this habit like an add
 &lt;a href=&#34;https://davidbieber.com/projects/shh-shell&#34;&gt;shh-shell&lt;/a&gt;. This is more personal writing that I do half-asleep as I drift off at night, and so I don&amp;rsquo;t make it public; I expect almost no one will ever read it. This writing, I suppose is for No Audience to an even more extreme degree. I recommend both practices: public writing for no audience, and private writing for no audience.&lt;/p&gt;
 &lt;h4 id=&#34;social-media-doesnt-cut-it&#34;&gt;Social Media Doesn&amp;rsquo;t Cut It&lt;/h4&gt;
 &lt;p&gt;Now that I&amp;rsquo;ve discovered this practice and am quite fond of it, I think it could be a promising addition to social media.&lt;/p&gt;
-&lt;p&gt;No social media platform, to my knowledge, has given people a place to write public posts with an option to publish but not share them. The absense of such a feature makes sense; social media platforms need you to share for them to succeed, so how would giving you a space to publish-but-not-share help them? The answer lies in the psychology of the many social-media lurkers. There is a significant market segment of people who perhaps consume, but do not post, on social media. An option to publish-but-not-broadcast might help to convert some of that segment into sharers.&lt;/p&gt;
+&lt;p&gt;No social media platform, to my knowledge, has given people a place to write public posts with an option to publish but not share them. The absence of such a feature makes sense; social media platforms need you to share for them to succeed, so how would giving you a space to publish-but-not-share help them? The answer lies in the psychology of the many social-media lurkers. There is a significant market segment of people who perhaps consume, but do not post, on social media. An option to publish-but-not-broadcast might help to convert some of that segment into sharers.&lt;/p&gt;
 &lt;p&gt;As a social media consumer, but infrequent producer, I can tell you I am hesitant even to Like something on Twitter, because I know Twitter often treats Likes like Retweets, and will put the content I hearted in front of my followers with my name attached, and that&amp;rsquo;s not something I want.&lt;/p&gt;
 &lt;p&gt;If a feature for publishing-without-sharing were added to Facebook or Twitter, perhaps others would have an experience like mine over the last few days. Having the option to publish-but-not-share has significantly reduced the barrier to start writing for me. Then, once I&amp;rsquo;ve started writing, I&amp;rsquo;ve often changed my mind and decided I want to share what I&amp;rsquo;ve written after all.&lt;/p&gt;
 &lt;p&gt;If other social-media lurkers are like me, a feature enabling this behavior could help &amp;ldquo;break the ice&amp;rdquo; so to speak, and could make social media platforms more relevant to them.&lt;/p&gt;

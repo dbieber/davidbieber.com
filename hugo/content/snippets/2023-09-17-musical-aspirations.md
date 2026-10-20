@@ -7,7 +7,7 @@ keywords = ["violin", "piano", "guitar"]
 
 In 2017 I picked up violin again, after a 15 year hiatus. I'd played throughout fourth grade, but then put the instrument down to focus on my studies.[^1]
 
-[^1]: Aside: is that an instance of double sarcasm? I will have to dedicate a full snippet to double sarcasm at some point. In this instance, it's meant to be a joke, but also might literaly be true... Maybe not sarcasm but something in that vein.
+[^1]: Aside: is that an instance of double sarcasm? I will have to dedicate a full snippet to double sarcasm at some point. In this instance, it's meant to be a joke, but also might literally be true... Maybe not sarcasm but something in that vein.
 
 I'm now plodding away at learning guitar and violin, and playing bits on the keyboard. It would be good to have some goals so I can direct my studies. One candidate goal based on my recent playing would be to produce You've Got a Friend in Me on all of these instruments: piano, violin, guitar, and I could even do vocals. I could record each of these separately and put them together in Ableton.
 

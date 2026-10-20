@@ -13,7 +13,7 @@ I have a couple of people in my life who ask this question: "what's alive in you
 Aside from the slight downside of elliciting funny looks, I think it's a solid alternative to "how are you?" as a conversation opener when you are looking to have a meaningful conversation.
 Of course, often "how are you?" is _not_ intended to introduce a meaningful undirected conversation; it gets used as a pleasantry too, with the actual direction for the conversation to be provided shortly later (as in the opening line to this snippet).
 
-### The abiguity present in "how are you?"
+### The ambiguity present in "how are you?"
 
 So there's an ambiguity in receiving the phrase "how are you?" which I think dampens its utility as a question, despite it's popularity.
 On the one hand, you can reply to "how are you?" with a simple evaluation (e.g. "good"), for which it is even often socially acceptable to lie if the answer is less than "fine" but you don't want to get into it. The other common way to reply is to provide a piece of evidence -- a thing from your life that relates to how you're doing, whether that be a thing you did recently or a thing coming up in the future.

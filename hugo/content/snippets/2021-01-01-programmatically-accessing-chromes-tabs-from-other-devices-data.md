@@ -5,7 +5,7 @@ uid = "CYc8VlO--"
 tags = ["attention"]
 +++
 
-I use Google Chrome on my Mac laptop and on my iPhone, and I'm logged in to my Google account in both places with syncing turned on. If I go to "chrome://history/syncedTabs" on my computer I can see what tabs I have open on my phone. Now, I'd like to access this data programatically.
+I use Google Chrome on my Mac laptop and on my iPhone, and I'm logged in to my Google account in both places with syncing turned on. If I go to "chrome://history/syncedTabs" on my computer I can see what tabs I have open on my phone. Now, I'd like to access this data programmatically.
 
 With the help of `grep`, I've figured out that this data is stored in `~/Library/Application Support/Google/Chrome/Profile 1/Sync Data/LevelDB/` (Probably for most people the path would be `~/Library/Application Support/Google/Chrome/Default/Sync Data/LevelDB/`). Be careful to escape the spaces in the file path!
 

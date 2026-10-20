@@ -507,7 +507,7 @@ Bieber Bot interact with more Slack workspaces, I will write up my renewed under
 <p>When the redirect URL is accessed with a <code>code</code> GET parameter, it then turns around and uses that <code>code</code> to request an Access Token from Slack. Once it has that Access Token, it tucks it away. It can use that access token in order to perform any of the permissions granted by the user during the access flow.</p>
 <p>Usually using the Access Token takes the form of issuing post requests to Slack with the Access Token as a parameter.</p>
 <p>The user can revoke access to Bieber Bot at any time. Once they do so, the Access Token becomes invalid. If Bieber Bot tries to use the Access Token at that point, it will get an error. The user will have to give Bieber Bot permissions again, and it will get a new access token, in order for it to continue providing its services and companionship.</p>
-<h2 id="summary-of-the-the-important-bits">Summary of the the Important Bits</h2>
+<h2 id="summary-of-the-important-bits">Summary of the Important Bits</h2>
 <ol>
 <li>User navigates from website to service (e.g. via <em>Add to Slack</em> button).</li>
 <li>Service shows user permissions dialog.</li>
@@ -518,7 +518,7 @@ Bieber Bot interact with more Slack workspaces, I will write up my renewed under
 <h2 id="summary-of-the-less-important-bits">Summary of the Less Important Bits</h2>
 <ol>
 <li>
-<p>The <em>Add to Slack</em> button should include GET parameters for: a) <code>state</code> so the redirect url knows the request is genuine, b) <code>redirect_url</code> so Slack knows where to send the user after they accept the permissons, c) <code>scope</code> indicating the permissions being requested, d) <code>client_id</code> indicating the app (e.g. Bieber Bot) that you&rsquo;re adding to Slack.</p>
+<p>The <em>Add to Slack</em> button should include GET parameters for: a) <code>state</code> so the redirect url knows the request is genuine, b) <code>redirect_url</code> so Slack knows where to send the user after they accept the permissions, c) <code>scope</code> indicating the permissions being requested, d) <code>client_id</code> indicating the app (e.g. Bieber Bot) that you&rsquo;re adding to Slack.</p>
 </li>
 <li>
 <p>The permissions that the App can request are set up by the App ahead of time. So I think the <code>scope</code> parameter is there if you only need to request a subset of that permissions for a particular user.</p>

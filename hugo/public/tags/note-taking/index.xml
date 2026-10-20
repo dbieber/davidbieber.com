@@ -809,7 +809,7 @@ Imagine that instead of having ontologies in your note-base, you simply have fre
 You still might say that David is interested in table tennis, but there would be no formal &amp;ldquo;Interests&amp;rdquo; attribute linking David and Table Tennis.
 If a large language model understands that text, then it will still be able to handle queries like &amp;ldquo;what is David interested in?&amp;rdquo; and &amp;ldquo;contacts who like table tennis?&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;You can even try this on a small scale today in 
-&lt;a href=&#34;https://chat.openai.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ChatGPT&lt;/a&gt;. Paste the following text into ChatGPT and it answers the questions correctly. I wont argue the case here, but I fully expect this to work on the scale of a full note-base in the coming months-years.&lt;/p&gt;
+&lt;a href=&#34;https://chat.openai.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ChatGPT&lt;/a&gt;. Paste the following text into ChatGPT and it answers the questions correctly. I won&amp;rsquo;t argue the case here, but I fully expect this to work on the scale of a full note-base in the coming months-years.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;Mary likes hockey, collects coins, and reads sci-fi.
 Glenn plays table tennis, collects rocks, and reads fantasy.
 My dentist recommends the book &amp;quot;Jaws&amp;quot;. Next apt is March 6.

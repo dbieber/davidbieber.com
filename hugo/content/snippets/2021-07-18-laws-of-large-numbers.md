@@ -18,7 +18,7 @@ The Strong law guarantees _almost sure convergence_.
 Weak law: $\lim\limits_{n \to \infty} \text{Pr}\left(|S_n - \mu| < \epsilon\right) = 1$<br/>
 Strong law: $\text{Pr}\left(\lim\limits_{n \to \infty} S_n = \mu\right) = 1$
 
-Neither occurence of "$=1$" means that any event is guaranteed. There's simply infinitesimal probability that an event does not occur.
+Neither occurrence of "$=1$" means that any event is guaranteed. There's simply infinitesimal probability that an event does not occur.
 
 The weak law says that for any threshold distance from the true mean $\epsilon$ that you select, as the number of samples increases, the probability that the sample mean is within $\epsilon$ from the true mean approaches one. Even as the number of samples increases there is still the possibility of the sample mean being further than $\epsilon$ from the true mean; that possibility simply approaches being infinitesimal as the number of samples increases.
 
