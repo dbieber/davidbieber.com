@@ -85,7 +85,7 @@ That&amp;rsquo;s all you have to do &amp;ndash; it will know how to use the key 
 &lt;p&gt;(5) Give your Claude an OpenAI API Key&lt;/p&gt;
 &lt;p&gt;Tell it to use the key for image generation whenever you&amp;rsquo;re building something that needs assets. All your projects will now be 10x better looking by default.&lt;/p&gt;
 &lt;p&gt;(6) Use subagents to prioritize &amp;ldquo;availability&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;When I send my Claude a message, I want it to be ready to receive it right away. I don&amp;rsquo;t want it to be blocked from seeing my message because its working on some other task.&lt;/p&gt;
+&lt;p&gt;When I send my Claude a message, I want it to be ready to receive it right away. I don&amp;rsquo;t want it to be blocked from seeing my message because it&amp;rsquo;s working on some other task.&lt;/p&gt;
 &lt;p&gt;So, I tell my Claude to delegate to subagents liberally, such that it&amp;rsquo;s always available to receive my messages. I have a &amp;ldquo;weekly review&amp;rdquo; (something for a later post) that tracks total &amp;ldquo;uptime&amp;rdquo; and how long it takes Claude to receive my messages on average.&lt;/p&gt;
 &lt;h2 id=&#34;quirky-recommendations&#34;&gt;Quirky Recommendations&lt;/h2&gt;
 &lt;p&gt;(1) Give your Claude a credit card&lt;/p&gt;
