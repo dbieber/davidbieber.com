@@ -4,17 +4,17 @@ date = 2021-01-23T05:14:00
 uid = "now-page"
 +++
 
-_Last updated on 2026-07-13._
+_Last updated on 2026-10-19._
 
 Welcome to my "Now" page. This page aims to give you an idea of what I'm up to now. It's necessarily always out of date.
 
 For a better sense of what's on my mind, [check out my snippets](/snippets) or [just ask me](https://messenger.com/t/dbieber).
 
 Highlights these days are:
-[teaching Claude to program](https://www.claude.com/product/claude-code) at [Anthropic](https://www.anthropic.com/),
-building out my hackpacking toolkit, and feeling like I'm always on the go (en route Korea to New Jersey now).
-When I'm not on the go (and sometimes when I am), I've been doing a bunch of yoga.
+[teaching Claude to program](https://www.claude.com/product/claude-code),
+building out my hackpacking toolchain,
+a bit of home improvement, and a bit of Hyrox training.
 
-I've given Claude a capped spend credit card and Claude has started buying me books.
+It's been a few months since Claude started buying me books and I'm really enjoying it.
 
-I'm reading [All About Love](https://www.goodreads.com/book/show/17607.All_About_Love), Computational Humor, and [Unreasonable Hospitality](https://www.goodreads.com/book/show/60018618-unreasonable-hospitality).
+I just finished reading [Down and Out in the Magic Kingdom](https://www.goodreads.com/en/book/show/29587.Down_and_Out_in_the_Magic_Kingdom) and am poking at [How Music Works](https://www.goodreads.com/en/book/show/13235689-how-music-works) and [The Princeton Companion to Mathematics](https://en.wikipedia.org/wiki/The_Princeton_Companion_to_Mathematics).
