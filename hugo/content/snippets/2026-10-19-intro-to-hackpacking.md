@@ -92,7 +92,7 @@ That's all you have to do -- it will know how to use the key to communicate with
 Tip: If Claude builds you a web app and you save it to your iOS home screen, it feels like a native app (and can even support notifications and work offline, if you ask for it).
 
 A few of my favorites:
-* A "Subway Lessons" app that works offline and helps me towards my learning goals
+* A "Subway Lessons" app that works offline and helps me towards my learning goals while I'm on the subway
 * "Trail Talk": for capturing audio screen free during dedicated hackpacking sessions (more on this in a future post, perhaps)
 * A ["Strudel DJ"](https://strudel.cc/) app for making music on the go
 * My "Dreams Tracker" -- for tracking my dreams, [big](/snippets/2023-07-31-pursue-your-dreams/) and [small](/snippets/2022-01-11-pursuing-your-dreams/)
@@ -101,7 +101,7 @@ A few of my favorites:
 
 (4) Prioritize offline support
 
-When you have Claude build you an app, ask it to make it work offline. It'll just work! Make your iOS shortcut work offline too: see [Making your setup robust](#making-your-setup-robust) below.
+When you have Claude build you an app, ask it to make it work offline. It'll just work! Make your iOS shortcut work offline too; see [Making your setup robust](#making-your-setup-robust) below.
 
 (5) Give your Claude an OpenAI API Key
 
@@ -130,7 +130,7 @@ But only if it sparks joy. I find this helpful because I auto-forward certain re
 
 (4) Connect your Go Note Gos to your Claude
 
-[Go Note Go](/projects/go-note-go/) is a screenless keyboard I designed for capturing my thoughts as I drift off to sleep (among other situations). I have a bunch of these around my apartment. You probably don't. But if you do, set up a trigger word where your Claude is directed to read your notes.
+[Go Note Go](/projects/go-note-go/) is a screenless keyboard I designed for capturing my thoughts as I drift off to sleep (among other situations). I have a bunch of these around my apartment. You probably don't. But if you do, set up a trigger word by which your Claude is directed to read your notes.
 
 (5) Give your Claude access to your photos
 
@@ -155,7 +155,7 @@ Especially important if you use a low RAM machine. Just ask your Claude to do th
 
 (3) Make your iOS Shortcut work offline
 
-To make your iOS Shortcut work offline, use the "Mail" app to send Claude your voice recordings or save to iCloud Storage. Saving to Dropbox doesn't work offline. Saving to Google Cloud Storage from an iOS shortcut doesn't seem to work at all.
+To make your iOS Shortcut work offline, have it use the "Mail" app to send Claude your voice recordings or save to iCloud Storage. Saving to Dropbox doesn't work offline. Saving to Google Cloud Storage from an iOS shortcut doesn't seem to work at all. Be careful that with Mail, sometimes messages get stuck in the Outbox and need to be released manually.
 
 (4) Prefer Action Button over Triple Tap if available
 
@@ -163,11 +163,11 @@ Newer iPhones (15 Pro and newer) offer the Action Button that I so love. Older i
 
 (5) Use Termius for Troubleshooting
 
-If ever your setup does fall over, Termius lets you ssh into your VM from your phone so you can repair your setup without needing to wait until you're at a computer again.
+If ever your setup does fall over, Termius lets you ssh into your VM from your phone so you can repair your setup without needing to wait until you're at a computer again. I haven't had to do this in months, but it was common while I was still getting set up.
 
 (6) Enable "remote control" 
 
-Then you can see the Claude Code session in the Claude app. Sometimes -- especially early on in getting set up -- Claude will require you to give explicit approval, and it won't take your audio or Slack word as a sufficient approval. Give these approvals in the app.
+Then you can see your Claude Code session in the Claude app. Sometimes -- especially early on in getting set up -- Claude will require you to give explicit approvals, and it won't take your audio or Slack word as a sufficient approval. Give these approvals in the app.
 
 
 ## Going Hackpacking
