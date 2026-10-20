@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Google-Apps-Script on David Bieber</title>
+    <title>Google Apps Script on David Bieber</title>
     <link>https://davidbieber.com/tags/google-apps-script/</link>
-    <description>Recent content in Google-Apps-Script on David Bieber</description>
+    <description>Recent content in Google Apps Script on David Bieber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://davidbieber.com/tags/google-apps-script/index.xml" rel="self" type="application/rss+xml" />
@@ -64,7 +64,7 @@ It then also rolls up this data in interesting ways that help me with reflecting
 &lt;/ul&gt;
 &lt;h3 id=&#34;the-system&#34;&gt;The System&lt;/h3&gt;
 &lt;p&gt;I have a single spreadsheet with columns &lt;em&gt;Evening&lt;/em&gt;, &lt;em&gt;Morning&lt;/em&gt;, &lt;em&gt;Keywords&lt;/em&gt;, &lt;em&gt;Weekday&lt;/em&gt;, &lt;em&gt;Date&lt;/em&gt;, &lt;em&gt;People&lt;/em&gt;, &lt;em&gt;Notes&lt;/em&gt;. In this sheet, I have a single row &lt;em&gt;per day&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;The essense of the system is to jot down (1) what I do, and optionally (2) who I engage with each day.&lt;/p&gt;
+&lt;p&gt;The essence of the system is to jot down (1) what I do, and optionally (2) who I engage with each day.&lt;/p&gt;
 &lt;p&gt;I don&amp;rsquo;t update the spreadsheet every day, usually just once a week or so I&amp;rsquo;ll fill in the activity from all of the missing days.&lt;/p&gt;
 &lt;p&gt;This system serves several purposes, the main one being a journal of sorts so I can see a historical log of my activities. As you&amp;rsquo;ll see in the Planning and Notifications sections, it also helps me remember to regularly do all the activities I enjoy doing.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ll start by providing a brief description of each column in the spreadsheet. Then we&amp;rsquo;ll get to discuss how I use the spreadsheet, and you&amp;rsquo;ll see why they&amp;rsquo;re each important to me. We&amp;rsquo;ll then also dive into all the benefits I get from this spreadsheet and the infrastructure I&amp;rsquo;ve built up around it.&lt;/p&gt;
@@ -276,7 +276,7 @@ And if I don&amp;rsquo;t have any activity planned for a particular day, BieberB
 &lt;/figure&gt;
 
 &lt;p&gt;Finally BieberBot will also remind me if I haven&amp;rsquo;t been entering activities into the spreadsheet in a while, so I don&amp;rsquo;t fall too far behind on the logging system.&lt;/p&gt;
-&lt;p&gt;Setting up these notifcations is a bit outside the scope of this post, but if it interests you how BieberBot works, you can subscribe for future posts here:&lt;/p&gt;
+&lt;p&gt;Setting up these notifications is a bit outside the scope of this post, but if it interests you how BieberBot works, you can subscribe for future posts here:&lt;/p&gt;
 
 &lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/classic-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
 &lt;style type=&#34;text/css&#34;&gt;
@@ -490,12 +490,12 @@ var sheet = spreadsheet.getSheetByName(&amp;quot;Sheet 1&amp;quot;);
 &lt;p&gt;The input to our anonymous function, row, is an array with the contents of the row currently being processed. From earlier, indexes[&amp;ldquo;Name&amp;rdquo;] is 0, indexes[&amp;ldquo;Email&amp;rdquo;] is 1, and indexes[&amp;ldquo;Age&amp;rdquo;] is 2. We can use this to get the name, email, and age of one of our friends from the spreadsheet.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var body = templateBody.replace(/&amp;lt;name&amp;gt;/g, name).replace(/&amp;lt;age&amp;gt;/g, age);
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This is where the textual replacement actually happens. &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt; is replaced with your friend&amp;rsquo;s name. &lt;code&gt;&amp;lt;age&amp;gt;&lt;/code&gt; is replaced with your friend&amp;rsquo;s age. The &amp;lsquo;g&amp;rsquo; indicates that a &amp;ldquo;global&amp;rdquo; replacement should be performed, so every time the string &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt; appears it will be replaced by the name of your friend from the spreadsheet. Without the &amp;lsquo;g&amp;rsquo;, only the first occurence of &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt; would be replaced.&lt;/p&gt;
+&lt;p&gt;This is where the textual replacement actually happens. &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt; is replaced with your friend&amp;rsquo;s name. &lt;code&gt;&amp;lt;age&amp;gt;&lt;/code&gt; is replaced with your friend&amp;rsquo;s age. The &amp;lsquo;g&amp;rsquo; indicates that a &amp;ldquo;global&amp;rdquo; replacement should be performed, so every time the string &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt; appears it will be replaced by the name of your friend from the spreadsheet. Without the &amp;lsquo;g&amp;rsquo;, only the first occurrence of &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt; would be replaced.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;GmailApp.sendMail(email, subject, body);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Last, this line sends the email!&lt;/p&gt;
-&lt;p&gt;Since this is JavaScript, you can comment out lines by putting &lt;code&gt;//&lt;/code&gt; at the start of the line. Everything occuring after &lt;code&gt;//&lt;/code&gt; on the line will have no affect.&lt;/p&gt;
-&lt;p&gt;I recommend commenting out the GmailApp.sendMail line before running this for the first time to so that you don&amp;rsquo;t accidently email people incorrectly.&lt;/p&gt;
+&lt;p&gt;Since this is JavaScript, you can comment out lines by putting &lt;code&gt;//&lt;/code&gt; at the start of the line. Everything occurring after &lt;code&gt;//&lt;/code&gt; on the line will have no affect.&lt;/p&gt;
+&lt;p&gt;I recommend commenting out the GmailApp.sendMail line before running this for the first time to so that you don&amp;rsquo;t accidentally email people incorrectly.&lt;/p&gt;
 &lt;p&gt;Add the line &lt;code&gt;Logger.log(&amp;quot;To: &amp;quot; + email); Logger.log(&amp;quot;Subj: &amp;quot; + subject); Logger.log(&amp;quot;Body: &amp;quot; + body);&lt;/code&gt; in place of the GmailApp.sendMail line until you&amp;rsquo;re convinced that the correct emails are going to be sent to the correct people. Only once you are sure it&amp;rsquo;s working as intended, uncomment the GmailApp.sendMail line so it actually sends the emails.&lt;/p&gt;
 &lt;p&gt;To run the performMailMerge function, choose performMailMerge from the dropdown and click the run (right-arrow) button.
 To see your logs (the inputs to the Logger.log function calls), choose &amp;ldquo;View &amp;gt; Logs&amp;rdquo; or press ctrl-Enter or cmd-Enter.&lt;/p&gt;

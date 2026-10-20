@@ -75,7 +75,7 @@ I leave the volume on my laptop on, so I can hear the shh shell's output, but I 
 
 ### Can you use it in the shower?
 
-Yes, I sometimes also use shh shell from the shower. I have a waterproof wireless keyboard in my shower. I am mildly embarassed by this.
+Yes, I sometimes also use shh shell from the shower. I have a waterproof wireless keyboard in my shower. I am mildly embarrassed by this.
 
 The keyboard is connected wirelessly to my laptop running the shh shell in another room. There is no computer in the bathroom. For audio, I have a waterproof shower speaker connected via bluetooth to the laptop in the other room. The speaker sits in the shower next to the keyboard, which both rest on a ledge. There is a 3D-printed shaving cream holder nearby.
 
@@ -184,7 +184,7 @@ Only the final line of the text was readable: "I hope the FBI doesn't find out a
 
 What made this particularly cool for me was that I had no recollection of what I had typed the night before. What was I concerned about the FBI finding out!?
 
-Decoding the paragrah wasn't too challenging, since each letter was just off by one or so on the keyboard, and so I was soon able to figure out what I had typed. It was an amazing experience decoding this, because as I did so, my memory came back. The text was a description of a dream that I had woken up from and typed into shh before falling back asleep. I was not involved in any criminal activity :).
+Decoding the paragraph wasn't too challenging, since each letter was just off by one or so on the keyboard, and so I was soon able to figure out what I had typed. It was an amazing experience decoding this, because as I did so, my memory came back. The text was a description of a dream that I had woken up from and typed into shh before falling back asleep. I was not involved in any criminal activity :).
 
 Before I decoded the mysterious paragraph, I had forgotten entirely about the dream. As I decoded though, I remembered the dream, waking from it, and writing down what had happened. 
 

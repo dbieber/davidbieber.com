@@ -128,7 +128,7 @@ The input to our anonymous function, row, is an array with the contents of the r
 var body = templateBody.replace(/<name>/g, name).replace(/<age>/g, age);
 ```
 
-This is where the textual replacement actually happens. `<name>` is replaced with your friend's name. `<age>` is replaced with your friend's age. The 'g' indicates that a "global" replacement should be performed, so every time the string `<name>` appears it will be replaced by the name of your friend from the spreadsheet. Without the 'g', only the first occurence of `<name>` would be replaced.
+This is where the textual replacement actually happens. `<name>` is replaced with your friend's name. `<age>` is replaced with your friend's age. The 'g' indicates that a "global" replacement should be performed, so every time the string `<name>` appears it will be replaced by the name of your friend from the spreadsheet. Without the 'g', only the first occurrence of `<name>` would be replaced.
 
 ```javascript
 GmailApp.sendMail(email, subject, body);
@@ -136,9 +136,9 @@ GmailApp.sendMail(email, subject, body);
 
 Last, this line sends the email!
 
-Since this is JavaScript, you can comment out lines by putting `//` at the start of the line. Everything occuring after `//` on the line will have no affect.
+Since this is JavaScript, you can comment out lines by putting `//` at the start of the line. Everything occurring after `//` on the line will have no affect.
 
-I recommend commenting out the GmailApp.sendMail line before running this for the first time to so that you don't accidently email people incorrectly.
+I recommend commenting out the GmailApp.sendMail line before running this for the first time to so that you don't accidentally email people incorrectly.
 
 Add the line `Logger.log("To: " + email); Logger.log("Subj: " + subject); Logger.log("Body: " + body);` in place of the GmailApp.sendMail line until you're convinced that the correct emails are going to be sent to the correct people. Only once you are sure it's working as intended, uncomment the GmailApp.sendMail line so it actually sends the emails.
 

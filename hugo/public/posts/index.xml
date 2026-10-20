@@ -166,7 +166,7 @@ However, sometimes being able to send something immediately is desirable, and th
 &lt;p&gt;There&amp;rsquo;s also a sheet that lists aliases, so it&amp;rsquo;s easy to use a short name or informal name to refer to a longer service or recipient; e.g. I use &amp;ldquo;@Audio Tools&amp;rdquo; as a shorthand for sending to a group of 5 people on Messenger all interested in audio tools for networked thought.&lt;/p&gt;
 &lt;p&gt;The Messager Queue sheet also displays the &lt;em&gt;Text&lt;/em&gt; of the message to send, so you can easily clean up the message here for any typos or clarifications before it is sent.&lt;/p&gt;
 &lt;p&gt;The &lt;em&gt;Date&lt;/em&gt; and &lt;em&gt;Time&lt;/em&gt; columns allow for scheduling messages to be sent at any point in the future. Leave them blank and the message will be sent as soon as it is approved. Use keyboard shortcuts cmd-; (for date) and cmd-shift-; (for time) to quickly fill out these columns if desired.&lt;/p&gt;
-&lt;p&gt;Finally, the &lt;em&gt;Approval&lt;/em&gt; column is the most important. Mark a messages as OK if you want it to be sent, or as Ignored if you deside to skip it. The &lt;em&gt;Status&lt;/em&gt; column is updated automatically by Messager when the message is sent (or if it fails to send, then the error appears here). You can also mark the Status manually with whatever value you want (e.g. if you send the message manually), and the Messager system will ignore that message going forward. If you want the system to retry sending a message, simply clear out the Status column and it will try again.&lt;/p&gt;
+&lt;p&gt;Finally, the &lt;em&gt;Approval&lt;/em&gt; column is the most important. Mark a messages as OK if you want it to be sent, or as Ignored if you decide to skip it. The &lt;em&gt;Status&lt;/em&gt; column is updated automatically by Messager when the message is sent (or if it fails to send, then the error appears here). You can also mark the Status manually with whatever value you want (e.g. if you send the message manually), and the Messager system will ignore that message going forward. If you want the system to retry sending a message, simply clear out the Status column and it will try again.&lt;/p&gt;
 &lt;p&gt;I include this spreadsheet as a custom service in 
 &lt;a href=&#34;https://getferdi.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ferdi&lt;/a&gt;, so it lives alongside all the messaging apps I use. (This in itself might be the subject of a future 
 &lt;a href=&#34;https://davidbieber.com/snippets&#34;&gt;snippet&lt;/a&gt;.)&lt;/p&gt;
@@ -498,7 +498,7 @@ It then also rolls up this data in interesting ways that help me with reflecting
 &lt;/ul&gt;
 &lt;h3 id=&#34;the-system&#34;&gt;The System&lt;/h3&gt;
 &lt;p&gt;I have a single spreadsheet with columns &lt;em&gt;Evening&lt;/em&gt;, &lt;em&gt;Morning&lt;/em&gt;, &lt;em&gt;Keywords&lt;/em&gt;, &lt;em&gt;Weekday&lt;/em&gt;, &lt;em&gt;Date&lt;/em&gt;, &lt;em&gt;People&lt;/em&gt;, &lt;em&gt;Notes&lt;/em&gt;. In this sheet, I have a single row &lt;em&gt;per day&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;The essense of the system is to jot down (1) what I do, and optionally (2) who I engage with each day.&lt;/p&gt;
+&lt;p&gt;The essence of the system is to jot down (1) what I do, and optionally (2) who I engage with each day.&lt;/p&gt;
 &lt;p&gt;I don&amp;rsquo;t update the spreadsheet every day, usually just once a week or so I&amp;rsquo;ll fill in the activity from all of the missing days.&lt;/p&gt;
 &lt;p&gt;This system serves several purposes, the main one being a journal of sorts so I can see a historical log of my activities. As you&amp;rsquo;ll see in the Planning and Notifications sections, it also helps me remember to regularly do all the activities I enjoy doing.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ll start by providing a brief description of each column in the spreadsheet. Then we&amp;rsquo;ll get to discuss how I use the spreadsheet, and you&amp;rsquo;ll see why they&amp;rsquo;re each important to me. We&amp;rsquo;ll then also dive into all the benefits I get from this spreadsheet and the infrastructure I&amp;rsquo;ve built up around it.&lt;/p&gt;
@@ -710,7 +710,7 @@ And if I don&amp;rsquo;t have any activity planned for a particular day, BieberB
 &lt;/figure&gt;
 
 &lt;p&gt;Finally BieberBot will also remind me if I haven&amp;rsquo;t been entering activities into the spreadsheet in a while, so I don&amp;rsquo;t fall too far behind on the logging system.&lt;/p&gt;
-&lt;p&gt;Setting up these notifcations is a bit outside the scope of this post, but if it interests you how BieberBot works, you can subscribe for future posts here:&lt;/p&gt;
+&lt;p&gt;Setting up these notifications is a bit outside the scope of this post, but if it interests you how BieberBot works, you can subscribe for future posts here:&lt;/p&gt;
 
 &lt;link href=&#34;//cdn-images.mailchimp.com/embedcode/classic-10_7.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;
 &lt;style type=&#34;text/css&#34;&gt;
@@ -842,8 +842,8 @@ That is, a pair of nodes may be connected by an edge in the first graph if and o
 An example of two isomorphic graphs is shown here.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism.png&#34; alt=&#34;Example of isomorphic graphs&#34; title=&#34;Two isomorphic graphs are shown.&#34;&gt;
 &lt;em&gt;Figure: Graph 1 and Graph 2 are isomorphic.
-The correspondance between nodes is illustrated by the node colors and numbers.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;In general, determining whether two graphs are isomorphic when the correspondance is not provided is a challenging problem; precisely how hard this problem is remains an open question in computer science.
+The correspondence between nodes is illustrated by the node colors and numbers.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In general, determining whether two graphs are isomorphic when the correspondence is not provided is a challenging problem; precisely how hard this problem is remains an open question in computer science.
 It isn&amp;rsquo;t known whether there is a polynomial time algorithm for determining whether graphs are isomorphic, and it also isn&amp;rsquo;t known whether the problem is $\text{NP-complete}.$
 The graph isomorphism problem may even be an example of an 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/NP-intermediate&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;$\text{NP-intermediate}$&lt;/a&gt; problem, but this would only be possible if $\text{P} \ne \text{NP}.$&lt;/p&gt;
@@ -906,12 +906,12 @@ Another possible convention is to use the hash of the multiset to create the com
 If the partitions change, we proceed to the next iteration.
 If no partition changes, the algorithm can terminate early.
 When comparing the partitions of the nodes across graphs to see if graphs are isomorphic, we use the canonical form as described above in the algorithm.&lt;/p&gt;
-&lt;h3 id=&#34;finding-the-correspondance-between-isomorphic-graphs&#34;&gt;Finding the Correspondance Between Isomorphic Graphs&lt;/h3&gt;
+&lt;h3 id=&#34;finding-the-correspondence-between-isomorphic-graphs&#34;&gt;Finding the Correspondence Between Isomorphic Graphs&lt;/h3&gt;
 &lt;p&gt;The core idea of the Weisfeiler-Lehman isomorphism test is to find for each node in each graph a signature based on the neighborhood around the node.
-These signatures can then be used to find the correspondance between nodes in the two graphs, which can be used to check for isomorphism.&lt;/p&gt;
-&lt;p&gt;In the algorithm descibed above, the &amp;ldquo;compressed labels&amp;rdquo; serve as the signatures.
-Since multiple nodes may have the same compressed label, there are multiple possible correspondances suggested by a Weisfeiler-Lehman labeling.
-The Weisfeiler-Lehman isomorphism test itself does not provide a way of narrowing down the possible correspondances further.&lt;/p&gt;
+These signatures can then be used to find the correspondence between nodes in the two graphs, which can be used to check for isomorphism.&lt;/p&gt;
+&lt;p&gt;In the algorithm described above, the &amp;ldquo;compressed labels&amp;rdquo; serve as the signatures.
+Since multiple nodes may have the same compressed label, there are multiple possible correspondences suggested by a Weisfeiler-Lehman labeling.
+The Weisfeiler-Lehman isomorphism test itself does not provide a way of narrowing down the possible correspondences further.&lt;/p&gt;
 &lt;h3 id=&#34;the-disappearance-of-boris-weisfeiler&#34;&gt;The Disappearance of Boris Weisfeiler&lt;/h3&gt;
 &lt;p&gt;Boris Weisfeiler &amp;ndash; one of the two mathematicians responsible for the Weisfeiler-Lehman isomorphism test &amp;ndash; was a professor at Penn State University until he disappeared mysteriously in Chile in 1985.
 His disappearance in the 80s is unsettling, and I would encourage you to visit 
@@ -927,7 +927,7 @@ In fact, it is not even known whether graph isomorphism falls in either of these
 The problem of factoring integers is another problem like this, where it is unknown whether the problem is in $\text{P}$, $\text{NP-complete}$, or is $\text{NP-intermediate}$.
 Bear in mind that $\text{NP-intermediate}$ problems can only exist if $\text{P} \ne \text{NP}$.
 So if anyone were to show conclusively that factoring or graph isomorphism were $\text{NP-intermediate}$ they would also have shown $\text{P} \ne \text{NP}$ and won the 
-&lt;a href=&#34;https://www.claymath.org/millennium-problems/p-vs-np-problem&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Clay Institute P vs NP Millenium Problem&lt;/a&gt;&amp;rsquo;s million dollar prize.&lt;/p&gt;
+&lt;a href=&#34;https://www.claymath.org/millennium-problems/p-vs-np-problem&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Clay Institute P vs NP Millennium Problem&lt;/a&gt;&amp;rsquo;s million dollar prize.&lt;/p&gt;
 &lt;h3 id=&#34;applications-of-graph-isomorphisms&#34;&gt;Applications of Graph Isomorphisms&lt;/h3&gt;
 &lt;p&gt;Now that you&amp;rsquo;re familiar with the Weisfeiler-Lehman test for graph isomorphisms, what is the graph isomorphism problem good for?&lt;/p&gt;
 &lt;p&gt;There are applications of the graph isomorphism problem in, for example, computational chemistry and in circuit design.&lt;/p&gt;
@@ -1043,12 +1043,12 @@ var sheet = spreadsheet.getSheetByName(&amp;quot;Sheet 1&amp;quot;);
 &lt;p&gt;The input to our anonymous function, row, is an array with the contents of the row currently being processed. From earlier, indexes[&amp;ldquo;Name&amp;rdquo;] is 0, indexes[&amp;ldquo;Email&amp;rdquo;] is 1, and indexes[&amp;ldquo;Age&amp;rdquo;] is 2. We can use this to get the name, email, and age of one of our friends from the spreadsheet.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var body = templateBody.replace(/&amp;lt;name&amp;gt;/g, name).replace(/&amp;lt;age&amp;gt;/g, age);
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This is where the textual replacement actually happens. &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt; is replaced with your friend&amp;rsquo;s name. &lt;code&gt;&amp;lt;age&amp;gt;&lt;/code&gt; is replaced with your friend&amp;rsquo;s age. The &amp;lsquo;g&amp;rsquo; indicates that a &amp;ldquo;global&amp;rdquo; replacement should be performed, so every time the string &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt; appears it will be replaced by the name of your friend from the spreadsheet. Without the &amp;lsquo;g&amp;rsquo;, only the first occurence of &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt; would be replaced.&lt;/p&gt;
+&lt;p&gt;This is where the textual replacement actually happens. &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt; is replaced with your friend&amp;rsquo;s name. &lt;code&gt;&amp;lt;age&amp;gt;&lt;/code&gt; is replaced with your friend&amp;rsquo;s age. The &amp;lsquo;g&amp;rsquo; indicates that a &amp;ldquo;global&amp;rdquo; replacement should be performed, so every time the string &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt; appears it will be replaced by the name of your friend from the spreadsheet. Without the &amp;lsquo;g&amp;rsquo;, only the first occurrence of &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt; would be replaced.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;GmailApp.sendMail(email, subject, body);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Last, this line sends the email!&lt;/p&gt;
-&lt;p&gt;Since this is JavaScript, you can comment out lines by putting &lt;code&gt;//&lt;/code&gt; at the start of the line. Everything occuring after &lt;code&gt;//&lt;/code&gt; on the line will have no affect.&lt;/p&gt;
-&lt;p&gt;I recommend commenting out the GmailApp.sendMail line before running this for the first time to so that you don&amp;rsquo;t accidently email people incorrectly.&lt;/p&gt;
+&lt;p&gt;Since this is JavaScript, you can comment out lines by putting &lt;code&gt;//&lt;/code&gt; at the start of the line. Everything occurring after &lt;code&gt;//&lt;/code&gt; on the line will have no affect.&lt;/p&gt;
+&lt;p&gt;I recommend commenting out the GmailApp.sendMail line before running this for the first time to so that you don&amp;rsquo;t accidentally email people incorrectly.&lt;/p&gt;
 &lt;p&gt;Add the line &lt;code&gt;Logger.log(&amp;quot;To: &amp;quot; + email); Logger.log(&amp;quot;Subj: &amp;quot; + subject); Logger.log(&amp;quot;Body: &amp;quot; + body);&lt;/code&gt; in place of the GmailApp.sendMail line until you&amp;rsquo;re convinced that the correct emails are going to be sent to the correct people. Only once you are sure it&amp;rsquo;s working as intended, uncomment the GmailApp.sendMail line so it actually sends the emails.&lt;/p&gt;
 &lt;p&gt;To run the performMailMerge function, choose performMailMerge from the dropdown and click the run (right-arrow) button.
 To see your logs (the inputs to the Logger.log function calls), choose &amp;ldquo;View &amp;gt; Logs&amp;rdquo; or press ctrl-Enter or cmd-Enter.&lt;/p&gt;

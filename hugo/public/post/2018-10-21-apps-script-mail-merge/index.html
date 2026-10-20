@@ -679,12 +679,12 @@ var sheet = spreadsheet.getSheetByName(&quot;Sheet 1&quot;);
 <p>The input to our anonymous function, row, is an array with the contents of the row currently being processed. From earlier, indexes[&ldquo;Name&rdquo;] is 0, indexes[&ldquo;Email&rdquo;] is 1, and indexes[&ldquo;Age&rdquo;] is 2. We can use this to get the name, email, and age of one of our friends from the spreadsheet.</p>
 <pre><code class="language-javascript">var body = templateBody.replace(/&lt;name&gt;/g, name).replace(/&lt;age&gt;/g, age);
 </code></pre>
-<p>This is where the textual replacement actually happens. <code>&lt;name&gt;</code> is replaced with your friend&rsquo;s name. <code>&lt;age&gt;</code> is replaced with your friend&rsquo;s age. The &lsquo;g&rsquo; indicates that a &ldquo;global&rdquo; replacement should be performed, so every time the string <code>&lt;name&gt;</code> appears it will be replaced by the name of your friend from the spreadsheet. Without the &lsquo;g&rsquo;, only the first occurence of <code>&lt;name&gt;</code> would be replaced.</p>
+<p>This is where the textual replacement actually happens. <code>&lt;name&gt;</code> is replaced with your friend&rsquo;s name. <code>&lt;age&gt;</code> is replaced with your friend&rsquo;s age. The &lsquo;g&rsquo; indicates that a &ldquo;global&rdquo; replacement should be performed, so every time the string <code>&lt;name&gt;</code> appears it will be replaced by the name of your friend from the spreadsheet. Without the &lsquo;g&rsquo;, only the first occurrence of <code>&lt;name&gt;</code> would be replaced.</p>
 <pre><code class="language-javascript">GmailApp.sendMail(email, subject, body);
 </code></pre>
 <p>Last, this line sends the email!</p>
-<p>Since this is JavaScript, you can comment out lines by putting <code>//</code> at the start of the line. Everything occuring after <code>//</code> on the line will have no affect.</p>
-<p>I recommend commenting out the GmailApp.sendMail line before running this for the first time to so that you don&rsquo;t accidently email people incorrectly.</p>
+<p>Since this is JavaScript, you can comment out lines by putting <code>//</code> at the start of the line. Everything occurring after <code>//</code> on the line will have no affect.</p>
+<p>I recommend commenting out the GmailApp.sendMail line before running this for the first time to so that you don&rsquo;t accidentally email people incorrectly.</p>
 <p>Add the line <code>Logger.log(&quot;To: &quot; + email); Logger.log(&quot;Subj: &quot; + subject); Logger.log(&quot;Body: &quot; + body);</code> in place of the GmailApp.sendMail line until you&rsquo;re convinced that the correct emails are going to be sent to the correct people. Only once you are sure it&rsquo;s working as intended, uncomment the GmailApp.sendMail line so it actually sends the emails.</p>
 <p>To run the performMailMerge function, choose performMailMerge from the dropdown and click the run (right-arrow) button.
 To see your logs (the inputs to the Logger.log function calls), choose &ldquo;View &gt; Logs&rdquo; or press ctrl-Enter or cmd-Enter.</p>

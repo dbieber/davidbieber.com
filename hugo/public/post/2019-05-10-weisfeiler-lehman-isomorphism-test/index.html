@@ -598,8 +598,8 @@ That is, a pair of nodes may be connected by an edge in the first graph if and o
 An example of two isomorphic graphs is shown here.</p>
 <p><img src="/post/2019-05-10-weisfeiler-lehman-isomorphism-test/graph-isomorphism.png" alt="Example of isomorphic graphs" title="Two isomorphic graphs are shown.">
 <em>Figure: Graph 1 and Graph 2 are isomorphic.
-The correspondance between nodes is illustrated by the node colors and numbers.</em></p>
-<p>In general, determining whether two graphs are isomorphic when the correspondance is not provided is a challenging problem; precisely how hard this problem is remains an open question in computer science.
+The correspondence between nodes is illustrated by the node colors and numbers.</em></p>
+<p>In general, determining whether two graphs are isomorphic when the correspondence is not provided is a challenging problem; precisely how hard this problem is remains an open question in computer science.
 It isn&rsquo;t known whether there is a polynomial time algorithm for determining whether graphs are isomorphic, and it also isn&rsquo;t known whether the problem is $\text{NP-complete}.$
 The graph isomorphism problem may even be an example of an 
 <a href="https://en.wikipedia.org/wiki/NP-intermediate" target="_blank" rel="noopener">$\text{NP-intermediate}$</a> problem, but this would only be possible if $\text{P} \ne \text{NP}.$</p>
@@ -662,12 +662,12 @@ Another possible convention is to use the hash of the multiset to create the com
 If the partitions change, we proceed to the next iteration.
 If no partition changes, the algorithm can terminate early.
 When comparing the partitions of the nodes across graphs to see if graphs are isomorphic, we use the canonical form as described above in the algorithm.</p>
-<h3 id="finding-the-correspondance-between-isomorphic-graphs">Finding the Correspondance Between Isomorphic Graphs</h3>
+<h3 id="finding-the-correspondence-between-isomorphic-graphs">Finding the Correspondence Between Isomorphic Graphs</h3>
 <p>The core idea of the Weisfeiler-Lehman isomorphism test is to find for each node in each graph a signature based on the neighborhood around the node.
-These signatures can then be used to find the correspondance between nodes in the two graphs, which can be used to check for isomorphism.</p>
-<p>In the algorithm descibed above, the &ldquo;compressed labels&rdquo; serve as the signatures.
-Since multiple nodes may have the same compressed label, there are multiple possible correspondances suggested by a Weisfeiler-Lehman labeling.
-The Weisfeiler-Lehman isomorphism test itself does not provide a way of narrowing down the possible correspondances further.</p>
+These signatures can then be used to find the correspondence between nodes in the two graphs, which can be used to check for isomorphism.</p>
+<p>In the algorithm described above, the &ldquo;compressed labels&rdquo; serve as the signatures.
+Since multiple nodes may have the same compressed label, there are multiple possible correspondences suggested by a Weisfeiler-Lehman labeling.
+The Weisfeiler-Lehman isomorphism test itself does not provide a way of narrowing down the possible correspondences further.</p>
 <h3 id="the-disappearance-of-boris-weisfeiler">The Disappearance of Boris Weisfeiler</h3>
 <p>Boris Weisfeiler &ndash; one of the two mathematicians responsible for the Weisfeiler-Lehman isomorphism test &ndash; was a professor at Penn State University until he disappeared mysteriously in Chile in 1985.
 His disappearance in the 80s is unsettling, and I would encourage you to visit 
@@ -683,7 +683,7 @@ In fact, it is not even known whether graph isomorphism falls in either of these
 The problem of factoring integers is another problem like this, where it is unknown whether the problem is in $\text{P}$, $\text{NP-complete}$, or is $\text{NP-intermediate}$.
 Bear in mind that $\text{NP-intermediate}$ problems can only exist if $\text{P} \ne \text{NP}$.
 So if anyone were to show conclusively that factoring or graph isomorphism were $\text{NP-intermediate}$ they would also have shown $\text{P} \ne \text{NP}$ and won the 
-<a href="https://www.claymath.org/millennium-problems/p-vs-np-problem" target="_blank" rel="noopener">Clay Institute P vs NP Millenium Problem</a>&rsquo;s million dollar prize.</p>
+<a href="https://www.claymath.org/millennium-problems/p-vs-np-problem" target="_blank" rel="noopener">Clay Institute P vs NP Millennium Problem</a>&rsquo;s million dollar prize.</p>
 <h3 id="applications-of-graph-isomorphisms">Applications of Graph Isomorphisms</h3>
 <p>Now that you&rsquo;re familiar with the Weisfeiler-Lehman test for graph isomorphisms, what is the graph isomorphism problem good for?</p>
 <p>There are applications of the graph isomorphism problem in, for example, computational chemistry and in circuit design.</p>
